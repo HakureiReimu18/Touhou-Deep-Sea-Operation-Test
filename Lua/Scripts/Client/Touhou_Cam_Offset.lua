@@ -25,7 +25,7 @@ Hook.Patch("Barotrauma.Character", "ControlLocalPlayer", function(instance)
             and not (character.HasEquippedItem("mountableweapon",true,2) or character.HasEquippedItem("mountableweapon",true,4))
             and not (character.HasEquippedItem("tsm_farsight",true,4) or character.HasEquippedItem("tsm_farsight",true,2)) then
         Screen.Selected.Cam.OffsetAmount = math.min(Lerp(Screen.Selected.Cam.OffsetAmount, 0, 0.24)
-                * (1 + math.min( GetSkillLevel(character,"Touhou_Magic") * 0.001, 0.25)), 356.5)
+                * (1 + math.min( GetSkillLevel(character,"Touhou_Magic") * 0.001, 0.15)), 356.5)
     end
     if PlayerInput.SecondaryMouseButtonHeld()
             and (character.HasEquippedItem("Touhou_Cam_Offset_Normal",true,2) or character.HasEquippedItem("Touhou_Cam_Offset_Normal",true,4))
@@ -33,7 +33,7 @@ Hook.Patch("Barotrauma.Character", "ControlLocalPlayer", function(instance)
             and not (character.HasEquippedItem("mountableweapon",true,2) or character.HasEquippedItem("mountableweapon",true,4))
             and not (character.HasEquippedItem("tsm_farsight",true,4) or character.HasEquippedItem("tsm_farsight",true,2)) then
         Screen.Selected.Cam.OffsetAmount = math.min(Lerp(Screen.Selected.Cam.OffsetAmount, 0, 0.42)
-                * (1 + math.min( GetSkillLevel(character,"Touhou_Magic") * 0.001, 0.25)), 408.25)
+                * (1 + math.min( GetSkillLevel(character,"Touhou_Magic") * 0.001, 0.15)), 408.25)
     end
     if PlayerInput.SecondaryMouseButtonHeld()
             and (character.HasEquippedItem("Touhou_Cam_Offset_High",true,2) or character.HasEquippedItem("Touhou_Cam_Offset_High",true,4))
@@ -41,6 +41,6 @@ Hook.Patch("Barotrauma.Character", "ControlLocalPlayer", function(instance)
             and not (character.HasEquippedItem("mountableweapon",true,2) or character.HasEquippedItem("mountableweapon",true,4))
             and not (character.HasEquippedItem("tsm_farsight",true,4) or character.HasEquippedItem("tsm_farsight",true,2)) then
         Screen.Selected.Cam.OffsetAmount = math.min(Lerp(Screen.Selected.Cam.OffsetAmount, 0, 0.64)
-                * (1 + math.min( GetSkillLevel(character,"Touhou_Magic") * 0.001, 0.25)), 471.5)
+                * (1 + math.min( GetSkillLevel(character,"Touhou_Magic") * 0.001, 0.15)), 471.5)
         end
 end, Hook.HookMethodType.After)
