@@ -26,5 +26,5 @@ Hook.Add("Alice.Doll.Controller", "Player.Control.Change", function (client, del
         end
     end
 
-    return true -- returning true allows us to hide the message
+    return true
 end)
