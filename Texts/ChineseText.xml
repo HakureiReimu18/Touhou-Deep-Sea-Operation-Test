@@ -706,7 +706,7 @@
   <talentname.FlandreTalent3>鲜红血液的恶魔</talentname.FlandreTalent3>
   <talentdescription.FlandreTalent3>当你身着 芙兰朵露装束+ 时,身边存在活物时，移动速度加快‖color:gui.green‖15%‖end‖，技能获取速度加快‖color:gui.green‖50%‖end‖,对debuff的抗性提高‖color:gui.green‖35%‖end‖。如果身旁紧邻友方船员，还可增加‖color:gui.green‖66‖end‖点医疗水平.</talentdescription.FlandreTalent3>
   <talentname.FlandreTalent4>笼中鸟</talentname.FlandreTalent4>
-  <talentdescription.FlandreTalent4>当你身着 芙兰朵露装束+ 时,按下Ctrl时，会在周围持续生成可以阻挡所有生物远程弹幕（包括自己）的魔法护盾，
+  <talentdescription.FlandreTalent4>当你身着 芙兰朵露装束+ 时,按下下蹲键（默认Ctrl）时，会在周围持续生成可以阻挡所有生物远程弹幕（包括自己）的魔法护盾，
     期间自己的移动速度下降‖color:gui.green‖60%‖end‖，攻击伤害下降‖color:gui.green‖140%‖end‖，技能水平下降‖color:gui.green‖45%‖end‖，但抗性回归正常水平。
     护盾持续时间‖color:gui.green‖15‖end‖秒，护盾剩余时间大于‖color:gui.green‖0‖end‖时，每秒恢复‖color:gui.green‖1‖end‖秒持续时间。否则将在时间耗尽后第‖color:gui.green‖30‖end‖秒重置时长。</talentdescription.FlandreTalent4>
   <entityname.Youmu_Skirt>‖color:156,158,161,255‖妖梦装束（庭师裙）‖end‖</entityname.Youmu_Skirt>
