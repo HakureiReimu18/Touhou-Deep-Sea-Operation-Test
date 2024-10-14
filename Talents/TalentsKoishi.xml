@@ -17,7 +17,6 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Closed_Eyes_Of_Koishi" />
                 <AbilityConditionHasAffliction afflictionidentifier="Koishi_Dodge_CD" invert="true" />
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="NoWeapon,Melee,Ranged"/>
-                <AbilityConditionCharacter targettypes="Enemy,Monster" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
@@ -169,18 +168,5 @@
                 <CharacterAbilityGiveResistance resistanceid="Touhou_Strange_Phone_Effect" multiplier="0" />
             </Abilities>
         </AbilityGroupEffect>
-<!--        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Closed_Eyes_Of_Koishi" />
-            </Conditions>
-            <Conditions>
-                <AbilityConditionCharacter>
-                    <Conditional Touhou_Strange_Phone_Effect="gt 0" />
-                </AbilityConditionCharacter>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" replacewith="Reiki_Pressure" addedmultiplier="-0.75" />
-            </Abilities>
-        </AbilityGroupEffect>-->
     </Talent>
 </Talents>

@@ -4708,7 +4708,7 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="2" targetforce="6" itemdamage="8" severlimbsprobability="0.2" penetration="0.25">
+            <Attack structuredamage="0.2" targetforce="6" itemdamage="8" severlimbsprobability="0.2" penetration="0.35">
                 <Affliction identifier="gunshotwound" strength="9" />
                 <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="1.5" />
