@@ -911,12 +911,12 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,108,11" origin="0.15,0" />
             </LightComponent>
             <Attack structuredamage="666" itemdamage="666" LevelWallDamage="666" targetforce="30" targetimpulse="30" severlimbsprobability="1" penetration="0.66">
-                <Affliction identifier="Reiki_Pressure" strength="30" />
+                <Affliction identifier="Reiki_Pressure" strength="20" />
                 <Affliction identifier="Reiki_Pressure" strength="666" probability="0.02"/>
                 <Affliction identifier="bleeding" strength="80" />
                 <Affliction identifier="Scarlet_Long_Night" strength="10" />
                 <Affliction identifier="lacerations" strength="200" />
-                <Affliction identifier="bloodloss" strength="15" />
+                <Affliction identifier="bloodloss" strength="10" />
                 <Affliction identifier="stun" strength="3" />
             </Attack>
             <StatusEffect type="OnNotContained" target="this" stackable="false" setvalue="true" condition="0" delay="2"/>

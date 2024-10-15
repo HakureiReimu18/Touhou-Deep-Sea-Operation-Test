@@ -546,7 +546,7 @@
         <Fabricate suitablefabricators="Magic_Altar" requiresrecipe="true" requiredtime="8">
             <RequiredSkill identifier="Touhou_Magic" level="50" />
             <RequiredItem identifier="Tu_Alchemical" amount="3"/>
-            <RequiredItem identifier="Cinnamon_Branch" />
+            <RequiredItem identifier="Cinnamon_Branch" amount="2" />
             <RequiredItem identifier="stabilozine" />
             <RequiredItem identifier="liquidoxygenite" amount="6"/>
         </Fabricate>

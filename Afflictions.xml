@@ -758,9 +758,8 @@
         <ReduceAffliction identifier="Patchouli_Asthma" amount="0.5" />
       </StatusEffect>
       <StatValue stattype="SwimmingSpeed" minvalue="0" maxvalue="0.15" />
-      <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="0.3" />
     </Effect>
-    <Effect minstrength="50" maxstrength="100" resistancefor="Patchouli_Asthma,bleeding" minresistance="0.05" maxresistance="0.1" minskillmultiplier="1.25" maxskillmultiplier="1.5"
+    <Effect minstrength="50" maxstrength="100" resistancefor="Patchouli_Asthma" minresistance="0.05" maxresistance="0.1" minskillmultiplier="1.25" maxskillmultiplier="1.5"
             strengthchange="-0.1">
       <StatusEffect target="Character" Interval="1.0" Duration="1.0" >
         <Conditional Patchouli_Asthma="gt 0"/>
@@ -772,7 +771,6 @@
       </StatusEffect>
       <StatValue stattype="SwimmingSpeed" minvalue="0.15" maxvalue="0.3" />
       <StatValue stattype="WalkingSpeed" minvalue="0" maxvalue="0.1" />
-      <StatValue stattype="MaximumHealthMultiplier" minvalue="0.3" maxvalue="0.65" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Budesonide_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>

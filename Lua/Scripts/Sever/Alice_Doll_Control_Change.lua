@@ -4,7 +4,7 @@
 --- DateTime: 8/10/2024 下午6:06
 ---
 
-Hook.Add("Alice.Doll.Controller", "Player.Control.Change", function (client, deltaTime, character, targets)
+--[[Hook.Add("Alice.Doll.Controller", "Player.Control.Change", function (client, deltaTime, character, targets)
     if targets[1] == nil then return end
 
     -- 获取上一次控制的角色
@@ -27,7 +27,7 @@ Hook.Add("Alice.Doll.Controller", "Player.Control.Change", function (client, del
     end
 
     return true
-end)
+end)]]
 
 
 local function ClientFromName(name)
@@ -42,6 +42,8 @@ local function ClientFromName(name)
 
     return nil
 end
+
+TLE.ItemMethods = {} -- with the identifier as the key
 
 TLE.ItemMethods.Touhou_Elixir_Of_Penglai = function(item, targetCharacter)
 
