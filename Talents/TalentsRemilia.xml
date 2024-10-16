@@ -61,13 +61,23 @@
       </Abilities>
     </AbilityGroupEffect>
 
+    <AbilityGroupEffect abilityeffecttype="OnAttack">
+      <Conditions>
+        <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
+        <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Ranged"/>
+      </Conditions>
+      <Abilities>
+        <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding"  addedmultiplier="-0.75" />
+      </Abilities>
+    </AbilityGroupEffect>
+
     <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
       <Conditions>
         <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
         <AbilityConditionServerRandom randomchance="0.5" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" replacewith="bloodloss" addedmultiplier="-0.5" />
+        <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" replacewith="bloodloss" addedmultiplier="-0.85" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">

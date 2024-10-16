@@ -49,7 +49,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="Phoenix_Burn" addedmultiplier="0.5" />
+                <CharacterAbilityModifyAffliction afflictionidentifiers="Phoenix_Burn" addedmultiplier="0.3" />
             </Abilities>
         </AbilityGroupEffect>
 

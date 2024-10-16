@@ -1175,6 +1175,7 @@
           <TagAction criteria="player" tag="player" />
           <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Hieda_no_Akyuu" targettag="Mission_Hieda_no_Akyuu" spawnlocation="MainSub" targetmoduletags="airlock" />
           <Label name="waitformission" />
+          <NPCWaitAction npctag="Mission_Hieda_no_Akyuu" wait="true" />
           <TriggerAction target1tag="Mission_Hieda_no_Akyuu" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
           <CheckDataAction identifier="Touhou_Akyuu_UFO_Mission01_Agree" condition="eq true">
             <Success>
@@ -1255,6 +1256,7 @@
           <TagAction criteria="player" tag="player" />
           <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Hieda_no_Akyuu" targettag="Mission_Hieda_no_Akyuu" spawnlocation="MainSub" targetmoduletags="airlock" />
           <Label name="waitformission" />
+          <NPCWaitAction npctag="Mission_Hieda_no_Akyuu" wait="true" />
           <TriggerAction target1tag="Mission_Hieda_no_Akyuu" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
           <CheckDataAction identifier="Touhou_Akyuu_UFO_Mission02_Agree" condition="eq true">
             <Success>
@@ -1334,6 +1336,7 @@
           <TagAction criteria="player" tag="player" />
           <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Hieda_no_Akyuu" targettag="Mission_Hieda_no_Akyuu" spawnlocation="MainSub" targetmoduletags="airlock" />
           <Label name="waitformission" />
+          <NPCWaitAction npctag="Mission_Hieda_no_Akyuu" wait="true" />
           <TriggerAction target1tag="Mission_Hieda_no_Akyuu" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
           <CheckDataAction identifier="Touhou_Akyuu_UFO_Mission03_Agree" condition="eq true">
             <Success>
@@ -1390,6 +1393,8 @@
                               <SpawnAction itemidentifier="antibleeding3" targetinventory="triggerer_player" />
                               <ClearTagAction tag="triggerer_player" />
                               <MissionAction missiontag="FindHoujuuNue" />
+                              <SetDataAction identifier="Touhou_Akyuu_UFO_Mission03_Agree" value="true"/>
+                              <GoTo name="waitformission" />
                             </Option>
                             <Option text="那好消息呢？">
                               <ConversationAction text="“因为你的努力，之前那些游荡的UFO全部被解决掉了。”少女微微鞠躬向你表达谢意。" dialogtype="Small" targettag="triggerer_player" >
@@ -1399,6 +1404,7 @@
                                   <SpawnAction itemidentifier="antibleeding3" targetinventory="triggerer_player" />
                                   <ClearTagAction tag="triggerer_player" />
                                   <MissionAction missiontag="FindHoujuuNue" />
+                                  <SetDataAction identifier="Touhou_Akyuu_UFO_Mission03_Agree" value="true"/>
                                   <GoTo name="waitformission" />
                                 </Option>
                                 <Option text="我得再考虑考虑">
@@ -1455,6 +1461,7 @@
           <TagAction criteria="player" tag="player" />
           <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Hieda_no_Akyuu" targettag="Mission_Hieda_no_Akyuu" spawnlocation="MainSub" targetmoduletags="airlock" />
           <Label name="waitformission" />
+          <NPCWaitAction npctag="Mission_Hieda_no_Akyuu" wait="true" />
           <TriggerAction target1tag="Mission_Hieda_no_Akyuu" target2tag="player" applytotarget2="triggerer_player" radius="200" waitforinteraction="true" />
           <ConversationAction targettag="triggerer_player" text="少女见到你，很是惊喜：“你们成功了？”" eventsprite="Touhou_Akyuu_Mission">
             <Option text="”是的，我们发现那是一名自称封兽鵺的少女，她醒来后就自顾自地离开了。“">

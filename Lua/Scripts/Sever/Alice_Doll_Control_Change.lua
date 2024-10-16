@@ -43,18 +43,29 @@ local function ClientFromName(name)
     return nil
 end
 
+local function CharacterToClient(character)
+
+    if not SERVER then return nil end
+
+    for key,client in pairs(Client.ClientList) do
+        if client.Character == character then
+            return client
+        end
+    end
+
+    return nil
+end
+
 TLE.ItemMethods = {} -- with the identifier as the key
 
 TLE.ItemMethods.Touhou_Elixir_Of_Penglai = function(item, targetCharacter)
 
         if SERVER then
-            local Deadclient = item.Description
+            local Deadclient = CharacterToClient(targetCharacter)
             local client = ClientFromName(Deadclient)
             if client ~= nil then
                 client.SetClientCharacter(targetCharacter)
             end
         end
-
-        HF.RemoveItem(item)
 end
 

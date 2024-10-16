@@ -30,6 +30,7 @@
   <Item file="%ModDir%/Items/Clothes/Piece_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Cirno_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Koishi_gear.xml" />
+  <Item file="%ModDir%/Items/Clothes/Alice_gear.xml" />
   <!--tools-->
   <Item file="%ModDir%/Items/Tools/Tools.xml" />
   <Item file="%ModDir%/Items/Tools/MusicPlayer.xml" />
@@ -120,6 +121,7 @@
   <Talents file="%ModDir%/Talents/TalentsYousei.xml" />
   <Talents file="%ModDir%/Talents/TalentsCirno.xml" />
   <Talents file="%ModDir%/Talents/TalentsKoishi.xml" />
+  <Talents file="%ModDir%/Talents/TalentsAlice.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <!--Sounds-->
   <Sounds file="%ModDir%/Sounds/BGM/Music_Override.xml" />

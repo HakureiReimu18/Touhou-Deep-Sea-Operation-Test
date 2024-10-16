@@ -523,8 +523,8 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="2" damagedoors="true" friendlyfire="false" >
             <Attack structuredamage="10" itemdamage="20" targetforce="20" targetimpulse="20" penetration="0.25">
-                <Affliction identifier="burn" strength="10" />
-                <Affliction identifier="lacerations" strength="10" />
+                <Affliction identifier="burn" strength="7" />
+                <Affliction identifier="lacerations" strength="13" />
                 <Affliction identifier="bleeding" strength="8" />
                 <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="slow" strength="5" />

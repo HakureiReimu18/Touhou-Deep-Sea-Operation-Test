@@ -25,8 +25,9 @@
   <talentdescription.demonkingcradle>当你身着‖color:gui.orange‖蕾米莉亚装束+‖end‖时，使用‖color:gui.orange‖优质B型血‖end‖给予你：
     \n持续治疗‖color:gui.orange‖咬伤‖end‖。\n‖color:gui.green‖+20%‖end‖‖color:gui.orange‖移动速度‖end‖。\n获得‖color:gui.orange‖精神病抗性‖end‖并提升造成的伤害。\n造成的‖color:gui.orange‖出血‖end‖伤害额外增加‖color:gui.green‖66.6%‖end‖。
     ————————————————————————————————————
+    \n远程武器造成的出血减少‖color:gui.green‖75%‖end‖。
     \n当你击杀任意生物时，恢复‖color:gui.green‖2%‖end‖的失血和‖color:gui.green‖8%‖end‖的出血。
-    \n你每次造成的出血总量随机转化为‖color:gui.green‖25%‖end‖的‖color:gui.orange‖失血‖end‖或‖color:gui.green‖150%‖end‖的‖color:gui.orange‖出血不止‖end‖或‖color:gui.green‖66.6%‖end‖‖color:gui.orange‖噬咬‖end‖。
+    \n你每次造成的出血总量随机转化为‖color:gui.green‖15%‖end‖的‖color:gui.orange‖失血‖end‖或‖color:gui.green‖150%‖end‖的‖color:gui.orange‖出血不止‖end‖或‖color:gui.green‖66.6%‖end‖‖color:gui.orange‖噬咬‖end‖。
     \n无法受到天赋‖color:gui.orange‖“过度放血”‖end‖给予的加成
     \n\n‖color:150,150,150,255‖蕾米莉亚也同样遵从此定律，是个严重的自我主义者。B型血最美味。\n\n————《东方永夜抄》‖color:end‖</talentdescription.demonkingcradle>
   <afflictionname.scarletdevil>猩红恶魔</afflictionname.scarletdevil>
@@ -132,9 +133,9 @@
   <afflictionname.Possessed_By_Phoenix>蓬莱的人之形</afflictionname.Possessed_By_Phoenix>
   <afflictiodescription.Possessed_By_Phoenix>拥有不老不死能力的人类</afflictiodescription.Possessed_By_Phoenix>
   <talentname.Immortal_Human>不死鸟</talentname.Immortal_Human>
-  <talentdescription.Immortal_Human>当你身着‖color:255,72,36,255‖妹红装束+‖end‖时，不会死亡，
+  <talentdescription.Immortal_Human>当你身着‖color:255,72,36,255‖妹红装束+‖end‖时，
     一个巡回中仅有一次，生命值归零后‖color:gui.green‖有额外30秒的清醒时间‖end‖，期间伤势会迅速恢复，但会短暂下降移动速度和造成的伤害。
-    \n造成‖color:gui.green‖不死鸟灼烧‖end‖时有额外‖color:gui.green‖50%‖end‖伤害。</talentdescription.Immortal_Human>
+    \n造成‖color:gui.green‖不死鸟灼烧‖end‖时有额外‖color:gui.green‖30%‖end‖伤害。</talentdescription.Immortal_Human>
   <!--Other Clothes-->
   <entityname.Sunnu_Scary_Mask>桑尼的试胆大会面具</entityname.Sunnu_Scary_Mask>
   <entitydescription.Sunnu_Scary_Mask>虽说是试胆大会，但似乎没有吓到任何人</entitydescription.Sunnu_Scary_Mask>
@@ -474,7 +475,7 @@
   <talentdescription.Innocent_Treasures>当你身着‖color:gui.orange‖灵梦装束+‖end‖时，
     \n增加‖color:gui.green‖100%‖end‖游泳速度。
     \n增加‖color:gui.green‖25%‖end‖移动速度。
-    \n增加‖color:gui.green‖15%‖end‖远程攻击速度。
+    \n增加‖color:gui.green‖10%‖end‖远程攻击速度。
     \n增加‖color:gui.green‖50%‖end‖技能获取速度。
     \n没有专属武器的加成效果。
     若巡回中有人死亡，则这个巡回内自己不会因伤痛死亡。</talentdescription.Innocent_Treasures>
@@ -1133,8 +1134,8 @@
   <entityname.Touhou_Fix_Foamg_Tank>固化泡沫罐</entityname.Touhou_Fix_Foamg_Tank>
   <entitydescription.Touhou_Fix_Foamg_Tank>高度压缩的固化泡沫，专用于河童工具枪的船体修复，相当耐用的同时，还能加快约35%的修复速度。\n——“外物虽好，也不要忘了锻炼自身的能力。”</entitydescription.Touhou_Fix_Foamg_Tank>
   <talentdescription.Casket_Of_Star>当你身着‖color:gui.orange‖魔理沙装束+‖end‖时，从‖color:gui.orange‖物理伤害、烧伤‖end‖中恢复得更快、抗性也更高：
-    \n造成的伤害提高‖color:gui.green‖15%‖end‖。
-    \n远程武器的攻击速度提高‖color:gui.green‖10%‖end‖。
+    \n造成的伤害提高‖color:gui.green‖10%‖end‖。
+    \n远程武器的攻击速度提高‖color:gui.green‖5%‖end‖。
     \n每次打开沉船容器时有15%概率找到‖color:gui.green‖《魔法书》‖end‖。
     \n佩戴魔理沙的帽子能再略微增加抗性和攻击伤害。
   </talentdescription.Casket_Of_Star>
@@ -1282,6 +1283,7 @@
   <missiondescription.FindClownpiece>去月球</missiondescription.FindClownpiece>
   <missionheader.FindClownpiece>恶作剧该结束了</missionheader.FindClownpiece>
   <missionmessage.FindClownpiece>二十世纪的诺亚方舟，承载着期待与不安向着天空飞去，\n现如今，在被称为未来的二十四世纪，\n摘下幻想的伪装，那之后是怎样一副落寞的表情。\n也许承载着过去的鸟船遗迹里，有你想要的答案。</missionmessage.FindClownpiece>
+
   <entityname.Iron_Element_Book>魔导书-金</entityname.Iron_Element_Book>
   <entitydescription.Iron_Element_Book>内置魔力的一次性魔导书，让新手也能轻松使用</entitydescription.Iron_Element_Book>
   <entityname.Earth_Element_Book>魔导书-土</entityname.Earth_Element_Book>
@@ -1300,4 +1302,28 @@
   <entitydescription.Touhou_Scorching_Ray_Gun>河童们以藤原妹红的火焰为原型制造的武器，其中蕴含的炽热能量任谁都无法忽视。使用炽热核心作为弹药，填入燃料棒可以提升性能。</entitydescription.Touhou_Scorching_Ray_Gun>
   <entityname.Touhou_Scorching_Ray_Gun_Ammo>‖color:red‖炽热核心‖color:end‖</entityname.Touhou_Scorching_Ray_Gun_Ammo>
   <entitydescription.Touhou_Scorching_Ray_Gun_Ammo>用特殊材料制成的、用来约束不死鸟火焰的立场，作为炽热射线枪的弹药</entitydescription.Touhou_Scorching_Ray_Gun_Ammo>
+
+  <!--1.0.8下半部分内容-->
+  <entityname.Alice_gear>‖color:60,255,155,255‖爱丽丝装束‖end‖</entityname.Alice_gear>
+  <entitydescription.Alice_gear>爱丽丝平时独居在位于魔法森林的家玛格特洛依德邸中，喜欢一个人在家制作各种人偶，正在尝试制造一种会自动进行保养的人偶，也会撰写魔法书。因此，她不怎么爱出门，但是也会去祭典上表演人偶技艺。</entitydescription.Alice_gear>
+  <entityname.Alice_Plus>‖color:60,255,155,255‖爱丽丝装束+‖end‖</entityname.Alice_Plus>
+  <entitydescription.Alice_Plus>爱丽丝平时独居在位于魔法森林的家玛格特洛依德邸中，喜欢一个人在家制作各种人偶，正在尝试制造一种会自动进行保养的人偶，也会撰写魔法书。因此，她不怎么爱出门，但是也会去祭典上表演人偶技艺。</entitydescription.Alice_Plus>
+  <afflictionname.Puppeteer_Of_Seven_Colors>七色的人偶师</afflictionname.Puppeteer_Of_Seven_Colors>
+  <afflictiondescription.Puppeteer_Of_Seven_Colors>金发与白皙的皮肤，她本人也有着人偶般的外表。</afflictiondescription.Puppeteer_Of_Seven_Colors>
+  <talentname.AliceTalent>人偶裁判</talentname.AliceTalent>
+  <talentdescription.AliceTalent>当你身着爱丽丝装束+时，
+    \n增加‖color:gui.green‖40%‖end‖‖color:gui.orange‖游泳速度‖end‖。
+    增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖。
+    增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖使用药物效果‖end‖。
+    增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖buff持续时间‖end‖。
+    \n减少‖color:gui.green‖15%‖end‖‖color:gui.orange‖行走速度‖end‖。
+    减少‖color:gui.green‖20%‖end‖‖color:gui.orange‖最大生命值‖end‖。
+    减少‖color:gui.green‖35%‖end‖‖color:gui.orange‖近战伤害‖end‖。
+    \n可以制造并召唤‖color:gui.yellow‖人偶‖end‖。
+    ‖color:gui.yellow‖人偶‖end‖在你身边会获得强化，增加抗性和攻击伤害。
+    ‖color:gui.yellow‖常规人偶‖end‖持续时间不会超过3分钟
+  </talentdescription.AliceTalent>
+  <afflictionname.Alice_Weapons>布加勒斯特的人偶师</afflictionname.Alice_Weapons>
+  <afflictiondescription.Alice_Weapons>爱丽丝对他人一点都不关心，却对魔法很执着，尽管外表看起来坚强却有着弱小的一面。她基本上不拘束于事物，性格上不固执不厌恶。她喜欢一个人独处，不过却常常参加宴会和在祭典上表演人偶剧。</afflictiondescription.Alice_Weapons>
+
 </infotexts>

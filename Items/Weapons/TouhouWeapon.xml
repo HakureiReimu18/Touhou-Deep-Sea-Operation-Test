@@ -912,10 +912,10 @@
             </LightComponent>
             <Attack structuredamage="666" itemdamage="666" LevelWallDamage="666" targetforce="30" targetimpulse="30" severlimbsprobability="1" penetration="0.66">
                 <Affliction identifier="Reiki_Pressure" strength="20" />
-                <Affliction identifier="Reiki_Pressure" strength="666" probability="0.02"/>
-                <Affliction identifier="bleeding" strength="80" />
+                <Affliction identifier="Reiki_Pressure" strength="666" probability="0.01"/>
+                <Affliction identifier="bleeding" strength="130" />
                 <Affliction identifier="Scarlet_Long_Night" strength="10" />
-                <Affliction identifier="lacerations" strength="200" />
+                <Affliction identifier="lacerations" strength="180" />
                 <Affliction identifier="bloodloss" strength="10" />
                 <Affliction identifier="stun" strength="3" />
             </Attack>
@@ -4192,7 +4192,7 @@
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5" displayname="recycleitem" >
             <RequiredSkill identifier="weapons" level="65" />
-            <RequiredItem identifier="Reiki_Dust" amount="6"/>
+            <RequiredItem identifier="Reiki_Dust" amount="16"/>
             <RequiredItem identifier="Huo_Alchemical" amount="2"/>
             <RequiredItem identifier="Touhou_Love_Maze" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
@@ -4321,12 +4321,12 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true" >
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,55,55,255" scalemultiplier="1,1.5" />
             <Attack targetforce="30" targetimpulse="30" itemdamage="45" severlimbsprobability="0.5" penetration="0.3">
-                <Affliction identifier="burn" strength="20" />
-                <Affliction identifier="burn" strength="10" probability="0.7" />
-                <Affliction identifier="Reiki_Pressure" strength="5" />
-                <Affliction identifier="internaldamage" strength="5" />
-                <Affliction identifier="organdamage" strength="5" />
-                <Affliction identifier="explosiondamage" strength="5" />
+                <Affliction identifier="burn" strength="16" />
+                <Affliction identifier="burn" strength="8" probability="0.7" />
+                <Affliction identifier="Reiki_Pressure" strength="4" />
+                <Affliction identifier="internaldamage" strength="4" />
+                <Affliction identifier="organdamage" strength="4" />
+                <Affliction identifier="explosiondamage" strength="4" />
                 <Affliction identifier="bleeding" strength="30" />
                 <Affliction identifier="bleeding" strength="30" probability="0.495" />
                 <Affliction identifier="Touhou_Weakness" strength="1" />
