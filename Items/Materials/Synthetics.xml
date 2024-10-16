@@ -162,7 +162,7 @@
         <PreferredContainer primary="medcab" secondary="medcontainer"/>
         <PreferredContainer secondary="outpostmedcompartment" amount="12" spawnprobability="0.06" />
         <PreferredContainer secondary="supplycab" minamount="12" maxamount="18" spawnprobability="0.15" notcampaign="true"/>
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="24" maxamount="48" spawnprobability="0.3" />
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="16" maxamount="32" spawnprobability="0.25" />
         <Price baseprice="15" >
             <Price storeidentifier="merchantoutpost" minavailable="96"/>
             <Price storeidentifier="merchantcity" minavailable="196" />
