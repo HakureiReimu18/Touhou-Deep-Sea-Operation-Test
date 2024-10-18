@@ -253,9 +253,9 @@
 
     <!--友谊果汁-->
     <Item name="友谊果汁" identifier="Touhou_Friendship_Juice" subcategory="Touhou" category="Misc,medical" Tags="smallitem"
-          cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft" impacttolerance="5.5" spritecolor="255,100,100,255">
-        <Sprite texture="%ModDir%/Images/Materials/Touhou_Beer.png" depth="0.2" sourcerect="0,0,120,140" origin="0.5,0.5" />
-        <Body width="120" height="140" density="10" />
+          cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft" impacttolerance="5.5" >
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Friendship_Juice.png" depth="0.2" sourcerect="0,0,100,140" origin="0.5,0.5" />
+        <Body width="100" height="140" density="10" />
         <Price baseprice="200" sold="false">
             <Price storeidentifier="merchantoutpost" />
             <Price storeidentifier="merchantcity" multiplier="1.2" />
@@ -581,5 +581,53 @@
         <AiTarget sightrange="1000" static="true" />
         <PreferredContainer primary="plantcontainer" />
     </Item>
+
+
+    <!--红莓酒-->
+    <Item identifier="Touhou_Berry_Wine" subcategory="Touhou" category="Misc,medical" Tags="smallitem"
+          cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft" impacttolerance="5.5">
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Berry_Wine.png" depth="0.2" sourcerect="0,0,88,100" origin="0.5,0.5" />
+        <Body width="88" height="100" density="10" />
+        <Price baseprice="200" sold="false">
+            <Price storeidentifier="merchantoutpost" />
+            <Price storeidentifier="merchantcity" multiplier="1.2" />
+            <Price storeidentifier="merchantresearch" multiplier="1.1" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.8" />
+            <Price storeidentifier="merchantmine" multiplier="0.75" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="carbon"/>
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" requiresrecipe="true" amount="2">
+            <RequiredSkill identifier="medical" level="30" />
+            <RequiredItem identifier="remiliapaint" amount="2"/>
+            <RequiredItem identifier="Touhou_Flour" />
+            <RequiredItem identifier="Spiritual_Water" amount="2" />
+        </Fabricate>
+        <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" holdpos="40,-15" handle1="5,0" aimangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-5.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character" >
+                <Affliction identifier="psychosisresistance" amount="15" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character">
+                <Conditional huskinfection="lt 60.0" />
+                <ReduceAffliction identifier="huskinfection" amount="1.5" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" >
+                <Sound file="%ModDir%/Sounds/Tools/Minecraft_Drink.ogg" selectionmode="random" range="300"  />
+                <ReduceAffliction identifier="poison" amount="7.5" />
+                <ReduceAffliction identifier="psychosis" amount="5" />
+                <ReduceAffliction identifier="hallucinating" amount="5" />
+                <Affliction identifier="drunk" amount="1" />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
+                <RemoveItem />
+                <SpawnItem identifier="Spiritual_Water" spawnposition="SameInventory" Condition="0.0" />
+            </StatusEffect>
+        </Holdable>
+        <AiTarget sightrange="1000" static="true" />
+        <PreferredContainer primary="medcab" />
+    </Item>
+
 
 </Items>

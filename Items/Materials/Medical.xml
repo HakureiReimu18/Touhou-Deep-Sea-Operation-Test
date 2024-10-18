@@ -251,15 +251,14 @@
             <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
             <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="10">
-                <ReduceAffliction type="damage" amount="20" />
-                <ReduceAffliction type="burn" amount="20" />
-                <ReduceAffliction type="Phoenix_Burn" amount="35" />
+                <ReduceAffliction type="damage" amount="30" />
+                <ReduceAffliction type="burn" amount="30" />
+                <ReduceAffliction type="Phoenix_Burn" amount="50" />
                 <ReduceAffliction type="invertcontrols" amount="25" />
                 <ReduceAffliction type="bleeding" amount="30" />
                 <ReduceAffliction type="infection" amount="25" />
                 <ReduceAffliction type="triton_7L" amount="8" />
                 <ReduceAffliction type="tsm_bl" amount="8" />
-                <ReduceAffliction type="zlqy" amount="8" />
                 <ReduceAffliction type="nausea" amount="20" />
                 <ReduceAffliction type="Reiki_Side_Effect" amount="0.1" />
                 <ReduceAffliction type="debuff" amount="1" />

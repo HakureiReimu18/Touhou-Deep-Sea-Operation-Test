@@ -63,7 +63,7 @@
                 <Affliction identifier="lacerations" strength="7" probability="0.4" />
                 <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="bleeding" strength="16" />
-                <Affliction identifier="stun" strength="0.025" probability="0.8"/>
+                <Affliction identifier="stun" strength="0.025" probability="0.6"/>
             </Attack>
             <StatusEffect type="OnActive" target="This">
                 <ParticleEmitter particle="chainguntrail" copyentityangle="true" particlespersecond="50" initialdelay="0.05" colormultiplier="255,10,20,200" />
@@ -243,7 +243,7 @@
                 <Affliction identifier="burn" strength="10" />
                 <Affliction identifier="Reiki_Pressure" strength="4" />
                 <Affliction identifier="stun" strength="0.02" />
-                <Affliction identifier="stun" strength="0.2" probability="0.1" />
+                <Affliction identifier="stun" strength="0.15" probability="0.1" />
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="1.2">
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="105" anglemax="255" particleamount="3" velocitymin="200" velocitymax="600"
@@ -620,7 +620,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="40.0" damagedoors="true"  >
             <Attack structuredamage="200" itemdamage="100" levelwalldamage="200" severlimbsprobability="1" penetration="0.4">
-                <Affliction identifier="explosiondamage" strength="30" />
+                <Affliction identifier="explosiondamage" strength="40" />
                 <Affliction identifier="Reiki_Pressure" strength="20" />
                 <Affliction identifier="burn" strength="40" />
                 <Affliction identifier="stun" strength="0.75" />
@@ -721,6 +721,7 @@
             <Attack severlimbsprobability="0.4" penetration="0.7" maxtargetstohit="2">
                 <Affliction identifier="explosiondamage" strength="6" />
                 <Affliction identifier="acidburn" strength="6" />
+                <Affliction identifier="Touhou_Freeze" strength="6" />
                 <Affliction identifier="Reiki_Pressure" strength="6" />
                 <Affliction identifier="Touhou_Silent_Selene_Dream" strength="1" />
                 <Affliction identifier="stun" strength="0.1" />
@@ -744,6 +745,7 @@
                 <Explosion range="70.0" structuredamage="0" force="2.0" itemdamage="0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3" penetration="0.7">
                     <Affliction identifier="explosiondamage" strength="6" />
                     <Affliction identifier="acidburn" strength="6" />
+                    <Affliction identifier="Touhou_Freeze" strength="6" />
                     <Affliction identifier="Reiki_Pressure" strength="6" />
                 </Explosion>
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="4" velocitymin="300" velocitymax="600" scalemin="0.45" scalemax="0.9" colormultiplier="255,255,255,160" />
@@ -1667,7 +1669,7 @@
                 <Affliction identifier="Touhou_Freeze" strength="10" />
                 <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="stun" strength="0.02" />
-                <Affliction identifier="stun" strength="0.2" probability="0.1" />
+                <Affliction identifier="stun" strength="0.15" probability="0.1" />
             </Attack>
             <StatusEffect type="OnActive" target="This" disabledeltatime="true" lifetime="1.2">
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="105" anglemax="255" particleamount="3" velocitymin="200" velocitymax="600"

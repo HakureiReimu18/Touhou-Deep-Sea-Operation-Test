@@ -1147,9 +1147,9 @@
         <Effect minstrength="0" maxstrength="15" strengthchange="-1">
             <StatusEffect target="Character" disabledeltatime="true">
                 <ParticleEmitter particle="Touhou_Koishi_Unconscious" AngleMax="360" ScaleMultiplier="1,1" ParticlesPerSecond="8" ColorMultiplier="255,255,255,180"
-                                 Angle="-90" Distance="30" CopyEntityAngle="True" CopyTargetAngle="True" />
+                                 Angle="-90" Distance="25" CopyEntityAngle="True" CopyTargetAngle="True" />
                 <ParticleEmitter particle="Touhou_Koishi_Unconscious" AngleMax="360" ScaleMultiplier="1,1" ParticlesPerSecond="8" ColorMultiplier="255,255,255,180"
-                                 Angle="90" Distance="30" CopyEntityAngle="True" CopyTargetAngle="True" />
+                                 Angle="90" Distance="25" CopyEntityAngle="True" CopyTargetAngle="True" />
                 <ParticleEmitter particle="Touhou_Koishi_Unconscious" AngleMax="360" ScaleMultiplier="1,1" ParticlesPerSecond="8" ColorMultiplier="255,255,255,180"
                                  Angle="0" Distance="0" CopyEntityAngle="True" CopyTargetAngle="True" />
             </StatusEffect>
@@ -1270,6 +1270,7 @@
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="damage,bleeding,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
             <StatValue stattype="AttackMultiplier" value="0.25" />
+            <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Alice_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>

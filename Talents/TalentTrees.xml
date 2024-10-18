@@ -131,4 +131,144 @@
       </SubTree>
     </TalentTree>
 
+    <TalentTree jobidentifier="Yokai">
+      <SubTree identifier="Yousei_primary" nameidentifier="talenttree.Yousei_primary" type="primary">
+        <TalentOptions requiredtalents="2" maxchosentalents="4">
+          <TalentOption identifier="Talents_Yokai_Primary01"/>
+          <TalentOption identifier="Talents_Yokai_Primary02"/>
+          <TalentOption identifier="Talents_Yokai_Primary03"/>
+          <TalentOption identifier="Talents_Yokai_Primary04"/>
+        </TalentOptions>
+        <TalentOptions requiredtalents="2" maxchosentalents="4">
+          <TalentOption identifier="Talents_Yokai_Primary05"/>
+          <TalentOption identifier="Talents_Yokai_Primary06"/>
+          <TalentOption identifier="Talents_Yokai_Primary07"/>
+          <TalentOption identifier="Talents_Yokai_Primary08"/>
+        </TalentOptions>
+        <TalentOptions requiredtalents="2" maxchosentalents="4">
+          <TalentOption identifier="Talents_Yokai_Primary09"/>
+          <TalentOption identifier="Talents_Yokai_Primary10"/>
+          <TalentOption identifier="Talents_Yokai_Primary11"/>
+          <TalentOption identifier="Talents_Yokai_Primary12"/>
+        </TalentOptions>
+        <TalentOptions requiredtalents="2" maxchosentalents="4">
+          <TalentOption identifier="Talents_Yokai_Primary13"/>
+          <TalentOption identifier="Talents_Yokai_Primary14"/>
+          <TalentOption identifier="Talents_Yokai_Primary15"/>
+          <TalentOption identifier="Talents_Yokai_Primary16"/>
+        </TalentOptions>
+      </SubTree>
+      <!--幽灵/亡灵-->
+      <!--对应角色：魂魄妖梦-->
+      <SubTree identifier="Touhou_Youling_Wangling" type="specialization" requires="Yousei_primary"
+               blocks="Touhou_Yaoguai,Touhou_Yaoshou,Touhou_Vampire,Touhou_Tiangou,Touhou_Tianren_Xianren">
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Candy_Fun"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Candy_Fun"/>
+        </TalentOptions>
+        <TalentOptions requiredtalents="1" maxchosentalents="1">
+          <TalentOption identifier="Touhou_Insouciance"/>
+          <TalentOption identifier="Touhou_Emergency_Avoidance"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Lone_Yousei"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Candy_World"/>
+        </TalentOptions>
+      </SubTree>
+      <!--妖怪-->
+      <!--对应角色：风见幽香，封兽鵺，河城荷取，古明地恋-->
+      <SubTree identifier="Touhou_Yaoguai" type="specialization" requires="Yousei_primary"
+               blocks="Touhou_Youling_Wangling,Touhou_Yaoshou,Touhou_Vampire,Touhou_Tiangou,Touhou_Tianren_Xianren">
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Yousei_Alliance"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Behind_The_Mutation"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Cute_Prank"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Eastern_And_Little_Nature_Deity"/>
+        </TalentOptions>
+      </SubTree>
+      <!--妖兽-->
+      <!--对应角色：高丽野阿吽-->
+      <SubTree identifier="Touhou_Yaoshou" type="specialization" requires="Yousei_primary"
+               blocks="Touhou_Youling_Wangling,Touhou_YaoguaimTouhou_Vampire,Touhou_Tiangou,Touhou_Tianren_Xianren">
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Yousei_Alliance"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Behind_The_Mutation"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Cute_Prank"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Eastern_And_Little_Nature_Deity"/>
+        </TalentOptions>
+      </SubTree>
+      <!--吸血鬼-->
+      <!--对应角色：蕾米莉亚·斯卡雷特，芙兰朵露·斯卡雷特-->
+      <SubTree identifier="Touhou_Vampire" type="specialization" requires="Yousei_primary"
+               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Yaoshou,Touhou_Tiangou,Touhou_Tianren_Xianren">
+        <TalentOptions requiredtalents="1" maxchosentalents="1">
+          <TalentOption identifier="Touhou_Magical_Assistant"/>
+          <TalentOption identifier="Touhou_Self_Made"/>
+        </TalentOptions>
+        <TalentOptions requiredtalents="1" maxchosentalents="1">
+          <TalentOption identifier="Quiet_And_Well_Behaved"/>
+          <TalentOption identifier="Touhou_Vibrant"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Further_Study"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Child_Of_Nature"/>
+        </TalentOptions>
+      </SubTree>
+      <!--天狗-->
+      <!--对应角色：犬走椛，射命丸文-->
+      <SubTree identifier="Touhou_Tiangou" type="specialization" requires="Yousei_primary"
+               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Yaoshou,Touhou_Vampire,Touhou_Tianren_Xianren">
+        <TalentOptions requiredtalents="1" maxchosentalents="1">
+          <TalentOption identifier="Touhou_Magical_Assistant"/>
+          <TalentOption identifier="Touhou_Self_Made"/>
+        </TalentOptions>
+        <TalentOptions requiredtalents="1" maxchosentalents="1">
+          <TalentOption identifier="Quiet_And_Well_Behaved"/>
+          <TalentOption identifier="Touhou_Vibrant"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Further_Study"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Child_Of_Nature"/>
+        </TalentOptions>
+      </SubTree>
+      <!--天人/仙人-->
+      <SubTree identifier="Touhou_Tianren_Xianren" type="specialization" requires="Yousei_primary"
+               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Yaoshou,Touhou_Vampire,Touhou_Tiangou">
+        <TalentOptions requiredtalents="1" maxchosentalents="1">
+          <TalentOption identifier="Touhou_Magical_Assistant"/>
+          <TalentOption identifier="Touhou_Self_Made"/>
+        </TalentOptions>
+        <TalentOptions requiredtalents="1" maxchosentalents="1">
+          <TalentOption identifier="Quiet_And_Well_Behaved"/>
+          <TalentOption identifier="Touhou_Vibrant"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Further_Study"/>
+        </TalentOptions>
+        <TalentOptions>
+          <TalentOption identifier="Touhou_Child_Of_Nature"/>
+        </TalentOptions>
+      </SubTree>
+    </TalentTree>
+
   </TalentTrees>

@@ -1466,8 +1466,8 @@
                 <Affliction identifier="Touhou_Kappa_Multi_Functional_Tool_Effect02" amount="100" />
             </StatusEffect>
             <Attack structuredamage="0" itemdamage="4" targetimpulse="5">
-                <Affliction identifier="blunttrauma" strength="5" />
-                <Affliction identifier="lacerations" strength="5" />
+                <Affliction identifier="blunttrauma" strength="7" />
+                <Affliction identifier="lacerations" strength="3" />
                 <Affliction identifier="stun" strength="0.2" />
                 <StatusEffect type="OnUse" target="UseTarget">
                     <Conditional entitytype="eq Character"/>
@@ -1521,7 +1521,7 @@
                     <StatusEffect type="OnWearing" target="This,Contained,Character" Interval="5.0" Duration="5.0" targetslot="0" comparison="And">
                         <RequiredItem items="Touhou_Nuclear_Battery" type="Contained" />
                         <Conditional condition="gt 0"/>
-                        <Conditional IsOn="eq True"/>
+                        <Conditional HasTag="eq Tactical_Open"/>
                         <Affliction identifier="Nitori_Backpack_Tactical_Expansion_Effect02" amount="10" />
                     </StatusEffect>
                 </Containable>
@@ -1534,7 +1534,7 @@
                     <StatusEffect type="OnWearing" target="This,Contained,Character" Interval="5.0" Duration="5.0" targetslot="0" comparison="And">
                         <RequiredItem items="Touhou_Nuclear_Energy_Capacitor_Magazine" type="Contained" />
                         <Conditional condition="gt 0"/>
-                        <Conditional IsOn="eq True"/>
+                        <Conditional HasTag="eq Tactical_Open"/>
                         <Affliction identifier="Nitori_Backpack_Tactical_Expansion_Effect" amount="10" />
                     </StatusEffect>
                 </Containable>
@@ -1555,10 +1555,10 @@
             <StatusEffect type="OnWearing" target="Character" PressureProtection="4200.0" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
 
             <CustomInterface canbeselected="false" drawhudwhenequipped="true">
-                <GuiFrame relativesize="0.12,0.08" anchor="BottomRight" absoluteoffset="20,148" relativeoffset="0.1,0.1" style="ItemUI" />
-                <TickBox text="战术效果" IsOn="true">
-                    <StatusEffect type="OnUse" target="This" IsOn="true" />
-                    <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+                <GuiFrame relativesize="0.1,0.06" anchor="BottomRight" absoluteoffset="0,0" relativeoffset="0.18,0.0" style="ItemUI" />
+                <TickBox text="战术效果" >
+                    <StatusEffect type="OnUse" target="This" tags="Tactical_Open" setvalue="true" />
+                    <StatusEffect type="OnSecondaryUse" target="This" tags="Tactical_False" setvalue="true" />
                 </TickBox>
             </CustomInterface>
 
@@ -1636,5 +1636,38 @@
         <Quality>
             <QualityStat stattype="Condition" value="0.334" />
         </Quality>
+    </Item>
+
+    <!--人偶手提箱-->
+    <Item name="人偶手提箱" identifier="Touhou_Alice_Puppet_Suitcase" subcategory="Touhou" category="Equipment" tags="smallitem,Touhou_Alice_Puppet_Suitcase,backpack" scale="0.4" cargocontaineridentifier="metalcrate" description="HONK">
+        <PreferredContainer primary="crewcab" notcampaign="true"/>
+        <Price baseprice="1000" >
+            <Price storeidentifier="merchantoutpost" sold="false"/>
+            <Price storeidentifier="merchantcity" maxavailable="1"/>
+            <Price storeidentifier="merchantresearch" maxavailable="1" />
+            <Price storeidentifier="merchantmilitary" maxavailable="1"/>
+            <Price storeidentifier="merchantmine" maxavailable="" />
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="steel" amount="4" />
+            <Item identifier="organicfiber" amount="4" />
+            <Item identifier="plastic" amount="4" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="10" >
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="4"/>
+            <RequiredItem identifier="steel" amount="4"/>
+            <RequiredItem identifier="organicfiber" amount="4"/>
+            <RequiredItem identifier="plastic" amount="4"/>
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Alice_Puppet_Suitcase.png" sourcerect="0,0,140,120" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Alice_Puppet_Suitcase.png" sourcerect="0,0,140,120" depth="0.55" origin="0.5,0.5" />
+        <Body width="50" height="20" density="10" />
+        <Holdable slots="RightHand+LeftHand,Any" msg="ItemMsgPickUpSelect" />
+        <ItemContainer autofill="False" capacity="8" maxstacksize="64" slotsperrow="2">
+            <Containable identifiers="smallitem" excludeditems="backpack,crate" />
+            <!--            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />-->
+        </ItemContainer>
+        <aitarget soundrange="1" fadeouttime="5" />
     </Item>
 </Items>

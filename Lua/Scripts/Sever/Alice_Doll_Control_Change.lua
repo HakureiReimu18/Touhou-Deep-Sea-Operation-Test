@@ -58,7 +58,7 @@ end
 
 TLE.ItemMethods = {} -- with the identifier as the key
 
-TLE.ItemMethods.Touhou_Elixir_Of_Penglai = function(item, targetCharacter)
+TLE.ItemMethods.Touhou_Elixir_Of_Penglai = function(targetCharacter)
 
         if SERVER then
             local Deadclient = CharacterToClient(targetCharacter)

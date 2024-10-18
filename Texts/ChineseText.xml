@@ -102,7 +102,7 @@
   <entityname.Aya_News>‖color:255,255,255,255‖《文文。新闻》‖color:end‖</entityname.Aya_News>
   <entitydescription.Aya_News>‖color:255,255,255,255‖这新闻适合在无聊的午后，手端红茶，用来打发时间，因此能卖出一个好价钱‖color:end‖</entitydescription.Aya_News>
   <entityname.Aya_Circular_Fan>文文的团扇</entityname.Aya_Circular_Fan>
-  <entitydescription.Aya_Circular_Fan>枫叶形式的团扇，在鸦天狗中非常流行。</entitydescription.Aya_Circular_Fan>
+  <entitydescription.Aya_Circular_Fan>枫叶形式的团扇，在鸦天狗中非常流行。使用时需要‖color:gui.yellow‖红叶‖end‖</entitydescription.Aya_Circular_Fan>
   <entityname.Aya_Maple_Leaves>红叶</entityname.Aya_Maple_Leaves>
   <entitydescription.Aya_Maple_Leaves>团扇是起风的道具，一扇能刮倒屋子，二扇能刮倒大树，三扇能将旅人的斗篷吹飞。是天狗的武器。</entitydescription.Aya_Maple_Leaves>
   <!--Reimu-->
@@ -181,7 +181,7 @@
   <entitydescription.Touhou_Peach>来源不明的桃子，看上去甜美诱人，不知道吃下去会有什么效果</entitydescription.Touhou_Peach>
   <!--Weapon-->
   <entityname.Hakkero>‖color:255,255,0,255‖迷你八卦炉‖color:end‖</entityname.Hakkero>
-  <entitydescription.Hakkero>这是一个外观呈八棱柱形，正面绘有八卦图案，中间有洞口的迷你八卦炉，动力来源不明，但似乎必须塞进去什么才能正常工作……</entitydescription.Hakkero>
+  <entitydescription.Hakkero>这是一个外观呈八棱柱形，正面绘有八卦图案，中间有洞口的迷你八卦炉，动力来源不明。使用‖color:gui.yellow‖星星弹幕、星屑幻想或者星星罐‖end‖</entitydescription.Hakkero>
   <entityname.Star_Danmu>星星弹幕</entityname.Star_Danmu>
   <entitydescription.StarDanmu>迷你八卦炉的重要配件，放入后激活八卦炉（可以和电池一样充电）</entitydescription.StarDanmu>
   <entityname.Stardust_Reverie>星屑幻想</entityname.Stardust_Reverie>
@@ -193,7 +193,7 @@
   <entityname.Freeze_Icicle_Fall>冰晶</entityname.Freeze_Icicle_Fall>
   <entitydescription.Freeze_Icicle_Fall>一大块意义不明的冰块，里面隐约有一只青蛙？（放入雪球可以激活它，泡在水里可以恢复它的力量）</entitydescription.Freeze_Icicle_Fall>
   <entityname.Blunderbuss>喇叭枪</entityname.Blunderbuss>
-  <entitydescription.Blunderbuss>月球遗物，一把相当不稳定的枪，会伤到自己（蓄力使用，消耗两种月球遗物作为弹药）</entitydescription.Blunderbuss>
+  <entitydescription.Blunderbuss>月球遗物，一把相当不稳定的枪，会伤到自己（蓄力使用，消耗‖color:gui.yellow‖心灵震颤或者月狂之眼‖end‖）</entitydescription.Blunderbuss>
   <entityname.Mind_Bullet>心灵震颤</entityname.Mind_Bullet>
   <entitydescription.Mind_Bullet>月球遗物的仿制品，威力巨大‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Mind_Bullet>
   <entityname.Lunatic_Bullet>月狂之眼</entityname.Lunatic_Bullet>
@@ -236,7 +236,7 @@
   <entitydescription.Illness_Recovery_Charm>可以疗伤的守矢神社护符。（占用耳机槽位）</entitydescription.Illness_Recovery_Charm>
   <!--Alchemical-->
   <entityname.Touhou_Base_Metal>以太层金属</entityname.Touhou_Base_Metal>
-  <entitydescription.Touhou_Base_Metal>魔法金属的第一层次，可用于基础材料的合成，在木卫二军事上，这种魔法材料意外地被大量采用</entitydescription.Touhou_Base_Metal>
+  <entitydescription.Touhou_Base_Metal>魔法金属的第二阶段，可用于基础材料的合成，在木卫二军事上，这种魔法材料意外地被大量采用</entitydescription.Touhou_Base_Metal>
   <entityname.Mu_Alchemical>瓶装元素（木）</entityname.Mu_Alchemical>
   <entitydescription.Mu_Alchemical>一瓶提纯过的木元素，优秀的炼金产物</entitydescription.Mu_Alchemical>
   <!--Machine-->
@@ -516,7 +516,8 @@
   <entityname.Water_Element_Book>魔导书-水</entityname.Water_Element_Book>
   <entitydescription.Water_Element_Book>内置魔力的一次性魔导书，让新手也能轻松使用</entitydescription.Water_Element_Book>
   <entityname.Touhou_Concentrated_Energy_Arc_Emitter>聚能电弧发射器-手持型</entityname.Touhou_Concentrated_Energy_Arc_Emitter>
-  <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>河童们根据天子的要求，最后做出来的成品，虽然与理想中的“要石”有一些差距，但其便捷发射要石的功能很让她满意。只是在水下使用时常常会伤及自己……‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>
+  <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>河童们根据天子的要求，最后做出来的成品，虽然与理想中的“要石”有一些差距，但其便捷发射要石的功能很让她满意。只是在水下使用时常常会伤及自己……‖color:gui.orange‖（小心友伤）‖color:end‖
+  使用‖color:gui.yellow‖电能要石‖end‖。</entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>
   <entityname.Lightning_Kanameishi>电能要石</entityname.Lightning_Kanameishi>
   <entitydescription.Lightning_Kanameishi>在特殊天气下，一块被闪电注能的要石，可作为聚能电弧发射器的供能单元，也可以作为正常电池充电。\n“按理说，要石应该绝缘才对吧……”‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Lightning_Kanameishi>
   <entityname.Patchouli_Doll>帕秋莉人偶</entityname.Patchouli_Doll>
@@ -752,7 +753,7 @@
   <entityname.Touhou_Records_Box>唱片收纳箱</entityname.Touhou_Records_Box>
   <entitydescription.Touhou_Records_Box>可以收录大部分唱片。</entitydescription.Touhou_Records_Box>
   <entityname.Touhou_Rippling>涟漪</entityname.Touhou_Rippling>
-  <entitydescription.Touhou_Rippling>据说是神子借助木卫二上特殊灵异珠打造的一把武器，但手上这把显然是针对木卫二环境的改版，没有神子的风格。</entitydescription.Touhou_Rippling>
+  <entitydescription.Touhou_Rippling>据说是神子借助木卫二上特殊灵异珠打造的一把武器，但手上这把显然是针对木卫二环境的改版，没有神子的风格。放入‖color:gui.yellow‖灵异珠‖end‖可以发射特殊弹幕。</entitydescription.Touhou_Rippling>
   <afflictionname.Ancient_Sorrow_Terror>古老的哀愁与恐怖</afflictionname.Ancient_Sorrow_Terror>
   <afflictiondescription.Ancient_Sorrow_Terror>由内而发的消极情绪让你的精神开始不稳定</afflictiondescription.Ancient_Sorrow_Terror>
   <afflictionname.Expellees_Canaan_Small>山窝「遭放逐者的约定之地」</afflictionname.Expellees_Canaan_Small>
@@ -825,7 +826,7 @@
   <entityname.Camellia_Hair_Accessory>‖color:193,204,65,255‖山茶花发饰‖color:end‖</entityname.Camellia_Hair_Accessory>
   <entitydescription.Camellia_Hair_Accessory>美丽的山茶花发饰，制作上使用真花，因此完成度相当高。只要别上这个，健忘的毛病会完全改善。</entitydescription.Camellia_Hair_Accessory>
   <entityname.Touhou_Aya_Camera>‖color:255,255,255,255‖文文的相机‖color:end‖</entityname.Touhou_Aya_Camera>
-  <entitydescription.Touhou_Aya_Camera>一款老式相机，需要全手动操作，相比文文之前用的相机，它可以让被摄者不自主地摆出在镜头前的姿势，而不是消去弹幕。唯一的缺陷是对大体型敌人的定身时间较短。</entitydescription.Touhou_Aya_Camera>
+  <entitydescription.Touhou_Aya_Camera>一款老式相机，需要全手动操作，相比文文之前用的相机，它可以让被摄者不自主地摆出在镜头前的姿势，而不是消去弹幕。唯一的缺陷是对大体型敌人的定身时间较短。使用时消耗‖color:gui.yellow‖胶卷‖end‖。</entitydescription.Touhou_Aya_Camera>
   <entityname.Touhou_Aya_Maple_Film>胶卷</entityname.Touhou_Aya_Maple_Film>
   <entitydescription.Touhou_Aya_Maple_Film>古老的胶卷，但精湛的工艺让它在木卫二也能记录下重要影像，在魔法材料的作用下还多了定住敌人的效果。</entitydescription.Touhou_Aya_Maple_Film>
   <entityname.Sun_Flower_Seed>异常的太阳花种子</entityname.Sun_Flower_Seed>
@@ -853,9 +854,9 @@
   <entityname.Touhou_Laevatein>‖color:255,36,0,255‖莱瓦汀‖end‖</entityname.Touhou_Laevatein>
   <entitydescription.Touhou_Laevatein>整把剑燃烧不止，散发着比太阳还要明亮的光芒。这把剑的大小实在过于惊人，就算是吸血鬼也无法将其挥舞得非常迅速。\n莱瓦汀的每一次攻击都会附带微量的最大生命值上限的伤害——目之破坏，当目之破坏积累到100%后，必定死亡。</entitydescription.Touhou_Laevatein>
   <entityname.Touhou_Mysterious_Pearl_Rippling>灵异珠-波纹</entityname.Touhou_Mysterious_Pearl_Rippling>
-  <entitydescription.Touhou_Mysterious_Pearl_Rippling>散发着神秘气息的灵异珠，靠近能增强神秘力量，仔细看去，其中好像有一片湖泊，中央正有一只神似腕龙的脑袋探出水面。\n手持灵异珠可以解锁特定天赋。</entitydescription.Touhou_Mysterious_Pearl_Rippling>
+  <entitydescription.Touhou_Mysterious_Pearl_Rippling>散发着神秘气息的灵异珠，靠近能增强神秘力量，仔细看去，其中好像有一片湖泊，中央正有一只神似腕龙的脑袋探出水面。\n‖color:gui.yellow‖手持灵异珠可以解锁特定天赋。‖end‖</entitydescription.Touhou_Mysterious_Pearl_Rippling>
   <entityname.Touhou_Eternal_Night_Bow>永夜</entityname.Touhou_Eternal_Night_Bow>
-  <entitydescription.Touhou_Eternal_Night_Bow>模仿永琳的长弓所制作的一柄武器，威力更多取决于使用的箭矢。遗憾的是，模仿终究只是模仿。</entitydescription.Touhou_Eternal_Night_Bow>
+  <entitydescription.Touhou_Eternal_Night_Bow>模仿永琳的长弓所制作的一柄武器，威力更多取决于使用的箭矢。遗憾的是，模仿终究只是模仿。使用‖color:gui.yellow‖箭矢类‖end‖弹药。</entitydescription.Touhou_Eternal_Night_Bow>
   <entityname.Touhou_Magic_Metal_Arrow>魔箭</entityname.Touhou_Magic_Metal_Arrow>
   <entitydescription.Touhou_Magic_Metal_Arrow>由魔法金属制成的、最基础的魔箭，命中后可以有效限制对象的行动。</entitydescription.Touhou_Magic_Metal_Arrow>
   <entityname.Piece_gear>‖color:255,90,40,255‖皮丝装束‖end‖</entityname.Piece_gear>
@@ -970,7 +971,7 @@
   <entityname.Touhou_Brilliant_Dragon_Bullet>耀眼的龙玉</entityname.Touhou_Brilliant_Dragon_Bullet>
   <entitydescription.Touhou_Brilliant_Dragon_Bullet>一块散发魔力的玉石，似乎与蓬莱玉枝密切相关。</entitydescription.Touhou_Brilliant_Dragon_Bullet>
   <entityname.Touhou_Blue_Rose>湛蓝玫瑰-改</entityname.Touhou_Blue_Rose>
-  <entitydescription.Touhou_Blue_Rose>它是一种独特的转轮手枪，有着上下并排的两根枪管</entitydescription.Touhou_Blue_Rose>
+  <entitydescription.Touhou_Blue_Rose>它是一种独特的转轮手枪，有着上下并排的两根枪管。使用‖color:gui.yellow‖手炮子弹‖end‖或‖color:gui.yellow‖Color Up子弹‖end‖</entitydescription.Touhou_Blue_Rose>
   <entityname.Color_Up_Bullet>Color Up子弹</entityname.Color_Up_Bullet>
   <entitydescription.Color_Up_Bullet>一种非常特殊的高爆子弹，可以有效击晕小型敌人。</entitydescription.Color_Up_Bullet>
 
@@ -1233,7 +1234,9 @@
   <afflictionname.Nitori_Tools>水中的技工</afflictionname.Nitori_Tools>
   <afflictiondescription.Nitori_Tools>只有在同伴圈里，她才表现出开朗活泼的另一面。</afflictiondescription.Nitori_Tools>
   <afflictionname.Nitori_Backpack_Tactical_Expansion_Effect>光学「水迷彩」</afflictionname.Nitori_Backpack_Tactical_Expansion_Effect>
-  <afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect>些许提高出血抗性，略微减少debuff的持续时间，略微延长buff的持续时间，略微增强战斗性能。</afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect>
+  <afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect>些许提高出血抗性，略微减少debuff的持续时间，略微延长buff的持续时间，减少友军伤害，减少散布。</afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect>
+  <afflictionname.Nitori_Backpack_Tactical_Expansion_Effect02>光学「光学迷彩」</afflictionname.Nitori_Backpack_Tactical_Expansion_Effect02>
+  <afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect02>略微提高眩晕抗性和灵气紊乱抗性，恢复感染的伤口和灵气紊乱，减少友军伤害，增加移动速度。</afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect02>
   <afflictionname.Touhou_Friendship_Juice_Effect>友谊干杯</afflictionname.Touhou_Friendship_Juice_Effect>
   <afflictiondescription.Touhou_Friendship_Juice_Effect>减少友军伤害</afflictiondescription.Touhou_Friendship_Juice_Effect>
   <entityname.Touhou_Friendship_Juice>友谊果汁</entityname.Touhou_Friendship_Juice>
@@ -1296,8 +1299,6 @@
   <entitydescription.Youmu_Smgmagazine_Plus>幽冥弹匣的升级款，具备更强的穿透力，射弹也更加锐利</entitydescription.Youmu_Smgmagazine_Plus>
   <afflictionname.Touhou_Pendulum_Magic>灵摆魔力</afflictionname.Touhou_Pendulum_Magic>
   <afflictiondescription.Touhou_Pendulum_Magic>灵摆魔力让你的魔法能力更加充盈。</afflictiondescription.Touhou_Pendulum_Magic>
-  <afflictionname.Nitori_Backpack_Tactical_Expansion_Effect02>光学「光学迷彩」</afflictionname.Nitori_Backpack_Tactical_Expansion_Effect02>
-  <afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect02>略微提高眩晕抗性，恢复感染的伤口，增加移动速度。</afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect02>
   <entityname.Touhou_Scorching_Ray_Gun>‖color:red‖炽热的射线枪‖color:end‖</entityname.Touhou_Scorching_Ray_Gun>
   <entitydescription.Touhou_Scorching_Ray_Gun>河童们以藤原妹红的火焰为原型制造的武器，其中蕴含的炽热能量任谁都无法忽视。使用炽热核心作为弹药，填入燃料棒可以提升性能。</entitydescription.Touhou_Scorching_Ray_Gun>
   <entityname.Touhou_Scorching_Ray_Gun_Ammo>‖color:red‖炽热核心‖color:end‖</entityname.Touhou_Scorching_Ray_Gun_Ammo>
@@ -1326,5 +1327,8 @@
   </talentdescription.AliceTalent>
   <afflictionname.Alice_Weapons>布加勒斯特的人偶师</afflictionname.Alice_Weapons>
   <afflictiondescription.Alice_Weapons>爱丽丝对他人一点都不关心，却对魔法很执着，尽管外表看起来坚强却有着弱小的一面。她基本上不拘束于事物，性格上不固执不厌恶。她喜欢一个人独处，不过却常常参加宴会和在祭典上表演人偶剧。</afflictiondescription.Alice_Weapons>
-
+  <entityname.Touhou_Alice_Needle>爱丽丝的大缝衣针</entityname.Touhou_Alice_Needle>
+  <entitydescription.Touhou_Alice_Needle>通常来说，用来缝制人偶的针线应该很小，这根显然不是为了缝制人偶准备的</entitydescription.Touhou_Alice_Needle>
+  <entityname.Touhou_Alice_Puppet_Suitcase>人偶手提箱</entityname.Touhou_Alice_Puppet_Suitcase>
+  <entitydescription.Touhou_Alice_Puppet_Suitcase>爱丽丝用于容纳人偶的手提箱，可以保护里面的人偶远离木卫二冰冷的海水</entitydescription.Touhou_Alice_Puppet_Suitcase>
 </infotexts>

@@ -1436,10 +1436,10 @@
             minresistance="0.1" maxresistance="0.1"
             strengthchange="-3">
       <StatusEffect target="Character" Interval="5.0">
-        <ReduceAffliction type="infection" amount="2" />
-        <ReduceAffliction type="Reiki_Side_Effect" amount="1" />
+        <ReduceAffliction type="infection" amount="3" />
+        <ReduceAffliction type="Reiki_Side_Effect" amount="1.5" />
       </StatusEffect>
-      <StatValue stattype="TeamAttackMultiplier" value="-0.1" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.2" />
       <StatValue stattype="MovementSpeed" value="0.15" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Nitori_Backpack_Tactical_Expansion_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>

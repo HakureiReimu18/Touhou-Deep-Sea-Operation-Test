@@ -109,7 +109,7 @@
       </Abilities>
     </AbilityGroupEffect>
 
-    <!--过度放学拮抗-->
+    <!--过度放血拮抗-->
     <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
       <Conditions>
         <AbilityConditionHasTalent identifier="inordinateexsanguination" />

@@ -355,7 +355,7 @@
     </Item>
 
     <!--《魔法教学》-->
-    <Item name="" identifier="Touhou_Spell_Tutorial" tags="smallitem" subcategory="Touhou" category="Alien,Misc" cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.8" spritecolor="110,20,170,200" >
+    <Item name="" identifier="Touhou_Spell_Tutorial" tags="smallitem" subcategory="Touhou" category="Alien,Misc" cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.8">
         <Price baseprice="1000" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
             <Price storeidentifier="merchantcity" minavailable="8" />
