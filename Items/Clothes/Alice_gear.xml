@@ -45,7 +45,6 @@
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="1" probabilitymultiplier="0.9" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.9" />
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="5" />
-            <SkillModifier skillidentifier="weapons" skillvalue="10" />
 
             <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
             <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="true" overlaycolor="176,0,0,0" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="true">
@@ -106,14 +105,13 @@
             <sprite name="Right Shoe" texture="%ModDir%/Images/Alice_Clothes/Alice_Clothes.png" limb="RightFoot" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164" />
             <sprite name="Left Shoe" texture="%ModDir%/Images/Alice_Clothes/Alice_Clothes.png" limb="LeftFoot" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164" />      <!-- Resistance-->
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.9" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.9" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="1.05" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.8" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.85" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.85" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="1" probabilitymultiplier="0.85" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85" />
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="10" />
-            <SkillModifier skillidentifier="weapons" skillvalue="20" />
-            <SkillModifier skillidentifier="medical" skillvalue="-160" />
+            <SkillModifier skillidentifier="medical" skillvalue="10" />
 
             <StatusEffect type="OnWearing" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="AliceTalent" />

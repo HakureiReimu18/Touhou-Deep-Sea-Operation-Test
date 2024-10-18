@@ -172,7 +172,7 @@
     </Item>
 
     <!--非定向光线-->
-    <Item name="" identifier="Danmu04" category="Weapon" scale="0.5" sonarsize="1.5" hideinmenus="true" >
+    <Item name="" identifier="Danmu04" category="Weapon" tags="Touhou_Magic_Danmu" scale="0.5" sonarsize="1.5" hideinmenus="true" >
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
         <Body width="170" height="10" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -231,7 +231,7 @@
     </Item>
 
 <!--星星弹幕射弹-->
-    <Item name="" identifier="Danmu01" category="Misc" scale="0.7" sonarsize="2" hideinmenus="true">
+    <Item name="" identifier="Danmu01" category="Misc" tags="Touhou_Magic_Danmu" scale="0.7" sonarsize="2" hideinmenus="true">
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,84,82,82" depth="0.55" />
         <Body width="20" height="20" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -310,7 +310,7 @@
     </Item>
 
     <!--星屑幻想射弹-->
-    <Item name="" identifier="Danmu02" category="Misc" scale="0.9" sonarsize="4" hideinmenus="true">
+    <Item name="" identifier="Danmu02" category="Misc" tags="Touhou_Magic_Danmu" scale="0.9" sonarsize="4" hideinmenus="true">
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="226,226,72,72" depth="0.45" />
         <Body width="40" height="40" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -576,7 +576,7 @@
     </Item>
 
     <!--伊奘诺物质射弹-->
-    <Item name="" identifier="Amulet" category="Misc" scale="0.7" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Amulet" category="Misc" tags="Touhou_Magic_Danmu" scale="0.7" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Homing_Amulet.png" sourcerect="0,0,16,29" depth="0.55" />
         <Body width="12" height="21" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -683,7 +683,7 @@
     </Item>
 
 <!--雪球射弹-->
-    <Item name="" identifier="IceIce" category="Misc" scale="0.7" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="IceIce" category="Misc" tags="Touhou_Magic_Danmu" scale="0.7" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Icicle_Fall.png" sourcerect="0,156,90,21" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -777,7 +777,7 @@
 
 
     <!--冈格尼尔用的冈格尼尔-->
-    <Item name="" identifier="Gungnier_Spear" subcategory="Touhou" category="Weapon,Alien" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="Gungnier_Spear" subcategory="Touhou" category="Weapon,Alien" maxstacksize="12" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo,Touhou_Magic_Danmu" Scale="0.5" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="harpoongun" amount="6" spawnprobability="0.3" />
         <PreferredContainer primary="armcab" amount="6" spawnprobability="0.3" notcampaign="true" />
         <PreferredContainer secondary="outpostsecarmcab" minamount="1" maxamount="2" spawnprobability="0.3" />
@@ -899,7 +899,7 @@
 
 
     <!--冈格尼尔-->
-    <Item name="" identifier="Gungnier_Bolt" noninteractable="false" subcategory="Touhou" category="Weapon" hideinmenus="true" maxstacksize="1" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="mediumitem,harpoonammo" Scale="0.5" impactsoundtag="impact_metal_light">
+    <Item name="" identifier="Gungnier_Bolt" category="Weapon" hideinmenus="true" interactthroughwalls="true" tags="Touhou_Magic_Danmu" Scale="0.5" impactsoundtag="impact_metal_light">
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Remilia_Gungnier.png" sourcerect="542,0,224,75" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/OtherWeapons/Remilia_Gungnier.png" sourcerect="542,0,224,75" depth="0.55" origin="0.5,0.5" />
         <Body width="220" height="10" density="10" />
@@ -913,9 +913,9 @@
             <Attack structuredamage="666" itemdamage="666" LevelWallDamage="666" targetforce="30" targetimpulse="30" severlimbsprobability="1" penetration="0.66">
                 <Affliction identifier="Reiki_Pressure" strength="20" />
                 <Affliction identifier="Reiki_Pressure" strength="666" probability="0.01"/>
-                <Affliction identifier="bleeding" strength="130" />
+                <Affliction identifier="bleeding" strength="120" />
                 <Affliction identifier="Scarlet_Long_Night" strength="10" />
-                <Affliction identifier="lacerations" strength="180" />
+                <Affliction identifier="lacerations" strength="200" />
                 <Affliction identifier="bloodloss" strength="10" />
                 <Affliction identifier="stun" strength="3" />
             </Attack>
@@ -1088,7 +1088,7 @@
 
 
     <!--幽冥射弹-->
-    <Item name="" identifier="Youmu_Smground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="Youmu_Smground" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="Touhou_Magic_Danmu" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="217,0,48,27" epth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -1736,7 +1736,7 @@
     </Item>
 
     <!--红叶射弹-->
-    <Item name="" identifier="Aya_Maple_Leaves_Bolt" category="Misc" scale="0.7" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Aya_Maple_Leaves_Bolt" category="Misc" tags="Touhou_Magic_Danmu" scale="0.7" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Aya_Circular_Fan.png" sourcerect="79,0,47,47" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -1821,7 +1821,7 @@
             </StatusEffect>
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon weapondamagemodifier="1.77" barrelpos="70,20" spread="1" unskilledspread="28" reload="0.35" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="12">
+        <RangedWeapon weapondamagemodifier="1.77" barrelpos="70,20" spread="1" unskilledspread="28" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="12">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="91,0,210,210" scale="2.5"/>
             <StatusEffect type="OnUse" target="This">
@@ -1961,7 +1961,7 @@
     </Item>
 
     <!--木元素飞弹-->
-    <Item name="" identifier="Elements_Mu_Bolt" tags="Elements_Bolt" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Elements_Mu_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -2001,7 +2001,7 @@
     </Item>
 
     <!--火元素飞弹-->
-    <Item name="" identifier="Elements_Huo_Bolt" tags="Elements_Bolt" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Elements_Huo_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -2044,7 +2044,7 @@
     </Item>
 
     <!--土元素飞弹-->
-    <Item name="" identifier="Elements_Tu_Bolt" tags="Elements_Bolt" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Elements_Tu_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -2087,7 +2087,7 @@
     </Item>
 
     <!--金元素飞弹-->
-    <Item name="" identifier="Elements_Jin_Bolt" tags="Elements_Bolt" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Elements_Jin_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -2165,7 +2165,7 @@
     </Item>
 
     <!--水元素飞弹-->
-    <Item name="" identifier="Elements_Shui_Bolt" tags="Elements_Bolt" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Elements_Shui_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -2246,7 +2246,7 @@
     </Item>
 
     <!--烈阳飞弹-->
-    <Item name="" identifier="Elements_Yang_Bolt" tags="Elements_Bolt" category="Misc" scale="0.4" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Elements_Yang_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.4" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -2325,7 +2325,7 @@
     </Item>
 
     <!--皓月飞弹-->
-    <Item name="" identifier="Elements_Yin_Bolt" tags="Elements_Bolt" category="Misc" scale="0.4" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Elements_Yin_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.4" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -2645,7 +2645,7 @@
     </Item>
 
     <!--电能要石射弹-->
-    <Item name="" identifier="Lightning_Kanameishi_Bolt" category="Weapon" scale="0.85" sonarsize="0.75" hideinmenus="true">
+    <Item name="" identifier="Lightning_Kanameishi_Bolt" category="Weapon" tags="Touhou_Magic_Danmu" scale="0.85" sonarsize="0.75" hideinmenus="true">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Kanameishi.png" sourcerect="96,0,56,72" depth="0.45" />
         <Body width="28" height="36" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
@@ -3270,7 +3270,7 @@
     </Item>
 
     <!--电子御扎射弹-->
-    <Item name="" identifier="Touhou_Cyber_Homing_Amulet_Bolt" category="Misc" scale="0.2" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Touhou_Cyber_Homing_Amulet_Bolt" category="Misc" tags="Touhou_Magic_Danmu" scale="0.2" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Cyber_Homing_Amulet.png" sourcerect="0,0,146,56" origin="0.5,0.5" depth="0.46" />
         <Body width="146" height="28" density="10" />
         <LightComponent lightcolor="255,255,255,255" range="1" powerconsumption="0" flickerspeed="0.5" pulsefrequency="0" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
@@ -3386,7 +3386,7 @@
     </Item>
 
     <!--胶卷-->
-    <Item name="" identifier="Touhou_Aya_Maple_Film" tags="smallitem,round,ammo" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" maxstacksize="12" scale="0.15" HideConditionBar="true">
+    <Item name="" identifier="Touhou_Aya_Maple_Film" tags="smallitem,Touhou_Magic_Danmu" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" maxstacksize="12" scale="0.15" HideConditionBar="true">
         <Price baseprice="800" >
             <Price storeidentifier="merchantoutpost" minavailable="6"/>
             <Price storeidentifier="merchantcity" minavailable="6" />
@@ -3993,7 +3993,7 @@
     </Item>
 
     <!--完美雪花射弹01-->
-    <Item name="" identifier="Touhou_Perfect_Snowflake_Bolt01" tags="Touhou_Perfect_Snowflake_Bolt" category="Misc" scale="0.4" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Touhou_Perfect_Snowflake_Bolt01" tags="Touhou_Perfect_Snowflake_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.4" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Perfect_Snowflake.png" sourcerect="0,0,108,108" origin="0.5,0.5" depth="0.46" />
         <Body width="90" height="20" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -4026,7 +4026,7 @@
     </Item>
 
     <!--完美雪花射弹02-->
-    <Item name="" identifier="Touhou_Perfect_Snowflake_Bolt02" tags="Touhou_Perfect_Snowflake_Bolt" category="Misc" scale="0.4" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Touhou_Perfect_Snowflake_Bolt02" tags="Touhou_Perfect_Snowflake_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.4" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Perfect_Snowflake.png" sourcerect="0,0,108,108" origin="0.5,0.5" depth="0.46" />
         <Body width="90" height="20" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
@@ -4314,7 +4314,7 @@
     </Item>
 
     <!--火炎箭-->
-    <Item name="火炎箭" identifier="Touhou_Love_Maze_Arrow" category="Weapon" subcategory="Touhou" maxstacksize="12" hideinmenus="true"
+    <Item name="火炎箭" identifier="Touhou_Love_Maze_Arrow" category="Weapon" subcategory="Touhou" tags="Touhou_Magic_Danmu" maxstacksize="12" hideinmenus="true"
           interactthroughwalls="true" Scale="0.3" impactsoundtag="impact_metal_light">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Love_Maze_Arrow.png" sourcerect="0,0,192,48" depth="0.55" origin="0.5,0.5" />
         <Body width="220" height="20" density="10" />
@@ -4636,6 +4636,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="50" />
             <RequiredItem identifier="Reiki_Stone" amount="6" />
             <RequiredItem tag="munition_core" amount="3" />
+            <RequiredItem tag="steel" amount="3" />
             <RequiredItem identifier="Youmu_Smgmagazine_Plus" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Deconstruct time="3">
@@ -4672,7 +4673,7 @@
 
 
     <!--幽冥射弹01-->
-    <Item name="" identifier="Youmu_Smground_Plus01" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,Youmu_Smground_Plus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="Youmu_Smground_Plus01" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,Youmu_Smground_Plus,Touhou_Magic_Danmu" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="217,0,48,27" epth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -4702,7 +4703,7 @@
     </Item>
 
     <!--幽冥射弹02-->
-    <Item name="" identifier="Youmu_Smground_Plus02" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,Youmu_Smground_Plus" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
+    <Item name="" identifier="Youmu_Smground_Plus02" category="Weapon" interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem,Youmu_Smground_Plus,Touhou_Magic_Danmu" impactsoundtag="impact_metal_light" hideinmenus="true" scale="0.5">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="217,0,48,27" epth="0.55" origin="0.5,0.5" />
         <Body width="40" height="14" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
@@ -4730,4 +4731,146 @@
         </Projectile>
     </Item>
 
+    <!--缝衣针-->
+    <Item name="爱丽丝的大缝衣针" identifier="Touhou_Alice_Needle" category="Weapon" subcategory="Touhou"
+          Tags="mediumitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" scale="0.5" allowasextracargo="true" requireaimtouse="true" impactsoundtag="impact_metal_light">
+        <PreferredContainer primary="secarmcab" secondary="armcab"/>
+        <PreferredContainer secondary="wreckcrewcab,abandonedcrewcab" spawnprobability="0.1"/>
+        <Price baseprice="600" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1" />
+            <Price storeidentifier="merchantcity" multiplier="1" />
+            <Price storeidentifier="merchantresearch" multiplier="1" />
+            <Price storeidentifier="merchantmilitary" multiplier="1" />
+            <Price storeidentifier="merchantmine" multiplier="1" />
+        </Price>
+        <Deconstruct time="20">
+            <Item identifier="organicfiber" amount="2"/>
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="15">
+            <RequiredSkill identifier="Touhou_Magic" level="40" />
+            <RequiredSkill identifier="medical" level="20" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
+            <RequiredItem identifier="organicfiber" amount="2" />
+            <RequiredItem identifier="plastic" amount="2" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Needle.png" sourcerect="0,0,188,120" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Needle.png" sourcerect="0,0,212,90" depth="0.55" origin="0.5,0.5" />
+        <Body width="110" height="30" density="10" />
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-42,22" handle2="-2,20" holdangle="30" aimangle="10" reload="0.85" range="100"
+                     allowhitmultiple="true" combatPriority="10" msg="ItemMsgPickUpSelect">
+            <Attack targetimpulse="5" severlimbsprobability="0.5" itemdamage="10" penetration="0.1">
+                <Affliction identifier="Reiki_Pressure" strength="1" />
+                <Affliction identifier="lacerations" strength="15" />
+                <Affliction identifier="bleeding" strength="5" />
+                <Affliction identifier="stun" strength="0.2" probability="0.4" />
+                <StatusEffect type="OnUse" target="UseTarget">
+                    <Conditional entitytype="eq Character"/>
+                    <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                    <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                    <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                    <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                    <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                    <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+                </StatusEffect>
+            </Attack>
+            <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.4" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" comparison="And">
+                <Conditional speciesname="neq human" />
+                <Conditional speciesname="neq HumanTouhou_Tail" />
+                <Affliction identifier="lacerations" strength="8" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="2.0" setvalue="true" />
+            <RequiredSkill identifier="Touhou_Magic" level="40" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="2.0" />
+        </MeleeWeapon>
+        <Quality>
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.12" />
+        </Quality>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="Touhou_Magic" level="40" />
+    </Item>
+
+    <!--人偶手提箱-->
+    <Item name="人偶手提箱" identifier="Touhou_Alice_Puppet_Suitcase" subcategory="Touhou" category="Weapon" tags="smallitem,Touhou_Alice_Puppet_Suitcase" scale="0.5" cargocontaineridentifier="metalcrate" description="HONK">
+        <PreferredContainer primary="crewcab" notcampaign="true"/>
+        <Price baseprice="1000" >
+            <Price storeidentifier="merchantoutpost" sold="false"/>
+            <Price storeidentifier="merchantcity" minavailable="1"/>
+            <Price storeidentifier="merchantresearch" minavailable="1" />
+            <Price storeidentifier="merchantmilitary" sold="false" />
+            <Price storeidentifier="merchantmine" sold="false" />
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="steel" amount="4" />
+            <Item identifier="organicfiber" amount="4" />
+            <Item identifier="plastic" amount="4" />
+            <Item identifier="Score_Point" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="4"/>
+            <RequiredItem identifier="steel" amount="4"/>
+            <RequiredItem identifier="organicfiber" amount="4"/>
+            <RequiredItem identifier="plastic" amount="4"/>
+            <RequiredItem identifier="Score_Point" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Strange_Phone.png" sourcerect="0,0,64,84" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Strange_Phone.png" sourcerect="0,0,64,84" depth="0.55" origin="0.5,0.5" />
+        <Body width="50" height="20" density="10" />
+        <Holdable slots="RightHand+LeftHand" holdangle="-30" aimpos="5,30" handle1="-15,-3" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnBroken" target="NearbyCharacters" range="2000" disabledeltatime="true" AllowWhenBroken="true" >
+                <Conditional IsDead="false" />
+                <Affliction identifier="Touhou_Strange_Phone_Effect" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="15" stackable="false" />
+            <StatusEffect type="OnBroken" target="This">
+                <sound file="%ModDir%/Sounds/Weapons/Touhou_Strange_Phone_Sound_End.ogg" type="OnUse" range="500.0" loop="false" />
+            </StatusEffect>
+        </Holdable>
+        <Wearable limbtype="Torso" slots="LeftHand+Bag,RightHand+Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
+
+            <sprite name="Backpack Wearable" texture="%ModDir%/Images/Nitori_Clothes/Tools.png" limb="Torso" hidelimb="false" inheritlimbdepth="true"
+                    inherittexturescale="false" hideotherwearables="false" sourcerect="17,28,102,104" origin="0.75,0.57" scale="0.5" />
+
+            <StatusEffect type="OnWearing" target="Character" PressureProtection="4200.0" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
+
+            <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+                <GuiFrame relativesize="0.12,0.08" anchor="BottomRight" absoluteoffset="20,148" relativeoffset="0.5,0.1" style="ItemUI" />
+                <TickBox text="战术效果" IsOn="true">
+                    <StatusEffect type="OnUse" target="This" IsOn="true" Tags="Open" />
+                    <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" Tags="Off" />
+                </TickBox>
+            </CustomInterface>
+
+            <StatusEffect type="OnWearing" target="Character" >
+                <Conditional Candid_Friend="gt 0"/>
+                <Affliction identifier="Nitori_Tools" amount="50" />
+            </StatusEffect>
+
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.7" probabilitymultiplier="0.5" damagesound="LimbArmor" />
+            <SkillModifier skillidentifier="mechanical" skillvalue="10" />
+            <SkillModifier skillidentifier="electrical" skillvalue="10" />
+            <SkillModifier skillidentifier="weapons" skillvalue="10" />
+        </Wearable>
+        <RangedWeapon reload="1">
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true" AllowWhenBroken="true" />
+            <StatusEffect type="OnUse" target="This" condition="-100" delay="3.0" disabledeltatime="true" />
+
+            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                <!--电话铃声-->
+                <sound file="%ModDir%/Sounds/Weapons/Touhou_Strange_Phone_Sound.ogg" type="OnUse" range="2000.0" loop="false" />
+            </StatusEffect>
+        </RangedWeapon>
+        <aitarget soundrange="1" fadeouttime="5" />
+    </Item>
 </Items>

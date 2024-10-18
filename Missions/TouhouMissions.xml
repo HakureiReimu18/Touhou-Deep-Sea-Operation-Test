@@ -463,8 +463,8 @@
           difficulty="4"
           commonness="150"
           allowretry="true"
-          minleveldifficulty="10"
-          maxleveldifficulty="40"
+          minleveldifficulty="15"
+          maxleveldifficulty="50"
           unhideentitysubcategories="abandonedhuman">
     <Reputation identifier="separatists" amount="4" />
     <Reputation identifier="coalition" amount="4" />

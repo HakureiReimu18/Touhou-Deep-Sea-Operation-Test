@@ -1112,7 +1112,7 @@
   技能获取速度下降‖color:gui.red‖50%‖end‖。
   当你在水中时，增加‖color:gui.green‖20%‖end‖的‖color:gui.orange‖攻击速度‖end‖和‖color:gui.green‖20%‖end‖的‖color:gui.orange‖移动速度‖end‖，并持续治愈一些伤势。
   \n使用魔法近战武器时，每次攻击附带‖color:gui.green‖4~8‖end‖的点‖color:gui.orange‖冻结‖end‖，这个效果随着武器制作难度的不同会上升。
-  \n使用远程武器攻击半血以上的敌人时，每次攻击有‖color:gui.green‖25%‖end‖概率附带少量‖color:gui.orange‖冻结‖end‖。</talentdescription.CirnoTalent>
+  \n使用含魔法远程武器攻击半血以上的敌人时，每次攻击有‖color:gui.green‖35%‖end‖概率附带少量‖color:gui.orange‖冻结‖end‖。</talentdescription.CirnoTalent>
   <entityname.Touhou_Frozen_Frog>冻青蛙</entityname.Touhou_Frozen_Frog>
   <entitydescription.Touhou_Frozen_Frog>一块透着寒意的冰块，里面还封着一只青蛙。填入‖color:gui.yellow‖完美雪花‖end‖可以激活发射弹幕的能力。</entitydescription.Touhou_Frozen_Frog>
   <entityname.Touhou_Perfect_Snowflake>完美雪花</entityname.Touhou_Perfect_Snowflake>
@@ -1319,6 +1319,7 @@
     \n减少‖color:gui.green‖15%‖end‖‖color:gui.orange‖行走速度‖end‖。
     减少‖color:gui.green‖20%‖end‖‖color:gui.orange‖最大生命值‖end‖。
     减少‖color:gui.green‖35%‖end‖‖color:gui.orange‖近战伤害‖end‖。
+    \n造成的‖color:gui.yellow‖灵压‖end‖伤害增加‖color:gui.green‖15%‖end‖。
     \n可以制造并召唤‖color:gui.yellow‖人偶‖end‖。
     ‖color:gui.yellow‖人偶‖end‖在你身边会获得强化，增加抗性和攻击伤害。
     ‖color:gui.yellow‖常规人偶‖end‖持续时间不会超过3分钟

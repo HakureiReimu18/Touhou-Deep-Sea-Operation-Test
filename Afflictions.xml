@@ -1416,7 +1416,7 @@
             minresistance="0.3" maxresistance="0.3"
             strengthchange="-3">
       <StatusEffect target="Character" Interval="5.0">
-        <ReduceAffliction type="infection" amount="2" />
+        <ReduceAffliction type="infection" amount="2.5" />
         <ReduceAffliction type="Reiki_Side_Effect" amount="1" />
       </StatusEffect>
       <StatValue stattype="DebuffDurationMultiplier" value="-0.2" />

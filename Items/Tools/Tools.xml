@@ -1518,9 +1518,10 @@
                         <Conditional condition="lt 5.0" />
                         <Sound file="Content/Items/WarningBeepSlow.ogg" range="250" loop="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained,Character" Interval="5.0" Duration="5.0" targetslot="0">
+                    <StatusEffect type="OnWearing" target="This,Contained,Character" Interval="5.0" Duration="5.0" targetslot="0" comparison="And">
                         <RequiredItem items="Touhou_Nuclear_Battery" type="Contained" />
                         <Conditional condition="gt 0"/>
+                        <Conditional IsOn="eq True"/>
                         <Affliction identifier="Nitori_Backpack_Tactical_Expansion_Effect02" amount="10" />
                     </StatusEffect>
                 </Containable>
@@ -1530,9 +1531,10 @@
                         <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
                         <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained,Character" Interval="5.0" Duration="5.0" targetslot="0">
+                    <StatusEffect type="OnWearing" target="This,Contained,Character" Interval="5.0" Duration="5.0" targetslot="0" comparison="And">
                         <RequiredItem items="Touhou_Nuclear_Energy_Capacitor_Magazine" type="Contained" />
                         <Conditional condition="gt 0"/>
+                        <Conditional IsOn="eq True"/>
                         <Affliction identifier="Nitori_Backpack_Tactical_Expansion_Effect" amount="10" />
                     </StatusEffect>
                 </Containable>
@@ -1552,6 +1554,13 @@
 
             <StatusEffect type="OnWearing" target="Character" PressureProtection="4200.0" SpeedMultiplier="0.95" setvalue="true" disabledeltatime="true" />
 
+            <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+                <GuiFrame relativesize="0.12,0.08" anchor="BottomRight" absoluteoffset="20,148" relativeoffset="0.1,0.1" style="ItemUI" />
+                <TickBox text="战术效果" IsOn="true">
+                    <StatusEffect type="OnUse" target="This" IsOn="true" />
+                    <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
+                </TickBox>
+            </CustomInterface>
 
             <StatusEffect type="OnWearing" target="Character" >
                 <Conditional Candid_Friend="gt 0"/>

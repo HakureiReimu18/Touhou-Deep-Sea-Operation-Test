@@ -425,14 +425,14 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="110" height="30" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-        <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="2" damagedoors="true" friendlyfire="false" >
+        <Projectile characterusable="false" launchimpulse="40" maxtargetstohit="2" damagedoors="true" friendlyfire="false" >
             <Attack structuredamage="10" itemdamage="20" targetforce="5" targetimpulse="5" penetration="0.2">
                 <Affliction identifier="burn" strength="2" />
                 <Affliction identifier="Touhou_Bite" strength="3" />
                 <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="Sleepless_Nightmare" strength="5" />
-                <Affliction identifier="Reiki_Side_Effect" strength="2" />
-                <Affliction identifier="stun" strength="0.25" probability="0.5" />
+                <Affliction identifier="Reiki_Side_Effect" strength="1.5" />
+                <Affliction identifier="stun" strength="0.1" probability="0.5" />
             </Attack>
             <StatusEffect type="OnNotContained" target="This" lifetime="1.0">
                 <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="100" anglemin="0" anglemax="360" colormultiplier="255,200,100,220" />
@@ -453,7 +453,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="110" height="30" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-        <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="2" damagedoors="true" friendlyfire="false" >
+        <Projectile characterusable="false" launchimpulse="40" maxtargetstohit="2" damagedoors="true" friendlyfire="false" >
             <Attack structuredamage="20" itemdamage="20" targetforce="5" targetimpulse="5" penetration="0.25">
                 <Affliction identifier="lacerations" strength="3" />
                 <Affliction identifier="Touhou_Bite" strength="3" />

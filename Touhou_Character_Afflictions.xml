@@ -128,8 +128,10 @@
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional bleeding="gt 0"/>
                 <Conditional bitewounds="gt 0"/>
+                <Conditional Touhou_Bite="gt 0"/>
                 <Conditional psychosis="gt 0"/>
                 <Reduceaffliction identifier="bitewounds" amount="1" />
+                <Reduceaffliction identifier="Touhou_Bite" amount="2" />
                 <Reduceaffliction identifier="bleeding" amount="1.8" />
                 <Reduceaffliction type="psychosis" amount="1" />
             </StatusEffect>
@@ -495,7 +497,7 @@
     <!--不动的大图书馆-->
     <Affliction identifier="The_Still_Library" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,bloodloss,bleeding" minresistance="-0.1" maxresistance="-0.1" minbuffmultiplier="2.0" maxbuffmultiplier="2.0"
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,bloodloss,bleeding" minresistance="-0.15" maxresistance="-0.15" minbuffmultiplier="1.5" maxbuffmultiplier="1.5"
                 strengthchange="-9">
             <StatValue stattype="SwimmingSpeed" value="0.6" />
             <StatValue stattype="WalkingSpeed" value="-0.2" />
@@ -542,7 +544,7 @@
     <Affliction identifier="Patchouli_Weapons" type="Patchouli_Weapons" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" strengthchange="-9" resistancefor="damage,bloodloss,bleeding" minresistance="0.1" maxresistance="0.1">
-            <StatValue stattype="AttackMultiplier" value="0.35" />
+            <StatValue stattype="AttackMultiplier" value="0.25" />
             <StatValue stattype="MaximumHealthMultiplier" value="0.2" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Patchouli_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
@@ -1087,7 +1089,7 @@
     <!--冰雪聪明-->
     <Affliction identifier="Fairy_Of_Ice" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="-0.9" maxresistance="-0.9" strengthchange="-9">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="-0.75" maxresistance="-0.75" strengthchange="-9">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional InWater="true" />
                 <ReduceAffliction type="damage" strength="0.075" />
@@ -1115,7 +1117,7 @@
     <!--琪露诺-专属武器效果-->
     <Affliction identifier="Cirno_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.25" maxresistance="0.25" strengthchange="-9">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
             <StatValue stattype="AttackMultiplier" value="0.25" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Cirno_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
@@ -1260,13 +1262,13 @@
             <StatValue stattype="MeleeAttackMultiplier" value="-0.35" />
             <StatValue stattype="BuffDurationMultiplier" value="0.2" />
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/Fairy_Of_Ice.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Puppeteer_Of_Seven_Colors.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
     <!--爱丽丝-专属武器效果-->
     <Affliction identifier="Alice_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,bleeding" minresistance="0.25" maxresistance="0.25" strengthchange="-9">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,bleeding,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
             <StatValue stattype="AttackMultiplier" value="0.25" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Alice_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
