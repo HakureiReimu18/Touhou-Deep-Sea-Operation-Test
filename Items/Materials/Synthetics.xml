@@ -2,7 +2,7 @@
 <Items>
 
     <!--伊奘诺物质-->
-    <Item name="" identifier="Magic_Material" tags="smallitem,round,ammo" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.4" HideConditionBar="true">
+    <Item name="" identifier="Magic_Material" tags="smallitem,round,ammo,Touhou_Magic_Item" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.4" HideConditionBar="true">
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="5" spawnprobability="0.3" />
         <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="5" spawnprobability="0.3" />
         <PreferredContainer primary="ruintreasure" minamount="2" maxamount="5" spawnprobability="0.5" />
@@ -51,7 +51,7 @@
     </Item>
 
     <!--雪球-->
-    <Item name="" identifier="Mc_SnowBall" tags="smallitem,round,ammo" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="9" scale="0.4" HideConditionBar="true">
+    <Item name="" identifier="Mc_SnowBall" tags="smallitem,round,ammo,Touhou_Magic_Item" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="9" scale="0.4" HideConditionBar="true">
         <Price baseprice="99" >
             <Price storeidentifier="merchantoutpost" minavailable="3"/>
             <Price storeidentifier="merchantcity" minavailable="3" />
@@ -85,7 +85,7 @@
     </Item>
 
     <!--灵石-->
-    <Item name="" identifier="Reiki_Stone" tags="smallitem" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.4" HideConditionBar="true">
+    <Item name="" identifier="Reiki_Stone" tags="smallitem,Touhou_Magic_Item" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.4" HideConditionBar="true">
         <PreferredContainer primary="medcontainer" spawnprobability="0.02"/>
         <PreferredContainer secondary="outpostmedcompartment" minamount="4" maxamount="18" spawnprobability="0.2" />
         <PreferredContainer secondary="supplycab,wreckstoragecab" minamount="10" maxamount="20" spawnprobability="0.05" notcampaign="true"/>
@@ -120,7 +120,7 @@
     </Item>
 
     <!--灵水-->
-    <Item name="" identifier="Spiritual_Water" tags="smallitem,Spiritual_Water" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="4" scale="0.4">
+    <Item name="" identifier="Spiritual_Water" tags="smallitem,Spiritual_Water,Touhou_Magic_Item" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="4" scale="0.4">
         <PreferredContainer primary="medcab" secondary="medcontainer" spawnprobability="0.02"/>
         <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.02" />
         <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.05" notcampaign="true"/>
@@ -158,7 +158,7 @@
     </Item>
 
     <!--灵尘-->
-    <Item name="" identifier="Reiki_Dust" tags="smallitem" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.15" HideConditionBar="true">
+    <Item name="" identifier="Reiki_Dust" tags="smallitem,Touhou_Magic_Item" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.15" HideConditionBar="true">
         <PreferredContainer primary="medcab" secondary="medcontainer"/>
         <PreferredContainer secondary="outpostmedcompartment" amount="12" spawnprobability="0.06" />
         <PreferredContainer secondary="supplycab" minamount="12" maxamount="18" spawnprobability="0.15" notcampaign="true"/>
@@ -187,7 +187,7 @@
     </Item>
 
     <!--灵尘（结块）-->
-    <Item name="" identifier="Reiki_Dust_Caking" tags="smallitem" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.15" HideConditionBar="true">
+    <Item name="" identifier="Reiki_Dust_Caking" tags="smallitem,Touhou_Magic_Item" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.15" HideConditionBar="true">
         <PreferredContainer primary="storagecab" />
         <PreferredContainer secondary="outpostmedcompartment" amount="16" spawnprobability="0.08" />
         <PreferredContainer secondary="supplycab" minamount="8" maxamount="18" spawnprobability="0.1" notcampaign="true"/>

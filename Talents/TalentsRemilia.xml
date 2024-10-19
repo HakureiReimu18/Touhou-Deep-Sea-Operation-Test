@@ -65,9 +65,10 @@
       <Conditions>
         <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
         <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Ranged"/>
+        <AbilityConditionAttackResult afflictions="bleeding" targettypes="Any"/>
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding"  addedmultiplier="-0.75" />
+        <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.666" />
       </Abilities>
     </AbilityGroupEffect>
 
@@ -96,16 +97,6 @@
       </Conditions>
       <Abilities>
         <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" replacewith="Touhou_Bite" addedmultiplier="-0.334" />
-      </Abilities>
-    </AbilityGroupEffect>
-
-    <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
-      <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
-        <AbilityConditionHasAffliction afflictionidentifier="Demon_King_Cradle" />
-      </Conditions>
-      <Abilities>
-        <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" addedmultiplier="0.666" />
       </Abilities>
     </AbilityGroupEffect>
 

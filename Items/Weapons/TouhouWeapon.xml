@@ -3584,7 +3584,7 @@
                 <Affliction identifier="stun" strength="0.25" />
                 <Affliction identifier="stun" strength="0.2" probability="0.4" />
             </Attack>
-            <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
+            <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" >
                 <Conditional entitytype="eq Character" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.75" />
                 <Affliction identifier="Sleepless_Nightmare" strength="10" probability="0.5" />
@@ -4636,7 +4636,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="50" />
             <RequiredItem identifier="Reiki_Stone" amount="6" />
             <RequiredItem tag="munition_core" amount="3" />
-            <RequiredItem tag="steel" amount="3" />
+            <RequiredItem identifier="steel" amount="3" />
             <RequiredItem identifier="Youmu_Smgmagazine_Plus" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Deconstruct time="3">

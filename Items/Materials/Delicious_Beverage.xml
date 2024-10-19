@@ -586,7 +586,7 @@
     <!--红莓酒-->
     <Item identifier="Touhou_Berry_Wine" subcategory="Touhou" category="Misc,medical" Tags="smallitem"
           cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft" impacttolerance="5.5">
-        <Sprite texture="%ModDir%/Images/Materials/Touhou_Berry_Wine.png" depth="0.2" sourcerect="0,0,88,100" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Berry_Wine.png" depth="0.2" sourcerect="0,0,72,100" origin="0.5,0.5" />
         <Body width="88" height="100" density="10" />
         <Price baseprice="200" sold="false">
             <Price storeidentifier="merchantoutpost" />

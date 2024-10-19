@@ -511,7 +511,7 @@
         <Description tag="talentdescription.Touhou_Vibrant"/>
         <AbilityGroupInterval interval="9.9">
             <Abilities>
-                <CharacterAbilityApplyStatusEffectsToAllies allowself="false" jobs="Magician" insameroom="true">
+                <CharacterAbilityApplyStatusEffectsToAllies allowself="true" jobs="Magician" insameroom="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                             <Affliction identifier="Touhou_Vibrant_Effect" amount="1.0"/>

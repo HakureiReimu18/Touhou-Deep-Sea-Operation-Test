@@ -2,7 +2,7 @@
 <Items>
 
     <!--植物精油-->
-    <Item name="" identifier="Plant_Essential_Oil" tags="smallitem,medical" subcategory="Touhou" category="Alien,medical" cargocontaineridentifier="metalcrate" maxstacksize="32"
+    <Item name="" identifier="Plant_Essential_Oil" tags="smallitem,medical,Touhou_Magic_Item" subcategory="Touhou" category="Alien,medical" cargocontaineridentifier="metalcrate" maxstacksize="32"
           scale="0.5" HideConditionBar="true" useinhealthinterface="true" RequireAimToUse="True">
         <PreferredContainer primary="medcab" secondary="medcontainer" minamount="6" maxamount="12" spawnprobability="1" />
         <PreferredContainer secondary="supplycab,medfabcab" minamount="1" maxamount="8" spawnprobability="0.4" notcampaign="true"/>
@@ -95,7 +95,7 @@
 
 
     <!--欧罗巴浸剂-->
-    <Item name="" identifier="Europa_Infusion" tags="smallitem,chem,medical,syringe" subcategory="Touhou" category="Alien,medical" cargocontaineridentifier="metalcrate"
+    <Item name="" identifier="Europa_Infusion" tags="smallitem,chem,medical,syringe,Touhou_Magic_Item" subcategory="Touhou" category="Alien,medical" cargocontaineridentifier="metalcrate"
           maxstacksizecharacterinventory="16" maxstacksize="32" scale="0.5" HideConditionBar="true" useinhealthinterface="true" RequireAimToUse="True">
         <PreferredContainer primary="medcab" secondary="medcontainer" minamount="1" maxamount="3" spawnprobability="0.2" />
         <PreferredContainer secondary="supplycab" minamount="1" maxamount="2" spawnprobability="0.1" notcampaign="true"/>
@@ -201,7 +201,7 @@
     </Item>
 
     <!--基列香膏-->
-    <Item name="" identifier="Balm_Of_Gilead" tags="smallitem,medical" subcategory="Touhou" category="Alien,medical" cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8"
+    <Item name="" identifier="Balm_Of_Gilead" tags="smallitem,medical,Touhou_Magic_Item" subcategory="Touhou" category="Alien,medical" cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8"
           scale="0.15" useinhealthinterface="true" RequireAimToUse="True">
         <PreferredContainer primary="medcab" secondary="medcontainer" amount="1" spawnprobability="0.03" />
         <PreferredContainer secondary="wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.03" />

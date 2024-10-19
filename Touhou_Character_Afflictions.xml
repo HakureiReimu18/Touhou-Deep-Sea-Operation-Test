@@ -379,7 +379,7 @@
             <StatValue stattype="MovementSpeed" value="-0.25" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.35" />
             <StatValue stattype="SkillGainSpeed" value="1" />
-            <StatValue stattype="MedicalItemEffectivenessMultiplier" value="0.25" />
+            <StatValue stattype="MedicalItemApplyingMultiplier" value="0.25" />
             <StatValue stattype="DeconstructorSpeedMultiplier" value="0.25" />
             <StatValue stattype="FabricationSpeed" value="0.25" />
             <StatValue stattype="MeleeAttackMultiplier" value="-0.25" />
@@ -503,10 +503,9 @@
             <StatValue stattype="WalkingSpeed" value="-0.2" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.3" />
             <StatValue stattype="SkillGainSpeed" value="0.5" />
-            <StatValue stattype="MedicalItemEffectivenessMultiplier" value="0.1" />
+            <StatValue stattype="MedicalItemApplyingMultiplier" value="0.1" />
             <StatValue stattype="MeleeAttackMultiplier" value="-1" />
             <StatValue stattype="BuffDurationMultiplier" value="0.5" />
-            <StatValue stattype="AttackMultiplier" value="0.05" />
             <!--给予在陆地上不能奔跑效果-->
             <StatusEffect type="NotInWater" target="Character" comparison="And" >
                 <Conditional Touhou_MEID_Effect="eq 0"/>

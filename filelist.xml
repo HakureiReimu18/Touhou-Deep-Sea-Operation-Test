@@ -2,6 +2,7 @@
 <contentpackage name="东方潜渊行动组测试" modversion="1.0.4" corepackage="False" gameversion="1.0.21.0">
   <Text file="%ModDir%/Texts/ChineseText.xml" />
   <Text file="%ModDir%/Texts/ChineseFactionText.xml" />
+  <Text file="%ModDir%/Texts/ChineseJobText.xml" />
   <Text file="%ModDir%/Texts/EnglishText.xml" />
   <Jobs file="%ModDir%/Jobs.xml" />
   <Item file="%ModDir%/Items/ItemsGeneral.xml" />
@@ -63,6 +64,7 @@
   <Afflictions file="%ModDir%/Mod_Compatible_Afflictions.xml" />
   <Afflictions file="%ModDir%/Magician_Afflictions.xml" />
   <Afflictions file="%ModDir%/Yousei_Afflictions.xml" />
+  <Afflictions file="%ModDir%/Yokai_Afflictions.xml" />
   <!--Missions-->
   <Missions  file="%ModDir%/Missions/TouhouMissions.xml" />
   <!--Faction-->
@@ -117,11 +119,12 @@
   <Talents file="%ModDir%/Talents/TalentsFlandre.xml" />
   <Talents file="%ModDir%/Talents/TalentsNue.xml" />
   <Talents file="%ModDir%/Talents/TalentsPiece.xml" />
-  <Talents file="%ModDir%/Talents/TalentsMagician.xml" />
-  <Talents file="%ModDir%/Talents/TalentsYousei.xml" />
   <Talents file="%ModDir%/Talents/TalentsCirno.xml" />
   <Talents file="%ModDir%/Talents/TalentsKoishi.xml" />
   <Talents file="%ModDir%/Talents/TalentsAlice.xml" />
+  <Talents file="%ModDir%/Talents/TalentsMagician.xml" />
+  <Talents file="%ModDir%/Talents/TalentsYousei.xml" />
+  <Talents file="%ModDir%/Talents/TalentsYokai.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <!--Sounds-->
   <Sounds file="%ModDir%/Sounds/BGM/Music_Override.xml" />

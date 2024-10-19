@@ -346,7 +346,7 @@
         <Body width="60" height="60" density="15" />
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" launchimpulse="0" damagedoors="true">
-            <Attack structuredamage="500" itemdamage="500" severlimbsprobability="5" penetration="0.9" targetforce="1000">
+            <Attack structuredamage="0" itemdamage="0" severlimbsprobability="5" penetration="0.9" targetforce="1000">
                 <Affliction identifier="explosiondamage" strength="200" />
             </Attack>
             <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true"/>

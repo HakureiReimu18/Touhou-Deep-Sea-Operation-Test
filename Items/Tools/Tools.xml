@@ -1509,7 +1509,8 @@
                 <Containable items="Touhou_Nuclear_Battery,Touhou_Nuclear_Energy_Capacitor_Magazine" />
                 <Containable items="Touhou_Nuclear_Battery">
                     <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0" />
-                    <StatusEffect type="OnWearing" target="Contained" Condition="-0.01" comparison="And">
+                    <StatusEffect type="OnWearing" target="This,Contained" Condition="-0.01" comparison="And">
+                        <Conditional HasTag="eq Tactical_Open"/>
                         <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />
                         <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
                         <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
@@ -1526,7 +1527,8 @@
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Nuclear_Energy_Capacitor_Magazine">
-                    <StatusEffect type="OnWearing" target="Contained" Condition="-0.02" comparison="And">
+                    <StatusEffect type="OnWearing" target="This,Contained" Condition="-0.02" comparison="And">
+                        <Conditional HasTag="eq Tactical_Open"/>
                         <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />
                         <Conditional TargetContainer="true" TargetGrandparent="true" DecreasedOxygenConsumption="lt 99" />
                         <Conditional TargetContainer="true" TargetGrandparent="true" NeedsAir="true" />
@@ -1646,7 +1648,7 @@
             <Price storeidentifier="merchantcity" maxavailable="1"/>
             <Price storeidentifier="merchantresearch" maxavailable="1" />
             <Price storeidentifier="merchantmilitary" maxavailable="1"/>
-            <Price storeidentifier="merchantmine" maxavailable="" />
+            <Price storeidentifier="merchantmine" maxavailable="1" />
         </Price>
         <Deconstruct time="10">
             <Item identifier="steel" amount="4" />
