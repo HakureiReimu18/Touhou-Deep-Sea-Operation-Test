@@ -18,8 +18,8 @@
     <Skills>
       <Skill identifier="Touhou_Magic" level="35,40" primary="true"/>
       <Skill identifier="medical" level="25,35"/>
-      <Skill identifier="weapons" level="20,30"/>
-      <Skill identifier="helm" level="20,35"/>
+      <Skill identifier="weapons" level="15,25"/>
+      <Skill identifier="helm" level="20,30"/>
       <Skill identifier="mechanical" level="5,15"/>
       <Skill identifier="electrical" level="5,15"/>
     </Skills>

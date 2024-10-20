@@ -945,7 +945,7 @@
   <Affliction name="" identifier="Touhou_Magic_Boost" description="" type="resistance" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="300"
               affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Magic_Boost" minstrength="0" maxstrength="300"/>
-    <Effect minstrength="0" maxstrength="150" strengthchange="-1" minskillmultiplier="1.0" maxskillmultiplier="1.209"
+    <Effect minstrength="0" maxstrength="150" strengthchange="-1" minskillmultiplier="1.0" maxskillmultiplier="1.109"
             resistancefor="burn,bleeding,damage,stun" minresistance="0" maxresistance="0.1" >
       <StatusEffect target="Character" Interval="1.0" Duration="1.0" >
         <Conditional skillrequirement="true" Touhou_Magic="gt 60" />
@@ -954,7 +954,7 @@
         <ReduceAffliction type="burn" strength="0.1" />
       </StatusEffect>
     </Effect>
-    <Effect minstrength="150" maxstrength="300" strengthchange="-1" minskillmultiplier="1.2" maxskillmultiplier="1.409"
+    <Effect minstrength="150" maxstrength="300" strengthchange="-1" minskillmultiplier="1.1" maxskillmultiplier="1.409"
             resistancefor="burn,bleeding,damage,alieninfection,poison,paralysis,stun" minresistance="0.1" maxresistance="0.25">
       <StatusEffect target="Character" Interval="1.0" Duration="1.0" >
         <Conditional skillrequirement="true" Touhou_Magic="gt 60"/>

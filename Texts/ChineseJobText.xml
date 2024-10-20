@@ -162,7 +162,7 @@
         ‖color:gui.orange‖打捞货物、护送人员‖end‖：‖color:gui.green‖15%‖end‖；
         ‖color:gui.orange‖清理怪物、清理巢穴‖end‖：‖color:gui.green‖20%‖end‖；
         ‖color:gui.orange‖清理遗迹、扫描遗迹‖end‖：‖color:gui.green‖25%‖end‖；
-        ‖color:gui.orange‖恢复信标站、清剿海盗、废弃站点：‖color:gui.green‖30%</talentdescription.Talents_Yokai_Primary02>
+        ‖color:gui.orange‖恢复信标站、清剿海盗、废弃站点‖end‖：‖color:gui.green‖30%</talentdescription.Talents_Yokai_Primary02>
     <talentname.Talents_Yokai_Primary03>商业头脑</talentname.Talents_Yokai_Primary03>
     <talentdescription.Talents_Yokai_Primary03>完成任务获得的金钱额外增加‖color:gui.green‖8%‖end‖，如果巡回内‖color:gui.red‖无人死亡‖end‖，额外获得‖color:gui.green‖4%‖end‖。</talentdescription.Talents_Yokai_Primary03>
     <talentname.Talents_Yokai_Primary04>中坚力量</talentname.Talents_Yokai_Primary04>
@@ -245,22 +245,22 @@
     <talentname.Touhou_Yaoguai01>隐秘传说</talentname.Touhou_Yaoguai01>
     <talentdescription.Touhou_Yaoguai01>受到药物治疗的效果提高‖color:gui.green‖25%‖end‖。一段时间没有受到攻击后，提高‖color:gui.green‖10%‖end‖移动速度‖end‖，减少‖color:gui.green‖10%‖end‖受到的伤害。受到攻击后解除这个效果。</talentdescription.Touhou_Yaoguai01>
     <talentname.Touhou_Yaoguai02>妖人两立</talentname.Touhou_Yaoguai02>
-    <talentdescription.Touhou_Yaoguai02>对人类目标造成额外‖color:gui.green‖20%‖end‖的伤害，受到人类造成的伤害增加‖color:gui.green‖10%‖end‖。</talentdescription.Touhou_Yaoguai02>
+    <talentdescription.Touhou_Yaoguai02>对人类目标造成额外‖color:gui.green‖20%‖end‖的伤害，受到人类造成的伤害增加‖color:gui.green‖10%‖end‖。下蹲时，更难被敌人察觉。</talentdescription.Touhou_Yaoguai02>
     <talentname.Touhou_Yaoguai03>刀枪不入</talentname.Touhou_Yaoguai03>
     <talentdescription.Touhou_Yaoguai03>增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖，受到攻击后略微增加自身的‖color:gui.orange‖精神病‖end‖。
         ‖color:gui.orange‖精神病‖end‖越高，‖color:gui.orange‖物理伤害抗性‖end‖越低，最低‖color:gui.green‖3%‖end‖。</talentdescription.Touhou_Yaoguai03>
     <talentname.Touhou_Yaoguai04>双星伴月</talentname.Touhou_Yaoguai04>
     <talentdescription.Touhou_Yaoguai04>如果周围没有其它船员，提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度、攻击伤害、debuff抗性‖end‖。解锁配方：‖color:gui.orange‖月震‖end‖</talentdescription.Touhou_Yaoguai04>
     <talentname.Touhou_Yaoguai05>生存法则</talentname.Touhou_Yaoguai05>
-    <talentdescription.Touhou_Yaoguai05>等级大于15‖end‖后，免疫水压。
-        穿着‖color:gui.red‖幽香装束+‖end‖时：增加15%最大生命值，弱小的生物会主动远离你
+    <talentdescription.Touhou_Yaoguai05>等级大于‖color:gui.green‖15‖end‖后，免疫水压。
+        穿着‖color:gui.red‖幽香装束+‖end‖时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖最大生命值‖end‖，弱小的生物会主动远离你
         穿着‖color:gui.red‖鵺 装束+‖end‖时：攻击额外附加‖color:gui.yellow‖长眠不醒的噩梦‖end‖。杀死目标时，会在目标的尸体上发生一次爆炸，让小范围内的所有生物受到‖color:gui.yellow‖长眠不醒的噩梦‖end‖影响
         穿着‖color:gui.red‖荷取装束+‖end‖时：加快水中恢复伤势的速度，在水中时额外增加‖color:gui.green‖10%‖end‖的‖color:gui.orange‖出血抗性和烧伤抗性‖end‖
         穿着‖color:gui.red‖恋 装束+‖end‖时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖移动速度‖end‖。如果并未处于‖color:gui.yellow‖无意识‖end‖状态，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖</talentdescription.Touhou_Yaoguai05>
     <talentname.Touhou_Yaoguai06>“魑魅魍魉”</talentname.Touhou_Yaoguai06>
     <talentdescription.Touhou_Yaoguai06>缓慢治愈自身的‖color:gui.orange‖精神病‖end‖。奔跑一定时间后，些许增加下一次攻击的伤害。那之后有‖color:gui.green‖15‖end‖秒冷却。
         穿着‖color:gui.red‖幽香装束+‖end‖时：大大增幅每种花瓣的效果
-        穿着‖color:gui.red‖鵺 装束+‖end‖时：当你完成四个阶段的计数后，增加‖color:gui.green‖110%‖end‖‖color:gui.orange‖攻击速度‖end‖。免疫‖color:gui.orange‖长眠不醒的噩梦和古老的哀愁与恐怖‖end‖
+        穿着‖color:gui.red‖鵺 装束+‖end‖时：当你完成四个阶段的计数后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击速度‖end‖。免疫‖color:gui.orange‖长眠不醒的噩梦和古老的哀愁与恐怖‖end‖
         穿着‖color:gui.red‖荷取装束+‖end‖时：额外增加‖color:gui.green‖30%‖end‖的‖color:gui.orange‖修复速度和船体修复速度‖end‖。生命值大于50%‖end‖时，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖，否则增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖攻击伤害‖end‖
         穿着‖color:gui.red‖恋 装束+‖end‖时：不会受到‖color:gui.orange‖水流冲击‖end‖的影响，‖color:gui.orange‖游泳速度‖end‖增加‖color:gui.green‖30%‖end‖</talentdescription.Touhou_Yaoguai06>
     <talentname.Touhou_Yaoguai07>巫山云雨</talentname.Touhou_Yaoguai07>
@@ -279,13 +279,13 @@
     <talentname.Touhou_Vampire03>过度出血</talentname.Touhou_Vampire03>
     <talentdescription.Touhou_Vampire03>对人类造成的‖color:gui.yellow‖出血和失血‖end‖提高‖color:gui.green‖15%‖end‖。对‖color:gui.yellow‖出血‖end‖越高的敌人，造成的伤害越高，最高‖color:gui.green‖25%‖end‖</talentdescription.Touhou_Vampire03>
     <talentname.Touhou_Vampire04>嗜血传说</talentname.Touhou_Vampire04>
-    <talentdescription.Touhou_Vampire04>‖color:gui.orange‖远程攻击速度‖end‖增加‖color:gui.green‖110%‖end‖，‖color:gui.orange‖近战攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害‖end‖增加‖color:gui.green‖20%‖end‖，这个效果在水中减半。
+    <talentdescription.Touhou_Vampire04>‖color:gui.orange‖远程攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖近战攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害‖end‖增加‖color:gui.green‖20%‖end‖，这个效果在水中减半。
         穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖和‖color:gui.green‖15%‖end‖‖color:gui.orange‖最大生命值‖end‖
         穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖烧伤抗性‖end‖，生命值大于‖color:gui.green‖50%‖end‖时，提高‖color:gui.green‖50%‖end‖‖color:gui.orange‖精神病抗性‖end‖，增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖</talentdescription.Touhou_Vampire04>
     <talentname.Touhou_Vampire05>恶魔之躯</talentname.Touhou_Vampire05>
     <talentdescription.Touhou_Vampire05>增加‖color:gui.green‖15%‖end‖debuff抗性和毒药抗性‖end‖。
         穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：免疫常规的‖color:gui.orange‖外星感染‖end‖，包括‖color:gui.red‖画皮共生体‖end‖。血量低于‖color:gui.green‖50%‖end‖时，一定时间内提高‖color:gui.green‖30%‖end‖‖color:gui.orange‖攻击伤害‖end‖
-        穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：大大加快‖color:gui.yellow‖噬咬和咬伤‖end‖的恢复速度。根据当前‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖10%‖end‖增加‖color:gui.orange‖最大生命值‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限</talentdescription.Touhou_Vampire05>
+        穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：大大加快‖color:gui.yellow‖噬咬和咬伤‖end‖的恢复速度。根据当前‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖10%‖end‖增加‖color:gui.orange‖最大生命值‖end‖和‖color:gui.orange‖医疗水平‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限</talentdescription.Touhou_Vampire05>
     <talentname.Touhou_Vampire06>禁忌梦魇</talentname.Touhou_Vampire06>
     <talentdescription.Touhou_Vampire06>免疫‖color:gui.yellow‖伤口感染‖end‖。杀死任意生物时，有‖color:gui.green‖50%‖end‖概率治愈自身的‖color:gui.yellow‖噬咬和烧伤‖end‖
         穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：使用‖color:gui.orange‖优质B型血‖end‖后，造成的出血伤害额外增加‖color:gui.green‖66.6%‖end‖

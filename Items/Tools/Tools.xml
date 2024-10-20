@@ -1651,22 +1651,22 @@
             <Price storeidentifier="merchantmine" maxavailable="1" />
         </Price>
         <Deconstruct time="10">
-            <Item identifier="steel" amount="4" />
-            <Item identifier="organicfiber" amount="4" />
-            <Item identifier="plastic" amount="4" />
+            <Item identifier="steel" amount="3" />
+            <Item identifier="organicfiber" amount="3" />
+            <Item identifier="plastic" amount="3" />
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="10" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="4"/>
-            <RequiredItem identifier="steel" amount="4"/>
-            <RequiredItem identifier="organicfiber" amount="4"/>
-            <RequiredItem identifier="plastic" amount="4"/>
+            <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
+            <RequiredItem identifier="steel" amount="3"/>
+            <RequiredItem identifier="organicfiber" amount="3"/>
+            <RequiredItem identifier="plastic" amount="3"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Alice_Puppet_Suitcase.png" sourcerect="0,0,140,120" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Alice_Puppet_Suitcase.png" sourcerect="0,0,140,120" depth="0.55" origin="0.5,0.5" />
         <Body width="50" height="20" density="10" />
         <Holdable slots="RightHand+LeftHand,Any" msg="ItemMsgPickUpSelect" />
-        <ItemContainer autofill="False" capacity="8" maxstacksize="64" slotsperrow="2">
+        <ItemContainer autofill="False" capacity="12" maxstacksize="64" slotsperrow="3">
             <Containable identifiers="smallitem" excludeditems="backpack,crate" />
             <!--            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />-->
         </ItemContainer>
