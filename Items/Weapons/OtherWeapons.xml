@@ -479,7 +479,7 @@
             <Attack structuredamage="4000" itemdamage="4000" LevelWallDamage="4000" stun="3" targetforce="100" targetimpulse="100" penetration="1" severlimbsprobability="10">
                 <Affliction identifier="gunshotwound" strength="300" />
                 <Affliction identifier="Reiki_Pressure" strength="10" />
-                <Affliction identifier="gunshotwound" strength="1500" probability="0.1" />
+                <Affliction identifier="gunshotwound" strength="1500" probability="0.15" />
                 <Affliction identifier="Magic_Destruction" strength="8" />
                 <Affliction identifier="stun" strength="12" probability="0.5" />
             </Attack>
@@ -489,8 +489,8 @@
                 <Explosion range="5.0" force="6.0" shockwave="true" smoke="true" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="50" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
-                <Affliction identifier="Magic_Destruction" strength="10"/>
-                <Affliction identifier="Magic_Destruction" strength="50" probability="0.15" />
+                <Affliction identifier="Magic_Destruction" strength="16"/>
+                <Affliction identifier="Magic_Destruction" strength="32" probability="0.15" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" >
                 <Conditional entitytype="eq Structure" />

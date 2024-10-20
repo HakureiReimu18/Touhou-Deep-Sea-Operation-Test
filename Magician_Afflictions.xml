@@ -126,6 +126,22 @@
     </Affliction>
 
     <Affliction
+            identifier="Gensokyo_Divinggear_Unlocked_Effect04"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            duration="5.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="TeamAttackMultiplier" value="-0.15" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Younger_Sister_Of_Scarlet.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <Affliction
             identifier="Magic_Breakthrough_Effect01"
             type="talentbuff"
             isbuff="true"

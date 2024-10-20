@@ -61,17 +61,6 @@
       </Abilities>
     </AbilityGroupEffect>
 
-    <AbilityGroupEffect abilityeffecttype="OnAttack">
-      <Conditions>
-        <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
-        <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Ranged"/>
-        <AbilityConditionAttackResult afflictions="bleeding" targettypes="Any"/>
-      </Conditions>
-      <Abilities>
-        <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.666" />
-      </Abilities>
-    </AbilityGroupEffect>
-
     <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
       <Conditions>
         <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />

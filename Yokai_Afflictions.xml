@@ -179,9 +179,9 @@
             maxstrength="10"
             hideiconafterdelay="true"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="10" minskillmultiplier="1.5" maxskillmultiplier="1.5" strengthchange="-1" >
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="1.0" maxresistance="1.0" minskillmultiplier="1.5" maxskillmultiplier="1.5" strengthchange="-1" >
             <StatusEffect target="Character">
-                <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="1" anglemin="0" anglemax="360" ColorMultiplier="255,55,205,255"
+                <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="15" anglemin="0" anglemax="360" ColorMultiplier="255,55,205,255"
                                  velocitymin="100" velocitymax="250" scalemin="0.2" scalemax="0.3" drawontop="true" />
             </StatusEffect>
             <AbilityFlag flagtype="AlwaysStayConscious" />
@@ -567,7 +567,25 @@
             duration="10.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" >
-            <StatValue stattype="AttackMultiplier" value="0.3" />
+            <StatusEffect target="Character" Interval="1.0" Duration="1.0">
+                <ReduceAffliction type="bleeding" strength="1.0" />
+            </StatusEffect>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Vampire05_Effect_Flandre"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="10.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" >
+            <Reduceaffliction identifier="bitewounds" amount="0.4" />
+            <Reduceaffliction identifier="Touhou_Bite" amount="0.4" />
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
@@ -582,6 +600,24 @@
             duration="10.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="infection" minresistance="1.0" maxresistance="1.0" />
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Vampire06_Treatment_Effect"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="1.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"  >
+            <StatusEffect target="Character" >
+                <Reduceaffliction identifier="Touhou_Bite" amount="6" />
+                <Reduceaffliction identifier="burn" amount="8" />
+            </StatusEffect>
+        </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 

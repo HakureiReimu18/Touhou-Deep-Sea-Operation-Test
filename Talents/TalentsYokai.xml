@@ -1,6 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Talents>
 
+    <!--亡灵/幽灵天赋分支 选择此分支后，不可再解锁其它分支。对应角色：魂魄妖梦-->
+    <Talent identifier="Yokai_Select_Youling_Wangling">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Yokai_Select_Youling_Wangling"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select" min="1" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveTalentPoints amount="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--妖怪天赋分支 选择此分支后，不可再解锁其它分支。对应角色：风见幽香，封兽鵺，河城荷取，古明地恋-->
+    <Talent identifier="Yokai_Select_Yaoguai">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Yokai_Select_Yaoguai"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select" min="1" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveTalentPoints amount="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--吸血鬼天赋分支 选择此分支后，不可再解锁其它分支。对应角色：蕾米莉亚·斯卡雷特，芙兰朵露·斯卡雷特-->
+    <Talent identifier="Yokai_Select_Vampire">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Yokai_Select_Yaoguai"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select" min="1" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveTalentPoints amount="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--妖兽/兽人天赋分支 选择此分支后，不可再解锁其它分支。对应角色：高丽野阿吽-->
+    <Talent identifier="Yokai_Select_Yaoshou">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Yokai_Select_Yaoshou"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select" min="1" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveTalentPoints amount="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--天狗天赋分支 选择此分支后，不可再解锁其它分支。对应角色：射命丸文，犬走椛-->
+    <Talent identifier="Yokai_Select_Tiangou">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Yokai_Select_Yaoshou"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select" min="1" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveTalentPoints amount="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--天人/仙人天赋分支 选择此分支后，不可再解锁其它分支。对应角色：比那名居天子-->
+    <Talent identifier="Yokai_Select_Tianren_Xianren">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Yokai_Select_Yaoshou"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select" min="1" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveTalentPoints amount="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--天赋停摆 切勿随意点击，分支最后的天赋，解锁此天赋后，其他分支将无法解锁-->
+    <Talent identifier="Touhou_Yokai_Talents_Locked">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Yokai_Talents_Locked"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select" min="1" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveTalentPoints amount="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
     <!--格物致知 增加15%技能获取速度，生命值大于60%时，这个效果翻倍-->
     <Talent identifier="Talents_Yokai_Primary01">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
@@ -475,12 +580,12 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Youling_Wangling01_CD" invert="true"/>
-                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="NoWeapon,Melee"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffectsToAttacker>
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" delay="0.1" disabledeltatime="true">
+                        <StatusEffect type="OnAbility" target="Character" targetlimb="Head" delay="0.1" disabledeltatime="true">
                             <Affliction identifier="Touhou_Freeze" amount="15.0"/>
                             <Affliction identifier="psychosis" amount="10.0"/>
                         </StatusEffect>
@@ -518,6 +623,9 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
+                <AbilityConditionHasTalent identifier="Touhou_Yokai_Talents_Locked" invert="true" />
+            </Conditions>
+            <Conditions>
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional MaxHealth="lte 600"/>
@@ -528,6 +636,9 @@
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasTalent identifier="Touhou_Yokai_Talents_Locked" invert="true" />
+            </Conditions>
             <Conditions>
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionCharacter targettype="Enemy">
@@ -1066,8 +1177,8 @@
     <!--“魑魅魍魉” 缓慢治愈自身的精神病。奔跑一定时间后，些许增加下一次攻击的伤害。那之后有5秒冷却。
     穿着幽香装束+时：大大增幅每种花瓣的效果
     穿着鵺 装束+时：当你完成四个阶段的计数后，增加10%攻击速度。免疫长眠不醒的噩梦和古老的哀愁与恐怖
-    穿着荷取装束+时：额外增加30%的修复速度和船体修复速度。生命值大于50%时，增加10%物理伤害抗性，否则增加10%攻击伤害。
-    穿着恋 装束+时：不会受到水流冲击的影响，游泳速度增加30%-->
+    穿着荷取装束+时：额外增加30%的修复速度和船体修复速度。生命值大于50%时，增加10%物理伤害抗性，否则增加20%攻击伤害。
+    穿着恋 装束+时：不会受到水流冲击的影响，游泳速度增加50%-->
     <Talent identifier="Touhou_Yaoguai06">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yaoguai06"/>
@@ -1189,7 +1300,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
             <FallbackAbilities>
-                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1" />
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.2" />
             </FallbackAbilities>
         </AbilityGroupInterval>
         <!--恋-->
@@ -1199,7 +1310,7 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveStat stattype="FlowResistance" value="1.0"/>
-                <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.3"/>
+                <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.5"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -1398,7 +1509,7 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityGivePermanentStat stattype="LockedTalents" statidentifier="Touhou_Yaoguai01" targetallies="false" setvalue="true" />
+                <CharacterAbilityGivePermanentStat stattype="LockedTalents" statidentifier="Touhou_Yaoguai01" setvalue="true" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -1489,7 +1600,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--嗜血传说 近战攻击速度增加20%，攻击伤害增加20%，这个效果在水中减半。
+    <!--嗜血传说 远程攻击速度增加10%，近战攻击速度增加10%，攻击伤害增加20%，这个效果在水中减半。
     穿着蕾米莉亚装束+时：增加10%物理伤害抗性和15%最大生命值
     穿着芙兰朵露装束+时：增加15%烧伤抗性，生命值大于50%时，提高50%精神病抗性，增加50%技能获取速度-->
     <Talent identifier="Touhou_Vampire04">
@@ -1497,8 +1608,8 @@
         <Description tag="talentdescription.Touhou_Vampire04"/>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.1"/>
-                <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.1"/>
+                <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.05"/>
+                <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.05"/>
                 <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -1507,8 +1618,8 @@
                 <AbilityConditionInWater invert="true" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.1"/>
-                <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.1"/>
+                <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.05"/>
+                <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.05"/>
                 <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -1570,7 +1681,7 @@
 
     <!--恶魔之躯 增加15%debuff抗性和毒药抗性。
     穿着蕾米莉亚装束+时：免疫常规的外星感染，包括画皮共生体。血量低于50%时，一定时间内提高30%攻击伤害
-    穿着芙兰朵露装束+时：根据当前魔法能力水平的10%增加最大生命值。这个效果在魔法能力超过300时达到上限-->
+    穿着芙兰朵露装束+时：大大加快噬咬和咬伤的恢复速度。根据当前魔法能力水平的10%增加最大生命值。这个效果在魔法能力超过300时达到上限-->
     <Talent identifier="Touhou_Vampire05">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Vampire05"/>
@@ -1634,10 +1745,24 @@
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.3" />
             </Abilities>
         </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character">
+                            <Affliction identifier="Touhou_Vampire05_Effect_Flandre" amount="10" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
-    <!--禁忌梦魇 免疫伤口感染。
-    穿着蕾米莉亚装束+时：使用优质B型血后，造成的出血伤害额外增加66.6%
+    <!--禁忌梦魇 免疫伤口感染。杀死任意生物时，有50%概率治愈自身的噬咬和烧伤
+    穿着蕾米莉亚装束+时：使用优质B型血后，造成的出血伤害额外增加66.6%。
     穿着芙兰朵露装束+时：增加10%物理伤害抗性。你也享有优质B型血的额外效果：提供极速、代谢缓慢和活力换发效果-->
     <Talent identifier="Touhou_Vampire06">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
@@ -1653,6 +1778,41 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+
+        <!--击杀治疗噬咬和烧伤-->
+        <AbilityGroupEffect abilityeffecttype="OnRoundEnd">
+            <Abilities>
+                <CharacterAbilityResetPermanentStat statidentifier="Touhou_Vampire06_Kill" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Touhou_Vampire06_Kill" value="0" setvalue="true" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval Interval="0.9">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Vampire06_Kill" min="1" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Vampire06_Treatment_Effect" amount="10" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityGivePermanentStat statidentifier="Touhou_Vampire06_Kill" value="-1" />
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+            <Conditions>
+                <AbilityConditionServerRandom randomchance="0.5" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Touhou_Vampire06_Kill" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
         <!--蕾米莉亚-->
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>

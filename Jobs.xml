@@ -96,7 +96,7 @@
           AllowAlways="true"
           pricemultiplier="1"
           VitalityModifier="10"
-          uicolor="0.7,0.5,0.5,1"
+          uicolor="0.9,0.5,0.5,1"
           idlebehavior="Active"
           hiddenjob="false">
     <Jobicon>
