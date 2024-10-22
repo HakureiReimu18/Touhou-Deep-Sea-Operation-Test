@@ -623,7 +623,7 @@
   <talentname.MomiziTalent>山中的千里眼</talentname.MomiziTalent>
   <talentdescription.MomiziTalent>当你身着 椛装束+ 时，对咬伤和噬咬的抗性更高。
     \n最大生命值提高‖color:gui.green‖30%‖end‖。
-    \n当附近有敌人时，你会得到警戒并提升‖color:gui.green‖20%‖end‖行走速度、‖color:gui.green‖10%‖end‖游泳速度和‖color:gui.green‖30%‖end‖近战攻击速度。
+    \n当附近有敌人时，你会得到警戒并提升‖color:gui.green‖15%‖end‖行走速度、‖color:gui.green‖10%‖end‖游泳速度和‖color:gui.green‖15%‖end‖近战攻击速度。
     \n当你受到攻击后，会短暂提升物理伤害抗性和‖color:gui.green‖40%‖end‖近战攻击伤害。</talentdescription.MomiziTalent>
   <!--幽香的天赋可能会进一步调整-->
   <talentname.AunnTalent>醉心神佛的守护神兽</talentname.AunnTalent>
@@ -726,7 +726,7 @@
     在加工台将《东方求闻口授》《东方求闻史纪》《文文。新闻》合成‖color:gui.red‖《东方求闻渊识》‖end‖，你阅读这本书时可以获得完整加成效果。
     \n完成巡回后获额外‖color:gui.green‖50%‖end‖经验。
     技能获取速度增加‖color:gui.green‖100%‖end‖。
-    增加‖color:gui.green‖25%‖end‖使用医疗物品的效果。
+    增加‖color:gui.green‖15%‖end‖使用医疗物品的效果。
     增加‖color:gui.green‖25%‖end‖自己使用加工台和解构仪的速度。
     \n减少‖color:gui.green‖25%‖end‖移动速度和‖color:gui.green‖35%‖end‖最大生命值。
     近战攻击伤害减少‖color:gui.green‖25%‖end‖。

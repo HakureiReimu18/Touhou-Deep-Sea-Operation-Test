@@ -754,7 +754,7 @@
     <Item name="文文的信物" identifier="Touhou_Aya_Token" category="Misc" subcategory="Touhou" maxstacksize="32" tags="smallitem" scale="0.35" cargocontaineridentifier="metalcrate" description="">
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Aya_Token.png" sourcerect="0,0,108,108" depth="0.55" />
         <Body width="96" height="96" density="10" />
-        <Fabricate suitablefabricators="fabricator" requiredtime="4" >
+        <Fabricate suitablefabricators="fabricator" requiredtime="4" requiresrecipe="true" >
             <RequiredItem identifier="Aya_Press_Card" />
             <RequiredItem identifier="Aya_News" />
             <RequiredItem identifier="Aya_Maple_Leaves" />

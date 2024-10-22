@@ -191,7 +191,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--中坚力量 增加10%修复速度和10%船体修复速度。等级大于6后，这个效果翻倍-->
+    <!--中坚力量 增加10%修复速度和10%船体修复速度。等级大于8后，这个效果翻倍-->
     <Talent identifier="Talents_Yokai_Primary04">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yokai_Primary04"/>
@@ -203,7 +203,7 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">
             <Conditions>
-                <AbilityConditionHasLevel minlevel="6" />
+                <AbilityConditionHasLevel minlevel="8" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveStat stattype="RepairSpeed" value="0.1"/>
@@ -294,13 +294,13 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--风行水上 增加20%的游泳速度，在开放海域额外增加20%-->
+    <!--风行水上 增加15%的游泳速度，在开放海域额外增加20%-->
     <Talent identifier="Talents_Yokai_Primary09">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yokai_Primary09"/>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.2"/>
+                <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.15"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">
@@ -313,7 +313,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--分花拂柳 增加10%的行走速度，周围有其他生物时，这个效果翻倍-->
+    <!--分花拂柳 增加5%的行走速度，周围有其他生物时，这个效果翻倍-->
     <Talent identifier="Talents_Yokai_Primary10">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yokai_Primary10"/>
@@ -322,12 +322,12 @@
                 <AbilityConditionNearbyCharacterCount distance="500" targettypes="Any" count="1"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="WalkingSpeed" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="WalkingSpeed" value="0.05"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityGiveStat stattype="WalkingSpeed" value="0.1"/>
+                <CharacterAbilityGiveStat stattype="WalkingSpeed" value="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -394,7 +394,7 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAllMissionsCompleted">
             <Conditions>
-                <AbilityConditionNoCrewDied />
+                <AbilityConditionNoCrewDied invert="true" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityPutItem itemidentifier="antibloodloss2" amount="1"/>
@@ -423,7 +423,7 @@
     <!--异变源头 每杀死一个生物，增加1点计数。计数到达不同阶段将给予不同效果：
     200：增加10%最大生命值。
     400：些许加快物理伤害、出血的恢复。
-    600：增加15%的攻击伤害-->
+    600：增加10%的攻击伤害-->
     <Talent identifier="Talents_Yokai_Primary15" trackedstat="Yokai_Counter" trackedmax="600">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yokai_Primary15"/>
@@ -562,7 +562,7 @@
 
     <!--幽灵/亡灵-->
 
-    <!--若隐若现 怪物对你的索敌距离略微减小，提高15%物理伤害抗性。受到攻击后，会对攻击者造成少量冻结和精神病，这个效果有3秒冷却。-->
+    <!--若隐若现 怪物对你的索敌距离略微减小，提高10%物理伤害抗性。受到攻击后，会对攻击者造成少量冻结和精神病，这个效果有3秒冷却。-->
     <Talent identifier="Touhou_Youling_Wangling01">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Youling_Wangling01"/>
@@ -800,13 +800,13 @@
     </Talent>
 
     <!--轮回忘却 根据魔法能力的10%增加其他技能水平，这个效果在魔法能力超过300时达到上限
-    穿着妖梦装束+时：增加20%近战伤害，根据武器操作水平，提高相应10%的最大生命值-->
+    穿着妖梦装束+时：增加20%近战伤害，根据武器操作水平，提高相应10%的最大生命值。这个效果在武器操作超过300时达到上限-->
     <Talent identifier="Touhou_Youling_Wangling06">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Youling_Wangling06"/>
         <AbilityGroupInterval interval="0.5">
             <Conditions>
-                <AbilityConditionHasSkill skillidentifier="electrical" minvalue="300" invert="true" />
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" invert="true" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="HelmSkillBonus" maxvalue="0.1" skillidentifier="Touhou_Magic" />
@@ -834,9 +834,19 @@
         <AbilityGroupInterval interval="0.5">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple" />
+                <AbilityConditionHasSkill skillidentifier="weapons" minvalue="300" invert="true" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.1" skillidentifier="weapons" />
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="0.5">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple" />
+                <AbilityConditionHasSkill skillidentifier="weapons" minvalue="300" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.3"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
@@ -1484,7 +1494,6 @@
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
-                        <!-- improve bandage effectiveness -->
                         <StatusEffect tags="medical" type="OnAbility" target="Character" duration="10.0">
                             <ReduceAffliction type="bleeding" amount="3" />
                         </StatusEffect>
@@ -1499,17 +1508,11 @@
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
-                        <!-- improve bandage effectiveness -->
                         <StatusEffect tags="medical" type="OnAbility" target="Character" duration="10.0">
                             <ReduceAffliction type="bleeding" amount="3" />
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
-            <Abilities>
-                <CharacterAbilityGivePermanentStat stattype="LockedTalents" statidentifier="Touhou_Yaoguai01" setvalue="true" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -1542,6 +1545,22 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityReplaceAffliction affliction="burn" newaffliction="Touhou_Bite" strengthmultiplier="1.2"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionServerRandom randomchance="0.2" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityReplaceAffliction affliction="Touhou_Freeze" newaffliction="Touhou_Bite" strengthmultiplier="1.2"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionServerRandom randomchance="0.2" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityReplaceAffliction affliction="acidburn" newaffliction="Touhou_Bite" strengthmultiplier="1.2"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="0.5">
@@ -1920,5 +1939,516 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+    </Talent>
+
+    <!--妖兽/兽人-->
+
+    <!--同族羁绊 周围有其他船员时，大大增加物理出血和失血的恢复速度。-->
+    <Talent identifier="Touhou_Yaoshou_Shouren01">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Yaoshou_Shouren01"/>
+        <AbilityGroupInterval interval="2.9">
+            <Conditions>
+                <AbilityConditionAllyNearby distance="500" truthywhen="OneCharacterMatches"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yaoshou_Shouren01_Effect" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--伶牙俐齿 提高5%物理伤害抗性，额外增加15%咬伤和噬咬抗性。造成的噬咬伤害增加20%-->
+    <Talent identifier="Touhou_Yaoshou_Shouren02">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Yaoshou_Shouren02"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yaoshou_Shouren02_Effect01" amount="1.0"/>
+                            <Affliction identifier="Touhou_Yaoshou_Shouren02_Effect02" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+            <Abilities>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="Touhou_Bite" addedmultiplier="0.2" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--游刃有余 成为小型怪物保护的目标。等级大于15后，技能水平增加10%-->
+    <Talent identifier="Touhou_Yaoshou_Shouren03">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Yaoshou_Shouren03"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yaoshou_Shouren03_Effect01" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="9.9" >
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="15" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yaoshou_Shouren03_Effect02" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--骨骼精奇 近战攻击附带少量噬咬。对生命值低于50%的敌人造成额外10%的伤害
+        穿着阿吽装束+时：增加10%最大生命值。将“狮子”的效果提高50%-->
+    <Talent identifier="Touhou_Yaoshou_Shouren04">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Yaoshou_Shouren04"/>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Bite" strength="2.0" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--高丽野阿吽-->
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval Interval="9.9" >
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+                <AbilityConditionHasAffliction afflictionidentifier="Aunn_Lion" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yaoshou_Shouren04_Effect_Aunn" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--意志坚定 增加50%精神病抗性，大大加快幻觉的恢复速度
+        穿着阿吽装束+时：获得技能点时，额外获得0.5点技能。给周围船员10%移动速度和50%技能获取速度加成-->
+    <Talent identifier="Touhou_Yaoshou_Shouren05">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Yaoshou_Shouren05"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yaoshou_Shouren05_Effect" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!--高丽野阿吽-->
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="ExtraLevelGain" value="0.5"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="4.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="1000" allowself="false">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Yaoshou_Shouren05_Effect_Aunn" amount="10"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--妖尾摆风 根据角色等级增加最大生命值，每级增加1%，最多20%
+        穿着阿吽装束+时：增加10%对人类敌人的伤害。根据角色等级给予不同的效果：
+        15级：可以全速拖动生物
+        20级：提高50%缺氧抗性
+        25级：失去意识后，不会成为怪物的攻击目标-->
+    <Talent identifier="Touhou_Yaoshou_Shouren06">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Yaoshou_Shouren06"/>
+        <AbilityGroupInterval interval="0.5">
+            <Abilities>
+                <CharacterAbilityModifyStatToLevel stattype="MaximumHealthMultiplier" statperlevel="0.01" maxlevel="20" />
+            </Abilities>
+        </AbilityGroupInterval>
+        <!--高丽野阿吽-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional speciesname="eq human" />
+                </AbilityConditionCharacter>
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+                <AbilityConditionHasLevel minlevel="15" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveFlag flagtype="MoveNormallyWhileDragging" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+                <AbilityConditionHasLevel minlevel="20" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="2500" allowself="false">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Yaoshou_Shouren06_Effect_Aunn" amount="10"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+                <AbilityConditionHasLevel minlevel="25" />
+                <AbilityConditionCharacterUnconcious />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveFlag flagtype="IgnoredByEnemyAI" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--变幻莫测
+        穿着阿吽装束+时：只要周围有其他船员存活，你受到的伤害减少30%-->
+    <Talent identifier="Touhou_Yaoshou_Shouren07">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Yaoshou_Shouren07"/>
+        <!--高丽野阿吽-->
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionNearbyCharacterCount distance="500" targettypes="Ally,Alive,NotSelf" count="1"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.3" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--天狗-->
+
+    <!--酒中豪杰 将醉酒的负面效果转化为正面效果，减少10%受到的伤害。解锁配方：天狗踊-->
+    <Talent identifier="Touhou_Tiangou01">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Tiangou01"/>
+        <AbilityGroupInterval interval="1.0">
+            <Abilities>
+                <CharacterAbilityReplaceAffliction affliction="drunk" newaffliction="Touhou_Tiangou01_Effect"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tiangou01_Effect" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AddedRecipe itemidentifier="Touhou_Tengu_Sake" />
+    </Talent>
+
+    <!--同伴意识 对友军造成的伤害减少15%。有船员失去意识时，提高周围船员的20%的debuff抗性，自己使用医疗物品的效果增加15%-->
+    <Talent identifier="Touhou_Tiangou02">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Tiangou02"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="TeamAttackMultiplier" value="-0.15"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="1.9">
+            <Conditions>
+                <AbilityConditionCrewMemberUnconscious />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MedicalItemApplyingMultiplier" value="0.15"/>
+                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="500" allowself="false">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Tiangou02_Effect" amount="10"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--天狗之风 移动速度提高10%。奔跑时，提高20%眩晕抗性-->
+    <Talent identifier="Touhou_Tiangou03">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Tiangou03"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="MovementSpeed" value="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionRunning/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Tiangou03_Effect02" amount="1" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--捕风捉影 获取的声望增加15%，减少的声望下降25%。角色等级在升级后提供不同效果：
+        15级：增加10%攻击速度
+        18级：增加50%技能获取速度
+        20级：增加30%游泳速度
+        22级：增加10%任务获取的金钱
+        25级：每次受到攻击都有10%概率减少25%承受伤害-->
+    <Talent identifier="Touhou_Tiangou04">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Tiangou04"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="ReputationGainMultiplier" value="0.15"/>
+                <CharacterAbilityGiveStat stattype="ReputationLossMultiplier" value="-0.25"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="15" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.1"/>
+                <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="20" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.3"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="22" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="MissionMoneyGainMultiplier" value="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionServerRandom randomchance="0.1" />
+                <AbilityConditionHasLevel minlevel="25" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.25" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <!--破旧立新 如果你的等级比船员中最高的等级低1级以上，增加10%攻击伤害，否则增加10%物理伤害抗性和烧伤抗性。解锁配方：天狗的信物
+        穿着文文装束+时：增加30%游泳速度。每次进入一个新的站点，增加一个计数。计数到达5个后，提高10%攻击伤害、移动速度和眩晕抗性.死亡后计数清零
+        穿着椛 装束+时：根据武器操作水平，提高相应10%的游泳速度和buff效果持续时间。这个效果在武器操作超过300后达到上限-->
+    <Talent identifier="Touhou_Tiangou05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="10">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Tiangou05"/>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionLevelsBehindHighest levelsbehind="1" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1"/>
+            </Abilities>
+            <FallbackAbilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Tiangou05_Effect" amount="1" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </FallbackAbilities>
+        </AbilityGroupInterval>
+        <!--射命丸文-->
+        <AbilityGroupEffect abilityeffecttype="OnLocationDiscovered">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl" />
+                <AbilityConditionLocation hasoutpost="true"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="11" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Touhou_Tiangou05_Counter" value="1" removeondeath="true" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl" />
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="10"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.1"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Tiangou05_Effect_Aya" amount="1" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!--椛-->
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Grunt_Security_Tengu" />
+                <AbilityConditionHasSkill skillidentifier="weapons" minvalue="300" invert="true" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToSkill stattype="swimmingspeed" maxvalue="0.1" skillidentifier="weapons" />
+                <CharacterAbilityModifyStatToSkill stattype="BuffDurationMultiplier" maxvalue="0.1" skillidentifier="weapons" />
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Grunt_Security_Tengu" />
+                <AbilityConditionHasSkill skillidentifier="weapons" minvalue="300" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToSkill stattype="swimmingspeed" maxvalue="0.1" skillidentifier="weapons" />
+                <CharacterAbilityModifyStatToSkill stattype="BuffDurationMultiplier" maxvalue="0.1" skillidentifier="weapons" />
+            </Abilities>
+        </AbilityGroupInterval>
+        <AddedRecipe itemidentifier="Touhou_Aya_Token" />
+    </Talent>
+
+    <!--破旧立新 如果你的等级比船员中最高的等级低1级以上，增加10%攻击伤害，否则增加10%物理伤害抗性和烧伤抗性。解锁配方：天狗的信物
+        穿着文文装束+时：增加30%游泳速度。每次进入一个新的站点，增加一个计数。计数到达5个后，提高10%攻击伤害、移动速度和眩晕抗性.死亡后计数清零
+        穿着椛 装束+时：根据武器操作水平，提高相应10%的游泳速度和buff效果持续时间。这个效果在武器操作超过300后达到上限-->
+    <Talent identifier="Touhou_Tiangou06" >
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Touhou_Tiangou06"/>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionLevelsBehindHighest levelsbehind="1" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1"/>
+            </Abilities>
+            <FallbackAbilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Tiangou05_Effect" amount="1" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </FallbackAbilities>
+        </AbilityGroupInterval>
+        <!--射命丸文-->
+        <AbilityGroupEffect abilityeffecttype="OnLocationDiscovered">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl" />
+                <AbilityConditionLocation hasoutpost="true"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="11" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Touhou_Tiangou05_Counter" value="1" removeondeath="true" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl" />
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="10"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.1"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Tiangou05_Effect_Aya" amount="1" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <!--椛-->
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Grunt_Security_Tengu" />
+                <AbilityConditionHasSkill skillidentifier="weapons" minvalue="300" invert="true" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToSkill stattype="swimmingspeed" maxvalue="0.1" skillidentifier="weapons" />
+                <CharacterAbilityModifyStatToSkill stattype="BuffDurationMultiplier" maxvalue="0.1" skillidentifier="weapons" />
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Grunt_Security_Tengu" />
+                <AbilityConditionHasSkill skillidentifier="weapons" minvalue="300" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToSkill stattype="swimmingspeed" maxvalue="0.1" skillidentifier="weapons" />
+                <CharacterAbilityModifyStatToSkill stattype="BuffDurationMultiplier" maxvalue="0.1" skillidentifier="weapons" />
+            </Abilities>
+        </AbilityGroupInterval>
+        <AddedRecipe itemidentifier="Touhou_Aya_Token" />
     </Talent>
 </Talents>

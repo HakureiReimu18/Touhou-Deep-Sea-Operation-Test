@@ -235,9 +235,9 @@
     </Affliction>
 
     <!--风神少女-额外经验效果-->
-    <Affliction identifier="Wind_God_Girl_Gain_Extra_Experience" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+    <Affliction identifier="Wind_God_Girl_Gain_Extra_Experience" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" duration="2.0"
                 showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="10" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" strengthchange="-10">
+        <Effect minstrength="0" maxstrength="10" >
             <StatValue stattype="ExperienceGainMultiplier" value="0.25"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Wind_God_Girl.png" sourcerect="0,0,128,128" color="255,255,255,255" />
@@ -379,7 +379,7 @@
             <StatValue stattype="MovementSpeed" value="-0.25" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.35" />
             <StatValue stattype="SkillGainSpeed" value="1" />
-            <StatValue stattype="MedicalItemApplyingMultiplier" value="0.25" />
+            <StatValue stattype="MedicalItemApplyingMultiplier" value="0.15" />
             <StatValue stattype="DeconstructorSpeedMultiplier" value="0.25" />
             <StatValue stattype="FabricationSpeed" value="0.25" />
             <StatValue stattype="MeleeAttackMultiplier" value="-0.25" />
@@ -654,7 +654,7 @@
     <!--基层警卫天狗-->
     <Affliction identifier="Grunt_Security_Tengu" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="bitewounds,Touhou_Bite" minresistance="0.35" maxresistance="0.35"
+        <Effect minstrength="0" maxstrength="10" resistancefor="bitewounds,Touhou_Bite" minresistance="0.25" maxresistance="0.25"
                 strengthchange="-9">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional HealthPercentage="lt 100"/>
@@ -668,10 +668,10 @@
     <!--白狼天狗警戒信息-->
     <Affliction identifier="Grunt_Security_Tengu_Senor" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                 activethreshold="1" maxstrength="10" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn" minresistance="0.05" maxresistance="0.05" SendMessages="true" strengthchange="-8">
-            <StatValue stattype="meleeattackspeed" value="0.3" />
+        <Effect minstrength="0" maxstrength="10" strengthchange="-8">
+            <StatValue stattype="meleeattackspeed" value="0.15" />
             <StatValue stattype="SwimmingSpeed" value="0.1" />
-            <StatValue stattype="WalkingSpeed" value="0.2" />
+            <StatValue stattype="WalkingSpeed" value="0.15" />
             <StatusEffect target="Character">
                 <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="1" anglemin="0" anglemax="360" colormultiplier="255,200,80,255"
                                  velocitymin="50" velocitymax="100" scalemin="0.1" scalemax="0.2" drawontop="true" />
@@ -696,7 +696,7 @@
             showinhealthscannerthreshold="1000"
             duration="10"
             maxstrength="1">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,stun,debuff" minresistance="0.2" maxresistance="0.2">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,stun" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="MeleeAttackMultiplier" value="0.4"/>
         </Effect>
         <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>

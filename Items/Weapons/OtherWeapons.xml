@@ -1182,23 +1182,10 @@
                 <ParticleEmitter particle="gravityspherefx" particleamount="1" emitinterval="0.3" />
                 <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="100" anglemin="0" anglemax="360" colormultiplier="100,80,110,220" />
             </StatusEffect>
-<!--            <StatusEffect type="OnNotContained" target="This" Interval="0.25" disabledeltatime="true" comparison="And">
-                <Conditional InWater="true"/>
-                <Conditional speciesgroup="neq human"/>
-                <Conditional IsDead="false"/>
-                &lt;!&ndash;                <SpawnItem identifier="Touhou_Rippling_Bolt_Spawn_Force" spawnposition="This" aimspread="360" rotationtype="Collider" rotation="0" />&ndash;&gt;
-                <Explosion range="500.0" sparks="false" smoke="false" underwaterbubble="false" flash="false" flames="false" force="-100" />
+            <StatusEffect type="OnImpact" target="This" disabledeltatime="true" >
+                <SpawnItem identifier="Touhou_Rippling_Bolt_Spawn" spawnposition="This" aimspread="360" rotationtype="Collider" rotation="0" />
                 <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="1.0" selectionmode="Random" range="1000" />
-                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="3" velocitymin="50" velocitymax="1000" scalemin="0.2" scalemax="0.35" />
-            </StatusEffect>-->
-            <StatusEffect type="OnActive" target="This" Interval="0.25" disabledeltatime="true" >
-                <Conditional InWater="true"/>
-<!--                <Conditional speciesgroup="neq human"/>
-                <Conditional IsDead="false"/>
-                <Affliction identifier="slow" strength="10" />
-                <Affliction identifier="stun" strength="1" probability="0.3" />-->
-                <SpawnItem identifier="Touhou_Rippling_Bolt_Spawn_Force02" spawnposition="This" aimspread="360" rotationtype="Collider" rotation="0" />
-                <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="1.0" selectionmode="Random" range="1000" />
+                <Remove/>
            </StatusEffect>
             <StatusEffect type="OnNotContained" target="This" delay="1.6" disabledeltatime="true">
                 <Remove/>
@@ -1207,36 +1194,55 @@
     </Item>
 
     <!--涟漪拉力-->
-    <Item name="" identifier="Touhou_Rippling_Bolt_Spawn_Force02" category="Alien" linkable="true" scale="0.25" hideinmenus="true">
-        <Sprite texture="Content/Items/Alien/AlienRuins_Items.png" depth="0.84" sourcerect="21,1367,1,1" origin="0.5,0.5" />
-        <ItemComponent>
-            <StatusEffect type="Always" target="This" >
-                <Use/>
+    <Item name="" identifier="Touhou_Rippling_Bolt_Spawn" category="Weapon" scale="0.3" sonarsize="1" hideinmenus="true">
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" color="0,0,0,255" />
+        <Body radius="50" density="10" gravityscale="0" />
+        <Projectile characterusable="false" launchimpulse="0.0" impulsespread="0.5" damagedoors="true">
+            <StatusEffect type="OnSpawn" target="This">
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_boom.ogg" volume="2" range="500" type="OnUse" />
+                <!-- initial "explosion" -->
+                <ParticleEmitter particle="cyborgammotracer" particleamount="5" anglemin="0" anglemax="360" distancemin="0" distancemax="150" scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0" />
+                <ParticleEmitter particle="gravityshellfx" particleamount="10" anglemin="0" anglemax="360" distancemin="0" distancemax="0" scalemin="0.1" scalemax="1" />
+                <!-- just camera shake and some particles-->
+                <Explosion range="1000.0" structuredamage="0" force="0.0" camerashake="50.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" delay="0.5">
+            <!-- sound and effects for a duration -->
+            <StatusEffect type="OnSpawn" target="This" duration="2" stackable="false">
+                <ParticleEmitter particle="gravityshellfx" particlespersecond="5"/>
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" stackable="false">
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_loop.ogg" volume="2" range="10000.0" loop="true" />
+            </StatusEffect>
+            <!-- a 2 second lifetime after being fired -->
+            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="2">
+                <Explosion range="300.0" structuredamage="100" force="80" camerashake="80.0" camerashakerange="10000" itemdamage="100" severlimbsprobability="0.75" penetration="0.75" decal="explosion" decalsize="0.8">
+                    <Affliction identifier="internaldamage" strength="150" />
+                    <Affliction identifier="stun" strength="6" />
+                </Explosion>
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_explosion.ogg" volume="2" dontmuffle="true" range="50000" />
                 <Remove />
             </StatusEffect>
-        </ItemComponent>
-        <TriggerComponent triggeredby="Creature" force="150" radius="1500" distancebasedforce="true"/>
-        <ElectricalDischarger duration="0.4" reload="0.1" ignoreuser="true" characterusable="true" raycastrange="100" range="600" rangemultiplierinwalls="0.25" outdoorsonly="false" powerconsumption="0" pickkey="Select">
-            <Attack targetimpulse="-200" targetforce="-200" penetration="0.6" >
-                <StatusEffect type="OnUse" target="UseTarget">
-                    <Conditional speciesgroup="neq human" />
-                    <Affliction identifier="stun" strength="2.0" probability="0.5" />
-                    <Affliction identifier="burn" strength="10" />
-                    <Affliction identifier="Reiki_Pressure" strength="5" />
-                    <Affliction identifier="slow" strength="10" />
-                </StatusEffect>
+        </Projectile>
+        <!--Apply force towards the center, affecting creatures, humans and items -->
+        <TriggerComponent triggeredby="Creature,Human,Item" force="500" radius="300" distancebasedforce="false" />
+        <!--Heavily damage entities close to the center-->
+        <TriggerComponent triggeredby="Creature,Human,Item" force="0" radius="200">
+            <Attack>
+                <Attack penetration="0.6" >
+                    <StatusEffect type="OnUse" target="UseTarget">
+                        <Conditional speciesgroup="neq human" />
+                        <Affliction identifier="stun" strength="2.0" probability="0.5" />
+                        <Affliction identifier="burn" strength="10" />
+                        <Affliction identifier="Reiki_Pressure" strength="5" />
+                        <Affliction identifier="slow" strength="10" />
+                    </StatusEffect>
+                </Attack>
             </Attack>
-            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="1000" selectionmode="random" />
-                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="1000" />
-                <Explosion range="500.0" camerashake="0" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="cyborgammotracer" particlespersecond="5" anglemin="0" anglemax="360" distancemin="0" distancemax="50" scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0" />
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_damageLoop.ogg" volume="2" range="10000.0" loop="true" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" delay="0.5">
-                <Remove />
-            </StatusEffect>
-        </ElectricalDischarger>
+        </TriggerComponent>
     </Item>
 
 

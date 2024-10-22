@@ -172,7 +172,7 @@
       <!--幽灵/亡灵-->
       <!--对应角色：魂魄妖梦-->
       <SubTree identifier="Touhou_Youling_Wangling" type="specialization" requires="Yokai_Talents_Select"
-               blocks="Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou,Touhou_Tiangou,Touhou_Tianren_Xianren">
+               blocks="Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou_Shouren,Touhou_Tiangou,Touhou_Tianren_Xianren">
         <TalentOptions>
           <TalentOption identifier="Touhou_Youling_Wangling01"/>
         </TalentOptions>
@@ -201,7 +201,7 @@
       <!--妖怪-->
       <!--对应角色：风见幽香，封兽鵺，河城荷取，古明地恋-->
       <SubTree identifier="Touhou_Yaoguai" type="specialization" requires="Yokai_Talents_Select"
-               blocks="Touhou_Youling_Wangling,Touhou_Vampire,Touhou_Yaoshou,Touhou_Tiangou,Touhou_Tianren_Xianren">
+               blocks="Touhou_Youling_Wangling,Touhou_Vampire,Touhou_Yaoshou_Shouren,Touhou_Tiangou,Touhou_Tianren_Xianren">
         <TalentOptions>
           <TalentOption identifier="Touhou_Yaoguai01"/>
         </TalentOptions>
@@ -230,7 +230,7 @@
       <!--吸血鬼-->
       <!--对应角色：蕾米莉亚·斯卡雷特，芙兰朵露·斯卡雷特-->
       <SubTree identifier="Touhou_Vampire" type="specialization" requires="Yokai_Talents_Select"
-               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Yaoshou,Touhou_Tiangou,Touhou_Tianren_Xianren">
+               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Yaoshou_Shouren,Touhou_Tiangou,Touhou_Tianren_Xianren">
         <TalentOptions>
           <TalentOption identifier="Touhou_Vampire01"/>
         </TalentOptions>
@@ -256,30 +256,30 @@
           <TalentOption identifier="Touhou_Yokai_Talents_Locked"/>
         </TalentOptions>
       </SubTree>
-      <!--妖兽-->
+      <!--妖兽/兽人-->
       <!--对应角色：高丽野阿吽-->
-      <SubTree identifier="Touhou_Yaoshou" type="specialization" requires="Yokai_Talents_Select"
+      <SubTree identifier="Touhou_Yaoshou_Shouren_Shouren" type="specialization" requires="Yokai_Talents_Select"
                blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Vampire,Touhou_Tiangou,Touhou_Tianren_Xianren">
         <TalentOptions>
-          <TalentOption identifier="Touhou_Yaoshou01"/>
+          <TalentOption identifier="Touhou_Yaoshou_Shouren01"/>
         </TalentOptions>
         <TalentOptions>
-          <TalentOption identifier="Touhou_Yaoshou02"/>
+          <TalentOption identifier="Touhou_Yaoshou_Shouren02"/>
         </TalentOptions>
         <TalentOptions>
-          <TalentOption identifier="Touhou_Yaoshou03"/>
+          <TalentOption identifier="Touhou_Yaoshou_Shouren03"/>
         </TalentOptions>
         <TalentOptions>
-          <TalentOption identifier="Touhou_Yaoshou04"/>
+          <TalentOption identifier="Touhou_Yaoshou_Shouren04"/>
         </TalentOptions>
         <TalentOptions>
-          <TalentOption identifier="Touhou_Yaoshou05"/>
+          <TalentOption identifier="Touhou_Yaoshou_Shouren05"/>
         </TalentOptions>
         <TalentOptions>
-          <TalentOption identifier="Touhou_Yaoshou06"/>
+          <TalentOption identifier="Touhou_Yaoshou_Shouren06"/>
         </TalentOptions>
         <TalentOptions>
-          <TalentOption identifier="Touhou_Yaoshou07"/>
+          <TalentOption identifier="Touhou_Yaoshou_Shouren07"/>
         </TalentOptions>
         <TalentOptions>
           <TalentOption identifier="Touhou_Yokai_Talents_Locked"/>
@@ -288,7 +288,7 @@
       <!--天狗-->
       <!--对应角色：犬走椛，射命丸文-->
       <SubTree identifier="Touhou_Tiangou" type="specialization" requires="Yokai_Talents_Select"
-               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou,Touhou_Tianren_Xianren">
+               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou_Shouren,Touhou_Tianren_Xianren">
         <TalentOptions >
           <TalentOption identifier="Touhou_Tiangou01"/>
         </TalentOptions>
@@ -317,7 +317,7 @@
       <!--天人/仙人-->
       <!--对应角色：比那民居天子-->
       <SubTree identifier="Touhou_Tianren_Xianren" type="specialization" requires="Yokai_Talents_Select"
-               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou,Touhou_Tiangou">
+               blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou_Shouren,Touhou_Tiangou">
         <TalentOptions>
           <TalentOption identifier="Touhou_Tianren_Xianren01"/>
         </TalentOptions>

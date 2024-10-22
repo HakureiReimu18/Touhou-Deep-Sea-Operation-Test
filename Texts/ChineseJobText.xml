@@ -100,13 +100,13 @@
     <talentdescription.Talents_Yousei_Primary08>每次巡回完成任务，都会获得异变能量，异变能量能提供最多‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击速度‖end‖，‖color:gui.orange‖攻击伤害‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖烧伤抗性‖end‖加成。解锁配方：‖color:gui.orange‖异变糖果‖end‖</talentdescription.Talents_Yousei_Primary08>
     <talentname.Talents_Yousei_Primary09>自然生长</talentname.Talents_Yousei_Primary09>
     <talentdescription.Talents_Yousei_Primary09>技能水平两两取均值，根据平均值的‖color:gui.green‖8%‖end‖获得对应加成：
-        ‖color:gui.yellow‖驾驶水平+武器操作‖end‖：‖color:gui.orange‖最大生命值‖end‖；
-        ‖color:gui.yellow‖机械水平+电器工程‖end‖：‖color:gui.orange‖修理速度‖end‖；
+        ‖color:gui.yellow‖驾驶水平+武器操作‖end‖：‖color:gui.orange‖最大生命值‖end‖
+        ‖color:gui.yellow‖机械水平+电器工程‖end‖：‖color:gui.orange‖修理速度‖end‖
         ‖color:gui.yellow‖医疗水平+魔法能力‖end‖：‖color:gui.orange‖攻击伤害‖end‖
         魔法能力给予的增幅在技能水平‖color:gui.green‖400‖end‖时停止增长</talentdescription.Talents_Yousei_Primary09>
     <talenttree.Behind_The_Scenes>鹑居鷇食</talenttree.Behind_The_Scenes>
     <talentname.Touhou_Candy_Fun>糖果乐事</talentname.Touhou_Candy_Fun>
-    <talentdescription.Touhou_Candy_Fun>巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柚子味）‖end‖，在医疗界面使用不同的糖果可以获得不同的额外增益各150秒：
+    <talentdescription.Touhou_Candy_Fun>增加‖color:gui.green‖10%‖攻击伤害‖end‖‖color:gui.orange‖最大生命值‖end‖。巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柚子味）‖end‖，在医疗界面使用不同的糖果可以获得不同的额外增益各150秒：
         ‖color:gui.yellow‖苹果味‖end‖：‖color:gui.orange‖极速‖end‖‖color:gui.green‖150点‖end‖；
         ‖color:gui.yellow‖蜜桃味‖end‖：‖color:gui.orange‖最大生命值‖end‖‖color:gui.green‖提高15%‖end‖；
         ‖color:gui.yellow‖柠檬味‖end‖：‖color:gui.orange‖攻击速度‖end‖‖color:gui.green‖提高10%‖end‖；
@@ -162,11 +162,11 @@
         ‖color:gui.orange‖打捞货物、护送人员‖end‖：‖color:gui.green‖15%‖end‖；
         ‖color:gui.orange‖清理怪物、清理巢穴‖end‖：‖color:gui.green‖20%‖end‖；
         ‖color:gui.orange‖清理遗迹、扫描遗迹‖end‖：‖color:gui.green‖25%‖end‖；
-        ‖color:gui.orange‖恢复信标站、清剿海盗、废弃站点‖end‖：‖color:gui.green‖30%</talentdescription.Talents_Yokai_Primary02>
+        ‖color:gui.orange‖恢复信标站、清剿海盗、废弃站点‖end‖：‖color:gui.green‖30%‖end‖</talentdescription.Talents_Yokai_Primary02>
     <talentname.Talents_Yokai_Primary03>商业头脑</talentname.Talents_Yokai_Primary03>
     <talentdescription.Talents_Yokai_Primary03>完成任务获得的金钱额外增加‖color:gui.green‖8%‖end‖，如果巡回内‖color:gui.red‖无人死亡‖end‖，额外获得‖color:gui.green‖4%‖end‖。</talentdescription.Talents_Yokai_Primary03>
     <talentname.Talents_Yokai_Primary04>中坚力量</talentname.Talents_Yokai_Primary04>
-    <talentdescription.Talents_Yokai_Primary04>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖修复速度‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖船体修复速度‖end‖。等级大于‖color:gui.green‖6‖end‖后，这个效果翻倍</talentdescription.Talents_Yokai_Primary04>
+    <talentdescription.Talents_Yokai_Primary04>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖修复速度‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖船体修复速度‖end‖。等级大于‖color:gui.green‖8‖end‖后，这个效果翻倍</talentdescription.Talents_Yokai_Primary04>
     <talentname.Talents_Yokai_Primary05>自然法则</talentname.Talents_Yokai_Primary05>
     <talentdescription.Talents_Yokai_Primary05>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖10%‖end‖对人类敌人的伤害</talentdescription.Talents_Yokai_Primary05>
     <talentname.Talents_Yokai_Primary06>弱肉强食</talentname.Talents_Yokai_Primary06>
@@ -176,9 +176,9 @@
     <talentname.Talents_Yokai_Primary08>始作俑者</talentname.Talents_Yokai_Primary08>
     <talentdescription.Talents_Yokai_Primary08>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖所有类型的伤害（包括‖color:gui.orange‖爆炸伤害‖end‖，‖color:gui.orange‖炮塔伤害‖end‖）。</talentdescription.Talents_Yokai_Primary08>
     <talentname.Talents_Yokai_Primary09>风行水上</talentname.Talents_Yokai_Primary09>
-    <talentdescription.Talents_Yokai_Primary09>增加‖color:gui.green‖20%‖end‖的‖color:gui.orange‖游泳速度‖end‖，在‖color:gui.yellow‖开放海域‖end‖额外增加‖color:gui.green‖20%‖end‖</talentdescription.Talents_Yokai_Primary09>
+    <talentdescription.Talents_Yokai_Primary09>增加‖color:gui.green‖15%‖end‖的‖color:gui.orange‖游泳速度‖end‖，在‖color:gui.yellow‖开放海域‖end‖额外增加‖color:gui.green‖20%‖end‖</talentdescription.Talents_Yokai_Primary09>
     <talentname.Talents_Yokai_Primary10>分花拂柳</talentname.Talents_Yokai_Primary10>
-    <talentdescription.Talents_Yokai_Primary10>增加‖color:gui.green‖10%‖end‖的‖color:gui.orange‖行走速度‖end‖，周围有其他生物时，这个效果翻倍</talentdescription.Talents_Yokai_Primary10>
+    <talentdescription.Talents_Yokai_Primary10>增加‖color:gui.green‖5%‖end‖的‖color:gui.orange‖行走速度‖end‖，周围有其他生物时，这个效果翻倍</talentdescription.Talents_Yokai_Primary10>
     <talentname.Talents_Yokai_Primary11>竿头日上</talentname.Talents_Yokai_Primary11>
     <talentdescription.Talents_Yokai_Primary11>所有‖color:gui.orange‖技能水平‖end‖增加‖color:gui.green‖5%‖end‖，减少‖color:gui.green‖20%‖end‖受水流的影响</talentdescription.Talents_Yokai_Primary11>
     <talentname.Talents_Yokai_Primary12>雨后春笋</talentname.Talents_Yokai_Primary12>
@@ -220,7 +220,7 @@
 
     <talenttree.Touhou_Youling_Wangling>幽灵/亡灵</talenttree.Touhou_Youling_Wangling>
     <talentname.Touhou_Youling_Wangling01>若隐若现</talentname.Touhou_Youling_Wangling01>
-    <talentdescription.Touhou_Youling_Wangling01>怪物对你的‖color:gui.orange‖索敌距离‖end‖略微减小，提高‖color:gui.green‖15%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖。
+    <talentdescription.Touhou_Youling_Wangling01>怪物对你的‖color:gui.orange‖索敌距离‖end‖略微减小，提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖。
         受到攻击后，会对攻击者造成少量‖color:gui.yellow‖冻结和精神病‖end‖，这个效果有‖color:gui.green‖3‖end‖秒冷却。</talentdescription.Touhou_Youling_Wangling01>
     <talentname.Touhou_Youling_Wangling02>恐惧传说</talentname.Touhou_Youling_Wangling02>
     <talentdescription.Touhou_Youling_Wangling02>对越‖color:gui.red‖弱小‖end‖的敌人造成额外伤害，最高‖color:gui.green‖30%‖end‖</talentdescription.Touhou_Youling_Wangling02>
@@ -275,7 +275,7 @@
     <talentdescription.Touhou_Vampire01>‖color:gui.orange‖技能水平‖end‖额外增加‖color:gui.green‖15%‖end‖，使用‖color:gui.orange‖血袋/优质B型血‖end‖时，额外治疗‖color:gui.yellow‖出血‖end‖</talentdescription.Touhou_Vampire01>
     <talentname.Touhou_Vampire02>红雾血月</talentname.Touhou_Vampire02>
     <talentdescription.Touhou_Vampire02>提高‖color:gui.green‖15%‖end‖‖color:gui.orange‖失血抗性‖end‖，受到的‖color:gui.yellow‖烧伤和出血‖end‖额外增加‖color:gui.green‖15%‖end‖。每秒有‖color:gui.green‖20%‖end‖概率将受到的‖color:gui.yellow‖烧伤‖end‖以‖color:gui.green‖120%‖end‖倍率转化为‖color:gui.yellow‖噬咬‖end‖。
-        根据‖color:gui.red‖角色等级‖end‖‖color:gui.orange‖debuff效果持续时间‖end‖，每级减少‖color:gui.green‖5%‖end‖，最高‖color:gui.green‖75%‖end‖</talentdescription.Touhou_Vampire02>
+        根据‖color:gui.red‖角色等级‖end‖减少自身‖color:gui.orange‖debuff效果持续时间‖end‖，每级减少‖color:gui.green‖5%‖end‖，最高‖color:gui.green‖75%‖end‖</talentdescription.Touhou_Vampire02>
     <talentname.Touhou_Vampire03>过度出血</talentname.Touhou_Vampire03>
     <talentdescription.Touhou_Vampire03>对人类造成的‖color:gui.yellow‖出血和失血‖end‖提高‖color:gui.green‖15%‖end‖。对‖color:gui.yellow‖出血‖end‖越高的敌人，造成的伤害越高，最高‖color:gui.green‖25%‖end‖</talentdescription.Touhou_Vampire03>
     <talentname.Touhou_Vampire04>嗜血传说</talentname.Touhou_Vampire04>
@@ -294,5 +294,47 @@
     <talentdescription.Touhou_Vampire07>
         穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：大大增加‖color:gui.orange‖优质B型血‖end‖的单次治疗效果。生命值低于‖color:gui.green‖0‖end‖后，‖color:gui.green‖20‖end‖秒内自身不会死亡，这个效果一巡回只能触发一次。
         穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：对生命值高于‖color:gui.green‖49.5%‖end‖的敌人造成‖color:gui.green‖50%‖end‖额外‖color:gui.yellow‖烧伤、撕裂伤、内脏损伤‖end‖。生命值低于‖color:gui.green‖0‖end‖后，将保持清醒‖color:gui.green‖10‖end‖秒，这个效果一巡回只能触发一次</talentdescription.Touhou_Vampire07>
+
+    <talenttree.Touhou_Yaoshou_Shouren_Shouren>妖兽/兽人</talenttree.Touhou_Yaoshou_Shouren_Shouren>
+    <talentname.Touhou_Yaoshou_Shouren01>同族羁绊</talentname.Touhou_Yaoshou_Shouren01>
+    <talentdescription.Touhou_Yaoshou_Shouren01>周围有其他船员时，大大增加‖color:gui.yellow‖出血和失血‖end‖的恢复速度</talentdescription.Touhou_Yaoshou_Shouren01>
+    <talentname.Touhou_Yaoshou_Shouren02>伶牙俐齿</talentname.Touhou_Yaoshou_Shouren02>
+    <talentdescription.Touhou_Yaoshou_Shouren02>提高‖color:gui.green‖5%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖，额外增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖咬伤和噬咬抗性‖end‖。造成的‖color:gui.yellow‖噬咬‖end‖伤害增加‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Yaoshou_Shouren02>
+    <talentname.Touhou_Yaoshou_Shouren03>游刃有余</talentname.Touhou_Yaoshou_Shouren03>
+    <talentdescription.Touhou_Yaoshou_Shouren03>成为小型怪物保护的目标。等级大于‖color:gui.green‖15‖end‖后，‖color:gui.orange‖技能水平‖end‖增加‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Yaoshou_Shouren03>
+    <talentname.Touhou_Yaoshou_Shouren04>骨骼精奇</talentname.Touhou_Yaoshou_Shouren04>
+    <talentdescription.Touhou_Yaoshou_Shouren04>近战攻击附带少量‖color:gui.yellow‖噬咬‖end‖。对生命值低于‖color:gui.green‖50%‖end‖的敌人造成额外‖color:gui.green‖10%‖end‖的伤害
+        穿着‖color:gui.red‖阿吽装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。将‖color:gui.yellow‖“狮子”‖end‖的效果提高‖color:gui.green‖50%‖end‖</talentdescription.Touhou_Yaoshou_Shouren04>
+    <talentname.Touhou_Yaoshou_Shouren05>意志坚定</talentname.Touhou_Yaoshou_Shouren05>
+    <talentdescription.Touhou_Yaoshou_Shouren05>增加‖color:gui.green‖10%‖50%‖end‖‖color:gui.orange‖精神病抗性‖end‖，大大加快‖color:gui.yellow‖幻觉‖end‖的恢复速度
+        穿着‖color:gui.red‖阿吽装束+‖end‖时：获得技能点时，额外获得‖color:gui.green‖10%‖0.5‖end‖点技能。给周围船员‖color:gui.green‖10%‖10%‖end‖‖color:gui.orange‖移动速度‖end‖和‖color:gui.green‖10%‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖加成</talentdescription.Touhou_Yaoshou_Shouren05>
+    <talentname.Touhou_Yaoshou_Shouren06>妖尾摆风</talentname.Touhou_Yaoshou_Shouren06>
+    <talentdescription.Touhou_Yaoshou_Shouren06>根据角色等级‖end‖增加‖color:gui.orange‖最大生命值‖end‖，每级增加‖color:gui.green‖1%‖end‖，最多‖color:gui.green‖20%‖end‖
+        穿着‖color:gui.red‖阿吽装束+‖end‖时：增加‖color:gui.green‖10%‖end‖对人类敌人的伤害。根据角色等级给予不同的效果：
+        ‖color:gui.green‖15‖end‖级：可以全速拖动生物
+        ‖color:gui.green‖20‖end‖级：提高‖color:gui.green‖50%‖end‖‖color:gui.orange‖缺氧抗性‖end‖
+        ‖color:gui.green‖25‖end‖级：失去意识后，不会成为怪物的攻击目标</talentdescription.Touhou_Yaoshou_Shouren06>
+    <talentname.Touhou_Yaoshou_Shouren07>变幻莫测</talentname.Touhou_Yaoshou_Shouren07>
+    <talentdescription.Touhou_Yaoshou_Shouren07>
+        穿着‖color:gui.red‖阿吽装束+‖end‖时：只要周围有其他船员存活，你受到的伤害减少‖color:gui.green‖30%‖end‖</talentdescription.Touhou_Yaoshou_Shouren07>
+
+    <talenttree.Touhou_Tiangou>天狗</talenttree.Touhou_Tiangou>
+    <talentname.Touhou_Tiangou01>酒中豪杰</talentname.Touhou_Tiangou01>
+    <talentdescription.Touhou_Tiangou01>将醉酒的负面效果转化为正面效果，减少‖color:gui.green‖10%‖end‖受到的伤害。解锁配方：‖color:gui.orange‖天狗踊‖end‖</talentdescription.Touhou_Tiangou01>
+    <talentname.Touhou_Tiangou02>同伴意识</talentname.Touhou_Tiangou02>
+    <talentdescription.Touhou_Tiangou02>对友军造成的伤害减少‖color:gui.green‖15%‖end‖。有船员失去意识时，提高周围船员的‖color:gui.green‖20%‖end‖的‖color:gui.orange‖debuff抗性‖end‖，自己使用医疗物品的效果增加‖color:gui.green‖15%‖end‖</talentdescription.Touhou_Tiangou02>
+    <talentname.Touhou_Tiangou03>天狗之风</talentname.Touhou_Tiangou03>
+    <talentdescription.Touhou_Tiangou03>‖color:gui.orange‖移动速度‖end‖提高‖color:gui.green‖10%‖end‖。奔跑时，提高‖color:gui.green‖20%‖end‖‖color:gui.orange‖眩晕抗性‖end‖</talentdescription.Touhou_Tiangou03>
+    <talentname.Touhou_Tiangou04>捕风捉影</talentname.Touhou_Tiangou04>
+    <talentdescription.Touhou_Tiangou04>获取的声望增加15%‖end‖，减少的声望下降25%‖end‖。角色等级在升级后提供不同效果：
+        ‖color:gui.green‖15‖end‖级：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击速度‖end‖
+        ‖color:gui.green‖18‖end‖级：增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖
+        ‖color:gui.green‖20‖end‖级：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖游泳速度‖end‖
+        ‖color:gui.green‖22‖end‖级：增加‖color:gui.green‖10%‖end‖任务获取的金钱
+        ‖color:gui.green‖25‖end‖级：每次受到攻击都有‖color:gui.green‖10%‖end‖概率减少‖color:gui.green‖25%‖end‖承受伤害</talentdescription.Touhou_Tiangou04>
+    <talentname.Touhou_Tiangou05>破旧立新</talentname.Touhou_Tiangou05>
+    <talentdescription.Touhou_Tiangou05>如果你的等级比船员中最高的等级低‖color:gui.green‖1‖end‖级以上，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖，否则增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖。解锁配方：‖color:gui.orange‖天狗的信物‖end‖
+        穿着‖color:gui.red‖文文装束+‖end‖时：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖游泳速度‖end‖。每次进入一个新的站点，增加‖color:gui.green‖1‖end‖个计数。计数到达‖color:gui.green‖5‖end‖个后，提高‖color:gui.green‖10%‖color:gui.orange‖攻击伤害、移动速度和眩晕抗性‖end‖.死亡后计数清零
+        穿着‖color:gui.red‖椛 装束+‖end‖时：根据‖color:gui.orange‖武器操作‖end‖水平，提高相‖color:gui.green‖应10%‖end‖‖color:gui.orange‖‖color:gui.orange‖游泳速度和buff效果持续时间‖end‖。这个效果在‖color:gui.orange‖武器操作‖end‖超过‖color:gui.green‖300‖end‖后达到上限</talentdescription.Touhou_Tiangou05>
 
 </infotexts>
