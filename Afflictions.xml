@@ -266,7 +266,7 @@
       <StatusEffect target="Character">
         <ParticleEmitter particle="weldspark" particleamount="7" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,72,36,180" />
         <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.2" particlespersecond="60" anglemin="0" anglemax="360" colormultiplier="204,195,141,180" />
-        <Affliction identifier="oxygenlow" amount="19"/>
+        <Affliction identifier="oxygenlow" amount="10"/>
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="1" maxinterval="3">
@@ -1534,6 +1534,25 @@
     <Effect minstrength="0" maxstrength="10"
             strengthchange="-3">
     </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Pendulum_Magic.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--热成像效果-->
+  <Affliction name="热成像效果"
+              identifier="Touhou_Thermalgoggles"
+              type="Touhou_Thermalgoggles"
+              targets="human"
+              isbuff="true"
+              limbspecific="false"
+              Duration="0.51"
+              indicatorlimb="Head"
+              maxstrength="1"
+              showiconthreshold="100"
+              showinhealthscannerthreshold="100"
+              affectmachines="false"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Pendulum_Magic" minstrength="0" maxstrength="10"/>
+    <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="3000" ThermalOverlayColor="176,0,0,120"/>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Pendulum_Magic.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 </Afflictions>

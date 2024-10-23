@@ -1208,41 +1208,30 @@
             </StatusEffect>
             <!-- sound and effects for a duration -->
             <StatusEffect type="OnSpawn" target="This" duration="2" stackable="false">
-                <ParticleEmitter particle="gravityshellfx" particlespersecond="5"/>
+                <ParticleEmitter particle="gravityshellfx" particlespersecond="4"/>
             </StatusEffect>
             <StatusEffect type="Always" target="This" stackable="false">
-                <sound file="Content/Items/Weapons/GRAVITYSHELLS_loop.ogg" volume="2" range="10000.0" loop="true" />
-            </StatusEffect>
-            <!-- a 2 second lifetime after being fired -->
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="2">
-                <Explosion range="300.0" structuredamage="100" force="80" camerashake="80.0" camerashakerange="10000" itemdamage="100" severlimbsprobability="0.75" penetration="0.75" decal="explosion" decalsize="0.8">
-                    <Affliction identifier="internaldamage" strength="150" />
-                    <Affliction identifier="stun" strength="6" />
-                </Explosion>
-                <sound file="Content/Items/Weapons/GRAVITYSHELLS_explosion.ogg" volume="2" dontmuffle="true" range="50000" />
-                <Remove />
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_loop.ogg" volume="1.0" range="1000.0" loop="true" />
             </StatusEffect>
         </Projectile>
         <!--Apply force towards the center, affecting creatures, humans and items -->
-        <TriggerComponent triggeredby="Creature,Human,Item" force="500" radius="300" distancebasedforce="false" />
+        <TriggerComponent triggeredby="Creature,Human" force="600" radius="200" distancebasedforce="false" />
         <!--Heavily damage entities close to the center-->
-        <TriggerComponent triggeredby="Creature,Human,Item" force="0" radius="200">
-            <Attack>
-                <Attack penetration="0.6" >
-                    <StatusEffect type="OnUse" target="UseTarget">
-                        <Conditional speciesgroup="neq human" />
-                        <Affliction identifier="stun" strength="2.0" probability="0.5" />
-                        <Affliction identifier="burn" strength="10" />
-                        <Affliction identifier="Reiki_Pressure" strength="5" />
-                        <Affliction identifier="slow" strength="10" />
-                    </StatusEffect>
-                </Attack>
+        <TriggerComponent triggeredby="Creature,Human" force="0" radius="120">
+            <Attack penetration="0.3" >
+                <Affliction identifier="stun" strength="2.0" probability="0.5" />
+                <Affliction identifier="burn" strength="10" />
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="slow" strength="10" />
             </Attack>
             <StatusEffect type="OnActive" target="This">
                 <ParticleEmitter particle="cyborgammotracer" particlespersecond="5" anglemin="0" anglemax="360" distancemin="0" distancemax="50" scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0" />
-                <sound file="Content/Items/Weapons/GRAVITYSHELLS_damageLoop.ogg" volume="2" range="10000.0" loop="true" />
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_damageLoop.ogg" volume="1.0" range="1000.0" loop="true" />
             </StatusEffect>
         </TriggerComponent>
+        <StatusEffect type="OnNotContained" target="This" delay="2.0" disabledeltatime="true">
+            <Remove/>
+        </StatusEffect>
     </Item>
 
 

@@ -336,5 +336,13 @@
     <talentdescription.Touhou_Tiangou05>如果你的等级比船员中最高的等级低‖color:gui.green‖1‖end‖级以上，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖，否则增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖。解锁配方：‖color:gui.orange‖天狗的信物‖end‖
         穿着‖color:gui.red‖文文装束+‖end‖时：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖游泳速度‖end‖。每次进入一个新的站点，增加‖color:gui.green‖1‖end‖个计数。计数到达‖color:gui.green‖5‖end‖个后，提高‖color:gui.green‖10%‖color:gui.orange‖攻击伤害、移动速度和眩晕抗性‖end‖.死亡后计数清零
         穿着‖color:gui.red‖椛 装束+‖end‖时：根据‖color:gui.orange‖武器操作‖end‖水平，提高相‖color:gui.green‖应10%‖end‖‖color:gui.orange‖‖color:gui.orange‖游泳速度和buff效果持续时间‖end‖。这个效果在‖color:gui.orange‖武器操作‖end‖超过‖color:gui.green‖300‖end‖后达到上限</talentdescription.Touhou_Tiangou05>
+    <talentname.Touhou_Tiangou06>领地意识</talentname.Touhou_Tiangou06>
+    <talentdescription.Touhou_Tiangou06>当自己的潜艇遭受攻击后，一定时间内将‖color:gui.orange‖操作炮塔的射速‖end‖提高‖color:gui.green‖25%‖end‖。这个效果有‖color:gui.green‖2‖end‖分钟冷却。
+        穿着‖color:gui.red‖文文装束+‖end‖时：当周围有其他船员时，提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖和10%‖end‖‖color:gui.orange‖攻击速度‖end‖
+        穿着‖color:gui.red‖椛 装束+‖end‖时：当周围有其他船员时，对血量低于‖color:gui.green‖50%‖end‖的敌人造成额外‖color:gui.green‖10%‖end‖的伤害</talentdescription.Touhou_Tiangou06>
+    <talentname.Touhou_Tiangou07>山中神灵</talentname.Touhou_Tiangou07>
+    <talentdescription.Touhou_Tiangou07>
+        穿着‖color:gui.red‖文文装束+‖end‖时：根据角色等级，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖移动速度‖end‖，最高‖color:gui.green‖25%‖end‖。角色等级达到‖color:gui.green‖25‖end‖后，额外增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖
+        穿着‖color:gui.red‖椛 装束+‖end‖时：根据角色等级，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖近战攻击伤害‖end‖，最高‖color:gui.green‖25%‖end‖。角色等级到达‖color:gui.green‖25‖end‖后，额外减少‖color:gui.green‖10%‖end‖受到的伤害。</talentdescription.Touhou_Tiangou07>
 
 </infotexts>
