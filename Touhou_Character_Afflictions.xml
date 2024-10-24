@@ -588,7 +588,6 @@
                 iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" strengthchange="-9" resistancefor="stun,debuff" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="AttackMultiplier" value="0.2" />
-            <StatValue stattype="MeleeAttackSpeed" value="0.2" />
             <StatValue stattype="MaximumHealthMultiplier" value="0.2" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Tenshi_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />

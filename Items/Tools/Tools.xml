@@ -743,7 +743,7 @@
                 <TriggerEvent identifier="Aya_Press_Card_Select_Event" />
                 <RemoveItem />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" condition="3.0" >
+            <StatusEffect type="OnContained" target="This" condition="3.0" >
                 <Conditional condition="gt 10"/>
             </StatusEffect>
         </Holdable>

@@ -106,11 +106,11 @@
         魔法能力给予的增幅在技能水平‖color:gui.green‖400‖end‖时停止增长</talentdescription.Talents_Yousei_Primary09>
     <talenttree.Behind_The_Scenes>鹑居鷇食</talenttree.Behind_The_Scenes>
     <talentname.Touhou_Candy_Fun>糖果乐事</talentname.Touhou_Candy_Fun>
-    <talentdescription.Touhou_Candy_Fun>增加‖color:gui.green‖10%‖攻击伤害‖end‖‖color:gui.orange‖最大生命值‖end‖。巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柚子味）‖end‖，在医疗界面使用不同的糖果可以获得不同的额外增益各150秒：
+    <talentdescription.Touhou_Candy_Fun>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖‖color:gui.orange‖最大生命值‖end‖。巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柚子味）‖end‖，在医疗界面使用不同的糖果可以获得不同的额外增益各‖color:gui.green‖150‖end‖秒：
         ‖color:gui.yellow‖苹果味‖end‖：‖color:gui.orange‖极速‖end‖‖color:gui.green‖150点‖end‖；
-        ‖color:gui.yellow‖蜜桃味‖end‖：‖color:gui.orange‖最大生命值‖end‖‖color:gui.green‖提高15%‖end‖；
-        ‖color:gui.yellow‖柠檬味‖end‖：‖color:gui.orange‖攻击速度‖end‖‖color:gui.green‖提高10%‖end‖；
-        ‖color:gui.yellow‖柚子味‖end‖：‖color:gui.orange‖攻击伤害‖end‖‖color:gui.green‖提高10%‖end‖。</talentdescription.Touhou_Candy_Fun>
+        ‖color:gui.yellow‖蜜桃味‖end‖：‖color:gui.orange‖最大生命值‖end‖提高‖color:gui.green‖15%‖end‖；
+        ‖color:gui.yellow‖柠檬味‖end‖：‖color:gui.orange‖攻击速度‖end‖提高‖color:gui.green‖10%‖end‖；
+        ‖color:gui.yellow‖柚子味‖end‖：‖color:gui.orange‖攻击伤害‖end‖提高‖color:gui.green‖提高10%‖end‖。</talentdescription.Touhou_Candy_Fun>
     <talentname.Touhou_Insouciance>无忧无虑</talentname.Touhou_Insouciance>
     <talentdescription.Touhou_Insouciance>如果附近没有敌对生物，加速‖color:gui.yellow‖物理伤害、烧伤和出血‖end‖的恢复</talentdescription.Touhou_Insouciance>
     <talentname.Touhou_Emergency_Avoidance>紧急避险</talentname.Touhou_Emergency_Avoidance>
@@ -140,7 +140,8 @@
     <talentname.Touhou_Further_Study>寺子屋深造</talentname.Touhou_Further_Study>
     <talentdescription.Touhou_Further_Study>加工台、解构仪的使用速度增加‖color:gui.green‖50%‖end‖，药物制造的速度增加‖color:gui.green‖50%‖end‖</talentdescription.Touhou_Further_Study>
     <talentname.Touhou_Child_Of_Nature>自然之子</talentname.Touhou_Child_Of_Nature>
-    <talentdescription.Touhou_Child_Of_Nature>每个巡回额外获得每种糖果各一个，异变能量大于‖color:gui.green‖60‖end‖时，免疫水压。解锁配方：‖color:gui.orange‖糖果精华‖end‖。糖果精华允许妖精职业获得魔法使五个天赋（包含三个最终天赋）的弱化版。</talentdescription.Touhou_Child_Of_Nature>
+    <talentdescription.Touhou_Child_Of_Nature>每个巡回额外获得每种糖果各一个，异变能量大于‖color:gui.green‖60‖end‖时，免疫水压。 解锁配方：‖color:gui.orange‖糖果精华‖end‖。
+        糖果精华允许妖精职业获得魔法使五个天赋（包含三个最终天赋）的弱化版。五个天赋全部解锁后可提供额外增益：制作物品质量+‖color:gui.green‖1‖end‖，异变能量自然减少速度下降‖color:gui.green‖90%‖end‖</talentdescription.Touhou_Child_Of_Nature>
     <talentname.Gensokyo_Divinggear_Unlocked_Yousei>幻想入-自然之子</talentname.Gensokyo_Divinggear_Unlocked_Yousei>
     <talentdescription.Gensokyo_Divinggear_Unlocked_Yousei>巡回结束时获得所有技能和魔法能力‖color:gui.green‖2‖end‖点。</talentdescription.Gensokyo_Divinggear_Unlocked_Yousei>
     <talentname.Hermes_Yousei>三重伟大-自然之子</talentname.Hermes_Yousei>
@@ -191,7 +192,7 @@
     <talentname.Talents_Yokai_Primary15>异变源头</talentname.Talents_Yokai_Primary15>
     <talentdescription.Talents_Yokai_Primary15>每杀死一个生物，增加‖color:gui.green‖1‖end‖点计数。计数到达不同阶段将给予不同效果：
         ‖color:gui.green‖200‖end‖：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
-        ‖color:gui.green‖400‖end‖：些许加快‖color:gui.yellow‖物理伤害、出血‖end‖的恢复。
+        ‖color:gui.green‖400‖end‖：些许加快‖color:gui.yellow‖物理伤害、出血‖end‖的恢复。可以全速拖动生物。
         ‖color:gui.green‖600‖end‖：增加‖color:gui.green‖15%‖end‖的‖color:gui.orange‖攻击伤害‖end‖</talentdescription.Talents_Yokai_Primary15>
     <talentname.Talents_Yokai_Primary16>水涨船高</talentname.Talents_Yokai_Primary16>
     <talentdescription.Talents_Yokai_Primary16>根据当前‖color:gui.orange‖技能水平‖end‖的‖color:gui.green‖5%‖end‖给予不同的效果，技能水平给予的增幅在‖color:gui.green‖300‖end‖以上停止增长：
@@ -216,7 +217,7 @@
     <talentname.Yokai_Select_Tianren_Xianren>天人/仙人</talentname.Yokai_Select_Tianren_Xianren>
     <talentdescription.Yokai_Select_Tianren_Xianren>选择此分支后，不可再解锁其它分支。对应角色：比那名居天子</talentdescription.Yokai_Select_Tianren_Xianren>
     <talentname.Touhou_Yokai_Talents_Locked>天赋停摆</talentname.Touhou_Yokai_Talents_Locked>
-    <talentdescription.Touhou_Yokai_Talents_Locked>切勿随意点击，分支最后的天赋，解锁此天赋后，‖color:gui.red‖其他分支将无法解锁‖end‖</talentdescription.Touhou_Yokai_Talents_Locked>
+    <talentdescription.Touhou_Yokai_Talents_Locked>分支最后的天赋，解锁此天赋后，‖color:gui.red‖其他分支将无法解锁‖end‖</talentdescription.Touhou_Yokai_Talents_Locked>
 
     <talenttree.Touhou_Youling_Wangling>幽灵/亡灵</talenttree.Touhou_Youling_Wangling>
     <talentname.Touhou_Youling_Wangling01>若隐若现</talentname.Touhou_Youling_Wangling01>
@@ -334,7 +335,7 @@
         ‖color:gui.green‖25‖end‖级：每次受到攻击都有‖color:gui.green‖10%‖end‖概率减少‖color:gui.green‖25%‖end‖承受伤害</talentdescription.Touhou_Tiangou04>
     <talentname.Touhou_Tiangou05>破旧立新</talentname.Touhou_Tiangou05>
     <talentdescription.Touhou_Tiangou05>如果你的等级比船员中最高的等级低‖color:gui.green‖1‖end‖级以上，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖，否则增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖。解锁配方：‖color:gui.orange‖天狗的信物‖end‖
-        穿着‖color:gui.red‖文文装束+‖end‖时：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖游泳速度‖end‖。每次进入一个新的站点，增加‖color:gui.green‖1‖end‖个计数。计数到达‖color:gui.green‖5‖end‖个后，提高‖color:gui.green‖10%‖color:gui.orange‖攻击伤害、移动速度和眩晕抗性‖end‖.死亡后计数清零
+        穿着‖color:gui.red‖文文装束+‖end‖时：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖游泳速度‖end‖。每次进入一个新的站点，增加‖color:gui.green‖1‖end‖个计数。计数到达‖color:gui.green‖5‖end‖个后，提高‖color:gui.green‖10%‖color:gui.orange‖攻击伤害、移动速度和眩晕抗性‖end‖。死亡后计数清零
         穿着‖color:gui.red‖椛 装束+‖end‖时：根据‖color:gui.orange‖武器操作‖end‖水平，提高相‖color:gui.green‖应10%‖end‖‖color:gui.orange‖‖color:gui.orange‖游泳速度和buff效果持续时间‖end‖。这个效果在‖color:gui.orange‖武器操作‖end‖超过‖color:gui.green‖300‖end‖后达到上限</talentdescription.Touhou_Tiangou05>
     <talentname.Touhou_Tiangou06>领地意识</talentname.Touhou_Tiangou06>
     <talentdescription.Touhou_Tiangou06>当自己的潜艇遭受攻击后，一定时间内将‖color:gui.orange‖操作炮塔的射速‖end‖提高‖color:gui.green‖25%‖end‖。这个效果有‖color:gui.green‖2‖end‖分钟冷却。
@@ -344,5 +345,25 @@
     <talentdescription.Touhou_Tiangou07>
         穿着‖color:gui.red‖文文装束+‖end‖时：根据角色等级，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖移动速度‖end‖，最高‖color:gui.green‖25%‖end‖。角色等级达到‖color:gui.green‖25‖end‖后，额外增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖
         穿着‖color:gui.red‖椛 装束+‖end‖时：根据角色等级，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖近战攻击伤害‖end‖，最高‖color:gui.green‖25%‖end‖。角色等级到达‖color:gui.green‖25‖end‖后，额外减少‖color:gui.green‖10%‖end‖受到的伤害。</talentdescription.Touhou_Tiangou07>
+
+    <talenttree.Touhou_Tianren_Xianren>天人/仙人</talenttree.Touhou_Tianren_Xianren>
+    <talentname.Touhou_Tianren_Xianren01>悠然自在</talentname.Touhou_Tianren_Xianren01>
+    <talentdescription.Touhou_Tianren_Xianren01>提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖眩晕抗性‖end‖。等级低于‖color:gui.green‖15‖end‖时，‖color:gui.orange‖技能获取速度‖color:gui.red‖-50%‖end‖。否则‖color:gui.orange‖技能获取速度‖color:gui.red‖-150%‖end‖</talentdescription.Touhou_Tianren_Xianren01>
+    <talentname.Touhou_Tianren_Xianren02>天衣无缝</talentname.Touhou_Tianren_Xianren02>
+    <talentdescription.Touhou_Tianren_Xianren02>提高‖color:gui.green‖20%‖end‖‖color:gui.orange‖毒药抗性‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖debuff抗性‖end‖。如果你比最高等级的船员低‖color:gui.green‖2‖end‖级以上，增加20‖end‖点所有技能。
+        否则提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖技能水平‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖</talentdescription.Touhou_Tianren_Xianren02>
+    <talentname.Touhou_Tianren_Xianren03>天人之血</talentname.Touhou_Tianren_Xianren03>
+    <talentdescription.Touhou_Tianren_Xianren03>受到攻击后，给予攻击源头‖color:gui.green‖8‖end‖秒debuff效果：减少‖color:gui.green‖20%‖end‖‖color:gui.orange‖移动速度和攻击速度‖end‖并降低‖color:gui.green‖20%‖end‖‖color:gui.orange‖烧伤抗性‖end‖。这个效果有‖color:gui.green‖15‖end‖秒冷却</talentdescription.Touhou_Tianren_Xianren03>
+    <talentname.Touhou_Tianren_Xianren04>无念无想</talentname.Touhou_Tianren_Xianren04>
+    <talentdescription.Touhou_Tianren_Xianren04>满血时，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度‖end‖和‖color:gui.green‖25%‖end‖‖color:gui.orange‖修复速度‖end‖。血量低于‖color:gui.green‖0‖end‖时，增加‖color:gui.green‖90%‖end‖‖color:gui.orange‖缺氧抗性‖end‖。等级大于‖color:gui.green‖15‖end‖后，受到的攻击伤害减少‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Tianren_Xianren04>
+    <talentname.Touhou_Tianren_Xianren05>如梦似幻</talentname.Touhou_Tianren_Xianren05>
+    <talentdescription.Touhou_Tianren_Xianren05>击杀任意生物后，给予所有技能点‖color:gui.green‖1‖end‖点。这个效果一巡回最多触发‖color:gui.green‖5‖end‖次。
+        穿着‖color:gui.red‖天子装束+‖end‖时：巡回完成所有任务后，增加‖color:gui.green‖1‖end‖个计数。计数达到‖color:gui.green‖5‖end‖个后，增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖近战攻击速度‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖。计数在死亡后清除</talentdescription.Touhou_Tianren_Xianren05>
+    <talentname.Touhou_Tianren_Xianren06>超凡脱俗</talentname.Touhou_Tianren_Xianren06>
+    <talentdescription.Touhou_Tianren_Xianren06>允许技能水平的上限超过‖color:gui.green‖100‖end‖达到‖color:gui.green‖200‖end‖
+        穿着‖color:gui.red‖天子装束+‖end‖时：根据角色等级，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖攻击速度‖end‖，最高‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Tianren_Xianren06>
+    <talentname.Touhou_Tianren_Xianren07>至圣至明</talentname.Touhou_Tianren_Xianren07>
+    <talentdescription.Touhou_Tianren_Xianren07>
+        穿着‖color:gui.red‖天子装束+时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖攻击伤害‖end‖。根据‖color:gui.orange‖魔法能力‖end‖水平，提高相应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖最大生命值‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限</talentdescription.Touhou_Tianren_Xianren07>
 
 </infotexts>

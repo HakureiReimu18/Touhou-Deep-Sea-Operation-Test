@@ -288,7 +288,9 @@
         <Fabricate suitablefabricators="Magic_Altar" displayname="recycleitem" requiredtime="2.5">
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredSkill identifier="Touhou_Magic" level="70" />
-            <RequiredItem identifier="alienpowercell" mincondition="0.2" usecondition="true" amount="1"/>
+            <RequiredItem identifier="Touhou_Base_Metal" />
+            <RequiredItem identifier="Score_Point" />
+            <RequiredItem identifier="alienpowercell" amount="1"/>
             <RequiredItem identifier="Stardust_Reverie" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="226,226,72,72" origin="0.5,0.5" />
@@ -994,7 +996,7 @@
         <Sprite texture="%ModDir%/Images/Youmu_Items/Youmusmg_Sprite.png" sourcerect="0,0,147,79" depth="0.55" origin="0.5,0.5" />
         <Body width="140" height="60" density="25" />
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
-        <RangedWeapon reload="0.13" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="64,2" spread="8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+        <RangedWeapon reload="0.13" weapondamagemodifier="1.05" holdtrigger="true" barrelpos="64,2" spread="8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="0,0,180,180" />
             <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -3692,7 +3694,7 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Condition="-10" interval="0.08" disabledeltatime="true" stackable="false" />
+            <StatusEffect type="OnActive" target="This" Condition="-10" interval="0.08" disabledeltatime="true" stackable="false" />
             <StatusEffect type="OnBroken" target="This" setvalue="true" Condition="100" disabledeltatime="true" />
 
             <LightComponent LightColor="255,100,100,160" Flicker="0.2" Range="700" IsOn="true" >
@@ -4681,7 +4683,7 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="2" targetforce="6" itemdamage="8" severlimbsprobability="0.2" penetration="0.25">
-                <Affliction identifier="gunshotwound" strength="9" />
+                <Affliction identifier="gunshotwound" strength="8" />
                 <Affliction identifier="lacerations" strength="5" />
                 <Affliction identifier="lacerations" strength="6" probability="0.5" />
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" />
@@ -4711,7 +4713,7 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="0.2" targetforce="6" itemdamage="8" severlimbsprobability="0.2" penetration="0.35">
-                <Affliction identifier="gunshotwound" strength="9" />
+                <Affliction identifier="gunshotwound" strength="8" />
                 <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="1.5" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.4" />

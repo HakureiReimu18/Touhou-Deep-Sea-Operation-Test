@@ -243,7 +243,7 @@
                 <GiveExperience amount="200" />
                 <RemoveItem />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" condition="2.0" >
+            <StatusEffect type="OnContained" target="This" condition="2.0" >
                 <Conditional condition="gt 10"/>
             </StatusEffect>
         </Holdable>
@@ -274,7 +274,7 @@
                 <GiveExperience amount="250" />
                 <RemoveItem />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" condition="2.0" >
+            <StatusEffect type="OnContained" target="This" condition="2.0" >
                 <Conditional condition="gt 10"/>
             </StatusEffect>
         </Holdable>
@@ -314,7 +314,7 @@
                 <GiveExperience amount="800" />
                 <RemoveItem />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" condition="2.0" >
+            <StatusEffect type="OnContained" target="This" condition="2.0" >
                 <Conditional condition="gt 10"/>
             </StatusEffect>
         </Holdable>
@@ -348,7 +348,7 @@
                 <GiveExperience amount="350" />
                 <RemoveItem />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" condition="2.0" >
+            <StatusEffect type="OnContained" target="This" condition="2.0" >
                 <Conditional condition="gt 10"/>
             </StatusEffect>
         </Holdable>
@@ -380,7 +380,7 @@
                 <GiveExperience amount="150" />
                 <RemoveItem />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" condition="2.0" >
+            <StatusEffect type="OnContained" target="This" condition="2.0" >
                 <Conditional condition="gt 10"/>
             </StatusEffect>
         </Holdable>

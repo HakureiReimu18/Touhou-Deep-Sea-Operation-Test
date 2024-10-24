@@ -1552,7 +1552,7 @@
               affectmachines="false"
               iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Pendulum_Magic" minstrength="0" maxstrength="10"/>
-    <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="3000" ThermalOverlayColor="176,0,0,120"/>
+    <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="9000" ThermalOverlayColor="176,0,0,120"/>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Pendulum_Magic.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 </Afflictions>

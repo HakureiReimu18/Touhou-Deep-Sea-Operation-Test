@@ -1229,7 +1229,7 @@
                 <sound file="Content/Items/Weapons/GRAVITYSHELLS_damageLoop.ogg" volume="1.0" range="1000.0" loop="true" />
             </StatusEffect>
         </TriggerComponent>
-        <StatusEffect type="OnNotContained" target="This" delay="2.0" disabledeltatime="true">
+        <StatusEffect type="OnActive" target="This" delay="2.0" disabledeltatime="true">
             <Remove/>
         </StatusEffect>
     </Item>

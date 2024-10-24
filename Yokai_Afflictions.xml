@@ -90,6 +90,7 @@
                 <ReduceAffliction type="damage" strength="0.1" />
                 <ReduceAffliction type="bleeding" strength="0.1" />
             </StatusEffect>
+            <AbilityFlag flagtype="MoveNormallyWhileDragging" />
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
@@ -1105,6 +1106,7 @@
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
+
     <Affliction
             identifier="Touhou_Tiangou06_Effect_Momizi"
             type="talentbuff"
@@ -1118,6 +1120,160 @@
             duration="2.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" />
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--天人/仙人-->
+    <Affliction
+            identifier="Touhou_Tianren_Xianren01_Effect"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="10.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.1" maxresistance="0.1" />
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Tianren_Xianren02_Effect01"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="10.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="debuff" minresistance="0.1" maxresistance="0.1" />
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Tianren_Xianren02_Effect02"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="10.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="poison" minresistance="0.2" maxresistance="0.2" />
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Tianren_Xianren02_Effect03"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="10.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" >
+            <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Tianren_Xianren03_Effect"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="8.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="-0.2" maxresistance="-0.2">
+            <StatValue stattype="MovementSpeed" value="-0.2" />
+            <StatValue stattype="RangedAttackSpeed" value="-0.2" />
+            <StatValue stattype="MeleeAttackSpeed" value="-0.2" />
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Tianren_Xianren03_Effect_CD"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="15.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" />
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Tianren_Xianren04_Effect01"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="1.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="MovementSpeed" value="0.1" />
+            <StatValue stattype="RepairSpeed" value="0.25" />
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Tianren_Xianren04_Effect02"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="1.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="oxygenlow" minresistance="0.9" maxresistance="0.9" />
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Tianren_Xianren04_Effect_Tenshi"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="10.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="0.1" maxresistance="0.1" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 

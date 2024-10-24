@@ -570,6 +570,24 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasTalent identifier="Gensokyo_Divinggear_Unlocked_Yousei" />
+                <AbilityConditionHasTalent identifier="Hermes_Yousei" />
+                <AbilityConditionHasTalent identifier="MEID_Unlocked_Yousei" />
+                <AbilityConditionHasTalent identifier="Gensokyo_Banquet_Yousei" />
+                <AbilityConditionHasTalent identifier="Talents_Magician_Primary03_Yousei" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Child_Of_Nature_Effect" amount="1" setvalue="true" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
         <AddedRecipe itemidentifier="Touhou_Candy_Essence" />
     </Talent>
 
