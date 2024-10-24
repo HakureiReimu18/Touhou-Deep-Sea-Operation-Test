@@ -421,8 +421,8 @@
     </Talent>
 
     <!--异变源头 每杀死一个生物，增加1点计数。计数到达不同阶段将给予不同效果：
-    200：增加10%最大生命值。
-    400：些许加快物理伤害、出血的恢复。
+    200：增加10%最大生命值。双手部位的物理伤害抗性增加10%
+    400：些许加快物理伤害、出血的恢复。可以全速拖动生物
     600：增加10%的攻击伤害-->
     <Talent identifier="Talents_Yokai_Primary15" trackedstat="Yokai_Counter" trackedmax="600">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />

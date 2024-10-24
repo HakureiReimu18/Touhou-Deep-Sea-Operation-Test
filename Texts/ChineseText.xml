@@ -1155,7 +1155,7 @@
   <entityname.Youmu_Smgmagazine_Plus>‖color:156,158,161,255‖幽冥弹匣Plus‖color:end‖</entityname.Youmu_Smgmagazine_Plus>
   <entitydescription.Youmu_Smgmagazine_Plus>幽冥弹匣的升级款，具备更强的穿透力，射弹也更加锐利</entitydescription.Youmu_Smgmagazine_Plus>
   <afflictionname.Touhou_Pendulum_Magic>灵摆魔力</afflictionname.Touhou_Pendulum_Magic>
-  <afflictiondescription.Touhou_Pendulum_Magic>灵摆魔力让你的魔法能力更加充盈。</afflictiondescription.Touhou_Pendulum_Magic>
+  <afflictiondescription.Touhou_Pendulum_Magic>灵摆魔力让你的魔法能力更加充盈。魔法能力大于120后，提高5%出血抗性</afflictiondescription.Touhou_Pendulum_Magic>
   <entityname.Touhou_Scorching_Ray_Gun>‖color:red‖炽热的射线枪‖color:end‖</entityname.Touhou_Scorching_Ray_Gun>
   <entitydescription.Touhou_Scorching_Ray_Gun>河童们以藤原妹红的火焰为原型制造的武器，其中蕴含的炽热能量任谁都无法忽视。使用炽热核心作为弹药，填入燃料棒可以提升性能。</entitydescription.Touhou_Scorching_Ray_Gun>
   <entityname.Touhou_Scorching_Ray_Gun_Ammo>‖color:red‖炽热核心‖color:end‖</entityname.Touhou_Scorching_Ray_Gun_Ammo>

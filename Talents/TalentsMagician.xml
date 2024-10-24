@@ -379,7 +379,7 @@
         <AddedRecipe itemidentifier="gensokyo_divinggear" />
     </Talent>
 
-    <!--炼金无限 瓶装元素的出售价格增加至75%，解锁配方：回收日、月符卡-->
+    <!--炼金无限 瓶装元素的出售价格增加至75%，双手部位的物理伤害抗性和烧伤抗性提高15%，解锁配方：回收日、月符卡-->
     <Talent identifier="Spell_Card_Recycle_Unlocked">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Spell_Card_Recycle_Unlocked"/>
@@ -392,6 +392,17 @@
                 <CharacterAbilityGivePermanentStat statidentifier="Shui_Alchemical" stattype="StoreSellMultiplier" value="0.75" targetallies="true" setvalue="true" />
             </Abilities>
         </AbilityGroupEffect>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Spell_Card_Recycle_Unlocked_Effect" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
         <AddedRecipe itemidentifier="Touhou_Royal_Flare" />
         <AddedRecipe itemidentifier="Touhou_Silent_Selene_Ammo" />
     </Talent>

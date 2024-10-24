@@ -119,7 +119,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--悠哉悠哉 巡回结束完成任意任务，获得妖精糖果（柠檬味），解锁配方：糖衣炮弹，糖果炮-->
+    <!--悠哉悠哉 巡回结束完成任意任务，获得妖精糖果（柠檬味），双手部位的物理伤害抗性提高10%，解锁配方：糖衣炮弹，糖果炮-->
     <Talent identifier="Talents_Yousei_Primary07">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yousei_Primary07"/>
@@ -128,6 +128,17 @@
                 <CharacterAbilityPutItem itemidentifier="Touhou_Candy_Lemon" amount="1"/>
             </Abilities>
         </AbilityGroupEffect>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Talents_Yousei_Primary07_Effect" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
         <AddedRecipe itemidentifier="Touhou_Sugar_Coated_Cannonball" />
         <AddedRecipe itemidentifier="Touhou_Candy_Cannon" />
     </Talent>

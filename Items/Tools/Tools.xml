@@ -1630,7 +1630,7 @@
                 <Affliction identifier="Touhou_Pendulum_Magic" amount="50" />
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" comparison="And" >
-                <Conditional skillrequirement="true" Touhou_Magic="gt 80" />
+                <Conditional skillrequirement="true" Touhou_Magic="gt 120" />
                 <Affliction identifier="Touhou_Pendulum_Magic_Effect" amount="50" />
             </StatusEffect>
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="15" />
