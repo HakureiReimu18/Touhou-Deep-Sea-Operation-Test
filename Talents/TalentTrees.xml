@@ -174,9 +174,6 @@
       <SubTree identifier="Touhou_Youling_Wangling" type="specialization" requires="Yokai_Talents_Select"
                blocks="Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou_Shouren,Touhou_Tiangou,Touhou_Tianren_Xianren">
         <TalentOptions>
-          <TalentOption identifier="Yokai_Select_Youling_Wangling"/>
-        </TalentOptions>
-        <TalentOptions>
           <TalentOption identifier="Touhou_Youling_Wangling01"/>
         </TalentOptions>
         <TalentOptions>
@@ -205,9 +202,6 @@
       <!--对应角色：风见幽香，封兽鵺，河城荷取，古明地恋-->
       <SubTree identifier="Touhou_Yaoguai" type="specialization" requires="Yokai_Talents_Select"
                blocks="Touhou_Youling_Wangling,Touhou_Vampire,Touhou_Yaoshou_Shouren,Touhou_Tiangou,Touhou_Tianren_Xianren">
-        <TalentOptions>
-          <TalentOption identifier="Yokai_Select_Yaoguai"/>
-        </TalentOptions>
         <TalentOptions>
           <TalentOption identifier="Touhou_Yaoguai01"/>
         </TalentOptions>
@@ -238,9 +232,6 @@
       <SubTree identifier="Touhou_Vampire" type="specialization" requires="Yokai_Talents_Select"
                blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Yaoshou_Shouren,Touhou_Tiangou,Touhou_Tianren_Xianren">
         <TalentOptions>
-          <TalentOption identifier="Yokai_Select_Vampire"/>
-        </TalentOptions>
-        <TalentOptions>
           <TalentOption identifier="Touhou_Vampire01"/>
         </TalentOptions>
         <TalentOptions>
@@ -267,11 +258,8 @@
       </SubTree>
       <!--妖兽/兽人-->
       <!--对应角色：高丽野阿吽-->
-      <SubTree identifier="Touhou_Yaoshou_Shouren_Shouren" type="specialization" requires="Yokai_Talents_Select"
+      <SubTree identifier="Touhou_Yaoshou_Shouren" type="specialization" requires="Yokai_Talents_Select"
                blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Vampire,Touhou_Tiangou,Touhou_Tianren_Xianren">
-        <TalentOptions>
-          <TalentOption identifier="Yokai_Select_Yaoshou"/>
-        </TalentOptions>
         <TalentOptions>
           <TalentOption identifier="Touhou_Yaoshou_Shouren01"/>
         </TalentOptions>
@@ -302,9 +290,6 @@
       <SubTree identifier="Touhou_Tiangou" type="specialization" requires="Yokai_Talents_Select"
                blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou_Shouren,Touhou_Tianren_Xianren">
         <TalentOptions >
-          <TalentOption identifier="Yokai_Select_Tiangou"/>
-        </TalentOptions>
-        <TalentOptions >
           <TalentOption identifier="Touhou_Tiangou01"/>
         </TalentOptions>
         <TalentOptions >
@@ -333,9 +318,6 @@
       <!--对应角色：比那民居天子-->
       <SubTree identifier="Touhou_Tianren_Xianren" type="specialization" requires="Yokai_Talents_Select"
                blocks="Touhou_Youling_Wangling,Touhou_Yaoguai,Touhou_Vampire,Touhou_Yaoshou_Shouren,Touhou_Tiangou">
-        <TalentOptions>
-          <TalentOption identifier="Yokai_Select_Tianren_Xianren"/>
-        </TalentOptions>
         <TalentOptions>
           <TalentOption identifier="Touhou_Tianren_Xianren01"/>
         </TalentOptions>

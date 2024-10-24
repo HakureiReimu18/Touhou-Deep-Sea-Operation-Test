@@ -606,7 +606,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--灵魂恐惧 对越弱小的敌人造成额外伤害，最高30%-->
+    <!--灵魂恐惧 对越弱小的敌人造成额外伤害，最高15%-->
     <Talent identifier="Touhou_Youling_Wangling02">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Youling_Wangling02"/>
@@ -618,7 +618,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -632,7 +632,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -646,7 +646,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -991,7 +991,7 @@
         </AbilityGroupInterval>
     </Talent>
 
-    <!--刀枪不入 增加15%物理伤害抗性和烧伤抗性，受到攻击后略微增加自身的精神病。精神病越高，物理伤害抗性越低，最低3%。-->
+    <!--刀枪不入 增加15%物理伤害抗性和烧伤抗性，受到攻击后略微增加自身的精神病。精神病越高，抗性越低，最低3%。-->
     <Talent identifier="Touhou_Yaoguai03">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yaoguai03"/>
@@ -1270,7 +1270,7 @@
             </Abilities>
         </AbilityGroupInterval>
         <!--鵺-->
-        <AbilityGroupInterval interval="4.9">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Unconfirmed_Fantasy_Flying_Girl" />
                 <AbilityConditionHasPermanentStat statidentifier="NueTalent_Counter" min="312"/>
@@ -1518,7 +1518,7 @@
     </Talent>
 
     <!--红雾血月 提高15%失血抗性，受到的烧伤和出血额外增加15%。每秒有20%概率将受到的烧伤以120%倍率转化为噬咬。
-    根据角色等级减少自身debuff效果持续时间，每级减少5%，最高75%-->
+    根据角色等级减少自身debuff效果持续时间，每级减少4%，最高60%-->
     <Talent identifier="Touhou_Vampire02">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Vampire02"/>
@@ -1565,15 +1565,20 @@
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="0.5">
             <Abilities>
-                <CharacterAbilityModifyStatToLevel stattype="DebuffDurationMultiplier" statperlevel="-0.05" maxlevel="15" />
+                <CharacterAbilityModifyStatToLevel stattype="DebuffDurationMultiplier" statperlevel="-0.04" maxlevel="15" />
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
 
-    <!--过度出血 对人类造成的出血和失血提高15%。对出血越高的敌人，造成的伤害越高，最高25%-->
+    <!--过度出血 造成的出血提高15%。对人类造成的出血和失血额外提高15%。对出血越高的敌人，造成的伤害越高，最高25%-->
     <Talent identifier="Touhou_Vampire03">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Vampire03"/>
+        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+            <Abilities>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" addedmultiplier="0.15" />
+            </Abilities>
+        </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionCharacter targettype="Any">
@@ -2330,7 +2335,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl" />
                 <AbilityConditionLocation hasoutpost="true"/>
-                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="11" invert="true"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="6" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Tiangou05_Counter" value="1" removeondeath="true" />
@@ -2339,7 +2344,7 @@
         <AbilityGroupInterval interval="0.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl" />
-                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="10"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="5"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1"/>
@@ -2525,7 +2530,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--天衣无缝 提高20%毒药抗性和10%debuff抗性。如果你比最高等级的船员低2级以上，增加20点所有技能。否则提高10%技能水平和10%最大生命值-->
+    <!--天衣无缝 提高20%毒药抗性和10%debuff抗性。如果你比最高等级的船员低2级以上，增加20%技能获取速度。否则提高10%技能水平和10%最大生命值-->
     <Talent identifier="Touhou_Tianren_Xianren02">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tianren_Xianren02"/>
@@ -2546,12 +2551,7 @@
                 <AbilityConditionLevelsBehindHighest levelsbehind="2" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityIncreaseSkill skillidentifier="Touhou_Magic" skillincrease="20"/>
-                <CharacterAbilityIncreaseSkill skillidentifier="helm" skillincrease="20"/>
-                <CharacterAbilityIncreaseSkill skillidentifier="weapons" skillincrease="20"/>
-                <CharacterAbilityIncreaseSkill skillidentifier="medical" skillincrease="20"/>
-                <CharacterAbilityIncreaseSkill skillidentifier="electrical" skillincrease="20"/>
-                <CharacterAbilityIncreaseSkill skillidentifier="mechanical" skillincrease="20"/>
+                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="0.2"/>
             </Abilities>
             <FallbackAbilities>
                 <CharacterAbilityApplyStatusEffects>
@@ -2640,7 +2640,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--如梦似幻 击杀任意生物后，给予所有技能点1点。这个效果一巡回最多触发5次。
+    <!--如梦似幻 击杀任意生物后，给予所有技能点1点。这个效果一巡回最多触发3次。
         穿着天子装束+时：巡回完成所有任务后，增加1个计数。计数达到5个后，增加20%近战攻击速度和10%物理伤害抗性。计数在死亡后清除-->
     <Talent identifier="Touhou_Tianren_Xianren05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
@@ -2652,16 +2652,22 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
             <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tianren_Xianren04_Counter" min="6" invert="true"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tianren_Xianren04_Counter" min="3" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Tianren_Xianren04_Counter" value="1" removeondeath="false" />
-                <CharacterAbilityGainSimultaneousSkill skillidentifier="Touhou_Magic" ignoreabilityskillgain="true" targetallies="false" />
-                <CharacterAbilityGainSimultaneousSkill skillidentifier="helm" ignoreabilityskillgain="true" targetallies="false" />
-                <CharacterAbilityGainSimultaneousSkill skillidentifier="weapons" ignoreabilityskillgain="true" targetallies="false" />
-                <CharacterAbilityGainSimultaneousSkill skillidentifier="medical" ignoreabilityskillgain="true" targetallies="false" />
-                <CharacterAbilityGainSimultaneousSkill skillidentifier="electrical" ignoreabilityskillgain="true" targetallies="false" />
-                <CharacterAbilityGainSimultaneousSkill skillidentifier="mechanical" ignoreabilityskillgain="true" targetallies="false" />
+                <CharacterAbilityApplyStatusEffects applytoself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <GiveSkill skillidentifier="electrical" amount="1" triggertalents="false" AlwayShowNotification="true" />
+                            <GiveSkill skillidentifier="helm" amount="1" triggertalents="false" AlwayShowNotification="true"/>
+                            <GiveSkill skillidentifier="mechanical" amount="1" triggertalents="false" AlwayShowNotification="true"/>
+                            <GiveSkill skillidentifier="medical" amount="1" triggertalents="false" AlwayShowNotification="true"/>
+                            <GiveSkill skillidentifier="weapons" amount="1" triggertalents="false" AlwayShowNotification="true"/>
+                            <GiveSkill skillidentifier="Touhou_Magic" amount="1" triggertalents="false" AlwayShowNotification="true"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
         <!--比那名居天子-->
@@ -2695,7 +2701,7 @@
 
     <!--超凡脱俗 允许技能水平的上限超过100达到200
         穿着天子装束+时：对被气质剥离的敌人造成的伤害提高10%。根据角色等级，每级增加1%攻击速度，最高20%-->
-    <Talent identifier="Touhou_Tianren_Xianren06" trackedstat="Touhou_Tiangou05_Counter" trackedmax="5">
+    <Talent identifier="Touhou_Tianren_Xianren06">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tianren_Xianren06"/>
         <AbilityGroupEffect abilityeffecttype="None">
@@ -2729,7 +2735,7 @@
 
     <!--至圣至明
         穿着天子装束+时：增加15%攻击伤害。根据魔法能力水平，提高相应10%的最大生命值。这个效果在魔法能力超过300时达到上限-->
-    <Talent identifier="Touhou_Tianren_Xianren07" trackedstat="Touhou_Tiangou05_Counter" trackedmax="5">
+    <Talent identifier="Touhou_Tianren_Xianren07">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tianren_Xianren07"/>
         <AbilityGroupEffect abilityeffecttype="None">

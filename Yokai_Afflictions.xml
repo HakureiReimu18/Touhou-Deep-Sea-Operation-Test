@@ -159,7 +159,7 @@
             treatmentthreshold="1000"
             maxstrength="1"
             hideiconafterdelay="true"
-            duration="3.0"
+            duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.3" maxresistance="0.3" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
@@ -502,7 +502,7 @@
             treatmentthreshold="1000"
             maxstrength="1"
             hideiconafterdelay="true"
-            duration="5.0"
+            duration="10.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="Sleepless_Nightmare,Ancient_Sorrow_Terror" minresistance="1.0" maxresistance="1.0" >
             <StatValue stattype="RangedAttackSpeed" value="0.1" />
