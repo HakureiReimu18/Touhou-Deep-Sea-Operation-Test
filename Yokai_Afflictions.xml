@@ -507,6 +507,7 @@
         <Effect minstrength="0" maxstrength="1" resistancefor="Sleepless_Nightmare,Ancient_Sorrow_Terror" minresistance="1.0" maxresistance="1.0" >
             <StatValue stattype="RangedAttackSpeed" value="0.1" />
             <StatValue stattype="MeleeAttackSpeed" value="0.1" />
+            <StatValue stattype="IncreaseFabricationQuality" value="1" />
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
@@ -524,6 +525,22 @@
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="0.1" maxresistance="0.1" />
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Yaoguai06_Koishi"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="10.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.15" maxskillmultiplier="1.15" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
@@ -711,7 +728,7 @@
             hideiconafterdelay="true"
             duration="10.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" resistancefor="infection" minresistance="1.0" maxresistance="1.0" />
+        <Effect minstrength="0" maxstrength="1" resistancefor="infection,infectedwound" minresistance="1.0" maxresistance="1.0" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 

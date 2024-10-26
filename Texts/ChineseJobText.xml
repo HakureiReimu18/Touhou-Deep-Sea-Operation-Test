@@ -261,9 +261,9 @@
     <talentname.Touhou_Yaoguai06>“魑魅魍魉”</talentname.Touhou_Yaoguai06>
     <talentdescription.Touhou_Yaoguai06>缓慢治愈自身的‖color:gui.orange‖精神病‖end‖。奔跑一定时间后，些许增加下一次攻击的伤害。那之后有‖color:gui.green‖15‖end‖秒冷却。
         穿着‖color:gui.red‖幽香装束+‖end‖时：大大增幅每种花瓣的效果
-        穿着‖color:gui.red‖鵺 装束+‖end‖时：当你完成四个阶段的计数后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击速度‖end‖。免疫‖color:gui.orange‖长眠不醒的噩梦和古老的哀愁与恐怖‖end‖
+        穿着‖color:gui.red‖鵺 装束+‖end‖时：当你完成四个阶段的计数后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击速度‖end‖。免疫‖color:gui.orange‖长眠不醒的噩梦和古老的哀愁与恐怖‖end‖。制造物品的质量+‖color:gui.green‖1‖end‖
         穿着‖color:gui.red‖荷取装束+‖end‖时：额外增加‖color:gui.green‖30%‖end‖的‖color:gui.orange‖修复速度和船体修复速度‖end‖。生命值大于50%‖end‖时，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖，否则增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖攻击伤害‖end‖
-        穿着‖color:gui.red‖恋 装束+‖end‖时：不会受到‖color:gui.orange‖水流冲击‖end‖的影响，‖color:gui.orange‖游泳速度‖end‖增加‖color:gui.green‖30%‖end‖</talentdescription.Touhou_Yaoguai06>
+        穿着‖color:gui.red‖恋 装束+‖end‖时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖技能水平‖end‖。不会受到‖color:gui.orange‖水流冲击‖end‖的影响，‖color:gui.orange‖游泳速度‖end‖增加‖color:gui.green‖30%‖end‖</talentdescription.Touhou_Yaoguai06>
     <talentname.Touhou_Yaoguai07>巫山云雨</talentname.Touhou_Yaoguai07>
     <talentdescription.Touhou_Yaoguai07>
         穿着‖color:gui.red‖幽香装束+‖end‖时：大大增加‖color:gui.yellow‖出血‖end‖的恢复速度，根据当前‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖10%‖end‖提高攻击伤害‖end‖，‖color:gui.orange‖近战攻击速度、移动速度‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限
@@ -327,7 +327,7 @@
     <talentname.Touhou_Tiangou03>天狗之风</talentname.Touhou_Tiangou03>
     <talentdescription.Touhou_Tiangou03>‖color:gui.orange‖移动速度‖end‖提高‖color:gui.green‖10%‖end‖。奔跑时，提高‖color:gui.green‖20%‖end‖‖color:gui.orange‖眩晕抗性‖end‖</talentdescription.Touhou_Tiangou03>
     <talentname.Touhou_Tiangou04>捕风捉影</talentname.Touhou_Tiangou04>
-    <talentdescription.Touhou_Tiangou04>获取的声望增加15%‖end‖，减少的声望下降25%‖end‖。角色等级在升级后提供不同效果：
+    <talentdescription.Touhou_Tiangou04>获取的声望增加‖color:gui.green‖15%‖end‖，减少的声望下降‖color:gui.green‖25%‖end‖。角色等级在升级后提供不同效果：
         ‖color:gui.green‖15‖end‖级：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击速度‖end‖
         ‖color:gui.green‖18‖end‖级：增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖
         ‖color:gui.green‖20‖end‖级：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖游泳速度‖end‖

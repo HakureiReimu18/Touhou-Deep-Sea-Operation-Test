@@ -722,7 +722,7 @@
                 <Affliction identifier="Touhou_Magic_Boost" amount="2" />
             </StatusEffect>
 
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.65" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor" />
             <SkillModifier skillidentifier="mechanical" skillvalue="5" />
@@ -983,7 +983,7 @@
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
         </Holdable>
-        <RepairTool firedamage="10.0" structurefixamount="3.5" range="200" barrelpos="25,5" particles="weld" repairmultiple="true" repairthroughwalls="false" combatpriority="20" levelwallfixamount="-0.8" targetforce="10">
+        <RepairTool firedamage="10.0" structurefixamount="3.5" range="200" barrelpos="25,5" particles="weld" repairmultiple="true" repairthroughwalls="false" levelwallfixamount="-0.8" targetforce="10">
             <!-- the item must contain a welding fuel tank for it to work -->
             <RequiredItems items="weldingtoolfuel,Touhou_Fix_Foamg_Tank" type="Contained" />
             <RequiredItems items="Welding_Mode" type="Contained" />

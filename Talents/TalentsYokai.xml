@@ -735,15 +735,15 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.2"/>
-                <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="20"/>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.2"/>
+                <CharacterAbilityModifyStat stattype="WeaponsSkillBonus" value="20"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--或生或死 你杀死任意生物时，短暂提高自身眩晕抗性
@@ -1186,9 +1186,9 @@
 
     <!--“魑魅魍魉” 缓慢治愈自身的精神病。奔跑一定时间后，些许增加下一次攻击的伤害。那之后有5秒冷却。
     穿着幽香装束+时：大大增幅每种花瓣的效果
-    穿着鵺 装束+时：当你完成四个阶段的计数后，增加10%攻击速度。免疫长眠不醒的噩梦和古老的哀愁与恐怖
+    穿着鵺 装束+时：当你完成四个阶段的计数后，增加10%攻击速度。免疫长眠不醒的噩梦和古老的哀愁与恐怖。制造物品的质量+1
     穿着荷取装束+时：额外增加30%的修复速度和船体修复速度。生命值大于50%时，增加10%物理伤害抗性，否则增加20%攻击伤害。
-    穿着恋 装束+时：不会受到水流冲击的影响，游泳速度增加50%-->
+    穿着恋 装束+时：增加15%技能水平。不会受到水流冲击的影响，游泳速度增加50%-->
     <Talent identifier="Touhou_Yaoguai06">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yaoguai06"/>
@@ -1203,7 +1203,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="4.9">
             <Conditions>
                 <AbilityConditionRunning/>
             </Conditions>
@@ -1219,7 +1219,7 @@
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yaoguai06_Effect02" />
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yaoguai06_Effect02" minimumPercentage="0.95" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
@@ -1227,10 +1227,10 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttackResult">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yaoguai06_Effect02" />
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yaoguai06_Effect02" minimumPercentage="0.95" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityApplyStatusEffects applytoself="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
                             <Affliction identifier="Touhou_Yaoguai06_Effect02_Removed" amount="100" />
@@ -1309,9 +1309,15 @@
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
-            <FallbackAbilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="2.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Candid_Friend" />
+                <AbilityConditionAboveVitality vitalitypercentage="0.5" invert="true"/>
+            </Conditions>
+            <Abilities>
                 <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.2" />
-            </FallbackAbilities>
+            </Abilities>
         </AbilityGroupInterval>
         <!--恋-->
         <AbilityGroupEffect abilityeffecttype="None">
@@ -1323,6 +1329,20 @@
                 <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.5"/>
             </Abilities>
         </AbilityGroupEffect>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Closed_Eyes_Of_Koishi" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character">
+                            <Affliction identifier="Touhou_Yaoguai06_Koishi" amount="10" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--巫山云雨
@@ -1851,6 +1871,9 @@
         </AbilityGroupEffect>
         <!--芙兰朵露-->
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
@@ -2310,7 +2333,7 @@
     <!--破旧立新 如果你的等级比船员中最高的等级低1级以上，增加10%攻击伤害，否则增加10%物理伤害抗性和烧伤抗性。解锁配方：天狗的信物
         穿着文文装束+时：增加30%游泳速度。每次进入一个新的站点，增加一个计数。计数到达5个后，提高10%攻击伤害、移动速度和眩晕抗性.死亡后计数清零
         穿着椛 装束+时：根据武器操作水平，提高相应10%的游泳速度和buff效果持续时间。这个效果在武器操作超过300后达到上限-->
-    <Talent identifier="Touhou_Tiangou05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="10">
+    <Talent identifier="Touhou_Tiangou05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tiangou05"/>
         <AbilityGroupInterval interval="0.9">
