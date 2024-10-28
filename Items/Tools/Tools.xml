@@ -1542,7 +1542,7 @@
                 </Containable>
             </SubContainer>
             <SubContainer capacity="15" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem,bigitem,mountableweapon,tsm_gun" excludeditems="backpack,crate"/>
+                <Containable items="smallitem,mediumitem,mountableweapon,tsm_gun" excludeditems="backpack,crate"/>
             </SubContainer>
         </ItemContainer>
 

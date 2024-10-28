@@ -66,7 +66,7 @@
             hideiconafterdelay="true"
             duration="10.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage" ResistanceLimbs="LeftArm,RightArm" minresistance="0.1" maxresistance="0.1" >
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage" ResistanceLimbs="LeftArm,RightArm" minresistance="0.08" maxresistance="0.08" >
             <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
@@ -198,6 +198,24 @@
     </Affliction>
 
     <Affliction
+            identifier="Touhou_Youling_Wangling06_Effect"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="1.5"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" >
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1" />
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
             identifier="Touhou_Youling_Wangling07_Effect_Youmu"
             type="talentbuff"
             limbspecific="false"
@@ -209,7 +227,7 @@
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="1.0" maxresistance="1.0" minskillmultiplier="1.5" maxskillmultiplier="1.5" strengthchange="-1" >
             <StatusEffect target="Character">
-                <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="15" anglemin="0" anglemax="360" ColorMultiplier="255,55,205,255"
+                <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="5" anglemin="0" anglemax="360" ColorMultiplier="255,55,205,255"
                                  velocitymin="100" velocitymax="250" scalemin="0.2" scalemax="0.3" drawontop="true" />
             </StatusEffect>
             <AbilityFlag flagtype="AlwaysStayConscious" />
@@ -369,8 +387,8 @@
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" >
             <StatusEffect target="Character" disabledeltatime="true" oneshot="true" >
-                <Conditional IsDead="true"/>
-                <Explosion range="200.0" structuredamage="0" itemdamage="0" ballastfloradamage="0" force="4.0" severlimbsprobability="0.2" penetration="0.1">
+                <Conditional HealthPercentage="lte 2"/>
+                <Explosion range="250.0" force="4.0" severlimbsprobability="0.2" penetration="0.15">
                     <Affliction identifier="Sleepless_Nightmare" strength="20" />
                     <Affliction identifier="burn" strength="10" />
                     <Affliction identifier="explosiondamage" strength="10" />
@@ -819,9 +837,9 @@
             treatmentthreshold="1000"
             maxstrength="1"
             hideiconafterdelay="true"
-            duration="10.0"
+            duration="10.9"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" >
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="1.0" maxresistance="1.0" >
             <AbilityFlag flagtype="AlwaysStayConscious" />
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
@@ -1032,7 +1050,7 @@
             treatmentthreshold="1000"
             maxstrength="1"
             hideiconafterdelay="true"
-            duration="10.0"
+            duration="1.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.2" maxresistance="0.2" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>

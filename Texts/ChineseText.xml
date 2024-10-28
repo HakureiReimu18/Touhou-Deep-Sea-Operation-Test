@@ -1189,4 +1189,8 @@
   <entitydescription.Touhou_Alice_Needle>通常来说，用来缝制人偶的针线应该很小，这根显然不是为了缝制人偶准备的</entitydescription.Touhou_Alice_Needle>
   <entityname.Touhou_Alice_Puppet_Suitcase>人偶手提箱</entityname.Touhou_Alice_Puppet_Suitcase>
   <entitydescription.Touhou_Alice_Puppet_Suitcase>爱丽丝用于容纳人偶的手提箱，可以保护里面的人偶远离木卫二冰冷的海水</entitydescription.Touhou_Alice_Puppet_Suitcase>
+  <entityname.Touhou_Berry_Wine>红莓酒</entityname.Touhou_Berry_Wine>
+  <entitydescription.Touhou_Berry_Wine>妖怪们来到木卫二后，汲取灵感制成的特色酒，可以补充失血，还有缓解毒素的妙用。但一般人类都不胜酒力</entitydescription.Touhou_Berry_Wine>
+  <entityname.Touhou_Life_Needle>生命指针</entityname.Touhou_Life_Needle>
+  <entitydescription.Touhou_Life_Needle>用于从死亡的敌对个体上采集恐惧，外表看上去却是人畜无害的指针样式。</entitydescription.Touhou_Life_Needle>
 </infotexts>

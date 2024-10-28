@@ -715,7 +715,7 @@
                 <Use />
             </StatusEffect>
             <RequiredItems items="Touhou_Blunderbuss_Enemy_Magazine" type="Contained" msg="ItemMsgAmmoRequired" />
-            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="And" >
                 <Conditional Touhou_Enemy_Buff01="lte 0" />
                 <Conditional Touhou_Enemy_Buff02="lte 0" />
                 <Affliction identifier="Reiki_Side_Effect" amount="4" />
@@ -807,7 +807,7 @@
                         </StatusEffect>-->
             <RequiredSkill identifier="weapons" level="80" />
             <RequiredItems items="revolverammo" type="Contained" msg="ItemMsgAmmoRequired" />
-            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="And" >
                 <Conditional Touhou_Enemy_Buff01="lte 0" />
                 <Conditional Touhou_Enemy_Buff02="lte 0" />
                 <Affliction identifier="Reiki_Side_Effect" amount="3" />
@@ -850,7 +850,7 @@
             </StatusEffect>
             <RequiredItems items="Touhou_Magic_Automatic_Shotgun_Bullet" type="Contained" msg="ItemMsgAmmoRequired" />
             <RequiredSkill identifier="weapons" level="75" />
-            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="And" >
                 <Conditional Touhou_Enemy_Buff01="lte 0" />
                 <Conditional Touhou_Enemy_Buff02="lte 0" />
                 <Affliction identifier="Reiki_Side_Effect" amount="3" />

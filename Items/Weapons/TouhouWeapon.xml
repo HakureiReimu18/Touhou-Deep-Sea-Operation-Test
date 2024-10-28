@@ -586,11 +586,9 @@
                     sticktodoors="true" maxtargetstohit="2" removeonhit="true" friendlyfire="false" LaunchRotation="90">
             <Attack structuredamage="0.2" itemdamage="2" targetforce="0.1" penetration="0.05">
                 <Affliction identifier="bleeding" strength="0.8" />
-                <Affliction identifier="lacerations" strength="1.2" />
+                <Affliction identifier="lacerations" strength="1.5" />
                 <Affliction identifier="burn" strength="0.4" probability="0.5"/>
                 <Affliction identifier="stun" strength="0.2" probability="0.03"/>
-                <Affliction identifier="Reiki_Pressure" strength="1.0" />
-                <Affliction identifier="Reiki_Pressure" strength="1.0" probability="0.4"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="1" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="1" probability="0.4"/>
             </Attack>
@@ -914,9 +912,9 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,108,11" origin="0.15,0" />
             </LightComponent>
             <Attack structuredamage="666" itemdamage="666" LevelWallDamage="666" targetforce="30" targetimpulse="30" severlimbsprobability="1" penetration="0.66">
-                <Affliction identifier="Reiki_Pressure" strength="20" />
+                <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="Reiki_Pressure" strength="666" probability="0.01"/>
-                <Affliction identifier="bleeding" strength="66" />
+                <Affliction identifier="bleeding" strength="80" />
                 <Affliction identifier="Scarlet_Long_Night" strength="10" />
                 <Affliction identifier="lacerations" strength="200" />
                 <Affliction identifier="bloodloss" strength="10" />
@@ -3284,7 +3282,7 @@
                     sticktodoors="true" removeonhit="true" friendlyfire="false" LaunchRotation="0">
             <Attack structuredamage="1" itemdamage="5" targetforce="1" penetration="0.3" severlimbsprobability="0.2">
                 <Affliction identifier="bleeding" strength="3.0" />
-                <Affliction identifier="lacerations" strength="18.0" />
+                <Affliction identifier="lacerations" strength="12.0" />
                 <Affliction identifier="burn" strength="5.0" />
                 <Affliction identifier="stun" strength="0.3" probability="0.05"/>
                 <Affliction identifier="Reiki_Pressure" strength="2.0" />
@@ -3832,19 +3830,20 @@
             </LightComponent>
 
             <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.4">
-                <Affliction identifier="Reiki_Pressure" strength="10" />
-                <Affliction identifier="lacerations" strength="20" />
+                <Affliction identifier="Reiki_Pressure" strength="9" />
+                <Affliction identifier="lacerations" strength="15" />
                 <Affliction identifier="slow" strength="30" />
                 <Affliction identifier="Slow_Baka" strength="15" />
                 <Affliction identifier="Touhou_Freeze" strength="15" />
-                <Affliction identifier="Touhou_Freeze" strength="15" probability="0.5" />
-                <Affliction identifier="bleeding" strength="10" />
-                <Affliction identifier="bleeding" strength="10" probability="0.495" />
+                <Affliction identifier="Touhou_Freeze" strength="9" probability="0.5" />
+                <Affliction identifier="bleeding" strength="18" />
+                <Affliction identifier="bleeding" strength="18" probability="0.5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
                 <Affliction identifier="stun" strength="0.35" />
                 <Affliction identifier="stun" strength="0.5" probability="0.5" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
-                <Affliction identifier="Touhou_Lost_Dream" strength="10" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" />
             </StatusEffect>
 
             <StatusEffect type="OnUse" target="UseTarget">

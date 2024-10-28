@@ -952,4 +952,13 @@
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,-55" handle2="0,-55" />
     </Item>
 
+    <!--恐惧精华-->
+    <Item name="恐惧精华" identifier="Touhou_Fear_Item" tags="smallitem" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.2" HideConditionBar="true">
+        <PreferredContainer primary="medcab" />
+        <Deconstruct time="2" />
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Fear_Item.png" depth="0.4" sourcerect="0,0,72,68" />
+        <Body width="15" radius="15" density="10" />
+        <Pickable slots="Any" />
+    </Item>
+
 </Items>

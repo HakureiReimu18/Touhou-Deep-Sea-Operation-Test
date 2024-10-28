@@ -22,7 +22,7 @@
             <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="16"/>
         </Price>
         <Deconstruct time="1"/>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="1" amount="2">
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="0.5" amount="2">
             <RequiredSkill identifier="medical" level="40" />
             <RequiredItem tag="plantitem" />
         </Fabricate>

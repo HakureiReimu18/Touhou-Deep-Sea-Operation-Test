@@ -273,7 +273,7 @@
     <Item name="" identifier="Yin_Yang_Spirit_Orb" tags="mediumitem,railgunequipment,railgunammo,Yin_Yang_Spirit_Orb" showcontentsintooltip="true" subcategory="Touhou" category="Weapon" sonarsize="5" scale="1" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="railgunammoloader,railgunammocontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.08"/>
-        <Price baseprice="1200" sold="false">
+        <Price baseprice="1000" sold="false">
             <Price storeidentifier="merchantoutpost" multiplier="1.35" />
             <Price storeidentifier="merchantcity" multiplier="1.25" sold="true" minavailable="6" />
             <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false"/>

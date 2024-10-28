@@ -91,7 +91,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--天赋停摆 分支最后的天赋，解锁此天赋后，其他分支将无法解锁-->
+    <!--天赋停摆 增加10%最大生命值。分支最后的天赋，解锁此天赋后，其他分支将无法解锁-->
     <Talent identifier="Touhou_Yokai_Talents_Locked">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yokai_Talents_Locked"/>
@@ -102,6 +102,11 @@
             <Abilities>
                 <CharacterAbilityGiveTalentPoints amount="1" />
                 <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -424,12 +429,12 @@
     200：增加10%最大生命值。双手部位的物理伤害抗性增加10%
     400：些许加快物理伤害、出血的恢复。可以全速拖动生物
     600：增加10%的攻击伤害-->
-    <Talent identifier="Talents_Yokai_Primary15" trackedstat="Yokai_Counter" trackedmax="600">
+    <Talent identifier="Talents_Yokai_Primary15" trackedstat="Yokai_Counter" trackedmax="480">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yokai_Primary15"/>
         <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
             <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="601" invert="true"/>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="481" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGivePermanentStat statidentifier="Yokai_Counter" value="1" removeondeath="false" />
@@ -438,12 +443,12 @@
 
         <AbilityGroupInterval interval="9.9">
             <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="200"/>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="160"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character">
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
                             <Affliction identifier="Talents_Yokai_Primary15_Level01" amount="10" />
                         </StatusEffect>
                     </StatusEffects>
@@ -453,7 +458,7 @@
 
         <AbilityGroupInterval interval="9.9">
             <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="400"/>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="320"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
@@ -468,7 +473,7 @@
 
         <AbilityGroupInterval interval="9.9">
             <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="600"/>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="480"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
@@ -652,7 +657,7 @@
     </Talent>
 
     <!--斩断魂灵 对剩余生命值越高的敌人，穿透的护甲越高，最高15%。
-    穿着妖梦装束+时：对满血敌人的攻击造成额外50%伤害，额外50%穿甲。攻击拥有断念效果的敌人时将附带缓慢效果。-->
+    穿着妖梦装束+时：对满血敌人的攻击造成额外30%伤害，额外30%穿甲。攻击拥有断念效果的敌人时将附带缓慢效果。-->
     <Talent identifier="Touhou_Youling_Wangling03">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Youling_Wangling03"/>
@@ -698,8 +703,8 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.5"/>
-                <CharacterAbilityModifyAttackData addedpenetration="0.5"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.3"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.3"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -799,29 +804,24 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--轮回忘却 根据魔法能力的10%增加其他技能水平，这个效果在魔法能力超过300时达到上限
+    <!--轮回忘却 魔法能力超过100后，增加10%所有技能水平。减少10%友军伤害。
     穿着妖梦装束+时：增加20%近战伤害，根据武器操作水平，提高相应10%的最大生命值。这个效果在武器操作超过300时达到上限-->
     <Talent identifier="Touhou_Youling_Wangling06">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Youling_Wangling06"/>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
-                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" invert="true" />
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="100" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStatToSkill stattype="HelmSkillBonus" maxvalue="0.1" skillidentifier="Touhou_Magic" />
-                <CharacterAbilityModifyStatToSkill stattype="WeaponsSkillBonus" maxvalue="0.1" skillidentifier="Touhou_Magic" />
-                <CharacterAbilityModifyStatToSkill stattype="MedicalSkillBonus" maxvalue="0.1" skillidentifier="Touhou_Magic" />
-                <CharacterAbilityModifyStatToSkill stattype="MechanicalSkillBonus" maxvalue="0.1" skillidentifier="Touhou_Magic" />
-                <CharacterAbilityModifyStatToSkill stattype="ElectricalSkillBonus" maxvalue="0.1" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Youling_Wangling06_Effect" amount="1" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
             </Abilities>
-            <FallbackAbilities>
-                <CharacterAbilityModifyStat stattype="HelmSkillBonus" value="30" />
-                <CharacterAbilityModifyStat stattype="WeaponsSkillBonus" value="30" />
-                <CharacterAbilityModifyStat stattype="MedicalSkillBonus" value="30" />
-                <CharacterAbilityModifyStat stattype="MechanicalSkillBonus" value="30" />
-                <CharacterAbilityModifyStat stattype="ElectricalSkillBonus" value="30" />
-            </FallbackAbilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="None">
             <Conditions>
@@ -1645,7 +1645,7 @@
     </Talent>
 
     <!--嗜血传说 远程攻击速度增加10%，近战攻击速度增加10%，攻击伤害增加20%，这个效果在水中减半。
-    穿着蕾米莉亚装束+时：增加10%物理伤害抗性和15%最大生命值
+    穿着蕾米莉亚装束+时：增加10%物理伤害抗性和10%最大生命值
     穿着芙兰朵露装束+时：增加15%烧伤抗性，生命值大于50%时，提高50%精神病抗性，增加50%技能获取速度-->
     <Talent identifier="Touhou_Vampire04">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
@@ -1673,7 +1673,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.15"/>
+                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="9.9">
@@ -1904,12 +1904,17 @@
     </Talent>
 
     <!--血色天灾
-    穿着蕾米莉亚装束+时：大大增加优质B型血的单次治疗效果。生命值低于0后，20秒内自身不会死亡，这个效果一巡回只能触发一次。
+    穿着蕾米莉亚装束+时：根据角色等级，每级增加1%攻击伤害，最高20%。大大增加优质B型血的单次治疗效果。生命值低于0后，20秒内自身不会死亡，这个效果一巡回只能触发一次。
     穿着芙兰朵露装束+时：对生命值高于49.5%的敌人造成50%额外烧伤、撕裂伤、内脏损伤。生命值低于0后，将保持清醒10秒，这个效果一巡回只能触发一次-->
     <Talent identifier="Touhou_Vampire07">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Vampire07"/>
         <!--蕾米莉亚-->
+        <AbilityGroupInterval interval="0.5">
+            <Abilities>
+                <CharacterAbilityModifyStatToLevel stattype="AttackMultiplier" statperlevel="0.01" maxlevel="20" />
+            </Abilities>
+        </AbilityGroupInterval>
         <AbilityGroupInterval abilityeffecttype="None" Interval="6.1">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="bloodpackB" />
@@ -2127,7 +2132,7 @@
 
     <!--妖尾摆风 根据角色等级增加最大生命值，每级增加1%，最多20%
         穿着阿吽装束+时：增加10%对人类敌人的伤害。根据角色等级给予不同的效果：
-        15级：可以全速拖动生物
+        15级：可以全速拖动生物，增加10%移动速度
         20级：提高50%缺氧抗性
         25级：失去意识后，不会成为怪物的攻击目标-->
     <Talent identifier="Touhou_Yaoshou_Shouren06">
@@ -2158,6 +2163,7 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveFlag flagtype="MoveNormallyWhileDragging" />
+                <CharacterAbilityGiveStat stattype="MovementSpeed" value="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="9.9">
@@ -2336,7 +2342,7 @@
     <Talent identifier="Touhou_Tiangou05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tiangou05"/>
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionLevelsBehindHighest levelsbehind="1" />
             </Conditions>
@@ -2364,7 +2370,7 @@
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Tiangou05_Counter" value="1" removeondeath="true" />
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl" />
                 <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="5"/>
@@ -2382,7 +2388,7 @@
             </Abilities>
         </AbilityGroupInterval>
         <!--椛-->
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Grunt_Security_Tengu" />
                 <AbilityConditionHasSkill skillidentifier="weapons" minvalue="300" invert="true" />
@@ -2392,7 +2398,7 @@
                 <CharacterAbilityModifyStatToSkill stattype="BuffDurationMultiplier" maxvalue="0.1" skillidentifier="weapons" />
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Grunt_Security_Tengu" />
                 <AbilityConditionHasSkill skillidentifier="weapons" minvalue="300" />
@@ -2475,8 +2481,8 @@
     </Talent>
 
     <!--山中神灵
-        穿着文文装束+时：根据角色等级，每级增加1%移动速度，最高25%。角色等级达到25后，额外增加10%攻击伤害
-        穿着椛 装束+时：根据角色等级，每级增加1%近战攻击伤害，最高25%。角色等级到达25后，额外减少10%受到的伤害。-->
+        穿着文文装束+时：根据角色等级，每级增加1%移动速度，最高25%。角色等级达到20后，额外增加10%攻击伤害
+        穿着椛 装束+时：根据角色等级，每级增加1%近战攻击伤害，最高25%。角色等级到达20后，额外减少10%受到的伤害。-->
     <Talent identifier="Touhou_Tiangou07" >
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tiangou07"/>
@@ -2492,7 +2498,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl" />
-                <AbilityConditionHasLevel minlevel="25" />
+                <AbilityConditionHasLevel minlevel="20" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
@@ -2510,7 +2516,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Grunt_Security_Tengu" />
-                <AbilityConditionHasLevel minlevel="25" />
+                <AbilityConditionHasLevel minlevel="20" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
@@ -2624,7 +2630,6 @@
     <Talent identifier="Touhou_Tianren_Xianren04">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tianren_Xianren04"/>
-
         <AbilityGroupInterval interval="0.9">
             <Conditions>
                 <AbilityConditionAboveVitality vitalitypercentage="0.99"/>

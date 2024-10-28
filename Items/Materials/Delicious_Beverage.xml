@@ -2,7 +2,7 @@
 <Items>
 
     <!--桃子-->
-    <Item identifier="Touhou_Peach" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3"
+    <Item identifier="Touhou_Peach" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3" RequireAimToUse="True"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="5.5">
         <InventoryIcon texture="%ModDir%/Images/Materials/Touhou_Peach.png" sourcerect="0,0,80,100" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Peach.png" depth="0.2" sourcerect="0,0,80,100" origin="0.5,0.5" />
@@ -19,12 +19,12 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="120" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-2.0" />
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="This" Condition="-2.0" />
+            <StatusEffect type="OnUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <Affliction identifier="Yummy_Peach" amount="12" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -59,7 +59,7 @@
     </Item>
 
     <!--苹果-->
-    <Item identifier="Touhou_Apple" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3"
+    <Item identifier="Touhou_Apple" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3" RequireAimToUse="True"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Apple.png" depth="0.2" sourcerect="0,0,110,110" origin="0.5,0.5" />
         <Body radius="30" density="9" />
@@ -75,12 +75,12 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-2.0" />
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="This" Condition="-2.0" />
+            <StatusEffect type="OnUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction type="debuff" amount="0.05" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -90,7 +90,7 @@
     </Item>
 
     <!--金胡萝卜-->
-    <Item identifier="Touhou_Golden_Carrot" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3"
+    <Item identifier="Touhou_Golden_Carrot" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,plantitem,petfood1,petfood2,petfood3" RequireAimToUse="True"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft" impacttolerance="5.5">
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.004" />
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Golden_Carrot.png" depth="0.2" sourcerect="0,0,110,110" origin="0.5,0.5" />
@@ -106,8 +106,8 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="10" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-2.0" />
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="This" Condition="-2.0" />
+            <StatusEffect type="OnUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction type="damage" amount="10" />
                 <ReduceAffliction type="psychosis" amount="10" />
@@ -117,7 +117,7 @@
                 <ReduceAffliction type="Slow_Baka" amount="10" />
                 <ReduceAffliction type="Magic_Destruction" amount="2" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -127,7 +127,7 @@
     </Item>
 
     <!--赏月团子-->
-    <Item identifier="Touhou_Fullmoon_Dumpling" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Supply_Station_Event_Donated_Food"
+    <Item identifier="Touhou_Fullmoon_Dumpling" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Supply_Station_Event_Donated_Food" RequireAimToUse="True"
           cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Fullmoon_Dumpling.png" depth="0.2" sourcerect="0,0,180,104" origin="0.5,0.5" />
         <Body radius="30" density="9" />
@@ -148,15 +148,15 @@
             <RequiredItem identifier="stabilozine" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="10" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-3.0" />
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="This" Condition="-3.0" />
+            <StatusEffect type="OnUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat_Short.ogg" selectionmode="random" range="300"  />
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction type="damage" amount="1" />
                 <Affliction identifier="haste" amount="7.5" />
                 <ReduceAffliction type="Slow_Baka" amount="3" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -166,7 +166,7 @@
     </Item>
 
     <!--月饼-->
-    <Item identifier="Touhou_Fullmoon_Cake" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Supply_Station_Event_Donated_Food"
+    <Item identifier="Touhou_Fullmoon_Cake" subcategory="Touhou" category="Misc,medical" maxstacksize="8" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Supply_Station_Event_Donated_Food" RequireAimToUse="True"
           cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Fullmoon_Cake.png" depth="0.2" sourcerect="0,0,144,100" origin="0.5,0.5" />
         <Body radius="30" density="9" />
@@ -187,8 +187,8 @@
             <RequiredItem identifier="antibiotics" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="10" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-3.0" />
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="This" Condition="-3.0" />
+            <StatusEffect type="OnUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat_Short.ogg" selectionmode="random" range="300"  />
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction type="burn" amount="1" />
@@ -196,7 +196,7 @@
                 <Affliction identifier="haste" amount="7.5" />
                 <ReduceAffliction type="Slow_Baka" amount="3" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -206,7 +206,7 @@
     </Item>
 
     <!--啤酒-->
-    <Item identifier="Touhou_Beer" subcategory="Touhou" category="Misc,medical" Tags="smallitem"
+    <Item identifier="Touhou_Beer" subcategory="Touhou" category="Misc,medical" Tags="smallitem" RequireAimToUse="True"
           cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Beer.png" depth="0.2" sourcerect="0,0,120,140" origin="0.5,0.5" />
         <Body width="120" height="140" density="10" />
@@ -227,15 +227,15 @@
             <RequiredItem identifier="Spiritual_Water" amount="2" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" holdpos="40,-15" handle1="5,0" aimangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-5.0" />
-            <StatusEffect type="OnSecondaryUse" target="Character" >
+            <StatusEffect type="OnUse" target="This" Condition="-5.0" />
+            <StatusEffect type="OnUse" target="Character" >
                 <Affliction identifier="psychosisresistance" amount="15" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="Character">
                 <Conditional huskinfection="lt 60.0" />
                 <ReduceAffliction identifier="huskinfection" amount="1.5" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="Character" >
+            <StatusEffect type="OnUse" target="Character" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Drink.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction identifier="poison" amount="7.5" />
                 <ReduceAffliction identifier="psychosis" amount="5" />
@@ -252,7 +252,7 @@
     </Item>
 
     <!--友谊果汁-->
-    <Item name="友谊果汁" identifier="Touhou_Friendship_Juice" subcategory="Touhou" category="Misc,medical" Tags="smallitem"
+    <Item name="友谊果汁" identifier="Touhou_Friendship_Juice" subcategory="Touhou" category="Misc,medical" Tags="smallitem" RequireAimToUse="True"
           cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft" impacttolerance="5.5" >
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Friendship_Juice.png" depth="0.2" sourcerect="0,0,100,140" origin="0.5,0.5" />
         <Body width="100" height="140" density="10" />
@@ -273,8 +273,8 @@
             <RequiredItem identifier="Spiritual_Water" amount="2" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" holdpos="40,-15" handle1="5,0" aimangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-50.0" />
-            <StatusEffect type="OnSecondaryUse" target="Character" multiplyafflictionsbymaxvitality="true" >
+            <StatusEffect type="OnUse" target="This" Condition="-50.0" />
+            <StatusEffect type="OnUse" target="Character" multiplyafflictionsbymaxvitality="true" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Drink.ogg" selectionmode="random" range="300"  />
                 <Affliction identifier="Touhou_Friendship_Juice_Effect" amount="330" />
             </StatusEffect>
@@ -288,7 +288,7 @@
     </Item>
 
     <!--妖精糖果（苹果味）-->
-    <Item identifier="Touhou_Candy_Apple" subcategory="Touhou" category="Misc" maxstacksize="32" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Candy"
+    <Item identifier="Touhou_Candy_Apple" subcategory="Touhou" category="Misc" maxstacksize="32" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Candy" RequireAimToUse="True"
           useinhealthinterface="true" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Candy_Apple.png" depth="0.2" sourcerect="0,0,108,128" origin="0.5,0.5" />
         <Body radius="20" density="9" />
@@ -303,16 +303,16 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-4.0" >
+            <StatusEffect type="OnUse" target="This" Condition="-4.0" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="Character">
                 <Conditional jobidentifier="Yousei" />
                 <ReduceAffliction type="respawnpenalty" amount="0.24" />
                 <ReduceAffliction type="damage" amount="1" />
                 <ReduceAffliction type="burn" amount="1" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -335,7 +335,7 @@
     </Item>
 
     <!--妖精糖果（蜜桃味）-->
-    <Item identifier="Touhou_Candy_Peach" subcategory="Touhou" category="Misc" maxstacksize="32" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Candy"
+    <Item identifier="Touhou_Candy_Peach" subcategory="Touhou" category="Misc" maxstacksize="32" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Candy" RequireAimToUse="True"
           useinhealthinterface="true" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Candy_Peach.png" depth="0.2" sourcerect="0,0,108,128" origin="0.5,0.5" />
         <Body radius="20" density="9" />
@@ -350,15 +350,15 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-4.0" >
+            <StatusEffect type="OnUse" target="This" Condition="-4.0" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="Character">
                 <Conditional jobidentifier="Yousei" />
                 <ReduceAffliction type="bloodloss" amount="0.4" />
                 <ReduceAffliction type="bleeding" amount="1" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -380,7 +380,7 @@
     </Item>
 
     <!--妖精糖果（柠檬味）-->
-    <Item identifier="Touhou_Candy_Lemon" subcategory="Touhou" category="Misc" maxstacksize="32" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Candy"
+    <Item identifier="Touhou_Candy_Lemon" subcategory="Touhou" category="Misc" maxstacksize="32" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Candy" RequireAimToUse="True"
           useinhealthinterface="true" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Candy_Lemon.png" depth="0.2" sourcerect="0,0,108,128" origin="0.5,0.5" />
         <Body radius="20" density="9" />
@@ -395,15 +395,15 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-4.0" >
+            <StatusEffect type="OnUse" target="This" Condition="-4.0" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="Character">
                 <Conditional jobidentifier="Yousei" />
                 <ReduceAffliction type="debuff" amount="0.2" />
                 <ReduceAffliction type="psychosis" amount="1" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -425,7 +425,7 @@
     </Item>
 
     <!--妖精糖果（柚子味）-->
-    <Item identifier="Touhou_Candy_Pomelo" subcategory="Touhou" category="Misc" maxstacksize="32" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Candy"
+    <Item identifier="Touhou_Candy_Pomelo" subcategory="Touhou" category="Misc" maxstacksize="32" Tags="smallitem,petfood1,petfood2,petfood3,Touhou_Candy" RequireAimToUse="True"
           useinhealthinterface="true" cargocontaineridentifier="metalcrate" scale="0.25" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Candy_Pomelo.png" depth="0.2" sourcerect="0,0,108,128" origin="0.5,0.5" />
         <Body radius="20" density="9" />
@@ -440,16 +440,16 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-4.0" >
+            <StatusEffect type="OnUse" target="This" Condition="-4.0" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="Character">
                 <Conditional jobidentifier="Yousei" />
                 <ReduceAffliction type="Phoenix_Burn" amount="2" />
                 <ReduceAffliction identifier="Patchouli_Asthma" amount="0.4" />
                 <ReduceAffliction identifier="Slow_Baka" amount="6" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -500,10 +500,10 @@
         <SuitableTreatment type="Patchouli_Asthma" suitability="5" />
         <SuitableTreatment identifier="Slow_Baka" suitability="5" />
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-1.0" >
+            <StatusEffect type="OnUse" target="This" Condition="-1.0" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="Character">
+            <StatusEffect type="OnUse" target="Character">
                 <Conditional jobidentifier="Yousei" />
                 <ReduceAffliction type="respawnpenalty" amount="0.48" />
                 <ReduceAffliction type="damage" amount="2" />
@@ -516,7 +516,7 @@
                 <ReduceAffliction identifier="Patchouli_Asthma" amount="0.8" />
                 <ReduceAffliction identifier="Slow_Baka" amount="12" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -584,7 +584,7 @@
 
 
     <!--红莓酒-->
-    <Item name="红莓酒" identifier="Touhou_Berry_Wine" subcategory="Touhou" category="Misc,medical" Tags="smallitem"
+    <Item name="红莓酒" identifier="Touhou_Berry_Wine" subcategory="Touhou" category="Misc,medical" Tags="smallitem" RequireAimToUse="True"
           cargocontaineridentifier="metalcrate" scale="0.2" impactsoundtag="impact_soft" impacttolerance="5.5">
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Berry_Wine.png" depth="0.2" sourcerect="0,0,72,100" origin="0.5,0.5" />
         <Body width="88" height="100" density="10" />
@@ -600,16 +600,20 @@
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" amount="2">
             <RequiredSkill identifier="medical" level="30" />
-            <RequiredItem identifier="remiliapaint" amount="2"/>
+            <RequiredItem identifier="Touhou_Fear_Item" amount="2"/>
             <RequiredItem identifier="Touhou_Flour" />
             <RequiredItem identifier="Spiritual_Water" amount="2" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" holdpos="40,-15" handle1="5,0" aimangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-5.0" />
-            <StatusEffect type="OnSecondaryUse" target="Character" >
+            <StatusEffect type="OnUse" target="This" Condition="-5.0" />
+            <StatusEffect type="OnUse" target="Character" >
                 <Affliction identifier="psychosisresistance" amount="15" />
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="Character" >
+            <StatusEffect type="OnUse" target="Character" >
+                <Conditional jobidentifier="neq Youkai"/>
+                <Affliction identifier="drunk" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Character" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Drink.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction identifier="bloodloss" amount="7.5" />
                 <ReduceAffliction identifier="poison" amount="7.5" />

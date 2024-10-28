@@ -11,7 +11,7 @@
       <Abilities>
         <CharacterAbilityApplyStatusEffects>
           <StatusEffects>
-            <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+            <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
               <Affliction identifier="Demon_King_Cradle" amount="1000" />
               <Affliction identifier="strengthen" amount="10" />
               <Affliction identifier="haste" amount="30" />

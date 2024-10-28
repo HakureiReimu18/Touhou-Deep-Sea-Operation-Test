@@ -421,7 +421,7 @@
         </AbilityGroupInterval>
     </Talent>
 
-    <!--妖精大战争 异变能量大于40%时，提高10%的攻击伤害，减少10%受到的物理伤害，给予15所有技能加成。解锁配方：冰之勇者剑，地狱火炬。-->
+    <!--妖精大战争 异变能量大于40%时，提高10%的攻击伤害，减少10%受到的物理伤害，提高15%技能水平。解锁配方：冰之勇者剑，地狱火炬。-->
     <Talent identifier="Eastern_And_Little_Nature_Deity">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Eastern_And_Little_Nature_Deity"/>
@@ -439,18 +439,6 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="None">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Power" minimumPercentage="0.4" />
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityGiveStat stattype="ElectricalSkillBonus" value="15"/>
-                <CharacterAbilityGiveStat stattype="HelmSkillBonus" value="15"/>
-                <CharacterAbilityGiveStat stattype="MechanicalSkillBonus" value="15"/>
-                <CharacterAbilityGiveStat stattype="MedicalSkillBonus" value="15"/>
-                <CharacterAbilityGiveStat stattype="WeaponsSkillBonus" value="15"/>
-            </Abilities>
-        </AbilityGroupEffect>
         <AddedRecipe itemidentifier="Touhou_Baka_Sword" />
         <AddedRecipe itemidentifier="Touhou_Hellfire_Torch" />
     </Talent>
