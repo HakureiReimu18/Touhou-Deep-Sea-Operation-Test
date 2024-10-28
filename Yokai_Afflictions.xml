@@ -386,7 +386,7 @@
             duration="10.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" >
-            <StatusEffect target="Character" disabledeltatime="true" oneshot="true" >
+            <StatusEffect target="Character" disabledeltatime="true" Interval="9.0" >
                 <Conditional HealthPercentage="lte 2"/>
                 <Explosion range="250.0" force="4.0" severlimbsprobability="0.2" penetration="0.15">
                     <Affliction identifier="Sleepless_Nightmare" strength="20" />

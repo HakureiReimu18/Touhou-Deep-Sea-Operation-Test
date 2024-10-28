@@ -1242,7 +1242,7 @@
         <Effect minstrength="0" maxstrength="10" resistancefor="damage,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-10">
             <StatValue stattype="MeleeAttackSpeed" value="0.15" />
             <StatValue stattype="RangedAttackSpeed" value="0.1" />
-            <StatValue stattype="BuffDurationMultiplier" value="0.5" />
+            <StatValue stattype="BuffDurationMultiplier" value="0.35" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Koishi_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>

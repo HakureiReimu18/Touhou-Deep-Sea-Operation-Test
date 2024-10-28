@@ -2459,7 +2459,7 @@
         <Deconstruct time="5">
             <Item identifier="Score_Point" amount="4" />
             <Item identifier="Magic_Material" amount="2" />
-            <Item identifier="Touhou_Boss_Fight_Music_Nue" />
+            <Item identifier="Touhou_Boss_Fight_Music_Piece" />
         </Deconstruct>
         <RangedWeapon reload="1.0" barrelpos="56,-4" holdtrigger="true" maxchargetime="1.0" launchImpulse="35" combatPriority="80" unskilledspread="16" spread="4" drawhudwhenequipped="true" crosshairscale="0.35">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling_Crosshair.png" sourcerect="0,0,256,256" />
