@@ -91,7 +91,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--天赋停摆 增加10%最大生命值。分支最后的天赋，解锁此天赋后，其他分支将无法解锁-->
+    <!--天赋停摆 增加5%最大生命值。分支最后的天赋，解锁此天赋后，其他分支将无法解锁-->
     <Talent identifier="Touhou_Yokai_Talents_Locked">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yokai_Talents_Locked"/>
@@ -106,7 +106,7 @@
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1"/>
+                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -567,7 +567,7 @@
 
     <!--幽灵/亡灵-->
 
-    <!--若隐若现 怪物对你的索敌距离略微减小，提高10%物理伤害抗性。受到攻击后，会对攻击者造成少量冻结和精神病，这个效果有3秒冷却。-->
+    <!--若隐若现 怪物对你的索敌距离略微减小，提高5%物理伤害抗性。受到攻击后，会对攻击者造成少量冻结和精神病，这个效果有3秒冷却。-->
     <Talent identifier="Touhou_Youling_Wangling01">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Youling_Wangling01"/>

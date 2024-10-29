@@ -1124,10 +1124,10 @@
         <RangedWeapon reload="0.4" barrelpos="56,-4" holdtrigger="true" maxchargetime="0.6" launchImpulse="35" combatPriority="80" unskilledspread="16" spread="4" drawhudwhenequipped="true" crosshairscale="0.35">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling_Crosshair.png" sourcerect="0,0,256,256" />
             <ParticleEmitterCharge particle="ElectricShock" particlespersecond="30" scalemultiplier="0.5,0.5" scalemin="0.1" scalemax="0.2" anglemin="0" anglemax="359" />
-            <ChargeSound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAcceleratorStartLoop.ogg" range="3000" />
+            <ChargeSound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAcceleratorStartLoop.ogg" range="1000" />
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="2000" selectionmode="random"/>
-                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="2000" />
+                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="1000" selectionmode="random"/>
+                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="1000" />
                 <Explosion range="500.0" camerashake="15" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Contained" >
@@ -1196,23 +1196,6 @@
     <Item name="" identifier="Touhou_Rippling_Bolt_Spawn" category="Weapon" scale="0.3" sonarsize="1" hideinmenus="true">
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" color="0,0,0,255" />
         <Body radius="50" density="10" gravityscale="0" />
-        <Projectile characterusable="false" launchimpulse="0.0" impulsespread="0.5" damagedoors="true">
-            <StatusEffect type="OnSpawn" target="This">
-                <sound file="Content/Items/Weapons/GRAVITYSHELLS_boom.ogg" volume="2" range="500" type="OnUse" />
-                <!-- initial "explosion" -->
-                <ParticleEmitter particle="cyborgammotracer" particleamount="5" anglemin="0" anglemax="360" distancemin="0" distancemax="150" scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0" />
-                <ParticleEmitter particle="gravityshellfx" particleamount="10" anglemin="0" anglemax="360" distancemin="0" distancemax="0" scalemin="0.1" scalemax="1" />
-                <!-- just camera shake and some particles-->
-                <Explosion range="1000.0" structuredamage="0" force="0.0" camerashake="50.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" />
-            </StatusEffect>
-            <!-- sound and effects for a duration -->
-            <StatusEffect type="OnSpawn" target="This" duration="2" stackable="false">
-                <ParticleEmitter particle="gravityshellfx" particlespersecond="4"/>
-            </StatusEffect>
-            <StatusEffect type="Always" target="This" stackable="false">
-                <sound file="Content/Items/Weapons/GRAVITYSHELLS_loop.ogg" volume="1.0" range="1000.0" loop="true" />
-            </StatusEffect>
-        </Projectile>
         <!--Apply force towards the center, affecting creatures, humans and items -->
         <TriggerComponent triggeredby="Creature,Human" force="600" radius="200" distancebasedforce="false" />
         <TriggerComponent triggeredby="Creature,Human" force="400" radius="160" distancebasedforce="false" />
@@ -1225,10 +1208,15 @@
                 <Affliction identifier="slow" strength="10" />
             </Attack>
             <StatusEffect type="OnActive" target="This">
+
+                <ParticleEmitter particle="gravityshellfx" particlespersecond="4"/>
                 <ParticleEmitter particle="cyborgammotracer" particlespersecond="5" anglemin="0" anglemax="360" distancemin="0" distancemax="50" scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0" />
-                <sound file="Content/Items/Weapons/GRAVITYSHELLS_damageLoop.ogg" volume="1.0" range="1000.0" loop="true" />
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_damageLoop.ogg" volume="1.0" range="300.0" loop="true" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" delay="2.0" disabledeltatime="true">
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" delay="2.0" disabledeltatime="true">
                 <Remove/>
             </StatusEffect>
         </TriggerComponent>
