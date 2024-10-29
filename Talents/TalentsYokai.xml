@@ -1725,7 +1725,7 @@
 
     <!--恶魔之躯 增加15%debuff抗性和毒药抗性。
     穿着蕾米莉亚装束+时：免疫常规的外星感染，包括画皮共生体。血量低于50%时，一定时间内提高30%攻击伤害
-    穿着芙兰朵露装束+时：大大加快噬咬和咬伤的恢复速度。根据当前魔法能力水平的10%增加最大生命值和医疗水平。这个效果在魔法能力超过300时达到上限-->
+    穿着芙兰朵露装束+时：大大加快噬咬和咬伤的恢复速度。魔法能力超过100后，增加30医疗水平。根据当前魔法能力水平的10%增加最大生命值。这个效果在魔法能力超过300时达到上限-->
     <Talent identifier="Touhou_Vampire05">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Vampire05"/>
