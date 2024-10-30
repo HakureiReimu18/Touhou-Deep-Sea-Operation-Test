@@ -904,7 +904,7 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Rippling_Bolt" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true" >
                 <SpawnItem identifiers="Touhou_Rippling_Bolt" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>

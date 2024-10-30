@@ -563,7 +563,7 @@
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" holdpos="40,-15" handle1="5,0" aimangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
             <StatusEffect type="OnSecondaryUse" target="Character" >
-                <Conditional jobidentifier="neq Youkai"/>
+                <Conditional jobidentifier="neq Yokai"/>
                 <Affliction identifier="drunk" amount="10" />
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" >
