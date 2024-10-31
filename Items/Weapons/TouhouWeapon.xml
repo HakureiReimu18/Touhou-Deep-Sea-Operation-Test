@@ -3668,7 +3668,7 @@
         <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Laevatein/10.png" sourcerect="0,0,188,96" depth="0.5" maxcondition="0" origin="0.5,0.5" />
 
         <Body width="188" height="30" density="10" />
-        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-60,-6" handle2="-50,-1" holdangle="20" aimangle="0" reload="1.7" range="180" combatPriority="50"
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-60,-6" handle2="-50,-1" holdangle="20" aimangle="0" reload="2.0" range="180" combatPriority="50"
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Younger_Sister_Of_Scarlet="gt 0"/>
@@ -3765,7 +3765,7 @@
             </StatusEffect>
             <RequiredSkill identifier="Touhou_Magic" level="100" />
             <!--Reset the reload speed-->
-            <StatusEffect type="OnUse" target="This" reload="1.6" setvalue="true" delay="3.5" />
+            <StatusEffect type="OnUse" target="This" reload="2.0" setvalue="true" delay="3.5" />
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <SkillRequirementHint identifier="Touhou_Magic" level="100" />
@@ -4993,6 +4993,105 @@
             <QualityStat stattype="Condition" value="0.257" />
         </Quality>
         <SkillRequirementHint identifier="Touhou_Magic" level="100" />
+    </Item>
+
+
+    <!--深红幻想乡-->
+    <Item name="深红幻想乡" identifier="Touhou_Scarlet_Gensokyo" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_High" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True" HideConditionBar="true">
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="16000" sold="false" >
+            <Price storeidentifier="merchantoutpost" minavailable="2"/>
+            <Price storeidentifier="merchantcity" minavailable="2" />
+            <Price storeidentifier="merchantresearch" minavailable="2" />
+            <Price storeidentifier="merchantmilitary" minavailable="2" />
+            <Price storeidentifier="merchantmine" minavailable="2"/>
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="4"/>
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="dementonite" amount="2"/>
+            <Item identifier="Power_Point" amount="3"/>
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
+            <RequiredSkill identifier="weapons" level="70" />
+            <RequiredSkill identifier="Touhou_Magic" level="70" />
+            <RequiredItem identifier="dementonite" amount="2" />
+            <RequiredItem identifier="Yang_Alchemical" amount="2"/>
+            <RequiredItem identifier="Touhou_Base_Metal" amount="6"/>
+            <RequiredItem identifier="bloodpackB" amount="6"/>
+            <RequiredItem identifier="Power_Point" amount="6"/>
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Scarlet_Gensokyo.png" sourcerect="0,0,126,148" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scarlet_Gensokyo.png" sourcerect="0,134,307,76" depth="0.55" origin="0.5,0.5" />
+        <Body width="307" height="50" density="10" />
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-10,-6" handle2="-20,-1" holdangle="20" aimangle="0" reload="1.4" range="150" combatPriority="50"
+                     allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnActive" target="Character" AllowWhenBroken="true">
+                <Conditional scarletdevil="gt 0"/>
+                <Affliction identifier="Reimilia_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" AllowWhenBroken="true">
+                <Conditional scarletdevil="eq 0"/>
+                <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And" AllowWhenBroken="true">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" AllowWhenBroken="true" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This,Character" disabledeltatime="true" checkconditionalalways="true">
+                <Conditional IsActive="true" targetitemcomponent="ItemComponent" />
+                <Affliction identifier="Touhou_Scarlet_Gensokyo_Effect" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This" targetitemcomponent="ItemComponent" IsActive="false" disabledeltatime="true" Condition="100" delay="15.0" setvalue="true"/>
+
+            <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="internaldamage" strength="10" />
+                <Affliction identifier="burn" strength="10" />
+                <Affliction identifier="Touhou_Bite" strength="10" />
+                <Affliction identifier="bleeding" strength="66" />
+                <Affliction identifier="bleeding" strength="66" probability="0.1" />
+                <Affliction identifier="stun" strength="0.2" />
+                <Affliction identifier="stun" strength="0.6" probability="0.3" />
+            </Attack>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="false" anglemin="30" anglemax="240" particleamount="3" velocitymin="100" velocitymax="150" scalemin="0.15" scalemax="0.25" colormultiplier="255,72,36,180" />
+                <Sound file="%ModDir%/Sounds/Weapons/Hisou_Sword_Attack01.ogg" selectionmode="random" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Hisou_Sword_Attack02.ogg" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Hisou_Sword_Attack03.ogg" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Hisou_Sword_Attack04.ogg" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Hisou_Sword_Attack05.ogg" range="300" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="2.0" setvalue="true" AllowWhenBroken="true" />
+            <RequiredSkill identifier="Touhou_Magic" level="66" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="1.4" setvalue="true" delay="2.0" AllowWhenBroken="true" />
+        </MeleeWeapon>
+        <ItemComponent IsActive="false" CharacterUsable="true">
+            <StatusEffect type="OnUse" targettype="This" IsActive="true" >
+                <Conditional IsActive="false" targetitemcomponent="ItemComponent" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" targettype="This" Condition="-3.3334"/>
+            <LightComponent LightColor="255,100,100,160" Flicker="0.2" Range="700" IsOn="true" AllowWhenBroken="true" >
+                <sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scarlet_Gensokyo.png" sourcerect="0,134,307,76" origin="0.5,0.5" />
+            </LightComponent>
+            <LightComponent LightColor="255,100,100,160" Flicker="0.2" Range="700" IsOn="true" AllowWhenBroken="true" >
+                <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
+            </LightComponent>
+        </ItemComponent>
+        <Quality>
+            <QualityStat stattype="Condition" value="0.334" />
+            <QualityStat stattype="strikingspeedmultiplier" value="0.05" />
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+        </Quality>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="Touhou_Magic" level="66" />
     </Item>
 
 </Items>

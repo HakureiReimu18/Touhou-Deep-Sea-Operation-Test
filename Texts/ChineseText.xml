@@ -993,7 +993,7 @@
   <entityname.Touhou_Elixir_Of_Penglai>‖color:gui.red‖蓬莱药‖end‖</entityname.Touhou_Elixir_Of_Penglai>
   <entitydescription.Touhou_Elixir_Of_Penglai>能令人起死回生，瞬间治愈伤势的神药。（使玩家复活后会让玩家无法操作角色，谨慎使用）</entitydescription.Touhou_Elixir_Of_Penglai>
   <entityname.Touhou_Kappa_Welding_Tool>河童工具枪</entityname.Touhou_Kappa_Welding_Tool>
-  <entitydescription.Touhou_Kappa_Welding_Tool>高效修复工具，可以使用焊接油罐和燃素罐，或是专用的‖color:gui.orange‖固化泡沫罐‖end‖，还可安装武器配件，好评出售中。</entitydescription.Touhou_Kappa_Welding_Tool>
+  <entitydescription.Touhou_Kappa_Welding_Tool>高效修复工具，可以使用焊接油罐和燃素罐，或是专用的‖color:gui.orange‖固化泡沫罐‖end‖和‖color:gui.orange‖河能燃料‖end‖，还可安装核能电容弹匣等武器配件，好评出售中。</entitydescription.Touhou_Kappa_Welding_Tool>
   <entityname.Touhou_Nuclear_Battery>“河能燃料”</entityname.Touhou_Nuclear_Battery>
   <entitydescription.Touhou_Nuclear_Battery>可用于河童工具枪，装配后，可让河童工具枪发射修复光线，进行远程船体修复。</entitydescription.Touhou_Nuclear_Battery>
   <entityname.Touhou_Fix_Foamg_Tank>固化泡沫罐</entityname.Touhou_Fix_Foamg_Tank>
@@ -1005,7 +1005,7 @@
     \n佩戴魔理沙的帽子能再略微增加抗性和攻击伤害。
   </talentdescription.Casket_Of_Star>
   <entityname.Touhou_Nuclear_Energy_Capacitor_Magazine>核能电容弹匣</entityname.Touhou_Nuclear_Energy_Capacitor_Magazine>
-  <entitydescription.Touhou_Nuclear_Energy_Capacitor_Magazine>河童重工的科技产物，先进的核聚变科技结晶，可以发射灼热的激光，轻易融化挡路的阻碍。</entitydescription.Touhou_Nuclear_Energy_Capacitor_Magazine>
+  <entitydescription.Touhou_Nuclear_Energy_Capacitor_Magazine>河童重工的科技产物，先进的核聚变科技结晶，可以发射灼热的激光，轻易融化挡路的阻碍。可以作为河童工具枪的攻击性弹药。</entitydescription.Touhou_Nuclear_Energy_Capacitor_Magazine>
   <entityname.Touhou_Kappa_Multi_Functional_Tool>河童多功能工具</entityname.Touhou_Kappa_Multi_Functional_Tool>
   <entitydescription.Touhou_Kappa_Multi_Functional_Tool>经由河童多次精细改进的简易维修工具，可同时维修机械和电气设备，对于熟练手来说，修复的效率会大大提高。然而因为制作方法保密，获取途径至今还是从商贩那里购买。</entitydescription.Touhou_Kappa_Multi_Functional_Tool>
   <entityname.Touhou_Hellfire_Torch>‖color:255,90,40,255‖地狱火炬‖end‖</entityname.Touhou_Hellfire_Torch>
@@ -1193,4 +1193,13 @@
   <entitydescription.Touhou_Berry_Wine>妖怪们来到木卫二后，汲取灵感制成的特色酒，可以补充失血，还有缓解毒素的妙用。但一般人类都不胜酒力</entitydescription.Touhou_Berry_Wine>
   <entityname.Touhou_Life_Needle>生命指针</entityname.Touhou_Life_Needle>
   <entitydescription.Touhou_Life_Needle>用于从死亡的敌对个体上采集恐惧，外表看上去却是人畜无害的指针样式。</entitydescription.Touhou_Life_Needle>
+  <entityname.Touhou_Tide>潮汐</entityname.Touhou_Tide>
+  <entitydescription.Touhou_Tide>潮涨潮落，聚散离合\n放入‖color:gui.yellow‖微缩地月系统‖end‖可以激活发射弹幕的能力。</entitydescription.Touhou_Tide>
+  <entityname.Touhou_Miniature_Earth_Moon_System>微缩地月系统</entityname.Touhou_Miniature_Earth_Moon_System>
+  <entitydescription.Touhou_Miniature_Earth_Moon_System>一个精巧的微缩地月系统，但显然制作者已经忘了地球原本真实的样子。专用于潮汐的弹药</entitydescription.Touhou_Miniature_Earth_Moon_System>
+  <entityname.Touhou_Scarlet_Gensokyo>绯色命运</entityname.Touhou_Scarlet_Gensokyo>
+  <entitydescription.Touhou_Scarlet_Gensokyo>高速之红。不耍任何小聪明直接正面让你见识其力量。\n按下交互键（默认E键）激活高速模式，大幅增加效力。升级品质能让其持续时间更久。</entitydescription.Touhou_Scarlet_Gensokyo>
+  <afflictionname.Touhou_Tide_Bolt_Effect>潮汐效应</afflictionname.Touhou_Tide_Bolt_Effect>
+  <afflictiondescription.Touhou_Tide_Bolt_Effect>月球背面的神秘海洋，在你体内起起伏伏，破坏了你的身体防御</afflictiondescription.Touhou_Tide_Bolt_Effect>
+
 </infotexts>

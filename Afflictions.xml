@@ -1555,4 +1555,80 @@
     <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="15000" ThermalOverlayColor="176,0,0,120"/>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Pendulum_Magic.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
+
+  <!--潮汐效应-->
+  <Affliction name="潮汐效应"
+              identifier="Touhou_Tide_Bolt_Effect"
+              type="debuff"
+              isbuff="true"
+              limbspecific="false"
+              indicatorlimb="Head"
+              maxstrength="4"
+              affectmachines="false"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="4"/>
+    <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="-0.25" maxresistance="-0.25" strengthchange="-1.0">
+      <StatusEffect target="Character" disabledeltatime="true" Interval="9.0" >
+        <Explosion range="250.0" force="4.0" severlimbsprobability="0.2" penetration="0.5">
+          <Affliction identifier="Sleepless_Nightmare" strength="20" />
+          <Affliction identifier="burn" strength="30" />
+          <Affliction identifier="explosiondamage" strength="30" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect target="Character" >
+        <ParticleEmitter particle="gravityspherefx" particlespersecond="1" anglemin="0" anglemax="360" velocitymin="5" velocitymax="10" />
+      </StatusEffect>
+    </Effect>
+    <Effect minstrength="1" maxstrength="4" resistancefor="damage,burn" minresistance="-0.25" maxresistance="-0.25" strengthchange="-1.0">
+      <StatusEffect target="Character" disabledeltatime="true" Interval="9.0" >
+        <Conditional HealthPercentage="lte 2"/>
+        <Explosion range="250.0" force="4.0" severlimbsprobability="0.2" penetration="0.35">
+          <Affliction identifier="Sleepless_Nightmare" strength="20" />
+          <Affliction identifier="burn" strength="30" />
+          <Affliction identifier="explosiondamage" strength="30" />
+        </Explosion>
+      </StatusEffect>
+      <StatusEffect target="Character" >
+        <ParticleEmitter particle="gravityspherefx" particlespersecond="1" anglemin="0" anglemax="360" velocitymin="5" velocitymax="10" />
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="1" maxinterval="3">
+      <StatusEffect target="Character">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="200" distancemax="250" velocitymin="-500" velocitymax="-900" particlespersecond="80" colormultiplier="255,180,255,255" />
+        <ParticleEmitter particle="gravityspherefx" particleamount="1" emitinterval="0.3" />
+        <Affliction identifier="burn" amount="0.7"/>
+        <Affliction identifier="Reiki_Pressure" amount="1"/>
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="0.5" maxinterval="2">
+      <StatusEffect target="Character">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="200" distancemax="250" velocitymin="-500" velocitymax="-900" particlespersecond="80" colormultiplier="255,180,255,255" />
+        <ParticleEmitter particle="gravityspherefx" particleamount="1" emitinterval="0.3" />
+        <Affliction identifier="lacerations" amount="1.5"/>
+        <Affliction identifier="bleeding" strength="5" probability="0.1" />
+        <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.15" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--深红幻想乡效果-->
+  <Affliction name="深红幻想乡效果"
+              identifier="Touhou_Scarlet_Gensokyo_Effect"
+              type="Touhou_Scarlet_Gensokyo_Effect"
+              isbuff="true"
+              limbspecific="false"
+              indicatorlimb="Head"
+              maxstrength="10"
+              showiconthreshold="100"
+              showinhealthscannerthreshold="100"
+              affectmachines="false"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="10"/>
+    <Effect minstrength="0" maxstrength="10" strengthchange="-10">
+      <StatValue stattype="MeleeAttackSpeed" value="0.25" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.3" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
 </Afflictions>
