@@ -3525,6 +3525,7 @@
         <SkillRequirementHint identifier="Touhou_Magic" level="50" />
     </Item>
 
+
     <!--午鵺-->
     <Item name="" identifier="Touhou_Nue_Midnight" subcategory="Touhou" category="Weapon"
           Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate"
@@ -3625,6 +3626,299 @@
         <SkillRequirementHint identifier="weapons" level="70" />
         <SkillRequirementHint identifier="Touhou_Magic" level="60" />
     </Item>
+
+
+  <!--凝结之血-->
+  <Item name="凝结之血" identifier="Touhou_Condensed_Blood" subcategory="Touhou" category="Weapon" Tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_High" cargocontaineridentifier="metalcrate" scale="0.4" impactsoundtag="impact_metal_light" RequireAimToUse="True" HideConditionBar="true">
+    <PreferredContainer primary="secarmcab" secondary="armcab" />
+    <Price baseprice="3666">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+      <Price storeidentifier="merchantmedical" minavailable="1" />
+    </Price>
+    <Deconstruct time="6">
+      <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="Magic_Altar" requiredtime="6">
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="Touhou_Magic" level="30" />
+      <RequiredItem identifier="Reiki_Dust_Caking" amount="16" />
+      <RequiredItem identifier="bloodpack" amount="6" />
+      <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Condensed_Blood.png" sourcerect="0,0,556,56" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Condensed_Blood.png" sourcerect="0,0,556,56" depth="0.55" origin="0.5,0.5" />
+    <Body width="222" height="22" density="10" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="110,90" handle1="-82,1" handle2="-82,1" holdangle="30" aimangle="0" reload="0.8" range="222" combatPriority="50" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="8" severlimbsprobability="0.1" itemdamage="16" structuredamage="16" structuresoundtype="StructureSlash" penetration="0.3">
+        <Affliction identifier="stun" strength="0.1" />
+        <Affliction identifier="internaldamage" strength="6" />
+        <Affliction identifier="bleeding" strength="16" />
+        <Affliction identifier="lacerations" strength="16" />
+      </Attack>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This" reload="1.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Affliction identifier="bloodloss" strength="1.6" />
+      </StatusEffect>
+      <RequiredSkill identifier="weapons" level="30" />
+      <RequiredSkill identifier="Touhou_Magic" level="30" />
+      <!--Reset the reload speed-->
+      <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="2.4" />
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <SkillRequirementHint identifier="weapons" level="30" />
+    <SkillRequirementHint identifier="Touhou_Magic" level="30" />
+  </Item>
+
+ 
+  <!--绯红之血-->
+  <Item name="绯红之血" identifier="Touhou_Crimson_Blood" subcategory="Touhou" category="Weapon" Tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_High" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True" HideConditionBar="true">
+    <PreferredContainer primary="secarmcab" secondary="armcab" />
+    <Price baseprice="24000" minleveldifficulty="20">
+      <Price storeidentifier="merchantoutpost" minavailable="1" />
+      <Price storeidentifier="merchantcity" minavailable="1" />
+      <Price storeidentifier="merchantresearch" minavailable="1" />
+      <Price storeidentifier="merchantmilitary" minavailable="1" />
+      <Price storeidentifier="merchantmine" minavailable="1" />
+      <Price storeidentifier="merchantmedical" minavailable="1" />
+    </Price>
+    <Deconstruct time="6">
+      <RequiredItem identifier="Touhou_Precious_Metal" amount="2" />
+      <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="Magic_Altar" requiredtime="6">
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredSkill identifier="Touhou_Magic" level="60" />
+      <RequiredItem identifier="Touhou_bloodpackB" amount="16" />
+      <RequiredItem identifier="Score_Point" amount="6" />
+      <RequiredItem identifier="Magic_Material" amount="6" />
+      <RequiredItem identifier="Touhou_Precious_Metal" amount="2" />
+      <RequiredItem identifier="Touhou_Condensed_Blood" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Crimson_Blood.png" sourcerect="0,0,780,60" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Crimson_Blood.png" sourcerect="0,0,780,60" depth="0.55" origin="0.5,0.5" />
+    <Body width="390" height="30" density="10" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="130,110" handle1="-100,0" handle2="-80,0" holdangle="35" aimangle="0" reload="1.2" range="390" combatPriority="50" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="8" severlimbsprobability="0.3" itemdamage="16" structuredamage="16" structuresoundtype="StructureSlash" penetration="0.5">
+        <Affliction identifier="stun" strength="0.3" />
+        <Affliction identifier="organdamage" strength="8" />
+        <Affliction identifier="internaldamage" strength="12" />
+        <Affliction identifier="bleeding" strength="36" />
+        <Affliction identifier="lacerations" strength="36" />
+      </Attack>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This" reload="1.6" setvalue="true" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Affliction identifier="bloodloss" strength="6.0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="bleeding" strength="0.2" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Affliction identifier="bloodloss" strength="0.6" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Conditional scarletdevil="lt 1" />
+        <Affliction identifier="bloodloss" strength="3.6" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional scarletdevil="lt 1" />
+        <Affliction identifier="bleeding" strength="1.0" />
+      </StatusEffect>
+      <RequiredSkill identifier="weapons" level="60" />
+      <RequiredSkill identifier="Touhou_Magic" level="60" />
+      <!--Reset the reload speed-->
+      <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="2.4" />
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <SkillRequirementHint identifier="weapons" level="60" />
+    <SkillRequirementHint identifier="Touhou_Magic" level="60" />
+  </Item>
+
+
+  <!--斯卡蕾特之血-->
+  <Item name="斯卡蕾特之血" identifier="Touhou_La_Sangre_de_Scarlet" subcategory="Touhou" category="Weapon" Tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_High" cargocontaineridentifier="metalcrate" scale="0.45" impactsoundtag="impact_metal_light" RequireAimToUse="True" HideConditionBar="true">
+    <PreferredContainer primary="secarmcab" secondary="armcab" />
+    <Price baseprice="130000" sold="false">
+      <Price storeidentifier="merchantoutpost" minavailable="1.6" />
+      <Price storeidentifier="merchantcity" minavailable="1.6" />
+      <Price storeidentifier="merchantresearch" minavailable="1.6" />
+      <Price storeidentifier="merchantmilitary" minavailable="1.6" />
+      <Price storeidentifier="merchantmine" minavailable="1.6" />
+      <Price storeidentifier="merchantmedical" minavailable="1.6" />
+    </Price>
+    <Deconstruct time="6">
+      <RequiredItem identifier="Touhou_Precious_Metal" amount="8" />
+      <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="Magic_Altar" requiredtime="6">
+      <RequiredSkill identifier="weapons" level="90" />
+      <RequiredSkill identifier="Touhou_Magic" level="90" />
+      <RequiredItem identifier="Touhou_BloodpackB_Plus" amount="16" />
+      <RequiredItem identifier="Power_Point" amount="6" />
+      <RequiredItem identifier="Touhou_Precious_Metal" amount="6" />
+      <RequiredItem identifier="Scarlet_Devil_Mansion" />
+      <RequiredItem identifier="Touhou_Crimson_Blood" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_La_Sangre_de_Scarlet.png" sourcerect="0,0,1196,208" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_La_Sangre_de_Scarlet.png" sourcerect="0,0,1196,208" depth="0.55" origin="0.5,0.5" />
+    <Body width="538" height="93" density="10" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="155,115" handle1="-156,1" handle2="-136,1" holdangle="45" aimangle="0" reload="1.6" range="538" combatPriority="50" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="8" severlimbsprobability="0.45" itemdamage="16" structuredamage="16" structuresoundtype="StructureSlash" penetration="0.66">
+        <Affliction identifier="stun" strength="0.6" />
+        <Affliction identifier="Scarlet_Long_Night" strength="6" />
+        <Affliction identifier="bloodloss" strength="6" />
+        <Affliction identifier="internaldamage" strength="16" />
+        <Affliction identifier="organdamage" strength="16" />
+        <Affliction identifier="bleeding" strength="66" />
+        <Affliction identifier="lacerations" strength="66" />
+      </Attack>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This" reload="1.8" setvalue="true" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Affliction identifier="bloodloss" strength="16.0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="bleeding" strength="0.6" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Affliction identifier="bloodloss" strength="1.3" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Conditional scarletdevil="lt 1" />
+        <Affliction identifier="Scarlet_Long_Night" strength="5.0" />
+        <Affliction identifier="bloodloss" strength="5.0" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional scarletdevil="lt 1" />
+        <Affliction identifier="bleeding" strength="1.0" />
+        <Affliction identifier="Scarlet_Long_Night" strength="1.6" />
+      </StatusEffect>
+      <RequiredSkill identifier="weapons" level="90" />
+      <RequiredSkill identifier="Touhou_Magic" level="90" />
+      <!--Reset the reload speed-->
+      <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="2.4" />
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <SkillRequirementHint identifier="weapons" level="90" />
+    <SkillRequirementHint identifier="Touhou_Magic" level="90" />
+  </Item>
+
+
+  <!--拟态原型-->
+  <Item name="拟态原型" identifier="Touhou_Mimicry_Prototype" subcategory="Touhou" category="Weapon" Tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_High" cargocontaineridentifier="metalcrate" scale="0.66" impactsoundtag="impact_metal_light" RequireAimToUse="True" HideConditionBar="true">
+    <PreferredContainer primary="secarmcab" secondary="armcab" />
+    <Price baseprice="222222" sold="false">
+      <Price storeidentifier="merchantoutpost" minavailable="1.6" />
+      <Price storeidentifier="merchantcity" minavailable="1.6" />
+      <Price storeidentifier="merchantresearch" minavailable="1.6" />
+      <Price storeidentifier="merchantmilitary" minavailable="1.6" />
+      <Price storeidentifier="merchantmine" minavailable="1.6" />
+      <Price storeidentifier="merchantmedical" multiplier="1.6" />
+    </Price>
+    <Deconstruct time="90">
+      <RequiredItem identifier="Touhou_Foul_Potion" amount="6" />
+      <RequiredItem identifier="Touhou_Precious_Metal" amount="6" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="Magic_Altar" requiredtime="222">
+      <RequiredSkill identifier="weapons" level="120" />
+      <RequiredSkill identifier="helm" level="120" />
+      <RequiredItem identifier="alienblood" amount="64" />
+      <RequiredItem identifier="Touhou_Foul_Potion" amount="16" />
+      <RequiredItem identifier="Touhou_Precious_Metal" amount="12" />
+      <RequiredItem identifier="Power_Point" amount="8" />
+      <RequiredItem identifier="psilotoadegg" />
+      <RequiredItem identifier="Hyouibana_Dream" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Mimicry_Prototype.png" sourcerect="0,0,336,68" origin="0.5,0.5" />
+    <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Mimicry_Prototype.png" sourcerect="0,0,336,68" depth="0.55" origin="0.5,0.5" />
+    <Body width="222" height="45" density="10" />
+    <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="66,80" handle1="-85,-3" handle2="-75,-3" holdangle="40" aimangle="0" reload="1.17" range="180" combatPriority="50" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
+      <Attack targetimpulse="6" severlimbsprobability="0.66" itemdamage="66" structuredamage="66" structuresoundtype="StructureSlash" penetration="0.80">
+        <Affliction identifier="blunttrauma" strength="42" />
+        <Affliction identifier="bitewounds" strength="42" />
+        <Affliction identifier="lacerations" strength="42" />
+        <Affliction identifier="explosiondamage" strength="42" />
+        <Affliction identifier="bleeding" strength="50" />
+        <Affliction identifier="stun" strength="1.6" />
+      </Attack>
+      <StatusEffect type="OnUse" target="UseTarget">
+        <Conditional entitytype="eq Character" />
+        <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+        <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+      </StatusEffect>
+      <StatusEffect type="OnFailure" target="This" reload="6.0" setvalue="true" />
+      <StatusEffect type="OnFailure" target="Character">
+        <Affliction identifier="watchersgaze" strength="100.0" />
+        <Affliction identifier="stun" strength="16.0" />
+        <Affliction identifier="blind_hard" strength="1.6" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character">
+        <Affliction identifier="psychosis" strength="0.6" />
+        <Affliction identifier="regeneration" strength="2.1" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Affliction identifier="electricshock" strength="16.0" />
+        <Affliction identifier="sensoryoverload" strength="1.6" />
+        <Affliction identifier="psychosis" strength="1.0" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="Character">
+        <Conditional scarletdevil="lt 1" />
+        <Affliction identifier="electricshock" strength="50.0" />
+        <Affliction identifier="nausea" strength="25.0" />
+        <Affliction identifier="sensoryoverload" strength="5.0" />
+        <Affliction identifier="hallucinating" strength="5.0" />
+        <Affliction identifier="psychosis" strength="5.0" />
+        <Affliction identifier="stun" strength="1.6" />
+      </StatusEffect>
+      <StatusEffect type="OnActive" target="Character">
+        <Conditional scarletdevil="lt 1" />
+        <Affliction identifier="watchersgaze" strength="6.0" />
+        <Affliction identifier="sensoryoverload" strength="2.0" />
+        <Affliction identifier="hallucinating" strength="2" />
+        <Affliction identifier="psychosis" strength="1.1" />
+      </StatusEffect>
+      <RequiredSkill identifier="weapons" level="120" />
+      <RequiredSkill identifier="helm" level="120" />
+      <!--Reset the reload speed-->
+      <StatusEffect type="OnUse" target="This" reload="1.17" setvalue="true" delay="2.5" />
+    </MeleeWeapon>
+    <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+    <SkillRequirementHint identifier="weapons" level="120" />
+    <SkillRequirementHint identifier="helm" level="120" />
+  </Item>
 
 
     <!--莱瓦汀-->
