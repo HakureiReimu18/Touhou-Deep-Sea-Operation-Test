@@ -720,9 +720,9 @@
         <Projectile characterusable="false" launchimpulse="15" damagedoors="true">
             <Attack severlimbsprobability="0.4" penetration="0.7" maxtargetstohit="2">
                 <Affliction identifier="explosiondamage" strength="6" />
-                <Affliction identifier="acidburn" strength="6" />
+                <Affliction identifier="acidburn" strength="4" />
                 <Affliction identifier="Touhou_Freeze" strength="6" />
-                <Affliction identifier="Reiki_Pressure" strength="6" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="Touhou_Silent_Selene_Dream" strength="1" />
                 <Affliction identifier="stun" strength="0.1" />
                 <Affliction identifier="stun" strength="0.8" probability="0.2" />
@@ -743,10 +743,10 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="70.0" structuredamage="0" force="2.0" itemdamage="0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3" penetration="0.7">
-                    <Affliction identifier="explosiondamage" strength="6" />
-                    <Affliction identifier="acidburn" strength="6" />
-                    <Affliction identifier="Touhou_Freeze" strength="6" />
-                    <Affliction identifier="Reiki_Pressure" strength="6" />
+                    <Affliction identifier="explosiondamage" strength="3" />
+                    <Affliction identifier="acidburn" strength="3" />
+                    <Affliction identifier="Touhou_Freeze" strength="3" />
+                    <Affliction identifier="Reiki_Pressure" strength="3" />
                 </Explosion>
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="4" velocitymin="300" velocitymax="600" scalemin="0.45" scalemax="0.9" colormultiplier="255,255,255,160" />
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="4" velocitymin="300" velocitymax="600" scalemin="0.45" scalemax="0.9" colormultiplier="5,105,205,200" />

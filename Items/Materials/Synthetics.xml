@@ -857,7 +857,7 @@
         <Body width="256" height="256" density="10" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnActive" target="Character" interval="5" oneshot="true">
-                <SpawnItem identifier="Salvage_Mysterious_Pearl_Mission_Completed" spawnposition="SameInventory" />
+                <SpawnItem identifier="Salvage_Mysterious_Pearl_Mission_Completed" spawnposition="SameInventory" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
                 <TriggerEvent identifier="Salvage_Mysterious_Pearl_Completed" />
             </StatusEffect>
             <StatusEffect type="Always" Interval="180.0" disabledeltatime="true" target="This" >
@@ -904,7 +904,7 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Rippling_Bolt" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true" >
                 <SpawnItem identifiers="Touhou_Rippling_Bolt" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>

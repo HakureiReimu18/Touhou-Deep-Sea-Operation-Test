@@ -124,7 +124,7 @@
                 iconcolors="255,36,0;255,36,0;255,36,0;255,36,0">
         <Effect minstrength="0" maxstrength="100" strengthchange="-0.5">
             <StatValue stattype="MovementSpeed" value="0.2" />
-            <StatValue stattype="AttackMultiplier" value="0.15" />
+            <StatValue stattype="AttackMultiplier" value="0.1" />
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional bleeding="gt 0"/>
                 <Conditional bitewounds="gt 0"/>

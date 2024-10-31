@@ -48,7 +48,7 @@
     <!--三重伟大-->
     <talenttree.Alchemist>三重伟大</talenttree.Alchemist>
     <talentname.Spell_Card_Recycle_Unlocked>炼金无限</talentname.Spell_Card_Recycle_Unlocked>
-    <talentdescription.Spell_Card_Recycle_Unlocked>瓶装元素的出售价格增加至‖color:gui.green‖75%‖end‖，双手部位的‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖提高‖color:gui.green‖8%‖end‖，解锁配方：回收‖color:gui.orange‖日、月符卡‖end‖。</talentdescription.Spell_Card_Recycle_Unlocked>
+    <talentdescription.Spell_Card_Recycle_Unlocked>瓶装元素的出售价格增加至‖color:gui.green‖75%‖end‖，双手部位的‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖提高‖color:gui.green‖5%‖end‖，解锁配方：回收‖color:gui.orange‖日、月符卡‖end‖。</talentdescription.Spell_Card_Recycle_Unlocked>
     <talentname.Magic_Breakthrough>魔法突破</talentname.Magic_Breakthrough>
     <talentdescription.Magic_Breakthrough>制造所有物品时质量提升‖color:gui.green‖1‖end‖，如果是帕秋莉+/魔理沙+装束/芙兰朵露+/爱丽丝+装束，则质量再提升‖color:gui.green‖1‖end‖。</talentdescription.Magic_Breakthrough>
     <talentname.Foul_Potion_Unlocked>逆位隐士</talentname.Foul_Potion_Unlocked>
@@ -95,7 +95,7 @@
     <talentname.Talents_Yousei_Primary06>自然躲避</talentname.Talents_Yousei_Primary06>
     <talentdescription.Talents_Yousei_Primary06>所在潜艇遭到攻击后，会让自己在‖color:gui.green‖6‖end‖秒内提高‖color:gui.green‖15%‖end‖的‖color:gui.orange‖物理伤害抗性‖end‖和‖color:gui.green‖10%‖end‖的‖color:gui.orange‖移动速度‖end‖</talentdescription.Talents_Yousei_Primary06>
     <talentname.Talents_Yousei_Primary07>悠哉悠哉</talentname.Talents_Yousei_Primary07>
-    <talentdescription.Talents_Yousei_Primary07>巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柠檬味）‖end‖，双手部位的‖color:gui.orange‖物理伤害抗性‖end‖提高‖color:gui.green‖8%‖end‖，解锁配方：‖color:gui.orange‖糖衣炮弹，糖果炮‖end‖</talentdescription.Talents_Yousei_Primary07>
+    <talentdescription.Talents_Yousei_Primary07>巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柠檬味）‖end‖，双手部位的‖color:gui.orange‖物理伤害抗性‖end‖提高‖color:gui.green‖5%‖end‖，解锁配方：‖color:gui.orange‖糖衣炮弹，糖果炮‖end‖</talentdescription.Talents_Yousei_Primary07>
     <talentname.Talents_Yousei_Primary08>小小异变</talentname.Talents_Yousei_Primary08>
     <talentdescription.Talents_Yousei_Primary08>每次巡回完成任务，都会获得异变能量，异变能量能提供最多‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击速度‖end‖，‖color:gui.orange‖攻击伤害‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖烧伤抗性‖end‖加成。解锁配方：‖color:gui.orange‖异变糖果‖end‖</talentdescription.Talents_Yousei_Primary08>
     <talentname.Talents_Yousei_Primary09>自然生长</talentname.Talents_Yousei_Primary09>
@@ -191,7 +191,7 @@
     <talentdescription.Talents_Yokai_Primary14>制造物品的质量提高‖color:gui.green‖1‖end‖。解锁配方：‖color:gui.orange‖生命指针‖end‖。对死亡个体使用生命指针可以采集‖color:gui.red‖恐惧‖end‖。</talentdescription.Talents_Yokai_Primary14>
     <talentname.Talents_Yokai_Primary15>异变源头</talentname.Talents_Yokai_Primary15>
     <talentdescription.Talents_Yokai_Primary15>每杀死一个生物，增加‖color:gui.green‖1‖end‖点计数。计数到达不同阶段将给予不同效果：
-        ‖color:gui.green‖160‖end‖：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。双手部位的‖color:gui.orange‖物理伤害抗性‖end‖增加‖color:gui.green‖8%‖end‖
+        ‖color:gui.green‖160‖end‖：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。双手部位的‖color:gui.orange‖物理伤害抗性‖end‖增加‖color:gui.green‖5%‖end‖
         ‖color:gui.green‖320‖end‖：些许加快‖color:gui.yellow‖物理伤害、出血‖end‖的恢复。可以全速拖动生物。
         ‖color:gui.green‖480‖end‖：增加‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击伤害‖end‖</talentdescription.Talents_Yokai_Primary15>
     <talentname.Talents_Yokai_Primary16>水涨船高</talentname.Talents_Yokai_Primary16>
@@ -217,7 +217,7 @@
     <talentname.Yokai_Select_Tianren_Xianren>天人/仙人</talentname.Yokai_Select_Tianren_Xianren>
     <talentdescription.Yokai_Select_Tianren_Xianren>选择此分支后，不可再解锁其它分支。对应角色：比那名居天子</talentdescription.Yokai_Select_Tianren_Xianren>
     <talentname.Touhou_Yokai_Talents_Locked>天赋停摆</talentname.Touhou_Yokai_Talents_Locked>
-    <talentdescription.Touhou_Yokai_Talents_Locked>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。分支最后的天赋，解锁此天赋后，‖color:gui.red‖其他分支将无法解锁‖end‖</talentdescription.Touhou_Yokai_Talents_Locked>
+    <talentdescription.Touhou_Yokai_Talents_Locked>增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖。分支最后的天赋，解锁此天赋后，‖color:gui.red‖其他分支将无法解锁‖end‖</talentdescription.Touhou_Yokai_Talents_Locked>
 
     <talenttree.Touhou_Youling_Wangling>幽灵/亡灵</talenttree.Touhou_Youling_Wangling>
     <talentname.Touhou_Youling_Wangling01>若隐若现</talentname.Touhou_Youling_Wangling01>
@@ -227,7 +227,7 @@
     <talentdescription.Touhou_Youling_Wangling02>对越‖color:gui.red‖弱小‖end‖的敌人造成额外伤害，最高‖color:gui.green‖30%‖end‖</talentdescription.Touhou_Youling_Wangling02>
     <talentname.Touhou_Youling_Wangling03>斩断魂灵</talentname.Touhou_Youling_Wangling03>
     <talentdescription.Touhou_Youling_Wangling03>对‖color:gui.red‖剩余生命值‖end‖越高的敌人，穿透的护甲越高，最高‖color:gui.green‖15%‖end‖。
-        穿着‖color:gui.red‖妖梦装束+‖end‖时：对‖color:gui.red‖满血敌人‖end‖的攻击造成额外‖color:gui.green‖50%‖end‖伤害，额外‖color:gui.green‖50%‖end‖穿甲。攻击拥有‖color:gui.orange‖断念‖end‖效果的敌人时将附带‖color:gui.orange‖缓慢‖end‖效果。</talentdescription.Touhou_Youling_Wangling03>
+        穿着‖color:gui.red‖妖梦装束+‖end‖时：对‖color:gui.red‖满血敌人‖end‖的攻击造成额外‖color:gui.green‖30%‖end‖伤害，额外‖color:gui.green‖30%‖end‖穿甲。攻击拥有‖color:gui.orange‖断念‖end‖效果的敌人时将附带‖color:gui.orange‖缓慢‖end‖效果。</talentdescription.Touhou_Youling_Wangling03>
     <talentname.Touhou_Youling_Wangling04>三魂七魄</talentname.Touhou_Youling_Wangling04>
     <talentdescription.Touhou_Youling_Wangling04>当血量低于‖color:gui.green‖30%‖end‖时，短暂提高‖color:gui.green‖30%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖和‖color:gui.orange‖烧伤抗性‖end‖
         穿着‖color:gui.red‖妖梦装束+‖end‖时：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖20‖end‖点‖color:gui.orange‖武器操作‖end‖。</talentdescription.Touhou_Youling_Wangling04>

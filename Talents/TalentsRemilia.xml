@@ -67,7 +67,7 @@
         <AbilityConditionServerRandom randomchance="0.5" />
       </Conditions>
       <Abilities>
-        <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" replacewith="bloodloss" addedmultiplier="-0.85" />
+        <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" replacewith="bloodloss" addedmultiplier="-0.9" />
       </Abilities>
     </AbilityGroupEffect>
     <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">

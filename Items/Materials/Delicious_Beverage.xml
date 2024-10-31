@@ -19,12 +19,12 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="120" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-2.0" />
-            <StatusEffect type="OnUse" target="Character">
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-2.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <Affliction identifier="Yummy_Peach" amount="12" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -75,12 +75,12 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-2.0" />
-            <StatusEffect type="OnUse" target="Character">
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-2.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction type="debuff" amount="0.05" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -106,8 +106,8 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="10" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-2.0" />
-            <StatusEffect type="OnUse" target="Character">
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-2.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction type="damage" amount="10" />
                 <ReduceAffliction type="psychosis" amount="10" />
@@ -117,7 +117,7 @@
                 <ReduceAffliction type="Slow_Baka" amount="10" />
                 <ReduceAffliction type="Magic_Destruction" amount="2" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -148,15 +148,15 @@
             <RequiredItem identifier="stabilozine" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="10" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-3.0" />
-            <StatusEffect type="OnUse" target="Character">
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-3.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat_Short.ogg" selectionmode="random" range="300"  />
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction type="damage" amount="1" />
                 <Affliction identifier="haste" amount="7.5" />
                 <ReduceAffliction type="Slow_Baka" amount="3" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -187,8 +187,8 @@
             <RequiredItem identifier="antibiotics" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="10" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-3.0" />
-            <StatusEffect type="OnUse" target="Character">
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-3.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat_Short.ogg" selectionmode="random" range="300"  />
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction type="burn" amount="1" />
@@ -196,7 +196,7 @@
                 <Affliction identifier="haste" amount="7.5" />
                 <ReduceAffliction type="Slow_Baka" amount="3" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
             </StatusEffect>
@@ -227,15 +227,15 @@
             <RequiredItem identifier="Spiritual_Water" amount="2" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" holdpos="40,-15" handle1="5,0" aimangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-5.0" />
-            <StatusEffect type="OnUse" target="Character" >
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-5.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character" >
                 <Affliction identifier="psychosisresistance" amount="15" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Character">
+            <StatusEffect type="OnSecondaryUse" target="Character">
                 <Conditional huskinfection="lt 60.0" />
                 <ReduceAffliction identifier="huskinfection" amount="1.5" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Character" >
+            <StatusEffect type="OnSecondaryUse" target="Character" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Drink.ogg" selectionmode="random" range="300"  />
                 <ReduceAffliction identifier="poison" amount="7.5" />
                 <ReduceAffliction identifier="psychosis" amount="5" />
@@ -273,10 +273,16 @@
             <RequiredItem identifier="Spiritual_Water" amount="2" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" holdpos="40,-15" handle1="5,0" aimangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-50.0" />
-            <StatusEffect type="OnUse" target="Character" multiplyafflictionsbymaxvitality="true" >
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-50.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character">
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Drink.ogg" selectionmode="random" range="300"  />
-                <Affliction identifier="Touhou_Friendship_Juice_Effect" amount="330" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This,UseTarget" multiplyafflictionsbymaxvitality="true" >
+                <Conditional Condition="lte 1" />
+                <Affliction identifier="Touhou_Friendship_Juice_Effect" amount="600" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This" >
+                <ParticleEmitter particle="waterdrop" particlespersecond="10" scalemin="1" scalemax="1.5" distancemin="20" distancemax="25" anglemin="80" anglemax="100" velocitymin="40" velocitymax="60" copyentityangle="true" lifetimemultiplier="0.10" />
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
                 <RemoveItem />
@@ -303,15 +309,6 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-4.0" >
-                <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
-            </StatusEffect>
-            <StatusEffect type="OnUse" target="Character">
-                <Conditional jobidentifier="Yousei" />
-                <ReduceAffliction type="respawnpenalty" amount="0.24" />
-                <ReduceAffliction type="damage" amount="1" />
-                <ReduceAffliction type="burn" amount="1" />
-            </StatusEffect>
             <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
@@ -350,14 +347,6 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-4.0" >
-                <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
-            </StatusEffect>
-            <StatusEffect type="OnUse" target="Character">
-                <Conditional jobidentifier="Yousei" />
-                <ReduceAffliction type="bloodloss" amount="0.4" />
-                <ReduceAffliction type="bleeding" amount="1" />
-            </StatusEffect>
             <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
@@ -395,14 +384,6 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-4.0" >
-                <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
-            </StatusEffect>
-            <StatusEffect type="OnUse" target="Character">
-                <Conditional jobidentifier="Yousei" />
-                <ReduceAffliction type="debuff" amount="0.2" />
-                <ReduceAffliction type="psychosis" amount="1" />
-            </StatusEffect>
             <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
@@ -440,15 +421,6 @@
             <Item identifier="carbon"/>
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-4.0" >
-                <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
-            </StatusEffect>
-            <StatusEffect type="OnUse" target="Character">
-                <Conditional jobidentifier="Yousei" />
-                <ReduceAffliction type="Phoenix_Burn" amount="2" />
-                <ReduceAffliction identifier="Patchouli_Asthma" amount="0.4" />
-                <ReduceAffliction identifier="Slow_Baka" amount="6" />
-            </StatusEffect>
             <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
@@ -500,22 +472,6 @@
         <SuitableTreatment type="Patchouli_Asthma" suitability="5" />
         <SuitableTreatment identifier="Slow_Baka" suitability="5" />
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" handle1="5,0" aimangle="30" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-1.0" >
-                <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
-            </StatusEffect>
-            <StatusEffect type="OnUse" target="Character">
-                <Conditional jobidentifier="Yousei" />
-                <ReduceAffliction type="respawnpenalty" amount="0.48" />
-                <ReduceAffliction type="damage" amount="2" />
-                <ReduceAffliction type="burn" amount="2" />
-                <ReduceAffliction type="bloodloss" amount="0.8" />
-                <ReduceAffliction type="bleeding" amount="2" />
-                <ReduceAffliction type="debuff" amount="0.4" />
-                <ReduceAffliction type="psychosis" amount="2" />
-                <ReduceAffliction type="Phoenix_Burn" amount="4" />
-                <ReduceAffliction identifier="Patchouli_Asthma" amount="0.8" />
-                <ReduceAffliction identifier="Slow_Baka" amount="12" />
-            </StatusEffect>
             <StatusEffect type="OnUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0" />
                 <RemoveItem />
@@ -605,21 +561,25 @@
             <RequiredItem identifier="Spiritual_Water" amount="2" />
         </Fabricate>
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="32,18" holdpos="40,-15" handle1="5,0" aimangle="80" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnUse" target="This" Condition="-5.0" />
-            <StatusEffect type="OnUse" target="Character" >
-                <Affliction identifier="psychosisresistance" amount="15" />
-            </StatusEffect>
-            <StatusEffect type="OnUse" target="Character" >
-                <Conditional jobidentifier="neq Youkai"/>
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character" >
+                <Conditional jobidentifier="neq Yokai"/>
                 <Affliction identifier="drunk" amount="10" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Character" >
+            <StatusEffect type="OnSecondaryUse" target="Character" >
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Drink.ogg" selectionmode="random" range="300"  />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This,UseTarget" delay="10" duration="10" stackable="false">
+                <Conditional Condition="lte 1" />
                 <ReduceAffliction identifier="bloodloss" amount="7.5" />
                 <ReduceAffliction identifier="poison" amount="7.5" />
                 <ReduceAffliction identifier="psychosis" amount="5" />
                 <ReduceAffliction identifier="hallucinating" amount="5" />
-                <Affliction identifier="drunk" amount="1" />
+                <Affliction identifier="drunk" amount="1.5" />
+                <Affliction identifier="psychosisresistance" amount="15" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This" >
+                <ParticleEmitter particle="waterdrop" particlespersecond="10" scalemin="1" scalemax="1.5" distancemin="20" distancemax="25" anglemin="80" anglemax="100" velocitymin="40" velocitymax="60" copyentityangle="true" lifetimemultiplier="0.10" />
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" disabledeltatime="true">
                 <RemoveItem />
