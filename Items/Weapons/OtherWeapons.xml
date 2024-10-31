@@ -1167,9 +1167,9 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" sticktocharacters="true" sticktoitems="true" sticktostructures="true" damagedoors="true"  >
             <Attack structuredamage="10" itemdamage="150" LevelWallDamage="200" targetforce="60" targetimpulse="60" penetration="0.5">
-                <Affliction identifier="blunttrauma" strength="30" />
-                <Affliction identifier="burn" strength="30" />
-                <Affliction identifier="Reiki_Pressure" strength="25" />
+                <Affliction identifier="blunttrauma" strength="20" />
+                <Affliction identifier="burn" strength="20" />
+                <Affliction identifier="Reiki_Pressure" strength="15" />
                 <Affliction identifier="slow" strength="35" />
                 <Affliction identifier="Touhou_Weakness" strength="3" />
                 <Affliction identifier="Touhou_Rippling_Effect" strength="10" />
@@ -1201,14 +1201,14 @@
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" color="0,0,0,255" />
         <Body radius="50" density="10" gravityscale="0" />
         <!--Apply force towards the center, affecting creatures, humans and items -->
-        <TriggerComponent triggeredby="Creature,Human" force="600" radius="200" distancebasedforce="false" />
-        <TriggerComponent triggeredby="Creature,Human" force="400" radius="160" distancebasedforce="false" />
+        <TriggerComponent triggeredby="Creature,Human" force="650" radius="200" distancebasedforce="false" />
+        <TriggerComponent triggeredby="Creature,Human" force="450" radius="160" distancebasedforce="false" />
         <!--Heavily damage entities close to the center-->
-        <TriggerComponent triggeredby="Creature,Human" force="100" radius="120">
+        <TriggerComponent triggeredby="Creature,Human" force="150" radius="120">
             <Attack penetration="0.3" >
                 <Affliction identifier="stun" strength="2.0" probability="0.5" />
                 <Affliction identifier="burn" strength="20" />
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="15" />
                 <Affliction identifier="slow" strength="10" />
             </Attack>
             <StatusEffect type="OnActive" target="This">
@@ -2464,11 +2464,11 @@
                 <Explosion range="500.0" camerashake="15" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Contained" >
-                <RequiredItems items="Touhou_Mysterious_Pearl_Rippling" type="Contained" />
+                <RequiredItems items="Touhou_Miniature_Earth_Moon_System" type="Contained" />
                 <Use />
             </StatusEffect>
             <RequiredSkill identifier="Touhou_Magic" level="70" />
-            <RequiredItems items="Touhou_Mysterious_Pearl_Rippling" type="Contained" />
+            <RequiredItems items="Touhou_Miniature_Earth_Moon_System" type="Contained" />
         </RangedWeapon>
         <Body width="130" height="55" density="25" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,-10" handle1="-25,-10" handle2="10,-3" holdangle="-25" >

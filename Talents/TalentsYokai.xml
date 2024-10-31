@@ -1809,7 +1809,7 @@
 
     <!--禁忌梦魇 免疫伤口感染。杀死任意生物时，有50%概率治愈自身的噬咬和烧伤
     穿着蕾米莉亚装束+时：使用优质B型血后，造成的出血伤害额外增加66.6%。
-    穿着芙兰朵露装束+时：增加10%物理伤害抗性。你也享有优质B型血的额外效果：提供极速、代谢缓慢和活力换发效果-->
+    穿着芙兰朵露装束+时：增加10%物理伤害抗性。制造物品的质量+1。你也享有优质B型血的额外效果：提供极速、代谢缓慢和活力换发效果-->
     <Talent identifier="Touhou_Vampire06">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Vampire06"/>

@@ -165,11 +165,10 @@
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" >
-            <StatusEffect target="Character" Interval="1.0">
-                <Conditional InWater="true" />
-                <ReduceAffliction type="damage" strength="0.75" />
-                <ReduceAffliction type="burn" strength="0.75" />
-                <ReduceAffliction type="bleeding" strength="1.2" />
+            <StatusEffect target="Character" Interval="1.0" Duration="1.0" >
+                <ReduceAffliction type="damage" strength="0.25" />
+                <ReduceAffliction type="burn" strength="0.25" />
+                <ReduceAffliction type="bleeding" strength="0.4" />
             </StatusEffect>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>

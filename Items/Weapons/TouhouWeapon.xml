@@ -4002,8 +4002,8 @@
         <Projectile characterusable="false" launchimpulse="33" hitscan="false" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
                     sticktodoors="true" removeonhit="true" >
             <Attack structuredamage="0" itemdamage="15" targetforce="0.2" penetration="0.2">
-                <Affliction identifier="Touhou_Freeze" strength="9" />
-                <Affliction identifier="lacerations" strength="9" />
+                <Affliction identifier="Touhou_Freeze" strength="6" />
+                <Affliction identifier="lacerations" strength="6" />
             </Attack>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="35.0" force="6.0" decal="explosion" decalsize="0.3" >
@@ -4035,8 +4035,8 @@
         <Projectile characterusable="false" launchimpulse="33" hitscan="false" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
                     sticktodoors="true" maxtargetstohit="2" removeonhit="true" friendlyfire="false">
             <Attack structuredamage="0" itemdamage="15" targetforce="0.2" penetration="0.25">
-                <Affliction identifier="Touhou_Freeze" strength="9" />
-                <Affliction identifier="lacerations" strength="9" />
+                <Affliction identifier="Touhou_Freeze" strength="6" />
+                <Affliction identifier="lacerations" strength="6" />
                 <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="Slow_Baka" strength="3" />
             </Attack>

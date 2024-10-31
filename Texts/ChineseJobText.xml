@@ -290,7 +290,7 @@
     <talentname.Touhou_Vampire06>禁忌梦魇</talentname.Touhou_Vampire06>
     <talentdescription.Touhou_Vampire06>免疫‖color:gui.yellow‖伤口感染‖end‖。杀死任意生物时，有‖color:gui.green‖50%‖end‖概率治愈自身的‖color:gui.yellow‖噬咬和烧伤‖end‖
         穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：使用‖color:gui.orange‖优质B型血‖end‖后，造成的出血伤害额外增加‖color:gui.green‖66.6%‖end‖
-        穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖。你也享有‖color:gui.orange‖优质B型血‖end‖的额外效果：提供‖color:gui.orange‖极速、代谢缓慢和活力换发‖end‖效果</talentdescription.Touhou_Vampire06>
+        穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖。制造物品的质量+‖color:gui.green‖1‖end‖。你也享有‖color:gui.orange‖优质B型血‖end‖的额外效果：提供‖color:gui.orange‖极速、代谢缓慢和活力换发‖end‖效果</talentdescription.Touhou_Vampire06>
     <talentname.Touhou_Vampire07>血色天灾</talentname.Touhou_Vampire07>
     <talentdescription.Touhou_Vampire07>
         穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：根据‖color:gui.orange‖角色等级‖end‖，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖攻击伤害‖end‖，最高‖color:gui.green‖20%‖end‖。大大增加‖color:gui.orange‖优质B型血‖end‖的单次治疗效果。生命值低于‖color:gui.green‖0‖end‖后，‖color:gui.green‖20‖end‖秒内自身不会死亡，这个效果一巡回只能触发一次。
