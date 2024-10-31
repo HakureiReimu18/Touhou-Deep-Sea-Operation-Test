@@ -787,6 +787,10 @@
   <entitydescription.Touhou_Magic_Potion_Candy>直接饮用效果更加的魔法药水，掺入了可以治愈伤痛的成分，因为加入了糖类成分，很受小孩子喜欢。</entitydescription.Touhou_Magic_Potion_Candy>
   <entityname.Touhou_Nue_Midnight>‖color:90,80,100,255‖午鵺‖end‖</entityname.Touhou_Nue_Midnight>
   <entitydescription.Touhou_Nue_Midnight>■真■■■■■相■■■■■\n■■■■■■■■■■■■不\n■■■■■■■■■■■■■\n■■明■■■■■■■■■</entitydescription.Touhou_Nue_Midnight>
+  <entityname.Touhou_Condensed_Blood>‖color:255,36,0,255‖凝结之血‖end‖</entityname.Touhou_Condensed_Blood>
+  <entitydescription.Touhou_Condensed_Blood>利用魔法材料将鲜血牢牢固定后形成的武器，虽然坚硬度仍略有不足，但经由魔力加持的血液能够一定程度上突破目标的防护</entitydescription.Touhou_Condensed_Blood>
+  <entityname.Touhou_Crimson_Blood>‖color:255,36,0,255‖绯红之血‖end‖</entityname.Touhou_Crimson_Blood>
+  <entitydescription.Touhou_Crimson_Blood>此枪通体由纯粹的鲜血与魔力构成，仅需一些生命力作为代价，其灵活的形态就可将敌人的每一丝破绽无限放大。\n倘若使用者善于操纵血液，这便是一把尽善尽美的武器了。</entitydescription.Touhou_Crimson_Blood>
   <entityname.Touhou_La_Sangre_de_Scarlet>‖color:255,36,0,255‖斯卡蕾特之血‖end‖</entityname.Touhou_La_Sangre_de_Scarlet>
   <entitydescription.Touhou_La_Sangre_de_Scarlet>赤馆之上，红雾之中，绯色王女卫其夜空。\n鲜血所祝，命运所护，惟愿童趣恒久存留。</entitydescription.Touhou_La_Sangre_de_Scarlet>
   <entityname.Touhou_Mimicry_Prototype>‖color:255,36,0,255‖拟态原型‖end‖</entityname.Touhou_Mimicry_Prototype>
