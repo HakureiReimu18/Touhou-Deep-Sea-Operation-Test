@@ -271,21 +271,30 @@
         穿着‖color:gui.red‖荷取装束+‖end‖时：减少‖color:gui.green‖20%‖end‖‖color:gui.orange‖反应堆燃料消耗‖end‖。‖color:gui.orange‖机械工程‖end‖大于‖color:gui.green‖80‖end‖后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖炮塔伤害‖end‖，减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖炮塔能耗‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖反应堆最大功率和水泵效率‖end‖
         穿着‖color:gui.red‖恋 装束+‖end‖时：根据‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖25%‖end‖提高‖color:gui.orange‖近战攻击速度‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限</talentdescription.Touhou_Yaoguai07>
 
-<talenttree.Touhou_Vampire>吸血鬼</talenttree.Touhou_Vampire>
-<talentname.Touhou_Vampire01>内在感知</talentname.Touhou_Vampire01>
-<talentdescription.Touhou_Vampire01>‖color:gui.orange‖技能水平‖end‖额外增加‖color:gui.green‖15%‖end‖，使用‖color:gui.orange‖血袋/优质B型血‖end‖时，额外治疗‖color:gui.yellow‖出血‖end‖</talentdescription.Touhou_Vampire01>
-<talentname.Touhou_Vampire02>红雾血月</talentname.Touhou_Vampire02>
-<talentdescription.Touhou_Vampire02>提高‖color:gui.green‖15%‖end‖‖color:gui.orange‖失血抗性‖end‖，受到的‖color:gui.yellow‖烧伤和出血‖end‖额外增加‖color:gui.green‖15%‖end‖。每秒有‖color:gui.green‖20%‖end‖概率将受到的‖color:gui.yellow‖烧伤‖end‖以‖color:gui.green‖120%‖end‖倍率转化为‖color:gui.yellow‖噬咬‖end‖。 根据‖color:gui.red‖角色等级‖end‖减少自身‖color:gui.orange‖debuff效果持续时间‖end‖，每级减少‖color:gui.green‖4%‖end‖，最高‖color:gui.green‖60%‖end‖</talentdescription.Touhou_Vampire02>
-<talentname.Touhou_Vampire03>过度出血</talentname.Touhou_Vampire03>
-<talentdescription.Touhou_Vampire03>造成的‖color:gui.yellow‖出血‖end‖提高‖color:gui.green‖15%‖end‖。对人类造成的‖color:gui.yellow‖出血和失血‖end‖提高‖color:gui.green‖15%‖end‖。对‖color:gui.yellow‖出血‖end‖越高的敌人，造成的伤害越高，最高‖color:gui.green‖25%‖end‖</talentdescription.Touhou_Vampire03>
-<talentname.Touhou_Vampire04>嗜血传说</talentname.Touhou_Vampire04>
-<talentdescription.Touhou_Vampire04>‖color:gui.orange‖远程攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖近战攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害‖end‖增加‖color:gui.green‖20%‖end‖，这个效果在水中减半。 穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖ 穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖烧伤抗性‖end‖，生命值大于‖color:gui.green‖50%‖end‖时，提高‖color:gui.green‖50%‖end‖‖color:gui.orange‖精神病抗性‖end‖，增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖</talentdescription.Touhou_Vampire04>
-<talentname.Touhou_Vampire05>恶魔之躯</talentname.Touhou_Vampire05>
-<talentdescription.Touhou_Vampire05>增加‖color:gui.green‖15%‖end‖debuff抗性和毒药抗性‖end‖。 穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：免疫常规的‖color:gui.orange‖外星感染‖end‖，包括‖color:gui.red‖画皮共生体‖end‖。血量低于‖color:gui.green‖50%‖end‖时，一定时间内提高‖color:gui.green‖30%‖end‖‖color:gui.orange‖攻击伤害‖end‖ 穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：大大加快‖color:gui.yellow‖噬咬和咬伤‖end‖的恢复速度。‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖100‖end‖后，增加‖color:gui.green‖30‖end‖‖color:gui.orange‖医疗水平‖end‖。根据当前‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖10%‖end‖增加‖color:gui.orange‖最大生命值‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限</talentdescription.Touhou_Vampire05>
-<talentname.Touhou_Vampire06>禁忌梦魇</talentname.Touhou_Vampire06>
-<talentdescription.Touhou_Vampire06>免疫‖color:gui.yellow‖伤口感染‖end‖。杀死任意生物时，有‖color:gui.green‖50%‖end‖概率治愈自身的‖color:gui.yellow‖噬咬和烧伤‖end‖ 穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：使用‖color:gui.orange‖优质B型血‖end‖后，造成的出血伤害额外增加‖color:gui.green‖66.6%‖end‖ 穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖。你也享有‖color:gui.orange‖优质B型血‖end‖的额外效果：提供‖color:gui.orange‖极速、代谢缓慢和活力换发‖end‖效果</talentdescription.Touhou_Vampire06>
-<talentname.Touhou_Vampire07>血色天灾</talentname.Touhou_Vampire07>
-<talentdescription.Touhou_Vampire07> 穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：根据‖color:gui.orange‖角色等级‖end‖，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖攻击伤害‖end‖，最高‖color:gui.green‖20%‖end‖。大大增加‖color:gui.orange‖优质B型血‖end‖的单次治疗效果。生命值低于‖color:gui.green‖0‖end‖后，‖color:gui.green‖20‖end‖秒内自身不会死亡，这个效果一巡回只能触发一次。 穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：对生命值高于‖color:gui.green‖49.5%‖end‖的敌人造成‖color:gui.green‖50%‖end‖额外‖color:gui.yellow‖烧伤、撕裂伤、内脏损伤‖end‖。生命值低于‖color:gui.green‖0‖end‖后，将保持清醒‖color:gui.green‖10‖end‖秒，这个效果一巡回只能触发一次</talentdescription.Touhou_Vampire07>
+    <talenttree.Touhou_Vampire>吸血鬼</talenttree.Touhou_Vampire>
+    <talentname.Touhou_Vampire01>内在感知</talentname.Touhou_Vampire01>
+    <talentdescription.Touhou_Vampire01>‖color:gui.orange‖技能水平‖end‖额外增加‖color:gui.green‖15%‖end‖，使用‖color:gui.orange‖血袋/优质B型血‖end‖时，额外治疗‖color:gui.yellow‖出血‖end‖</talentdescription.Touhou_Vampire01>
+    <talentname.Touhou_Vampire02>红雾血月</talentname.Touhou_Vampire02>
+    <talentdescription.Touhou_Vampire02>提高‖color:gui.green‖15%‖end‖‖color:gui.orange‖失血抗性‖end‖，受到的‖color:gui.yellow‖烧伤和出血‖end‖额外增加‖color:gui.green‖15%‖end‖。每秒有‖color:gui.green‖20%‖end‖概率将受到的‖color:gui.yellow‖烧伤‖end‖以‖color:gui.green‖120%‖end‖倍率转化为‖color:gui.yellow‖噬咬‖end‖。
+        根据‖color:gui.red‖角色等级‖end‖减少自身‖color:gui.orange‖debuff效果持续时间‖end‖，每级减少‖color:gui.green‖4%‖end‖，最高‖color:gui.green‖60%‖end‖</talentdescription.Touhou_Vampire02>
+    <talentname.Touhou_Vampire03>过度出血</talentname.Touhou_Vampire03>
+    <talentdescription.Touhou_Vampire03>造成的‖color:gui.yellow‖出血‖end‖提高‖color:gui.green‖15%‖end‖。对人类造成的‖color:gui.yellow‖出血和失血‖end‖提高‖color:gui.green‖15%‖end‖。对‖color:gui.yellow‖出血‖end‖越高的敌人，造成的伤害越高，最高‖color:gui.green‖25%‖end‖</talentdescription.Touhou_Vampire03>
+    <talentname.Touhou_Vampire04>嗜血传说</talentname.Touhou_Vampire04>
+    <talentdescription.Touhou_Vampire04>‖color:gui.orange‖远程攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖近战攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害‖end‖增加‖color:gui.green‖20%‖end‖，这个效果在水中减半。
+        穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖
+        穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖烧伤抗性‖end‖，生命值大于‖color:gui.green‖50%‖end‖时，提高‖color:gui.green‖50%‖end‖‖color:gui.orange‖精神病抗性‖end‖，增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖</talentdescription.Touhou_Vampire04>
+    <talentname.Touhou_Vampire05>恶魔之躯</talentname.Touhou_Vampire05>
+    <talentdescription.Touhou_Vampire05>增加‖color:gui.green‖15%‖end‖debuff抗性和毒药抗性‖end‖。
+        穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：免疫常规的‖color:gui.orange‖外星感染‖end‖，包括‖color:gui.red‖画皮共生体‖end‖。血量低于‖color:gui.green‖50%‖end‖时，一定时间内提高‖color:gui.green‖30%‖end‖‖color:gui.orange‖攻击伤害‖end‖
+        穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：大大加快‖color:gui.yellow‖噬咬和咬伤‖end‖的恢复速度。‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖100‖end‖后，增加‖color:gui.green‖30‖end‖‖color:gui.orange‖医疗水平‖end‖。根据当前‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖10%‖end‖增加‖color:gui.orange‖最大生命值‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限</talentdescription.Touhou_Vampire05>
+    <talentname.Touhou_Vampire06>禁忌梦魇</talentname.Touhou_Vampire06>
+    <talentdescription.Touhou_Vampire06>免疫‖color:gui.yellow‖伤口感染‖end‖。杀死任意生物时，有‖color:gui.green‖50%‖end‖概率治愈自身的‖color:gui.yellow‖噬咬和烧伤‖end‖
+        穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：使用‖color:gui.orange‖优质B型血‖end‖后，造成的出血伤害额外增加‖color:gui.green‖66.6%‖end‖
+        穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖。制造物品的质量+‖color:gui.green‖1‖end‖。你也享有‖color:gui.orange‖优质B型血‖end‖的额外效果：提供‖color:gui.orange‖极速、代谢缓慢和活力换发‖end‖效果</talentdescription.Touhou_Vampire06>
+    <talentname.Touhou_Vampire07>血色天灾</talentname.Touhou_Vampire07>
+    <talentdescription.Touhou_Vampire07>
+        穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：根据‖color:gui.orange‖角色等级‖end‖，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖攻击伤害‖end‖，最高‖color:gui.green‖20%‖end‖。大大增加‖color:gui.orange‖优质B型血‖end‖的单次治疗效果。生命值低于‖color:gui.green‖0‖end‖后，‖color:gui.green‖20‖end‖秒内自身不会死亡，这个效果一巡回只能触发一次。
+        穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：对生命值高于‖color:gui.green‖49.5%‖end‖的敌人造成‖color:gui.green‖50%‖end‖额外‖color:gui.yellow‖烧伤、撕裂伤、内脏损伤‖end‖。生命值低于‖color:gui.green‖0‖end‖后，将保持清醒‖color:gui.green‖10‖end‖秒，这个效果一巡回只能触发一次</talentdescription.Touhou_Vampire07>
 
     <talenttree.Touhou_Yaoshou_Shouren>妖兽/兽人</talenttree.Touhou_Yaoshou_Shouren>
     <talentname.Touhou_Yaoshou_Shouren01>同族羁绊</talentname.Touhou_Yaoshou_Shouren01>
