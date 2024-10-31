@@ -3646,7 +3646,7 @@
       <RequiredSkill identifier="weapons" level="30" />
       <RequiredSkill identifier="Touhou_Magic" level="30" />
       <RequiredItem identifier="Reiki_Dust_Caking" amount="16" />
-      <RequiredItem identifier="bloodpack" amount="6" />
+      <RequiredItem identifier="antibloodloss2" amount="6" />
       <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
     </Fabricate>
     <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Condensed_Blood.png" sourcerect="0,0,556,56" origin="0.5,0.5" />
@@ -3701,7 +3701,7 @@
     <Fabricate suitablefabricators="Magic_Altar" requiredtime="6">
       <RequiredSkill identifier="weapons" level="60" />
       <RequiredSkill identifier="Touhou_Magic" level="60" />
-      <RequiredItem identifier="Touhou_bloodpackB" amount="16" />
+      <RequiredItem identifier="bloodpackB" amount="16" />
       <RequiredItem identifier="Score_Point" amount="6" />
       <RequiredItem identifier="Magic_Material" amount="6" />
       <RequiredItem identifier="Touhou_Precious_Metal" amount="2" />
