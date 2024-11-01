@@ -34,7 +34,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
-<!--        <AbilityGroupInterval interval="15.0">
+        <AbilityGroupInterval interval="15.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Closed_Eyes_Of_Koishi" />
                 <AbilityConditionHasAffliction afflictionidentifier="Koishi_Unconscious_Flag" invert="true" />
@@ -49,9 +49,9 @@
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
-        </AbilityGroupInterval>-->
+        </AbilityGroupInterval>
 
-        <AbilityGroupInterval interval="15.0">
+<!--        <AbilityGroupInterval interval="15.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Closed_Eyes_Of_Koishi" />
                 <AbilityConditionHasAffliction afflictionidentifier="Koishi_Unconscious_Flag" invert="true" />
@@ -152,7 +152,7 @@
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
-        </AbilityGroupInterval>
+        </AbilityGroupInterval>-->
 
         <AbilityGroupEffect abilityeffecttype="OnAttackResult">
             <Conditions>

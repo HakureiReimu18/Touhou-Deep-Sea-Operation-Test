@@ -1580,14 +1580,6 @@
       </StatusEffect>
     </Effect>
     <Effect minstrength="1" maxstrength="4" resistancefor="damage,burn" minresistance="-0.25" maxresistance="-0.25" strengthchange="-1.0">
-      <StatusEffect target="Character" disabledeltatime="true" Interval="9.0" >
-        <Conditional HealthPercentage="lte 2"/>
-        <Explosion range="250.0" force="4.0" severlimbsprobability="0.2" penetration="0.35">
-          <Affliction identifier="Sleepless_Nightmare" strength="20" />
-          <Affliction identifier="burn" strength="30" />
-          <Affliction identifier="explosiondamage" strength="30" />
-        </Explosion>
-      </StatusEffect>
       <StatusEffect target="Character" >
         <ParticleEmitter particle="gravityspherefx" particlespersecond="1" anglemin="0" anglemax="360" velocitymin="5" velocitymax="10" />
       </StatusEffect>
@@ -1619,16 +1611,34 @@
               isbuff="true"
               limbspecific="false"
               indicatorlimb="Head"
-              maxstrength="10"
+              maxstrength="1"
+              Duration="1.0"
               showiconthreshold="100"
               showinhealthscannerthreshold="100"
               affectmachines="false"
               iconcolors="94,94,94;163,164,164;255,255,255">
-    <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="10"/>
-    <Effect minstrength="0" maxstrength="10" strengthchange="-10">
-      <StatValue stattype="MeleeAttackSpeed" value="0.25" />
-      <StatValue stattype="MeleeAttackMultiplier" value="0.3" />
+    <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="1"/>
+    <Effect minstrength="0" maxstrength="10">
+      <StatValue stattype="MeleeAttackSpeed" value="0.45" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.45" />
     </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--生命指针采集效果-->
+  <Affliction name="生命指针采集效果"
+              identifier="Touhou_Life_Needle_Effect"
+              type="Touhou_Life_Needle_Effect"
+              isbuff="true"
+              limbspecific="false"
+              indicatorlimb="Head"
+              maxstrength="1"
+              showiconthreshold="100"
+              showinhealthscannerthreshold="100"
+              affectmachines="false"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="1"/>
+    <Effect minstrength="0" maxstrength="10"/>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 </Afflictions>

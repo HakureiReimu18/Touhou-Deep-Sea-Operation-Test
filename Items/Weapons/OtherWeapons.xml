@@ -2410,11 +2410,11 @@
                     <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
                 </StatusEffect>
             </Attack>
-            <StatusEffect type="OnUse" target="UseTarget" comparison="And">
+            <StatusEffect type="OnUse" target="UseTarget" comparison="And" multiplyafflictionsbymaxvitality="true">
                 <Conditional IsDead="true" />
                 <Conditional speciesgroup="neq human" />
-                <SpawnItem identifiers="Touhou_Fear_Item" SpawnIfInventoryFull="true" spawnposition="ThisInventory"/>
-                <Remove />
+                <Affliction identifier="Touhou_Life_Needle_Effect" strength="10" />
+                <SpawnItem identifiers="Touhou_Fear_Item" SpawnIfInventoryFull="true" spawnposition="SameInventory"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.1" scalemax="0.15" colormultiplier="255,255,255,180" />
@@ -2467,11 +2467,27 @@
                 <RequiredItems items="Touhou_Miniature_Earth_Moon_System" type="Contained" />
                 <Use />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" spread="12" comparison="And" >
+                <Conditional spread="gte 4"/>
+                <Conditional spread="lte 12"/>
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This" delay="0.1" spread="-0.5" disabledeltatime="true" comparison="And" >
+                <Conditional spread="gte 4"/>
+                <Conditional spread="lte 12"/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" unskilledspread="32" >
+                <Conditional unskilledspread="gte 16"/>
+                <Conditional unskilledspread="lte 32"/>
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This" delay="0.1" unskilledspread="-0.5" disabledeltatime="true" >
+                <Conditional unskilledspread="gte 16"/>
+                <Conditional unskilledspread="lte 32"/>
+            </StatusEffect>
             <RequiredSkill identifier="Touhou_Magic" level="70" />
             <RequiredItems items="Touhou_Miniature_Earth_Moon_System" type="Contained" />
         </RangedWeapon>
         <Body width="130" height="55" density="25" />
-        <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,-10" handle1="-10,-10" handle2="10,-10" holdangle="25" >
+        <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="30,-15" aimpos="60,-10" handle1="-10,-10" handle2="10,-10" holdangle="45" >
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -2540,7 +2556,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="110" height="30" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-        <Projectile characterusable="false" sticktocharacters="true" sticktoitems="true" sticktostructures="true" damagedoors="true" removeonhit="true" >
+        <Projectile launchimpulse="20" characterusable="false" sticktocharacters="true" sticktoitems="true" sticktostructures="true" damagedoors="true" removeonhit="true" >
             <Attack structuredamage="10" itemdamage="100" LevelWallDamage="200" targetforce="20" targetimpulse="20" penetration="0.35">
                 <Affliction identifier="burn" strength="25" />
                 <Affliction identifier="lacerations" strength="10" />
@@ -2564,8 +2580,8 @@
             </StatusEffect>
             <StatusEffect type="OnNotContained" target="This" lifetime="4.0">
                 <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="200" distancemax="250" velocitymin="-500" velocitymax="-900" particlespersecond="80" colormultiplier="255,180,255,255" />
-                <ParticleEmitter particle="gravityspherefx" particleamount="1" emitinterval="0.3" />
-                <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="100" anglemin="0" anglemax="360" colormultiplier="100,80,110,220" />
+                <ParticleEmitter particle="Touhou_Blue_Explosion_Underwater" particleamount="1" emitinterval="0.3" />
+                <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="3.0" particlespersecond="100" anglemin="0" anglemax="360" colormultiplier="100,80,150,220" />
             </StatusEffect>
             <StatusEffect type="OnNotContained" target="This" delay="2.6" disabledeltatime="true">
                 <Remove/>
@@ -2587,15 +2603,15 @@
         </ItemComponent>
         <TriggerComponent triggeredby="Creature" force="150" radius="1500" distancebasedforce="true"/>
         <ElectricalDischarger duration="0.4" reload="0.1" ignoreuser="true" characterusable="true" raycastrange="100" range="400" rangemultiplierinwalls="0.25" outdoorsonly="false" powerconsumption="0" pickkey="Select">
-            <Attack targetimpulse="-200" targetforce="-200" penetration="0.6" >
-                <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                    <Conditional speciesgroup="neq human" />
-                    <Affliction identifier="stun" strength="2.0" probability="0.5" />
-                    <Affliction identifier="lacerations" strength="10" />
-                    <Affliction identifier="burn" strength="10" />
-                    <Affliction identifier="Touhou_Tide_Bolt_Effect" strength="6" />
-                </StatusEffect>
+            <Attack>
             </Attack>
+            <StatusEffect type="OnUse" target="UseTarget" >
+                <Conditional speciesgroup="neq human" />
+                <Affliction identifier="stun" strength="1.0" probability="0.5" />
+                <Affliction identifier="lacerations" strength="10" />
+                <Affliction identifier="burn" strength="10" />
+                <Affliction identifier="Touhou_Tide_Bolt_Effect" strength="6" />
+            </StatusEffect>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="1000" selectionmode="random" />
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="1000" />
@@ -2609,8 +2625,8 @@
 
 
     <!--月震-->
-    <Item name="" identifier="Touhou_Lunarquake" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true"
-          tags="mediumitem,weapon,gun,High_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="0.4" impactsoundtag="impact_metal_heavy">
+    <Item name="月震" identifier="Touhou_Lunarquake" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true"
+          tags="mediumitem,weapon,gun,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="1.0" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="secarmcab" secondary="weaponholder,armcab"/>
         <Price baseprice="9000" sold="false">
             <Price storeidentifier="merchantoutpost" multiplier="1.5" />
@@ -2620,30 +2636,20 @@
             <Price storeidentifier="merchantmine" multiplier="1.25" />
         </Price>
         <Deconstruct time="5">
-            <Item identifier="nucleargun" />
-            <Item identifier="titaniumaluminiumalloy" amount="2" />
             <Item identifier="fulgurium" amount="2" />
-            <Item identifier="Power_Point" />
+            <Item identifier="Power_Point" amount="2" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" >
             <RequiredSkill identifier="electrical" level="65" />
             <RequiredSkill identifier="Touhou_Magic" level="65" />
-            <RequiredItem identifier="nucleargun" />
-            <RequiredItem identifier="Touhou_Simple_Parts" amount="3" />
-            <RequiredItem identifier="titaniumaluminiumalloy" amount="2" />
+            <RequiredItem identifier="Touhou_Simple_Parts" amount="2" />
             <RequiredItem identifier="fulgurium" amount="2" />
-            <RequiredItem identifier="Touhou_Precious_Metal" />
-            <RequiredItem identifier="Power_Point" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
+            <RequiredItem identifier="Power_Point" amount="2" />
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun.png" sourcerect="0,0,300,100" depth="0.55" origin="0.5,0.5" />
-        <Body width="260" height="100" density="10" />
-        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="70,4" handle1="-70,-10" handle2="20,-13" holdangle="-25" >
-            <StatusEffect type="OnActive" target="This" penetration="0.15" weapondamagemodifier="1.35" reload="1.5" maxchargetime="0.5" setvalue="true" disabledeltatime="true">
-                <Conditional Voltage="gt 0.5" />
-            </StatusEffect>
-            <StatusEffect type="OnActive" target="This" penetration="0.05" weapondamagemodifier="1.0" reload="2.0" maxchargetime="1.0" setvalue="true" disabledeltatime="true">
-                <Conditional Voltage="lt 0.5" />
-            </StatusEffect>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Lunarquake.png" sourcerect="0,0,72,28" depth="0.55" origin="0.5,0.5" />
+        <Body width="72" height="28" density="10" />
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-15" aimpos="70,4" handle1="-10,-10" handle2="10,-13" holdangle="-35" >
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -2670,55 +2676,204 @@
         <LightComponent LightColor="255,150,150,100" Range="130" powerconsumption="10" IsOn="true" >
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="1,1,1,1" origin="0.15,0" />
         </LightComponent>
-        <RangedWeapon weapondamagemodifier="1.0" penetration="0.05" penetrationmultiplier="1.0" reload="2.0" maxchargetime="1.0" holdtrigger="true"
-                      barrelpos="148,4" spread="0" unskilledspread="15" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5"
-                      ChargeSoundWindupPitchSlide="0.5,1.5">
+        <RangedWeapon weapondamagemodifier="1.0" reload="0.7" maxchargetime="0.3" holdtrigger="true" barrelpos="48,4"
+                      spread="5" unskilledspread="15" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5" ChargeSoundWindupPitchSlide="0.5,1.5">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Blunderbuss.png" sourcerect="0,77,108,108" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
             <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
-            <ParticleEmitter particle="GlowDot" scalemin="4.0" scalemax="4.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,0,0,255" />
-            <ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="1.0" scalemax="1.0" anglemax="360" colormultiplier="255,0,0,255" />
+            <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="80,80,200,255" />
+            <ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="0.5" scalemax="0.5" anglemax="360" colormultiplier="80,80,200,255" />
             <Sound file="%ModDir%/Sounds/Weapons/Touhou_Scorching_Ray_Gun_Attack.ogg" type="OnUse" range="3000" selectionmode="Random" />
             <ChargeSound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAcceleratorStartLoop.ogg" range="1000" />
             <StatusEffect type="OnUse" target="This">
                 <Explosion range="150.0" force="3" shockwave="true" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="10.0" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-17" disabledeltatime="true" />
-            <StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-10" disabledeltatime="true">
-                <RequiredItem items="fuelrod" type="Contained" />
+            <StatusEffect type="OnUse" target="This" Condition="-10" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="This" tags="Touhou_Lunarquake_Shoot03" disabledeltatime="true" setvalue="true" onshot="true" >
+                <Conditional HasTag="neq Touhou_Lunarquake_Shoot01" />
+                <Conditional HasTag="neq Touhou_Lunarquake_Shoot02" />
+                <Conditional HasTag="neq Touhou_Lunarquake_Shoot03" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-7.15" disabledeltatime="true">
-                <RequiredItem items="thoriumfuelrod" type="Contained" />
+            <StatusEffect type="OnUse" target="This" tags="Touhou_Lunarquake_Shoot01" disabledeltatime="true" setvalue="true" >
+                <Conditional HasTag="eq Touhou_Lunarquake_Shoot03" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-2.0" disabledeltatime="true">
-                <RequiredItem items="fulguriumfuelrod" type="Contained" />
+            <StatusEffect type="OnUse" target="This" tags="Touhou_Lunarquake_Shoot02" disabledeltatime="true" setvalue="true" >
+                <Conditional HasTag="eq Touhou_Lunarquake_Shoot01" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Contained" targetslot="0" >
+            <StatusEffect type="OnUse" target="This" tags="Touhou_Lunarquake_Shoot03" disabledeltatime="true" setvalue="true" >
+                <Conditional HasTag="eq Touhou_Lunarquake_Shoot02" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Contained" >
                 <Use />
             </StatusEffect>
-            <RequiredItems items="Touhou_Scorching_Ray_Gun_Ammo" type="Contained" msg="ItemMsgAmmoRequired" />
-            <RequiredSkill identifier="Touhou_Magic" level="65" />
-            <RequiredSkill identifier="electrical" level="65" />
+            <RequiredItems items="Touhou_Lunar_Arc" type="Contained" msg="ItemMsgAmmoRequired" />
+            <RequiredSkill identifier="Touhou_Magic" level="60" />
+            <RequiredSkill identifier="weapons" level="60" />
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="1" itempos="10,-5" containedspritedepths="0.562,0.561" containedstateindicatorstyle="default" containedstateindicatorslot="0">
-            <Containable items="Touhou_Scorching_Ray_Gun_Ammo" rotation="90"/>
+            <Containable items="Touhou_Lunar_Arc" rotation="90"/>
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
-            <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="192,448,64,64" origin="0.5,0.5" />
-            <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="reactorfuel" setactive="true" >
-                    <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true">
-                        <Conditional condition="gt 0" />
-                    </StatusEffect>
-                </Containable>
-            </SubContainer>
         </ItemContainer>
         <aitarget sightrange="1000" soundrange="3000" fadeouttime="5" />
         <Quality>
-            <QualityStat stattype="FirepowerMultiplier" value="0.067" />
-            <QualityStat stattype="FiringRateMultiplier" value="0.08" />
+            <QualityStat stattype="FiringRateMultiplier" value="0.05" />
             <QualityStat stattype="Condition" value="0.15" />
         </Quality>
-        <SkillRequirementHint identifier="Touhou_Magic" level="65" />
-        <SkillRequirementHint identifier="electrical" level="65" />
+        <SkillRequirementHint identifier="Touhou_Magic" level="60" />
+        <SkillRequirementHint identifier="weapons" level="60" />
+    </Item>
+
+    <!--月弧-->
+    <Item name="月弧" identifier="Touhou_Lunar_Arc" scale="0.32" subcategory="Touhou" category="Weapon"
+          maxstacksize="16" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate"
+          tags="smallitem,Touhou_Kappa_Welding_Tool_Ammo" impactsoundtag="impact_metal_light" >
+        <PreferredContainer secondary="armcab" />
+        <Price baseprice="2000" minleveldifficulty="20">
+            <Price storeidentifier="merchantoutpost" maxavailable="3" sold="false" />
+            <Price storeidentifier="merchantcity" maxavailable="2" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" maxavailable="1" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.25" maxavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" maxavailable="3" />
+            <Price storeidentifier="merchantengineering" maxavailable="1" multiplier="0.9"/>
+        </Price>
+        <Deconstruct time="6">
+            <Item identifier="uranium" amount="2" />
+            <Item identifier="titaniumaluminiumalloy" amount="2" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" >
+            <RequiredSkill identifier="Touhou_Magic" level="60" />
+            <RequiredItem identifier="flashpowder" />
+            <RequiredItem identifier="Shui_Alchemical" />
+            <RequiredItem identifier="Yin_Alchemical" />
+            <RequiredItem identifier="Touhou_Base_Metal" />
+        </Fabricate>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem" >
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
+            <RequiredItem identifier="Reiki_Stone" amount="2" />
+            <RequiredItem identifier="flashpowder" />
+            <RequiredItem identifier="Shui_Alchemical" />
+            <RequiredItem identifier="Yin_Alchemical" />
+            <RequiredItem identifier="Touhou_Lunar_Arc" mincondition="0.0" maxcondition="0.5" usecondition="false" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Ammo.png" sourcerect="0,0,120,120" depth="0.45" origin="0.5,0.5" />
+        <Body width="28" height="40" density="10" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Lunarquake_Shoot01" removecontaineditemsondeconstruct="true"
+                       drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <Containable items="Touhou_Lunar_Arc_Light" />
+            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+            <StatusEffect type="OnUse" target="This" condition="-3.334" disabledeltatime="true" >
+                <Conditional HasTag="eq Touhou_Lunarquake_Shoot03" targetcontainer="true"/>
+                <SpawnItem identifiers="Touhou_Lunar_Arc_Light01" spawnposition="ThisInventory" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" condition="-3.334" disabledeltatime="true" >
+                <Conditional HasTag="eq Touhou_Lunarquake_Shoot01" targetcontainer="true"/>
+                <SpawnItem identifiers="Touhou_Lunar_Arc_Light02" spawnposition="ThisInventory" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" condition="-3.334" disabledeltatime="true" >
+                <Conditional HasTag="eq Touhou_Lunarquake_Shoot02" targetcontainer="true"/>
+                <SpawnItem identifiers="Touhou_Lunar_Arc_Light03" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+    <!--月弧射弹-->
+    <Item name="月弧射弹" identifier="Touhou_Lunar_Arc_Light01" category="Weapon" tags="Touhou_Lunar_Arc_Light,Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5" hideinmenus="true" >
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+        <Body width="170" height="10" density="10" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="20,20,20,255"/>
+            <Attack itemdamage="20" levelwalldamage="20" targetforce="5" targetimpulse="5" penetration="0.25" severlimbsprobability="0.3">
+                <Affliction identifier="explosiondamage" strength="20" />
+                <Affliction identifier="stun" strength="0.5" />
+                <Affliction identifier="stun" strength="0.5" probability="0.4"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" comparison="And">
+                <Conditional speciesname="neq human" />
+                <Conditional speciesname="neq HumanTouhou_Tail" />
+                <Affliction identifier="Reiki_Pressure" strength="5.0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="weldspark" particleamount="2" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />
+                <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="2" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.1" scalemax="0.2" colormultiplier="200,200,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+    <!--月弧射弹-->
+    <Item name="月弧射弹" identifier="Touhou_Lunar_Arc_Light02" category="Weapon" tags="Touhou_Lunar_Arc_Light,Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5" hideinmenus="true" >
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+        <Body width="170" height="10" density="10" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="255,255,255,200"/>
+            <Attack itemdamage="20" levelwalldamage="20" targetforce="5" targetimpulse="5" penetration="0.15" severlimbsprobability="0.1">
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="20" />
+                <Affliction identifier="stun" strength="0.75" />
+                <Affliction identifier="stun" strength="0.4" probability="0.6"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" comparison="And">
+                <Conditional speciesname="neq human" />
+                <Conditional speciesname="neq HumanTouhou_Tail" />
+                <Affliction identifier="Reiki_Pressure" strength="5.0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="weldspark" particleamount="2" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />
+                <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="2" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.1" scalemax="0.2" colormultiplier="200,200,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+    <!--月弧射弹-->
+    <Item name="月弧射弹" identifier="Touhou_Lunar_Arc_Light03" category="Weapon" tags="Touhou_Lunar_Arc_Light,Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5" hideinmenus="true" >
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+        <Body width="170" height="10" density="10" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="255,80,80,220"/>
+            <Attack itemdamage="40" levelwalldamage="80" targetforce="5" targetimpulse="5" penetration="0.35" severlimbsprobability="0.6">
+                <Affliction identifier="burn" strength="25" />
+                <Affliction identifier="Touhou_Freeze" strength="15" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" comparison="And">
+                <Conditional speciesname="neq human" />
+                <Conditional speciesname="neq HumanTouhou_Tail" />
+                <Affliction identifier="Reiki_Pressure" strength="5.0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="weldspark" particleamount="2" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />
+                <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="2" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.1" scalemax="0.2" colormultiplier="200,200,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
     </Item>
 </Items>

@@ -1198,7 +1198,9 @@
   <entityname.Touhou_Miniature_Earth_Moon_System>微缩地月系统</entityname.Touhou_Miniature_Earth_Moon_System>
   <entitydescription.Touhou_Miniature_Earth_Moon_System>一个精巧的微缩地月系统，但显然制作者已经忘了地球原本真实的样子。专用于潮汐的弹药</entitydescription.Touhou_Miniature_Earth_Moon_System>
   <entityname.Touhou_Scarlet_Gensokyo>绯色命运</entityname.Touhou_Scarlet_Gensokyo>
-  <entitydescription.Touhou_Scarlet_Gensokyo>高速之红。不耍任何小聪明直接正面让你见识其力量。\n按下交互键（默认E键）激活高速模式，大幅增加效力。升级品质能让其持续时间更久。</entitydescription.Touhou_Scarlet_Gensokyo>
+  <entitydescription.Touhou_Scarlet_Gensokyo>高速之红。不耍任何小聪明直接正面让你见识其力量。\n激活高速模式后，大幅增加效力。同时会对使用者造成一定伤害。</entitydescription.Touhou_Scarlet_Gensokyo>
+  <ScarletMode.Tickbox>高速模式</ScarletMode.Tickbox>
+<!--  <ScarletMode.Timer>高速计时</ScarletMode.Timer>-->
   <afflictionname.Touhou_Tide_Bolt_Effect>潮汐效应</afflictionname.Touhou_Tide_Bolt_Effect>
   <afflictiondescription.Touhou_Tide_Bolt_Effect>月球背面的神秘海洋，在你体内起起伏伏，破坏了你的身体防御</afflictiondescription.Touhou_Tide_Bolt_Effect>
 
