@@ -16,10 +16,10 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Closed_Eyes_Of_Koishi" />
                 <AbilityConditionHasAffliction afflictionidentifier="Koishi_Dodge_CD" invert="true" />
-                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="NoWeapon,Melee,Ranged"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityApplyStatusEffects applytoself="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
                             <SpawnCharacter speciesname="Touhou_Koishi_Phantom" count="1" />

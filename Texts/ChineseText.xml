@@ -1203,5 +1203,9 @@
 <!--  <ScarletMode.Timer>高速计时</ScarletMode.Timer>-->
   <afflictionname.Touhou_Tide_Bolt_Effect>潮汐效应</afflictionname.Touhou_Tide_Bolt_Effect>
   <afflictiondescription.Touhou_Tide_Bolt_Effect>月球背面的神秘海洋，在你体内起起伏伏，破坏了你的身体防御</afflictiondescription.Touhou_Tide_Bolt_Effect>
+  <entityname.Touhou_Lunarquake>月震</entityname.Touhou_Lunarquake>
+  <entitydescription.Touhou_Lunarquake>河童们来到木卫二后，利用附近特殊的天体运行关系制造的神秘武器。它会根据使用者射击的时间逐渐提高射速。\n使用‖color:gui.yellow‖月震中心‖end‖发射弹幕</entitydescription.Touhou_Lunarquake>
+  <entityname.Touhou_Lunar_Center>月震中心</entityname.Touhou_Lunar_Center>
+  <entitydescription.Touhou_Lunar_Center>“你听说了吗？月球上也有地震”作为月震的弹药使用。</entitydescription.Touhou_Lunar_Center>
 
 </infotexts>

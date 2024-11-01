@@ -1074,6 +1074,7 @@
             </Abilities>
         </AbilityGroupInterval>
         <AddedRecipe itemidentifier="Touhou_Lunarquake" />
+        <AddedRecipe itemidentifier="Touhou_Lunar_Center" />
     </Talent>
 
     <!--生存法则 等级大于15后，免疫水压。
@@ -2337,7 +2338,7 @@
     </Talent>
 
     <!--破旧立新 如果你的等级比船员中最高的等级低1级以上，增加10%攻击伤害，否则增加10%物理伤害抗性和烧伤抗性。解锁配方：天狗的信物
-        穿着文文装束+时：增加30%游泳速度。每次进入一个新的站点，增加一个计数。计数到达5个后，提高10%攻击伤害、移动速度和眩晕抗性.死亡后计数清零
+        穿着文文装束+时：增加30%游泳速度。每次进入一个新的站点，增加一个计数。计数到达5个后，提高10%攻击伤害、移动速度和眩晕抗性。死亡后计数清零
         穿着椛 装束+时：根据武器操作水平，提高相应10%的游泳速度和buff效果持续时间。这个效果在武器操作超过300后达到上限-->
     <Talent identifier="Touhou_Tiangou05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />

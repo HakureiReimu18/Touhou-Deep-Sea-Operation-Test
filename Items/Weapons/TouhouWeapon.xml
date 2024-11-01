@@ -1095,7 +1095,7 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="4" targetforce="6" itemdamage="6" severlimbsprobability="0.2" penetration="0.2">
+            <Attack structuredamage="4" targetforce="6" itemdamage="6" severlimbsprobability="0.2" penetration="0.1">
                 <Affliction identifier="gunshotwound" strength="6.5" />
                 <Affliction identifier="lacerations" strength="7" />
                 <Affliction identifier="Reiki_Pressure" strength="1" />
@@ -2006,7 +2006,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" removeonhit="true" friendlyfire="true">
-            <Attack structuredamage="4" itemdamage="4" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.2">
+            <Attack structuredamage="4" itemdamage="4" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.15">
                 <Affliction identifier="burn" strength="20" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
@@ -2049,7 +2049,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" removeonhit="true" friendlyfire="true">
-            <Attack structuredamage="2" itemdamage="2" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.25">
+            <Attack structuredamage="2" itemdamage="2" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.2">
                 <Affliction identifier="blunttrauma" strength="17" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
@@ -2092,7 +2092,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" maxtargetstohit="2" removeonhit="true" friendlyfire="true">
-            <Attack structuredamage="2" itemdamage="10" targetforce="2" targetimpulse="2" severlimbsprobability="0.5" penetration="0.3">
+            <Attack structuredamage="2" itemdamage="10" targetforce="2" targetimpulse="2" severlimbsprobability="0.5" penetration="0.25">
                 <Affliction identifier="lacerations" strength="15" />
                 <Affliction identifier="bleeding" strength="15" />
             </Attack>
@@ -2142,7 +2142,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="20" hitscan="false" maxtargetstohit="3" removeonhit="true" friendlyfire="false">
-            <Attack structuredamage="2" itemdamage="2" targetforce="21" targetimpulse="12" severlimbsprobability="0.1" penetration="0.1">
+            <Attack structuredamage="2" itemdamage="2" targetforce="21" targetimpulse="12" severlimbsprobability="0.1" penetration="0.05">
                 <Affliction identifier="lacerations" strength="2.0" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
@@ -2170,7 +2170,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" maxtargetstohit="2" removeonhit="true" friendlyfire="true">
-            <Attack structuredamage="1" itemdamage="1" targetforce="6" targetimpulse="8" severlimbsprobability="0.1" penetration="0.3">
+            <Attack structuredamage="1" itemdamage="1" targetforce="6" targetimpulse="8" severlimbsprobability="0.1" penetration="0.25">
                 <Affliction identifier="acidburn" strength="8" />
                 <Affliction identifier="Touhou_Freeze" strength="8" />
             </Attack>
@@ -2215,7 +2215,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="20" hitscan="false" maxtargetstohit="2" removeonhit="false" friendlyfire="false">
-            <Attack structuredamage="0" itemdamage="0" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.15">
+            <Attack structuredamage="0" itemdamage="0" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.1">
                 <Affliction identifier="acidburn" strength="0.3" />
                 <Affliction identifier="Touhou_Freeze" strength="0.3" />
             </Attack>
@@ -2251,7 +2251,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" removeonhit="true" friendlyfire="true">
-            <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.6">
+            <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.5">
                 <Affliction identifier="burn" strength="20" />
                 <Affliction identifier="Reiki_Pressure" strength="5" />
 <!--                <Affliction identifier="Touhou_Yang_Elements" strength="5" />
@@ -2297,7 +2297,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="20" hitscan="false" maxtargetstohit="2" removeonhit="false" friendlyfire="false">
-            <Attack structuredamage="0" itemdamage="0" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.3">
+            <Attack structuredamage="0" itemdamage="0" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.2">
                 <Affliction identifier="burn" strength="3" />
 <!--                <Affliction identifier="Touhou_Yang_Elements" strength="0.5" />
                 <Affliction identifier="Touhou_Yang_Elements" strength="0.7" probability="0.15" />-->
@@ -2330,7 +2330,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" removeonhit="true" friendlyfire="true">
-            <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.6">
+            <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.5">
                 <Affliction identifier="acidburn" strength="15" />
                 <Affliction identifier="Reiki_Pressure" strength="5" />
 <!--                <Affliction identifier="Touhou_Yin_Elements" strength="5" />
@@ -2376,7 +2376,7 @@
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="20" hitscan="false" maxtargetstohit="2" removeonhit="false" friendlyfire="false">
-            <Attack structuredamage="0" itemdamage="0" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.3">
+            <Attack structuredamage="0" itemdamage="0" targetforce="2" targetimpulse="2" severlimbsprobability="0.2" penetration="0.2">
                 <Affliction identifier="acidburn" strength="2" />
                 <!--                <Affliction identifier="Touhou_Yang_Elements" strength="0.5" />
                                 <Affliction identifier="Touhou_Yang_Elements" strength="0.7" probability="0.15" />-->
@@ -2504,7 +2504,7 @@
                 </StatusEffect>
             </LightComponent>
 
-            <Attack targetimpulse="5" severlimbsprobability="0.6" itemdamage="100" structuredamage="10" structuresoundtype="StructureSlash" penetration="0.6">
+            <Attack targetimpulse="5" severlimbsprobability="0.6" itemdamage="100" structuredamage="10" structuresoundtype="StructureSlash" penetration="0.5">
                 <Affliction identifier="Reiki_Pressure" strength="8" />
                 <Affliction identifier="explosiondamage" strength="12" />
                 <Affliction identifier="burn" strength="20" />
@@ -2650,7 +2650,7 @@
         <Body width="28" height="36" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="15" damagedoors="true" removeonhit="true" >
-            <Attack structuredamage="40" itemdamage="150" targetforce="20" targetimpulse="20" severlimbsprobability="0.3" penetration="0.4">
+            <Attack structuredamage="40" itemdamage="150" targetforce="20" targetimpulse="20" severlimbsprobability="0.3" penetration="0.3">
                 <Affliction identifier="blunttrauma" strength="70" />
                 <Affliction identifier="Reiki_Pressure" strength="20" />
                 <Affliction identifier="Aura_Strip" strength="10" />
@@ -3279,7 +3279,7 @@
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="40" hitscan="false" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
                     sticktodoors="true" removeonhit="true" friendlyfire="false" LaunchRotation="0">
-            <Attack structuredamage="1" itemdamage="5" targetforce="1" penetration="0.3" severlimbsprobability="0.2">
+            <Attack structuredamage="1" itemdamage="5" targetforce="1" penetration="0.2" severlimbsprobability="0.2">
                 <Affliction identifier="bleeding" strength="3.0" />
                 <Affliction identifier="lacerations" strength="12.0" />
                 <Affliction identifier="burn" strength="5.0" />
@@ -3473,7 +3473,7 @@
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
 
-            <Attack targetimpulse="5" severlimbsprobability="0.35" itemdamage="40" structuresoundtype="StructureSlash" penetration="0.35">
+            <Attack targetimpulse="5" severlimbsprobability="0.35" itemdamage="40" structuresoundtype="StructureSlash" penetration="0.3">
                 <Affliction identifier="Reiki_Pressure" strength="6" />
                 <Affliction identifier="lacerations" strength="7" />
                 <Affliction identifier="lacerations" strength="3" probability="0.495" />
@@ -3573,7 +3573,7 @@
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
 
-            <Attack targetimpulse="5" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.4">
+            <Attack targetimpulse="5" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
                 <Affliction identifier="Reiki_Pressure" strength="8" />
                 <Affliction identifier="lacerations" strength="20" />
                 <Affliction identifier="burn" strength="10" />
@@ -3698,7 +3698,7 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
 
-            <Attack targetimpulse="6" severlimbsprobability="0.6" itemdamage="100" structuredamage="66" structuresoundtype="StructureSlash" penetration="0.66">
+            <Attack targetimpulse="6" severlimbsprobability="0.6" itemdamage="100" structuredamage="66" structuresoundtype="StructureSlash" penetration="0.6">
                 <Affliction identifier="Reiki_Pressure" strength="11" />
                 <Affliction identifier="internaldamage" strength="11" />
                 <Affliction identifier="organdamage" strength="11" />
@@ -3828,7 +3828,7 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
 
-            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.4">
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.3">
                 <Affliction identifier="Reiki_Pressure" strength="9" />
                 <Affliction identifier="lacerations" strength="15" />
                 <Affliction identifier="slow" strength="30" />
@@ -3928,7 +3928,7 @@
             </StatusEffect>
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon barrelpos="50,10" spread="3" unskilledspread="9" reload="0.16" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="3" >
+        <RangedWeapon barrelpos="50,10" spread="3" unskilledspread="9" reload="0.18" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="3" >
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Icicle_Fall.png" sourcerect="145,0,199,199" />
             <!--
@@ -4122,7 +4122,7 @@
             <LightComponent LightColor="255,100,100,160" Flicker="0.2" Range="700" IsOn="true" >
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
-            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.4">
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
                 <Affliction identifier="Reiki_Pressure" strength="8" />
                 <Affliction identifier="blunttrauma" strength="10" />
                 <Affliction identifier="burn" strength="20" />
@@ -4557,7 +4557,7 @@
         <Body width="110" height="30" density="10" />
         <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-42,22" handle2="-2,20" holdangle="30" aimangle="10" reload="1.2" range="125"
                      allowhitmultiple="true" combatPriority="40" msg="ItemMsgPickUpSelect">
-            <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="60" penetration="0.3">
+            <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="60" penetration="0.2">
                 <Affliction identifier="Reiki_Pressure" strength="5" />
                 <Affliction identifier="blunttrauma" strength="25" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
@@ -4680,7 +4680,7 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="2" targetforce="6" itemdamage="8" severlimbsprobability="0.2" penetration="0.25">
+            <Attack structuredamage="2" targetforce="6" itemdamage="8" severlimbsprobability="0.2" penetration="0.2">
                 <Affliction identifier="gunshotwound" strength="8" />
                 <Affliction identifier="lacerations" strength="5" />
                 <Affliction identifier="lacerations" strength="6" probability="0.5" />
@@ -4710,7 +4710,7 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
-            <Attack structuredamage="0.2" targetforce="6" itemdamage="8" severlimbsprobability="0.2" penetration="0.35">
+            <Attack structuredamage="0.2" targetforce="6" itemdamage="8" severlimbsprobability="0.2" penetration="0.3">
                 <Affliction identifier="gunshotwound" strength="8" />
                 <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="1.5" />
@@ -5061,8 +5061,8 @@
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Interval="5.0" >
                 <Conditional HasTag="ScarletMode_Open"/>
-                <Affliction identifier="bleeding" strength="8.0" />
-                <Affliction identifier="bloodloss" strength="3.0" />
+                <Affliction identifier="bleeding" strength="10.0" />
+                <Affliction identifier="bloodloss" strength="5.0" />
             </StatusEffect>
 
 <!--            <StatusEffect type="OnUse" target="Contained" targetslot="0" condtion="-4" >
@@ -5079,15 +5079,26 @@
             </StatusEffect>-->
 
             <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="5" />
-                <Affliction identifier="internaldamage" strength="10" />
-                <Affliction identifier="burn" strength="10" />
-                <Affliction identifier="Touhou_Bite" strength="10" />
-                <Affliction identifier="bleeding" strength="66" />
-                <Affliction identifier="bleeding" strength="66" probability="0.1" />
+                <Affliction identifier="Reiki_Pressure" strength="6" />
+                <Affliction identifier="internaldamage" strength="6" />
+                <Affliction identifier="burn" strength="6" />
+                <Affliction identifier="Touhou_Bite" strength="6" />
+                <Affliction identifier="bleeding" strength="33" />
+                <Affliction identifier="bleeding" strength="33" probability="0.1" />
                 <Affliction identifier="stun" strength="0.2" />
                 <Affliction identifier="stun" strength="0.6" probability="0.3" />
             </Attack>
+            <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
+                <ParticleEmitter particle="weldspark" particleamount="2" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,10,10,200" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This,Limb" >
+                <Conditional HasTag="eq ScarletMode_Open"/>
+                <Affliction identifier="bleeding" strength="33" />
+                <Affliction identifier="bleeding" strength="33" probability="0.5" />
+                <Affliction identifier="internaldamage" strength="6" />
+                <Affliction identifier="Touhou_Bite" strength="6" />
+            </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="false" anglemin="30" anglemax="240" particleamount="3" velocitymin="100" velocitymax="150" scalemin="0.15" scalemax="0.25" colormultiplier="255,72,36,180" />
                 <Sound file="%ModDir%/Sounds/Weapons/Hisou_Sword_Attack01.ogg" selectionmode="random" range="300" />
@@ -5111,7 +5122,7 @@
             </TickBox>
         </CustomInterface>
         <ItemComponent>
-            <StatusEffect type="OnUse" target="This" targetitemcomponent="ElectricalDischarger">
+            <StatusEffect type="OnUse" target="This" targetitemcomponent="ElectricalDischarger" Interval="0.21">
                 <Use/>
             </StatusEffect>
         </ItemComponent>
@@ -5121,11 +5132,6 @@
                 <Affliction identifier="lacerations" strength="15" />
                 <Affliction identifier="burn" strength="15" />
             </Attack>
-            <StatusEffect type="OnUse" target="NearbyCharacters" Range="200" Interval="2.0" >
-                <Conditional speciesgroup="neq human" />
-                <Affliction identifier="lacerations" strength="10" />
-                <Affliction identifier="burn" strength="10" />
-            </StatusEffect>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="500" selectionmode="random" />
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="500" />
@@ -5174,7 +5180,7 @@
         </LightComponent>
         <Quality>
             <QualityStat stattype="strikingspeedmultiplier" value="0.05" />
-            <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
         </Quality>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <SkillRequirementHint identifier="Touhou_Magic" level="66" />

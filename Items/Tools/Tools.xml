@@ -1337,7 +1337,7 @@
 
 
     <!--核能电容弹匣-->
-    <Item name="“核能电容弹匣”" identifier="Touhou_Nuclear_Energy_Capacitor_Magazine" scale="0.32" subcategory="Touhou" category="Weapon"
+    <Item name="“核能电容弹匣”" identifier="Touhou_Nuclear_Energy_Capacitor_Magazine" scale="0.24" subcategory="Touhou" category="Weapon"
           maxstacksize="16" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate"
           tags="smallitem,Touhou_Kappa_Welding_Tool_Ammo" impactsoundtag="impact_metal_light" >
         <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.08" />
@@ -1384,7 +1384,7 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Nuclear_Energy_Burn_Light" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-0.8" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true" >
                 <SpawnItem identifiers="Touhou_Nuclear_Energy_Burn_Light" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>

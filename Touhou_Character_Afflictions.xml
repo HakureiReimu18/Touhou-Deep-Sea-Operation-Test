@@ -1133,7 +1133,7 @@
     </Affliction>
 
     <!--闪身冷却-->
-    <Affliction identifier="Koishi_Dodge_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="1"
+    <Affliction identifier="Koishi_Dodge_CD" type="Touhou_Character_Affliction" limbspecific="false" hideiconafterdelay="false" maxstrength="1"
                 showiconthreshold="100" showinhealthscannerthreshold="100" duration="20" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="1" />
         <Icon texture="%ModDir%/Images/Afflictions/Koishi_Unconscious_Flag.png" sourcerect="0,0,128,128" color="155,255,155,255" />
