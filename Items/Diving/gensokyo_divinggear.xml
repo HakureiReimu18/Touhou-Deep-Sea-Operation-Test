@@ -128,7 +128,8 @@
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.3" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="poison,paralysis" damagemultiplier="0.1" damagesound="LimbArmor" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.1" damagesound="LimbArmor" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="poison" damagemultiplier="1" probabilitymultiplier="0.4" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="No_Effects02" damagemultiplier="0.01" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="1" probabilitymultiplier="0.01" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="consumed" damagemultiplier="0.0" damagesound="LimbArmor" />
@@ -318,7 +319,8 @@
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.4" damagesound="LimbArmor" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="poison,paralysis" damagemultiplier="0.5" damagesound="LimbArmor" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.5" damagesound="LimbArmor" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="poison" damagemultiplier="1" probabilitymultiplier="0.6" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="No_Effects02" damagemultiplier="0.4" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="1" probabilitymultiplier="0.4" damagesound="LimbArmor" />
             <SkillModifier skillidentifier="mechanical" skillvalue="5" />

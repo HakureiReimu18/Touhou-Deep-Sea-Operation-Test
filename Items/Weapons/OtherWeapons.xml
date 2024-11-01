@@ -2461,27 +2461,27 @@
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="2000" selectionmode="random"/>
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="2000" />
-                <Explosion range="500.0" camerashake="15" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+                <Explosion range="500.0" camerashake="15" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Contained" >
                 <RequiredItems items="Touhou_Miniature_Earth_Moon_System" type="Contained" />
                 <Use />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" spread="12" comparison="And" >
-                <Conditional spread="gte 4"/>
-                <Conditional spread="lte 12"/>
+            <StatusEffect type="OnUse" target="This" spread="8" disabledeltatime="true" comparison="And" >
+                <Conditional spread="gte 2"/>
+                <Conditional spread="lte 24"/>
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This" delay="0.1" spread="-0.5" disabledeltatime="true" comparison="And" >
-                <Conditional spread="gte 4"/>
-                <Conditional spread="lte 12"/>
+            <StatusEffect type="Always" target="This" spread="-0.5" disabledeltatime="true" comparison="And" >
+                <Conditional spread="gte 2"/>
+                <Conditional spread="lte 24"/>
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" unskilledspread="32" >
+            <StatusEffect type="OnUse" target="This" unskilledspread="6" disabledeltatime="true" comparison="And" >
                 <Conditional unskilledspread="gte 16"/>
-                <Conditional unskilledspread="lte 32"/>
+                <Conditional unskilledspread="lte 40"/>
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This" delay="0.1" unskilledspread="-0.5" disabledeltatime="true" >
+            <StatusEffect type="Always" target="This" unskilledspread="-0.5" disabledeltatime="true" comparison="And" >
                 <Conditional unskilledspread="gte 16"/>
-                <Conditional unskilledspread="lte 32"/>
+                <Conditional unskilledspread="lte 40"/>
             </StatusEffect>
             <RequiredSkill identifier="Touhou_Magic" level="70" />
             <RequiredItems items="Touhou_Miniature_Earth_Moon_System" type="Contained" />

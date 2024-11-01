@@ -3117,7 +3117,7 @@
             <StatusEffect type="Always" target="This" holdpos="-60,60" holdangle="130" scale="0.85" setvalue="true" disabledeltatime="true" >
                 <Conditional condition="eq 100"/>
             </StatusEffect>
-            <StatusEffect type="OnSecondaryUse" target="This" disabledeltatime="true" delay="0.15" >
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true" delay="0.15" >
                 <Conditional Flowers_Of_Four_Seasons="gt 2"/>
                 <SpawnItem identifier="Yuka_Parasol_Spawn" spawnposition="This" />
             </StatusEffect>
@@ -3130,7 +3130,7 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" targettype="NearbyItems" range="400" targets="plantitem" Condition="5" Interval="5" />
+            <StatusEffect type="OnActive" targettype="NearbyItems" range="300" targets="plantitem" Condition="5" Interval="5" />
         </Holdable>
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <!--还是自己设计一套UI好了-->
