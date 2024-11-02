@@ -23,7 +23,7 @@
                     <Item identifier="Touhou_MEID" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="pirateclothes" equip="true" />
+                <Item identifier="banditoutfit" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" />
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
                     <Item identifier="Touhou_Blunderbuss_Enemy_Magazine02" />
@@ -37,7 +37,7 @@
                 <Item identifier="idcard" equip="true" />
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="pirateclothes" equip="true" />
+                <Item identifier="banditoutfit" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
@@ -55,7 +55,7 @@
                     <Item identifier="Touhou_MEID" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="pirateclothes" equip="true" />
+                <Item identifier="banditoutfit" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
@@ -154,7 +154,7 @@
                 <Item identifier="idcard" equip="true" />
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="pirateclothes" equip="true" />
+                <Item identifier="banditoutfit" equip="true" />
                 <Item identifier="Ether_Divinggear_Enemy" equip="true" />
                 <Item identifier="Touhou_Hompson_Contender_Enemy" equip="true">
                     <Item identifier="revolverround" amount="4" />
@@ -168,7 +168,7 @@
                 <Item identifier="idcard" equip="true" />
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="pirateclothes" equip="true" />
+                <Item identifier="banditoutfit" equip="true" />
                 <Item identifier="Ether_Divinggear_Enemy" equip="true" />
                 <Item identifier="Touhou_Magic_Automatic_Shotgun" equip="true">
                     <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="12" />
