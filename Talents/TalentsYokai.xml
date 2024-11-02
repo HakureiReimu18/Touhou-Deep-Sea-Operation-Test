@@ -657,7 +657,7 @@
     </Talent>
 
     <!--斩断魂灵 对剩余生命值越高的敌人，穿透的护甲越高，最高15%。
-    穿着妖梦装束+时：对满血敌人的攻击造成额外30%伤害，额外30%穿甲。攻击拥有断念效果的敌人时将附带缓慢效果。-->
+    穿着妖梦装束+时：对满血敌人的攻击造成额外30%伤害，额外15%穿甲。攻击拥有断念效果的敌人时将附带缓慢效果。-->
     <Talent identifier="Touhou_Youling_Wangling03">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Youling_Wangling03"/>
@@ -704,7 +704,7 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.3"/>
-                <CharacterAbilityModifyAttackData addedpenetration="0.3"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.15"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -1591,7 +1591,7 @@
         </AbilityGroupInterval>
     </Talent>
 
-    <!--过度出血 造成的出血提高15%。对人类造成的出血和失血额外提高15%。对出血越高的敌人，造成的伤害越高，最高25%-->
+    <!--过度出血 造成的出血提高15%。对人类造成的出血和失血额外提高15%。对出血越高的敌人，造成的伤害越高，最高20%-->
     <Talent identifier="Touhou_Vampire03">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Vampire03"/>
@@ -1618,7 +1618,7 @@
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.08" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -1629,7 +1629,7 @@
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.08" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -1640,13 +1640,24 @@
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.09" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional bleeding="gt 210" />
+                </AbilityConditionCharacter>
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
 
-    <!--嗜血传说 远程攻击速度增加10%，近战攻击速度增加10%，攻击伤害增加20%，这个效果在水中减半。
-    穿着蕾米莉亚装束+时：增加10%物理伤害抗性和10%最大生命值
+    <!--嗜血传说 远程攻击速度增加10%，近战攻击速度增加10%，攻击伤害增加15%，这个效果在水中减半。
+    穿着蕾米莉亚装束+时：增加5%物理伤害抗性、5%烧伤抗性和10%最大生命值
     穿着芙兰朵露装束+时：增加15%烧伤抗性，生命值大于50%时，提高50%精神病抗性，增加50%技能获取速度-->
     <Talent identifier="Touhou_Vampire04">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
@@ -1655,7 +1666,7 @@
             <Abilities>
                 <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.05"/>
                 <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.05"/>
-                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.1"/>
+                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.075"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">
@@ -1665,7 +1676,7 @@
             <Abilities>
                 <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.05"/>
                 <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.05"/>
-                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.1"/>
+                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.075"/>
             </Abilities>
         </AbilityGroupEffect>
         <!--蕾米莉亚-->
@@ -2763,7 +2774,7 @@
     </Talent>
 
     <!--至圣至明
-        穿着天子装束+时：增加15%攻击伤害。根据魔法能力水平，提高相应10%的最大生命值。这个效果在魔法能力超过300时达到上限-->
+        穿着天子装束+时：增加10%攻击伤害。根据魔法能力水平，提高相应10%的最大生命值。这个效果在魔法能力超过300时达到上限-->
     <Talent identifier="Touhou_Tianren_Xianren07">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tianren_Xianren07"/>
@@ -2778,7 +2789,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="The_Daughter_Of_Heaven" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.15"/>
+                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="0.9">

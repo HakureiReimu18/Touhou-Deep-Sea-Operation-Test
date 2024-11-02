@@ -227,7 +227,7 @@
     <talentdescription.Touhou_Youling_Wangling02>对越‖color:gui.red‖弱小‖end‖的敌人造成额外伤害，最高‖color:gui.green‖30%‖end‖</talentdescription.Touhou_Youling_Wangling02>
     <talentname.Touhou_Youling_Wangling03>斩断魂灵</talentname.Touhou_Youling_Wangling03>
     <talentdescription.Touhou_Youling_Wangling03>对‖color:gui.red‖剩余生命值‖end‖越高的敌人，穿透的护甲越高，最高‖color:gui.green‖15%‖end‖。
-        穿着‖color:gui.red‖妖梦装束+‖end‖时：对‖color:gui.red‖满血敌人‖end‖的攻击造成额外‖color:gui.green‖30%‖end‖伤害，额外‖color:gui.green‖30%‖end‖穿甲。攻击拥有‖color:gui.orange‖断念‖end‖效果的敌人时将附带‖color:gui.orange‖缓慢‖end‖效果。</talentdescription.Touhou_Youling_Wangling03>
+        穿着‖color:gui.red‖妖梦装束+‖end‖时：对‖color:gui.red‖满血敌人‖end‖的攻击造成额外‖color:gui.green‖30%‖end‖伤害，额外‖color:gui.green‖15%‖end‖穿甲。攻击拥有‖color:gui.orange‖断念‖end‖效果的敌人时将附带‖color:gui.orange‖缓慢‖end‖效果。</talentdescription.Touhou_Youling_Wangling03>
     <talentname.Touhou_Youling_Wangling04>三魂七魄</talentname.Touhou_Youling_Wangling04>
     <talentdescription.Touhou_Youling_Wangling04>当血量低于‖color:gui.green‖30%‖end‖时，短暂提高‖color:gui.green‖30%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖和‖color:gui.orange‖烧伤抗性‖end‖
         穿着‖color:gui.red‖妖梦装束+‖end‖时：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖20‖end‖点‖color:gui.orange‖武器操作‖end‖。</talentdescription.Touhou_Youling_Wangling04>
@@ -278,10 +278,10 @@
     <talentdescription.Touhou_Vampire02>提高‖color:gui.green‖15%‖end‖‖color:gui.orange‖失血抗性‖end‖，受到的‖color:gui.yellow‖烧伤和出血‖end‖额外增加‖color:gui.green‖15%‖end‖。每秒有‖color:gui.green‖20%‖end‖概率将受到的‖color:gui.yellow‖烧伤‖end‖以‖color:gui.green‖120%‖end‖倍率转化为‖color:gui.yellow‖噬咬‖end‖。
         根据‖color:gui.red‖角色等级‖end‖减少自身‖color:gui.orange‖debuff效果持续时间‖end‖，每级减少‖color:gui.green‖4%‖end‖，最高‖color:gui.green‖60%‖end‖</talentdescription.Touhou_Vampire02>
     <talentname.Touhou_Vampire03>过度出血</talentname.Touhou_Vampire03>
-    <talentdescription.Touhou_Vampire03>造成的‖color:gui.yellow‖出血‖end‖提高‖color:gui.green‖15%‖end‖。对人类造成的‖color:gui.yellow‖出血和失血‖end‖提高‖color:gui.green‖15%‖end‖。对‖color:gui.yellow‖出血‖end‖越高的敌人，造成的伤害越高，最高‖color:gui.green‖25%‖end‖</talentdescription.Touhou_Vampire03>
+    <talentdescription.Touhou_Vampire03>造成的‖color:gui.yellow‖出血‖end‖提高‖color:gui.green‖15%‖end‖。对人类造成的‖color:gui.yellow‖出血和失血‖end‖提高‖color:gui.green‖15%‖end‖。对‖color:gui.yellow‖出血‖end‖越高的敌人，造成的伤害越高，最高‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Vampire03>
     <talentname.Touhou_Vampire04>嗜血传说</talentname.Touhou_Vampire04>
-    <talentdescription.Touhou_Vampire04>‖color:gui.orange‖远程攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖近战攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害‖end‖增加‖color:gui.green‖20%‖end‖，这个效果在水中减半。
-        穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖
+    <talentdescription.Touhou_Vampire04>‖color:gui.orange‖远程攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖近战攻击速度‖end‖增加‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害‖end‖增加‖color:gui.green‖15%‖end‖，这个效果在水中减半。
+        穿着‖color:gui.red‖蕾米莉亚装束+‖end‖时：增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖/‖color:gui.green‖5%‖end‖‖color:gui.orange‖烧伤抗性‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖
         穿着‖color:gui.red‖芙兰朵露装束+‖end‖时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖烧伤抗性‖end‖，生命值大于‖color:gui.green‖50%‖end‖时，提高‖color:gui.green‖50%‖end‖‖color:gui.orange‖精神病抗性‖end‖，增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖</talentdescription.Touhou_Vampire04>
     <talentname.Touhou_Vampire05>恶魔之躯</talentname.Touhou_Vampire05>
     <talentdescription.Touhou_Vampire05>增加‖color:gui.green‖15%‖end‖debuff抗性和毒药抗性‖end‖。
@@ -364,6 +364,6 @@
         穿着‖color:gui.red‖天子装束+‖end‖时：根据角色等级，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖攻击速度‖end‖，最高‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Tianren_Xianren06>
     <talentname.Touhou_Tianren_Xianren07>至圣至明</talentname.Touhou_Tianren_Xianren07>
     <talentdescription.Touhou_Tianren_Xianren07>
-        穿着‖color:gui.red‖天子装束+时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖攻击伤害‖end‖。根据‖color:gui.orange‖魔法能力‖end‖水平，提高相应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖最大生命值‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限</talentdescription.Touhou_Tianren_Xianren07>
+        穿着‖color:gui.red‖天子装束+时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖。根据‖color:gui.orange‖魔法能力‖end‖水平，提高相应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖最大生命值‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限</talentdescription.Touhou_Tianren_Xianren07>
 
 </infotexts>

@@ -321,7 +321,7 @@
     <!--二刀流——白楼剑&楼观剑 生命的二刀流-->
     <Affliction name="二刀流——白楼剑&amp;楼观剑" identifier="Touhou_Bai_Lou_And_Lou_Guan" type="Touhou_Bai_Lou_And_Lou_Guan" limbspecific="false" indicatorlimb="Torso" hideiconafterdelay="false" isbuff="true"
                 maxstrength="10" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.4" maxresistance="0.4"
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.3" maxresistance="0.3"
                 strengthchange="-4">
             <StatValue stattype="MovementSpeed" value="0.15" />
             <StatValue stattype="MeleeAttackMultiplier" value="0.6" />

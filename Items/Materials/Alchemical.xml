@@ -695,6 +695,10 @@
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.05" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="Always" target="This" Interval="1.0">
+                <Conditional condition="lte 0.1"/>
+                <RemoveItem />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This" Interval="1.0">
                 <Conditional condition="lte 0"/>
                 <RemoveItem />
             </StatusEffect>

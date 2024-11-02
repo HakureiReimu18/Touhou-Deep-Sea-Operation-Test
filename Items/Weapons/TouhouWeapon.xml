@@ -1148,9 +1148,9 @@
         <Body width="172" height="20" density="10" />
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0"  allowhitmultiple="true"
                      holdangle="30" aimangle="20" reload="0.75" range="80" combatPriority="30" msg="ItemMsgPickUpSelect">
-            <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="60" structuredamage="0.2" structuresoundtype="StructureSlash" penetration="0.25">
+            <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="60" structuredamage="0.2" structuresoundtype="StructureSlash" penetration="0.2">
                 <Affliction identifier="lacerations" strength="25" />
-                <Affliction identifier="Reiki_Pressure" strength="4" />
+                <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="Touhou_Lost_Heart" strength="1.5" />
                 <Affliction identifier="stun" strength="0.1" />
             </Attack>
@@ -1228,7 +1228,7 @@
         <Body width="172" height="20" density="10" />
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0" holdangle="30" aimangle="10" reload="0.75" range="55" combatPriority="30" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.01" itemdamage="1" structuresoundtype="StructureSlash" penetration="0.6">
-                <Affliction identifier="Reiki_Pressure" strength="7" />
+                <Affliction identifier="Reiki_Pressure" strength="5" />
             </Attack>
             <StatusEffect type="OnUse" target="limb" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" />
