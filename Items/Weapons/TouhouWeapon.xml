@@ -2661,6 +2661,9 @@
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Aura_Strip" strength="5" />
             </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Affliction identifier="blunttrauma" strength="5" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="This" lifetime="1.5">
                 <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="160" anglemin="0" anglemax="360" colormultiplier="5,105,195,220" />
             </StatusEffect>
@@ -2715,20 +2718,10 @@
                 <Remove />
             </StatusEffect>
         </ItemComponent>
-        <ElectricalDischarger duration="0.3" reload="0.2" ignoreuser="true" characterusable="true" raycastrange="400" range="450" rangemultiplierinwalls="1.2" outdoorsonly="true" powerconsumption="0" pickkey="Select">
+        <ElectricalDischarger duration="0.3" reload="0.2" ignoreuser="true" characterusable="true" raycastrange="300" range="400" rangemultiplierinwalls="0.2" outdoorsonly="true" powerconsumption="0" pickkey="Select">
             <Attack targetimpulse="10" penetration="0.3" structuredamage="10" itemdamage="10">
-                <StatusEffect type="OnUse" target="UseTarget">
-                    <Conditional speciesgroup="neq human" />
-                    <Affliction identifier="stun" strength="0.5" />
-                    <Affliction identifier="stun" strength="1.5" probability="0.3" />
-                    <Affliction identifier="burn" strength="60" />
-                    <Affliction identifier="Aura_Strip" strength="20" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="UseTarget">
-                    <Affliction identifier="stun" strength="0.5" />
-                    <Affliction identifier="stun" strength="1.5" probability="0.3" />
-                    <Affliction identifier="burn" strength="30" />
-                </StatusEffect>
+                <Affliction identifier="burn" strength="20" />
+                <Affliction identifier="Aura_Strip" strength="5" />
             </Attack>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="20000" selectionmode="random" />
