@@ -447,4 +447,27 @@
             </StatusEffect>
         </Wearable>
     </Item>
+
+    <!--病气平愈护符-锁定03-->
+    <Item name="病气平愈护符-锁定03" identifier="Illness_Recovery_Charm_Locked03" tags="smallitem,mobileradio" subcategory="Touhou" category="Equipment"
+          hideinmenus="true" nonplayerteaminteractable="True" scale="0.25" >
+        <Sprite texture="%ModDir%/Images/Tools/Illness_Recovery_Charm.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5" />
+        <Body width="48" height="48" density="10" />
+        <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="260" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect"/>
+        <ItemContainer capacity="1" maxstacksize="1" autoinject="true">
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
+            <Containable items="chem,syringe" />
+        </ItemContainer>
+        <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" >
+            <sprite name="Headset Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
+            <StatusEffect type="OnWearing" target="This,Character" Interval="1.0">
+                <Conditional Reiki_Side_Effect="gt 0" />
+                <ReduceAffliction type="Reiki_Side_Effect" amount="2" />
+            </StatusEffect>
+            <StatusEffect type="OnWearing" target="This,Character" Interval="1.0" Duration="1.0">
+                <Affliction identifier="Touhou_Enemy_Buff03" amount="2" />
+                <Affliction identifier="Touhou_Enemy_Defense_Buff03" amount="2" />
+            </StatusEffect>
+        </Wearable>
+    </Item>
 </Items>

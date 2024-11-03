@@ -320,7 +320,7 @@
           type="OutpostDestroy"
           reward="10000"
           difficulty="4"
-          minleveldifficulty="5"
+          minleveldifficulty="15"
           commonness="100"
           allowretry="true"
           targetitem="reactor"
@@ -466,9 +466,9 @@
           minleveldifficulty="15"
           maxleveldifficulty="50"
           unhideentitysubcategories="abandonedhuman">
-    <Reputation identifier="separatists" amount="4" />
-    <Reputation identifier="coalition" amount="4" />
-    <Reputation identifier="Touhou_Gensokyo" amount="4" />
+    <Reputation identifier="separatists" amount="3" />
+    <Reputation identifier="coalition" amount="3" />
+    <Reputation identifier="Touhou_Gensokyo" amount="3" />
     <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256" />
     <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Indestructible_Wall" campaignonly="true"/>
     <LocationType identifier="Abandoned" />
@@ -612,4 +612,48 @@
     <LocationType from="AnyOutpost" to="AnyOutpost" />
     <message header="missionheader.FindClownpiece" text="missionmessage.FindClownpiece"/>
   </MonsterMission>
+
+  <!--ODM是摧毁废站任务的简写-->
+  <!--亡羊补牢-->
+  <OutpostDestroyMission
+          name="亡羊补牢"
+          identifier="Touhou_OutpostDestroyMission04"
+          tags="abandonedoutpost"
+          type="OutpostDestroy"
+          reward="10000"
+          description="一伙强盗占据了一处废弃站点，炼金实验室特别委托你消灭所有强盗，他们会接管这里"
+          difficulty="4"
+          commonness="120"
+          allowretry="true"
+          minleveldifficulty="25"
+          maxleveldifficulty="70"
+          unhideentitysubcategories="abandonedhuman">
+    <Reputation identifier="separatists" amount="4" />
+    <Reputation identifier="coalition" amount="4" />
+    <Reputation identifier="Touhou_Gensokyo" amount="4" />
+    <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256" />
+    <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Indestructible_Wall" campaignonly="true"/>
+    <LocationType identifier="Abandoned" />
+    <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
+    <message header="missionheader.Touhou_OutpostDestroyMission04" text="missionmessage.Touhou_OutpostDestroyMission04" />
+    <Characters>
+      <Character identifier="Touhou_ODM04_Enemy_Human_Lunatic" from="Touhou_ODM4_Enemy_NPC" moduleflags="banditleader" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Lunatic" from="Touhou_ODM4_Enemy_NPC" moduleflags="crewmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Lunatic" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Hard" from="Touhou_ODM4_Enemy_NPC" moduleflags="crewmodule" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Hard" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" multiplayeronly="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Hard" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Hard" from="Touhou_ODM4_Enemy_NPC" moduleflags="banditleader" requirekill="true" multiplayeronly="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Hard" from="Touhou_ODM4_Enemy_NPC" moduleflags="researchmodule" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Normal" from="Touhou_ODM4_Enemy_NPC" moduleflags="researchmodule" asfaraspossible="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Normal" from="Touhou_ODM4_Enemy_NPC" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Normal" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Normal" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true" multiplayeronly="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="banditleader" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" asfaraspossible="true" />
+    </Characters>
+  </OutpostDestroyMission>
 </Missions>

@@ -54,6 +54,7 @@
             <RequiredItem identifier="alientrinket1" />
             <RequiredItem identifier="alientrinket2" />
             <RequiredItem identifier="alientrinket3" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Maoyu/Point.png" sourcerect="33,0,32,32" />
         <Sprite texture="%ModDir%/Images/Maoyu/Point.png" depth="0.4" sourcerect="33,0,32,32" />

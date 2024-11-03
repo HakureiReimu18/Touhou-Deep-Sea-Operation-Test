@@ -30,7 +30,7 @@
             showinhealthscannerthreshold="100"
             treatmentthreshold="1000"
             hideiconafterdelay="true"
-            duration="3"
+            duration="10.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="oxygenlow" minresistance="0.25" maxresistance="0.25">
             <StatValue stattype="MovementSpeed" value="0.1" />

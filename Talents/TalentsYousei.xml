@@ -47,19 +47,19 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--自然友谊 周围的船员获得10%移动速度加成和对缺氧25%的抗性，且造成的友伤下降20%-->
+    <!--自然友谊 获得10%移动速度加成和对缺氧25%的抗性，且造成的友伤下降20%-->
     <Talent identifier="Talents_Yousei_Primary03">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yousei_Primary03"/>
-        <AbilityGroupInterval interval="2.9">
+        <AbilityGroupInterval interval="9.9">
             <Abilities>
-                <CharacterAbilityApplyStatusEffectsToAllies maxdistance="600" allowself="false">
+                <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                             <Affliction identifier="Talents_Yousei_Primary03_Effect" strength="1.0"/>
                         </StatusEffect>
                     </StatusEffects>
-                </CharacterAbilityApplyStatusEffectsToAllies>
+                </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
@@ -593,7 +593,7 @@
     <!--五个弱化版天赋-->
 
 
-    <!--幻想入 巡回结束时获得所有技能和魔法能力2点。-->
+    <!--幻想入 巡回结束时获得所有技能和魔法能力1点。-->
     <Talent identifier="Gensokyo_Divinggear_Unlocked_Yousei">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Gensokyo_Divinggear_Unlocked_Yousei"/>
@@ -602,12 +602,12 @@
                 <CharacterAbilityApplyStatusEffectsToAllies requiresalive="true" allowself="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-                            <GiveSkill skillidentifier="electrical" amount="2" triggertalents="false" />
-                            <GiveSkill skillidentifier="helm" amount="2" triggertalents="false"/>
-                            <GiveSkill skillidentifier="mechanical" amount="2" triggertalents="false"/>
-                            <GiveSkill skillidentifier="medical" amount="2" triggertalents="false"/>
-                            <GiveSkill skillidentifier="weapons" amount="2" triggertalents="false"/>
-                            <GiveSkill skillidentifier="Touhou_Magic" amount="2" triggertalents="false"/>
+                            <GiveSkill skillidentifier="electrical" amount="1" triggertalents="false" />
+                            <GiveSkill skillidentifier="helm" amount="1" triggertalents="false"/>
+                            <GiveSkill skillidentifier="mechanical" amount="1" triggertalents="false"/>
+                            <GiveSkill skillidentifier="medical" amount="1" triggertalents="false"/>
+                            <GiveSkill skillidentifier="weapons" amount="1" triggertalents="false"/>
+                            <GiveSkill skillidentifier="Touhou_Magic" amount="1" triggertalents="false"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAllies>

@@ -284,7 +284,7 @@
 
     <!--留心，AnyMission和AllMissions写法不同，有一个s的差别，记得留心-->
 
-    <!--幻想入 巡回完成任意任务时获得所有技能和魔法能力3点，给予其他船员0.5点。为魔法使/魔法少女角色装束+提供额外效果。解锁配方：幻想潜水服-->
+    <!--幻想入 巡回完成任意任务时获得所有技能和魔法能力1.5点，给予其他船员0.5点。为魔法使/魔法少女角色装束+提供额外效果。解锁配方：幻想潜水服-->
     <Talent identifier="Gensokyo_Divinggear_Unlocked">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Gensokyo_Divinggear_Unlocked"/>
@@ -293,12 +293,12 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-                            <GiveSkill skillidentifier="electrical" amount="3" triggertalents="false" />
-                            <GiveSkill skillidentifier="helm" amount="3" triggertalents="false"/>
-                            <GiveSkill skillidentifier="mechanical" amount="3" triggertalents="false"/>
-                            <GiveSkill skillidentifier="medical" amount="3" triggertalents="false"/>
-                            <GiveSkill skillidentifier="weapons" amount="3" triggertalents="false"/>
-                            <GiveSkill skillidentifier="Touhou_Magic" amount="3" triggertalents="false"/>
+                            <GiveSkill skillidentifier="electrical" amount="1.5" triggertalents="false" />
+                            <GiveSkill skillidentifier="helm" amount="1.5" triggertalents="false"/>
+                            <GiveSkill skillidentifier="mechanical" amount="1.5" triggertalents="false"/>
+                            <GiveSkill skillidentifier="medical" amount="1.5" triggertalents="false"/>
+                            <GiveSkill skillidentifier="weapons" amount="1.5" triggertalents="false"/>
+                            <GiveSkill skillidentifier="Touhou_Magic" amount="1.5" triggertalents="false"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

@@ -1208,4 +1208,12 @@
   <entityname.Touhou_Lunar_Center>月震中心</entityname.Touhou_Lunar_Center>
   <entitydescription.Touhou_Lunar_Center>“你听说了吗？月球上也有地震”作为月震的弹药使用。</entitydescription.Touhou_Lunar_Center>
 
+  <!--亡羊补牢-->
+  <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>
+  <missiondescription.Touhou_OutpostDestroyMission04>一伙强盗占据了一处废弃站点，炼金实验室特别委托你消灭所有强盗，他们会接管这里</missiondescription.Touhou_OutpostDestroyMission04>
+  <missionheader.Touhou_OutpostDestroyMission04>净化完成</missionheader.Touhou_OutpostDestroyMission04>
+  <missionmessage.Touhou_OutpostDestroyMission04>不管里面有什么特殊物资，总之还是不要插手为好</missionmessage.Touhou_OutpostDestroyMission04>
+  <missionfailure.Touhou_OutpostDestroyMission04>满身疮痍</missionfailure.Touhou_OutpostDestroyMission04>
+
+
 </infotexts>

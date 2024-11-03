@@ -44,7 +44,7 @@
     <talentname.Izakaya>居酒屋</talentname.Izakaya>
     <talentdescription.Izakaya>拥有对醉酒的‖color:gui.green‖80%‖end‖的抗性，受到攻击后，短暂提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖烧伤抗性和出血抗性‖end‖，解锁配方：‖color:gui.orange‖啤酒，友谊果汁‖end‖。</talentdescription.Izakaya>
     <talentname.Gensokyo_Divinggear_Unlocked>幻想入</talentname.Gensokyo_Divinggear_Unlocked>
-    <talentdescription.Gensokyo_Divinggear_Unlocked>巡回结束时获得所有技能和魔法能力‖color:gui.green‖3‖end‖点，给予其他船员‖color:gui.green‖0.5‖end‖点，为‖color:gui.yellow‖魔法使/魔法少女角色装束+‖end‖提供额外效果。解锁配方：‖color:gui.orange‖幻想潜水服‖end‖。</talentdescription.Gensokyo_Divinggear_Unlocked>
+    <talentdescription.Gensokyo_Divinggear_Unlocked>巡回结束时获得所有技能和魔法能力‖color:gui.green‖1.5‖end‖点，给予其他船员‖color:gui.green‖0.5‖end‖点，为‖color:gui.yellow‖魔法使/魔法少女角色装束+‖end‖提供额外效果。解锁配方：‖color:gui.orange‖幻想潜水服‖end‖。</talentdescription.Gensokyo_Divinggear_Unlocked>
     <!--三重伟大-->
     <talenttree.Alchemist>三重伟大</talenttree.Alchemist>
     <talentname.Spell_Card_Recycle_Unlocked>炼金无限</talentname.Spell_Card_Recycle_Unlocked>
@@ -87,7 +87,7 @@
     <talentname.Talents_Yousei_Primary02>寺子屋进修</talentname.Talents_Yousei_Primary02>
     <talentdescription.Talents_Yousei_Primary02>增加‖color:gui.green‖25%‖end‖的‖color:gui.orange‖技能获取速度‖end‖，增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖移动速度‖end‖，周围有其他船员时，这些效果翻倍</talentdescription.Talents_Yousei_Primary02>
     <talentname.Talents_Yousei_Primary03>自然友谊</talentname.Talents_Yousei_Primary03>
-    <talentdescription.Talents_Yousei_Primary03>周围的船员获得‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度‖end‖加成和对‖color:gui.orange‖缺氧‖end‖‖color:gui.green‖25%‖end‖的抗性，且造成的友伤下降‖color:gui.green‖20%‖end‖</talentdescription.Talents_Yousei_Primary03>
+    <talentdescription.Talents_Yousei_Primary03>获得‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度‖end‖加成和对‖color:gui.orange‖缺氧‖end‖‖color:gui.green‖25%‖end‖的抗性，且造成的友伤下降‖color:gui.green‖20%‖end‖</talentdescription.Talents_Yousei_Primary03>
     <talentname.Talents_Yousei_Primary04>白日梦</talentname.Talents_Yousei_Primary04>
     <talentdescription.Talents_Yousei_Primary04>生命值高于‖color:gui.green‖50%‖end‖时，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖修复速度‖end‖，且巡回完成任务后额外获得‖color:gui.orange‖妖精糖果（蜜桃味）‖end‖</talentdescription.Talents_Yousei_Primary04>
     <talentname.Talents_Yousei_Primary05>轻飘飘</talentname.Talents_Yousei_Primary05>
@@ -143,7 +143,7 @@
     <talentdescription.Touhou_Child_Of_Nature>每个巡回额外获得每种糖果各一个，异变能量大于‖color:gui.green‖60‖end‖时，免疫水压。 解锁配方：‖color:gui.orange‖糖果精华‖end‖。
         糖果精华允许妖精职业获得魔法使五个天赋（包含三个最终天赋）的弱化版。五个天赋全部解锁后可提供额外增益：制作物品质量+‖color:gui.green‖1‖end‖，异变能量自然减少速度下降‖color:gui.green‖90%‖end‖</talentdescription.Touhou_Child_Of_Nature>
     <talentname.Gensokyo_Divinggear_Unlocked_Yousei>幻想入-自然之子</talentname.Gensokyo_Divinggear_Unlocked_Yousei>
-    <talentdescription.Gensokyo_Divinggear_Unlocked_Yousei>巡回结束时获得所有技能和魔法能力‖color:gui.green‖2‖end‖点。</talentdescription.Gensokyo_Divinggear_Unlocked_Yousei>
+    <talentdescription.Gensokyo_Divinggear_Unlocked_Yousei>巡回结束时获得所有技能和魔法能力‖color:gui.green‖1‖end‖点。</talentdescription.Gensokyo_Divinggear_Unlocked_Yousei>
     <talentname.Hermes_Yousei>三重伟大-自然之子</talentname.Hermes_Yousei>
     <talentdescription.Hermes_Yousei>解锁配方：贤者之石</talentdescription.Hermes_Yousei>
     <talentname.MEID_Unlocked_Yousei>魔法天才-自然之子</talentname.MEID_Unlocked_Yousei>

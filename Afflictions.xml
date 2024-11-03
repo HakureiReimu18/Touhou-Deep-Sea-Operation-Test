@@ -771,6 +771,7 @@
       </StatusEffect>
       <StatusEffect target="Character" Interval="5" >
         <Conditional jobidentifier="Magician" />
+        <Conditional jobidentifier="Magician_Enemy" />
         <Affliction identifier="Touhou_MEID_Magician_Effect" amount="100" />
       </StatusEffect>
       <StatValue stattype="SwimmingSpeed" minvalue="0.15" maxvalue="0.3" />
@@ -1149,13 +1150,13 @@
     </Effect>
     <PeriodicEffect mininterval="1" maxinterval="3">
       <StatusEffect target="Character" multiplyafflictionsbymaxvitality="true">
-        <Affliction identifier="slow" amount="20"/>
+        <Affliction identifier="slow" amount="10"/>
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="0.5" maxinterval="1.5">
       <StatusEffect target="Character">
         <Affliction identifier="bloodloss" amount="0.5"/>
-        <Affliction identifier="bloodloss" amount="1" probability="0.1"/>
+        <Affliction identifier="bloodloss" amount="0.5" probability="0.1"/>
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="0.5" maxinterval="1.5" minstrength="15" maxstrength="100">
@@ -1167,8 +1168,8 @@
     </PeriodicEffect>
     <PeriodicEffect mininterval="0.5" maxinterval="2">
       <StatusEffect target="Character">
-        <Affliction identifier="Reiki_Pressure" amount="1.5"/>
-        <Affliction identifier="Reiki_Pressure" strength="5" probability="0.1" />
+        <Affliction identifier="Reiki_Pressure" amount="0.5"/>
+        <Affliction identifier="Reiki_Pressure" strength="1" probability="0.1" />
         <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.15" />
       </StatusEffect>
     </PeriodicEffect>
@@ -1363,6 +1364,33 @@
     <Effect minstrength="0" maxstrength="10"
             resistancefor="debuff,damage,bleeding,burn,stun"
             minresistance="0.5" maxresistance="0.5">
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Water_Heart.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--敌对AI标识效果-护符03-->
+  <Affliction name="" identifier="Touhou_Enemy_Buff03" description="" type="Touhou_Enemy_Buff" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="10"
+              showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="false" iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Water_Heart" minstrength="0" maxstrength="10"/>
+    <Effect minstrength="0" maxstrength="10"
+            resistancefor="alieninfection,fractures,oxygenlow"
+            minresistance="1.0" maxresistance="1.0">
+      <StatValue stattype="MovementSpeed" value="0.15" />
+      <StatValue stattype="AttackMultiplier" value="0.25" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.4" />
+      <StatValue stattype="RangedAttackSpeed" value="0.1" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.6" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Water_Heart.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--敌对AI防御效果-护符03-->
+  <Affliction name="" identifier="Touhou_Enemy_Defense_Buff03" description="" type="Touhou_Enemy_Buff" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="10"
+              showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="false" iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Water_Heart" minstrength="0" maxstrength="10"/>
+    <Effect minstrength="0" maxstrength="10"
+            resistancefor="debuff,damage,bleeding,burn,stun"
+            minresistance="0.25" maxresistance="0.25">
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Water_Heart.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
@@ -1637,7 +1665,7 @@
               affectmachines="false"
               iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="1"/>
-    <Effect minstrength="0" maxstrength="10"/>
+    <Effect minstrength="0" maxstrength="1"/>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 </Afflictions>

@@ -522,14 +522,14 @@
         <Body width="110" height="30" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="2" damagedoors="true" friendlyfire="false" >
-            <Attack structuredamage="10" itemdamage="20" targetforce="20" targetimpulse="20" penetration="0.25">
+            <Attack structuredamage="10" itemdamage="20" targetforce="10" targetimpulse="10" penetration="0.25">
                 <Affliction identifier="burn" strength="7" />
                 <Affliction identifier="lacerations" strength="13" />
                 <Affliction identifier="bleeding" strength="8" />
                 <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="slow" strength="5" />
                 <Affliction identifier="Sleepless_Nightmare" strength="10" />
-                <Affliction identifier="stun" strength="0.6" probability="0.5" />
+                <Affliction identifier="stun" strength="0.4" probability="0.5" />
             </Attack>
             <StatusEffect type="OnNotContained" target="This" lifetime="3.0">
                 <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="160" anglemin="0" anglemax="360" colormultiplier="135,50,105,220" />
@@ -959,5 +959,112 @@
             </StatusEffect>
         </Projectile>
     </Item>
+
+
+    <!--仿制月震-->
+    <Item name="仿制月震" identifier="Touhou_Lunarquake_Fake" category="Weapon" cargocontaineridentifier="metalcrate" hideinmenus="true"
+          tags="mediumitem,weapon,gun,gunsmith,mountableweapon,provocativetohumanai" Scale="0.5" impactsoundtag="impact_metal_light" spritecolor="100,255,100,255">
+        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
+        <Deconstruct time="10" chooserandom="true" >
+            <Item identifier="Magic_Material" amount="2" commonness="0.2" />
+            <Item identifier="Mu_Alchemical" amount="2" commonness="0.1" />
+            <Item identifier="Huo_Alchemical" amount="2" commonness="0.1" />
+            <Item identifier="Tu_Alchemical" amount="2" commonness="0.1" />
+            <Item identifier="Jin_Alchemical" amount="2" commonness="0.1" />
+            <Item identifier="Shui_Alchemical" amount="2" commonness="0.1" />
+        </Deconstruct>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Lunarquake.png" sourcerect="0,0,72,28" depth="0.55" origin="0.5,0.5" />
+        <Body width="72" height="28" density="10" />
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="48,-5" handle1="-12,-15" handle2="20,5" holdangle="-20" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+        </Holdable>
+        <RangedWeapon weapondamagemodifier="1.0" reload="0.25" holdtrigger="true" barrelpos="45,4" spread="5" unskilledspread="15"
+                      combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5" ChargeSoundWindupPitchSlide="0.5,1.5">
+            <Crosshair texture="%ModDir%/Images/OtherWeapons/Blunderbuss.png" sourcerect="0,77,108,108" />
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+            <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+            <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="80,80,200,255" />
+            <Sound file="%ModDir%/Sounds/Weapons/Touhou_Scorching_Ray_Gun_Attack.ogg" type="OnUse" range="3000" selectionmode="Random" />
+            <StatusEffect type="OnUse" target="This">
+                <Explosion range="50.0" force="1.0" shockwave="true" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Contained" >
+                <Use />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" comparison="And" >
+                <Conditional Touhou_Enemy_Buff01="lte 0" />
+                <Conditional Touhou_Enemy_Buff02="lte 0" />
+                <Affliction identifier="Reiki_Side_Effect" amount="5" />
+                <Affliction identifier="Reiki_Pressure" amount="5" />
+            </StatusEffect>
+            <RequiredItems items="Touhou_Lunar_Center" type="Contained" msg="ItemMsgAmmoRequired" />
+            <RequiredSkill identifier="weapons" level="75" />
+        </RangedWeapon>
+        <ItemContainer capacity="1" maxstacksize="12" hideitems="false" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0" containedspritedepth="0.56">
+            <Containable items="Touhou_Lunar_Center" hide="true"/>
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+        </ItemContainer>
+        <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+        <SkillRequirementHint identifier="weapons" level="75" />
+    </Item>
+
+    <!--仿制月震中心-->
+    <Item name="月震中心" identifier="Touhou_Lunar_Center_Fake" scale="0.32" subcategory="Touhou" category="Weapon"
+          maxstacksize="16" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate"
+          tags="smallitem,Touhou_Lunar_Center" impactsoundtag="impact_metal_light" >
+        <PreferredContainer secondary="armcab" />
+        <Price baseprice="2000" minleveldifficulty="10" sold="false">
+            <Price storeidentifier="merchantoutpost" maxavailable="3" />
+            <Price storeidentifier="merchantcity" maxavailable="2" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" maxavailable="1" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.25" maxavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" maxavailable="3" />
+        </Price>
+        <Deconstruct time="6">
+            <Item identifier="uranium" amount="2" />
+            <Item identifier="titaniumaluminiumalloy" amount="2" />
+        </Deconstruct>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Ammo.png" sourcerect="0,0,120,120" depth="0.45" origin="0.5,0.5" />
+        <Body width="28" height="40" density="10" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Lunar_Arc_Light01" removecontaineditemsondeconstruct="true"
+                       drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <Containable items="Touhou_Lunar_Arc_Light" />
+            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+            <StatusEffect type="OnUse" target="This" condition="-2.0" disabledeltatime="true" >
+                <SpawnItem identifiers="Touhou_Lunar_Arc_Fake_Light" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+    <!--仿制月震射弹-->
+    <Item name="仿制月震射弹" identifier="Touhou_Lunar_Arc_Fake_Light" category="Weapon" tags="Touhou_Lunar_Center_Light,Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5" hideinmenus="true" >
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+        <Body width="170" height="10" density="10" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="20,20,120,255"/>
+            <Attack itemdamage="20" levelwalldamage="20" targetforce="2" targetimpulse="2" penetration="0.2" severlimbsprobability="0.3">
+                <Affliction identifier="explosiondamage" strength="3" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
+                <Affliction identifier="burn" strength="3" />
+                <Affliction identifier="Touhou_Freeze" strength="3" />
+                <Affliction identifier="Sleepless_Nightmare" strength="5" />
+                <Affliction identifier="stun" strength="0.1" />
+                <Affliction identifier="stun" strength="0.1" probability="0.4"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="2" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.1" scalemax="0.2" colormultiplier="200,200,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
 
 </Items>

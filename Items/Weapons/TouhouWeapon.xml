@@ -1228,7 +1228,7 @@
         <Body width="172" height="20" density="10" />
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0" holdangle="30" aimangle="10" reload="0.75" range="55" combatPriority="30" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.01" itemdamage="1" structuresoundtype="StructureSlash" penetration="0.6">
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="7" />
             </Attack>
             <StatusEffect type="OnUse" target="limb" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" />
@@ -1281,7 +1281,7 @@
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
-            <QualityStat stattype="StrikingPowerMultiplier" value="0.334" />
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
         </Quality>
         <SkillRequirementHint identifier="weapons" level="100" />
     </Item>
@@ -1566,10 +1566,10 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
             <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="75" structuredamage="1" structuresoundtype="StructureSlash" penetration="0.6">
-                <Affliction identifier="Reiki_Pressure" strength="12" />
-                <Affliction identifier="Reiki_Pressure" strength="12" probability="0.2" />
+                <Affliction identifier="Reiki_Pressure" strength="7" />
+                <Affliction identifier="Reiki_Pressure" strength="7" probability="0.2" />
                 <Affliction identifier="burn" strength="25" />
-                <Affliction identifier="burn" strength="25" probability="0.3"/>
+                <Affliction identifier="burn" strength="20" probability="0.3"/>
                 <Affliction identifier="Aura_Strip" strength="5" />
                 <Affliction identifier="stun" strength="0.5" />
                 <Affliction identifier="stun" strength="3" probability="0.15" />
@@ -1599,7 +1599,7 @@
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
-            <QualityStat stattype="StrikingPowerMultiplier" value="0.24" />
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.16" />
         </Quality>
         <SkillRequirementHint identifier="weapons" level="100" />
     </Item>
@@ -2506,9 +2506,9 @@
 
             <Attack targetimpulse="5" severlimbsprobability="0.6" itemdamage="100" structuredamage="10" structuresoundtype="StructureSlash" penetration="0.5">
                 <Affliction identifier="Reiki_Pressure" strength="8" />
-                <Affliction identifier="explosiondamage" strength="12" />
-                <Affliction identifier="burn" strength="20" />
-                <Affliction identifier="burn" strength="20" probability="0.2"/>
+                <Affliction identifier="explosiondamage" strength="8" />
+                <Affliction identifier="burn" strength="18" />
+                <Affliction identifier="burn" strength="18" probability="0.2"/>
                 <Affliction identifier="Phoenix_Burn" strength="50" />
                 <Affliction identifier="Phoenix_Burn" strength="50" probability="0.5"/>
                 <Affliction identifier="stun" strength="0.6" />
@@ -5079,10 +5079,10 @@
             </StatusEffect>-->
 
             <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="6" />
-                <Affliction identifier="internaldamage" strength="6" />
+                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="internaldamage" strength="2" />
                 <Affliction identifier="burn" strength="6" />
-                <Affliction identifier="Touhou_Bite" strength="6" />
+                <Affliction identifier="Touhou_Bite" strength="10" />
                 <Affliction identifier="bleeding" strength="33" />
                 <Affliction identifier="bleeding" strength="33" probability="0.1" />
                 <Affliction identifier="stun" strength="0.2" />

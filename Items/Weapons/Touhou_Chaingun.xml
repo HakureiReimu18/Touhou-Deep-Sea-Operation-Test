@@ -134,8 +134,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" hitscan="false" launchimpulse="120" removeonhit="true">
             <Attack structuredamage="70" targetforce="5" levelwalldamage="100" itemdamage="50" severlimbsprobability="0.6" penetration="0.35">
-                <Affliction identifier="explosiondamage" strength="40" />
-                <Affliction identifier="burn" strength="40" />
+                <Affliction identifier="explosiondamage" strength="25" />
+                <Affliction identifier="burn" strength="25" />
                 <Affliction identifier="Phoenix_Burn" strength="150" />
                 <Affliction identifier="stun" strength="1" />
                 <Affliction identifier="stun" strength="2" probability="0.2" />
