@@ -1668,4 +1668,44 @@
     <Effect minstrength="0" maxstrength="1"/>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
+
+  <!--锤头鲨基因拮抗-->
+  <Affliction name=""
+              identifier="Touhou_Decreased_Meleedamage_Effect01"
+              description=""
+              type="talentbuff"
+              isbuff="true"
+              limbspecific="false"
+              indicatorlimb="Torso"
+              maxstrength="10"
+              Duration="5.0"
+              showiconthreshold="100"
+              showinhealthscannerthreshold="100"
+              affectmachines="true"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="10" >
+      <StatValue stattype="MeleeAttackMultiplier" value="-0.5" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--猎杀者基因拮抗-->
+  <Affliction name=""
+              identifier="Touhou_Decreased_Meleedamage_Effect02"
+              description=""
+              type="talentbuff"
+              isbuff="true"
+              limbspecific="false"
+              indicatorlimb="Torso"
+              maxstrength="10"
+              Duration="5.0"
+              showiconthreshold="100"
+              showinhealthscannerthreshold="100"
+              affectmachines="true"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="10" >
+      <StatValue stattype="MeleeAttackMultiplier" value="-0.75" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
 </Afflictions>

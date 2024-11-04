@@ -461,9 +461,9 @@
           reward="8000"
           description="炼金实验室在此处丢失了一批重要材料，因此出重金委托有意愿的船长回收这些资源"
           difficulty="4"
-          commonness="150"
+          commonness="100"
           allowretry="true"
-          minleveldifficulty="15"
+          minleveldifficulty="10"
           maxleveldifficulty="50"
           unhideentitysubcategories="abandonedhuman">
     <Reputation identifier="separatists" amount="3" />
@@ -623,10 +623,10 @@
           reward="10000"
           description="一伙强盗占据了一处废弃站点，炼金实验室特别委托你消灭所有强盗，他们会接管这里"
           difficulty="4"
-          commonness="120"
+          commonness="100"
           allowretry="true"
           minleveldifficulty="25"
-          maxleveldifficulty="70"
+          maxleveldifficulty="75"
           unhideentitysubcategories="abandonedhuman">
     <Reputation identifier="separatists" amount="4" />
     <Reputation identifier="coalition" amount="4" />
@@ -649,11 +649,11 @@
       <Character identifier="Touhou_ODM04_Enemy_Human_Normal" from="Touhou_ODM4_Enemy_NPC" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
       <Character identifier="Touhou_ODM04_Enemy_Human_Normal" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true" />
       <Character identifier="Touhou_ODM04_Enemy_Human_Normal" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true" multiplayeronly="true" />
-      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="banditleader" />
-      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" />
-      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" />
-      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" />
-      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" asfaraspossible="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="banditleader" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true" />
+      <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" />
     </Characters>
   </OutpostDestroyMission>
 </Missions>

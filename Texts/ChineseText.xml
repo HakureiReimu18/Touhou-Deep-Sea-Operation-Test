@@ -641,7 +641,7 @@
     \n四重分身：可拥有额外三种天赋，需要通过制作‖color:gui.red‖芙兰朵露人偶‖end‖并使用获得。
   </talentdescription.FlandreTalent>
   <talentname.FlandreTalent2>可怕的波动</talentname.FlandreTalent2>
-  <talentdescription.FlandreTalent2>当你身着 芙兰朵露装束+ 时,攻击伤害提高‖color:gui.green‖30%‖end‖,若生命值低于49.5%，则再提高‖color:gui.green‖49.5%‖end‖。</talentdescription.FlandreTalent2>
+  <talentdescription.FlandreTalent2>当你身着 芙兰朵露装束+ 时,攻击伤害提高‖color:gui.green‖25%‖end‖,若生命值低于49.5%，则再提高‖color:gui.green‖49.5%‖end‖。</talentdescription.FlandreTalent2>
   <talentname.FlandreTalent3>鲜红血液的恶魔</talentname.FlandreTalent3>
   <talentdescription.FlandreTalent3>当你身着 芙兰朵露装束+ 时,身边存在活物时，移动速度加快‖color:gui.green‖15%‖end‖，技能获取速度加快‖color:gui.green‖50%‖end‖,对debuff的抗性提高‖color:gui.green‖35%‖end‖。如果身旁紧邻友方船员，还可增加‖color:gui.green‖66‖end‖点医疗水平.</talentdescription.FlandreTalent3>
   <talentname.FlandreTalent4>笼中鸟</talentname.FlandreTalent4>
@@ -756,7 +756,7 @@
   <entityname.Touhou_Magic_Potion_Purification>魔法药水（净化）</entityname.Touhou_Magic_Potion_Purification>
   <entitydescription.Touhou_Magic_Potion_Purification>可以净化体内异星感染的魔法药水，可以快速杀死类似画皮这类异星生命，包括共生体。</entitydescription.Touhou_Magic_Potion_Purification>
   <entityname.Touhou_Cyber_Homing_Amulet>电子御扎</entityname.Touhou_Cyber_Homing_Amulet>
-  <entitydescription.Touhou_Cyber_Homing_Amulet>魔法与科技的结合，可充能的能量御扎拥有了更强大的威力，但牺牲了一部分射速。</entitydescription.Touhou_Cyber_Homing_Amulet>
+  <entitydescription.Touhou_Cyber_Homing_Amulet>魔法与科技的结合，可充能的能量御扎拥有了更强大的威力，但牺牲了一部分射速。‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Touhou_Cyber_Homing_Amulet>
   <entityname.Magic_Pouch>元素腰带</entityname.Magic_Pouch>
   <entitydescription.Magic_Pouch>通过魔法材料制成的腰带，一经发售就深受魔法师喜爱。与魔力披纱配合可以提升使用者魔力到最大。同时内置三个元素瓶槽位，允许使用者放置不同的元素瓶提供不同的治疗效果。</entitydescription.Magic_Pouch>
   <entityname.Camellia_Hair_Accessory>‖color:193,204,65,255‖山茶花发饰‖color:end‖</entityname.Camellia_Hair_Accessory>

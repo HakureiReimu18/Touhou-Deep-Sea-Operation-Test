@@ -1028,18 +1028,18 @@
         <Body width="28" height="40" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
-        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Lunar_Arc_Light01" removecontaineditemsondeconstruct="true"
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Lunar_Center_Fake_Light" removecontaineditemsondeconstruct="true"
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
-            <Containable items="Touhou_Lunar_Arc_Light" />
+            <Containable items="Touhou_Lunar_Center_Fake_Light" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
             <StatusEffect type="OnUse" target="This" condition="-2.0" disabledeltatime="true" >
-                <SpawnItem identifiers="Touhou_Lunar_Arc_Fake_Light" spawnposition="ThisInventory" />
+                <SpawnItem identifiers="Touhou_Lunar_Center_Fake_Light" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
     </Item>
 
     <!--仿制月震射弹-->
-    <Item name="仿制月震射弹" identifier="Touhou_Lunar_Arc_Fake_Light" category="Weapon" tags="Touhou_Lunar_Center_Light,Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5" hideinmenus="true" >
+    <Item name="仿制月震射弹" identifier="Touhou_Lunar_Center_Fake_Light" category="Weapon" tags="Touhou_Lunar_Center_Light,Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5" hideinmenus="true" >
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
         <Body width="170" height="10" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />

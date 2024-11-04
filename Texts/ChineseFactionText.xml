@@ -122,6 +122,13 @@
     <Alchemy_Table.Research>转化</Alchemy_Table.Research>
     <Alchemy_Table.Research.Infotext>炼金术转化物质的阶段。经由帕秋莉的指点后，这一步骤已经能简单地在炼金桌上完成了。（Tips:灵性材料请参考帕秋莉手册）</Alchemy_Table.Research.Infotext>
     <Alchemy_Table.Combine.Missingitem>已掺入卑金属，添加不同性质的材料以完成炼金转化（Tips:灵性材料请参考帕秋莉手册）</Alchemy_Table.Combine.Missingitem>
+    <terminalwelcomemsg.Touhou_Wreck04_01>——关于灵气侵蚀与污染的调查
+        调查员：帕秋莉·诺雷姬
+
+        破壳日第60天
+        结果证明，灵气污染对木卫二上的生物拥有无可比拟的破坏力，对人类的危害也相当巨大。无论如何，应该禁止一且与灵气污染有关商品的流通。那些门外汉只会把这些东西都搞砸。必须要在这些东西扩散开之前把污染物全部回收处理。
+        人类果然不值得信任</terminalwelcomemsg.Touhou_Wreck04_01>
+
 
     <!--敌对AI使用-->
     <entityname.Illness_Recovery_Charm_Locked01>病气平愈护符-伪造</entityname.Illness_Recovery_Charm_Locked01>

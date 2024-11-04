@@ -888,7 +888,7 @@
     <!--芙兰朵露-专属武器效果-->
     <Affliction identifier="Flandre_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn,stun" minresistance="0.25" maxresistance="0.25" strengthchange="-9">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn,stun" minresistance="0.25" maxresistance="0.25" strengthchange="-9">
             <StatusEffect target="Character" comparison="And" Interval="1.0" Duration="1.0">
                 <Conditional HealthPercentage="lt 50"/>
                 <Conditional bleeding="gt 0"/>

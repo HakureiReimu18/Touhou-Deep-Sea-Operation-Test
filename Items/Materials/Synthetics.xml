@@ -961,4 +961,21 @@
         <Pickable slots="Any" />
     </Item>
 
+    <!--事件触发用ID卡-沉船事件01-->
+    <Item name="事件触发用ID卡-沉船事件01" identifier="Trigger_Touhou_Wreck01" category="Misc" subcategory="Touhou" maxstacksize="8" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="192,64,64,64" origin="0.5,0.5" />
+        <Sprite texture="Content/Items/idcard.png" depth="0.5" sourcerect="0,0,16,16" />
+        <Body width="16" height="12" density="10.05" />
+        <Holdable slots="Any,RightHand,LeftHand" aimpos="100,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="Always" target="NearbyCharacters,This" Interval="5" range="2000">
+                <Conditional speciesname="human"/>
+                <SpawnCharacter speciesname="Touhou_reiki_erode_crawler" count="3" TotalMaxCount="8" spread="800" />
+                <SpawnCharacter speciesname="Touhou_reiki_erode_mudraptor" count="3" TotalMaxCount="8" spread="800" />
+                <SpawnCharacter speciesname="Touhou_fortune_teller" count="3" TotalMaxCount="8" spread="800" />
+                <RemoveItem />
+            </StatusEffect>
+        </Holdable>
+        <aitarget soundrange="800" fadeouttime="5" />
+    </Item>
+
 </Items>

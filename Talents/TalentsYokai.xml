@@ -1410,7 +1410,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.3"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
             </Abilities>
         </AbilityGroupEffect>
         <!--荷取-->
@@ -1656,7 +1656,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--嗜血传说 远程攻击速度增加10%，近战攻击速度增加10%，攻击伤害增加15%，这个效果在水中减半。
+    <!--嗜血传说 远程攻击速度增加10%，近战攻击速度增加10%，攻击伤害增加10%，这个效果在水中减半。
     穿着蕾米莉亚装束+时：增加5%物理伤害抗性、5%烧伤抗性和10%最大生命值
     穿着芙兰朵露装束+时：增加15%烧伤抗性，生命值大于50%时，提高50%精神病抗性，增加50%技能获取速度-->
     <Talent identifier="Touhou_Vampire04">
@@ -1666,7 +1666,7 @@
             <Abilities>
                 <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.05"/>
                 <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.05"/>
-                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.075"/>
+                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">
@@ -1676,7 +1676,7 @@
             <Abilities>
                 <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.05"/>
                 <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.05"/>
-                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.075"/>
+                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
         <!--蕾米莉亚-->
@@ -1917,7 +1917,7 @@
 
     <!--血色天灾
     穿着蕾米莉亚装束+时：根据角色等级，每级增加1%攻击伤害，最高20%。大大增加优质B型血的单次治疗效果。生命值低于0后，20秒内自身不会死亡，这个效果一巡回只能触发一次。
-    穿着芙兰朵露装束+时：对生命值高于49.5%的敌人造成50%额外烧伤、撕裂伤、内脏损伤。生命值低于0后，将保持清醒10秒，这个效果一巡回只能触发一次-->
+    穿着芙兰朵露装束+时：对生命值高于49.5%的敌人造成20%额外烧伤、撕裂伤、内脏损伤。生命值低于0后，将保持清醒10秒，这个效果一巡回只能触发一次-->
     <Talent identifier="Touhou_Vampire07">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Vampire07"/>
@@ -1966,7 +1966,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="burn,internaldamage,lacerations" addedmultiplier="0.5" />
+                <CharacterAbilityModifyAffliction afflictionidentifiers="burn,internaldamage,lacerations" addedmultiplier="0.2" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval maxtriggercount="1" >

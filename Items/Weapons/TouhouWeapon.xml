@@ -546,7 +546,7 @@
         </Holdable>
 
         <!--武器参数-->
-        <RangedWeapon barrelpos="40,20" spread="4" unskilledspread="24" reload="0.1" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="12">
+        <RangedWeapon barrelpos="40,20" spread="6" unskilledspread="24" reload="0.1" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="12">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_2.png" sourcerect="0,0,64,64" scale="1.5"/>
             <StatusEffect type="OnUse" target="This">
@@ -1149,9 +1149,9 @@
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0"  allowhitmultiple="true"
                      holdangle="30" aimangle="20" reload="0.75" range="80" combatPriority="30" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="60" structuredamage="0.2" structuresoundtype="StructureSlash" penetration="0.2">
-                <Affliction identifier="lacerations" strength="25" />
+                <Affliction identifier="lacerations" strength="26" />
                 <Affliction identifier="Reiki_Pressure" strength="2" />
-                <Affliction identifier="Touhou_Lost_Heart" strength="1.5" />
+                <Affliction identifier="Touhou_Lost_Heart" strength="2.5" />
                 <Affliction identifier="stun" strength="0.1" />
             </Attack>
             <StatusEffect type="OnActive" target="Character">
@@ -1160,6 +1160,14 @@
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Ancient_Temple="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <Conditional entitytype="eq Character" />
@@ -1228,7 +1236,7 @@
         <Body width="172" height="20" density="10" />
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0" holdangle="30" aimangle="10" reload="0.75" range="55" combatPriority="30" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.01" itemdamage="1" structuresoundtype="StructureSlash" penetration="0.6">
-                <Affliction identifier="Reiki_Pressure" strength="7" />
+                <Affliction identifier="Reiki_Pressure" strength="8" />
             </Attack>
             <StatusEffect type="OnUse" target="limb" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" />
@@ -1241,6 +1249,14 @@
                 <Conditional Ancient_Temple="gt 0"/>
                 <Affliction identifier="Touhou_Bai_Lou_Sword" strength="10" />
                 <Affliction identifier="Touhou_Water_Heart" strength="10" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
@@ -1281,7 +1297,7 @@
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
-            <QualityStat stattype="StrikingPowerMultiplier" value="0.05" />
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.15" />
         </Quality>
         <SkillRequirementHint identifier="weapons" level="100" />
     </Item>
@@ -1550,6 +1566,14 @@
                 <Conditional The_Daughter_Of_Heaven="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -1565,14 +1589,14 @@
             <LightComponent LightColor="255,174,121,160" Flicker="0.2" Range="70" >
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
-            <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="75" structuredamage="1" structuresoundtype="StructureSlash" penetration="0.6">
-                <Affliction identifier="Reiki_Pressure" strength="7" />
-                <Affliction identifier="Reiki_Pressure" strength="7" probability="0.2" />
-                <Affliction identifier="burn" strength="25" />
+            <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="85" structuresoundtype="StructureSlash" penetration="0.6">
+                <Affliction identifier="Reiki_Pressure" strength="8" />
+                <Affliction identifier="Reiki_Pressure" strength="8" probability="0.25" />
+                <Affliction identifier="burn" strength="35" />
                 <Affliction identifier="burn" strength="20" probability="0.3"/>
-                <Affliction identifier="Aura_Strip" strength="5" />
-                <Affliction identifier="stun" strength="0.5" />
-                <Affliction identifier="stun" strength="3" probability="0.15" />
+                <Affliction identifier="Aura_Strip" strength="10" />
+                <Affliction identifier="stun" strength="0.3" />
+                <Affliction identifier="stun" strength="2" probability="0.15" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <ParticleEmitter particle="weldspark" particleamount="6" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,10,10,200" />
@@ -2462,6 +2486,14 @@
                 <Conditional Possessed_By_Phoenix="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -2505,14 +2537,14 @@
             </LightComponent>
 
             <Attack targetimpulse="5" severlimbsprobability="0.6" itemdamage="100" structuredamage="10" structuresoundtype="StructureSlash" penetration="0.5">
-                <Affliction identifier="Reiki_Pressure" strength="8" />
-                <Affliction identifier="explosiondamage" strength="8" />
-                <Affliction identifier="burn" strength="18" />
-                <Affliction identifier="burn" strength="18" probability="0.2"/>
+                <Affliction identifier="Reiki_Pressure" strength="6" />
+                <Affliction identifier="explosiondamage" strength="18" />
+                <Affliction identifier="burn" strength="20" />
+                <Affliction identifier="burn" strength="20" probability="0.2"/>
                 <Affliction identifier="Phoenix_Burn" strength="50" />
                 <Affliction identifier="Phoenix_Burn" strength="50" probability="0.5"/>
-                <Affliction identifier="stun" strength="0.6" />
-                <Affliction identifier="stun" strength="1" probability="0.2" />
+                <Affliction identifier="stun" strength="0.35" />
+                <Affliction identifier="stun" strength="0.55" probability="0.25" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <ParticleEmitter particle="weldspark" particleamount="6" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,10,10,200" />
@@ -2656,7 +2688,7 @@
                 <Affliction identifier="Aura_Strip" strength="10" />
                 <Affliction identifier="Aura_Strip" strength="15" probability="0.8" />
                 <Affliction identifier="Aura_Strip" strength="20" probability="0.2" />
-                <Affliction identifier="stun" strength="0.5" probability="0.4" />
+                <Affliction identifier="stun" strength="0.4" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Aura_Strip" strength="5" />
@@ -2817,6 +2849,7 @@
                 <Affliction identifier="bitewounds" strength="12" />
                 <Affliction identifier="bleeding" strength="8" />
                 <Affliction identifier="Touhou_Bite" strength="8" />
+                <Affliction identifier="stun" strength="0.1" probability="0.5" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget">
                 <Conditional entitytype="eq Character" />
@@ -3230,7 +3263,7 @@
         </Holdable>
 
         <!--武器参数-->
-        <RangedWeapon reload="0.3" holdtrigger="true" barrelpos="58,10" spread="0.12" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="8">
+        <RangedWeapon reload="0.3" holdtrigger="true" barrelpos="58,10" spread="1.2" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="8">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
             <StatusEffect type="OnUse" target="This">
@@ -3271,15 +3304,15 @@
         </LightComponent>
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="40" hitscan="false" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
-                    sticktodoors="true" removeonhit="true" friendlyfire="false" LaunchRotation="0">
-            <Attack structuredamage="1" itemdamage="5" targetforce="1" penetration="0.2" severlimbsprobability="0.2">
-                <Affliction identifier="bleeding" strength="3.0" />
-                <Affliction identifier="lacerations" strength="12.0" />
-                <Affliction identifier="burn" strength="5.0" />
+                    sticktodoors="true" removeonhit="true" LaunchRotation="0">
+            <Attack structuredamage="1" itemdamage="5" targetforce="1" penetration="0.15" severlimbsprobability="0.2">
+                <Affliction identifier="bleeding" strength="5.0" />
+                <Affliction identifier="lacerations" strength="16.0" />
+                <Affliction identifier="burn" strength="6.0" />
                 <Affliction identifier="stun" strength="0.3" probability="0.05"/>
                 <Affliction identifier="Reiki_Pressure" strength="2.0" />
                 <Affliction identifier="Reiki_Pressure" strength="2.0" probability="0.4"/>
-                <Affliction identifier="Touhou_Lost_Dream" strength="2.5" probability="0.8"/>
+                <Affliction identifier="Touhou_Lost_Dream" strength="3.5" probability="0.8"/>
             </Attack>
             <!--            <StatusEffect type="OnActive" target="This" lifetime="1">
                             <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="3" velocitymin="-10" velocitymax="-100" scalemin="0.8" scalemax="1.6" />
@@ -3456,6 +3489,14 @@
                 <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -3466,18 +3507,18 @@
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
 
-            <Attack targetimpulse="5" severlimbsprobability="0.35" itemdamage="40" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="6" />
-                <Affliction identifier="lacerations" strength="7" />
-                <Affliction identifier="lacerations" strength="3" probability="0.495" />
-                <Affliction identifier="internaldamage" strength="7" />
-                <Affliction identifier="internaldamage" strength="3" probability="0.495" />
-                <Affliction identifier="organdamage" strength="7" />
+            <Attack targetimpulse="5" severlimbsprobability="0.35" itemdamage="60" structuresoundtype="StructureSlash" penetration="0.2">
+                <Affliction identifier="Reiki_Pressure" strength="4" />
+                <Affliction identifier="lacerations" strength="8" />
+                <Affliction identifier="lacerations" strength="6" probability="0.495" />
+                <Affliction identifier="internaldamage" strength="8" />
+                <Affliction identifier="internaldamage" strength="6" probability="0.495" />
+                <Affliction identifier="organdamage" strength="3" />
                 <Affliction identifier="organdamage" strength="3" probability="0.495" />
-                <Affliction identifier="burn" strength="7" />
-                <Affliction identifier="burn" strength="3" probability="0.495" />
-                <Affliction identifier="bleeding" strength="12" />
-                <Affliction identifier="bleeding" strength="7" probability="0.495" />
+                <Affliction identifier="burn" strength="8" />
+                <Affliction identifier="burn" strength="6" probability="0.495" />
+                <Affliction identifier="bleeding" strength="20" />
+                <Affliction identifier="bleeding" strength="20" probability="0.495" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="3" />
                 <Affliction identifier="stun" strength="0.2" />
                 <Affliction identifier="stun" strength="0.4" probability="0.2" />
@@ -3495,7 +3536,7 @@
                 <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
                 <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
             </StatusEffect>
-            <StatusEffect type="OnFailure" target="This" reload="1.2" setvalue="true"/>
+            <StatusEffect type="OnFailure" target="This" reload="1.4" setvalue="true"/>
             <StatusEffect type="OnFailure" target="Character" >
                 <Affliction identifier="bloodloss" strength="0.5" />
             </StatusEffect>
@@ -3511,7 +3552,7 @@
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
-            <QualityStat stattype="StrikingPowerMultiplier" value="0.134" />
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.08" />
         </Quality>
         <SkillRequirementHint identifier="weapons" level="50" />
         <SkillRequirementHint identifier="Touhou_Magic" level="50" />
@@ -3556,6 +3597,14 @@
                 <Conditional Unconfirmed_Fantasy_Flying_Girl="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -3567,7 +3616,7 @@
             </StatusEffect>
 
             <Attack targetimpulse="5" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="8" />
+                <Affliction identifier="Reiki_Pressure" strength="4" />
                 <Affliction identifier="lacerations" strength="20" />
                 <Affliction identifier="burn" strength="10" />
                 <Affliction identifier="Touhou_Bite" strength="24" />
@@ -3670,6 +3719,14 @@
                 <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 70"/>
@@ -3699,7 +3756,7 @@
                 <Affliction identifier="explosiondamage" strength="11" />
                 <Affliction identifier="bleeding" strength="33" />
                 <Affliction identifier="bleeding" strength="33" probability="0.495" />
-                <Affliction identifier="stun" strength="0.6" />
+                <Affliction identifier="stun" strength="0.5" />
                 <Affliction identifier="stun" strength="1.0" probability="0.6" />
                 <Affliction identifier="stun" strength="1.5" probability="0.4" />
             </Attack>
@@ -3712,18 +3769,18 @@
                 <Conditional MaxHealth="gt 400"/>
                 <Conditional MaxHealth="lte 1000"/>
                 <ParticleEmitter particle="weldspark" particleamount="6" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,10,10,200" />
-                <Affliction identifier="Destruction_Of_Mu" strength="5" />
+                <Affliction identifier="Destruction_Of_Mu" strength="6" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget" limb="Torso" multiplyafflictionsbymaxvitality="true" comparison="And" >
                 <Conditional MaxHealth="gt 1000"/>
                 <Conditional MaxHealth="lte 5000"/>
                 <ParticleEmitter particle="weldspark" particleamount="6" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,10,10,200" />
-                <Affliction identifier="Destruction_Of_Mu" strength="3.2" />
+                <Affliction identifier="Destruction_Of_Mu" strength="5.2" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget" limb="Torso" multiplyafflictionsbymaxvitality="true" >
                 <Conditional MaxHealth="gt 5000"/>
                 <ParticleEmitter particle="weldspark" particleamount="6" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,10,10,200" />
-                <Affliction identifier="Destruction_Of_Mu" strength="1.5" />
+                <Affliction identifier="Destruction_Of_Mu" strength="2.5" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="false" anglemin="30" anglemax="240" particleamount="3" velocitymin="100" velocitymax="150" scalemin="0.15" scalemax="0.25" colormultiplier="255,72,36,180" />
@@ -3803,6 +3860,14 @@
                 <Conditional Fairy_Of_Ice="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 70"/>
@@ -3821,18 +3886,18 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
 
-            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.3">
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.35">
                 <Affliction identifier="Reiki_Pressure" strength="9" />
-                <Affliction identifier="lacerations" strength="15" />
+                <Affliction identifier="lacerations" strength="20" />
                 <Affliction identifier="slow" strength="30" />
                 <Affliction identifier="Slow_Baka" strength="15" />
-                <Affliction identifier="Touhou_Freeze" strength="15" />
+                <Affliction identifier="Touhou_Freeze" strength="18" />
                 <Affliction identifier="Touhou_Freeze" strength="9" probability="0.5" />
                 <Affliction identifier="bleeding" strength="18" />
                 <Affliction identifier="bleeding" strength="18" probability="0.5" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
-                <Affliction identifier="stun" strength="0.35" />
-                <Affliction identifier="stun" strength="0.5" probability="0.5" />
+                <Affliction identifier="stun" strength="0.2" />
+                <Affliction identifier="stun" strength="0.35" probability="0.5" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
@@ -4100,6 +4165,14 @@
                 <Conditional Fairy_Of_Hell="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -4115,15 +4188,15 @@
             <LightComponent LightColor="255,100,100,160" Flicker="0.2" Range="700" IsOn="true" >
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
-            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="8" />
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.35">
+                <Affliction identifier="Reiki_Pressure" strength="6" />
                 <Affliction identifier="blunttrauma" strength="10" />
                 <Affliction identifier="burn" strength="20" />
                 <Affliction identifier="lacerations" strength="5" />
-                <Affliction identifier="explosiondamage" strength="5" />
+                <Affliction identifier="explosiondamage" strength="8" />
                 <Affliction identifier="psychosis" strength="10" />
                 <Affliction identifier="psychosis" strength="10" probability="0.5" />
-                <Affliction identifier="stun" strength="0.3" />
+                <Affliction identifier="stun" strength="0.25" />
                 <Affliction identifier="stun" strength="0.6" probability="0.5" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
@@ -4326,8 +4399,8 @@
                 <Affliction identifier="bleeding" strength="30" probability="0.495" />
                 <Affliction identifier="Touhou_Weakness" strength="1" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="6" />
-                <Affliction identifier="stun" strength="0.2" />
-                <Affliction identifier="stun" strength="0.4" probability="0.5" />
+                <Affliction identifier="stun" strength="0.15" />
+                <Affliction identifier="stun" strength="0.3" probability="0.5" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Dream" strength="6" probability="0.5" />
@@ -4416,6 +4489,14 @@
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Closed_Eyes_Of_Koishi="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
@@ -4550,7 +4631,7 @@
         <Body width="110" height="30" density="10" />
         <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-42,22" handle2="-2,20" holdangle="30" aimangle="10" reload="1.2" range="125"
                      allowhitmultiple="true" combatPriority="40" msg="ItemMsgPickUpSelect">
-            <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="60" penetration="0.2">
+            <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="60" penetration="0.1">
                 <Affliction identifier="Reiki_Pressure" strength="5" />
                 <Affliction identifier="blunttrauma" strength="25" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
@@ -4708,7 +4789,7 @@
                 <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="1.5" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.4" />
-                <Affliction identifier="stun" strength="0.25" probability="0.1" />
+                <Affliction identifier="stun" strength="0.2" probability="0.1" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
@@ -5026,6 +5107,14 @@
                 <Conditional scarletdevil="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And" AllowWhenBroken="true">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -5072,14 +5161,14 @@
             </StatusEffect>-->
 
             <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="2" />
-                <Affliction identifier="internaldamage" strength="2" />
-                <Affliction identifier="burn" strength="6" />
+                <Affliction identifier="Reiki_Pressure" strength="4" />
+                <Affliction identifier="internaldamage" strength="3" />
+                <Affliction identifier="burn" strength="10" />
                 <Affliction identifier="Touhou_Bite" strength="10" />
                 <Affliction identifier="bleeding" strength="33" />
                 <Affliction identifier="bleeding" strength="33" probability="0.1" />
                 <Affliction identifier="stun" strength="0.2" />
-                <Affliction identifier="stun" strength="0.6" probability="0.3" />
+                <Affliction identifier="stun" strength="0.5" probability="0.3" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <ParticleEmitter particle="weldspark" particleamount="2" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,10,10,200" />
@@ -5089,7 +5178,7 @@
                 <Conditional HasTag="eq ScarletMode_Open"/>
                 <Affliction identifier="bleeding" strength="33" />
                 <Affliction identifier="bleeding" strength="33" probability="0.5" />
-                <Affliction identifier="internaldamage" strength="6" />
+                <Affliction identifier="internaldamage" strength="4" />
                 <Affliction identifier="Touhou_Bite" strength="6" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
@@ -5120,10 +5209,10 @@
             </StatusEffect>
         </ItemComponent>
         <ElectricalDischarger duration="0.1" reload="0.1" ignoreuser="true" characterusable="true" raycastrange="100" range="400" rangemultiplierinwalls="0.1" outdoorsonly="false" powerconsumption="0" pickkey="Select">
-            <Attack targetimpulse="-10" targetforce="-10" penetration="0.1" >
+            <Attack targetimpulse="-10" targetforce="-10" penetration="0.25" >
                 <Affliction identifier="stun" strength="0.5" probability="0.5" />
-                <Affliction identifier="lacerations" strength="15" />
-                <Affliction identifier="burn" strength="15" />
+                <Affliction identifier="lacerations" strength="10" />
+                <Affliction identifier="burn" strength="10" />
             </Attack>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="500" selectionmode="random" />
