@@ -47,8 +47,7 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-12" />
-            <StatusEffect type="Always" target="This" Condition="6">
+            <StatusEffect type="Always" target="This" Condition="5">
                 <Conditional condition="gt 0" />
             </StatusEffect>
             <StatusEffect type="InWater" target="This" Condition="2">
@@ -74,6 +73,7 @@
                 <RequiredItems items="Hakkeroammo" type="Contained" />
                 <Use />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-4" disabledeltatime="true" />
             <StatusEffect type="OnUse" target="This" reload="0.15" setvalue="true" >
                 <RequiredItems items="Hakkero_Laser_Ammo" type="Contained" />
             </StatusEffect>
@@ -1161,11 +1161,11 @@
                 <Conditional Ancient_Temple="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -1250,11 +1250,11 @@
                 <Affliction identifier="Touhou_Bai_Lou_Sword" strength="10" />
                 <Affliction identifier="Touhou_Water_Heart" strength="10" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -1566,11 +1566,11 @@
                 <Conditional The_Daughter_Of_Heaven="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -1787,7 +1787,7 @@
     </Item>
 
     <!--七曜魔导书-->
-    <Item name="七曜魔导书" identifier="Touhou_Elements_Book" subcategory="Touhou" category="Equipment,Weapon" cargocontaineridentifier="metalcrate"
+    <Item name="七曜魔导书" identifier="Touhou_Elements_Book" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate"
           tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="0.4" impactsoundtag="impact_metal_light">
         <PreferredContainer secondary="abandonedmedcab" spawnprobability="0.01"/>
         <Price baseprice="12000" minleveldifficulty="25" >
@@ -1835,8 +1835,7 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-7" />
-            <StatusEffect type="Always" target="This" Condition="2.5">
+            <StatusEffect type="Always" target="This" Condition="1.2">
                 <Conditional condition="gt 0" />
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="17" disabledeltatime="true" delay="7" stackable="false" />
@@ -1845,7 +1844,7 @@
             </StatusEffect>
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon weapondamagemodifier="1.7" barrelpos="70,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="12">
+        <RangedWeapon weapondamagemodifier="1.14" barrelpos="70,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.6" DualWieldAccuracyPenalty="12">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="91,0,210,210" scale="2.5"/>
             <StatusEffect type="OnUse" target="This">
@@ -1860,6 +1859,7 @@
                 <RequiredItems items="Elements_Book_Ammo" type="Contained" />
                 <Use />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-3" disabledeltatime="true" />
             <RequiredSkill identifier="Touhou_Magic" level="100" />
             <RequiredItems items="Elements_Book_Ammo" type="Contained" />
         </RangedWeapon>
@@ -2276,7 +2276,7 @@
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" removeonhit="true" friendlyfire="true">
             <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.5">
-                <Affliction identifier="burn" strength="20" />
+                <Affliction identifier="burn" strength="25" />
                 <Affliction identifier="Reiki_Pressure" strength="5" />
 <!--                <Affliction identifier="Touhou_Yang_Elements" strength="5" />
                 <Affliction identifier="Touhou_Yang_Elements" strength="7" probability="0.15" />-->
@@ -2355,8 +2355,9 @@
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" removeonhit="true" friendlyfire="true">
             <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.5">
-                <Affliction identifier="acidburn" strength="15" />
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="acidburn" strength="10" />
+                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="Touhou_Silent_Selene_Dream" strength="2.8" />
 <!--                <Affliction identifier="Touhou_Yin_Elements" strength="5" />
                 <Affliction identifier="Touhou_Yin_Elements" strength="7" probability="0.15" />-->
             </Attack>
@@ -2486,11 +2487,11 @@
                 <Conditional Possessed_By_Phoenix="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -3106,7 +3107,7 @@
         </Price>
         <Deconstruct time="10">
             <Item identifier="Magic_Material" amount="2" />
-            <Item identifier="Score_Point" amount="4" />
+            <Item identifier="Score_Point" amount="2" />
             <Item identifier="organicfiber" amount="4" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="30">
@@ -3489,11 +3490,11 @@
                 <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -3597,11 +3598,11 @@
                 <Conditional Unconfirmed_Fantasy_Flying_Girl="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -3719,11 +3720,11 @@
                 <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -3860,11 +3861,11 @@
                 <Conditional Fairy_Of_Ice="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -4165,11 +4166,11 @@
                 <Conditional Fairy_Of_Hell="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -4490,11 +4491,11 @@
                 <Conditional Closed_Eyes_Of_Koishi="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
@@ -5107,11 +5108,11 @@
                 <Conditional scarletdevil="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage="gte 50"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" Interval="5.0" Duration="5.0">
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>

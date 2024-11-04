@@ -151,6 +151,10 @@
     <entitydescription.Touhou_Magic_Automatic_Shotgun>在自动霰弹枪的基础上增加魔法材料，优化了性能释放，但却让这把武器愈加不稳定</entitydescription.Touhou_Magic_Automatic_Shotgun>
     <entityname.Touhou_Magic_Automatic_Shotgun_Bullet>魔术霰弹</entityname.Touhou_Magic_Automatic_Shotgun_Bullet>
     <entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>用便宜魔法材料制成的霰弹子弹，是个明眼人都看得出来，这只是一堆铁块而已</entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>
+    <entityname.Touhou_Lunarquake_Fake>仿制月震</entityname.Touhou_Lunarquake_Fake>
+    <entitydescription.Touhou_Lunarquake_Fake>用便宜魔法材料模仿的月震，完全没有原武器任何特色</entitydescription.Touhou_Lunarquake_Fake>
+    <entityname.Touhou_Lunar_Center_Fake>仿制月震中心</entityname.Touhou_Lunar_Center_Fake>
+    <entitydescription.Touhou_Lunar_Center_Fake>粗糙的模仿带来的是更少的容量</entitydescription.Touhou_Lunar_Center_Fake>
 
     <!--NPC显示名称-->
     <npctitle.Touhou_ODM03_Enemy_Human_Lunatic>掠夺者-Lunatic</npctitle.Touhou_ODM03_Enemy_Human_Lunatic>

@@ -1289,7 +1289,7 @@
         </Holdable>
 
         <!--武器参数-->
-        <RangedWeapon reload="0.3" holdtrigger="true" barrelpos="58,10" spread="2" unskilledspread="24" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.38" DualWieldReloadTimePenaltyMultiplier="1.4" DualWieldAccuracyPenalty="8">
+        <RangedWeapon reload="0.3" holdtrigger="true" barrelpos="58,10" spread="2" unskilledspread="24" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.38" DualWieldReloadTimePenaltyMultiplier="1.8" DualWieldAccuracyPenalty="8">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Penglai_Jade_Branch_Crosshair.png" sourcerect="0,0,256,256" />
             <StatusEffect type="OnUse" target="This">
                 <Explosion range="150" force="1.4" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="3.5" />
@@ -1511,9 +1511,6 @@
                 <Affliction identifier="Touhou_Freeze" strength="8" />
                 <Affliction identifier="Reiki_Pressure" strength="3" />
             </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Touhou_Silent_Selene_Dream" strength="2.5" />
-            </StatusEffect>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="25.0" force="6.0" decal="explosion" decalsize="0.3" >
                     <Affliction identifier="explosiondamage" strength="6" />
@@ -2600,7 +2597,7 @@
 
     <!--月震-->
     <Item name="月震" identifier="Touhou_Lunarquake" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true"
-          tags="mediumitem,weapon,gun,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="1.0" impactsoundtag="impact_metal_heavy">
+          tags="mediumitem,weapon,gun,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="1.3" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="secarmcab" secondary="weaponholder,armcab"/>
         <Price baseprice="9000" sold="false">
             <Price storeidentifier="merchantoutpost" multiplier="1.5" />
@@ -2650,13 +2647,14 @@
         <LightComponent LightColor="255,150,150,100" Range="130" powerconsumption="10" IsOn="true" >
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="1,1,1,1" origin="0.15,0" />
         </LightComponent>
-        <RangedWeapon weapondamagemodifier="1.0" reload="0.5" holdtrigger="true" barrelpos="45,4" spread="5" unskilledspread="15"
+        <RangedWeapon weapondamagemodifier="1.0" reload="0.5" holdtrigger="true" barrelpos="45,4" spread="12" unskilledspread="20"
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5" ChargeSoundWindupPitchSlide="0.5,1.5">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Blunderbuss.png" sourcerect="0,77,108,108" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
             <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
             <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="80,80,200,255" />
-            <Sound file="%ModDir%/Sounds/Weapons/Touhou_Scorching_Ray_Gun_Attack.ogg" type="OnUse" range="3000" selectionmode="Random" />
+            <Sound file="%ModDir%/Sounds/Weapons/Touhou_Lunarquake/Touhou_Lunarquake_Attack01.ogg" type="OnUse" range="2000" selectionmode="Random" />
+            <Sound file="%ModDir%/Sounds/Weapons/Touhou_Lunarquake/Touhou_Lunarquake_Attack02.ogg" type="OnUse" range="2000" selectionmode="Random" />
             <StatusEffect type="OnUse" target="This">
                 <Explosion range="50.0" force="1.0" shockwave="true" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
             </StatusEffect>
@@ -2727,9 +2725,9 @@
             <Containable items="Touhou_Lunar_Center_Light" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
             <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true" spawnItemRandomly="true" >
-                <SpawnItem identifiers="Touhou_Lunar_Center_Light01" spawnposition="ThisInventory" />
-                <SpawnItem identifiers="Touhou_Lunar_Center_Light02" spawnposition="ThisInventory" />
-                <SpawnItem identifiers="Touhou_Lunar_Center_Light03" spawnposition="ThisInventory" />
+                <SpawnItem identifiers="Touhou_Lunar_Center_Light01" spawnposition="ThisInventory" commonness="1.0" />
+                <SpawnItem identifiers="Touhou_Lunar_Center_Light02" spawnposition="ThisInventory" commonness="1.0" />
+                <SpawnItem identifiers="Touhou_Lunar_Center_Light03" spawnposition="ThisInventory" commonness="1.0" />
             </StatusEffect>
         </ItemContainer>
     </Item>
@@ -2771,10 +2769,13 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="255,255,255,200"/>
             <Attack itemdamage="20" levelwalldamage="20" targetforce="2" targetimpulse="2" penetration="0.1" severlimbsprobability="0.1">
                 <Affliction identifier="Reiki_Pressure" strength="7" />
-                <Affliction identifier="Touhou_Lost_Dream" strength="4" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="1.5" />
                 <Affliction identifier="stun" strength="0.1" />
                 <Affliction identifier="stun" strength="0.1" probability="0.6"/>
             </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Touhou_Lost_Dream" strength="1" probability="0.8" />
+            </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="weldspark" particleamount="2" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />
                 <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>

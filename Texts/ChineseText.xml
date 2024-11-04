@@ -1104,7 +1104,7 @@
   <afflictionname.Touhou_Friendship_Juice_Effect>友谊干杯</afflictionname.Touhou_Friendship_Juice_Effect>
   <afflictiondescription.Touhou_Friendship_Juice_Effect>减少友军伤害</afflictiondescription.Touhou_Friendship_Juice_Effect>
   <entityname.Touhou_Friendship_Juice>友谊果汁</entityname.Touhou_Friendship_Juice>
-  <entitydescription.Touhou_Friendship_Juice>喝下后，可以提供十分钟的友谊效果，减少40%的友军伤害</entitydescription.Touhou_Friendship_Juice>
+  <entitydescription.Touhou_Friendship_Juice>喝下后，可以提供十分钟的友谊效果，减少20%的友军伤害</entitydescription.Touhou_Friendship_Juice>
   <entityname.Koishi_gear>‖color:60,255,155,255‖恋恋装束‖end‖</entityname.Koishi_gear>
   <entitydescription.Koishi_gear>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_gear>
   <entityname.Koishi_Plus>‖color:60,255,155,255‖恋恋装束+‖end‖</entityname.Koishi_Plus>

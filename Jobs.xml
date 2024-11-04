@@ -130,8 +130,8 @@
   <!--敌对魔法使-->
   <Job
           identifier="Magician_Enemy"
-          initialcount="1"
-          AllowAlways="true"
+          initialcount="0"
+          AllowAlways="false"
           pricemultiplier="1"
           uicolor="0.92,0.92,0.92,0.92"
           idlebehavior="Active"
