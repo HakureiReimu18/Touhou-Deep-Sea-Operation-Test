@@ -4260,7 +4260,7 @@
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5" displayname="recycleitem" >
             <RequiredSkill identifier="weapons" level="65" />
-            <RequiredItem identifier="Reiki_Dust" amount="16"/>
+            <RequiredItem identifier="Reiki_Dust" amount="6"/>
             <RequiredItem identifier="Huo_Alchemical" amount="2"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
             <RequiredItem identifier="Touhou_Love_Maze" mincondition="0.0" maxcondition="0.5" usecondition="false" />

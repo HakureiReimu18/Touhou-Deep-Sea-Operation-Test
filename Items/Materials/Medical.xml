@@ -13,7 +13,7 @@
         <PreferredContainer secondary="outposttrashcan" amount="2" spawnprobability="0.3" />
         <PreferredContainer secondary="researchcontainer" spawnprobability="0.04"/>
         <PreferredContainer primary="medcab" secondary="medcontainer"/>
-        <Price baseprice="40" >
+        <Price baseprice="80" >
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
             <Price storeidentifier="merchantcity" minavailable="8" />
             <Price storeidentifier="merchantresearch" minavailable="8" />
@@ -26,15 +26,15 @@
             <RequiredSkill identifier="medical" level="40" />
             <RequiredItem tag="plantitem" />
         </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" displayname="Touhou_Efficient_Extraction" requiredtime="1" amount="4">
+        <Fabricate suitablefabricators="Magic_Altar" displayname="Touhou_Efficient_Extraction" requiredtime="0.5" amount="4">
             <RequiredSkill identifier="medical" level="40" />
             <RequiredItem identifier="badcreepingorange" />
         </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" displayname="Touhou_Efficient_Extraction" requiredtime="1" amount="4">
+        <Fabricate suitablefabricators="Magic_Altar" displayname="Touhou_Efficient_Extraction" requiredtime="0.5" amount="4">
             <RequiredSkill identifier="medical" level="40" />
             <RequiredItem identifier="badraptorbane" />
         </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" displayname="Touhou_Efficient_Extraction" requiredtime="1" amount="8">
+        <Fabricate suitablefabricators="Magic_Altar" displayname="Touhou_Efficient_Extraction" requiredtime="0.5" amount="4">
             <RequiredSkill identifier="medical" level="40" />
             <RequiredItem tag="Touhou_Plantitem" />
         </Fabricate>
