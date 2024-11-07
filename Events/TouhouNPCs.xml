@@ -152,7 +152,7 @@
           <talent identifier="buff"/>
           <talent identifier="firstaidtraining"/>
           <talent identifier="mudraptorwrestler"/>
-          <talent identifier="heavylifting"/>
+          <talent identifier="Talents_Yokai_Primary11"/>
           <talent identifier="nonthreatening"/>
           <talent identifier="olympian"/>
         </talents>
@@ -188,7 +188,7 @@
           <talent identifier="buff"/>
           <talent identifier="firstaidtraining"/>
           <talent identifier="mudraptorwrestler"/>
-          <talent identifier="heavylifting"/>
+          <talent identifier="Talents_Yokai_Primary11"/>
           <talent identifier="nonthreatening"/>
           <talent identifier="olympian"/>
         </talents>
@@ -266,7 +266,7 @@
           <talent identifier="buff"/>
           <talent identifier="firstaidtraining"/>
           <talent identifier="mudraptorwrestler"/>
-          <talent identifier="heavylifting"/>
+          <talent identifier="Talents_Yokai_Primary11"/>
           <talent identifier="nonthreatening"/>
           <talent identifier="olympian"/>
         </talents>
@@ -305,7 +305,7 @@
           <talent identifier="buff"/>
           <talent identifier="firstaidtraining"/>
           <talent identifier="mudraptorwrestler"/>
-          <talent identifier="heavylifting"/>
+          <talent identifier="Talents_Yokai_Primary11"/>
           <talent identifier="nonthreatening"/>
           <talent identifier="olympian"/>
         </talents>
@@ -341,7 +341,7 @@
           <talent identifier="buff"/>
           <talent identifier="firstaidtraining"/>
           <talent identifier="mudraptorwrestler"/>
-          <talent identifier="heavylifting"/>
+          <talent identifier="Talents_Yokai_Primary11"/>
           <talent identifier="olympian"/>
         </talents>
       </Character>
@@ -377,7 +377,7 @@
           <talent identifier="buff"/>
           <talent identifier="firstaidtraining"/>
           <talent identifier="mudraptorwrestler"/>
-          <talent identifier="heavylifting"/>
+          <talent identifier="Talents_Yokai_Primary11"/>
           <talent identifier="nonthreatening"/>
           <talent identifier="olympian"/>
         </talents>

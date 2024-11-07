@@ -109,7 +109,7 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="0.5" amount="3">
             <RequiredSkill identifier="Touhou_Magic" level="40" />
             <RequiredItem identifier="Reiki_Dust" />
-            <RequiredItem identifier="Plant_Essential_Oil" amount="2" />
+            <RequiredItem identifier="Plant_Essential_Oil" />
             <RequiredItem identifier="aluminium" />
             <RequiredItem identifier="Spiritual_Water" mincondition="0.0099" usecondition="true"/>
         </Fabricate>
@@ -172,7 +172,7 @@
         </Price>
         <Deconstruct time="1">
         </Deconstruct>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="0.5" amount="2">
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="0.5" amount="3">
             <RequiredSkill identifier="Touhou_Magic" level="30" />
             <RequiredItem identifier="carbon" amount="2"/>
             <RequiredItem identifier="iron" />

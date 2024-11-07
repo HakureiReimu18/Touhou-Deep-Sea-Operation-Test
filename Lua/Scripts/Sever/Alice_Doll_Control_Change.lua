@@ -55,7 +55,7 @@ local function CharacterToClient(character)
 
     return nil
 end
-
+--[[
 TLE.ItemMethods = {} -- with the identifier as the key
 
 TLE.ItemMethods.Touhou_Elixir_Of_Penglai = function(targetCharacter)
@@ -67,5 +67,5 @@ TLE.ItemMethods.Touhou_Elixir_Of_Penglai = function(targetCharacter)
                 client.SetClientCharacter(targetCharacter)
             end
         end
-end
+end]]
 

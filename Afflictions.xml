@@ -1711,4 +1711,24 @@
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
+
+  <!--锁定幻想潜水服效果-->
+  <Affliction name=""
+              identifier="gensokyo_divinggear_Locked_Effect"
+              description=""
+              type="gensokyo_divinggear_Locked_Effect"
+              isbuff="true"
+              limbspecific="false"
+              indicatorlimb="Torso"
+              maxstrength="1"
+              Duration="10.0"
+              showiconthreshold="100"
+              showinhealthscannerthreshold="100"
+              affectmachines="true"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn,bleeding,bloodloss,debuff,gaze,alieninfection,stun,fractures,oxygenlow" minresistance="0.75" maxresistance="0.75" >
+      <StatValue stattype="AttackMultiplier" value="1.0" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
 </Afflictions>

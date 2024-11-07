@@ -49,8 +49,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItem identifier="Magic_Material" amount="4"/>
         </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" amount="6">
-            <RequiredSkill identifier="medical" level="80" />
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" amount="4">
+            <RequiredSkill identifier="Touhou_Magic" level="80" />
             <RequiredItem identifier="alientrinket1" />
             <RequiredItem identifier="alientrinket2" />
             <RequiredItem identifier="alientrinket3" />

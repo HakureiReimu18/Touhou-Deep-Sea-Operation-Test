@@ -456,7 +456,7 @@
   <talentdescription.TenshiTalent>当你身着‖color:gui.orange‖天子装束+‖end‖时，受到近距离攻击会让攻击者短暂逃离一段时间
     \n增加‖color:gui.green‖35%‖end‖气质剥离的效果。
     \n拥有气质剥离‖color:gui.green‖40%‖end‖的抗性。
-    \n食用天桃后，大幅度增强身体抗性,持续‖color:gui.green‖15s‖end‖。</talentdescription.TenshiTalent>
+    \n食用天桃后，大幅度增强身体抗性,持续‖color:gui.green‖10s‖end‖。</talentdescription.TenshiTalent>
   <afflictionname.The_Daughter_Of_Heaven>非想非非想天之女</afflictionname.The_Daughter_Of_Heaven>
   <afflictiondescription.The_Daughter_Of_Heaven>天子是十多岁的少女形象。瞳孔为红色。头发为蓝色长发，末端稍卷。头戴一顶黑色礼帽，帽子上装饰有桃子（可以吃）和桃树叶。</afflictiondescription.The_Daughter_Of_Heaven>
   <afflictionname.Tenshi_Weapons>绯想一般远离浮世的天人</afflictionname.Tenshi_Weapons>
@@ -623,14 +623,14 @@
   <talentdescription.MomiziTalent>当你身着 椛装束+ 时，对咬伤和噬咬的抗性更高。
     \n最大生命值提高‖color:gui.green‖30%‖end‖。
     \n当附近有敌人时，你会得到警戒并提升‖color:gui.green‖15%‖end‖行走速度、‖color:gui.green‖10%‖end‖游泳速度和‖color:gui.green‖15%‖end‖近战攻击速度。
-    \n当你受到攻击后，会短暂提升物理伤害抗性和‖color:gui.green‖40%‖end‖近战攻击伤害。</talentdescription.MomiziTalent>
+    \n当你受到攻击后，会短暂提升物理伤害抗性和‖color:gui.green‖25%‖end‖近战攻击伤害。</talentdescription.MomiziTalent>
   <!--幽香的天赋可能会进一步调整-->
   <talentname.AunnTalent>醉心神佛的守护神兽</talentname.AunnTalent>
   <talentdescription.AunnTalent>当你身着 阿吽装束+ 时，对灵压和精神攻击的抗性更高。
-    \n对非友好角色（红名生物）造成的物理伤害(不包括灵压)和噬咬提高‖color:gui.green‖20%‖end‖。
+    \n对非友好角色（红名生物）造成的物理伤害(不包括灵压)和噬咬提高‖color:gui.green‖15%‖end‖。
     \n对友方角色造成的伤害为原本的‖color:gui.green‖一半‖end‖。
     \n每个巡回一次，可以选择两种状态：狮子/狛犬。
-    \n狛犬：在你身边的船员能获得‖color:gui.orange‖守护神兽‖end‖的效果，该效果能提高‖color:gui.green‖15%‖end‖‖color:gui.orange‖物理伤害和精神病‖end‖抗性，并且对友方角色造成的伤害再下降‖color:gui.green‖25%‖end‖，更快地从‖color:gui.orange‖灵压、噬咬‖end‖中恢复,并提高‖color:gui.green‖20%‖end‖最大生命值。
+    \n狛犬：在你身边的船员能获得‖color:gui.orange‖守护神兽‖end‖的效果，该效果能提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害和精神病‖end‖抗性，并且对友方角色造成的伤害再下降‖color:gui.green‖15%‖end‖，更快地从‖color:gui.orange‖灵压、噬咬‖end‖中恢复,并提高‖color:gui.green‖20%‖end‖最大生命值。
     \n狮子：‖color:gui.orange‖物理伤害‖end‖抗性下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害、攻击速度、移动速度‖end‖增加‖color:gui.green‖20%‖end‖，对非友好角色（红名生物）造成的伤害额外增加‖color:gui.green‖15%‖end‖</talentdescription.AunnTalent>
   <talentname.FlandreTalent>吸血鬼的破坏性妹妹</talentname.FlandreTalent>
   <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+ 时，对物理伤害和烧伤的抗性非常低，同时，受到的物理伤害额外增加‖color:gui.green‖40%‖end‖，受到的烧伤额外增加‖color:gui.green‖70%‖end‖。
@@ -647,7 +647,7 @@
   <talentname.FlandreTalent4>笼中鸟</talentname.FlandreTalent4>
   <talentdescription.FlandreTalent4>当你身着 芙兰朵露装束+ 时,按下下蹲键（默认Ctrl）时，会在周围持续生成可以阻挡所有生物远程弹幕（包括自己）的魔法护盾，
     期间自己的移动速度下降‖color:gui.green‖60%‖end‖，攻击伤害下降‖color:gui.green‖140%‖end‖，技能水平下降‖color:gui.green‖45%‖end‖，但抗性回归正常水平。
-    护盾持续时间‖color:gui.green‖15‖end‖秒，护盾剩余时间大于‖color:gui.green‖0‖end‖时，每秒恢复‖color:gui.green‖1‖end‖秒持续时间。否则将在时间耗尽后第‖color:gui.green‖30‖end‖秒重置时长。</talentdescription.FlandreTalent4>
+    护盾持续时间‖color:gui.green‖10‖end‖秒，护盾剩余时间大于‖color:gui.green‖0‖end‖时，每秒恢复‖color:gui.green‖1‖end‖秒持续时间。否则将在时间耗尽后第‖color:gui.green‖30‖end‖秒重置时长。</talentdescription.FlandreTalent4>
   <entityname.Youmu_Skirt>‖color:156,158,161,255‖妖梦装束（庭师裙）‖end‖</entityname.Youmu_Skirt>
   <entitydescription.Youmu_Skirt>‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）</entitydescription.Youmu_Skirt>
   <entityname.Youmu_Skirt_Plus>‖color:156,158,161,255‖妖梦装束+（庭师裙）‖end‖</entityname.Youmu_Skirt_Plus>
@@ -845,8 +845,8 @@
   <afflictiondescription.Unconfirmed_Fantasy_Flying_Girl_Stage02>生命值低于50%时，提高抗性。</afflictiondescription.Unconfirmed_Fantasy_Flying_Girl_Stage02>
   <!--幽香的天赋可能会进一步调整-->
   <talentname.Lord_Of_Flowers>四季的鲜花之主</talentname.Lord_Of_Flowers>
-  <talentdescription.Lord_Of_Flowers>当你身着 幽香装束+ 时，对毒药和出血的抗性高。
-    \n近战攻击伤害提高‖color:gui.green‖50%‖end‖。
+  <talentdescription.Lord_Of_Flowers>当你身着 幽香装束+ 时，对毒药和出血的抗性提高。
+    \n近战攻击伤害提高‖color:gui.green‖40%‖end‖。
     \n每个巡回都能获得一颗太阳花种子，太阳花会随机掉落不同的花瓣，每种花瓣使用后可以给自己提供不同的加成效果。
     \n使用阳伞时可以格挡远程射弹。</talentdescription.Lord_Of_Flowers>
   <talentname.Touhou_Mysterious_Pearl_Rippling_Talent>灵异珠的波动</talentname.Touhou_Mysterious_Pearl_Rippling_Talent>
@@ -895,7 +895,7 @@
     78个：提高‖color:gui.green‖50%‖end‖技能获取速度，移动速度提高‖color:gui.green‖10%‖end‖。
     156个：提高‖color:gui.green‖20%‖end‖经验获取速度，最大生命值增加‖color:gui.green‖10%‖end‖。
     234个：持续性Buff药物状态效果持续时间增加‖color:gui.green‖50%‖end‖，攻击速度增加‖color:gui.green‖10%‖end‖。
-    312个：提高‖color:gui.green‖25%‖end‖攻击伤害，游泳速度增加‖color:gui.green‖50%‖end‖。</talentdescription.NueTalent>
+    312个：提高‖color:gui.green‖20%‖end‖攻击伤害，游泳速度增加‖color:gui.green‖50%‖end‖。</talentdescription.NueTalent>
   <talentname.Life_And_Death_Half_Half>生与死的Half &amp; Half</talentname.Life_And_Death_Half_Half>
   <talentdescription.Life_And_Death_Half_Half>当你身着‖color:gui.orange‖魂魄妖梦装束+‖end‖时，
     造成的‖color:gui.orange‖近战伤害‖end‖提高‖color:gui.green‖30%‖end‖，
@@ -942,7 +942,7 @@
   <entityname.Touhou_Candy_Cannon_Plus>糖果炮Plus</entityname.Touhou_Candy_Cannon_Plus>
   <entitydescription.Touhou_Candy_Cannon_Plus>甜而不腻</entitydescription.Touhou_Candy_Cannon_Plus>
   <entityname.Touhou_Sugar_Coated_Cannonball>糖衣炮弹</entityname.Touhou_Sugar_Coated_Cannonball>
-  <entitydescription.Touhou_Sugar_Coated_Cannonball>味道甘甜，但其中蕴藏的危险鵺不容忽视</entitydescription.Touhou_Sugar_Coated_Cannonball>
+  <entitydescription.Touhou_Sugar_Coated_Cannonball>味道甘甜，但其中蕴藏的危险也不容忽视</entitydescription.Touhou_Sugar_Coated_Cannonball>
   <entityname.Touhou_Huge_Sugar_Coated_Cannonball>糖衣大炮弹</entityname.Touhou_Huge_Sugar_Coated_Cannonball>
   <entitydescription.Touhou_Huge_Sugar_Coated_Cannonball>更大，更多，更强</entitydescription.Touhou_Huge_Sugar_Coated_Cannonball>
   <entityname.Touhou_Candy_Pouch>糖果袋</entityname.Touhou_Candy_Pouch>

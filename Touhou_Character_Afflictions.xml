@@ -587,8 +587,8 @@
     <Affliction identifier="Tenshi_Weapons" type="Tenshi_Weapons" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" strengthchange="-9" resistancefor="stun,debuff" minresistance="0.1" maxresistance="0.1">
-            <StatValue stattype="AttackMultiplier" value="0.2" />
-            <StatValue stattype="MaximumHealthMultiplier" value="0.2" />
+            <StatValue stattype="AttackMultiplier" value="0.15" />
+            <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Tenshi_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -639,7 +639,7 @@
             treatmentthreshold="1000"
             showicontoothersthreshold="1000"
             showinhealthscannerthreshold="1000"
-            duration="15"
+            duration="10"
             maxstrength="1">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn,bleeding,bloodloss,poison,Aura_Strip,gaze,debuff,infection,triton_7L,tsm_bl" minresistance="0.45" maxresistance="0.45">
             <StatusEffect target="Character">
@@ -696,7 +696,7 @@
             duration="10"
             maxstrength="1">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage,stun" minresistance="0.1" maxresistance="0.1">
-            <StatValue stattype="MeleeAttackMultiplier" value="0.4"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.25"/>
         </Effect>
         <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
     </Affliction>
@@ -729,7 +729,7 @@
     <!--太阳花田的主人-->
     <Affliction identifier="Flowers_Of_Four_Seasons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="poison,bleedinng" minresistance="0.4" maxresistance="0.4"
+        <Effect minstrength="0" maxstrength="10" resistancefor="poison,bleedinng" minresistance="0.25" maxresistance="0.25"
                 strengthchange="-9">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional HealthPercentage="lt 100"/>
@@ -737,7 +737,7 @@
                 <ReduceAffliction type="damage" strength="0.02" />
                 <ReduceAffliction type="burn" strength="0.02" />
             </StatusEffect>
-            <StatValue stattype="MeleeAttackMultiplier" value="0.5" />
+            <StatValue stattype="MeleeAttackMultiplier" value="0.4" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Flowers_Of_Four_Seasons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -837,7 +837,7 @@
     <!--狛犬-->
     <Affliction identifier="Aunn_Koma_Inu" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" resetbetweenrounds="true" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,psychosis" minresistance="0.15" maxresistance="0.15"
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,psychosis" minresistance="0.1" maxresistance="0.1"
                 strengthchange="-1">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional Reiki_Pressure="gt 0"/>
@@ -845,7 +845,7 @@
                 <ReduceAffliction type="Reiki_Pressure" strength="0.06" />
                 <ReduceAffliction type="Touhou_Bite" strength="0.06" />
             </StatusEffect>
-            <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
+            <StatValue stattype="TeamAttackMultiplier" value="-0.15" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Aunn_Koma_Inu.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -853,14 +853,14 @@
     <!--守护神兽-->
     <Affliction identifier="Aunn_Koma_Inu_Others" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" resetbetweenrounds="true" hideiconafterdelay="false" maxstrength="10"
                 duration="5.0" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,psychosis" minresistance="0.15" maxresistance="0.15">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,psychosis" minresistance="0.1" maxresistance="0.1">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional Reiki_Pressure="gt 0"/>
                 <Conditional Touhou_Bite="gt 0"/>
-                <ReduceAffliction type="Reiki_Pressure" strength="0.08" />
-                <ReduceAffliction type="Touhou_Bite" strength="0.08" />
+                <ReduceAffliction type="Reiki_Pressure" strength="0.06" />
+                <ReduceAffliction type="Touhou_Bite" strength="0.06" />
             </StatusEffect>
-            <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
+            <StatValue stattype="TeamAttackMultiplier" value="-0.15" />
             <StatValue stattype="MaximumHealthMultiplier" value="0.2" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Aunn_Koma_Inu.png" sourcerect="0,0,128,128" color="255,255,255,255" />
@@ -938,7 +938,7 @@
     <!--笼中鸟CD-->
     <Affliction name="笼中鸟护盾剩余时长" identifier="FlandreTalent4_Effect_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="15"
                  iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="15" strengthchange="-1.0"/>
+        <Effect minstrength="0" maxstrength="10" strengthchange="-1.0"/>
         <Icon texture="%ModDir%/Images/Afflictions/FlandreTalent4_Effect_CD.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
@@ -1004,7 +1004,7 @@
     <Affliction identifier="Unconfirmed_Fantasy_Flying_Girl_Level04" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="1" strengthchange="-0.2" >
-            <StatValue stattype="AttackMultiplier" value="0.25" />
+            <StatValue stattype="AttackMultiplier" value="0.2" />
             <StatValue stattype="SwimmingSpeed" value="0.5" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Unconfirmed_Fantasy_Flying_Girl_Level04.png" sourcerect="0,0,128,128" color="255,255,255,255" />

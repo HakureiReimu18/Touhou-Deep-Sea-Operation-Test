@@ -1788,7 +1788,7 @@
 
     <!--七曜魔导书-->
     <Item name="七曜魔导书" identifier="Touhou_Elements_Book" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate"
-          tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="0.4" impactsoundtag="impact_metal_light">
+          tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="0.4" impactsoundtag="impact_metal_light">
         <PreferredContainer secondary="abandonedmedcab" spawnprobability="0.01"/>
         <Price baseprice="12000" minleveldifficulty="25" >
             <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
@@ -4889,11 +4889,10 @@
         <SkillRequirementHint identifier="Touhou_Magic" level="40" />
     </Item>
 
-<!--    &lt;!&ndash;七曜魔导书&ndash;&gt;
-    <Item name="七曜魔导书" identifier="Touhou_Alice_Magic_Book" subcategory="Touhou" category="Equipment,Weapon" cargocontaineridentifier="metalcrate"
-          tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="0.4" impactsoundtag="impact_metal_light">
-        <PreferredContainer secondary="abandonedmedcab" spawnprobability="0.01"/>
-        <Price baseprice="12000" minleveldifficulty="25" >
+    <!--魔法之国的魔导书-->
+    <Item name="魔法之国的魔导书" identifier="Touhou_Alice_Magic_Book" subcategory="Touhou" category="Equipment,Weapon" cargocontaineridentifier="metalcrate"
+          tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="0.4" impactsoundtag="impact_metal_light">
+        <Price baseprice="10000" minleveldifficulty="20" >
             <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
             <Price storeidentifier="merchantresearch" minavailable="1.4" />
@@ -4902,26 +4901,27 @@
         </Price>
         <Deconstruct time="5">
             <Item identifier="Magic_Material" />
-            <Item identifier="Score_Point" amount="2" />
+            <Item identifier="Power_Point" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="20">
             <RequiredSkill identifier="weapons" level="40" />
             <RequiredSkill identifier="Touhou_Magic" level="100" />
             <RequiredItem identifier="organicfiber" amount="4"/>
-            <RequiredItem identifier="Seven_Elements_Alchemical_Fake" />
-            <RequiredItem identifier="Score_Point" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="4" />
+            <RequiredItem identifier="Mu_Alchemical" amount="2" />
+            <RequiredItem identifier="Tu_Alchemical" amount="2" />
+            <RequiredItem identifier="Power_Point"/>
         </Fabricate>
         <InventoryIcon name="" texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Magic_Book.png" sourcerect="0,0,80,64" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Magic_Book.png" sourcerect="80,0,164,112" depth="0.3" origin="0.5,0.5" />
-
         <Body width="72" height="72" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="40,-10" handle1="-26,-11" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
-                <Conditional The_Still_Library="gt 0"/>
-                <Affliction identifier="Patchouli_Weapons" strength="50" />
+                <Conditional Puppeteer_Of_Seven_Colors="gt 0"/>
+                <Affliction identifier="Alice_Weapons" strength="50" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character">
-                <Conditional The_Still_Library="eq 0"/>
+                <Conditional Puppeteer_Of_Seven_Colors="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -4946,9 +4946,14 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
+
+            <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="1" stackable="false" >
+                <SpawnItem identifiers="Touhou_Alice_Magic_Book_Ammo" spawnposition="ThisInventory"/>
+            </StatusEffect>
+
         </Holdable>
-        &lt;!&ndash;武器参数&ndash;&gt;
-        <RangedWeapon weapondamagemodifier="1.0" barrelpos="77,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="12">
+        <!--武器参数-->
+        <RangedWeapon barrelpos="77,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="12">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="91,0,210,210" scale="2.5"/>
             <StatusEffect type="OnUse" target="This">
@@ -4960,20 +4965,16 @@
                 <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Projectile03.ogg" type="OnUse" volume="1.4" range="1000" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Contained" >
-                <RequiredItems items="Elements_Book_Ammo" type="Contained" />
+                <RequiredItems items="Touhou_Alice_Magic_Book_Ammo" type="Contained" />
                 <Use />
             </StatusEffect>
             <RequiredSkill identifier="Touhou_Magic" level="100" />
-            <RequiredItems items="Elements_Book_Ammo" type="Contained" />
+            <RequiredItems items="Touhou_Alice_Magic_Book_Ammo" type="Contained" />
         </RangedWeapon>
 
-        <ItemContainer autofill="false" itempos="27,10" iteminterval="0,-4" capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorslot="0" removecontaineditemsondeconstruct="true" >
-            <Containable items="Elements_Book_Ammo" />
+        <ItemContainer autofill="false" itempos="27,10" iteminterval="0,-4" capacity="1" maxstacksize="1" drawinventory="false" hideitems="true" containedstateindicatorslot="0" removecontaineditemsondeconstruct="true" >
+            <Containable items="Touhou_Alice_Magic_Book_Ammo" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <SlotIcon slotindex="0" texture="%ModDir%/Images/Tools/Element_In_Bottle_Indicator.png" sourcerect="0,0,108,288" origin="0.5,0.5" />
-            <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="Seven_Elements_Alchemical" hide="true" />
-            </SubContainer>
         </ItemContainer>
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.32" anchor="BottomLeft" absoluteoffset="20,95" style="ItemUI" />
@@ -5067,7 +5068,115 @@
             <QualityStat stattype="Condition" value="0.257" />
         </Quality>
         <SkillRequirementHint identifier="Touhou_Magic" level="100" />
-    </Item>-->
+    </Item>
+
+
+    <!--魔界之火-->
+    <Item
+            name="魔界之火"
+            identifier="Touhou_Alice_Magic_Book_Ammo"
+            category="Material,Alien"
+            subcategory="Touhou"
+            maxstacksize="32"
+            tags="smallitem"
+            canbepicked="true"
+            description=""
+            scale="0.15"
+            impactsoundtag="impact_soft"
+            hideinmenus="true">
+        <Sprite texture="%ModDir%/Images/Alchemical/Element_In_Bottle.png" sourcerect="126,0,136,292" depth="0.5" origin="0.5,0.5" />
+        <Body width="20" height="90" density="10" />
+        <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" >
+            <StatusEffect type="OnUse" target="This" condition="1" Interval="5" disabledeltatime="true" />
+        </Holdable>
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Alice_Magic_Book_Bolt" removecontaineditemsondeconstruct="true"
+                       drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <Containable items="Touhou_Alice_Magic_Book_Bolt" />
+            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true" >
+                <SpawnItem identifiers="Touhou_Alice_Magic_Book_Bolt" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+
+    <!--魔界之火飞弹-->
+    <Item name="魔界之火飞弹" identifier="Elements_Jin_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
+        <Body width="90" height="20" density="9" />
+        <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
+        <Projectile characterusable="false" launchimpulse="28" hitscan="false" maxtargetstohit="2" removeonhit="true" friendlyfire="true">
+            <Attack structuredamage="2" itemdamage="10" targetforce="2" targetimpulse="2" severlimbsprobability="0.5" penetration="0.25">
+                <Affliction identifier="lacerations" strength="15" />
+                <Affliction identifier="bleeding" strength="15" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Touhou_Jin_Elements" strength="7" />
+                <Affliction identifier="Touhou_Jin_Elements" strength="7" probability="0.15" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Conditional Touhou_Tu_Elements="gt 7"/>
+                <Affliction identifier="Touhou_Tu_Jin_Elements" strength="7" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Conditional Touhou_Shui_Elements="gt 7"/>
+                <Affliction identifier="Touhou_Jin_Shui_Elements" strength="7" />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This" lifetime="0.9">
+                <ParticleEmitter particle="GlowDot" scalemin="1.1" scalemax="1.4" particlespersecond="70" anglemin="0" anglemax="360" colormultiplier="255,255,255,170" />
+                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" particleamount="5" anglemin="125" anglemax="235" velocitymin="100" velocitymax="200"
+                                 scalemin="0.07" scalemax="0.14" drawontop="true" colormultiplier="255,255,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" Condition="-100" stackable="false"/>
+            <StatusEffect type="OnBroken" target="This">
+                <SpawnItem identifier="Elements_Jin_Bolt_Shrapnel" spawnposition="This" count="3" aimspread="240" rotationtype="Collider" rotation="0" />
+                <Explosion range="5.0" structuredamage="10" force="2.0" itemdamage="10" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="0" penetration="0.2">
+                    <Affliction identifier="lacerations" strength="3.5" />
+                    <Affliction identifier="Reiki_Pressure" strength="3.5" />
+                </Explosion>
+                <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="0.4" selectionmode="Random" range="1000" />
+                <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="0.4" selectionmode="Random" range="1000" />
+                <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="2000" scalemin="0.2" scalemax="0.4" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="10" velocitymax="200" scalemin="0.07" scalemax="0.14" colormultiplier="255,255,255,180" />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+    <!--魔界之火散弹-->
+    <Item name="" identifier="Elements_Jin_Bolt_Shrapnel" category="Misc" scale="0.15" sonarsize="1" hideinmenus="true" maxstacksize="8">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
+        <Body width="90" height="20" density="9" />
+        <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
+        <Projectile characterusable="false" launchimpulse="20" hitscan="false" maxtargetstohit="3" removeonhit="true" friendlyfire="false">
+            <Attack structuredamage="2" itemdamage="2" targetforce="21" targetimpulse="12" severlimbsprobability="0.1" penetration="0.05">
+                <Affliction identifier="lacerations" strength="2.0" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Touhou_Jin_Elements" strength="0.7" />
+                <Affliction identifier="Touhou_Jin_Elements" strength="0.7" probability="0.15" />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This" lifetime="0.5">
+                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" particleamount="3" anglemin="125" anglemax="235" velocitymin="100" velocitymax="200"
+                                 scalemin="0.07" scalemax="0.14" drawontop="true" colormultiplier="255,255,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="10" velocitymax="200" scalemin="0.07" scalemax="0.14" colormultiplier="255,255,255,180"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
 
 
     <!--深红幻想乡-->
@@ -5164,7 +5273,7 @@
             <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
                 <Affliction identifier="Reiki_Pressure" strength="4" />
                 <Affliction identifier="internaldamage" strength="3" />
-                <Affliction identifier="burn" strength="10" />
+                <Affliction identifier="burn" strength="8" />
                 <Affliction identifier="Touhou_Bite" strength="10" />
                 <Affliction identifier="bleeding" strength="33" />
                 <Affliction identifier="bleeding" strength="33" probability="0.1" />
