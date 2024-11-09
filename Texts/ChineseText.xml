@@ -1203,6 +1203,8 @@
 <!--  <ScarletMode.Timer>高速计时</ScarletMode.Timer>-->
   <afflictionname.Touhou_Tide_Bolt_Effect>潮汐效应</afflictionname.Touhou_Tide_Bolt_Effect>
   <afflictiondescription.Touhou_Tide_Bolt_Effect>月球背面的神秘海洋，在你体内起起伏伏，破坏了你的身体防御</afflictiondescription.Touhou_Tide_Bolt_Effect>
+  <afflictionname.Touhou_Alice_Magic_Book_Bolt_Effect>魔界之火</afflictionname.Touhou_Alice_Magic_Book_Bolt_Effect>
+  <afflictiondescription.Touhou_Alice_Magic_Book_Bolt_Effect>来自魔法之国的火焰，破坏你的身体防御的同时，还灼烧着你每一寸皮肤</afflictiondescription.Touhou_Alice_Magic_Book_Bolt_Effect>
   <entityname.Touhou_Lunarquake>月震</entityname.Touhou_Lunarquake>
   <entitydescription.Touhou_Lunarquake>河童们来到木卫二后，利用附近特殊的天体运行关系制造的神秘武器。它会根据使用者射击的时间逐渐提高射速。\n使用‖color:gui.yellow‖月震中心‖end‖发射弹幕</entitydescription.Touhou_Lunarquake>
   <entityname.Touhou_Lunar_Center>月震中心</entityname.Touhou_Lunar_Center>

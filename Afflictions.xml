@@ -1594,7 +1594,7 @@
               limbspecific="false"
               indicatorlimb="Head"
               maxstrength="4"
-              affectmachines="false"
+              affectmachines="true"
               iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="4"/>
     <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="-0.25" maxresistance="-0.25" strengthchange="-1.0">
@@ -1730,5 +1730,43 @@
       <StatValue stattype="AttackMultiplier" value="1.0" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+
+  <!--魔界之火-->
+  <Affliction name="魔界之火"
+              identifier="Touhou_Alice_Magic_Book_Bolt_Effect"
+              type="debuff"
+              limbspecific="false"
+              indicatorlimb="Head"
+              maxstrength="10"
+              affectmachines="true"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="10"/>
+    <Effect minstrength="0" maxstrength="5" resistancefor="damage,burn,stun" minresistance="0" maxresistance="-0.45" strengthchange="-0.1">
+      <StatusEffect target="Character" disabledeltatime="true" Interval="3.0" >
+        <Explosion range="50.0" force="4.0" severlimbsprobability="0.2" penetration="0.15">
+          <Affliction identifier="Touhou_Lost_Dream" strength="6" />
+          <Affliction identifier="burn" strength="10" />
+          <Affliction identifier="explosiondamage" strength="10" />
+        </Explosion>
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="1.5" maxinterval="3">
+      <StatusEffect target="Character">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="200" distancemax="250" velocitymin="-500" velocitymax="-900" particlespersecond="120" colormultiplier="255,100,100,255" />
+        <Affliction identifier="burn" amount="7" dividebylimbcount="true"/>
+        <Affliction identifier="Reiki_Pressure" amount="1"/>
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="1" maxinterval="2">
+      <StatusEffect target="Character">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="200" distancemax="250" velocitymin="-500" velocitymax="-900" particlespersecond="120" colormultiplier="255,100,100,255" />
+        <Affliction identifier="lacerations" amount="15" dividebylimbcount="true"/>
+        <Affliction identifier="bleeding" strength="15" probability="0.15" dividebylimbcount="true" />
+        <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.15" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 </Afflictions>

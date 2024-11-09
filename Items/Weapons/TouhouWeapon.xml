@@ -4978,89 +4978,57 @@
         </ItemContainer>
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.32" anchor="BottomLeft" absoluteoffset="20,95" style="ItemUI" />
-            <Button text="木元素生成">
-                <StatusEffect type="OnUse" target="Contained" targetslot="0" disabledeltatime="true">
-                    <Remove />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
+            <Button text="普通人偶">
+                <StatusEffect type="OnUse" target="Character" targetslot="0" disabledeltatime="true">
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" targetslot="0" disabledeltatime="true" delay="0.1">
-                    <SpawnItem identifier="Mu_Alchemical_Locked" spawnposition="ThisInventory" />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
+                <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
+                    <RequiredAffliction type="damage" minstrength="5" />
+                    <ReduceAffliction identifier="Alice_Doll_Energy" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
             </Button>
-            <Button text="火元素生成">
-                <StatusEffect type="OnUse" target="Contained" targetslot="0" disabledeltatime="true">
-                    <Remove />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
+            <Button text="法兰西人偶">
+                <StatusEffect type="OnUse" target="Character" targetslot="0" disabledeltatime="true">
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" targetslot="0" disabledeltatime="true" delay="0.1">
-                    <SpawnItem identifier="Huo_Alchemical_Locked" spawnposition="ThisInventory" />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
+                <StatusEffect type="OnUse" target="Character" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
             </Button>
-            <Button text="土元素生成">
-                <StatusEffect type="OnUse" target="Contained" targetslot="0" disabledeltatime="true">
-                    <Remove />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
+            <Button text="荷兰人偶">
+                <StatusEffect type="OnUse" target="Character" targetslot="0" disabledeltatime="true">
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" targetslot="0" disabledeltatime="true" delay="0.1">
-                    <SpawnItem identifier="Tu_Alchemical_Locked" spawnposition="ThisInventory" />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
+                <StatusEffect type="OnUse" target="Character" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
             </Button>
-            <Button text="金元素生成">
-                <StatusEffect type="OnUse" target="Contained" targetslot="0" disabledeltatime="true">
-                    <Remove />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
+            <Button text="伦敦人偶">
+                <StatusEffect type="OnUse" target="Character" targetslot="0" disabledeltatime="true">
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" targetslot="0" disabledeltatime="true" delay="0.1">
-                    <SpawnItem identifier="Jin_Alchemical_Locked" spawnposition="ThisInventory" />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
+                <StatusEffect type="OnUse" target="Character" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
             </Button>
-            <Button text="水元素生成">
-                <StatusEffect type="OnUse" target="Contained" targetslot="0" disabledeltatime="true">
-                    <Remove />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
+            <Button text="歌莉娅人偶">
+                <StatusEffect type="OnUse" target="Character" targetslot="0" disabledeltatime="true">
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" targetslot="0" disabledeltatime="true" delay="0.1">
-                    <SpawnItem identifier="Shui_Alchemical_Locked" spawnposition="ThisInventory" />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
+                <StatusEffect type="OnUse" target="Character" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-1" />
             </Button>
-            <Button text="烈阳生成">
-                <StatusEffect type="OnUse" target="Contained" targetslot="0" disabledeltatime="true">
-                    <Remove />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
+            <Button text="上海人偶">
+                <StatusEffect type="OnUse" target="Character" targetslot="0" disabledeltatime="true">
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" targetslot="0" disabledeltatime="true" delay="0.1">
-                    <SpawnItem identifier="Yang_Alchemical_Locked" spawnposition="ThisInventory" />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-7" />
+                <StatusEffect type="OnUse" target="Character" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-7" />
             </Button>
-            <Button text="皓月生成">
-                <StatusEffect type="OnUse" target="Contained" targetslot="0" disabledeltatime="true">
-                    <Remove />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
+            <Button text="蓬莱人偶">
+                <StatusEffect type="OnUse" target="Character" targetslot="0" disabledeltatime="true">
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" targetslot="0" disabledeltatime="true" delay="0.1">
-                    <SpawnItem identifier="Yin_Alchemical_Locked" spawnposition="ThisInventory" />
-                    <RequiredItems items="Seven_Elements_Alchemical" type="Contained" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-7" />
+                <StatusEffect type="OnUse" target="Character" targetslot="1" disabledeltatime="true" delay="0.1" Condition="-7" />
             </Button>
 
         </CustomInterface>
@@ -5101,39 +5069,47 @@
 
 
     <!--魔界之火飞弹-->
-    <Item name="魔界之火飞弹" identifier="Elements_Jin_Bolt" tags="Elements_Bolt,Touhou_Magic_Danmu" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="魔界之火飞弹" identifier="Touhou_Alice_Magic_Book_Bolt" tags="Touhou_Magic_Danmu" category="Misc" scale="0.3" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
-        <Body width="90" height="20" density="9" />
+        <Body width="120" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" maxtargetstohit="2" removeonhit="true" friendlyfire="true">
-            <Attack structuredamage="2" itemdamage="10" targetforce="2" targetimpulse="2" severlimbsprobability="0.5" penetration="0.25">
-                <Affliction identifier="lacerations" strength="15" />
+            <Attack structuredamage="2" itemdamage="20" targetforce="2" targetimpulse="2" severlimbsprobability="0.5" penetration="0.25">
+                <Affliction identifier="burn" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="explosiondamage" strength="5" />
                 <Affliction identifier="bleeding" strength="15" />
+                <Affliction identifier="stun" strength="0.1" />
+                <Affliction identifier="stun" strength="0.1" probability="0.35" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Touhou_Jin_Elements" strength="7" />
-                <Affliction identifier="Touhou_Jin_Elements" strength="7" probability="0.15" />
+                <Affliction identifier="Touhou_Alice_Magic_Book_Bolt_Effect" strength="0.25" />
+                <Affliction identifier="Touhou_Alice_Magic_Book_Bolt_Effect" strength="1" probability="0.15" />
+                <Affliction identifier="Touhou_Huo_Elements" strength="7" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Conditional Touhou_Mu_Elements_NoEffects="gt 7"/>
+                <Affliction identifier="Touhou_Mu_Huo_Elements" strength="7" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Conditional Touhou_Tu_Elements="gt 7"/>
-                <Affliction identifier="Touhou_Tu_Jin_Elements" strength="7" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                <Conditional Touhou_Shui_Elements="gt 7"/>
-                <Affliction identifier="Touhou_Jin_Shui_Elements" strength="7" />
+                <Affliction identifier="Touhou_Huo_Tu_Elements" strength="7" />
             </StatusEffect>
             <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
                 <Remove />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" lifetime="0.9">
-                <ParticleEmitter particle="GlowDot" scalemin="1.1" scalemax="1.4" particlespersecond="70" anglemin="0" anglemax="360" colormultiplier="255,255,255,170" />
-                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" particleamount="5" anglemin="125" anglemax="235" velocitymin="100" velocitymax="200"
+                <ParticleEmitter particle="GlowDot" scalemin="1.1" scalemax="1.4" particlespersecond="30" anglemin="0" anglemax="360" colormultiplier="255,255,255,170" />
+                <ParticleEmitter particle="GlowDot" scalemin="1.1" scalemax="1.4" particlespersecond="40" anglemin="0" anglemax="360" colormultiplier="255,100,100,170" />
+                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" particleamount="2" anglemin="125" anglemax="235" velocitymin="100" velocitymax="200"
                                  scalemin="0.07" scalemax="0.14" drawontop="true" colormultiplier="255,255,255,180" />
+                <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" particleamount="3" anglemin="125" anglemax="235" velocitymin="100" velocitymax="200"
+                                 scalemin="0.07" scalemax="0.14" drawontop="true" colormultiplier="255,100,100,180" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This" Condition="-100" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
-                <SpawnItem identifier="Elements_Jin_Bolt_Shrapnel" spawnposition="This" count="3" aimspread="240" rotationtype="Collider" rotation="0" />
-                <Explosion range="5.0" structuredamage="10" force="2.0" itemdamage="10" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="0" penetration="0.2">
+                <SpawnItem identifier="Touhou_Alice_Magic_Book_Bolt_Shrapnel" spawnposition="This" count="3" aimspread="240" rotationtype="Collider" rotation="0" />
+                <Explosion range="15.0" force="2.0" itemdamage="20" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="0" penetration="0.2">
                     <Affliction identifier="lacerations" strength="3.5" />
                     <Affliction identifier="Reiki_Pressure" strength="3.5" />
                 </Explosion>
@@ -5151,18 +5127,16 @@
     </Item>
 
     <!--魔界之火散弹-->
-    <Item name="" identifier="Elements_Jin_Bolt_Shrapnel" category="Misc" scale="0.15" sonarsize="1" hideinmenus="true" maxstacksize="8">
+    <Item name="" identifier="Touhou_Alice_Magic_Book_Bolt_Shrapnel" category="Misc" scale="0.15" sonarsize="1" hideinmenus="true" maxstacksize="8">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="90" height="20" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="20" hitscan="false" maxtargetstohit="3" removeonhit="true" friendlyfire="false">
             <Attack structuredamage="2" itemdamage="2" targetforce="21" targetimpulse="12" severlimbsprobability="0.1" penetration="0.05">
-                <Affliction identifier="lacerations" strength="2.0" />
+                <Affliction identifier="lacerations" strength="1.0" />
+                <Affliction identifier="explosiondamage" strength="1.0" />
+                <Affliction identifier="burn" strength="1.0" />
             </Attack>
-            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Touhou_Jin_Elements" strength="0.7" />
-                <Affliction identifier="Touhou_Jin_Elements" strength="0.7" probability="0.15" />
-            </StatusEffect>
             <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
                 <Remove />
             </StatusEffect>
@@ -5271,8 +5245,8 @@
             </StatusEffect>-->
 
             <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="4" />
-                <Affliction identifier="internaldamage" strength="3" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
+                <Affliction identifier="internaldamage" strength="4" />
                 <Affliction identifier="burn" strength="8" />
                 <Affliction identifier="Touhou_Bite" strength="10" />
                 <Affliction identifier="bleeding" strength="33" />
@@ -5288,7 +5262,7 @@
                 <Conditional HasTag="eq ScarletMode_Open"/>
                 <Affliction identifier="bleeding" strength="33" />
                 <Affliction identifier="bleeding" strength="33" probability="0.5" />
-                <Affliction identifier="internaldamage" strength="4" />
+                <Affliction identifier="internaldamage" strength="3" />
                 <Affliction identifier="Touhou_Bite" strength="6" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
