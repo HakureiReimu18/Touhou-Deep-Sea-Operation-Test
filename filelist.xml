@@ -76,6 +76,7 @@
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/MomiziTail.xml"/>
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/PieceWings.xml"/>
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/CirnoWings.xml"/>
+  <Other file="%ModDir%/Characters/HumanTouhou_Tail/SunnyWings.xml"/>
   <Character file="%ModDir%/Characters/Maoyu/Maoyu.xml" />
   <Character file="%ModDir%/Characters/Little_Ghost/Little_Ghost.xml"/>
   <Character file="%ModDir%/Characters/Little_photosphere/Little_photosphere.xml"/>

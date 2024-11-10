@@ -1116,7 +1116,7 @@
   <talentname.KoishiTalent>地底蔷薇</talentname.KoishiTalent>
   <talentdescription.KoishiTalent>当你身着恋恋装束+时，
     \n增加‖color:gui.green‖15%‖end‖完成任务获得的经验，但减少‖color:gui.green‖30%‖end‖‖color:gui.orange‖技能获取速度‖end‖。
-    ‖color:gui.orange‖攻击伤害‖end‖减少‖color:gui.green‖15%‖end‖，但‖color:gui.orange‖近战伤害‖end‖增加‖color:gui.green‖30%‖end‖。
+    ‖color:gui.orange‖远程攻击伤害‖end‖减少‖color:gui.green‖15%‖end‖，但‖color:gui.orange‖近战伤害‖end‖增加‖color:gui.green‖30%‖end‖。
     \n每隔随机时间‖color:gui.green‖（15s-30s）‖end‖，给予随机时长‖color:gui.green‖（5s-15s）‖end‖、随机等级‖color:gui.green‖（1级-3级）‖end‖‖color:gui.yellow‖无意识‖end‖效果。
     \n当你受到造成伤害的攻击后，会根据剩余血量获得不同等级的‖color:gui.yellow‖无意识‖end‖效果，最高‖color:gui.green‖3‖end‖级。并在原地留下幻影，幻影会短暂吸引部分目标的攻击。
     \n生命值满足75%/45%（2级、3级需求）以上时，可主动触发无意识效果，但会随等级支付一定生命值。
@@ -1209,6 +1209,25 @@
   <entitydescription.Touhou_Lunarquake>河童们来到木卫二后，利用附近特殊的天体运行关系制造的神秘武器。它会根据使用者射击的时间逐渐提高射速。\n使用‖color:gui.yellow‖月震中心‖end‖发射弹幕</entitydescription.Touhou_Lunarquake>
   <entityname.Touhou_Lunar_Center>月震中心</entityname.Touhou_Lunar_Center>
   <entitydescription.Touhou_Lunar_Center>“你听说了吗？月球上也有地震”作为月震的弹药使用。</entitydescription.Touhou_Lunar_Center>
+
+  <entityname.Sunny_gear>‖color:60,255,155,255‖桑尼装束‖end‖</entityname.Sunny_gear>
+  <entitydescription.Sunny_gear>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。</entitydescription.Sunny_gear>
+  <entityname.Sunny_Plus>‖color:60,255,155,255‖桑尼装束+‖end‖</entityname.Sunny_Plus>
+  <entitydescription.Sunny_Plus>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。</entitydescription.Sunny_Plus>
+  <afflictionname.Shining_Light_Of_The_Sun>闪耀的日之光</afflictionname.Shining_Light_Of_The_Sun>
+  <afflictiondescription.Shining_Light_Of_The_Sun>她有着一头橙色及肩短发，用红色蝴蝶结系成短双马尾，头顶戴着白色蕾丝状发箍。</afflictiondescription.Shining_Light_Of_The_Sun>
+  <talentname.SunnyTalent>喜欢恶作剧的日之光</talentname.SunnyTalent>
+  <talentdescription.SunnyTalent>当你身着桑尼装束+时，
+    \n增加对‖color:gui.yellow‖烧伤‖end‖的抗性。
+    很难被敌人的目光察觉。
+    \n造成的‖color:gui.yellow‖烧伤‖end‖伤害增加‖color:gui.green‖10%‖end‖。
+    \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
+    \n魔法武器的远程攻击每次有‖color:gui.green‖5%‖end‖概率造成额外烧伤。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成日之光效果
+    近战攻击每次有‖color:gui.green‖30%‖end‖概率造成额外烧伤。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成日之光效果
+    ‖color:gui.yellow‖日之光‖end‖：减少怪物的攻击伤害，让怪物短时间内失去视野中的目标。
+  </talentdescription.SunnyTalent>
+  <afflictionname.The_Grimoire_Of_Usami_Weapons>三妖精大暴走</afflictionname.The_Grimoire_Of_Usami_Weapons>
+  <afflictiondescription.The_Grimoire_Of_Usami_Weapons>赌上性命去恶作剧！</afflictiondescription.The_Grimoire_Of_Usami_Weapons>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>

@@ -1218,7 +1218,7 @@
             </StatusEffect>
             <StatValue stattype="MeleeAttackMultiplier" minvalue="0.0" maxvalue="0.514" />
             <StatValue stattype="AttackMultiplier" minvalue="0" maxvalue="-0.257" />
-            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="-0.514" />
+            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="-0.771" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Liberation_Of_Koishi.png" sourcerect="0,0,128,128" color="155,255,155,255" />
     </Affliction>
@@ -1274,24 +1274,76 @@
         <Icon texture="%ModDir%/Images/Afflictions/Alice_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
+
+    <!--桑尼翅膀-->
+    <AfflictionHusk
+            name="桑尼翅膀"
+            identifier="Sunny_Wings_Spawn"
+            type="Sunny_Wings_Spawn"
+            limbspecific="false"
+            targets="human"
+            huskedspeciesname="[speciesname]Touhou_Tail"
+            indicatorlimb="Torso"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            needsair="true"
+            causespeechimpediment="false"
+            treatmentthreshold="1000"
+            dormantthreshold="0"
+            activethreshold="0"
+            transitionthreshold="1000"
+            transformthresholdondeath="1000"
+            sendmessages="false"
+            maxstrength="10"
+            iconcolors="94,54,95;163,73,164;200,191,231">
+        <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+        <Effect minstrength="0" maxstrength="10" />
+    </AfflictionHusk>
+
     <!--闪耀的日之光-->
     <Affliction identifier="Shining_Light_Of_The_Sun" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
-            <StatValue stattype="SoundRangeMultiplier" value="-0.4" />
-            <StatValue stattype="SightRangeMultiplier" value="-0.4" />
+            <StatValue stattype="SightRangeMultiplier" value="-0.85" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/Puppeteer_Of_Seven_Colors.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--日之光效果-->
+    <Affliction
+            name="日之光"
+            identifier="Light_Of_The_Sun_Effect"
+            type="aichange"
+            limbspecific="false"
+            showiconthreshold="1000"
+            treatmentthreshold="1000"
+            showicontoothersthreshold="1000"
+            showinhealthscannerthreshold="1000"
+            duration="3"
+            maxstrength="1">
+        <Effect minstrength="0" maxstrength="1">
+            <StatusEffect target="Character">
+                <AITrigger state="Idle" duration="3" probability="1" allowtobeoverridden="false" allowtooverride="true" />
+            </StatusEffect>
+            <StatValue stattype="RangedAttackSpeed" value="-0.25" />
+            <StatValue stattype="NaturalMeleeAttackMultiplier" value="-0.25" />
+            <StatValue stattype="NaturalRangedAttackMultiplier" value="-0.25" />
+        </Effect>
+        <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
     </Affliction>
 
     <!--三月精-专属武器效果-->
     <Affliction identifier="The_Grimoire_Of_Usami_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="bleeding,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
-            <StatValue stattype="AttackMultiplier" value="0.25" />
-            <StatValue stattype="MeleeAttackMultiplier" value="0.25" />
+            <StatValue stattype="AttackMultiplier" value="0.15" />
+            <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
+            <StatValue stattype="MeleeAttackSpeed" value="0.1" />
+            <StatValue stattype="RangedAttackSpeed" value="0.1" />
+            <StatValue stattype="RangedSpreadReduction" value="-0.1" />
+            <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/Alice_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/The_Grimoire_Of_Usami_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 </Afflictions>
