@@ -136,14 +136,6 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25" />
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
                 <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.495"/>
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
             </Conditions>

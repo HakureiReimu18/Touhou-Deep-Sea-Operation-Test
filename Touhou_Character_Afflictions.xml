@@ -182,6 +182,7 @@
                 <Reduceaffliction type="burn" amount="0.025" />
             </StatusEffect>
             <StatValue stattype="AttackMultiplier" value="0.025" />
+            <StatValue stattype="RangedAttackSpeed" value="0.0125" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Ordinary_Magician.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -382,7 +383,7 @@
             <StatValue stattype="DeconstructorSpeedMultiplier" value="0.25" />
             <StatValue stattype="FabricationSpeed" value="0.25" />
             <StatValue stattype="MeleeAttackMultiplier" value="-0.25" />
-            <StatValue stattype="RangedAttackSpeed" value="-0.15" />
+            <StatValue stattype="RangedAttackSpeed" value="-0.25" />
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Memory_Of_Gensokyo.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -1269,6 +1270,27 @@
         <Effect minstrength="0" maxstrength="10" resistancefor="damage,bleeding,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
             <StatValue stattype="AttackMultiplier" value="0.25" />
             <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Alice_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--闪耀的日之光-->
+    <Affliction identifier="Shining_Light_Of_The_Sun" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
+            <StatValue stattype="SoundRangeMultiplier" value="-0.4" />
+            <StatValue stattype="SightRangeMultiplier" value="-0.4" />
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Puppeteer_Of_Seven_Colors.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--三月精-专属武器效果-->
+    <Affliction identifier="The_Grimoire_Of_Usami_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="bleeding,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
+            <StatValue stattype="AttackMultiplier" value="0.25" />
+            <StatValue stattype="MeleeAttackMultiplier" value="0.25" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Alice_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
