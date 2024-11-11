@@ -2217,7 +2217,7 @@
             <StatusEffect type="OnUse" target="This">
                 <Explosion range="150.0" force="3" shockwave="true" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="10.0" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-17" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="This" Condition="-16" disabledeltatime="true" />
             <StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-10" disabledeltatime="true">
                 <RequiredItem items="fuelrod" type="Contained" />
             </StatusEffect>

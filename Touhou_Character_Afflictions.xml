@@ -1264,6 +1264,16 @@
         <Icon texture="%ModDir%/Images/Afflictions/Puppeteer_Of_Seven_Colors.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
+    <!--人偶能量-->
+    <Affliction identifier="Alice_Doll_Energy" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="100"
+                iconcolors="40,40,40;120,120,120;200,200,200;255,255,255">
+        <Effect minstrength="0" maxstrength="100" resistancefor="debuff" minresistance="0" maxresistance="0.1" >
+            <StatValue stattype="MaximumHealthMultiplier" minvalue="0" value="0.1" />
+            <StatValue stattype="BuffDurationMultiplier" minvalue="0" value="0.1" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Alice_Doll_Energy.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
     <!--爱丽丝-专属武器效果-->
     <Affliction identifier="Alice_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
