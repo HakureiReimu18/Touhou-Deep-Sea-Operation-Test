@@ -16,7 +16,7 @@
   SteerTorque="25"
   LegTorque="25"
   AnimationType="SwimSlow"
-  MovementSpeed="1"
+  MovementSpeed="4"
   CycleSpeed="1"
   HeadAngle="NaN"
   TorsoAngle="NaN"

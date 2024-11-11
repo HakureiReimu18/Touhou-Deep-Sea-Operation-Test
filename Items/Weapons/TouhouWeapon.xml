@@ -4913,7 +4913,7 @@
             <RequiredItem identifier="Power_Point"/>
         </Fabricate>
         <InventoryIcon name="" texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Magic_Book.png" sourcerect="0,0,80,64" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Magic_Book.png" sourcerect="80,0,164,112" depth="0.3" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Magic_Book.png" sourcerect="80,0,164,84" depth="0.3" origin="0.5,0.5" />
         <Body width="72" height="72" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="40,-10" handle1="-26,-11" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
@@ -4938,13 +4938,9 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-7" />
-            <StatusEffect type="Always" target="This" Condition="2.5">
-                <Conditional condition="gt 0" />
-            </StatusEffect>
 
             <StatusEffect type="OnActive" target="Character" disabledeltatime="true" Interval="150.0" >
-                <ReduceAffliction identifier="Alice_Doll_Energy" amount="5.0" />
+                <Affliction identifier="Alice_Doll_Energy" amount="5.0" />
             </StatusEffect>
 
             <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="1" stackable="false" >
@@ -4979,77 +4975,50 @@
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.32" anchor="BottomLeft" absoluteoffset="20,95" style="ItemUI" />
             <Button text="普通人偶">
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
-                    <LuaHook name="Touhou_Alice_Magic_Book.OnUse" />
+                <StatusEffect type="OnUse" target="Character" >
+                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="5" />
+                    <ReduceAffliction identifier="Alice_Doll_Energy" />
+<!--                    <LuaHook name="Touhou_Alice_Magic_Book.OnUse" />-->
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" TransferControl="true" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
-                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="5" />
-                    <ReduceAffliction identifier="Alice_Doll_Energy" />
-                </StatusEffect>
             </Button>
-            <Button text="法兰西人偶">
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+<!--            <Button text="法兰西人偶">
+                <StatusEffect type="OnUse" target="Character" >
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
-                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="5" />
-                    <ReduceAffliction identifier="Alice_Doll_Energy" />
                 </StatusEffect>
             </Button>
             <Button text="荷兰人偶">
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Character" >
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
-                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="5" />
-                    <ReduceAffliction identifier="Alice_Doll_Energy" />
                 </StatusEffect>
             </Button>
             <Button text="伦敦人偶">
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Character" >
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
-                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="5" />
-                    <ReduceAffliction identifier="Alice_Doll_Energy" />
                 </StatusEffect>
             </Button>
             <Button text="歌莉娅人偶">
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Character" >
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
-                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="5" />
-                    <ReduceAffliction identifier="Alice_Doll_Energy" />
                 </StatusEffect>
             </Button>
             <Button text="上海人偶">
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Character" >
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
-                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="5" />
-                    <ReduceAffliction identifier="Alice_Doll_Energy" />
                 </StatusEffect>
             </Button>
             <Button text="蓬莱人偶">
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Character" >
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
-                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="5" />
-                    <ReduceAffliction identifier="Alice_Doll_Energy" />
-                </StatusEffect>
-            </Button>
-
+            </Button>-->
         </CustomInterface>
         <Quality>
             <QualityStat stattype="FirepowerMultiplier" value="0.07" />
@@ -5201,7 +5170,7 @@
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Scarlet_Gensokyo.png" sourcerect="0,0,126,148" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scarlet_Gensokyo.png" sourcerect="134,0,307,76" depth="0.55" origin="0.5,0.5" />
         <Body width="307" height="50" density="10" />
-        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,-20" handle1="-20,2" handle2="10,2" holdangle="60" aimangle="-80" reload="1.6" range="150" combatPriority="50"
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,-20" handle1="-20,12" handle2="10,14" holdangle="60" aimangle="-80" reload="1.6" range="150" combatPriority="50"
                      SwingPos="3.0,0.0" SwingForce="5.0,0.0" allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character" AllowWhenBroken="true">
                 <Conditional scarletdevil="gt 0"/>

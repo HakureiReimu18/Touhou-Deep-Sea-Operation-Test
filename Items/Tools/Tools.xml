@@ -927,7 +927,12 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpUse" canbeselected="false"
                   canbepicked="true" pickkey="Select" allowswappingwhenpicked="false" />
         <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
-
+            <StatusEffect type="OnWearing" target="Character" comparison="And" >
+                <Conditional skillrequirement="true" Touhou_Magic="gt 60" />
+                <Conditional Touhou_Magic_Boost="lte 149" />
+                <Affliction identifier="Touhou_Magic_Boost" amount="2" />
+            </StatusEffect>
+            
             <sprite name="Backpack Wearable" texture="%ModDir%/Images/Tools/Magic_Pouch.png" limb="Torso" hidelimb="false" inheritlimbdepth="true"
                     inherittexturescale="false" hideotherwearables="false" sourcerect="0,0,160,136" origin="0.6,0.0" scale="0.23" />
             <StatusEffect type="OnWearing" target="Character" OxygenAvailable="0.0" UseHullOxygen="true" />

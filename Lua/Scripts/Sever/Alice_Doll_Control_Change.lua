@@ -5,13 +5,13 @@
 ---
 
 
-Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", function(effect, deltaTime, item, targets, worldPosition,client)
+Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", function(effect, deltaTime, targetcharacter, targets, client)
     -- the targets here are the targets specified in the xml status effect, so in this case, its specified as target="Character", so it should be the character using the revolver.
-    if targets[1] == nil then return end
+    if targetcharacter == nil then return end
 
-    print(targets[1].Name .. " Used the Touhou_Alice_Magic_Book!")
+    print(targetcharacter.Name .. " Used the Touhou_Alice_Magic_Book!")
 
-    local character =  targets[1]
+    local character = targetcharacter
 
 --[[
     if CLIENT then
@@ -27,7 +27,7 @@ Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", fu
         else
             client.SetClientCharacter(character)
         end
-    end,30)
+    end,10)
 end)
 
 

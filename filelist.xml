@@ -102,6 +102,7 @@
   <Character file="%ModDir%/Characters/Touhou_Lunar/Touhou_Lunar.xml" />
   <Character file="%ModDir%/Characters/Touhou_Lunar_Mini/Touhou_Lunar_Mini.xml" />
   <Character file="%ModDir%/Characters/Touhou_Lunar_Meteor/Touhou_Lunar_Meteor.xml" />
+  <Character file="%ModDir%/Characters/Touhou_Alice_Doll/Touhou_Alice_Doll_Normal/Touhou_Alice_Doll_Normal.xml" />
   <!--Talents-->
   <Talents file="%ModDir%/Talents/Hyouibana.xml" />
   <Talents file="%ModDir%/Talents/TalentEnemy.xml" />
