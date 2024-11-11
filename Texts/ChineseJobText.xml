@@ -251,7 +251,7 @@
     <talentdescription.Touhou_Yaoguai03>增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖，受到攻击后略微增加自身的‖color:gui.orange‖精神病‖end‖。
         ‖color:gui.orange‖精神病‖end‖越高，‖color:gui.orange‖这个抗性‖end‖越低，最低‖color:gui.green‖3%‖end‖。</talentdescription.Touhou_Yaoguai03>
     <talentname.Touhou_Yaoguai04>双星伴月</talentname.Touhou_Yaoguai04>
-    <talentdescription.Touhou_Yaoguai04>如果周围没有其它船员，提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度、攻击伤害、debuff抗性‖end‖。解锁配方：‖color:gui.orange‖月震‖end‖</talentdescription.Touhou_Yaoguai04>
+    <talentdescription.Touhou_Yaoguai04>如果周围没有其它船员，提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度、攻击伤害、debuff抗性‖end‖。解锁配方：‖color:gui.orange‖月震，月震中心‖end‖。妖怪职业持有‖color:gui.orange‖月震‖end‖时，也能触发该分支对应装束的专属武器效果</talentdescription.Touhou_Yaoguai04>
     <talentname.Touhou_Yaoguai05>生存法则</talentname.Touhou_Yaoguai05>
     <talentdescription.Touhou_Yaoguai05>等级大于‖color:gui.green‖15‖end‖后，免疫水压。
         穿着‖color:gui.red‖幽香装束+‖end‖时：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖最大生命值‖end‖，弱小的生物会主动远离你

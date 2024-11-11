@@ -1208,7 +1208,7 @@
   <entityname.Touhou_Lunarquake>月震</entityname.Touhou_Lunarquake>
   <entitydescription.Touhou_Lunarquake>河童们来到木卫二后，利用附近特殊的天体运行关系制造的神秘武器。它会根据使用者射击的时间逐渐提高射速。\n使用‖color:gui.yellow‖月震中心‖end‖发射弹幕</entitydescription.Touhou_Lunarquake>
   <entityname.Touhou_Lunar_Center>月震中心</entityname.Touhou_Lunar_Center>
-  <entitydescription.Touhou_Lunar_Center>“你听说了吗？月球上也有地震”作为月震的弹药使用。</entitydescription.Touhou_Lunar_Center>
+  <entitydescription.Touhou_Lunar_Center>“你听说了吗？月球上也有地震”\n作为月震的弹药使用。</entitydescription.Touhou_Lunar_Center>
 
   <entityname.Sunny_gear>‖color:60,255,155,255‖桑尼装束‖end‖</entityname.Sunny_gear>
   <entitydescription.Sunny_gear>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。</entitydescription.Sunny_gear>
@@ -1228,6 +1228,10 @@
   </talentdescription.SunnyTalent>
   <afflictionname.The_Grimoire_Of_Usami_Weapons>三妖精大暴走</afflictionname.The_Grimoire_Of_Usami_Weapons>
   <afflictiondescription.The_Grimoire_Of_Usami_Weapons>赌上性命去恶作剧！</afflictiondescription.The_Grimoire_Of_Usami_Weapons>
+  <afflictionname.Yuka_Weapons>今昔幻想乡</afflictionname.Yuka_Weapons>
+  <afflictiondescription.Yuka_Weapons>幽香拥有操纵花程度的能力，能让花盛开、使向日葵面向太阳、让枯萎的花再度盛开等。</afflictiondescription.Yuka_Weapons>
+  <afflictionname.Alice_Doll_Energy>人偶能量</afflictionname.Alice_Doll_Energy>
+  <afflictiondescription.Alice_Doll_Energy>激活人偶功能的能量</afflictiondescription.Alice_Doll_Energy>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>

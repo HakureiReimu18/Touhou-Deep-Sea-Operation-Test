@@ -96,8 +96,8 @@
           impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.01"/>
-        <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.015" />
-        <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.04" />
+        <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.02" />
+        <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.05" />
 <!--        <Holdable canBeCombined="true" removeOnCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />-->
         <Price baseprice="4500" minleveldifficulty="36" >
             <Price locationtype="outpost" multiplier="1.2" sold="false" />
@@ -213,7 +213,7 @@
           impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" spawnprobability="0.1"/>
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.15"/>
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -290,7 +290,7 @@
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" spawnprobability="0.05"/>
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.15"/>
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -367,7 +367,7 @@
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" spawnprobability="0.05"/>
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.15"/>
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -444,7 +444,7 @@
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" spawnprobability="0.05"/>
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.15"/>
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -521,7 +521,7 @@
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" spawnprobability="0.05"/>
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.15"/>
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -598,7 +598,7 @@
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.05"/>
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -645,7 +645,7 @@
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.05"/>
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -693,7 +693,7 @@
         <PreferredContainer primary="medfabcab" />
         <PreferredContainer secondary="abandonedmedcab" spawnprobability="0.02"/>
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.05" />
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="Always" target="This" Interval="1.0">
                 <Conditional condition="lte 0.1"/>
                 <RemoveItem />

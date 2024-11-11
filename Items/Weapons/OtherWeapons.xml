@@ -2620,7 +2620,27 @@
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Lunarquake.png" sourcerect="0,0,72,28" depth="0.55" origin="0.5,0.5" />
         <Body width="72" height="28" density="10" />
-        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-15" aimpos="40,4" handle1="-10,-10" handle2="10,-3" holdangle="-35" >
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="50,-15" aimpos="48,4" handle1="-10,-10" handle2="10,-3" holdangle="-35" >
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                <Affliction identifier="Koishi_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Unconfirmed_Fantasy_Flying_Girl="gt 0"/>
+                <Affliction identifier="Nue_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Flowers_Of_Four_Seasons="gt 0"/>
+                <Affliction identifier="Yuka_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Candid_Friend="gt 0"/>
+                <Affliction identifier="Nitori_Weapons" strength="50" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -2710,10 +2730,9 @@
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem" requiresrecipe="true" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="Reiki_Stone" amount="2" />
             <RequiredItem identifier="flashpowder" />
-            <RequiredItem identifier="Shui_Alchemical" />
-            <RequiredItem identifier="Yin_Alchemical" />
+            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" maxcondition="0.5" usecondition="true" />
+            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" maxcondition="0.5" usecondition="true" />
             <RequiredItem identifier="Touhou_Lunar_Center" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Ammo.png" sourcerect="0,0,120,120" depth="0.45" origin="0.5,0.5" />
@@ -2724,12 +2743,15 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Lunar_Center_Light" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true" spawnItemRandomly="true" >
+            <StatusEffect type="OnUse" target="This" condition="-0.8" disabledeltatime="true" spawnItemRandomly="true" >
                 <SpawnItem identifiers="Touhou_Lunar_Center_Light01" spawnposition="ThisInventory" commonness="1.0" />
                 <SpawnItem identifiers="Touhou_Lunar_Center_Light02" spawnposition="ThisInventory" commonness="1.0" />
                 <SpawnItem identifiers="Touhou_Lunar_Center_Light03" spawnposition="ThisInventory" commonness="1.0" />
             </StatusEffect>
         </ItemContainer>
+        <Quality>
+            <QualityStat stattype="Condition" value="0.25" />
+        </Quality>
     </Item>
 
     <!--月震射弹-->

@@ -743,6 +743,16 @@
         <Icon texture="%ModDir%/Images/Afflictions/Flowers_Of_Four_Seasons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
+    <!--幽香-专属武器效果-->
+    <Affliction identifier="Yuka_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
+            <StatValue stattype="MeleeAttackSpeed" value="0.1" />
+            <StatValue stattype="RangedAttackSpeed" value="0.1" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Yuka_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
     <!--花瓣01效果-伤害-->
     <Affliction name="幻想春花-集中" identifier="Sun_Flower_Petal01_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="100"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
@@ -753,7 +763,7 @@
                 <ReduceAffliction identifier="Sun_Flower_Petal01_Effect" strength="300" />
             </StatusEffect>
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/vine-flower02.png" sourcerect="0,0,128,128" color="255,72,36,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Sun_Flower_Petal_Effect.png" sourcerect="0,0,128,128" color="255,72,36,255" />
     </Affliction>
 
     <!--花瓣02效果-速度-->
@@ -768,7 +778,7 @@
                 <ReduceAffliction identifier="Sun_Flower_Petal02_Effect" strength="300" />
             </StatusEffect>
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/vine-flower02.png" sourcerect="0,0,128,128" color="255,72,36,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Sun_Flower_Petal_Effect.png" sourcerect="0,0,128,128" color="255,72,36,255" />
     </Affliction>
 
     <!--花瓣03效果-生命-->
@@ -781,7 +791,7 @@
                 <ReduceAffliction identifier="Sun_Flower_Petal03_Effect" strength="300" />
             </StatusEffect>
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/vine-flower02.png" sourcerect="0,0,128,128" color="255,72,36,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Sun_Flower_Petal_Effect.png" sourcerect="0,0,128,128" color="255,72,36,255" />
     </Affliction>
 
     <!--天真烂漫狛犬-->
