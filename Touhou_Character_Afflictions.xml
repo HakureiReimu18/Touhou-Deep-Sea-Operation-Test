@@ -1274,6 +1274,24 @@
         <Icon texture="%ModDir%/Images/Afflictions/Puppeteer_Of_Seven_Colors.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
+    <!--爱丽丝的手提箱效果-->
+    <Affliction
+            identifier="Touhou_Alice_Puppet_Suitcase_Effect"
+            type="Touhou_Character_Affliction"
+            isbuff="true"
+            limbspecific="false"
+            hideiconafterdelay="false"
+            maxstrength="1"
+            Duration="5.0"
+            iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatusEffect target="Character" Interval="60.0" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Alice_Doll_Energy" amount="0.5" />
+            </StatusEffect>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Puppeteer_Of_Seven_Colors.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
     <!--人偶能量-->
     <Affliction identifier="Alice_Doll_Energy" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="100"
                 iconcolors="40,40,40;120,120,120;200,200,200;255,255,255">

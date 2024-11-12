@@ -4939,8 +4939,8 @@
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
 
-            <StatusEffect type="OnActive" target="Character" disabledeltatime="true" Interval="150.0" >
-                <Affliction identifier="Alice_Doll_Energy" amount="5.0" />
+            <StatusEffect type="OnActive" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" Interval="60.0" >
+                <Affliction identifier="Alice_Doll_Energy" amount="1.0" />
             </StatusEffect>
 
             <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="1" stackable="false" >

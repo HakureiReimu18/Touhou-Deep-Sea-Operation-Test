@@ -1670,10 +1670,14 @@
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Alice_Puppet_Suitcase.png" sourcerect="0,0,140,120" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Alice_Puppet_Suitcase.png" sourcerect="0,0,140,120" depth="0.55" origin="0.5,0.5" />
         <Body width="50" height="20" density="10" />
-        <Holdable slots="RightHand+LeftHand,Any" msg="ItemMsgPickUpSelect" />
+        <Holdable slots="RightHand+LeftHand,Any" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnContained" target="This,Character" Interval="5.0" Duration="5.0" multiplyafflictionsbymaxvitality="true" >
+                <Conditional Puppeteer_Of_Seven_Colors="gt 0" />
+                <Affliction identifier="Touhou_Alice_Puppet_Suitcase_Effect" amount="1" />
+            </StatusEffect>
+        </Holdable>
         <ItemContainer autofill="False" capacity="12" maxstacksize="64" slotsperrow="3">
-            <Containable identifiers="smallitem" excludeditems="backpack,crate" />
-            <!--            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />-->
+            <Containable identifiers="smallitem" excludeditems="backpack,crate,gun" />
         </ItemContainer>
         <aitarget soundrange="1" fadeouttime="5" />
     </Item>

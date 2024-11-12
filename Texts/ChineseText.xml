@@ -1066,6 +1066,7 @@
   <character.Touhou_Lunar>月</character.Touhou_Lunar>
   <character.Touhou_Lunar_Mini>拟月</character.Touhou_Lunar_Mini>
   <character.Touhou_Lunar_Meteor>月面流星</character.Touhou_Lunar_Meteor>
+  <character.Touhou_Alice_Doll_Normal>普通人偶</character.Touhou_Alice_Doll_Normal>
 
   <!--为时已晚-->
   <missionname.Touhou_OutpostDestroyMission03>为时已晚</missionname.Touhou_OutpostDestroyMission03>
@@ -1179,16 +1180,16 @@
     减少‖color:gui.green‖20%‖end‖‖color:gui.orange‖最大生命值‖end‖。
     减少‖color:gui.green‖35%‖end‖‖color:gui.orange‖近战伤害‖end‖。
     \n造成的‖color:gui.yellow‖灵压‖end‖伤害增加‖color:gui.green‖15%‖end‖。
-    \n可以制造并召唤‖color:gui.yellow‖人偶‖end‖。
+    \n可以消耗人偶能量制造并召唤‖color:gui.yellow‖人偶‖end‖。
     ‖color:gui.yellow‖人偶‖end‖在你身边会获得强化，增加抗性和攻击伤害。
-    ‖color:gui.yellow‖常规人偶‖end‖持续时间不会超过3分钟
+    ‖color:gui.yellow‖常规人偶‖end‖持续时间不会超过1分钟
   </talentdescription.AliceTalent>
   <afflictionname.Alice_Weapons>布加勒斯特的人偶师</afflictionname.Alice_Weapons>
   <afflictiondescription.Alice_Weapons>爱丽丝对他人一点都不关心，却对魔法很执着，尽管外表看起来坚强却有着弱小的一面。她基本上不拘束于事物，性格上不固执不厌恶。她喜欢一个人独处，不过却常常参加宴会和在祭典上表演人偶剧。</afflictiondescription.Alice_Weapons>
   <entityname.Touhou_Alice_Needle>爱丽丝的大缝衣针</entityname.Touhou_Alice_Needle>
   <entitydescription.Touhou_Alice_Needle>通常来说，用来缝制人偶的针线应该很小，这根显然不是为了缝制人偶准备的</entitydescription.Touhou_Alice_Needle>
   <entityname.Touhou_Alice_Puppet_Suitcase>人偶手提箱</entityname.Touhou_Alice_Puppet_Suitcase>
-  <entitydescription.Touhou_Alice_Puppet_Suitcase>爱丽丝用于容纳人偶的手提箱，可以保护里面的人偶远离木卫二冰冷的海水</entitydescription.Touhou_Alice_Puppet_Suitcase>
+  <entitydescription.Touhou_Alice_Puppet_Suitcase>爱丽丝用于容纳人偶的手提箱，可以保护里面的人偶远离木卫二冰冷的海水。还可以加快人偶能量的恢复。</entitydescription.Touhou_Alice_Puppet_Suitcase>
   <entityname.Touhou_Berry_Wine>红莓酒</entityname.Touhou_Berry_Wine>
   <entitydescription.Touhou_Berry_Wine>妖怪们来到木卫二后，汲取灵感制成的特色酒，可以补充失血，还有缓解毒素的妙用。但一般人类都不胜酒力</entitydescription.Touhou_Berry_Wine>
   <entityname.Touhou_Life_Needle>生命指针</entityname.Touhou_Life_Needle>
