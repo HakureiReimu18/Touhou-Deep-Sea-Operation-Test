@@ -1743,7 +1743,7 @@
               affectmachines="true"
               iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Tide_Bolt_Effect" minstrength="0" maxstrength="10"/>
-    <Effect minstrength="0" maxstrength="5" resistancefor="damage,burn,stun" minresistance="0" maxresistance="-0.45" strengthchange="-0.1">
+    <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn,stun" minresistance="0" maxresistance="-0.4" strengthchange="-0.1">
       <StatusEffect target="Character" disabledeltatime="true" Interval="3.0" >
         <Explosion range="50.0" force="4.0" severlimbsprobability="0.2" penetration="0.15">
           <Affliction identifier="Touhou_Lost_Dream" strength="6" />
@@ -1755,15 +1755,15 @@
     <PeriodicEffect mininterval="1.5" maxinterval="3">
       <StatusEffect target="Character">
         <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="200" distancemax="250" velocitymin="-500" velocitymax="-900" particlespersecond="120" colormultiplier="255,100,100,255" />
-        <Affliction identifier="burn" amount="7" dividebylimbcount="true"/>
+        <Affliction identifier="burn" amount="0.7" />
         <Affliction identifier="Reiki_Pressure" amount="1"/>
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="1" maxinterval="2">
       <StatusEffect target="Character">
         <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="200" distancemax="250" velocitymin="-500" velocitymax="-900" particlespersecond="120" colormultiplier="255,100,100,255" />
-        <Affliction identifier="lacerations" amount="15" dividebylimbcount="true"/>
-        <Affliction identifier="bleeding" strength="15" probability="0.15" dividebylimbcount="true" />
+        <Affliction identifier="lacerations" amount="0.5" />
+        <Affliction identifier="bleeding" strength="1.5" probability="0.15" />
         <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.15" />
       </StatusEffect>
     </PeriodicEffect>

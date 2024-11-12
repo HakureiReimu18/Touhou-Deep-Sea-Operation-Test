@@ -4,7 +4,7 @@
 --- DateTime: 8/10/2024 下午6:06
 ---
 
---[[local function CharacterToClient(character)
+local function CharacterToClient(character)
 
     if not SERVER then return nil end
 
@@ -15,7 +15,7 @@
     end
 
     return nil
-end]]
+end
 
 Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", function(effect, deltaTime, item, targets, worldPosition, client)
 
@@ -23,8 +23,12 @@ Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", fu
 
     print(targets[1].Name .. " Used the Touhou_Alice_Magic_Book!")
 
+    if client == nil then
+        print("Error: client is nil.")
+    end
+
     local character = targets[1]
---[[    local client = CharacterToClient(targets[1])]]
+    local client = CharacterToClient(targets[1])
 
     Timer.Wait(function()
     if CLIENT then
@@ -32,7 +36,7 @@ Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", fu
     else
         client.SetClientCharacter(character)
     end
-    end,10)
+    end,60000)
 end)
 
 
@@ -75,18 +79,6 @@ local function ClientFromName(name)
     return nil
 end
 
-local function CharacterToClient(character)
-
-    if not SERVER then return nil end
-
-    for key,client in pairs(Client.ClientList) do
-        if client.Character == character then
-            return client
-        end
-    end
-
-    return nil
-end
 --[[
 TLE.ItemMethods = {} -- with the identifier as the key
 
