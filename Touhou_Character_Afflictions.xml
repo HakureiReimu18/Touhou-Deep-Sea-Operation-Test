@@ -1137,8 +1137,7 @@
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" strengthchange="-9">
             <StatValue stattype="SkillGainSpeed" value="-0.3" />
-            <StatValue stattype="AttackMultiplier" value="-0.15" />
-            <StatValue stattype="MeleeAttackMultiplier" value="0.3"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.15"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Closed_Eyes_Of_Koishi.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>

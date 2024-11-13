@@ -31,11 +31,7 @@ Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", fu
     local client = CharacterToClient(targets[1])
 
     Timer.Wait(function()
-    if CLIENT then
         Character.Controlled = character
-    else
-        client.SetClientCharacter(character)
-    end
     end,60000)
 --[[    Timer.Wait(function()
         client.SetClientCharacter(character)

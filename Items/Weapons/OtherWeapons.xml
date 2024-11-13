@@ -2699,7 +2699,7 @@
         <aitarget sightrange="1000" soundrange="3000" fadeouttime="5" />
         <Quality>
             <QualityStat stattype="FirepowerMultiplier" value="0.0667" />
-            <QualityStat stattype="Condition" value="0.15" />
+            <QualityStat stattype="Condition" value="0.334" />
         </Quality>
         <SkillRequirementHint identifier="Touhou_Magic" level="60" />
         <SkillRequirementHint identifier="weapons" level="60" />
@@ -2718,7 +2718,6 @@
             <Price storeidentifier="merchantmine" multiplier="0.9" maxavailable="3" />
         </Price>
         <Deconstruct time="6">
-            <Item identifier="uranium" amount="2" />
             <Item identifier="titaniumaluminiumalloy" amount="2" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" requiresrecipe="true" >
@@ -2731,8 +2730,8 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem" requiresrecipe="true" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
             <RequiredItem identifier="flashpowder" />
-            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" maxcondition="0.5" usecondition="true" />
-            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" maxcondition="0.5" usecondition="true" />
+            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="true" />
+            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" usecondition="true" />
             <RequiredItem identifier="Touhou_Lunar_Center" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Ammo.png" sourcerect="0,0,120,120" depth="0.45" origin="0.5,0.5" />

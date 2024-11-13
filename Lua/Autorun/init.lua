@@ -4,7 +4,6 @@ TLE.Version = "1.0"
 TLE.VersionNum = 01000000
 TLE.Path = table.pack(...)[1]
 
-dofile(TLE.Path.."/Lua/Scripts/Sever/Alice_Doll_Control_Change.lua")
 
 if CLIENT then
 	Timer.Wait(function()
@@ -12,4 +11,11 @@ if CLIENT then
 		print(runstring)  
 	end,1)
 	dofile(TLE.Path.."/Lua/Scripts/Client/Touhou_Cam_Offset.lua")
+end
+
+if not CLIENT then
+	dofile(TLE.Path.."/Lua/Scripts/Sever/Alice_Doll_Control_Change.lua")
+end
+if CLIENT then
+	dofile(TLE.Path.."/Lua/Scripts/Sever/Alice_Doll_Control_Change_Client.lua")
 end

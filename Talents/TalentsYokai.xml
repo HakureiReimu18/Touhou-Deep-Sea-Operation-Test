@@ -177,13 +177,13 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--商业头脑 完成任务获得的金钱额外增加8%，如果巡回内无人死亡，额外获得4%。-->
+    <!--商业头脑 完成任务获得的金钱额外增加4%，如果巡回内无人死亡，额外获得4%。-->
     <Talent identifier="Talents_Yokai_Primary03">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yokai_Primary03"/>
         <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
             <Abilities>
-                <CharacterAbilityModifyValue multiplyvalue="1.08"/>
+                <CharacterAbilityModifyValue multiplyvalue="1.04"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
