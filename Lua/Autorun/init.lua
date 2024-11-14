@@ -17,5 +17,5 @@ if not CLIENT then
 	dofile(TLE.Path.."/Lua/Scripts/Sever/Alice_Doll_Control_Change.lua")
 end
 if CLIENT then
-	dofile(TLE.Path.."/Lua/Scripts/Sever/Alice_Doll_Control_Change_Client.lua")
+	dofile(TLE.Path.."/Lua/Scripts/Client/Alice_Doll_Control_Change_Client.lua")
 end

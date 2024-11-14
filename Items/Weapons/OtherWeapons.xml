@@ -594,7 +594,7 @@
             <RequiredItem identifier="Reiki_Dust" amount="2" />
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Exorcism_Bullet.png" sourcerect="0,0,44,48" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Exorcism_Bullet.png" sourcerect="56,11,64,12" depth="0.55" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Exorcism_Bullet.png" sourcerect="56,11,64,20" depth="0.55" origin="0.5,0.5" />
         <Body width="48" height="12" density="15" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnContained" target="This" tags="weaponreload" duration="0.6" interval="0.5" delay="0.1" >
@@ -2740,7 +2740,7 @@
             <RequiredItem identifier="Yin_Alchemical" />
             <RequiredItem identifier="Touhou_Lunar_Center" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Ammo.png" sourcerect="0,0,120,120" depth="0.45" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Lunar_Center.png" sourcerect="0,0,128,128" depth="0.45" origin="0.5,0.5" />
         <Body width="28" height="40" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />

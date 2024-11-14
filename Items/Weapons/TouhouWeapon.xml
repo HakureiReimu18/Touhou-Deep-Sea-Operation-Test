@@ -4390,7 +4390,7 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true" >
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,55,55,255" scalemultiplier="1,1.5" />
             <Attack targetforce="30" targetimpulse="30" itemdamage="45" severlimbsprobability="0.5" penetration="0.2">
-                <Affliction identifier="burn" strength="16" />
+                <Affliction identifier="burn" strength="12" />
                 <Affliction identifier="burn" strength="8" probability="0.7" />
                 <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="internaldamage" strength="3" />
@@ -4516,7 +4516,7 @@
             </StatusEffect>
 
             <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="60" structuresoundtype="StructureSlash" penetration="0.4">
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="lacerations" strength="51.4" />
                 <Affliction identifier="slow" strength="50" />
                 <Affliction identifier="bleeding" strength="25" />

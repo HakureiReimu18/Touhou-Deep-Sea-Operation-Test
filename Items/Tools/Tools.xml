@@ -1342,7 +1342,7 @@
 
 
     <!--核能电容弹匣-->
-    <Item name="“核能电容弹匣”" identifier="Touhou_Nuclear_Energy_Capacitor_Magazine" scale="0.24" subcategory="Touhou" category="Weapon"
+    <Item name="“核能电容弹匣”" identifier="Touhou_Nuclear_Energy_Capacitor_Magazine" scale="0.17" subcategory="Touhou" category="Weapon"
           maxstacksize="16" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate"
           tags="smallitem,Touhou_Kappa_Welding_Tool_Ammo" impactsoundtag="impact_metal_light" >
         <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.08" />

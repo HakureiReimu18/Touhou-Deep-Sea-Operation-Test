@@ -436,12 +436,13 @@
   <talentname.Knowledge_And_Solitude_Girl>知识与避世的少女</talentname.Knowledge_And_Solitude_Girl>
   <talentdescription.Knowledge_And_Solitude_Girl>当你身着‖color:gui.orange‖帕秋莉装束+‖end‖时，生命值越低，‖color:gui.yellow‖哮喘‖end‖疾病的增长速度越快：
     \n游泳速度提高‖color:gui.green‖60%‖end‖。
-    \n在陆地上无法奔跑，且行走速度降低‖color:gui.green‖20%‖end‖（当魔力提升效果达到300或使用MEID可以解除奔跑限制）。
-    \n最大生命值降低‖color:gui.green‖30%‖end‖。
+    在陆地上无法奔跑，且行走速度降低‖color:gui.green‖20%‖end‖（当魔力提升效果达到300或使用MEID可以解除奔跑限制）。
+    更容易受伤和失血
+    近战攻击伤害下降‖color:gui.green‖100%‖end‖
+    最大生命值降低‖color:gui.green‖30%‖end‖。
     \n增加‖color:gui.green‖50%‖end‖技能获取速度。
     \n增加‖color:gui.green‖300%‖end‖五种元素效果。
-    \n增加‖color:gui.green‖25%‖end‖灵压伤害。
-    \n更容易受伤和失血。</talentdescription.Knowledge_And_Solitude_Girl>
+    \n增加‖color:gui.green‖25%‖end‖灵压伤害。</talentdescription.Knowledge_And_Solitude_Girl>
   <afflictionname.The_Still_Library>不动的大图书馆</afflictionname.The_Still_Library>
   <afflictiondescription.The_Still_Library>她的外表和人类没有任何差别。她身体飘飘悠悠，又瘦弱皮肤又白，患有哮喘和贫血。</afflictiondescription.The_Still_Library>
   <afflictionname.Patchouli_Weapons>红魔馆的魔女</afflictionname.Patchouli_Weapons>

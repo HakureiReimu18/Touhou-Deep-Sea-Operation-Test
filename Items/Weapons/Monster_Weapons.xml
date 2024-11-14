@@ -1010,7 +1010,7 @@
 
     <!--仿制月震中心-->
     <Item name="仿制月震中心" identifier="Touhou_Lunar_Center_Fake" scale="0.32" subcategory="Touhou" category="Weapon"
-          maxstacksize="16" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate"
+          maxstacksize="16" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" hideinmenus="true"
           tags="smallitem,Touhou_Lunar_Center" impactsoundtag="impact_metal_light" >
         <PreferredContainer secondary="armcab" />
         <Price baseprice="2000" minleveldifficulty="10" sold="false">
