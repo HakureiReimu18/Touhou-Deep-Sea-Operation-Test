@@ -2316,8 +2316,8 @@
             <Attack itemdamage="90" levelwalldamage="120" targetforce="15" targetimpulse="15" penetration="0.25" severlimbsprobability="1.0">
                 <Affliction identifier="explosiondamage" strength="40" />
                 <Affliction identifier="Reiki_Pressure" strength="5" />
-                <Affliction identifier="burn" strength="45" />
-                <Affliction identifier="Phoenix_Burn" strength="100" />
+                <Affliction identifier="burn" strength="40" />
+                <Affliction identifier="Phoenix_Burn" strength="80" />
                 <Affliction identifier="emp" strength="50" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="20" />
                 <Affliction identifier="stun" strength="0.75" />
@@ -2768,8 +2768,8 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="20,20,120,255"/>
             <Attack itemdamage="20" levelwalldamage="20" targetforce="2" targetimpulse="2" penetration="0.2" severlimbsprobability="0.3">
                 <Affliction identifier="explosiondamage" strength="13" />
-                <Affliction identifier="stun" strength="0.5" />
-                <Affliction identifier="stun" strength="0.5" probability="0.4"/>
+                <Affliction identifier="stun" strength="0.1" />
+                <Affliction identifier="stun" strength="0.1" probability="0.4"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="weldspark" particleamount="2" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />

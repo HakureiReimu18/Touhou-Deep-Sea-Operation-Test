@@ -919,7 +919,7 @@
                 <Affliction identifier="Reiki_Pressure" strength="666" probability="0.01"/>
                 <Affliction identifier="bleeding" strength="80" />
                 <Affliction identifier="Scarlet_Long_Night" strength="10" />
-                <Affliction identifier="lacerations" strength="200" />
+                <Affliction identifier="lacerations" strength="150" />
                 <Affliction identifier="bloodloss" strength="10" />
                 <Affliction identifier="stun" strength="3" />
             </Attack>
@@ -4484,7 +4484,7 @@
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Koishi_Knife.png" sourcerect="0,0,200,156" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Koishi_Knife.png" sourcerect="210,0,284,44" depth="0.55" origin="0.5,0.5" />
         <Body width="284" height="30" density="10" />
-        <MeleeWeapon slots="Any,LeftHand+RightHand" aimpos="35,10" handle1="-18,1" holdangle="20" aimangle="30" reload="2.0" range="51.4" combatPriority="50"
+        <MeleeWeapon slots="Any,LeftHand+RightHand" aimpos="35,10" handle1="-18,1" holdangle="20" aimangle="30" reload="2.5" range="51.4" combatPriority="50"
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Closed_Eyes_Of_Koishi="gt 0"/>

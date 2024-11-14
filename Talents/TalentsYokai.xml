@@ -1477,7 +1477,7 @@
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" invert="true" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxvalue="0.1" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxvalue="0.15" skillidentifier="Touhou_Magic" />
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="0.5">
@@ -1486,7 +1486,7 @@
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.3" />
+                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.45" />
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
