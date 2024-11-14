@@ -513,6 +513,7 @@
           difficulty="4"
           commonness="100">
     <Items>
+      <!--清理的目标（这里是迅猛龙的蛋）-->
       <Item identifier="largemudraptoregg">
         <StatusEffectOnApproach target="This" Scale="2.0" setvalue="true"/>
       </Item>
@@ -523,12 +524,18 @@
         <StatusEffectOnApproach target="This" Scale="2.0" setvalue="true" delay="9" />
       </Item>
     </Items>
+    <!--靠近后刷新的怪物-->
     <Monster character="Touhou_reiki_erode_mudraptor" min="5" max="5"/>
+    <!--多人模式下额外刷新的怪物-->
     <Monster character="Touhou_reiki_erode_mudraptor" min="3" max="3" multiplayeronly="true"/>
+    <!--任务奖励的声望-->
     <Reputation identifier="location" amount="4" />
     <Reputation identifier="Touhou_Gensokyo" amount="3" />
+    <!--任务图标-->
     <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256" />
+    <!--任务应该从哪个站点到哪个站点-->
     <LocationType from="AnyOutpost" to="AnyOutpost" />
+    <!--任务开始和结束的信息-->
     <message header="missionheader.Clear_Reiki_Erode_Mudraptor_Nest" text="missionmessage.Clear_Reiki_Erode_Mudraptor_Nest"/>
   </NestMission>
 

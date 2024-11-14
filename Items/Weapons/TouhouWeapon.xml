@@ -74,6 +74,9 @@
                 <Use />
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" Condition="-4" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="This" Condition="+1" disabledeltatime="true" >
+                <RequiredItems items="Hakkero_Laser_Ammo" type="Contained" />
+            </StatusEffect>
             <StatusEffect type="OnUse" target="This" reload="0.15" setvalue="true" >
                 <RequiredItems items="Hakkero_Laser_Ammo" type="Contained" />
             </StatusEffect>
@@ -128,7 +131,7 @@
         </ItemContainer>
         <Quality>
             <QualityStat stattype="FirepowerMultiplier" value="0.1" />
-            <QualityStat stattype="Condition" value="0.05" />
+            <QualityStat stattype="Condition" value="0.15" />
         </Quality>
         <SkillRequirementHint identifier="weapons" level="100" />
         <SkillRequirementHint identifier="Touhou_Magic" level="100" />

@@ -638,10 +638,10 @@
     <!--灵气稳定剂-->
     <Item name="灵气稳定剂" identifier="Touhou_Reiki_Stability_Potion" tags="smallitem,chem,medical,syringe" subcategory="Touhou" category="medical" cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8"
           scale="0.5" useinhealthinterface="true" >
-        <PreferredContainer primary="medcab" secondary="medcontainer" amount="1" spawnprobability="0.1" />
-        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.1" />
-        <PreferredContainer secondary="outpostmedcab" amount="1" spawnprobability="0.1" />
-        <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.1" />
+        <PreferredContainer primary="medcab" secondary="medcontainer" amount="1" spawnprobability="0.08" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="2" spawnprobability="0.06" />
+        <PreferredContainer secondary="outpostmedcab" amount="1" spawnprobability="0.08" />
+        <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.06" />
         <Price baseprice="2000" >
             <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" minavailable="1" />

@@ -1000,7 +1000,7 @@
             <RequiredItems items="Touhou_Lunar_Center" type="Contained" msg="ItemMsgAmmoRequired" />
             <RequiredSkill identifier="weapons" level="75" />
         </RangedWeapon>
-        <ItemContainer capacity="1" maxstacksize="12" hideitems="false" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0" containedspritedepth="0.56">
+        <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0" containedspritedepth="0.56">
             <Containable items="Touhou_Lunar_Center" hide="true"/>
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         </ItemContainer>

@@ -29,7 +29,6 @@
         <Item identifier="gensokyo_divinggear_Locked" equip="true" >
           <Item identifier="oxygentank" showpreview="false" />
         </Item>
-        <Item identifier="Fire_Element_Book" />
       </ItemSet>
     </npc>
 
@@ -63,7 +62,6 @@
         <Item identifier="gensokyo_divinggear_Locked" equip="true" >
           <Item identifier="oxygentank" showpreview="false" />
         </Item>
-        <Item identifier="Fire_Element_Book" />
       </ItemSet>
     </npc>
 

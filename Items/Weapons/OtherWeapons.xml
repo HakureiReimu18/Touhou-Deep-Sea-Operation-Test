@@ -2313,7 +2313,7 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="255,10,10,220"/>
-            <Attack itemdamage="90" levelwalldamage="120" targetforce="15" targetimpulse="15" penetration="0.35" severlimbsprobability="1.0">
+            <Attack itemdamage="90" levelwalldamage="120" targetforce="15" targetimpulse="15" penetration="0.25" severlimbsprobability="1.0">
                 <Affliction identifier="explosiondamage" strength="40" />
                 <Affliction identifier="Reiki_Pressure" strength="5" />
                 <Affliction identifier="burn" strength="45" />
