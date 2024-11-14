@@ -321,7 +321,7 @@
             <StatusEffect type="OnUse" targettype="Contained" targets="Spiritual_Water" Condition="-2" />
             <StatusEffect type="OnUse" targettype="Contained" targets="batterycell" Condition="-2.5" />
             <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumbatterycell" Condition="-1.0" />
-            <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-20.0" Condition="-46.0" />
+            <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-30.0" Condition="-60.0" />
             <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.25" Condition="-75.0" />
             <StatusEffect type="OnUse" target="Limb" >
                 <Conditional EntityType="eq Limb" />

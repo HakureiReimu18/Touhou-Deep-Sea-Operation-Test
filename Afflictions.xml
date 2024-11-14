@@ -837,7 +837,7 @@
           <Affliction identifier="Reiki_Pressure" strength="3.5" />
           <Affliction identifier="acidburn" strength="7" />
           <Affliction identifier="explosiondamage" strength="7" />
-          <Affliction identifier="stun" strength="2" probability="0.5" />
+          <Affliction identifier="stun" strength="0.14" probability="0.5" />
         </Explosion>
       </StatusEffect>
       <StatusEffect target="Character" >
@@ -956,7 +956,7 @@
       </StatusEffect>
     </Effect>
     <Effect minstrength="150" maxstrength="300" strengthchange="-1" minskillmultiplier="1.1" maxskillmultiplier="1.409"
-            resistancefor="burn,bleeding,damage,alieninfection,poison,paralysis,stun" minresistance="0.1" maxresistance="0.25">
+            resistancefor="burn,bleeding,damage,alieninfection,poison,paralysis,stun" minresistance="0.1" maxresistance="0.2">
       <StatusEffect target="Character" Interval="1.0" Duration="1.0" >
         <Conditional skillrequirement="true" Touhou_Magic="gt 60"/>
         <ReduceAffliction identifier="Reiki_Side_Effect" strength="0.4" />
@@ -997,7 +997,7 @@
   <Affliction name="" identifier="Touhou_Magic_Boost_Patchouli" description="" type="resistance" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="10"
               showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Magic_Boost" minstrength="0" maxstrength="10"/>
-    <Effect minstrength="0" maxstrength="10" strengthchange="-1" resistancefor="damage,bloodloss,bleeding,Phoenix_Burn,debuff,alieninfection,poison,paralysis,stun,burn,triton_7L,tsm_bl" minresistance="0.25" maxresistance="0.25">
+    <Effect minstrength="0" maxstrength="10" strengthchange="-1" resistancefor="damage,bloodloss,bleeding,Phoenix_Burn,debuff,alieninfection,poison,paralysis,stun,burn,triton_7L,tsm_bl" minresistance="0.15" maxresistance="0.15">
       <StatusEffect target="Character"  Interval="1.0" Duration="1.0">
         <Conditional  HealthPercentage="lt 60"/>
         <ReduceAffliction type="damage" strength="0.4" />

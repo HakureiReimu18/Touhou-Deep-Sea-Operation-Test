@@ -2671,7 +2671,7 @@
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5" ChargeSoundWindupPitchSlide="0.5,1.5">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Blunderbuss.png" sourcerect="0,77,108,108" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
-            <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+            <ParticleEmitter particle="FlareBubbles" scalemin="1.4" scalemax="1.8" particleamount="4" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
             <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.0" particleamount="20" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="80,80,200,255" />
             <Sound file="%ModDir%/Sounds/Weapons/Touhou_Lunarquake/Touhou_Lunarquake_Attack01.ogg" type="OnUse" range="2000" selectionmode="Random" />
             <Sound file="%ModDir%/Sounds/Weapons/Touhou_Lunarquake/Touhou_Lunarquake_Attack02.ogg" type="OnUse" range="2000" selectionmode="Random" />
@@ -2679,6 +2679,12 @@
                 <Explosion range="50.0" force="1.0" shockwave="true" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="Character" >
+                <ReduceAffliction identifier="Koishi_Unconscious_Flag" amount="0.05" />
+                <ReduceAffliction identifier="Koishi_Unconscious01" amount="0.05" />
+                <ReduceAffliction identifier="Koishi_Unconscious02" amount="0.05" />
+                <ReduceAffliction identifier="Koishi_Unconscious03" amount="0.05" />
+            </StatusEffect>
             <StatusEffect type="OnUse" target="This" reload="-0.08" disabledeltatime="true" >
                 <Conditional reload="gte 0.14" />
             </StatusEffect>
@@ -2722,16 +2728,16 @@
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" requiresrecipe="true" >
             <RequiredSkill identifier="Touhou_Magic" level="60" />
-            <RequiredItem identifier="flashpowder" />
+            <RequiredItem identifier="flashpowder" amount="2" />
             <RequiredItem identifier="Shui_Alchemical" />
             <RequiredItem identifier="Yin_Alchemical" />
             <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem" requiresrecipe="true" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="flashpowder" />
-            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="true" />
-            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" usecondition="true" />
+            <RequiredItem identifier="flashpowder" amount="2" />
+            <RequiredItem identifier="Shui_Alchemical" />
+            <RequiredItem identifier="Yin_Alchemical" />
             <RequiredItem identifier="Touhou_Lunar_Center" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Ammo.png" sourcerect="0,0,120,120" depth="0.45" origin="0.5,0.5" />
@@ -2742,7 +2748,7 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Lunar_Center_Light" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-0.8" disabledeltatime="true" spawnItemRandomly="true" >
+            <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" spawnItemRandomly="true" >
                 <SpawnItem identifiers="Touhou_Lunar_Center_Light01" spawnposition="ThisInventory" commonness="1.0" />
                 <SpawnItem identifiers="Touhou_Lunar_Center_Light02" spawnposition="ThisInventory" commonness="1.0" />
                 <SpawnItem identifiers="Touhou_Lunar_Center_Light03" spawnposition="ThisInventory" commonness="1.0" />

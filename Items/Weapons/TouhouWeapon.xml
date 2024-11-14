@@ -1696,7 +1696,7 @@
             </StatusEffect>
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon barrelpos="170,20" spread="6" unskilledspread="24" reload="0.13" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.9" DualWieldReloadTimePenaltyMultiplier="1.4" DualWieldAccuracyPenalty="4">
+        <RangedWeapon barrelpos="170,20" spread="6" unskilledspread="24" reload="0.16" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.9" DualWieldReloadTimePenaltyMultiplier="1.4" DualWieldAccuracyPenalty="4">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Aya_Circular_Fan.png" sourcerect="82,54,47,78" />
 <!--            <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Icicle_Fall.png" sourcerect="145,0,199,199" />-->
             <StatusEffect type="OnUse" target="This">
@@ -1769,9 +1769,9 @@
                     sticktodoors="true" maxtargetstohit="1" removeonhit="true" friendlyfire="false">
             <Attack structuredamage="0.5" itemdamage="5" targetforce="20" targetimpulse="20" severlimbsprobability="0.2" penetration="0.1">
                 <Affliction identifier="bleeding" strength="1.5" />
-                <Affliction identifier="lacerations" strength="6" />
+                <Affliction identifier="lacerations" strength="5" />
                 <Affliction identifier="lacerations" strength="5" probability="0.15" />
-                <Affliction identifier="stun" strength="0.5" probability="0.04" />
+                <Affliction identifier="stun" strength="0.1" probability="0.04" />
             </Attack>
             <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
                 <Remove />
@@ -2357,7 +2357,7 @@
             <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.5">
                 <Affliction identifier="acidburn" strength="10" />
                 <Affliction identifier="Reiki_Pressure" strength="2" />
-                <Affliction identifier="Touhou_Silent_Selene_Dream" strength="2.8" />
+                <Affliction identifier="Touhou_Silent_Selene_Dream" strength="1.4" />
 <!--                <Affliction identifier="Touhou_Yin_Elements" strength="5" />
                 <Affliction identifier="Touhou_Yin_Elements" strength="7" probability="0.15" />-->
             </Attack>

@@ -656,8 +656,8 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--斩断魂灵 对剩余生命值越高的敌人，穿透的护甲越高，最高15%。
-    穿着妖梦装束+时：对满血敌人的攻击造成额外30%伤害，额外15%穿甲。攻击拥有断念效果的敌人时将附带缓慢效果。-->
+    <!--斩断魂灵 对剩余生命值越高的敌人，穿透的护甲越高，最高10%。
+    穿着妖梦装束+时：对满血敌人的攻击造成额外30%伤害，额外10%穿甲。攻击拥有断念效果的敌人时将附带缓慢效果。-->
     <Talent identifier="Touhou_Youling_Wangling03">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Youling_Wangling03"/>
@@ -669,7 +669,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addedpenetration="0.05"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.03"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -680,7 +680,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addedpenetration="0.05"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.03"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -691,7 +691,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addedpenetration="0.05"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.04"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -704,7 +704,7 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.3"/>
-                <CharacterAbilityModifyAttackData addedpenetration="0.15"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -1350,7 +1350,7 @@
     穿着幽香装束+时：大大增加出血的恢复速度，根据当前魔法能力水平的10%提高攻击伤害，近战攻击速度、移动速度。这个效果在魔法能力超过300时达到上限
     穿着鵺 装束+时：魔法能力大于80后，增加20%最大生命值。对血量低于一半的敌人造成额外30%的伤害
     穿着荷取装束+时：减少20%反应堆燃料消耗。机械工程大于80后，增加10%炮塔伤害，减少10%炮塔能耗，增加10%反应堆最大功率和水泵效率
-    穿着恋 装束+时：根据魔法能力水平的25%提高近战攻击速度。这个效果在魔法能力超过300时达到上限-->
+    穿着恋 装束+时：根据魔法能力水平的20%提高近战攻击速度。这个效果在魔法能力超过300时达到上限。对剩余血量大于70%的敌人造成额外51.4%的伤害-->
     <Talent identifier="Touhou_Yaoguai07">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yaoguai07"/>
@@ -1477,7 +1477,7 @@
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" invert="true" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxvalue="0.25" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxvalue="0.2" skillidentifier="Touhou_Magic" />
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="0.5">
@@ -1486,9 +1486,21 @@
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.75" />
+                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.6" />
             </Abilities>
         </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Closed_Eyes_Of_Koishi" />
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional HealthPercentage="gte 70"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.514"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <!--吸血鬼-->
@@ -1656,7 +1668,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--嗜血传说 远程攻击速度增加10%，近战攻击速度增加10%，攻击伤害增加10%，这个效果在水中减半。
+    <!--嗜血传说 远程攻击速度、近战攻击速度和攻击伤害增加10%，这个效果在水中减半。
     穿着蕾米莉亚装束+时：增加5%物理伤害抗性、5%烧伤抗性和10%最大生命值
     穿着芙兰朵露装束+时：增加15%烧伤抗性，生命值大于50%时，提高50%精神病抗性，增加50%技能获取速度-->
     <Talent identifier="Touhou_Vampire04">
@@ -2425,7 +2437,7 @@
 
     <!--领地意识 当自己的潜艇遭受攻击后，一定时间内将操作炮塔的射速提高25%。这个效果有2分钟冷却。
         穿着文文装束+时：当周围有其他船员时，提高10%最大生命值和10%攻击速度
-        穿着椛 装束+时：当周围有其他船员时，对血量低于一半的敌人造成额外10%的伤害-->
+        穿着椛 装束+时：当周围有其他船员时，对血量低于一半的敌人造成额外15%的伤害-->
     <Talent identifier="Touhou_Tiangou06" >
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tiangou06"/>
@@ -2487,7 +2499,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -2681,8 +2693,8 @@
     </Talent>
 
     <!--如梦似幻 击杀任意生物后，给予所有技能点1点。这个效果一巡回最多触发3次。
-        穿着天子装束+时：巡回完成所有任务后，增加1个计数。计数达到5个后，增加20%近战攻击速度和10%物理伤害抗性。计数在死亡后清除-->
-    <Talent identifier="Touhou_Tianren_Xianren05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="5">
+        穿着天子装束+时：巡回完成所有任务后，增加1个计数。计数达到10个后，增加20%近战攻击速度和10%物理伤害抗性。计数在死亡后清除-->
+    <Talent identifier="Touhou_Tianren_Xianren05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="10">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tianren_Xianren05"/>
         <AbilityGroupEffect abilityeffecttype="OnRoundEnd">
@@ -2715,7 +2727,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="The_Daughter_Of_Heaven" />
                 <AbilityConditionLocation hasoutpost="true"/>
-                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="6" invert="true"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="11" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Tiangou05_Counter" value="1" removeondeath="true" />
@@ -2724,7 +2736,7 @@
         <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="The_Daughter_Of_Heaven" />
-                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="5"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="10"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.2"/>

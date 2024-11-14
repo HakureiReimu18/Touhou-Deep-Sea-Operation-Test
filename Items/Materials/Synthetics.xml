@@ -345,7 +345,7 @@
                 <Conditional Condition="lte 0" />
                 <GiveSkill skillidentifier="weapons" amount="2" triggertalents="false"/>
                 <GiveSkill skillidentifier="Touhou_Magic" amount="4" triggertalents="false"/>
-                <GiveExperience amount="350" />
+                <GiveExperience amount="250" />
                 <RemoveItem />
             </StatusEffect>
             <StatusEffect type="OnContained" target="This" condition="2.0" >

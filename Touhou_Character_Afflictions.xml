@@ -1144,7 +1144,7 @@
 
     <!--闪身冷却-->
     <Affliction identifier="Koishi_Dodge_CD" type="Touhou_Character_Affliction" limbspecific="false" hideiconafterdelay="false" maxstrength="1"
-                showiconthreshold="100" showinhealthscannerthreshold="100" duration="20" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+                showiconthreshold="100" showinhealthscannerthreshold="100" duration="30" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="1" />
         <Icon texture="%ModDir%/Images/Afflictions/Koishi_Unconscious_Flag.png" sourcerect="0,0,128,128" color="155,255,155,255" />
     </Affliction>
@@ -1227,7 +1227,7 @@
             </StatusEffect>
             <StatValue stattype="MeleeAttackMultiplier" minvalue="0.0" maxvalue="0.514" />
             <StatValue stattype="AttackMultiplier" minvalue="0" maxvalue="-0.257" />
-            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="-0.771" />
+            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="-0.514" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Liberation_Of_Koishi.png" sourcerect="0,0,128,128" color="155,255,155,255" />
     </Affliction>
@@ -1250,9 +1250,10 @@
     <Affliction identifier="Koishi_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="damage,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-10">
-            <StatValue stattype="MeleeAttackSpeed" value="0.15" />
+            <StatValue stattype="MeleeAttackSpeed" value="0.1" />
             <StatValue stattype="RangedAttackSpeed" value="0.1" />
             <StatValue stattype="BuffDurationMultiplier" value="0.35" />
+            <StatValue stattype="AttackMultiplier" value="0.15" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Koishi_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
