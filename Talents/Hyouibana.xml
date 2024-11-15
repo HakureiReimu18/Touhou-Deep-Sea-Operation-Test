@@ -205,7 +205,7 @@
 
     <!--凭依荷取-->
     <Talent identifier="Hyouibana_Nitori">
-        <Icon texture="%ModDir%/Images/Afflictions/Kappa_Pororoca.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Icon texture="%ModDir%/Images/Talents/Kappa_Pororoca.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Hyouibana_Nitori"/>
         <AbilityGroupInterval interval="9.9">
             <Abilities>
@@ -325,7 +325,7 @@
 
     <!--凭依幽香-->
     <Talent identifier="Hyouibana_Yuka" >
-        <Icon texture="%ModDir%/Images/Talents/YukaTalent.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Icon texture="%ModDir%/Images/Talents/Lord_Of_Flowers.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Hyouibana_Yuka"/>
         <AbilityGroupInterval interval="9.9">
             <Abilities>
