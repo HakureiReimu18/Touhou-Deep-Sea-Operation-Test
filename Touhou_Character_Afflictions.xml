@@ -317,7 +317,9 @@
 
     <!--妖梦-完全凭依-->
     <Affliction identifier="Hyouibana_Effect_Prefect_Youmu" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MeleeAttackMultiplier" value="0.3" />
+        </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Ancient_Temple.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
@@ -385,7 +387,7 @@
     <!--荷取-完全凭依-->
     <Affliction identifier="Hyouibana_Effect_Prefect_Nitori" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="1"/>
-        <Icon texture="%ModDir%/Images/Afflictions/Ancient_Temple.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Candid_Friend.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
     <!--凭依荷取-->
@@ -402,7 +404,7 @@
             </StatusEffect>
             <StatValue stattype="SwimmingSpeed" value="0.2" />
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/Ancient_Temple.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Candid_Friend.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
     <!--荷取-专属武器效果-->
@@ -828,7 +830,9 @@
 
     <!--幽香-完全凭依-->
     <Affliction identifier="Hyouibana_Effect_Prefect_Yuka" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
+        </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Flowers_Of_Four_Seasons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 

@@ -2628,7 +2628,12 @@
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional jobidentifier="eq Yokai"/>
-                <Conditional Unconfirmed_Fantasy_Flying_Girl="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Koishi="gt 0"/>
+                <Affliction identifier="Koishi_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Hyouibana_Effect_Prefect_Nue="gt 0"/>
                 <Affliction identifier="Nue_Weapons" strength="50" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -2638,7 +2643,17 @@
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Hyouibana_Effect_Prefect_Yuka="gt 0"/>
+                <Affliction identifier="Yuka_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional jobidentifier="eq Yokai"/>
                 <Conditional Candid_Friend="gt 0"/>
+                <Affliction identifier="Nitori_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Hyouibana_Effect_Prefect_Nitori="gt 0"/>
                 <Affliction identifier="Nitori_Weapons" strength="50" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">

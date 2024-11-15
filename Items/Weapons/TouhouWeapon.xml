@@ -1164,8 +1164,9 @@
             <StatusEffect type="OnActive" target="Character">
                 <Affliction identifier="Touhou_Lou_Guan_Sword" strength="10" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Ancient_Temple="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Youmu="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -1248,12 +1249,14 @@
             <StatusEffect type="OnUse" target="limb" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Ancient_Temple="eq 0"/>
+                <Conditional Hyouibana_Youmu_Effect="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Ancient_Temple="gt 0"/>
+                <Conditional Hyouibana_Youmu_Effect="gt 0"/>
                 <Affliction identifier="Touhou_Bai_Lou_Sword" strength="10" />
                 <Affliction identifier="Touhou_Water_Heart" strength="10" />
             </StatusEffect>
@@ -1289,13 +1292,15 @@
             <StatusEffect type="OnSuccess" target="This" reload="0.4" setvalue="true">
                 <Conditional reload="gt 0.4" />
             </StatusEffect>
-            <StatusEffect type="OnSuccess" target="Character" setvalue="true">
+            <StatusEffect type="OnSuccess" target="Character" setvalue="true" comparison="And">
                 <Conditional Ancient_Temple="eq 0"/>
+                <Conditional Hyouibana_Youmu_Effect="eq 0"/>
                 <Affliction identifier="stun" amount="5" />
             </StatusEffect>
             <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
-            <StatusEffect type="OnFailure" target="Character" setvalue="true" >
+            <StatusEffect type="OnFailure" target="Character" comparison="And" >
                 <Conditional Ancient_Temple="eq 0"/>
+                <Conditional Hyouibana_Youmu_Effect="eq 0"/>
                 <Affliction identifier="stun" amount="5" />
             </StatusEffect>
             <RequiredSkill identifier="weapons" level="100" />
@@ -1567,10 +1572,12 @@
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional The_Daughter_Of_Heaven="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Tenshi="gt 0"/>
                 <Affliction identifier="Tenshi_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional The_Daughter_Of_Heaven="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Tenshi="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -1620,8 +1627,9 @@
                 <Sound file="%ModDir%/Sounds/Weapons/Hisou_Sword_Attack05.ogg" range="300" />
             </StatusEffect>
             <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
-            <StatusEffect type="OnUse" target="Character" >
-                <Conditional The_Daughter_Of_Heaven="lt 2"/>
+            <StatusEffect type="OnUse" target="Character" comparison="And" >
+                <Conditional The_Daughter_Of_Heaven="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Tenshi="eq 0"/>
                 <Affliction identifier="Reiki_Pressure" strength="1.5" />
             </StatusEffect>
             <RequiredSkill identifier="weapons" level="100" />
@@ -1680,7 +1688,6 @@
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Wind_God_Girl="eq 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Aya="eq 0"/>
-                <Conditional Grunt_Security_Tengu="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -1824,10 +1831,12 @@
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="40,-10" handle1="-26,-11" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional The_Still_Library="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Patchouli="gt 0"/>
                 <Affliction identifier="Patchouli_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional The_Still_Library="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Patchouli="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -2490,10 +2499,12 @@
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Possessed_By_Phoenix="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Mokou="gt 0"/>
                 <Affliction identifier="Mokou_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Possessed_By_Phoenix="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Mokou="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -2638,8 +2649,9 @@
                 <ReduceAffliction identifier="burn" amount="0.05"/>
                 <ReduceAffliction identifier="oxygenlow" amount="1"/>
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional The_Daughter_Of_Heaven="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Tenshi="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" >
@@ -2944,6 +2956,10 @@
                 <Conditional condition="gt 0"/>
                 <Conditional Grunt_Security_Tengu="gt 5"/>
             </StatusEffect>
+            <StatusEffect type="Always" target="This,Character" condition="0.3" comparison="And" >
+                <Conditional condition="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Momizi="gt 5"/>
+            </StatusEffect>
             <StatusEffect type="Always" target="This" condition="0.3" >
                 <Conditional condition="gt 5"/>
             </StatusEffect>
@@ -3052,6 +3068,10 @@
             <StatusEffect type="Always" target="This,Character" condition="1.5" comparison="And" >
                 <Conditional condition="gt 5"/>
                 <Conditional Grunt_Security_Tengu="gt 5"/>
+            </StatusEffect>
+            <StatusEffect type="Always" target="This,Character" condition="0.75" comparison="And" >
+                <Conditional condition="gt 5"/>
+                <Conditional Hyouibana_Effect_Prefect_Momizi="gt 5"/>
             </StatusEffect>
             <StatusEffect type="Always" target="This" condition="1.5" >
                 <Conditional condition="gt 5"/>
@@ -3377,7 +3397,6 @@
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Wind_God_Girl="eq 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Aya="eq 0"/>
-                <Conditional Grunt_Security_Tengu="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -3495,10 +3514,12 @@
                      holdangle="20" aimangle="40" reload="0.75" range="100" combatPriority="50" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Younger_Sister_Of_Scarlet="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="gt 0"/>
                 <Affliction identifier="Flandre_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -3552,8 +3573,9 @@
             <StatusEffect type="OnFailure" target="Character" >
                 <Affliction identifier="bloodloss" strength="0.5" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Character" >
-                <Conditional Younger_Sister_Of_Scarlet="lt 2"/>
+            <StatusEffect type="OnUse" target="Character" comparison="And" >
+                <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="eq 0"/>
                 <Affliction identifier="Reiki_Pressure" strength="0.3" />
                 <Affliction identifier="bloodloss" strength="0.5" />
             </StatusEffect>
@@ -3603,10 +3625,12 @@
                      holdangle="50" aimangle="-10" reload="1.0" range="120" combatPriority="50" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Unconfirmed_Fantasy_Flying_Girl="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Nue="gt 0"/>
                 <Affliction identifier="Nue_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Unconfirmed_Fantasy_Flying_Girl="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Nue="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -3661,7 +3685,8 @@
                 <Affliction identifier="psychosis" strength="1.5" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Character" >
-                <Conditional Unconfirmed_Fantasy_Flying_Girl="lt 2"/>
+                <Conditional Unconfirmed_Fantasy_Flying_Girl="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Nue="eq 0"/>
                 <Affliction identifier="Reiki_Pressure" strength="1.5" />
                 <Affliction identifier="psychosis" strength="1.5" />
                 <Affliction identifier="Sleepless_Nightmare" strength="5" />
@@ -3725,10 +3750,12 @@
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Younger_Sister_Of_Scarlet="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="gt 0"/>
                 <Affliction identifier="Flandre_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -3806,8 +3833,9 @@
             <StatusEffect type="OnFailure" target="Character" >
                 <Affliction identifier="bloodloss" strength="5.0" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Character" >
-                <Conditional Younger_Sister_Of_Scarlet="lt 4"/>
+            <StatusEffect type="OnUse" target="Character" comparison="And" >
+                <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="eq 0"/>
                 <Affliction identifier="bloodloss" strength="2.0" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Character" >
@@ -3820,8 +3848,9 @@
             <StatusEffect type="OnActive" target="Character" >
                 <Affliction identifier="bloodloss" strength="0.6" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
-                <Conditional Younger_Sister_Of_Scarlet="lt 4"/>
+            <StatusEffect type="OnActive" target="Character" comparison="And" >
+                <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="eq 0"/>
                 <Affliction identifier="bloodloss" strength="0.8" />
             </StatusEffect>
             <RequiredSkill identifier="Touhou_Magic" level="100" />
@@ -3866,10 +3895,12 @@
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Fairy_Of_Ice="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Cirno="gt 0"/>
                 <Affliction identifier="Cirno_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Fairy_Of_Ice="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Cirno="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -3970,10 +4001,12 @@
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="0,0" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Fairy_Of_Ice="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Cirno="gt 0"/>
                 <Affliction identifier="Cirno_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Fairy_Of_Ice="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Cirno="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -4171,10 +4204,12 @@
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Fairy_Of_Hell="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Piece="gt 0"/>
                 <Affliction identifier="Piece_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Fairy_Of_Hell="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Piece="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -4282,10 +4317,13 @@
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdangle="-40" aimpos="63,0" handle1="0,0" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Younger_Sister_Of_Scarlet="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="gt 0"/>
                 <Affliction identifier="Flandre_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
+                <Conditional Younger_Sister_Of_Scarlet="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Flandre="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -4496,10 +4534,12 @@
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Koishi="gt 0"/>
                 <Affliction identifier="Koishi_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Closed_Eyes_Of_Koishi="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Koishi="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -4847,10 +4887,12 @@
                      allowhitmultiple="true" combatPriority="10" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Puppeteer_Of_Seven_Colors="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Alice="gt 0"/>
                 <Affliction identifier="Alice_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Puppeteer_Of_Seven_Colors="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Alice="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -4929,10 +4971,12 @@
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="40,-10" handle1="-26,-11" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Puppeteer_Of_Seven_Colors="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Alice="gt 0"/>
                 <Affliction identifier="Alice_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Puppeteer_Of_Seven_Colors="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Alice="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
