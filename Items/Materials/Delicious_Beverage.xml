@@ -46,7 +46,7 @@
                 <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300"  />
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" delay="0.5" disabledeltatime="true" comparison="Or">
-                <Conditional Hyouibana_Tenshi_Effect="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Tenshi="gt 0"/>
                 <Conditional The_Daughter_Of_Heaven="gt 0"/>
                 <Affliction identifier="Tenshi_Peach" amount="100" />
             </StatusEffect>

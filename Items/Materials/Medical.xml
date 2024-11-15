@@ -424,13 +424,13 @@
     <Item name="" identifier="Hyouibana_Dream" subcategory="Touhou" category="Medical" maxstacksize="1" Tags="smallitem" allowasextracargo="true" description=""
           useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" spritecolor="255,0,0,255">
         <PreferredContainer primary="medcab"/>
-        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.015" />
-        <Price baseprice="20000" minleveldifficulty="50" >
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.02" />
+        <Price baseprice="10000" minleveldifficulty="45" >
             <Price storeidentifier="merchantoutpost" maxavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" maxavailable="1" />
             <Price storeidentifier="merchantresearch" multiplier="1.1" maxavailable="1" />
-            <Price storeidentifier="merchantmilitary" multiplier="1.1" maxavailable="1" sold="false"/>
-            <Price storeidentifier="merchantmine" maxavailable="1" sold="false" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.1" maxavailable="1"/>
+            <Price storeidentifier="merchantmine" maxavailable="1" />
         </Price>
         <Deconstruct time="15"/>
         <Sprite texture="Content/Items/Medical/Medicines.png" sourcerect="303,310,35,67" depth="0.6" origin="0.5,0.5" />
@@ -439,8 +439,24 @@
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget" >
                 <Conditional Hyouibana_Effect_Flag="eq 0"/>
+                <Affliction identifier="Hyouibana_Effect_Flag01" amount="100" />
                 <!--通过写一个新的afflication凭依判断是否已经有凭依，如果已经有了，那么不生效-->
                 <GiveTalentInfo giverandom="true" talentidentifiers="Hyouibana_Aya,Hyouibana_Marisa,Hyouibana_Mokou,Hyouibana_Remilia,Hyouibana_Youmu,Hyouibana_Patchouli,Hyouibana_Tenshi,Hyouibana_Reimu" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" >
+                <Conditional Hyouibana_Effect_Flag01="gt 0"/>
+                <Affliction identifier="Hyouibana_Effect_Flag02" amount="10" />
+                <ReduceAffliction identifier="Hyouibana_Effect_Flag01" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" >
+                <Conditional Hyouibana_Effect_Flag02="gt 0"/>
+                <Affliction identifier="Hyouibana_Effect_Flag03" amount="10" />
+                <ReduceAffliction identifier="Hyouibana_Effect_Flag02" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" >
+                <Conditional Hyouibana_Effect_Flag03="gt 0"/>
+                <Affliction identifier="Hyouibana_Effect_Prefect" amount="10" />
+                <ReduceAffliction identifier="Hyouibana_Effect_Flag03" amount="10" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <Conditional entitytype="eq Character"/>

@@ -767,6 +767,7 @@
       </StatusEffect>
       <StatusEffect target="Character" Interval="5" >
         <Conditional The_Still_Library="gt 6"/>
+        <Conditional Hyouibana_Effect_Prefect_Patchouli="gt 6"/>
         <Affliction identifier="Touhou_MEID_Patchouli_Effect" amount="100" />
       </StatusEffect>
       <StatusEffect target="Character" Interval="5" >
@@ -986,6 +987,7 @@
       </StatusEffect>
       <StatusEffect target="Character" comparison="And" Interval="1.0" Duration="1.0" >
         <Conditional The_Still_Library="gt 1"/>
+        <Conditional Hyouibana_Effect_Prefect_Patchouli="gt 1"/>
         <Conditional IsDead="false" />
         <Affliction identifier="Touhou_Magic_Boost_Patchouli" strength="10" />
       </StatusEffect>
@@ -998,8 +1000,8 @@
               showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Magic_Boost" minstrength="0" maxstrength="10"/>
     <Effect minstrength="0" maxstrength="10" strengthchange="-1" resistancefor="damage,bloodloss,bleeding,Phoenix_Burn,debuff,alieninfection,poison,paralysis,stun,burn,triton_7L,tsm_bl" minresistance="0.15" maxresistance="0.15">
-      <StatusEffect target="Character"  Interval="1.0" Duration="1.0">
-        <Conditional  HealthPercentage="lt 60"/>
+      <StatusEffect target="Character" Interval="1.0" Duration="1.0">
+        <Conditional HealthPercentage="lt 60"/>
         <ReduceAffliction type="damage" strength="0.4" />
         <ReduceAffliction type="burn" strength="0.4" />
       </StatusEffect>
@@ -1128,13 +1130,6 @@
     <Effect minstrength="0" maxstrength="10" strengthchange="-9" >
       <StatValue stattype="AttackMultiplier" value="-0.3" />
     </Effect>
-    <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
-  </Affliction>
-
-  <!--凭依效果检测-->
-  <Affliction name="" identifier="Hyouibana_Effect_Flag" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="10"
-              showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="10" />
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
@@ -1769,4 +1764,84 @@
     </PeriodicEffect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
+
+  <!--凭依效果检测-->
+  <Affliction
+          name="凭依效果检测"
+          identifier="Hyouibana_Effect_Flag"
+          description=""
+          type="Hyouibana_Effect_Flag"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="40,40,40,255" origin="0,0"/>
+  </Affliction>
+
+  <!--凭依第一阶段-->
+  <Affliction
+          name="凭依第一阶段"
+          identifier="Hyouibana_Effect_Flag01"
+          description=""
+          type="Hyouibana_Effect_Flag"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          maxstrength="1"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="40,40,40,255" origin="0,0"/>
+  </Affliction>
+
+  <!--凭依第二阶段-->
+  <Affliction
+          name="凭依第二阶段"
+          identifier="Hyouibana_Effect_Flag02"
+          description=""
+          type="Hyouibana_Effect_Flag"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          maxstrength="1"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="100,100,100,255" origin="0,0"/>
+  </Affliction>
+
+  <!--凭依第三阶段-->
+  <Affliction
+          name="凭依第三阶段"
+          identifier="Hyouibana_Effect_Flag03"
+          description=""
+          type="Hyouibana_Effect_Flag"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          maxstrength="1"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="150,150,150,255" origin="0,0"/>
+  </Affliction>
+
+  <!--完全凭依-->
+  <Affliction
+          name="完全凭依"
+          identifier="Hyouibana_Effect_Prefect"
+          description=""
+          type="Hyouibana_Effect_Flag"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
 </Afflictions>

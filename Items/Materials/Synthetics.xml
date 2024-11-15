@@ -90,7 +90,7 @@
         <PreferredContainer secondary="outpostmedcompartment" minamount="4" maxamount="18" spawnprobability="0.2" />
         <PreferredContainer secondary="supplycab,wreckstoragecab" minamount="10" maxamount="20" spawnprobability="0.05" notcampaign="true"/>
         <PreferredContainer secondary="abandonedstoragecab" minamount="4" maxamount="18" spawnprobability="0.18" />
-        <Price baseprice="100" >
+        <Price baseprice="90" >
             <Price storeidentifier="merchantoutpost" minavailable="24" maxavailable="64"/>
             <Price storeidentifier="merchantcity" minavailable="60" maxavailable="64" />
             <Price storeidentifier="merchantresearch" minavailable="48" maxavailable="64" />
@@ -163,7 +163,7 @@
         <PreferredContainer secondary="outpostmedcompartment" amount="12" spawnprobability="0.06" />
         <PreferredContainer secondary="supplycab" minamount="6" maxamount="12" spawnprobability="0.15" notcampaign="true"/>
         <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="8" maxamount="16" spawnprobability="0.25" />
-        <Price baseprice="20" >
+        <Price baseprice="24" >
             <Price storeidentifier="merchantoutpost" minavailable="48"/>
             <Price storeidentifier="merchantcity" minavailable="80" />
             <Price storeidentifier="merchantresearch" minavailable="60" />
@@ -192,12 +192,12 @@
         <PreferredContainer secondary="outpostmedcompartment" amount="8" spawnprobability="0.08" />
         <PreferredContainer secondary="supplycab" minamount="8" maxamount="12" spawnprobability="0.1" notcampaign="true"/>
         <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="12" maxamount="24" spawnprobability="0.2" />
-        <Price baseprice="80" >
-            <Price storeidentifier="merchantoutpost" minavailable="72"/>
-            <Price storeidentifier="merchantcity" minavailable="144" />
-            <Price storeidentifier="merchantresearch" minavailable="96" />
-            <Price storeidentifier="merchantmilitary" minavailable="72" />
-            <Price storeidentifier="merchantmine" minavailable="72"/>
+        <Price baseprice="70" >
+            <Price storeidentifier="merchantoutpost" minavailable="36"/>
+            <Price storeidentifier="merchantcity" minavailable="72" />
+            <Price storeidentifier="merchantresearch" minavailable="64" />
+            <Price storeidentifier="merchantmilitary" minavailable="64" />
+            <Price storeidentifier="merchantmine" minavailable="64"/>
         </Price>
         <Deconstruct time="1">
             <Item identifier="carbon" />
@@ -913,9 +913,9 @@
     <!--简单零件-->
     <Item name="简单零件" identifier="Touhou_Simple_Parts" tags="smallitem" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.15" HideConditionBar="true">
         <PreferredContainer primary="engcab" />
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.1" />
-        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.15"/>
-        <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.15" />
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.12" />
+        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.18"/>
+        <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.18" />
         <Deconstruct time="10" chooserandom="true" amount="4">
             <Item identifier="iron" commonness="0.8" />
             <Item identifier="steel" commonness="0.6" />

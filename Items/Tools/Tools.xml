@@ -763,6 +763,7 @@
             <StatusEffect type="OnSecondaryUse" target="This,Character" delay="0.2" Condition="-90" >
                 <Conditional Grunt_Security_Tengu="gt 2"/>
                 <Conditional Wind_God_Girl="gt 2"/>
+                <Conditional Hyouibana_Effect_Prefect_Aya="gt 2"/>
                 <Affliction identifier="Touhou_Aya_Token_Effect" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" disabledeltatime="true" >

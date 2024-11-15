@@ -32,10 +32,12 @@
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Ordinary_Magician="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Marisa="gt 0"/>
                 <Affliction identifier="Marisa_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Ordinary_Magician="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Marisa="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -857,10 +859,12 @@
         <Holdable slots="Any,RightHand+LeftHand" UseHandRotationForHoldAngle="true" controlpose="true" aimpos="10,90" holdangle="65" handle1="20,-6" handle2="144,-68" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character">
                 <Conditional scarletdevil="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Remilia="gt 0"/>
                 <Affliction identifier="Reimilia_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional scarletdevil="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Remilia="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
@@ -1670,10 +1674,12 @@
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="0,-40" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Wind_God_Girl="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Aya="gt 0"/>
                 <Affliction identifier="Aya_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Wind_God_Girl="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Aya="eq 0"/>
                 <Conditional Grunt_Security_Tengu="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
@@ -3362,13 +3368,15 @@
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="30,10" handle1="-5,0" handle2="5,-5" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Wind_God_Girl="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Aya="gt 0"/>
                 <Affliction identifier="Aya_Weapons" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" disabledeltatime="true">
                 <Affliction identifier="Touhou_No_Team_Attack_Effect" strength="10" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character">
+            <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Wind_God_Girl="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Aya="eq 0"/>
                 <Conditional Grunt_Security_Tengu="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
@@ -5214,12 +5222,14 @@
         <Body width="307" height="50" density="10" />
         <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,-20" handle1="-20,12" handle2="10,14" holdangle="60" aimangle="-80" reload="1.6" range="150" combatPriority="50"
                      SwingPos="3.0,0.0" SwingForce="5.0,0.0" allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="OnActive" target="Character" AllowWhenBroken="true">
+            <StatusEffect type="OnActive" target="Character" >
                 <Conditional scarletdevil="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Remilia="gt 0"/>
                 <Affliction identifier="Reimilia_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" AllowWhenBroken="true">
+            <StatusEffect type="OnActive" target="Character" comparison="And" >
                 <Conditional scarletdevil="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Remilia="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
@@ -5230,12 +5240,12 @@
                 <Conditional increasedmeleedamage_temporary="gt 0"/>
                 <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And" AllowWhenBroken="true">
+            <StatusEffect type="OnActive" target="Character" comparison="And" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" AllowWhenBroken="true" >
+            <StatusEffect type="OnActive" target="Character" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
