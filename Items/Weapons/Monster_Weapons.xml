@@ -920,7 +920,7 @@
             <StatusEffect type="OnNotContained" target="This" lifetime="3.0">
                 <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="160" anglemin="0" anglemax="360" colormultiplier="135,50,105,220" />
             </StatusEffect>
-            <StatusEffect type="OnImpact" target="This">
+            <StatusEffect type="OnImpact" target="This" interval="1.0">
                 <SpawnItem identifier="Touhou_Lnuar_Bolt_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="0" />
                 <SpawnItem identifier="Touhou_Lnuar_Bolt_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="90" />
                 <SpawnItem identifier="Touhou_Lnuar_Bolt_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="180" />
@@ -944,7 +944,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55" />
         <Body width="48" height="48" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" hitscan="true" maxtargetstohit="7" removeonhit="true" damagedoors="true" friendlyfire="false">
+        <Projectile characterusable="false" hitscan="true" maxtargetstohit="6" removeonhit="true" damagedoors="true" friendlyfire="false">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,55,55,255"/>
             <Attack structuredamage="10" itemdamage="20" severlimbsprobability="0.25" penetration="0.25">
                 <Affliction identifier="Reiki_Pressure" strength="2.5" />

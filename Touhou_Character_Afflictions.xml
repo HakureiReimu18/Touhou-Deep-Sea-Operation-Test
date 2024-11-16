@@ -1152,7 +1152,7 @@
     <Affliction identifier="Unconfirmed_Fantasy_Flying_Girl_Level02" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="1" strengthchange="-0.2" >
-            <StatValue stattype="ExperienceGainMultiplier" value="0.2" />
+            <StatValue stattype="ExperienceGainMultiplier" value="0.15" />
             <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Unconfirmed_Fantasy_Flying_Girl_Level02.png" sourcerect="0,0,128,128" color="255,255,255,255" />
@@ -1173,7 +1173,7 @@
     <Affliction identifier="Unconfirmed_Fantasy_Flying_Girl_Level04" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="1" strengthchange="-0.2" >
-            <StatValue stattype="AttackMultiplier" value="0.2" />
+            <StatValue stattype="AttackMultiplier" value="0.15" />
             <StatValue stattype="SwimmingSpeed" value="0.5" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Unconfirmed_Fantasy_Flying_Girl_Level04.png" sourcerect="0,0,128,128" color="255,255,255,255" />

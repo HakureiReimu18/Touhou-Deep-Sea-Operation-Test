@@ -763,6 +763,9 @@
             <RequiredItem identifier="Touhou_Missions_Collection_Blue_UFO" />
             <RequiredItem identifier="Touhou_Missions_Collection_Nue" />
         </Fabricate>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="0.5" >
+            <RequiredItem identifier="Touhou_Boss_Fight_Music_Nue" />
+        </Fabricate>
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.3,0.6" anchor="TopCenter" style="ItemUI" relativeoffset="-0.2,0" />
             <Button text="魔法物质运输">

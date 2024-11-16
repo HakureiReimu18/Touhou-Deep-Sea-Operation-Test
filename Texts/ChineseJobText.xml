@@ -169,9 +169,9 @@
     <talentname.Talents_Yokai_Primary04>中坚力量</talentname.Talents_Yokai_Primary04>
     <talentdescription.Talents_Yokai_Primary04>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖修复速度‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖船体修复速度‖end‖。等级大于‖color:gui.green‖8‖end‖后，这个效果翻倍</talentdescription.Talents_Yokai_Primary04>
     <talentname.Talents_Yokai_Primary05>自然法则</talentname.Talents_Yokai_Primary05>
-    <talentdescription.Talents_Yokai_Primary05>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖10%‖end‖对人类敌人的伤害</talentdescription.Talents_Yokai_Primary05>
+    <talentdescription.Talents_Yokai_Primary05>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖对人类敌人的伤害</talentdescription.Talents_Yokai_Primary05>
     <talentname.Talents_Yokai_Primary06>弱肉强食</talentname.Talents_Yokai_Primary06>
-    <talentdescription.Talents_Yokai_Primary06>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖10%‖end‖对非人类的伤害</talentdescription.Talents_Yokai_Primary06>
+    <talentdescription.Talents_Yokai_Primary06>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖对非人类的伤害</talentdescription.Talents_Yokai_Primary06>
     <talentname.Talents_Yokai_Primary07>莺朋燕友</talentname.Talents_Yokai_Primary07>
     <talentdescription.Talents_Yokai_Primary07>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，生命值大于‖color:gui.green‖50%‖end‖时，对友方造成的伤害减少‖color:gui.green‖20%‖end‖。</talentdescription.Talents_Yokai_Primary07>
     <talentname.Talents_Yokai_Primary08>始作俑者</talentname.Talents_Yokai_Primary08>
@@ -248,7 +248,7 @@
     <talentname.Touhou_Yaoguai02>妖人两立</talentname.Touhou_Yaoguai02>
     <talentdescription.Touhou_Yaoguai02>对人类目标造成额外‖color:gui.green‖20%‖end‖的伤害，受到人类造成的伤害增加‖color:gui.green‖10%‖end‖。下蹲时，更难被敌人察觉。</talentdescription.Touhou_Yaoguai02>
     <talentname.Touhou_Yaoguai03>刀枪不入</talentname.Touhou_Yaoguai03>
-    <talentdescription.Touhou_Yaoguai03>增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖，受到攻击后略微增加自身的‖color:gui.orange‖精神病‖end‖。
+    <talentdescription.Touhou_Yaoguai03>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖，受到攻击后略微增加自身的‖color:gui.orange‖精神病‖end‖。
         ‖color:gui.orange‖精神病‖end‖越高，‖color:gui.orange‖这个抗性‖end‖越低，最低‖color:gui.green‖3%‖end‖。</talentdescription.Touhou_Yaoguai03>
     <talentname.Touhou_Yaoguai04>双星伴月</talentname.Touhou_Yaoguai04>
     <talentdescription.Touhou_Yaoguai04>如果周围没有其它船员，提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度、攻击伤害、debuff抗性‖end‖。解锁配方：‖color:gui.orange‖月震，月震中心‖end‖。妖怪职业持有‖color:gui.orange‖月震‖end‖时，也能触发该分支对应装束的专属武器效果</talentdescription.Touhou_Yaoguai04>

@@ -3621,8 +3621,8 @@
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Nue_Midnight.png" sourcerect="0,0,192,28" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Nue_Midnight.png" sourcerect="0,0,192,28" depth="0.55" origin="0.5,0.5" />
         <Body width="140" height="40" density="10" />
-        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="65,10" handle1="-43,0" handle2="0,0" SwingPos="2.0,1.0" allowhitmultiple="true"
-                     holdangle="50" aimangle="-10" reload="1.0" range="120" combatPriority="50" msg="ItemMsgPickUpSelect" >
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="65,10" handle1="-43,0" handle2="0,7" SwingPos="2.0,1.0" allowhitmultiple="true"
+                     holdangle="50" aimangle="-10" reload="1.2" range="120" combatPriority="50" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Unconfirmed_Fantasy_Flying_Girl="gt 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Nue="gt 0"/>
@@ -3651,15 +3651,15 @@
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
 
-            <Attack targetimpulse="5" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="4" />
+            <Attack targetimpulse="5" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.25">
+                <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="lacerations" strength="20" />
                 <Affliction identifier="burn" strength="10" />
-                <Affliction identifier="Touhou_Bite" strength="24" />
-                <Affliction identifier="bleeding" strength="10" />
-                <Affliction identifier="bleeding" strength="10" probability="0.5" />
+                <Affliction identifier="Touhou_Bite" strength="20" />
+                <Affliction identifier="bleeding" strength="15" />
+                <Affliction identifier="bleeding" strength="15" probability="0.5" />
                 <Affliction identifier="Sleepless_Nightmare" strength="10" />
-                <Affliction identifier="stun" strength="0.25" />
+                <Affliction identifier="stun" strength="0.2" />
                 <Affliction identifier="stun" strength="0.2" probability="0.4" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" >
@@ -3684,7 +3684,7 @@
             <StatusEffect type="OnFailure" target="Character" >
                 <Affliction identifier="psychosis" strength="1.5" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Character" >
+            <StatusEffect type="OnUse" target="Character" comparison="And" >
                 <Conditional Unconfirmed_Fantasy_Flying_Girl="eq 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Nue="eq 0"/>
                 <Affliction identifier="Reiki_Pressure" strength="1.5" />
@@ -3694,7 +3694,7 @@
             <RequiredSkill identifier="weapons" level="70" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <!--Reset the reload speed-->
-            <StatusEffect type="OnUse" target="This" reload="1.0" setvalue="true" delay="1" />
+            <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="1" />
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
@@ -5330,11 +5330,11 @@
                 <Conditional qualitylevel="eq 3"/>
             </StatusEffect>-->
 
-            <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="3" />
-                <Affliction identifier="internaldamage" strength="4" />
+            <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.25">
+                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="lacerations" strength="10" />
                 <Affliction identifier="burn" strength="8" />
-                <Affliction identifier="Touhou_Bite" strength="10" />
+                <Affliction identifier="Touhou_Bite" strength="8" />
                 <Affliction identifier="bleeding" strength="33" />
                 <Affliction identifier="bleeding" strength="33" probability="0.1" />
                 <Affliction identifier="stun" strength="0.2" />
@@ -5381,7 +5381,7 @@
         <ElectricalDischarger duration="0.1" reload="0.1" ignoreuser="true" characterusable="true" raycastrange="100" range="400" rangemultiplierinwalls="0.1" outdoorsonly="false" powerconsumption="0" pickkey="Select">
             <Attack targetimpulse="-10" targetforce="-10" penetration="0.25" >
                 <Affliction identifier="stun" strength="0.5" probability="0.5" />
-                <Affliction identifier="lacerations" strength="6" />
+                <Affliction identifier="internaldamage" strength="6" />
                 <Affliction identifier="burn" strength="6" />
             </Attack>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">

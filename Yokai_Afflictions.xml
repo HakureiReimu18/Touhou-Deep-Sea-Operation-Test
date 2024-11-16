@@ -286,7 +286,7 @@
             hideiconafterdelay="true"
             duration="3.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.15" maxresistance="0.15" />
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.1" maxresistance="0.1" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
@@ -302,7 +302,7 @@
             hideiconafterdelay="true"
             duration="3.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.11" maxresistance="0.11" />
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.07" maxresistance="0.07" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
@@ -318,7 +318,7 @@
             hideiconafterdelay="true"
             duration="3.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.07" maxresistance="0.07" />
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.05" maxresistance="0.05" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
@@ -387,10 +387,11 @@
         <Effect minstrength="0" maxstrength="1" >
             <StatusEffect target="Character" disabledeltatime="true" Interval="1.0" AllowWhenBroken="true" >
                 <Conditional HealthPercentage="lte 2"/>
-                <Explosion range="250.0" force="4.0" severlimbsprobability="0.2" penetration="0.15">
+                <ParticleEmitter particle="Touhou_Black_Blue_Toxin" AngleMax="360" ScaleMultiplier="0.5,0.5" ParticleAmount="8" ColorMultiplier="255,255,255,255" />
+                <Explosion range="250.0" force="4.0" severlimbsprobability="0.2" penetration="0.15" showeffects="false" >
                     <Affliction identifier="Sleepless_Nightmare" strength="20" />
-                    <Affliction identifier="burn" strength="10" />
-                    <Affliction identifier="explosiondamage" strength="10" />
+                    <Affliction identifier="burn" strength="4" />
+                    <Affliction identifier="explosiondamage" strength="4" />
                 </Explosion>
             </StatusEffect>
             <StatusEffect target="Character" >

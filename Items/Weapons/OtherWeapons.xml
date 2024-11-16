@@ -363,7 +363,7 @@
         <Projectile characterusable="false" launchimpulse="30" hitscan="false" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
                     sticktodoors="true" removeonhit="false" friendlyfire="false" launchrotation="0" >
         <Attack structuredamage="4" targetforce="7" itemdamage="8" severlimbsprobability="0.2" penetration="0.05">
-            <Affliction identifier="lacerations" strength="7" />
+            <Affliction identifier="lacerations" strength="5" />
             <Affliction identifier="bleeding" strength="8" />
             <Affliction identifier="Reiki_Pressure" strength="1" probability="0.3"/>
             <Affliction identifier="stun" strength="0.06" probability="0.1" />
@@ -2631,6 +2631,11 @@
                 <Conditional jobidentifier="eq Yokai"/>
                 <Conditional Hyouibana_Effect_Prefect_Koishi="gt 0"/>
                 <Affliction identifier="Koishi_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Unconfirmed_Fantasy_Flying_Girl="gt 0"/>
+                <Affliction identifier="Nue_Weapons" strength="50" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional jobidentifier="eq Yokai"/>

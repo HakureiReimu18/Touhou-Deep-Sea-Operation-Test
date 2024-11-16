@@ -1526,10 +1526,10 @@
       <ScriptedEvent identifier="Tenshi_Join" commonness="200" triggercooldown="false" />
       <ScriptedEvent identifier="Momizi_Join" commonness="200" triggercooldown="false" />
       <ScriptedEvent identifier="Momizi_Find_IDcard_Event" commonness="0" triggercooldown="false" />
-      <ScriptedEvent identifier="Akyuu_Join" commonness="300" triggercooldown="false" />
     </EventSet>
     <EventSet identifier="Touhou_Mission_Events" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true">
       <ScriptedEvent identifier="Touhou_Akyuu_Mission" commonness="100" triggercooldown="false" />
+      <ScriptedEvent identifier="Akyuu_Join" commonness="300" triggercooldown="false" />
     </EventSet>
   </EventSet>
 </Randomevents>

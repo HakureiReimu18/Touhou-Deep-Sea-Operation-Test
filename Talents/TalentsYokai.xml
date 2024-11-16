@@ -217,7 +217,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--弱肉强食 减少5%最大生命值，增加10%对人类敌人的伤害-->
+    <!--弱肉强食 减少5%最大生命值，增加5%对人类敌人的伤害-->
     <Talent identifier="Talents_Yokai_Primary05">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yokai_Primary05"/>
@@ -234,12 +234,12 @@
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
 
-    <!--自然法则 减少5%最大生命值，增加10%对非人类的伤害。-->
+    <!--自然法则 减少5%最大生命值，增加5%对非人类的伤害。-->
     <Talent identifier="Talents_Yokai_Primary06">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Talents_Yokai_Primary06"/>
@@ -254,7 +254,7 @@
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

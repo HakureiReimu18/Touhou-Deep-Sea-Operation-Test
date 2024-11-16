@@ -877,9 +877,9 @@
     \n血量低于一半时，提高‖color:gui.green‖15%‖end‖的物理、烧伤、Debuff抗性和移动速度。
     \n当船员击杀‖color:gui.orange‖1‖end‖个生物后，增加‖color:gui.green‖1‖end‖个计数，当你击杀‖color:gui.orange‖1‖end‖个生物后，增加‖color:gui.green‖2‖end‖个计数，或巡回完成任意任务，增加‖color:gui.green‖6‖end‖个计数，根据计数提供不同的增益：
     78个：提高‖color:gui.green‖50%‖end‖技能获取速度，移动速度提高‖color:gui.green‖10%‖end‖。
-    156个：提高‖color:gui.green‖20%‖end‖经验获取速度，最大生命值增加‖color:gui.green‖10%‖end‖。
+    156个：提高‖color:gui.green‖15%‖end‖经验获取速度，最大生命值增加‖color:gui.green‖10%‖end‖。
     234个：持续性Buff药物状态效果持续时间增加‖color:gui.green‖50%‖end‖，攻击速度增加‖color:gui.green‖10%‖end‖。
-    312个：提高‖color:gui.green‖20%‖end‖攻击伤害，游泳速度增加‖color:gui.green‖50%‖end‖。</talentdescription.NueTalent>
+    312个：提高‖color:gui.green‖15%‖end‖攻击伤害，游泳速度增加‖color:gui.green‖50%‖end‖。</talentdescription.NueTalent>
   <talentname.Life_And_Death_Half_Half>生与死的Half &amp; Half</talentname.Life_And_Death_Half_Half>
   <talentdescription.Life_And_Death_Half_Half>当你身着‖color:gui.orange‖魂魄妖梦装束+‖end‖时，
     造成的‖color:gui.orange‖近战伤害‖end‖提高‖color:gui.green‖30%‖end‖，
