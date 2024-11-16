@@ -1092,7 +1092,7 @@
     </Affliction>
 
     <!--笼中鸟CD-->
-    <Affliction name="笼中鸟护盾剩余时长" identifier="FlandreTalent4_Effect_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="15"
+    <Affliction name="笼中鸟护盾剩余时长" identifier="FlandreTalent4_Effect_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                  iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" strengthchange="-1.0"/>
         <Icon texture="%ModDir%/Images/Afflictions/FlandreTalent4_Effect_CD.png" sourcerect="0,0,128,128" color="255,255,255,255" />

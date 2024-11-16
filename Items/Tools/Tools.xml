@@ -979,6 +979,7 @@
             <RequiredSkill identifier="mechanical" level="30" />
             <RequiredItem identifier="steel" amount="6" />
             <RequiredItem identifier="plastic" amount="4" />
+            <RequiredItem identifier="fpgacircuit" amount="4" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
             <RequiredItem identifier="Score_Point" />
         </Fabricate>
@@ -1465,6 +1466,7 @@
             <RequiredItem identifier="Reiki_Stone" amount="2"/>
             <RequiredItem identifier="Touhou_Precision_Parts" />
             <RequiredItem identifier="Touhou_Simple_Parts" />
+            <RequiredItem identifier="fpgacircuit" amount="6" />
             <RequiredItem identifier="Magic_Material" amount="3" />
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Kappa_Multi_Functional_Tool.png" sourcerect="0,0,110,100" origin="0.5,0.5" />
@@ -1509,6 +1511,7 @@
             <RequiredSkill identifier="medical" level="20" />
             <RequiredItem identifier="Nitori_Backpack" />
             <RequiredItem identifier="Touhou_Precision_Parts" amount="2" />
+            <RequiredItem identifier="fpgacircuit" amount="6" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
             <RequiredItem identifier="Reiki_Stone" amount="4" />
         </Fabricate>

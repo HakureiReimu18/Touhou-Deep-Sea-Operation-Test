@@ -374,7 +374,7 @@
   <entityname.Cinnamon_Branch_Seed>肉桂种子</entityname.Cinnamon_Branch_Seed>
   <entitydescription.Cinnamon_Branch_Seed>不知何时在木卫二上出现的神秘植物，因其产量低且难以获取，被各方势力争相抢购。</entitydescription.Cinnamon_Branch_Seed>
   <entityname.Hyouibana_Dream>凭依之梦</entityname.Hyouibana_Dream>
-  <entitydescription.Hyouibana_Dream>使用后，可让一名其他角色凭依在自己身上，可获得对应的天赋和部分能力。使用超过3次后即可完全凭依，获得最大的强化效果。</entitydescription.Hyouibana_Dream>
+  <entitydescription.Hyouibana_Dream>使用后，可让一名其他角色凭依在自己身上，可获得对应的天赋和部分能力。第二次使用即可完全凭依，获得最大的强化效果。完全凭依死亡后会移除，但常规凭依保留。</entitydescription.Hyouibana_Dream>
   <entityname.Huo_Alchemical>瓶装元素（火）</entityname.Huo_Alchemical>
   <entitydescription.Huo_Alchemical>一瓶提纯过火元素，优秀的炼金产物</entitydescription.Huo_Alchemical>
   <entityname.Tu_Alchemical>瓶装元素（土）</entityname.Tu_Alchemical>
@@ -1228,14 +1228,14 @@
   <missionfailure.Touhou_OutpostDestroyMission04>满身疮痍</missionfailure.Touhou_OutpostDestroyMission04>
 
   <!--凭依效果-->
+  <talentname.Hyouibana_Reimu>凭依灵梦</talentname.Hyouibana_Reimu>
+  <talentdescription.Hyouibana_Reimu>游泳速度提高40%，行走速度提高10%，技能获取速度提高50%。</talentdescription.Hyouibana_Reimu>
   <talentname.Hyouibana_Aya>凭依文文</talentname.Hyouibana_Aya>
   <talentdescription.Hyouibana_Aya>完成巡回获得的经验增加25%，移动速度提高20%。</talentdescription.Hyouibana_Aya>
   <talentname.Hyouibana_Marisa>凭依魔理沙</talentname.Hyouibana_Marisa>
   <talentdescription.Hyouibana_Marisa>对烧伤、酸性烧伤的抗性更高，从烧伤、酸性烧伤中恢复更快，攻击伤害提高5%。</talentdescription.Hyouibana_Marisa>
   <talentname.Hyouibana_Mokou>凭依妹红</talentname.Hyouibana_Mokou>
   <talentdescription.Hyouibana_Mokou>对不死鸟的灼烧抗性更高，从物理伤害和烧伤的恢复更快。</talentdescription.Hyouibana_Mokou>
-  <talentname.Hyouibana_Reimu>凭依灵梦</talentname.Hyouibana_Reimu>
-  <talentdescription.Hyouibana_Reimu>游泳速度提高40%，行走速度提高10%，技能获取速度提高50%。</talentdescription.Hyouibana_Reimu>
   <talentname.Hyouibana_Remilia>凭依蕾米莉亚</talentname.Hyouibana_Remilia>
   <talentdescription.Hyouibana_Remilia>拥有对外星感染的抗性，从失血中恢复得更快。</talentdescription.Hyouibana_Remilia>
   <talentname.Hyouibana_Youmu>凭依妖梦</talentname.Hyouibana_Youmu>

@@ -269,7 +269,7 @@
         穿着‖color:gui.red‖幽香装束+‖end‖时：大大增加‖color:gui.yellow‖出血‖end‖的恢复速度，根据当前‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖10%‖end‖提高攻击伤害‖end‖，‖color:gui.orange‖近战攻击速度、移动速度‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限
         穿着‖color:gui.red‖鵺 装束+‖end‖时：‖color:gui.orange‖魔法能力‖end‖大于‖color:gui.green‖80‖end‖后，增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖最大生命值‖end‖。对血量低于一半的敌人造成额外‖color:gui.green‖15%‖end‖的伤害
         穿着‖color:gui.red‖荷取装束+‖end‖时：减少‖color:gui.green‖20%‖end‖‖color:gui.orange‖反应堆燃料消耗‖end‖。‖color:gui.orange‖机械工程‖end‖大于‖color:gui.green‖80‖end‖后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖炮塔伤害‖end‖，减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖炮塔能耗‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖反应堆最大功率和水泵效率‖end‖
-        穿着‖color:gui.red‖恋 装束+‖end‖时：根据‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖15%‖end‖提高‖color:gui.orange‖近战攻击速度‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限。对剩余血量大于‖color:gui.green‖90%‖end‖的敌人造成额外‖color:gui.green‖51.4%‖end‖的伤害</talentdescription.Touhou_Yaoguai07>
+        穿着‖color:gui.red‖恋 装束+‖end‖时：根据‖color:gui.orange‖魔法能力‖end‖水平的‖color:gui.green‖15%‖end‖提高‖color:gui.orange‖近战攻击速度‖end‖。这个效果在‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖300‖end‖时达到上限。对剩余血量大于‖color:gui.green‖90%‖end‖的敌人造成额外‖color:gui.green‖25.7%‖end‖的伤害</talentdescription.Touhou_Yaoguai07>
 
     <talenttree.Touhou_Vampire>吸血鬼</talenttree.Touhou_Vampire>
     <talentname.Touhou_Vampire01>内在感知</talentname.Touhou_Vampire01>

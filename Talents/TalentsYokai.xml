@@ -1498,7 +1498,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.514"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.257"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
