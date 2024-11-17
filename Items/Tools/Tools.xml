@@ -1730,7 +1730,7 @@
             <RequiredItem identifier="Shui_Alchemical" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Peace_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
         <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
@@ -1814,7 +1814,7 @@
             <RequiredItem identifier="Shui_Alchemical" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Soft_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
         <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
@@ -1825,7 +1825,7 @@
     <!--温暖的勾玉-->
     <!--提供头部和躯干的物理伤害和烧伤的抗性-->
     <Item
-            name="柔软的勾玉"
+            name="温暖的勾玉"
             identifier="Touhou_Warm_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
@@ -1856,7 +1856,7 @@
             <RequiredItem identifier="Tu_Alchemical" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Warm_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
         <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />

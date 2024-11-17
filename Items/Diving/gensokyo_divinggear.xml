@@ -122,7 +122,7 @@
             </StatusEffect>
 
             <!--幻想潜水服效果-->
-            <StatusEffect type="OnWearing" target="Character" Interval="5.0" Duraation="5.0" >
+            <StatusEffect type="OnWearing" target="Character" Interval="3.0" Duraation="3.0" >
                 <Affliction identifier="Gensokyo_Divinggear_Effect01" strength="10" />
             </StatusEffect>
             <!--受到少量伤害减少勾玉耐久-->
@@ -195,10 +195,10 @@
             <Containable identifiers="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" />
             <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
             <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5" />
-            <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
-            <SlotIcon slotindex="3" texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
-            <SlotIcon slotindex="4" texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
-            <SlotIcon slotindex="5" texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
+            <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
+            <SlotIcon slotindex="3" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
+            <SlotIcon slotindex="4" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
+            <SlotIcon slotindex="5" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
             <StatusEffect type="OnWearing" target="Contained">
                 <Conditional condition="lt 5.0" />
                 <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true" />
@@ -248,26 +248,22 @@
             </SubContainer>
             <SubContainer capacity="4" maxstacksize="1" >
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Contained,Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <RequiredItems items="Touhou_Peace_Hooked_Jade" />
+                    <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="5.0" Duraation="5.0">
                         <Affliction identifier="Gensokyo_Divinggear_Effect02" strength="10" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Contained,Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <RequiredItems items="Touhou_Hard_Hooked_Jade" />
+                    <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="5.0" Duraation="5.0">
                         <Affliction identifier="Gensokyo_Divinggear_Effect03" strength="10" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Contained,Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <RequiredItems items="Touhou_Soft_Hooked_Jade" />
+                    <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="5.0" Duraation="5.0">
                         <Affliction identifier="Gensokyo_Divinggear_Effect04" strength="10" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Contained,Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <RequiredItems items="Touhou_Warm_Hooked_Jade" />
+                    <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="5.0" Duraation="5.0">
                         <Affliction identifier="Gensokyo_Divinggear_Effect05" strength="10" />
                     </StatusEffect>
                 </Containable>
@@ -393,7 +389,7 @@
             </StatusEffect>
 
             <!--秘境潜水服效果-->
-            <StatusEffect type="OnWearing" target="Character" Interval="5.0" Duraation="5.0" >
+            <StatusEffect type="OnWearing" target="Character" Interval="3.0" Duraation="3.0" >
                 <Affliction identifier="Ether_Divinggear_Effect01" strength="10" />
             </StatusEffect>
             <!--受到少量伤害减少勾玉耐久-->
@@ -444,8 +440,8 @@
         <ItemContainer capacity="0" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0" slotsperrow="1">
             <Containable identifiers="oxygentank,weldingfueltank,oxygeniteshard,oxygenitetank,incendiumfueltank,oxygensource" />
             <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
-            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
-            <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
+            <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
             <StatusEffect type="OnWearing" target="Contained">
                 <Conditional condition="lt 5.0" />
                 <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true" />

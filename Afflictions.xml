@@ -1879,15 +1879,13 @@
   </Affliction>
 
   <Affliction
-          name=""
+          name="坚硬的勾玉效果"
           identifier="Gensokyo_Divinggear_Effect03"
           description=""
           type="Gensokyo_Divinggear_Effect"
           isbuff="true"
           limbspecific="false"
           indicatorlimb="Torso"
-          showiconthreshold="100"
-          showinhealthscannerthreshold="100"
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
@@ -1896,15 +1894,13 @@
   </Affliction>
 
   <Affliction
-          name=""
+          name="柔软的勾玉效果"
           identifier="Gensokyo_Divinggear_Effect04"
           description=""
           type="Gensokyo_Divinggear_Effect"
           isbuff="true"
           limbspecific="false"
           indicatorlimb="Torso"
-          showiconthreshold="100"
-          showinhealthscannerthreshold="100"
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
@@ -1913,15 +1909,13 @@
   </Affliction>
 
   <Affliction
-          name=""
+          name="温暖的勾玉效果"
           identifier="Gensokyo_Divinggear_Effect05"
           description=""
           type="Gensokyo_Divinggear_Effect"
           isbuff="true"
           limbspecific="false"
           indicatorlimb="Torso"
-          showiconthreshold="100"
-          showinhealthscannerthreshold="100"
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
