@@ -1844,6 +1844,23 @@
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
+  <!--受击减少勾玉耐久效果-->
+  <Affliction
+          name="受击减少勾玉耐久效果"
+          identifier="Touhou_Hooked_Jade_Condition_Down_Effect"
+          description=""
+          type="Touhou_Hooked_Jade_Condition_Down_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="100"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
   <!--幻想潜水服效果-->
   <Affliction
           name="幻想潜水服"
@@ -1857,7 +1874,28 @@
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" resistancefor="poison" minresistance="0.6" maxresistance="0.6" />
+    <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" resistancefor="poison" minresistance="0.6" maxresistance="0.6" >
+      <!--受到少量伤害减少勾玉耐久-->
+      <StatusEffect type="OnDamaged" target="Character">
+        <RequiredAffliction type="damage,burn,bleeding" minstrength="3" />
+        <Affliction identifier="Touhou_Hooked_Jade_Condition_Down_Effect" strength="3" />
+      </StatusEffect>
+      <!--受到适量伤害减少勾玉耐久-->
+      <StatusEffect type="OnDamaged" target="Character">
+        <RequiredAffliction type="damage,burn,bleeding" minstrength="10" />
+        <Affliction identifier="Touhou_Hooked_Jade_Condition_Down_Effect" strength="10" />
+      </StatusEffect>
+      <!--受到中量伤害减少勾玉耐久-->
+      <StatusEffect type="OnDamaged" target="Character">
+        <RequiredAffliction type="damage,burn,bleeding" minstrength="25" />
+        <Affliction identifier="Touhou_Hooked_Jade_Condition_Down_Effect" strength="15" />
+      </StatusEffect>
+      <!--受到大量伤害减少勾玉耐久-->
+      <StatusEffect type="OnDamaged" target="Character">
+        <RequiredAffliction type="damage,burn,bleeding" minstrength="80" />
+        <Affliction identifier="Touhou_Hooked_Jade_Condition_Down_Effect" strength="35" />
+      </StatusEffect>
+    </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Gensokyo_Divinggear_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
@@ -1886,6 +1924,8 @@
           isbuff="true"
           limbspecific="false"
           indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
@@ -1901,6 +1941,8 @@
           isbuff="true"
           limbspecific="false"
           indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
@@ -1916,6 +1958,8 @@
           isbuff="true"
           limbspecific="false"
           indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
@@ -1936,12 +1980,33 @@
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1" resistancefor="poison" minresistance="0.2" maxresistance="0.2" />
+    <Effect minstrength="0" maxstrength="1" resistancefor="poison" minresistance="0.2" maxresistance="0.2" >
+      <!--受到少量伤害减少勾玉耐久-->
+      <StatusEffect type="OnDamaged" target="Character">
+        <RequiredAffliction type="damage,burn,bleeding" minstrength="3" />
+        <Affliction identifier="Touhou_Hooked_Jade_Condition_Down_Effect" strength="3" />
+      </StatusEffect>
+      <!--受到适量伤害减少勾玉耐久-->
+      <StatusEffect type="OnDamaged" target="Character">
+        <RequiredAffliction type="damage,burn,bleeding" minstrength="10" />
+        <Affliction identifier="Touhou_Hooked_Jade_Condition_Down_Effect" strength="10" />
+      </StatusEffect>
+      <!--受到中量伤害减少勾玉耐久-->
+      <StatusEffect type="OnDamaged" target="Character">
+        <RequiredAffliction type="damage,burn,bleeding" minstrength="25" />
+        <Affliction identifier="Touhou_Hooked_Jade_Condition_Down_Effect" strength="15" />
+      </StatusEffect>
+      <!--受到大量伤害减少勾玉耐久-->
+      <StatusEffect type="OnDamaged" target="Character">
+        <RequiredAffliction type="damage,burn,bleeding" minstrength="80" />
+        <Affliction identifier="Touhou_Hooked_Jade_Condition_Down_Effect" strength="35" />
+      </StatusEffect>
+    </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Ether_Divinggear_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
   <Affliction
-          name="秘境潜水服"
+          name=""
           identifier="Ether_Divinggear_Effect02"
           description=""
           type="Ether_Divinggear_Effect"

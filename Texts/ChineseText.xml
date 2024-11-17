@@ -1223,6 +1223,14 @@
   <afflictiondescription.Gensokyo_Divinggear_Effect01>增加身体抗性和技能水平</afflictiondescription.Gensokyo_Divinggear_Effect01>
   <afflictionname.Ether_Divinggear_Effect01>秘境潜水服</afflictionname.Ether_Divinggear_Effect01>
   <afflictiondescription.Ether_Divinggear_Effect01>略微增加身体抗性</afflictiondescription.Ether_Divinggear_Effect01>
+  <entityname.Touhou_Peace_Hooked_Jade>宁静的勾玉</entityname.Touhou_Peace_Hooked_Jade>
+  <entitydescription.Touhou_Peace_Hooked_Jade>放入潜水服的勾玉槽位内，提供眩晕抗性和照明效果</entitydescription.Touhou_Peace_Hooked_Jade>
+  <entityname.Touhou_Hard_Hooked_Jade>坚硬的勾玉</entityname.Touhou_Hard_Hooked_Jade>
+  <entitydescription.Touhou_Hard_Hooked_Jade>放入潜水服的勾玉槽位内，提供四肢的物理伤害抗性</entitydescription.Touhou_Hard_Hooked_Jade>
+  <entityname.Touhou_Soft_Hooked_Jade>柔软的勾玉</entityname.Touhou_Soft_Hooked_Jade>
+  <entitydescription.Touhou_Soft_Hooked_Jade>放入潜水服的勾玉槽位内，提供头部和躯干的出血和感染伤口的抗性</entitydescription.Touhou_Soft_Hooked_Jade>
+  <entityname.Touhou_Warm_Hooked_Jade>温暖的勾玉</entityname.Touhou_Warm_Hooked_Jade>
+  <entitydescription.Touhou_Warm_Hooked_Jade>放入潜水服的勾玉槽位内，提供头部和躯干的物理伤害和烧伤的抗性</entitydescription.Touhou_Warm_Hooked_Jade>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>
@@ -1244,8 +1252,8 @@
   <talentdescription.Hyouibana_Remilia>拥有对外星感染的抗性，从失血中恢复得更快。</talentdescription.Hyouibana_Remilia>
   <talentname.Hyouibana_Youmu>凭依妖梦</talentname.Hyouibana_Youmu>
   <talentdescription.Hyouibana_Youmu>行走速度提高10%，近战伤害提高20%。</talentdescription.Hyouibana_Youmu>
-  <talentname.Hyouibana_Youmu>凭依荷取</talentname.Hyouibana_Youmu>
-  <talentdescription.Hyouibana_Youmu>游泳速度提高20%，机械工程和电气工程都大于60后，在水中可缓慢恢复伤势。</talentdescription.Hyouibana_Youmu>
+  <talentname.Hyouibana_Nitori>凭依荷取</talentname.Hyouibana_Nitori>
+  <talentdescription.Hyouibana_Nitori>游泳速度提高20%，机械工程和电气工程都大于60后，在水中可缓慢恢复伤势。</talentdescription.Hyouibana_Nitori>
   <talentname.Hyouibana_Patchouli>凭依帕秋莉</talentname.Hyouibana_Patchouli>
   <talentdescription.Hyouibana_Patchouli>游泳速度提高25%，技能获取速度提高25%，使用医疗物品的效果提高10%，增益效果在自己身上持续时间更久。</talentdescription.Hyouibana_Patchouli>
   <talentname.Hyouibana_Tenshi>凭依天子</talentname.Hyouibana_Tenshi>
@@ -1262,8 +1270,8 @@
   <talentdescription.Hyouibana_Nue>对debuff的抗性更高，鵺装束血量低于一半时的效果依然生效。</talentdescription.Hyouibana_Nue>
   <talentname.Hyouibana_Piece>凭依皮丝</talentname.Hyouibana_Piece>
   <talentdescription.Hyouibana_Piece>对烧伤的抗性更高，没有精神病时，提高5%攻击伤害和攻击速度。</talentdescription.Hyouibana_Piece>
-  <talentname.Hyouibana_Piece>凭依琪露诺</talentname.Hyouibana_Piece>
-  <talentdescription.Hyouibana_Piece>在水中缓慢恢复伤势,造成的冻结伤害提高10%。</talentdescription.Hyouibana_Piece>
+  <talentname.Hyouibana_Cirno>凭依琪露诺</talentname.Hyouibana_Cirno>
+  <talentdescription.Hyouibana_Cirno>在水中缓慢恢复伤势,造成的冻结伤害提高10%。</talentdescription.Hyouibana_Cirno>
   <talentname.Hyouibana_Koishi>凭依恋</talentname.Hyouibana_Koishi>
   <talentdescription.Hyouibana_Koishi>提高5%近战伤害,对怪奇电话影响到的敌人造成10%额外伤害，血量低于40%时，受到的伤害减少10%。</talentdescription.Hyouibana_Koishi>
   <talentname.Hyouibana_Alice>凭依爱丽丝</talentname.Hyouibana_Alice>

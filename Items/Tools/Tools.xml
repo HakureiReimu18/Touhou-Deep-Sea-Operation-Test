@@ -1703,7 +1703,7 @@
             category="Equipment"
             subcategory="Touhou"
             maxstacksize="32"
-            tags="smallitem,Touhou_Hooked_Jade"
+            tags="smallitem,Touhou_Hooked_Jade,Touhou_Peace_Hooked_Jade"
             canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -1735,7 +1735,11 @@
         <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />
+        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Holdable>
     </Item>
 
     <!--坚硬的勾玉-->
@@ -1746,7 +1750,7 @@
             category="Equipment"
             subcategory="Touhou"
             maxstacksize="32"
-            tags="smallitem,Touhou_Hooked_Jade"
+            tags="smallitem,Touhou_Hooked_Jade,Touhou_Hard_Hooked_Jade"
             canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -1777,7 +1781,11 @@
         <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />
+        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Holdable>
     </Item>
 
     <!--柔软的勾玉-->
@@ -1788,7 +1796,7 @@
             category="Equipment"
             subcategory="Touhou"
             maxstacksize="32"
-            tags="smallitem,Touhou_Hooked_Jade"
+            tags="smallitem,Touhou_Hooked_Jade,Touhou_Soft_Hooked_Jade"
             canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -1819,7 +1827,11 @@
         <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />
+        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Holdable>
     </Item>
 
     <!--温暖的勾玉-->
@@ -1830,7 +1842,7 @@
             category="Equipment"
             subcategory="Touhou"
             maxstacksize="32"
-            tags="smallitem,Touhou_Hooked_Jade"
+            tags="smallitem,Touhou_Hooked_Jade,Touhou_Warm_Hooked_Jade"
             canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -1861,6 +1873,10 @@
         <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />
+        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Holdable>
     </Item>
 </Items>

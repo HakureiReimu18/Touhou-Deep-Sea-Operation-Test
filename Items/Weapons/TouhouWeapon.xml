@@ -5343,7 +5343,7 @@
                 <ParticleEmitter particle="waterblood" AngleMax="-60" ScaleMin="0.5" ScaleMax="0.5" ParticlesPerSecond="1" ColorMultiplier="255,255,255,255" />
                 <ParticleEmitter particle="waterblood" AngleMax="90" ScaleMin="0.5" ScaleMax="0.5" ParticlesPerSecond="1" ColorMultiplier="255,255,255,255" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This,Character" Interval="5.0" >
+            <StatusEffect type="OnActive" target="This,Character" targettype="Limb" targetlimb="Torso" Interval="5.0" >
                 <Conditional HasTag="ScarletMode_Open"/>
                 <Affliction identifier="bleeding" strength="30.0" />
                 <Affliction identifier="bloodloss" strength="5.0" />

@@ -34,16 +34,15 @@
         <CustomInterface canbeselected="false" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,148" style="ItemUI" />
             <TickBox text="Light" IsOn="true">
-                <StatusEffect type="OnUse" target="This" IsOn="true" />
+                <StatusEffect type="OnUse" target="This" IsOn="true" >
+                    <Conditional Voltage="gt 0.5"/>
+                </StatusEffect>
                 <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
             </TickBox>
         </CustomInterface>
         <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
             <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" alphaclipotherwearables="false" sourcerect="32,32,32,32" origin="0.5,0.5">
                 <LightComponent range="1600.0" lightcolor="250,244,255,165" powerconsumption="10" IsOn="true">
-                    <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-                        <Conditional IsDead="false" />
-                    </StatusEffect>
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
                 </LightComponent>
             </sprite>
@@ -125,58 +124,6 @@
             <StatusEffect type="OnWearing" target="Character" Interval="3.0" Duraation="3.0" >
                 <Affliction identifier="Gensokyo_Divinggear_Effect01" strength="10" />
             </StatusEffect>
-            <!--受到少量伤害减少勾玉耐久-->
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="2" condition="-0.1" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="3" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="3" condition="-0.1" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="3" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="4" condition="-0.1" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="3" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="5" condition="-0.1" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="3" />
-            </StatusEffect>
-            <!--受到适量伤害减少勾玉耐久-->
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="2" condition="-0.4" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="10" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="3" condition="-0.4" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="10" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="4" condition="-0.4" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="10" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="5" condition="-0.4" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="10" />
-            </StatusEffect>
-            <!--受到中量伤害减少勾玉耐久-->
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="2" condition="-1.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="25" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="3" condition="-1.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="25" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="4" condition="-1.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="25" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="5" condition="-1.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="25" />
-            </StatusEffect>
-            <!--受到大量伤害减少勾玉耐久-->
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="2" condition="-3.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="80" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="3" condition="-3.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="80" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="4" condition="-3.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="80" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="5" condition="-3.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="80" />
-            </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -248,23 +195,39 @@
             </SubContainer>
             <SubContainer capacity="4" maxstacksize="1" >
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="5.0" Duraation="5.0">
+                    <StatusEffect type="OnWearing" target="Character,Contained" Voltage="1.0" setvalue="true" Interval="5.0" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Peace_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect02" strength="10" />
                     </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
+                        <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>
+                    </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="5.0" Duraation="5.0">
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="5.0" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Hard_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect03" strength="10" />
                     </StatusEffect>
-                </Containable>
-                <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <Affliction identifier="Gensokyo_Divinggear_Effect04" strength="10" />
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
+                        <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="5.0" Duraation="5.0">
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="5.0" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Soft_Hooked_Jade"/>
+                        <Affliction identifier="Gensokyo_Divinggear_Effect04" strength="10" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
+                        <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>
+                    </StatusEffect>
+                </Containable>
+                <Containable items="Touhou_Hooked_Jade">
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="5.0" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Warm_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect05" strength="10" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
+                        <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>
                     </StatusEffect>
                 </Containable>
             </SubContainer>
@@ -307,16 +270,15 @@
         <CustomInterface canbeselected="false" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,148" style="ItemUI" />
             <TickBox text="Light" IsOn="true">
-                <StatusEffect type="OnUse" target="This" IsOn="true" />
+                <StatusEffect type="OnUse" target="This" IsOn="true" >
+                    <Conditional Voltage="gt 0.5"/>
+                </StatusEffect>
                 <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
             </TickBox>
         </CustomInterface>
         <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
             <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" alphaclipotherwearables="false" sourcerect="32,32,32,32" origin="0.5,0.5">
                 <LightComponent range="1000.0" lightcolor="250,244,255,165" powerconsumption="10" IsOn="true">
-                    <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" setvalue="true" comparison="Or">
-                        <Conditional IsDead="false" />
-                    </StatusEffect>
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
                 </LightComponent>
             </sprite>
@@ -392,34 +354,6 @@
             <StatusEffect type="OnWearing" target="Character" Interval="3.0" Duraation="3.0" >
                 <Affliction identifier="Ether_Divinggear_Effect01" strength="10" />
             </StatusEffect>
-            <!--受到少量伤害减少勾玉耐久-->
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="2" condition="-0.1" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="3" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="3" condition="-0.1" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="3" />
-            </StatusEffect>
-            <!--受到适量伤害减少勾玉耐久-->
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="2" condition="-0.4" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="10" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="3" condition="-0.4" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="10" />
-            </StatusEffect>
-            <!--受到中量伤害减少勾玉耐久-->
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="2" condition="-1.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="25" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="3" condition="-1.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="25" />
-            </StatusEffect>
-            <!--受到大量伤害减少勾玉耐久-->
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="2" condition="-3.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="80" />
-            </StatusEffect>
-            <StatusEffect type="OnDamaged" target="Character,Contained" targetslot="3" condition="-3.0" >
-                <RequiredAffliction type="damage,burn,bleeding" minstrength="80" />
-            </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.68" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="Reiki_Pressure" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -486,29 +420,41 @@
                     </StatusEffect>
                 </Containable>
             </SubContainer>
-            <SubContainer capacity="2" maxstacksize="1" >
+            <SubContainer capacity="4" maxstacksize="1" >
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Contained,Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <RequiredItems items="Touhou_Peace_Hooked_Jade" />
-                        <Affliction identifier="Ether_Divinggear_Effect02" strength="10" />
+                    <StatusEffect type="OnWearing" target="Character,Contained" Voltage="1.0" setvalue="true" Interval="5.0" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Peace_Hooked_Jade"/>
+                        <Affliction identifier="Gensokyo_Divinggear_Effect02" strength="10" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
+                        <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Contained,Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <RequiredItems items="Touhou_Hard_Hooked_Jade" />
-                        <Affliction identifier="Ether_Divinggear_Effect03" strength="10" />
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="5.0" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Hard_Hooked_Jade"/>
+                        <Affliction identifier="Gensokyo_Divinggear_Effect03" strength="10" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
+                        <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Contained,Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <RequiredItems items="Touhou_Soft_Hooked_Jade" />
-                        <Affliction identifier="Ether_Divinggear_Effect04" strength="10" />
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="5.0" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Soft_Hooked_Jade"/>
+                        <Affliction identifier="Gensokyo_Divinggear_Effect04" strength="10" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
+                        <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Hooked_Jade">
-                    <StatusEffect type="OnWearing" target="Contained,Character" comparison="And" Interval="5.0" Duraation="5.0">
-                        <RequiredItems items="Touhou_Warm_Hooked_Jade" />
-                        <Affliction identifier="Ether_Divinggear_Effect05" strength="10" />
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="5.0" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Warm_Hooked_Jade"/>
+                        <Affliction identifier="Gensokyo_Divinggear_Effect05" strength="10" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
+                        <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>
                     </StatusEffect>
                 </Containable>
             </SubContainer>
