@@ -1518,7 +1518,7 @@
         <InventoryIcon texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion.png" sourcerect="0,0,100,132" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Tools/Kappa_Backpack.png" depth="0.7" sourcerect="0,0,88,126" origin="0.5,0.5" />
         <Body width="88" height="126" density="10" />
-        <ItemContainer autofill="False" capacity="0" maxstacksize="0" containedstateindicatorslot="0">
+        <ItemContainer autofill="False" capacity="0" maxstacksize="0" containedstateindicatorslot="0" >
             <Containable identifiers="Touhou_Nuclear_Energy_Capacitor_Magazine,Touhou_Nuclear_Battery" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
             <SlotIcon slotindex="0" texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion_Indicator.png" sourcerect="0,0,80,116" origin="0.5,0.45" />
@@ -1693,5 +1693,174 @@
             <Containable identifiers="smallitem" excludeditems="backpack,crate,gun" />
         </ItemContainer>
         <aitarget soundrange="1" fadeouttime="5" />
+    </Item>
+
+    <!--宁静的勾玉-->
+    <!--提供眩晕抗性和光照-->
+    <Item
+            name="宁静的勾玉"
+            identifier="Touhou_Peace_Hooked_Jade"
+            category="Equipment"
+            subcategory="Touhou"
+            maxstacksize="32"
+            tags="smallitem,Touhou_Hooked_Jade"
+            canbepicked="true"
+            cargocontaineridentifier="mediccrate"
+            description=""
+            scale="0.5"
+            impactsoundtag="impact_soft">
+        <PreferredContainer primary="medfabcab" />
+        <Price baseprice="400" minavailable="2" sold="false" >
+            <Price locationtype="outpost" multiplier="1.2" maxavailable="8" />
+            <Price locationtype="city" multiplier="1" maxavailable="16" />
+            <Price locationtype="research" multiplier="1" maxavailable="12" />
+            <Price locationtype="military" multiplier="1.1" maxavailable="8" />
+            <Price locationtype="mine" multiplier="0.8" maxavailable="8" />
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="Reiki_Stone" amount="3" />
+            <Item identifier="silicon" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="15" >
+            <RequiredSkill identifier="Touhou_Magic" level="10" />
+            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="silicon" />
+            <RequiredItem identifier="Mu_Alchemical" />
+            <RequiredItem identifier="Tu_Alchemical" />
+            <RequiredItem identifier="Shui_Alchemical" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
+        <Body width="28" radius="25" density="10" />
+        <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
+            <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
+        </LightComponent>
+        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />
+    </Item>
+
+    <!--坚硬的勾玉-->
+    <!--提供四肢的额外抗性-->
+    <Item
+            name="坚硬的勾玉"
+            identifier="Touhou_Hard_Hooked_Jade"
+            category="Equipment"
+            subcategory="Touhou"
+            maxstacksize="32"
+            tags="smallitem,Touhou_Hooked_Jade"
+            canbepicked="true"
+            cargocontaineridentifier="mediccrate"
+            description=""
+            scale="0.5"
+            impactsoundtag="impact_soft">
+        <PreferredContainer primary="medfabcab" />
+        <Price baseprice="400" minavailable="2" sold="false" >
+            <Price locationtype="outpost" multiplier="1.2" maxavailable="8" />
+            <Price locationtype="city" multiplier="1" maxavailable="16" />
+            <Price locationtype="research" multiplier="1" maxavailable="12" />
+            <Price locationtype="military" multiplier="1.1" maxavailable="8" />
+            <Price locationtype="mine" multiplier="0.8" maxavailable="8" />
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="Reiki_Stone" amount="3" />
+            <Item identifier="silicon" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="15" >
+            <RequiredSkill identifier="Touhou_Magic" level="10" />
+            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="silicon" />
+            <RequiredItem identifier="Tu_Alchemical" />
+            <RequiredItem identifier="Jin_Alchemical" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
+        <Body width="28" radius="25" density="10" />
+        <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
+            <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
+        </LightComponent>
+        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />
+    </Item>
+
+    <!--柔软的勾玉-->
+    <!--提供头部和躯干的出血和感染伤口的抗性-->
+    <Item
+            name="柔软的勾玉"
+            identifier="Touhou_Soft_Hooked_Jade"
+            category="Equipment"
+            subcategory="Touhou"
+            maxstacksize="32"
+            tags="smallitem,Touhou_Hooked_Jade"
+            canbepicked="true"
+            cargocontaineridentifier="mediccrate"
+            description=""
+            scale="0.5"
+            impactsoundtag="impact_soft">
+        <PreferredContainer primary="medfabcab" />
+        <Price baseprice="400" minavailable="2" sold="false" >
+            <Price locationtype="outpost" multiplier="1.2" maxavailable="8" />
+            <Price locationtype="city" multiplier="1" maxavailable="16" />
+            <Price locationtype="research" multiplier="1" maxavailable="12" />
+            <Price locationtype="military" multiplier="1.1" maxavailable="8" />
+            <Price locationtype="mine" multiplier="0.8" maxavailable="8" />
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="Reiki_Stone" amount="3" />
+            <Item identifier="silicon" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="15" >
+            <RequiredSkill identifier="Touhou_Magic" level="10" />
+            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="silicon" />
+            <RequiredItem identifier="Mu_Alchemical" />
+            <RequiredItem identifier="Shui_Alchemical" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
+        <Body width="28" radius="25" density="10" />
+        <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
+            <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
+        </LightComponent>
+        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />
+    </Item>
+
+    <!--温暖的勾玉-->
+    <!--提供头部和躯干的物理伤害和烧伤的抗性-->
+    <Item
+            name="柔软的勾玉"
+            identifier="Touhou_Warm_Hooked_Jade"
+            category="Equipment"
+            subcategory="Touhou"
+            maxstacksize="32"
+            tags="smallitem,Touhou_Hooked_Jade"
+            canbepicked="true"
+            cargocontaineridentifier="mediccrate"
+            description=""
+            scale="0.5"
+            impactsoundtag="impact_soft">
+        <PreferredContainer primary="medfabcab" />
+        <Price baseprice="400" minavailable="2" sold="false" >
+            <Price locationtype="outpost" multiplier="1.2" maxavailable="8" />
+            <Price locationtype="city" multiplier="1" maxavailable="16" />
+            <Price locationtype="research" multiplier="1" maxavailable="12" />
+            <Price locationtype="military" multiplier="1.1" maxavailable="8" />
+            <Price locationtype="mine" multiplier="0.8" maxavailable="8" />
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="Reiki_Stone" amount="3" />
+            <Item identifier="silicon" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="15" >
+            <RequiredSkill identifier="Touhou_Magic" level="10" />
+            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="silicon" />
+            <RequiredItem identifier="Huo_Alchemical" />
+            <RequiredItem identifier="Tu_Alchemical" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
+        <Body width="28" radius="25" density="10" />
+        <LightComponent lightcolor="255,255,255,200" range="60" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
+            <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
+        </LightComponent>
+        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />
     </Item>
 </Items>

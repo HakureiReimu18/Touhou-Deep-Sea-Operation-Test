@@ -13,7 +13,7 @@
             hideiconafterdelay="true"
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1">
+        <Effect minstrength="0" maxstrength="1" >
             <StatusEffect target="Character" >
                 <Reduceaffliction type="damage" amount="3" />
                 <Reduceaffliction type="burn" amount="3" />

@@ -1844,4 +1844,174 @@
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
+  <!--幻想潜水服效果-->
+  <Affliction
+          name="幻想潜水服"
+          identifier="Gensokyo_Divinggear_Effect01"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" resistancefor="poison" minresistance="0.6" maxresistance="0.6" />
+    <icon texture="%ModDir%/Images/Afflictions/Gensokyo_Divinggear_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name=""
+          identifier="Gensokyo_Divinggear_Effect02"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.2" maxresistance="0.2" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name=""
+          identifier="Gensokyo_Divinggear_Effect03"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="damage" ResistanceLimbs="LeftArm,RightArm,LeftLeg,RightLeg" minresistance="0.1" maxresistance="0.1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name=""
+          identifier="Gensokyo_Divinggear_Effect04"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso" minresistance="0.4" maxresistance="0.4" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name=""
+          identifier="Gensokyo_Divinggear_Effect05"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso" minresistance="0.15" maxresistance="0.15" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--秘境潜水服效果-->
+  <Affliction
+          name="秘境潜水服"
+          identifier="Ether_Divinggear_Effect01"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="poison" minresistance="0.2" maxresistance="0.2" />
+    <icon texture="%ModDir%/Images/Afflictions/Ether_Divinggear_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="秘境潜水服"
+          identifier="Ether_Divinggear_Effect02"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.1" maxresistance="0.1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name=""
+          identifier="Ether_Divinggear_Effect03"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="damage" ResistanceLimbs="LeftArm,RightArm,LeftLeg,RightLeg" minresistance="0.05" maxresistance="0.05" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name=""
+          identifier="Ether_Divinggear_Effect04"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso" minresistance="0.15" maxresistance="0.15" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name=""
+          identifier="Ether_Divinggear_Effect05"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso" minresistance="0.1" maxresistance="0.1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
 </Afflictions>

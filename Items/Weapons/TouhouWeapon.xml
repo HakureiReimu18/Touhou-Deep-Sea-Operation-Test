@@ -59,6 +59,8 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon barrelpos="50,-8" spread="3" unskilledspread="18" reload="0.35" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.4" DualWieldAccuracyPenalty="12">
@@ -133,7 +135,7 @@
         </ItemContainer>
         <Quality>
             <QualityStat stattype="FirepowerMultiplier" value="0.1" />
-            <QualityStat stattype="Condition" value="0.15" />
+            <QualityStat stattype="Condition" value="0.1" />
         </Quality>
         <SkillRequirementHint identifier="weapons" level="100" />
         <SkillRequirementHint identifier="Touhou_Magic" level="100" />
@@ -463,6 +465,8 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="1500.0" loop="false" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon weapondamagemodifier="0.75" barrelpos="170,20" spread="6" unskilledspread="24" reload="0.5" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.5">
@@ -537,7 +541,6 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-6.5" />
             <StatusEffect type="Always" target="This" Condition="0.5">
                 <Conditional condition="gt 50" />
             </StatusEffect>
@@ -548,6 +551,8 @@
                 <Conditional RedAndWhite="gte 0" />
             </StatusEffect>-->
             <StatusEffect type="NotInWater" target="This" Condition="0.3"/>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
         </Holdable>
 
         <!--武器参数-->
@@ -565,6 +570,7 @@
                 <RequiredItems identifiers="Magic_Material" type="Contained" />
                 <Use />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-0.5" />
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItems identifiers="Magic_Material" type="Contained" />
@@ -643,7 +649,6 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Icicle_Fall.png" sourcerect="0,0,41,33" depth="0.3" origin="0.5,0.5"/>
         <Body width="32" height="32" density="9" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="0,0" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="OnUse" target="This" Condition="-4.9" />
             <StatusEffect type="InWater" target="This" Condition="0.9">
                 <Conditional condition="gt 0.3" />
             </StatusEffect>
@@ -654,6 +659,8 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="1500.0" loop="false" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon barrelpos="40,20" spread="9" unskilledspread="39" reload="0.09" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.5">
@@ -670,6 +677,7 @@
                 <RequiredItem identifier="Mc_SnowBall" type="Contained" />
                 <Use />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-0.9" />
             <RequiredSkill identifier="weapons" level="99" />
             <RequiredSkill identifier="Touhou_Magic" level="99" />
             <RequiredItem identifier="Mc_SnowBall" type="Contained" />
@@ -750,7 +758,10 @@
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Remilia_Items/Remiliaharpoongun_Sprite.png" sourcerect="0,0,183,40" depth="0.55" origin="0.5,0.5" />
         <Body width="180" height="30" density="25" />
-        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="45,-10" handle1="-20,-6" handle2="30,10" holdangle="-40" msg="ItemMsgPickUpSelect" />
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="35,-10" aimpos="45,-10" handle1="-20,-6" handle2="30,10" holdangle="-40" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+        </Holdable>
         <RangedWeapon reload="1.0" maxchargetime="0.2" launchimpulse="30.0" barrelpos="85,14" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Remilia_Gungnier.png" sourcerect="0,0,169,176" scale="3"/>
@@ -883,6 +894,8 @@
             <LightComponent LightColor="255,64,61,160" Flicker="0.2" Range="80" >
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,108,11" origin="0.15,0" />
             </LightComponent>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         </Holdable>
         <RangedWeapon barrelpos="85,-10" spread="0" unskilledspread="0" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.4">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Remilia_Gungnier.png" sourcerect="615,77,118,123" />
@@ -1000,7 +1013,10 @@
         <InventoryIcon texture="%ModDir%/Images/Youmu_Items/Youmusmg_Icon.png" sourcerect="0,0,65,54" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Youmu_Items/Youmusmg_Sprite.png" sourcerect="0,0,147,79" depth="0.55" origin="0.5,0.5" />
         <Body width="140" height="60" density="25" />
-        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect" />
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
+        </Holdable>
         <RangedWeapon reload="0.13" weapondamagemodifier="1.05" holdtrigger="true" barrelpos="64,2" spread="8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="0,0,180,180" />
@@ -1355,6 +1371,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         </Holdable>
 
         <RepairTool firedamage="60.0" structurefixamount="1.0" range="400" barrelpos="35,10" fireprobability="0.02" repairmultiple="true" ballastfloradamage="3000"
@@ -1710,6 +1728,8 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="1000.0" loop="false" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon barrelpos="170,20" spread="6" unskilledspread="24" reload="0.16" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.9" DualWieldReloadTimePenaltyMultiplier="1.4" DualWieldAccuracyPenalty="4">
@@ -1860,6 +1880,8 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon weapondamagemodifier="1.14" barrelpos="70,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.6" DualWieldAccuracyPenalty="12">
@@ -2658,6 +2680,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />v
         </Holdable>
         <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="battery">
             <Containable items="Lightning_Kanameishi"/>
@@ -2704,9 +2728,8 @@
         <Body width="28" height="36" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="15" damagedoors="true" removeonhit="true" >
-            <Attack structuredamage="40" itemdamage="150" targetforce="20" targetimpulse="20" severlimbsprobability="0.3" penetration="0.3">
-                <Affliction identifier="blunttrauma" strength="70" />
-                <Affliction identifier="Reiki_Pressure" strength="20" />
+            <Attack structuredamage="40" itemdamage="150" targetforce="20" targetimpulse="20" severlimbsprobability="0.3" penetration="0.2">
+                <Affliction identifier="blunttrauma" strength="85" />
                 <Affliction identifier="Aura_Strip" strength="10" />
                 <Affliction identifier="Aura_Strip" strength="15" probability="0.8" />
                 <Affliction identifier="Aura_Strip" strength="20" probability="0.2" />
@@ -2716,7 +2739,7 @@
                 <Affliction identifier="Aura_Strip" strength="5" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" >
-                <Affliction identifier="blunttrauma" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" lifetime="1.5">
                 <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="160" anglemin="0" anglemax="360" colormultiplier="5,105,195,220" />
@@ -2737,7 +2760,7 @@
                 <Conditional InWater="false"/>
                 <SpawnItem identifier="Lightning_Kanameishi_Bolt_Spawn" spawnposition="This" aimspread="360" rotationtype="Collider" rotation="0" />
                 <Explosion range="120.0" force="1.0" severlimbsprobability="0.2" decal="explosion" decalsize="0.1" camerashakerange="500" camerashake="40">
-                    <Affliction identifier="Reiki_Pressure" strength="10" />
+                    <Affliction identifier="Reiki_Pressure" strength="5" />
                     <Affliction identifier="blunttrauma" strength="35" />
                     <Affliction identifier="stun" strength="0.5" />
                     <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="1.0" selectionmode="Random" range="1000" />
@@ -3187,6 +3210,8 @@
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect type="OnActive" targettype="NearbyItems" range="300" targets="plantitem" Condition="5" Interval="5" />
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />v
         </Holdable>
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <!--还是自己设计一套UI好了-->
@@ -3289,7 +3314,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-1.0" />
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
 
         <!--武器参数-->
@@ -3308,7 +3334,7 @@
             <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" checkconditionalalways="true" drawhudwhenequipped="true">
                 <SpawnItem identifiers="Touhou_Cyber_Homing_Amulet_Bolt" spawnposition="ThisInventory"/>
             </StatusEffect>
-
+            <StatusEffect type="OnUse" target="This" Condition="-1.5" />
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
         </RangedWeapon>
@@ -3408,6 +3434,7 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon barrelpos="20,0" spread="6" launchimpulse="100" unskilledspread="12" reload="5" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.9">
@@ -4018,7 +4045,6 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-2.9" />
             <StatusEffect type="InWater" target="This" Condition="0.9">
                 <Conditional condition="gt 0.3" />
             </StatusEffect>
@@ -4029,6 +4055,8 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="1500.0" loop="false" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon barrelpos="50,10" spread="3" unskilledspread="9" reload="0.18" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="3" >
@@ -4048,6 +4076,7 @@
                 <RequiredItem identifier="Touhou_Perfect_Snowflake" type="Contained" />
                 <Use />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-0.45" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItem identifier="Touhou_Perfect_Snowflake" type="Contained" />
         </RangedWeapon>
@@ -4068,15 +4097,15 @@
         <Deconstruct time="6">
             <Item identifier="Magic_Material" amount="2" />
         </Deconstruct>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="9" >
             <RequiredSkill identifier="Touhou_Magic" level="40" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="9" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
             <RequiredItem identifier="Shui_Alchemical" amount="3" />
             <RequiredItem identifier="Magic_Material" amount="2" />
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="Shui_Alchemical" amount="2" />
+            <RequiredItem identifier="Shui_Alchemical" />
             <RequiredItem identifier="Touhou_Perfect_Snowflake" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Perfect_Snowflake.png" sourcerect="0,0,108,108" origin="0.5,0.5" depth="0.46" />
@@ -4089,7 +4118,7 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Perfect_Snowflake_Bolt" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-0.1667" disabledeltatime="true" spawnItemRandomly="true" >
+            <StatusEffect type="OnUse" target="This" condition="-0.4" disabledeltatime="true" spawnItemRandomly="true" >
                 <SpawnItem identifiers="Touhou_Perfect_Snowflake_Bolt01" spawnposition="ThisInventory" commonness="1" />
                 <SpawnItem identifiers="Touhou_Perfect_Snowflake_Bolt02" spawnposition="ThisInventory" commonness="1" />
             </StatusEffect>
@@ -5002,6 +5031,9 @@
             <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="1" stackable="false" >
                 <SpawnItem identifiers="Touhou_Alice_Magic_Book_Ammo" spawnposition="ThisInventory"/>
             </StatusEffect>
+
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
 
         </Holdable>
         <!--武器参数-->

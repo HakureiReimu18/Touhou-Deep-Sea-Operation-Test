@@ -319,6 +319,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         </Holdable>
         <RangedWeapon reload="0.1" holdtrigger="true" barrelpos="58,10" spread="0.12" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="8">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -415,7 +417,8 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Hompson_Contender.png" sourcerect="0,0,200,84" depth="0.3" origin="0.5,0.5" />
         <Body width="64" height="64" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-56,-11" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
         </Holdable>
 
         <!--武器参数-->
@@ -531,6 +534,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
         </Holdable>
 
         <!--武器参数-->
@@ -664,6 +669,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon weapondamagemodifier="0.4" barrelpos="70,20" spread="4" unskilledspread="8" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4">
@@ -752,6 +759,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon weapondamagemodifier="0.3" barrelpos="70,20" spread="4" unskilledspread="8" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4">
@@ -840,6 +849,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon weapondamagemodifier="0.4" barrelpos="70,20" spread="4" unskilledspread="8" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4">
@@ -928,6 +939,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
         <!--武器参数-->
         <RangedWeapon weapondamagemodifier="0.4" barrelpos="70,20" spread="4" unskilledspread="8" reload="0.4" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.4">
@@ -1039,6 +1052,8 @@
                             <Conditional condition="gt 90"/>
                         </StatusEffect>-->
             <!--            <StatusEffect type="OnBroken" target="This" condition="5" setvalue="true" delay="3" />-->
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
         </Holdable>
         <RangedWeapon barrelpos="85,-10" reload="0.1" MaxChargeTime="0.625" spread="0" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.4">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Eternal_Night_Bow_Crosshair.png" sourcerect="0,0,256,256" />
@@ -1152,6 +1167,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
         </Holdable>
         <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="battery">
             <Containable items="Touhou_Mysterious_Pearl_Rippling"/>
@@ -1286,6 +1303,8 @@
             <LightComponent lightcolor="255,255,255,90" range="1" powerconsumption="0" flickerspeed="0.5" pulsefrequency="0" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
                 <sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Penglai_Jade_Branch/00.png" sourcerect="0,0,172,240" origin="0.5,0.5" />
             </LightComponent>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         </Holdable>
 
         <!--武器参数-->
@@ -1770,6 +1789,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />v
         </Holdable>
         <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="battery">
             <Containable items="Touhou_Candy_Cannon_Ammo"/>
@@ -1842,6 +1863,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
             <StatusEffect type="OnActive" target="This" Condition="-10" interval="0.08" disabledeltatime="true" stackable="false" />
             <StatusEffect type="OnBroken" target="This" setvalue="true" Condition="100" disabledeltatime="true" />
         </Holdable>
@@ -2197,6 +2220,8 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
         </Holdable>
         <LightComponent LightColor="1.0,0.6,0.6,0.8" Range="0" powerconsumption="10" IsOn="true" >
             <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Light.png" sourcerect="0,0,300,100" origin="0.5,0.5" />
@@ -2468,6 +2493,8 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
         </Holdable>
         <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="battery">
             <Containable items="Touhou_Miniature_Earth_Moon_System"/>
@@ -2681,6 +2708,8 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         </Holdable>
         <LightComponent LightColor="1.0,0.6,0.6,0.8" Range="0" powerconsumption="10" IsOn="true" >
             <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Light.png" sourcerect="0,0,300,100" origin="0.5,0.5" />

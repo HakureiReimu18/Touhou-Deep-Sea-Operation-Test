@@ -1219,6 +1219,10 @@
   <afflictiondescription.Alice_Doll_Energy>激活人偶功能的能量</afflictiondescription.Alice_Doll_Energy>
   <afflictionname.Aya_Weapons>传统的幻想记者</afflictionname.Aya_Weapons>
   <afflictiondescription.Aya_Weapons>文拥有操纵风程度的能力，她可以使用团扇操纵风。</afflictiondescription.Aya_Weapons>
+  <afflictionname.Gensokyo_Divinggear_Effect01>幻想潜水服</afflictionname.Gensokyo_Divinggear_Effect01>
+  <afflictiondescription.Gensokyo_Divinggear_Effect01>增加身体抗性和技能水平</afflictiondescription.Gensokyo_Divinggear_Effect01>
+  <afflictionname.Ether_Divinggear_Effect01>秘境潜水服</afflictionname.Ether_Divinggear_Effect01>
+  <afflictiondescription.Ether_Divinggear_Effect01>略微增加身体抗性</afflictiondescription.Ether_Divinggear_Effect01>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>
