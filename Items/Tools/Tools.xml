@@ -1926,52 +1926,6 @@
         </Holdable>
     </Item>
 
-    <!--沸腾的勾玉-->
-    <!--提供少量的移动速度和攻击伤害-->
-    <Item
-            name="沸腾的勾玉"
-            identifier="Touhou_Boiling_Hooked_Jade"
-            category="Equipment"
-            subcategory="Touhou"
-            maxstacksize="32"
-            tags="smallitem,Touhou_Hooked_Jade,Touhou_Boiling_Hooked_Jade"
-            canbepicked="true"
-            cargocontaineridentifier="mediccrate"
-            description=""
-            scale="0.5"
-            impactsoundtag="impact_soft">
-        <PreferredContainer primary="medfabcab" />
-        <Price baseprice="400" minavailable="2" sold="false" >
-            <Price locationtype="outpost" multiplier="1.2" maxavailable="8" />
-            <Price locationtype="city" multiplier="1" maxavailable="16" />
-            <Price locationtype="research" multiplier="1" maxavailable="12" />
-            <Price locationtype="military" multiplier="1.1" maxavailable="8" />
-            <Price locationtype="mine" multiplier="0.8" maxavailable="8" />
-        </Price>
-        <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3" />
-            <Item identifier="silicon" />
-        </Deconstruct>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="15" >
-            <RequiredSkill identifier="Touhou_Magic" level="10" />
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
-            <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Huo_Alchemical" />
-            <RequiredItem identifier="Yang_Alchemical" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
-        </Fabricate>
-        <Sprite texture="%ModDir%/Images/Tools/Touhou_Boiling_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
-        <Body width="28" radius="25" density="10" />
-        <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
-            <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
-        </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
-            <StatusEffect type="OnBroken" target="This">
-                <Remove />
-            </StatusEffect>
-        </Holdable>
-    </Item>
-
     <!--冰冷的勾玉-->
     <!--提供些许治疗效果，这个效果在水中翻倍-->
     <Item

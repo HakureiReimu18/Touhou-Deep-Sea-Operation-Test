@@ -106,6 +106,7 @@
   <!--Talents-->
   <Talents file="%ModDir%/Talents/Hyouibana.xml" />
   <Talents file="%ModDir%/Talents/TalentEnemy.xml" />
+  <Talents file="%ModDir%/Talents/TalentOther.xml" />
   <Talents file="%ModDir%/Talents/TalentsAya.xml" />
   <Talents file="%ModDir%/Talents/TalentsNitori.xml" />
   <Talents file="%ModDir%/Talents/TalentsRemilia.xml" />
