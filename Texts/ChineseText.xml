@@ -1235,6 +1235,14 @@
   <entitydescription.Touhou_Boiling_Hooked_Jade>放入潜水服的勾玉槽位内，提供少量的移动速度和攻击伤害</entitydescription.Touhou_Boiling_Hooked_Jade>
   <entityname.Touhou_Icy_Hooked_Jade>冰冷的勾玉</entityname.Touhou_Icy_Hooked_Jade>
   <entitydescription.Touhou_Icy_Hooked_Jade>放入潜水服的勾玉槽位内，提供些许治疗效果，这个效果在水中翻倍</entitydescription.Touhou_Icy_Hooked_Jade>
+  <entityname.Touhou_White_Hooked_Jade>太古的勾玉-白</entityname.Touhou_White_Hooked_Jade>
+  <entitydescription.Touhou_White_Hooked_Jade>放入潜水服的勾玉槽位内，提供光照效果，与太古的勾玉-黑同时装配时，触发额外效果</entitydescription.Touhou_White_Hooked_Jade>
+  <entityname.Touhou_Black_Hooked_Jade>太古的勾玉-黑</entityname.Touhou_Black_Hooked_Jade>
+  <entitydescription.Touhou_Black_Hooked_Jade>放入潜水服的勾玉槽位内，提供移速加成和头部与躯干的抗性，与太古的勾玉-白同时装配时，触发额外效果</entitydescription.Touhou_Black_Hooked_Jade>
+  <talentname.Gensokyo_Divinggear_Talent>幻想潜水服</talentname.Gensokyo_Divinggear_Talent>
+  <talentdescription.Gensokyo_Divinggear_Talent>同时装配黑白勾玉时，每次受击有20%的概率减少15%的伤害</talentdescription.Gensokyo_Divinggear_Talent>
+  <talentname.Ether_Divinggear_Talent>秘境潜水服</talentname.Ether_Divinggear_Talent>
+  <talentdescription.Ether_Divinggear_Talent>同时装配黑白勾玉时，每次受击有10%的概率减少10%的伤害</talentdescription.Ether_Divinggear_Talent>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>

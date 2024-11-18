@@ -124,6 +124,9 @@
             <StatusEffect type="OnWearing" target="Character" Interval="3.0" Duraation="3.0" >
                 <Affliction identifier="Gensokyo_Divinggear_Effect01" strength="10" />
             </StatusEffect>
+            <StatusEffect type="OnWearing" target="Character,Contained" interval="5">
+                <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent" />
+            </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -218,11 +221,6 @@
                     <StatusEffect type="OnWearing" target="Character,Contained" Interval="5.0" Duraation="5.0">
                         <Conditional Hastag="eq Touhou_Icy_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect07" strength="10" />
-                    </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Character,Contained" interval="5" comparison="And">
-                        <Conditional Hastag="eq Touhou_White_Hooked_Jade"/>
-                        <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
-                        <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent" />
                     </StatusEffect>
                     <StatusEffect type="OnWearing" target="Character,Contained" interval="5" Duraation="5.0" comparison="And">
                         <Conditional Hastag="eq Touhou_White_Hooked_Jade"/>
@@ -357,6 +355,9 @@
             <StatusEffect type="OnWearing" target="Character" Interval="3.0" Duraation="3.0" >
                 <Affliction identifier="Ether_Divinggear_Effect01" strength="10" />
             </StatusEffect>
+            <StatusEffect type="OnWearing" target="Character" interval="5">
+                <GiveTalentInfo giverandom="false" talentidentifiers="Ether_Divinggear_Talent" />
+            </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.68" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="Reiki_Pressure" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -449,15 +450,13 @@
                         <Conditional Hastag="eq Touhou_Icy_Hooked_Jade"/>
                         <Affliction identifier="Ether_Divinggear_Effect07" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Character,Contained" interval="5" comparison="And">
+                    <StatusEffect type="OnWearing" target="Character,Contained" Voltage="1.0" setvalue="true" interval="5" Duraation="5.0">
                         <Conditional Hastag="eq Touhou_White_Hooked_Jade"/>
-                        <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
-                        <GiveTalentInfo giverandom="false" talentidentifiers="Ether_Divinggear_Talent" />
-                    </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Character,Contained" interval="5" Duraation="5.0" comparison="And">
-                        <Conditional Hastag="eq Touhou_White_Hooked_Jade"/>
-                        <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Ether_Divinggear_Effect08" strength="10" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Character,Contained" interval="5" Duraation="5.0">
+                        <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
+                        <Affliction identifier="Ether_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
                     <StatusEffect type="OnWearing" target="Character,Contained" Interval="2.0" Duraation="2.0" condition="-0.5">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0"/>

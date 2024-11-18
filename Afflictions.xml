@@ -2020,7 +2020,7 @@
   </Affliction>
 
   <Affliction
-          name="黑白勾玉效果"
+          name="白勾玉效果"
           identifier="Gensokyo_Divinggear_Effect08"
           description=""
           type="Gensokyo_Divinggear_Effect"
@@ -2032,8 +2032,24 @@
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" ResistanceLimbs="Head,Torso" resistancefor="damage,burn"
-            minresistance="0.1" maxresistance="0.1"/>
+    <Effect minstrength="0" maxstrength="1"/>
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="黑勾玉效果"
+          identifier="Gensokyo_Divinggear_Effect09"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1"/>
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
@@ -2190,6 +2206,41 @@
         <ReduceAffliction type="bloodloss" strength="0.015" />
       </StatusEffect>
     </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="白勾玉效果"
+          identifier="Ether_Divinggear_Effect08"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1"/>
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="黑勾玉效果"
+          identifier="Ether_Divinggear_Effect09"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.05" maxskillmultiplier="1.05" ResistanceLimbs="Head,Torso" resistancefor="damage,burn"
+            minresistance="0.05" maxresistance="0.05"/>
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 

@@ -7,6 +7,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Gensokyo_Divinggear_Effect08" />
+                <AbilityConditionHasAffliction afflictionidentifier="Gensokyo_Divinggear_Effect09" />
                 <AbilityConditionServerRandom randomchance="0.2" />
             </Conditions>
             <Abilities>
@@ -21,6 +22,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ether_Divinggear_Effect08" />
+                <AbilityConditionHasAffliction afflictionidentifier="Ether_Divinggear_Effect09" />
                 <AbilityConditionServerRandom randomchance="0.1" />
             </Conditions>
             <Abilities>
