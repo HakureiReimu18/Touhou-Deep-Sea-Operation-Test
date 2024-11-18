@@ -3648,7 +3648,7 @@
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Nue_Midnight.png" sourcerect="0,0,192,28" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Nue_Midnight.png" sourcerect="0,0,192,28" depth="0.55" origin="0.5,0.5" />
         <Body width="140" height="40" density="10" />
-        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="65,10" handle1="-43,0" handle2="0,-7" SwingPos="2.0,1.0" allowhitmultiple="true"
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="65,10" handle1="-43,0" handle2="14,7" SwingPos="2.0,1.0" allowhitmultiple="true"
                      holdangle="50" aimangle="-10" reload="1.2" range="120" combatPriority="50" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Unconfirmed_Fantasy_Flying_Girl="gt 0"/>
