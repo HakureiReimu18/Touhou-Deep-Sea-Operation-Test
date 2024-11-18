@@ -1504,6 +1504,8 @@
             isbuff="true"
             limbspecific="false"
             hideiconafterdelay="false"
+            transitionthreshold="100"
+            transformthresholdondeath="100"
             maxstrength="1"
             Duration="5.0"
             iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">

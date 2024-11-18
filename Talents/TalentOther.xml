@@ -16,6 +16,21 @@
         </AbilityGroupEffect>
     </Talent>
 
+    <Talent identifier="Boudary_Divinggear_Talent">
+        <Icon texture="%ModDir%/Images/Afflictions/Boudary_Divinggear_Effect.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Boudary_Divinggear_Talent"/>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Boudary_Divinggear_Effect08" />
+                <AbilityConditionHasAffliction afflictionidentifier="Boudary_Divinggear_Effect09" />
+                <AbilityConditionServerRandom randomchance="0.2" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
     <Talent identifier="Ether_Divinggear_Talent">
         <Icon texture="%ModDir%/Images/Afflictions/Ether_Divinggear_Effect.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Ether_Divinggear_Talent"/>
@@ -27,6 +42,21 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <Talent identifier="Magic_Veil_Talent">
+        <Icon texture="%ModDir%/Images/Afflictions/Magic_Veil_Effect.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Magic_Veil_Talent"/>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Magic_Veil_Effect02" />
+                <AbilityConditionHasAffliction afflictionidentifier="Magic_Veil_Effect03" />
+                <AbilityConditionServerRandom randomchance="0.15" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

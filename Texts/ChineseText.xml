@@ -341,10 +341,6 @@
   <talentname.Casket_Of_Star>普通的魔法使</talentname.Casket_Of_Star>
   <entityname.Touhou_Spell_Book>‖color:255,255,0,255‖《魔法书》‖color:end‖</entityname.Touhou_Spell_Book>
   <entitydescription.Touhou_Spell_Book>一本记述了各种神奇魔法的书籍，如果花点时间好好研究，能收获很多魔法知识</entitydescription.Touhou_Spell_Book>
-  <entityname.Magic_Veil>‖color:120,75,100,255‖魔力披纱‖color:end‖</entityname.Magic_Veil>
-  <entitydescription.Magic_Veil>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械</entitydescription.Magic_Veil>
-  <entityname.Magic_Veil02>‖color:120,75,100,255‖魔力披纱（异色）‖color:end‖</entityname.Magic_Veil02>
-  <entitydescription.Magic_Veil02>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械</entitydescription.Magic_Veil02>
   <afflictionname.Mokou_Weapons>不老不死的竹林引路人</afflictionname.Mokou_Weapons>
   <afflictiondescription.Mokou_Weapons>如果灵魂与肉体分离，那么肉体会立即毁灭，而灵魂会在喜欢的地方制造生长出新的肉体。不过，虽然不会死亡，仍然会饿、会痛。</afflictiondescription.Mokou_Weapons>
   <afflictionname.Marisa_Weapons>东洋的西洋魔术师</afflictionname.Marisa_Weapons>
@@ -1217,32 +1213,46 @@
   <afflictiondescription.Aya_Weapons>文拥有操纵风程度的能力，她可以使用团扇操纵风。</afflictiondescription.Aya_Weapons>
   <entityname.gensokyo_divinggear>幻想潜水服</entityname.gensokyo_divinggear>
   <entitydescription.gensokyo_divinggear>可以保护人体的一团神奇灵气。拥有四个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.gensokyo_divinggear>
+  <entityname.Touhou_Boudary_Divinggear>境界潜水服</entityname.Touhou_Boudary_Divinggear>
+  <entitydescription.Touhou_Boudary_Divinggear>从境界的边缘探寻回来的神秘潜水服，能抵御8000米水压。拥有三个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Touhou_Boudary_Divinggear>
   <entityname.Ether_Divinggear>秘境潜水服</entityname.Ether_Divinggear>
   <entitydescription.Ether_Divinggear>由淡水的人鱼贡献的制作思路，经帕秋莉指点而生产的潜水服，能抵御7000米水压。拥有两个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Ether_Divinggear>
-  <afflictionname.Gensokyo_Divinggear_Effect01>幻想潜水服</afflictionname.Gensokyo_Divinggear_Effect01>
+  <entityname.Magic_Veil>‖color:120,75,100,255‖魔力披纱‖color:end‖</entityname.Magic_Veil>
+  <entitydescription.Magic_Veil>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械。拥有六个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Magic_Veil>
+  <entityname.Magic_Veil02>‖color:120,75,100,255‖魔力披纱（异色）‖color:end‖</entityname.Magic_Veil02>
+  <entitydescription.Magic_Veil02>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械。拥有六个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Magic_Veil02>
+  <afflictionname.Gensokyo_Divinggear_Effect01>幻想的灵气</afflictionname.Gensokyo_Divinggear_Effect01>
   <afflictiondescription.Gensokyo_Divinggear_Effect01>增加身体抗性和技能水平</afflictiondescription.Gensokyo_Divinggear_Effect01>
-  <afflictionname.Ether_Divinggear_Effect01>秘境潜水服</afflictionname.Ether_Divinggear_Effect01>
+  <afflictionname.Boudary_Divinggear_Effect01>境界的边缘</afflictionname.Boudary_Divinggear_Effect01>
+  <afflictiondescription.Boudary_Divinggear_Effect01>增加身体抗性和技能水平</afflictiondescription.Boudary_Divinggear_Effect01>
+  <afflictionname.Ether_Divinggear_Effect01>秘境的鱼鳞</afflictionname.Ether_Divinggear_Effect01>
   <afflictiondescription.Ether_Divinggear_Effect01>略微增加身体抗性</afflictiondescription.Ether_Divinggear_Effect01>
+  <afflictionname.Magic_Veil_Effect01>无穷的魔力</afflictionname.Magic_Veil_Effect01>
+  <afflictiondescription.Magic_Veil_Effect01>略微增加自愈速度</afflictiondescription.Magic_Veil_Effect01>
   <entityname.Touhou_Peace_Hooked_Jade>宁静的勾玉</entityname.Touhou_Peace_Hooked_Jade>
-  <entitydescription.Touhou_Peace_Hooked_Jade>放入潜水服的勾玉槽位内，提供眩晕抗性和照明效果</entitydescription.Touhou_Peace_Hooked_Jade>
+  <entitydescription.Touhou_Peace_Hooked_Jade>放入潜水服的勾玉格内，提供眩晕抗性和照明效果</entitydescription.Touhou_Peace_Hooked_Jade>
   <entityname.Touhou_Hard_Hooked_Jade>坚硬的勾玉</entityname.Touhou_Hard_Hooked_Jade>
-  <entitydescription.Touhou_Hard_Hooked_Jade>放入潜水服的勾玉槽位内，提供四肢的物理伤害抗性</entitydescription.Touhou_Hard_Hooked_Jade>
+  <entitydescription.Touhou_Hard_Hooked_Jade>放入潜水服的勾玉格内，提供四肢的物理伤害抗性</entitydescription.Touhou_Hard_Hooked_Jade>
   <entityname.Touhou_Soft_Hooked_Jade>柔软的勾玉</entityname.Touhou_Soft_Hooked_Jade>
-  <entitydescription.Touhou_Soft_Hooked_Jade>放入潜水服的勾玉槽位内，提供头部和躯干的出血和感染伤口的抗性</entitydescription.Touhou_Soft_Hooked_Jade>
+  <entitydescription.Touhou_Soft_Hooked_Jade>放入潜水服的勾玉格内，提供头部和躯干的出血和感染伤口的抗性</entitydescription.Touhou_Soft_Hooked_Jade>
   <entityname.Touhou_Warm_Hooked_Jade>温暖的勾玉</entityname.Touhou_Warm_Hooked_Jade>
-  <entitydescription.Touhou_Warm_Hooked_Jade>放入潜水服的勾玉槽位内，提供头部和躯干的物理伤害和烧伤的抗性</entitydescription.Touhou_Warm_Hooked_Jade>
+  <entitydescription.Touhou_Warm_Hooked_Jade>放入潜水服的勾玉格内，提供头部和躯干的物理伤害和烧伤的抗性</entitydescription.Touhou_Warm_Hooked_Jade>
   <entityname.Touhou_Boiling_Hooked_Jade>沸腾的勾玉</entityname.Touhou_Boiling_Hooked_Jade>
-  <entitydescription.Touhou_Boiling_Hooked_Jade>放入潜水服的勾玉槽位内，提供少量的移动速度和攻击伤害</entitydescription.Touhou_Boiling_Hooked_Jade>
+  <entitydescription.Touhou_Boiling_Hooked_Jade>放入潜水服的勾玉格内，提供少量的移动速度和攻击伤害</entitydescription.Touhou_Boiling_Hooked_Jade>
   <entityname.Touhou_Icy_Hooked_Jade>冰冷的勾玉</entityname.Touhou_Icy_Hooked_Jade>
-  <entitydescription.Touhou_Icy_Hooked_Jade>放入潜水服的勾玉槽位内，提供些许治疗效果，这个效果在水中翻倍</entitydescription.Touhou_Icy_Hooked_Jade>
+  <entitydescription.Touhou_Icy_Hooked_Jade>放入潜水服的勾玉格内，提供些许治疗效果，这个效果在水中翻倍</entitydescription.Touhou_Icy_Hooked_Jade>
   <entityname.Touhou_White_Hooked_Jade>太古的勾玉-白</entityname.Touhou_White_Hooked_Jade>
-  <entitydescription.Touhou_White_Hooked_Jade>放入潜水服的勾玉槽位内，提供光照效果，与太古的勾玉-黑同时装配时，触发额外效果</entitydescription.Touhou_White_Hooked_Jade>
+  <entitydescription.Touhou_White_Hooked_Jade>放入潜水服的勾玉格内，提供光照效果，与太古的勾玉-黑同时装配时，触发额外效果</entitydescription.Touhou_White_Hooked_Jade>
   <entityname.Touhou_Black_Hooked_Jade>太古的勾玉-黑</entityname.Touhou_Black_Hooked_Jade>
-  <entitydescription.Touhou_Black_Hooked_Jade>放入潜水服的勾玉槽位内，提供移速加成和头部与躯干的抗性，与太古的勾玉-白同时装配时，触发额外效果</entitydescription.Touhou_Black_Hooked_Jade>
-  <talentname.Gensokyo_Divinggear_Talent>幻想潜水服</talentname.Gensokyo_Divinggear_Talent>
-  <talentdescription.Gensokyo_Divinggear_Talent>勾玉提供的效果更好。同时装配黑白勾玉时，每次受击有20%的概率减少15%的伤害</talentdescription.Gensokyo_Divinggear_Talent>
-  <talentname.Ether_Divinggear_Talent>秘境潜水服</talentname.Ether_Divinggear_Talent>
+  <entitydescription.Touhou_Black_Hooked_Jade>放入潜水服的勾玉格内，提供移速加成和头部与躯干的抗性，与太古的勾玉-白同时装配时，触发额外效果</entitydescription.Touhou_Black_Hooked_Jade>
+  <talentname.Gensokyo_Divinggear_Talent>幻想的灵气</talentname.Gensokyo_Divinggear_Talent>
+  <talentdescription.Gensokyo_Divinggear_Talent>勾玉提供的效果最好。同时装配黑白勾玉时，每次受击有20%的概率减少15%的伤害</talentdescription.Gensokyo_Divinggear_Talent>
+  <talentname.Boudary_Divinggear_Talent>境界的边缘</talentname.Boudary_Divinggear_Talent>
+  <talentdescription.Boudary_Divinggear_Talent>勾玉提供的效果更好。同时装配黑白勾玉时，每次受击有20%的概率减少10%的伤害</talentdescription.Boudary_Divinggear_Talent>
+  <talentname.Ether_Divinggear_Talent>秘境的鱼鳞</talentname.Ether_Divinggear_Talent>
   <talentdescription.Ether_Divinggear_Talent>勾玉提供的效果一般。同时装配黑白勾玉时，每次受击有10%的概率减少10%的伤害</talentdescription.Ether_Divinggear_Talent>
+  <talentname.Magic_Veil_Talent>无穷的魔力</talentname.Magic_Veil_Talent>
+  <talentdescription.Magic_Veil_Talent>勾玉提供的效果最好。同时装配黑白勾玉时，每次受击有15%的概率减少15%的伤害</talentdescription.Magic_Veil_Talent>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>

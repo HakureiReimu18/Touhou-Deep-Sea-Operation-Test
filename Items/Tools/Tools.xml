@@ -1725,8 +1725,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
-            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
+            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Peace_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1734,7 +1734,7 @@
         <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -1771,8 +1771,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
-            <RequiredItem identifier="Jin_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
+            <RequiredItem identifier="Jin_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1780,7 +1780,7 @@
         <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -1817,8 +1817,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Mu_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
-            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Mu_Alchemical" mincondition="0.5" usecondition="false" />
+            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Soft_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1826,7 +1826,7 @@
         <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -1863,8 +1863,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
-            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" usecondition="false" />
+            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Warm_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1872,7 +1872,7 @@
         <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -1909,8 +1909,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
-            <RequiredItem identifier="Yang_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" usecondition="false" />
+            <RequiredItem identifier="Yang_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Boiling_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1918,7 +1918,7 @@
         <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -1955,8 +1955,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
-            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
+            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Icy_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1964,7 +1964,7 @@
         <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -2006,7 +2006,7 @@
         <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -2048,7 +2048,7 @@
         <LightComponent lightcolor="255,255,255,200" range="30" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" >
+        <Holdable canBeCombined="true" slots="Any,RightHand,LeftHand" handle1="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>

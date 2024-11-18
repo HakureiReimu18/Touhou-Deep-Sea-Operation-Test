@@ -648,7 +648,7 @@
             origin="0.5,0.5" />
   </Touhou_Koishi_Unconscious>
 
-<!--  <Touhou_Blue_Explosionfire
+  <Touhou_Blue_Explosionfire
           lifetime="1.5"
           angularvelocitymin="-10"
           angularvelocitymax="10"
@@ -732,5 +732,5 @@
             rows="10"
             origin="0.5,0.5"
             premultiplyalpha="false" />
-  </Touhou_Blue_Explosion_Underwater>-->
+  </Touhou_Blue_Explosion_Underwater>
 </prefabs>
