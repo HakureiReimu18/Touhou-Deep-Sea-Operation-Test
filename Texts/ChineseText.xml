@@ -1216,9 +1216,9 @@
   <afflictionname.Aya_Weapons>传统的幻想记者</afflictionname.Aya_Weapons>
   <afflictiondescription.Aya_Weapons>文拥有操纵风程度的能力，她可以使用团扇操纵风。</afflictiondescription.Aya_Weapons>
   <entityname.gensokyo_divinggear>幻想潜水服</entityname.gensokyo_divinggear>
-  <entitydescription.gensokyo_divinggear>可以保护人体的一团神奇灵气。拥有四个勾玉槽位。受击时会损耗勾玉的耐久</entitydescription.gensokyo_divinggear>
+  <entitydescription.gensokyo_divinggear>可以保护人体的一团神奇灵气。拥有四个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.gensokyo_divinggear>
   <entityname.Ether_Divinggear>秘境潜水服</entityname.Ether_Divinggear>
-  <entitydescription.Ether_Divinggear>由淡水的人鱼贡献的制作思路，经帕秋莉指点而生产的潜水服，能抵御7000米水压。拥有四个勾玉槽位。受击时会损耗勾玉的耐久</entitydescription.Ether_Divinggear>
+  <entitydescription.Ether_Divinggear>由淡水的人鱼贡献的制作思路，经帕秋莉指点而生产的潜水服，能抵御7000米水压。拥有两个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Ether_Divinggear>
   <afflictionname.Gensokyo_Divinggear_Effect01>幻想潜水服</afflictionname.Gensokyo_Divinggear_Effect01>
   <afflictiondescription.Gensokyo_Divinggear_Effect01>增加身体抗性和技能水平</afflictiondescription.Gensokyo_Divinggear_Effect01>
   <afflictionname.Ether_Divinggear_Effect01>秘境潜水服</afflictionname.Ether_Divinggear_Effect01>
@@ -1240,9 +1240,9 @@
   <entityname.Touhou_Black_Hooked_Jade>太古的勾玉-黑</entityname.Touhou_Black_Hooked_Jade>
   <entitydescription.Touhou_Black_Hooked_Jade>放入潜水服的勾玉槽位内，提供移速加成和头部与躯干的抗性，与太古的勾玉-白同时装配时，触发额外效果</entitydescription.Touhou_Black_Hooked_Jade>
   <talentname.Gensokyo_Divinggear_Talent>幻想潜水服</talentname.Gensokyo_Divinggear_Talent>
-  <talentdescription.Gensokyo_Divinggear_Talent>同时装配黑白勾玉时，每次受击有20%的概率减少15%的伤害</talentdescription.Gensokyo_Divinggear_Talent>
+  <talentdescription.Gensokyo_Divinggear_Talent>勾玉提供的效果更好。同时装配黑白勾玉时，每次受击有20%的概率减少15%的伤害</talentdescription.Gensokyo_Divinggear_Talent>
   <talentname.Ether_Divinggear_Talent>秘境潜水服</talentname.Ether_Divinggear_Talent>
-  <talentdescription.Ether_Divinggear_Talent>同时装配黑白勾玉时，每次受击有10%的概率减少10%的伤害</talentdescription.Ether_Divinggear_Talent>
+  <talentdescription.Ether_Divinggear_Talent>勾玉提供的效果一般。同时装配黑白勾玉时，每次受击有10%的概率减少10%的伤害</talentdescription.Ether_Divinggear_Talent>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>

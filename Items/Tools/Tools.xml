@@ -1725,9 +1725,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Mu_Alchemical" />
-            <RequiredItem identifier="Tu_Alchemical" />
-            <RequiredItem identifier="Shui_Alchemical" />
+            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Peace_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1772,8 +1771,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Tu_Alchemical" />
-            <RequiredItem identifier="Jin_Alchemical" />
+            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Jin_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1818,8 +1817,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Mu_Alchemical" />
-            <RequiredItem identifier="Shui_Alchemical" />
+            <RequiredItem identifier="Mu_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Soft_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1864,8 +1863,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Huo_Alchemical" />
-            <RequiredItem identifier="Tu_Alchemical" />
+            <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Warm_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1910,8 +1909,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Huo_Alchemical" />
-            <RequiredItem identifier="Yang_Alchemical" />
+            <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Yang_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Boiling_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
@@ -1956,8 +1955,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Stone" amount="3"/>
             <RequiredItem identifier="silicon" />
-            <RequiredItem identifier="Shui_Alchemical" />
-            <RequiredItem identifier="Yin_Alchemical" />
+            <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
+            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" maxcondition="1" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Icy_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
