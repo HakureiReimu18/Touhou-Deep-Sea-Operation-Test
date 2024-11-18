@@ -1900,7 +1900,7 @@
   </Affliction>
 
   <Affliction
-          name=""
+          name="宁静的勾玉效果"
           identifier="Gensokyo_Divinggear_Effect02"
           description=""
           type="Gensokyo_Divinggear_Effect"
@@ -1946,7 +1946,7 @@
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso" minresistance="0.4" maxresistance="0.4" />
+    <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso" minresistance="0.35" maxresistance="0.35" />
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
@@ -1964,6 +1964,76 @@
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
     <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso" minresistance="0.15" maxresistance="0.15" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="沸腾的勾玉效果"
+          identifier="Gensokyo_Divinggear_Effect06"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxspeedmultiplier="1.1" >
+      <StatValue stattype="AttackMultiplier" value="0.05" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="冰冷的勾玉效果"
+          identifier="Gensokyo_Divinggear_Effect07"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" >
+      <StatusEffect target="Character" Interval="5.0" Duration="5.0">
+        <ReduceAffliction type="damage" strength="0.035" />
+        <ReduceAffliction type="burn" strength="0.035" />
+        <ReduceAffliction type="bleeding" strength="0.035" />
+        <ReduceAffliction type="bloodloss" strength="0.035" />
+        <ReduceAffliction type="poison" strength="0.15" />
+      </StatusEffect>
+      <StatusEffect target="Character" Interval="5.0" Duration="5.0">
+        <Conditional InWater="true" />
+        <ReduceAffliction type="damage" strength="0.035" />
+        <ReduceAffliction type="burn" strength="0.035" />
+        <ReduceAffliction type="bleeding" strength="0.035" />
+        <ReduceAffliction type="bloodloss" strength="0.035" />
+        <ReduceAffliction type="poison" strength="0.15" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="黑白勾玉效果"
+          identifier="Gensokyo_Divinggear_Effect08"
+          description=""
+          type="Gensokyo_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" ResistanceLimbs="Head,Torso" resistancefor="damage,burn"
+            minresistance="0.1" maxresistance="0.1"/>
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
@@ -2070,6 +2140,56 @@
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
     <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso" minresistance="0.1" maxresistance="0.1" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="沸腾的勾玉效果"
+          identifier="Ether_Divinggear_Effect06"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.05" maxspeedmultiplier="1.05" >
+      <StatValue stattype="AttackMultiplier" value="0.025" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <Affliction
+          name="冰冷的勾玉效果"
+          identifier="Ether_Divinggear_Effect07"
+          description=""
+          type="Ether_Divinggear_Effect"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="1"
+          Duration="5.0"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" >
+      <StatusEffect target="Character" Interval="5.0" Duration="5.0">
+        <ReduceAffliction type="damage" strength="0.015" />
+        <ReduceAffliction type="burn" strength="0.015" />
+        <ReduceAffliction type="bleeding" strength="0.015" />
+        <ReduceAffliction type="bloodloss" strength="0.015" />
+      </StatusEffect>
+      <StatusEffect target="Character" Interval="5.0" Duration="5.0">
+        <Conditional InWater="true" />
+        <ReduceAffliction type="damage" strength="0.015" />
+        <ReduceAffliction type="burn" strength="0.015" />
+        <ReduceAffliction type="bleeding" strength="0.015" />
+        <ReduceAffliction type="bloodloss" strength="0.015" />
+      </StatusEffect>
+    </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 

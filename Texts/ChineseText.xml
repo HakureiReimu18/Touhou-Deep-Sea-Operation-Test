@@ -130,10 +130,6 @@
   <entityname.Sunnu_Scary_Mask>桑尼的试胆大会面具</entityname.Sunnu_Scary_Mask>
   <entitydescription.Sunnu_Scary_Mask>虽说是试胆大会，但似乎没有吓到任何人</entitydescription.Sunnu_Scary_Mask>
   <!--Other-->
-  <entityname.gensokyo_divinggear>幻想潜水服</entityname.gensokyo_divinggear>
-  <entitydescription.gensokyo_divinggear>可以保护人体的一团神奇灵气</entitydescription.gensokyo_divinggear>
-  <entityname.Ether_Divinggear>秘境潜水服</entityname.Ether_Divinggear>
-  <entitydescription.Ether_Divinggear>由淡水的人鱼贡献的制作思路，经帕秋莉指点而生产的潜水服，能抵御7000米水压</entitydescription.Ether_Divinggear>
   <entityname.Power_Point>P点（红）</entityname.Power_Point>
   <entitydescription.Power_Point>抛瓦满满，可以用来合成最为强大的装备</entitydescription.Power_Point>
   <entityname.Score_Point>P点（蓝）</entityname.Score_Point>
@@ -1219,6 +1215,10 @@
   <afflictiondescription.Alice_Doll_Energy>激活人偶功能的能量</afflictiondescription.Alice_Doll_Energy>
   <afflictionname.Aya_Weapons>传统的幻想记者</afflictionname.Aya_Weapons>
   <afflictiondescription.Aya_Weapons>文拥有操纵风程度的能力，她可以使用团扇操纵风。</afflictiondescription.Aya_Weapons>
+  <entityname.gensokyo_divinggear>幻想潜水服</entityname.gensokyo_divinggear>
+  <entitydescription.gensokyo_divinggear>可以保护人体的一团神奇灵气。拥有四个勾玉槽位。受击时会损耗勾玉的耐久</entitydescription.gensokyo_divinggear>
+  <entityname.Ether_Divinggear>秘境潜水服</entityname.Ether_Divinggear>
+  <entitydescription.Ether_Divinggear>由淡水的人鱼贡献的制作思路，经帕秋莉指点而生产的潜水服，能抵御7000米水压。拥有四个勾玉槽位。受击时会损耗勾玉的耐久</entitydescription.Ether_Divinggear>
   <afflictionname.Gensokyo_Divinggear_Effect01>幻想潜水服</afflictionname.Gensokyo_Divinggear_Effect01>
   <afflictiondescription.Gensokyo_Divinggear_Effect01>增加身体抗性和技能水平</afflictiondescription.Gensokyo_Divinggear_Effect01>
   <afflictionname.Ether_Divinggear_Effect01>秘境潜水服</afflictionname.Ether_Divinggear_Effect01>
@@ -1231,6 +1231,10 @@
   <entitydescription.Touhou_Soft_Hooked_Jade>放入潜水服的勾玉槽位内，提供头部和躯干的出血和感染伤口的抗性</entitydescription.Touhou_Soft_Hooked_Jade>
   <entityname.Touhou_Warm_Hooked_Jade>温暖的勾玉</entityname.Touhou_Warm_Hooked_Jade>
   <entitydescription.Touhou_Warm_Hooked_Jade>放入潜水服的勾玉槽位内，提供头部和躯干的物理伤害和烧伤的抗性</entitydescription.Touhou_Warm_Hooked_Jade>
+  <entityname.Touhou_Boiling_Hooked_Jade>沸腾的勾玉</entityname.Touhou_Boiling_Hooked_Jade>
+  <entitydescription.Touhou_Boiling_Hooked_Jade>放入潜水服的勾玉槽位内，提供少量的移动速度和攻击伤害</entitydescription.Touhou_Boiling_Hooked_Jade>
+  <entityname.Touhou_Icy_Hooked_Jade>冰冷的勾玉</entityname.Touhou_Icy_Hooked_Jade>
+  <entitydescription.Touhou_Icy_Hooked_Jade>放入潜水服的勾玉槽位内，提供些许治疗效果，这个效果在水中翻倍</entitydescription.Touhou_Icy_Hooked_Jade>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>

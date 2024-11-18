@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+
+    <Talent identifier="Gensokyo_Divinggear_Talent">
+        <Icon texture="%ModDir%/Images/Afflictions/Gensokyo_Divinggear_Effect.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Gensokyo_Divinggear_Talent"/>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Gensokyo_Divinggear_Effect08" />
+                <AbilityConditionServerRandom randomchance="0.2" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+    <Talent identifier="Ether_Divinggear_Talent">
+        <Icon texture="%ModDir%/Images/Afflictions/Ether_Divinggear_Effect.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Ether_Divinggear_Talent"/>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Ether_Divinggear_Effect08" />
+                <AbilityConditionServerRandom randomchance="0.1" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+</Talents>
