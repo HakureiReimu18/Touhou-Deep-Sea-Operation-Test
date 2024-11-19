@@ -127,7 +127,7 @@
             <StatusEffect type="OnWearing" target="Character" Interval="3.0" Duraation="3.0" >
                 <Affliction identifier="Gensokyo_Divinggear_Effect01" strength="10" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="Character,Contained" interval="5">
+            <StatusEffect type="OnWearing" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent" />
             </StatusEffect>
 
@@ -375,13 +375,13 @@
             <StatusEffect type="OnWearing" target="Character" Interval="3.0" Duraation="3.0" >
                 <Affliction identifier="Boudary_Divinggear_Effect01" strength="10" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="Character,Contained" interval="5">
-                <GiveTalentInfo giverandom="false" talentidentifiers="Boudary_Divinggear_Talent" />
+            <StatusEffect type="OnWearing" target="Character" interval="5">
+                <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent" />
             </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="Phoenix_Burn" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="Phoenix_Burn" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="Reiki_Pressure" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.4" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -616,7 +616,7 @@
                 <Affliction identifier="Ether_Divinggear_Effect01" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" interval="5">
-                <GiveTalentInfo giverandom="false" talentidentifiers="Ether_Divinggear_Talent" />
+                <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent" />
             </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.68" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -835,7 +835,7 @@
                 <Affliction identifier="Magic_Veil_Effect01" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" interval="5">
-                <GiveTalentInfo giverandom="false" talentidentifiers="Magic_Veil_Talent" />
+                <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent" />
             </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.3" probabilitymultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -1010,7 +1010,7 @@
                 <Affliction identifier="Magic_Veil_Effect01" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" interval="5">
-                <GiveTalentInfo giverandom="false" talentidentifiers="Magic_Veil_Talent" />
+                <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent" />
             </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.3" probabilitymultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true" />

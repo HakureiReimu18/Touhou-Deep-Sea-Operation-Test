@@ -1245,14 +1245,12 @@
   <entitydescription.Touhou_White_Hooked_Jade>放入潜水服的勾玉格内，提供光照效果，与太古的勾玉-黑同时装配时，触发额外效果</entitydescription.Touhou_White_Hooked_Jade>
   <entityname.Touhou_Black_Hooked_Jade>太古的勾玉-黑</entityname.Touhou_Black_Hooked_Jade>
   <entitydescription.Touhou_Black_Hooked_Jade>放入潜水服的勾玉格内，提供移速加成和头部与躯干的抗性，与太古的勾玉-白同时装配时，触发额外效果</entitydescription.Touhou_Black_Hooked_Jade>
-  <talentname.Gensokyo_Divinggear_Talent>幻想的灵气</talentname.Gensokyo_Divinggear_Talent>
-  <talentdescription.Gensokyo_Divinggear_Talent>勾玉提供的效果最好。同时装配黑白勾玉时，每次受击有20%的概率减少15%的伤害</talentdescription.Gensokyo_Divinggear_Talent>
-  <talentname.Boudary_Divinggear_Talent>境界的边缘</talentname.Boudary_Divinggear_Talent>
-  <talentdescription.Boudary_Divinggear_Talent>勾玉提供的效果更好。同时装配黑白勾玉时，每次受击有20%的概率减少10%的伤害</talentdescription.Boudary_Divinggear_Talent>
-  <talentname.Ether_Divinggear_Talent>秘境的鱼鳞</talentname.Ether_Divinggear_Talent>
-  <talentdescription.Ether_Divinggear_Talent>勾玉提供的效果一般。同时装配黑白勾玉时，每次受击有10%的概率减少10%的伤害</talentdescription.Ether_Divinggear_Talent>
-  <talentname.Magic_Veil_Talent>无穷的魔力</talentname.Magic_Veil_Talent>
-  <talentdescription.Magic_Veil_Talent>勾玉提供的效果最好。同时装配黑白勾玉时，每次受击有15%的概率减少15%的伤害</talentdescription.Magic_Veil_Talent>
+  <talentname.Gensokyo_Divinggear_Talent>幻想入的深海</talentname.Gensokyo_Divinggear_Talent>
+  <talentdescription.Gensokyo_Divinggear_Talent>
+    当你身着幻想潜水服时：勾玉提供的效果最好。同时装配黑白勾玉时，每次受击有20%的概率减少15%的伤害
+    当你身着境界潜水服时：勾玉提供的效果更好。同时装配黑白勾玉时，每次受击有20%的概率减少10%的伤害
+    当你身着秘境潜水服时：勾玉提供的效果一般。同时装配黑白勾玉时，每次受击有10%的概率减少10%的伤害
+    当你身着魔力披纱时：勾玉提供的效果最好。同时装配黑白勾玉时，每次受击有15%的概率减少15%的伤害</talentdescription.Gensokyo_Divinggear_Talent>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>
@@ -1344,4 +1342,27 @@
   <afflictiondescription.Hyouibana_Effect_Prefect_Alice>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Alice>
   <afflictionname.Hyouibana_Effect_Prefect_Sunny>桑尼-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Sunny>
   <afflictiondescription.Hyouibana_Effect_Prefect_Sunny>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Sunny>
+
+  <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>记忆材料</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
+  <entityname.MRE_Material>出血物质（[type]）。每10%的进度为一阶段，不同阶段需要使用不同材料进行精炼</entityname.MRE_Material>
+  <Character.MRE_Material_Reimu>灵梦的回忆</Character.MRE_Material_Reimu>
+  <Character.MRE_Material_Remilia>蕾米莉亚的回忆</Character.MRE_Material_Remilia>
+  <Character.MRE_Material_Marisa>魔理沙的回忆</Character.MRE_Material_Marisa>
+  <Character.MRE_Material_Aya>文文的回忆</Character.MRE_Material_Aya>
+  <Character.MRE_Material_Youmu>妖梦的回忆</Character.MRE_Material_Youmu>
+  <Character.MRE_Material_Nitori>荷取的回忆</Character.MRE_Material_Nitori>
+  <Character.MRE_Material_Akyuu>阿求的回忆</Character.MRE_Material_Akyuu>
+  <Character.MRE_Material_Mokou>妹红的回忆</Character.MRE_Material_Mokou>
+  <Character.MRE_Material_Patchouli>帕秋莉的回忆</Character.MRE_Material_Patchouli>
+  <Character.MRE_Material_Tenshi>天子的回忆</Character.MRE_Material_Tenshi>
+  <Character.MRE_Material_Momizi>椛的回忆</Character.MRE_Material_Momizi>
+  <Character.MRE_Material_Yuka>幽香的回忆</Character.MRE_Material_Yuka>
+  <Character.MRE_Material_Aunn>阿吽的回忆</Character.MRE_Material_Aunn>
+  <Character.MRE_Material_Flandre>芙兰朵露的回忆</Character.MRE_Material_Flandre>
+  <Character.MRE_Material_Nue>鵺的回忆</Character.MRE_Material_Nue>
+  <Character.MRE_Material_Piece>皮丝的回忆</Character.MRE_Material_Piece>
+  <Character.MRE_Material_Cirno>琪露诺的回忆</Character.MRE_Material_Cirno>
+  <Character.MRE_Material_Koishi>恋的回忆</Character.MRE_Material_Koishi>
+  <Character.MRE_Material_Alice>爱丽丝的回忆</Character.MRE_Material_Alice>
+  <Character.MRE_Material_Sunny>桑尼的回忆</Character.MRE_Material_Sunny>
 </infotexts>

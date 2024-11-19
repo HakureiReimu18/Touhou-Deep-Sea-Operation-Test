@@ -97,11 +97,11 @@
         <Description tag="talentdescription.Touhou_Yokai_Talents_Locked"/>
         <AbilityGroupEffect abilityeffecttype="None">
             <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select" min="1" invert="true"/>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select_Locked" min="1" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveTalentPoints amount="1" />
-                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select" value="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select_Locked" value="1" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">

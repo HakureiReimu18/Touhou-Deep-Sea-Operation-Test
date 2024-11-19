@@ -122,6 +122,21 @@
     <Alchemy_Table.Research>转化</Alchemy_Table.Research>
     <Alchemy_Table.Research.Infotext>炼金术转化物质的阶段。经由帕秋莉的指点后，这一步骤已经能简单地在炼金桌上完成了。（Tips:灵性材料请参考帕秋莉手册）</Alchemy_Table.Research.Infotext>
     <Alchemy_Table.Combine.Missingitem>已掺入卑金属，添加不同性质的材料以完成炼金转化（Tips:灵性材料请参考帕秋莉手册）</Alchemy_Table.Combine.Missingitem>
+    <Alchemy_Table.Unlock>破解</Alchemy_Table.Unlock>
+    <Alchemy_Table.Unlock.Infotext>消耗伊奘诺物质对记忆材料进行解锁，提炼对应不同角色的出血物质，结果随机</Alchemy_Table.Unlock.Infotext>
+    <Alchemy_Table.Unlock.Missingitem>已放置记忆材料，消耗伊奘诺物质对记忆材料进行解锁，提炼对应不同角色的出血物质，结果随机</Alchemy_Table.Unlock.Missingitem>
+    <Alchemy_Table.Refine01>精炼-王国</Alchemy_Table.Refine01>
+    <Alchemy_Table.Refine02>精炼-基底</Alchemy_Table.Refine02>
+    <Alchemy_Table.Refine03>精炼-荣耀</Alchemy_Table.Refine03>
+    <Alchemy_Table.Refine04>精炼-胜利</Alchemy_Table.Refine04>
+    <Alchemy_Table.Refine05>精炼-美丽</Alchemy_Table.Refine05>
+    <Alchemy_Table.Refine06>精炼-严厉</Alchemy_Table.Refine06>
+    <Alchemy_Table.Refine07>精炼-慈悲</Alchemy_Table.Refine07>
+    <Alchemy_Table.Refine08>精炼-理解</Alchemy_Table.Refine08>
+    <Alchemy_Table.Refine09>精炼-智慧</Alchemy_Table.Refine09>
+    <Alchemy_Table.Refine10>精炼-王冠</Alchemy_Table.Refine10>
+    <Alchemy_Table.Refine.Infotext>消耗元素瓶对出血物质进行精炼处理，不同元素瓶对精炼进程的影响也不同，甚至有可能倒退精炼进度</Alchemy_Table.Refine.Infotext>
+    <Alchemy_Table.Refine.Missingitem>已放置出血物质，添加不同元素瓶进行精炼，不同元素瓶对精炼进程的影响也不同，甚至有可能倒退精炼进度</Alchemy_Table.Refine.Missingitem>
     <terminalwelcomemsg.Touhou_Wreck04_01>——关于灵气侵蚀与污染的调查
         调查员：帕秋莉·诺雷姬
 

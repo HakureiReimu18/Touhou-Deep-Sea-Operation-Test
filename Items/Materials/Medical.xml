@@ -424,9 +424,9 @@
     <Item name="" identifier="Hyouibana_Dream" subcategory="Touhou" category="Medical" maxstacksize="1" Tags="smallitem" allowasextracargo="true" description=""
           useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" spritecolor="255,0,0,255">
         <PreferredContainer primary="medcab"/>
-        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.02" />
-        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="1" spawnprobability="0.02" />
-        <Price baseprice="20000" minleveldifficulty="45" >
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.03" />
+        <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="1" spawnprobability="0.04" />
+        <Price baseprice="15000" minleveldifficulty="36" >
             <Price storeidentifier="merchantoutpost" maxavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" maxavailable="1" />
             <Price storeidentifier="merchantresearch" multiplier="1.1" maxavailable="1" />
@@ -438,7 +438,7 @@
         <Body width="35" height="65" density="10.2" waterdragcoefficient="1"/>
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="3.0" >
+            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
                 <Conditional Hyouibana_Effect_Flag="eq 0"/>
                 <!--通过写一个新的afflication凭依判断是否已经有凭依，如果已经有了，那么不生效-->
                 <GiveTalentInfo giverandom="true"
@@ -446,7 +446,7 @@
                                 Hyouibana_Tenshi,Hyouibana_Reimu,Hyouibana_Momizi,Hyouibana_Yuka,Hyouibana_Aunn,Hyouibana_Flandre,Hyouibana_Nue,Hyouibana_Piece,
                                 Hyouibana_Cirno,Hyouibana_Koishi,Hyouibana_Alice,Hyouibana_Sunny" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="UseTarget" >
                 <Conditional Hyouibana_Effect_Flag="gt 0"/>
                 <Affliction identifier="Hyouibana_Effect_Prefect" amount="10" />
             </StatusEffect>
