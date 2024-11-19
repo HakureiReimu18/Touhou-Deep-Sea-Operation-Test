@@ -532,10 +532,10 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Homing_Amulet.png" sourcerect="32,0,70,63" depth="0.3" origin="0.5,0.5" scale="1"/>
         <Body width="32" height="32" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="0,-5" msg="ItemMsgPickUpSelect" >
-<!--            <StatusEffect type="OnActive" target="Character">
-                <Conditional RedAndWhite="gt 0"/>
+            <StatusEffect type="OnActive" target="Character">
+                <Conditional Hyouibana_Reimu_Effect="gt 0"/>
                 <Affliction identifier="Reimu_Weapons" strength="10" />
-            </StatusEffect>-->
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
@@ -546,9 +546,10 @@
             <StatusEffect type="Always" target="This" Condition="0.2">
                 <Conditional condition="gt 0.1" />
             </StatusEffect>
-<!--            <StatusEffect type="Always" target="This" Condition="0.3">
+            <StatusEffect type="Always" target="This" Condition="0.3" comparison="And">
                 <Conditional RedAndWhite="gte 0" />
-            </StatusEffect>-->
+                <Conditional condition="gt 0.1" />
+            </StatusEffect>
             <StatusEffect type="NotInWater" target="This" Condition="0.3"/>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.95" setvalue="true" />
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
@@ -931,7 +932,6 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,108,11" origin="0.15,0" />
             </LightComponent>
             <Attack structuredamage="666" itemdamage="666" LevelWallDamage="666" targetforce="30" targetimpulse="30" severlimbsprobability="1" penetration="0.66">
-                <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="Reiki_Pressure" strength="666" probability="0.01"/>
                 <Affliction identifier="bleeding" strength="80" />
                 <Affliction identifier="Scarlet_Long_Night" strength="10" />
@@ -942,6 +942,14 @@
             <StatusEffect type="OnNotContained" target="this" stackable="false" setvalue="true" condition="0" delay="2"/>
             <StatusEffect type="OnBroken" target="this" stackable="false" delay="0.4">
                 <remove />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Affliction identifier="Reiki_Pressure" strength="10" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This">
+                <Explosion range="20.0" showeffects="false" force="0.5" penetration="0.36" >
+                    <Affliction identifier="Reiki_Pressure" strength="2" />
+                </Explosion>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Dream" strength="20"/>
@@ -1169,7 +1177,7 @@
         <Sprite texture="%ModDir%/Images/Youmu_Items/Youmuceremonialsword_Sprite.png" sourcerect="0,0,172,25" depth="0.55" origin="0.5,0.5" />
         <Body width="172" height="20" density="10" />
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0"  allowhitmultiple="true"
-                     holdangle="30" aimangle="20" reload="0.75" range="80" combatPriority="30" msg="ItemMsgPickUpSelect">
+                     holdangle="30" aimangle="20" reload="0.8" range="80" combatPriority="30" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="60" structuredamage="0.2" structuresoundtype="StructureSlash" penetration="0.2">
                 <Affliction identifier="lacerations" strength="26" />
                 <Affliction identifier="Reiki_Pressure" strength="2" />
@@ -1206,8 +1214,8 @@
                 <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="6" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350"
                                  scalemin="0.25" scalemax="0.5" drawontop="true" ColorMultiplier="255,55,205,255" />
             </StatusEffect>
-            <StatusEffect type="OnSuccess" target="This" reload="0.4" setvalue="true">
-                <Conditional reload="gt 0.4" />
+            <StatusEffect type="OnSuccess" target="This" reload="0.6" setvalue="true">
+                <Conditional reload="gt 0.6" />
             </StatusEffect>
             <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
             <RequiredSkill identifier="weapons" level="100" />
@@ -1216,7 +1224,7 @@
             <RequiredSkill identifier="mechanical" level="50" />
             <RequiredSkill identifier="medical" level="50" />
             <!--Reset the reload speed-->
-            <StatusEffect type="OnUse" target="This" reload="0.75" setvalue="true" delay="1" />
+            <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="1" />
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
@@ -1257,7 +1265,7 @@
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/youmuceremonialsword2_icon.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/OtherWeapons/youmuceremonialsword2.png" sourcerect="0,0,172,25" depth="0.55" origin="0.5,0.5" />
         <Body width="172" height="20" density="10" />
-        <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0" holdangle="30" aimangle="10" reload="0.75" range="55" combatPriority="30" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
+        <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0" holdangle="30" aimangle="10" reload="0.8" range="55" combatPriority="30" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.01" itemdamage="1" structuresoundtype="StructureSlash" penetration="0.6">
                 <Affliction identifier="Reiki_Pressure" strength="8" />
             </Attack>
@@ -1304,8 +1312,8 @@
                 <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
                 <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
             </StatusEffect>
-            <StatusEffect type="OnSuccess" target="This" reload="0.4" setvalue="true">
-                <Conditional reload="gt 0.4" />
+            <StatusEffect type="OnSuccess" target="This" reload="0.6" setvalue="true">
+                <Conditional reload="gt 0.6" />
             </StatusEffect>
             <StatusEffect type="OnSuccess" target="Character" setvalue="true" comparison="And">
                 <Conditional Ancient_Temple="eq 0"/>
@@ -1320,7 +1328,7 @@
             </StatusEffect>
             <RequiredSkill identifier="weapons" level="100" />
             <!--Reset the reload speed-->
-            <StatusEffect type="OnUse" target="This" reload="0.75" setvalue="true" delay="1" />
+            <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="1" />
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
@@ -1804,8 +1812,8 @@
                     sticktodoors="true" maxtargetstohit="1" removeonhit="true" friendlyfire="false">
             <Attack structuredamage="0.5" itemdamage="5" targetforce="20" targetimpulse="20" severlimbsprobability="0.2" penetration="0.1">
                 <Affliction identifier="bleeding" strength="1.5" />
-                <Affliction identifier="lacerations" strength="5" />
-                <Affliction identifier="lacerations" strength="5" probability="0.15" />
+                <Affliction identifier="lacerations" strength="4.5" />
+                <Affliction identifier="lacerations" strength="4.5" probability="0.15" />
                 <Affliction identifier="stun" strength="0.1" probability="0.04" />
             </Attack>
             <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
@@ -5065,6 +5073,7 @@
                 <StatusEffect type="OnUse" target="Character" delay="0.5" >
                     <RequiredAffliction type="Alice_Doll_Energy" minstrength="10" />
                     <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
+                    <Affliction identifier="Alice_Doll_Spawn" amount="10" />
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" TransferControl="true" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>

@@ -607,7 +607,7 @@
     \n对友方角色造成的伤害为原本的‖color:gui.green‖一半‖end‖。
     \n每个巡回一次，可以选择两种状态：狮子/狛犬。
     \n狛犬：在你身边的船员能获得‖color:gui.orange‖守护神兽‖end‖的效果，该效果能提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害和精神病‖end‖抗性，并且对友方角色造成的伤害再下降‖color:gui.green‖15%‖end‖，更快地从‖color:gui.orange‖灵压、噬咬‖end‖中恢复,并提高‖color:gui.green‖20%‖end‖最大生命值。
-    \n狮子：‖color:gui.orange‖物理伤害‖end‖抗性下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害、攻击速度、移动速度‖end‖增加‖color:gui.green‖20%‖end‖，对非友好角色（红名生物）造成的伤害额外增加‖color:gui.green‖15%‖end‖</talentdescription.AunnTalent>
+    \n狮子：‖color:gui.orange‖物理伤害‖end‖抗性下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害、攻击速度、移动速度‖end‖增加‖color:gui.green‖10%‖end‖，对非友好角色（红名生物）造成的伤害额外增加‖color:gui.green‖10%‖end‖</talentdescription.AunnTalent>
   <talentname.FlandreTalent>吸血鬼的破坏性妹妹</talentname.FlandreTalent>
   <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+ 时，对物理伤害和烧伤的抗性非常低，同时，受到的物理伤害额外增加‖color:gui.green‖40%‖end‖，受到的烧伤额外增加‖color:gui.green‖70%‖end‖。
     \n生命值越低，你造成的伤害无视的护甲越高，最高‖color:gui.green‖66.6%‖end‖。
@@ -1247,10 +1247,10 @@
   <entitydescription.Touhou_Black_Hooked_Jade>放入潜水服的勾玉格内，提供移速加成和头部与躯干的抗性，与太古的勾玉-白同时装配时，触发额外效果</entitydescription.Touhou_Black_Hooked_Jade>
   <talentname.Gensokyo_Divinggear_Talent>幻想入的深海</talentname.Gensokyo_Divinggear_Talent>
   <talentdescription.Gensokyo_Divinggear_Talent>
-    当你身着幻想潜水服时：勾玉提供的效果最好。同时装配黑白勾玉时，每次受击有20%的概率减少15%的伤害
-    当你身着境界潜水服时：勾玉提供的效果更好。同时装配黑白勾玉时，每次受击有20%的概率减少10%的伤害
-    当你身着秘境潜水服时：勾玉提供的效果一般。同时装配黑白勾玉时，每次受击有10%的概率减少10%的伤害
-    当你身着魔力披纱时：勾玉提供的效果最好。同时装配黑白勾玉时，每次受击有15%的概率减少15%的伤害</talentdescription.Gensokyo_Divinggear_Talent>
+    当你身着幻想潜水服时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖20%‖end‖的概率减少‖color:gui.green‖15%‖end‖的伤害
+    当你身着境界潜水服时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖20%‖end‖的概率减少‖color:gui.green‖10%‖end‖的伤害
+    当你身着秘境潜水服时：勾玉提供的效果‖color:gui.yellow‖一般‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖10%‖end‖的概率减少‖color:gui.green‖10%‖end‖的伤害
+    当你身着魔力披纱时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖15%‖end‖的概率减少‖color:gui.green‖15%‖end‖的伤害</talentdescription.Gensokyo_Divinggear_Talent>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>
@@ -1343,8 +1343,11 @@
   <afflictionname.Hyouibana_Effect_Prefect_Sunny>桑尼-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Sunny>
   <afflictiondescription.Hyouibana_Effect_Prefect_Sunny>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Sunny>
 
+  <!--出血效应-->
   <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>记忆材料</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
-  <entityname.MRE_Material>出血物质（[type]）。每10%的进度为一阶段，不同阶段需要使用不同材料进行精炼</entityname.MRE_Material>
+  <entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>在炼金桌内用炼金术材料可以进行精炼操作。如果能找到相关手册，效率应该会大大提高</entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
+  <entityname.MRE_Material>出血物质（‖color:gui.yellow‖[type]‖end‖）</entityname.MRE_Material>
+  <entitydescription.MRE_Material>每10%的进度为一阶段，不同阶段需要使用不同材料进行精炼。进度满后，对相应角色使用可以解锁额外天赋</entitydescription.MRE_Material>
   <Character.MRE_Material_Reimu>灵梦的回忆</Character.MRE_Material_Reimu>
   <Character.MRE_Material_Remilia>蕾米莉亚的回忆</Character.MRE_Material_Remilia>
   <Character.MRE_Material_Marisa>魔理沙的回忆</Character.MRE_Material_Marisa>
@@ -1365,4 +1368,44 @@
   <Character.MRE_Material_Koishi>恋的回忆</Character.MRE_Material_Koishi>
   <Character.MRE_Material_Alice>爱丽丝的回忆</Character.MRE_Material_Alice>
   <Character.MRE_Material_Sunny>桑尼的回忆</Character.MRE_Material_Sunny>
+  <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
+  <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有10%概率避免那次伤害</talentdescription.MRE_Reimu>
+  <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
+  <talentdescription.MRE_Remilia>仅对蕾米莉亚装束+生效。专属武器效果造成的伤害增加36%</talentdescription.MRE_Remilia>
+  <talentname.MRE_Marisa>出血效应-雾雨魔理沙</talentname.MRE_Marisa>
+  <talentdescription.MRE_Marisa>仅对魔理沙装束+生效。弹幕的伤害提高15%</talentdescription.MRE_Marisa>
+  <talentname.MRE_Aya>出血效应-射命丸文</talentname.MRE_Aya>
+  <talentdescription.MRE_Aya>仅对文文装束+生效。每次近战攻击都有5%概率额外造成50%伤害，如果是远程弹幕则效果下降为25%</talentdescription.MRE_Aya>
+  <talentname.MRE_Youmu>出血效应-魂魄妖梦</talentname.MRE_Youmu>
+  <talentdescription.MRE_Youmu>仅对妖梦装束+生效。近战攻击速度提高10%，持有楼观剑和白楼剑时，伤害提高30%</talentdescription.MRE_Youmu>
+  <talentname.MRE_Nitori>出血效应-河城荷取</talentname.MRE_Nitori>
+  <talentdescription.MRE_Nitori>仅对荷取装束+生效。持有专属武器时提高20%攻击伤害，装备专属装备时增加15%最大生命值，同时装备后额外增加10%移动速度</talentdescription.MRE_Nitori>
+  <talentname.MRE_Akyuu>出血效应-稗田阿求</talentname.MRE_Akyuu>
+  <talentdescription.MRE_Akyuu>仅对阿求装束+生效。技能水平提高20%，攻击并造成过伤害的敌人，在其血量低于30%时，造成额外50%的伤害</talentdescription.MRE_Akyuu>
+  <talentname.MRE_Mokou>出血效应-藤原妹红</talentname.MRE_Mokou>
+  <talentdescription.MRE_Mokou>仅对妹红装束+生效。最大生命值提高20%，自己的剩余血量越高，造成的伤害越高，最高20%</talentdescription.MRE_Mokou>
+  <talentname.MRE_Patchouli>出血效应-帕秋莉·诺雷姬</talentname.MRE_Patchouli>
+  <talentdescription.MRE_Patchouli>仅对帕秋莉装束+生效。持有专属武器时，受到的攻击伤害减少10%。魔力提升达到300后，也减少10%</talentdescription.MRE_Patchouli>
+  <talentname.MRE_Tenshi>出血效应-比那名居天子</talentname.MRE_Tenshi>
+  <talentdescription.MRE_Tenshi>仅对天子装束+生效。持有专属武器时，提高50%眩晕抗性。专属武器击杀任意生物后，短暂提高20%近战攻击速度和10%远程攻击速度</talentdescription.MRE_Tenshi>
+  <talentname.MRE_Momizi>出血效应-犬走椛</talentname.MRE_Momizi>
+  <talentdescription.MRE_Momizi>仅对椛装束+生效。受到攻击后短时间内，提高下一次攻击15%的伤害，如果血量低于50%，则效果翻倍</talentdescription.MRE_Momizi>
+  <talentname.MRE_Yuka>出血效应-风见幽香</talentname.MRE_Yuka>
+  <talentdescription.MRE_Yuka>仅对幽香装束+生效。造成的撕裂伤提高30%，钝器伤提高60%</talentdescription.MRE_Yuka>
+  <talentname.MRE_Aunn>出血效应-高丽野阿吽</talentname.MRE_Aunn>
+  <talentdescription.MRE_Aunn>仅对阿吽装束+生效。狛犬状态下，造成的伤害增加10%。狮子状态下，受到的伤害减少10%</talentdescription.MRE_Aunn>
+  <talentname.MRE_Flandre>出血效应-芙兰朵露</talentname.MRE_Flandre>
+  <talentdescription.MRE_Flandre>仅对芙兰朵露装束+生效。使用专属武器攻击带有目之破坏或血量低于50%的敌人时，每次攻击都有4%的概率秒杀</talentdescription.MRE_Flandre>
+  <talentname.MRE_Nue>出血效应-封兽鵺</talentname.MRE_Nue>
+  <talentdescription.MRE_Nue>仅对鵺装束+生效。每次受到敌人的攻击时，将该伤害存储并强化下一次攻击的伤害，最高50%</talentdescription.MRE_Nue>
+  <talentname.MRE_Piece>出血效应-克劳恩·皮丝</talentname.MRE_Piece>
+  <talentdescription.MRE_Piece>仅对皮丝装束+生效。没有精神病时，对自身精神病的效果提高100%。有精神病时，有30%的概率对友军造成的伤害下降50%</talentdescription.MRE_Piece>
+  <talentname.MRE_Cirno>出血效应-琪露诺</talentname.MRE_Cirno>
+  <talentdescription.MRE_Cirno>仅对琪露诺装束+生效。一巡回一次，不在水中时，生命值低于0后，仍然能保持清醒且不死一段时间，持续10秒</talentdescription.MRE_Cirno>
+  <talentname.MRE_Koishi>出血效应-古明地恋</talentname.MRE_Koishi>
+  <talentdescription.MRE_Koishi>仅对恋装束+生效。对怪奇电话标记的满血目标额外造成51.4%的伤害</talentdescription.MRE_Koishi>
+  <talentname.MRE_Alice>出血效应-爱丽丝</talentname.MRE_Alice>
+  <talentdescription.MRE_Alice>仅对爱丽丝装束+生效。人偶能量超过50%后，召唤人偶会让自身增加30%物理伤害抗性和烧伤抗性</talentdescription.MRE_Alice>
+  <talentname.MRE_Sunny>出血效应-桑尼·米尔克</talentname.MRE_Sunny>
+  <talentdescription.MRE_Sunny>仅对桑尼装束+生效。三月精其他角色的装束效果直接生效</talentdescription.MRE_Sunny>
 </infotexts>

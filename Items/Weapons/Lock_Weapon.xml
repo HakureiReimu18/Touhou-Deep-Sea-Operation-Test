@@ -38,7 +38,7 @@
 
     <!--木 森罗-->
     <Item
-            name="瓶装元素（木）"
+            name=""
             identifier="Mu_Alchemical_Locked"
             category="Material,Alien"
             subcategory="Touhou"
@@ -69,7 +69,7 @@
 
     <!--火 气炎-->
     <Item
-            name="瓶装元素（火）"
+            name=""
             identifier="Huo_Alchemical_Locked"
             category="Material,Alien"
             subcategory="Touhou"
@@ -103,7 +103,7 @@
 
     <!--土 灵峰-->
     <Item
-            name="瓶装元素（土）"
+            name=""
             identifier="Tu_Alchemical_Locked"
             category="Material,Alien"
             subcategory="Touhou"
@@ -134,7 +134,7 @@
 
     <!--金 玄金-->
     <Item
-            name="瓶装元素（金）"
+            name=""
             identifier="Jin_Alchemical_Locked"
             category="Material,Alien"
             subcategory="Touhou"
@@ -165,7 +165,7 @@
 
     <!--水 啼水-->
     <Item
-            name="瓶装元素（水）"
+            name=""
             identifier="Shui_Alchemical_Locked"
             category="Material,Alien"
             subcategory="Touhou"
@@ -194,9 +194,9 @@
         </ItemContainer>
     </Item>
 
-    <!--日 灿阳-->
+    <!--日 烈阳-->
     <Item
-            name="瓶装元素（灿阳）"
+            name=""
             identifier="Yang_Alchemical_Locked"
             category="Material,Alien"
             subcategory="Touhou"
@@ -228,7 +228,7 @@
 
     <!--月 皓月-->
     <Item
-            name="瓶装元素（皓月）"
+            name=""
             identifier="Yin_Alchemical_Locked"
             category="Material,Alien"
             subcategory="Touhou"

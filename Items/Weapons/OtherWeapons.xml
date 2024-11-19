@@ -2034,14 +2034,14 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.8" colormultiplier="255,100,100,160"/>
-            <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.25">
+            <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.2">
                 <Affliction identifier="burn" strength="15" />
                 <Affliction identifier="Touhou_Freeze" strength="10" />
                 <Affliction identifier="slow" strength="20" />
             </Attack>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="80.0" force="6.0" decal="explosion" decalsize="0.3" penetration="0.1" >
-                    <Affliction identifier="burn" strength="22" />
+                    <Affliction identifier="burn" strength="15" />
                 </Explosion>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -2064,15 +2064,15 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.8" colormultiplier="100,255,100,160"/>
-            <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.25">
-                <Affliction identifier="lacerations" strength="15" />
-                <Affliction identifier="explosiondamage" strength="15" />
-                <Affliction identifier="stun" strength="0.6" probability="0.4" />
+            <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.2">
+                <Affliction identifier="lacerations" strength="12" />
+                <Affliction identifier="explosiondamage" strength="12" />
+                <Affliction identifier="stun" strength="0.3" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="80.0" force="6.0" decal="explosion" decalsize="0.3" penetration="0.1" >
-                    <Affliction identifier="lacerations" strength="15" />
-                    <Affliction identifier="explosiondamage" strength="15" />
+                    <Affliction identifier="lacerations" strength="10" />
+                    <Affliction identifier="explosiondamage" strength="10" />
                 </Explosion>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -2095,9 +2095,8 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.8" colormultiplier="100,100,255,160"/>
-            <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.35">
-                <Affliction identifier="blunttrauma" strength="20" />
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+            <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.25">
+                <Affliction identifier="blunttrauma" strength="15" />
                 <Affliction identifier="stun" strength="0.3" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="This">
@@ -2126,11 +2125,10 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.8" colormultiplier="255,255,255,160"/>
-            <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.35">
+            <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.25">
                 <Affliction identifier="lacerations" strength="5" />
                 <Affliction identifier="explosiondamage" strength="5" />
                 <Affliction identifier="blunttrauma" strength="5" />
-                <Affliction identifier="Reiki_Pressure" strength="5" />
                 <Affliction identifier="Touhou_Weakness" strength="1" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="10" />
                 <Affliction identifier="psychosis" strength="10" />
