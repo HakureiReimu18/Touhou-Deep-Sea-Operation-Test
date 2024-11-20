@@ -248,7 +248,7 @@
                 </Containable>
             </SubContainer>
             <SubContainer capacity="2" maxstacksize="64">
-                <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,backpack,scooter" />
+                <Containable items="smallitem,mediumitem" excludeditems="toolbelt,toolbox,backpack,scooter,Touhou_Hooked_Jade" />
             </SubContainer>
         </ItemContainer>
         <aitarget maxsightrange="1500" />
@@ -283,6 +283,9 @@
         <ContainedSprite name="Combat Diving Suit Behind Window" allowedcontainertags="divingsuitcontainerwindow" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_7.png" sourcerect="0,0,77,209" depth="0.55" origin="-0.12,-0.14" />
         <Body radius="45" width="34" density="10" />
         <CustomInterface canbeselected="false" drawhudwhenequipped="true">
+            <StatusEffect type="Always" target="This" IsOn="true" >
+                <RequiredItem items="Touhou_White_Hooked_Jade,Touhou_Peace_Hooked_Jade" type="Contained" />
+            </StatusEffect>
             <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,148" style="ItemUI" />
             <TickBox text="Light" IsOn="true">
                 <StatusEffect type="OnUse" target="This" IsOn="true" >

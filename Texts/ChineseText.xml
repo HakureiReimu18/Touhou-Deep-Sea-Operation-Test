@@ -1140,9 +1140,9 @@
   <entitydescription.Touhou_Scorching_Ray_Gun_Ammo>用特殊材料制成的、用来约束不死鸟火焰的立场，作为炽热射线枪的弹药</entitydescription.Touhou_Scorching_Ray_Gun_Ammo>
 
   <!--1.0.8下半部分内容-->
-  <entityname.Alice_gear>‖color:60,255,155,255‖爱丽丝装束‖end‖</entityname.Alice_gear>
+  <entityname.Alice_gear>‖color:150,150,255,255‖爱丽丝装束‖end‖</entityname.Alice_gear>
   <entitydescription.Alice_gear>爱丽丝平时独居在位于魔法森林的家玛格特洛依德邸中，喜欢一个人在家制作各种人偶，正在尝试制造一种会自动进行保养的人偶，也会撰写魔法书。因此，她不怎么爱出门，但是也会去祭典上表演人偶技艺。</entitydescription.Alice_gear>
-  <entityname.Alice_Plus>‖color:60,255,155,255‖爱丽丝装束+‖end‖</entityname.Alice_Plus>
+  <entityname.Alice_Plus>‖color:150,150,255,255‖爱丽丝装束+‖end‖</entityname.Alice_Plus>
   <entitydescription.Alice_Plus>爱丽丝平时独居在位于魔法森林的家玛格特洛依德邸中，喜欢一个人在家制作各种人偶，正在尝试制造一种会自动进行保养的人偶，也会撰写魔法书。因此，她不怎么爱出门，但是也会去祭典上表演人偶技艺。</entitydescription.Alice_Plus>
   <afflictionname.Puppeteer_Of_Seven_Colors>七色的人偶师</afflictionname.Puppeteer_Of_Seven_Colors>
   <afflictiondescription.Puppeteer_Of_Seven_Colors>金发与白皙的皮肤，她本人也有着人偶般的外表。</afflictiondescription.Puppeteer_Of_Seven_Colors>
@@ -1187,9 +1187,9 @@
   <entityname.Touhou_Lunar_Center>月震中心</entityname.Touhou_Lunar_Center>
   <entitydescription.Touhou_Lunar_Center>“你听说了吗？月球上也有地震”\n作为月震的弹药使用。</entitydescription.Touhou_Lunar_Center>
 
-  <entityname.Sunny_gear>‖color:60,255,155,255‖桑尼装束‖end‖</entityname.Sunny_gear>
+  <entityname.Sunny_gear>‖color:200,200,100,255‖桑尼装束‖end‖</entityname.Sunny_gear>
   <entitydescription.Sunny_gear>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。</entitydescription.Sunny_gear>
-  <entityname.Sunny_Plus>‖color:60,255,155,255‖桑尼装束+‖end‖</entityname.Sunny_Plus>
+  <entityname.Sunny_Plus>‖color:200,200,100,255‖桑尼装束+‖end‖</entityname.Sunny_Plus>
   <entitydescription.Sunny_Plus>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。</entitydescription.Sunny_Plus>
   <afflictionname.Shining_Light_Of_The_Sun>闪耀的日之光</afflictionname.Shining_Light_Of_The_Sun>
   <afflictiondescription.Shining_Light_Of_The_Sun>她有着一头橙色及肩短发，用红色蝴蝶结系成短双马尾，头顶戴着白色蕾丝状发箍。</afflictiondescription.Shining_Light_Of_The_Sun>
@@ -1298,12 +1298,6 @@
   <talentdescription.Hyouibana_Alice>游泳速度提高10%，技能获取速度提高40%，buff效果持续时间增加10%。</talentdescription.Hyouibana_Alice>
   <talentname.Hyouibana_Sunny>凭依桑尼</talentname.Hyouibana_Sunny>
   <talentdescription.Hyouibana_Sunny>更难被怪物视野锁定，魔法武器远程攻击附加少量烧伤，造成的烧伤伤害增加5%。</talentdescription.Hyouibana_Sunny>
-  <afflictionname.Hyouibana_Effect_Flag01>凭依第一阶段</afflictionname.Hyouibana_Effect_Flag01>
-  <afflictiondescription.Hyouibana_Effect_Flag01>凭依的第一阶段</afflictiondescription.Hyouibana_Effect_Flag01>
-  <afflictionname.Hyouibana_Effect_Flag02>凭依第二阶段</afflictionname.Hyouibana_Effect_Flag02>
-  <afflictiondescription.Hyouibana_Effect_Flag02>凭依的第二阶段</afflictiondescription.Hyouibana_Effect_Flag02>
-  <afflictionname.Hyouibana_Effect_Flag03>凭依第三阶段</afflictionname.Hyouibana_Effect_Flag03>
-  <afflictiondescription.Hyouibana_Effect_Flag03>凭依的第三阶段，再使用一次凭依之梦即可获得完全凭依</afflictiondescription.Hyouibana_Effect_Flag03>
   <afflictionname.Hyouibana_Effect_Prefect_Reimu>灵梦-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Reimu>
   <afflictiondescription.Hyouibana_Effect_Prefect_Reimu>攻击伤害增加10%</afflictiondescription.Hyouibana_Effect_Prefect_Reimu>
   <afflictionname.Hyouibana_Effect_Prefect_Remilia>蕾米莉亚-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Remilia>

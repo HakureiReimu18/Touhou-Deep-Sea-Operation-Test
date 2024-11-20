@@ -633,54 +633,6 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Unconfirmed_Fantasy_Flying_Girl" />
-                <AbilityConditionCharacter targettype="Enemy"/>
-                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
-                            <Affliction identifier="MRE_Nue_Effect" amount="1.0"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Unconfirmed_Fantasy_Flying_Girl" />
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityApplyStatusEffects applytoself="true">
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="This">
-                            <ReduceAffliction identifier="MRE_Nue_Effect" strength="100.0"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
-            </Abilities>
-        </AbilityGroupEffect>
-    </Talent>
-
-    <!--出血效应-封兽鵺-->
-    <Talent identifier="MRE_Piece">
-        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128" />
-        <Description tag="talentdescription.MRE_Piece"/>
-        <AbilityGroupInterval interval="9.9">
-            <Abilities>
-                <CharacterAbilityApplyStatusEffects>
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffects>
-            </Abilities>
-        </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Unconfirmed_Fantasy_Flying_Girl" />
-                <AbilityConditionCharacter targettype="Enemy"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
             </Conditions>
             <Abilities>
@@ -805,7 +757,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.51.4"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.514"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

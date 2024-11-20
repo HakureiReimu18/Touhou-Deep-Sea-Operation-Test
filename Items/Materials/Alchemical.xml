@@ -794,7 +794,7 @@
         <PreferredContainer secondary="abandonedmedcab,piratemedcab,wreckmedcab,outpostmedcab,researchcontainer" spawnprobability="0.05"/>
         <PreferredContainer secondary="geneticstorage" amount="1" spawnprobability="0.05" />
         <PreferredContainer secondary="ruinstoragelarge" amount="1" spawnprobability="0.05" />
-        <Price baseprice="300" sold="false" requiresunlock="true">
+        <Price baseprice="10000" sold="false" >
             <Price storeidentifier="merchantcity" sold="true" minavailable="5" maxavailable="10"/>
             <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="10" maxavailable="15" />
         </Price>

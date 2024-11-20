@@ -1163,9 +1163,9 @@
     </Affliction>
 
     <!--出血效应-鵺-->
-    <Affliction name="" identifier="MRE_Effect_Nue" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="10"
+    <Affliction name="" identifier="MRE_Effect_Nue" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="100"
                 showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="10" >
+        <Effect minstrength="0" maxstrength="100" >
             <StatValue stattype="AttackMultiplier" minvalue="0" maxvalue="0.5" />
         </Effect>
         <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>

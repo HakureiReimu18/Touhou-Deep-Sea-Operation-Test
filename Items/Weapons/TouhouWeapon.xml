@@ -436,7 +436,6 @@
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,0,82,82" depth="0.3" origin="0.5,0.5" />
         <Body width="84" height="84" density="16" />
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="OnUse" target="This" Condition="-25" />
             <StatusEffect type="Always" target="This" Condition="6">
                 <Conditional condition="gt 50" />
             </StatusEffect>
@@ -482,6 +481,7 @@
                 <RequiredItems identifiers="Star_Danmu" type="Contained" />
                 <Use />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-5" disabledeltatime="true" />
             <RequiredSkill identifier="weapons" level="120" />
             <RequiredSkill identifier="medical" level="120" />
             <RequiredItems identifiers="Star_Danmu" type="Contained" />
@@ -533,7 +533,7 @@
         <Body width="32" height="32" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="0,-5" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
-                <Conditional Hyouibana_Reimu_Effect="gt 0"/>
+                <Conditional MRE_Effect_Reimu="gt 0"/>
                 <Affliction identifier="Reimu_Weapons" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" >
@@ -570,7 +570,7 @@
                 <RequiredItems identifiers="Magic_Material" type="Contained" />
                 <Use />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-0.5" />
+            <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" />
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItems identifiers="Magic_Material" type="Contained" />
@@ -677,7 +677,7 @@
                 <RequiredItem identifier="Mc_SnowBall" type="Contained" />
                 <Use />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-0.9" />
+            <StatusEffect type="OnUse" target="This" Condition="-0.9" disabledeltatime="true" />
             <RequiredSkill identifier="weapons" level="99" />
             <RequiredSkill identifier="Touhou_Magic" level="99" />
             <RequiredItem identifier="Mc_SnowBall" type="Contained" />
@@ -1724,7 +1724,6 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-6.5" />
             <StatusEffect type="Always" target="This" Condition="0.5">
                 <Conditional condition="gt 50" />
             </StatusEffect>
@@ -1753,6 +1752,7 @@
                 <RequiredItem identifier="Aya_Maple_Leaves" type="Contained" />
                 <Use />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-1.2" disabledeltatime="true" />
             <RequiredSkill identifier="weapons" level="50" />
             <RequiredSkill identifier="medical" level="50" />
             <RequiredItem identifier="Aya_Maple_Leaves" type="Contained" />
@@ -3312,6 +3312,10 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Cyber_Homing_Amulet.png" sourcerect="0,0,146,56" origin="0.5,0.5" depth="0.56" />
         <Body width="126" height="46" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="0,-5" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnActive" target="Character">
+                <Conditional MRE_Effect_Reimu="gt 0"/>
+                <Affliction identifier="Reimu_Weapons" strength="10" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -3341,7 +3345,7 @@
             <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" checkconditionalalways="true" drawhudwhenequipped="true">
                 <SpawnItem identifiers="Touhou_Cyber_Homing_Amulet_Bolt" spawnposition="ThisInventory"/>
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-1.5" />
+            <StatusEffect type="OnUse" target="This" Condition="-1.5" disabledeltatime="true" />
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
         </RangedWeapon>
@@ -4083,7 +4087,7 @@
                 <RequiredItem identifier="Touhou_Perfect_Snowflake" type="Contained" />
                 <Use />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-0.45" />
+            <StatusEffect type="OnUse" target="This" Condition="-0.45" disabledeltatime="true" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItem identifier="Touhou_Perfect_Snowflake" type="Contained" />
         </RangedWeapon>
