@@ -529,7 +529,7 @@
                 <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="slow" strength="5" />
                 <Affliction identifier="Sleepless_Nightmare" strength="10" />
-                <Affliction identifier="stun" strength="0.4" probability="0.5" />
+                <Affliction identifier="stun" strength="0.25" probability="0.5" />
             </Attack>
             <StatusEffect type="OnNotContained" target="This" lifetime="3.0">
                 <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="160" anglemin="0" anglemax="360" colormultiplier="135,50,105,220" />
