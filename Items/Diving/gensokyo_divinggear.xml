@@ -1090,7 +1090,7 @@
     </Item>
 
     <!--非想天则-->
-    <Item name="" identifier="Touhou_Hisoutensoku" subcategory="Touhou" category="Diving,Equipment" tags="smallitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil" scale="0.25" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <Item name="非想天则" identifier="Touhou_Hisoutensoku" subcategory="Touhou" category="Diving,Equipment" tags="smallitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil" scale="0.25" fireproof="true" description="" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Deconstruct time="15">
             <Item identifier="Touhou_Base_Metal" amount="4"/>
             <Item identifier="organicfiber" amount="4"/>
@@ -1113,26 +1113,26 @@
             </TickBox>
         </CustomInterface>
         <Wearable slots="OuterClothes" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select">
-            <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" limb="Head" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" alphaclipotherwearables="false" sourcerect="32,32,32,32" origin="0.5,0.5">
+            <sprite name="Exosuit Helmet Wearable" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="Head" hidelimb="true" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hideotherwearables="true" hidewearablesoftype="" sourcerect="0,0,1,1" origin="0.5,0.5" />
+            <sprite name="Exosuit Torso" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="Torso" scale="1.2" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.8" inheritlimbdepth="true" inheritsourcerect="false" sourcerect="167,1,203,193">
                 <LightComponent range="1600.0" lightcolor="180,180,180,150" powerconsumption="0" IsOn="true">
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
                 </LightComponent>
             </sprite>
-            <sprite name="Combat Diving Suit Torso" texture="%ModDir%/Images/Divinggear/Magic_Veil02.png" sourcerect="0,0,196,244" origin="0.63,0.315" limb="Torso" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="false" inheritsourcerect="false" />
-            <sprite name="Combat Diving Suit Right Hand" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Left Hand" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftHand" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Right Lower Arm" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightArm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Left Lower Arm" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Right Upper Arm" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Left Upper Arm" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftForearm" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Waist" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Waist" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Right Thigh" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Left Thigh" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftThigh" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Right Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Left Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Left Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <sprite name="Combat Diving Suit Right Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="false" PressureProtection="8000.0" SpeedMultiplier="1.15"
+            <sprite name="Exosuit Right Hand" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="RightHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="383,160,64,48" />
+            <sprite name="Exosuit Left Hand" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="LeftHand" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="447,160,64,48" />
+            <sprite name="Exosuit Right Upper Arm" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="RightArm" depthlimb="Head" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="383,0,64,96" />
+            <sprite name="Exosuit Left Upper Arm" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="LeftArm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="447,0,64,96" />
+            <sprite name="Exosuit Right Forearm" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="RightForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" inheritlimbdepth="true" SourceRect="383,96,64,64" />
+            <sprite name="Exosuit Left Forearm" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="LeftForearm" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="false" SourceRect="447,96,64,64"  />
+            <sprite name="Exosuit Waist" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="Waist" hidelimb="true" scale="1.2" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="182,196,178,53" />
+            <sprite name="Exosuit Right Thigh" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="RightThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" inheritlimbdepth="true" sourcerect="0,0,96,112" />
+            <sprite name="Exosuit Left Thigh" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="LeftThigh" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.5,0.5" inheritsourcerect="false" sourcerect="0,0,96,112" />
+            <sprite name="Exosuit Right Leg" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="RightLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritlimbdepth="true" inheritsourcerect="true" />
+            <sprite name="Exosuit Left Leg" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="LeftLeg" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="true" inheritsourcerect="true" />
+            <sprite name="Exosuit Left Shoe" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.2,0.5" inheritsourcerect="false" sourcerect="371,211,133,37" />
+            <sprite name="Exosuit Right Shoe" texture="Content/Items/Jobgear/Mechanic/Exosuit.png" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="true" inherittexturescale="true" hideotherwearables="true" inheritorigin="false" origin="0.2,0.5" inheritsourcerect="false" sourcerect="371,211,133,37" />
+            <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="false" PressureProtection="8000.0" SpeedMultiplier="0.75"
                           LowPassMultiplier="0.7" setvalue="true" disabledeltatime="true">
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" >
