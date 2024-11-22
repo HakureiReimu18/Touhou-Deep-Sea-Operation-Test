@@ -419,7 +419,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addedpenetration="0.05"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

@@ -243,7 +243,7 @@
     <Description textidentifier="afflictiondescription.Yummy_Peach" minstrength="0" maxstrength="100"/>
     <Effect minstrength="0" maxstrength="100"
             strengthchange="-1"
-            minskillmultiplier="1" maxskillmultiplier="1.2">
+            minskillmultiplier="1" maxskillmultiplier="1.05">
       <StatValue stattype="MaximumHealthMultiplier" value="0.05" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Yummy_Peach.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -1853,11 +1853,9 @@
           isbuff="true"
           limbspecific="false"
           indicatorlimb="Torso"
-          showiconthreshold="100"
-          showinhealthscannerthreshold="100"
           maxstrength="100"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="100" strengthchange="-1" />
+    <Effect minstrength="0" maxstrength="100" strengthchange="-2" />
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 

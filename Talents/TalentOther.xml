@@ -119,7 +119,7 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -297,7 +297,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.2"/>
+                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.3"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">
@@ -489,7 +489,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="MRE_Effect_Momizi" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -499,7 +499,7 @@
                 <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.5"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -558,7 +558,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Aunn_Koma_Inu" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
@@ -567,12 +567,12 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Aunn_Lion" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
 
-    <!--出血效应-芙兰朵露-->
+    <!--出血效应-芙兰朵露·斯卡雷特-->
     <Talent identifier="MRE_Flandre">
         <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.MRE_Flandre"/>

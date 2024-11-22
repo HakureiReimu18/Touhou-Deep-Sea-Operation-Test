@@ -59,7 +59,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="1.2" />
+                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="1.0" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -73,7 +73,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="0.6" />
+                <CharacterAbilityGiveAffliction affliction="Touhou_Freeze" strength="0.5" />
             </Abilities>
         </AbilityGroupEffect>
 <!--        <AbilityGroupEffect abilityeffecttype="OnAttack">

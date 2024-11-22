@@ -19,10 +19,10 @@
             <RequiredSkill identifier="weapons" level="50" />
             <RequiredSkill identifier="mechanical" level="50" />
             <RequiredSkill identifier="Touhou_Magic" level="70" />
-            <RequiredItem identifier="Huo_Alchemical" amount="2"/>
+            <RequiredItem identifier="Huo_Alchemical" />
             <RequiredItem identifier="Yin_Alchemical" amount="2"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
-            <RequiredItem identifier="Score_Point" amount="2"/>
+            <RequiredItem identifier="Score_Point" />
         </Fabricate>
         <InventoryIcon name="" texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,0,79,89" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,0,79,89" depth="0.3" origin="0.5,0.5" />
@@ -217,9 +217,9 @@
         <Fabricate suitablefabricators="fabricator" requiredtime="10">
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredSkill identifier="medical" level="60" />
-            <RequiredItem identifier="Magic_Material" amount="4"/>
-            <RequiredItem identifier="Huo_Alchemical" amount="2"/>
-            <RequiredItem identifier="Yin_Alchemical" amount="2"/>
+            <RequiredItem identifier="Magic_Material" amount="2"/>
+            <RequiredItem identifier="Huo_Alchemical" />
+            <RequiredItem identifier="Yin_Alchemical" />
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="8,96,67,64" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="8,96,67,64" origin="0.5,0.5" />
@@ -428,7 +428,7 @@
         <Fabricate suitablefabricators="fabricator" requiredtime="30">
             <RequiredSkill identifier="weapons" level="50" />
             <RequiredSkill identifier="mechanical" level="50" />
-            <RequiredItem identifier="aluminium" amount="8"/>
+            <RequiredItem identifier="aluminium" amount="6"/>
             <RequiredItem identifier="Magic_Material" />
             <RequiredItem identifier="Reiki_Stone" amount="6"/>
         </Fabricate>
@@ -467,7 +467,7 @@
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true" />
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon weapondamagemodifier="0.75" barrelpos="170,20" spread="6" unskilledspread="24" reload="0.5" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.5">
+        <RangedWeapon weapondamagemodifier="0.85" barrelpos="170,20" spread="6" unskilledspread="24" reload="0.5" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.5">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="91,0,210,210" scale="1.4"/>
             <StatusEffect type="OnUse" target="This">
@@ -519,7 +519,7 @@
             <RequiredSkill identifier="mechanical" level="40" />
             <RequiredSkill identifier="medical" level="40" />
             <RequiredItem identifier="organicfiber" amount="4"/>
-            <RequiredItem identifier="Magic_Material" amount="2"/>
+            <RequiredItem identifier="Magic_Material" />
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="4">
             <RequiredSkill identifier="weapons" level="30" />
@@ -582,7 +582,7 @@
         </ItemContainer>
         <Quality>
             <QualityStat stattype="Condition" value="0.2"/>
-            <QualityStat stattype="FirepowerMultiplier" value="0.08" />
+            <QualityStat stattype="FirepowerMultiplier" value="0.12" />
         </Quality>
         <SkillRequirementHint identifier="weapons" level="60" />
         <SkillRequirementHint identifier="Touhou_Magic" level="60" />
@@ -597,8 +597,8 @@
                     sticktodoors="true" maxtargetstohit="2" removeonhit="true" friendlyfire="false" LaunchRotation="90">
             <Attack structuredamage="0.2" itemdamage="2" targetforce="0.1" penetration="0.05">
                 <Affliction identifier="bleeding" strength="0.8" />
-                <Affliction identifier="lacerations" strength="1.5" />
-                <Affliction identifier="burn" strength="0.4" probability="0.5"/>
+                <Affliction identifier="lacerations" strength="1.7" />
+                <Affliction identifier="burn" strength="0.6" probability="0.5"/>
                 <Affliction identifier="stun" strength="0.2" probability="0.03"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="1" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="1" probability="0.4"/>
@@ -762,7 +762,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
         </Holdable>
-        <RangedWeapon reload="1.0" maxchargetime="0.2" launchimpulse="30.0" barrelpos="85,14" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
+        <RangedWeapon reload="0.9" maxchargetime="0.2" launchimpulse="30.0" barrelpos="85,14" spread="1" unskilledspread="10" combatPriority="60" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Remilia_Gungnier.png" sourcerect="0,0,169,176" scale="3"/>
             <Sound file="Content/Items/Weapons/HarpoonGun1.ogg" type="OnUse" />
@@ -1698,7 +1698,7 @@
             <RequiredSkill identifier="weapons" level="30" />
             <RequiredSkill identifier="medical" level="50" />
             <RequiredItem identifier="Reiki_Stone" amount="2" />
-            <RequiredItem identifier="organicfiber" amount="6" />
+            <RequiredItem identifier="organicfiber" amount="4" />
             <RequiredItem identifier="Aya_Circular_Fan"  mincondition="0.0" maxcondition="0.2" usecondition="false"/>
         </Fabricate>
         <InventoryIcon name="" texture="%ModDir%/Images/OtherWeapons/Aya_Circular_Fan.png" sourcerect="0,0,62,48" origin="0.5,0.5"/>
@@ -1812,8 +1812,8 @@
                     sticktodoors="true" maxtargetstohit="1" removeonhit="true" friendlyfire="false">
             <Attack structuredamage="0.5" itemdamage="5" targetforce="20" targetimpulse="20" severlimbsprobability="0.2" penetration="0.1">
                 <Affliction identifier="bleeding" strength="1.5" />
-                <Affliction identifier="lacerations" strength="4.5" />
-                <Affliction identifier="lacerations" strength="4.5" probability="0.15" />
+                <Affliction identifier="lacerations" strength="5.5" />
+                <Affliction identifier="lacerations" strength="5.5" probability="0.15" />
                 <Affliction identifier="stun" strength="0.1" probability="0.04" />
             </Attack>
             <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
@@ -5355,10 +5355,9 @@
                 <ParticleEmitter particle="waterblood" AngleMax="-60" ScaleMin="0.5" ScaleMax="0.5" ParticlesPerSecond="1" ColorMultiplier="255,255,255,255" />
                 <ParticleEmitter particle="waterblood" AngleMax="90" ScaleMin="0.5" ScaleMax="0.5" ParticlesPerSecond="1" ColorMultiplier="255,255,255,255" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This,Character" targettype="Limb" targetlimb="Torso" Interval="5.0" >
+            <StatusEffect type="OnActive" target="This,Character" targettype="Limb" targetlimb="Torso" Interval="5.0" Duration="3.0" >
                 <Conditional HasTag="ScarletMode_Open"/>
-                <Affliction identifier="bleeding" strength="30.0" />
-                <Affliction identifier="bloodloss" strength="5.0" />
+                <Affliction identifier="bleeding" strength="10.0" />
             </StatusEffect>
 
 <!--            <StatusEffect type="OnUse" target="Contained" targetslot="0" condtion="-4" >

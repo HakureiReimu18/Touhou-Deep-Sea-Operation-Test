@@ -217,7 +217,7 @@
   <entityname.Kappa_Backpack_Plus>河童背包plus</entityname.Kappa_Backpack_Plus>
   <entitydescription.Kappa_Backpack_Plus>河童工作背包的升级款，虽然容量并未增加，但其中更加充裕的灵气可以一定程度上保护使用者，甚至可以抵抗‖color:gui.orange‖5000米‖color:end‖的水压</entitydescription.Kappa_Backpack_Plus>
   <entityname.Kappa_Miningdrill>河童采矿机</entityname.Kappa_Miningdrill>
-  <entitydescription.Kappa_Miningdrill>河童们的采矿工具，兼具便携性、易操作性、耐用等多种优点，关键是……它很便宜</entitydescription.Kappa_Miningdrill>
+  <entitydescription.Kappa_Miningdrill>河童们的采矿工具，兼具便携性、易操作性、耐用等多种优点，关键是……它很便宜。内含额外五个矿石存储槽位</entitydescription.Kappa_Miningdrill>
   <entityname.Illness_Recovery_Charm>‖color:160,238,0,255‖病气平愈护符‖color:end‖</entityname.Illness_Recovery_Charm>
   <entitydescription.Illness_Recovery_Charm>可以疗伤的守矢神社护符。（占用耳机槽位）</entitydescription.Illness_Recovery_Charm>
   <!--Alchemical-->
@@ -1285,7 +1285,7 @@
   <talentname.Hyouibana_Aunn>凭依阿吽</talentname.Hyouibana_Aunn>
   <talentdescription.Hyouibana_Aunn>对灵压和精神病的抗性更高，攻击伤害提高5%，友军伤害下降10%。</talentdescription.Hyouibana_Aunn>
   <talentname.Hyouibana_Flandre>凭依芙兰朵露</talentname.Hyouibana_Flandre>
-  <talentdescription.Hyouibana_Flandre>略微加快出血和失血的恢复，对血量低于50%的敌人造成额外5%的穿甲。</talentdescription.Hyouibana_Flandre>
+  <talentdescription.Hyouibana_Flandre>略微加快出血和失血的恢复，对血量低于50%的敌人造成额外10%的穿甲。</talentdescription.Hyouibana_Flandre>
   <talentname.Hyouibana_Nue>凭依鵺</talentname.Hyouibana_Nue>
   <talentdescription.Hyouibana_Nue>对debuff的抗性更高，鵺装束血量低于一半时的效果依然生效。</talentdescription.Hyouibana_Nue>
   <talentname.Hyouibana_Piece>凭依皮丝</talentname.Hyouibana_Piece>
@@ -1367,7 +1367,7 @@
   <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
   <talentdescription.MRE_Remilia>仅对蕾米莉亚装束+生效。专属武器效果造成的伤害增加36%</talentdescription.MRE_Remilia>
   <talentname.MRE_Marisa>出血效应-雾雨魔理沙</talentname.MRE_Marisa>
-  <talentdescription.MRE_Marisa>仅对魔理沙装束+生效。弹幕的伤害提高15%</talentdescription.MRE_Marisa>
+  <talentdescription.MRE_Marisa>仅对魔理沙装束+生效。弹幕的伤害提高20%</talentdescription.MRE_Marisa>
   <talentname.MRE_Aya>出血效应-射命丸文</talentname.MRE_Aya>
   <talentdescription.MRE_Aya>仅对文文装束+生效。每次近战攻击都有5%概率额外造成50%伤害，如果是远程弹幕则效果下降为25%</talentdescription.MRE_Aya>
   <talentname.MRE_Youmu>出血效应-魂魄妖梦</talentname.MRE_Youmu>
@@ -1377,18 +1377,18 @@
   <talentname.MRE_Akyuu>出血效应-稗田阿求</talentname.MRE_Akyuu>
   <talentdescription.MRE_Akyuu>仅对阿求装束+生效。技能水平提高20%，攻击并造成过伤害的敌人，在其血量低于30%时，造成额外50%的伤害</talentdescription.MRE_Akyuu>
   <talentname.MRE_Mokou>出血效应-藤原妹红</talentname.MRE_Mokou>
-  <talentdescription.MRE_Mokou>仅对妹红装束+生效。最大生命值提高20%，自己的剩余血量越高，造成的伤害越高，最高20%</talentdescription.MRE_Mokou>
+  <talentdescription.MRE_Mokou>仅对妹红装束+生效。最大生命值提高30%，自己的剩余血量越高，造成的伤害越高，最高20%</talentdescription.MRE_Mokou>
   <talentname.MRE_Patchouli>出血效应-帕秋莉·诺雷姬</talentname.MRE_Patchouli>
   <talentdescription.MRE_Patchouli>仅对帕秋莉装束+生效。持有专属武器时，受到的攻击伤害减少10%。魔力提升达到300后，也减少10%</talentdescription.MRE_Patchouli>
   <talentname.MRE_Tenshi>出血效应-比那名居天子</talentname.MRE_Tenshi>
-  <talentdescription.MRE_Tenshi>仅对天子装束+生效。持有专属武器时，提高50%眩晕抗性。专属武器击杀任意生物后，短暂提高20%近战攻击速度和10%远程攻击速度</talentdescription.MRE_Tenshi>
+  <talentdescription.MRE_Tenshi>仅对天子装束+生效。持有专属武器时，提高50%眩晕抗性。专属武器击杀任意生物后，短暂提高30%近战攻击速度和15%远程攻击速度</talentdescription.MRE_Tenshi>
   <talentname.MRE_Momizi>出血效应-犬走椛</talentname.MRE_Momizi>
-  <talentdescription.MRE_Momizi>仅对椛装束+生效。受到攻击后短时间内，提高下一次攻击15%的伤害，如果血量低于50%，则效果翻倍</talentdescription.MRE_Momizi>
+  <talentdescription.MRE_Momizi>仅对椛装束+生效。受到攻击后短时间内，提高下一次攻击20%的伤害，如果血量低于50%，则效果翻倍</talentdescription.MRE_Momizi>
   <talentname.MRE_Yuka>出血效应-风见幽香</talentname.MRE_Yuka>
   <talentdescription.MRE_Yuka>仅对幽香装束+生效。造成的撕裂伤提高30%，钝器伤提高60%</talentdescription.MRE_Yuka>
   <talentname.MRE_Aunn>出血效应-高丽野阿吽</talentname.MRE_Aunn>
-  <talentdescription.MRE_Aunn>仅对阿吽装束+生效。狛犬状态下，造成的伤害增加10%。狮子状态下，受到的伤害减少10%</talentdescription.MRE_Aunn>
-  <talentname.MRE_Flandre>出血效应-芙兰朵露</talentname.MRE_Flandre>
+  <talentdescription.MRE_Aunn>仅对阿吽装束+生效。狛犬状态下，造成的伤害增加20%。狮子状态下，受到的伤害减少20%</talentdescription.MRE_Aunn>
+  <talentname.MRE_Flandre>出血效应-芙兰朵露·斯卡雷特</talentname.MRE_Flandre>
   <talentdescription.MRE_Flandre>仅对芙兰朵露装束+生效。使用专属武器攻击带有目之破坏或血量低于50%的敌人时，每次攻击都有4%的概率秒杀</talentdescription.MRE_Flandre>
   <talentname.MRE_Nue>出血效应-封兽鵺</talentname.MRE_Nue>
   <talentdescription.MRE_Nue>仅对鵺装束+生效。每次受到敌人的攻击时，将该伤害存储并强化下一次攻击的伤害，最高50%</talentdescription.MRE_Nue>

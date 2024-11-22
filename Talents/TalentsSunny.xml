@@ -45,7 +45,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.5" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.8" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -53,35 +53,35 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
-                <AbilityConditionServerRandom randomchance="0.025" />
+                <AbilityConditionServerRandom randomchance="0.05" />
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional HealthPercentage="gt 50"/>
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.25" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.4" />
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Sun_Effect" strength="100" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
-                <AbilityConditionAttackData tags="Low_Alchemical_Metal" ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionServerRandom randomchance="0.3" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="1.0" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="3.2" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
-                <AbilityConditionAttackData tags="Low_Alchemical_Metal" ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionServerRandom randomchance="0.3" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="burn" strength="0.5" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="1.6" />
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Sun_Effect" strength="100" />
             </Abilities>
         </AbilityGroupEffect>

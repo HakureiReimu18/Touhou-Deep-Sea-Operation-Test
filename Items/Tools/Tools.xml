@@ -354,11 +354,17 @@
             </LightComponent>
             <Fixable identifier="structure" />
         </RepairTool>
-        <ItemContainer autofill="True" capacity="1" maxstacksize="1" hideitems="true">
+        <ItemContainer autofill="True" capacity="1" maxstacksize="1" hideitems="true" slotsperrow="2" ShowConditionInContainedStateIndicator="true" containedstateindicatorslot="0">
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <Containable items="Spiritual_Water" />
-            <Containable items="batterycell" />
-            <Containable items="fulguriumbatterycell" />
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5" />
+            <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5" />
+            <SlotIcon slotindex="3" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5" />
+            <SlotIcon slotindex="4" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5" />
+            <SlotIcon slotindex="5" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5" />
+            <Containable items="Spiritual_Water,batterycell,fulguriumbatterycell" />
+            <SubContainer capacity="5" maxstacksize="64">
+                <Containable items="ore" />
+            </SubContainer>
         </ItemContainer>
         <Quality>
             <QualityStat stattype="RepairToolStructureDamageMultiplier" value="0.3" />
@@ -1661,7 +1667,7 @@
     <!--人偶手提箱-->
     <Item name="人偶手提箱" identifier="Touhou_Alice_Puppet_Suitcase" subcategory="Touhou" category="Equipment" tags="smallitem,Touhou_Alice_Puppet_Suitcase,backpack" scale="0.4" cargocontaineridentifier="metalcrate" description="HONK">
         <PreferredContainer primary="crewcab" notcampaign="true"/>
-        <Price baseprice="1000" >
+        <Price baseprice="800" >
             <Price storeidentifier="merchantoutpost" sold="false"/>
             <Price storeidentifier="merchantcity" maxavailable="1"/>
             <Price storeidentifier="merchantresearch" maxavailable="1" />
@@ -1675,7 +1681,7 @@
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="10" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
             <RequiredItem identifier="steel" amount="3"/>
             <RequiredItem identifier="organicfiber" amount="3"/>
             <RequiredItem identifier="plastic" amount="3"/>
@@ -1727,7 +1733,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Peace_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1773,7 +1779,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Jin_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1819,7 +1825,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Mu_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Soft_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1865,7 +1871,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Warm_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1911,7 +1917,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Yang_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Boiling_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1957,7 +1963,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Icy_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1987,7 +1993,7 @@
             condition="200"
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
-        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.02"/>
+        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.04" />
         <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.08" />
         <Price baseprice="400" minavailable="2" sold="false" >
@@ -2029,7 +2035,7 @@
             condition="200"
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
-        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.02"/>
+        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.04" />
         <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.08" />
         <Price baseprice="400" minavailable="2" sold="false" >

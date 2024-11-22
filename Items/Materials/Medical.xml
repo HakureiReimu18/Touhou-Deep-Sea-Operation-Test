@@ -440,6 +440,7 @@
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
                 <Conditional Hyouibana_Effect_Flag="eq 0"/>
+                <Affliction identifier="Hyouibana_Effect_Flag" amount="10" />
                 <!--通过写一个新的afflication凭依判断是否已经有凭依，如果已经有了，那么不生效-->
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="Hyouibana_Aya,Hyouibana_Marisa,Hyouibana_Mokou,Hyouibana_Remilia,Hyouibana_Youmu,Hyouibana_Nitori,Hyouibana_Patchouli,

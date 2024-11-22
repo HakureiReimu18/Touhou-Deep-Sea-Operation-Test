@@ -4,6 +4,7 @@ TLE.Version = "1.0"
 TLE.VersionNum = 01000000
 TLE.Path = table.pack(...)[1]
 
+dofile(TLE.Path.."/Lua/Scripts/Sever/Touhou_Hisoutensoku_Amor.lua")
 
 if CLIENT then
 	Timer.Wait(function()
