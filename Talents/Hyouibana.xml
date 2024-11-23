@@ -668,4 +668,60 @@
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
+
+    <!--凭依露娜-->
+    <Talent identifier="Hyouibana_Luna" >
+        <Icon texture="%ModDir%/Images/Talents/LunaTalent.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Hyouibana_Luna"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Hyouibana_Luna_Effect" amount="10.0"/>
+                            <Affliction identifier="Hyouibana_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
+                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
+                            <Affliction identifier="Hyouibana_Effect_Prefect_Luna" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+            <Abilities>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.05" />
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionServerRandom randomchance="0.05" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionServerRandom randomchance="0.3" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
 </Talents>

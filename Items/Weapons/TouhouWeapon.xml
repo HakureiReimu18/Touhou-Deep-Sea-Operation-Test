@@ -245,7 +245,7 @@
             <Attack structuredamage="20" itemdamage="20" targetforce="2" penetration="0.15">
                 <Affliction identifier="explosiondamage" strength="8" />
                 <Affliction identifier="burn" strength="8" />
-                <Affliction identifier="Reiki_Pressure" strength="4" probability="0.4" />
+                <Affliction identifier="Reiki_Pressure" strength="2" probability="0.4" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="2" />
                 <Affliction identifier="stun" strength="0.3" probability="0.2" />
             </Attack>
@@ -328,10 +328,13 @@
             <Attack structuredamage="80" itemdamage="60" targetforce="6" penetration="0.4">
                 <Affliction identifier="explosiondamage" strength="16" />
                 <Affliction identifier="burn" strength="16" />
-                <Affliction identifier="Reiki_Pressure" strength="12" />
+                <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="stun" strength="0.4" probability="0.3" />
                 <Affliction identifier="stun" strength="0.2" probability="0.5" />
             </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Affliction identifier="Reiki_Pressure" strength="12" />
+            </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Dream" strength="4" />
             </StatusEffect>
@@ -345,7 +348,7 @@
                 <Explosion range="60" structuredamage="20" force="6.0" itemdamage="60" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="10" penetration="0.4" >
                     <Affliction identifier="explosiondamage" strength="10" />
                     <Affliction identifier="burn" strength="10" />
-                    <Affliction identifier="Reiki_Pressure" strength="4" />
+                    <Affliction identifier="Reiki_Pressure" strength="2" />
                     <Affliction identifier="Touhou_Lost_Dream" strength="10" />
                 </Explosion>
                 <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="0.5" selectionmode="Random" range="5000" />
@@ -358,7 +361,7 @@
                 <Explosion range="60" structuredamage="20" force="6.0" itemdamage="60" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="10" penetration="0.4" >
                     <Affliction identifier="explosiondamage" strength="10" />
                     <Affliction identifier="burn" strength="10" />
-                    <Affliction identifier="Reiki_Pressure" strength="4" />
+                    <Affliction identifier="Reiki_Pressure" strength="2" />
                     <Affliction identifier="Touhou_Lost_Dream" strength="10" />
                 </Explosion>
                 <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="0.5" selectionmode="Random" range="5000" />
@@ -426,8 +429,8 @@
             <Item identifier="Magic_Material" />
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="30">
-            <RequiredSkill identifier="weapons" level="50" />
-            <RequiredSkill identifier="mechanical" level="50" />
+            <RequiredSkill identifier="weapons" level="40" />
+            <RequiredSkill identifier="mechanical" level="30" />
             <RequiredItem identifier="aluminium" amount="6"/>
             <RequiredItem identifier="Magic_Material" />
             <RequiredItem identifier="Reiki_Stone" amount="6"/>
@@ -1628,19 +1631,18 @@
             <LightComponent LightColor="255,174,121,160" Flicker="0.2" Range="70" >
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
-            <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="85" structuresoundtype="StructureSlash" penetration="0.6">
+            <Attack targetimpulse="5" severlimbsprobability="0.1" itemdamage="85" structuresoundtype="StructureSlash" penetration="0.5">
                 <Affliction identifier="Reiki_Pressure" strength="8" />
                 <Affliction identifier="Reiki_Pressure" strength="8" probability="0.25" />
                 <Affliction identifier="burn" strength="35" />
                 <Affliction identifier="burn" strength="20" probability="0.3"/>
-                <Affliction identifier="Aura_Strip" strength="10" />
                 <Affliction identifier="stun" strength="0.3" />
                 <Affliction identifier="stun" strength="2" probability="0.15" />
             </Attack>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <ParticleEmitter particle="weldspark" particleamount="6" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,10,10,200" />
                 <Affliction identifier="Aura_Strip" strength="10" />
-                <Affliction identifier="Aura_Strip" strength="80" probability="0.1" />
+                <Affliction identifier="Aura_Strip" strength="15" probability="0.1" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.5" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
@@ -2586,7 +2588,7 @@
                 </StatusEffect>
             </LightComponent>
 
-            <Attack targetimpulse="5" severlimbsprobability="0.6" itemdamage="100" structuredamage="10" structuresoundtype="StructureSlash" penetration="0.5">
+            <Attack targetimpulse="5" severlimbsprobability="0.6" itemdamage="100" structuredamage="10" structuresoundtype="StructureSlash" penetration="0.4">
                 <Affliction identifier="Reiki_Pressure" strength="6" />
                 <Affliction identifier="explosiondamage" strength="18" />
                 <Affliction identifier="burn" strength="20" />
@@ -2737,9 +2739,8 @@
         <Projectile characterusable="false" launchimpulse="15" damagedoors="true" removeonhit="true" >
             <Attack structuredamage="40" itemdamage="150" targetforce="20" targetimpulse="20" severlimbsprobability="0.3" penetration="0.2">
                 <Affliction identifier="blunttrauma" strength="85" />
-                <Affliction identifier="Aura_Strip" strength="10" />
-                <Affliction identifier="Aura_Strip" strength="15" probability="0.8" />
-                <Affliction identifier="Aura_Strip" strength="20" probability="0.2" />
+                <Affliction identifier="Aura_Strip" strength="5" />
+                <Affliction identifier="Aura_Strip" strength="5" probability="0.2" />
                 <Affliction identifier="stun" strength="0.4" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
@@ -2805,7 +2806,6 @@
         <ElectricalDischarger duration="0.3" reload="0.2" ignoreuser="true" characterusable="true" raycastrange="300" range="400" rangemultiplierinwalls="0.2" outdoorsonly="true" powerconsumption="0" pickkey="Select">
             <Attack targetimpulse="10" penetration="0.3" structuredamage="10" itemdamage="10">
                 <Affliction identifier="burn" strength="20" />
-                <Affliction identifier="Aura_Strip" strength="5" />
             </Attack>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="20000" selectionmode="random" />
@@ -3967,7 +3967,7 @@
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
 
-            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.35">
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.3">
                 <Affliction identifier="Reiki_Pressure" strength="9" />
                 <Affliction identifier="lacerations" strength="20" />
                 <Affliction identifier="slow" strength="30" />
@@ -4275,7 +4275,7 @@
             <LightComponent LightColor="255,100,100,160" Flicker="0.2" Range="700" IsOn="true" >
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
             </LightComponent>
-            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.35">
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.3">
                 <Affliction identifier="Reiki_Pressure" strength="6" />
                 <Affliction identifier="blunttrauma" strength="10" />
                 <Affliction identifier="burn" strength="20" />
@@ -4480,8 +4480,7 @@
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,55,55,255" scalemultiplier="1,1.5" />
             <Attack targetforce="30" targetimpulse="30" itemdamage="45" severlimbsprobability="0.5" penetration="0.2">
                 <Affliction identifier="burn" strength="12" />
-                <Affliction identifier="burn" strength="8" probability="0.7" />
-                <Affliction identifier="Reiki_Pressure" strength="3" />
+                <Affliction identifier="burn" strength="8" probability="0.5" />
                 <Affliction identifier="internaldamage" strength="3" />
                 <Affliction identifier="organdamage" strength="3" />
                 <Affliction identifier="explosiondamage" strength="3" />
@@ -4492,6 +4491,9 @@
                 <Affliction identifier="stun" strength="0.15" />
                 <Affliction identifier="stun" strength="0.3" probability="0.5" />
             </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Affliction identifier="Reiki_Pressure" strength="4" />
+            </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Dream" strength="6" probability="0.5" />
             </StatusEffect>
@@ -4606,7 +4608,7 @@
                 <ReduceAffliction identifier="Koishi_Unconscious03" amount="0.5" />
             </StatusEffect>
 
-            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="60" structuresoundtype="StructureSlash" penetration="0.4">
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="60" structuresoundtype="StructureSlash" penetration="0.35">
                 <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="lacerations" strength="51.4" />
                 <Affliction identifier="slow" strength="50" />
@@ -4724,8 +4726,7 @@
         <Body width="110" height="30" density="10" />
         <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-42,22" handle2="-2,20" holdangle="30" aimangle="10" reload="1.2" range="125"
                      allowhitmultiple="true" combatPriority="40" msg="ItemMsgPickUpSelect">
-            <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="60" penetration="0.1">
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+            <Attack targetimpulse="5" severlimbsprobability="7.5" itemdamage="60" penetration="0.15">
                 <Affliction identifier="blunttrauma" strength="25" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
                 <Affliction identifier="stun" strength="0.45" />
@@ -4740,6 +4741,9 @@
                     <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
                 </StatusEffect>
             </Attack>
+            <StatusEffect type="OnUse" target="UseTarget" >
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+            </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
             </StatusEffect>

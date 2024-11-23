@@ -143,12 +143,11 @@
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" comparison="And" duration="360">
                 <Conditional Potion_In_Effect="lte 100"/>
                 <Conditional Essential_Oil_Application="eq 0"/>
-                <ReduceAffliction type="damage" amount="1.1" />
+                <ReduceAffliction type="damage" amount="1.0" />
                 <ReduceAffliction type="bleeding" amount="0.8" />
                 <ReduceAffliction type="infection" amount="0.8" />
                 <ReduceAffliction type="burn" amount="0.9" />
                 <ReduceAffliction type="Phoenix_Burn" amount="2" />
-                <ReduceAffliction type="invertcontrols" amount="1.2" />
                 <ReduceAffliction type="nausea" amount="2" />
                 <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="4" />
                 <ReduceAffliction identifier="Touhou_Silent_Selene_Dream" amount="4" />
@@ -164,11 +163,10 @@
             <StatusEffect tags="medical" type="OnFailure" target="UseTarget" comparison="And" duration="120">
                 <Conditional Potion_In_Effect="lte 100"/>
                 <Conditional Essential_Oil_Application="eq 0"/>
-                <ReduceAffliction type="damage" amount="0.7" />
+                <ReduceAffliction type="damage" amount="0.5" />
                 <ReduceAffliction type="bleeding" amount="0.35" />
                 <ReduceAffliction type="infection" amount="0.35" />
                 <ReduceAffliction type="burn" amount="0.35" />
-                <ReduceAffliction type="invertcontrols" amount="0.6" />
                 <ReduceAffliction type="nausea" amount="1" />
                 <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="2" />
                 <ReduceAffliction identifier="Touhou_Silent_Selene_Dream" amount="2" />
@@ -900,5 +898,99 @@
                 <Remove />
             </StatusEffect>
         </MeleeWeapon>
+    </Item>
+
+
+    <!--永远亭医疗套件-->
+    <Item name="永远亭医疗套件" identifier="Touhou_Medical_Toolkit" tags="smallitem,medical,Touhou_Magic_Item" subcategory="Touhou" category="medical"
+          cargocontaineridentifier="metalcrate" scale="0.4" useinhealthinterface="true" RequireAimToUse="false">
+        <PreferredContainer primary="medcab" amount="1" spawnprobability="0.03" />
+        <PreferredContainer secondary="outpostmedcab" amount="1" spawnprobability="0.03" />
+        <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.03" />
+        <Price baseprice="2000" >
+            <Price storeidentifier="merchantoutpost" minavailable="2" sold="false"/>
+            <Price storeidentifier="merchantcity" minavailable="2" />
+            <Price storeidentifier="merchantresearch" minavailable="2" />
+            <Price storeidentifier="merchantmilitary" minavailable="2" />
+            <Price storeidentifier="merchantmine" minavailable="2"/>
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="4"/>
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="carbon" />
+            <Item identifier="Reiki_Dust_Caking" amount="2"/>
+            <Item identifier="Plant_Essential_Oil" amount="2" />
+            <Item identifier="stabilozine" amount="2"/>
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" >
+            <RequiredSkill identifier="medical" level="100" />
+            <RequiredSkill identifier="Touhou_Magic" level="80" />
+            <RequiredItem identifier="Mu_Alchemical" />
+            <RequiredItem identifier="plastic" amount="4"/>
+            <RequiredItem identifier="Gilead_Branch" amount="2"/>
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit.png" sourcerect="0,16,152,108" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit.png" depth="0.4" sourcerect="0,16,152,108" />
+        <BrokenSprite texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit.png" sourcerect="152,2,160,144" depth="0.5" maxcondition="90" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit.png" sourcerect="312,2,160,144" depth="0.5" maxcondition="60" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit.png" sourcerect="469,2,160,144" depth="0.5" maxcondition="30" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit.png" sourcerect="692,2,160,144" depth="0.5" maxcondition="0" origin="0.5,0.5" />
+        <Body width="160" height="120" density="10" />
+        <!--治疗作用-->
+        <SuitableTreatment type="bleeding" suitability="20" />
+        <SuitableTreatment type="burn" suitability="20" />
+        <SuitableTreatment type="invertcontrols" suitability="10" />
+        <SuitableTreatment type="damage" suitability="25" />
+        <SuitableTreatment type="Phoenix_Burn" suitability="50" />
+        <SuitableTreatment identifier="Touhou_Royal_Flare_Burn" suitability="5" />
+        <SuitableTreatment identifier="Touhou_Silent_Selene_Dream" suitability="5" />
+        <SuitableTreatment type="gaze" suitability="20" />
+        <SuitableTreatment type="debuff" suitability="10" />
+        <SuitableTreatment type="triton_7L" suitability="10" />
+        <SuitableTreatment type="tsm_bl" suitability="10" />
+        <SuitableTreatment type="infection" suitability="10" />
+        <Holdable slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" >
+            <RequiredSkill identifier="medical" level="40" />
+            <StatusEffect type="OnSuccess" target="This" Condition="-10.0" />
+            <StatusEffect type="OnFailure" target="This" Condition="-10.0" />
+            <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="5">
+                <RequiredItem items="antidama1,antidama2,pomegrenadeextract" type="Contained" />
+                <ReduceAffliction type="damage" amount="10" />
+                <ReduceAffliction type="chemaddiction" amount="1" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget,This" condition="-10">
+                <RequiredItem items="antidama1,antidama2,pomegrenadeextract" type="Contained" />
+                <ReduceAffliction type="damage" amount="30" />
+            </StatusEffect>
+            <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="5">
+                <RequiredItem items="antibloodloss1,antibloodloss2" type="Contained" />
+                <ReduceAffliction type="bloodloss" amount="15" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget,This" condition="-10">
+                <RequiredItem items="antibloodloss1,antibloodloss2" type="Contained" />
+                <ReduceAffliction type="bloodloss" amount="30" />
+            </StatusEffect>
+            <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="5">
+                <RequiredItem items="antibleeding1,antibleeding1,antibleeding3" type="Contained" />
+                <ReduceAffliction type="bleeding" amount="20" />
+                <ReduceAffliction type="infection" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget,This" condition="-10">
+                <RequiredItem items="antibleeding1,antibleeding1,antibleeding3" type="Contained" />
+                <ReduceAffliction type="bleeding" amount="20" />
+                <ReduceAffliction type="infection" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" >
+                <Sound file="Content/Items/Medical/Bandage1.ogg" range="500" />
+                <Sound file="Content/Items/Medical/Bandage2.ogg" range="500" />
+            </StatusEffect>
+        </Holdable>
+        <ItemContainer capacity="4" hideitems="true" slotsperrow="2">
+            <Containable identifiers="medical" />
+            <SlotIcon slotindex="0" texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit_Indicator.png" sourcerect="0,0,46,53" origin="0.5,0.5" />
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit_Indicator.png" sourcerect="46,0,34,57" origin="0.5,0.5" />
+            <SlotIcon slotindex="2" texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit_Indicator.png" sourcerect="80,0,59,55" origin="0.5,0.5" />
+            <SlotIcon slotindex="3" texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit_Indicator.png" sourcerect="139,2,31,53" origin="0.5,0.5" />
+        </ItemContainer>
+        <SkillRequirementHint identifier="medical" level="40" />
     </Item>
 </Items>

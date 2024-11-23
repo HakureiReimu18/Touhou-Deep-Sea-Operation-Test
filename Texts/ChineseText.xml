@@ -1193,14 +1193,14 @@
   <entitydescription.Sunny_Plus>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。</entitydescription.Sunny_Plus>
   <afflictionname.Shining_Light_Of_The_Sun>闪耀的日之光</afflictionname.Shining_Light_Of_The_Sun>
   <afflictiondescription.Shining_Light_Of_The_Sun>她有着一头橙色及肩短发，用红色蝴蝶结系成短双马尾，头顶戴着白色蕾丝状发箍。</afflictiondescription.Shining_Light_Of_The_Sun>
-  <talentname.SunnyTalent>喜欢恶作剧的日之光</talentname.SunnyTalent>
+  <talentname.SunnyTalent>桑尼金红石折射</talentname.SunnyTalent>
   <talentdescription.SunnyTalent>当你身着桑尼装束+时，
     \n增加对‖color:gui.yellow‖烧伤‖end‖的抗性。
     很难被敌人的目光察觉。
     \n造成的‖color:gui.yellow‖烧伤‖end‖伤害增加‖color:gui.green‖10%‖end‖。
     \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
-    \n魔法武器的远程攻击每次有‖color:gui.green‖5%‖end‖概率造成额外烧伤。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成日之光效果
-    近战攻击每次有‖color:gui.green‖30%‖end‖概率造成额外烧伤。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成日之光效果
+    \n魔法武器的远程攻击每次有‖color:gui.green‖5%‖end‖概率造成额外‖color:gui.yellow‖烧伤‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成日之光效果
+    近战攻击每次有‖color:gui.green‖30%‖end‖概率造成额外‖color:gui.yellow‖烧伤‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成日之光效果
     ‖color:gui.yellow‖日之光‖end‖：减少怪物的攻击伤害，让怪物短时间内失去视野中的目标。
   </talentdescription.SunnyTalent>
   <afflictionname.The_Grimoire_Of_Usami_Weapons>三妖精大暴走</afflictionname.The_Grimoire_Of_Usami_Weapons>
@@ -1251,6 +1251,25 @@
     当你身着境界潜水服时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖20%‖end‖的概率减少‖color:gui.green‖10%‖end‖的伤害
     当你身着秘境潜水服时：勾玉提供的效果‖color:gui.yellow‖一般‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖10%‖end‖的概率减少‖color:gui.green‖10%‖end‖的伤害
     当你身着魔力披纱时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖15%‖end‖的概率减少‖color:gui.green‖15%‖end‖的伤害</talentdescription.Gensokyo_Divinggear_Talent>
+  <entityname.Luna_gear>‖color:255,225,145,255‖露娜装束‖end‖</entityname.Luna_gear>
+  <entitydescription.Luna_gear>她是月光妖精，与桑尼米尔克、斯塔萨菲雅合称为光之三妖精，是光之三妖精中最接近妖怪的。</entitydescription.Luna_gear>
+  <entityname.Luna_Plus>‖color:255,225,145,255‖桑尼装束+‖end‖</entityname.Luna_Plus>
+  <entitydescription.Luna_Plus>她是月光妖精，与桑尼米尔克、斯塔萨菲雅合称为光之三妖精，是光之三妖精中最接近妖怪的。</entitydescription.Luna_Plus>
+  <afflictionname.Tranquil_Light_Of_The_Moon>静谧的月之光</afflictionname.Tranquil_Light_Of_The_Moon>
+  <afflictiondescription.Tranquil_Light_Of_The_Moon>她有着一头稻草黄及肩短发，两侧各有三个螺旋状发辫，戴着两侧各系着两个黑色蝴蝶结的白色帽子。</afflictiondescription.Tranquil_Light_Of_The_Moon>
+  <talentname.LunaTalent>因夜失眠</talentname.LunaTalent>
+  <talentdescription.LunaTalent>当你身着露娜装束+时，
+    \n增加对‖color:gui.yellow‖眩晕‖end‖的抗性。
+    很难被敌人的听力发觉。
+    \n造成的‖color:gui.yellow‖眩晕‖end‖伤害增加‖color:gui.green‖10%‖end‖。
+    \n造成的‖color:gui.yellow‖眩晕‖end‖伤害有‖color:gui.green‖10%‖end‖概率以‖color:gui.green‖150%‖end‖倍率转化为‖color:gui.yellow‖噬咬‖end‖，或以‖color:gui.green‖50%‖end‖倍率转化为‖color:gui.yellow‖灵压‖end‖。
+    \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
+    \n魔法武器的远程攻击每次有‖color:gui.green‖5%‖end‖概率造成额外‖color:gui.yellow‖眩晕‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成‖color:gui.yellow‖月之光‖end‖效果
+    近战攻击每次有‖color:gui.green‖30%‖end‖概率造成额外‖color:gui.yellow‖眩晕‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成‖color:gui.yellow‖月之光‖end‖效果
+    ‖color:gui.yellow‖日之光‖end‖：减少怪物的攻击伤害，让怪物短时间内降低移动速度和抗性。
+  </talentdescription.LunaTalent>
+  <entityname.Touhou_Medical_Toolkit>永远亭医疗套件</entityname.Touhou_Medical_Toolkit>
+  <entitydescription.Touhou_Medical_Toolkit>永远亭出品的医疗套件，不仅易于使用，来自永远亭的独特工具也大大增强了治疗效果</entitydescription.Touhou_Medical_Toolkit>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>
@@ -1298,7 +1317,9 @@
   <talentdescription.Hyouibana_Alice>游泳速度提高10%，技能获取速度提高40%，buff效果持续时间增加10%。</talentdescription.Hyouibana_Alice>
   <talentname.Hyouibana_Sunny>凭依桑尼</talentname.Hyouibana_Sunny>
   <talentdescription.Hyouibana_Sunny>更难被怪物视野锁定，魔法武器远程攻击附加少量烧伤，造成的烧伤伤害增加5%。</talentdescription.Hyouibana_Sunny>
-  <afflictionname.Hyouibana_Effect_Prefect_Reimu>灵梦-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Reimu>
+  <talentname.Hyouibana_Luna>凭依露娜</talentname.Hyouibana_Luna>
+  <talentdescription.Hyouibana_Sunny>更难被怪物听力锁定，眩晕抗性提高5%，魔法武器远程攻击附加少量眩晕，造成的眩晕伤害增加5%。</talentdescription.Hyouibana_Sunny>
+  <afflictionname.Hyouibana_Luna>灵梦-完全凭依</afflictionname.Hyouibana_Luna>
   <afflictiondescription.Hyouibana_Effect_Prefect_Reimu>攻击伤害增加10%</afflictiondescription.Hyouibana_Effect_Prefect_Reimu>
   <afflictionname.Hyouibana_Effect_Prefect_Remilia>蕾米莉亚-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Remilia>
   <afflictiondescription.Hyouibana_Effect_Prefect_Remilia>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Remilia>
@@ -1336,6 +1357,8 @@
   <afflictiondescription.Hyouibana_Effect_Prefect_Alice>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Alice>
   <afflictionname.Hyouibana_Effect_Prefect_Sunny>桑尼-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Sunny>
   <afflictiondescription.Hyouibana_Effect_Prefect_Sunny>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Sunny>
+  <afflictionname.Hyouibana_Effect_Prefect_Luna>露娜-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Luna>
+  <afflictiondescription.Hyouibana_Effect_Prefect_Luna>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Luna>
 
   <!--出血效应-->
   <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>记忆材料</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
@@ -1362,6 +1385,7 @@
   <Character.MRE_Material_Koishi>恋的回忆</Character.MRE_Material_Koishi>
   <Character.MRE_Material_Alice>爱丽丝的回忆</Character.MRE_Material_Alice>
   <Character.MRE_Material_Sunny>桑尼的回忆</Character.MRE_Material_Sunny>
+  <Character.MRE_Material_Luna>露娜的回忆</Character.MRE_Material_Luna>
   <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
   <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有10%概率避免那次伤害</talentdescription.MRE_Reimu>
   <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
@@ -1399,7 +1423,9 @@
   <talentname.MRE_Koishi>出血效应-古明地恋</talentname.MRE_Koishi>
   <talentdescription.MRE_Koishi>仅对恋装束+生效。对怪奇电话标记的满血目标额外造成51.4%的伤害</talentdescription.MRE_Koishi>
   <talentname.MRE_Alice>出血效应-爱丽丝</talentname.MRE_Alice>
-  <talentdescription.MRE_Alice>仅对爱丽丝装束+生效。人偶能量超过50%后，召唤人偶会让自身增加30%物理伤害抗性和烧伤抗性</talentdescription.MRE_Alice>
+  <talentdescription.MRE_Alice>仅对爱丽丝装束+生效。人偶能量超过50%后，召唤人偶会让自身增加30%物理伤害抗性和烧伤抗性，持续20秒</talentdescription.MRE_Alice>
   <talentname.MRE_Sunny>出血效应-桑尼·米尔克</talentname.MRE_Sunny>
   <talentdescription.MRE_Sunny>仅对桑尼装束+生效。三月精其他角色的装束效果直接生效</talentdescription.MRE_Sunny>
+  <talentname.MRE_Sunny>出血效应-露娜·切露德</talentname.MRE_Sunny>
+  <talentdescription.MRE_Sunny>仅对露娜装束+生效。击杀任意生物后，会给予自身临时生命值，临时生命值会额外增加最大20%移动速度、攻击速度和技能水平</talentdescription.MRE_Sunny>
 </infotexts>

@@ -1560,7 +1560,7 @@
     <!--出血效应-爱丽丝-->
     <Affliction name="" identifier="MRE_Alice_Effect" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="10"
                 Duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn" minresistance="0.3" maxresistance="0.3" />
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn" minresistance="0.3" maxresistance="0.3" strengthchange="-0.5" />
         <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
@@ -1610,7 +1610,6 @@
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Alice_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
-
 
     <!--桑尼翅膀-->
     <AfflictionHusk
@@ -1665,7 +1664,10 @@
     <!--出血效应-桑尼·米尔克-->
     <Affliction name="" identifier="MRE_Effect_Sunny" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
                 Duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" >
+            <StatValue stattype="SoundRangeMultiplier" value="-0.75" />
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
+        </Effect>
         <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
@@ -1703,5 +1705,85 @@
             <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/The_Grimoire_Of_Usami_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--露娜翅膀-->
+    <AfflictionHusk
+            name="露娜翅膀"
+            identifier="Luna_Wings_Spawn"
+            type="Luna_Wings_Spawn"
+            limbspecific="false"
+            targets="human"
+            huskedspeciesname="[speciesname]Touhou_Tail"
+            indicatorlimb="Torso"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            needsair="true"
+            causespeechimpediment="false"
+            treatmentthreshold="1000"
+            dormantthreshold="0"
+            activethreshold="0"
+            transitionthreshold="1000"
+            transformthresholdondeath="1000"
+            sendmessages="false"
+            maxstrength="10"
+            iconcolors="94,54,95;163,73,164;200,191,231">
+        <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+        <Effect minstrength="0" maxstrength="10" />
+    </AfflictionHusk>
+
+    <!--静谧的月之光-->
+    <Affliction identifier="Tranquil_Light_Of_The_Moon" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
+            <StatValue stattype="SoundRangeMultiplier" value="-0.75" />
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Tranquil_Light_Of_The_Moon.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--露娜-完全凭依-->
+    <Affliction identifier="Hyouibana_Effect_Prefect_Luna" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--凭依露娜-->
+    <Affliction identifier="Hyouibana_Luna_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.05" maxresistance="0.05" >
+            <StatValue stattype="SoundRangeMultiplier" value="-0.35" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--出血效应-露娜·切露德-->
+    <Affliction name="" identifier="MRE_Effect_Luna" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="100"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="100" minspeedmultiplier="1" maxspeedmultiplier="1.2" minvitalitydecrease="0" maxvitalitydecrease="-25"
+                multiplybymaxvitality="false" minskillmultiplier="1" maxskillmultiplier="1.2" strengthchange="-1">
+            <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.2" />
+            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.2" />
+        </Effect>
+        <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--月之光效果-->
+    <Affliction
+            name="月之光"
+            identifier="Light_Of_The_Moon_Effect"
+            type="debuff"
+            limbspecific="false"
+            duration="3"
+            maxstrength="1">
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun,damage" minresistance="-0.2" maxresistance="-0.2" minspeedmultiplier="0.75" maxspeedmultiplier="0.75">
+            <StatusEffect target="Character" >
+                <ParticleEmitter particle="GlowDot" scalemin="1.5" scalemax="3.0" particlespersecond="40" anglemin="0" anglemax="360" colormultiplier="150,150,200,160" />
+            </StatusEffect>
+            <StatValue stattype="RangedAttackSpeed" value="-0.25" />
+            <StatValue stattype="NaturalMeleeAttackMultiplier" value="-0.25" />
+            <StatValue stattype="NaturalRangedAttackMultiplier" value="-0.25" />
+        </Effect>
+        <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
     </Affliction>
 </Afflictions>

@@ -794,7 +794,7 @@
         <PreferredContainer secondary="abandonedmedcab,piratemedcab,wreckmedcab,outpostmedcab,researchcontainer" spawnprobability="0.05"/>
         <PreferredContainer secondary="geneticstorage" amount="1" spawnprobability="0.05" />
         <PreferredContainer secondary="ruinstoragelarge" amount="1" spawnprobability="0.05" />
-        <Price baseprice="10000" sold="false" minleveldifficulty="20" >
+        <Price baseprice="10000" sold="false" minleveldifficulty="30" >
             <Price storeidentifier="merchantcity" sold="true" minavailable="5" maxavailable="10"/>
             <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="10" maxavailable="15" />
         </Price>
@@ -939,8 +939,9 @@
         <Body width="72" height="125" density="10" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Reimu" />
             </StatusEffect>
@@ -1055,8 +1056,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Remilia" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Remilia" />
             </StatusEffect>
@@ -1171,8 +1173,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Marisa" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Marisa" />
             </StatusEffect>
@@ -1287,8 +1290,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Aya" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Aya" />
             </StatusEffect>
@@ -1403,8 +1407,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Youmu" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Youmu" />
             </StatusEffect>
@@ -1519,8 +1524,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Nitori" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Nitori" />
             </StatusEffect>
@@ -1635,8 +1641,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Akyuu" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Akyuu" />
             </StatusEffect>
@@ -1751,8 +1758,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Mokou" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Mokou" />
             </StatusEffect>
@@ -1867,8 +1875,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Patchouli" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Patchouli" />
             </StatusEffect>
@@ -1983,8 +1992,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Tenshi" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Tenshi" />
             </StatusEffect>
@@ -2099,8 +2109,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Momizi" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Momizi" />
             </StatusEffect>
@@ -2215,8 +2226,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Yuka" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Yuka" />
             </StatusEffect>
@@ -2331,8 +2343,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Aunn" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Aunn" />
             </StatusEffect>
@@ -2447,8 +2460,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Flandre" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Flandre" />
             </StatusEffect>
@@ -2563,8 +2577,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Nue" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Nue" />
             </StatusEffect>
@@ -2679,8 +2694,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Piece" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Piece" />
             </StatusEffect>
@@ -2795,8 +2811,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Cirno" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Cirno" />
             </StatusEffect>
@@ -2911,8 +2928,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Koishi" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Koishi" />
             </StatusEffect>
@@ -3027,8 +3045,9 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Alice" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Alice" />
             </StatusEffect>
@@ -3143,10 +3162,128 @@
         <GeneticMaterial nameidentifier="Character.MRE_Material_Sunny" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect type="OnUse" target="UseTarget" delay="0.1" >
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Sunny" />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Holdable>
+    </Item>
+
+    <Item name="" identifier="MRE_Material_Luna" variantof="MRE_Material_Reimu" >
+        <Deconstruct time="5" requireddeconstructor="Alchemy_Table">
+            <!--王国-->
+            <Item identifier="MRE_Material_Luna" maxcondition="0.1" outconditionmin="0.08" outconditionmax="0.13" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" maxcondition="0.1" outconditionmin="0.03" outconditionmax="0.06" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" maxcondition="0.1" outconditionmin="0.03" outconditionmax="0.06" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" maxcondition="0.1" outconditionmin="0.03" outconditionmax="0.06" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" maxcondition="0.1" outconditionmin="0.03" outconditionmax="0.03" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" maxcondition="0.1" outconditionmin="0.03" outconditionmax="0.03" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" maxcondition="0.1" outconditionmin="0.03" outconditionmax="0.03" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" maxcondition="0.1" outconditionmin="0.01" outconditionmax="0.01" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--基底-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.1" maxcondition="0.2" outconditionmin="0.06" outconditionmax="0.1" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.1" maxcondition="0.2" outconditionmin="0.18" outconditionmax="0.23" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.1" maxcondition="0.2" outconditionmin="0.13" outconditionmax="0.16" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.1" maxcondition="0.2" outconditionmin="0.13" outconditionmax="0.16" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.1" maxcondition="0.2" outconditionmin="0.13" outconditionmax="0.16" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.1" maxcondition="0.2" outconditionmin="0.1" outconditionmax="0.13" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.1" maxcondition="0.2" outconditionmin="0.1" outconditionmax="0.13" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.1" maxcondition="0.2" outconditionmin="0.1" outconditionmax="0.13" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--荣耀-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.2" maxcondition="0.3" outconditionmin="0.16" outconditionmax="0.2" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.2" maxcondition="0.3" outconditionmin="0.16" outconditionmax="0.2" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.2" maxcondition="0.3" outconditionmin="0.28" outconditionmax="0.33" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.2" maxcondition="0.3" outconditionmin="0.23" outconditionmax="0.26" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.2" maxcondition="0.3" outconditionmin="0.23" outconditionmax="0.26" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.2" maxcondition="0.3" outconditionmin="0.23" outconditionmax="0.26" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.2" maxcondition="0.3" outconditionmin="0.2" outconditionmax="0.23" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.2" maxcondition="0.3" outconditionmin="0.2" outconditionmax="0.23" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--胜利-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.3" maxcondition="0.4" outconditionmin="0.26" outconditionmax="0.3" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.3" maxcondition="0.4" outconditionmin="0.26" outconditionmax="0.3" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.3" maxcondition="0.4" outconditionmin="0.26" outconditionmax="0.3" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.3" maxcondition="0.4" outconditionmin="0.38" outconditionmax="0.43" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.3" maxcondition="0.4" outconditionmin="0.33" outconditionmax="0.36" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.3" maxcondition="0.4" outconditionmin="0.33" outconditionmax="0.36" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.3" maxcondition="0.4" outconditionmin="0.33" outconditionmax="0.36" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.3" maxcondition="0.4" outconditionmin="0.3" outconditionmax="0.33" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--美丽-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.4" maxcondition="0.5" outconditionmin="0.4" outconditionmax="0.43" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.4" maxcondition="0.5" outconditionmin="0.36" outconditionmax="0.4" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.4" maxcondition="0.5" outconditionmin="0.36" outconditionmax="0.4" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.4" maxcondition="0.5" outconditionmin="0.36" outconditionmax="0.4" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.4" maxcondition="0.5" outconditionmin="0.48" outconditionmax="0.53" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.4" maxcondition="0.5" outconditionmin="0.43" outconditionmax="0.46" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.4" maxcondition="0.5" outconditionmin="0.43" outconditionmax="0.46" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.4" maxcondition="0.5" outconditionmin="0.43" outconditionmax="0.46" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--严厉-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.5" outconditionmax="0.53" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.5" outconditionmax="0.53" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.46" outconditionmax="0.5" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.46" outconditionmax="0.5" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.46" outconditionmax="0.5" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.58" outconditionmax="0.63" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.53" outconditionmax="0.56" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.53" outconditionmax="0.56" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.5" maxcondition="0.6" outconditionmin="0.53" outconditionmax="0.56" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical_Fake" activatebuttontext="Alchemy_Table.Refine09" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--慈悲-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.6" outconditionmax="0.63" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.6" outconditionmax="0.63" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.6" outconditionmax="0.63" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.56" outconditionmax="0.6" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.56" outconditionmax="0.6" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.56" outconditionmax="0.6" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.68" outconditionmax="0.73" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.63" outconditionmax="0.66" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.63" outconditionmax="0.66" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical_Fake" activatebuttontext="Alchemy_Table.Refine09" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.6" maxcondition="0.7" outconditionmin="0.63" outconditionmax="0.66" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical" activatebuttontext="Alchemy_Table.Refine10" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--理解-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.73" outconditionmax="0.76" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.7" outconditionmax="0.73" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.7" outconditionmax="0.73" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.7" outconditionmax="0.7" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.76" outconditionmax="0.7" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.76" outconditionmax="0.7" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.76" outconditionmax="0.7" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.78" outconditionmax="0.83" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.73" outconditionmax="0.76" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical_Fake" activatebuttontext="Alchemy_Table.Refine09" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.7" maxcondition="0.8" outconditionmin="0.73" outconditionmax="0.76" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical" activatebuttontext="Alchemy_Table.Refine10" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--智慧-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.83" outconditionmax="0.86" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.83" outconditionmax="0.86" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.8" outconditionmax="0.83" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.8" outconditionmax="0.83" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.8" outconditionmax="0.83" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.76" outconditionmax="0.8" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.76" outconditionmax="0.8" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.76" outconditionmax="0.8" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.88" outconditionmax="0.93" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical_Fake" activatebuttontext="Alchemy_Table.Refine09" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.8" maxcondition="0.9" outconditionmin="0.83" outconditionmax="0.86" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical" activatebuttontext="Alchemy_Table.Refine10" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <!--王冠-->
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.9" commonness="1" requiredotheritem="Byproduct_Alchemical" activatebuttontext="Alchemy_Table.Refine01" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.9" commonness="1" requiredotheritem="Yin_Alchemical" activatebuttontext="Alchemy_Table.Refine02" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.9" commonness="1" requiredotheritem="Shui_Alchemical" activatebuttontext="Alchemy_Table.Refine03" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.9" commonness="1" requiredotheritem="Jin_Alchemical" activatebuttontext="Alchemy_Table.Refine04" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.9" commonness="1" requiredotheritem="Yang_Alchemical" activatebuttontext="Alchemy_Table.Refine05" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.9" commonness="1" requiredotheritem="Huo_Alchemical" activatebuttontext="Alchemy_Table.Refine06" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.9" commonness="1" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Refine07" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.9" commonness="1" requiredotheritem="Tu_Alchemical" activatebuttontext="Alchemy_Table.Refine08" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.99" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical_Fake" activatebuttontext="Alchemy_Table.Refine09" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+            <Item identifier="MRE_Material_Luna" mincondition="0.9" maxcondition="1" outconditionmin="1" outconditionmax="1" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical" activatebuttontext="Alchemy_Table.Refine10" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
+        </Deconstruct>
+        <GeneticMaterial nameidentifier="Character.MRE_Material_Luna" />
+        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
+                <Conditional MRE_Effect_Flag="eq 0"/>
+                <Conditional Condition="gte 100"/>
+                <GiveTalentInfo giverandom="true"
+                                talentidentifiers="MRE_Luna" />
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
