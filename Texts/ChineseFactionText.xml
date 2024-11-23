@@ -143,6 +143,11 @@
         破壳日第60天
         结果证明，灵气污染对木卫二上的生物拥有无可比拟的破坏力，对人类的危害也相当巨大。无论如何，应该禁止一且与灵气污染有关商品的流通。那些门外汉只会把这些东西都搞砸。必须要在这些东西扩散开之前把污染物全部回收处理。
         人类果然不值得信任</terminalwelcomemsg.Touhou_Wreck04_01>
+    <Touhou_Medical_Toolkit.All>全部药物</Touhou_Medical_Toolkit.All>
+    <Touhou_Medical_Toolkit.AntiDamage>止痛药物</Touhou_Medical_Toolkit.AntiDamage>
+    <Touhou_Medical_Toolkit.AntiBloodloss>输血药物</Touhou_Medical_Toolkit.AntiBloodloss>
+    <Touhou_Medical_Toolkit.AntiBleeding>止血药物</Touhou_Medical_Toolkit.AntiBleeding>
+    <Touhou_Medical_Toolkit.AntiDebuff>魔法药物</Touhou_Medical_Toolkit.AntiDebuff>
 
 
     <!--敌对AI使用-->

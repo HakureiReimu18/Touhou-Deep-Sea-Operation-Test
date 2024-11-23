@@ -1253,7 +1253,7 @@
     当你身着魔力披纱时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖15%‖end‖的概率减少‖color:gui.green‖15%‖end‖的伤害</talentdescription.Gensokyo_Divinggear_Talent>
   <entityname.Luna_gear>‖color:255,225,145,255‖露娜装束‖end‖</entityname.Luna_gear>
   <entitydescription.Luna_gear>她是月光妖精，与桑尼米尔克、斯塔萨菲雅合称为光之三妖精，是光之三妖精中最接近妖怪的。</entitydescription.Luna_gear>
-  <entityname.Luna_Plus>‖color:255,225,145,255‖桑尼装束+‖end‖</entityname.Luna_Plus>
+  <entityname.Luna_Plus>‖color:255,225,145,255‖露娜装束+‖end‖</entityname.Luna_Plus>
   <entitydescription.Luna_Plus>她是月光妖精，与桑尼米尔克、斯塔萨菲雅合称为光之三妖精，是光之三妖精中最接近妖怪的。</entitydescription.Luna_Plus>
   <afflictionname.Tranquil_Light_Of_The_Moon>静谧的月之光</afflictionname.Tranquil_Light_Of_The_Moon>
   <afflictiondescription.Tranquil_Light_Of_The_Moon>她有着一头稻草黄及肩短发，两侧各有三个螺旋状发辫，戴着两侧各系着两个黑色蝴蝶结的白色帽子。</afflictiondescription.Tranquil_Light_Of_The_Moon>
@@ -1269,7 +1269,14 @@
     ‖color:gui.yellow‖日之光‖end‖：减少怪物的攻击伤害，让怪物短时间内降低移动速度和抗性。
   </talentdescription.LunaTalent>
   <entityname.Touhou_Medical_Toolkit>永远亭医疗套件</entityname.Touhou_Medical_Toolkit>
-  <entitydescription.Touhou_Medical_Toolkit>永远亭出品的医疗套件，不仅易于使用，来自永远亭的独特工具也大大增强了治疗效果</entitydescription.Touhou_Medical_Toolkit>
+  <entitydescription.Touhou_Medical_Toolkit>
+    永远亭出品的医疗套件，不仅易于使用，来自永远亭的独特工具也大大增强了治疗效果。
+    需要通过按钮选择消耗的药物和治疗方案。
+    \n不同各位可容纳不同的药物，提供不同的治疗效果：
+    第一格：爆弹石榴精华，吗啡，芬太尼，神效剂
+    第二格：生理盐水，血袋
+    第三格：绷带，可塑人造皮肤，抗生素凝胶
+    第四格：植物精油，欧罗巴浸剂，基列香膏</entitydescription.Touhou_Medical_Toolkit>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>

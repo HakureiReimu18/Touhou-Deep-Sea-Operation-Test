@@ -83,9 +83,22 @@
                 <Conditional TargetContainer="true" condition="gt 0" />
             </StatusEffect>
         </Holdable>
-        <ItemContainer capacity="2" maxstacksize="1" canbeselected="true" hideitems="true" >
+        <ItemContainer capacity="0" maxstacksize="1" canbeselected="true" hideitems="true" >
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <Containable items="loadable,battery" excludeditems="Power_Bank"/>
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="loadable,battery" excludeditems="Power_Bank">
+                    <StatusEffect type="OnContaining" target="This" condition="-0.25">
+                        <Conditional condition="lt 100" />
+                    </StatusEffect>
+                </Containable>
+            </SubContainer>
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="loadable,battery" excludeditems="Power_Bank">
+                    <StatusEffect type="OnContaining" target="This" condition="-0.25">
+                        <Conditional condition="lt 100" />
+                    </StatusEffect>
+                </Containable>
+            </SubContainer>
         </ItemContainer>
     </Item>
 

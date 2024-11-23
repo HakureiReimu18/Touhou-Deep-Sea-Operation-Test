@@ -26,6 +26,7 @@
   </ai>
   <StatusEffect type="OnDeath" target="This" delay="60">
     <SpawnItem identifier="Maoyu_Duffel_Bag" spawnposition="This"  />
+    <DropContainedItems />
     <RemoveCharacter />
   </StatusEffect>
   <inventory Slots="Any,Any,Any" AccessibleWhenAlive="False" Commonness="0.25">
