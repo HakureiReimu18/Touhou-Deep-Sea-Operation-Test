@@ -19,7 +19,7 @@
         <Effect minstrength="0" maxstrength="1">
             <StatValue stattype="AttackMultiplier" value="0.1" />
         </Effect>
-        <Icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" />
     </Affliction>
 
     <!--凭依灵梦-->

@@ -1272,10 +1272,10 @@
   <entitydescription.Touhou_Medical_Toolkit>
     永远亭出品的医疗套件，不仅易于使用，来自永远亭的独特工具也大大增强了治疗效果。
     需要通过按钮选择消耗的药物和治疗方案。
-    \n不同各位可容纳不同的药物，提供不同的治疗效果：
-    第一格：爆弹石榴精华，吗啡，芬太尼，神效剂
-    第二格：生理盐水，血袋
-    第三格：绷带，可塑人造皮肤，抗生素凝胶
+    \n不同各位可容纳不同的药物类型，提供不同的治疗效果：
+    第一格：药用鸦片，爆弹石榴精华，吗啡，芬太尼，或以上药物的套装
+    第二格：生理盐水，血袋，或以上药物的套装
+    第三格：绷带，可塑人造皮肤，或以上药物的套装，抗生素凝胶
     第四格：植物精油，欧罗巴浸剂，基列香膏</entitydescription.Touhou_Medical_Toolkit>
 
   <!--亡羊补牢-->
@@ -1326,7 +1326,7 @@
   <talentdescription.Hyouibana_Sunny>更难被怪物视野锁定，魔法武器远程攻击附加少量烧伤，造成的烧伤伤害增加5%。</talentdescription.Hyouibana_Sunny>
   <talentname.Hyouibana_Luna>凭依露娜</talentname.Hyouibana_Luna>
   <talentdescription.Hyouibana_Sunny>更难被怪物听力锁定，眩晕抗性提高5%，魔法武器远程攻击附加少量眩晕，造成的眩晕伤害增加5%。</talentdescription.Hyouibana_Sunny>
-  <afflictionname.Hyouibana_Luna>灵梦-完全凭依</afflictionname.Hyouibana_Luna>
+  <afflictionname.Hyouibana_Effect_Prefect_Reimu>灵梦-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Reimu>
   <afflictiondescription.Hyouibana_Effect_Prefect_Reimu>攻击伤害增加10%</afflictiondescription.Hyouibana_Effect_Prefect_Reimu>
   <afflictionname.Hyouibana_Effect_Prefect_Remilia>蕾米莉亚-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Remilia>
   <afflictiondescription.Hyouibana_Effect_Prefect_Remilia>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Remilia>

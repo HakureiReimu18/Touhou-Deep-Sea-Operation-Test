@@ -798,6 +798,11 @@
             <Price storeidentifier="merchantcity" sold="true" minavailable="5" maxavailable="10"/>
             <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="10" maxavailable="15" />
         </Price>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="60">
+            <RequiredSkill identifier="Touhou_Magic" level="100" />
+            <RequiredItem tag="MRE_Material" />
+            <RequiredItem tag="Alchemical" />
+        </Fabricate>
         <Deconstruct time="5" chooserandom="true" amount="1" requireddeconstructor="Alchemy_Table">
             <Item identifier="MRE_Material_Reimu" commonness="1" requiredotheritem="Magic_Material" outconditionmin="0.01" outconditionmax="0.01" activatebuttontext="Alchemy_Table.Unlock" infotext="Alchemy_Table.Unlock.Infotext" infotextonotheritemmissing="Alchemy_Table.Unlock.Missingitem" />
             <Item identifier="MRE_Material_Remilia" commonness="1" requiredotheritem="Magic_Material" outconditionmin="0.01" outconditionmax="0.01" activatebuttontext="Alchemy_Table.Unlock" infotext="Alchemy_Table.Unlock.Infotext" infotextonotheritemmissing="Alchemy_Table.Unlock.Missingitem" />

@@ -309,7 +309,6 @@
         </Price>
         <Deconstruct time="10">
             <Item identifier="steel" />
-            <Item identifier="titanium" />
             <Item identifier="plastic" />
             <Item identifier="Reiki_Stone" />
         </Deconstruct>
@@ -367,7 +366,7 @@
             </LightComponent>
             <Fixable identifier="structure" />
         </RepairTool>
-        <ItemContainer autofill="True" capacity="1" maxstacksize="1" hideitems="true" slotsperrow="2" ShowConditionInContainedStateIndicator="true" containedstateindicatorslot="0">
+        <ItemContainer autofill="True" capacity="1" maxstacksize="1" hideitems="true" slotsperrow="2" containedstateindicatorslot="0">
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
             <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5" />
             <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5" />
@@ -1746,7 +1745,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Peace_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1792,7 +1791,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Jin_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Hard_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1838,7 +1837,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Mu_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Soft_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1884,7 +1883,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Warm_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1930,7 +1929,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Yang_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Boiling_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -1976,7 +1975,7 @@
             <RequiredItem identifier="silicon" />
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false" />
             <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" usecondition="false" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Icy_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5" />
         <Body width="28" radius="25" density="10" />
@@ -2009,6 +2008,8 @@
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.04" />
         <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.08" />
+        <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.075" />
+        <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.075" />
         <Price baseprice="400" minavailable="2" sold="false" >
             <Price locationtype="outpost" multiplier="1.2" maxavailable="8" />
             <Price locationtype="city" multiplier="1" maxavailable="16" />
@@ -2051,6 +2052,8 @@
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.04" />
         <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.08" />
+        <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.075" />
+        <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.075" />
         <Price baseprice="400" minavailable="2" sold="false" >
             <Price locationtype="outpost" multiplier="1.2" maxavailable="8" />
             <Price locationtype="city" multiplier="1" maxavailable="16" />
