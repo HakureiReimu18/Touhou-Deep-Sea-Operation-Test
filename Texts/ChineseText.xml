@@ -1168,6 +1168,8 @@
   <entitydescription.Touhou_Alice_Puppet_Suitcase>爱丽丝用于容纳人偶的手提箱，可以保护里面的人偶远离木卫二冰冷的海水。还可以加快人偶能量的恢复。</entitydescription.Touhou_Alice_Puppet_Suitcase>
   <entityname.Touhou_Berry_Wine>红莓酒</entityname.Touhou_Berry_Wine>
   <entitydescription.Touhou_Berry_Wine>妖怪们来到木卫二后，汲取灵感制成的特色酒，可以补充失血，还有缓解毒素的妙用。但一般人类都不胜酒力</entitydescription.Touhou_Berry_Wine>
+  <entityname.Touhou_Tengu_Dance>天狗踊</entityname.Touhou_Tengu_Dance>
+  <entitydescription.Touhou_Tengu_Dance>传说连天狗喝了也会开心地跳舞的美味清酒，但一般人类都不胜酒力，一口便醉。</entitydescription.Touhou_Tengu_Dance>
   <entityname.Touhou_Life_Needle>生命指针</entityname.Touhou_Life_Needle>
   <entitydescription.Touhou_Life_Needle>用于从死亡的敌对个体上采集恐惧，外表看上去却是人畜无害的指针样式。</entitydescription.Touhou_Life_Needle>
   <entityname.Touhou_Tide>潮汐</entityname.Touhou_Tide>

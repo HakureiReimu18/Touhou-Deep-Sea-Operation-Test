@@ -9,7 +9,7 @@
         <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="4" sticktocharacters="true" sticktoitems="false" sticktodoors="false" sticktostructures="true" friendlyfire="false" damagedoors="true">
             <Attack structuredamage="5" itemdamage="10" stun="0.2" targetforce="10" targetimpulse="10" penetration="0.15" severlimbsprobability="0.2">
                 <Affliction identifier="burn" strength="10" />
-                <Affliction identifier="Reiki_Pressure" strength="7" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="stun" strength="1.5" probability="0.3" />
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="0.6">
@@ -47,7 +47,7 @@
         <Projectile characterusable="false" launchimpulse="100" sticktocharacters="true" sticktoitems="false" sticktodoors="false" sticktostructures="true" friendlyfire="false" damagedoors="true">
             <Attack structuredamage="10" itemdamage="5" targetforce="7" targetimpulse="7" penetration="0.25" severlimbsprobability="0.2">
                 <Affliction identifier="lacerations" strength="18" />
-                <Affliction identifier="Reiki_Pressure" strength="6" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="stun" strength="1.2" probability="0.4" />
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="0.5">
@@ -85,7 +85,7 @@
             <Attack structuredamage="50" targetforce="0" itemdamage="2" severlimbsprobability="0.25" penetration="0.25">
                 <Affliction identifier="Sleepless_Nightmare" strength="20" />
                 <Affliction identifier="explosiondamage" strength="30" />
-                <Affliction identifier="Reiki_Pressure" strength="15" />
+                <Affliction identifier="Reiki_Pressure" strength="8" />
                 <Affliction identifier="stun" strength="5" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -115,7 +115,7 @@
             <Attack structuredamage="20" itemdamage="25" targetforce="15" targetimpulse="15" penetration="0.2" severlimbsprobability="0.3">
                 <Affliction identifier="lacerations" strength="10" />
                 <Affliction identifier="bleeding" strength="10" />
-                <Affliction identifier="Reiki_Pressure" strength="15" />
+                <Affliction identifier="Reiki_Pressure" strength="8" />
                 <Affliction identifier="stun" strength="1" probability="0.4" />
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="0.5">
@@ -151,8 +151,8 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" launchimpulse="120" sticktocharacters="true" sticktoitems="false" sticktodoors="false" sticktostructures="true" friendlyfire="false" damagedoors="true">
             <Attack structuredamage="60" itemdamage="50" targetforce="7" targetimpulse="7" penetration="0.1" severlimbsprobability="0.2">
-                <Affliction identifier="burn" strength="15" />
-                <Affliction identifier="Reiki_Pressure" strength="28" />
+                <Affliction identifier="burn" strength="25" />
+                <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="stun" strength="1.5" probability="0.4" />
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="0.5">
@@ -188,7 +188,7 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,50,50,255"/>
             <Attack structuredamage="20" targetforce="0" itemdamage="20" severlimbsprobability="0.25" penetration="0.35">
                 <Affliction identifier="burn" strength="20" />
-                <Affliction identifier="Reiki_Pressure" strength="8" />
+                <Affliction identifier="Reiki_Pressure" strength="6" />
                 <Affliction identifier="stun" strength="1.5" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -228,7 +228,7 @@
                 <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="3" velocitymin="100" velocitymax="2000" scalemin="1.0" scalemax="1.0" />
                 <Explosion range="250.0" ballastfloradamage="100" structuredamage="10" itemdamage="5" force="10.0" severlimbsprobability="0.5" decal="explosion" decalsize="0.3" penetration="0.5">
                     <Affliction identifier="explosiondamage" strength="20" />
-                    <Affliction identifier="Reiki_Pressure" strength="8" />
+                    <Affliction identifier="Reiki_Pressure" strength="4" />
                     <Affliction identifier="hallucinatingshortduration" strength="30" />
                     <Affliction identifier="stun" strength="1" probability="0.6" />
                 </Explosion>
@@ -256,7 +256,7 @@
             <Attack structuredamage="0" itemdamage="0" severlimbsprobability="0.25" penetration="0.1">
                 <Affliction identifier="bleeding" strength="5" />
                 <Affliction identifier="lacerations" strength="15" />
-                <Affliction identifier="Reiki_Pressure" strength="10" />
+                <Affliction identifier="Reiki_Pressure" strength="5" />
                 <Affliction identifier="Sleepless_Nightmare" strength="10" probability="0.4" />
                 <Affliction identifier="stun" strength="0.2" />
             </Attack>
@@ -293,7 +293,7 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="55,55,255,255"/>
             <Attack structuredamage="10" targetforce="0" itemdamage="20" severlimbsprobability="0.25" penetration="0.5">
                 <Affliction identifier="Psychosis" strength="10" />
-                <Affliction identifier="Reiki_Pressure" strength="20" />
+                <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="stun" strength="0.75" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -554,7 +554,7 @@
             <Attack structuredamage="10" itemdamage="50" targetforce="5" targetimpulse="5" penetration="0.2">
                 <Affliction identifier="blunttrauma" strength="7" />
                 <Affliction identifier="burn" strength="7" />
-                <Affliction identifier="Reiki_Pressure" strength="12" />
+                <Affliction identifier="Reiki_Pressure" strength="6" />
                 <Affliction identifier="slow" strength="15" />
                 <Affliction identifier="Sleepless_Nightmare" strength="10" />
                 <Affliction identifier="Touhou_Rippling_Effect" strength="5" />
@@ -588,7 +588,7 @@
         <Projectile characterusable="false" launchimpulse="80" maxtargetstohit="4" damagedoors="true" friendlyfire="false" >
             <Attack structuredamage="25" itemdamage="50" targetforce="50" targetimpulse="50" penetration="0.25">
                 <Affliction identifier="blunttrauma" strength="25" />
-                <Affliction identifier="Reiki_Pressure" strength="20" />
+                <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="slow" strength="15" />
                 <Affliction identifier="Sleepless_Nightmare" strength="20" />
                 <Affliction identifier="Touhou_Rippling_Effect" strength="5" />

@@ -2255,7 +2255,7 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
             </Abilities>
         </AbilityGroupEffect>
-        <AddedRecipe itemidentifier="Touhou_Tengu_Sake" />
+        <AddedRecipe itemidentifier="Touhou_Tengu_Dance" />
     </Talent>
 
     <!--同伴意识 对友军造成的伤害减少15%。有船员失去意识时，提高周围船员的20%的debuff抗性，自己使用医疗物品的效果增加15%-->

@@ -192,12 +192,26 @@
             resistancefor="alieninfection"
             minresistance="0"
             maxresistance="0.2">
+      <StatusEffect target="Character" Interval="1.0" disabledeltatime="true"  >
+        <ReduceAffliction type="damage" amount="0.05" />
+        <ReduceAffliction type="Aura_Strip" amount="0.6" />
+        <ReduceAffliction type="bleeding" amount="0.25" />
+        <ReduceAffliction type="burn" amount="0.8" />
+        <ReduceAffliction type="Phoenix_Burn" amount="0.6" />
+      </StatusEffect>
     </Effect>
     <Effect minstrength="40" maxstrength="120"
             strengthchange="-1"
             resistancefor="alieninfection"
             minresistance="0.2"
             maxresistance="0.4">
+      <StatusEffect target="Character" Interval="1.0" disabledeltatime="true"  >
+        <ReduceAffliction type="damage" amount="0.1" />
+        <ReduceAffliction type="Aura_Strip" amount="1.2" />
+        <ReduceAffliction type="bleeding" amount="0.5" />
+        <ReduceAffliction type="burn" amount="1.6" />
+        <ReduceAffliction type="Phoenix_Burn" amount="1" />
+      </StatusEffect>
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Essential_Oil_Application.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
@@ -210,28 +224,42 @@
             strengthchange="-1"
             resistancefor="damage,burn"
             minresistance="0" maxresistance="-0.05">
-      <StatValue stattype="MaximumHealthMultiplier" value="0.15" />
-      <StatusEffect target="Character" comparison="Or" Interval="1.0" Duration="1.0" >
+      <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="0.05" />
+      <StatusEffect target="Character" Interval="1.0" Duration="1.0" >
         <Conditional Patchouli_Asthma="gt 0"/>
-        <Conditional Reiki_Side_Effect="gt 0"/>
-        <ReduceAffliction type="Reiki_Side_Effect" amount="0.06" />
         <ReduceAffliction type="Patchouli_Asthma" amount="0.15" />
-        <ReduceAffliction type="gaze" amount="1" />
+      </StatusEffect>
+      <StatusEffect target="Character" Interval="1.0" disabledeltatime="true"  >
+        <ReduceAffliction type="damage" amount="0.5" />
+        <ReduceAffliction type="bleeding" amount="0.4" />
+        <ReduceAffliction type="infection" amount="0.4" />
+        <ReduceAffliction type="burn" amount="0.45" />
+        <ReduceAffliction type="Phoenix_Burn" amount="1" />
+        <ReduceAffliction type="nausea" amount="1" />
+        <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="2" />
+        <ReduceAffliction identifier="Touhou_Silent_Selene_Dream" amount="2" />
       </StatusEffect>
     </Effect>
     <Effect minstrength="120" maxstrength="360"
             strengthchange="-1"
             resistancefor="damage,burn"
             minresistance="-0.05" maxresistance="-0.1">
-      <StatValue stattype="MaximumHealthMultiplier" value="0.15" />
-      <StatusEffect target="Character" comparison="Or" Interval="1.0" Duration="1.0" >
+      <StatValue stattype="MaximumHealthMultiplier" minvalue="0.05" maxvalue="0.1" />
+      <StatusEffect target="Character" Interval="1.0" Duration="1.0" >
         <Conditional Patchouli_Asthma="gt 0"/>
         <Conditional psychosis="gt 0"/>
-        <Conditional Reiki_Side_Effect="gt 0"/>
-        <ReduceAffliction type="psychosis" amount="1.5" />
-        <ReduceAffliction type="Reiki_Side_Effect" amount="0.12" />
+        <ReduceAffliction type="psychosis" amount="1.0" />
         <ReduceAffliction type="Patchouli_Asthma" amount="0.3" />
-        <ReduceAffliction type="gaze" amount="2" />
+      </StatusEffect>
+      <StatusEffect target="Character" Interval="1.0" disabledeltatime="true"  >
+        <ReduceAffliction type="damage" amount="1.0" />
+        <ReduceAffliction type="bleeding" amount="0.8" />
+        <ReduceAffliction type="infection" amount="0.8" />
+        <ReduceAffliction type="burn" amount="0.9" />
+        <ReduceAffliction type="Phoenix_Burn" amount="2" />
+        <ReduceAffliction type="nausea" amount="2" />
+        <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="4" />
+        <ReduceAffliction identifier="Touhou_Silent_Selene_Dream" amount="4" />
       </StatusEffect>
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Essential_Oil_Application.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -1484,7 +1512,7 @@
   <!--被厌恶者的哲学-->
   <Affliction name="被厌恶者的哲学" identifier="Touhou_Strange_Phone_Effect" type="debuff" limbspecific="false" indicatorlimb="Torso" maxstrength="1"
                affectmachines="true" duration="30.0" iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1" resistancefor="damage,debuff,stun" minresistance="-0.35" maxresistance="-0.35">
+    <Effect minstrength="0" maxstrength="1" resistancefor="damage,debuff,stun" minresistance="-0.2" maxresistance="-0.2">
       <StatValue stattype="MovementSpeed" value="-0.05" />
       <StatValue stattype="AttackMultiplier" value="-0.05" />
       <StatusEffect target="Character">
@@ -1746,6 +1774,9 @@
           <Affliction identifier="explosiondamage" strength="10" />
         </Explosion>
       </StatusEffect>
+      <StatusEffect target="Character" >
+        <ParticleEmitter particle="flameburningcharacter" DistanceMin="0" DistanceMax="30" ParticlesPerSecond="120" AngleMin="60" AngleMax="120" VelocityMax="20" colormultiplier="255,100,255,255"/>
+      </StatusEffect>
     </Effect>
     <PeriodicEffect mininterval="1.5" maxinterval="3">
       <StatusEffect target="Character">
@@ -1782,51 +1813,6 @@
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="40,40,40,255" origin="0,0"/>
   </Affliction>
 
-  <!--凭依第一阶段-->
-  <Affliction
-          name="凭依第一阶段"
-          identifier="Hyouibana_Effect_Flag01"
-          description=""
-          type="Hyouibana_Effect_Flag"
-          isbuff="true"
-          limbspecific="false"
-          indicatorlimb="Torso"
-          maxstrength="1"
-          iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1" />
-    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="40,40,40,255" origin="0,0"/>
-  </Affliction>
-
-  <!--凭依第二阶段-->
-  <Affliction
-          name="凭依第二阶段"
-          identifier="Hyouibana_Effect_Flag02"
-          description=""
-          type="Hyouibana_Effect_Flag"
-          isbuff="true"
-          limbspecific="false"
-          indicatorlimb="Torso"
-          maxstrength="1"
-          iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1" />
-    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="100,100,100,255" origin="0,0"/>
-  </Affliction>
-
-  <!--凭依第三阶段-->
-  <Affliction
-          name="凭依第三阶段"
-          identifier="Hyouibana_Effect_Flag03"
-          description=""
-          type="Hyouibana_Effect_Flag"
-          isbuff="true"
-          limbspecific="false"
-          indicatorlimb="Torso"
-          maxstrength="1"
-          iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1" />
-    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="150,150,150,255" origin="0,0"/>
-  </Affliction>
-
   <!--完全凭依-->
   <Affliction
           name="完全凭依"
@@ -1853,6 +1839,8 @@
           isbuff="true"
           limbspecific="false"
           indicatorlimb="Torso"
+          showiconthreshold="1000"
+          showinhealthscannerthreshold="1000"
           maxstrength="100"
           iconcolors="94,94,94;163,164,164;255,255,255">
     <Effect minstrength="0" maxstrength="100" strengthchange="-2" />

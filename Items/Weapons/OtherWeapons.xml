@@ -23,8 +23,7 @@
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="15">
             <RequiredSkill identifier="weapons" level="40" />
-            <RequiredSkill identifier="mechanical" level="40" />
-            <RequiredSkill identifier="medical" level="40" />
+            <RequiredSkill identifier="Touhou_Magic" level="40" />
             <RequiredItem identifier="Reiki_Stone" amount="2"/>
             <RequiredItem identifier="dementonite" amount="2"/>
             <RequiredItem identifier="Magic_Material" />

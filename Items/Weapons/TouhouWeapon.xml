@@ -519,8 +519,7 @@
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="15">
             <RequiredSkill identifier="weapons" level="40" />
-            <RequiredSkill identifier="mechanical" level="40" />
-            <RequiredSkill identifier="medical" level="40" />
+            <RequiredSkill identifier="Touhou_Magic" level="40" />
             <RequiredItem identifier="organicfiber" amount="4"/>
             <RequiredItem identifier="Magic_Material" />
         </Fabricate>
@@ -4681,6 +4680,7 @@
                 <Conditional IsDead="false" />
                 <Affliction identifier="Touhou_Strange_Phone_Effect" amount="10" />
             </StatusEffect>
+            <StatusEffect type="OnSpawn" target="This" Condition="100" disabledeltatime="true" />
             <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="15" stackable="false" />
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Weapons/Touhou_Strange_Phone_Sound_End.ogg" type="OnUse" range="500.0" loop="false" />
@@ -5187,7 +5187,7 @@
         <Body width="20" height="90" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" >
             <StatusEffect type="OnBroken" target="This" condition="1" setvalue="true" disabledeltatime="true" />
-            <StatusEffect type="Always" target="This" condition="5" Interval="5" disabledeltatime="true" />
+            <StatusEffect type="Always" target="This" condition="1" Interval="5" disabledeltatime="true" />
         </Holdable>
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Alice_Magic_Book_Bolt" removecontaineditemsondeconstruct="true"
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">

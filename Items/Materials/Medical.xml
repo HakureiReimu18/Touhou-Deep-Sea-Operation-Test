@@ -45,28 +45,10 @@
             <RequiredSkill identifier="medical" level="42" />
             <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
             <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" duration="120" comparison="And" >
-                <Conditional Essential_Oil_Application="lt 40"/>
-                <Conditional Potion_In_Effect="eq 0"/>
-                <ReduceAffliction type="damage" amount="0.1" />
-                <ReduceAffliction type="gaze" amount="0.6" />
-                <ReduceAffliction type="bleeding" amount="0.5" />
-                <ReduceAffliction type="burn" amount="1.6" />
-                <ReduceAffliction type="Phoenix_Burn" amount="1" />
-            </StatusEffect>
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" >
                 <Affliction identifier="Essential_Oil_Application" amount="120" />
                 <Affliction identifier="Reiki_Side_Effect" amount="2" />
                 <ReduceAffliction identifier="Potion_In_Effect" amount="600" />
-            </StatusEffect>
-            <StatusEffect tags="medical" type="OnFailure" target="UseTarget" duration="40" comparison="And" >
-                <Conditional Essential_Oil_Application="lt 40"/>
-                <Conditional Potion_In_Effect="eq 0"/>
-                <ReduceAffliction type="damage" amount="0.05" />
-                <ReduceAffliction type="gaze" amount="0.3" />
-                <ReduceAffliction type="bleeding" amount="0.25" />
-                <ReduceAffliction type="burn" amount="0.8" />
-                <ReduceAffliction type="Phoenix_Burn" amount="0.5" />
             </StatusEffect>
             <StatusEffect tags="medical" type="OnFailure" target="UseTarget" >
                 <Affliction identifier="Essential_Oil_Application" amount="40" />
@@ -140,36 +122,13 @@
             <RequiredSkill identifier="medical" level="80" />
             <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
             <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" comparison="And" duration="360">
-                <Conditional Potion_In_Effect="lte 100"/>
-                <Conditional Essential_Oil_Application="eq 0"/>
-                <ReduceAffliction type="damage" amount="1.0" />
-                <ReduceAffliction type="bleeding" amount="0.8" />
-                <ReduceAffliction type="infection" amount="0.8" />
-                <ReduceAffliction type="burn" amount="0.9" />
-                <ReduceAffliction type="Phoenix_Burn" amount="2" />
-                <ReduceAffliction type="nausea" amount="2" />
-                <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="4" />
-                <ReduceAffliction identifier="Touhou_Silent_Selene_Dream" amount="4" />
-            </StatusEffect>
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Potion_In_Effect" amount="600" />
                 <Affliction identifier="Reiki_Side_Effect" amount="3" />
-                <Affliction identifier="strengthen" amount="360" />
+                <Affliction identifier="strengthen" amount="300" />
                 <ReduceAffliction identifier="stun" amount="100" />
                 <Affliction identifier="chemaddiction" amount="6" />
                 <ReduceAffliction identifier="Essential_Oil_Application" amount="240" />
-            </StatusEffect>
-            <StatusEffect tags="medical" type="OnFailure" target="UseTarget" comparison="And" duration="120">
-                <Conditional Potion_In_Effect="lte 100"/>
-                <Conditional Essential_Oil_Application="eq 0"/>
-                <ReduceAffliction type="damage" amount="0.5" />
-                <ReduceAffliction type="bleeding" amount="0.35" />
-                <ReduceAffliction type="infection" amount="0.35" />
-                <ReduceAffliction type="burn" amount="0.35" />
-                <ReduceAffliction type="nausea" amount="1" />
-                <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="2" />
-                <ReduceAffliction identifier="Touhou_Silent_Selene_Dream" amount="2" />
             </StatusEffect>
             <StatusEffect tags="medical" type="OnFailure" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Potion_In_Effect" amount="120" />
@@ -955,17 +914,17 @@
         <Holdable slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" >
             <RequiredSkill identifier="medical" level="40" />
 
-            <StatusEffect type="Always" target="This" Condition="1">
+            <StatusEffect type="Always" target="This" Condition="2.5" Interval="5">
                 <Conditional condition="gt 0" />
             </StatusEffect>
-            <StatusEffect type="OnBroken" target="This" Condition="5" disabledeltatime="true" delay="8" setvalue="true" />
+            <StatusEffect type="OnBroken" target="This" Condition="5" disabledeltatime="true" delay="20" setvalue="true" />
 
             <!--使用消耗耐久-->
-            <StatusEffect type="OnUse" target="This" condition="-10">
+            <StatusEffect type="OnUse" target="This" condition="-6">
                 <RequiredItem items="opium,antidama1,antidama2,pomegrenadeextract,antibloodloss1,antibloodloss2,
                 antibleeding1,antibleeding2,antibleeding3,Plant_Essential_Oil,Europa_Infusion,Balm_Of_Gilead" type="Contained" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" condition="-30">
+            <StatusEffect type="OnUse" target="This" condition="-18">
                 <RequiredItem items="opium,antidama1,antidama2,pomegrenadeextract,antibloodloss1,antibloodloss2,
                 antibleeding1,antibleeding2,antibleeding3,Plant_Essential_Oil,Europa_Infusion,Balm_Of_Gilead" type="Contained" />
                 <Conditional Hastag="eq Medical_Toolkit_All"/>
@@ -977,7 +936,7 @@
                 <Conditional Hastag="eq Medical_Toolkit_AntiDamage"/>
                 <Conditional Hastag="eq Medical_Toolkit_All"/>
                 <ReduceAffliction type="damage" amount="1" />
-                <Affliction identifier="chemaddiction" amount="1" />
+                <Affliction identifier="chemaddiction" amount="0.3" />
                 <Affliction identifier="oxygenlow" amount="2" />
             </StatusEffect>
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="10">
@@ -985,7 +944,7 @@
                 <Conditional Hastag="eq Medical_Toolkit_AntiDamage"/>
                 <Conditional Hastag="eq Medical_Toolkit_All"/>
                 <ReduceAffliction type="damage" amount="2" />
-                <Affliction identifier="chemaddiction" amount="1" />
+                <Affliction identifier="chemaddiction" amount="0.6" />
                 <Affliction identifier="opiateaddiction" amount="1" />
                 <Affliction identifier="opiateoverdose" amount="1" />
                 <Affliction identifier="oxygenlow" amount="2" />
@@ -1017,8 +976,8 @@
             <!--输血药物使用-->
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="10">
                 <RequiredItem items="antibloodloss1" type="Contained" targetslot="1" />
-                <Conditional Hastag="eq Medical_Toolkit_AntiBloodloss" TargetContainer="true"/>
-                <Conditional Hastag="eq Medical_Toolkit_All" TargetContainer="true"/>
+                <Conditional Hastag="eq Medical_Toolkit_AntiBloodloss" />
+                <Conditional Hastag="eq Medical_Toolkit_All" />
                 <ReduceAffliction type="bloodloss" amount="3" />
             </StatusEffect>
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="10">
@@ -1153,8 +1112,8 @@
                 <RequiredItem items="Balm_Of_Gilead" type="Contained" targetslot="3" />
                 <Conditional Hastag="eq Medical_Toolkit_AntiDebuff"/>
                 <Conditional Hastag="eq Medical_Toolkit_All"/>
-                <ReduceAffliction type="damage" amount="0.5" />
-                <ReduceAffliction type="burn" amount="0.5" />
+                <ReduceAffliction type="damage" amount="1.5" />
+                <ReduceAffliction type="burn" amount="1.5" />
                 <ReduceAffliction type="Phoenix_Burn" amount="5" />
                 <ReduceAffliction type="invertcontrols" amount="2" />
                 <ReduceAffliction type="bleeding" amount="1" />
@@ -1174,7 +1133,7 @@
             </StatusEffect>
 
         </Holdable>
-        <ItemContainer capacity="0" hideitems="true" slotsperrow="2" KeepOpenWhenEquipped="true" MovableFrame="true">
+        <ItemContainer capacity="0" hideitems="true" slotsperrow="2" >
             <Containable identifiers="medical" />
             <SlotIcon slotindex="0" texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit_Indicator.png" sourcerect="0,0,46,53" origin="0.5,0.5" />
             <SlotIcon slotindex="1" texture="%ModDir%/Images/Materials/Touhou_Medical_Toolkit_Indicator.png" sourcerect="46,0,34,57" origin="0.5,0.5" />
@@ -1201,7 +1160,11 @@
           health="1600" scale="0.25" >
         <Sprite texture="%ModDir%/Images/Materials/Medical_Toolkit_AntiDamage_Opium_Toolkit.png" sourcerect="0,0,120,100" depth="0.5" origin="0.5,0.5" />
         <Body width="48" height="48" density="10" />
-        <Pickable slots="Any" />
+        <Pickable slots="Any" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="5">
             <RequiredSkill identifier="Medical" level="40" />
             <RequiredItem identifier="opium" amount="16" />
@@ -1213,7 +1176,11 @@
           category="medical" health="400" scale="0.25" >
         <Sprite texture="%ModDir%/Images/Materials/Medical_Toolkit_AntiDamage_Pomegrenadeextract_Toolkit.png" sourcerect="0,0,120,100" depth="0.5" origin="0.5,0.5" />
         <Body width="48" height="48" density="10" />
-        <Pickable slots="Any" />
+        <Pickable slots="Any" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="5">
             <RequiredSkill identifier="Medical" level="40" />
             <RequiredItem identifier="pomegrenadeextract" amount="4" />
@@ -1225,7 +1192,11 @@
           health="1600" scale="0.25" >
         <Sprite texture="%ModDir%/Images/Materials/Medical_Toolkit_AntiDamage_Antidama1_Toolkit.png" sourcerect="0,0,120,100" depth="0.5" origin="0.5,0.5" />
         <Body width="48" height="48" density="10" />
-        <Pickable slots="Any" />
+        <Pickable slots="Any" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="5">
             <RequiredSkill identifier="Medical" level="40" />
             <RequiredItem identifier="antidama1" amount="16" />
@@ -1237,7 +1208,11 @@
           health="1200" scale="0.25" >
         <Sprite texture="%ModDir%/Images/Materials/Medical_Toolkit_AntiDamage_Antidama2_Toolkit.png" sourcerect="0,0,120,100" depth="0.5" origin="0.5,0.5" />
         <Body width="48" height="48" density="10" />
-        <Pickable slots="Any" />
+        <Pickable slots="Any" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="5">
             <RequiredSkill identifier="Medical" level="40" />
             <RequiredItem identifier="antidama2" amount="12" />
@@ -1249,7 +1224,11 @@
           health="1600" scale="0.25" >
         <Sprite texture="%ModDir%/Images/Materials/Medical_Toolkit_AntiBloodloss1_Toolkit.png" sourcerect="0,0,120,100" depth="0.5" origin="0.5,0.5" />
         <Body width="48" height="48" density="10" />
-        <Pickable slots="Any" />
+        <Pickable slots="Any" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="5">
             <RequiredSkill identifier="Medical" level="40" />
             <RequiredItem identifier="antibloodloss1" amount="16" />
@@ -1261,7 +1240,11 @@
           health="1200" scale="0.25" >
         <Sprite texture="%ModDir%/Images/Materials/Medical_Toolkit_AntiBloodloss2_Toolkit.png" sourcerect="0,0,120,100" depth="0.5" origin="0.5,0.5" />
         <Body width="48" height="48" density="10" />
-        <Pickable slots="Any" />
+        <Pickable slots="Any" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="5">
             <RequiredSkill identifier="Medical" level="40" />
             <RequiredItem identifier="antibloodloss2" amount="12" />
@@ -1273,7 +1256,11 @@
           health="3200" scale="0.25" >
         <Sprite texture="%ModDir%/Images/Materials/Medical_Toolkit_Antibleeding1_Toolkit.png" sourcerect="0,0,120,100" depth="0.5" origin="0.5,0.5" />
         <Body width="48" height="48" density="10" />
-        <Pickable slots="Any" />
+        <Pickable slots="Any" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="5">
             <RequiredSkill identifier="Medical" level="40" />
             <RequiredItem identifier="antibleeding1" amount="32" />
@@ -1285,7 +1272,11 @@
           health="2400" scale="0.25" >
         <Sprite texture="%ModDir%/Images/Materials/Medical_Toolkit_Antibleeding2_Toolkit.png" sourcerect="0,0,120,100" depth="0.5" origin="0.5,0.5" />
         <Body width="48" height="48" density="10" />
-        <Pickable slots="Any" />
+        <Pickable slots="Any" >
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Pickable>
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="5">
             <RequiredSkill identifier="Medical" level="40" />
             <RequiredItem identifier="antibleeding2" amount="24" />

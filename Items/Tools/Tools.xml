@@ -1722,7 +1722,6 @@
             subcategory="Touhou"
             maxstacksize="32"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Peace_Hooked_Jade"
-            canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
@@ -1768,7 +1767,6 @@
             subcategory="Touhou"
             maxstacksize="32"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Hard_Hooked_Jade"
-            canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
@@ -1814,7 +1812,6 @@
             subcategory="Touhou"
             maxstacksize="32"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Soft_Hooked_Jade"
-            canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
@@ -1860,7 +1857,6 @@
             subcategory="Touhou"
             maxstacksize="32"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Warm_Hooked_Jade"
-            canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
@@ -1906,7 +1902,6 @@
             subcategory="Touhou"
             maxstacksize="32"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Boiling_Hooked_Jade"
-            canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
@@ -1952,7 +1947,6 @@
             subcategory="Touhou"
             maxstacksize="32"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Icy_Hooked_Jade"
-            canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
@@ -1998,11 +1992,10 @@
             subcategory="Touhou"
             maxstacksize="32"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_White_Hooked_Jade"
-            canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
-            condition="200"
+            health="200"
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>
@@ -2042,11 +2035,10 @@
             subcategory="Touhou"
             maxstacksize="32"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Black_Hooked_Jade"
-            canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
-            condition="200"
+            health="200"
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>

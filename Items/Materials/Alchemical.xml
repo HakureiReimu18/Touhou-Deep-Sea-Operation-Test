@@ -800,7 +800,7 @@
         </Price>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="60">
             <RequiredSkill identifier="Touhou_Magic" level="100" />
-            <RequiredItem tag="MRE_Material" />
+            <RequiredItem tag="MRE_Material" mincondition="0.01" usecondition="false" />
             <RequiredItem tag="Alchemical" />
         </Fabricate>
         <Deconstruct time="5" chooserandom="true" amount="1" requireddeconstructor="Alchemy_Table">
