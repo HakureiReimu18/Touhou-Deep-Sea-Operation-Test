@@ -907,7 +907,7 @@
         <PreferredContainer primary="medcab" amount="1" spawnprobability="0.03" />
         <PreferredContainer secondary="outpostmedcab" amount="1" spawnprobability="0.03" />
         <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.03" />
-        <Price baseprice="3000" >
+        <Price baseprice="4500" minleveldifficulty="25" >
             <Price storeidentifier="merchantoutpost" minavailable="2" sold="false"/>
             <Price storeidentifier="merchantcity" minavailable="2" />
             <Price storeidentifier="merchantresearch" minavailable="2" />
@@ -1008,7 +1008,7 @@
             </StatusEffect>
             <!--意外发现，如果有tags的medical的话，在健康界面使用才能触发下放SE，否则是不生效的-->
             <StatusEffect tags="medical" type="OnUse" disabledeltatime="true" target="Contained" targetslot="0" condition="-100" >
-                <RequiredItem items="antidama1,antidama2,pomegrenadeextract" type="Contained" targetslot="0" />
+                <RequiredItem items="opium,antidama1,antidama2,pomegrenadeextract" type="Contained" targetslot="0" />
                 <Conditional Hastag="eq Medical_Toolkit_AntiDamage" TargetContainer="true"/>
                 <Conditional Hastag="eq Medical_Toolkit_All" TargetContainer="true"/>
                 <Sound file="Content/Items/Medical/Syringe.ogg" range="500" />
@@ -1096,15 +1096,17 @@
             </StatusEffect>
 
             <!--魔法药物使用-->
-            <StatusEffect tags="medical" type="OnSuccess" target="Limb,This" duration="30">
+            <StatusEffect tags="medical" type="OnSuccess" target="Limb,This" duration="20">
                 <RequiredItem items="Plant_Essential_Oil" type="Contained" targetslot="3" />
                 <Conditional Hastag="eq Medical_Toolkit_AntiDebuff"/>
                 <Conditional Hastag="eq Medical_Toolkit_All"/>
                 <ReduceAffliction type="damage" amount="0.5" />
                 <ReduceAffliction type="bleeding" amount="1.0" />
                 <ReduceAffliction type="burn" amount="1.5" />
+                <ReduceAffliction type="debuff" amount="0.1" />
+                <Affliction identifier="chemaddiction" amount="0.15" />
             </StatusEffect>
-            <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="60">
+            <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="40">
                 <RequiredItem items="Europa_Infusion" type="Contained" targetslot="3" />
                 <Conditional Hastag="eq Medical_Toolkit_AntiDebuff"/>
                 <Conditional Hastag="eq Medical_Toolkit_All"/>
@@ -1116,6 +1118,8 @@
                 <ReduceAffliction type="nausea" amount="4" />
                 <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="6" />
                 <ReduceAffliction identifier="Touhou_Silent_Selene_Dream" amount="6" />
+                <ReduceAffliction type="debuff" amount="0.1" />
+                <Affliction identifier="chemaddiction" amount="0.15" />
             </StatusEffect>
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="2">
                 <RequiredItem items="Europa_Infusion" type="Contained" targetslot="3" />
@@ -1128,7 +1132,7 @@
                 <RequiredItem items="Balm_Of_Gilead" type="Contained" targetslot="3" />
                 <Conditional Hastag="eq Medical_Toolkit_AntiDebuff"/>
                 <Conditional Hastag="eq Medical_Toolkit_All"/>
-                <ReduceAffliction type="damage" amount="15" />
+                <ReduceAffliction type="damage" amount="10" />
                 <ReduceAffliction type="burn" amount="20" />
                 <ReduceAffliction type="Phoenix_Burn" amount="40" />
                 <ReduceAffliction type="invertcontrols" amount="25" />
@@ -1136,7 +1140,7 @@
                 <ReduceAffliction type="infection" amount="25" />
                 <ReduceAffliction type="nausea" amount="20" />
             </StatusEffect>
-            <StatusEffect tags="medical" type="OnSuccess" target="Limb,This" duration="2">
+            <StatusEffect tags="medical" type="OnSuccess" target="UseTarget,This" duration="2">
                 <RequiredItem items="Balm_Of_Gilead" type="Contained" targetslot="3" />
                 <Conditional Hastag="eq Medical_Toolkit_AntiDebuff"/>
                 <Conditional Hastag="eq Medical_Toolkit_All"/>
