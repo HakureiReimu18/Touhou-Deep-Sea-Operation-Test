@@ -306,27 +306,27 @@
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="0.5" maxinterval="1.5">
-      <StatusEffect target="Character">
+      <StatusEffect target="Limb" targetlimb="Torso">
         <ParticleEmitter particle="weldspark" particleamount="7" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,72,36,180" />
         <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.2" particlespersecond="60" anglemin="0" anglemax="360" colormultiplier="204,195,141,180" />
-        <Affliction identifier="burn" amount="0.4"/>
+        <Affliction identifier="burn" amount="2"/>
         <Affliction identifier="burn" amount="3" probability="0.1"/>
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="0.5" maxinterval="1.5" minstrength="15" maxstrength="100">
-      <StatusEffect target="Character">
+      <StatusEffect target="Limb" targetlimb="Torso">
         <ParticleEmitter particle="weldspark" particleamount="7" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,72,36,180" />
         <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.2" particlespersecond="60" anglemin="0" anglemax="360" colormultiplier="204,195,141,180" />
-        <Affliction identifier="bleeding" amount="0.4"/>
+        <Affliction identifier="bleeding" amount="2"/>
         <Affliction identifier="bleeding" amount="3" probability="0.1"/>
         <Affliction identifier="bloodloss" amount="3" probability="0.1"/>
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="0.5" maxinterval="1.5" minstrength="30" maxstrength="100">
-      <StatusEffect target="Character">
+      <StatusEffect target="Limb" targetlimb="Torso">
         <ParticleEmitter particle="weldspark" particleamount="7" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,72,36,180" />
         <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.2" particlespersecond="60" anglemin="0" anglemax="360" colormultiplier="204,195,141,180" />
-        <Affliction identifier="internaldamage" amount="0.4"/>
+        <Affliction identifier="internaldamage" amount="2"/>
         <Affliction identifier="internaldamage" amount="3" probability="0.1"/>
         <Affliction identifier="organdamage" amount="0.4"/>
         <Affliction identifier="organdamage" amount="3" probability="0.1"/>
