@@ -225,9 +225,9 @@
             maxstrength="10"
             hideiconafterdelay="true"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="1.0" maxresistance="1.0" minskillmultiplier="1.5" maxskillmultiplier="1.5" strengthchange="-1" >
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun,sym_unconsciousness" minresistance="1.0" maxresistance="1.0" minskillmultiplier="1.5" maxskillmultiplier="1.5" strengthchange="-1" >
             <StatusEffect target="Character">
-                <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="5" anglemin="0" anglemax="360" ColorMultiplier="255,55,205,255"
+                <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="3" anglemin="0" anglemax="360" ColorMultiplier="255,55,205,255"
                                  velocitymin="100" velocitymax="250" scalemin="0.2" scalemax="0.3" drawontop="true" />
             </StatusEffect>
             <AbilityFlag flagtype="AlwaysStayConscious" />
@@ -841,7 +841,7 @@
             hideiconafterdelay="true"
             duration="10.9"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="1.0" maxresistance="1.0" >
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun,sym_unconsciousness" minresistance="1.0" maxresistance="1.0" >
             <AbilityFlag flagtype="AlwaysStayConscious" />
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>

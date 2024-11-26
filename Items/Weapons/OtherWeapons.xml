@@ -1880,7 +1880,8 @@
 
 
     <!--糖衣炮弹-->
-    <Item name="糖衣炮弹" identifier="Touhou_Sugar_Coated_Cannonball" tags="smallitem,Touhou_Candy_Cannon_Ammo" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" scale="0.4">
+    <Item name="糖衣炮弹" identifier="Touhou_Sugar_Coated_Cannonball" tags="smallitem,Touhou_Candy_Cannon_Ammo" subcategory="Touhou" category="Weapon"
+          maxstacksize="8" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" scale="0.4">
         <PreferredContainer primary="armcab" secondary="secarmcab"/>
         <Price baseprice="1000" sold="false">
             <Price locationtype="outpost" multiplier="1.1" minavailable="6" />
@@ -1918,7 +1919,8 @@
     </Item>
 
     <!--糖衣大炮弹-->
-    <Item name="糖衣大炮弹" identifier="Touhou_Huge_Sugar_Coated_Cannonball" tags="smallitem,Touhou_Candy_Cannon_Ammo" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" scale="0.4">
+    <Item name="糖衣大炮弹" identifier="Touhou_Huge_Sugar_Coated_Cannonball" tags="smallitem,Touhou_Candy_Cannon_Ammo" subcategory="Touhou" category="Weapon"
+          maxstacksize="8" maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" scale="0.4">
         <PreferredContainer primary="armcab" secondary="secarmcab"/>
         <Price baseprice="3000" sold="false">
             <Price locationtype="outpost" multiplier="1.1" minavailable="6" />
@@ -2723,7 +2725,7 @@
             <Sound file="%ModDir%/Sounds/Weapons/Touhou_Lunarquake/Touhou_Lunarquake_Attack01.ogg" type="OnUse" range="2000" selectionmode="Random" />
             <Sound file="%ModDir%/Sounds/Weapons/Touhou_Lunarquake/Touhou_Lunarquake_Attack02.ogg" type="OnUse" range="2000" selectionmode="Random" />
             <StatusEffect type="OnUse" target="This">
-                <Explosion range="50.0" force="1.0" shockwave="true" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+                <Explosion range="50.0" force="0.2" shockwave="true" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="10.0" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" />
             <StatusEffect type="OnUse" target="Character" >

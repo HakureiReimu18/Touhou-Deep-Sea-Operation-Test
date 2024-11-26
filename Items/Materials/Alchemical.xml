@@ -943,7 +943,7 @@
         <Sprite texture="%ModDir%/Images/Alchemical/MRE_Material.png" sourcerect="100,0,72,125" depth="0.5" origin="0.5,0.5" />
         <Body width="72" height="125" density="10" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1060,7 +1060,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Remilia" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1177,7 +1177,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Marisa" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1294,7 +1294,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Aya" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1411,7 +1411,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Youmu" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1528,7 +1528,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Nitori" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1645,7 +1645,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Akyuu" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1762,7 +1762,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Mokou" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1879,7 +1879,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Patchouli" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -1996,7 +1996,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Tenshi" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -2113,7 +2113,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Momizi" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -2230,7 +2230,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Yuka" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -2347,7 +2347,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Aunn" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -2464,7 +2464,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Flandre" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -2581,7 +2581,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Nue" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -2698,7 +2698,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Piece" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -2815,7 +2815,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Cirno" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -2932,7 +2932,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Koishi" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -3049,7 +3049,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Alice" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -3166,7 +3166,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Sunny" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>
@@ -3283,7 +3283,7 @@
         </Deconstruct>
         <GeneticMaterial nameidentifier="Character.MRE_Material_Luna" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" setvalue="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" delay="0.2" setvalue="true"/>
             <StatusEffect type="OnUse" target="UseTarget,This" delay="0.1" comparison="And" >
                 <Conditional MRE_Effect_Flag="eq 0"/>
                 <Conditional Condition="gte 100"/>

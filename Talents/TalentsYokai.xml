@@ -96,15 +96,6 @@
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yokai_Talents_Locked"/>
         <AbilityGroupEffect abilityeffecttype="None">
-            <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Yokai_Select_Locked" min="1" invert="true"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityGiveTalentPoints amount="1" />
-                <CharacterAbilityGivePermanentStat statidentifier="Yokai_Select_Locked" value="1" />
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
                 <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.05"/>
             </Abilities>
@@ -948,22 +939,11 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--妖人两立 对人类目标造成额外20%的伤害，受到人类造成的伤害增加10%。下蹲时，更难被敌人察觉。-->
+    <!--妖人两立 对人类目标造成额外10%的伤害。下蹲时，更难被敌人察觉。-->
     <Talent identifier="Touhou_Yaoguai02">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yaoguai02"/>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional speciesname="eq human" />
-                </AbilityConditionCharacter>
-                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" />
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional speciesname="eq human" />

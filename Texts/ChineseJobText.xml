@@ -188,7 +188,7 @@
     <talentname.Talents_Yokai_Primary13>暗藏异变</talentname.Talents_Yokai_Primary13>
     <talentdescription.Talents_Yokai_Primary13>巡回完成‖color:gui.red‖所有任务‖end‖后，获得‖color:gui.green‖1‖end‖个血袋。如果有船员死亡，则额外获得‖color:gui.green‖1‖end‖个血袋</talentdescription.Talents_Yokai_Primary13>
     <talentname.Talents_Yokai_Primary14>都市传说</talentname.Talents_Yokai_Primary14>
-    <talentdescription.Talents_Yokai_Primary14>制造物品的质量提高‖color:gui.green‖1‖end‖。解锁配方：‖color:gui.orange‖生命指针‖end‖。对死亡个体使用生命指针可以采集‖color:gui.red‖恐惧‖end‖。</talentdescription.Talents_Yokai_Primary14>
+    <talentdescription.Talents_Yokai_Primary14>制造物品的质量提高‖color:gui.green‖1‖end‖。解锁配方：‖color:gui.orange‖生命指针‖end‖。对死亡敌对个体使用生命指针可以采集‖color:gui.red‖恐惧‖end‖。</talentdescription.Talents_Yokai_Primary14>
     <talentname.Talents_Yokai_Primary15>异变源头</talentname.Talents_Yokai_Primary15>
     <talentdescription.Talents_Yokai_Primary15>每杀死一个生物，增加‖color:gui.green‖1‖end‖点计数。计数到达不同阶段将给予不同效果：
         ‖color:gui.green‖160‖end‖：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。双手部位的‖color:gui.orange‖物理伤害抗性‖end‖增加‖color:gui.green‖5%‖end‖
@@ -246,7 +246,7 @@
     <talentname.Touhou_Yaoguai01>隐秘传说</talentname.Touhou_Yaoguai01>
     <talentdescription.Touhou_Yaoguai01>受到药物治疗的效果提高‖color:gui.green‖25%‖end‖。一段时间没有受到攻击后，提高‖color:gui.green‖10%‖end‖移动速度‖end‖，减少‖color:gui.green‖10%‖end‖受到的伤害。受到攻击后解除这个效果。</talentdescription.Touhou_Yaoguai01>
     <talentname.Touhou_Yaoguai02>妖人两立</talentname.Touhou_Yaoguai02>
-    <talentdescription.Touhou_Yaoguai02>对人类目标造成额外‖color:gui.green‖20%‖end‖的伤害，受到人类造成的伤害增加‖color:gui.green‖10%‖end‖。下蹲时，更难被敌人察觉。</talentdescription.Touhou_Yaoguai02>
+    <talentdescription.Touhou_Yaoguai02>对人类目标造成额外‖color:gui.green‖10%‖end‖的伤害。下蹲时，更难被敌人察觉。</talentdescription.Touhou_Yaoguai02>
     <talentname.Touhou_Yaoguai03>刀枪不入</talentname.Touhou_Yaoguai03>
     <talentdescription.Touhou_Yaoguai03>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖，受到攻击后略微增加自身的‖color:gui.orange‖精神病‖end‖。
         ‖color:gui.orange‖精神病‖end‖越高，‖color:gui.orange‖这个抗性‖end‖越低，最低‖color:gui.green‖3%‖end‖。</talentdescription.Touhou_Yaoguai03>
@@ -335,7 +335,7 @@
         ‖color:gui.green‖25‖end‖级：每次受到攻击都有‖color:gui.green‖10%‖end‖概率减少‖color:gui.green‖25%‖end‖承受伤害</talentdescription.Touhou_Tiangou04>
     <talentname.Touhou_Tiangou05>破旧立新</talentname.Touhou_Tiangou05>
     <talentdescription.Touhou_Tiangou05>如果你的等级比船员中最高的等级低‖color:gui.green‖1‖end‖级以上，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖，否则增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖。解锁配方：‖color:gui.orange‖天狗的信物‖end‖
-        穿着‖color:gui.red‖文文装束+‖end‖时：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖游泳速度‖end‖。每次进入一个新的站点，增加‖color:gui.green‖1‖end‖个计数。计数到达‖color:gui.green‖5‖end‖个后，提高‖color:gui.green‖10%‖color:gui.orange‖攻击伤害、移动速度和眩晕抗性‖end‖。死亡后计数清零
+        穿着‖color:gui.red‖文文装束+‖end‖时：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖游泳速度‖end‖。每次进入一个新的站点，增加‖color:gui.green‖1‖end‖个计数。计数到达‖color:gui.green‖5‖end‖个后，提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害、移动速度和眩晕抗性‖end‖。死亡后计数清零
         穿着‖color:gui.red‖椛 装束+‖end‖时：根据‖color:gui.orange‖武器操作‖end‖水平，提高相‖color:gui.green‖应10%‖end‖‖color:gui.orange‖‖color:gui.orange‖游泳速度和buff效果持续时间‖end‖。这个效果在‖color:gui.orange‖武器操作‖end‖超过‖color:gui.green‖300‖end‖后达到上限</talentdescription.Touhou_Tiangou05>
     <talentname.Touhou_Tiangou06>领地意识</talentname.Touhou_Tiangou06>
     <talentdescription.Touhou_Tiangou06>当自己的潜艇遭受攻击后，一定时间内将‖color:gui.orange‖操作炮塔的射速‖end‖提高‖color:gui.green‖25%‖end‖。这个效果有‖color:gui.green‖2‖end‖分钟冷却。

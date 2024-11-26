@@ -38,7 +38,7 @@
                 </CharacterAbilityApplyStatusEffectsToAllies>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="4">
+        <AbilityGroupInterval interval="3">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu" invert="true" />
             </Conditions>

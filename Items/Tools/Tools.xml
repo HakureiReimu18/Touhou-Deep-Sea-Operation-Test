@@ -1708,7 +1708,7 @@
             </StatusEffect>
         </Holdable>
         <ItemContainer autofill="False" capacity="12" maxstacksize="64" slotsperrow="3">
-            <Containable identifiers="smallitem" excludeditems="backpack,crate,gun" />
+            <Containable identifiers="smallitem" excludeditems="backpack,crate,gun,toolbox,mobilecontainer" />
         </ItemContainer>
         <aitarget soundrange="1" fadeouttime="5" />
     </Item>

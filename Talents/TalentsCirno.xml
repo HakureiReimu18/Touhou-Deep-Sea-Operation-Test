@@ -3,7 +3,7 @@
     <Talent identifier="CirnoTalent">
         <Icon texture="%ModDir%/Images/Talents/CirnoTalent.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.CirnoTalent"/>
-        <AbilityGroupInterval interval="4">
+        <AbilityGroupInterval interval="3">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Fairy_Of_Ice" invert="true" />
             </Conditions>

@@ -3,7 +3,7 @@
     <Talent identifier="SunnyTalent">
         <Icon texture="%ModDir%/Images/Talents/SunnyTalent.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.SunnyTalent"/>
-        <AbilityGroupInterval interval="4">
+        <AbilityGroupInterval interval="3">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" invert="true" />
             </Conditions>

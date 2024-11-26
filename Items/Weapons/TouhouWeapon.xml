@@ -186,7 +186,7 @@
             <ParticleEmitter particle="tracerpulselaser" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="70,150,70,255"/>
             <Attack structuredamage="5" targetforce="10" targetimpulse="10" itemdamage="10" severlimbsprobability="0.25" penetration="0.3">
                 <Affliction identifier="burn" strength="9.0" />
-                <Affliction identifier="Reiki_Pressure" strength="1.2" />
+                <Affliction identifier="Reiki_Pressure" strength="0.5" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="500" scalemin="0.1" scalemax="0.2" />
@@ -1269,8 +1269,11 @@
         <Body width="172" height="20" density="10" />
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0" holdangle="30" aimangle="10" reload="0.8" range="55" combatPriority="30" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.01" itemdamage="1" structuresoundtype="StructureSlash" penetration="0.6">
-                <Affliction identifier="Reiki_Pressure" strength="8" />
+                <Affliction identifier="Reiki_Pressure" strength="4" />
             </Attack>
+            <StatusEffect type="OnUse" target="limb" >
+                <Affliction identifier="Reiki_Pressure" strength="4" />
+            </StatusEffect>
             <StatusEffect type="OnUse" target="limb" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" />
             </StatusEffect>
@@ -3548,7 +3551,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Crimson_Moonlight.png" sourcerect="0,0,140,48" depth="0.55" origin="0.5,0.5" />
         <Body width="140" height="40" density="10" />
         <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-23,2" allowhitmultiple="true"
-                     holdangle="20" aimangle="40" reload="0.75" range="100" combatPriority="50" msg="ItemMsgPickUpSelect" >
+                     holdangle="20" aimangle="40" reload="0.85" range="100" combatPriority="50" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Younger_Sister_Of_Scarlet="gt 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Flandre="gt 0"/>
@@ -3578,13 +3581,13 @@
             </StatusEffect>
 
             <Attack targetimpulse="5" severlimbsprobability="0.35" itemdamage="60" structuresoundtype="StructureSlash" penetration="0.2">
-                <Affliction identifier="Reiki_Pressure" strength="4" />
+                <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="lacerations" strength="8" />
                 <Affliction identifier="lacerations" strength="6" probability="0.495" />
                 <Affliction identifier="internaldamage" strength="8" />
                 <Affliction identifier="internaldamage" strength="6" probability="0.495" />
-                <Affliction identifier="organdamage" strength="3" />
-                <Affliction identifier="organdamage" strength="3" probability="0.495" />
+                <Affliction identifier="organdamage" strength="2" />
+                <Affliction identifier="organdamage" strength="2" probability="0.495" />
                 <Affliction identifier="burn" strength="8" />
                 <Affliction identifier="burn" strength="6" probability="0.495" />
                 <Affliction identifier="bleeding" strength="20" />
@@ -3619,7 +3622,7 @@
             <RequiredSkill identifier="weapons" level="50" />
             <RequiredSkill identifier="Touhou_Magic" level="50" />
             <!--Reset the reload speed-->
-            <StatusEffect type="OnUse" target="This" reload="0.75" setvalue="true" delay="1" />
+            <StatusEffect type="OnUse" target="This" reload="0.85" setvalue="true" delay="1" />
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
@@ -3689,7 +3692,7 @@
             </StatusEffect>
 
             <Attack targetimpulse="5" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.25">
-                <Affliction identifier="Reiki_Pressure" strength="3" />
+                <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="lacerations" strength="20" />
                 <Affliction identifier="burn" strength="10" />
                 <Affliction identifier="Touhou_Bite" strength="20" />

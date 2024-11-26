@@ -2019,7 +2019,7 @@
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1"/>
+    <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.2" maxresistance="0.2"/>
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
@@ -2213,7 +2213,7 @@
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1"/>
+    <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.15" maxresistance="0.15"/>
     <icon texture="%ModDir%/Images/Afflictions/Boudary_Divinggear_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
@@ -2405,7 +2405,7 @@
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1"/>
+    <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.1" maxresistance="0.1"/>
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
@@ -2485,7 +2485,7 @@
           maxstrength="1"
           Duration="5.0"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="1"/>
+    <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.25" maxresistance="0.25"/>
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 

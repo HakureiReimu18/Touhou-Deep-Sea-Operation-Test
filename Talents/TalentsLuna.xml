@@ -3,7 +3,7 @@
     <Talent identifier="LunaTalent">
         <Icon texture="%ModDir%/Images/Talents/LunaTalent.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.LunaTalent"/>
-        <AbilityGroupInterval interval="4">
+        <AbilityGroupInterval interval="3">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" invert="true" />
             </Conditions>
