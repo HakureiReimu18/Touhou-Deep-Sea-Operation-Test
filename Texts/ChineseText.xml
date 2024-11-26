@@ -1268,7 +1268,7 @@
     \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
     \n魔法武器的远程攻击每次有‖color:gui.green‖5%‖end‖概率造成额外‖color:gui.yellow‖眩晕‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成‖color:gui.yellow‖月之光‖end‖效果
     近战攻击每次有‖color:gui.green‖30%‖end‖概率造成额外‖color:gui.yellow‖眩晕‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成‖color:gui.yellow‖月之光‖end‖效果
-    ‖color:gui.yellow‖日之光‖end‖：减少怪物的攻击伤害，让怪物短时间内降低移动速度和抗性。
+    ‖color:gui.yellow‖月之光‖end‖：减少怪物的攻击伤害，让怪物短时间内降低移动速度和抗性。
   </talentdescription.LunaTalent>
   <entityname.Touhou_Medical_Toolkit>永远亭医疗套件</entityname.Touhou_Medical_Toolkit>
   <entitydescription.Touhou_Medical_Toolkit>
@@ -1432,9 +1432,11 @@
   <talentname.MRE_Koishi>出血效应-古明地恋</talentname.MRE_Koishi>
   <talentdescription.MRE_Koishi>仅对恋装束+生效。对怪奇电话标记的满血目标额外造成51.4%的伤害</talentdescription.MRE_Koishi>
   <talentname.MRE_Alice>出血效应-爱丽丝</talentname.MRE_Alice>
-  <talentdescription.MRE_Alice>仅对爱丽丝装束+生效。人偶能量超过50%后，召唤人偶会让自身增加30%物理伤害抗性和烧伤抗性，持续20秒</talentdescription.MRE_Alice>
+  <talentdescription.MRE_Alice>仅对爱丽丝装束+生效。人偶能量超过50%后，提高25%最大生命值和10%攻击伤害，召唤人偶会让自身增加30%物理伤害抗性和烧伤抗性，持续20秒</talentdescription.MRE_Alice>
   <talentname.MRE_Sunny>出血效应-桑尼·米尔克</talentname.MRE_Sunny>
   <talentdescription.MRE_Sunny>仅对桑尼装束+生效。三月精其他角色的装束效果直接生效</talentdescription.MRE_Sunny>
-  <talentname.MRE_Sunny>出血效应-露娜·切露德</talentname.MRE_Sunny>
-  <talentdescription.MRE_Sunny>仅对露娜装束+生效。击杀任意生物后，会给予自身临时生命值，临时生命值会额外增加最大20%移动速度、攻击速度和技能水平</talentdescription.MRE_Sunny>
+  <talentname.MRE_Luna>出血效应-露娜·切露德</talentname.MRE_Luna>
+  <talentdescription.MRE_Luna>仅对露娜装束+生效。击杀任意生物后，会给予自身临时生命值，临时生命值会额外增加最大20%移动速度、攻击速度和技能水平</talentdescription.MRE_Luna>
+  <afflictionname.MRE_Effect_Luna>出血效应-露娜·切露德</afflictionname.MRE_Effect_Luna>
+  <afflictiondescription.MRE_Effect_Luna>临时增加生命值</afflictiondescription.MRE_Effect_Luna>
 </infotexts>

@@ -784,6 +784,8 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Alice_Doll_Spawn" />
             </Conditions>
             <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.25"/>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
@@ -948,7 +950,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="MRE_Effect_Luna" amount="25" />
+                            <Affliction identifier="MRE_Effect_Luna" amount="50" />
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

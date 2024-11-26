@@ -739,7 +739,7 @@
         <Projectile characterusable="false" launchimpulse="15" damagedoors="true">
             <Attack severlimbsprobability="0.4" penetration="0.7" maxtargetstohit="2">
                 <Affliction identifier="explosiondamage" strength="6" />
-                <Affliction identifier="acidburn" strength="2.5" />
+                <Affliction identifier="acidburn" strength="2" />
                 <Affliction identifier="Touhou_Freeze" strength="2" />
                 <Affliction identifier="Reiki_Pressure" strength="1" />
                 <Affliction identifier="Touhou_Silent_Selene_Dream" strength="1" />
@@ -747,8 +747,8 @@
                 <Affliction identifier="stun" strength="0.8" probability="0.2" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
-                <Affliction identifier="Reiki_Pressure" strength="4"  />
-                <Affliction identifier="Touhou_Freeze" strength="4"  />
+                <Affliction identifier="Reiki_Pressure" strength="2"  />
+                <Affliction identifier="Touhou_Freeze" strength="3"  />
                 <Affliction identifier="acidburn" strength="4"  />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">

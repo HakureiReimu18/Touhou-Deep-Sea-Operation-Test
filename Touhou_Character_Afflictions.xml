@@ -1758,9 +1758,9 @@
     </Affliction>
 
     <!--出血效应-露娜·切露德-->
-    <Affliction name="" identifier="MRE_Effect_Luna" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="100"
-                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="100" minspeedmultiplier="1" maxspeedmultiplier="1.2" minvitalitydecrease="0" maxvitalitydecrease="-30"
+    <Affliction name="出血效应-露娜·切露德" identifier="MRE_Effect_Luna" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="300"
+                indicatorlimb="Head" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="300" minspeedmultiplier="1" maxspeedmultiplier="1.2" minvitalitydecrease="0" maxvitalitydecrease="-30"
                 multiplybymaxvitality="false" minskillmultiplier="1" maxskillmultiplier="1.2" strengthchange="-1">
             <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.2" />
             <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.2" />

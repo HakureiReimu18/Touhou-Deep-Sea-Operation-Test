@@ -297,8 +297,8 @@
             showchargeindicator="true"
             showprojectileindicator="true"
             recoildistance="50"
-            maxchargetime="0.8"
-            reload="0.1"
+            maxchargetime="0.7"
+            reload="0.09"
             springstiffnesslowskill="2"
             springstiffnesshighskill="50"
             springdampinglowskill="0.5"
@@ -308,16 +308,29 @@
             firingoffset="-10,-370"
             MaxAngleOffset="5"
             AICurrentTargetPriorityMultiplier="1">
+      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
+        <Conditional condition="lt 80" />
+      </StatusEffect>
+      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true" >
+        <Conditional condition="lt 40" />
+      </StatusEffect>
       <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true" >
         <Conditional condition="gt 0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" reload="+0.01" disabledeltatime="true" comparison="And" >
-        <Conditional condition="lte 40" />
+        <Conditional condition="lte 60" />
         <Conditional condition="gt 0" />
         <Conditional reload="lte 0.5" />
       </StatusEffect>
-      <StatusEffect type="Always" target="This" condition="+1" comparison="And" />
-      <StatusEffect type="OnBroken" target="This" reload="0.1" condition="100" delay="8" disabledeltatime="true" setvalue="true" >
+      <StatusEffect type="Always" target="This" condition="+0.5" comparison="And" />
+      <StatusEffect type="Always" target="This" condition="+0.5" comparison="And" >
+        <Conditional condition="gt 40" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" condition="+0.5" comparison="And" >
+        <Conditional condition="gt 80" />
+      </StatusEffect>
+      <StatusEffect type="OnBroken" target="This" reload="10" disabledeltatime="true" setvalue="true" />
+      <StatusEffect type="OnBroken" target="This" reload="0.09" condition="100" delay="10" disabledeltatime="true" setvalue="true" >
         <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="10000.0" volume="3.0" loop="false" />
       </StatusEffect>
 
@@ -519,7 +532,7 @@
     </Repairable>
     <ItemContainer hideitems="false" drawinventory="true" capacity="1" maxstacksize="1" slotsperrow="6" itempos="75,-258" iteminterval="0,0" itemrotation="0" canbeselected="true" msg="ItemMsgInteractSelect" containedspritedepth="0.79">
       <GuiFrame relativesize="0.18,0.23" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
-      <Containable items="coilgunammo,Touhou_Large_Turret_Ammo" />
+      <Containable items="coilgunammo,Touhou_Small_Spell_Card_Ammo" />
       <StatusEffect type="OnUse" target="Contained">
         <RequiredItem items="coilgunammo,Touhou_Small_Spell_Card_Ammo" type="Contained" />
         <Use />
