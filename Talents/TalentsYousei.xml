@@ -343,7 +343,21 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Touhou_Yousei_Alliance_Effect02" strength="1.0"/>
+                            <Affliction identifier="Touhou_Yousei_Alliance_Effect03" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yousei_Alliance_Effect04" strength="1.0"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

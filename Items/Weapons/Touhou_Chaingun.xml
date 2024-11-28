@@ -62,10 +62,13 @@
             <Attack structuredamage="25" itemdamage="15" targetforce="5" targetimpulse="5" penetration="0.1" severlimbsprobability="0.25" >
                 <Affliction identifier="lacerations" strength="7" />
                 <Affliction identifier="lacerations" strength="6" probability="0.4" />
-                <Affliction identifier="Reiki_Pressure" strength="0.8" />
-                <Affliction identifier="bleeding" strength="18" />
+                <Affliction identifier="bleeding" strength="12" />
                 <Affliction identifier="stun" strength="0.025" probability="0.6"/>
             </Attack>
+            <StatusEffect type="OnImpact" target="Limb">
+                <Affliction identifier="Reiki_Pressure" strength="0.4" />
+                <Affliction identifier="bleeding" strength="6" />
+            </StatusEffect>
             <StatusEffect type="OnActive" target="This">
                 <ParticleEmitter particle="chainguntrail" copyentityangle="true" particlespersecond="50" initialdelay="0.05" colormultiplier="255,10,20,200" />
             </StatusEffect>

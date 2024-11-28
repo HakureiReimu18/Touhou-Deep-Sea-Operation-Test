@@ -16,7 +16,7 @@
   <talentdescription.demonkingcradle>当你身着‖color:gui.orange‖蕾米莉亚装束+‖end‖时，使用‖color:gui.orange‖优质B型血‖end‖给予你：
     \n持续治疗‖color:gui.orange‖咬伤‖end‖。\n‖color:gui.green‖+20%‖end‖‖color:gui.orange‖移动速度‖end‖。\n获得‖color:gui.orange‖精神病抗性‖end‖并提升造成的伤害。
     ————————————————————————————————————
-    \n当你击杀任意生物时，恢复‖color:gui.green‖2%‖end‖的失血和‖color:gui.green‖8%‖end‖的出血。
+    \n当你击杀任意生物时，恢复‖color:gui.yellow‖失血和的出血‖end‖
     \n你每次造成的出血总量随机转化为‖color:gui.green‖10%‖end‖的‖color:gui.orange‖失血‖end‖或‖color:gui.green‖150%‖end‖的‖color:gui.orange‖出血不止‖end‖或‖color:gui.green‖33.3%‖end‖‖color:gui.orange‖噬咬‖end‖。
     \n无法受到天赋‖color:gui.orange‖“过度放血”‖end‖给予的加成
     \n\n‖color:150,150,150,255‖蕾米莉亚也同样遵从此定律，是个严重的自我主义者。B型血最美味。\n\n————《东方永夜抄》‖color:end‖</talentdescription.demonkingcradle>
@@ -1279,6 +1279,23 @@
     第二格：生理盐水，血袋，或以上药物的套装
     第三格：绷带，可塑人造皮肤，或以上药物的套装，抗生素凝胶
     第四格：植物精油，欧罗巴浸剂，基列香膏</entitydescription.Touhou_Medical_Toolkit>
+  <entityname.Star_gear>‖color:155,125,245,255‖斯塔装束‖end‖</entityname.Star_gear>
+  <entitydescription.Star_gear>她是星光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与桑尼米尔克、斯塔萨菲雅合称为光之三妖精。</entitydescription.Star_gear>
+  <entityname.Star_Plus>‖color:155,125,245,255‖斯塔装束+‖end‖</entityname.Star_Plus>
+  <entitydescription.Star_Plus>她是星光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与桑尼米尔克、斯塔萨菲雅合称为光之三妖精。</entitydescription.Star_Plus>
+  <afflictionname.Cascading_Light_Of_The_Star>倾泻而下的星之光</afflictionname.Cascading_Light_Of_The_Star>
+  <afflictiondescription.Cascading_Light_Of_The_Star>她有着一头深棕色及腰长发，头顶系着蓝色大蝴蝶结，在大战争中蝴蝶结边缘有白色褶子。她有着棕色的眼瞳。</afflictiondescription.Cascading_Light_Of_The_Star>
+  <talentname.StarTalent>妖精灿烂的样子</talentname.StarTalent>
+  <talentdescription.StarTalent>当你身着斯塔装束+时，
+    \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
+    \n可以感知周围活体生物的位置
+    一定时间没有受到攻击后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，并减少‖color:gui.green‖15%‖end‖受到的伤害
+    \n对你造成过伤害的敌人：
+    当其生命值高于‖color:gui.green‖50%‖end‖时，对其造成额外‖color:gui.green‖5%‖end‖的伤害，近战武器额外造成‖color:gui.green‖15%‖end‖的伤害
+    当其生命值低于‖color:gui.green‖50%‖end‖时，远程弹幕攻击有‖color:gui.green‖5%‖end‖概率对其造成额外‖color:gui.yellow‖眩晕、烧伤和星之光‖end‖，近战武器概率则为‖color:gui.green‖30%‖end‖
+    \n如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，任何攻击都有‖color:gui.green‖10%‖end‖概率附加‖color:gui.yellow‖星之光‖end‖效果。
+    攻击带有‖color:gui.yellow‖星之光‖end‖的敌人将造成额外‖color:gui.green‖5%‖end‖伤害，击杀带有星之光的敌人将恢复自身的‖color:gui.yellow‖物理伤害、烧伤和出血‖end‖。
+  </talentdescription.StarTalent>
 
   <!--亡羊补牢-->
   <missionname.Touhou_OutpostDestroyMission04>亡羊补牢</missionname.Touhou_OutpostDestroyMission04>

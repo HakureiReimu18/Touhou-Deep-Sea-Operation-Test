@@ -28,7 +28,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.05" />
@@ -46,7 +46,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
                 <AbilityConditionServerRandom randomchance="0.05" />
             </Conditions>
             <Abilities>
@@ -65,7 +65,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
                 <AbilityConditionServerRandom randomchance="0.05" />
             </Conditions>
             <Abilities>
@@ -86,7 +86,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionServerRandom randomchance="0.05" />
             </Conditions>
@@ -108,7 +108,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionServerRandom randomchance="0.3" />
             </Conditions>

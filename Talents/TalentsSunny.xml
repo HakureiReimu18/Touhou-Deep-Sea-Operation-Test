@@ -28,7 +28,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAffliction afflictionidentifiers="burn" addedmultiplier="0.05" />
@@ -51,7 +51,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionServerRandom randomchance="0.05" />
                 <AbilityConditionCharacter targettype="Enemy">
@@ -76,7 +76,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Alliance_Effect02" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionServerRandom randomchance="0.3" />
             </Conditions>

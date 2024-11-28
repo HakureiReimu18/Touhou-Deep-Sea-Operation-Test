@@ -639,12 +639,12 @@
             <StatusEffect type="OnFailure" target="This" Condition="-25.0" />
             <StatusEffect tags="medical" type="OnSuccess" target="UseTarget" >
                 <Affliction identifier="Touhou_Reiki_Stability" amount="80" />
-                <Affliction identifier="chemaddiction" amount="1" />
+                <Affliction identifier="chemaddiction" amount="0.5" />
                 <ReduceAffliction identifier="Slow_Baka" amount="90" />
             </StatusEffect>
             <StatusEffect tags="medical" type="OnFailure" target="UseTarget" >
                 <Affliction identifier="Touhou_Reiki_Stability" amount="40" />
-                <Affliction identifier="chemaddiction" amount="4" />
+                <Affliction identifier="chemaddiction" amount="2" />
             </StatusEffect>
             <StatusEffect type="OnSuccess" target="UseTarget">
                 <Conditional entitytype="eq Character"/>

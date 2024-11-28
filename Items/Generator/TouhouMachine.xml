@@ -311,10 +311,10 @@
       <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
         <Conditional condition="lt 80" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true" >
+      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
         <Conditional condition="lt 40" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true" >
+      <StatusEffect type="OnUse" target="This" condition="-1.5" disabledeltatime="true" >
         <Conditional condition="gt 0" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" reload="+0.01" disabledeltatime="true" comparison="And" >

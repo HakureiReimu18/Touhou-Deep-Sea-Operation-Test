@@ -115,9 +115,9 @@
     <Affliction name="自愈" identifier="Scarletdevil_Treatment_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                  maxstrength="1" duration="1.0" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="1" >
-            <StatusEffect target="Character" >
-                <Reduceaffliction identifier="bloodloss" amount="2" />
-                <Reduceaffliction identifier="bleeding" amount="8" />
+            <StatusEffect target="Character" Interval="0.1" disabledeltatime="true" >
+                <Reduceaffliction identifier="bloodloss" amount="0.5" />
+                <Reduceaffliction identifier="bleeding" amount="2" />
             </StatusEffect>
         </Effect>
         <Icon texture="%ModDir%/Images/TalentsIcon/Remilia/TalentsIcons_Remilia.png" sheetindex="1,0" sheetelementsize="128,128" />
@@ -1687,8 +1687,7 @@
                 <ParticleEmitter particle="GlowDot" scalemin="1.5" scalemax="3.0" particlespersecond="40" anglemin="0" anglemax="360" colormultiplier="150,200,200,160" />
             </StatusEffect>
             <StatValue stattype="RangedAttackSpeed" value="-0.25" />
-            <StatValue stattype="NaturalMeleeAttackMultiplier" value="-0.25" />
-            <StatValue stattype="NaturalRangedAttackMultiplier" value="-0.25" />
+            <StatValue stattype="AttackMultiplier" value="-0.25" />
         </Effect>
         <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
     </Affliction>
@@ -1765,7 +1764,7 @@
             <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.2" />
             <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.2" />
         </Effect>
-        <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Effect_Luna.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
     <!--月之光效果-->
@@ -1774,15 +1773,120 @@
             identifier="Light_Of_The_Moon_Effect"
             type="debuff"
             limbspecific="false"
-            duration="3"
+            duration="5"
             maxstrength="1">
         <Effect minstrength="0" maxstrength="1" resistancefor="stun,damage" minresistance="-0.2" maxresistance="-0.2" minspeedmultiplier="0.75" maxspeedmultiplier="0.75">
             <StatusEffect target="Character" >
                 <ParticleEmitter particle="GlowDot" scalemin="1.5" scalemax="3.0" particlespersecond="40" anglemin="0" anglemax="360" colormultiplier="150,150,200,160" />
             </StatusEffect>
             <StatValue stattype="RangedAttackSpeed" value="-0.25" />
-            <StatValue stattype="NaturalMeleeAttackMultiplier" value="-0.25" />
-            <StatValue stattype="NaturalRangedAttackMultiplier" value="-0.25" />
+            <StatValue stattype="AttackMultiplier" value="-0.25" />
+        </Effect>
+        <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
+    </Affliction>
+
+    <!--斯塔翅膀-->
+    <AfflictionHusk
+            name="斯塔翅膀"
+            identifier="Star_Wings_Spawn"
+            type="Star_Wings_Spawn"
+            limbspecific="false"
+            targets="human"
+            huskedspeciesname="[speciesname]Touhou_Tail"
+            indicatorlimb="Torso"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            needsair="true"
+            causespeechimpediment="false"
+            treatmentthreshold="1000"
+            dormantthreshold="0"
+            activethreshold="0"
+            transitionthreshold="1000"
+            transformthresholdondeath="1000"
+            sendmessages="false"
+            maxstrength="10"
+            iconcolors="94,54,95;163,73,164;200,191,231">
+        <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0" />
+        <Effect minstrength="0" maxstrength="10" />
+    </AfflictionHusk>
+
+    <!--倾泻而下的星之光-->
+    <Affliction identifier="Cascading_Light_Of_The_Star" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="15000" ThermalOverlayColor="176,176,176,120" strengthchange="-9">
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Tranquil_Light_Of_The_Moon.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--斯塔未收到攻击效果-->
+    <Affliction identifier="Star_No_Attacked" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="9" />
+        <Effect minstrength="9" maxstrength="10" >
+            <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Tranquil_Light_Of_The_Moon.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--斯塔攻击标记效果-->
+    <Affliction identifier="Star_Attack_Mark" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="1"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="1" />
+        <Icon texture="%ModDir%/Images/Afflictions/Tranquil_Light_Of_The_Moon.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--斯塔击杀治疗效果-->
+    <Affliction identifier="Star_Treatment_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="1"
+                Duration="1.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatusEffect target="Character" Interval="0.1" disabledeltatime="true" >
+                <ReduceAffliction type="damage" amount="0.5"/>
+                <ReduceAffliction type="burn" amount="0.8"/>
+                <ReduceAffliction type="bleeding" amount="1"/>
+            </StatusEffect>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Tranquil_Light_Of_The_Moon.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--斯塔-完全凭依-->
+    <Affliction identifier="Hyouibana_Effect_Prefect_Star" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--凭依斯塔-->
+    <Affliction identifier="Hyouibana_Star_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="10" />
+        <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--出血效应-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Effect_Star" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="300"
+                indicatorlimb="Head" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="300" minspeedmultiplier="1" maxspeedmultiplier="1.2" minvitalitydecrease="0" maxvitalitydecrease="-30"
+                multiplybymaxvitality="false" minskillmultiplier="1" maxskillmultiplier="1.2" strengthchange="-1">
+            <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.2" />
+            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.2" />
+        </Effect>
+        <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--星之光效果-->
+    <Affliction
+            name="星之光"
+            identifier="Light_Of_The_Star_Effect"
+            type="debuff"
+            limbspecific="false"
+            duration="5"
+            maxstrength="1">
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun,damage" minresistance="-0.2" maxresistance="-0.2" minspeedmultiplier="0.75" maxspeedmultiplier="0.75">
+            <StatusEffect target="Character" >
+                <ParticleEmitter particle="GlowDot" scalemin="1.5" scalemax="3.0" particlespersecond="40" anglemin="0" anglemax="360" colormultiplier="150,150,200,160" />
+            </StatusEffect>
+            <StatValue stattype="RangedAttackSpeed" value="-0.25" />
+            <StatValue stattype="AttackMultiplier" value="-0.25" />
         </Effect>
         <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
     </Affliction>

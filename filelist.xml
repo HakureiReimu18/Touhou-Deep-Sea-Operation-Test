@@ -130,6 +130,7 @@
   <Talents file="%ModDir%/Talents/TalentsAlice.xml" />
   <Talents file="%ModDir%/Talents/TalentsSunny.xml" />
   <Talents file="%ModDir%/Talents/TalentsLuna.xml" />
+  <Talents file="%ModDir%/Talents/TalentsStar.xml" />
   <Talents file="%ModDir%/Talents/TalentsMagician.xml" />
   <Talents file="%ModDir%/Talents/TalentsYousei.xml" />
   <Talents file="%ModDir%/Talents/TalentsYokai.xml" />
