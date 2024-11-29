@@ -9,7 +9,7 @@
     <entitydescription.remiliadecalmask>‖color:255,36,0,255‖戴在脸上意外的不错呢。‖color:end‖</entitydescription.remiliadecalmask>
     <talentname.demonkingcradle>夜符「Demon King Cradle」</talentname.demonkingcradle>
     <talentdescription.demonkingcradle>当你身着‖color:gui.orange‖蕾米莉亚装束+‖end‖时，使用‖color:gui.orange‖优质B型血‖end‖给予你：
-        \n持续治疗‖color:gui.orange‖咬伤‖end‖。\n‖color:gui.green‖+20%‖end‖‖color:gui.orange‖移动速度‖end‖。\n获得‖color:gui.orange‖精神病抗性‖end‖并提升造成的伤害。
+        \n持续治疗‖color:gui.orange‖咬伤‖end‖。\n‖color:gui.green‖+15%‖end‖‖color:gui.orange‖移动速度‖end‖。\n获得‖color:gui.orange‖精神病抗性‖end‖并提升造成的伤害。
         ————————————————————————————————————
         \n当你击杀任意生物时，恢复‖color:gui.yellow‖失血和的出血‖end‖
         \n你每次造成的出血总量随机转化为‖color:gui.green‖10%‖end‖的‖color:gui.orange‖失血‖end‖或‖color:gui.green‖150%‖end‖的‖color:gui.orange‖出血不止‖end‖或‖color:gui.green‖33.3%‖end‖‖color:gui.orange‖噬咬‖end‖。
@@ -35,7 +35,7 @@
     <talentname.Life_And_Death_Half_Half>生与死的Half &amp; Half</talentname.Life_And_Death_Half_Half>
     <talentdescription.Life_And_Death_Half_Half>当你身着‖color:gui.orange‖魂魄妖梦装束+‖end‖时，
         造成的‖color:gui.orange‖近战伤害‖end‖提高‖color:gui.green‖30%‖end‖，
-        ‖color:gui.orange‖行走速度‖end‖提高‖color:gui.green‖36%‖end‖。
+        ‖color:gui.orange‖行走速度‖end‖提高‖color:gui.green‖24%‖end‖。
         根据自身的武器操作等级，提高其数值相应10%的‖color:gui.orange‖远程攻击速度‖end‖。
         \n同时持有‖color:gui.red‖白楼剑‖end‖和‖color:gui.red‖楼观剑‖end‖时，会获得大量伤害加成，并进一步加快行走速度。</talentdescription.Life_And_Death_Half_Half>
     <afflictionname.Ancient_Temple>半人半灵的庭师</afflictionname.Ancient_Temple>
@@ -69,9 +69,9 @@
     <entitydescription.Aya_Plus>‖color:255,255,255,255‖射命丸文是天狗之中速度很快的鸦天狗。手持相机，在幻想乡各处奔走，记录下各种有趣的事件。\n虽说是鸦天狗，外表和人类并无太大差别。\n————《东方求闻史纪》‖color:end‖\n（内置扫描仪槽位）</entitydescription.Aya_Plus>
     <talentname.Mysterious_Mountain>妖怪之山</talentname.Mysterious_Mountain>
     <talentdescription.Mysterious_Mountain>当你身着‖color:gui.orange‖文文。装束+‖end‖时，
-        ‖color:gui.green‖+50%‖end‖‖color:gui.orange‖游泳速度‖end‖。
+        ‖color:gui.green‖+30%‖end‖‖color:gui.orange‖游泳速度‖end‖。
         \n完成任意任务后获得‖color:gui.orange‖《文文。新闻》‖end‖，若‖color:gui.orange‖驾驶水平和医疗水平‖end‖均大于70，额外获得‖color:gui.orange‖文文的记者证‖end‖。
-        \n在干燥环境下额外获得‖color:gui.green‖25%‖end‖移动速度和‖color:gui.green‖50%‖end‖技能获取速度，攻击速度提高‖color:gui.green‖15%‖end‖。
+        \n在干燥环境下额外获得‖color:gui.green‖20%‖end‖移动速度和‖color:gui.green‖50%‖end‖技能获取速度，攻击速度提高‖color:gui.green‖15%‖end‖。
         \n周围20米内有船员存在时，任何情况下都将额外获得‖color:gui.green‖25%‖end‖经验。
         \n\n‖color:150,150,150,255‖作为新闻记者，工作主要是记录各种有趣的事件。新闻不定期发行，多数一个月发行五回，每回记录的事情都很少。更像是幻想乡的妖怪和人们在无聊的午后，手端红茶，用来打发时间的东西。
     </talentdescription.Mysterious_Mountain>
@@ -91,8 +91,8 @@
     <entitydescription.Reimu_Decalmask>‖color:255,81,75,255‖戴在脸上意外的不错呢。‖color:end‖</entitydescription.Reimu_Decalmask>
     <talentname.Innocent_Treasures>童祭</talentname.Innocent_Treasures>
     <talentdescription.Innocent_Treasures>当你身着‖color:gui.orange‖灵梦装束+‖end‖时，
-        \n增加‖color:gui.green‖100%‖end‖游泳速度。
-        \n增加‖color:gui.green‖25%‖end‖移动速度。
+        \n增加‖color:gui.green‖50%‖end‖游泳速度。
+        \n增加‖color:gui.green‖15%‖end‖行走速度。
         \n增加‖color:gui.green‖10%‖end‖远程攻击速度。
         \n增加‖color:gui.green‖50%‖end‖技能获取速度。
         \n没有专属武器的加成效果。
@@ -147,7 +147,7 @@
     <entitydescription.Patchouli_Plus>‖color:120,75,100,255‖她是居住在红魔馆地下大图书馆中的魔女（魔法使），非常擅长魔法。她的绝大部分时间用于读书，和开发新的魔法。同时，她也会撰写魔导书，用以记录创造的魔法。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Patchouli_Plus>
     <talentname.Knowledge_And_Solitude_Girl>知识与避世的少女</talentname.Knowledge_And_Solitude_Girl>
     <talentdescription.Knowledge_And_Solitude_Girl>当你身着‖color:gui.orange‖帕秋莉装束+‖end‖时，生命值越低，‖color:gui.yellow‖哮喘‖end‖疾病的增长速度越快：
-        \n游泳速度提高‖color:gui.green‖60%‖end‖。
+        \n游泳速度提高‖color:gui.green‖40%‖end‖。
         在陆地上无法奔跑，且行走速度降低‖color:gui.green‖20%‖end‖（当魔力提升效果达到300或使用MEID可以解除奔跑限制）。
         更容易受伤和失血
         近战攻击伤害下降‖color:gui.green‖100%‖end‖
@@ -341,7 +341,7 @@
     <talentname.Kappa_Pororoca>芥川龙之介的河童</talentname.Kappa_Pororoca>
     <talentdescription.Kappa_Pororoca>当你身着‖color:52,94,60,255‖荷取装束+‖end‖时，
         \n在水中且‖color:gui.orange‖机械工程‖end‖和‖color:gui.orange‖电气工程‖end‖均大于‖color:gui.green‖60‖end‖时，缓慢恢复部分伤势
-        \n额外获得‖color:gui.green‖70%‖end‖游泳速度
+        \n额外获得‖color:gui.green‖40%‖end‖游泳速度
         \n根据当前‖color:gui.orange‖机械工程‖end‖和‖color:gui.orange‖电气工程‖end‖之和的水平，提高相应‖color:gui.green‖16%‖end‖的‖color:gui.orange‖修理速度‖end‖和‖color:gui.orange‖船体修复速度‖end‖
         \n根据当前‖color:gui.orange‖机械工程‖end‖的水平，额外提高相应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖远程攻击伤害
         \n当打开沉船容器时，有‖color:gui.green‖15%‖end‖概率找到简单零件，‖color:gui.green‖5%‖end‖概率找到精密零件

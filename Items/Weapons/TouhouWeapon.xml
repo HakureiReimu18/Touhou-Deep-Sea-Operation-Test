@@ -1129,13 +1129,15 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
             <Attack structuredamage="4" targetforce="6" itemdamage="6" severlimbsprobability="0.2" penetration="0.1">
-                <Affliction identifier="gunshotwound" strength="6.5" />
+                <Affliction identifier="gunshotwound" strength="6" />
                 <Affliction identifier="lacerations" strength="7" />
-                <Affliction identifier="Reiki_Pressure" strength="1" />
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" probability="0.65"/>
                 <Affliction identifier="Touhou_Lost_Heart" strength="4" probability="0.35"/>
-                <Affliction identifier="stun" strength="0.15" probability="0.1" />
+                <Affliction identifier="stun" strength="0.12" probability="0.1" />
             </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Affliction identifier="Reiki_Pressure" strength="1" />
+            </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
             </StatusEffect>
