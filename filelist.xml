@@ -3,6 +3,9 @@
   <Text file="%ModDir%/Texts/ChineseText.xml" />
   <Text file="%ModDir%/Texts/ChineseFactionText.xml" />
   <Text file="%ModDir%/Texts/ChineseJobText.xml" />
+  <Text file="%ModDir%/Texts/ChineseTouhouCharacterText.xml" />
+  <Text file="%ModDir%/Texts/ChineseCharacterAndMissionText.xml" />
+  <Text file="%ModDir%/Texts/ChineseAfflictionText.xml" />
   <Text file="%ModDir%/Texts/EnglishText.xml" />
   <Jobs file="%ModDir%/Jobs.xml" />
   <Item file="%ModDir%/Items/ItemsGeneral.xml" />

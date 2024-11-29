@@ -358,9 +358,10 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This" stackable="false" disabledeltatime="true" delay="0.1">
                 <SpawnItem identifier="Danmu03" spawnposition="This" count="5" aimspread="360" rotationtype="Collider" rotation="180" />
-                <Explosion range="60" structuredamage="20" force="6.0" itemdamage="60" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="10" penetration="0.4" >
-                    <Affliction identifier="explosiondamage" strength="10" />
-                    <Affliction identifier="burn" strength="10" />
+                <Explosion range="60" structuredamage="20" force="6.0" itemdamage="60" shockwave="false" smoke="false" flames="false" flash="false"
+                           DistanceFalloff="false" sparks="false" underwaterbubble="true" camerashake="10" penetration="0.4" >
+                    <Affliction identifier="explosiondamage" strength="6" />
+                    <Affliction identifier="burn" strength="6" />
                     <Affliction identifier="Reiki_Pressure" strength="2" />
                     <Affliction identifier="Touhou_Lost_Dream" strength="10" />
                 </Explosion>

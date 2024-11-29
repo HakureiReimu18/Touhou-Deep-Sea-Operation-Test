@@ -798,7 +798,7 @@
             <Price storeidentifier="merchantcity" sold="true" minavailable="5" maxavailable="10"/>
             <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="10" maxavailable="15" />
         </Price>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20">
+        <Fabricate suitablefabricators="Magic_Altar" displayname="Touhou_Material_Reduction" requiredtime="20">
             <RequiredSkill identifier="Touhou_Magic" level="100" />
             <RequiredItem tag="MRE_Material" mincondition="0.01" usecondition="false" />
             <RequiredItem tag="Alchemical" />
