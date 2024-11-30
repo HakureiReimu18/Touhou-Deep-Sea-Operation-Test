@@ -138,9 +138,9 @@
         <Body width="170" height="10" density="10" />
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" hitscan="false" launchimpulse="120" removeonhit="true">
-            <Attack structuredamage="70" targetforce="5" levelwalldamage="100" itemdamage="50" severlimbsprobability="0.6" penetration="0.35">
-                <Affliction identifier="explosiondamage" strength="25" />
-                <Affliction identifier="burn" strength="25" />
+            <Attack structuredamage="70" targetforce="5" levelwalldamage="100" itemdamage="50" severlimbsprobability="0.6" penetration="0.25">
+                <Affliction identifier="explosiondamage" strength="35" />
+                <Affliction identifier="burn" strength="35" />
                 <Affliction identifier="Phoenix_Burn" strength="100" />
                 <Affliction identifier="stun" strength="1" />
                 <Affliction identifier="stun" strength="2" probability="0.2" />
@@ -637,9 +637,8 @@
         <Body width="72" height="72" density="10" />
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="40.0" damagedoors="true"  >
-            <Attack structuredamage="200" itemdamage="100" levelwalldamage="200" severlimbsprobability="1" penetration="0.4">
+            <Attack structuredamage="200" itemdamage="100" levelwalldamage="200" severlimbsprobability="1" penetration="0.6">
                 <Affliction identifier="explosiondamage" strength="30" />
-                <Affliction identifier="Reiki_Pressure" strength="5" />
                 <Affliction identifier="burn" strength="30" />
                 <Affliction identifier="stun" strength="0.75" />
                 <Affliction identifier="stun" strength="0.75" probability="0.5" />
@@ -665,9 +664,9 @@
                 <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="5000" />
                 <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="5000" />
                 <Explosion range="500.0" structuredamage="250" itemdamage="100" ballastfloradamage="1000" force="10.0" severlimbsprobability="0.3" camerashake="150" camerashakerange="1500" penetration="1">
-                    <Affliction identifier="explosiondamage" strength="45" />
+                    <Affliction identifier="explosiondamage" strength="40" />
                     <Affliction identifier="Reiki_Pressure" strength="5" />
-                    <Affliction identifier="burn" strength="45" />
+                    <Affliction identifier="burn" strength="40" />
                     <Affliction identifier="Touhou_Royal_Flare_Burn" strength="8" />
                     <Affliction identifier="Touhou_Royal_Flare_Burn" strength="8" probability="0.2" />
                 </Explosion>
@@ -741,8 +740,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="15" damagedoors="true">
             <Attack severlimbsprobability="0.4" penetration="0.7" maxtargetstohit="2">
-                <Affliction identifier="explosiondamage" strength="6" />
-                <Affliction identifier="acidburn" strength="2" />
+                <Affliction identifier="explosiondamage" strength="3" />
+                <Affliction identifier="acidburn" strength="1" />
                 <Affliction identifier="Touhou_Freeze" strength="2" />
                 <Affliction identifier="Reiki_Pressure" strength="1" />
                 <Affliction identifier="Touhou_Silent_Selene_Dream" strength="1" />
@@ -770,8 +769,8 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="70.0" structuredamage="0" force="2.0" itemdamage="0" severlimbsprobability="0.4" decal="explosion" decalsize="0.3" penetration="0.7">
-                    <Affliction identifier="explosiondamage" strength="6" />
-                    <Affliction identifier="acidburn" strength="3" />
+                    <Affliction identifier="explosiondamage" strength="3" />
+                    <Affliction identifier="acidburn" strength="1" />
                     <Affliction identifier="Touhou_Freeze" strength="3" />
                     <Affliction identifier="Reiki_Pressure" strength="1" />
                 </Explosion>
@@ -1281,7 +1280,7 @@
                 <Affliction identifier="lacerations" strength="16" />
                 <Affliction identifier="burn" strength="4" />
                 <Affliction identifier="Reiki_Pressure" strength="1" />
-                <Affliction identifier="Scarlet_Long_Night" strength="2" />
+                <Affliction identifier="Scarlet_Long_Night" strength="1" />
                 <Affliction identifier="stun" strength="0.75" probability="0.1" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
@@ -1289,7 +1288,7 @@
                 <Affliction identifier="Reiki_Pressure" strength="2" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Scarlet_Long_Night" strength="2" probability="0.3" />
+                <Affliction identifier="Scarlet_Long_Night" strength="1" probability="0.3" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="4" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="7,7" colormultiplier="255,115,95,150" lifetimemultiplier="0.5"/>
@@ -1312,13 +1311,13 @@
         <Projectile characterusable="false" maxtargetstohit="3" hitscan="true" spread="2.5" removeonhit="false" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,2.5" colormultiplier="255,66,66,255"/>
             <Attack severlimbsprobability="0.1" penetration="0.3">
-                <StatusEffect type="OnImpact" target="UseTarget">
-                    <Conditional speciesgroup="neq human"/>
-                    <Affliction identifier="lacerations" strength="8" />
-                    <Affliction identifier="Reiki_Pressure" strength="2" />
-                    <Affliction identifier="Scarlet_Long_Night" strength="2" probability="0.1" />
-                </StatusEffect>
+                <Affliction identifier="lacerations" strength="0.1" />
             </Attack>
+            <StatusEffect type="OnImpact" target="Limb">
+                <Conditional speciesgroup="neq human"/>
+                <Affliction identifier="lacerations" strength="8" />
+                <Affliction identifier="Reiki_Pressure" strength="2" />
+            </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="4" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="7,7" colormultiplier="255,115,95,150" lifetimemultiplier="0.5"/>
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180" />

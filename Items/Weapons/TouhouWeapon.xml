@@ -5214,12 +5214,15 @@
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" maxtargetstohit="2" removeonhit="true" friendlyfire="true">
             <Attack itemdamage="20" targetforce="2" targetimpulse="2" severlimbsprobability="0.5" penetration="0.25">
                 <Affliction identifier="burn" strength="4" />
-                <Affliction identifier="Reiki_Pressure" strength="4" />
+                <Affliction identifier="Reiki_Pressure" strength="1" />
                 <Affliction identifier="explosiondamage" strength="4" />
                 <Affliction identifier="bleeding" strength="15" />
                 <Affliction identifier="stun" strength="0.1" />
                 <Affliction identifier="stun" strength="0.1" probability="0.35" />
             </Attack>
+            <StatusEffect type="OnImpact" target="Limb" >
+                <Affliction identifier="Reiki_Pressure" strength="3" />
+            </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Alice_Magic_Book_Bolt_Effect" strength="0.25" />
                 <Affliction identifier="Touhou_Alice_Magic_Book_Bolt_Effect" strength="1" probability="0.15" />
@@ -5249,7 +5252,7 @@
                 <SpawnItem identifier="Touhou_Alice_Magic_Book_Bolt_Shrapnel" spawnposition="This" count="3" aimspread="240" rotationtype="Collider" rotation="0" />
                 <Explosion range="15.0" force="2.0" itemdamage="20" shockwave="false" smoke="false" flames="false" flash="false" sparks="false" underwaterbubble="true" camerashake="0" penetration="0.2">
                     <Affliction identifier="lacerations" strength="3.5" />
-                    <Affliction identifier="Reiki_Pressure" strength="3.5" />
+                    <Affliction identifier="burn" strength="3.5" />
                 </Explosion>
                 <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="0.4" selectionmode="Random" range="1000" />
                 <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="0.4" selectionmode="Random" range="1000" />

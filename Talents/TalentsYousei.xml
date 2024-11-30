@@ -513,15 +513,9 @@
     <Talent identifier="Quiet_And_Well_Behaved">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Quiet_And_Well_Behaved"/>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupInterval interval="29.0">
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1"/>
-                <CharacterAbilityGiveStat stattype="RepairSpeed" value="0.15"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupInterval interval="30.0">
-            <Abilities>
-                <CharacterAbilityApplyStatusEffectsToAllies allowself="false" jobs="Magician" insameroom="false">
+                <CharacterAbilityApplyStatusEffectsToAllies allowself="true" jobs="Magician" insameroom="false">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                             <Affliction identifier="Quiet_And_Well_Behaved_Effect" amount="1.0"/>

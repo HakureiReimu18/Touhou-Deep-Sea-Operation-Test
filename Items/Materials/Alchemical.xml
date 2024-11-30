@@ -938,7 +938,12 @@
             <Item identifier="MRE_Material_Reimu" mincondition="0.9" maxcondition="1" outconditionmin="0.9" outconditionmax="0.99" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical_Fake" activatebuttontext="Alchemy_Table.Refine09" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
             <Item identifier="MRE_Material_Reimu" mincondition="0.9" maxcondition="1" outconditionmin="1" outconditionmax="1" commonness="1" requiredotheritem="MRE_Seven_Elements_Alchemical" activatebuttontext="Alchemy_Table.Refine10" infotext="Alchemy_Table.Refine.Infotext" infotextonotheritemmissing="Alchemy_Table.Refine.Missingitem" />
         </Deconstruct>
-        <GeneticMaterial nameidentifier="Character.MRE_Material_Reimu" />
+        <GeneticMaterial nameidentifier="Character.MRE_Material_Reimu" >
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
+                <Conditional Condition="lte 0.5"/>
+                <RemoveItem />
+            </StatusEffect>
+        </GeneticMaterial>
         <InventoryIcon texture="%ModDir%/Images/Alchemical/MRE_Material.png" sourcerect="0,0,98,128" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Alchemical/MRE_Material.png" sourcerect="100,0,72,125" depth="0.5" origin="0.5,0.5" />
         <Body width="72" height="125" density="10" />
@@ -950,7 +955,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Reimu" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -1068,7 +1073,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Remilia" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -1186,7 +1191,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Marisa" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -1304,7 +1309,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Aya" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -1422,7 +1427,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Youmu" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -1540,7 +1545,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Nitori" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -1658,7 +1663,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Akyuu" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -1776,7 +1781,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Mokou" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -1894,7 +1899,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Patchouli" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2012,7 +2017,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Tenshi" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2130,7 +2135,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Momizi" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2248,7 +2253,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Yuka" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2366,7 +2371,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Aunn" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2484,7 +2489,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Flandre" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2602,7 +2607,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Nue" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2720,7 +2725,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Piece" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2838,7 +2843,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Cirno" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -2956,7 +2961,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Koishi" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -3074,7 +3079,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Alice" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -3192,7 +3197,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Sunny" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>
@@ -3310,7 +3315,7 @@
                 <GiveTalentInfo giverandom="true"
                                 talentidentifiers="MRE_Luna" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" Interval="1.0">
+            <StatusEffect type="Always" target="This" Interval="1.0" AllowWhenBroken="true">
                 <Conditional Condition="lte 0.5"/>
                 <RemoveItem />
             </StatusEffect>

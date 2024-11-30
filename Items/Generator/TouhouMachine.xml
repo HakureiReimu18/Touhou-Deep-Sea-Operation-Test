@@ -309,10 +309,10 @@
             firingoffset="-10,-370"
             MaxAngleOffset="5"
             AICurrentTargetPriorityMultiplier="1">
-      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
+      <StatusEffect type="OnUse" target="This" condition="-0.75" disabledeltatime="true" >
         <Conditional condition="lt 80" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-1.5" disabledeltatime="true" >
+      <StatusEffect type="OnUse" target="This" condition="-1.25" disabledeltatime="true" >
         <Conditional condition="lt 40" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
