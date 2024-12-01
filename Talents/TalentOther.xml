@@ -44,6 +44,67 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15" />
             </Abilities>
         </AbilityGroupEffect>
+
+        <AbilityGroupInterval interval="1.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Gensokyo_Divinggear_Effect01" />
+                <AbilityConditionHasAffliction afflictionidentifier="damageresistance" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Decreased_Damage_Resistance_Effect" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Boudary_Divinggear_Effect01" />
+                <AbilityConditionHasAffliction afflictionidentifier="damageresistance" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Decreased_Damage_Resistance_Effect" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Ether_Divinggear_Effect01" />
+                <AbilityConditionHasAffliction afflictionidentifier="damageresistance" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Decreased_Damage_Resistance_Effect" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Magic_Veil_Effect01" />
+                <AbilityConditionHasAffliction afflictionidentifier="damageresistance" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Decreased_Damage_Resistance_Effect" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--出血效应-博丽灵梦-->
@@ -999,5 +1060,90 @@
                 <CharacterAbilityGivePermanentStat statidentifier="MRE_Luna_Kill" value="1" />
             </Abilities>
         </AbilityGroupEffect>
+    </Talent>
+
+    <!--出血效应-斯塔·萨菲雅-->
+    <Talent identifier="MRE_Star">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.MRE_Star"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+                <AbilityConditionHasAffliction afflictionidentifier="MRE_Effect_Star" invert="true" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+                <AbilityConditionServerRandom randomchance="0.3" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
+                            <Affliction identifier="MRE_Effect_Star" amount="10.0"/>
+                        </StatusEffect>
+                        <StatusEffect type="OnAbility" target="Character" delay="0.05" disabledeltatime="true" >
+                            <TriggerEvent identifier="MRE_Star_Talent_Attacked" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval Interval="1.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+                <AbilityConditionHasAffliction afflictionidentifier="MRE_Star_Talent_Attacked05" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectToNonHumans maxdistance="500">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" >
+                            <Affliction identifier="stun" strength="0.75"/>
+                            <Affliction identifier="burn" strength="0.75"/>
+                            <Affliction identifier="Reiki_Pressure" strength="10"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectToNonHumans>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+                <AbilityConditionHasAffliction afflictionidentifier="MRE_Star_Talent_Attacked06" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectsToAllies allowself="true" requiresalive="true" jobs="Yousei">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Star_Talent_Attacked06_Advanced" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+                <AbilityConditionHasAffliction afflictionidentifier="MRE_Star_Talent_Attacked07" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
+                            <SpawnItem identifiers="MRE_Star_Talent_Attacked07_Spawn" spawnposition="This" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 </Talents>

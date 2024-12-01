@@ -428,7 +428,7 @@
         \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
         \n魔法武器的远程攻击每次有‖color:gui.green‖5%‖end‖概率造成额外‖color:gui.yellow‖烧伤‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成日之光效果
         近战攻击每次有‖color:gui.green‖30%‖end‖概率造成额外‖color:gui.yellow‖烧伤‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成日之光效果
-        ‖color:gui.yellow‖日之光‖end‖：减少怪物的攻击伤害，让怪物短时间内失去视野中的目标。
+        ‖color:gui.yellow‖日之光‖end‖：减少生物的攻击伤害，让怪物短时间内失去视野中的目标。
     </talentdescription.SunnyTalent>
     <afflictionname.Shining_Light_Of_The_Sun>闪耀的日之光</afflictionname.Shining_Light_Of_The_Sun>
     <afflictiondescription.Shining_Light_Of_The_Sun>她有着一头橙色及肩短发，用红色蝴蝶结系成短双马尾，头顶戴着白色蕾丝状发箍。</afflictiondescription.Shining_Light_Of_The_Sun>
@@ -450,7 +450,7 @@
         \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
         \n魔法武器的远程攻击每次有‖color:gui.green‖5%‖end‖概率造成额外‖color:gui.yellow‖眩晕‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成‖color:gui.yellow‖月之光‖end‖效果
         近战攻击每次有‖color:gui.green‖30%‖end‖概率造成额外‖color:gui.yellow‖眩晕‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成‖color:gui.yellow‖月之光‖end‖效果
-        ‖color:gui.yellow‖月之光‖end‖：减少怪物的攻击伤害，让怪物短时间内降低移动速度和抗性。
+        ‖color:gui.yellow‖月之光‖end‖：减少生物的攻击伤害，让怪物短时间内降低移动速度和抗性。
     </talentdescription.LunaTalent>
     <afflictionname.Tranquil_Light_Of_The_Moon>静谧的月之光</afflictionname.Tranquil_Light_Of_The_Moon>
     <afflictiondescription.Tranquil_Light_Of_The_Moon>她有着一头稻草黄及肩短发，两侧各有三个螺旋状发辫，戴着两侧各系着两个黑色蝴蝶结的白色帽子。</afflictiondescription.Tranquil_Light_Of_The_Moon>
@@ -465,12 +465,12 @@
     <talentdescription.StarTalent>当你身着斯塔装束+时，
         \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
         \n可以感知周围活体生物的位置
-        一定时间没有受到攻击后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，并减少‖color:gui.green‖15%‖end‖受到的伤害
+        长时间没有受到攻击后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，减少‖color:gui.green‖20%‖end‖受到的伤害，并大大增加生命恢复速度
         \n对你造成过伤害的敌人：
-        当其生命值高于‖color:gui.green‖50%‖end‖时，对其造成额外‖color:gui.green‖5%‖end‖的伤害，近战武器额外造成‖color:gui.green‖15%‖end‖的伤害
         当其生命值低于‖color:gui.green‖50%‖end‖时，远程弹幕攻击有‖color:gui.green‖5%‖end‖概率对其造成额外‖color:gui.yellow‖眩晕、烧伤和星之光‖end‖，近战武器概率则为‖color:gui.green‖30%‖end‖
         \n如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，任何攻击都有‖color:gui.green‖10%‖end‖概率附加‖color:gui.yellow‖星之光‖end‖效果。
         攻击带有‖color:gui.yellow‖星之光‖end‖的敌人将造成额外‖color:gui.green‖5%‖end‖伤害，击杀带有星之光的敌人将恢复自身的‖color:gui.yellow‖物理伤害、烧伤和出血‖end‖。
+        ‖color:gui.yellow‖星之光‖end‖：减少生物的物理伤害抗性、攻击伤害、移动速度和技能水平。
     </talentdescription.StarTalent>
     <afflictionname.Cascading_Light_Of_The_Star>倾泻而下的星之光</afflictionname.Cascading_Light_Of_The_Star>
     <afflictiondescription.Cascading_Light_Of_The_Star>她有着一头深棕色及腰长发，头顶系着蓝色大蝴蝶结，在大战争中蝴蝶结边缘有白色褶子。她有着棕色的眼瞳。</afflictiondescription.Cascading_Light_Of_The_Star>

@@ -17,6 +17,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+
         <AbilityGroupInterval interval="1">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
@@ -45,50 +46,59 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
-                <AbilityConditionHasAffliction afflictionidentifier="Star_No_Attacked" minimumPercentage="0.9" />
+                <AbilityConditionHasAffliction afflictionidentifier="Star_No_Attacked" minimumPercentage="0.95" />
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2" />
             </Abilities>
         </AbilityGroupEffect>
 
+        <AbilityGroupInterval interval="1">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+                            <Affliction identifier="Star_No_Attacked_Yousei_Talent" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="Star_No_Attacked_Yousei_Talent" strength="100.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
+                <AbilityConditionHasAffliction afflictionidentifier="Star_No_Attacked_Yousei_Talent" minimumPercentage="0.95" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <!--标记目标-->
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Star_Attack_Mark" strength="1" />
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
-                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
-            </Conditions>
-            <Conditions>
-                <AbilityConditionCharacter>
-                    <Conditional Star_Attack_Mark="gt 0" />
-                    <Conditional HealthPercentage="gt 50" />
-                </AbilityConditionCharacter>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
-                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
-            </Conditions>
-            <Conditions>
-                <AbilityConditionCharacter>
-                    <Conditional Star_Attack_Mark="gt 0" />
-                    <Conditional HealthPercentage="gt 50" />
-                </AbilityConditionCharacter>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
             </Abilities>
         </AbilityGroupEffect>
 
@@ -113,6 +123,26 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionServerRandom randomchance="0.05" />
+            </Conditions>
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional Star_Attack_Mark="gt 0" />
+                    <Conditional HealthPercentage="lte 50" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="stun" strength="0.025" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.2" />
+                <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionServerRandom randomchance="0.3" />
             </Conditions>
@@ -125,6 +155,25 @@
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="stun" strength="0.1" />
                 <CharacterAbilityGiveAffliction affliction="burn" strength="0.8" />
+                <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionServerRandom randomchance="0.3" />
+            </Conditions>
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional Star_Attack_Mark="gt 0" />
+                    <Conditional HealthPercentage="lte 50" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.4" />
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1" />
             </Abilities>
         </AbilityGroupEffect>

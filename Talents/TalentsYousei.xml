@@ -307,7 +307,7 @@
     <Talent identifier="Touhou_Yousei_Alliance">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Yousei_Alliance"/>
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="2.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Fairy_Of_Hell" />
             </Conditions>
@@ -321,7 +321,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="2.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Fairy_Of_Ice" />
             </Conditions>
@@ -335,7 +335,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="2.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
             </Conditions>
@@ -349,7 +349,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval interval="2.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
             </Conditions>
@@ -358,6 +358,20 @@
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                             <Affliction identifier="Touhou_Yousei_Alliance_Effect04" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="2.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yousei_Alliance_Effect05" strength="1.0"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

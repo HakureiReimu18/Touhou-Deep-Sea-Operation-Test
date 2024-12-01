@@ -161,6 +161,8 @@
     <afflictiondescription.Hyouibana_Effect_Prefect_Sunny>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Sunny>
     <afflictionname.Hyouibana_Effect_Prefect_Luna>露娜-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Luna>
     <afflictiondescription.Hyouibana_Effect_Prefect_Luna>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Luna>
+    <afflictionname.Hyouibana_Effect_Prefect_Star>斯塔-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Star>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Star>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Star>
     <!--出血效应-->
     <afflictionname.MRE_Effect_Luna>出血效应-露娜·切露德</afflictionname.MRE_Effect_Luna>
     <afflictiondescription.MRE_Effect_Luna>临时增加生命值</afflictiondescription.MRE_Effect_Luna>

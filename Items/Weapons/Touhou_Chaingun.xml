@@ -1049,7 +1049,7 @@
 
     <!--天上剑「天人之五衰」-->
     <Item name="" identifier="Celestial_Decay" scale="0.25" tags="chaingunequipment,chaingunammo,ammobox,Celestial_Decay,Touhou_Rapidly_Spell_Card_Ammo"
-          health="600" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+          health="800" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="chaingunammosource" amount="1" mincondition="1"/>
         <PreferredContainer primary="ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckammoboxcontainer" amount="1" spawnprobability="0.06"/>
@@ -1230,7 +1230,7 @@
 
     <!--红符「红色不夜城」-->
     <Item name="" identifier="Scarlet_Devil_Mansion" scale="0.25" tags="chaingunequipment,chaingunammo,ammobox,Scarlet_Devil_Mansion,Touhou_Turret_Ammo,Touhou_Large_Turret_Ammo"
-          health="400" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+          health="300" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="chaingunammosource" amount="1" mincondition="1"/>
         <PreferredContainer primary="ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckammoboxcontainer" amount="1" spawnprobability="0.05"/>
@@ -1277,14 +1277,14 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,2.5" colormultiplier="255,66,66,255"/>
             <Attack structuredamage="10" targetforce="10" targetimpulse="10" itemdamage="20" severlimbsprobability="0.1" penetration="0.25">
                 <Affliction identifier="bleeding" strength="4" />
-                <Affliction identifier="lacerations" strength="12" />
-                <Affliction identifier="burn" strength="4" />
-                <Affliction identifier="Scarlet_Long_Night" strength="1" />
+                <Affliction identifier="lacerations" strength="10" />
+                <Affliction identifier="burn" strength="3" />
+                <Affliction identifier="Scarlet_Long_Night" strength="0.5" />
                 <Affliction identifier="stun" strength="0.75" probability="0.1" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
-                <Affliction identifier="burn" strength="6" />
-                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="burn" strength="3" />
+                <Affliction identifier="Reiki_Pressure" strength="1" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Scarlet_Long_Night" strength="1" probability="0.3" />
@@ -1314,8 +1314,8 @@
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
                 <Conditional speciesgroup="neq human"/>
-                <Affliction identifier="lacerations" strength="3" />
-                <Affliction identifier="Reiki_Pressure" strength="1" />
+                <Affliction identifier="lacerations" strength="2" />
+                <Affliction identifier="Reiki_Pressure" strength="0.5" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="4" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="7,7" colormultiplier="255,115,95,150" lifetimemultiplier="0.5"/>
@@ -1330,7 +1330,7 @@
 
     <!--禁弹「星弧破碎」-->
     <Item name="" identifier="Touhou_Starbow_Break" scale="0.25" tags="flakcannonequipment,flakcannonammo,ammobox,Touhou_Large_Turret_Ammo"
-          health="120" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
+          health="100" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
         <PreferredContainer primary="flakcannonammoloader" amount="1" mincondition="1" spawnprobability="0.1"/>
         <PreferredContainer primary="ammoboxcontainer" mincondition="1" spawnprobability="0.1"/>
         <PreferredContainer secondary="wreckflakcannonloader" amount="1" spawnprobability="0.04" />

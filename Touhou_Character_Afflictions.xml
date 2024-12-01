@@ -1674,9 +1674,9 @@
             identifier="Light_Of_The_Sun_Effect"
             type="aichange"
             limbspecific="false"
-            duration="3"
+            duration="4"
             maxstrength="1">
-        <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="-0.35" maxresistance="-0.35">
+        <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="-0.25" maxresistance="-0.25">
             <StatusEffect target="Character">
                 <AITrigger state="Idle" duration="5" probability="1" allowtobeoverridden="false" allowtooverride="true" />
             </StatusEffect>
@@ -1810,20 +1810,44 @@
     <!--倾泻而下的星之光-->
     <Affliction identifier="Cascading_Light_Of_The_Star" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="15000" ThermalOverlayColor="176,176,176,120" strengthchange="-9">
+        <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="15000" ThermalOverlayColor="160,160,255,120" strengthchange="-9">
             <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/Tranquil_Light_Of_The_Moon.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Cascading_Light_Of_The_Star.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
     <!--斯塔未收到攻击效果-->
-    <Affliction identifier="Star_No_Attacked" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="9" />
-        <Effect minstrength="9" maxstrength="10" >
+    <Affliction identifier="Star_No_Attacked" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="40"
+                showiconthreshold="39" showinhealthscannerthreshold="39" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="39" />
+        <Effect minstrength="39" maxstrength="40" >
             <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
+            <StatusEffect target="Character" Interval="0.1" disabledeltatime="true" >
+                <ReduceAffliction type="damage" amount="0.1"/>
+                <ReduceAffliction type="burn" amount="0.2"/>
+                <ReduceAffliction type="bleeding" amount="0.2"/>
+                <ReduceAffliction type="debuff" amount="0.01"/>
+            </StatusEffect>
+            <StatusEffect target="Character" ConstantHealthRegeneration="1" setvalue="true" disabledeltatime="true" />
         </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/Tranquil_Light_Of_The_Moon.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Star_No_Attacked.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+    </Affliction>
+
+    <!--斯塔未收到攻击效果-妖精联盟-->
+    <Affliction identifier="Star_No_Attacked_Yousei_Talent" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="40"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="39" />
+        <Effect minstrength="39" maxstrength="40" >
+            <StatValue stattype="MaximumHealthMultiplier" value="0.05" />
+            <StatusEffect target="Character" Interval="0.1" disabledeltatime="true" >
+                <ReduceAffliction type="damage" amount="0.05"/>
+                <ReduceAffliction type="burn" amount="0.1"/>
+                <ReduceAffliction type="bleeding" amount="0.1"/>
+                <ReduceAffliction type="debuff" amount="0.005"/>
+            </StatusEffect>
+            <StatusEffect target="Character" ConstantHealthRegeneration="1" setvalue="true" disabledeltatime="true" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Star_No_Attacked.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
     <!--斯塔攻击标记效果-->
@@ -1849,25 +1873,105 @@
     <!--斯塔-完全凭依-->
     <Affliction identifier="Hyouibana_Effect_Prefect_Star" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="1"/>
-        <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Icon texture="%ModDir%/Images/Afflictions/Cascading_Light_Of_The_Star.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
     <!--凭依斯塔-->
     <Affliction identifier="Hyouibana_Star_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" />
-        <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+        <Effect minstrength="0" maxstrength="39" />
+        <Effect minstrength="39" maxstrength="40" >
+            <StatusEffect target="Character" Interval="0.1" disabledeltatime="true" >
+                <ReduceAffliction type="damage" amount="0.05"/>
+                <ReduceAffliction type="burn" amount="0.1"/>
+                <ReduceAffliction type="bleeding" amount="0.1"/>
+                <ReduceAffliction type="debuff" amount="0.005"/>
+            </StatusEffect>
+            <StatusEffect target="Character" ConstantHealthRegeneration="1" setvalue="true" disabledeltatime="true" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Cascading_Light_Of_The_Star.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
     <!--出血效应-斯塔·萨菲雅-->
-    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Effect_Star" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="300"
-                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="300" minspeedmultiplier="1" maxspeedmultiplier="1.2" minvitalitydecrease="0" maxvitalitydecrease="-30"
-                multiplybymaxvitality="false" minskillmultiplier="1" maxskillmultiplier="1.2" strengthchange="-1">
-            <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.2" />
-            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.2" />
-        </Effect>
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Effect_Star" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" />
         <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果01-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked01" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="5.0" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="AttackMultiplier" value="0.15" />
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked01.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果02-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked02" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="5.0" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.25" maxresistance="0.25" />
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked02.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果03-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked03" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="5.0" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" >
+            <AbilityFlag flagtype="IgnoredByEnemyAI" />
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked03.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果04-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked04" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="7.0" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" minspeedmultiplier="1.3" maxspeedmultiplier="1.3" />
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked04.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果05-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked05" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="6.0" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" />
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked05.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果05爆炸效果-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked05_Explosion" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="6.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatusEffect target="Character" disabledeltatime="true" Interval="1.9" >
+                <Explosion range="50.0" force="4.0" severlimbsprobability="0.2" penetration="0.15">
+                    <Affliction identifier="Touhou_Lost_Dream" strength="6" />
+                    <Affliction identifier="burn" strength="10" />
+                    <Affliction identifier="explosiondamage" strength="10" />
+                </Explosion>
+            </StatusEffect>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked05.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果06-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked06" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="3.0" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" />
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked06.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果06提升抗性-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked06_Advanced" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="4.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.15" maxresistance="0.15" />
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked06.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应效果07-斯塔·萨菲雅-->
+    <Affliction name="出血效应-斯塔·萨菲雅" identifier="MRE_Star_Talent_Attacked07" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="1.0" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" />
+        <icon texture="%ModDir%/Images/Afflictions/MRE_Star_Talent_Attacked07.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
     <!--星之光效果-->
@@ -1878,12 +1982,13 @@
             limbspecific="false"
             duration="5"
             maxstrength="1">
-        <Effect minstrength="0" maxstrength="1" resistancefor="stun,damage" minresistance="-0.2" maxresistance="-0.2" minspeedmultiplier="0.75" maxspeedmultiplier="0.75">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="-0.1" maxresistance="-0.1"
+                minspeedmultiplier="0.85" maxspeedmultiplier="0.85" minskillmultiplier="0.85" maxskillmultiplier="0.85">
             <StatusEffect target="Character" >
                 <ParticleEmitter particle="GlowDot" scalemin="1.5" scalemax="3.0" particlespersecond="40" anglemin="0" anglemax="360" colormultiplier="150,150,200,160" />
             </StatusEffect>
-            <StatValue stattype="RangedAttackSpeed" value="-0.25" />
-            <StatValue stattype="AttackMultiplier" value="-0.25" />
+            <StatValue stattype="RangedAttackSpeed" value="-0.15" />
+            <StatValue stattype="AttackMultiplier" value="-0.15" />
         </Effect>
         <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
     </Affliction>

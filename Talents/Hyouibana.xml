@@ -697,9 +697,6 @@
             <Conditions>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionServerRandom randomchance="0.05" />
-                <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional HealthPercentage="gt 70"/>
-                </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="burn" strength="0.15" />
@@ -753,14 +750,67 @@
                 <CharacterAbilityGiveAffliction affliction="stun" strength="0.05" />
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
+    </Talent>
+
+    <!--凭依斯塔-->
+    <Talent identifier="Hyouibana_Star" >
+        <Icon texture="%ModDir%/Images/Talents/StarTalent.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Hyouibana_Star"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Hyouibana_Star_Effect" amount="10.0"/>
+                            <Affliction identifier="Hyouibana_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
-                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
-                <AbilityConditionServerRandom randomchance="0.3" />
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05" />
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Hyouibana_Effect_Prefect_Star" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="1">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+                            <Affliction identifier="Star_No_Attacked" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="This">
+                            <ReduceAffliction identifier="Star_No_Attacked" strength="100.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Star_No_Attacked" minimumPercentage="0.95" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

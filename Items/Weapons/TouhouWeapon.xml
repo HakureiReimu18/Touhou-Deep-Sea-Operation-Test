@@ -4404,6 +4404,8 @@
             <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" drawhudwhenequipped="true">
                 <SpawnItem identifiers="Touhou_Love_Maze_Arrow" spawnposition="ThisInventory"/>
             </StatusEffect>
+
+            <!--连发机制-->
             <StatusEffect type="Always" target="This,Character" Tags="Triple_On" setvalue="true" checkconditionalalways="true" disabledeltatime="true" >
                 <Conditional Touhou_Love_Maze_Counter03="gt 0" />
             </StatusEffect>

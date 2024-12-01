@@ -2068,4 +2068,39 @@
             </StatusEffect>
         </Holdable>
     </Item>
+
+    <!--星光陷阱-->
+    <Item
+            name="星光陷阱"
+            identifier="MRE_Star_Talent_Attacked07_Spawn"
+            category="Weapons"
+            subcategory="Touhou"
+            tags="smallitem"
+            description=""
+            scale="0.1"
+            hideinmenus="true"
+            impactsoundtag="impact_soft">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.45" />
+        <Body width="1" height="1" density="10" />
+        <Holdable slots="Any,RightHand,LeftHand" handle1="0,0" />
+        <ItemComponent>
+            <StatusEffect type="OnNotContained" target="This">
+                <Use/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="NearbyCharacters" range="500" Interval="0.5" comparison="And" >
+                <Conditional IsDead="false" />
+                <Conditional speciesgroup="neq human" />
+                <Affliction identifier="burn" strength="3.5" />
+                <Affliction identifier="explosiondamage" strength="3.5" />
+                <Affliction identifier="Reiki_Pressure" strength="3.5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" delay="9.5">
+                <Remove />
+            </StatusEffect>
+        </ItemComponent>
+        <LightComponent lightcolor="120,120,255,130" range="500" powerconsumption="0" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false">
+            <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0" />
+        </LightComponent>
+    </Item>
 </Items>

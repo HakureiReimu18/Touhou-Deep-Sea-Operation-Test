@@ -1735,6 +1735,24 @@
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
+  <!--摩洛克基因拮抗-->
+  <Affliction name=""
+              identifier="Touhou_Decreased_Damage_Resistance_Effect"
+              description=""
+              type="talentbuff"
+              isbuff="true"
+              limbspecific="false"
+              indicatorlimb="Torso"
+              maxstrength="10"
+              Duration="2.0"
+              showiconthreshold="100"
+              showinhealthscannerthreshold="100"
+              affectmachines="true"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="10" resistancefor="-0.125" />
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
   <!--锁定幻想潜水服效果-->
   <Affliction name=""
               identifier="gensokyo_divinggear_Locked_Effect"
