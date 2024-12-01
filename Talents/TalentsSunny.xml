@@ -85,6 +85,15 @@
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Sun_Effect" strength="100" />
             </Abilities>
         </AbilityGroupEffect>
+    <!--免疫日之光-->
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveResistance resistanceid="Light_Of_The_Sun_Effect" multiplier="0" />
+            </Abilities>
+        </AbilityGroupEffect>
 
     </Talent>
 </Talents>

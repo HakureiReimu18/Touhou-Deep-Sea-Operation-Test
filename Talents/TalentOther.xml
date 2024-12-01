@@ -591,8 +591,10 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional Touhou_MRE_Akyuu_Effect="gt 0"/>
+                    <Conditional HealthPercentage="gt 50"/>
                 </AbilityConditionCharacter>
                 <AbilityConditionServerRandom randomchance="0.04" />
             </Conditions>
@@ -604,10 +606,42 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional HealthPercentage="lt 50"/>
+                    <Conditional HealthPercentage="lte 50"/>
+                    <Conditional Touhou_MRE_Akyuu_Effect="eq 0"/>
                 </AbilityConditionCharacter>
                 <AbilityConditionServerRandom randomchance="0.04" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData implode="true" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional Touhou_MRE_Akyuu_Effect="gt 0"/>
+                    <Conditional HealthPercentage="gt 50"/>
+                </AbilityConditionCharacter>
+                <AbilityConditionServerRandom randomchance="0.06" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData implode="true" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional HealthPercentage="lte 50"/>
+                    <Conditional Touhou_MRE_Akyuu_Effect="eq 0"/>
+                </AbilityConditionCharacter>
+                <AbilityConditionServerRandom randomchance="0.06" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData implode="true" />

@@ -196,5 +196,15 @@
                 <CharacterAbilityGivePermanentStat statidentifier="Star_Kill" value="1" />
             </Abilities>
         </AbilityGroupEffect>
+        <!--免疫星之光-->
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Cascading_Light_Of_The_Star" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveResistance resistanceid="Light_Of_The_Star_Effect" multiplier="0" />
+            </Abilities>
+        </AbilityGroupEffect>
+
     </Talent>
 </Talents>

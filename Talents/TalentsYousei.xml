@@ -190,7 +190,7 @@
 
     <!--鹑居鷇食-->
 
-    <!--糖果乐事 增加10%最大生命值。巡回结束完成任意任务，获得妖精糖果（柚子味），在医疗界面使用不同的糖果可以获得不同的额外增益：苹果味：极速；蜜桃味：最大生命值提升；柠檬味:攻击速度；柚子味：攻击伤害。-->
+    <!--糖果乐事 巡回结束完成任意任务，获得妖精糖果（柚子味），在医疗界面使用不同的糖果可以获得不同的额外增益：苹果味：极速；蜜桃味：最大生命值提升；柠檬味:攻击速度；柚子味：攻击伤害。-->
     <Talent identifier="Touhou_Candy_Fun">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Candy_Fun"/>

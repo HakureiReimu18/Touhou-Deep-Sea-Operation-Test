@@ -106,7 +106,7 @@
         魔法能力给予的增幅在技能水平‖color:gui.green‖400‖end‖时停止增长</talentdescription.Talents_Yousei_Primary09>
     <talenttree.Behind_The_Scenes>鹑居鷇食</talenttree.Behind_The_Scenes>
     <talentname.Touhou_Candy_Fun>糖果乐事</talentname.Touhou_Candy_Fun>
-    <talentdescription.Touhou_Candy_Fun>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖‖color:gui.orange‖最大生命值‖end‖。巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柚子味）‖end‖，在医疗界面使用不同的糖果可以获得不同的额外增益各‖color:gui.green‖150‖end‖秒：
+    <talentdescription.Touhou_Candy_Fun>巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柚子味）‖end‖，在医疗界面使用不同的糖果可以获得不同的额外增益各‖color:gui.green‖150‖end‖秒：
         ‖color:gui.yellow‖苹果味‖end‖：‖color:gui.orange‖极速‖end‖‖color:gui.green‖150点‖end‖；
         ‖color:gui.yellow‖蜜桃味‖end‖：‖color:gui.orange‖最大生命值‖end‖提高‖color:gui.green‖15%‖end‖；
         ‖color:gui.yellow‖柠檬味‖end‖：‖color:gui.orange‖攻击速度‖end‖提高‖color:gui.green‖10%‖end‖；

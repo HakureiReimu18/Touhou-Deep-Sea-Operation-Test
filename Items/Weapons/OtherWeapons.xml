@@ -1362,7 +1362,7 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Penglai_Jade_Branch_Bolt" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-0.2" disabledeltatime="true" spawnItemRandomly="true" >
+            <StatusEffect type="OnUse" target="This" condition="-0.25" disabledeltatime="true" spawnItemRandomly="true" >
                 <SpawnItem identifiers="Touhou_Penglai_Jade_Branch_Bolt01" spawnposition="ThisInventory" commonness="1" />
                 <SpawnItem identifiers="Touhou_Penglai_Jade_Branch_Bolt02" spawnposition="ThisInventory" commonness="1" />
                 <SpawnItem identifiers="Touhou_Penglai_Jade_Branch_Bolt03" spawnposition="ThisInventory" commonness="1" />
@@ -1379,15 +1379,15 @@
         <Body width="146" height="28" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="50" hitscan="false" removeonhit="true" friendlyfire="false" >
-            <Attack itemdamage="25" targetforce="5" penetration="0.3" severlimbsprobability="0.2">
+            <Attack itemdamage="25" targetforce="5" penetration="0.25" severlimbsprobability="0.2">
                 <Affliction identifier="burn" strength="10.0" />
-                <Affliction identifier="acidburn" strength="6.0" />
+                <Affliction identifier="acidburn" strength="7.0" />
                 <Affliction identifier="stun" strength="0.1" probability="0.25"/>
             </Attack>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="50.0" force="6.0" itemdamage="10" severlimbsprobability="0.2" decal="explosion" decalsize="0.3" >
-                    <Affliction identifier="burn" strength="6" />
-                    <Affliction identifier="acidburn" strength="6" />
+                    <Affliction identifier="burn" strength="7" />
+                    <Affliction identifier="acidburn" strength="7" />
                 </Explosion>
                 <Remove />
             </StatusEffect>
@@ -1410,7 +1410,7 @@
         <Body width="146" height="28" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="50" hitscan="false" removeonhit="true" friendlyfire="false" >
-            <Attack targetforce="15" targetimpulse="15" penetration="0.3" severlimbsprobability="0.2">
+            <Attack targetforce="15" targetimpulse="15" penetration="0.25" severlimbsprobability="0.2">
                 <Affliction identifier="stun" strength="0.1" />
                 <Affliction identifier="stun" strength="0.1" probability="0.5"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="4" />
@@ -1453,9 +1453,9 @@
         <Body width="146" height="28" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="50" hitscan="false" removeonhit="true" friendlyfire="false" >
-            <Attack itemdamage="35" targetforce="10" penetration="0.4" severlimbsprobability="0.2">
-                <Affliction identifier="Reiki_Pressure" strength="4" />
-                <Affliction identifier="Reiki_Pressure" strength="4" probability="0.5"/>
+            <Attack itemdamage="35" targetforce="10" penetration="0.35" severlimbsprobability="0.2">
+                <Affliction identifier="Reiki_Pressure" strength="3" />
+                <Affliction identifier="Reiki_Pressure" strength="3" probability="0.75"/>
                 <Affliction identifier="Touhou_Mu_Elements_NoEffects" strength="3" />
                 <Affliction identifier="Touhou_Huo_Elements" strength="3" />
                 <Affliction identifier="Touhou_Tu_Elements" strength="3" />
@@ -1527,7 +1527,6 @@
             <Attack itemdamage="65" targetforce="5" penetration="0.15" severlimbsprobability="0.2">
                 <Affliction identifier="burn" strength="8" />
                 <Affliction identifier="Touhou_Freeze" strength="8" />
-                <Affliction identifier="Reiki_Pressure" strength="3" />
             </Attack>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="25.0" force="6.0" decal="explosion" decalsize="0.3" >

@@ -632,7 +632,7 @@
   <talentname.Hyouibana_Aunn>凭依阿吽</talentname.Hyouibana_Aunn>
   <talentdescription.Hyouibana_Aunn>对灵压和精神病的抗性更高，攻击伤害提高5%，友军伤害下降10%。</talentdescription.Hyouibana_Aunn>
   <talentname.Hyouibana_Flandre>凭依芙兰朵露</talentname.Hyouibana_Flandre>
-  <talentdescription.Hyouibana_Flandre>略微加快出血和失血的恢复，对血量低于50%的敌人造成额外10%的穿甲。</talentdescription.Hyouibana_Flandre>
+  <talentdescription.Hyouibana_Flandre>略微加快出血和失血的恢复，对血量低于50%的敌人造成额外5%的穿甲。</talentdescription.Hyouibana_Flandre>
   <talentname.Hyouibana_Nue>凭依鵺</talentname.Hyouibana_Nue>
   <talentdescription.Hyouibana_Nue>对debuff的抗性更高，鵺装束血量低于一半时的效果依然生效。</talentdescription.Hyouibana_Nue>
   <talentname.Hyouibana_Piece>凭依皮丝</talentname.Hyouibana_Piece>
@@ -702,7 +702,7 @@
   <talentname.MRE_Aunn>出血效应-高丽野阿吽</talentname.MRE_Aunn>
   <talentdescription.MRE_Aunn>仅对阿吽装束+生效。狛犬状态下，造成的伤害增加20%。狮子状态下，受到的伤害减少20%</talentdescription.MRE_Aunn>
   <talentname.MRE_Flandre>出血效应-芙兰朵露·斯卡雷特</talentname.MRE_Flandre>
-  <talentdescription.MRE_Flandre>仅对芙兰朵露装束+生效。使用专属武器攻击带有目之破坏或血量低于50%的敌人时，每次攻击都有4%的概率秒杀</talentdescription.MRE_Flandre>
+  <talentdescription.MRE_Flandre>仅对芙兰朵露装束+生效。使用专属武器攻击带有目之破坏或血量低于50%的敌人时，每次远程弹幕攻击都有3%的概率秒杀，若为近战则概率翻倍</talentdescription.MRE_Flandre>
   <talentname.MRE_Nue>出血效应-封兽鵺</talentname.MRE_Nue>
   <talentdescription.MRE_Nue>仅对鵺装束+生效。每次受到敌人的攻击时，将该伤害存储并强化下一次攻击的伤害，最高50%</talentdescription.MRE_Nue>
   <talentname.MRE_Piece>出血效应-克劳恩·皮丝</talentname.MRE_Piece>
@@ -716,6 +716,6 @@
   <talentname.MRE_Sunny>出血效应-桑尼·米尔克</talentname.MRE_Sunny>
   <talentdescription.MRE_Sunny>仅对桑尼装束+生效。三月精其他角色的装束效果直接生效</talentdescription.MRE_Sunny>
   <talentname.MRE_Luna>出血效应-露娜·切露德</talentname.MRE_Luna>
-  <talentdescription.MRE_Luna>仅对露娜装束+生效。击杀任意生物后，会给予自身临时生命值，临时生命值会额外增加最大20%移动速度、攻击速度和技能水平</talentdescription.MRE_Luna>
+  <talentdescription.MRE_Luna>仅对露娜装束+生效。击杀任意生物后（非炮塔），会给予自身临时生命值，临时生命值会额外增加最大20%移动速度、攻击速度和技能水平</talentdescription.MRE_Luna>
 
 </infotexts>

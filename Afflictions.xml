@@ -1162,9 +1162,9 @@
   </Affliction>
 
   <!--漫长红夜-->
-  <Affliction name="" identifier="Scarlet_Long_Night" description="" type="debuff" limbspecific="false" indicatorlimb="Head" showiconthreshold="0" maxstrength="100"
+  <Affliction name="" identifier="Scarlet_Long_Night" description="" type="debuff" limbspecific="false" indicatorlimb="Torso" showiconthreshold="0" maxstrength="100"
               affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="100" resistancefor="damage,burn,bleeding" minresistance="0" maxresistance="-0.5" strengthchange="-1"
+    <Effect minstrength="0" maxstrength="100" resistancefor="damage,burn,bleeding" minresistance="0" maxresistance="-0.4" strengthchange="-1"
             minspeedmultiplier="0.9" maxspeedmultiplier="0.6">
       <StatusEffect target="Character" >
         <ParticleEmitter particle="GlowDot" scalemin="3.0" scalemax="7.0" particlespersecond="100" velocitymin="400" velocitymax="800"
@@ -1183,10 +1183,10 @@
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="0.5" maxinterval="1.5" minstrength="15" maxstrength="100">
-      <StatusEffect target="Character">
-        <Affliction identifier="bleeding" amount="0.6"/>
-        <Affliction identifier="bleeding" amount="1" probability="0.6"/>
-        <Affliction identifier="bleeding" amount="2" probability="0.3"/>
+      <StatusEffect target="Limb">
+        <Affliction identifier="bleeding" amount="3.6"/>
+        <Affliction identifier="bleeding" amount="6" probability="0.6"/>
+        <Affliction identifier="bleeding" amount="6" probability="0.3"/>
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="0.5" maxinterval="2">

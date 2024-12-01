@@ -35,11 +35,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Aya" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -65,11 +67,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Marisa" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -100,11 +104,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Mokou" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -130,11 +136,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Reimu" amount="100.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -160,11 +168,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Remilia" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -190,11 +200,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Youmu" amount="100.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -220,11 +232,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Nitori" amount="100.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -250,11 +264,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Patchouli" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -280,11 +296,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Tenshi" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -310,11 +328,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Momizi" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -340,11 +360,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Yuka" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -370,11 +392,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Aunn" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -400,11 +424,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Flandre" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -419,7 +445,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.05"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -441,11 +467,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Nue" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -485,11 +513,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Piece" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -525,11 +555,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Cirno" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -560,11 +592,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Koishi" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -609,11 +643,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Alice" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -639,11 +675,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Sunny" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
@@ -686,11 +724,13 @@
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect" />
+            </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0" multiplyafflictionsbymaxvitality="true">
-                            <Conditional Hyouibana_Effect_Prefect="gt 0"/>
                             <Affliction identifier="Hyouibana_Effect_Prefect_Luna" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>

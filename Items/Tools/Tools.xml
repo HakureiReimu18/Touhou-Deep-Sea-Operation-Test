@@ -1995,7 +1995,7 @@
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
-            health="200"
+            health="400"
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>
@@ -2038,7 +2038,7 @@
             cargocontaineridentifier="mediccrate"
             description=""
             scale="0.5"
-            health="200"
+            health="400"
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
         <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>

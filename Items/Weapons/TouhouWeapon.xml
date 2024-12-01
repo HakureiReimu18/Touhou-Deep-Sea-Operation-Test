@@ -3665,7 +3665,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Nue_Midnight.png" sourcerect="0,0,192,28" depth="0.55" origin="0.5,0.5" />
         <Body width="140" height="40" density="10" />
         <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="65,10" handle1="-43,0" handle2="14,7" SwingPos="2.0,1.0" allowhitmultiple="true"
-                     holdangle="50" aimangle="-10" reload="1.2" range="120" combatPriority="50" msg="ItemMsgPickUpSelect" >
+                     holdangle="50" aimangle="-10" reload="1.3" range="120" combatPriority="50" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Unconfirmed_Fantasy_Flying_Girl="gt 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Nue="gt 0"/>
@@ -3739,6 +3739,9 @@
             <!--Reset the reload speed-->
             <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="1" />
         </MeleeWeapon>
+        <RepairTool barrelpos="64,16" >
+            <ParticleEmitter particle="Touhou_Black_Blue_Toxin" AngleMax="360" ScaleMultiplier="0.7,0.7" ParticleAmount="2" ColorMultiplier="255,255,255,255" />
+        </RepairTool>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
             <QualityStat stattype="strikingspeedmultiplier" value="0.08" />
@@ -3973,7 +3976,7 @@
             </LightComponent>
 
             <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="9" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="lacerations" strength="20" />
                 <Affliction identifier="slow" strength="30" />
                 <Affliction identifier="Slow_Baka" strength="15" />
@@ -3985,6 +3988,9 @@
                 <Affliction identifier="stun" strength="0.2" />
                 <Affliction identifier="stun" strength="0.35" probability="0.5" />
             </Attack>
+            <StatusEffect type="OnUse" target="Limb" >
+                <Affliction identifier="Reiki_Pressure" strength="3" />
+            </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
             </StatusEffect>
@@ -4148,7 +4154,7 @@
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="33" hitscan="false" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
                     sticktodoors="true" removeonhit="true" >
-            <Attack structuredamage="0" itemdamage="15" targetforce="0.2" penetration="0.2">
+            <Attack structuredamage="0" itemdamage="15" targetforce="0.2" penetration="0.15">
                 <Affliction identifier="Touhou_Freeze" strength="6" />
                 <Affliction identifier="lacerations" strength="6" />
             </Attack>
@@ -4181,7 +4187,7 @@
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="33" hitscan="false" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
                     sticktodoors="true" maxtargetstohit="2" removeonhit="true" friendlyfire="false">
-            <Attack structuredamage="0" itemdamage="15" targetforce="0.2" penetration="0.25">
+            <Attack structuredamage="0" itemdamage="15" targetforce="0.2" penetration="0.2">
                 <Affliction identifier="Touhou_Freeze" strength="6" />
                 <Affliction identifier="lacerations" strength="6" />
                 <Affliction identifier="Reiki_Pressure" strength="2" />

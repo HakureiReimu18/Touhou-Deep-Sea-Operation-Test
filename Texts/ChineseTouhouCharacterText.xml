@@ -176,7 +176,7 @@
     <talentdescription.TenshiTalent>当你身着‖color:gui.orange‖天子装束+‖end‖时，受到近距离攻击会让攻击者短暂逃离一段时间
         \n增加‖color:gui.green‖35%‖end‖气质剥离的效果。
         \n拥有气质剥离‖color:gui.green‖40%‖end‖的抗性。
-        \n食用天桃后，大幅度增强身体抗性,持续‖color:gui.green‖10s‖end‖。</talentdescription.TenshiTalent>
+        \n食用天桃后，受到的所有伤害降低60%，持续‖color:gui.green‖10s‖end‖。</talentdescription.TenshiTalent>
     <afflictionname.The_Daughter_Of_Heaven>非想非非想天之女</afflictionname.The_Daughter_Of_Heaven>
     <afflictiondescription.The_Daughter_Of_Heaven>天子是十多岁的少女形象。瞳孔为红色。头发为蓝色长发，末端稍卷。头戴一顶黑色礼帽，帽子上装饰有桃子（可以吃）和桃树叶。</afflictiondescription.The_Daughter_Of_Heaven>
     <afflictionname.Tenshi_Weapons>绯想一般远离浮世的天人</afflictionname.Tenshi_Weapons>

@@ -117,6 +117,15 @@
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Moon_Effect" strength="100" />
             </Abilities>
         </AbilityGroupEffect>
+        <!--免疫月之光-->
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveResistance resistanceid="Light_Of_The_Moon_Effect" multiplier="0" />
+            </Abilities>
+        </AbilityGroupEffect>
 
     </Talent>
 </Talents>
