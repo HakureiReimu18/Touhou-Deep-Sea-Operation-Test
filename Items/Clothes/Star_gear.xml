@@ -117,7 +117,7 @@
             </StatusEffect>
 
             <StatusEffect type="OnWearing" target="Character" >
-                <Affliction identifier="Tranquil_Light_Of_The_Moon" strength="50" />
+                <Affliction identifier="Cascading_Light_Of_The_Star" strength="50" />
                 <Affliction identifier="Star_Wings_Spawn" strength="10" />
             </StatusEffect>
 
