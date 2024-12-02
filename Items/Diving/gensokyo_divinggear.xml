@@ -19,7 +19,7 @@
             <RequiredSkill identifier="mechanical" level="90" />
             <RequiredSkill identifier="electrical" level="90" />
             <RequiredSkill identifier="medical" level="90" />
-            <RequiredItem identifier="Touhou_Precious_Metal" amount="8" />
+            <RequiredItem identifier="Touhou_Precious_Metal" amount="6" />
             <RequiredItem identifier="Power_Point" amount="4" />
             <RequiredItem identifier="organicfiber" amount="4" />
             <RequiredItem identifier="Score_Point" amount="4" />
@@ -233,16 +233,16 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 40" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 60" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                 </Containable>
@@ -484,16 +484,16 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Boudary_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 40" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 60" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                 </Containable>
@@ -721,16 +721,16 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Ether_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 40" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 60" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                 </Containable>
@@ -895,16 +895,16 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 40" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 60" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                 </Containable>
@@ -1070,16 +1070,16 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 40" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.05">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 60" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                 </Containable>

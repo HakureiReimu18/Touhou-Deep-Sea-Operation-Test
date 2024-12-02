@@ -389,7 +389,7 @@
                                         <Success>
                                             <StatusEffectAction targettag="statuseffectuser">
                                                 <StatusEffect target="Character" disabledeltatime="true" >
-                                                    <Conditional MRE_Effect_Star="gt 0"/>
+                                                    <Conditional MRE_Effect_Flag="gt 0"/>
                                                     <Affliction identifier="MRE_Star_Talent_Attacked01" strength="10"/>
                                                 </StatusEffect>
                                             </StatusEffectAction>
@@ -398,7 +398,7 @@
                                         <Failure>
                                             <StatusEffectAction targettag="statuseffectuser">
                                                 <StatusEffect target="Character" disabledeltatime="true" >
-                                                    <Conditional MRE_Effect_Star="gt 0"/>
+                                                    <Conditional MRE_Effect_Flag="gt 0"/>
                                                     <Affliction identifier="MRE_Star_Talent_Attacked02" strength="10"/>
                                                 </StatusEffect>
                                             </StatusEffectAction>
@@ -409,7 +409,7 @@
                                 <Failure>
                                     <StatusEffectAction targettag="statuseffectuser">
                                         <StatusEffect target="Character" disabledeltatime="true" >
-                                            <Conditional MRE_Effect_Star="gt 0"/>
+                                            <Conditional MRE_Effect_Flag="gt 0"/>
                                             <Affliction identifier="MRE_Star_Talent_Attacked03" strength="10"/>
                                         </StatusEffect>
                                     </StatusEffectAction>
@@ -423,7 +423,7 @@
                                 <Success>
                                     <StatusEffectAction targettag="statuseffectuser">
                                         <StatusEffect target="Character" disabledeltatime="true" >
-                                            <Conditional MRE_Effect_Star="gt 0"/>
+                                            <Conditional MRE_Effect_Flag="gt 0"/>
                                             <Affliction identifier="MRE_Star_Talent_Attacked04" strength="10"/>
                                         </StatusEffect>
                                     </StatusEffectAction>
@@ -432,7 +432,7 @@
                                 <Failure>
                                     <StatusEffectAction targettag="statuseffectuser">
                                         <StatusEffect target="Character" disabledeltatime="true" >
-                                            <Conditional MRE_Effect_Star="gt 0"/>
+                                            <Conditional MRE_Effect_Flag="gt 0"/>
                                             <Affliction identifier="MRE_Star_Talent_Attacked05" strength="10"/>
                                         </StatusEffect>
                                     </StatusEffectAction>
@@ -448,7 +448,7 @@
                         <Success>
                             <StatusEffectAction targettag="statuseffectuser">
                                 <StatusEffect target="Character" disabledeltatime="true" >
-                                    <Conditional MRE_Effect_Star="gt 0"/>
+                                    <Conditional MRE_Effect_Flag="gt 0"/>
                                     <Affliction identifier="MRE_Star_Talent_Attacked06" strength="10"/>
                                 </StatusEffect>
                             </StatusEffectAction>
@@ -457,7 +457,7 @@
                         <Failure>
                             <StatusEffectAction targettag="statuseffectuser">
                                 <StatusEffect target="Character" disabledeltatime="true" >
-                                    <Conditional MRE_Effect_Star="gt 0"/>
+                                    <Conditional MRE_Effect_Flag="gt 0"/>
                                     <Affliction identifier="MRE_Star_Talent_Attacked07" strength="10"/>
                                 </StatusEffect>
                             </StatusEffectAction>

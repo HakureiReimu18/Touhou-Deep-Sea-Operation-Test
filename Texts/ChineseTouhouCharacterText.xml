@@ -445,7 +445,7 @@
     <talentdescription.LunaTalent>当你身着露娜装束+时，
         \n增加对‖color:gui.yellow‖眩晕‖end‖的抗性。
         很难被敌人的听力发觉。
-        \n造成的‖color:gui.yellow‖眩晕‖end‖伤害增加‖color:gui.green‖10%‖end‖。
+        \n造成的‖color:gui.yellow‖眩晕‖end‖伤害增加‖color:gui.green‖15%‖end‖。
         \n造成的‖color:gui.yellow‖眩晕‖end‖伤害有‖color:gui.green‖10%‖end‖概率以‖color:gui.green‖150%‖end‖倍率转化为‖color:gui.yellow‖噬咬‖end‖，或以‖color:gui.green‖50%‖end‖倍率转化为‖color:gui.yellow‖灵压‖end‖。
         \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
         \n魔法武器的远程攻击每次有‖color:gui.green‖5%‖end‖概率造成额外‖color:gui.yellow‖眩晕‖end‖。如果解锁了妖精职业的天赋‖color:gui.red‖“妖精联盟”‖end‖，额外造成‖color:gui.yellow‖月之光‖end‖效果
@@ -455,6 +455,8 @@
     <afflictionname.Tranquil_Light_Of_The_Moon>静谧的月之光</afflictionname.Tranquil_Light_Of_The_Moon>
     <afflictiondescription.Tranquil_Light_Of_The_Moon>她有着一头稻草黄及肩短发，两侧各有三个螺旋状发辫，戴着两侧各系着两个黑色蝴蝶结的白色帽子。</afflictiondescription.Tranquil_Light_Of_The_Moon>
     <afflictionname.Light_Of_The_Moon_Effect>月之光</afflictionname.Light_Of_The_Moon_Effect>
+    <afflictionname.MRE_Effect_Luna>出血效应·露娜切露德</afflictionname.MRE_Effect_Luna>
+    <afflictiondescription.MRE_Effect_Luna>增加临时生命值</afflictiondescription.MRE_Effect_Luna>
 
     <!--Star-->
     <entityname.Star_gear>‖color:155,125,245,255‖斯塔装束‖end‖</entityname.Star_gear>
@@ -475,4 +477,6 @@
     <afflictionname.Cascading_Light_Of_The_Star>倾泻而下的星之光</afflictionname.Cascading_Light_Of_The_Star>
     <afflictiondescription.Cascading_Light_Of_The_Star>她有着一头深棕色及腰长发，头顶系着蓝色大蝴蝶结，在大战争中蝴蝶结边缘有白色褶子。她有着棕色的眼瞳。</afflictiondescription.Cascading_Light_Of_The_Star>
     <afflictionname.Light_Of_The_Star_Effect>星之光</afflictionname.Light_Of_The_Star_Effect>
+    <afflictionname.Star_No_Attacked>藏匿的星云</afflictionname.Star_No_Attacked>
+    <afflictiondescription.Star_No_Attacked>大幅加快生命恢复速度</afflictiondescription.Star_No_Attacked>
 </infotexts>

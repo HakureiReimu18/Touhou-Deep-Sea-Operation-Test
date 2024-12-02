@@ -3740,7 +3740,7 @@
             <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="1" />
         </MeleeWeapon>
         <RepairTool barrelpos="64,16" >
-            <ParticleEmitter particle="Touhou_Black_Blue_Toxin" AngleMax="360" ScaleMultiplier="0.7,0.7" ParticleAmount="2" ColorMultiplier="255,255,255,255" />
+            <ParticleEmitter particle="Touhou_Black_Blue_Toxin" AngleMax="360" ScaleMultiplier="0.55,0.55" ParticleAmount="1" ColorMultiplier="255,255,255,255" />
         </RepairTool>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>

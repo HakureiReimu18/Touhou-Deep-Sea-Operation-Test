@@ -22,7 +22,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Tranquil_Light_Of_The_Moon" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.1" />
+                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.15" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
@@ -31,7 +31,7 @@
                 <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.05" />
+                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.075" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">

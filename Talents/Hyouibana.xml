@@ -736,7 +736,7 @@
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.05" />
+                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.1" />
             </Abilities>
         </AbilityGroupEffect>
 

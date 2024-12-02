@@ -1645,7 +1645,7 @@
 
     <!--桑尼-完全凭依-->
     <Affliction identifier="Hyouibana_Effect_Prefect_Sunny" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1" resistancefor="debuff" minresistance="0.1" maxresistance="0.1"/>
         <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
@@ -1740,7 +1740,9 @@
 
     <!--露娜-完全凭依-->
     <Affliction identifier="Hyouibana_Effect_Prefect_Luna" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
+        </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
@@ -1748,7 +1750,7 @@
     <Affliction identifier="Hyouibana_Luna_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.05" maxresistance="0.05" >
-            <StatValue stattype="SoundRangeMultiplier" value="-0.35" />
+            <StatValue stattype="SoundRangeMultiplier" value="-0.5" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Shining_Light_Of_The_Sun.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -1872,7 +1874,7 @@
 
     <!--斯塔-完全凭依-->
     <Affliction identifier="Hyouibana_Effect_Prefect_Star" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.1" maxresistance="0.1"/>
         <Icon texture="%ModDir%/Images/Afflictions/Cascading_Light_Of_The_Star.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
@@ -1944,6 +1946,7 @@
         <Effect minstrength="0" maxstrength="1" >
             <StatusEffect target="Character" disabledeltatime="true" Interval="1.9" >
                 <Explosion range="50.0" force="4.0" severlimbsprobability="0.2" penetration="0.15">
+                    <ParticleEmitter particle="Touhou_Blue_Explosionfire" ScaleMultiplier="1.5,1.5" particleamount="1" />
                     <Affliction identifier="Touhou_Lost_Dream" strength="6" />
                     <Affliction identifier="burn" strength="10" />
                     <Affliction identifier="explosiondamage" strength="10" />

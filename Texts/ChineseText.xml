@@ -647,7 +647,7 @@
   <talentname.Hyouibana_Sunny>凭依桑尼</talentname.Hyouibana_Sunny>
   <talentdescription.Hyouibana_Sunny>更难被怪物视野锁定，魔法武器远程攻击有5%概率附加少量烧伤，造成的烧伤伤害增加5%。</talentdescription.Hyouibana_Sunny>
   <talentname.Hyouibana_Luna>凭依露娜</talentname.Hyouibana_Luna>
-  <talentdescription.Hyouibana_Sunny>更难被怪物听力锁定，眩晕抗性提高5%，魔法武器远程攻击有5%概率附加少量眩晕，造成的眩晕伤害增加5%。</talentdescription.Hyouibana_Sunny>
+  <talentdescription.Hyouibana_Luna>更难被怪物听力锁定，眩晕抗性提高5%，魔法武器远程攻击有5%概率附加少量眩晕，造成的眩晕伤害增加10%。</talentdescription.Hyouibana_Luna>
   <talentname.Hyouibana_Star>凭依斯塔</talentname.Hyouibana_Star>
   <talentdescription.Hyouibana_Star>长时间没有受到攻击后，减少‖color:gui.green‖10%‖end‖受到的伤害，并增加生命恢复速度</talentdescription.Hyouibana_Star>
 
@@ -678,7 +678,7 @@
   <Character.MRE_Material_Alice>爱丽丝的回忆</Character.MRE_Material_Alice>
   <Character.MRE_Material_Sunny>桑尼的回忆</Character.MRE_Material_Sunny>
   <Character.MRE_Material_Luna>露娜的回忆</Character.MRE_Material_Luna>
-  <Character.MRE_Material_Star>露娜的回忆</Character.MRE_Material_Star>
+  <Character.MRE_Material_Star>斯塔的回忆</Character.MRE_Material_Star>
   <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
   <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有10%概率避免那次伤害</talentdescription.MRE_Reimu>
   <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>

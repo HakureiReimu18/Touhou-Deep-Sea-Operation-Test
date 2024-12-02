@@ -1086,13 +1086,11 @@
                 <AbilityConditionServerRandom randomchance="0.3" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityApplyStatusEffects applytoself="true">
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
-                            <Affliction identifier="MRE_Effect_Star" amount="10.0"/>
-                        </StatusEffect>
-                        <StatusEffect type="OnAbility" target="Character" delay="0.05" disabledeltatime="true" >
+                        <StatusEffect type="OnAbility" target="Character" delay="0.01" disabledeltatime="true" >
                             <TriggerEvent identifier="MRE_Star_Talent_Attacked" />
+                            <Affliction identifier="MRE_Effect_Star" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
