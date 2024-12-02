@@ -51,24 +51,6 @@
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Blunderbuss.png" sourcerect="0,77,108,108" />
 <!--            <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Blunderbuss.png" sourcerect="0,77,108,108" scale="4"/>-->
             <StatusEffect type="OnUse" target="This">
-                <Explosion range="150.0" force="1.8" shockwave="true" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="50.0" />
-            </StatusEffect>
-            <Sound file="Content/Items/Weapons/WEAPON_rifleShot1.ogg" type="OnUse" range="3000" volume="6" selectionmode="Random" />
-            <Sound file="Content/Items/Weapons/WEAPON_rifleShot2.ogg" type="OnUse" range="3000" volume="6"/>
-            <Sound file="Content/Items/Weapons/WEAPON_rifleShot3.ogg" type="OnUse" range="3000" volume="6"/>
-            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
-                <Sound file="%ModDir%/Sounds/Weapons/shoot_danmu04.ogg" type="OnUse" range="6000" />
-                <ChargeSound file="Content/Items/Weapons/WEAPON_harpoonCoilRifleChargeUp.ogg" range="500" />
-            </StatusEffect>
-            <RequiredSkill identifier="weapons" level="70" />
-            <RequiredItems items="Lunatic_Bullet" type="Contained" />
-        </RangedWeapon>
-
-        <RangedWeapon barrelpos="170,20" spread="1" unskilledspread="4" reload="1.5" holdtrigger="true" maxchargetime="0.25"
-                      combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.5">
-            <Crosshair texture="%ModDir%/Images/OtherWeapons/Blunderbuss.png" sourcerect="0,77,108,108" />
-<!--            <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Blunderbuss.png" sourcerect="0,77,108,108" scale="4"/>-->
-            <StatusEffect type="OnUse" target="This">
                 <Explosion range="150.0" force="1.8" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="40.0" />
             </StatusEffect>
             <Sound file="Content/Items/Weapons/WEAPON_rifleShot1.ogg" type="OnUse" range="3000" volume="4" selectionmode="Random" />
@@ -83,7 +65,7 @@
                 <ChargeSound file="Content/Items/Weapons/WEAPON_harpoonCoilRifleChargeUp.ogg" range="500" volume="4" />
             </StatusEffect>
             <RequiredSkill identifier="weapons" level="70" />
-            <RequiredItems items="Mind_Bullet" type="Contained" />
+            <RequiredItems items="Mind_Bullet,Lunatic_Bullet" type="Contained" />
         </RangedWeapon>
 
         <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="1" containedspritedepth="0.56">

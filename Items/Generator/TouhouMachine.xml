@@ -226,7 +226,7 @@
       <sound file="Content/Items/Weapons/Coilgun6.ogg" range="10000" type="OnUse" />
 
       <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="425,913,66,36" origin="0.24, 0.472" />
-      <RailSprite texture="Content/Items/Weapons/Turrets.png" depth="0.011" sourcerect="901,256,120,287" origin="0.64, 0.7" />
+      <RailSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.011" sourcerect="250,0,88,235" origin="0.64, 0.7" />
       <BarrelSprite texture="Content/Items/Weapons/Turrets.png" depth="0.012" sourcerect="776,256,125,333" origin="0.6, 0.8" />
       <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling_Crosshair.png" sourcerect="0,0,256,256" />
       <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling_Crosshair.png" sourcerect="256,0,256,256" />
@@ -444,8 +444,7 @@
       <sound file="Content/Items/Weapons/WEAPONS_FlakGun6.ogg" range="10000" type="OnUse" volume="2.0" />
       <WeaponIndicator texture="Content/UI/WeaponUI.png" sourcerect="653,908,73,44" origin="0.24, 0.472" />
 
-      <RailSprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.011" sourcerect="4,548,307,470" origin="0.5, 0.78" />
-      <BarrelSprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.012" sourcerect="610,442,111,582" origin="0.5, 1" />
+      <BarrelSprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.012" sourcerect="610,442,111,582" origin="0.6, 1" />
       <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,256,256" />
       <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,256,256" />
 
@@ -493,8 +492,8 @@
       <ChargeSound file="Content/Items/Weapons/WEAPONS_chargeUp.ogg" range="10000"/>
       <ParticleEmitterCharge particle="chargepulselaser" particlespersecond="60" scalemin="1.0" scalemax="1.0" anglemax="360" colormutiplier="10,200,200,255" />
       <WeaponIndicator texture="%ModDir%/Images/OtherWeapons/Touhou_Blue_Rose_Crosshair.png" sourcerect="0,0,312,348" />
-      <RailSprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.011" sourcerect="4,548,307,470" origin="0.5, 0.78" />
-      <BarrelSprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.012" sourcerect="610,442,111,582" origin="0.5, 1" />
+      <RailSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.011" sourcerect="0,0,250,484" origin="0.695, 0.7" />
+      <BarrelSprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" depth="0.012" sourcerect="610,442,111,582" origin="0.4, 1" />
       <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="4800" directional="true" IsOn="true" drawbehindsubs="true" ignorecontinuoustoggle="true" InheritParentIsActive="false">
         <LightTexture texture="Content/Lights/lightcone.png" origin="0.0,0.5" size="1.0,1.0" />
       </LightComponent>
@@ -519,11 +518,15 @@
 
   <Item name="小型符卡槽" identifier="Touhou_Small_Spell_Card_Cannon_Loader" tags="Touhou_Small_Spell_Card_Cannon_Loader,turretammosource" subcategory="Touhou" category="Machine" linkable="true" allowedlinks="flakcannon" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
     <SwappableItem canbebought="false" origin="82,352" />
-    <Sprite name="Flak Cannon Loader Front" texture="Content/Items/Weapons/Loaders.png" depth="0.76" sourcerect="338,567,151,347" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Weapons/Loaders.png"  sourcerect="163,563,153,351" origin="0.5,0.5" offset="0,3" depth="0.75" fadein="true" maxcondition="99"/>
     <UpgradePreviewSprite texture="Content/UI/WeaponUI.png" sourcerect="208,968,32,46" origin="0.5,0.5" />
-    <DecorativeSprite name="Flak Cannon Loader Frame Back" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
-
+    <Sprite name="Coilgun Loader Front" texture="Loaders.png" depth="0.78" sourcerect="855,10,165,352" origin="0.5,0.5" />
+    <BrokenSprite texture="Content/Items/Weapons/Loaders.png"  sourcerect="163,563,153,351" origin="0.5,0.5" offset="6,3" depth="0.77" fadein="true" maxcondition="99"/>
+    <DecorativeSprite name="Coilgun Loader Frame Front" texture="Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <DecorativeSprite name="Ammobelt" texture="Content/Items/Containers/containers.png" depth="0.79" sourcerect="499,663,52,142" origin="0.5,0.5"
+                      offset="0,12">
+      <IsActiveConditional targetcontaineditem="true" condition="gt 0.0"/>
+      <IsActiveConditional targetcontaineditem="true" hastag="! noammobelt"/>
+    </DecorativeSprite>
     <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
       <StatusEffect type="InWater" target="This" condition="-0.1" />
       <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="-0.1,0.27" style="ItemUI" />
@@ -581,11 +584,14 @@
 
   <Item name="高速符卡槽" identifier="Touhou_Rapidly_Spell_Card_Cannon_Loader" tags="Touhou_Rapidly_Spell_Card_Cannon_Loader,turretammosource" subcategory="Touhou" category="Machine" linkable="true" allowedlinks="flakcannon" scale="0.5" damagedbyexplosions="true" explosiondamagemultiplier="0.2">
     <SwappableItem canbebought="false" origin="82,352" />
-    <Sprite name="Flak Cannon Loader Front" texture="Content/Items/Weapons/Loaders.png" depth="0.76" sourcerect="338,567,151,347" origin="0.5,0.5" />
-    <BrokenSprite texture="Content/Items/Weapons/Loaders.png"  sourcerect="163,563,153,351" origin="0.5,0.5" offset="0,3" depth="0.75" fadein="true" maxcondition="99"/>
+    <Sprite name="Chaingun Loader Front" texture="Loaders.png" depth="0.78" sourcerect="701,6,149,356" origin="0.5,0.5" />
+    <BrokenSprite texture="Content/Items/Weapons/Loaders.png"  sourcerect="163,563,153,351" origin="0.5,0.5" offset="0,7" depth="0.77" fadein="true" maxcondition="99"/>
     <UpgradePreviewSprite texture="Content/UI/WeaponUI.png" sourcerect="208,968,32,46" origin="0.5,0.5" />
-    <DecorativeSprite name="Flak Cannon Loader Frame Back" texture="Content/Items/Weapons/Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
-
+    <DecorativeSprite name="Chaingun Loader Frame Back" texture="Loaders.png" depth="0.8" sourcerect="31,569,117,200" origin="0.5,0.5" offset="0,-68" />
+    <DecorativeSprite name="Ammobelt" texture="Content/Items/Containers/containers.png" depth="0.79" sourcerect="499,663,52,142" origin="0.5,0.5"
+                      offset="0,12">
+      <IsActiveConditional targetcontaineditem="true" condition="gt 0.0"/>
+    </DecorativeSprite>
     <Repairable selectkey="Action" header="mechanicalrepairsheader" deteriorationspeed="10" mindeteriorationdelay="60" maxdeteriorationdelay="300" MinDeteriorationCondition="0" RepairThreshold="50" fixDurationHighSkill="5" fixDurationLowSkill="25" msg="ItemMsgRepairWrench" hudpriority="10">
       <StatusEffect type="InWater" target="This" condition="-0.1" />
       <GuiFrame relativesize="0.2,0.16" minsize="400,180" maxsize="480,280" anchor="Center" relativeoffset="-0.1,0.27" style="ItemUI" />

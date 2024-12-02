@@ -666,7 +666,7 @@
     <!--出血效应-比那名居天子-->
     <Affliction name="" identifier="MRE_Effect_Tenshi" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
                 Duration="1.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.5" maxresistance="0.5" />
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.3" maxresistance="0.3" />
         <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 

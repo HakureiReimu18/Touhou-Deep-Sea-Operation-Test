@@ -250,7 +250,6 @@
             <Attack structuredamage="25" itemdamage="20" levelwalldamage="20" severlimbsprobability="0.35" penetration="0.2">
                 <Affliction identifier="explosiondamage" strength="10" />
                 <Affliction identifier="burn" strength="5" />
-                <Affliction identifier="Reiki_Pressure" strength="1" />
                 <Affliction identifier="stun" strength="0.02" />
                 <Affliction identifier="stun" strength="0.15" probability="0.1" />
             </Attack>
@@ -267,9 +266,9 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="200.0" structuredamage="20" force="6.0" itemdamage="100" severlimbsprobability="0.2" decal="explosion" decalsize="0.3" penetration="0.4">
-                    <Affliction identifier="explosiondamage" strength="9" />
-                    <Affliction identifier="burn" strength="6" />
-                    <Affliction identifier="Reiki_Pressure" strength="3" />
+                    <Affliction identifier="explosiondamage" strength="6" />
+                    <Affliction identifier="burn" strength="3" />
+                    <Affliction identifier="Reiki_Pressure" strength="1" />
                 </Explosion>
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="8" velocitymin="100" velocitymax="1500" scalemin="0.6" scalemax="1" />
                 <Remove />
@@ -405,7 +404,7 @@
 
     <!--要石「乾坤鸣动炮」-->
     <Item name="" identifier="Kanameishi_Cannon" scale="0.25" tags="flakcannonequipment,flakcannonammo,ammobox,Touhou_Large_Turret_Ammo"
-          health="80" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
+          health="100" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
         <PreferredContainer primary="flakcannonammoloader" amount="1" mincondition="1"/>
         <PreferredContainer primary="ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckflakcannonloader" amount="1" />
@@ -587,7 +586,7 @@
 
     <!--日符「皇家圣焰」-->
     <Item name="" identifier="Touhou_Royal_Flare" scale="0.25" tags="pulselaserequipment,pulselaserammo,ammobox,Touhou_Royal_Flare,Touhou_Large_Turret_Ammo"
-          health="60" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
+          health="80" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
         <PreferredContainer primary="pulselaserammosource,ammoboxcontainer" mincondition="1"/>
         <PreferredContainer primary="ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckammoboxcontainer" amount="1" spawnprobability="0.07"/>
@@ -686,7 +685,7 @@
 
     <!--月符「沉静的月神」-->
     <Item name="" identifier="Touhou_Silent_Selene_Ammo" scale="0.25" tags="coilgunequipment,coilgunammo,ammobox,Touhou_Silent_Selene_Ammo,Touhou_Small_Spell_Card_Ammo"
-          health="120" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+          health="150" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="coilgunammoloader,ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckcoilgunloader" amount="1" spawnprobability="0.07"/>
         <PreferredContainer secondary="wreckammoboxcontainer" amount="1" spawnprobability="0.07"/>
@@ -747,9 +746,9 @@
                 <Affliction identifier="stun" strength="0.8" probability="0.2" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
-                <Affliction identifier="Reiki_Pressure" strength="2"  />
-                <Affliction identifier="Touhou_Freeze" strength="2"  />
-                <Affliction identifier="acidburn" strength="2"  />
+                <Affliction identifier="Reiki_Pressure" strength="3"  />
+                <Affliction identifier="Touhou_Freeze" strength="3"  />
+                <Affliction identifier="acidburn" strength="3"  />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Silent_Selene_Dream" strength="3.5" probability="0.75" />
@@ -1330,7 +1329,7 @@
 
     <!--禁弹「星弧破碎」-->
     <Item name="" identifier="Touhou_Starbow_Break" scale="0.25" tags="flakcannonequipment,flakcannonammo,ammobox,Touhou_Large_Turret_Ammo"
-          health="100" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
+          health="120" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
         <PreferredContainer primary="flakcannonammoloader" amount="1" mincondition="1" spawnprobability="0.1"/>
         <PreferredContainer primary="ammoboxcontainer" mincondition="1" spawnprobability="0.1"/>
         <PreferredContainer secondary="wreckflakcannonloader" amount="1" spawnprobability="0.04" />
@@ -1673,7 +1672,7 @@
     <!--雪符「钻石风暴」-->
     <!--雪符「Diamond Blizzard」-->
     <Item name="雪符「钻石风暴」" identifier="Touhou_Diamond_Blizzard_Ammo" scale="0.25" tags="coilgunequipment,coilgunammo,ammobox,Touhou_Diamond_Blizzard_Ammo,Touhou_Small_Spell_Card_Ammo"
-          health="400" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+          health="500" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="coilgunammoloader,ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckcoilgunloader" amount="1" spawnprobability="0.15"/>
         <PreferredContainer secondary="wreckammoboxcontainer" amount="1" spawnprobability="0.2"/>
@@ -1722,7 +1721,7 @@
         <Body width="160" height="10" density="10" />
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="50" damagedoors="true" maxtargetstohit="2">
-            <Attack structuredamage="25" itemdamage="20" levelwalldamage="20" severlimbsprobability="0.25" penetration="0.3">
+            <Attack structuredamage="25" itemdamage="20" levelwalldamage="20" severlimbsprobability="0.25" penetration="0.35">
                 <Affliction identifier="explosiondamage" strength="10" />
                 <Affliction identifier="Touhou_Freeze" strength="6" />
                 <Affliction identifier="stun" strength="0.02" />

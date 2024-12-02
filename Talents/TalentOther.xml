@@ -154,7 +154,61 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Reimilia_Weapons" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.36" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
+                <AbilityConditionHasAffliction afflictionidentifier="bleeding" minimumPercentage="0.15" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.11" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
+                <AbilityConditionHasAffliction afflictionidentifier="bleeding" minimumPercentage="0.25" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.11" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
+                <AbilityConditionHasAffliction afflictionidentifier="bleeding" minimumPercentage="0.35" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.11" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
+                <AbilityConditionHasAffliction afflictionidentifier="bleeding" minimumPercentage="0.45" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.11" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
+                <AbilityConditionHasAffliction afflictionidentifier="bleeding" minimumPercentage="0.55" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.11" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
+                <AbilityConditionHasAffliction afflictionidentifier="bleeding" minimumPercentage="0.65" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.11" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -333,7 +387,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.5"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.3"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -550,7 +604,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="MRE_Effect_Momizi" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -560,7 +614,7 @@
                 <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.5"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -585,7 +639,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Flowers_Of_Four_Seasons" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="lacerations" addedmultiplier="0.3" />
+                <CharacterAbilityModifyAffliction afflictionidentifiers="lacerations" addedmultiplier="0.25" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
@@ -593,7 +647,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Flowers_Of_Four_Seasons" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="blunttrauma" addedmultiplier="0.6" />
+                <CharacterAbilityModifyAffliction afflictionidentifiers="blunttrauma" addedmultiplier="0.5" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -740,7 +794,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttackedResult">
+        <AbilityGroupEffect abilityeffecttype="OnAttackResult">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Unconfirmed_Fantasy_Flying_Girl" />
             </Conditions>
@@ -786,6 +840,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="psychosis" />
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionCharacter targettype="Ally"/>
+                <AbilityConditionServerRandom randomchance="0.5" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.5" />
@@ -847,7 +902,7 @@
             </Conditions>
             <Conditions>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional WasFullHealth="true"/>
+                    <Conditional HealthPercentage="gt 95"/>
                     <Conditional Touhou_Strange_Phone_Effect="gt 0" />
                 </AbilityConditionCharacter>
             </Conditions>
@@ -1006,6 +1061,160 @@
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="stun" strength="0.05" />
                 <CharacterAbilityGiveAffliction affliction="Light_Of_The_Moon_Effect" strength="100" />
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <!--标记目标-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Star_Attack_Mark" strength="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionServerRandom randomchance="0.05" />
+            </Conditions>
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional Star_Attack_Mark="gt 0" />
+                    <Conditional HealthPercentage="lte 50" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.4" />
+                <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionServerRandom randomchance="0.05" />
+            </Conditions>
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional Star_Attack_Mark="gt 0" />
+                    <Conditional HealthPercentage="lte 50" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="stun" strength="0.025" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.2" />
+                <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionServerRandom randomchance="0.3" />
+            </Conditions>
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional Star_Attack_Mark="gt 0" />
+                    <Conditional HealthPercentage="lte 50" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="stun" strength="0.1" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.8" />
+                <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionServerRandom randomchance="0.3" />
+            </Conditions>
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional Star_Attack_Mark="gt 0" />
+                    <Conditional HealthPercentage="lte 50" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="stun" strength="0.05" />
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.4" />
+                <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+                <AbilityConditionServerRandom randomchance="0.1" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Light_Of_The_Star_Effect" strength="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+                <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+            </Conditions>
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional Light_Of_The_Star_Effect="gt 0" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <!--击杀治疗-->
+        <AbilityGroupEffect abilityeffecttype="OnRoundEnd">
+            <Abilities>
+                <CharacterAbilityResetPermanentStat statidentifier="Star_Kill" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Star_Kill" value="0" setvalue="true" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval Interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+                <AbilityConditionHasPermanentStat statidentifier="Star_Kill" min="1" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Star_Treatment_Effect" amount="10" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+                <CharacterAbilityGivePermanentStat statidentifier="Star_Kill" value="-1" />
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Shining_Light_Of_The_Sun" />
+            </Conditions>
+            <Conditions>
+                <AbilityConditionCharacter>
+                    <Conditional Light_Of_The_Star_Effect="gt 0" />
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Star_Kill" value="1" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
