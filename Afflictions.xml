@@ -230,10 +230,10 @@
         <ReduceAffliction type="Patchouli_Asthma" amount="0.15" />
       </StatusEffect>
       <StatusEffect target="Character" Interval="1.0" disabledeltatime="true"  >
-        <ReduceAffliction type="damage" amount="0.5" />
+        <ReduceAffliction type="damage" amount="0.4" />
         <ReduceAffliction type="bleeding" amount="0.4" />
         <ReduceAffliction type="infection" amount="0.4" />
-        <ReduceAffliction type="burn" amount="0.45" />
+        <ReduceAffliction type="burn" amount="0.25" />
         <ReduceAffliction type="Phoenix_Burn" amount="1" />
         <ReduceAffliction type="nausea" amount="1" />
         <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="2" />
@@ -252,10 +252,10 @@
         <ReduceAffliction type="Patchouli_Asthma" amount="0.3" />
       </StatusEffect>
       <StatusEffect target="Character" Interval="1.0" disabledeltatime="true"  >
-        <ReduceAffliction type="damage" amount="1.0" />
+        <ReduceAffliction type="damage" amount="0.8" />
         <ReduceAffliction type="bleeding" amount="0.8" />
         <ReduceAffliction type="infection" amount="0.8" />
-        <ReduceAffliction type="burn" amount="0.9" />
+        <ReduceAffliction type="burn" amount="0.5" />
         <ReduceAffliction type="Phoenix_Burn" amount="2" />
         <ReduceAffliction type="nausea" amount="2" />
         <ReduceAffliction identifier="Touhou_Royal_Flare_Burn" amount="4" />
