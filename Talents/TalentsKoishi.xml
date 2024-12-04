@@ -248,7 +248,7 @@
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" comparison="And" >
                             <Conditional Koishi_Unconscious01="lte 0"/>
                             <Conditional Koishi_Unconscious02="lte 0"/>
                             <Conditional Koishi_Unconscious03="lte 0"/>

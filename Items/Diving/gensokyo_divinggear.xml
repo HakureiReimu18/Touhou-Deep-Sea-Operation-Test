@@ -152,14 +152,6 @@
             <SlotIcon slotindex="3" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
             <SlotIcon slotindex="4" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
             <SlotIcon slotindex="5" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
-            <StatusEffect type="OnWearing" target="Contained">
-                <Conditional condition="lt 5.0" />
-                <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true" />
-            </StatusEffect>
-            <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
-                <Conditional condition="lte 0.0" />
-                <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
-            </StatusEffect>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="oxygensource,weldingtoolfuel,Mu_Alchemical" excludeditems="oxygenitetank" />
                 <Containable items="oxygenitetank">
@@ -168,6 +160,14 @@
                         <Conditional HullOxygenPercentage="lt 50" />
                         <Conditional DecreasedOxygenConsumption="lt 99" />
                         <Conditional NeedsAir="true" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Contained">
+                        <Conditional condition="lt 5.0" />
+                        <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+                        <Conditional condition="lte 0.0" />
+                        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="weldingfueltank" blameequipperfordeath="true">
@@ -233,10 +233,10 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                     <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
@@ -406,14 +406,6 @@
             <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
             <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
             <SlotIcon slotindex="3" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
-            <StatusEffect type="OnWearing" target="Contained">
-                <Conditional condition="lt 5.0" />
-                <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true" />
-            </StatusEffect>
-            <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
-                <Conditional condition="lte 0.0" />
-                <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
-            </StatusEffect>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="oxygensource,weldingtoolfuel,Mu_Alchemical" excludeditems="oxygenitetank" />
                 <Containable items="oxygenitetank">
@@ -422,6 +414,14 @@
                         <Conditional HullOxygenPercentage="lt 50" />
                         <Conditional DecreasedOxygenConsumption="lt 99" />
                         <Conditional NeedsAir="true" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Contained">
+                        <Conditional condition="lt 5.0" />
+                        <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+                        <Conditional condition="lte 0.0" />
+                        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="weldingfueltank" blameequipperfordeath="true">
@@ -484,10 +484,10 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Boudary_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                     <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
@@ -643,14 +643,6 @@
             <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
             <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
             <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Touhou_Hooked_Jade_Indicator.png" sourcerect="0,0,68,68" origin="0.5,0.5" />
-            <StatusEffect type="OnWearing" target="Contained">
-                <Conditional condition="lt 5.0" />
-                <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true" />
-            </StatusEffect>
-            <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
-                <Conditional condition="lte 0.0" />
-                <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
-            </StatusEffect>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="oxygensource,weldingtoolfuel,Mu_Alchemical" excludeditems="oxygenitetank" />
                 <Containable items="oxygenitetank">
@@ -659,6 +651,14 @@
                         <Conditional HullOxygenPercentage="lt 50" />
                         <Conditional DecreasedOxygenConsumption="lt 99" />
                         <Conditional NeedsAir="true" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Contained">
+                        <Conditional condition="lt 5.0" />
+                        <Sound file="Content/Items/WarningBeepSlow.ogg" range="500" loop="true" />
+                    </StatusEffect>
+                    <StatusEffect type="OnWearing" target="Contained" playsoundonrequireditemfailure="true">
+                        <Conditional condition="lte 0.0" />
+                        <Sound file="Content/Items/WarningBeep.ogg" range="500" loop="true" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="weldingfueltank" blameequipperfordeath="true">
@@ -721,10 +721,10 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Ether_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                     <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
@@ -895,10 +895,10 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                     <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
@@ -1070,10 +1070,10 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                     <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">

@@ -12,6 +12,7 @@
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character">
                             <ReduceAffliction identifier="Star_Wings_Spawn" amount="100"/>
+                            <ReduceAffliction identifier="Star_No_Attacked_Yousei_Talent" amount="100"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

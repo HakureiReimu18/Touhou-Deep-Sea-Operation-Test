@@ -1543,7 +1543,9 @@
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="Touhou_Nuclear_Battery,Touhou_Nuclear_Energy_Capacitor_Magazine" />
                 <Containable items="Touhou_Nuclear_Battery">
-                    <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0" />
+                    <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0" >
+                        <RequiredItem items="Touhou_Nuclear_Battery" type="Contained" />
+                    </StatusEffect>
                     <StatusEffect type="OnWearing" target="Contained" Condition="-0.01" comparison="And">
                         <Conditional HasTag="eq Tactical_Open" TargetContainer="true"/>
                         <Conditional TargetContainer="true" TargetGrandparent="true" IsDead="false" />

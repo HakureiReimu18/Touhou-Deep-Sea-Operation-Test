@@ -461,6 +461,15 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="None" >
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Yokai_Counter" min="320"/>
+                <AbilityConditionCrewMemberUnconscious />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveFlag flagtype="MoveNormallyWhileDragging" />
+            </Abilities>
+        </AbilityGroupEffect>
 
         <AbilityGroupInterval interval="9.9">
             <Conditions>

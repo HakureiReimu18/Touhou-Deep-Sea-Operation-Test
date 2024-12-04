@@ -520,7 +520,7 @@
         </Holdable>
 
         <!--武器参数-->
-        <RangedWeapon reload="0.9" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="90,12" spread="2.0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldAccuracyPenalty="12">
+        <RangedWeapon reload="0.9" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="90,12" spread="2.0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.4" DualWieldAccuracyPenalty="12">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
             <StatusEffect type="OnUse" target="This">

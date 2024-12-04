@@ -90,7 +90,6 @@
                 <ReduceAffliction type="damage" strength="0.1" />
                 <ReduceAffliction type="bleeding" strength="0.1" />
             </StatusEffect>
-            <AbilityFlag flagtype="MoveNormallyWhileDragging" />
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
