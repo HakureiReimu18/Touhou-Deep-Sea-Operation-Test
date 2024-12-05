@@ -858,7 +858,7 @@
                 <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="4000" />
                 <Remove />
             </StatusEffect>
-            <MotionSensor range="300" canbeselected="false" IgnoreDead="true" minimumvelocity="0" updateinterval="0.09" targets="Monster" DetectOwnMotion="false">
+            <MotionSensor range="300" canbeselected="false" IgnoreDead="true" minimumvelocity="0" updateinterval="0.09" target="Monster" DetectOwnMotion="false">
                 <StatusEffect type="OnNotContained" target="This" condition="-100" disabledeltatime="true" stackable="false" checkconditionalalways="true" >
                     <Conditional targetitemcomponent="MotionSensor" MotionDetected="eq true" />
                 </StatusEffect>
@@ -890,7 +890,7 @@
                 <Affliction identifier="stun" strength="1.6" probability="0.4" />
                 <Affliction identifier="burn" strength="30" />
                 <Affliction identifier="explosiondamage" strength="30" />
-                <Affliction identifier="Reiki_Pressure" strength="20" />
+                <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.4" />
             </Attack>

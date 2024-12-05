@@ -13,7 +13,7 @@
           requireddeliveryamount="0.8">
     <Reputation identifier="location" amount="2" />
     <Items>
-      <Item identifier="mediccrate" reward="180" maxcount="16">
+      <Item identifier="mediccrate" reward="360" maxcount="8">
         <Item identifier="Touhou_Base_Metal" />
         <Item identifier="Reiki_Stone" amount="4"/>
         <Item identifier="Reiki_Dust_Caking" amount="2"/>

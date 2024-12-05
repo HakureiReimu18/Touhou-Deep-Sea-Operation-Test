@@ -65,7 +65,7 @@
     </Item>
 
 
-    <!--芙兰plus-->
+    <!--桑尼plus-->
     <Item identifier="Sunny_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab" />
         <Price baseprice="3000" minleveldifficulty="15">
@@ -106,11 +106,10 @@
             <sprite name="Left Shoe" texture="%ModDir%/Images/Sunny_Clothes/Sunny_Clothes.png" limb="LeftFoot" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164" />      <!-- Resistance-->
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.9" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.8" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="1.05" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.9" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.85" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="1" probabilitymultiplier="0.85" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85" />
-            <SkillModifier skillidentifier="Touhou_Magic" skillvalue="5" />
 
             <StatusEffect type="OnWearing" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="SunnyTalent" />
