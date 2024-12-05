@@ -125,9 +125,9 @@
     <talentname.Behind_The_Mutation>异变幕后</talentname.Behind_The_Mutation>
     <talentdescription.Behind_The_Mutation>每次击杀生物都有‖color:gui.green‖50%‖end‖概率为自己增加‖color:gui.green‖2‖end‖点异变能量，当异变能量大于‖color:gui.green‖10‖end‖时，获得额外‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖；异变能量大于‖color:gui.green‖20‖end‖时，获得‖color:gui.green‖20%‖end‖的‖color:gui.orange‖烧伤抗性‖end‖。</talentdescription.Behind_The_Mutation>
     <talentname.Touhou_Cute_Prank>小小的恶作剧</talentname.Touhou_Cute_Prank>
-    <talentdescription.Touhou_Cute_Prank>每次击杀生物都有‖color:gui.green‖50%‖end‖概率为自己增加‖color:gui.green‖2‖end‖点异变能量，当异变能量大于‖color:gui.green‖30‖end‖时，增加‖color:gui.green‖15%‖end‖最大生命值，操控的炮塔的射速提高‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Cute_Prank>
+    <talentdescription.Touhou_Cute_Prank>每次击杀生物都有‖color:gui.green‖50%‖end‖概率为自己增加‖color:gui.green‖2‖end‖点异变能量，当异变能量大于‖color:gui.green‖30‖end‖时，增加‖color:gui.green‖10%‖end‖最大生命值，炮塔的射速提高‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Cute_Prank>
     <talentname.Eastern_And_Little_Nature_Deity>妖精大战争</talentname.Eastern_And_Little_Nature_Deity>
-    <talentdescription.Eastern_And_Little_Nature_Deity>异变能量大于‖color:gui.green‖40‖end‖时，提高‖color:gui.green‖15%‖end‖的‖color:gui.orange‖攻击伤害‖end‖，减少‖color:gui.green‖10%‖end‖受到的‖color:gui.orange‖物理伤害‖end‖，提高‖color:gui.green‖15%‖end‖技能水平。解锁配方：‖color:gui.orange‖冰之勇者剑，地狱火炬‖end‖。</talentdescription.Eastern_And_Little_Nature_Deity>
+    <talentdescription.Eastern_And_Little_Nature_Deity>异变能量大于‖color:gui.green‖40‖end‖时，提高‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击伤害‖end‖，减少‖color:gui.green‖10%‖end‖受到的‖color:gui.orange‖物理伤害‖end‖，提高‖color:gui.green‖10%‖end‖技能水平。解锁配方：‖color:gui.orange‖冰之勇者剑，地狱火炬‖end‖。</talentdescription.Eastern_And_Little_Nature_Deity>
     <talenttree.Mischievous_Mischief>稚气未脱</talenttree.Mischievous_Mischief>
     <talentname.Touhou_Magical_Assistant>魔法助理</talentname.Touhou_Magical_Assistant>
     <talentdescription.Touhou_Magical_Assistant>如果船上有魔法使，则为其提供‖color:gui.green‖25%‖end‖‖color:gui.orange‖技能获取速度‖end‖，每个巡回获得额外‖color:gui.green‖10%‖end‖金钱</talentdescription.Touhou_Magical_Assistant>

@@ -100,10 +100,10 @@
           idlebehavior="Active"
           hiddenjob="false">
     <Jobicon>
-      <sprite texture="%ModDir%/Images/Job/Yokai_Icon1.png" sourcerect="0,0,256,256" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Images/Job/Yokai_Icon1.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
     </Jobicon>
     <JobiconSmall>
-      <sprite texture="%ModDir%/Images/Job/Yousei_Icon2.png" sourcerect="0,0,84,84" origin="0.5,0.5" />
+      <sprite texture="%ModDir%/Images/Job/Yokai_Icon2.png" sourcerect="0,0,84,84" origin="0.5,0.5" />
     </JobiconSmall>
     <Skills>
       <Skill identifier="Touhou_Magic" level="30,35" />

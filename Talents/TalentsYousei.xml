@@ -457,7 +457,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yousei_Power" minimumPercentage="0.3" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.15" />
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1" />
                 <CharacterAbilityModifyStat stattype="TurretAttackSpeed" value="0.1" />
             </Abilities>
         </AbilityGroupInterval>

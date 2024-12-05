@@ -813,10 +813,10 @@
         <Body width="180" height="180" density="20" />
         <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect"/>
         <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This" disabledeltatime="true">
                 <SpawnItem identifiers="Touhou_Thunder_Drum_Bomb_Bolt" spawnposition="ThisInventory" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
                 <RequiredItem items="Touhou_Thunder_Drum_Bomb_Bolt" type="Contained" />
             </StatusEffect>
             <Containable items="Touhou_Thunder_Drum_Bomb_Bolt" />
@@ -888,8 +888,8 @@
             <Attack targetimpulse="10" penetration="0.5" structuredamage="0" itemdamage="0" severlimbsprobability="0.2">
                 <Affliction identifier="stun" strength="0.8" />
                 <Affliction identifier="stun" strength="1.6" probability="0.4" />
-                <Affliction identifier="burn" strength="30" />
-                <Affliction identifier="explosiondamage" strength="30" />
+                <Affliction identifier="burn" strength="40" />
+                <Affliction identifier="explosiondamage" strength="40" />
                 <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.4" />
