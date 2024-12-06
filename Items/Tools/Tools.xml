@@ -51,7 +51,7 @@
             </StatusEffect>
         </Propulsion>
         <ItemContainer capacity="4" keepopenwhenequipped="false" movableframe="true">
-            <Containable items="smallitem,mediumitem" excludeditems="Marisa_Broom,Kappa_Backpack,backpack,toolbelt"/>
+            <Containable items="smallitem,mediumitem" excludeditems="Marisa_Broom,Kappa_Backpack,backpack,toolbelt,gun"/>
         </ItemContainer>
         <AiTarget soundrange="2000" />
     </Item>

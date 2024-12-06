@@ -5482,9 +5482,10 @@
             <RequiredItem identifier="incendium" amount="4"/>
             <RequiredItem identifier="Power_Point" />
         </Fabricate>
-        <InventoryIcon texture="%ModDir%/Images/Youmu_Items/Youmusmg_Icon.png" sourcerect="0,0,65,54" origin="0.5,0.5" />
-        <Sprite texture="%ModDir%/Images/Youmu_Items/Youmusmg_Sprite.png" sourcerect="0,0,147,79" depth="0.55" origin="0.5,0.5" />
-        <Body width="140" height="60" density="25" />
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Three_Fairies_Weapon.png" sourcerect="0,0,68,67" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Three_Fairies_Weapon.png" sourcerect="71,0,79,38" depth="0.55" origin="0.5,0.5" />
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Three_Fairies_Weapon.png" sourcerect="71,40,79,38" depth="0.55" maxcondition="60" origin="0.5,0.5" />
+        <Body width="79" height="38" density="10" />
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true" />
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />
@@ -5507,17 +5508,27 @@
                 <Explosion range="150.0" force="2" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="6.0" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Contained" targetslot="1" Condition="-1" disabledeltatime="true">
-                <RequiredItem items="battery" type="Contained" />
+                <RequiredItem items="mobilebattery" type="Contained" />
             </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-50" disabledeltatime="true" stackable="false" />
+            <StatusEffect type="OnUse" target="This" Condition="100" disabledeltatime="true" setvalue="true" delay="0.5" />
             <RequiredItems items="Touhou_Sun_Cannon_Ammo,grenade" type="Contained" msg="ItemMsgAmmoRequired" />
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
         </RangedWeapon>
-        <ItemContainer capacity="1" maxstacksize="4" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
+        <ItemContainer capacity="0" maxstacksize="1" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
             <Containable items="Touhou_Sun_Cannon_Ammo,grenade" hide="true" />
-            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+            <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="448,448,64,64" origin="0.5,0.5" />
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="battery" setactive="true" >
+                <Containable items="mobilebattery" setactive="true" >
+                    <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true">
+                        <Conditional condition="gt 0" />
+                    </StatusEffect>
+                </Containable>
+            </SubContainer>
+            <SubContainer capacity="1" maxstacksize="4">
+                <Containable items="mobilebattery" setactive="true" >
                     <StatusEffect type="OnContaining" target="This" Voltage="1.0" setvalue="true">
                         <Conditional condition="gt 0" />
                     </StatusEffect>
@@ -5536,7 +5547,7 @@
 
     <!--金红石榴弹-->
     <Item name="金红石榴弹" identifier="Touhou_Sun_Cannon_Ammo" category="Weapon" subcategory="Touhou" maxstacksize="32" maxstacksizecharacterinventory="8"
-          interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" Scale="0.5" impactsoundtag="impact_metal_light">
+          interactthroughwalls="true" cargocontaineridentifier="metalcrate" tags="smallitem" Scale="0.75" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="secarmcab" secondary="armcab" />
         <PreferredContainer secondary="wreckarmcab,abandonedarmcab,piratearmcab" minamount="1" maxamount="2" spawnprobability="0.1" />
         <Price baseprice="400" >
@@ -5557,8 +5568,8 @@
             <RequiredItem identifier="Yang_Alchemical" />
             <RequiredItem identifier="uex" amount="2" />
         </Fabricate>
-        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="704,960,64,64" origin="0.5,0.5" />
-        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="215,286,41,17" depth="0.55" origin="0.5,0.5" />
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Three_Fairies_Weapon.png" sourcerect="196,78,32,33" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Three_Fairies_Weapon.png" sourcerect="231,81,37,17" depth="0.55" origin="0.5,0.5" />
         <Body width="38" height="15" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" launchimpulse="30.0" sticktocharacters="false">
@@ -5581,6 +5592,5 @@
                 <Remove />
             </StatusEffect>
         </Projectile>
-        <Upgrade gameversion="0.10.0.0" scale="0.5" />
     </Item>
 </Items>

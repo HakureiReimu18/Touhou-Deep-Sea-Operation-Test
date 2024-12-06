@@ -1048,7 +1048,7 @@
 
     <!--天上剑「天人之五衰」-->
     <Item name="" identifier="Celestial_Decay" scale="0.25" tags="chaingunequipment,chaingunammo,ammobox,Celestial_Decay,Touhou_Rapidly_Spell_Card_Ammo"
-          health="800" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+          health="600" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="chaingunammosource" amount="1" mincondition="1"/>
         <PreferredContainer primary="ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckammoboxcontainer" amount="1" spawnprobability="0.06"/>
@@ -1083,11 +1083,14 @@
         <Body width="180" height="180" density="16" />
         <Holdable slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpSelect" />
         <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" canbecombined="true" ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true" spawnItemRandomly="true" >
+            <StatusEffect type="OnUse" target="This" disabledeltatime="true" spawnItemRandomly="true" >
                 <SpawnItem identifiers="Celestial_Decay_Bolt01" spawnposition="ThisInventory" commonness="1" />
                 <SpawnItem identifiers="Celestial_Decay_Bolt02" spawnposition="ThisInventory" commonness="1" />
                 <SpawnItem identifiers="Celestial_Decay_Bolt03" spawnposition="ThisInventory" commonness="1" />
                 <SpawnItem identifiers="Sword_Qi" spawnposition="ThisInventory" commonness="0.1" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true">
+                <RequiredItem items="Celestial_Decay_Bolt" type="Contained" />
             </StatusEffect>
             <Containable items="Celestial_Decay_Bolt" />
         </ItemContainer>
