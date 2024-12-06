@@ -358,7 +358,7 @@
     <talentdescription.Touhou_Tianren_Xianren04>满血时，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度‖end‖和‖color:gui.green‖25%‖end‖‖color:gui.orange‖修复速度‖end‖。血量低于‖color:gui.green‖0‖end‖时，增加‖color:gui.green‖90%‖end‖‖color:gui.orange‖缺氧抗性‖end‖。等级大于‖color:gui.green‖15‖end‖后，受到的攻击伤害减少‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Tianren_Xianren04>
     <talentname.Touhou_Tianren_Xianren05>如梦似幻</talentname.Touhou_Tianren_Xianren05>
     <talentdescription.Touhou_Tianren_Xianren05>击杀任意生物后，给予所有技能点‖color:gui.green‖1‖end‖点。这个效果一巡回最多触发‖color:gui.green‖3‖end‖次。
-        穿着‖color:gui.red‖天子装束+‖end‖时：巡回完成所有任务后，增加‖color:gui.green‖1‖end‖个计数。计数达到‖color:gui.green‖10‖end‖个后，增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖近战攻击速度‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖。计数在死亡后清除</talentdescription.Touhou_Tianren_Xianren05>
+        穿着‖color:gui.red‖天子装束+‖end‖时：巡回完成所有任务后，增加‖color:gui.green‖1‖end‖个计数。计数达到‖color:gui.green‖10‖end‖个后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖近战攻击速度‖end‖和‖color:gui.orange‖物理伤害抗性‖end‖。计数在死亡后清除</talentdescription.Touhou_Tianren_Xianren05>
     <talentname.Touhou_Tianren_Xianren06>超凡脱俗</talentname.Touhou_Tianren_Xianren06>
     <talentdescription.Touhou_Tianren_Xianren06>允许技能水平的上限超过‖color:gui.green‖100‖end‖达到‖color:gui.green‖200‖end‖
         穿着‖color:gui.red‖天子装束+‖end‖时：根据角色等级，每级增加‖color:gui.green‖1%‖end‖‖color:gui.orange‖攻击速度‖end‖，最高‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Tianren_Xianren06>

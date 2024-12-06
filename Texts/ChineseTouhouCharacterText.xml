@@ -433,8 +433,6 @@
     <afflictionname.Shining_Light_Of_The_Sun>闪耀的日之光</afflictionname.Shining_Light_Of_The_Sun>
     <afflictiondescription.Shining_Light_Of_The_Sun>她有着一头橙色及肩短发，用红色蝴蝶结系成短双马尾，头顶戴着白色蕾丝状发箍。</afflictiondescription.Shining_Light_Of_The_Sun>
     <afflictionname.Light_Of_The_Sun_Effect>日之光</afflictionname.Light_Of_The_Sun_Effect>
-    <afflictionname.The_Grimoire_Of_Usami_Weapons>三妖精大暴走</afflictionname.The_Grimoire_Of_Usami_Weapons>
-    <afflictiondescription.The_Grimoire_Of_Usami_Weapons>赌上性命去恶作剧！</afflictiondescription.The_Grimoire_Of_Usami_Weapons>
 
     <!--Luna-->
     <entityname.Luna_gear>‖color:255,225,145,255‖露娜装束‖end‖</entityname.Luna_gear>
@@ -479,4 +477,6 @@
     <afflictionname.Light_Of_The_Star_Effect>星之光</afflictionname.Light_Of_The_Star_Effect>
     <afflictionname.Star_No_Attacked>藏匿的星云</afflictionname.Star_No_Attacked>
     <afflictiondescription.Star_No_Attacked>大幅加快生命恢复速度</afflictiondescription.Star_No_Attacked>
+    <afflictionname.Touhou_Three_Fairies_Weapons>三妖精大暴走</afflictionname.Touhou_Three_Fairies_Weapons>
+    <afflictiondescription.Touhou_Three_Fairies_Weapons>赌上性命去恶作剧！</afflictiondescription.Touhou_Three_Fairies_Weapons>
 </infotexts>

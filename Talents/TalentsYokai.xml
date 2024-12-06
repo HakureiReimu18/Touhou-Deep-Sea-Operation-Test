@@ -2682,7 +2682,7 @@
     </Talent>
 
     <!--如梦似幻 击杀任意生物后，给予所有技能点1点。这个效果一巡回最多触发3次。
-        穿着天子装束+时：巡回完成所有任务后，增加1个计数。计数达到10个后，增加20%近战攻击速度和10%物理伤害抗性。计数在死亡后清除-->
+        穿着天子装束+时：巡回完成所有任务后，增加1个计数。计数达到10个后，增加10%近战攻击速度和10%物理伤害抗性。计数在死亡后清除-->
     <Talent identifier="Touhou_Tianren_Xianren05" trackedstat="Touhou_Tiangou05_Counter" trackedmax="10">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Tianren_Xianren05"/>
@@ -2728,7 +2728,7 @@
                 <AbilityConditionHasPermanentStat statidentifier="Touhou_Tiangou05_Counter" min="10"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.2"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.1"/>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">

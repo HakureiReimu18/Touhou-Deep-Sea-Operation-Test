@@ -605,7 +605,7 @@
   <entityname.Touhou_Rapidly_Spell_Card_Cannon>高速符卡发射器</entityname.Touhou_Rapidly_Spell_Card_Cannon>
   <entitydescription.Touhou_Rapidly_Spell_Card_Cannon>高射速的符卡发射器，可以使用连射炮弹药和相关类型的符卡。相比连射炮，高速符卡发射器的火力性能和射速都更高，但射速会随使用时间逐渐下降</entitydescription.Touhou_Rapidly_Spell_Card_Cannon>
   <entityname.Touhou_Huge_Spell_Card_Cannon>大型符卡发射器</entityname.Touhou_Huge_Spell_Card_Cannon>
-  <entitydescription.Touhou_Huge_Spell_Card_Cannon>大体型的符卡发射器，可以使用加农炮弹药、脉冲激光弹药和相关类型的符卡。相比其他炮塔，大型符卡发射器的火力性能有所降低，但双联装弥补了这一点。</entitydescription.Touhou_Huge_Spell_Card_Cannon>
+  <entitydescription.Touhou_Huge_Spell_Card_Cannon>大体型的符卡发射器，可以使用加农炮弹药、脉冲激光弹药和相关类型的符卡。相比其他炮塔，大型符卡发射器的火力性能大幅降低，但双联装弥补了这一点。</entitydescription.Touhou_Huge_Spell_Card_Cannon>
 
   <!--凭依效果-->
   <talentname.Hyouibana_Reimu>凭依灵梦</talentname.Hyouibana_Reimu>

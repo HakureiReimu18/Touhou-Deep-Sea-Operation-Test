@@ -440,7 +440,7 @@
         </AbilityGroupInterval>
     </Talent>
 
-    <!--小小的恶作剧 每次击杀生物都有50%概率为自己增加2点异变能量，当异变能量大于30时，增加15%最大生命值，操控的炮塔的射速提高10%-->
+    <!--小小的恶作剧 每次击杀生物都有50%概率为自己增加2点异变能量，当异变能量大于30时，增加10%最大生命值，操控的炮塔的射速提高10%-->
     <Talent identifier="Touhou_Cute_Prank">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Touhou_Cute_Prank"/>
@@ -463,7 +463,7 @@
         </AbilityGroupInterval>
     </Talent>
 
-    <!--妖精大战争 异变能量大于40%时，提高10%的攻击伤害，减少10%受到的物理伤害，提高15%技能水平。解锁配方：冰之勇者剑，地狱火炬。-->
+    <!--妖精大战争 异变能量大于40%时，提高10%的攻击伤害，减少10%受到的物理伤害，提高10%技能水平。解锁配方：冰之勇者剑，地狱火炬。-->
     <Talent identifier="Eastern_And_Little_Nature_Deity">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Eastern_And_Little_Nature_Deity"/>

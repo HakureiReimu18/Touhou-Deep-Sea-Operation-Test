@@ -66,7 +66,7 @@
                 <Affliction identifier="stun" strength="0.025" probability="0.6"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
-                <Affliction identifier="Reiki_Pressure" strength="0.4" />
+                <Affliction identifier="Reiki_Pressure" strength="0.6" />
                 <Affliction identifier="bleeding" strength="6" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This">
@@ -255,7 +255,7 @@
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
                 <Affliction identifier="burn" strength="5" />
-                <Affliction identifier="Reiki_Pressure" strength="3" />
+                <Affliction identifier="Reiki_Pressure" strength="5" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" lifetime="1.2">
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="105" anglemax="255" particleamount="3" velocitymin="200" velocitymax="600"
@@ -454,8 +454,8 @@
         <Body radius="30" density="10" />
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="0.0" >
-            <Attack structuredamage="100" itemdamage="100" levelwalldamage="100" severlimbsprobability="0.3" penetration="0.3">
-                <Affliction identifier="blunttrauma" strength="50" />
+            <Attack structuredamage="100" itemdamage="100" levelwalldamage="100" severlimbsprobability="0.3" penetration="0.2">
+                <Affliction identifier="blunttrauma" strength="60" />
                 <Affliction identifier="stun" strength="1" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
@@ -746,7 +746,7 @@
                 <Affliction identifier="stun" strength="0.8" probability="0.2" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
-                <Affliction identifier="Reiki_Pressure" strength="3"  />
+                <Affliction identifier="Reiki_Pressure" strength="4"  />
                 <Affliction identifier="Touhou_Freeze" strength="3"  />
                 <Affliction identifier="acidburn" strength="3"  />
             </StatusEffect>
@@ -769,7 +769,7 @@
                     <Affliction identifier="explosiondamage" strength="3" />
                     <Affliction identifier="acidburn" strength="1" />
                     <Affliction identifier="Touhou_Freeze" strength="3" />
-                    <Affliction identifier="Reiki_Pressure" strength="1" />
+                    <Affliction identifier="Reiki_Pressure" strength="2" />
                 </Explosion>
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="4" velocitymin="300" velocitymax="600" scalemin="0.45" scalemax="0.9" colormultiplier="255,255,255,160" />
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="4" velocitymin="300" velocitymax="600" scalemin="0.45" scalemax="0.9" colormultiplier="5,105,205,200" />
@@ -1032,7 +1032,7 @@
             <Attack structuredamage="0" itemdamage="0" targetforce="10" targetimpulse="20" severlimbsprobability="0.2" penetration="0.15">
                 <Affliction identifier="lacerations" strength="12" />
                 <Affliction identifier="lacerations" strength="4" probability="0.75" />
-                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="Reiki_Pressure" strength="4" />
                 <Affliction identifier="stun" strength="0.02" probability="0.5"/>
             </Attack>
             <StatusEffect type="OnNotContained" target="This" stackable="false" delay="0.25">
@@ -1194,7 +1194,7 @@
                 <Affliction identifier="Reiki_Pressure" strength="6" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
-                <Affliction identifier="Reiki_Pressure" strength="10" />
+                <Affliction identifier="Reiki_Pressure" strength="14" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" />
@@ -1314,7 +1314,7 @@
             <StatusEffect type="OnImpact" target="Limb">
                 <Conditional speciesgroup="neq human"/>
                 <Affliction identifier="lacerations" strength="2" />
-                <Affliction identifier="Reiki_Pressure" strength="0.5" />
+                <Affliction identifier="Reiki_Pressure" strength="1" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="4" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="7,7" colormultiplier="255,115,95,150" lifetimemultiplier="0.5"/>
@@ -1610,8 +1610,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="60.0" maxtargetstohit="2" >
             <Attack structuredamage="10" itemdamage="10" levelwalldamage="100" severlimbsprobability="0.3" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="3" />
-                <Affliction identifier="Reiki_Pressure" strength="3" probability="0.75" />
+                <Affliction identifier="Reiki_Pressure" strength="4" />
+                <Affliction identifier="Reiki_Pressure" strength="4" probability="0.75" />
                 <Affliction identifier="stun" strength="0.5" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
@@ -1648,8 +1648,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="60.0" removeonhit="true" >
             <Attack structuredamage="10" itemdamage="10" levelwalldamage="100" severlimbsprobability="0.66" penetration="0.66">
-                <Affliction identifier="Reiki_Pressure" strength="1" />
-                <Affliction identifier="Reiki_Pressure" strength="1" probability="0.66" />
+                <Affliction identifier="Reiki_Pressure" strength="1.5" />
+                <Affliction identifier="Reiki_Pressure" strength="1.5" probability="0.66" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
                 <Affliction identifier="Reiki_Pressure" strength="5" />
@@ -1729,7 +1729,7 @@
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
                 <Affliction identifier="Touhou_Freeze" strength="5" />
-                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" disabledeltatime="true" lifetime="1.2">
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="105" anglemax="255" particleamount="3" velocitymin="200" velocitymax="600"

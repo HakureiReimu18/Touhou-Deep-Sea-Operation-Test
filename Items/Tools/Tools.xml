@@ -87,14 +87,14 @@
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="loadable,battery" excludeditems="Power_Bank">
-                    <StatusEffect type="OnContaining" target="This" condition="-0.25">
+                    <StatusEffect type="OnContaining" target="Parent" condition="-0.25">
                         <Conditional condition="lt 100" />
                     </StatusEffect>
                 </Containable>
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="loadable,battery" excludeditems="Power_Bank">
-                    <StatusEffect type="OnContaining" target="This" condition="-0.25">
+                    <StatusEffect type="OnContaining" target="Parent" condition="-0.25">
                         <Conditional condition="lt 100" />
                     </StatusEffect>
                 </Containable>

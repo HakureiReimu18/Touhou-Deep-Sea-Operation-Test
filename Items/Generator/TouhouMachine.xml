@@ -185,7 +185,7 @@
         allowedlinks="Touhou_Small_Spell_Card_Cannon_Loader">
     <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets_Bed.png" depth="0.01" sourcerect="444,3,222,151" canflipy="false" />
     <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
-    <SwappableItem price="8000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+    <SwappableItem price="10000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
       <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389" />
       <SwapConnectedItem tag="periscope" swapto="periscope" />
       <SwapConnectedItem tag="turretammosource" swapto="Touhou_Small_Spell_Card_Cannon_Loader" />
@@ -277,7 +277,7 @@
         allowedlinks="Touhou_Rapidly_Spell_Card_Cannon_Loader">
     <Sprite texture="Content/Items/Weapons/Turrets.png" depth="0.01" sourcerect="772,8,248,248" canflipy="false" />
     <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
-    <SwappableItem price="8000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+    <SwappableItem price="10000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
       <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389" />
       <SwapConnectedItem tag="periscope" swapto="periscope" />
       <SwapConnectedItem tag="turretammosource" swapto="Touhou_Small_Spell_Card_Cannon_Loader" />
@@ -339,7 +339,10 @@
       </StatusEffect>
       <StatusEffect type="OnBroken" target="This" reload="15" disabledeltatime="true" setvalue="true" />
       <StatusEffect type="OnBroken" target="This" reload="0.085" condition="100" delay="8" disabledeltatime="true" setvalue="true" >
-        <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="10000.0" volume="3.0" loop="false" />
+        <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="10000.0" volume="5.0" loop="false" />
+      </StatusEffect>
+      <StatusEffect type="Always" target="This" condition="100" disabledeltatime="true" setvalue="true" AllowWhenBroken="true" Inteval="30">
+        <Conditional condition="lte 0" />
       </StatusEffect>
 
       <Sound file="Content/Items/Weapons/WEAPONS_chainGunShot1.ogg" type="OnUse" range="10000" selectionmode="Random" />
@@ -401,7 +404,7 @@
         allowedlinks="Touhou_Huge_Spell_Card_Cannon_Loader">
     <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets_Bed.png" depth="0.01" sourcerect="0,0,444,303" canflipy="false" />
     <MinimapIcon name="Command_Weapons_FlakCannon" texture="Content/UI/CommandUIBackground.png" sourcerect="512,768,128,128" />
-    <SwappableItem price="15000" replacementonuninstall="largeturrethardpoint" origin="256,438" swapidentifier="largeturret">
+    <SwappableItem price="20000" replacementonuninstall="largeturrethardpoint" origin="256,438" swapidentifier="largeturret">
       <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="768,389,256,389" />
       <SwapConnectedItem tag="periscope" swapto="periscope" />
       <SwapConnectedItem tag="turretammosource" swapto="Touhou_Huge_Spell_Card_Cannon_Loader" />

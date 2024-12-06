@@ -1689,20 +1689,6 @@
         <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
     </Affliction>
 
-    <!--三月精-专属武器效果-->
-    <Affliction identifier="The_Grimoire_Of_Usami_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="bleeding,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
-            <StatValue stattype="AttackMultiplier" value="0.15" />
-            <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
-            <StatValue stattype="MeleeAttackSpeed" value="0.1" />
-            <StatValue stattype="RangedAttackSpeed" value="0.1" />
-            <StatValue stattype="RangedSpreadReduction" value="-0.1" />
-            <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
-        </Effect>
-        <Icon texture="%ModDir%/Images/Afflictions/The_Grimoire_Of_Usami_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
-    </Affliction>
-
     <!--露娜翅膀-->
     <AfflictionHusk
             name="露娜翅膀"
@@ -1994,5 +1980,20 @@
             <StatValue stattype="AttackMultiplier" value="-0.15" />
         </Effect>
         <icon texture="%ModDir%/Images/Transparent.png" sourcerect="0,0,128,128" color="0,0,0,0" origin="0,0"/>
+    </Affliction>
+
+
+    <!--三月精-专属武器效果-->
+    <Affliction identifier="Touhou_Three_Fairies_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="bleeding,stun" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
+            <StatValue stattype="AttackMultiplier" value="0.15" />
+            <StatValue stattype="MeleeAttackMultiplier" value="0.35" />
+            <StatValue stattype="MeleeAttackSpeed" value="0.1" />
+            <StatValue stattype="RangedAttackSpeed" value="0.1" />
+            <StatValue stattype="RangedSpreadReduction" value="-0.1" />
+            <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Three_Fairies_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 </Afflictions>
