@@ -1822,8 +1822,8 @@
     </Affliction>
 
     <!--斯塔未收到攻击效果-妖精联盟-->
-    <Affliction identifier="Star_No_Attacked_Yousei_Talent" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="40"
-                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+    <Affliction identifier="Star_No_Attacked_Yousei_Talent" type="Touhou_Character_Affliction" limbspecific="false" hideiconafterdelay="false" maxstrength="40"
+                showiconthreshold="100" showinhealthscannerthreshold="100"  iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="39" />
         <Effect minstrength="39" maxstrength="40" >
             <StatValue stattype="MaximumHealthMultiplier" value="0.05" />
@@ -1865,7 +1865,7 @@
     </Affliction>
 
     <!--凭依斯塔-->
-    <Affliction identifier="Hyouibana_Star_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+    <Affliction identifier="Hyouibana_Star_Effect" type="Touhou_Character_Affliction" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="39" />
         <Effect minstrength="39" maxstrength="40" >

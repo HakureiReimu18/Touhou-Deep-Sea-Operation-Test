@@ -2332,8 +2332,8 @@
             <StatusEffect type="OnImpact" target="This" stackable="false" disabledeltatime="true" >
                 <Explosion range="180" force="6.0" itemdamage="20" levelwalldamage="30" shockwave="false" smoke="false" flames="false" flash="false"
                            DistanceFalloff="false" sparks="false" camerashake="10" penetration="0.2" >
-                    <Affliction identifier="explosiondamage" strength="15" />
-                    <Affliction identifier="burn" strength="15" />
+                    <Affliction identifier="explosiondamage" strength="25" />
+                    <Affliction identifier="burn" strength="25" />
                     <Affliction identifier="Phoenix_Burn" strength="40" />
                     <Affliction identifier="Touhou_Lost_Dream" strength="10" />
                 </Explosion>

@@ -79,26 +79,23 @@
         <Sprite texture="%ModDir%/Images/Tools/Power_Bank.png" sourcerect="0,0,72,76" depth="0.15" scale="0.5" origin="0.5,0.5" />
         <Body width="50" height="50" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="Always" target="Contained" Condition="2.5" >
+            <StatusEffect type="Always" target="Contained" Condition="2.5" Interval="1.0" Duration="1.0" >
                 <Conditional TargetContainer="true" condition="gt 0" />
             </StatusEffect>
+            <StatusEffect type="Always" target="This" targetslot="0" Condition="-0.15" Interval="1.0" >
+                <RequiredItems items="loadable,battery" type="Contained" />
+                <Conditional condition="lt 100" TargetContainedItem="true" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" targetslot="1" Condition="-0.15" Interval="1.0"  >
+                <RequiredItems items="loadable,battery" type="Contained" />
+                <Conditional condition="lt 100" TargetContainedItem="true" />
+            </StatusEffect>
         </Holdable>
-        <ItemContainer capacity="0" maxstacksize="1" canbeselected="true" hideitems="true" >
+        <ItemContainer capacity="2" maxstacksize="1" canbeselected="true" hideitems="true" >
+            <Containable items="loadable,battery" excludeditems="Power_Bank"/>
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="loadable,battery" excludeditems="Power_Bank">
-                    <StatusEffect type="OnContaining" target="Parent" condition="-0.25">
-                        <Conditional condition="lt 100" />
-                    </StatusEffect>
-                </Containable>
-            </SubContainer>
-            <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="loadable,battery" excludeditems="Power_Bank">
-                    <StatusEffect type="OnContaining" target="Parent" condition="-0.25">
-                        <Conditional condition="lt 100" />
-                    </StatusEffect>
-                </Containable>
-            </SubContainer>
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+            <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
         </ItemContainer>
     </Item>
 

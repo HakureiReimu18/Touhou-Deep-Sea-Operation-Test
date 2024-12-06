@@ -738,7 +738,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="15" damagedoors="true">
             <Attack severlimbsprobability="0.4" penetration="0.7" maxtargetstohit="2">
-                <Affliction identifier="explosiondamage" strength="3" />
+                <Affliction identifier="explosiondamage" strength="4" />
                 <Affliction identifier="acidburn" strength="1" />
                 <Affliction identifier="Touhou_Freeze" strength="2" />
                 <Affliction identifier="Touhou_Silent_Selene_Dream" strength="1" />
@@ -1048,7 +1048,7 @@
 
     <!--天上剑「天人之五衰」-->
     <Item name="" identifier="Celestial_Decay" scale="0.25" tags="chaingunequipment,chaingunammo,ammobox,Celestial_Decay,Touhou_Rapidly_Spell_Card_Ammo"
-          health="600" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+          health="400" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="chaingunammosource" amount="1" mincondition="1"/>
         <PreferredContainer primary="ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckammoboxcontainer" amount="1" spawnprobability="0.06"/>
@@ -1194,10 +1194,10 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="2" spread="5" removeonhit="false" damagedoors="true">
             <Attack structuredamage="0" itemdamage="0" targetforce="10" targetimpulse="10" penetration="0.4" severlimbsprobability="1.0" >
-                <Affliction identifier="Reiki_Pressure" strength="6" />
+                <Affliction identifier="Reiki_Pressure" strength="4" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
-                <Affliction identifier="Reiki_Pressure" strength="14" />
+                <Affliction identifier="Reiki_Pressure" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Heart" strength="2" />

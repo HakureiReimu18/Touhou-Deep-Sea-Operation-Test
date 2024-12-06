@@ -787,7 +787,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="This" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
-                            <Affliction identifier="Star_No_Attacked" amount="1.0"/>
+                            <Affliction identifier="Hyouibana_Star_Effect" amount="1.0"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
@@ -798,7 +798,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="This">
-                            <ReduceAffliction identifier="Star_No_Attacked" strength="100.0"/>
+                            <ReduceAffliction identifier="Hyouibana_Star_Effect" strength="100.0"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
