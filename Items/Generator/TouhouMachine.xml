@@ -287,7 +287,7 @@
 
     <Turret
             canbeselected="false"
-            spread="1.0"
+            spread="16.0"
             launchimpulse="100.0"
             characterusable="false"
             linkable="true"
@@ -321,6 +321,9 @@
       <StatusEffect type="OnUse" target="This" condition="-0.75" disabledeltatime="true" >
         <Conditional condition="gt 0" />
       </StatusEffect>
+      <StatusEffect type="OnUse" target="This"  spread="-0.5" disabledeltatime="true" >
+        <Conditional spread="gt 1.0" />
+      </StatusEffect>
       <StatusEffect type="OnUse" target="This" reload="+0.01" disabledeltatime="true" comparison="And" >
         <Conditional condition="lte 40" />
         <Conditional condition="gt 0" />
@@ -331,6 +334,9 @@
         <Conditional reload="gt 0.085" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" condition="+0.5" />
+      <StatusEffect type="Always" target="This" spread="+1.0" >
+        <Conditional spread="lte 16.0" />
+      </StatusEffect>
       <StatusEffect type="Always" target="This" condition="+0.5" comparison="And" >
         <Conditional condition="gt 40" />
       </StatusEffect>

@@ -36,7 +36,7 @@
     <talentdescription.Life_And_Death_Half_Half>当你身着‖color:gui.orange‖魂魄妖梦装束+‖end‖时，
         造成的‖color:gui.orange‖近战伤害‖end‖提高‖color:gui.green‖30%‖end‖，
         ‖color:gui.orange‖行走速度‖end‖提高‖color:gui.green‖24%‖end‖。
-        根据自身的武器操作等级，提高其数值相应10%的‖color:gui.orange‖远程攻击速度‖end‖。
+        根据自身的武器操作等级，提高其数值相应8%的‖color:gui.orange‖远程攻击速度‖end‖。
         \n同时持有‖color:gui.red‖白楼剑‖end‖和‖color:gui.red‖楼观剑‖end‖时，会获得大量伤害加成，并进一步加快行走速度。</talentdescription.Life_And_Death_Half_Half>
     <afflictionname.Ancient_Temple>半人半灵的庭师</afflictionname.Ancient_Temple>
     <afflictiondescription.Ancient_Temple>斩不断的东西几乎不存在</afflictiondescription.Ancient_Temple>
