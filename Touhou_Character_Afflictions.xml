@@ -1674,6 +1674,8 @@
             identifier="Light_Of_The_Sun_Effect"
             type="aichange"
             limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
             duration="4"
             maxstrength="1">
         <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="-0.25" maxresistance="-0.25">
@@ -1758,6 +1760,8 @@
             identifier="Light_Of_The_Moon_Effect"
             type="debuff"
             limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
             duration="5"
             maxstrength="1">
         <Effect minstrength="0" maxstrength="1" resistancefor="stun,damage" minresistance="-0.2" maxresistance="-0.2" minspeedmultiplier="0.75" maxspeedmultiplier="0.75">
@@ -1969,6 +1973,8 @@
             identifier="Light_Of_The_Star_Effect"
             type="debuff"
             limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
             duration="5"
             maxstrength="1">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="-0.1" maxresistance="-0.1"
