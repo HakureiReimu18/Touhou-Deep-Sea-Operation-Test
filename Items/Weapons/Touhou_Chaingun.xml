@@ -794,6 +794,7 @@
         </Price>
         <Deconstruct time="2">
             <Item identifier="Reiki_Stone" amount="4" />
+            <Item identifier="fulgurium" amount="2" mincondition="90" />
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="100" />

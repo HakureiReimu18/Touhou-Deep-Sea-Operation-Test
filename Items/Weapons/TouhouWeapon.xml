@@ -2331,7 +2331,7 @@
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" removeonhit="true" friendlyfire="true">
             <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.5">
                 <Affliction identifier="burn" strength="25" />
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="7" />
 <!--                <Affliction identifier="Touhou_Yang_Elements" strength="5" />
                 <Affliction identifier="Touhou_Yang_Elements" strength="7" probability="0.15" />-->
             </Attack>
@@ -2410,7 +2410,7 @@
         <Projectile characterusable="false" launchimpulse="28" hitscan="false" removeonhit="true" friendlyfire="true">
             <Attack structuredamage="7" itemdamage="7" targetforce="7" targetimpulse="7" severlimbsprobability="0.77" penetration="0.5">
                 <Affliction identifier="acidburn" strength="10" />
-                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="Reiki_Pressure" strength="7" />
                 <Affliction identifier="Touhou_Silent_Selene_Dream" strength="1.4" />
 <!--                <Affliction identifier="Touhou_Yin_Elements" strength="5" />
                 <Affliction identifier="Touhou_Yin_Elements" strength="7" probability="0.15" />-->
@@ -3584,7 +3584,7 @@
             </StatusEffect>
 
             <Attack targetimpulse="5" severlimbsprobability="0.35" itemdamage="60" structuresoundtype="StructureSlash" penetration="0.2">
-                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="Reiki_Pressure" strength="4" />
                 <Affliction identifier="lacerations" strength="8" />
                 <Affliction identifier="lacerations" strength="6" probability="0.495" />
                 <Affliction identifier="internaldamage" strength="8" />
@@ -3695,7 +3695,7 @@
             </StatusEffect>
 
             <Attack targetimpulse="5" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.25">
-                <Affliction identifier="Reiki_Pressure" strength="2" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="lacerations" strength="20" />
                 <Affliction identifier="burn" strength="10" />
                 <Affliction identifier="Touhou_Bite" strength="20" />
@@ -3976,12 +3976,12 @@
             </LightComponent>
 
             <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="3" />
-                <Affliction identifier="lacerations" strength="20" />
+                <Affliction identifier="Reiki_Pressure" strength="9" />
+                <Affliction identifier="lacerations" strength="18" />
                 <Affliction identifier="slow" strength="30" />
                 <Affliction identifier="Slow_Baka" strength="15" />
                 <Affliction identifier="Touhou_Freeze" strength="18" />
-                <Affliction identifier="Touhou_Freeze" strength="9" probability="0.5" />
+                <Affliction identifier="Touhou_Freeze" strength="9" probability="0.25" />
                 <Affliction identifier="bleeding" strength="18" />
                 <Affliction identifier="bleeding" strength="18" probability="0.5" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
@@ -5098,6 +5098,34 @@
                     <RequiredAffliction type="Alice_Doll_Energy" minstrength="10" />
                     <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
                     <Affliction identifier="Alice_Doll_Spawn" amount="10" />
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
+                    <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
+                </StatusEffect>
+            </Button>
+            <Button text="上海人偶">
+                <StatusEffect type="OnUse" target="Character" delay="0.5" >
+                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="10" />
+                    <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
+                    <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
+                </StatusEffect>
+            </Button>
+            <Button text="蓬莱人偶">
+                <StatusEffect type="OnUse" target="Character" delay="0.5" >
+                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="10" />
+                    <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
+                    <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
+                </StatusEffect>
+            </Button>
+        </CustomInterface>
+        <!--        <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.08,0.32" anchor="BottomLeft" absoluteoffset="20,95" style="ItemUI" />
+            <Button text="普通人偶">
+                <StatusEffect type="OnUse" target="Character" delay="0.5" >
+                    <RequiredAffliction type="Alice_Doll_Energy" minstrength="10" />
+                    <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
+                    <Affliction identifier="Alice_Doll_Spawn" amount="10" />
                     <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" TransferControl="true" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
@@ -5178,7 +5206,7 @@
                     <LuaHook name="Touhou_Alice_Magic_Book.OnUse" />
                 </StatusEffect>
             </Button>
-        </CustomInterface>
+        </CustomInterface>-->
         <Quality>
             <QualityStat stattype="FirepowerMultiplier" value="0.07" />
         </Quality>
@@ -5516,7 +5544,7 @@
                 <Conditional Voltage="lt 0.5" />
             </StatusEffect>
         </Holdable>
-        <RangedWeapon reload="1.0" holdtrigger="true" penetrationmultiplier="1.0" barrelpos="64,2" spread="8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
+        <RangedWeapon reload="1.2" holdtrigger="true" penetrationmultiplier="1.0" barrelpos="64,2" spread="8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="0,0,180,180" />
             <ParticleEmitter particle="muzzleflashchaingun" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
@@ -5591,7 +5619,7 @@
         <Projectile characterusable="false" launchimpulse="22.0" sticktocharacters="false">
             <Attack itemdamage="60" penetration="0.3" severlimbsprobability="1">
                 <Affliction identifier="explosiondamage" strength="20" />
-                <Affliction identifier="burn" strength="20" />
+                <Affliction identifier="burn" strength="60" />
             </Attack>
             <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random" />
             <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000" />
@@ -5600,9 +5628,9 @@
                 <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="2000" />
                 <Explosion range="300.0" ballastfloradamage="80" structuredamage="10" levelwalldamage="120" itemdamage="200" force="5.0" severlimbsprobability="0.4" penetration="0.3">
                     <Affliction identifier="burn" strength="60" />
-                    <Affliction identifier="explosiondamage" strength="30" />
+                    <Affliction identifier="explosiondamage" strength="20" />
                     <Affliction identifier="bleeding" strength="40" />
-                    <Affliction identifier="Touhou_Lost_Dream" strength="10" />
+                    <Affliction identifier="Touhou_Lost_Dream" strength="40" />
                     <Affliction identifier="stun" strength="3" />
                 </Explosion>
                 <Remove />
@@ -5666,7 +5694,7 @@
                 <Conditional Voltage="lt 0.5" />
             </StatusEffect>
         </Holdable>
-        <RangedWeapon reload="0.2" holdtrigger="true" maxchargetime="0.2" penetrationmultiplier="1.0" barrelpos="54,2" spread="5" unskilledspread="14"
+        <RangedWeapon reload="0.4" holdtrigger="true" maxchargetime="0.8" barrelpos="54,2" spread="5" unskilledspread="14"
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="0,0,180,180" />
@@ -5674,9 +5702,7 @@
             <ParticleEmitter particle="explosionsmoke" particleamount="1" velocitymin="0" velocitymax="0" scalemin="0.5" scalemax="0.6" />
             <ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="1.0" scalemax="1.0" anglemax="360" colormultiplier="255,0,0,255" />
             <ChargeSound file="Content/Items/JobGear/Engineer/WEAPONS_rapidFissileAcceleratorStartLoop.ogg" range="1000" />
-            <Sound file="Content/Items/Weapons/GrenadeLauncherShot1.ogg" type="OnUse" range="1000" />
-            <Sound file="Content/Items/Weapons/GrenadeLauncherShot2.ogg" type="OnUse" range="1000" />
-            <Sound file="Content/Items/Weapons/GrenadeLauncherShot3.ogg" type="OnUse" range="1000" />
+            <Sound file="%ModDir%/Sounds/Weapons/Touhou_Lunar_Orbit_Gun/Touhou_Lunar_Orbit_Gun_Attack01.ogg" type="OnUse" volume="1.4" range="1000" selectionmode="Random" />
             <StatusEffect type="OnUse" target="This">
                 <Explosion range="150.0" force="1" shockwave="false" smoke="false" flames="false" flash="true" sparks="false" underwaterbubble="false" applyfireeffects="false" camerashake="8.0" />
             </StatusEffect>
@@ -5713,14 +5739,23 @@
             <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="4" />
         </Price>
         <Deconstruct time="5">
-            <Item identifier="iron" amount="2" />
-            <Item identifier="sodium" />
+            <Item identifier="Reiki_Stone" amount="2" />
+            <Item identifier="fulgurium" mincondition="90" />
         </Deconstruct>
-        <Fabricate suitablefabricators="fabricator" amount="4" requiredtime="10">
-            <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="Huo_Alchemical" />
-            <RequiredItem identifier="Yang_Alchemical" />
-            <RequiredItem identifier="uex" amount="2" />
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
+            <RequiredSkill identifier="Touhou_Magic" level="60" />
+            <RequiredItem identifier="fulgurium" />
+            <RequiredItem identifier="Yin_Alchemical" amount="2" />
+            <RequiredItem identifier="Reiki_Stone" amount="4" />
+            <RequiredItem identifier="Magic_Material" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="4" />
+        </Fabricate>
+        <Fabricate suitablefabricators="Magic_Altar" displayname="recycleitem" requiredtime="5">
+            <RequiredSkill identifier="Touhou_Magic" level="50"/>
+            <RequiredItem identifier="fulgurium" />
+            <RequiredItem identifier="Yin_Alchemical" />
+            <RequiredItem identifier="Reiki_Stone" amount="4" />
+            <RequiredItem identifier="Touhou_Lunar_Orbit_Gun_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Three_Fairies_Weapon.png" sourcerect="270,67,58,61" depth="0.55" origin="0.5,0.5" />
         <Body width="38" height="15" density="10" />
@@ -5743,9 +5778,10 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.25" colormultiplier="200,200,200,220"/>
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.25" colormultiplier="200,200,120,220"/>
-            <Attack itemdamage="20" levelwalldamage="20" targetforce="2" targetimpulse="2" penetration="0.2" severlimbsprobability="0.5">
-                <Affliction identifier="explosiondamage" strength="10" />
-                <Affliction identifier="Touhou_Freeze" strength="5" />
+            <Attack itemdamage="20" levelwalldamage="20" targetforce="2" targetimpulse="2" penetration="0.3" severlimbsprobability="0.5">
+                <Affliction identifier="explosiondamage" strength="20" />
+                <Affliction identifier="acidburn" strength="10" />
+                <Affliction identifier="Touhou_Freeze" strength="10" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
                 <Affliction identifier="stun" strength="0.15" />
                 <Affliction identifier="stun" strength="0.2" probability="0.6"/>
@@ -5754,17 +5790,17 @@
             <StatusEffect type="OnImpact" target="Limb" >
                 <Conditional Touhou_Lunar_Orbit_Effect="lte 25"/>
                 <Affliction identifier="Reiki_Pressure" strength="5" />
-                <Affliction identifier="Touhou_Freeze" strength="5" />
+                <Affliction identifier="Touhou_Freeze" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="Limb" multiplyafflictionsbymaxvitality="true" >
                 <Conditional Touhou_Lunar_Orbit_Effect="lte 25"/>
-                <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="5" />
+                <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="15" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="Limb" comparison="And" >
                 <Conditional Touhou_Lunar_Orbit_Effect="gte 50"/>
                 <Conditional Touhou_Lunar_Orbit_Effect="lte 75"/>
                 <Affliction identifier="Reiki_Pressure" strength="5" />
-                <Affliction identifier="Touhou_Freeze" strength="5" />
+                <Affliction identifier="Touhou_Freeze" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="Limb" comparison="And" multiplyafflictionsbymaxvitality="true" >
                 <Conditional Touhou_Lunar_Orbit_Effect="gte 50"/>
@@ -5772,10 +5808,10 @@
                 <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="5" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This" stackable="false" disabledeltatime="true" >
-                <Explosion range="80" force="6.0" itemdamage="20" levelwalldamage="30" shockwave="false" smoke="false" flames="false" flash="false"
+                <Explosion range="80" force="1.0" itemdamage="20" levelwalldamage="30" shockwave="false" smoke="false" flames="false" flash="false"
                            DistanceFalloff="false" sparks="false" camerashake="10" penetration="0.2" >
-                    <Affliction identifier="explosiondamage" strength="10" />
-                    <Affliction identifier="Touhou_Freeze" strength="10" />
+                    <Affliction identifier="explosiondamage" strength="15" />
+                    <Affliction identifier="Touhou_Freeze" strength="15" />
                     <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="5" />
                 </Explosion>
                 <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="0.5" selectionmode="Random" range="5000" />
@@ -5875,13 +5911,13 @@
                 <Affliction identifier="stun" strength="0.1" probability="0.5" />
             </Attack>
             <StatusEffect type="OnUse" target="Limb" >
-                <Affliction identifier="Reiki_Pressure" strength="2" />
-                <Affliction identifier="lacerations" strength="3" />
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="lacerations" strength="5" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="Limb" stackable="false">
+            <StatusEffect type="OnUse" target="Limb" stackable="false" Interval="0.5">
                 <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="0" />
                 <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="60" />
                 <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="120" />
@@ -5924,13 +5960,13 @@
         <Projectile characterusable="false" hitscan="true" maxtargetstohit="3" removeonhit="true" damagedoors="true" friendlyfire="false" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.3" colormultiplier="200,200,200,220"/>
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.3" colormultiplier="120,120,200,220"/>
-            <Attack itemdamage="2" levelwalldamage="2" penetration="0.2" severlimbsprobability="0.5">
+            <Attack levelwalldamage="2" penetration="0.2" severlimbsprobability="0.5">
                 <Affliction identifier="explosiondamage" strength="1.5" />
-                <Affliction identifier="Touhou_Lost_Dream" strength="1" probability="0.5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="1.5" probability="0.5" />
                 <Affliction identifier="stun" strength="0.05" probability="0.6"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
-                <Affliction identifier="Touhou_Freeze" strength="1" />
+                <Affliction identifier="Touhou_Freeze" strength="1.5" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="100,100,255,255" />

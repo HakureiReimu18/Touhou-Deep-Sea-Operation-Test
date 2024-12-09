@@ -1,0 +1,11 @@
+<Charactervariant inherit="Touhou_Alice_Doll_Normal" speciesname="Touhou_Alice_Doll_ShangHai" usebosshealthbar="true">
+    <health vitality="250"/>
+    <ragdolls folder="%ModDir%/Characters/Touhou_Alice_Doll/Touhou_Alice_Doll_ShangHai/Ragdolls/" />
+    <attack damagemultiplier="1.2" rangemultiplier="1.25" impactmultiplier="1.25"/>
+    <inventory arrowslot="9" Slots="Card, Headset, Head, OuterClothes, LeftHand, RightHand, Bag, Any, HealthInterface, Any, Any" AccessibleWhenAlive="False" Commonness="0.25">
+        <Item slot="RightHand+LeftHand" Identifier="Touhou_Rippling_MonsterUsed_Low">
+            <Item identifier="Touhou_Rippling_DollUsed_ShangHai" />
+        </Item>
+        <Item slot="Card" Identifier="idcard" />
+    </inventory>
+</Charactervariant>

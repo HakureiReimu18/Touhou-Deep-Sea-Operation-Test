@@ -1066,5 +1066,148 @@
         </Projectile>
     </Item>
 
+    <!--人偶用涟漪-普通-->
+    <Item name="人偶用涟漪-普通" identifier="Touhou_Rippling_DollUsed" tags="mediumitem,weapon" category="Weapon" hideinmenus="true" nonplayerteaminteractable="True"
+          subcategory="Touhou" isshootable="true" Scale="1">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling.png" sourcerect="0,0,140,48" depth="0.5" origin="0.5,0.5" />
+        <RangedWeapon reload="0.5" barrelpos="72,-4" launchImpulse="25" combatPriority="80" unskilledspread="16" spread="4" drawhudwhenequipped="true" crosshairscale="0.5">
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="3000" selectionmode="random"/>
+                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="3000" />
+                <Explosion range="200.0" camerashake="15" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+            </StatusEffect>
+            <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+                <SpawnItem identifier="Touhou_Mysterious_Pearl_Rippling_DollUsed" spawnposition="ThisInventory" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Contained" >
+                <RequiredItems items="Touhou_Mysterious_Pearl_Rippling_DollUsed" type="Contained" />
+                <Use />
+            </StatusEffect>
+            <RequiredItems items="Touhou_Mysterious_Pearl_Rippling_DollUsed" type="Contained" />
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </RangedWeapon>
+        <Body width="130" height="55" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdpos="60,-15" aimpos="60,-10" handle1="-25,-10" handle2="10,-3" holdangle="-25" />
+        <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="battery">
+            <Containable items="Touhou_Mysterious_Pearl_Rippling_DollUsed"/>
+        </ItemContainer>
+        <aitarget sightrange="3000" soundrange="3000" fadeouttime="5" />
+    </Item>
 
+    <!--人偶用涟漪-上海-->
+    <Item name="人偶用涟漪-上海" identifier="Touhou_Rippling_DollUsed_ShangHai" tags="mediumitem,weapon" category="Weapon" hideinmenus="true" nonplayerteaminteractable="True"
+          subcategory="Touhou" isshootable="true" Scale="1">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling.png" sourcerect="0,0,140,48" depth="0.5" origin="0.5,0.5" />
+        <RangedWeapon weapondamagemodifier="2.4" reload="0.35" barrelpos="72,-4" launchImpulse="25" combatPriority="80" spread="4" drawhudwhenequipped="true" crosshairscale="0.5">
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="3000" selectionmode="random"/>
+                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="3000" />
+                <Explosion range="200.0" camerashake="15" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+            </StatusEffect>
+            <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+                <SpawnItem identifier="Touhou_Mysterious_Pearl_Rippling_DollUsed" spawnposition="ThisInventory" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Contained" >
+                <RequiredItems items="Touhou_Mysterious_Pearl_Rippling_DollUsed" type="Contained" />
+                <Use />
+            </StatusEffect>
+            <RequiredItems items="Touhou_Mysterious_Pearl_Rippling_DollUsed" type="Contained" />
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </RangedWeapon>
+        <Body width="130" height="55" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdpos="60,-15" aimpos="60,-10" handle1="-25,-10" handle2="10,-3" holdangle="-25" />
+        <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="battery">
+            <Containable items="Touhou_Mysterious_Pearl_Rippling_DollUsed"/>
+        </ItemContainer>
+        <aitarget sightrange="3000" soundrange="3000" fadeouttime="5" />
+    </Item>
+
+    <!--人偶用涟漪-蓬莱-->
+    <Item name="人偶用涟漪-蓬莱" identifier="Touhou_Rippling_DollUsed_PengLai" tags="mediumitem,weapon" category="Weapon" hideinmenus="true" nonplayerteaminteractable="True"
+          subcategory="Touhou" isshootable="true" Scale="1">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling.png" sourcerect="0,0,140,48" depth="0.5" origin="0.5,0.5" />
+        <RangedWeapon weapondamagemodifier="1.2" ProjectileCount="3" reload="0.5" barrelpos="72,-4" launchImpulse="25" combatPriority="80" spread="4" drawhudwhenequipped="true" crosshairscale="0.5">
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge1.ogg" range="3000" selectionmode="random"/>
+                <sound file="Content/Items/Weapons/WEAPONS_electricalDischarge2.ogg" range="3000" />
+                <Explosion range="200.0" camerashake="15" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+            </StatusEffect>
+            <StatusEffect type="OnSpawn" target="This" targetitemcomponent="ItemContainer">
+                <SpawnItem identifier="Touhou_Mysterious_Pearl_Rippling_DollUsed" spawnposition="ThisInventory" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Contained" >
+                <RequiredItems items="Touhou_Mysterious_Pearl_Rippling_DollUsed" type="Contained" />
+                <Use />
+            </StatusEffect>
+            <RequiredItems items="Touhou_Mysterious_Pearl_Rippling_DollUsed" type="Contained" />
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </RangedWeapon>
+        <Body width="130" height="55" density="25" />
+        <Holdable slots="RightHand+LeftHand" holdpos="60,-15" aimpos="60,-10" handle1="-25,-10" handle2="10,-3" holdangle="-25" />
+        <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="battery">
+            <Containable items="Touhou_Mysterious_Pearl_Rippling_DollUsed"/>
+        </ItemContainer>
+        <aitarget sightrange="3000" soundrange="3000" fadeouttime="5" />
+    </Item>
+
+    <!--灵异珠-波纹-人偶用-->
+    <Item name="" identifier="Touhou_Mysterious_Pearl_Rippling_DollUsed" tags="smallitem" hideinmenus="true" nonplayerteaminteractable="True"
+          subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" scale="0.4">
+        <PreferredContainer primary="Touhou_Rippling_DollUsed" amount="1" spawnprobability="1" />
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Mysterious_Pearl_Rippling.png" depth="0.4" sourcerect="0,0,256,256" />
+        <Body width="32" height="32" density="10" />
+        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Holdable>
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Mysterious_Pearl_Rippling_DollUsed_Light" removecontaineditemsondeconstruct="true"
+                       drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <Containable items="Touhou_Mysterious_Pearl_Rippling_DollUsed_Light" />
+            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+            <StatusEffect type="OnUse" target="This"  disabledeltatime="true" >
+                <SpawnItem identifiers="Touhou_Mysterious_Pearl_Rippling_DollUsed_Light" count="3" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+    <!--人偶涟漪激光-->
+    <Item name="人偶涟漪激光" identifier="Touhou_Mysterious_Pearl_Rippling_DollUsed_Light" category="Weapon" tags="Touhou_Lunar_Center_Light,Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5" hideinmenus="true" >
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+        <Body width="170" height="10" density="10" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="20,20,120,255"/>
+            <Attack itemdamage="20" levelwalldamage="20" targetforce="2" targetimpulse="2" penetration="0.2" severlimbsprobability="0.3">
+                <Affliction identifier="explosiondamage" strength="3" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
+                <Affliction identifier="burn" strength="3" />
+                <Affliction identifier="Touhou_Freeze" strength="3" />
+                <Affliction identifier="Sleepless_Nightmare" strength="5" />
+                <Affliction identifier="stun" strength="0.1" />
+                <Affliction identifier="stun" strength="0.1" probability="0.4"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="2" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.1" scalemax="0.2" colormultiplier="200,200,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+    </Item>
 </Items>

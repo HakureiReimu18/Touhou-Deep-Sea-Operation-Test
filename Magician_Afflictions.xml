@@ -233,8 +233,7 @@
             hideiconafterdelay="true"
             limbspecific="false"
             maxstrength="300"
-            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249"
-            MedicalSkillGain="0.0002">
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="300" strengthchange="-1">
             <AbilityFlag flagtype="ImmuneToPressure" />
         </Effect>

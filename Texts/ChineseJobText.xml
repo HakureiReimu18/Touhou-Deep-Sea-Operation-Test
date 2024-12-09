@@ -64,15 +64,15 @@
     <talentname.Mana_Release>魔力外放</talentname.Mana_Release>
     <talentdescription.Mana_Release>
         根据当前角色等级，提供不同加成：
-        ‖color:gui.green‖10‖end‖级：魔法能力大于‖color:gui.green‖60‖end‖后，每次攻击都有‖color:gui.green‖5%‖end‖概率造成‖color:gui.green‖10%‖end‖额外伤害
-        ‖color:gui.green‖15‖end‖级：魔法能力大于‖color:gui.green‖80‖end‖后，‖color:gui.orange‖魔法能力‖end‖永久增加‖color:gui.green‖20‖end‖点
-        ‖color:gui.green‖20‖end‖级：魔法能力大于‖color:gui.green‖120‖end‖后，在水中获得‖color:gui.green‖300‖end‖秒免疫水压，回到‖color:gui.red‖干燥环境‖end‖后这个效果的剩余时间将开始恢复</talentdescription.Mana_Release>
+        ‖color:gui.green‖5‖end‖级：魔法能力大于‖color:gui.green‖60‖end‖后，每次攻击都有‖color:gui.green‖5%‖end‖概率造成‖color:gui.green‖10%‖end‖额外伤害
+        ‖color:gui.green‖10‖end‖级：魔法能力大于‖color:gui.green‖80‖end‖后，远程弹幕的伤害提高‖color:gui.green‖10%‖end‖
+        ‖color:gui.green‖15‖end‖级：魔法能力大于‖color:gui.green‖120‖end‖后，在水中获得‖color:gui.green‖300‖end‖秒免疫水压，回到‖color:gui.red‖干燥环境‖end‖后这个效果的剩余时间将开始恢复</talentdescription.Mana_Release>
     <talentname.Mana_Convergence>魔力内敛</talentname.Mana_Convergence>
     <talentdescription.Mana_Convergence>
         根据当前角色等级，提供不同加成：
-        ‖color:gui.green‖10‖end‖级后：每一级提供‖color:gui.green‖3%‖end‖‖color:gui.orange‖技能获取速度‖end‖和‖color:gui.green‖1%‖end‖‖color:gui.orange‖经验获取速度‖end‖，直到‖color:gui.green‖20‖end‖级为止
-        ‖color:gui.green‖15‖end‖级后：每一级提供‖color:gui.green‖2%‖end‖‖color:gui.orange‖游泳速度‖end‖并减少‖color:gui.green‖2%‖end‖‖color:gui.orange‖双持惩罚‖end‖，直到‖color:gui.green‖20‖end‖级为止
-        ‖color:gui.green‖20‖end‖级后：每次完成任意任务都会增加‖color:gui.green‖4%‖end‖‖color:gui.orange‖最大生命值‖end‖，最大‖color:gui.green‖20%‖end‖，死亡后效果清零</talentdescription.Mana_Convergence>
+        ‖color:gui.green‖5‖end‖级后：每一级提供‖color:gui.green‖3%‖end‖‖color:gui.orange‖技能获取速度‖end‖和‖color:gui.green‖1%‖end‖‖color:gui.orange‖经验获取速度‖end‖，直到‖color:gui.green‖20‖end‖级为止
+        ‖color:gui.green‖10‖end‖级后：每一级提供‖color:gui.green‖2%‖end‖‖color:gui.orange‖游泳速度‖end‖并减少‖color:gui.green‖2%‖end‖‖color:gui.orange‖双持惩罚‖end‖，直到‖color:gui.green‖20‖end‖级为止
+        ‖color:gui.green‖15‖end‖级后：每次完成任意任务都会增加‖color:gui.green‖4%‖end‖‖color:gui.orange‖最大生命值‖end‖，最大‖color:gui.green‖20%‖end‖，死亡后效果清零</talentdescription.Mana_Convergence>
     <talentname.Power_Point_Efficient_Synthesis>远见卓识</talentname.Power_Point_Efficient_Synthesis>
     <talentdescription.Power_Point_Efficient_Synthesis>每次巡回能额外接受一个任务，获得的声望增加‖color:gui.green‖25%‖end‖，可以全速拖动生物，解锁配方‖color:gui.orange‖：P点（红）（高效合成）‖end‖。</talentdescription.Power_Point_Efficient_Synthesis>
     <talentname.MEID_Unlocked>魔法天才</talentname.MEID_Unlocked>

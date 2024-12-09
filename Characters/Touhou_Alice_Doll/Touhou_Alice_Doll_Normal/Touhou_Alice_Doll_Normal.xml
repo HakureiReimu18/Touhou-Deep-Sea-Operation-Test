@@ -17,7 +17,7 @@
   </health>
   <inventory arrowslot="9" Slots="Card, Headset, Head, OuterClothes, LeftHand, RightHand, Bag, Any, HealthInterface, Any, Any" AccessibleWhenAlive="False" Commonness="0.25">
     <Item slot="RightHand+LeftHand" Identifier="Touhou_Rippling_MonsterUsed_Low">
-      <Item identifier="Touhou_Mysterious_Pearl_Rippling_MonsterUsed" />
+      <Item identifier="Touhou_Rippling_DollUsed" />
     </Item>
     <Item slot="Card" Identifier="idcard" />
   </inventory>

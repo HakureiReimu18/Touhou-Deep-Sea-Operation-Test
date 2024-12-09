@@ -1810,7 +1810,7 @@
 
     <!--斯塔未收到攻击效果-->
     <Affliction identifier="Star_No_Attacked" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="40"
-                showiconthreshold="39" showinhealthscannerthreshold="39" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+                showiconthreshold="39" showinhealthscannerthreshold="41" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="39" />
         <Effect minstrength="39" maxstrength="40" >
             <StatValue stattype="MaximumHealthMultiplier" value="0.1" />
@@ -1820,6 +1820,10 @@
                 <ReduceAffliction type="burn" amount="0.2"/>
                 <ReduceAffliction type="bleeding" amount="0.2"/>
                 <ReduceAffliction type="debuff" amount="0.01"/>
+            </StatusEffect>
+            <StatusEffect target="Character" Interval="0.1" disabledeltatime="true" >
+                <Conditional Cascading_Light_Of_The_Star="eq 0"/>
+                <ReduceAffliction type="Star_No_Attacked" amount="1"/>
             </StatusEffect>
             <StatusEffect target="Character" ConstantHealthRegeneration="1" setvalue="true" disabledeltatime="true" />
         </Effect>
@@ -1838,6 +1842,10 @@
                 <ReduceAffliction type="burn" amount="0.1"/>
                 <ReduceAffliction type="bleeding" amount="0.1"/>
                 <ReduceAffliction type="debuff" amount="0.005"/>
+            </StatusEffect>
+            <StatusEffect target="Character" Interval="0.1" disabledeltatime="true" >
+                <Conditional Cascading_Light_Of_The_Star="eq 0"/>
+                <ReduceAffliction type="Star_No_Attacked_Yousei_Talent" amount="1"/>
             </StatusEffect>
             <StatusEffect target="Character" ConstantHealthRegeneration="1" setvalue="true" disabledeltatime="true" />
         </Effect>

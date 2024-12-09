@@ -105,6 +105,10 @@
     <afflictiondescription.Ether_Divinggear_Effect01>略微增加身体抗性</afflictiondescription.Ether_Divinggear_Effect01>
     <afflictionname.Magic_Veil_Effect01>无穷的魔力</afflictionname.Magic_Veil_Effect01>
     <afflictiondescription.Magic_Veil_Effect01>略微增加自愈速度</afflictiondescription.Magic_Veil_Effect01>
+    <afflictionname.Touhou_Lunar_Orbit_Effect>月面气旋</afflictionname.Touhou_Lunar_Orbit_Effect>
+    <afflictiondescription.Touhou_Lunar_Orbit_Effect>月面混乱的气旋伤害了表皮，如果不尽快治愈，甚至有增长的风险</afflictiondescription.Touhou_Lunar_Orbit_Effect>
+    <afflictionname.Mana_Release_Effect>魔力外放</afflictionname.Mana_Release_Effect>
+    <afflictiondescription.Mana_Release_Effect>持续放出体内魔力抵御水压</afflictiondescription.Mana_Release_Effect>
 
     <!--死法-->
     <afflictioncauseofdeath.Reiki_Pressure>灵压崩溃</afflictioncauseofdeath.Reiki_Pressure>

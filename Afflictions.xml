@@ -123,6 +123,9 @@
             minspeedmultiplier="1.0" maxspeedmultiplier="0.85"
             minvitalitydecrease="0" maxvitalitydecrease="0.35"
             strengthchange="-0.04">
+      <StatusEffect target="Limb" >
+        <ParticleEmitter particle="IcicleBoom" scalemin="0.3" scalemax="0.6" DistanceMin="0" DistanceMax="10" ParticlesPerSecond="1" AngleMin="60" AngleMax="120" VelocityMax="120" colormultiplier="200,200,255,255"/>
+      </StatusEffect>
       <StatValue stattype="RangedAttackSpeed" minvalue="0" value="-0.1" />
       <StatValue stattype="MeleeAttackSpeed" minvalue="0" value="-0.1" />
     </Effect>
@@ -130,6 +133,9 @@
             multiplybymaxvitality="true"
             minspeedmultiplier="0.85" maxspeedmultiplier="0.65"
             minvitalitydecrease="0.35" maxvitalitydecrease="0.9">
+      <StatusEffect target="Limb" >
+        <ParticleEmitter particle="IcicleBoom" scalemin="0.3" scalemax="0.6" DistanceMin="0" DistanceMax="10" ParticlesPerSecond="1" AngleMin="60" AngleMax="120" VelocityMax="120" colormultiplier="200,200,255,255"/>
+      </StatusEffect>
       <StatValue stattype="RangedAttackSpeed" minvalue="-0.1" value="-0.2" />
       <StatValue stattype="MeleeAttackSpeed" minvalue="-0.1" value="-0.2" />
     </Effect>
@@ -353,7 +359,7 @@
 
   <!--无念-->
   <Affliction name="" identifier="Touhou_Water_Heart" description="" type="Touhou_Water_Heart" targets="human" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="10"
-              affectmachines="false" iconcolors="94,94,94;163,164,164;255,255,255">
+              hideiconafterdelay="true" affectmachines="false" iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Water_Heart" minstrength="0" maxstrength="10"/>
     <Effect minstrength="0" maxstrength="10"
             strengthchange="-3"
@@ -1572,7 +1578,7 @@
 
   <!--灵摆魔力-->
   <Affliction name="灵摆魔力" identifier="Touhou_Pendulum_Magic" description="" type="Touhou_Pendulum_Magic" targets="human" isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="10"
-              affectmachines="false" iconcolors="94,94,94;163,164,164;255,255,255">
+              hideiconafterdelay="true" affectmachines="false" iconcolors="94,94,94;163,164,164;255,255,255">
     <Description textidentifier="afflictiondescription.Touhou_Pendulum_Magic" minstrength="0" maxstrength="10"/>
     <Effect minstrength="0" maxstrength="10"
             strengthchange="-3"
@@ -2552,14 +2558,14 @@
           limbspecific="true"
           maxstrength="100"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="25" multiplybymaxvitality="false" minvitalitydecrease="0" maxvitalitydecrease="15" >
+    <Effect minstrength="0" maxstrength="25" resistancefor="damage,burn" minresistance="0" maxresistance="-0.1" multiplybymaxvitality="false" minvitalitydecrease="0" maxvitalitydecrease="15" >
       <StatusEffect target="Limb" Interval="5.0" >
         <Conditional speciesgroup="eq human"/>
         <ReduceAffliction identifier="Touhou_Lunar_Orbit_Effect" amount="1"/>
       </StatusEffect>
     </Effect>
     <Effect minstrength="25" maxstrength="50" multiplybymaxvitality="false" minvitalitydecrease="15" maxvitalitydecrease="30" strengthchange="1" />
-    <Effect minstrength="50" maxstrength="75" multiplybymaxvitality="false" minvitalitydecrease="30" maxvitalitydecrease="45" />
+    <Effect minstrength="50" maxstrength="75" resistancefor="damage,burn" minresistance="0" maxresistance="-0.1" multiplybymaxvitality="false" minvitalitydecrease="30" maxvitalitydecrease="45" />
     <Effect minstrength="75" maxstrength="100" multiplybymaxvitality="false" minvitalitydecrease="45" maxvitalitydecrease="60" strengthchange="1" />
     <PeriodicEffect mininterval="5" maxinterval="10" minstrength="0" maxstrength="100">
       <StatusEffect target="Limb" multiplyafflictionsbymaxvitality="true">

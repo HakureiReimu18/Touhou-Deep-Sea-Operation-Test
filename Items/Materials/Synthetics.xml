@@ -557,6 +557,58 @@
         </Terminal>
     </Item>
 
+    <!--帕秋莉手册-记忆材料篇-->
+    <Item name="帕秋莉手册-记忆材料篇" identifier="Patchouli_Book_06" category="Misc" hideinmenus="true" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+        <Price baseprice="20" canbespecial="false" sold="false">
+            <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchantcity" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchantresearch" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchantmilitary" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchantmine" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchanthusk" minavailable="1" maxavailable="2" sold="true">
+                <Reputation faction="huskcult" min="0"/>
+            </Price>
+            <Price storeidentifier="merchantclown" minavailable="1" maxavailable="2" sold="true">
+                <Reputation faction="clowns" min="0"/>
+            </Price>
+        </Price>
+        <Deconstruct time="1"/>
+        <PreferredContainer primary="crewcab" secondary="locker"/>
+        <InventoryIcon texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="59,110,51,65" origin="0.5,0.5" />
+        <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="114,165,41,51" depth="0.8" origin="0.5,0.5" />
+        <Body width="40" height="50" density="8" />
+        <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+        <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.5,0.75" anchor="Center" style="Patchouli_Book_06" hidedragicons="true" />
+        </Terminal>
+    </Item>
+
+    <!--帕秋莉手册-出血物质篇-->
+    <Item name="帕秋莉手册-出血物质篇" identifier="Patchouli_Book_07" category="Misc" hideinmenus="true" Tags="smallitem" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
+        <Price baseprice="20" canbespecial="false" sold="false">
+            <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchantcity" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchantresearch" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchantmilitary" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchantmine" minavailable="1" maxavailable="2"/>
+            <Price storeidentifier="merchanthusk" minavailable="1" maxavailable="2" sold="true">
+                <Reputation faction="huskcult" min="0"/>
+            </Price>
+            <Price storeidentifier="merchantclown" minavailable="1" maxavailable="2" sold="true">
+                <Reputation faction="clowns" min="0"/>
+            </Price>
+        </Price>
+        <Deconstruct time="1"/>
+        <PreferredContainer primary="crewcab" secondary="locker"/>
+        <InventoryIcon texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="59,110,51,65" origin="0.5,0.5" />
+        <Sprite texture="Content/Map/Outposts/Art/FactionItems.png" sourcerect="114,165,41,51" depth="0.8" origin="0.5,0.5" />
+        <Body width="40" height="50" density="8" />
+        <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+        <Terminal canbeselected="true" msg="ItemMsgInteractSelect" AllowInGameEditing="false" AutoHideScrollbar="true" readonly="true" autoscrolltobottom="false" linestartsymbol="" marginmultiplier="1.5" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.5,0.75" anchor="Center" style="Patchouli_Book_07" hidedragicons="true" />
+        </Terminal>
+    </Item>
+
     <!--baka喇叭-->
     <Item name="" identifier="Baka_Horn" category="Misc" subcategory="Touhou" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="BAKA!">
         <PreferredContainer primary="crewcab" spawnprobability="0.05" notcampaign="true"/>

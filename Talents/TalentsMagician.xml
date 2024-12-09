@@ -592,9 +592,9 @@
     </Talent>
 
     <!--魔力外放 根据当前角色等级，提供不同加成：
-        10级：魔法能力大于60后，每次攻击都有5%概率造成10%额外伤害
-        15级：魔法能力大于80后，魔法能力永久增加20点
-        20级：魔法能力大于100后，在水中获得300秒免疫水压，回到干燥环境后这个效果的剩余时间将开始恢复-->
+        5级：魔法能力大于60后，每次攻击都有5%概率造成10%额外伤害
+        10级：魔法能力大于80后，远程弹幕的伤害提高10%
+        15级：魔法能力大于100后，在水中获得300秒免疫水压，回到干燥环境后这个效果的剩余时间将开始恢复-->
     <Talent identifier="Mana_Release">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Mana_Release"/>
@@ -609,13 +609,14 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="80" />
                 <AbilityConditionHasLevel minlevel="15" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityIncreaseSkill skillidentifier="Touhou_Magic" skillincrease="20"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="4.9">
@@ -628,7 +629,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Mana_Release_Effect" strength="5"/>
+                            <Affliction identifier="Mana_Release_Effect" strength="25"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
@@ -637,9 +638,9 @@
     </Talent>
 
     <!--魔力内敛 根据当前角色等级，提供不同加成：
-        10级后：每一级提供3%技能获取速度和1%经验获取速度，直到20级为止
-        15级后：每一级提供2%游泳速度并减少2%双持惩罚，直到20级为止
-        20级后：每次完成任意任务都会增加4%最大生命值，最大20%，死亡后效果清零-->
+        5级后：每一级提供3%技能获取速度和1%经验获取速度，直到20级为止
+        10级后：每一级提供2%游泳速度并减少2%双持惩罚，直到20级为止
+        15级后：每次完成任意任务都会增加4%最大生命值，最大20%，死亡后效果清零-->
     <Talent identifier="Mana_Convergence" trackedstat="Mana_Convergence_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Mana_Convergence"/>
