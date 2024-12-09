@@ -2,6 +2,17 @@
     <health vitality="250"/>
     <ragdolls folder="%ModDir%/Characters/Touhou_Alice_Doll/Touhou_Alice_Doll_PengLai/Ragdolls/" />
     <attack damagemultiplier="1.2" rangemultiplier="1.25" impactmultiplier="1.25"/>
+    <StatusEffect type="OnDeath" target="Character" disabledeltatime="true" delay="2.0">
+        <Conditional Removed="false" />
+        <RemoveCharacter />
+    </StatusEffect>
+    <StatusEffect type="OnActive" target="Character" Delay="61.0" disabledeltatime="true">
+        <Conditional Removed="false" />
+        <RemoveCharacter />
+    </StatusEffect>
+    <StatusEffect type="OnActive" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="tastytarget" amount="1.0"/>
+    </StatusEffect>
     <inventory arrowslot="9" Slots="Card, Headset, Head, OuterClothes, LeftHand, RightHand, Bag, Any, HealthInterface, Any, Any" AccessibleWhenAlive="False" Commonness="0.25">
         <Item slot="RightHand+LeftHand" Identifier="Touhou_Rippling_DollUsed_PengLai">
             <Item identifier="Touhou_Rippling_DollUsed_PengLai" />

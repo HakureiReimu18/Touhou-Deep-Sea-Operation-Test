@@ -15,6 +15,14 @@
       <VitalityMultiplier type="burn" multiplier="0.5" />
     </Limb>
   </health>
+  <StatusEffect type="OnActive" target="Character" Delay="61.0" disabledeltatime="true">
+    <Conditional Removed="false" />
+    <RemoveCharacter />
+  </StatusEffect>
+  <StatusEffect type="OnDeath" target="Character" disabledeltatime="true" delay="2.0">
+    <Conditional Removed="false" />
+    <RemoveCharacter />
+  </StatusEffect>
   <inventory arrowslot="9" Slots="Card, Headset, Head, OuterClothes, LeftHand, RightHand, Bag, Any, HealthInterface, Any, Any" AccessibleWhenAlive="False" Commonness="0.25">
     <Item slot="RightHand+LeftHand" Identifier="Touhou_Rippling_MonsterUsed_Low">
       <Item identifier="Touhou_Rippling_DollUsed" />
