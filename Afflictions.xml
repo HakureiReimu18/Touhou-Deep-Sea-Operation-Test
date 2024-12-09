@@ -1357,7 +1357,7 @@
     <Description textidentifier="afflictiondescription.Touhou_Water_Heart" minstrength="0" maxstrength="10"/>
     <Effect minstrength="0" maxstrength="10"
             resistancefor="debuff,damage,bleeding,burn,stun"
-            minresistance="0.3" maxresistance="0.3">
+            minresistance="0.25" maxresistance="0.25">
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Water_Heart.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
@@ -1384,7 +1384,7 @@
     <Description textidentifier="afflictiondescription.Touhou_Water_Heart" minstrength="0" maxstrength="10"/>
     <Effect minstrength="0" maxstrength="10"
             resistancefor="debuff,damage,bleeding,burn,stun"
-            minresistance="0.2" maxresistance="0.2">
+            minresistance="0.15" maxresistance="0.15">
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Water_Heart.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
@@ -1395,7 +1395,7 @@
     <Description textidentifier="afflictiondescription.Touhou_Water_Heart" minstrength="0" maxstrength="10"/>
     <Effect minstrength="0" maxstrength="10"
             resistancefor="debuff,damage,bleeding,burn,stun"
-            minresistance="0.5" maxresistance="0.5">
+            minresistance="0.25" maxresistance="0.25">
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Water_Heart.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
@@ -1423,7 +1423,7 @@
     <Description textidentifier="afflictiondescription.Touhou_Water_Heart" minstrength="0" maxstrength="10"/>
     <Effect minstrength="0" maxstrength="10"
             resistancefor="debuff,damage,bleeding,burn,stun"
-            minresistance="0.25" maxresistance="0.25">
+            minresistance="0.2" maxresistance="0.2">
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Water_Heart.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>

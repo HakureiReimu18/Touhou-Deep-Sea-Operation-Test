@@ -150,6 +150,7 @@
     <character.Touhou_red_ufo_range>UFO</character.Touhou_red_ufo_range>
     <character.Touhou_green_ufo>UFO</character.Touhou_green_ufo>
     <character.Touhou_fortune_teller>易者</character.Touhou_fortune_teller>
+    <character.Touhou_fortune_teller_Hard>易者</character.Touhou_fortune_teller_Hard>
     <character.Touhou_Monster_houjuu_nue>封兽鵺</character.Touhou_Monster_houjuu_nue>
     <character.Touhou_Monster_houjuu_nue_Easy>封兽鵺</character.Touhou_Monster_houjuu_nue_Easy>
     <character.Touhou_Monster_houjuu_nue_Normal>封兽鵺</character.Touhou_Monster_houjuu_nue_Normal>
@@ -165,4 +166,5 @@
     <character.Touhou_Alice_Doll_Normal>普通人偶</character.Touhou_Alice_Doll_Normal>
     <character.Touhou_Alice_Doll_ShangHai>上海人偶</character.Touhou_Alice_Doll_ShangHai>
     <character.Touhou_Alice_Doll_PengLai>蓬莱人偶</character.Touhou_Alice_Doll_PengLai>
+    <character.Maoyu_Pet>毛玉</character.Maoyu_Pet>
 </infotexts>
