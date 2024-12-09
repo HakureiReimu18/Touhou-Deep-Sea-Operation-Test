@@ -21,13 +21,13 @@
     <talentname.Talents_Magician_Primary02>样样精通</talentname.Talents_Magician_Primary02>
     <talentdescription.Talents_Magician_Primary02>增加‖color:gui.green‖5‖end‖点所有技能水平加成，解锁配方：‖color:gui.orange‖赏月团子‖end‖、‖color:gui.orange‖月饼‖end‖ 。</talentdescription.Talents_Magician_Primary02>
     <talentname.Talents_Magician_Primary03>还有谁不会飞？</talentname.Talents_Magician_Primary03>
-    <talentdescription.Talents_Magician_Primary03>在水中的行动速度加快‖color:gui.green‖10%‖end‖，同时受到的物理伤害降低‖color:gui.green‖15%‖end‖ 。</talentdescription.Talents_Magician_Primary03>
+    <talentdescription.Talents_Magician_Primary03>在水中的行动速度加快‖color:gui.green‖15%‖end‖，同时受到的伤害降低‖color:gui.green‖10%‖end‖ 。</talentdescription.Talents_Magician_Primary03>
     <talentname.Talents_Magician_Primary04>航行日志</talentname.Talents_Magician_Primary04>
-    <talentdescription.Talents_Magician_Primary04>完成巢穴任务、猎杀任务、货运任务、护送任务时额外获得‖color:gui.green‖15%‖end‖经验值。</talentdescription.Talents_Magician_Primary04>
+    <talentdescription.Talents_Magician_Primary04>完成巢穴任务、猎杀任务、货运任务、护送任务时额外获得‖color:gui.green‖10%‖end‖经验值，如果无人死亡，则额外获得‖color:gui.green‖10%‖end‖</talentdescription.Talents_Magician_Primary04>
     <talentname.Talents_Magician_Primary05>魔法开掘</talentname.Talents_Magician_Primary05>
-    <talentdescription.Talents_Magician_Primary05>巡回完成任意任务,如果没有人死亡，则获得一块‖color:gui.orange‖以太层金属‖end‖。</talentdescription.Talents_Magician_Primary05>
+    <talentdescription.Talents_Magician_Primary05>使用‖color:gui.yellow‖以太层金属或星界层金属‖end‖提炼元素瓶时，有‖color:gui.green‖15%‖end‖概率获得双倍产出，有‖color:gui.green‖5%‖end‖概率再额外获得一倍产出。巡回完成任意任务，如果没有人死亡，则获得一块‖color:gui.orange‖以太层金属‖end‖。</talentdescription.Talents_Magician_Primary05>
     <talentname.Talents_Magician_Primary06>修行</talentname.Talents_Magician_Primary06>
-    <talentdescription.Talents_Magician_Primary06>根据当前魔法能力的水平，提高相应‖color:gui.green‖10%‖end‖的游泳速度、行走速度、远程射击速度和攻击伤害。最多‖color:gui.green‖30%‖end‖</talentdescription.Talents_Magician_Primary06>
+    <talentdescription.Talents_Magician_Primary06>根据当前魔法能力的水平，提高相应‖color:gui.green‖10%‖end‖的游泳速度、行走速度、远程射击速度和攻击伤害。这个效果在魔法能力到达‖color:gui.green‖400‖end‖时达到上限</talentdescription.Talents_Magician_Primary06>
     <talentname.Talents_Magician_Primary07>妖怪退治</talentname.Talents_Magician_Primary07>
     <talentdescription.Talents_Magician_Primary07>对非人类造成的物理伤害提高‖color:gui.green‖15%‖end‖，对友军造成的伤害减少‖color:gui.green‖30%‖end‖。</talentdescription.Talents_Magician_Primary07>
     <talentname.Talents_Magician_Primary08>物理魔法使</talentname.Talents_Magician_Primary08>
@@ -62,13 +62,21 @@
     <talentname.Traveling_Magician>旅行法师</talentname.Traveling_Magician>
     <talentdescription.Traveling_Magician>完成巡回后，若无人死亡，则获得一本‖color:gui.orange‖《魔法教学》‖end‖，同时潜艇成员中等级小于6的成员获取经验值的速度加快‖color:gui.orange‖20%‖end‖。</talentdescription.Traveling_Magician>
     <talentname.Mana_Release>魔力外放</talentname.Mana_Release>
-    <talentdescription.Mana_Release>魔法能力等级大于‖color:gui.green‖80‖end‖后，永久免疫水压。</talentdescription.Mana_Release>
+    <talentdescription.Mana_Release>
+        根据当前角色等级，提供不同加成：
+        ‖color:gui.green‖10‖end‖级：魔法能力大于‖color:gui.green‖60‖end‖后，每次攻击都有‖color:gui.green‖5%‖end‖概率造成‖color:gui.green‖10%‖end‖额外伤害
+        ‖color:gui.green‖15‖end‖级：魔法能力大于‖color:gui.green‖80‖end‖后，‖color:gui.orange‖魔法能力‖end‖永久增加‖color:gui.green‖20‖end‖点
+        ‖color:gui.green‖20‖end‖级：魔法能力大于‖color:gui.green‖120‖end‖后，在水中获得‖color:gui.green‖300‖end‖秒免疫水压，回到‖color:gui.red‖干燥环境‖end‖后这个效果的剩余时间将开始恢复</talentdescription.Mana_Release>
     <talentname.Mana_Convergence>魔力内敛</talentname.Mana_Convergence>
-    <talentdescription.Mana_Convergence>魔法能力大于‖color:gui.green‖80‖end‖后，在开阔海域获得‖color:gui.green‖50%‖end‖游泳速度加成。</talentdescription.Mana_Convergence>
+    <talentdescription.Mana_Convergence>
+        根据当前角色等级，提供不同加成：
+        ‖color:gui.green‖10‖end‖级后：每一级提供‖color:gui.green‖3%‖end‖‖color:gui.orange‖技能获取速度‖end‖和‖color:gui.green‖1%‖end‖‖color:gui.orange‖经验获取速度‖end‖，直到‖color:gui.green‖20‖end‖级为止
+        ‖color:gui.green‖15‖end‖级后：每一级提供‖color:gui.green‖2%‖end‖‖color:gui.orange‖游泳速度‖end‖并减少‖color:gui.green‖2%‖end‖‖color:gui.orange‖双持惩罚‖end‖，直到‖color:gui.green‖20‖end‖级为止
+        ‖color:gui.green‖20‖end‖级后：每次完成任意任务都会增加‖color:gui.green‖4%‖end‖‖color:gui.orange‖最大生命值‖end‖，最大‖color:gui.green‖20%‖end‖，死亡后效果清零</talentdescription.Mana_Convergence>
     <talentname.Power_Point_Efficient_Synthesis>远见卓识</talentname.Power_Point_Efficient_Synthesis>
     <talentdescription.Power_Point_Efficient_Synthesis>每次巡回能额外接受一个任务，获得的声望增加‖color:gui.green‖25%‖end‖，可以全速拖动生物，解锁配方‖color:gui.orange‖：P点（红）（高效合成）‖end‖。</talentdescription.Power_Point_Efficient_Synthesis>
     <talentname.MEID_Unlocked>魔法天才</talentname.MEID_Unlocked>
-    <talentdescription.MEID_Unlocked>周围的敌人越多，造成的伤害越高，自身的抗性越高，伤害最高至‖color:gui.green‖50%‖end‖，抗性最高至‖color:gui.green‖10%‖end‖，解锁配方：‖color:gui.orange‖MEID‖end‖，‖color:gui.orange‖起源弹‖end‖，‖color:gui.orange‖聚能电弧发射器‖end‖和‖color:gui.orange‖电能要石‖end‖。</talentdescription.MEID_Unlocked>
+    <talentdescription.MEID_Unlocked>周围的敌人越多，造成的伤害越高，伤害最高至‖color:gui.green‖50%‖end‖,生命值低于‖color:gui.green‖50%‖end‖后，这个效果翻倍。解锁配方：‖color:gui.orange‖MEID‖end‖，‖color:gui.orange‖起源弹‖end‖，‖color:gui.orange‖聚能电弧发射器‖end‖和‖color:gui.orange‖电能要石‖end‖。</talentdescription.MEID_Unlocked>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect01>幻想入-帕秋莉</afflictionname.Gensokyo_Divinggear_Unlocked_Effect01>
     <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>减少15%友军伤害，造成的五种元素对应的伤害增加15%</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect02>幻想入-魔理沙</afflictionname.Gensokyo_Divinggear_Unlocked_Effect02>

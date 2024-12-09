@@ -5748,7 +5748,8 @@
                 <Affliction identifier="Touhou_Freeze" strength="5" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
                 <Affliction identifier="stun" strength="0.15" />
-                <Affliction identifier="stun" strength="0.15" probability="0.6"/>
+                <Affliction identifier="stun" strength="0.2" probability="0.6"/>
+                <Affliction identifier="stun" strength="0.75" probability="0.1"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
                 <Conditional Touhou_Lunar_Orbit_Effect="lte 25"/>
@@ -5776,8 +5777,6 @@
                     <Affliction identifier="explosiondamage" strength="10" />
                     <Affliction identifier="Touhou_Freeze" strength="10" />
                     <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="5" />
-                    <Affliction identifier="stun" strength="0.15" />
-                    <Affliction identifier="stun" strength="1.5" probability="0.1"/>
                 </Explosion>
                 <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="0.5" selectionmode="Random" range="5000" />
                 <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="0.5" selectionmode="Random" range="5000" />
@@ -5803,7 +5802,7 @@
 
     <!--灿烂匕首-->
     <Item name="灿烂匕首" identifier="Touhou_Brilliant_Star_Dagger" subcategory="Touhou" category="Weapon"
-          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True" >
+          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.75" impactsoundtag="impact_metal_light" RequireAimToUse="True" >
         <PreferredContainer primary="armcab" />
         <Price baseprice="10000" sold="false">
             <Price storeidentifier="merchantoutpost" multiplier="1.5" />
@@ -5871,16 +5870,24 @@
                 <Affliction identifier="explosiondamage" strength="5" />
                 <Affliction identifier="bleeding" strength="5" />
                 <Affliction identifier="bleeding" strength="5" probability="0.5" />
-                <Affliction identifier="Touhou_Lost_Dream" strength="5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="2" />
                 <Affliction identifier="stun" strength="0.1" />
                 <Affliction identifier="stun" strength="0.1" probability="0.5" />
             </Attack>
             <StatusEffect type="OnUse" target="Limb" >
                 <Affliction identifier="Reiki_Pressure" strength="2" />
-                <Affliction identifier="lacerations" strength="5" />
+                <Affliction identifier="lacerations" strength="3" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Limb" stackable="false">
+                <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="0" />
+                <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="60" />
+                <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="120" />
+                <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="180" />
+                <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="240" />
+                <SpawnItem identifier="Touhou_Brilliant_Star_Spawn" spawnposition="This" count="1" aimspread="0" rotationtype="Collider" rotation="300" />
             </StatusEffect>
 
             <StatusEffect type="OnUse" target="UseTarget">
@@ -5908,4 +5915,37 @@
         <SkillRequirementHint identifier="weapons" level="60" />
         <SkillRequirementHint identifier="Touhou_Magic" level="60" />
     </Item>
+
+    <!--星光灿烂-->
+    <Item name="星光灿烂" identifier="Touhou_Brilliant_Star_Spawn" category="Weapon" tags="Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5" hideinmenus="true" >
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" />
+        <Body width="170" height="10" density="10" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <Projectile characterusable="false" hitscan="true" maxtargetstohit="3" removeonhit="true" damagedoors="true" friendlyfire="false" >
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.3" colormultiplier="200,200,200,220"/>
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.3" colormultiplier="120,120,200,220"/>
+            <Attack itemdamage="2" levelwalldamage="2" penetration="0.2" severlimbsprobability="0.5">
+                <Affliction identifier="explosiondamage" strength="1.5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="1" probability="0.5" />
+                <Affliction identifier="stun" strength="0.05" probability="0.6"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="Limb" >
+                <Affliction identifier="Touhou_Freeze" strength="1" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="100,100,255,255" />
+                <ParticleEmitter particle="Touhou_Blue_Explosion_Underwater" ScaleMultiplier="0.5,0.5" particleamount="1" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+                <ParticleEmitter particle="Touhou_Blue_Explosion_Underwater" copyentityangle="false" anglemin="0" anglemax="360" particleamount="1" velocitymin="100" velocitymax="150" scalemin="0.1" scalemax="0.2" colormultiplier="100,100,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
 </Items>

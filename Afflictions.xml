@@ -2552,10 +2552,20 @@
           limbspecific="true"
           maxstrength="100"
           iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="25" multiplybymaxvitality="false" minvitalitydecrease="0" maxvitalitydecrease="15" />
+    <Effect minstrength="0" maxstrength="25" multiplybymaxvitality="false" minvitalitydecrease="0" maxvitalitydecrease="15" >
+      <StatusEffect target="Limb" Interval="5.0" >
+        <Conditional speciesgroup="eq human"/>
+        <ReduceAffliction identifier="Touhou_Lunar_Orbit_Effect" amount="1"/>
+      </StatusEffect>
+    </Effect>
     <Effect minstrength="25" maxstrength="50" multiplybymaxvitality="false" minvitalitydecrease="15" maxvitalitydecrease="30" strengthchange="1" />
     <Effect minstrength="50" maxstrength="75" multiplybymaxvitality="false" minvitalitydecrease="30" maxvitalitydecrease="45" />
     <Effect minstrength="75" maxstrength="100" multiplybymaxvitality="false" minvitalitydecrease="45" maxvitalitydecrease="60" strengthchange="1" />
+    <PeriodicEffect mininterval="5" maxinterval="10" minstrength="0" maxstrength="100">
+      <StatusEffect target="Limb" multiplyafflictionsbymaxvitality="true">
+        <Affliction identifier="Touhou_Lunar_Orbit_Effect" amount="1"/>
+      </StatusEffect>
+    </PeriodicEffect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Lunar_Orbit_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 

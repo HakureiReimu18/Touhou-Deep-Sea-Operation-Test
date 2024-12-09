@@ -2086,7 +2086,8 @@
             <StatusEffect type="OnNotContained" target="This">
                 <Use/>
             </StatusEffect>
-            <StatusEffect type="OnUse" target="NearbyCharacters" range="500" Interval="0.5" >
+            <StatusEffect type="OnUse" target="NearbyCharacters" range="500" Interval="0.5" comparison="And" >
+                <Conditional IsDead="eq false"/>
                 <Conditional speciesgroup="neq human" />
                 <Affliction identifier="burn" strength="3.5" />
                 <Affliction identifier="explosiondamage" strength="3.5" />
