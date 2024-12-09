@@ -314,8 +314,11 @@
             <sprite name="Combat Diving Suit Left Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
             <sprite name="Combat Diving Suit Left Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
             <sprite name="Combat Diving Suit Right Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="false" PressureProtection="8000.0"
+            <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="false" PressureProtection="6000.0"
                           LowPassMultiplier="0.9" setvalue="true" disabledeltatime="true">
+            </StatusEffect>
+            <StatusEffect type="OnWearing" target="Character" PressureProtection="7000.0" setvalue="true" >
+                <RequiredItem items="Touhou_Smooth_Hooked_Jade" type="Contained" />
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" >
                 <TriggerAnimation Type="Walk" filename="HumanWalk" priority="10" ExpectedSpecies="Human" />
@@ -558,8 +561,11 @@
             <sprite name="Combat Diving Suit Left Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftLeg" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
             <sprite name="Combat Diving Suit Left Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftFoot" sound="footstep_armor_heavy" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
             <sprite name="Combat Diving Suit Right Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightFoot" sound="footstep_armor_heavy" hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true" />
-            <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="false" PressureProtection="7000.0" SpeedMultiplier="1.05"
+            <StatusEffect type="OnWearing" target="Character" HideFace="true" ObstructVision="false" PressureProtection="4800.0" SpeedMultiplier="1.05"
                           LowPassMultiplier="0.9" setvalue="true" disabledeltatime="true">
+            </StatusEffect>
+            <StatusEffect type="OnWearing" target="Character" PressureProtection="5800.0" setvalue="true" >
+                <RequiredItem items="Touhou_Smooth_Hooked_Jade" type="Contained" />
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" >
                 <TriggerAnimation Type="Walk" filename="HumanWalk" priority="10" ExpectedSpecies="Human" />

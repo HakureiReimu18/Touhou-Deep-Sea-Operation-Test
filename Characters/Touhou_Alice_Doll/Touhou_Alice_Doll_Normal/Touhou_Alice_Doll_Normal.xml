@@ -15,17 +15,16 @@
       <VitalityMultiplier type="burn" multiplier="0.5" />
     </Limb>
   </health>
-  <StatusEffect type="OnActive" target="Character" Delay="61.0" disabledeltatime="true">
-    <Conditional Removed="false" />
+  <StatusEffect type="OnActive" target="Character" Interval="60.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" >
+    <Affliction identifier="Touhou_Death_Happened" amount="1" />
+  </StatusEffect>
+  <StatusEffect type="OnActive" target="Character" Interval="1.0" >
+    <Conditional Touhou_Death_Happened="gte 2"/>
     <RemoveCharacter />
   </StatusEffect>
-  <StatusEffect type="OnDeath" target="Character" disabledeltatime="true" delay="2.0">
-    <Conditional Removed="false" />
-    <RemoveCharacter />
-  </StatusEffect>
-  <inventory arrowslot="9" Slots="Card, Headset, Head, OuterClothes, LeftHand, RightHand, Bag, Any, HealthInterface, Any, Any" AccessibleWhenAlive="False" Commonness="0.25">
-    <Item slot="RightHand+LeftHand" Identifier="Touhou_Rippling_MonsterUsed_Low">
-      <Item identifier="Touhou_Rippling_DollUsed" />
+  <inventory arrowslot="9" Slots="Card, Headset, Head, LeftHand, RightHand, Any, Any, Any" AccessibleWhenAlive="False" Commonness="0.25">
+    <Item slot="RightHand+LeftHand" Identifier="Touhou_Rippling_DollUsed">
+      <Item identifier="Touhou_Mysterious_Pearl_Rippling_DollUsed" />
     </Item>
     <Item slot="Card" Identifier="idcard" />
   </inventory>

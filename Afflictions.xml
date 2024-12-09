@@ -123,9 +123,6 @@
             minspeedmultiplier="1.0" maxspeedmultiplier="0.85"
             minvitalitydecrease="0" maxvitalitydecrease="0.35"
             strengthchange="-0.04">
-      <StatusEffect target="Limb" >
-        <ParticleEmitter particle="IcicleBoom" scalemin="0.3" scalemax="0.6" DistanceMin="0" DistanceMax="10" ParticlesPerSecond="1" AngleMin="60" AngleMax="120" VelocityMax="120" colormultiplier="200,200,255,255"/>
-      </StatusEffect>
       <StatValue stattype="RangedAttackSpeed" minvalue="0" value="-0.1" />
       <StatValue stattype="MeleeAttackSpeed" minvalue="0" value="-0.1" />
     </Effect>
@@ -2573,6 +2570,23 @@
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Lunar_Orbit_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--是否死亡效果检测-->
+  <Affliction
+          name=""
+          identifier="Touhou_Death_Happened"
+          description=""
+          type="Touhou_Death_Happened"
+          isbuff="true"
+          limbspecific="false"
+          indicatorlimb="Torso"
+          showiconthreshold="100"
+          showinhealthscannerthreshold="100"
+          maxstrength="2"
+          iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="2" />
+    <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
 </Afflictions>

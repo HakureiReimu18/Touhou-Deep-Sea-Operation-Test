@@ -1134,7 +1134,7 @@
     <Item name="人偶用涟漪-蓬莱" identifier="Touhou_Rippling_DollUsed_PengLai" tags="mediumitem,weapon" category="Weapon" hideinmenus="true" nonplayerteaminteractable="True"
           subcategory="Touhou" isshootable="true" Scale="1">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling.png" sourcerect="0,0,140,48" depth="0.5" origin="0.5,0.5" />
-        <RangedWeapon weapondamagemodifier="1.2" ProjectileCount="3" reload="0.5" barrelpos="72,-4" launchImpulse="25" combatPriority="80" spread="4" drawhudwhenequipped="true" crosshairscale="0.5">
+        <RangedWeapon weapondamagemodifier="1.2" ProjectileCount="5" reload="0.5" barrelpos="72,-4" launchImpulse="25" combatPriority="80" spread="10" drawhudwhenequipped="true" crosshairscale="0.5">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">

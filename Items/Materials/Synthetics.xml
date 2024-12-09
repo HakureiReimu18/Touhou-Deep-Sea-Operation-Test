@@ -1033,4 +1033,30 @@
         <aitarget soundrange="800" fadeouttime="5" />
     </Item>
 
+    <!--毛玉宠物-->
+    <Item name="毛玉宠物" identifier="Touhou_Maoyu_Pet_Spawn" category="Misc" subcategory="Touhou" tags="smallitem" scale="1.0" cargocontaineridentifier="metalcrate" description="">
+        <Sprite Texture="%ModDir%/Characters/Maoyu/Maoyu.png" depth="0.5" sourcerect="52,3,44,32" />
+        <Body width="16" height="12" density="10.05" />
+        <Price baseprice="100" >
+            <Price locationtype="outpost" multiplier="1.1" minavailable="1" />
+            <Price locationtype="city" multiplier="0.9" minavailable="1" />
+            <Price locationtype="research" multiplier="0.85" maxavailable="1" />
+            <Price locationtype="military" multiplier="1.2" minavailable="1" />
+            <Price locationtype="mine" multiplier="1.2" maxavailable="1"/>
+        </Price>
+        <Holdable slots="Any,RightHand,LeftHand" aimpos="30,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" />
+        <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.08,0.32" anchor="BottomLeft" absoluteoffset="20,95" style="ItemUI" />
+            <Button text="uilabel.Touhou_Maoyu_Pet_Spawn">
+                <StatusEffect type="OnUse" target="Character" delay="0.25" >
+                    <SpawnCharacter speciesname="Touhou_Maoyu_Pet" count="1" spread="10" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="This" delay="0.5" >
+                    <RemoveItem/>
+                </StatusEffect>
+            </Button>
+        </CustomInterface>
+        <aitarget soundrange="800" fadeouttime="5" />
+    </Item>
+
 </Items>

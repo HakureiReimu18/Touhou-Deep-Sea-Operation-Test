@@ -148,8 +148,8 @@
     <Alchemy_Table.Refine08>精炼-理解</Alchemy_Table.Refine08>
     <Alchemy_Table.Refine09>精炼-智慧</Alchemy_Table.Refine09>
     <Alchemy_Table.Refine10>精炼-王冠</Alchemy_Table.Refine10>
-    <Alchemy_Table.Refine.Infotext>消耗元素瓶对出血物质进行精炼处理，不同元素瓶对精炼进程的影响也不同，甚至有可能倒退精炼进度</Alchemy_Table.Refine.Infotext>
-    <Alchemy_Table.Refine.Missingitem>已放置出血物质，添加不同元素瓶进行精炼，不同元素瓶对精炼进程的影响也不同，甚至有可能倒退精炼进度</Alchemy_Table.Refine.Missingitem>
+    <Alchemy_Table.Refine.Infotext>消耗炼金材料对出血物质进行精炼处理，不同材料对精炼进程的影响也不同，不仅不一定能一次成功，甚至有可能倒退精炼进度</Alchemy_Table.Refine.Infotext>
+    <Alchemy_Table.Refine.Missingitem>已放置出血物质，添加不同炼金进行精炼，不同材料对精炼进程的影响也不同，不仅不一定能一次成功，甚至有可能倒退精炼进度</Alchemy_Table.Refine.Missingitem>
     <terminalwelcomemsg.Touhou_Wreck04_01>——关于灵气侵蚀与污染的调查
         调查员：帕秋莉·诺雷姬
 
@@ -161,7 +161,11 @@
     <Touhou_Medical_Toolkit.AntiBloodloss>输血药物</Touhou_Medical_Toolkit.AntiBloodloss>
     <Touhou_Medical_Toolkit.AntiBleeding>止血药物</Touhou_Medical_Toolkit.AntiBleeding>
     <Touhou_Medical_Toolkit.AntiDebuff>魔法药物</Touhou_Medical_Toolkit.AntiDebuff>
-
+    <ScarletMode.Tickbox>高速模式</ScarletMode.Tickbox>
+    <uilabel.Touhou_Maoyu_Pet_Spawn>打开</uilabel.Touhou_Maoyu_Pet_Spawn>
+    <uilabel.Doll_Normal>普通人偶</uilabel.Doll_Normal>
+    <uilabel.Doll_ShangHai>上海人偶</uilabel.Doll_ShangHai>
+    <uilabel.Doll_PengLai>蓬莱人偶</uilabel.Doll_PengLai>
 
     <!--敌对AI使用-->
     <entityname.Illness_Recovery_Charm_Locked01>病气平愈护符-伪造</entityname.Illness_Recovery_Charm_Locked01>

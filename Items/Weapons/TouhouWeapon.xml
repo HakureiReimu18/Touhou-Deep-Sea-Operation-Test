@@ -5093,29 +5093,40 @@
         </ItemContainer>
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.32" anchor="BottomLeft" absoluteoffset="20,95" style="ItemUI" />
-            <Button text="普通人偶">
+            <Button text="uilabel.Doll_Normal">
                 <StatusEffect type="OnUse" target="Character" delay="0.5" >
                     <Conditional Alice_Doll_Energy="gte 10"/>
                     <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
                     <Affliction identifier="Alice_Doll_Spawn" amount="10" />
-                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="10" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Character" >
+                    <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
+                </StatusEffect>
             </Button>
-            <Button text="上海人偶">
+            <Button text="uilabel.Doll_ShangHai">
                 <StatusEffect type="OnUse" target="Character" delay="0.5" >
                     <Conditional Alice_Doll_Energy="gte 10"/>
                     <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
-                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
+                    <Affliction identifier="Alice_Doll_Spawn" amount="10" />
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_ShangHai" count="1" spread="10" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Character" >
+                    <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
+                </StatusEffect>
             </Button>
-            <Button text="蓬莱人偶">
+            <Button text="uilabel.Doll_PengLai">
                 <StatusEffect type="OnUse" target="Character" delay="0.5" >
                     <Conditional Alice_Doll_Energy="gte 10"/>
                     <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
-                    <SpawnCharacter speciesname="Touhou_Alice_Doll_Normal" count="1" spread="100" />
+                    <Affliction identifier="Alice_Doll_Spawn" amount="10" />
+                    <SpawnCharacter speciesname="Touhou_Alice_Doll_PengLai" count="1" spread="10" />
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="2" range="500.0" loop="false" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Character" >
+                    <ReduceAffliction identifier="Alice_Doll_Energy" amount="10" />
                 </StatusEffect>
             </Button>
         </CustomInterface>
@@ -5487,7 +5498,7 @@
 
 
     <!--阳光大炮-->
-    <Item name="阳光大炮" identifier="Touhou_Sun_Cannon" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate"
+    <Item name="阳光大炮" identifier="Touhou_Sun_Cannon" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" HideConditionBar="true"
           tags="mediumitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal" Scale="1.0" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="armcab" />
         <Price baseprice="10000" sold="false">

@@ -549,7 +549,6 @@
   <entitydescription.Touhou_Miniature_Earth_Moon_System>一个精巧的微缩地月系统，但显然制作者已经忘了地球原本真实的样子。专用于潮汐的弹药</entitydescription.Touhou_Miniature_Earth_Moon_System>
   <entityname.Touhou_Scarlet_Gensokyo>绯色命运</entityname.Touhou_Scarlet_Gensokyo>
   <entitydescription.Touhou_Scarlet_Gensokyo>高速之红。不耍任何小聪明直接正面让你见识其力量。\n激活高速模式后，大幅增加效力。同时会对使用者造成一定伤害。</entitydescription.Touhou_Scarlet_Gensokyo>
-  <ScarletMode.Tickbox>高速模式</ScarletMode.Tickbox>
 <!--  <ScarletMode.Timer>高速计时</ScarletMode.Timer>-->
   <entityname.Touhou_Lunarquake>月震</entityname.Touhou_Lunarquake>
   <entitydescription.Touhou_Lunarquake>河童们来到木卫二后，利用附近特殊的天体运行关系制造的神秘武器。它会根据使用者射击的时间逐渐提高射速。\n使用‖color:gui.yellow‖月震中心‖end‖发射弹幕</entitydescription.Touhou_Lunarquake>
@@ -559,9 +558,9 @@
   <entityname.gensokyo_divinggear>幻想潜水服</entityname.gensokyo_divinggear>
   <entitydescription.gensokyo_divinggear>可以保护人体的一团神奇灵气。拥有四个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.gensokyo_divinggear>
   <entityname.Touhou_Boudary_Divinggear>境界潜水服</entityname.Touhou_Boudary_Divinggear>
-  <entitydescription.Touhou_Boudary_Divinggear>从境界的边缘探寻回来的神秘潜水服，能抵御8000米水压。拥有三个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Touhou_Boudary_Divinggear>
+  <entitydescription.Touhou_Boudary_Divinggear>从境界的边缘探寻回来的神秘潜水服，能抵御6000米水压。拥有三个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Touhou_Boudary_Divinggear>
   <entityname.Ether_Divinggear>秘境潜水服</entityname.Ether_Divinggear>
-  <entitydescription.Ether_Divinggear>由淡水的人鱼贡献的制作思路，经帕秋莉指点而生产的潜水服，能抵御7000米水压。拥有两个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Ether_Divinggear>
+  <entitydescription.Ether_Divinggear>由淡水的人鱼贡献的制作思路，经帕秋莉指点而生产的潜水服，能抵御4800米水压。拥有两个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Ether_Divinggear>
   <entityname.Magic_Veil>‖color:120,75,100,255‖魔力披纱‖color:end‖</entityname.Magic_Veil>
   <entitydescription.Magic_Veil>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械。拥有六个勾玉空缺。受击时会损耗勾玉的耐久</entitydescription.Magic_Veil>
   <entityname.Magic_Veil02>‖color:120,75,100,255‖魔力披纱（异色）‖color:end‖</entityname.Magic_Veil02>
@@ -579,6 +578,8 @@
   <entitydescription.Touhou_Boiling_Hooked_Jade>放入潜水服的勾玉格内，提供少量的移动速度和攻击伤害</entitydescription.Touhou_Boiling_Hooked_Jade>
   <entityname.Touhou_Icy_Hooked_Jade>冰冷的勾玉</entityname.Touhou_Icy_Hooked_Jade>
   <entitydescription.Touhou_Icy_Hooked_Jade>放入潜水服的勾玉格内，提供些许治疗效果，这个效果在水中翻倍</entitydescription.Touhou_Icy_Hooked_Jade>
+  <entityname.Touhou_Smooth_Hooked_Jade>平滑的勾玉</entityname.Touhou_Smooth_Hooked_Jade>
+  <entitydescription.Touhou_Smooth_Hooked_Jade>放入潜水服的勾玉格内，提高1000米抗压深度</entitydescription.Touhou_Smooth_Hooked_Jade>
   <entityname.Touhou_White_Hooked_Jade>太古的勾玉-白</entityname.Touhou_White_Hooked_Jade>
   <entitydescription.Touhou_White_Hooked_Jade>放入潜水服的勾玉格内，提供光照效果，与太古的勾玉-黑同时装配时，触发额外效果</entitydescription.Touhou_White_Hooked_Jade>
   <entityname.Touhou_Black_Hooked_Jade>太古的勾玉-黑</entityname.Touhou_Black_Hooked_Jade>
@@ -617,7 +618,6 @@
   <entityname.Touhou_Brilliant_Star_Dagger>灿烂匕首</entityname.Touhou_Brilliant_Star_Dagger>
   <entitydescription.Touhou_Brilliant_Star_Dagger>作为斯塔帮忙售卖商品的报酬，河童们为她打造了这把武器，刀刃部分如同水晶，闪烁着喜人的星光，看上去并不锋利，容易让人忽视它的威胁。</entitydescription.Touhou_Brilliant_Star_Dagger>
   <entityname.Patchouli_Book_Charm_01>帕秋莉手册-护符篇</entityname.Patchouli_Book_Charm_01>
-  <entitydescription.Patchouli_Book_Charm_01>作为斯塔帮忙售卖商品的报酬，河童们为她打造了这把武器，刀刃部分如同水晶，闪烁着喜人的星光，看上去并不锋利，容易让人忽视它的威胁。</entitydescription.Patchouli_Book_Charm_01>
   <entityname.Patchouli_Book_01>帕秋莉手册-元素转换篇</entityname.Patchouli_Book_01>
   <entityname.Patchouli_Book_02>帕秋莉手册-以太层金属篇</entityname.Patchouli_Book_02>
   <entityname.Patchouli_Book_03>帕秋莉手册-副产物篇</entityname.Patchouli_Book_03>
@@ -625,6 +625,10 @@
   <entityname.Patchouli_Book_05>帕秋莉手册-伊奘诺物质篇</entityname.Patchouli_Book_05>
   <entityname.Patchouli_Book_06>帕秋莉手册-记忆材料篇</entityname.Patchouli_Book_06>
   <entityname.Patchouli_Book_07>帕秋莉手册-出血物质篇</entityname.Patchouli_Book_07>
+  <entityname.Touhou_Maoyu_Pet_Spawn>毛玉宠物</entityname.Touhou_Maoyu_Pet_Spawn>
+  <entityname.Touhou_Gene_Splicer>基因拓展器</entityname.Touhou_Gene_Splicer>
+  <entitydescription.Touhou_Gene_Splicer>由河童研发的，拥有热成像作用的基因拼接器，大大方便了热成像的使用</entitydescription.Touhou_Gene_Splicer>
+
 
   <!--凭依效果-->
   <talentname.Hyouibana_Reimu>凭依灵梦</talentname.Hyouibana_Reimu>
