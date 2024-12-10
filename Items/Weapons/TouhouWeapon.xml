@@ -5793,7 +5793,8 @@
                 <Affliction identifier="explosiondamage" strength="20" />
                 <Affliction identifier="acidburn" strength="10" />
                 <Affliction identifier="Touhou_Freeze" strength="10" />
-                <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" />
+                <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="5" />
                 <Affliction identifier="stun" strength="0.15" />
                 <Affliction identifier="stun" strength="0.2" probability="0.6"/>
                 <Affliction identifier="stun" strength="0.75" probability="0.1"/>
@@ -5823,7 +5824,7 @@
                            DistanceFalloff="false" sparks="false" camerashake="10" penetration="0.2" >
                     <Affliction identifier="explosiondamage" strength="15" />
                     <Affliction identifier="Touhou_Freeze" strength="15" />
-                    <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="5" />
+                    <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="15" />
                 </Explosion>
                 <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="0.5" selectionmode="Random" range="5000" />
                 <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="0.5" selectionmode="Random" range="5000" />
@@ -5973,7 +5974,6 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.3" colormultiplier="120,120,200,220"/>
             <Attack levelwalldamage="2" penetration="0.2" severlimbsprobability="0.5">
                 <Affliction identifier="explosiondamage" strength="1.5" />
-                <Affliction identifier="Touhou_Lost_Dream" strength="1.5" probability="0.5" />
                 <Affliction identifier="stun" strength="0.05" probability="0.6"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
