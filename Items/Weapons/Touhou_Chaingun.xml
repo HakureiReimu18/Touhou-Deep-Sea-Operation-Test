@@ -322,8 +322,8 @@
                 <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="3" range="50000" />
                 <SpawnItem identifier="Yin_Yang_Spirit_Orb_Shrapnel01" spawnposition="This" count="1" aimspread="240" rotationtype="Collider" rotation="0" />
                 <Explosion range="600.0" structuredamage="500" itemdamage="500" ballastfloradamage="1000" force="1.0" severlimbsprobability="0.2" debris="true"
-                           decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="20000" flashduration="8.0"
-                           screencolor="255,200,180,255" screencolorrange="10000" screencolorduration="8.0" penetration="0.6">
+                           decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="12000" flashduration="5.0"
+                           screencolor="255,200,180,255" screencolorrange="10000" screencolorduration="5.0" penetration="0.6">
                     <Affliction identifier="explosiondamage" strength="600" />
                     <Affliction identifier="Touhou_Lost_Dream" strength="300" />
                     <Affliction identifier="burn" strength="400" />
@@ -1749,4 +1749,128 @@
             </StatusEffect>
         </Projectile>
     </Item>
+
+<!--    &lt;!&ndash;灵符「梦想封印」&ndash;&gt;
+    &lt;!&ndash;Spirit Rune Dream Seal&ndash;&gt;
+    <Item name="灵符「梦想封印」" identifier="Spirit_Rune_Dream_Seal" tags="mediumitem,railgunequipment,railgunammo,Spirit_Rune_Dream_Seal" showcontentsintooltip="true" subcategory="Touhou" category="Weapon" sonarsize="5" scale="1" impactsoundtag="impact_metal_heavy">
+        <PreferredContainer primary="railgunammoloader,railgunammocontainer" />
+        <PreferredContainer secondary="wreckrailgunammocontainer" amount="1" spawnprobability="0.02"/>
+        <Price baseprice="3000" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.35" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" sold="true" minavailable="6" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" sold="false"/>
+            <Price storeidentifier="merchantmilitary" sold="true" multiplier="0.9" minavailable="3" minleveldifficulty="15" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" sold="false"/>
+            <Price storeidentifier="merchantarmory" sold="true" multiplier="0.9" minavailable="3" minleveldifficulty="15" />
+        </Price>
+        <Deconstruct time="2">
+            <Item identifier="steel" />
+            <Item identifier="Reiki_Stone" amount="4" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="5">
+            <RequiredSkill identifier="weapons" level="100" />
+            <RequiredItem identifier="Yin_Alchemical" amount="1" />
+            <RequiredItem identifier="Yang_Alchemical" amount="1" />
+            <RequiredItem identifier="Reiki_Stone" amount="6" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+            <RequiredItem identifier="Magic_Material" amount="5" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/Reimu_Clothes/Reimu_Misc.png" sourcerect="384,42,84,72" depth="0.55" origin="0.5,0.5" />
+        <Body width="72" height="72" density="15" />
+        <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="2" damagedoors="true">
+            <Attack structuredamage="500" itemdamage="500" severlimbsprobability="5" penetration="0.6" targetforce="1000">
+                <Affliction identifier="explosiondamage" strength="200" />
+                <Affliction identifier="burn" strength="200" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Touhou_Lost_Dream" strength="25" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true">
+                <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="3" range="50000" />
+                <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="3" range="50000" />
+                <Explosion range="1000.0" ballastfloradamage="1000" force="1.0" severlimbsprobability="0.2" debris="true"
+                           decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="20000" flashduration="10.0"
+                           screencolor="255,200,180,255" screencolorrange="10000" screencolorduration="10.0" penetration="0.6">
+                    <Affliction identifier="explosiondamage" strength="1000" />
+                    <Affliction identifier="Touhou_Lost_Dream" strength="1000" />
+                    <Affliction identifier="burn" strength="1000" />
+                    <Affliction identifier="stun" strength="20" />
+                </Explosion>
+                <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This">
+                <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" range="5000" />
+                <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="5000" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This" delay="0.15" stackable="false" oneshot="true">
+                <SpawnItem identifiers="Spirit_Rune_Dream_Seal_Shrapnel" count="5" Spread="100" aimspread="360" spawnposition="This" rotationtype="collider"/>
+                <Remove />
+            </StatusEffect>
+            &lt;!&ndash; Remove the item after exploding &ndash;&gt;
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+    &lt;!&ndash;dps:无法计算&ndash;&gt;
+    &lt;!&ndash;阴阳鬼神玉二段爆炸伤害&ndash;&gt;
+    <Item name="" identifier="Spirit_Rune_Dream_Seal_Spawn" tags="mediumitem" hideinmenus="true" subcategory="Touhou" category="Weapon" sonarsize="5" scale="1.0" impactsoundtag="impact_metal_heavy">
+        <Sprite texture="%ModDir%/Images/Reimu_Clothes/Reimu_Misc.png" sourcerect="384,42,84,72" depth="0.55" origin="0.5,0.5" />
+        <Turret targetsubmarines="false" friendlytag="human" canbeselected="false" characterusable="false" linkable="false" rotationlimits="0,360" powerconsumption="0" AutoOperate="true" reload="0.1" RotationSpeedHighSkill="100" RandomAimMinTime="0.01" RandomAimMaxTime="0.01" springstiffnesslowskill="100" springstiffnesshighskill="100" springdampinglowskill="10" springdampinghighskill="10" rotationspeedlowskill="100" rotationspeedhighskill="100">
+            <StatusEffect type="Always" target="This" >
+                <SpawnItem identifiers="Spirit_Rune_Dream_Seal_Shrapnel" spawnposition="ThisInventory" />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" >
+                <Use/>
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" delay="1.6" oneshot="true">
+                <Remove />
+            </StatusEffect>
+        </Turret>
+        <ItemContainer hideitems="true" capacity="1" maxstacksize="5" canbeselected="false">
+            <Containable items="Spirit_Rune_Dream_Seal_Shrapnel" />
+        </ItemContainer>
+        <LightComponent lightcolor="1.0,1.0,1.0,1.0" range="400.0" powerconsumption="0" ison="true">
+            <LightTexture texture="Content/Lights/pointlight_bounce.png" origin="0.5,0.5" />
+        </LightComponent>
+    </Item>
+
+    <Item name="" identifier="Spirit_Rune_Dream_Seal_Shrapnel" tags="mediumitem" hideinmenus="true" subcategory="Touhou" category="Weapon" maxstacksize="5" sonarsize="5" scale="1.0" impactsoundtag="impact_metal_heavy">
+        <Sprite texture="%ModDir%/Images/Reimu_Clothes/Reimu_Misc.png" sourcerect="384,42,84,72" depth="0.55" origin="0.5,0.5" />
+        <Body width="60" height="60" density="15" />
+        <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" msg="ItemMsgPickUpSelect" />
+        <Projectile characterusable="false" launchimpulse="50" damagedoors="true">
+            <Attack structuredamage="0" itemdamage="0" severlimbsprobability="5" penetration="0.9" targetforce="1000">
+                <Affliction identifier="explosiondamage" strength="200" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="This" Condition="-100.0" setvalue="true" allowwhenbroken="true"/>
+            <StatusEffect type="OnImpact" target="This">
+                <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" range="5000" />
+                <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="5000" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This">
+                <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" range="5000" />
+                <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" range="5000" />
+                <Explosion range="100.0" structuredamage="0" itemdamage="0" ballastfloradamage="1000" force="10.0" severlimbsprobability="0.2" penetration="0.6">
+                    <Affliction identifier="Reiki_Pressure" strength="200" />
+                    <Affliction identifier="explosiondamage" strength="300" />
+                    <Affliction identifier="Touhou_Lost_Dream" strength="400" />
+                </Explosion>
+                <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0" scalemin="15" scalemax="15" />
+                <Remove />
+            </StatusEffect>
+&lt;!&ndash;            <StatusEffect type="OnActive" target="This" delay="0.5" stackable="false" oneshot="true">
+                <SpawnItem identifiers="Spirit_Rune_Dream_Seal_Spawn" spawnposition="This" rotationtype="collider"/>
+                <Remove />
+            </StatusEffect>&ndash;&gt;
+        </Projectile>
+    </Item>-->
+
 </Items>

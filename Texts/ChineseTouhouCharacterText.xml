@@ -123,7 +123,8 @@
         增加‖color:gui.green‖25%‖end‖自己使用加工台和解构仪的速度。
         \n减少‖color:gui.green‖25%‖end‖移动速度和‖color:gui.green‖35%‖end‖最大生命值。
         近战攻击伤害减少‖color:gui.green‖25%‖end‖。
-        远程攻击速度减少‖color:gui.green‖25%‖end‖。</talentdescription.Savant>
+        远程攻击伤害减少‖color:gui.green‖15%‖end‖。
+        远程攻击速度减少‖color:gui.green‖20%‖end‖。</talentdescription.Savant>
 
     <!--Mokou-->
     <entityname.Mokou_gear>‖color:255,72,36,255‖妹红装束‖color:end‖</entityname.Mokou_gear>
@@ -480,6 +481,32 @@
     <afflictionname.Touhou_Three_Fairies_Weapons>三妖精大暴走</afflictionname.Touhou_Three_Fairies_Weapons>
     <afflictiondescription.Touhou_Three_Fairies_Weapons>赌上性命去恶作剧！</afflictiondescription.Touhou_Three_Fairies_Weapons>
 
+    <!--Sakuya-->
+    <entityname.Sakuya_gear>‖color:155,155,155,255‖咲夜装束‖end‖</entityname.Sakuya_gear>
+    <entitydescription.Sakuya_gear>她是在红魔馆服侍蕾米莉亚·斯卡蕾特的女仆长，也兼任红魔馆的清洁工，是馆中唯一的人类。</entitydescription.Sakuya_gear>
+    <entityname.Sakuya_Plus>‖color:155,155,155,255‖咲夜装束+‖end‖</entityname.Sakuya_Plus>
+    <entitydescription.Sakuya_Plus>她是在红魔馆服侍蕾米莉亚·斯卡蕾特的女仆长，也兼任红魔馆的清洁工，是馆中唯一的人类。</entitydescription.Sakuya_Plus>
+    <talentname.SakuyaTalent>红魔馆的女仆</talentname.SakuyaTalent>
+    <talentdescription.SakuyaTalent>当你身着咲夜装束+时，
+        所有飞刀弹幕的伤害增加‖color:gui.green‖25%‖end‖
+        每次攻击都有‖color:gui.green‖35%‖end‖概率为自己叠加‖color:gui.yellow‖血之时计‖end‖，‖color:gui.yellow‖血之时计‖end‖会减少自身‖color:gui.orange‖最大生命值‖end‖，最高减少‖color:gui.green‖64%‖end‖。判定由你击杀生物时会消除‖color:gui.green‖10%‖end‖的‖color:gui.yellow‖血之时计‖end‖
+        当血之时计积累到‖color:gui.green‖100%‖end‖时，减少‖color:gui.green‖50%‖end‖‖color:gui.orange‖移动速度、攻击伤害、技能获取速度、技能水平‖end‖，且无法从巡回中获取经验值。
+        ‖color:gui.red‖血之时计巡回后会清零‖end‖
+      \n飞刀的每次攻击都有‖color:gui.green‖15%‖end‖概率附加少量‖color:gui.yellow‖月之时计‖end‖，‖color:gui.yellow‖月之时计‖end‖会减少目标‖color:gui.orange‖移动速度和物理伤害抗性‖end‖，对拥有‖color:gui.yellow‖月之时计‖end‖的敌人造成‖color:gui.green‖10%‖end‖额外伤害
+      \n当角色到达对应等级时，获得不同加成：
+        ‖color:gui.red‖4‖end‖级：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖经验获取速度‖end‖，使用加工台的速度提高‖color:gui.green‖25%‖end‖
+        ‖color:gui.red‖8‖end‖级：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度、最大生命值和使用药品的效果‖end‖
+        ‖color:gui.red‖12‖end‖级：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害和攻击速度‖end‖，对友军的伤害下降‖color:gui.green‖10%‖end‖
+        ‖color:gui.red‖16‖end‖级：
+        血之时计低于‖color:gui.green‖50%‖end‖时，增加‖color:gui.green‖10%‖end‖技能水平，远程攻击的散布减少‖color:gui.green‖50%‖end‖；
+        血之时计高于‖color:gui.green‖50%‖end‖时，增加‖color:gui.green‖25%‖end‖‖color:gui.orange‖debuff抗性‖end‖，减少‖color:gui.green‖10%‖end‖受到的伤害，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖远程伤害‖end‖
+      \n你不会被月神之钟的效果影响
+    </talentdescription.SakuyaTalent>
+    <afflictionname.Perfect_And_Elegant_Servant>完美而潇洒的从者</afflictionname.Perfect_And_Elegant_Servant>
+    <afflictiondescription.Perfect_And_Elegant_Servant>她有着一头银灰色及肩短发，除妖妖梦外两侧的鬓发扎成麻花并在末梢系着绿色蝴蝶结，及肩外鬓发及胸。她头上戴着喀秋莎头饰。</afflictiondescription.Perfect_And_Elegant_Servant>
+    <afflictionname.Sakuya_Weapons>女仆与血之怀表</afflictionname.Sakuya_Weapons>
+    <afflictiondescription.Sakuya_Weapons>身为女仆长，她大部分时间都待在红魔馆中，负责打扫卫生、指派任务、做料理、服侍大小姐等，偶尔会外出进行采购。</afflictiondescription.Sakuya_Weapons>
+
 
     <!--出血效应-->
     <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>记忆材料</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
@@ -560,4 +587,11 @@
         5.对周围的怪物造成伤害并发生小范围爆炸
         6.短时间增加自身和所有妖精职业的船员物理伤害抗性和烧伤抗性
         7.在原地留下一个星光陷阱，对周围目标造成持续伤害，持续10秒</talentdescription.MRE_Star>
+    <talentname.MRE_Sakuya>出血效应-十六夜咲夜</talentname.MRE_Sakuya>
+    <talentdescription.MRE_Star>
+        仅对咲夜装束+生效。血之时计和月之时计拥有额外不同的效果：
+        当血之时计低于50%时，增加10%物理伤害抗性、烧伤抗性、眩晕抗性。
+        当血之时计高于50%时，攻击伤害增加15%。
+        攻击月之时计低于50%的目标时，攻击造成的出血有30%概率以50%的倍率转化为灵压。
+        攻击月之时计高于50%的目标时，攻击造成的伤害增加15%。</talentdescription.MRE_Star>
 </infotexts>

@@ -1353,4 +1353,71 @@
             </Abilities>
         </AbilityGroupInterval>
     </Talent>
+
+    <!--出血效应-十六夜咲夜-->
+    <Talent identifier="MRE_Sakuya">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.MRE_Sakuya"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval Interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Perfect_And_Elegant_Servant" />
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Blood_Clock_Time" minimumPercentage="0.5" invert="true" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" >
+                            <Affliction identifier="MRE_Effect_Sakuya" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Perfect_And_Elegant_Servant" />
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Blood_Clock_Time" minimumPercentage="0.5" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.15"/>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Perfect_And_Elegant_Servant" />
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional Touhou_Luna_Clock_Time="lt 50"/>
+                </AbilityConditionCharacter>
+                <AbilityConditionServerRandom randomchance="0.3" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="bleeding" replacewith="Reiki_Pressure" addedmultiplier="-0.5" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Perfect_And_Elegant_Servant" />
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional HealthPercentage="lt 50"/>
+                    <Conditional Touhou_Luna_Clock_Time="gt 50"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
 </Talents>

@@ -38,6 +38,7 @@
   <Item file="%ModDir%/Items/Clothes/Sunny_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Luna_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Star_gear.xml" />
+  <Item file="%ModDir%/Items/Clothes/Sakuya_gear.xml" />
   <!--tools-->
   <Item file="%ModDir%/Items/Tools/Tools.xml" />
   <Item file="%ModDir%/Items/Tools/MusicPlayer.xml" />
@@ -142,6 +143,7 @@
   <Talents file="%ModDir%/Talents/TalentsMagician.xml" />
   <Talents file="%ModDir%/Talents/TalentsYousei.xml" />
   <Talents file="%ModDir%/Talents/TalentsYokai.xml" />
+  <Talents file="%ModDir%/Talents/TalentsSakuya.xml" />
   <TalentTrees file="%ModDir%/Talents/TalentTrees.xml" />
   <!--Sounds-->
   <Sounds file="%ModDir%/Sounds/BGM/Music_Override.xml" />

@@ -5,7 +5,7 @@
     <Item name="劣质幻想潜水服" identifier="Gensokyo_Divinggear_Enemy" subcategory="Touhou" category="Diving,Equipment" hideinmenus="true"
           tags="diving,deepdiving,divinggear_wearableindoors,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving"
           impactsoundtag="impact_metal_heavy" spritecolor="100,100,100,255">
-        <Deconstruct time="10" chooserandom="true" amount="2" >
+        <Deconstruct time="10" chooserandom="true" amount="6" >
             <Item identifier="Score_Point" commonness="0.2" />
             <Item identifier="Magic_Material" amount="3" commonness="0.3" />
             <Item identifier="Mu_Alchemical" amount="2" commonness="0.1" />
@@ -83,7 +83,7 @@
     <Item name="劣质秘境潜水服" identifier="Ether_Divinggear_Enemy" subcategory="Touhou" category="Diving,Equipment" hideinmenus="true"
           tags="diving,deepdiving,divinggear_wearableindoors,provocative" scale="0.5" fireproof="true" description="" allowdroppingonswapwith="diving"
           impactsoundtag="impact_metal_heavy" spritecolor="100,100,100,255">
-        <Deconstruct time="10" chooserandom="true" amount="2">
+        <Deconstruct time="10" chooserandom="true" amount="4">
             <Item identifier="Magic_Material" amount="2" commonness="0.2" />
             <Item identifier="Mu_Alchemical" commonness="0.1" />
             <Item identifier="Huo_Alchemical" commonness="0.1" />

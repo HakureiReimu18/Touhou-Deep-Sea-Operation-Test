@@ -857,7 +857,7 @@
             <RequiredSkill identifier="weapons" level="100" />
             <RequiredItem identifier="physicorium" amount="8"/>
             <RequiredItem identifier="Reiki_Stone" amount="8"/>
-            <RequiredItem identifier="Touhou_Precious_Metal" amount="8"/>
+            <RequiredItem identifier="Touhou_Precious_Metal" amount="6"/>
             <RequiredItem identifier="remiliapaint" amount="2"/>
             <RequiredItem identifier="Gungnier_Spear" amount="12"/>
             <RequiredItem identifier="Score_Point" amount="4"/>
@@ -1264,7 +1264,7 @@
             <RequiredItem identifier="Gilead_Branch" amount="2" />
             <RequiredItem identifier="Reiki_Stone" amount="6"/>
             <RequiredItem identifier="Touhou_Precious_Metal" amount="3"/>
-            <RequiredItem identifier="Score_Point" amount="4"/>
+            <RequiredItem identifier="Score_Point" amount="2"/>
             <RequiredItem identifier="Power_Point" amount="2"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/youmuceremonialsword2_icon.png" sourcerect="0,0,64,64" origin="0.5,0.5" />
@@ -1272,13 +1272,13 @@
         <Body width="172" height="20" density="10" />
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0" holdangle="30" aimangle="10" reload="0.8" range="55" combatPriority="30" allowhitmultiple="true" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.01" itemdamage="1" structuresoundtype="StructureSlash" penetration="0.6">
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="8" />
             </Attack>
             <StatusEffect type="OnUse" target="limb" >
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="12" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="limb" multiplyafflictionsbymaxvitality="true" >
-                <Affliction identifier="Touhou_Lost_Heart" strength="2" />
+                <Affliction identifier="Touhou_Lost_Heart" strength="4" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" comparison="And">
                 <Conditional Ancient_Temple="eq 0"/>
@@ -3772,7 +3772,7 @@
             <RequiredSkill identifier="weapons" level="100" />
             <RequiredItem identifier="dementonite" amount="8" />
             <RequiredItem identifier="incendium" amount="8"/>
-            <RequiredItem identifier="Touhou_Precious_Metal" amount="8"/>
+            <RequiredItem identifier="Touhou_Precious_Metal" amount="6"/>
             <RequiredItem identifier="Yin_Alchemical" amount="2"/>
             <RequiredItem identifier="Huo_Alchemical" amount="2"/>
             <RequiredItem identifier="Power_Point" amount="3"/>
@@ -4817,7 +4817,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItem identifier="Reiki_Stone" amount="3" />
             <RequiredItem tag="munition_core" />
-            <RequiredItem identifier="Touhou_Base_Metal" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" requiredtime="3" displayname="recycleitem">
             <RequiredSkill identifier="weapons" level="55" />
@@ -5995,4 +5995,545 @@
         </Projectile>
     </Item>
 
+    <!--铁制飞刀-->
+    <Item name="铁制飞刀" identifier="Touhou_Sakuya_Knife_Iron" category="Weapon" subcategory="Touhou" cargocontaineridentifier="metalcrate"
+          tags="smallitem,Low_Alchemical_Metal,Touhou_Cam_Offset_Low" Scale="0.28" impactsoundtag="impact_metal_light" allowasextracargo="true">
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.4" />
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.25" />
+        <PreferredContainer secondary="armcab,weaponholder" spawnprobability="0.2"/>
+        <Price baseprice="600">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.4"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="3" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="2"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+        </Price>
+        <Deconstruct time="3">
+            <Item identifier="steel" />
+            <Item identifier="Reiki_Stone" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="8">
+            <RequiredSkill identifier="weapons" level="40" />
+            <RequiredItem identifier="Reiki_Stone" amount="4" />
+            <RequiredItem identifier="steel" amount="2"/>
+        </Fabricate>
+        <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="4">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredItem identifier="Reiki_Stone" amount="4" />
+            <RequiredItem identifier="Touhou_Sakuya_Knife_Iron" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Sakuya_Knife.png" sourcerect="0,0,105,105" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Sakuya_Knife.png" sourcerect="124,41,77,58" depth="0.55" origin="0.5,0.5" />
+        <Body width="140" height="60" density="10" />
+        <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-2,0" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnActive" target="Character">
+                <Conditional Perfect_And_Elegant_Servant="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Sakuya="gt 0"/>
+                <Affliction identifier="Sakuya_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional Perfect_And_Elegant_Servant="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Sakuya="eq 0"/>
+                <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+        </Holdable>
+        <RangedWeapon reload="0.1" holdtrigger="true" barrelpos="58,10" spread="8" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="8">
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+            <StatusEffect type="OnUse" target="This">
+                <Explosion range="150" force="1.4" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="3.5" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Sound file="%ModDir%/Sounds/Weapons/Sakuya_Knife_Throw01.ogg" selectionmode="random" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Sakuya_Knife_Throw02.ogg" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Sakuya_Knife_Throw03.ogg" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Sakuya_Knife_Throw04.ogg" range="300" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="0.4" />
+            <StatusEffect type="OnUse" target="This" reload="0.1" setvalue="true" delay="1.3" />
+            <StatusEffect type="OnUse" target="This" Condition="-1.5" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="Contained" >
+                <RequiredItems items="Touhou_Sakuya_Knife_Iron_Ammo" type="Contained" />
+                <Use />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" checkconditionalalways="true" drawhudwhenequipped="true">
+                <SpawnItem identifiers="Touhou_Sakuya_Knife_Iron_Ammo" spawnposition="ThisInventory"/>
+            </StatusEffect>
+
+            <RequiredSkill identifier="weapons" level="40" />
+        </RangedWeapon>
+        <ItemContainer capacity="1" maxstacksize="6" hideitems="false" drawinventory="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56" removecontaineditemsondeconstruct="true">
+            <Containable items="Touhou_Sakuya_Knife_Iron_Ammo" hide="true" />
+        </ItemContainer>
+        <aitarget sightrange="200" soundrange="400" fadeouttime="5" />
+        <Quality>
+            <QualityStat stattype="Condition" value="0.16"/>
+            <QualityStat stattype="FirepowerMultiplier" value="0.05" />
+            <QualityStat stattype="FiringRateMultiplier" value="0.1" />
+        </Quality>
+        <SkillRequirementHint identifier="weapons" level="40" />
+    </Item>
+
+    <!--铁飞刀刀套-->
+    <Item name="铁飞刀刀套" identifier="Touhou_Sakuya_Knife_Iron_Ammo" maxstacksize="6" scale="0.4" subcategory="Touhou" category="Weapon"
+          hideinmenus="true" cargocontaineridentifier="metalcrate" linkable="true" impactsoundtag="impact_metal_light">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Sakuya_Knife.png" sourcerect="118,0,99,38" depth="0.25" origin="0.5,0.5" />
+        <Body width="40" height="14" density="10" />
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Sakuya_Knife_Iron_Bullet" removecontaineditemsondeconstruct="true"
+                       drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <Containable items="Touhou_Sakuya_Knife_Iron_Bullet" />
+            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+            <StatusEffect type="OnUse" target="This" disabledeltatime="true" >
+                <SpawnItem identifiers="Touhou_Sakuya_Knife_Iron_Bullet" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+    <!--铁飞刀射弹-->
+    <Item name="铁飞刀射弹" identifier="Touhou_Sakuya_Knife_Iron_Bullet" maxstacksize="6" scale="0.4" subcategory="Touhou" category="Weapon"
+          hideinmenus="true" cargocontaineridentifier="metalcrate" linkable="true" tags="Touhou_Magic_Danmu,Sakuya_Knife" impactsoundtag="impact_metal_light">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Sakuya_Knife.png" sourcerect="118,0,99,38" depth="0.25" origin="0.5,0.5" />
+        <Body width="40" height="14" density="30" />
+        <Projectile characterusable="false" launchimpulse="30" hitscan="false" DoesStick="true" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
+                    sticktodoors="true" removeonhit="true" friendlyfire="false" >
+            <Attack targetforce="7" itemdamage="8" severlimbsprobability="0.2" penetration="0.05">
+                <Affliction identifier="lacerations" strength="5" />
+                <Affliction identifier="bleeding" strength="8" />
+                <Affliction identifier="stun" strength="0.08" probability="0.15" />
+            </Attack>
+            <StatusEffect type="OnActive" target="This" lifetime="1">
+                <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="3" velocitymin="-10" velocitymax="-100" scalemin="0.8" scalemax="1.6" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" disabledeltatime="true" delay="0.2">
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="0.8">
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+    <!--以太飞刀-->
+    <Item name="以太飞刀" identifier="Touhou_Sakuya_Knife_Ether" category="Weapon" subcategory="Touhou" cargocontaineridentifier="metalcrate"
+          tags="smallitem,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" Scale="0.27" impactsoundtag="impact_metal_light" allowasextracargo="true">
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.08" />
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.08" />
+        <Price baseprice="4000">
+            <Price storeidentifier="merchantoutpost" sold="false" multiplier="1.4"/>
+            <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="3" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" minavailable="2"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="2" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" minavailable="1" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="2" />
+        </Price>
+        <Deconstruct time="3">
+            <Item identifier="steel" />
+            <Item identifier="Reiki_Stone" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="8">
+            <RequiredSkill identifier="weapons" level="60" />
+            <RequiredSkill identifier="Touhou_Magic" level="60" />
+            <RequiredItem identifier="Reiki_Stone" amount="4" />
+            <RequiredItem identifier="steel" amount="2"/>
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
+            <RequiredItem identifier="Score_Point" amount="3" />
+        </Fabricate>
+        <Fabricate suitablefabricators="Magic_Altar" displayname="recycleitem" requiredtime="4">
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
+            <RequiredItem identifier="Reiki_Stone" amount="4" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
+            <RequiredItem identifier="Touhou_Sakuya_Knife_Ether" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Knife_Silver.png" sourcerect="0,0,128,128" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Knife_Silver.png" sourcerect="128,41,123,59" depth="0.55" origin="0.5,0.5" />
+        <Body width="140" height="60" density="10" />
+        <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-4,0" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnActive" target="Character">
+                <Conditional Perfect_And_Elegant_Servant="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Sakuya="gt 0"/>
+                <Affliction identifier="Sakuya_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional Perfect_And_Elegant_Servant="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Sakuya="eq 0"/>
+                <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+        </Holdable>
+        <RangedWeapon reload="0.1" ProjectileCount="2" holdtrigger="true" barrelpos="58,10" spread="10" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="8">
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+            <StatusEffect type="OnUse" target="This">
+                <Explosion range="150" force="1.4" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="3.5" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Sound file="%ModDir%/Sounds/Weapons/Sakuya_Knife_Throw01.ogg" selectionmode="random" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Sakuya_Knife_Throw02.ogg" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Sakuya_Knife_Throw03.ogg" range="300" />
+                <Sound file="%ModDir%/Sounds/Weapons/Sakuya_Knife_Throw04.ogg" range="300" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="0.5" />
+            <StatusEffect type="OnUse" target="This" reload="0.1" setvalue="true" delay="1.4" />
+            <StatusEffect type="OnUse" target="This" Condition="-0.75" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="Contained" >
+                <RequiredItems items="Touhou_Sakuya_Knife_Ether_Ammo" type="Contained" />
+                <Use />
+            </StatusEffect>
+            <StatusEffect type="Always" target="This" disabledeltatime="true" stackable="false" checkconditionalalways="true" drawhudwhenequipped="true">
+                <SpawnItem identifiers="Touhou_Sakuya_Knife_Ether_Ammo" spawnposition="ThisInventory"/>
+            </StatusEffect>
+
+            <RequiredSkill identifier="weapons" level="40" />
+        </RangedWeapon>
+        <ItemContainer capacity="1" maxstacksize="6" hideitems="false" drawinventory="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56" removecontaineditemsondeconstruct="true">
+            <Containable items="Touhou_Sakuya_Knife_Ether_Ammo" hide="true" />
+        </ItemContainer>
+        <aitarget sightrange="200" soundrange="400" fadeouttime="5" />
+        <Quality>
+            <QualityStat stattype="Condition" value="0.2"/>
+            <QualityStat stattype="FirepowerMultiplier" value="0.05" />
+        </Quality>
+        <SkillRequirementHint identifier="weapons" level="40" />
+    </Item>
+
+    <!--以太飞刀刀套-->
+    <Item name="以太飞刀刀套" identifier="Touhou_Sakuya_Knife_Ether_Ammo" maxstacksize="6" scale="0.4" subcategory="Touhou" category="Weapon"
+          hideinmenus="true" cargocontaineridentifier="metalcrate" linkable="true" impactsoundtag="impact_metal_light">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Sakuya_Knife.png" sourcerect="118,0,99,38" depth="0.25" origin="0.5,0.5" />
+        <Body width="40" height="14" density="10" />
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Sakuya_Knife_Ether_Bullet" removecontaineditemsondeconstruct="true"
+                       drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <Containable items="Touhou_Sakuya_Knife_Ether_Bullet" />
+            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+            <StatusEffect type="OnUse" target="This" disabledeltatime="true" >
+                <SpawnItem identifiers="Touhou_Sakuya_Knife_Ether_Bullet" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+    <!--以太飞刀射弹-->
+    <Item name="以太飞刀射弹" identifier="Touhou_Sakuya_Knife_Ether_Bullet" maxstacksize="6" scale="0.4" subcategory="Touhou" category="Weapon"
+          hideinmenus="true" cargocontaineridentifier="metalcrate" linkable="true" tags="Touhou_Magic_Danmu,Sakuya_Knife" impactsoundtag="impact_metal_light">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Knife_Silver.png" sourcerect="128,5,123,26" depth="0.25" origin="0.5,0.5" />
+        <Body width="40" height="14" density="10" />
+        <Projectile characterusable="false" launchimpulse="30" hitscan="false" DoesStick="true" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
+                    sticktodoors="true" removeonhit="true" friendlyfire="true" >
+            <Attack targetforce="7" itemdamage="8" severlimbsprobability="0.4" penetration="0.1">
+                <Affliction identifier="lacerations" strength="4" />
+                <Affliction identifier="explosiondamage" strength="4" />
+                <Affliction identifier="bleeding" strength="8" />
+                <Affliction identifier="bleeding" strength="8" probability="0.5" />
+                <Affliction identifier="stun" strength="0.08" probability="0.15" />
+            </Attack>
+            <StatusEffect type="OnActive" target="This" lifetime="1">
+                <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="3" velocitymin="-10" velocitymax="-100" scalemin="0.8" scalemax="1.6" colormultiplier="255,155,155,255" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" disabledeltatime="true" delay="0.2">
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="0.8">
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+
+    <!--吸血鬼之牙-->
+    <Item name="吸血鬼之牙" identifier="Touhou_Vampire_Fang_Sword" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal,Sakuya_Knife" cargocontaineridentifier="metalcrate" scale="0.16" impactsoundtag="impact_metal_light" RequireAimToUse="True" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="10000" sold="false" >
+            <Price storeidentifier="merchantoutpost" minavailable="2"/>
+            <Price storeidentifier="merchantcity" minavailable="2" />
+            <Price storeidentifier="merchantresearch" minavailable="2" />
+            <Price storeidentifier="merchantmilitary" minavailable="2" />
+            <Price storeidentifier="merchantmine" minavailable="2"/>
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="4"/>
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="physicorium" amount="4"/>
+            <Item identifier="dementonite" amount="2"/>
+            <Item identifier="Power_Point" amount="4" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
+            <RequiredSkill identifier="Touhou_Magic" level="70" />
+            <RequiredItem identifier="physicorium" amount="4"/>
+            <RequiredItem identifier="dementonite" amount="2"/>
+            <RequiredItem identifier="Yin_Alchemical" amount="2"/>
+            <RequiredItem identifier="Shui_Alchemical" amount="4"/>
+            <RequiredItem identifier="Power_Point" amount="4" />
+        </Fabricate>
+
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Sword.png" sourcerect="6,0,693,128" depth="0.55" origin="0.5,0.5" />
+        <Body width="693" height="128" density="10" />
+        <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-48,-2" handle2="-42,-1" holdangle="20" aimangle="0" reload="0.9" range="130" combatPriority="50"
+                     allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnActive" target="Character">
+                <Conditional Perfect_And_Elegant_Servant="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Sakuya="gt 0"/>
+                <Affliction identifier="Sakuya_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional Perfect_And_Elegant_Servant="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Sakuya="eq 0"/>
+                <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 70"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
+            </StatusEffect>
+
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.2">
+                <Affliction identifier="Reiki_Pressure" strength="6" />
+                <Affliction identifier="lacerations" strength="16" />
+                <Affliction identifier="bleeding" strength="16" />
+                <Affliction identifier="bleeding" strength="16" probability="0.7" />
+                <Affliction identifier="Scarlet_Long_Night" strength="3" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
+                <Affliction identifier="stun" strength="0.2" />
+                <Affliction identifier="stun" strength="0.2" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnUse" target="Limb" >
+                <Affliction identifier="Reiki_Pressure" strength="3" />
+                <Affliction identifier="lacerations" strength="4" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
+                <Affliction identifier="Touhou_Lost_Dream" strength="3" />
+            </StatusEffect>
+
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="200" scalemin="0.5" scalemax="1" colormultiplier="255,120,120,200" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.15" scalemax="0.25" colormultiplier="200,200,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.4" setvalue="true" />
+            <RequiredSkill identifier="Touhou_Magic" level="80" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="0.9" setvalue="true" delay="1.0" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <Quality>
+            <QualityStat stattype="strikingspeedmultiplier" value="0.0534" />
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.0534" />
+        </Quality>
+        <SkillRequirementHint identifier="Touhou_Magic" level="80" />
+    </Item>
+
+    <!--梦幻月之刃-->
+    <Item name="梦幻月之刃" identifier="Touhou_Dream_Luna_Sword" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,High_Alchemical_Metal,Touhou_Cam_Offset_Normal,Sakuya_Knife" cargocontaineridentifier="metalcrate" scale="0.16" impactsoundtag="impact_metal_light" RequireAimToUse="True" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="16000" sold="false" >
+            <Price storeidentifier="merchantoutpost" minavailable="2"/>
+            <Price storeidentifier="merchantcity" minavailable="2" />
+            <Price storeidentifier="merchantresearch" minavailable="2" />
+            <Price storeidentifier="merchantmilitary" minavailable="2" />
+            <Price storeidentifier="merchantmine" minavailable="2"/>
+            <Price storeidentifier="merchantmedical" multiplier="0.9" minavailable="4"/>
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="physicorium" amount="4"/>
+            <Item identifier="dementonite" amount="2"/>
+            <Item identifier="Power_Point" amount="4" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
+            <RequiredSkill identifier="Touhou_Magic" level="70" />
+            <RequiredItem identifier="physicorium" amount="3"/>
+            <RequiredItem identifier="Touhou_Precious_Metal" amount="2" />
+            <RequiredItem identifier="Yin_Alchemical" amount="3"/>
+            <RequiredItem identifier="Power_Point" amount="2" />
+        </Fabricate>
+
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Sword.png" sourcerect="10,128,690,123" depth="0.55" origin="0.5,0.5" />
+        <Body width="690" height="123" density="10" />
+        <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-48,-2" handle2="-42,-1" holdangle="20" aimangle="0" reload="0.9" range="130" combatPriority="50"
+                     allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnActive" target="Character">
+                <Conditional Perfect_And_Elegant_Servant="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Sakuya="gt 0"/>
+                <Affliction identifier="Sakuya_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional Perfect_And_Elegant_Servant="eq 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Sakuya="eq 0"/>
+                <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 70"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
+            </StatusEffect>
+
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="16" structuresoundtype="StructureSlash" penetration="0.4">
+                <Affliction identifier="Reiki_Pressure" strength="4" />
+                <Affliction identifier="lacerations" strength="8" />
+                <Affliction identifier="explosiondamage" strength="16" />
+                <Affliction identifier="Slow_Baka" strength="15" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
+                <Affliction identifier="stun" strength="0.2" />
+                <Affliction identifier="stun" strength="0.35" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnUse" target="Limb" >
+                <Affliction identifier="Reiki_Pressure" strength="3" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" />
+            </StatusEffect>
+
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="200" distancemax="250" velocitymin="-500" velocitymax="-900" particlespersecond="80" colormultiplier="255,255,255,255" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.15" scalemax="0.25" colormultiplier="200,200,255,180" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.4" setvalue="true" />
+            <RequiredSkill identifier="Touhou_Magic" level="80" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="0.9" setvalue="true" delay="1.0" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <Quality>
+            <QualityStat stattype="strikingspeedmultiplier" value="0.0534" />
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.0534" />
+        </Quality>
+        <SkillRequirementHint identifier="Touhou_Magic" level="80" />
+    </Item>
+
+    <!--月神之钟-->
+    <Item name="月神之钟" identifier="Touhou_Luna_Clock" subcategory="Touhou" category="Weapon" tags="smallitem,Touhou_Luna_Clock" scale="0.12" cargocontaineridentifier="metalcrate" description="HONK">
+        <PreferredContainer primary="crewcab" notcampaign="true"/>
+        <PreferredContainer secondary="wreckcrewcab,abandonedcrewcab" spawnprobability="0.05"/>
+        <Price baseprice="5000" >
+            <Price storeidentifier="merchantoutpost" sold="false"/>
+            <Price storeidentifier="merchantcity" minavailable="1"/>
+            <Price storeidentifier="merchantresearch" minavailable="1" />
+            <Price storeidentifier="merchantmilitary" sold="false" />
+            <Price storeidentifier="merchantmine" sold="false" />
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="steel" amount="4" />
+            <Item identifier="dementonite" />
+            <Item identifier="Score_Point" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
+            <RequiredItem identifier="dementonite" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="4"/>
+            <RequiredItem identifier="Touhou_Precision_Parts" />
+            <RequiredItem identifier="steel" amount="4"/>
+            <RequiredItem identifier="Score_Point" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Luna_Clock.png" sourcerect="0,0,128,164" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Luna_Clock.png" sourcerect="0,0,128,164" depth="0.55" origin="0.5,0.5" />
+        <Body width="50" height="20" density="10" />
+        <Holdable slots="Any,LeftHand" holdangle="-30" aimpos="5,30" handle1="-15,-3" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnBroken" target="NearbyCharacters" range="1500" disabledeltatime="true" AllowWhenBroken="true" multiplyafflictionsbymaxvitality="true" >
+                <Conditional IsDead="false" />
+                <Affliction identifier="Touhou_Luna_Clock_Effect" amount="10" />
+            </StatusEffect>
+            <StatusEffect type="OnSpawn" target="This" Condition="100" disabledeltatime="true" />
+            <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="15" stackable="false" />
+        </Holdable>
+        <RangedWeapon reload="1">
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" AllowWhenBroken="true" />
+            <StatusEffect type="OnUse" target="This" condition="-100" delay="0.1" disabledeltatime="true" />
+
+            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                <!--时停音效-->
+                <sound file="%ModDir%/Sounds/Weapons/Touhou_Luna_Clock_Sound.ogg" type="OnUse" volume="4.0" range="1500.0" loop="false" />
+            </StatusEffect>
+        </RangedWeapon>
+        <aitarget soundrange="1" fadeouttime="5" />
+    </Item>
 </Items>

@@ -436,7 +436,7 @@
   <entityname.Touhou_Missions_Collection_Blue_UFO>阿求的任务日志-蓝UFO</entityname.Touhou_Missions_Collection_Blue_UFO>
   <entityname.Touhou_Missions_Collection_Nue>阿求的任务日志-黑暗</entityname.Touhou_Missions_Collection_Nue>
   <entitydescription.Touhou_Missions_Collection_Nue>可以在仪式台与其他日志合成总日志，可以接取目前已知的所有任务（剧情难度无法再次挑战）</entitydescription.Touhou_Missions_Collection_Nue>
-  <entityname.Touhou_Aya_Token>文文的信物</entityname.Touhou_Aya_Token>
+  <entityname.Touhou_Aya_Token>天狗的信物</entityname.Touhou_Aya_Token>
   <entitydescription.Touhou_Aya_Token>右键使用后，可大幅增强身体机能。仅对天狗生效。</entitydescription.Touhou_Aya_Token>
   <talentname.Touhou_Mysterious_Pearl_Rippling_Talent>灵异珠的波动</talentname.Touhou_Mysterious_Pearl_Rippling_Talent>
   <talentdescription.Touhou_Mysterious_Pearl_Rippling_Talent>解锁配方：‖color:gui.orange‖鵺 装束+‖end‖</talentdescription.Touhou_Mysterious_Pearl_Rippling_Talent>
@@ -630,6 +630,18 @@
   <entitydescription.Touhou_Gene_Splicer>由河童研发的，拥有热成像作用的基因拼接器，大大方便了热成像的使用</entitydescription.Touhou_Gene_Splicer>
   <entityname.Touhou_Diamond_Blizzard_Ammo>雪符「钻石风暴」</entityname.Touhou_Diamond_Blizzard_Ammo>
   <entitydescription.Touhou_Diamond_Blizzard_Ammo>湖里飞散出来的水花结成冰的奇异现象（作为电磁枪弹药使用）</entitydescription.Touhou_Diamond_Blizzard_Ammo>
+  <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>记忆材料</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
+  <entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>来自地球的记忆，使用炼金桌可以破解不同角色专属的出血物质</entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
+  <entityname.Touhou_Sakuya_Knife_Ether>以太飞刀</entityname.Touhou_Sakuya_Knife_Ether>
+  <entitydescription.Touhou_Sakuya_Knife_Ether>用魔法材料制成的、更加锐利的飞刀，更容易击穿木卫二生物的表皮</entitydescription.Touhou_Sakuya_Knife_Ether>
+  <entityname.Spirit_Rune_Dream_Seal>灵符「梦想封印」</entityname.Spirit_Rune_Dream_Seal>
+  <entitydescription.Spirit_Rune_Dream_Seal>在散发的终点，静寂将会到访。（作为轨道炮弹药使用）</entitydescription.Spirit_Rune_Dream_Seal>
+  <entityname.Touhou_Vampire_Fang_Sword>吸血鬼之牙</entityname.Touhou_Vampire_Fang_Sword>
+  <entitydescription.Touhou_Vampire_Fang_Sword>本体是蕾米莉亚托付给她的吸血鬼之牙的魔力复制品。从牙的性质来看，比起蕾米莉亚身体的一部分，更像和咲夜同为从者。咲夜同时持有吸血鬼之牙与梦幻月之刃时将提高性能。拥有飞刀的属性</entitydescription.Touhou_Vampire_Fang_Sword>
+  <entityname.Touhou_Dream_Luna_Sword>梦幻月之刃</entityname.Touhou_Dream_Luna_Sword>
+  <entitydescription.Touhou_Dream_Luna_Sword>本体是某次异变时获得的妖器。虽然依然不能和它对话，但咲夜不知何时起能明白它的想法了。咲夜同时持有吸血鬼之牙与梦幻月之刃时将提高性能。拥有飞刀的属性</entitydescription.Touhou_Dream_Luna_Sword>
+  <entityname.Touhou_Luna_Clock>月神之钟</entityname.Touhou_Luna_Clock>
+  <entitydescription.Touhou_Luna_Clock>指针转动之间，此时与彼时叠合成同一时刻，仿佛坠入了时间的皱褶。使用后让一定范围内的所有非人类生物无法行动</entitydescription.Touhou_Luna_Clock>
 
 
   <!--凭依效果-->
@@ -675,5 +687,7 @@
   <talentdescription.Hyouibana_Luna>更难被怪物听力锁定，眩晕抗性提高5%，魔法武器远程攻击有5%概率附加少量眩晕，造成的眩晕伤害增加10%。</talentdescription.Hyouibana_Luna>
   <talentname.Hyouibana_Star>凭依斯塔</talentname.Hyouibana_Star>
   <talentdescription.Hyouibana_Star>长时间没有受到攻击后，减少‖color:gui.green‖10%‖end‖受到的伤害，并增加生命恢复速度</talentdescription.Hyouibana_Star>
+  <talentname.Hyouibana_Sakuya>凭依咲夜</talentname.Hyouibana_Sakuya>
+  <talentdescription.Hyouibana_Sakuya>你也免受月神之钟效果的影响，飞刀的伤害增加15%。</talentdescription.Hyouibana_Sakuya>
 
 </infotexts>
