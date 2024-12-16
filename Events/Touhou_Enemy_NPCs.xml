@@ -209,7 +209,7 @@
                 reactionTime="0.4"
                 aimspeed="10"
                 aimaccuracy="0.6"
-                reportrange="1500"
+                reportrange="1000"
                 skillmultiplier="5"
                 FindWeaponsRange="3000">
             <ItemSet commonness="0.4">
@@ -277,7 +277,7 @@
                 reactionTime="0.1"
                 aimspeed="25"
                 aimaccuracy="0.3"
-                reportrange="1200"
+                reportrange="1000"
                 skillmultiplier="5"
                 FindWeaponsRange="3000">
             <ItemSet commonness="0.5">
@@ -350,7 +350,7 @@
                 reactionTime="0.1"
                 aimspeed="20"
                 aimaccuracy="0.3"
-                reportrange="1200"
+                reportrange="1000"
                 skillmultiplier="5"
                 FindWeaponsRange="3000">
             <ItemSet commonness="0.5">

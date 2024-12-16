@@ -641,7 +641,9 @@
   <entityname.Touhou_Dream_Luna_Sword>梦幻月之刃</entityname.Touhou_Dream_Luna_Sword>
   <entitydescription.Touhou_Dream_Luna_Sword>本体是某次异变时获得的妖器。虽然依然不能和它对话，但咲夜不知何时起能明白它的想法了。咲夜同时持有吸血鬼之牙与梦幻月之刃时将提高性能。拥有飞刀的属性</entitydescription.Touhou_Dream_Luna_Sword>
   <entityname.Touhou_Luna_Clock>月神之钟</entityname.Touhou_Luna_Clock>
-  <entitydescription.Touhou_Luna_Clock>指针转动之间，此时与彼时叠合成同一时刻，仿佛坠入了时间的皱褶。使用后让一定范围内的所有非人类生物无法行动</entitydescription.Touhou_Luna_Clock>
+  <entitydescription.Touhou_Luna_Clock>指针转动之间，此时与彼时叠合成同一时刻，仿佛坠入了时间的皱褶。使用后让一定范围内的所有敌人无法行动</entitydescription.Touhou_Luna_Clock>
+  <entityname.Touhou_Luna_Clock_Effect_Debuff>月神之钟</entityname.Touhou_Luna_Clock_Effect_Debuff>
+  <entitydescription.Touhou_Luna_Clock_Effect_Debuff>强行操纵时间对你的身体产生了很大的负荷，降低了身体抗性</entitydescription.Touhou_Luna_Clock_Effect_Debuff>
 
 
   <!--凭依效果-->
@@ -689,5 +691,7 @@
   <talentdescription.Hyouibana_Star>长时间没有受到攻击后，减少‖color:gui.green‖10%‖end‖受到的伤害，并增加生命恢复速度</talentdescription.Hyouibana_Star>
   <talentname.Hyouibana_Sakuya>凭依咲夜</talentname.Hyouibana_Sakuya>
   <talentdescription.Hyouibana_Sakuya>你也免受月神之钟效果的影响，飞刀的伤害增加15%。</talentdescription.Hyouibana_Sakuya>
+  <talentname.Hyouibana_Sanae>凭依早苗</talentname.Hyouibana_Sanae>
+  <talentdescription.Hyouibana_Sanae>当你拥有任意一种奇迹时，受到的伤害下降10%</talentdescription.Hyouibana_Sanae>
 
 </infotexts>

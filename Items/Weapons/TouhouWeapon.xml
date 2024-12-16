@@ -4822,7 +4822,7 @@
         <Fabricate suitablefabricators="fabricator" requiredtime="3" displayname="recycleitem">
             <RequiredSkill identifier="weapons" level="55" />
             <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="Reiki_Stone" amount="6" />
+            <RequiredItem identifier="Reiki_Stone" amount="4" />
             <RequiredItem tag="munition_core" amount="3" />
             <RequiredItem identifier="steel" amount="3" />
             <RequiredItem identifier="Youmu_Smgmagazine_Plus" mincondition="0.0" maxcondition="0.5" usecondition="false" />
@@ -6120,7 +6120,7 @@
             <StatusEffect type="OnImpact" target="This" disabledeltatime="true" delay="0.2">
                 <Remove/>
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="0.8">
+            <StatusEffect type="OnNotContained" target="This" disabledeltatime="true" delay="0.8">
                 <Remove/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -6264,7 +6264,7 @@
             <StatusEffect type="OnImpact" target="This" disabledeltatime="true" delay="0.2">
                 <Remove/>
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" disabledeltatime="true" delay="0.8">
+            <StatusEffect type="OnNotContained" target="This" disabledeltatime="true" delay="0.8">
                 <Remove/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
@@ -6340,6 +6340,10 @@
             <StatusEffect type="OnActive" target="Character" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="1.0" >
+                <Conditional Perfect_And_Elegant_Servant="gt 0"/>
+                <Affliction identifier="Touhou_Vampire_Fang_Sword_Effect" strength="100" />
             </StatusEffect>
 
             <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="80" structuresoundtype="StructureSlash" penetration="0.2">
@@ -6447,6 +6451,11 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="1.0" >
+                <Conditional Perfect_And_Elegant_Servant="gt 0"/>
+                <Affliction identifier="Touhou_Dream_Luna_Sword_Effect" strength="100" />
+            </StatusEffect>
+
 
             <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="16" structuresoundtype="StructureSlash" penetration="0.4">
                 <Affliction identifier="Reiki_Pressure" strength="4" />
@@ -6520,7 +6529,8 @@
         <Holdable slots="Any,LeftHand" holdangle="-30" aimpos="5,30" handle1="-15,-3" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnBroken" target="NearbyCharacters" range="1500" disabledeltatime="true" AllowWhenBroken="true" multiplyafflictionsbymaxvitality="true" >
                 <Conditional IsDead="false" />
-                <Affliction identifier="Touhou_Luna_Clock_Effect" amount="10" />
+                <Affliction identifier="Touhou_Luna_Clock_Effect" amount="12" />
+                <Affliction identifier="Touhou_Luna_Clock_Effect_Debuff" amount="10" />
             </StatusEffect>
             <StatusEffect type="OnSpawn" target="This" Condition="100" disabledeltatime="true" />
             <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="15" stackable="false" />

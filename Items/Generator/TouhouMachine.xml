@@ -280,7 +280,7 @@
     <SwappableItem price="10000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
       <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389" />
       <SwapConnectedItem tag="periscope" swapto="periscope" />
-      <SwapConnectedItem tag="turretammosource" swapto="Touhou_Small_Spell_Card_Cannon_Loader" />
+      <SwapConnectedItem tag="turretammosource" swapto="Touhou_Rapidly_Spell_Card_Cannon_Loader" />
     </SwappableItem>
     <UpgradePreviewSprite scale="2.5" texture="Content/UI/WeaponUI.png" sourcerect="7,810,109,65" origin="0.5,0.5" />
     <StaticBody width="80" radius="80" />
@@ -425,7 +425,7 @@
             characterusable="false"
             linkable="true"
             barrelpos="180,220"
-            rotationlimits="180,360"
+            rotationlimits="0,360"
             powerconsumption="10000.0"
             showchargeindicator="true"
             showprojectileindicator="true"
@@ -480,7 +480,7 @@
             characterusable="false"
             linkable="true"
             barrelpos="280,220"
-            rotationlimits="180,360"
+            rotationlimits="0,360"
             powerconsumption="10000.0"
             showchargeindicator="true"
             showprojectileindicator="true"

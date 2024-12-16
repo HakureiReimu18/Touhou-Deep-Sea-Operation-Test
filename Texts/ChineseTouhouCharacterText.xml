@@ -506,6 +506,34 @@
     <afflictiondescription.Perfect_And_Elegant_Servant>她有着一头银灰色及肩短发，除妖妖梦外两侧的鬓发扎成麻花并在末梢系着绿色蝴蝶结，及肩外鬓发及胸。她头上戴着喀秋莎头饰。</afflictiondescription.Perfect_And_Elegant_Servant>
     <afflictionname.Sakuya_Weapons>女仆与血之怀表</afflictionname.Sakuya_Weapons>
     <afflictiondescription.Sakuya_Weapons>身为女仆长，她大部分时间都待在红魔馆中，负责打扫卫生、指派任务、做料理、服侍大小姐等，偶尔会外出进行采购。</afflictiondescription.Sakuya_Weapons>
+    <afflictionname.Touhou_Luna_Clock_Effect>月神之钟</afflictionname.Touhou_Luna_Clock_Effect>
+    <afflictiondescription.Touhou_Luna_Clock_Effect>你的周围的空间就像凝滞了一般无法活动</afflictiondescription.Touhou_Luna_Clock_Effect>
+
+    <!--Sanae-->
+    <entityname.Sanae_gear>‖color:155,255,155,255‖早苗装束‖end‖</entityname.Sanae_gear>
+    <entitydescription.Sanae_gear>她是从外面世界来的人类，是守矢神社的巫女、风祝与现人神。</entitydescription.Sanae_gear>
+    <entityname.Sanae_Plus>‖color:155,255,155,255‖早苗装束+‖end‖</entityname.Sanae_Plus>
+    <entitydescription.Sanae_Plus>她是从外面世界来的人类，是守矢神社的巫女、风祝与现人神。</entitydescription.Sanae_Plus>
+    <talentname.SanaeTalent>被祭拜的风之人</talentname.SanaeTalent>
+    <talentdescription.SanaeTalent>当你身着早苗装束+时，
+        每个巡回开始时会给随机的船员降下一种奇迹
+        当你获得至少一点技能点时，有‖color:gui.green‖25%‖end‖概率获得随机一种奇迹，这个效果无论是否触发成功都有有‖color:gui.green‖1‖end‖分钟冷却
+        当你拥有任意一种奇迹时，受到的伤害下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖最大生命值‖end‖提高‖color:gui.green‖10%‖end‖
+        对越弱小的敌人造成的额外伤害，随你的等级上升，这个伤害也会上升，对弱小的判定阈值也会上升，‖color:gui.green‖20‖end‖级时达到最大值，最高‖color:gui.green‖20%‖end‖
+        生命值越低，受到的伤害越高，最大增加‖color:gui.green‖15%‖end‖受到的伤害
+      \n奇迹：
+        ‖color:gui.red‖星之奇迹‖end‖：增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖，‖color:gui.orange‖技能水平‖end‖提高‖color:gui.green‖10%‖end‖
+        ‖color:gui.red‖月之奇迹‖end‖：‖color:gui.orange‖修复速度和船体修复速度‖end‖提高‖color:gui.green‖50%‖end‖，提高‖color:gui.green‖15%‖end‖‖color:gui.orange‖眩晕抗性‖end‖
+        ‖color:gui.red‖日之奇迹‖end‖：‖color:gui.orange‖远程攻击伤害‖end‖提高‖color:gui.green‖5%‖end‖，‖color:gui.orange‖近战攻击伤害‖end‖提高‖color:gui.green‖15%‖end‖
+        ‖color:gui.red‖山之奇迹‖end‖：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，双腿的‖color:gui.orange‖物理伤害抗性‖end‖提高‖color:gui.green‖20%‖end‖
+        ‖color:gui.red‖海之奇迹‖end‖：增加‖color:gui.green‖40%‖end‖‖color:gui.orange‖游泳速度‖end‖，‖color:gui.orange‖烧伤抗性‖end‖提高‖color:gui.green‖10%‖end‖
+        ‖color:gui.red‖空之奇迹‖end‖：获得随机技能‖color:gui.green‖7‖end‖点，‖color:gui.orange‖经验获取速度‖end‖提高‖color:gui.green‖15%‖end‖
+        ‖color:gui.red‖风之奇迹‖end‖：‖color:gui.orange‖移动速度‖end‖提高‖color:gui.green‖15%‖end‖，‖color:gui.orange‖攻击速度‖end‖提高‖color:gui.green‖10%‖end‖，降低‖color:gui.green‖50%‖end‖‖color:gui.orange‖友军伤害‖end‖
+    </talentdescription.SanaeTalent>
+    <afflictionname.Manifest_God_Of_Miracles>奇迹的现人神</afflictionname.Manifest_God_Of_Miracles>
+    <afflictiondescription.Manifest_God_Of_Miracles>早苗有着一头及腰绿色长发，头顶戴着青蛙发饰，左侧头发用青蛇发饰扎成一束。</afflictiondescription.Manifest_God_Of_Miracles>
+    <afflictionname.Sanae_Weapons>风与湖的通神者</afflictionname.Sanae_Weapons>
+    <afflictiondescription.Sanae_Weapons>早苗是八坂神奈子的巫女，她用秘术引发的呼风唤雨的奇迹其实是由作为风神的神奈子引发的。早苗同样祭祀着洩矢诹访子，而且是诹访子的遥远的子孙。</afflictiondescription.Sanae_Weapons>
 
 
     <!--出血效应-->
@@ -535,6 +563,8 @@
     <Character.MRE_Material_Sunny>桑尼的回忆</Character.MRE_Material_Sunny>
     <Character.MRE_Material_Luna>露娜的回忆</Character.MRE_Material_Luna>
     <Character.MRE_Material_Star>斯塔的回忆</Character.MRE_Material_Star>
+    <Character.MRE_Material_Sakuya>咲夜的回忆</Character.MRE_Material_Sakuya>
+    <Character.MRE_Material_Sanae>早苗的回忆</Character.MRE_Material_Sanae>
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有10%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
@@ -552,7 +582,7 @@
     <talentname.MRE_Mokou>出血效应-藤原妹红</talentname.MRE_Mokou>
     <talentdescription.MRE_Mokou>仅对妹红装束+生效。最大生命值提高30%，自己的剩余血量越高，造成的伤害越高，最高20%</talentdescription.MRE_Mokou>
     <talentname.MRE_Patchouli>出血效应-帕秋莉·诺雷姬</talentname.MRE_Patchouli>
-    <talentdescription.MRE_Patchouli>仅对帕秋莉装束+生效。持有专属武器时，受到的攻击伤害减少10%。魔力提升达到300后，也减少10%</talentdescription.MRE_Patchouli>
+    <talentdescription.MRE_Patchouli>仅对帕秋莉装束+生效。持有专属武器时，受到的攻击伤害减少15%。魔力提升达到300后，也减少15%</talentdescription.MRE_Patchouli>
     <talentname.MRE_Tenshi>出血效应-比那名居天子</talentname.MRE_Tenshi>
     <talentdescription.MRE_Tenshi>仅对天子装束+生效。持有专属武器时，提高30%眩晕抗性。专属武器击杀任意生物后，短暂提高30%近战攻击速度和15%远程攻击速度</talentdescription.MRE_Tenshi>
     <talentname.MRE_Momizi>出血效应-犬走椛</talentname.MRE_Momizi>
@@ -588,10 +618,12 @@
         6.短时间增加自身和所有妖精职业的船员物理伤害抗性和烧伤抗性
         7.在原地留下一个星光陷阱，对周围目标造成持续伤害，持续10秒</talentdescription.MRE_Star>
     <talentname.MRE_Sakuya>出血效应-十六夜咲夜</talentname.MRE_Sakuya>
-    <talentdescription.MRE_Star>
+    <talentdescription.MRE_Sakuya>
         仅对咲夜装束+生效。血之时计和月之时计拥有额外不同的效果：
         当血之时计低于50%时，增加10%物理伤害抗性、烧伤抗性、眩晕抗性。
         当血之时计高于50%时，攻击伤害增加15%。
         攻击月之时计低于50%的目标时，攻击造成的出血有30%概率以50%的倍率转化为灵压。
-        攻击月之时计高于50%的目标时，攻击造成的伤害增加15%。</talentdescription.MRE_Star>
+        攻击月之时计高于50%的目标时，攻击造成的伤害增加15%。</talentdescription.MRE_Sakuya>
+    <talentname.MRE_Sanae>出血效应-东风谷早苗</talentname.MRE_Sanae>
+    <talentdescription.MRE_Sanae>仅对早苗装束+生效。拥有奇迹时，对非人类敌人造成的伤害提高25%。否则，增加30%最大生命值，受到的伤害减少15%</talentdescription.MRE_Sanae>
 </infotexts>
