@@ -726,7 +726,7 @@
                 </Containable>
             </SubContainer>
             <SubContainer capacity="12" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem,mountableweapon" excludeditems="backpack,crate"/>
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate"/>
             </SubContainer>
         </ItemContainer>
         <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpUse" canbeselected="false"
@@ -2178,6 +2178,6 @@
         <Wearable limbtype="Head" slots="Any,HealthInterface" msg="ItemMsgPickUpSelect" displaycontainedstatus="true">
             <sprite name="Gene Splicer Wearable" texture="Content/Items/Genetic/Genetic.png" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.5" hideotherwearables="false" sourcerect="258,131,1,1" origin="0.6,0.0" />
         </Wearable>
-        <StatusHUD drawhudwhenequipped="true" overlaycolor="150,0,0,120" range="3000" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
+        <StatusHUD drawhudwhenequipped="true" overlaycolor="150,0,0,120" range="4500" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Item>
 </Items>

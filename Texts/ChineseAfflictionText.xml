@@ -109,6 +109,22 @@
     <afflictiondescription.Touhou_Lunar_Orbit_Effect>月面混乱的气旋伤害了表皮，如果不尽快治愈，甚至有增长的风险</afflictiondescription.Touhou_Lunar_Orbit_Effect>
     <afflictionname.Mana_Release_Effect>魔力外放</afflictionname.Mana_Release_Effect>
     <afflictiondescription.Mana_Release_Effect>持续放出体内魔力抵御水压</afflictiondescription.Mana_Release_Effect>
+    <afflictionname.Touhou_Miracles_Wind>奇迹之风</afflictionname.Touhou_Miracles_Wind>
+    <afflictiondescription.Touhou_Miracles_Wind>来自风祝的魔力保护着你，并缓慢治愈伤势</afflictiondescription.Touhou_Miracles_Wind>
+    <afflictionname.SanaeTalent_Effect01>星之奇迹</afflictionname.SanaeTalent_Effect01>
+    <afflictiondescription.SanaeTalent_Effect01>增加50%技能获取速度，技能水平提高10%</afflictiondescription.SanaeTalent_Effect01>
+    <afflictionname.SanaeTalent_Effect02>月之奇迹</afflictionname.SanaeTalent_Effect02>
+    <afflictiondescription.SanaeTalent_Effect02>修复速度和船体修复速度提高50%，提高15%眩晕抗性</afflictiondescription.SanaeTalent_Effect02>
+    <afflictionname.SanaeTalent_Effect03>日之奇迹</afflictionname.SanaeTalent_Effect03>
+    <afflictiondescription.SanaeTalent_Effect03>远程攻击伤害提高5%，近战攻击伤害提高15%</afflictiondescription.SanaeTalent_Effect03>
+    <afflictionname.SanaeTalent_Effect04>山之奇迹</afflictionname.SanaeTalent_Effect04>
+    <afflictiondescription.SanaeTalent_Effect04>增加10%最大生命值，双腿的物理伤害抗性提高20%</afflictiondescription.SanaeTalent_Effect04>
+    <afflictionname.SanaeTalent_Effect05>海之奇迹</afflictionname.SanaeTalent_Effect05>
+    <afflictiondescription.SanaeTalent_Effect05>增加40%游泳速度，烧伤抗性提高10%</afflictiondescription.SanaeTalent_Effect05>
+    <afflictionname.SanaeTalent_Effect06>空之奇迹</afflictionname.SanaeTalent_Effect06>
+    <afflictiondescription.SanaeTalent_Effect06>获得随机技能7点，经验获取速度提高15%</afflictiondescription.SanaeTalent_Effect06>
+    <afflictionname.SanaeTalent_Effect07>风之奇迹</afflictionname.SanaeTalent_Effect07>
+    <afflictiondescription.SanaeTalent_Effect07>移动速度提高15%，攻击速度提高10%，降低50%友军伤害</afflictiondescription.SanaeTalent_Effect07>
 
     <!--死法-->
     <afflictioncauseofdeath.Reiki_Pressure>灵压崩溃</afflictioncauseofdeath.Reiki_Pressure>

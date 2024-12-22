@@ -299,7 +299,7 @@
             recoildistance="50"
             maxchargetime="0.7"
             reload="0.085"
-            DamageMultiplier="1.05"
+            DamageMultiplier="1.1"
             springstiffnesslowskill="2"
             springstiffnesshighskill="50"
             springdampinglowskill="0.5"
@@ -343,8 +343,8 @@
       <StatusEffect type="Always" target="This" condition="+0.5" comparison="And" >
         <Conditional condition="gt 80" />
       </StatusEffect>
-      <StatusEffect type="OnBroken" target="This" reload="15" disabledeltatime="true" setvalue="true" />
-      <StatusEffect type="OnBroken" target="This" reload="0.085" condition="100" delay="8" disabledeltatime="true" setvalue="true" >
+      <StatusEffect type="OnBroken" target="This" reload="10" disabledeltatime="true" delay="0.1" setvalue="true" />
+      <StatusEffect type="OnBroken" target="This" reload="0.085" condition="100" delay="6" disabledeltatime="true" setvalue="true" >
         <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="10000.0" volume="5.0" loop="false" />
       </StatusEffect>
       <StatusEffect type="Always" target="This" condition="100" disabledeltatime="true" setvalue="true" AllowWhenBroken="true" Inteval="30">
@@ -432,7 +432,7 @@
             recoildistance="120"
             reload="1.75"
             ShotsPerBurst="3"
-            DelayBetweenBursts="5"
+            DelayBetweenBursts="4"
             DamageMultiplier="0.7"
             springstiffnesslowskill="2"
             springstiffnesshighskill="50"
@@ -487,7 +487,7 @@
             recoildistance="120"
             reload="1.75"
             ShotsPerBurst="3"
-            DelayBetweenBursts="5"
+            DelayBetweenBursts="4"
             DamageMultiplier="0.7"
             springstiffnesslowskill="2"
             springstiffnesshighskill="50"

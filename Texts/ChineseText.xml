@@ -644,6 +644,8 @@
   <entitydescription.Touhou_Luna_Clock>指针转动之间，此时与彼时叠合成同一时刻，仿佛坠入了时间的皱褶。使用后让一定范围内的所有敌人无法行动</entitydescription.Touhou_Luna_Clock>
   <entityname.Touhou_Luna_Clock_Effect_Debuff>月神之钟</entityname.Touhou_Luna_Clock_Effect_Debuff>
   <entitydescription.Touhou_Luna_Clock_Effect_Debuff>强行操纵时间对你的身体产生了很大的负荷，降低了身体抗性</entitydescription.Touhou_Luna_Clock_Effect_Debuff>
+  <entityname.Touhou_Moriya_Shrine_Staff>八荣铃杖</entityname.Touhou_Moriya_Shrine_Staff>
+  <entitydescription.Touhou_Moriya_Shrine_Staff>神代的道具，每一次使用都会释放风祝的魔力</entitydescription.Touhou_Moriya_Shrine_Staff>
 
 
   <!--凭依效果-->

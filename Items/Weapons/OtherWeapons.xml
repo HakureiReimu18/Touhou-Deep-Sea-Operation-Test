@@ -391,12 +391,12 @@
             <LightComponent LightColor="255,72,36,160" flickerspeed="0" pulsefrequency="0.25" pulseamount="1" ison="true" castshadows="false" allowingameediting="false" Range="300" >
                 <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="0,0,1,1" origin="0.15,0" />
             </LightComponent>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
@@ -405,7 +405,7 @@
         </Holdable>
 
         <!--武器参数-->
-        <RangedWeapon reload="0.9" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="90,12" spread="2.0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.4" DualWieldAccuracyPenalty="12">
+        <RangedWeapon reload="0.9" weapondamagemodifier="1.1" holdtrigger="true" barrelpos="90,12" spread="2.0" unskilledspread="10" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="16">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
             <StatusEffect type="OnUse" target="This">
@@ -526,12 +526,12 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
@@ -616,12 +616,12 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
@@ -706,12 +706,12 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
@@ -796,12 +796,12 @@
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
@@ -1024,12 +1024,12 @@
         </RangedWeapon>
         <Body width="130" height="55" density="25" />
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,-10" handle1="-25,-10" handle2="10,-3" holdangle="-25" >
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
@@ -1150,17 +1150,17 @@
 
         <Body radius="48" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-10,-40" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 70"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
@@ -1443,17 +1443,17 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blue_Rose.png" sourcerect="0,0,776,344" depth="0.3" origin="0.5,0.5" />
         <Body width="776" height="344" density="10" />
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="63,0" handle1="-76,-11" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 70"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
@@ -1650,7 +1650,7 @@
         </RangedWeapon>
         <Body width="130" height="48" density="15" />
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,-10" handle1="-25,-10" handle2="10,-3" holdangle="-25" >
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
@@ -1714,17 +1714,17 @@
         <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Candy_Cannon_Plus/05.png" sourcerect="0,0,140,48" depth="0.55" maxcondition="20" origin="0.5,0.5" />
         <Body width="100" height="48" density="15" />
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,-10" handle1="-25,-10" handle2="10,-3" holdangle="-25" >
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 40"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 70"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
@@ -1963,7 +1963,7 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.8" colormultiplier="100,100,255,160"/>
             <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.25">
-                <Affliction identifier="blunttrauma" strength="15" />
+                <Affliction identifier="blunttrauma" strength="18" />
                 <Affliction identifier="stun" strength="0.3" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="This">
@@ -1993,9 +1993,9 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.8" colormultiplier="255,255,255,160"/>
             <Attack structuredamage="4" targetforce="10" targetimpulse="10" itemdamage="50" severlimbsprobability="0.5" penetration="0.25">
-                <Affliction identifier="lacerations" strength="5" />
-                <Affliction identifier="explosiondamage" strength="5" />
-                <Affliction identifier="blunttrauma" strength="5" />
+                <Affliction identifier="lacerations" strength="6" />
+                <Affliction identifier="explosiondamage" strength="6" />
+                <Affliction identifier="blunttrauma" strength="6" />
                 <Affliction identifier="Touhou_Weakness" strength="1" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="10" />
                 <Affliction identifier="psychosis" strength="10" />
@@ -2003,10 +2003,10 @@
             </Attack>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="80.0" force="6.0" decal="explosion" decalsize="0.3" penetration="0.2" >
-                    <Affliction identifier="lacerations" strength="3" />
-                    <Affliction identifier="explosiondamage" strength="3" />
-                    <Affliction identifier="blunttrauma" strength="3" />
-                    <Affliction identifier="Reiki_Pressure" strength="3" />
+                    <Affliction identifier="lacerations" strength="4" />
+                    <Affliction identifier="explosiondamage" strength="4" />
+                    <Affliction identifier="blunttrauma" strength="4" />
+                    <Affliction identifier="Reiki_Pressure" strength="4" />
                     <Affliction identifier="Touhou_Lost_Dream" strength="10" />
                 </Explosion>
             </StatusEffect>
@@ -2066,12 +2066,12 @@
             <StatusEffect type="OnActive" target="Contained,This" targetslot="1" Tags="Hibernate" setvalue="true" disabledeltatime="true">
                 <Conditional condition="lte 0"/>
             </StatusEffect>-->
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
@@ -2205,12 +2205,12 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6" colormultiplier="255,10,10,220"/>
             <Attack itemdamage="90" levelwalldamage="120" targetforce="15" targetimpulse="15" penetration="0.25" severlimbsprobability="1.0">
                 <Affliction identifier="explosiondamage" strength="40" />
-                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Reiki_Pressure" strength="10" />
                 <Affliction identifier="burn" strength="40" />
                 <Affliction identifier="Phoenix_Burn" strength="80" />
                 <Affliction identifier="emp" strength="50" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="20" />
-                <Affliction identifier="stun" strength="0.75" />
+                <Affliction identifier="stun" strength="1.0" />
                 <Affliction identifier="stun" strength="0.4" probability="0.6"/>
                 <Affliction identifier="stun" strength="0.6" probability="0.4"/>
             </Attack>
@@ -2227,10 +2227,12 @@
                 <ParticleEmitter particle="Touhou_Electric_Shock" anglemin="0" anglemax="360" particleamount="10" velocitymin="300" velocitymax="600" scalemin="0.1" scalemax="0.2" colormultiplier="255,36,18,160" />
                 <Remove />
             </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget" comparison="And">
+            <StatusEffect type="OnImpact" target="Limb" comparison="And">
                 <Conditional speciesname="neq human" />
                 <Conditional speciesname="neq HumanTouhou_Tail" />
                 <Affliction identifier="Reiki_Pressure" strength="5.0" />
+                <Affliction identifier="explosiondamage" strength="5.0" />
+                <Affliction identifier="burn" strength="5.0" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />
@@ -2350,12 +2352,12 @@
         </RangedWeapon>
         <Body width="130" height="55" density="25" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="30,-15" aimpos="60,-10" handle1="-10,-10" handle2="-10,-10" holdangle="45" >
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
@@ -2555,12 +2557,12 @@
                 <Conditional Hyouibana_Effect_Prefect_Nitori="gt 0"/>
                 <Affliction identifier="Nitori_Weapons" strength="50" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" comparison="And">
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="Character" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>

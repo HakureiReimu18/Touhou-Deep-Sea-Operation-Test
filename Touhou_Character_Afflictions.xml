@@ -3,9 +3,9 @@
 
     <!--永远的巫女-->
     <Affliction name="" identifier="RedAndWhite" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="10"
-                iconcolors="94,94,94;163,164,164;255,255,255">
+                duration="0.5" iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.RedAndWhite" minstrength="0" maxstrength="10"/>
-        <Effect minstrength="0" maxstrength="10" strengthchange="-9">
+        <Effect minstrength="0" maxstrength="10" >
             <StatValue stattype="SwimmingSpeed" value="0.5" />
             <StatValue stattype="WalkingSpeed" value="0.15" />
             <StatValue stattype="SkillGainSpeed" value="0.5" />
@@ -76,10 +76,10 @@
     </Affliction>
 
     <!--猩红恶魔-->
-    <Affliction identifier="scarletdevil" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" strengthchange="-9"
-                resistancefor="alieninfection,infection"
-                minresistance="0.5" maxresistance="0.5">
+    <Affliction identifier="scarletdevil" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                duration="0.5" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="10" resistancefor="alieninfection,infection"
+                minresistance="0.35" maxresistance="0.35">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional bloodloss="gt 10"/>
                 <Reduceaffliction identifier="bloodloss" amount="0.15" />
@@ -126,8 +126,7 @@
     <!--凭依蕾米莉亚-->
     <Affliction identifier="Hyouibana_Remilia_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10"
-                resistancefor="alieninfection"
+        <Effect minstrength="0" maxstrength="10" resistancefor="alieninfection"
                 minresistance="0.25" maxresistance="0.25">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional bloodloss="gt 0"/>
@@ -178,8 +177,9 @@
     </Affliction>
 
     <!--普通的魔法使-->
-    <Affliction identifier="Ordinary_Magician" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn" minresistance="0.04" maxresistance="0.04" strengthchange="-9">
+    <Affliction identifier="Ordinary_Magician" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                duration="0.5" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn" minresistance="0.04" maxresistance="0.04" >
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional burn="gt 1" />
                 <Conditional acidburn="gt 1" />
@@ -229,7 +229,7 @@
     <!--魔理沙-专属武器效果-->
     <Affliction identifier="Marisa_Weapons" type="Marisa_Weapons" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" >
             <StatValue stattype="AttackMultiplier" value="0.15" />
             <StatValue stattype="RangedAttackSpeed" value="0.1" />
         </Effect>
@@ -237,7 +237,8 @@
     </Affliction>
 
     <!--风神少女-->
-    <Affliction identifier="Wind_God_Girl" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+    <Affliction identifier="Wind_God_Girl" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                duration="0.5" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" strengthchange="-9">
             <StatusEffect type="NotInWater" target="Character" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Wind_God_Girl_NotInWater" strength="50" />
@@ -310,9 +311,9 @@
     </Affliction>
 
     <!--半人半灵的庭师-->
-    <Affliction name="" identifier="Ancient_Temple" type="Touhou_Character_Affliction" limbspecific="false" indicatorlimb="Torso" hideiconafterdelay="false" isbuff="true"
-                maxstrength="10" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="10" strengthchange="-9">
+    <Affliction identifier="Ancient_Temple" type="Touhou_Character_Affliction" limbspecific="false" indicatorlimb="Torso" hideiconafterdelay="false" isbuff="true"
+                duration="0.5" maxstrength="10" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10" >
             <StatValue stattype="WalkingSpeed" value="0.24" />
             <StatValue stattype="MeleeAttackMultiplier" value="0.3" />
         </Effect>
@@ -371,10 +372,8 @@
 
     <!--超妖怪弹头-->
     <Affliction name="" identifier="Candid_Friend" type="Touhou_Character_Affliction" limbspecific="false" indicatorlimb="Torso" hideiconafterdelay="false" isbuff="true"
-                maxstrength="10"
-                iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="10"
-                strengthchange="-9">
+                duration="0.5" maxstrength="10" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10">
             <StatusEffect target="Character" comparison="and" Interval="1.0" Duration="1.0">
                 <Conditional skillrequirement="true" mechanical="gt 60" />
                 <Conditional skillrequirement="true" electrical="gt 60" />
@@ -433,8 +432,8 @@
 
     <!--幻想乡的记忆-->
     <Affliction identifier="Memory_Of_Gensokyo" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="10"
-                iconcolors="94,94,94;163,164,164;255,255,255" >
-        <Effect minstrength="0" maxstrength="10" strengthchange="-9">
+                duration="0.5" iconcolors="94,94,94;163,164,164;255,255,255" >
+        <Effect minstrength="0" maxstrength="10" >
             <StatValue stattype="MovementSpeed" value="-0.25" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.35" />
             <StatValue stattype="SkillGainSpeed" value="1" />
@@ -464,8 +463,8 @@
 
     <!--蓬莱的人之形-->
     <Affliction identifier="Possessed_By_Phoenix" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" resistancefor="Phoenix_Burn" minresistance="0.4" maxresistance="0.4" strengthchange="-9">
+                duration="0.5" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="10" resistancefor="Phoenix_Burn" minresistance="0.4" maxresistance="0.4" >
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <ReduceAffliction type="damage" strength="0.05" />
                 <ReduceAffliction identifier="Phoenix_Burn" strength="2.8" />
@@ -572,9 +571,8 @@
 
     <!--不动的大图书馆-->
     <Affliction identifier="The_Still_Library" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,bloodloss,bleeding" minresistance="-0.15" maxresistance="-0.15" minbuffmultiplier="1.5" maxbuffmultiplier="1.5"
-                strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,bloodloss,bleeding" minresistance="-0.15" maxresistance="-0.15" minbuffmultiplier="1.5" maxbuffmultiplier="1.5">
             <StatValue stattype="SwimmingSpeed" value="0.4" />
             <StatValue stattype="WalkingSpeed" value="-0.2" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.3" />
@@ -634,9 +632,8 @@
 
     <!--非想非非想天之女-->
     <Affliction identifier="The_Daughter_Of_Heaven" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="Aura_Strip" minresistance="0.4" maxresistance="0.4"
-                strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="Aura_Strip" minresistance="0.4" maxresistance="0.4">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional Aura_Strip="gt 1"/>
                 <ReduceAffliction type="Aura_Strip" strength="0.75" />
@@ -757,9 +754,8 @@
 
     <!--基层警卫天狗-->
     <Affliction identifier="Grunt_Security_Tengu" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="bitewounds,Touhou_Bite" minresistance="0.25" maxresistance="0.25"
-                strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="bitewounds,Touhou_Bite" minresistance="0.25" maxresistance="0.25">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional HealthPercentage="lt 100"/>
                 <ReduceAffliction type="damage" strength="0.02" />
@@ -855,9 +851,8 @@
 
     <!--太阳花田的主人-->
     <Affliction identifier="Flowers_Of_Four_Seasons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="poison,bleedinng" minresistance="0.25" maxresistance="0.25"
-                strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="poison,bleedinng" minresistance="0.25" maxresistance="0.25">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional HealthPercentage="lt 100"/>
                 <Conditional burn="gt 0"/>
@@ -938,9 +933,9 @@
     </Affliction>
 
     <!--天真烂漫狛犬-->
-    <Affliction identifier="Naivete_Koma_Inu" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" resistancefor="Reiki_Pressure,psychosis" minresistance="0.2" maxresistance="0.2"
-                strengthchange="-9">
+    <Affliction identifier="Naivete_Koma_Inu" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+                duration="0.5" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="10" resistancefor="Reiki_Pressure,psychosis" minresistance="0.2" maxresistance="0.2">
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional HealthPercentage="lt 100"/>
                 <ReduceAffliction type="damage" strength="0.05" />
@@ -1040,8 +1035,8 @@
 
     <!--恶魔之妹-->
     <Affliction identifier="Younger_Sister_Of_Scarlet" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn" minresistance="-0.5" maxresistance="-0.5" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn" minresistance="-0.5" maxresistance="-0.5" >
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional bleeding="gt 0"/>
                 <Conditional bloodloss="gt 0"/>
@@ -1140,8 +1135,8 @@
 
     <!--未确认幻想飞行少女-->
     <Affliction identifier="Unconfirmed_Fantasy_Flying_Girl" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="debuff" minresistance="0.35" maxresistance="0.35" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="debuff" minresistance="0.35" maxresistance="0.35" >
             <StatValue stattype="BuffDurationMultiplier" value="-0.5" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Unconfirmed_Fantasy_Flying_Girl.png" sourcerect="0,0,128,128" color="255,255,255,255" />
@@ -1255,8 +1250,8 @@
 
     <!--地狱的妖精-->
     <Affliction identifier="Fairy_Of_Hell" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.15" maxresistance="0.15" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.15" maxresistance="0.15" >
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <ReduceAffliction type="burn" strength="0.1" />
             </StatusEffect>
@@ -1317,8 +1312,8 @@
 
     <!--冰雪聪明-->
     <Affliction identifier="Fairy_Of_Ice" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="-0.75" maxresistance="-0.75" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="-0.75" maxresistance="-0.75" >
             <StatusEffect target="Character" Interval="1.0" Duration="1.0">
                 <Conditional InWater="true" />
                 <ReduceAffliction type="damage" strength="0.075" />
@@ -1384,8 +1379,8 @@
 
     <!--紧闭的恋之瞳-->
     <Affliction identifier="Closed_Eyes_Of_Koishi" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" >
             <StatValue stattype="SkillGainSpeed" value="-0.3" />
             <StatValue stattype="MeleeAttackMultiplier" value="0.15"/>
             <StatValue stattype="RangedAttackMultiplier" value="-0.15"/>
@@ -1526,8 +1521,8 @@
 
     <!--七色的人偶师-->
     <Affliction identifier="Puppeteer_Of_Seven_Colors" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage,bleeding" minresistance="-0.1" maxresistance="-0.1" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,bleeding" minresistance="-0.1" maxresistance="-0.1" >
             <StatValue stattype="SwimmingSpeed" value="0.4" />
             <StatValue stattype="WalkingSpeed" value="-0.1" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.2" />
@@ -1646,8 +1641,8 @@
 
     <!--闪耀的日之光-->
     <Affliction identifier="Shining_Light_Of_The_Sun" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.1" maxresistance="0.1" >
             <StatValue stattype="SightRangeMultiplier" value="-0.75" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
         </Effect>
@@ -1672,7 +1667,7 @@
     <!--出血效应-桑尼·米尔克-->
     <Affliction name="" identifier="MRE_Effect_Sunny" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
                 Duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" >
+        <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="15000" ThermalOverlayColor="160,160,255,120" resistancefor="stun" minresistance="0.1" maxresistance="0.1" >
             <StatValue stattype="SoundRangeMultiplier" value="-0.75" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
         </Effect>
@@ -1729,8 +1724,8 @@
 
     <!--静谧的月之光-->
     <Affliction identifier="Tranquil_Light_Of_The_Moon" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="SoundRangeMultiplier" value="-0.75" />
             <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
         </Effect>
@@ -1812,8 +1807,8 @@
 
     <!--倾泻而下的星之光-->
     <Affliction identifier="Cascading_Light_Of_The_Star" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="15000" ThermalOverlayColor="160,160,255,120" strengthchange="-9">
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" ThermalOverlayRange="15000" ThermalOverlayColor="160,160,255,120" >
             <StatValue stattype="MaximumHealthMultiplier" value="-0.1" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Cascading_Light_Of_The_Star.png" sourcerect="0,0,128,128" color="255,255,255,255" />
@@ -2025,8 +2020,8 @@
 
     <!--完美而潇洒的从者-->
     <Affliction identifier="Perfect_And_Elegant_Servant" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="Touhou_Luna_Clock" minresistance="1.0" maxresistance="1.0" strengthchange="-9"/>
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="Touhou_Luna_Clock" minresistance="1.0" maxresistance="1.0" />
         <Icon texture="%ModDir%/Images/Afflictions/Perfect_And_Elegant_Servant.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
@@ -2039,13 +2034,13 @@
             resetbetweenrounds="true"
             maxstrength="100">
         <Effect minstrength="0" maxstrength="99" >
-            <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="-0.63" />
+            <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="-0.49" />
         </Effect>
         <Effect minstrength="99" maxstrength="100" minskillmultiplier="0.5" maxskillmultiplier="0.5" >
             <StatValue stattype="AttackMultiplier" value="-0.5" />
             <StatValue stattype="MovementSpeed" value="-0.5" />
             <StatValue stattype="SkillGainSpeed" value="-0.5" />
-            <StatValue stattype="MaximumHealthMultiplier" value="-0.64" />
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.5" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Blood_Clock_Time.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -2155,7 +2150,7 @@
             type="debuff"
             limbspecific="false"
             maxstrength="8">
-        <Effect minstrength="0" maxstrength="8" resistancefor="damage" minresistance="-0.1" maxresistance="-0.1" strengthchange="-1" >
+        <Effect minstrength="0" maxstrength="8" resistancefor="damage" minresistance="-0.25" maxresistance="-0.25" minspeedmultiplier="0.8" maxspeedmultiplier="0.8" strengthchange="-1" >
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Luna_Clock_Time.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -2221,8 +2216,8 @@
 
     <!--奇迹的现人神-->
     <Affliction identifier="Manifest_God_Of_Miracles" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="Touhou_Luna_Clock" minresistance="1.0" maxresistance="1.0" strengthchange="-9"/>
+                duration="0.5" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="Touhou_Luna_Clock" minresistance="1.0" maxresistance="1.0" />
         <Icon texture="%ModDir%/Images/Afflictions/Manifest_God_Of_Miracles.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
@@ -2242,7 +2237,7 @@
 
     <!--奇迹标记-->
     <Affliction name="奇迹标记" identifier="SanaeTalent_Effect_Flag" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="1"
-                resetbetweenrounds="true" iconcolors="94,94,94;163,164,164;255,255,255">
+                showiconthreshold="100" showinhealthscannerthreshold="100" resetbetweenrounds="true" iconcolors="94,94,94;163,164,164;255,255,255">
         <Effect minstrength="0" maxstrength="1" />
         <icon texture="%ModDir%/Images/Afflictions/SanaeTalent_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
@@ -2321,9 +2316,10 @@
             identifier="SanaeTalent_Gain_Skill_Point_CD"
             type="SanaeTalent_CD"
             limbspecific="false"
+            duration="60"
+            resetbetweenrounds="true"
             showiconthreshold="100"
             showinhealthscannerthreshold="100"
-            duration="60"
             maxstrength="1">
         <Effect minstrength="0" maxstrength="1" />
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Luna_Clock_Time.png" sourcerect="0,0,128,128" color="255,255,255,255" />
@@ -2353,8 +2349,8 @@
     <Affliction identifier="Sanae_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
-            <StatValue stattype="AttackMultiplier" value="0.2" />
-            <StatValue stattype="TeamAttackMultiplier" value="-0.15" />
+            <StatValue stattype="AttackMultiplier" value="0.15" />
+            <StatValue stattype="TeamAttackMultiplier" value="-0.2" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Sanae_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>

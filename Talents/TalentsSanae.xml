@@ -9,20 +9,24 @@
                 <AbilityConditionHasAffliction afflictionidentifier="SakuyaTalent_Spawn_Effect" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffectsToRandomAlly allowself="true" maxdistance="8000">
+                <CharacterAbilityApplyStatusEffectsToRandomAlly allowself="true" maxdistance="8000" >
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
-                            <TriggerEvent identifier="SanaeTalent_Effect" />
-                        </StatusEffect>
-                        <StatusEffect type="OnAbility" target="Character">
-                            <GiveSkill skillidentifier="randomskill" amount="7" />
+                            <Affliction identifier="SanaeTalent_Effect_Flag" amount="10" />
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToRandomAlly>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" delay="1.0" disabledeltatime="true" >
+                            <TriggerEvent identifier="SanaeTalent_Effect" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
 
-        <AbilityGroupEffect abilityeffecttype="OnGainSkillPoint">
+        <AbilityGroupEffect abilityeffecttype="OnAllyGainSkillPoint">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Manifest_God_Of_Miracles" />
                 <AbilityConditionHasAffliction afflictionidentifier="SanaeTalent_Gain_Skill_Point_CD" invert="true" />
@@ -31,9 +35,6 @@
             <Abilities>
                 <CharacterAbilityApplyStatusEffects applytoself="true" >
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
-                            <TriggerEvent identifier="SanaeTalent_Effect" />
-                        </StatusEffect>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                             <Affliction identifier="SanaeTalent_Gain_Skill_Point_CD" amount="1" />
                         </StatusEffect>
@@ -41,6 +42,22 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
+
+        <AbilityGroupInterval maxtriggercount="2" Interval="70.0" >
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Manifest_God_Of_Miracles" />
+                <AbilityConditionHasAffliction afflictionidentifier="SanaeTalent_Gain_Skill_Point_CD" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects applytoself="true" >
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
+                            <TriggerEvent identifier="SanaeTalent_Effect" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
 
         <AbilityGroupInterval Interval="0.9">
             <Conditions>

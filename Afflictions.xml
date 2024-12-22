@@ -1121,45 +1121,45 @@
   </Affliction>
 
   <!--魔法能力影响武器伤害01级-->
-  <Affliction name="" identifier="Touhou_Magic_Attack_Multiply_Effect01" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="10"
-              showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="10" strengthchange="-9" >
+  <Affliction name="" identifier="Touhou_Magic_Attack_Multiply_Effect01" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="1"
+              duration="0.5" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" >
       <StatValue stattype="AttackMultiplier" value="0.05" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
   <!--魔法能力影响武器伤害02级-->
-  <Affliction name="" identifier="Touhou_Magic_Attack_Multiply_Effect02" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="10"
-              showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="10" strengthchange="-9" >
+  <Affliction name="" identifier="Touhou_Magic_Attack_Multiply_Effect02" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="1"
+              duration="0.5" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" >
       <StatValue stattype="AttackMultiplier" value="0.1" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
   <!--魔法能力影响武器伤害03级-->
-  <Affliction name="" identifier="Touhou_Magic_Attack_Multiply_Effect03" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="10"
-              showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="10" strengthchange="-9" >
+  <Affliction name="" identifier="Touhou_Magic_Attack_Multiply_Effect03" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="1"
+              duration="0.5" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" >
       <StatValue stattype="AttackMultiplier" value="0.15" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
   <!--非对应角色减少武器伤害01级-->
-  <Affliction name="" identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="10"
-              showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="10" strengthchange="-9" >
+  <Affliction name="" identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="1"
+              duration="0.5" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" >
       <StatValue stattype="AttackMultiplier" value="-0.15" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
   <!--非对应角色减少武器伤害02级-->
-  <Affliction name="" identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="10"
-              showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
-    <Effect minstrength="0" maxstrength="10" strengthchange="-9" >
+  <Affliction name="" identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect02" description="" type="talentbuff" isbuff="true" limbspecific="false" indicatorlimb="Torso" maxstrength="1"
+              duration="0.5" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
+    <Effect minstrength="0" maxstrength="1" >
       <StatValue stattype="AttackMultiplier" value="-0.3" />
     </Effect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Magic_Boost.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -1669,7 +1669,7 @@
               limbspecific="false"
               indicatorlimb="Head"
               maxstrength="1"
-              Duration="1.0"
+              Duration="0.5"
               showiconthreshold="100"
               showinhealthscannerthreshold="100"
               affectmachines="false"
@@ -2587,6 +2587,40 @@
           iconcolors="94,94,94;163,164,164;255,255,255">
     <Effect minstrength="0" maxstrength="2" />
     <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+
+  <!--奇迹之风-->
+  <Affliction name="奇迹之风"
+              identifier="Touhou_Miracles_Wind"
+              type="talentbuff"
+              limbspecific="false"
+              indicatorlimb="Torso"
+              maxstrength="100"
+              affectmachines="true"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Miracles_Wind" minstrength="0" maxstrength="100"/>
+    <Effect minstrength="0" maxstrength="100" resistancefor="debuff,stun" minresistance="0" maxresistance="0.1" strengthchange="-1">
+      <StatusEffect target="Character" disabledeltatime="true" Interval="1.0" >
+        <ReduceAffliction identifier="burn" strength="0.3" />
+        <ReduceAffliction identifier="damage" strength="0.3" />
+        <ReduceAffliction identifier="bleeding" strength="0.3" />
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="1.5" maxinterval="3">
+      <StatusEffect target="Character">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="100" distancemax="150" velocitymin="-300" velocitymax="-700" particlespersecond="50" colormultiplier="100,255,100,255" />
+        <ReduceAffliction identifier="burn" strength="0.5" />
+        <ReduceAffliction identifier="bleeding" strength="1" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="1" maxinterval="2">
+      <StatusEffect target="Character">
+        <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="100" distancemax="150" velocitymin="-300" velocitymax="-700" particlespersecond="50" colormultiplier="100,255,100,255" />
+        <ReduceAffliction identifier="damage" strength="0.5" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Miracles_Wind.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
 </Afflictions>

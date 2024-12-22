@@ -489,7 +489,7 @@
     <talentname.SakuyaTalent>红魔馆的女仆</talentname.SakuyaTalent>
     <talentdescription.SakuyaTalent>当你身着咲夜装束+时，
         所有飞刀弹幕的伤害增加‖color:gui.green‖25%‖end‖
-        每次攻击都有‖color:gui.green‖35%‖end‖概率为自己叠加‖color:gui.yellow‖血之时计‖end‖，‖color:gui.yellow‖血之时计‖end‖会减少自身‖color:gui.orange‖最大生命值‖end‖，最高减少‖color:gui.green‖64%‖end‖。判定由你击杀生物时会消除‖color:gui.green‖10%‖end‖的‖color:gui.yellow‖血之时计‖end‖
+        每次攻击都有‖color:gui.green‖35%‖end‖概率为自己叠加‖color:gui.yellow‖血之时计‖end‖，‖color:gui.yellow‖血之时计‖end‖会减少自身‖color:gui.orange‖最大生命值‖end‖，最高减少‖color:gui.green‖50%‖end‖。判定由你击杀生物时会消除‖color:gui.green‖10%‖end‖的‖color:gui.yellow‖血之时计‖end‖
         当血之时计积累到‖color:gui.green‖100%‖end‖时，减少‖color:gui.green‖50%‖end‖‖color:gui.orange‖移动速度、攻击伤害、技能获取速度、技能水平‖end‖，且无法从巡回中获取经验值。
         ‖color:gui.red‖血之时计巡回后会清零‖end‖
       \n飞刀的每次攻击都有‖color:gui.green‖15%‖end‖概率附加少量‖color:gui.yellow‖月之时计‖end‖，‖color:gui.yellow‖月之时计‖end‖会减少目标‖color:gui.orange‖移动速度和物理伤害抗性‖end‖，对拥有‖color:gui.yellow‖月之时计‖end‖的敌人造成‖color:gui.green‖10%‖end‖额外伤害
@@ -514,10 +514,12 @@
     <entitydescription.Sanae_gear>她是从外面世界来的人类，是守矢神社的巫女、风祝与现人神。</entitydescription.Sanae_gear>
     <entityname.Sanae_Plus>‖color:155,255,155,255‖早苗装束+‖end‖</entityname.Sanae_Plus>
     <entitydescription.Sanae_Plus>她是从外面世界来的人类，是守矢神社的巫女、风祝与现人神。</entitydescription.Sanae_Plus>
+    <entityname.Touhou_Sanae_Frog_Hairband>‖color:155,255,155,255‖青蛙发箍‖end‖</entityname.Touhou_Sanae_Frog_Hairband>
+    <entitydescription.Touhou_Sanae_Frog_Hairband>为了融入幻想乡的生活，早苗很快变得不被常识所束缚</entitydescription.Touhou_Sanae_Frog_Hairband>
     <talentname.SanaeTalent>被祭拜的风之人</talentname.SanaeTalent>
     <talentdescription.SanaeTalent>当你身着早苗装束+时，
         每个巡回开始时会给随机的船员降下一种奇迹
-        当你获得至少一点技能点时，有‖color:gui.green‖25%‖end‖概率获得随机一种奇迹，这个效果无论是否触发成功都有有‖color:gui.green‖1‖end‖分钟冷却
+        一巡回两次，当船员获得至少一点技能点时，有‖color:gui.green‖25%‖end‖概率获得随机一种奇迹，这个效果无论是否触发成功都有有‖color:gui.green‖1‖end‖分钟冷却
         当你拥有任意一种奇迹时，受到的伤害下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖最大生命值‖end‖提高‖color:gui.green‖10%‖end‖
         对越弱小的敌人造成的额外伤害，随你的等级上升，这个伤害也会上升，对弱小的判定阈值也会上升，‖color:gui.green‖20‖end‖级时达到最大值，最高‖color:gui.green‖20%‖end‖
         生命值越低，受到的伤害越高，最大增加‖color:gui.green‖15%‖end‖受到的伤害
@@ -574,7 +576,7 @@
     <talentname.MRE_Aya>出血效应-射命丸文</talentname.MRE_Aya>
     <talentdescription.MRE_Aya>仅对文文装束+生效。每次近战攻击都有5%概率额外造成50%伤害，如果是远程弹幕则效果下降为25%</talentdescription.MRE_Aya>
     <talentname.MRE_Youmu>出血效应-魂魄妖梦</talentname.MRE_Youmu>
-    <talentdescription.MRE_Youmu>仅对妖梦装束+生效。近战攻击速度提高10%，持有楼观剑和白楼剑时，伤害提高30%</talentdescription.MRE_Youmu>
+    <talentdescription.MRE_Youmu>仅对妖梦装束+生效。近战攻击速度提高20%，持有楼观剑和白楼剑时，伤害提高30%</talentdescription.MRE_Youmu>
     <talentname.MRE_Nitori>出血效应-河城荷取</talentname.MRE_Nitori>
     <talentdescription.MRE_Nitori>仅对荷取装束+生效。持有专属武器时提高20%攻击伤害，装备专属装备时增加15%最大生命值，同时装备后额外增加10%移动速度</talentdescription.MRE_Nitori>
     <talentname.MRE_Akyuu>出血效应-稗田阿求</talentname.MRE_Akyuu>

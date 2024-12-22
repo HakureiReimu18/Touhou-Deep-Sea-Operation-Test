@@ -248,7 +248,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="50" damagedoors="true">
             <Attack structuredamage="25" itemdamage="20" levelwalldamage="20" severlimbsprobability="0.35" penetration="0.2">
-                <Affliction identifier="explosiondamage" strength="10" />
+                <Affliction identifier="explosiondamage" strength="12" />
                 <Affliction identifier="burn" strength="5" />
                 <Affliction identifier="stun" strength="0.02" />
                 <Affliction identifier="stun" strength="0.15" probability="0.1" />
