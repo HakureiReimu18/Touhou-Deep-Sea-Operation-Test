@@ -109,6 +109,8 @@
     <afflictiondescription.Touhou_Lunar_Orbit_Effect>月面混乱的气旋伤害了表皮，如果不尽快治愈，甚至有增长的风险</afflictiondescription.Touhou_Lunar_Orbit_Effect>
     <afflictionname.Mana_Release_Effect>魔力外放</afflictionname.Mana_Release_Effect>
     <afflictiondescription.Mana_Release_Effect>持续放出体内魔力抵御水压</afflictiondescription.Mana_Release_Effect>
+    <afflictionname.Touhou_Luna_Clock_Effect_Debuff>月神之钟</afflictionname.Touhou_Luna_Clock_Effect_Debuff>
+    <afflictiondescription.Touhou_Luna_Clock_Effect_Debuff>强行操纵时间对你的身体产生了很大的负荷，降低了身体抗性</afflictiondescription.Touhou_Luna_Clock_Effect_Debuff>
     <afflictionname.Touhou_Miracles_Wind>奇迹之风</afflictionname.Touhou_Miracles_Wind>
     <afflictiondescription.Touhou_Miracles_Wind>来自风祝的魔力保护着你，并缓慢治愈伤势</afflictiondescription.Touhou_Miracles_Wind>
     <afflictionname.SanaeTalent_Effect01>星之奇迹</afflictionname.SanaeTalent_Effect01>

@@ -52,7 +52,7 @@
                 <CharacterAbilityApplyStatusEffects applytoself="true" >
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
-                            <TriggerEvent identifier="SanaeTalent_Effect" />
+                            <TriggerEvent identifier="SanaeTalent_Effect_Self" />
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

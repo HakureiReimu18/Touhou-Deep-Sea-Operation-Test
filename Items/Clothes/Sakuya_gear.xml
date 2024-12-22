@@ -115,7 +115,7 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="SakuyaTalent" />
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="Character" Interval="0.5" >
+            <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" >
                 <Affliction identifier="Perfect_And_Elegant_Servant" strength="50" />
             </StatusEffect>
 

@@ -116,7 +116,7 @@
         <GiveTalentInfo giverandom="false" talentidentifiers="Innocent_Treasures" />
       </StatusEffect>
 
-      <StatusEffect type="OnWearing" target="Character" Interval="0.5" >
+      <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" >
         <Affliction identifier="RedAndWhite" strength="50" />
       </StatusEffect>
 

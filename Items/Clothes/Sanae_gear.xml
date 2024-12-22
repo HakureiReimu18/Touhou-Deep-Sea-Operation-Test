@@ -118,7 +118,7 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="SanaeTalent" />
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="Character" Interval="0.5" >
+            <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" >
                 <Affliction identifier="Manifest_God_Of_Miracles" strength="50" />
             </StatusEffect>
 

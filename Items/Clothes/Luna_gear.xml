@@ -115,7 +115,7 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="LunaTalent" />
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="Character" Interval="0.5" >
+            <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" >
                 <Affliction identifier="Tranquil_Light_Of_The_Moon" strength="50" />
                 <Affliction identifier="Luna_Wings_Spawn" strength="10" />
             </StatusEffect>

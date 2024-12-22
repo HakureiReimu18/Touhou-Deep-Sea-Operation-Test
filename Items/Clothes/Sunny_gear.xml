@@ -115,7 +115,7 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="SunnyTalent" />
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="Character" Interval="0.5" >
+            <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" >
                 <Affliction identifier="Shining_Light_Of_The_Sun" strength="50" />
                 <Affliction identifier="Sunny_Wings_Spawn" strength="10" />
             </StatusEffect>

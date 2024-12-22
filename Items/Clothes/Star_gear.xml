@@ -115,7 +115,7 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="StarTalent" />
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="Character" Interval="0.5" >
+            <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" >
                 <Affliction identifier="Cascading_Light_Of_The_Star" strength="50" />
                 <Affliction identifier="Star_Wings_Spawn" strength="10" />
             </StatusEffect>

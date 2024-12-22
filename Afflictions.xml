@@ -1669,7 +1669,7 @@
               limbspecific="false"
               indicatorlimb="Head"
               maxstrength="1"
-              Duration="0.5"
+              Duration="1.0"
               showiconthreshold="100"
               showinhealthscannerthreshold="100"
               affectmachines="false"
@@ -2602,9 +2602,9 @@
     <Description textidentifier="afflictiondescription.Touhou_Miracles_Wind" minstrength="0" maxstrength="100"/>
     <Effect minstrength="0" maxstrength="100" resistancefor="debuff,stun" minresistance="0" maxresistance="0.1" strengthchange="-1">
       <StatusEffect target="Character" disabledeltatime="true" Interval="1.0" >
-        <ReduceAffliction identifier="burn" strength="0.3" />
-        <ReduceAffliction identifier="damage" strength="0.3" />
-        <ReduceAffliction identifier="bleeding" strength="0.3" />
+        <ReduceAffliction identifier="burn" strength="0.2" />
+        <ReduceAffliction identifier="damage" strength="0.2" />
+        <ReduceAffliction identifier="bleeding" strength="0.2" />
       </StatusEffect>
     </Effect>
     <PeriodicEffect mininterval="1.5" maxinterval="3">

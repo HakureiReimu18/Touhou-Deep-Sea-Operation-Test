@@ -470,6 +470,7 @@
         <!--早苗的巡回开始降下奇迹概率事件-->
         <!--概率：15*2,14*5-->
         <ScriptedEvent identifier="SanaeTalent_Effect" commonness="0">
+            <TagAction Criteria="crew" Tag="crew" IgnoreIncapacitatedCharacters="false" />
             <RNGAction chance="0.7">
                 <!--另外五项-->
                 <Success>
@@ -545,6 +546,7 @@
                                 <StatusEffect target="Character" disabledeltatime="true" >
                                     <Conditional SanaeTalent_Effect_Flag="gt 0"/>
                                     <Affliction identifier="SanaeTalent_Effect06" strength="10"/>
+                                    <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false"/>
                                 </StatusEffect>
                             </StatusEffectAction>
                         </Success>
@@ -554,6 +556,102 @@
                                 <StatusEffect target="Character" disabledeltatime="true" >
                                     <Conditional SanaeTalent_Effect_Flag="gt 0"/>
                                     <Affliction identifier="SanaeTalent_Effect07" strength="10"/>
+                                </StatusEffect>
+                            </StatusEffectAction>
+                        </Failure>
+                    </RNGAction>
+                </Failure>
+            </RNGAction>
+        </ScriptedEvent>
+
+        <!--早苗的巡回开始降下奇迹概率事件-支队自己生效-->
+        <!--概率：15*2,14*5-->
+        <ScriptedEvent identifier="SanaeTalent_Effect_Self" commonness="0">
+            <RNGAction chance="0.7">
+                <!--另外五项-->
+                <Success>
+                    <RNGAction chance="0.5">
+                        <!--另外三项-->
+                        <Success>
+                            <RNGAction chance="0.666">
+                                <!--另外两项-->
+                                <Success>
+                                    <RNGAction chance="0.5">
+                                        <!--星之奇迹：增加50%技能获取速度，技能水平提高10%-->
+                                        <Success>
+                                            <StatusEffectAction targettag="statuseffectuser">
+                                                <StatusEffect target="Character" disabledeltatime="true" >
+                                                    <Affliction identifier="SanaeTalent_Effect01" strength="10"/>
+                                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Success>
+                                        <!--月之奇迹：修复速度和船体修复速度提高50%，提高15%眩晕抗性-->
+                                        <Failure>
+                                            <StatusEffectAction targettag="statuseffectuser">
+                                                <StatusEffect target="Character" disabledeltatime="true" >
+                                                    <Affliction identifier="SanaeTalent_Effect02" strength="10"/>
+                                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Failure>
+                                    </RNGAction>
+                                </Success>
+                                <!--日之奇迹：每次攻击有35%概率额外造成15%的伤害-->
+                                <Failure>
+                                    <StatusEffectAction targettag="statuseffectuser">
+                                        <StatusEffect target="Character" disabledeltatime="true" >
+                                            <Affliction identifier="SanaeTalent_Effect03" strength="10"/>
+                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <!--另外两项-->
+                        <Failure>
+                            <RNGAction chance="0.5">
+                                <!--山之奇迹：增加20%最大生命值，双腿的物理伤害抗性提高20%-->
+                                <Success>
+                                    <StatusEffectAction targettag="statuseffectuser">
+                                        <StatusEffect target="Character" disabledeltatime="true" >
+                                            <Affliction identifier="SanaeTalent_Effect04" strength="10"/>
+                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Success>
+                                <!--海之奇迹：增加40%游泳速度，烧伤抗性提高10%-->
+                                <Failure>
+                                    <StatusEffectAction targettag="statuseffectuser">
+                                        <StatusEffect target="Character" disabledeltatime="true" >
+                                            <Affliction identifier="SanaeTalent_Effect05" strength="10"/>
+                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Success>
+                <!--另外两项-->
+                <Failure>
+                    <RNGAction chance="0.5">
+                        <!--空之奇迹：获得随机技能7点，经验获取速度提高20%-->
+                        <Success>
+                            <StatusEffectAction targettag="statuseffectuser">
+                                <StatusEffect target="Character" disabledeltatime="true" >
+                                    <Affliction identifier="SanaeTalent_Effect06" strength="10"/>
+                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                    <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false"/>
+                                </StatusEffect>
+                            </StatusEffectAction>
+                        </Success>
+                        <!--风之奇迹：移动速度提高15%，攻击速度提高10%，降低50%友军伤害-->
+                        <Failure>
+                            <StatusEffectAction targettag="statuseffectuser">
+                                <StatusEffect target="Character" disabledeltatime="true" >
+                                    <Affliction identifier="SanaeTalent_Effect07" strength="10"/>
+                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
                                 </StatusEffect>
                             </StatusEffectAction>
                         </Failure>

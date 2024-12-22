@@ -6620,6 +6620,7 @@
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Character" multiplyafflictionsbymaxvitality="true" >
+                <Conditional speciesgroup="eq human"/>
                 <Affliction identifier="Touhou_Miracles_Wind" strength="5" />
             </StatusEffect>
 
