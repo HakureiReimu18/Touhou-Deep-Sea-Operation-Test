@@ -127,6 +127,8 @@
     <afflictiondescription.SanaeTalent_Effect06>获得随机技能7点，经验获取速度提高15%</afflictiondescription.SanaeTalent_Effect06>
     <afflictionname.SanaeTalent_Effect07>风之奇迹</afflictionname.SanaeTalent_Effect07>
     <afflictiondescription.SanaeTalent_Effect07>移动速度提高15%，攻击速度提高10%，降低50%友军伤害</afflictiondescription.SanaeTalent_Effect07>
+    <afflictionname.Touhou_Treatment_Grenade_Effect>疗愈之风</afflictionname.Touhou_Treatment_Grenade_Effect>
+    <afflictiondescription.Touhou_Treatment_Grenade_Effect>一股治疗能量正奇迹般地治疗你的伤势</afflictiondescription.Touhou_Treatment_Grenade_Effect>
 
     <!--死法-->
     <afflictioncauseofdeath.Reiki_Pressure>灵压崩溃</afflictioncauseofdeath.Reiki_Pressure>

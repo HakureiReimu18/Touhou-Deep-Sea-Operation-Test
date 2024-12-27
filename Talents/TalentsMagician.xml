@@ -644,7 +644,7 @@
     <Talent identifier="Mana_Convergence" trackedstat="Mana_Convergence_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.Mana_Convergence"/>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
+        <AbilityGroupEffect abilityeffecttype="None">
             <Conditions>
                 <AbilityConditionHasLevel minlevel="10" />
             </Conditions>

@@ -297,7 +297,7 @@
             showchargeindicator="true"
             showprojectileindicator="true"
             recoildistance="50"
-            maxchargetime="0.7"
+            maxchargetime="0.3"
             reload="0.085"
             DamageMultiplier="1.1"
             springstiffnesslowskill="2"
@@ -309,13 +309,13 @@
             firingoffset="-10,-370"
             MaxAngleOffset="5"
             AICurrentTargetPriorityMultiplier="1">
-      <StatusEffect type="OnUse" target="This" condition="-0.75" disabledeltatime="true" >
+      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
         <Conditional condition="lt 80" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-0.25" disabledeltatime="true" >
+      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
         <Conditional condition="lt 60" />
       </StatusEffect>
-      <StatusEffect type="OnUse" target="This" condition="-1.5" disabledeltatime="true" >
+      <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
         <Conditional condition="lt 40" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This" condition="-0.75" disabledeltatime="true" >

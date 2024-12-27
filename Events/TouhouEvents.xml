@@ -939,6 +939,20 @@
                     </Option>
                   </ConversationAction>
                 </Option>
+                <Option text="新年礼物运输">
+                  <ConversationAction targettag="triggerer_player" dialogtype="Small" text="路上小心">
+                    <Option text="同意">
+                      <ConversationAction text="新年快乐" dialogtype="Small" targettag="triggerer_player" />
+                      <SetDataAction identifier="Touhou_UFO_Mission_ING" value="false"/>
+                      <MissionAction missiontag="Touhou_Cargo_New_Year_Gift" />
+                    </Option>
+                    <Option text="再考虑考虑">
+                      <ConversationAction text="过一会儿再来" dialogtype="Small" targettag="triggerer_player" />
+                      <ClearTagAction tag="triggerer_player" />
+                      <GoTo name="waitformission" />
+                    </Option>
+                  </ConversationAction>
+                </Option>
                 <Option text="清理毛玉">
                   <ConversationAction targettag="triggerer_player" dialogtype="Small" text="毛玉的外壳是很有价值的材料，有机会记得多留一些">
                     <Option text="同意">
@@ -1196,6 +1210,7 @@
                           <ConversationAction text="“我已经把任务发到你的终端上了，附近居民们出行的安全就拜托您了。”，阿求把任务发放到你的终端上，“下个巡回结束之后，我会在您的船上等你。”" targettag="triggerer_player" />
                           <SpawnAction itemidentifier="Europa_Infusion" targetinventory="triggerer_player" />
                           <SpawnAction itemidentifier="antibleeding1" targetinventory="triggerer_player" amount="2" />
+                          <SpawnAction itemidentifier="Touhou_Missions_Collection_Green_UFO" targetinventory="triggerer_player" />
                           <ClearTagAction tag="triggerer_player" />
                           <MissionAction missiontag="killredufo" />
                           <SetDataAction identifier="Touhou_Akyuu_UFO_Mission01_Agree" value="true"/>
@@ -1277,6 +1292,7 @@
                           <ConversationAction text="“我已经把任务发到你的终端上了，前哨站居民的安全就拜托您了”，阿求把任务发放到你的终端上，“下个巡回结束之后，我会在您的船上等你。”" targettag="triggerer_player" />
                           <SpawnAction itemidentifier="Europa_Infusion" targetinventory="triggerer_player" />
                           <SpawnAction itemidentifier="antibleeding1" targetinventory="triggerer_player" amount="2" />
+                          <SpawnAction itemidentifier="Touhou_Missions_Collection_Red_UFO" targetinventory="triggerer_player" />
                           <ClearTagAction tag="triggerer_player" />
                           <MissionAction missiontag="killblueufo" />
                           <SetDataAction identifier="Touhou_Akyuu_UFO_Mission02_Agree" value="true"/>
@@ -1394,6 +1410,7 @@
                                   <ConversationAction text="“这次的情况可能很危险，我为你们准备了一些药物，一定要平安归来。”，阿求把任务发放到你的终端上，“下个巡回结束之后，我会在您的船上等你。”" targettag="triggerer_player" />
                                   <SpawnAction itemidentifier="Europa_Infusion" targetinventory="triggerer_player" amount="4" />
                                   <SpawnAction itemidentifier="antibleeding3" targetinventory="triggerer_player" />
+                                  <SpawnAction itemidentifier="Touhou_Missions_Collection_Blue_UFO" targetinventory="triggerer_player" />
                                   <ClearTagAction tag="triggerer_player" />
                                   <MissionAction missiontag="FindHoujuuNue" />
                                   <SetDataAction identifier="Touhou_Akyuu_UFO_Mission03_Agree" value="true"/>
@@ -1573,7 +1590,7 @@
       </EventSet>
     </EventSet>
     <EventSet identifier="Touhou_Mission_Events" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true">
-      <ScriptedEvent identifier="Touhou_Akyuu_Mission" commonness="100" triggercooldown="false" />
+      <ScriptedEvent identifier="Touhou_Akyuu_Mission" commonness="300" triggercooldown="false" />
       <ScriptedEvent identifier="Akyuu_Join" commonness="300" triggercooldown="false" />
     </EventSet>
   </EventSet>

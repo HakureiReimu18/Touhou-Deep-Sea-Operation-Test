@@ -3,13 +3,13 @@
     <Talent identifier="SanaeTalent">
         <Icon texture="%ModDir%/Images/Talents/SanaeTalent.png" sheetindex="0,0" sheetelementsize="128,128" />
         <Description tag="talentdescription.SanaeTalent"/>
-        <AbilityGroupInterval maxtriggercount="1" >
+        <AbilityGroupInterval maxtriggercount="1" Interval="10" >
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Manifest_God_Of_Miracles" />
                 <AbilityConditionHasAffliction afflictionidentifier="SakuyaTalent_Spawn_Effect" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffectsToRandomAlly allowself="true" maxdistance="8000" >
+                <CharacterAbilityApplyStatusEffectsToRandomAlly allowself="true" maxdistance="4000" >
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
                             <Affliction identifier="SanaeTalent_Effect_Flag" amount="10" />

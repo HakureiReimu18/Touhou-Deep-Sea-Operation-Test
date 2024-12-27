@@ -2824,56 +2824,6 @@
     </Item>
 
 
-    <!--笨蛋手雷-->
-    <Item name="笨蛋手雷" identifier="Baka_grenade" category="Weapon" subcategory="Touhou" maxstacksize="9" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive" scale="0.15" impactsoundtag="impact_metal_heavy">
-        <PreferredContainer primary="secarmcab" minamount="1" maxamount="3" spawnprobability="0.5" notcampaign="true" />
-        <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.25" />
-        <PreferredContainer secondary="armcab" />
-        <Price baseprice="90" >
-            <Price storeidentifier="merchantoutpost" multiplier="1.1" />
-            <Price storeidentifier="merchantcity" multiplier="0.9" />
-            <Price storeidentifier="merchantresearch" multiplier="1.1" />
-            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
-            <Price storeidentifier="merchantmine" multiplier="1.05" />
-        </Price>
-        <Deconstruct time="3"/>
-        <Fabricate suitablefabricators="fabricator" requiredtime="9" amount="9">
-            <RequiredSkill identifier="weapons" level="9" />
-            <RequiredItem identifier="iron" />
-            <RequiredItem identifier="Mc_SnowBall" />
-        </Fabricate>
-        <Sprite texture="%ModDir%/Images/Materials/SnowBall.png" depth="0.4" sourcerect="0,0,150,150" />
-        <Body radius="20" height="10" density="18" />
-        <ItemComponent characterusable="false">
-            <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
-            <StatusEffect type="OnBroken" target="This">
-                <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="1000" volume="0.5" />
-                <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="1000" volume="0.5" />
-                <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="1000" volume="0.5" />
-                <Explosion range="333" ballastfloradamage="10" structuredamage="9" levelwalldamage="9" itemdamage="9" force="5" debris="true" flash="false" flames="false">
-                    <Affliction identifier="explosiondamage" strength="9" />
-                    <Affliction identifier="Touhou_Freeze" strength="9" />
-                    <Affliction identifier="Slow_Baka" strength="99" />
-                    <Affliction identifier="stun" strength="0.9" />
-                </Explosion>
-                <ParticleEmitter particle="IcicleBoom02" anglemin="0" anglemax="360" particleamount="18" velocitymin="800" velocitymax="1600" scalemin="0.9" scalemax="2.7" />
-                <Remove />
-            </StatusEffect>
-            <StatusEffect type="OnBroken" target="This">
-                <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="800" />
-                <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="800" />
-            </StatusEffect>
-        </ItemComponent>
-        <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.2" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3.0" disabledeltatime="true" checkconditionalalways="true" />
-        </Throwable>
-        <Quality>
-            <QualityStat stattype="ExplosionRadius" value="0.33" />
-            <QualityStat stattype="ExplosionDamage" value="0.33" />
-        </Quality>
-    </Item>
-
-
     <!--哨戒长刀-->
     <Item name="" identifier="Tengu_Longsword" subcategory="Touhou" category="Weapon"
           Tags="smallitem,weapon,Low_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" >
@@ -3937,7 +3887,7 @@
 
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Baka_Sword.png" sourcerect="0,0,400,128" depth="0.55" origin="0.5,0.5" />
         <Body width="188" height="30" density="10" />
-        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-48,-2" handle2="-42,-1" holdangle="20" aimangle="0" reload="0.7" range="130" combatPriority="50"
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-48,-2" handle2="-42,-1" holdangle="20" aimangle="0" reload="0.8" range="130" combatPriority="50"
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character">
                 <Conditional Fairy_Of_Ice="gt 0"/>
@@ -3976,7 +3926,7 @@
             </LightComponent>
 
             <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="99" structuresoundtype="StructureSlash" penetration="0.3">
-                <Affliction identifier="Reiki_Pressure" strength="9" />
+                <Affliction identifier="Reiki_Pressure" strength="3" />
                 <Affliction identifier="lacerations" strength="18" />
                 <Affliction identifier="slow" strength="30" />
                 <Affliction identifier="Slow_Baka" strength="15" />
@@ -4008,10 +3958,10 @@
                 <ParticleEmitter particle="IcicleBoom" copyentityangle="true" anglemin="0" anglemax="360" particleamount="2" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="0.7" />
                 <ParticleEmitter particle="Touhou_Electric_Shock" copyentityangle="false" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="150" scalemin="0.15" scalemax="0.25" colormultiplier="200,200,255,180" />
             </StatusEffect>
-            <StatusEffect type="OnFailure" target="This" reload="1.0" setvalue="true" />
+            <StatusEffect type="OnFailure" target="This" reload="1.4" setvalue="true" />
             <RequiredSkill identifier="Touhou_Magic" level="99" />
             <!--Reset the reload speed-->
-            <StatusEffect type="OnUse" target="This" reload="0.7" setvalue="true" delay="1.0" />
+            <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="1.4" />
         </MeleeWeapon>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
@@ -4620,7 +4570,7 @@
                 <ReduceAffliction identifier="Koishi_Unconscious03" amount="0.5" />
             </StatusEffect>
 
-            <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="60" structuresoundtype="StructureSlash" penetration="0.3">
+            <Attack targetimpulse="6" severlimbsprobability="0.8" itemdamage="60" structuresoundtype="StructureSlash" penetration="0.4">
                 <Affliction identifier="lacerations" strength="25.7" />
                 <Affliction identifier="slow" strength="50" />
                 <Affliction identifier="bleeding" strength="25" />
@@ -6108,7 +6058,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Sakuya_Knife.png" sourcerect="118,0,99,38" depth="0.25" origin="0.5,0.5" />
         <Body width="40" height="14" density="30" />
         <Projectile characterusable="false" launchimpulse="30" hitscan="false" DoesStick="true" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
-                    sticktodoors="true" removeonhit="true" friendlyfire="false" >
+                    sticktodoors="true" removeonhit="false" friendlyfire="false" >
             <Attack targetforce="7" itemdamage="8" severlimbsprobability="0.2" penetration="0.05">
                 <Affliction identifier="lacerations" strength="5" />
                 <Affliction identifier="bleeding" strength="8" />
@@ -6250,7 +6200,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Knife_Silver.png" sourcerect="128,5,123,26" depth="0.25" origin="0.5,0.5" />
         <Body width="40" height="14" density="10" />
         <Projectile characterusable="false" launchimpulse="30" hitscan="false" DoesStick="true" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
-                    sticktodoors="true" removeonhit="true" friendlyfire="true" >
+                    sticktodoors="true" removeonhit="false" friendlyfire="true" >
             <Attack targetforce="7" itemdamage="8" severlimbsprobability="0.4" penetration="0.1">
                 <Affliction identifier="lacerations" strength="4" />
                 <Affliction identifier="explosiondamage" strength="3.5" />
@@ -6261,18 +6211,14 @@
             <StatusEffect type="OnActive" target="This" lifetime="1">
                 <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="3" velocitymin="-10" velocitymax="-100" scalemin="0.8" scalemax="1.6" colormultiplier="255,155,155,255" />
             </StatusEffect>
-            <StatusEffect type="OnImpact" target="This" disabledeltatime="true" delay="0.2">
+            <StatusEffect type="OnNotContained" target="This" disabledeltatime="true" delay="0.8">
                 <Remove/>
             </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" disabledeltatime="true" delay="0.8">
+            <StatusEffect type="OnImpact" target="This" disabledeltatime="true" delay="0.2">
                 <Remove/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" particleamount="1" velocitymin="0" velocitymax="0" />
-            </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Conditional entitytype="eq Structure" />
-                <Conditional hastag="eq door" />
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="0" anglemax="360" particleamount="5" velocitymin="100" velocitymax="200" scalemin="0.5" scalemax="1" />
             </StatusEffect>
         </Projectile>

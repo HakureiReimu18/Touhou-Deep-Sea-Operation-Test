@@ -644,6 +644,12 @@
   <entitydescription.Touhou_Luna_Clock>指针转动之间，此时与彼时叠合成同一时刻，仿佛坠入了时间的皱褶。使用后让一定范围内的所有敌人无法行动</entitydescription.Touhou_Luna_Clock>
   <entityname.Touhou_Moriya_Shrine_Staff>‖color:150,200,100,255‖八荣铃杖‖color:end‖</entityname.Touhou_Moriya_Shrine_Staff>
   <entitydescription.Touhou_Moriya_Shrine_Staff>神代的道具，每一次使用都会释放风祝的魔力</entitydescription.Touhou_Moriya_Shrine_Staff>
+  <entityname.Touhou_Treatment_Grenade>‖color:gui.green‖治疗手雷‖color:end‖</entityname.Touhou_Treatment_Grenade>
+  <entitydescription.Touhou_Treatment_Grenade>河童重工组推出的最新产品，内含治愈能量的手雷，爆破时会对友军放出治疗之风</entitydescription.Touhou_Treatment_Grenade>
+  <entityname.Touhou_New_Year_Gift_Box>‖color:gui.red‖新年礼物‖color:end‖</entityname.Touhou_New_Year_Gift_Box>
+  <entitydescription.Touhou_New_Year_Gift_Box>新年快乐</entitydescription.Touhou_New_Year_Gift_Box>
+  <entityname.Touhou_Quality_Upper_Machine>品质升级器</entityname.Touhou_Quality_Upper_Machine>
+  <entitydescription.Touhou_Quality_Upper_Machine>河童重工组实验性生产的工具，可以提升魔法武器的品质，最高到大师品质为止</entitydescription.Touhou_Quality_Upper_Machine>
 
 
   <!--凭依效果-->

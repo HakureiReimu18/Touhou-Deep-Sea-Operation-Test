@@ -1277,7 +1277,7 @@
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" velocitymin="100" velocitymax="500" scalemin="0.1" scalemax="0.2" />
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />
                 <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
-                <Explosion range="295" ballastfloradamage="200" structuredamage="-52" force="1.0" flames="false" smoke="true" sparks="false"
+                <Explosion range="295" ballastfloradamage="100" structuredamage="-52" force="1.0" flames="false" smoke="true" sparks="false"
                            underwaterbubble="false" flashcolor="100,255,20,255" camerashake="2.0" >
                     <Affliction identifier="burn" strength="0.25" />
                 </Explosion>
@@ -1311,7 +1311,7 @@
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" velocitymin="100" velocitymax="500" scalemin="0.1" scalemax="0.2" />
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />
                 <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
-                <Explosion range="328" ballastfloradamage="300" structuredamage="-63" force="1.0" flames="false" smoke="true" sparks="false"
+                <Explosion range="328" ballastfloradamage="200" structuredamage="-63" force="1.0" flames="false" smoke="true" sparks="false"
                            underwaterbubble="false" flashcolor="100,255,20,255" camerashake="2.0" >
                     <Affliction identifier="burn" strength="0.25" />
                 </Explosion>
@@ -1345,7 +1345,7 @@
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="0" anglemax="360" velocitymin="100" velocitymax="500" scalemin="0.1" scalemax="0.2" />
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,70,255" />
                 <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
-                <Explosion range="361" ballastfloradamage="400" structuredamage="-72" force="1.0" flames="false" smoke="true" sparks="false"
+                <Explosion range="361" ballastfloradamage="300" structuredamage="-72" force="1.0" flames="false" smoke="true" sparks="false"
                            underwaterbubble="false" flashcolor="100,255,20,255" camerashake="2.0" >
                     <Affliction identifier="burn" strength="0.25" />
                 </Explosion>
@@ -2180,4 +2180,40 @@
         </Wearable>
         <StatusHUD drawhudwhenequipped="true" overlaycolor="150,0,0,120" range="4500" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Item>
+
+<!--    &lt;!&ndash;品质升级器&ndash;&gt;
+    <Item identifier="Touhou_Quality_Upper_Machine" subcategory="Touhou" category="Equipment" scale="0.5" tags="smallitem" allowasextracargo="true" >
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.01"/>
+        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.01"/>
+        <Deconstruct time="10"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Quality_Upper_Machine.png" sourcerect="0,0,100,100" depth="0.45" />
+        <Holdable slots="Any,RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect" />
+        <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.08,0.2" anchor="Center" absoluteoffset="0,-95" style="ItemUI" />
+            <Button text="uilabel.Touhou_Upper">
+                <StatusEffect target="Contained" qualitylevel="1" setValue="true" >
+                    <Conditional qualitylevel="eq 0"/>
+                </StatusEffect>
+                <StatusEffect target="Contained" qualitylevel="2" setValue="true" >
+                    <Conditional qualitylevel="eq 1"/>
+                </StatusEffect>
+                <StatusEffect target="Contained" qualitylevel="3" setValue="true" >
+                    <Conditional qualitylevel="eq 2"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+                    <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" range="500.0" loop="false" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" delay="0.1" >
+                    <DropItem/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="This" delay="0.3" >
+                    <RemoveItem/>
+                </StatusEffect>
+            </Button>
+        </CustomInterface>
+        <Body radius="8" width="48" density="10" />
+        <ItemContainer capacity="1" maxstacksize="1" >
+            <Containable items="Low_Alchemical_Metal,Normal_Alchemical_Metal,High_Alchemical_Metal" />
+        </ItemContainer>
+    </Item>-->
 </Items>

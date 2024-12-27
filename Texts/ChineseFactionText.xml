@@ -162,7 +162,8 @@
     <Touhou_Medical_Toolkit.AntiBleeding>止血药物</Touhou_Medical_Toolkit.AntiBleeding>
     <Touhou_Medical_Toolkit.AntiDebuff>魔法药物</Touhou_Medical_Toolkit.AntiDebuff>
     <ScarletMode.Tickbox>高速模式</ScarletMode.Tickbox>
-    <uilabel.Touhou_Maoyu_Pet_Spawn>打开</uilabel.Touhou_Maoyu_Pet_Spawn>
+    <uilabel.Touhou_Open>打开</uilabel.Touhou_Open>
+    <uilabel.Touhou_Upper>升级</uilabel.Touhou_Upper>
     <uilabel.Doll_Normal>普通人偶</uilabel.Doll_Normal>
     <uilabel.Doll_ShangHai>上海人偶</uilabel.Doll_ShangHai>
     <uilabel.Doll_PengLai>蓬莱人偶</uilabel.Doll_PengLai>

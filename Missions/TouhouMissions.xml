@@ -25,6 +25,28 @@
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </CargoMission>
 
+  <CargoMission
+          name="新年礼物运输"
+          identifier="Touhou_Cargo_New_Year_Gift"
+          tags="Touhou_Cargo_New_Year_Gift"
+          type="Cargo"
+          difficulty="1"
+          commonness="100"
+          reward="2000"
+          achievementidentifier="cargomission"
+          requireddeliveryamount="0.98">
+    <Reputation identifier="location" amount="2" />
+    <Items>
+      <Item identifier="metalcrate" reward="2000" maxcount="1">
+        <Item identifier="Touhou_New_Year_Gift_Box" amount="1"/>
+      </Item>
+    </Items>
+    <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons01.png" sourcerect="0,0,256,256" />
+    <message header="missionheader.Touhou_Cargo_New_Year_Gift" text="missionmessage.Touhou_Cargo_New_Year_Gift" />
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+    <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Spawn_Gift" campaignonly="true"/>
+  </CargoMission>
+
   <MonsterMission
           name="清理毛玉"
           identifier="killMaoyu"

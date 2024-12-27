@@ -2594,6 +2594,8 @@
   <Affliction name="奇迹之风"
               identifier="Touhou_Miracles_Wind"
               type="talentbuff"
+              isbuff="true"
+              targets="Human"
               limbspecific="false"
               indicatorlimb="Torso"
               maxstrength="100"
@@ -2602,25 +2604,64 @@
     <Description textidentifier="afflictiondescription.Touhou_Miracles_Wind" minstrength="0" maxstrength="100"/>
     <Effect minstrength="0" maxstrength="100" resistancefor="debuff,stun" minresistance="0" maxresistance="0.1" strengthchange="-1">
       <StatusEffect target="Character" disabledeltatime="true" Interval="1.0" >
-        <ReduceAffliction identifier="burn" strength="0.2" />
-        <ReduceAffliction identifier="damage" strength="0.2" />
-        <ReduceAffliction identifier="bleeding" strength="0.2" />
+        <ReduceAffliction identifier="burn" strength="0.1" />
+        <ReduceAffliction identifier="damage" strength="0.1" />
+        <ReduceAffliction identifier="bleeding" strength="0.1" />
       </StatusEffect>
     </Effect>
     <PeriodicEffect mininterval="1.5" maxinterval="3">
       <StatusEffect target="Character">
         <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="100" distancemax="150" velocitymin="-300" velocitymax="-700" particlespersecond="50" colormultiplier="100,255,100,255" />
-        <ReduceAffliction identifier="burn" strength="0.5" />
-        <ReduceAffliction identifier="bleeding" strength="1" />
+        <ReduceAffliction identifier="burn" strength="0.3" />
+        <ReduceAffliction identifier="bleeding" strength="0.6" />
       </StatusEffect>
     </PeriodicEffect>
     <PeriodicEffect mininterval="1" maxinterval="2">
       <StatusEffect target="Character">
         <ParticleEmitter particle="skyholderfx2" anglemax="360" distancemin="100" distancemax="150" velocitymin="-300" velocitymax="-700" particlespersecond="50" colormultiplier="100,255,100,255" />
-        <ReduceAffliction identifier="damage" strength="0.5" />
+        <ReduceAffliction identifier="damage" strength="0.3" />
       </StatusEffect>
     </PeriodicEffect>
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Miracles_Wind.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
+  <!--疗愈之风-->
+  <Affliction name="疗愈之风"
+              identifier="Touhou_Treatment_Grenade_Effect"
+              type="talentbuff"
+              isbuff="true"
+              targets="Human"
+              limbspecific="true"
+              maxstrength="100"
+              affectmachines="true"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Treatment_Grenade_Effect" minstrength="0" maxstrength="100"/>
+    <Effect minstrength="0" maxstrength="100" strengthchange="-1">
+      <StatusEffect target="Limb" disabledeltatime="true" Interval="0.5" >
+        <ReduceAffliction identifier="burn" strength="0.2" />
+      </StatusEffect>
+      <StatusEffect target="Character" disabledeltatime="true" Interval="0.1" >
+        <Conditional speciesgroup="neq human"/>
+        <ReduceAffliction identifier="Touhou_Treatment_Grenade_Effect" strength="500" />
+      </StatusEffect>
+    </Effect>
+    <PeriodicEffect mininterval="1.5" maxinterval="3" minstrength="0" maxstrength="50">
+      <StatusEffect target="Limb">
+        <ParticleEmitter particle="Touhou_Treatment_Effect" anglemax="360" distancemin="30" distancemax="80" particlespersecond="1"
+                         scalemin="0.04" scalemax="0.08" colormultiplier="100,100,100,200" />
+        <ReduceAffliction identifier="damage" strength="0.5" />
+        <ReduceAffliction identifier="bleeding" strength="0.5" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <PeriodicEffect mininterval="1" maxinterval="2" minstrength="50" maxstrength="100">
+      <StatusEffect target="Limb">
+        <ParticleEmitter particle="Touhou_Treatment_Effect" anglemax="360" distancemin="30" distancemax="80" particlespersecond="3"
+                         scalemin="0.08" scalemax="0.12" colormultiplier="150,150,150,200" />
+        <ReduceAffliction identifier="damage" strength="0.5" />
+        <ReduceAffliction identifier="bleeding" strength="0.5" />
+      </StatusEffect>
+    </PeriodicEffect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Treatment_Grenade_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
 </Afflictions>

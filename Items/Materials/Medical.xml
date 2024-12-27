@@ -288,7 +288,7 @@
         <Sprite texture="%ModDir%/Images/Materials/Balm_Of_Gilead.png" depth="0.4" sourcerect="121,0,178,199" />
         <Body width="30" height="35" density="20" />
         <CustomInterface canbeselected="false" drawhudwhenequipped="true">
-            <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" absoluteoffset="20,148" relativeoffset="0.5,0.2" style="ItemUI" />
+            <GuiFrame relativesize="0.12,0.08" anchor="BottomLeft" relativeoffset="0.5,0.2" style="ItemUI" />
             <TickBox text="点燃" IsOn="true">
                 <StatusEffect type="OnUse" target="This" IsOn="true" />
                 <StatusEffect type="OnSecondaryUse" target="This" IsOn="false" />
@@ -861,7 +861,7 @@
 
 
     <!--永远亭医疗套件-->
-    <Item name="永远亭医疗套件" identifier="Touhou_Medical_Toolkit" tags="smallitem,medical,Touhou_Magic_Item" subcategory="Touhou" category="medical"
+    <Item name="永远亭医疗套件" identifier="Touhou_Medical_Toolkit" tags="smallitem,medical" subcategory="Touhou" category="medical"
           cargocontaineridentifier="metalcrate" scale="0.4" useinhealthinterface="true" RequireAimToUse="false">
         <PreferredContainer primary="medcab" amount="1" spawnprobability="0.03" />
         <PreferredContainer secondary="outpostmedcab" amount="1" spawnprobability="0.03" />

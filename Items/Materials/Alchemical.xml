@@ -791,9 +791,9 @@
     <Item name="记忆材料" identifier="Touhou_Memory_Relationship_Effect_Material_Unresearched" subcategory="Touhou" category="Material" maxstacksize="32" tags="smallitem,MRE_Material"
           cargocontaineridentifier="mediccrate" description="" scale="0.5" impactsoundtag="impact_soft" >
         <PreferredContainer primary="medfabcab" />
-        <PreferredContainer secondary="abandonedmedcab,piratemedcab,wreckmedcab,outpostmedcab,researchcontainer" spawnprobability="0.05"/>
-        <PreferredContainer secondary="geneticstorage" amount="1" spawnprobability="0.05" />
-        <PreferredContainer secondary="ruinstoragelarge" amount="1" spawnprobability="0.05" />
+        <PreferredContainer secondary="abandonedmedcab,piratemedcab,wreckmedcab,outpostmedcab,researchcontainer" spawnprobability="0.02"/>
+        <PreferredContainer secondary="geneticstorage" amount="1" spawnprobability="0.04" />
+        <PreferredContainer secondary="ruinstoragelarge" amount="1" spawnprobability="0.04" />
         <Price baseprice="10000" sold="false" minleveldifficulty="50" >
             <Price storeidentifier="merchantcity" sold="true" minavailable="5" maxavailable="10"/>
             <Price storeidentifier="merchantresearch" sold="true" multiplier="1.2" minavailable="10" maxavailable="15" />

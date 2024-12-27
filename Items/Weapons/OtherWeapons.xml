@@ -2763,4 +2763,114 @@
             </StatusEffect>
         </Projectile>
     </Item>
+
+
+    <!--笨蛋手雷-->
+    <Item name="笨蛋手雷" identifier="Baka_grenade" category="Weapon" subcategory="Touhou" maxstacksize="9" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive" scale="0.15" impactsoundtag="impact_metal_heavy">
+        <PreferredContainer primary="secarmcab" minamount="1" maxamount="3" spawnprobability="0.5" notcampaign="true" />
+        <PreferredContainer secondary="wreckarmcab,abandonedarmcab" minamount="1" maxamount="2" spawnprobability="0.25" />
+        <PreferredContainer secondary="armcab" />
+        <Price baseprice="90" >
+            <Price storeidentifier="merchantoutpost" multiplier="1.1" />
+            <Price storeidentifier="merchantcity" multiplier="0.9" />
+            <Price storeidentifier="merchantresearch" multiplier="1.1" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.05" />
+        </Price>
+        <Deconstruct time="3"/>
+        <Fabricate suitablefabricators="fabricator" requiredtime="9" amount="9">
+            <RequiredSkill identifier="weapons" level="9" />
+            <RequiredItem identifier="iron" />
+            <RequiredItem identifier="Mc_SnowBall" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/Materials/SnowBall.png" depth="0.4" sourcerect="0,0,150,150" />
+        <Body radius="20" height="10" density="18" />
+        <ItemComponent characterusable="false">
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+            <StatusEffect type="OnBroken" target="This">
+                <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="1000" volume="0.5" />
+                <sound file="Content/Items/Weapons/ExplosionMedium2.ogg" range="1000" volume="0.5" />
+                <sound file="Content/Items/Weapons/ExplosionMedium3.ogg" range="1000" volume="0.5" />
+                <Explosion range="333" ballastfloradamage="10" structuredamage="9" levelwalldamage="9" itemdamage="9" force="5" debris="true" flash="false" flames="false">
+                    <Affliction identifier="explosiondamage" strength="9" />
+                    <Affliction identifier="Touhou_Freeze" strength="9" />
+                    <Affliction identifier="Slow_Baka" strength="99" />
+                    <Affliction identifier="stun" strength="0.9" />
+                </Explosion>
+                <ParticleEmitter particle="IcicleBoom02" anglemin="0" anglemax="360" particleamount="18" velocitymin="800" velocitymax="1600" scalemin="0.9" scalemax="2.7" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This">
+                <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="800" />
+                <sound file="Content/Items/Weapons/ExplosionDebris2.ogg" range="800" />
+            </StatusEffect>
+        </ItemComponent>
+        <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" throwforce="3.2" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-100.0" delay="3.0" disabledeltatime="true" checkconditionalalways="true" />
+        </Throwable>
+        <Quality>
+            <QualityStat stattype="ExplosionRadius" value="0.33" />
+            <QualityStat stattype="ExplosionDamage" value="0.33" />
+        </Quality>
+    </Item>
+
+    <!--治疗手雷-->
+    <Item name="治疗手雷" identifier="Touhou_Treatment_Grenade" category="Weapon" subcategory="Touhou" maxstacksize="32" maxstacksizecharacterinventory="4" cargocontaineridentifier="explosivecrate" tags="smallitem,weapon,explosive" scale="0.25" impactsoundtag="impact_metal_heavy">
+        <PreferredContainer secondary="armcab" />
+        <Price baseprice="500" >
+            <Price storeidentifier="merchantoutpost" multiplier="1.1" />
+            <Price storeidentifier="merchantcity" multiplier="0.9" />
+            <Price storeidentifier="merchantresearch" multiplier="1.1" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.05" />
+        </Price>
+        <Deconstruct time="2">
+            <Item identifier="plastic" amount="2" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="10" amount="2">
+            <RequiredSkill identifier="weapons" level="30" />
+            <RequiredSkill identifier="medical" level="30" />
+            <RequiredItem identifier="Touhou_Base_Metal" />
+            <RequiredItem identifier="Mu_Alchemical" />
+            <RequiredItem identifier="plastic" amount="4" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Treatment_Grenade.png" sourcerect="0,0,96,75" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Treatment_Grenade.png" depth="0.4" sourcerect="96,0,108,41" />
+        <Body radius="20" height="10" density="10" />
+        <ItemComponent characterusable="false">
+            <StatusEffect type="OnUse" target="This">
+                <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
+                <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
+                <Explosion range="200" force="2" flash="false" flames="false">
+                    <Affliction identifier="Touhou_Treatment_Grenade_Effect" strength="500" />
+                </Explosion>
+                <ParticleEmitter particle="Touhou_Blue_Explosion_Underwater" anglemin="0" anglemax="360" particleamount="18" velocitymin="300" velocitymax="600" scalemin="0.4" scalemax="1.0" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This">
+                <sound file="Content/Items/Weapons/ExplosionMedium1.ogg" range="10000" selectionmode="All" />
+                <sound file="Content/Items/Weapons/ExplosionDebris1.ogg" range="10000" />
+                <Explosion range="200" force="2" flash="false" flames="false">
+                    <Affliction identifier="Touhou_Treatment_Grenade_Effect" strength="150" />
+                </Explosion>
+                <ParticleEmitter particle="Touhou_Blue_Explosion_Underwater" anglemin="0" anglemax="360" particleamount="18" velocitymin="300" velocitymax="600" scalemin="0.4" scalemax="1.0" />
+                <Remove />
+            </StatusEffect>
+        </ItemComponent>
+        <Throwable characterusable="false" slots="Any,RightHand,LeftHand" throwforce="3.5" aimpos="35,-10" msg="ItemMsgPickUpSelect">
+            <!-- Skip the removal of safeties and explode immediatly if inside of a detonator, railgun shell or a depth charge-->
+            <StatusEffect type="OnUse" targettype="This" delay="2" Condition="0" setvalue="true" comparison="OR">
+                <Conditional HasTag="detonator" targetcontainer="true" />
+                <Conditional HasTag="railgunammo" targetcontainer="true" />
+                <Conditional HasTag="depthchargeammo" targetcontainer="true" />
+            </StatusEffect>
+            <!-- forcefully pull the pin if player hasnt done so -->
+            <StatusEffect type="OnSecondaryUse" target="This" delay="2.0">
+                <Use />
+            </StatusEffect>
+        </Throwable>
+        <Quality>
+            <QualityStat stattype="ExplosionRadius" value="0.334" />
+        </Quality>
+    </Item>
 </Items>
