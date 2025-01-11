@@ -470,8 +470,7 @@
         <!--早苗的巡回开始降下奇迹概率事件-->
         <!--概率：15*2,14*5-->
         <ScriptedEvent identifier="SanaeTalent_Effect" commonness="0">
-            <TagAction Criteria="crew" Tag="SanaeTalent_Target" IgnoreIncapacitatedCharacters="false" ChooseRandom="true" />
-            <TagAction Criteria="players" Tag="SanaeTalent_Target" IgnoreIncapacitatedCharacters="false" ChooseRandom="true" />
+            <TagAction Criteria="crew" Tag="SanaeTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true"/>
             <RNGAction chance="0.7">
                 <!--另外五项-->
                 <Success>
@@ -486,7 +485,7 @@
                                         <Success>
                                             <StatusEffectAction targettag="SanaeTalent_Target">
                                                 <StatusEffect target="Character" disabledeltatime="true" >
-                                                    <Conditional SanaeTalent_Effect_Flag="gt 0"/>
+                                                    <Conditional Manifest_God_Of_Miracles="lte 0"/>
                                                     <Affliction identifier="SanaeTalent_Effect01" strength="10"/>
                                                 </StatusEffect>
                                             </StatusEffectAction>
@@ -495,7 +494,7 @@
                                         <Failure>
                                             <StatusEffectAction targettag="SanaeTalent_Target">
                                                 <StatusEffect target="Character" disabledeltatime="true" >
-                                                    <Conditional SanaeTalent_Effect_Flag="gt 0"/>
+                                                    <Conditional Manifest_God_Of_Miracles="lte 0"/>
                                                     <Affliction identifier="SanaeTalent_Effect02" strength="10"/>
                                                 </StatusEffect>
                                             </StatusEffectAction>
@@ -506,7 +505,7 @@
                                 <Failure>
                                     <StatusEffectAction targettag="SanaeTalent_Target">
                                         <StatusEffect target="Character" disabledeltatime="true" >
-                                            <Conditional SanaeTalent_Effect_Flag="gt 0"/>
+                                            <Conditional Manifest_God_Of_Miracles="lte 0"/>
                                             <Affliction identifier="SanaeTalent_Effect03" strength="10"/>
                                         </StatusEffect>
                                     </StatusEffectAction>
@@ -520,7 +519,7 @@
                                 <Success>
                                     <StatusEffectAction targettag="SanaeTalent_Target">
                                         <StatusEffect target="Character" disabledeltatime="true" >
-                                            <Conditional SanaeTalent_Effect_Flag="gt 0"/>
+                                            <Conditional Manifest_God_Of_Miracles="lte 0"/>
                                             <Affliction identifier="SanaeTalent_Effect04" strength="10"/>
                                         </StatusEffect>
                                     </StatusEffectAction>
@@ -529,7 +528,7 @@
                                 <Failure>
                                     <StatusEffectAction targettag="SanaeTalent_Target">
                                         <StatusEffect target="Character" disabledeltatime="true" >
-                                            <Conditional SanaeTalent_Effect_Flag="gt 0"/>
+                                            <Conditional Manifest_God_Of_Miracles="lte 0"/>
                                             <Affliction identifier="SanaeTalent_Effect05" strength="10"/>
                                         </StatusEffect>
                                     </StatusEffectAction>
@@ -545,7 +544,7 @@
                         <Success>
                             <StatusEffectAction targettag="SanaeTalent_Target">
                                 <StatusEffect target="Character" disabledeltatime="true" >
-                                    <Conditional SanaeTalent_Effect_Flag="gt 0"/>
+                                    <Conditional Manifest_God_Of_Miracles="lte 0"/>
                                     <Affliction identifier="SanaeTalent_Effect06" strength="10"/>
                                     <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false"/>
                                 </StatusEffect>
@@ -555,7 +554,7 @@
                         <Failure>
                             <StatusEffectAction targettag="SanaeTalent_Target">
                                 <StatusEffect target="Character" disabledeltatime="true" >
-                                    <Conditional SanaeTalent_Effect_Flag="gt 0"/>
+                                    <Conditional Manifest_God_Of_Miracles="lte 0"/>
                                     <Affliction identifier="SanaeTalent_Effect07" strength="10"/>
                                 </StatusEffect>
                             </StatusEffectAction>
@@ -563,9 +562,10 @@
                     </RNGAction>
                 </Failure>
             </RNGAction>
+            <ClearTagAction tag="SanaeTalent_Target" />
         </ScriptedEvent>
 
-        <!--早苗的巡回开始降下奇迹概率事件-支队自己生效-->
+        <!--早苗的巡回开始降下奇迹概率事件-对自己生效-->
         <!--概率：15*2,14*5-->
         <ScriptedEvent identifier="SanaeTalent_Effect_Self" commonness="0">
             <RNGAction chance="0.7">
@@ -770,7 +770,6 @@
                     </RNGAction>
                 </Failure>
             </RNGAction>
-            <ClearTagAction tag="Open_player" />
         </ScriptedEvent>
 
         <!--在船上刷新新年礼物-->
@@ -1017,7 +1016,7 @@
                         <Option text="赠送">
                             <CheckDataAction identifier="Player_Donated" condition="eq true" >
                                 <Success>
-                                    <ConversationAction text="“我还没什么需要的……”" eventsprite="Touhou_Supply_Station02"/>
+                                    <ConversationAction text="“我还没什么需要的……”" targettag="triggerer_player" eventsprite="Touhou_Supply_Station02"/>
                                     <GoTo name="waitfortalk_Aunn" />
                                 </Success>
                                 <Failure>

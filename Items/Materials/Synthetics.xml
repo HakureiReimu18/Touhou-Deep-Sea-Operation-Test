@@ -111,7 +111,6 @@
             <RequiredItem identifier="Reiki_Dust" />
             <RequiredItem identifier="Plant_Essential_Oil" />
             <RequiredItem identifier="aluminium" />
-            <RequiredItem identifier="Spiritual_Water" mincondition="0.0099" usecondition="true"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Materials/Reiki_Stone.png" sourcerect="0,0,80,100" />
         <Sprite texture="%ModDir%/Images/Materials/Reiki_Stone.png" depth="0.4" sourcerect="0,0,80,100" />
@@ -145,8 +144,11 @@
         <Sprite texture="%ModDir%/Images/Materials/Spiritual_Water.png" depth="0.4" sourcerect="0,0,100,139" scale="0.4"/>
         <Body width="80" height="80" density="10.1" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="Always" target="This" Condition="1.5">
-                <Conditional InWater="true" />
+            <StatusEffect type="InWater" target="This" Condition="1.5" >
+                <Conditional HasTag="neq Touhou_Waterwheel_Gun" TargetContainer="true" />
+            </StatusEffect>
+            <StatusEffect type="OnContained" target="This" Condition="1.5" Interval="5.0" >
+                <Conditional HasTag="eq Touhou_Waterwheel_Gun" TargetContainer="true" />
             </StatusEffect>
         </Holdable>
 

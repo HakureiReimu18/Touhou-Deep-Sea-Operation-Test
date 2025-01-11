@@ -6,16 +6,31 @@
         <AbilityGroupInterval maxtriggercount="1" Interval="10" >
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Manifest_God_Of_Miracles" />
-                <AbilityConditionHasAffliction afflictionidentifier="SakuyaTalent_Spawn_Effect" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffectsToRandomAlly allowself="true" maxdistance="4000" >
+                <!--这个效果服务器上不生效，重新写个新的-->
+<!--                <CharacterAbilityApplyStatusEffectsToRandomAlly allowself="true" maxdistance="4000" >
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
                             <Affliction identifier="SanaeTalent_Effect_Flag" amount="10" />
                         </StatusEffect>
                     </StatusEffects>
-                </CharacterAbilityApplyStatusEffectsToRandomAlly>
+                </CharacterAbilityApplyStatusEffectsToRandomAlly>-->
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" delay="1.0" disabledeltatime="true" >
+                            <TriggerEvent identifier="SanaeTalent_Effect" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval maxtriggercount="1" Interval="15" >
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Manifest_God_Of_Miracles" />
+                <AbilityConditionHasLevel minlevel="10" />
+            </Conditions>
+            <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" delay="1.0" disabledeltatime="true" >
@@ -43,7 +58,23 @@
             </Abilities>
         </AbilityGroupEffect>
 
-        <AbilityGroupInterval maxtriggercount="2" Interval="70.0" >
+        <AbilityGroupInterval maxtriggercount="1" Interval="4.9" >
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Manifest_God_Of_Miracles" />
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Water_Heart" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects applytoself="true" >
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" >
+                            <TriggerEvent identifier="SanaeTalent_Effect_Self" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval maxtriggercount="2" Interval="65.0" >
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Manifest_God_Of_Miracles" />
                 <AbilityConditionHasAffliction afflictionidentifier="SanaeTalent_Gain_Skill_Point_CD" />

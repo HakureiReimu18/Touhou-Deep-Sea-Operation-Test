@@ -40,6 +40,7 @@
   <Item file="%ModDir%/Items/Clothes/Star_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Sakuya_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Sanae_gear.xml" />
+  <Item file="%ModDir%/Items/Clothes/Reisen_gear.xml" />
   <!--tools-->
   <Item file="%ModDir%/Items/Tools/Tools.xml" />
   <Item file="%ModDir%/Items/Tools/MusicPlayer.xml" />
@@ -86,6 +87,7 @@
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/SunnyWings.xml"/>
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/LunaWings.xml"/>
   <Other file="%ModDir%/Characters/HumanTouhou_Tail/StarWings.xml"/>
+  <Other file="%ModDir%/Characters/HumanTouhou_Tail/ReisenEar.xml"/>
   <Character file="%ModDir%/Characters/Maoyu/Maoyu.xml" />
   <Character file="%ModDir%/Characters/Little_Ghost/Little_Ghost.xml"/>
   <Character file="%ModDir%/Characters/Little_photosphere/Little_photosphere.xml"/>
@@ -143,6 +145,7 @@
   <Talents file="%ModDir%/Talents/TalentsStar.xml" />
   <Talents file="%ModDir%/Talents/TalentsSakuya.xml" />
   <Talents file="%ModDir%/Talents/TalentsSanae.xml" />
+  <Talents file="%ModDir%/Talents/TalentsReisen.xml" />
   <Talents file="%ModDir%/Talents/TalentsMagician.xml" />
   <Talents file="%ModDir%/Talents/TalentsYousei.xml" />
   <Talents file="%ModDir%/Talents/TalentsYokai.xml" />

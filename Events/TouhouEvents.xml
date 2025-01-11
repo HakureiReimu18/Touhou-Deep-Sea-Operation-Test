@@ -1399,6 +1399,7 @@
                               <ConversationAction text="“这次的情况可能很危险，我为你们准备了一些药物，一定要平安归来。”" targettag="triggerer_player" />
                               <SpawnAction itemidentifier="Europa_Infusion" targetinventory="triggerer_player" amount="4" />
                               <SpawnAction itemidentifier="antibleeding3" targetinventory="triggerer_player" />
+                              <SpawnAction itemidentifier="Touhou_Missions_Collection_Blue_UFO" targetinventory="triggerer_player" />
                               <ClearTagAction tag="triggerer_player" />
                               <MissionAction missiontag="FindHoujuuNue" />
                               <SetDataAction identifier="Touhou_Akyuu_UFO_Mission03_Agree" value="true"/>
@@ -1553,6 +1554,7 @@
                                       <ConversationAction targettag="triggerer_player" text="琪露诺入组" eventsprite="Cirno_Join"/>
                                       <NPCChangeTeamAction npctag="Yousei_Cirno" teamid="Team1" addtocrew="true" />
                                       <SetDataAction identifier="Cirno_Join_complete" value="true" />
+                                      <ClearTagAction tag="triggerer_player" />
                                     </Option>
                                   </ConversationAction>
                                 </Option>
@@ -1573,7 +1575,7 @@
   </EventPrefabs>
 
   <EventSet identifier="Touhou_Mission" leveltype="outpost" locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion,tsm_city,tsm_military,tsm_mine" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="true" campaign="true" additive="true" selectalways="true" ignorecooldown="true" commonness="120" eventcount="2">
-    <EventSet identifier="Touhou_All_Join_Events" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="2">
+    <EventSet identifier="Touhou_All_Join_Events" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="3">
       <EventSet identifier="Touhou_Join_Events" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1">
         <ScriptedEvent identifier="aya_join" commonness="200" triggercooldown="false" />
         <ScriptedEvent identifier="Aya_Gift_List_Event" commonness="0" triggercooldown="false" />
@@ -1589,7 +1591,7 @@
         <ScriptedEvent identifier="youmujoin" commonness="200" triggercooldown="false" />
       </EventSet>
     </EventSet>
-    <EventSet identifier="Touhou_Mission_Events" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true">
+    <EventSet identifier="Touhou_Mission_Events" minleveldifficulty="0" maxleveldifficulty="100" allowatstart="true" chooserandom="true" onceperoutpost="true" eventcount="1">
       <ScriptedEvent identifier="Touhou_Akyuu_Mission" commonness="300" triggercooldown="false" />
       <ScriptedEvent identifier="Akyuu_Join" commonness="300" triggercooldown="false" />
     </EventSet>

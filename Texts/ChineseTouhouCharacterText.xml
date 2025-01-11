@@ -51,7 +51,7 @@
     <entityname.marisahat>‖color:255,255,0,255‖魔理沙帽子‖color:end‖</entityname.marisahat>
     <entitydescription.marisahat>‖color:255,255,0,255‖普通的魔法使的帽子‖color:end‖</entitydescription.marisahat>
     <talentname.Casket_Of_Star>普通的魔法使</talentname.Casket_Of_Star>
-    <talentdescription.Casket_Of_Star>当你身着‖color:gui.orange‖魔理沙装束+‖end‖时，从‖color:gui.orange‖物理伤害、烧伤‖end‖中恢复得更快、抗性也更高：
+    <talentdescription.Casket_Of_Star>当你身着‖color:gui.orange‖魔理沙装束+‖end‖时，从‖color:gui.yellow‖物理伤害、烧伤‖end‖中恢复得更快、抗性也更高：
         \n造成的伤害提高‖color:gui.green‖10%‖end‖。
         \n远程武器的攻击速度提高‖color:gui.green‖5%‖end‖。
         \n每次打开沉船容器时有15%概率找到‖color:gui.green‖《魔法书》‖end‖。
@@ -87,16 +87,22 @@
     <entityname.Reimu_Plus>‖color:255,81,75,255‖灵梦装束+‖color:end‖</entityname.Reimu_Plus>
     <entitydescription.Reimu_Plus>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
         她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Plus>
+    <entityname.Reimu_Eclipse_Anniversary>‖color:255,81,75,255‖灵梦装束（周年庆）‖color:end‖</entityname.Reimu_Eclipse_Anniversary>
+    <entitydescription.Reimu_Eclipse_Anniversary>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
+        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Eclipse_Anniversary>
+    <entityname.Reimu_Eclipse_Anniversary_Plus>‖color:255,81,75,255‖灵梦装束+（周年庆）‖color:end‖</entityname.Reimu_Eclipse_Anniversary_Plus>
+    <entitydescription.Reimu_Eclipse_Anniversary_Plus>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
+        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Eclipse_Anniversary_Plus>
     <entityname.Reimu_Decalmask>‖color:255,81,75,255‖灵梦贴纸面具‖color:end‖</entityname.Reimu_Decalmask>
     <entitydescription.Reimu_Decalmask>‖color:255,81,75,255‖戴在脸上意外的不错呢。‖color:end‖</entitydescription.Reimu_Decalmask>
     <talentname.Innocent_Treasures>童祭</talentname.Innocent_Treasures>
     <talentdescription.Innocent_Treasures>当你身着‖color:gui.orange‖灵梦装束+‖end‖时，
-        \n增加‖color:gui.green‖50%‖end‖游泳速度。
-        \n增加‖color:gui.green‖15%‖end‖行走速度。
-        \n增加‖color:gui.green‖10%‖end‖远程攻击速度。
-        \n增加‖color:gui.green‖50%‖end‖技能获取速度。
-        \n没有专属武器的加成效果。
-        若巡回中有人死亡，则这个巡回内自己不会因伤痛死亡。</talentdescription.Innocent_Treasures>
+      \n增加‖color:gui.green‖60%‖end‖‖color:gui.orange‖游泳速度‖end‖
+        增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖行走速度‖end‖
+        增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖远程攻击速度‖end‖
+        对非人类生物造成的伤害提高‖color:gui.green‖15%‖end‖，穿甲提高‖color:gui.green‖5%‖end‖
+        攻击造成的‖color:gui.yellow‖撕裂伤/枪伤/深层组织损伤/钝器伤/咬伤/器官损伤/内脏损伤‖end‖都有‖color:gui.green‖15%‖end‖概率转化为等额‖color:gui.yellow‖灵压‖end‖
+        \n‖color:gui.red‖没有专属武器的加成效果‖end‖</talentdescription.Innocent_Treasures>
     <afflictionname.RedAndWhite>永远的巫女</afflictionname.RedAndWhite>
     <afflictiondescription.RedAndWhite>博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女</afflictiondescription.RedAndWhite>
     <afflictionname.Reimu_Weapons>博丽神社的巫女小姐</afflictionname.Reimu_Weapons>
@@ -122,9 +128,9 @@
         增加‖color:gui.green‖15%‖end‖使用医疗物品的效果。
         增加‖color:gui.green‖25%‖end‖自己使用加工台和解构仪的速度。
         \n减少‖color:gui.green‖25%‖end‖移动速度和‖color:gui.green‖35%‖end‖最大生命值。
-        近战攻击伤害减少‖color:gui.green‖25%‖end‖。
-        远程攻击伤害减少‖color:gui.green‖15%‖end‖。
-        远程攻击速度减少‖color:gui.green‖20%‖end‖。</talentdescription.Savant>
+        ‖color:gui.orange‖近战攻击伤害‖end‖减少‖color:gui.red‖25%‖end‖
+        ‖color:gui.orange‖远程攻击伤害‖end‖减少‖color:gui.red‖15%‖end‖
+        ‖color:gui.orange‖远程攻击速度‖end‖减少‖color:gui.red‖20%‖end‖</talentdescription.Savant>
 
     <!--Mokou-->
     <entityname.Mokou_gear>‖color:255,72,36,255‖妹红装束‖color:end‖</entityname.Mokou_gear>
@@ -518,7 +524,8 @@
     <entitydescription.Touhou_Sanae_Frog_Hairband>为了融入幻想乡的生活，早苗很快变得不被常识所束缚</entitydescription.Touhou_Sanae_Frog_Hairband>
     <talentname.SanaeTalent>被祭拜的风之人</talentname.SanaeTalent>
     <talentdescription.SanaeTalent>当你身着早苗装束+时，
-        每个巡回开始时会给随机的船员降下一种奇迹
+        每个巡回开始时会给除自己外的随机的船员降下一种奇迹，当角色等级超过‖color:gui.green‖10‖end‖后，可以触发两次
+        佩戴护符时，也会给予自身随机一种奇迹
         一巡回两次，当船员获得至少一点技能点时，有‖color:gui.green‖25%‖end‖概率获得随机一种奇迹，这个效果无论是否触发成功都有有‖color:gui.green‖1‖end‖分钟冷却
         当你拥有任意一种奇迹时，受到的伤害下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖最大生命值‖end‖提高‖color:gui.green‖10%‖end‖
         对越弱小的敌人造成的额外伤害，随你的等级上升，这个伤害也会上升，对弱小的判定阈值也会上升，‖color:gui.green‖20‖end‖级时达到最大值，最高‖color:gui.green‖20%‖end‖
@@ -537,12 +544,37 @@
     <afflictionname.Sanae_Weapons>风与湖的通神者</afflictionname.Sanae_Weapons>
     <afflictiondescription.Sanae_Weapons>早苗是八坂神奈子的巫女，她用秘术引发的呼风唤雨的奇迹其实是由作为风神的神奈子引发的。早苗同样祭祀着洩矢诹访子，而且是诹访子的遥远的子孙。</afflictiondescription.Sanae_Weapons>
 
+    <!--Reisen-->
+    <entityname.Reisen_gear>‖color:220,25,200,255‖铃仙装束‖end‖</entityname.Reisen_gear>
+    <entitydescription.Reisen_gear>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。</entitydescription.Reisen_gear>
+    <entityname.Reisen_Plus>‖color:220,25,200,255‖铃仙装束+‖end‖</entityname.Reisen_Plus>
+    <entitydescription.Reisen_Plus>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。</entitydescription.Reisen_Plus>
+    <entityname.Reisen_Outfit>‖color:220,25,200,255‖铃仙装束（黑外套）‖end‖</entityname.Reisen_Outfit>
+    <entitydescription.Reisen_Outfit>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。</entitydescription.Reisen_Outfit>
+    <entityname.Reisen_Outfit_Plus>‖color:220,25,200,255‖铃仙装束+（黑外套）‖end‖</entityname.Reisen_Outfit_Plus>
+    <entitydescription.Reisen_Outfit_Plus>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。</entitydescription.Reisen_Outfit_Plus>
+    <talentname.ReisenTalent>地上的月兔</talentname.ReisenTalent>
+    <talentdescription.ReisenTalent>当你身着铃仙装束+时，
+        略微提高对‖color:gui.yellow‖精神病‖end‖的抗性
+        对敌人的远程弹幕额外附加‖color:gui.yellow‖精神病‖end‖效果
+        受到带有‖color:gui.yellow‖精神病‖end‖敌人攻击的伤害下降‖color:gui.green‖20%‖end‖
+        生命值低于‖color:gui.green‖50%‖end‖后，更难被敌人察觉
+        可以主动触发‖color:gui.yellow‖狂气‖end‖效果，狂气生效期间：受到的伤害增加‖color:gui.green‖20%‖end‖，缓慢将自身的‖color:gui.yellow‖精神病‖end‖转化为‖color:gui.yellow‖狂气‖end‖，
+        ‖color:gui.orange‖技能水平‖end‖增加‖color:gui.green‖10%‖end‖，远程攻击的散布减少‖color:gui.green‖30%‖end‖，对带有‖color:gui.yellow‖精神病‖end‖的敌人造成的伤害提高‖color:gui.green‖15%‖end‖
+    </talentdescription.ReisenTalent>
+    <afflictionname.Lunatic_Moon_Rabbit>狂气的月兔</afflictionname.Lunatic_Moon_Rabbit>
+    <afflictiondescription.Lunatic_Moon_Rabbit>她有着一头浅紫色及踝长发，头上有一对皱巴巴的、从中间开始弯折的长长的兔耳朵，看起来像是人造品，但其实是真的兔耳.</afflictiondescription.Lunatic_Moon_Rabbit>
+    <afflictionname.Reisen_Weapons>狂气的赤瞳</afflictionname.Reisen_Weapons>
+    <afflictiondescription.Reisen_Weapons>现在她是蓬莱山辉夜的宠物，和其他兔子一样，被辉夜称作因幡。</afflictiondescription.Reisen_Weapons>
+    <afflictionname.Touhou_Lunatic_Reisen_Effect>狂气</afflictionname.Touhou_Lunatic_Reisen_Effect>
+    <afflictiondescription.Touhou_Lunatic_Reisen_Effect>聚集于眼瞳中的巨量疯狂正在释放</afflictiondescription.Touhou_Lunatic_Reisen_Effect>
+
 
     <!--出血效应-->
     <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>记忆材料</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
     <entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>在炼金桌内用炼金术材料可以进行精炼操作。如果能找到相关手册，效率应该会大大提高</entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
     <entityname.MRE_Material>出血物质（‖color:gui.yellow‖[type]‖end‖）</entityname.MRE_Material>
-    <entitydescription.MRE_Material>每10%的进度为一阶段，不同阶段需要使用不同材料进行精炼。进度满后，对相应角色使用可以解锁额外天赋</entitydescription.MRE_Material>
+    <entitydescription.MRE_Material>每‖color:gui.green‖10%‖end‖的进度为一阶段，不同阶段需要使用不同材料进行精炼。进度满后，对相应角色使用可以解锁额外天赋。‖color:gui.yellow‖每个角色只能使用一次‖end‖</entitydescription.MRE_Material>
     <Character.MRE_Material_Reimu>灵梦的回忆</Character.MRE_Material_Reimu>
     <Character.MRE_Material_Remilia>蕾米莉亚的回忆</Character.MRE_Material_Remilia>
     <Character.MRE_Material_Marisa>魔理沙的回忆</Character.MRE_Material_Marisa>
@@ -567,6 +599,7 @@
     <Character.MRE_Material_Star>斯塔的回忆</Character.MRE_Material_Star>
     <Character.MRE_Material_Sakuya>咲夜的回忆</Character.MRE_Material_Sakuya>
     <Character.MRE_Material_Sanae>早苗的回忆</Character.MRE_Material_Sanae>
+    <Character.MRE_Material_Reisen>铃仙的回忆</Character.MRE_Material_Reisen>
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有10%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
@@ -628,4 +661,6 @@
         攻击月之时计高于50%的目标时，攻击造成的伤害增加15%。</talentdescription.MRE_Sakuya>
     <talentname.MRE_Sanae>出血效应-东风谷早苗</talentname.MRE_Sanae>
     <talentdescription.MRE_Sanae>仅对早苗装束+生效。拥有奇迹时，对非人类敌人造成的伤害提高25%。否则，增加30%最大生命值，受到的伤害减少15%</talentdescription.MRE_Sanae>
+    <talentname.MRE_Reisen>出血效应-铃仙·优昙华院·因幡</talentname.MRE_Reisen>
+    <talentdescription.MRE_Reisen>仅对铃仙装束+生效。远程武器瞄准时的移动速度提高10%，散布减少25%，受到的伤害减少20%，攻击造成的枪伤增加15%，且额外附加精神病</talentdescription.MRE_Reisen>
 </infotexts>

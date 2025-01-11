@@ -122,10 +122,6 @@
                 <Affliction identifier="Manifest_God_Of_Miracles" strength="50" />
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="Character" Interval="10.0" >
-                <Affliction identifier="SakuyaTalent_Spawn_Effect" strength="10" />
-            </StatusEffect>
-
             <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />

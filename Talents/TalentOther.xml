@@ -1468,4 +1468,59 @@
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
+
+    <!--出血效应-铃仙·优昙华院·因幡-->
+    <Talent identifier="MRE_Reisen">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.MRE_Reisen"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Lunatic_Moon_Rabbit" />
+                <AbilityConditionIsAiming weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="RangedSpreadReduction" value="0.25"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Lunatic_Moon_Rabbit" />
+                <AbilityConditionIsAiming weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="scarletdevil" />
+                <AbilityConditionServerRandom randomchance="0.5" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="gunshotwound" addedmultiplier="0.15" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttackResult">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Lunatic_Moon_Rabbit" />
+                <AbilityConditionAttackResult targettypes="Enemy" afflictions="gunshotwound"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="psychosis" strength="5.0" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
 </Talents>

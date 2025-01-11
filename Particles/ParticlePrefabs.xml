@@ -288,8 +288,8 @@
   </Celestial_Decay_Circle>
 
   <Lights_Fire
-          LifeTime="0.4"
-          LifeTimeMin="0.4"
+          LifeTime="2.0"
+          LifeTimeMin="2.0"
           StartDelayMin="0"
           StartDelayMax="0"
           AngularVelocityMin="0"

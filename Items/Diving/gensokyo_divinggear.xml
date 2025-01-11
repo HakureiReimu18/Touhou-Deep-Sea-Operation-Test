@@ -234,16 +234,16 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Gensokyo_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 40" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 60" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                 </Containable>
@@ -266,7 +266,6 @@
         </Price>
         <Deconstruct time="15">
             <Item identifier="Power_Point" amount="3"/>
-            <Item identifier="Score_Point" amount="3"/>
             <Item identifier="Magic_Material" amount="3"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="30">
@@ -487,16 +486,16 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Boudary_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 40" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 60" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                 </Containable>
@@ -727,16 +726,16 @@
                         <Conditional Hastag="eq Touhou_Black_Hooked_Jade"/>
                         <Affliction identifier="Ether_Divinggear_Effect09" strength="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 0" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.01">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.01">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 20" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 40" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnWearing" target="Contained" Interval="1.0" disabledeltatime="true" condition="-0.02">
+                    <StatusEffect type="OnWearing" target="Contained" Interval="2.0" disabledeltatime="true" condition="-0.02">
                         <Conditional Touhou_Hooked_Jade_Condition_Down_Effect="gt 60" TargetContainer="true" TargetGrandparent="true"/>
                     </StatusEffect>
                 </Containable>
@@ -813,15 +812,15 @@
             <StatusEffect type="OnWearing" target="Character" >
                 <TriggerAnimation Type="Walk" filename="HumanWalk" priority="10" ExpectedSpecies="Human" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="Character" comparison="And">
+            <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 120" />
                 <Conditional Touhou_Magic_Boost="gte 149" />
-                <Affliction identifier="Touhou_Magic_Boost" amount="2" />
+                <Affliction identifier="Touhou_Magic_Boost" amount="6" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="Character" comparison="And">
+            <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 60" />
                 <Conditional Touhou_Magic_Boost="lte 100" />
-                <Affliction identifier="Touhou_Magic_Boost" amount="2" />
+                <Affliction identifier="Touhou_Magic_Boost" amount="6" />
             </StatusEffect>
             <StatValue stattype="FlowResistance" value="0.5" />
             <!--自动填满氧气 -->
@@ -989,15 +988,15 @@
             <StatusEffect type="OnWearing" target="Character" >
                 <TriggerAnimation Type="Walk" filename="HumanWalk" priority="10" ExpectedSpecies="Human" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="Character" comparison="And">
+            <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 120" />
                 <Conditional Touhou_Magic_Boost="gte 149" />
-                <Affliction identifier="Touhou_Magic_Boost" amount="2" />
+                <Affliction identifier="Touhou_Magic_Boost" amount="6" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="Character" comparison="And">
+            <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 60" />
                 <Conditional Touhou_Magic_Boost="lte 100" />
-                <Affliction identifier="Touhou_Magic_Boost" amount="2" />
+                <Affliction identifier="Touhou_Magic_Boost" amount="6" />
             </StatusEffect>
             <StatValue stattype="FlowResistance" value="0.5" />
             <!--自动填满氧气 -->

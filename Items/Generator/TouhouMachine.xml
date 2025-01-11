@@ -185,7 +185,7 @@
         allowedlinks="Touhou_Small_Spell_Card_Cannon_Loader">
     <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets_Bed.png" depth="0.01" sourcerect="444,3,222,151" canflipy="false" />
     <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
-    <SwappableItem price="10000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+    <SwappableItem price="12000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
       <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389" />
       <SwapConnectedItem tag="periscope" swapto="periscope" />
       <SwapConnectedItem tag="turretammosource" swapto="Touhou_Small_Spell_Card_Cannon_Loader" />
@@ -277,7 +277,7 @@
         allowedlinks="Touhou_Rapidly_Spell_Card_Cannon_Loader">
     <Sprite texture="Content/Items/Weapons/Turrets.png" depth="0.01" sourcerect="772,8,248,248" canflipy="false" />
     <MinimapIcon name="Command_Weapons_Coilgun" texture="Content/UI/CommandUIAtlas.png" sourcerect="768,0,128,128" />
-    <SwappableItem price="10000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
+    <SwappableItem price="12000" replacementonuninstall="turrethardpoint" origin="128,215" swapidentifier="basicturret">
       <SchematicSprite texture="Content/UI/WeaponUI.png" sourcerect="256,0,256,389" />
       <SwapConnectedItem tag="periscope" swapto="periscope" />
       <SwapConnectedItem tag="turretammosource" swapto="Touhou_Rapidly_Spell_Card_Cannon_Loader" />
@@ -426,13 +426,13 @@
             linkable="true"
             barrelpos="180,220"
             rotationlimits="0,360"
-            powerconsumption="10000.0"
+            powerconsumption="20000.0"
             showchargeindicator="true"
             showprojectileindicator="true"
             recoildistance="120"
-            reload="1.75"
+            reload="1.5"
             ShotsPerBurst="3"
-            DelayBetweenBursts="4"
+            DelayBetweenBursts="3"
             DamageMultiplier="0.7"
             springstiffnesslowskill="2"
             springstiffnesshighskill="50"
@@ -481,13 +481,13 @@
             linkable="true"
             barrelpos="280,220"
             rotationlimits="0,360"
-            powerconsumption="10000.0"
+            powerconsumption="20000.0"
             showchargeindicator="true"
             showprojectileindicator="true"
             recoildistance="120"
-            reload="1.75"
+            reload="1.5"
             ShotsPerBurst="3"
-            DelayBetweenBursts="4"
+            DelayBetweenBursts="3"
             DamageMultiplier="0.7"
             springstiffnesslowskill="2"
             springstiffnesshighskill="50"

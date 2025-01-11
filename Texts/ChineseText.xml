@@ -96,7 +96,7 @@
   <entityname.Hakkero>‖color:255,255,0,255‖迷你八卦炉‖color:end‖</entityname.Hakkero>
   <entitydescription.Hakkero>这是一个外观呈八棱柱形，正面绘有八卦图案，中间有洞口的迷你八卦炉，动力来源不明。使用‖color:gui.yellow‖星星弹幕、星屑幻想或者星星罐‖end‖</entitydescription.Hakkero>
   <entityname.Star_Danmu>星星弹幕</entityname.Star_Danmu>
-  <entitydescription.StarDanmu>迷你八卦炉的重要配件，放入后激活八卦炉（可以和电池一样充电）</entitydescription.StarDanmu>
+  <entitydescription.Star_Danmu>迷你八卦炉的重要配件，放入后激活八卦炉（可以和电池一样充电）</entitydescription.Star_Danmu>
   <entityname.Stardust_Reverie>星屑幻想</entityname.Stardust_Reverie>
   <entitydescription.Stardust_Reverie>只从外表上看，相比常规的星星弹幕，似乎只是颜色变了……‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Stardust_Reverie>
   <entityname.Fake_Hakkero>迷你八卦炉（仿制）</entityname.Fake_Hakkero>
@@ -650,6 +650,18 @@
   <entitydescription.Touhou_New_Year_Gift_Box>新年快乐</entitydescription.Touhou_New_Year_Gift_Box>
   <entityname.Touhou_Quality_Upper_Machine>品质升级器</entityname.Touhou_Quality_Upper_Machine>
   <entitydescription.Touhou_Quality_Upper_Machine>河童重工组实验性生产的工具，可以提升魔法武器的品质，最高到大师品质为止</entitydescription.Touhou_Quality_Upper_Machine>
+  <entityname.Touhou_Alice_Magic_Book>魔法之国的魔导书</entityname.Touhou_Alice_Magic_Book>
+  <entitydescription.Touhou_Alice_Magic_Book>爱丽丝曾经的魔导书。消耗至少10点人偶能量可以召唤人偶。</entitydescription.Touhou_Alice_Magic_Book>
+  <entityname.Touhou_Lunar_Energy_Assault_Rifle>‖color:220,100,220,255‖月能步枪‖color:end‖</entityname.Touhou_Lunar_Energy_Assault_Rifle>
+  <entitydescription.Touhou_Lunar_Energy_Assault_Rifle>铃仙在解析月球遗物后还原出来的一把全自动武器，能使用多种弹药的同时，威力也不容小觑。使用‖color:gui.yellow‖月能弹匣‖end‖</entitydescription.Touhou_Lunar_Energy_Assault_Rifle>
+  <entityname.Touhou_Lunar_Energy_Magazine>‖color:220,100,220,255‖月能弹匣‖color:end‖</entityname.Touhou_Lunar_Energy_Magazine>
+  <entitydescription.Touhou_Lunar_Energy_Magazine>用魔力拘束的一块高能弹匣，专为月能步枪使用</entitydescription.Touhou_Lunar_Energy_Magazine>
+  <entityname.Touhou_Nue_Danmaku_Chimera>鵺符「弹幕奇美拉」</entityname.Touhou_Nue_Danmaku_Chimera>
+  <entitydescription.Touhou_Nue_Danmaku_Chimera>被这个弹幕击中的话，中弹者会因为变得原形不明而死。不用喝酒就能迷糊到忘了自己是谁很幸运吧？（作为加农炮弹药使用）</entitydescription.Touhou_Nue_Danmaku_Chimera>
+  <entityname.Touhou_Waterwheel_Gun>水轮枪</entityname.Touhou_Waterwheel_Gun>
+  <entitydescription.Touhou_Waterwheel_Gun>阿求委托工程师为自己制造的一把简单的水枪，较高的水压使其能对陆地生物产生不小的威胁，因为灵水难以融入木卫二的特性，使其在水下的效力仍然足够高。使用时需要‖color:gui.yellow‖水轮和灵水‖end‖</entitydescription.Touhou_Waterwheel_Gun>
+  <entityname.Touhou_Waterwheel_Gun_Magazine>水轮</entityname.Touhou_Waterwheel_Gun_Magazine>
+  <entitydescription.Touhou_Waterwheel_Gun_Magazine>水轮枪自带的运作水轮，没有它，水轮枪就无法正常运作</entitydescription.Touhou_Waterwheel_Gun_Magazine>
 
 
   <!--凭依效果-->
@@ -698,6 +710,8 @@
   <talentname.Hyouibana_Sakuya>凭依咲夜</talentname.Hyouibana_Sakuya>
   <talentdescription.Hyouibana_Sakuya>你也免受月神之钟效果的影响，飞刀的伤害增加15%。</talentdescription.Hyouibana_Sakuya>
   <talentname.Hyouibana_Sanae>凭依早苗</talentname.Hyouibana_Sanae>
-  <talentdescription.Hyouibana_Sanae>当你拥有任意一种奇迹时，受到的伤害下降10%</talentdescription.Hyouibana_Sanae>
+  <talentdescription.Hyouibana_Sanae>当你拥有任意一种奇迹时，受到的伤害下降10%，否则最大生命值增加10%</talentdescription.Hyouibana_Sanae>
+  <talentname.Hyouibana_Reisen>凭依铃仙</talentname.Hyouibana_Reisen>
+  <talentdescription.Hyouibana_Reisen>略微提高对精神病的抗性，受到带有精神病敌人攻击的伤害下降10%</talentdescription.Hyouibana_Reisen>
 
 </infotexts>
