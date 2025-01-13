@@ -16,13 +16,13 @@
     <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Character" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough" AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="4000" DamageRange="4000" MinRange="0" Duration="0.75" CoolDown="2.5" SecondaryCoolDown="0" CoolDownRandomFactor="0" FullSpeedAfterAttack="False" StructureDamage="0" CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False" RequiredAngle="1" RequiredAngleToShoot="0" AimRotationTorque="180" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False" ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1" SeverLimbsProbability="0" Priority="0" Blink="False">
       <StatusEffect type="OnFailure" target="This">
         <Conditional HealthPercentage="gt 50" />
-        <SpawnItem identifier="Touhou_Lnuar_Bolt" spawnposition="This" count="18" aimspread="360" rotationtype="Limb" rotation="0" />
+        <SpawnItem identifier="Touhou_Lnuar_Bolt" spawnposition="This" count="12" aimspread="360" rotationtype="Limb" rotation="0" />
         <sound file="%ModDir%/Sounds/Monsters/Touhou_Lunar/Touhou_Lunar_Attack.ogg" range="30000" volume="3" dontmuffle="True" />
       </StatusEffect>
       <StatusEffect type="OnFailure" target="This">
         <Conditional HealthPercentage="lte 50" />
         <SpawnItem identifier="Touhou_Rippling_Bolt_Monster" spawnposition="This" count="2" aimspread="20" rotationtype="Limb" rotation="0" />
-        <SpawnItem identifier="Touhou_Lnuar_Bolt" spawnposition="This" count="18" aimspread="360" rotationtype="Limb" rotation="0" />
+        <SpawnItem identifier="Touhou_Lnuar_Bolt" spawnposition="This" count="12" aimspread="360" rotationtype="Limb" rotation="0" />
       </StatusEffect>
     </attack>
   </limb>
@@ -44,7 +44,7 @@
         <sound file="%ModDir%/Sounds/Monsters/Touhou_Lunar/Touhou_Lunar_Attack.ogg" range="30000" volume="3" dontmuffle="True" />
       </StatusEffect>
       <StatusEffect type="OnUse" target="This">
-        <SpawnItem identifier="Touhou_Lnuar_Bolt" spawnposition="This" count="18" aimspread="360" rotationtype="Collider" rotation="0" />
+        <SpawnItem identifier="Touhou_Lnuar_Bolt" spawnposition="This" count="16" aimspread="360" rotationtype="Collider" rotation="0" />
       </StatusEffect>
     </attack>
   </limb>

@@ -213,4 +213,20 @@
     <npctitle.Touhou_ODM04_Enemy_Human_Hard>盗窃者-Hard</npctitle.Touhou_ODM04_Enemy_Human_Hard>
     <npctitle.Touhou_ODM04_Enemy_Human_Normal>盗窃者-Normal</npctitle.Touhou_ODM04_Enemy_Human_Normal>
     <npctitle.Touhou_ODM04_Enemy_Human_Easy>盗窃者-Easy</npctitle.Touhou_ODM04_Enemy_Human_Easy>
+
+
+    <!--书籍文本-->
+    <entityname.bookofchalices1>机密：魔咒爬行者</entityname.bookofchalices1>
+    <threemetamorphoses>
+        项目编号: GE-075\n
+        项目等级: III\n
+        描述: GE-075，俗称“魔咒爬行者”，是木卫二原生生物藻鬃爬行者的灵气污染变种。GE-075表现出一种独特的发光能力，能够发出淡淡的黄光，作用未知。
+        GE-075最显著的特征是其操控和生成魔法能量的能力，它利用这种能力发射带有灵气污染的弹幕，被沾染到的目标会慢慢被灵气污染腐蚀。
+        解剖结果显示，该生物的内脏已失去大部分原爬行者的生理结构，仅外在还在维持藻鬃爬行者的形状，推测是通过攻击同类来传播污染。
+        GE-075长约150厘米，具有类似鳗鱼的分段身体。其头部覆盖着少量发光鳞片，发出微弱的光芒。该生物能够产生一个局部的魔法能量场，使其在水中快速而敏捷地移动。
+        这个能量场还使GE-075能够强化表皮并对抗潜在的威胁。\n
+        第一次发现地点：██████
+        第一次发现时间：██████
+        发现者：███
+    </threemetamorphoses>
 </infotexts>
