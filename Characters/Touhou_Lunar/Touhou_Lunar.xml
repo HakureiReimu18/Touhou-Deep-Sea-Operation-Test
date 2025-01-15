@@ -1,7 +1,7 @@
 ﻿<Character SpeciesName="Touhou_lunar" SpeciesTranslationOverride="" DisplayName="月" Group="Touhou_Monster" Humanoid="False" HasInfo="False" CanInteract="False" Husk="False" UseHuskAppendage="False" NeedsAir="False" NeedsWater="False" UseHumanAI="False" IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="True" Noise="100" Visibility="100" BloodDecal="" BleedParticleAir="" BleedParticleWater="" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10" UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="False" SonarDisruption="0" DistantSonarRange="40000" DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="">
   <ragdolls folder="%ModDir%/Characters/Touhou_lunar/Ragdolls/" />
   <animations folder="%ModDir%/Characters/Touhou_lunar/Animations/" />
-  <health Vitality="12000" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.02" ConstantHealthRegeneration="0.02" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="" />
+  <health Vitality="10000" DoesBleed="False" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0" BurnReduction="0.02" ConstantHealthRegeneration="0.02" HealthRegenerationWhenEating="0" StunImmunity="True" PoisonImmunity="True" PoisonVulnerability="1" EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="" />
   <inventory Slots="Any,Any,Any,Any,Any,Any" AccessibleWhenAlive="False" Commonness="0.6">
     <item amount="3" Identifier="Touhou_Precious_Metal" />
     <item amount="6" Identifier="Score_Point" />

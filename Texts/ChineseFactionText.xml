@@ -216,8 +216,8 @@
 
 
     <!--书籍文本-->
-    <entityname.bookofchalices1>机密：魔咒爬行者</entityname.bookofchalices1>
-    <threemetamorphoses>
+    <entityname.Touhou_Classified_Reiki_Erode_Crawler>机密：魔咒爬行者</entityname.Touhou_Classified_Reiki_Erode_Crawler>
+    <Touhou_Classified_Reiki_Erode_Crawler_Msg>
         项目编号: GE-075\n
         项目等级: III\n
         描述: GE-075，俗称“魔咒爬行者”，是木卫二原生生物藻鬃爬行者的灵气污染变种。GE-075表现出一种独特的发光能力，能够发出淡淡的黄光，作用未知。
@@ -228,5 +228,5 @@
         第一次发现地点：██████
         第一次发现时间：██████
         发现者：███
-    </threemetamorphoses>
+    </Touhou_Classified_Reiki_Erode_Crawler_Msg>
 </infotexts>
