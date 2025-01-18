@@ -174,6 +174,9 @@
     <uilabel.Doll_ShangHai>上海人偶</uilabel.Doll_ShangHai>
     <uilabel.Doll_PengLai>蓬莱人偶</uilabel.Doll_PengLai>
     <Text.Reisen_Plus>月之狂气</Text.Reisen_Plus>
+    <Text.Sonar_Open>声呐显示开启</Text.Sonar_Open>
+    <Text.Sonar_Close>声呐显示关闭</Text.Sonar_Close>
+    <Text.Ignite>点燃</Text.Ignite>
     <ItemMsg_Touhou_Waterwheel_Gun_Magazine>需要水轮</ItemMsg_Touhou_Waterwheel_Gun_Magazine>
     <ItemMsg_Spiritual_Water>需要灵水</ItemMsg_Spiritual_Water>
     <ItemMsg_Spiritual_Water_Or_Batterycell>需要电池或灵水</ItemMsg_Spiritual_Water_Or_Batterycell>
@@ -203,6 +206,8 @@
     <entitydescription.Touhou_Lunarquake_Fake>用便宜魔法材料模仿的月震，完全没有原武器任何特色</entitydescription.Touhou_Lunarquake_Fake>
     <entityname.Touhou_Lunar_Center_Fake>仿制月震中心</entityname.Touhou_Lunar_Center_Fake>
     <entitydescription.Touhou_Lunar_Center_Fake>粗糙的模仿带来的是更少的容量</entitydescription.Touhou_Lunar_Center_Fake>
+    <entityname.Touhou_Pollution_Shotgun>污染霰弹枪</entityname.Touhou_Pollution_Shotgun>
+    <entitydescription.Touhou_Pollution_Shotgun>一把被不洁的魔法侵染的霰弹枪，污染魔法使以外的生物都无法正常使用，也许可以想办法净化掉这些污秽</entitydescription.Touhou_Pollution_Shotgun>
 
     <!--NPC显示名称-->
     <npctitle.Touhou_ODM03_Enemy_Human_Lunatic>掠夺者-Lunatic</npctitle.Touhou_ODM03_Enemy_Human_Lunatic>

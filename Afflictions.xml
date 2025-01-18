@@ -2689,4 +2689,91 @@
     <icon texture="%ModDir%/Images/Afflictions/Touhou_Treatment_Grenade_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
   </Affliction>
 
+
+  <!--污染魔法使效果-->
+  <Affliction identifier="Pollution_Magician_Clothes_Effect" type="Pollution_Magician_Clothes_Effect" isbuff="true" limbspecific="false" indicatorlimb="Torso"
+              maxstrength="10" duration="1.0" iconcolors="94,94,94;163,164,164;255,255,255" >
+    <Effect minstrength="0" maxstrength="10"
+            resistancefor="alieninfection,fractures,oxygenlow,internalbleeding,arterialcut,hemotransfusionshock,t_amputation,foreignbody,gate_ta_h,gate_ta_ll_2,gate_ta_rl_2,gate_ta_la_2,gate_ta_ra_2,heartdamage,Reiki_Side_Effect"
+            minresistance="1.0" maxresistance="1.0" >
+      <StatValue stattype="AttackMultiplier" value="0.3" />
+      <StatValue stattype="MovementSpeed" value="0.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.5" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Memory_Of_Gensokyo.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+  </Affliction>
+
+  <!--污染魔法使抗性-->
+  <Affliction identifier="Touhou_Enemy_Pollution_Magician_Talent_Effect" type="Pollution_Magician_Clothes_Effect" isbuff="true" limbspecific="false" indicatorlimb="Torso"
+              maxstrength="10" duration="1.0" iconcolors="94,94,94;163,164,164;255,255,255" >
+    <Effect minstrength="0" maxstrength="10"
+            resistancefor="stun,bleeding,poison,debuff"
+            minresistance="0.6" maxresistance="0.6" >
+      <StatValue stattype="MovementSpeed" value="0.25" />
+      <StatValue stattype="MaximumHealthMultiplier" value="0.35" />
+      <StatValue stattype="MeleeAttackMultiplier" value="0.5" />
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Memory_Of_Gensokyo.png" sourcerect="0,0,128,128" color="255,255,255,255" />
+  </Affliction>
+
+
+  <!--星火霰弹枪效果-->
+  <Affliction name="星火"
+              identifier="Touhou_Sparkfire_Shotgun_Effect"
+              type="burn"
+              limbspecific="true"
+              maxstrength="100"
+              affectmachines="true"
+              iconcolors="94,94,94;163,164,164;255,255,255">
+    <Description textidentifier="afflictiondescription.Touhou_Sparkfire_Shotgun_Effect" minstrength="0" maxstrength="100"/>
+    <Effect minstrength="0" maxstrength="30" resistancefor="burn" minresistance="0" maxresistance="-0.05" strengthchange="-1.0">
+      <StatusEffect target="Limb" disabledeltatime="true">
+        <Conditional InWater="true" />
+        <ReduceAffliction identifier="Touhou_Sparkfire_Shotgun_Effect" amount="10" />
+      </StatusEffect>
+    </Effect>
+    <!-- You actively start burning here -->
+    <Effect minstrength="30" maxstrength="60" resistancefor="burn" minresistance="-0.05" maxresistance="-0.1" strengthchange="-1.0">
+      <StatusEffect target="Limb">
+        <Conditional InWater="false" />
+        <Affliction identifier="burn" amount="0.2" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional InWater="false" />
+        <ParticleEmitter particle="flameburningcharacter" DistanceMin="0" DistanceMax="30" ParticlesPerSecond="100" AngleMin="60" AngleMax="120" VelocityMax="20"/>
+        <ParticleEmitter particle="smoke" particlespersecond="3" scalemin="1" scalemax="3" distancemin="10" distancemax="50" />
+      </StatusEffect>
+      <StatusEffect target="Limb" disabledeltatime="true">
+        <Conditional InWater="true" />
+        <ReduceAffliction identifier="Touhou_Sparkfire_Shotgun_Effect" amount="10" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional InWater="false" />
+        <sound file="Content/Sounds/FireSmall.ogg" range="200.0" volume="0.5" />
+      </StatusEffect>
+    </Effect>
+    <!-- Past 10, you've fully caught on fire and burning reduces at a much slower rate -->
+    <Effect minstrength="60" maxstrength="100" resistancefor="burn" minresistance="-0.1" maxresistance="-0.15" strengthchange="-1">
+      <StatusEffect target="Limb">
+        <Conditional InWater="false" />
+        <Affliction identifier="burn" amount="0.3" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional InWater="false" />
+        <ParticleEmitter particle="flameburningcharacter" DistanceMin="0" DistanceMax="30" ParticlesPerSecond="100" AngleMin="60" AngleMax="120" VelocityMax="20"/>
+        <ParticleEmitter particle="smoke" particlespersecond="3" scalemin="1" scalemax="3" distancemin="10" distancemax="50" />
+      </StatusEffect>
+      <StatusEffect target="Limb" disabledeltatime="true">
+        <Conditional InWater="true" />
+        <ReduceAffliction identifier="Touhou_Sparkfire_Shotgun_Effect" amount="10" />
+      </StatusEffect>
+      <StatusEffect target="Character">
+        <Conditional InWater="false" />
+        <sound file="Content/Sounds/FireSmall.ogg" range="200.0" />
+      </StatusEffect>
+    </Effect>
+    <icon texture="%ModDir%/Images/Afflictions/Touhou_Sparkfire_Shotgun_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+  </Affliction>
+
 </Afflictions>

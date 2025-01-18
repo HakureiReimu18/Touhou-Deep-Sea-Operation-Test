@@ -571,14 +571,15 @@
                     <Item identifier="Touhou_MEID" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="securitypatrolclothes" equip="true" />
+                <Item identifier="Pollution_Magician_Clothes" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
-                <Item identifier="Touhou_Eternal_Night_Bow" equip="true">
-                    <Item identifier="Touhou_Magic_Metal_Arrow" />
+                <Item identifier="Touhou_Pollution_Shotgun" equip="true">
+                    <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="12" />
                 </Item>
-                <Item identifier="Touhou_Magic_Metal_Arrow" amount="36" />
+                <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="36" />
+                <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="36" />
                 <Item identifier="boardingaxe"/>
                 <Item identifier="antibleeding2" amount="4"/>
                 <Item identifier="deusizine" amount="2"/>
@@ -590,15 +591,15 @@
                     <Item identifier="Touhou_MEID" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="securitypatrolclothes" equip="true" />
+                <Item identifier="Pollution_Magician_Clothes" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
-                <Item identifier="Hompson_Contender" equip="true" quality="3">
-                    <Item identifier="revolverammo" />
+                <Item identifier="Touhou_Pollution_Shotgun" equip="true">
+                    <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="12" />
                 </Item>
-                <Item identifier="revolverammo" amount="12" />
-                <Item identifier="revolverammo" amount="12" />
+                <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="36" />
+                <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="36" />
                 <Item identifier="boardingaxe"/>
                 <Item identifier="deusizine" amount="2"/>
                 <Item identifier="Touhou_Precious_Metal" />
@@ -610,7 +611,7 @@
                     <Item identifier="Touhou_MEID" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="securitypatrolclothes" equip="true" />
+                <Item identifier="Pollution_Magician_Clothes" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>

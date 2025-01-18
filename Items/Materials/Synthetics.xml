@@ -144,7 +144,7 @@
         <Sprite texture="%ModDir%/Images/Materials/Spiritual_Water.png" depth="0.4" sourcerect="0,0,100,139" scale="0.4"/>
         <Body width="80" height="80" density="10.1" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <StatusEffect type="Always" target="This" Condition="0.5" >
+            <StatusEffect type="Always" target="This,Character" Condition="0.5" >
                 <Conditional InWater="true" />
             </StatusEffect>
             <StatusEffect type="InWater" target="This" Condition="1.0" >
@@ -309,6 +309,7 @@
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="-20" handangle="0" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnSecondaryUse" target="This" Condition="-7" />
             <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true" comparison="And" >
+                <Conditional skillrequirement="true" Touhou_Magic="lt 80" />
                 <Conditional Condition="lte 0" />
                 <GiveSkill skillidentifier="electrical" amount="4" triggertalents="false" />
                 <GiveSkill skillidentifier="helm" amount="4" triggertalents="false"/>
@@ -316,6 +317,18 @@
                 <GiveSkill skillidentifier="medical" amount="4" triggertalents="false"/>
                 <GiveSkill skillidentifier="weapons" amount="4" triggertalents="false"/>
                 <GiveSkill skillidentifier="Touhou_Magic" amount="4" triggertalents="false"/>
+                <GiveExperience amount="800" />
+                <RemoveItem />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true" comparison="And" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 80" />
+                <Conditional Condition="lte 0" />
+                <GiveSkill skillidentifier="electrical" amount="2" triggertalents="false" />
+                <GiveSkill skillidentifier="helm" amount="2" triggertalents="false"/>
+                <GiveSkill skillidentifier="mechanical" amount="2" triggertalents="false"/>
+                <GiveSkill skillidentifier="medical" amount="2" triggertalents="false"/>
+                <GiveSkill skillidentifier="weapons" amount="2" triggertalents="false"/>
+                <GiveSkill skillidentifier="Touhou_Magic" amount="2" triggertalents="false"/>
                 <GiveExperience amount="500" />
                 <RemoveItem />
             </StatusEffect>
@@ -379,7 +392,24 @@
         <Body width="28" height="36" density="14" />
         <Holdable slots="Any,RightHand+LeftHand" aimable="false" aimpos="40,-20" handle1="5,0" aimangle="340" handangle="300" swingamount="0,3" swingspeed="0.5" swingwhenaiming="true" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnSecondaryUse" target="This" Condition="-22" />
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="lt 40" />
+                <Conditional skillrequirement="true" Touhou_Magic="gte 0" />
+                <Conditional Condition="lte 0" />
+                <GiveSkill skillidentifier="Touhou_Magic" amount="5" triggertalents="false"/>
+                <GiveExperience amount="150" />
+                <RemoveItem />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="lt 80" />
+                <Conditional skillrequirement="true" Touhou_Magic="gte 40" />
+                <Conditional Condition="lte 0" />
+                <GiveSkill skillidentifier="Touhou_Magic" amount="4" triggertalents="false"/>
+                <GiveExperience amount="100" />
+                <RemoveItem />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true" comparison="And">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 80" />
                 <Conditional Condition="lte 0" />
                 <GiveSkill skillidentifier="Touhou_Magic" amount="3" triggertalents="false"/>
                 <GiveExperience amount="50" />

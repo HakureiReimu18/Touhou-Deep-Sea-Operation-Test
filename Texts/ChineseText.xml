@@ -662,6 +662,13 @@
   <entitydescription.Touhou_Waterwheel_Gun>阿求委托工程师为自己制造的一把简单的水枪，较高的水压使其能对陆地生物产生不小的威胁，因为灵水难以融入木卫二的特性，使其在水下的效力仍然足够高。使用时需要‖color:gui.yellow‖水轮和灵水‖end‖</entitydescription.Touhou_Waterwheel_Gun>
   <entityname.Touhou_Waterwheel_Gun_Magazine>水轮</entityname.Touhou_Waterwheel_Gun_Magazine>
   <entitydescription.Touhou_Waterwheel_Gun_Magazine>水轮枪自带的运作水轮，没有它，水轮枪就无法正常运作</entitydescription.Touhou_Waterwheel_Gun_Magazine>
+  <entityname.Touhou_Sunflower_Field_Cane>太阳花田手杖</entityname.Touhou_Sunflower_Field_Cane>
+  <entitydescription.Touhou_Sunflower_Field_Cane>幽香在木卫二照顾花朵的手杖，独特的设计让手杖在木卫二上也能发出温暖的阳光</entitydescription.Touhou_Sunflower_Field_Cane>
+  <entityname.Pollution_Magician_Clothes>被玷污的法袍</entityname.Pollution_Magician_Clothes>
+  <entitydescription.Pollution_Magician_Clothes>用魔力布料缝制而成的法袍，这件显然是沾染了不洁的魔法</entitydescription.Pollution_Magician_Clothes>
+  <entityname.Touhou_Sparkfire_Shotgun>‖color:255,180,20,255‖星火霰弹枪‖color:end‖</entityname.Touhou_Sparkfire_Shotgun>
+  <entitydescription.Touhou_Sparkfire_Shotgun>这把的原型武器是由一位枪械大师精心打造的杰作，从硬木的选择到金属细节和轻盈的设计，每个决定都在实用性和艺术性之间实现了备受赞誉的平衡。
+    它的每一发弹药都会附着燃烧的火焰，随使用者的魔法能力提升，效果也会更强。使用常规霰弹枪弹药</entitydescription.Touhou_Sparkfire_Shotgun>
 
 
   <!--凭依效果-->

@@ -684,21 +684,21 @@
       <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" />
     </Characters>
   </OutpostDestroyMission>
-<!--
-  &lt;!&ndash;ODM是摧毁废站任务的简写&ndash;&gt;
-  &lt;!&ndash;黑色梦中&ndash;&gt;
+
+  <!--ODM是摧毁废站任务的简写-->
+  <!--黑色梦中-->
   <OutpostDestroyMission
           name="黑色梦中"
           identifier="Touhou_OutpostDestroyMission05"
           tags="abandonedoutpost"
           type="OutpostDestroy"
-          reward="8000"
+          reward="20000"
           description="诡异的黑色迷雾在此处弥漫，这恰好与前段时间的灵气污染事件现场的状况如出一辙，联盟方的炼金实验室出重金请你调查这里"
           difficulty="4"
           commonness="100"
           allowretry="true"
-          minleveldifficulty="10"
-          maxleveldifficulty="70"
+          minleveldifficulty="30"
+          maxleveldifficulty="100"
           unhideentitysubcategories="abandonedhuman">
     <Reputation identifier="separatists" amount="-5" />
     <Reputation identifier="coalition" amount="5" />
@@ -727,6 +727,6 @@
       <Character identifier="Touhou_ODM05_Enemy_Human_Easy" from="Touhou_ODM5_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" />
       <Character identifier="Touhou_ODM05_Enemy_Human_Easy" from="Touhou_ODM5_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" />
     </Characters>
-  </OutpostDestroyMission>-->
+  </OutpostDestroyMission>
 
 </Missions>

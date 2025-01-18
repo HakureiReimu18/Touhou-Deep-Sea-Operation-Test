@@ -868,7 +868,7 @@
 
     <!--魔术霰弹-->
     <Item name="魔术霰弹" identifier="Touhou_Magic_Automatic_Shotgun_Bullet" category="Weapon" subcategory="Touhou" maxstacksize="36" hideinmenus="true"
-          maxstacksizecharacterinventory="56" interactthroughwalls="true" tags="smallitem,Exorcism_Bullet" Scale="0.5" impactsoundtag="impact_metal_light" spritecolor="100,255,100,255">
+          maxstacksizecharacterinventory="36" interactthroughwalls="true" tags="smallitem,Exorcism_Bullet" Scale="0.5" impactsoundtag="impact_metal_light" spritecolor="100,255,100,255">
         <PreferredContainer primary="armcab" secondary="secarmcab"/>
         <Deconstruct time="0.5">
             <Item identifier="Reiki_Dust" />
@@ -1210,4 +1210,47 @@
             </StatusEffect>
         </Projectile>
     </Item>
+
+
+    <!--污染霰弹枪-->
+    <Item name="污染霰弹枪" identifier="Touhou_Pollution_Shotgun" category="Weapon" cargocontaineridentifier="metalcrate" hideinmenus="true"
+          tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.45" impactsoundtag="impact_metal_light" spritecolor="100,255,100,255">
+        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
+        <Deconstruct time="3">
+            <Item identifier="ballisticfiber" />
+            <Item identifier="Reiki_Stone" amount="12" />
+            <Item identifier="titaniumaluminiumalloy" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Pollution_Shotgun.png" sourcerect="340,0,172,132" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Pollution_Shotgun.png" depth="0.4" sourcerect="0,0,318,100" />
+        <Body width="318" height="100" density="10" />
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="48,-5" handle1="-12,-15" handle2="20,5" holdangle="-20" msg="ItemMsgPickUpSelect"/>
+        <RangedWeapon barrelpos="68,10" weapondamagemodifier="1.0" spread="8" unskilledspread="16" combatPriority="80" reload="0.2" holdtrigger="true" drawhudwhenequipped="true" crosshairscale="0.2">
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+            <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="55,255,55,255" />
+            <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun.ogg" type="OnUse" range="3000" volume="2" selectionmode="Random" />
+            <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun_1.ogg" type="OnUse" range="3000" volume="2" />
+            <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun_2.ogg" type="OnUse" range="3000" volume="2" />
+            <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun_3.ogg" type="OnUse" range="3000" volume="2" />
+            <StatusEffect type="OnUse" target="This">
+                <ParticleEmitter particle="casingfirearm" particleamount="1" colormultiplier="55,255,55,255" ScaleMultiplier="1.5,1.5" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
+                <Explosion range="150.0" force="2" shockwave="false" smoke="false" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="6.0" />
+            </StatusEffect>
+            <RequiredItems items="Touhou_Magic_Automatic_Shotgun_Bullet,shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+            <RequiredSkill identifier="weapons" level="75" />
+            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
+                <Affliction identifier="Reiki_Side_Effect" amount="3" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="0.4" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="This" reload="0.2" setvalue="true" delay="1.2" disabledeltatime="true" />
+        </RangedWeapon>
+        <ItemContainer capacity="1" maxstacksize="12" hideitems="false" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0" containedspritedepth="0.56">
+            <Containable items="Touhou_Magic_Automatic_Shotgun_Bullet,shotgunammo" hide="true"/>
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+        </ItemContainer>
+        <aitarget sightrange="3000" soundrange="5000" fadeouttime="5" />
+        <SkillRequirementHint identifier="weapons" level="75" />
+    </Item>
+
 </Items>

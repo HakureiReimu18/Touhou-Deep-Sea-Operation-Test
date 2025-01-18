@@ -889,6 +889,7 @@
     <Affliction identifier="Yuka_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
+            <StatValue stattype="AttackMultiplier" value="0.1" />
             <StatValue stattype="MeleeAttackSpeed" value="0.1" />
             <StatValue stattype="RangedAttackSpeed" value="0.1" />
         </Effect>

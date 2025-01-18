@@ -214,10 +214,10 @@
 
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.1,0.1" anchor="BottomRight" relativeoffset="0,0.7" style="ItemUI" />
-            <Button text="声呐显示开启">
+            <Button text="Text.Sonar_Open">
                 <StatusEffect type="OnUse" target="This" TargetItemComponent="Sonar" drawhudwhenequipped="true" setvalue="true" />
             </Button>
-            <Button text="声呐显示关闭">
+            <Button text="Text.Sonar_Close">
                 <StatusEffect type="OnUse" target="This" TargetItemComponent="Sonar" currentmode="Passive" drawhudwhenequipped="false" setvalue="true" />
             </Button>
         </CustomInterface>

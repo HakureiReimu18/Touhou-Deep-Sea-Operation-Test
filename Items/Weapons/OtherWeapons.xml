@@ -97,7 +97,12 @@
         </RangedWeapon>
 
         <ItemContainer capacity="1" maxstacksize="2" hideitems="false" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-            <Containable items="revolverammo,Touhou_Origin_Bullet" hide="true" />
+            <Containable items="revolverammo,Touhou_Origin_Bullet" hide="true" >
+                <StatusEffect type="OnInserted" target="This" setvalue="true">
+                    <Conditional isActive="eq true"/>
+                    <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_1.ogg" type="OnUse" range="500" selectionmode="Random"/>
+                </StatusEffect>
+            </Containable>
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         </ItemContainer>
         <Quality>
@@ -120,17 +125,7 @@
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Blunderbuss_Bullet.png" sourcerect="0,72,64,18" depth="0.45" origin="0.5,0.5" />
         <Body width="20" height="20" density="10" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="OnContained" target="This" tags="weaponreload" duration="0.6" interval="0.5" delay="0.1" >
-                <Conditional hastag="weapon" targetcontainer="true" />
-            </StatusEffect>
-            <StatusEffect type="Always" target="This" comparison="And" interval="2" AllowWhenBroken="true">
-                <Conditional hasstatustag="neq weaponreload" />
-                <Conditional hastag="weapon" targetcontainer="true" />
-                <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_1.ogg" type="OnUse" range="500" selectionmode="Random" />
-                <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_2.ogg" type="OnUse" range="500" />
-            </StatusEffect>
-        </Pickable>
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <!--        <ParticleEmitter particle="LunaticBulletTracer" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="0.4,0.4" />-->
         <Projectile characterusable="false" launchimpulse="50" hitscan="true" removeonhit="true" >
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,255,115,175" scalemultiplier="1,0.6" />
@@ -207,25 +202,30 @@
             <Sound file="Content/Items/JobGear/Security/WEAPONS_autoShotgun_3.ogg" type="OnUse" range="3000" volume="2" />
             <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
                 <Conditional skillrequirement="true" weapons="lt 60" />
-                <Affliction identifier="stun" strength="0.75" />
-                <Affliction identifier="burn" strength="7" />
+                <Affliction identifier="stun" strength="0.75" probability="0.2" />
+                <Affliction identifier="burn" strength="7" probability="0.2" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
                 <Conditional skillrequirement="true" weapons="lt 40" />
-                <Affliction identifier="stun" strength="1.25" />
-                <Affliction identifier="burn" strength="14" />
+                <Affliction identifier="stun" strength="1.25" probability="0.4" />
+                <Affliction identifier="burn" strength="14" probability="0.4" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
                 <Conditional skillrequirement="true" weapons="lt 20" />
-                <Affliction identifier="stun" strength="1.75" />
-                <Affliction identifier="burn" strength="14" />
+                <Affliction identifier="stun" strength="1.75" probability="0.6" />
+                <Affliction identifier="burn" strength="14" probability="0.6" />
             </StatusEffect>
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredItems items="shotgunammo,Exorcism_Bullet" type="Contained" />
         </RangedWeapon>
 
         <ItemContainer capacity="1" maxstacksize="7" hideitems="false" containedstateindicatorslot="0" containedstateindicatorstyle="bullet" containedspritedepth="0.56">
-            <Containable items="shotgunammo,Exorcism_Bullet" hide="true" />
+            <Containable items="shotgunammo,Exorcism_Bullet" hide="true" >
+                <StatusEffect type="OnInserted" target="This" setvalue="true">
+                    <Conditional isActive="eq true"/>
+                    <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_1.ogg" type="OnUse" range="500" selectionmode="Random"/>
+                </StatusEffect>
+            </Containable>
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
         </ItemContainer>
         <Quality>
@@ -256,17 +256,7 @@
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Exorcism_Bullet.png" sourcerect="0,0,44,48" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/OtherWeapons/Exorcism_Bullet.png" sourcerect="56,11,64,20" depth="0.55" origin="0.5,0.5" />
         <Body width="48" height="12" density="15" />
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="OnContained" target="This" tags="weaponreload" duration="0.6" interval="0.5" delay="0.1" >
-                <Conditional hastag="weapon" targetcontainer="true" />
-            </StatusEffect>
-            <StatusEffect type="Always" target="This" comparison="And" interval="2" AllowWhenBroken="true">
-                <Conditional hasstatustag="neq weaponreload" />
-                <Conditional hastag="weapon" targetcontainer="true" />
-                <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_1.ogg" type="OnUse" range="500" selectionmode="Random" />
-                <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_2.ogg" type="OnUse" range="500" />
-            </StatusEffect>
-        </Pickable>
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" hitscancount="7" removeonhit="true" spread="12">
             <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,72,36,220" scalemultiplier="1,0.9" />
             <Attack structuredamage="6" targetforce="10" itemdamage="20" severlimbsprobability="0.4" penetration="0.25">
@@ -2662,4 +2652,72 @@
             <QualityStat stattype="ExplosionRadius" value="0.334" />
         </Quality>
     </Item>
+
+    <!--星火霰弹枪-->
+    <Item name="星火霰弹枪" identifier="Touhou_Sparkfire_Shotgun" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Touhou"
+          tags="mediumitem,weapon,gun,gunsmith,mountableweapon,Touhou_Sparkfire_Shotgun" Scale="0.4" impactsoundtag="impact_metal_light" >
+        <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
+        <Price baseprice="5000" sold="false" >
+            <Price storeidentifier="merchantoutpost" multiplier="1.1" />
+            <Price storeidentifier="merchantcity" multiplier="0.9" />
+            <Price storeidentifier="merchantresearch" multiplier="1.1" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.05" />
+        </Price>
+        <Deconstruct time="3">
+            <Item identifier="Reiki_Stone" amount="48" />
+            <Item identifier="titaniumaluminiumalloy" amount="2" />
+            <Item identifier="plastic" amount="2" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
+            <RequiredSkill identifier="weapons" level="70" />
+            <RequiredSkill identifier="Touhou_Magic" level="70" />
+            <RequiredItem identifier="Touhou_Pollution_Shotgun" />
+            <RequiredItem identifier="Touhou_Precious_Metal" />
+            <RequiredItem identifier="Seven_Elements_Alchemical_Fake" />
+            <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+            <RequiredItem identifier="plastic" amount="4" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Sparkfire_Shotgun.png" sourcerect="306,2,167,120" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sparkfire_Shotgun.png" depth="0.4" sourcerect="0,0,300,72" />
+        <Body width="300" height="72" density="10" />
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-20" aimpos="48,-5" handle1="-50,0" handle2="24,24" holdangle="-30" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="Character" interval="5">
+                <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Sparkfire_Shotgun_Talent" />
+            </StatusEffect>
+        </Holdable>
+        <RangedWeapon barrelpos="128,10" weapondamagemodifier="1.25" penetrationmultiplier="1.0" penetration="0.2" spread="7" unskilledspread="15" combatPriority="80" ReloadSkillRequirement="Touhou_Magic"
+                      Reload="0.6" ReloadNoSkill="0.8" holdtrigger="true" drawhudwhenequipped="true" crosshairscale="0.2">
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
+            <ParticleEmitter particle="muzzleflash" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,55,55,255" />
+            <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="12" velocitymin="2200" velocitymax="2600"
+                             colormultiplier="255,80,80,195" scalemin="1.2" scalemax="1.8" />
+            <Sound file="%ModDir%/Sounds/Weapons/Touhou_Sparkfire_Shotgun/Touhou_Sparkfire_Shotgun_Attack01.ogg" type="OnUse" range="2000" volume="2.0" selectionmode="Random" />
+            <Sound file="%ModDir%/Sounds/Weapons/Touhou_Sparkfire_Shotgun/Touhou_Sparkfire_Shotgun_Attack02.ogg" type="OnUse" range="2000" volume="2.0" selectionmode="Random" />
+            <StatusEffect type="OnUse" target="This">
+                <ParticleEmitter particle="casingfirearm" particleamount="1" colormultiplier="255,55,55,255" ScaleMultiplier="1.5,1.5" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
+                <Explosion range="250.0" force="1.2" shockwave="false" smoke="true" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="12.0" />
+            </StatusEffect>
+            <RequiredItems items="Touhou_Magic_Automatic_Shotgun_Bullet,shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+            <RequiredSkill identifier="weapons" level="80" />
+            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
+                <Conditional skillrequirement="true" weapons="lt 40" />
+                <Affliction identifier="Reiki_Side_Effect" amount="2" />
+                <Affliction identifier="burn" amount="3" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
+                <Conditional skillrequirement="true" weapons="lt 80" />
+                <Affliction identifier="Reiki_Side_Effect" amount="2" probability="0.5" />
+                <Affliction identifier="burn" amount="3" probability="0.5" />
+            </StatusEffect>
+        </RangedWeapon>
+        <ItemContainer capacity="1" maxstacksize="7" hideitems="false" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0" containedspritedepth="0.56">
+            <Containable items="Touhou_Magic_Automatic_Shotgun_Bullet,shotgunammo" hide="true"/>
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+        </ItemContainer>
+        <aitarget sightrange="2000" soundrange="3000" fadeouttime="5" />
+        <SkillRequirementHint identifier="weapons" level="80" />
+    </Item>
+
 </Items>

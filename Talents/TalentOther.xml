@@ -107,6 +107,22 @@
         </AbilityGroupInterval>
     </Talent>
 
+    <!--星火霰弹枪天赋-->
+    <Talent identifier="Touhou_Sparkfire_Shotgun_Talent" IsHiddenExtraTalent="true">
+        <Icon texture="%ModDir%/Images/Afflictions/Gensokyo_Divinggear_Effect.png" sheetindex="0,0" sheetelementsize="128,128" />
+        <Description tag="talentdescription.Gensokyo_Divinggear_Talent"/>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Sparkfire_Shotgun"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="burn" strength="0.5" />
+                <CharacterAbilityGiveAffliction affliction="Touhou_Sparkfire_Shotgun_Effect" strength="0.05" multiplystrengthbyskill="Touhou_Magic" />
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
     <!--出血效应-博丽灵梦-->
     <Talent identifier="MRE_Reimu">
         <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128" />

@@ -1829,6 +1829,7 @@
             <StatusEffect type="OnImpact" target="This" Condition="-100" stackable="false"/>
             <StatusEffect type="OnBroken" target="This">
                 <SpawnItem identifier="Touhou_Nue_Danmaku_Chimera_Spawn" spawnposition="This" count="8" Spread="30" aimspread="360" rotationtype="Collider" rotation="0" />
+                <SpawnItem identifier="Touhou_Rippling_Bolt_Spawn_Force" spawnposition="This" aimspread="360" rotationtype="Collider" rotation="0" />
                 <Explosion range="250.0" structuredamage="50" camerashake="80.0" camerashakerange="1000" force="15.0" itemdamage="50" severlimbsprobability="0.1" >
                     <Affliction identifier="Reiki_Pressure" strength="20" />
                     <Affliction identifier="Touhou_Bite" strength="20" />

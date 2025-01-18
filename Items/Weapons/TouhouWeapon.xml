@@ -7160,4 +7160,111 @@
             </StatusEffect>
         </Projectile>
     </Item>
+
+
+    <!--太阳花田手杖-->
+    <Item name="太阳花田手杖" identifier="Touhou_Sunflower_Field_Cane" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_metal_light" RequireAimToUse="True" >
+        <PreferredContainer primary="armcab" />
+        <Price baseprice="3000" sold="true">
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="titaniumaluminiumalloy" amount="2"/>
+            <Item identifier="physicorium" />
+            <Item identifier="Score_Point" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
+            <RequiredSkill identifier="weapons" level="60" />
+            <RequiredSkill identifier="Touhou_Magic" level="60" />
+            <RequiredItem identifier="titaniumaluminiumalloy" amount="4" />
+            <RequiredItem identifier="Yang_Alchemical" amount="4"/>
+            <RequiredItem identifier="Touhou_Base_Metal" amount="4"/>
+            <RequiredItem identifier="physicorium" />
+            <RequiredItem identifier="Score_Point" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Sunflower_Field_Cane.png" sourcerect="0,0,90,90" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sunflower_Field_Cane.png" sourcerect="92,0,121,33" depth="0.55" origin="0.5,0.5" />
+        <Body width="121" height="33" density="10" />
+        <MeleeWeapon slots="Any,LeftHand+RightHand" aimpos="35,10" handle1="-18,1" holdangle="20" aimangle="30" reload="0.95" range="121" combatPriority="50"
+                     allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
+            <LightComponent LightColor="255,174,121,160" Flicker="0.2" Range="70" >
+                <sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sunflower_Field_Cane.png" sourcerect="92,35,121,33" origin="0.5,0.5" />
+            </LightComponent>
+            <LightComponent LightColor="255,174,121,100" Range="700" >
+                <sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sunflower_Field_Cane.png" sourcerect="92,35,1,1" origin="0.5,0.5" />
+            </LightComponent>
+            <StatusEffect type="OnActive" target="Character">
+                <Conditional Flowers_Of_Four_Seasons="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Yuka="gt 0"/>
+                <Affliction identifier="Yuka_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
+                <Conditional Flowers_Of_Four_Seasons="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Yuka="gt 0"/>
+                <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+
+            <Attack targetimpulse="6" severlimbsprobability="0.4" itemdamage="85" structuresoundtype="StructureSlash" penetration="0.1">
+                <Affliction identifier="blunttrauma" strength="20" />
+                <Affliction identifier="internaldamage" strength="5" />
+                <Affliction identifier="stun" strength="0.2" />
+                <Affliction identifier="stun" strength="0.2" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnUse" target="Limb" >
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.5" />
+            </StatusEffect>
+
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <ParticleEmitter particle="Yuka_Flower_Fly" AngleMin="0" AngleMax="360" VelocityMin="250" VelocityMax="450" ScaleMultiplier="0.3,0.3"
+                                 DistanceMin="40" DistanceMax="80" ParticleAmount="15" CopyTargetAngle="True" ColorMultiplier="255,255,255,255"  />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.2" setvalue="true" />
+            <RequiredSkill identifier="weapons" level="50" />
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="0.95" setvalue="true" delay="1.2" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <Quality>
+            <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
+        </Quality>
+        <SkillRequirementHint identifier="weapons" level="50" />
+        <SkillRequirementHint identifier="Touhou_Magic" level="50" />
+    </Item>
+
 </Items>
