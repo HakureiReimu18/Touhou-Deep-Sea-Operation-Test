@@ -41,6 +41,7 @@
   <Item file="%ModDir%/Items/Clothes/Sakuya_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Sanae_gear.xml" />
   <Item file="%ModDir%/Items/Clothes/Reisen_gear.xml" />
+  <Item file="%ModDir%/Items/Clothes/Yukari_gear.xml" />
   <!--tools-->
   <Item file="%ModDir%/Items/Tools/Tools.xml" />
   <Item file="%ModDir%/Items/Tools/MusicPlayer.xml" />
@@ -147,6 +148,7 @@
   <Talents file="%ModDir%/Talents/TalentsSakuya.xml" />
   <Talents file="%ModDir%/Talents/TalentsSanae.xml" />
   <Talents file="%ModDir%/Talents/TalentsReisen.xml" />
+  <Talents file="%ModDir%/Talents/TalentsYukari.xml" />
   <Talents file="%ModDir%/Talents/TalentsMagician.xml" />
   <Talents file="%ModDir%/Talents/TalentsYousei.xml" />
   <Talents file="%ModDir%/Talents/TalentsYokai.xml" />
@@ -165,4 +167,5 @@
   <Wreck file="%ModDir%/Sub/Touhou_Wreck02.sub"/>
   <Submarine file="%ModDir%/Sub/Touhou_Wreck03.sub" />
   <Wreck file="%ModDir%/Sub/Touhou_Wreck04.sub"/>
+  <Wreck file="%ModDir%/Sub/Touhou_Trojan_Green_Asteroid.sub"/>
 </contentpackage>
