@@ -1,4 +1,4 @@
-﻿<Little_photosphereSwimSlow
+﻿<Touhou_Little_GhostSwimFast
   UseSineMovement="False"
   Flip="True"
   FlipCooldown="1"
@@ -15,13 +15,13 @@
   TailAngle="NaN"
   SteerTorque="25"
   LegTorque="25"
-  MovementSpeed="5"
+  MovementSpeed="11"
   CycleSpeed="1"
   HeadAngle="NaN"
   TorsoAngle="NaN"
   HeadTorque="50"
   TorsoTorque="50"
   FootTorque="25"
-  AnimationType="SwimSlow"
+  AnimationType="SwimFast"
   ArmIKStrength="1"
   HandIKStrength="1" />

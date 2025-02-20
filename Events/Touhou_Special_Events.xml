@@ -665,6 +665,11 @@
         <ScriptedEvent identifier="YukariTalent_Effect_Self" commonness="0">
             <TagAction Criteria="player" Tag="YukariTalent_Effect_Self" IgnoreIncapacitatedCharacters="false" />
             <TeleportAction Position="MainSub" targettag="YukariTalent_Effect_Self" SpawnPointTag=""/>
+            <StatusEffectAction targettag="YukariTalent_Effect_Self">
+                <StatusEffect target="Character" delay="1.0" disabledeltatime="true" >
+                    <Affliction identifier="YukariTalent_Effect_Self_Effect" strength="10"/>
+                </StatusEffect>
+            </StatusEffectAction>
         </ScriptedEvent>
 
         <!--新年礼物随机事件-->
@@ -828,7 +833,7 @@
                     <WaitAction time="1.6" />
                 </Failure>
             </RNGAction>
-            <GoTo name="delay" maxtimes="300" />
+            <GoTo name="delay" maxtimes="200" />
             <ConversationAction text="Eventtext.Touhou_OutpostDestroyMission05_Event.c2" dialogtype="Small" />
             <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
             <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
@@ -851,7 +856,7 @@
                     <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
                     <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
                     <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
-                    <WaitAction time="120" />
+                    <WaitAction time="90" />
                     <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements_Special" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
                     <WaitAction time="240" />
                     <TriggerEventAction identifier="Touhou_OutpostDestroyMission05_Completed" nextround="false" />
