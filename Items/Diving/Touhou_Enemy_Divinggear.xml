@@ -69,9 +69,7 @@
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="poison,paralysis" damagemultiplier="0.1" damagesound="LimbArmor" />
-            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="No_Effects02" damagemultiplier="0.01" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="1" probabilitymultiplier="0.01" damagesound="LimbArmor" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="consumed" damagemultiplier="0.0" damagesound="LimbArmor" />
         </Wearable>
         <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
         <ItemContainer capacity="1" hideitems="true" containedstateindicatorstyle="tank" containedstateindicatorslot="0" autoinject="true" AutoInjectThreshold="0.8">
@@ -149,7 +147,6 @@
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.7" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="poison,paralysis" damagemultiplier="0.5" damagesound="LimbArmor" />
-            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="No_Effects02" damagemultiplier="0.4" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="1" probabilitymultiplier="0.6" damagesound="LimbArmor" />
         </Wearable>
         <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,-50" handle1="-10,-20" handle2="10,-20" holdangle="45" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
