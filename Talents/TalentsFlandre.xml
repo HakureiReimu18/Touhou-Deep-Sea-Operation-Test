@@ -30,8 +30,8 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="1.4"/>
-                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="1.7"/>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="1.25"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="1.5"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -232,7 +232,7 @@
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                             <Affliction identifier="FlandreTalent4_Effect_CD" amount="1.0" />
                         </StatusEffect>
                     </StatusEffects>

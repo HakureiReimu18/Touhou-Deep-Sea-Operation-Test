@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Items>
+
+    <!--海鲜味增汤-->
+    <Item name="海鲜味增汤" identifier="Touhou_Seafood_Miso_Soup" tags="smallitem,Touhou_Cuisine,Seafood,Fresh,Touhou_Normal_Food" subcategory="Touhou" category="Misc" maxstacksize="32" useinhealthinterface="true">
+        <PreferredContainer primary="Touhou_Ingredient_Refrigerator" />
+        <Price baseprice="800" sold="false">
+            <Price locationtype="outpost" multiplier="0.5"/>
+            <Price locationtype="city" multiplier="0.9" minavailable="3" />
+            <Price locationtype="research" multiplier="1" minavailable="2" />
+            <Price locationtype="military" multiplier="1.2" minavailable="1" />
+            <Price locationtype="mine" multiplier="1.1" minavailable="2" />
+        </Price>
+        <Deconstruct time="5" />
+        <Fabricate suitablefabricators="Touhou_Cooktop01" requiredtime="60" amount="1">
+            <RequiredSkill identifier="Touhou_Magic" level="5" />
+            <RequiredItem identifier="Touhou_Seaweed" />
+            <RequiredItem tag="Fresh" />
+            <RequiredItem identifier="plastic" />
+        </Fabricate>
+        <Fabricate suitablefabricators="Touhou_Cooktop02" requiredtime="36" amount="1">
+            <RequiredSkill identifier="Touhou_Magic" level="5" />
+            <RequiredItem identifier="Touhou_Seaweed" />
+            <RequiredItem tag="Fresh" />
+            <RequiredItem identifier="plastic" />
+        </Fabricate>
+        <Fabricate suitablefabricators="Touhou_Cooktop03" requiredtime="36" amount="2">
+            <RequiredSkill identifier="Touhou_Magic" level="5" />
+            <RequiredItem identifier="Touhou_Seaweed" />
+            <RequiredItem tag="Fresh" />
+            <RequiredItem identifier="plastic" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/Materials/Touhou_Cuisine/Touhou_Cuisine.png" sheetindex="0,0" sheetelementsize="100,100" />
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Cuisine/Touhou_Cuisine.png" sheetindex="0,0" sheetelementsize="100,100" />
+        <Body width="100" height="100" density="10" />
+        <Holdable canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="32,28" holdangle="30" aimangle="120" aimable="false" msg="ItemMsgPickUpSelect">
+            <!--汤水类的食物食用10秒-->
+            <!--右键食用-->
+            <StatusEffect type="OnSecondaryUse" target="This" Condition="-10.0"/>
+            <StatusEffect type="OnSecondaryUse" target="Character">
+                <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat_Short.ogg" selectionmode="random" range="300" />
+                <Sound file="%ModDir%/Sounds/Tools/Minecraft_Eat.ogg" selectionmode="random" range="300" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="This,UseTarget" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" stackable="false">
+                <Conditional Condition="lte 1" />
+                <Affliction identifier="Touhou_Cuisine_Effect01" amount="100" />
+            </StatusEffect>
+            <!--健康界面食用-->
+            <StatusEffect type="OnUse" target="This" Condition="-100.0" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="This,Character" duration="2" Interval="2.0" multiplyafflictionsbymaxvitality="true">
+                <ReduceAffliction identifier="Touhou_Cuisine_Effect01" amount="100" />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This">
+                <ParticleEmitter particle="whitegoosplash" anglemin="0" anglemax="360" particleamount="2" velocitymin="0" velocitymax="0" scalemin="1.5" scalemax="2" />
+                <Remove />
+            </StatusEffect>
+        </Holdable>
+    </Item>
+
+
+</Items>

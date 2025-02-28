@@ -866,9 +866,10 @@
     <!--永远亭医疗套件-->
     <Item name="永远亭医疗套件" identifier="Touhou_Medical_Toolkit" tags="smallitem,medical" subcategory="Touhou" category="medical"
           cargocontaineridentifier="metalcrate" scale="0.4" useinhealthinterface="true" RequireAimToUse="false">
-        <PreferredContainer primary="medcab" amount="1" spawnprobability="0.015" />
+        <PreferredContainer primary="medcab" amount="1" spawnprobability="0.025" />
         <PreferredContainer secondary="outpostmedcab" amount="1" spawnprobability="0.015" />
         <PreferredContainer secondary="outpostmedcompartment" amount="1" spawnprobability="0.015" />
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.065" />
         <Price baseprice="4500" minleveldifficulty="25" sold="false" >
             <Price storeidentifier="merchantoutpost" minavailable="2" />
             <Price storeidentifier="merchantcity" minavailable="2" />

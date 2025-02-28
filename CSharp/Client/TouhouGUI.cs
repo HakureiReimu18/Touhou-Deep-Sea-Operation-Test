@@ -30,6 +30,10 @@ namespace TouhouGUI
 
         public void Initialize()
         {
+            // 先卸载 JiuzhouHint 的补丁
+            Harmony jiuzhouHarmony = new Harmony("Jiuzhou.Hint.Esirprus");
+            jiuzhouHarmony.UnpatchAll("Jiuzhou.Hint.Esirprus");
+
             LuaCsLogger.Log($"TouhouGUI loading...");
             harmonyInstance = new Harmony("Touhou.GUI.ThanksEsirprus");
         }
@@ -103,7 +107,7 @@ namespace TouhouGUI
             if (rangedWeapon?.Item == null) return;
 
             // 定義允許的標籤列表
-            var acceptedTags = new[] { "Touhou_Cam_Offset_Low", "Touhou_Cam_Offset_Normal", "Touhou_Cam_Offset_High" };
+            var acceptedTags = new[] { "Touhou_Cam_Offset_Low", "Touhou_Cam_Offset_Normal", "Touhou_Cam_Offset_High", "weapon" };
 
             // 檢查武器是否包含任一標籤
             bool hasValidTag = acceptedTags.Any(tag => rangedWeapon.Item.HasTag(tag));

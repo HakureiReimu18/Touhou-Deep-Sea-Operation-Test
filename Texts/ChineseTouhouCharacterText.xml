@@ -275,7 +275,7 @@
     <entityname.Flandre_Eclipse_Anniversary_Plus>‖color:255,36,0,255‖芙兰朵露装束+（周年庆）‖end‖</entityname.Flandre_Eclipse_Anniversary_Plus>
     <entitydescription.Flandre_Eclipse_Anniversary_Plus>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Eclipse_Anniversary_Plus>
     <talentname.FlandreTalent>吸血鬼的破坏性妹妹</talentname.FlandreTalent>
-    <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+ 时，对物理伤害和烧伤的抗性非常低，同时，受到的物理伤害额外增加‖color:gui.green‖40%‖end‖，受到的烧伤额外增加‖color:gui.green‖70%‖end‖。
+    <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+ 时，对物理伤害和烧伤的抗性非常低，同时，受到的物理伤害额外增加‖color:gui.green‖25%‖end‖，受到的烧伤额外增加‖color:gui.green‖50%‖end‖。
         \n生命值越低，你造成的伤害无视的护甲越高，最高‖color:gui.green‖66.6%‖end‖。
         \n修复速度下降‖color:gui.green‖20%‖end‖。
         \n更快从‖color:gui.orange‖出血‖end‖和‖color:gui.orange‖失血‖end‖中恢复。

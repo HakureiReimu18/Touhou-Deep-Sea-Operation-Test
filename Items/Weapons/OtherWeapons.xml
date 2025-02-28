@@ -1002,7 +1002,7 @@
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Brilliant_Dragon_Bullet.png" sourcerect="0,0,64,64" origin="0.5,0.5" depth="0.46" />
         <Body width="64" height="64" density="10" />
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
         <LightComponent lightcolor="255,255,255,150" range="40" powerconsumption="0" IsOn="true">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,108,11" origin="0.15,0" />
         </LightComponent>
@@ -1548,7 +1548,7 @@
         </Deconstruct>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sugar_Coated_Cannonball.png" depth="0.4" sourcerect="0,0,128,128" />
         <Body width="128" height="128" density="10" />
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
             <StatusEffect type="OnBroken" target="This">
                 <Remove />
             </StatusEffect>
@@ -1597,7 +1597,7 @@
         <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Huge_Sugar_Coated_Cannonball/03.png" sourcerect="0,0,128,128" depth="0.55" maxcondition="60" origin="0.5,0.5" />
         <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Huge_Sugar_Coated_Cannonball/04.png" sourcerect="0,0,128,128" depth="0.55" maxcondition="40" origin="0.5,0.5" />
         <Body width="128" height="128" density="10" />
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Huge_Sugar_Coated_Cannonball_Bolt04" removecontaineditemsondeconstruct="true"
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Huge_Sugar_Coated_Cannonball_Bolt" />
@@ -1651,7 +1651,7 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.3" colormultiplier="255,200,200,160"/>
             <Attack structuredamage="4" targetforce="6" itemdamage="30" severlimbsprobability="0.5" penetration="0.3">
-                <Affliction identifier="explosiondamage" strength="16" />
+                <Affliction identifier="explosiondamage" strength="20" />
                 <Affliction identifier="Reiki_Pressure" strength="6" />
                 <Affliction identifier="slow" strength="15" />
                 <Affliction identifier="stun" strength="0.75" probability="0.3" />
@@ -1968,7 +1968,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Ammo.png" sourcerect="0,0,120,120" depth="0.45" origin="0.5,0.5" />
         <Body width="28" height="40" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Scorching_Ray_Gun_Light" removecontaineditemsondeconstruct="true"
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Scorching_Ray_Gun_Light" />
@@ -2438,7 +2438,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Lunar_Center.png" sourcerect="0,0,128,128" depth="0.45" origin="0.5,0.5" />
         <Body width="28" height="40" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Lunar_Center_Light01" removecontaineditemsondeconstruct="true"
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Lunar_Center_Light" />
@@ -2695,7 +2695,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
         </Holdable>
-        <RangedWeapon barrelpos="128,15" weapondamagemodifier="1.7" penetrationmultiplier="1.0" penetration="0.35" spread="7" unskilledspread="15" combatPriority="80" ReloadSkillRequirement="Touhou_Magic"
+        <RangedWeapon barrelpos="140,17" weapondamagemodifier="1.8" penetrationmultiplier="1.0" penetration="0.35" spread="7" unskilledspread="15" combatPriority="80" ReloadSkillRequirement="Touhou_Magic"
                       Reload="0.6" ReloadNoSkill="0.8" holdtrigger="true" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -3528,10 +3528,10 @@
             <StatusEffect type="OnActive" target="This" penetration="0.0" weapondamagemodifier="1.0" setvalue="true" disabledeltatime="true">
                 <Conditional HasTag="eq Batterycell_Active" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" penetration="0.25" weapondamagemodifier="2.0" setvalue="true" disabledeltatime="true">
+            <StatusEffect type="OnActive" target="This" penetration="0.15" weapondamagemodifier="1.6" setvalue="true" disabledeltatime="true">
                 <Conditional HasTag="eq Fulguriumbatterycell_Active" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" penetration="0.5" weapondamagemodifier="3.0" setvalue="true" disabledeltatime="true">
+            <StatusEffect type="OnActive" target="This" penetration="0.3" weapondamagemodifier="2.4" setvalue="true" disabledeltatime="true">
                 <Conditional HasTag="eq Alienpowercell_Active" />
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This">
@@ -3608,7 +3608,7 @@
           maxstacksize="16" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate"
           tags="smallitem" impactsoundtag="impact_metal_light" >
         <PreferredContainer secondary="armcab" />
-        <Price baseprice="2000" minleveldifficulty="10">
+        <Price baseprice="200" minleveldifficulty="10">
             <Price storeidentifier="merchantoutpost" maxavailable="3" sold="false" />
             <Price storeidentifier="merchantcity" maxavailable="2" />
             <Price storeidentifier="merchantresearch" multiplier="1.25" maxavailable="1" />
@@ -3618,14 +3618,14 @@
         <Deconstruct time="6"/>
         <Fabricate suitablefabricators="fabricator" requiredtime="20" >
             <RequiredSkill identifier="Touhou_Magic" level="30" />
-            <RequiredItem identifier="fpgacircuit" amount="2" />
-            <RequiredItem identifier="plastic" />
+            <RequiredItem identifier="fpgacircuit" amount="3" />
+            <RequiredItem identifier="plastic" amount="2" />
             <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" requiredtime="10" displayname="recycleitem" >
             <RequiredSkill identifier="Touhou_Magic" level="30" />
-            <RequiredItem identifier="fpgacircuit" amount="2" />
-            <RequiredItem identifier="plastic" />
+            <RequiredItem identifier="fpgacircuit" amount="3" />
+            <RequiredItem identifier="plastic" amount="2" />
             <RequiredItem identifier="Touhou_Charge_Rifle_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Charge_Rifle_Ammo.png" sourcerect="0,0,72,72" depth="0.45" origin="0.5,0.5" />

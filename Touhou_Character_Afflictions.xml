@@ -106,16 +106,16 @@
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" resistancefor="alieninfection,infection"
                 minresistance="0.35" maxresistance="0.35">
-            <StatusEffect target="Character" Interval="1.0" Duration="1.0">
+            <StatusEffect target="Character" Interval="1.0" disabledeltatime="true">
                 <Conditional bloodloss="gt 10"/>
                 <Reduceaffliction identifier="bloodloss" amount="0.15" />
             </StatusEffect>
-            <StatusEffect target="Character" Interval="1.0" Duration="1.0">
+            <StatusEffect target="Character" Interval="1.0" disabledeltatime="true">
                 <Conditional bleeding="gt 50"/>
                 <Reduceaffliction identifier="bloodloss" amount="0.25" />
                 <Reduceaffliction identifier="bleeding" amount="0.4" />
             </StatusEffect>
-            <StatusEffect target="Character" comparison="And" Interval="1.0" Duration="1.0">
+            <StatusEffect target="Character" comparison="And" Interval="1.0" disabledeltatime="true">
                 <Conditional bleeding="gt 0"/>
                 <Conditional bleeding="lt 50"/>
                 <Reduceaffliction identifier="bloodloss" amount="0.05" />
@@ -137,7 +137,7 @@
     </Affliction>
 
     <!--猩红恶魔-受伤增伤效果-->
-    <Affliction name="自愈" identifier="Scarletdevil_OnAttacked_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+    <Affliction name="猩红恶魔-受伤增伤效果" identifier="Scarletdevil_OnAttacked_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                  maxstrength="200" resetbetweenrounds="true" showiconthreshold="1000" showinhealthscannerthreshold="1000" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="200" >
             <StatValue stattype="AttackMultiplier" minvalue="0" maxvalue="0.1" />
@@ -235,7 +235,7 @@
 
     <!--普通的魔法使的帽子-->
     <Affliction identifier="Ordinary_Magician_Hat" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
-                showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="10" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+                duration="5.0" showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="10" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="0.05" maxresistance="0.05" strengthchange="-9">
             <StatValue stattype="AttackMultiplier" value="0.02" />
             <StatValue stattype="RangedAttackSpeed" value="0.05" />

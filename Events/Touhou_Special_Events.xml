@@ -827,10 +827,10 @@
             <Label name="delay" />
             <RNGAction chance="0.5">
                 <Success>
-                    <WaitAction time="0.8" />
+                    <WaitAction time="1.0" />
                 </Success>
                 <Failure>
-                    <WaitAction time="1.6" />
+                    <WaitAction time="1.5" />
                 </Failure>
             </RNGAction>
             <GoTo name="delay" maxtimes="200" />
@@ -1524,7 +1524,7 @@
                                 <Failure>
                                     <CheckReputationAction targettype="faction" identifier="Touhou_Gensokyo" condition="gte 20">
                                         <Success>
-                                            <ConversationAction text="你要赠送什么呢" eventsprite="Touhou_Supply_Station01">
+                                            <ConversationAction text="你要赠送什么呢" eventsprite="Touhou_Supply_Station01" targettag="triggerer_player">
                                                 <Option text="1000马克">
                                                     <CheckMoneyAction amount="1000">
                                                         <Success>

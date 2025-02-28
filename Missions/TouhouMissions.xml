@@ -719,7 +719,7 @@
           reward="22000"
           description="诡异的黑色迷雾在此处弥漫，这恰好与前段时间的灵气污染事件现场的状况如出一辙，联盟方的炼金实验室出重金请你调查这里"
           difficulty="4"
-          commonness="150"
+          commonness="100"
           allowretry="true"
           minleveldifficulty="40"
           maxleveldifficulty="100"

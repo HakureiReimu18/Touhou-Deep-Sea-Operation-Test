@@ -1679,7 +1679,7 @@
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="0.5">
             <Abilities>
-                <CharacterAbilityModifyStatToLevel stattype="DebuffDurationMultiplier" statperlevel="-0.04" maxlevel="15" />
+                <CharacterAbilityModifyStatToLevel stattype="DebuffDurationMultiplier" statperlevel="-0.02" maxlevel="15" />
             </Abilities>
         </AbilityGroupInterval>
     </Talent>

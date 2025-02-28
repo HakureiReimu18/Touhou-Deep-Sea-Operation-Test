@@ -147,10 +147,12 @@
     <afflictiondescription.Touhou_Durationincrease_Boost>进一步延长增益效果持续时间，减少减益效果持续时间</afflictiondescription.Touhou_Durationincrease_Boost>
     <afflictionname.Touhou_Huskinfectionresistance_Boost>寄生抗性UP</afflictionname.Touhou_Huskinfectionresistance_Boost>
     <afflictiondescription.Touhou_Huskinfectionresistance_Boost>额外增加烧伤抗性，并提高移动速度</afflictiondescription.Touhou_Huskinfectionresistance_Boost>
-    <afflictionname.Touhou_Pressureresistance_Boost>压力适应UP</afflictionname.Touhou_Pressureresistance_Boost>
-    <afflictiondescription.Touhou_Pressureresistance_Boost>提高水下推进速度，增加攻击速度</afflictiondescription.Touhou_Pressureresistance_Boost>
     <afflictionname.Touhou_Paralysisresistance_Boost>麻痹抗性UP</afflictionname.Touhou_Paralysisresistance_Boost>
     <afflictiondescription.Touhou_Paralysisresistance_Boost>提高技能水平，增加经验获取速度</afflictiondescription.Touhou_Paralysisresistance_Boost>
+    <afflictionname.Touhou_Cuisine_Effect01>温暖</afflictionname.Touhou_Cuisine_Effect01>
+    <afflictiondescription.Touhou_Cuisine_Effect01>美食的温暖让你浑身舒适，精神比以往更好了，不会再做噩梦</afflictiondescription.Touhou_Cuisine_Effect01>
+    <afflictionname.Touhou_Cuisine_Effect02>舒适</afflictionname.Touhou_Cuisine_Effect02>
+    <afflictiondescription.Touhou_Cuisine_Effect02>温暖又舒适</afflictiondescription.Touhou_Cuisine_Effect02>
 
     <!--死法-->
     <afflictioncauseofdeath.Reiki_Pressure>灵压崩溃</afflictioncauseofdeath.Reiki_Pressure>

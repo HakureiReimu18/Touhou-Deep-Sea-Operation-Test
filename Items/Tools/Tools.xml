@@ -196,7 +196,7 @@
         <InventoryIcon texture="%ModDir%/Images/Tools/Kappa_Backpack_Plus.png" sourcerect="0,0,100,132" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Tools/Kappa_Backpack.png" depth="0.7" sourcerect="0,0,88,126" origin="0.5,0.5" />
         <Body width="88" height="126" density="10" />
-        <ItemContainer autofill="False" capacity="1" maxstacksize="1" containedstateindicatorstyle="tank" containedstateindicatorslot="0" ExtraStackSize="8">
+        <ItemContainer autofill="False" capacity="1" maxstacksize="1" containedstateindicatorstyle="tank" containedstateindicatorslot="0" ExtraStackSize="4">
             <Containable identifiers="oxygentank,oxygensource" />
             <Containable items="oxygensource">
                 <StatusEffect type="OnWearing" target="Character" OxygenAvailable="1000.0" UseHullOxygen="false" />
@@ -467,6 +467,10 @@
             <RequiredItem identifier="Reiki_Stone" />
         </Fabricate>
         <WifiComponent range="65000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
+        <AiTarget soundrange="300000" sonarlabel="SOS" sight="500" staticsight="true"/>
+        <LightComponent LightColor="0.0,1.0,0.0,1.0" range="50" powerconsumption="10" blinkfrequency="2" IsOn="true" canbeselected="false">
+            <StatusEffect type="Always" targettype="This" SoundRange="300000" setvalue="true"/>
+        </LightComponent>
         <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" >
             <sprite name="Headset Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
             <StatusEffect type="OnWearing" target="This,Character" Interval="5.0" Duration="5.0" disabledeltatime="true" >
@@ -475,6 +479,12 @@
             </StatusEffect>
             <StatusEffect type="OnWearing" target="This,Character" Condition="-0.006" Interval="1.0" disabledeltatime="true" >
                 <Conditional HealthPercentage="lte 95" />
+            </StatusEffect>
+            <StatusEffect type="OnWearing" target="This,Character" TargetItemComponent="LightComponent" Voltage="1.0" setvalue="true" Interval="5.0" disabledeltatime="true" >
+                <Conditional IsDead="true" />
+            </StatusEffect>
+            <StatusEffect type="OnWearing" target="This,Character" TargetItemComponent="LightComponent" Voltage="0" setvalue="true" Interval="5.0" disabledeltatime="true" >
+                <Conditional IsDead="false" />
             </StatusEffect>
         </Wearable>
     </Item>
@@ -1615,6 +1625,10 @@
             <RequiredItem identifier="organicfiber" amount="2" />
             <RequiredItem identifier="Reiki_Stone" />
         </Fabricate>
+        <AiTarget soundrange="300000" sonarlabel="SOS" sight="500" staticsight="true"/>
+        <LightComponent LightColor="0.0,1.0,0.0,1.0" range="50" powerconsumption="10" blinkfrequency="2" IsOn="true" canbeselected="false">
+            <StatusEffect type="Always" targettype="This" SoundRange="300000" setvalue="true"/>
+        </LightComponent>
         <WifiComponent range="65000.0" LinkToChat="true" MinChatMessageInterval="0.0" />
         <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect" >
             <sprite name="Headset Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Head" hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false" origin="0.5,0.5" />
@@ -1630,16 +1644,6 @@
                 <ReduceAffliction type="nausea" amount="9" />
                 <Affliction identifier="psychosisresistance" amount="15" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="This,Character" comparison="And" Condition="-0.05" Interval="1.0" disabledeltatime="true" >
-                <Conditional Reiki_Side_Effect="gt 0" />
-                <Conditional condition="gt 0" />
-                <ReduceAffliction type="Reiki_Side_Effect" amount="0.03" />
-            </StatusEffect>
-            <StatusEffect type="OnWearing" target="This,Character" comparison="And" Condition="-0.05" Interval="1.0" disabledeltatime="true" >
-                <Conditional Reiki_Side_Effect_NT="gt 0" />
-                <Conditional condition="gt 0" />
-                <ReduceAffliction type="Reiki_Side_Effect" amount="0.03" />
-            </StatusEffect>
             <StatusEffect type="OnWearing" target="This,Character" Interval="5.0" Duration="5.0" >
                 <Conditional condition="gt 0" />
                 <Affliction identifier="Touhou_Pendulum_Magic" amount="50" />
@@ -1647,6 +1651,12 @@
             <StatusEffect type="OnWearing" target="Character" comparison="And" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 120" />
                 <Affliction identifier="Touhou_Pendulum_Magic_Effect" amount="50" />
+            </StatusEffect>
+            <StatusEffect type="OnWearing" target="This,Character" TargetItemComponent="LightComponent" Voltage="1.0" setvalue="true" Interval="5.0" disabledeltatime="true" >
+                <Conditional IsDead="true" />
+            </StatusEffect>
+            <StatusEffect type="OnWearing" target="This,Character" TargetItemComponent="LightComponent" Voltage="0" setvalue="true" Interval="5.0" disabledeltatime="true" >
+                <Conditional IsDead="false" />
             </StatusEffect>
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="15" />
         </Wearable>
@@ -2022,9 +2032,9 @@
             health="400"
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
-        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>
-        <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.04" />
-        <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.08" />
+        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.04"/>
+        <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.05" />
+        <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.09" />
         <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.075" />
         <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.075" />
         <Price baseprice="400" minavailable="2" sold="false" >
@@ -2065,9 +2075,9 @@
             health="400"
             impactsoundtag="impact_soft">
         <PreferredContainer primary="medfabcab" />
-        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.03"/>
-        <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.04" />
-        <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.08" />
+        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" spawnprobability="0.04"/>
+        <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="1" maxamount="2" spawnprobability="0.05" />
+        <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.09" />
         <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.075" />
         <PreferredContainer primary="outpostcrewcabinet" minamount="0" maxamount="1" spawnprobability="0.075" />
         <Price baseprice="400" minavailable="2" sold="false" >
