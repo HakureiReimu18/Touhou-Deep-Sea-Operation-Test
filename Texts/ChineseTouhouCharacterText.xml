@@ -682,7 +682,7 @@
     <talentname.MRE_Aunn>出血效应-高丽野阿吽</talentname.MRE_Aunn>
     <talentdescription.MRE_Aunn>仅对阿吽装束+生效。狛犬状态下，造成的伤害增加20%。狮子状态下，受到的伤害减少20%</talentdescription.MRE_Aunn>
     <talentname.MRE_Flandre>出血效应-芙兰朵露·斯卡雷特</talentname.MRE_Flandre>
-    <talentdescription.MRE_Flandre>仅对芙兰朵露装束+生效。使用专属武器攻击带有目之破坏或血量低于50%的敌人时，每次远程弹幕攻击都有3%的概率秒杀，若为近战则概率翻倍</talentdescription.MRE_Flandre>
+    <talentdescription.MRE_Flandre>仅对芙兰朵露装束+生效。受到的伤害减少15%。使用专属武器攻击带有目之破坏或血量低于50%的敌人时，每次远程弹幕攻击都有4%的概率秒杀，若为近战则概率翻倍</talentdescription.MRE_Flandre>
     <talentname.MRE_Nue>出血效应-封兽鵺</talentname.MRE_Nue>
     <talentdescription.MRE_Nue>仅对鵺装束+生效。每次受到敌人的攻击时，将该伤害存储并强化下一次攻击的伤害，最高50%</talentdescription.MRE_Nue>
     <talentname.MRE_Piece>出血效应-克劳恩·皮丝</talentname.MRE_Piece>

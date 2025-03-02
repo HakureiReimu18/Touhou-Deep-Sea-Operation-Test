@@ -1190,14 +1190,14 @@
                                                         </Failure>
                                                     </CheckItemAction>
                                                 </Option>
-                                                <Option text="一份赏月团子和一份月饼">
+                                                <Option text="一份月光团子和一份月饼">
                                                     <CheckItemAction targettag="triggerer_player" itemidentifiers="Touhou_Fullmoon_Dumpling" >
                                                         <Success>
-                                                            <CheckItemAction targettag="triggerer_player" itemidentifiers="Touhou_Fullmoon_Cake" >
+                                                            <CheckItemAction targettag="triggerer_player" itemidentifiers="Touhou_Moon_Cake" >
                                                                 <Success>
                                                                     <ConversationAction targettag="triggerer_player" dialogtype="Small" text="”谢谢你！我会记住的。“" />
                                                                     <RemoveItemAction targettag="triggerer_player" itemidentifier="Touhou_Fullmoon_Dumpling" />
-                                                                    <RemoveItemAction targettag="triggerer_player" itemidentifier="Touhou_Fullmoon_Cake" />
+                                                                    <RemoveItemAction targettag="triggerer_player" itemidentifier="Touhou_Moon_Cake" />
                                                                     <ReputationAction targettype="Faction" identifier="Touhou_Gensokyo" increase="2" />
                                                                     <RNGAction chance="0.7">
                                                                         <Success>
@@ -1569,14 +1569,14 @@
                                                         </Failure>
                                                     </CheckItemAction>
                                                 </Option>
-                                                <Option text="一份赏月团子和一份月饼">
+                                                <Option text="一份月光团子和一份月饼">
                                                     <CheckItemAction targettag="triggerer_player" itemidentifiers="Touhou_Fullmoon_Dumpling" >
                                                         <Success>
-                                                            <CheckItemAction targettag="triggerer_player" itemidentifiers="Touhou_Fullmoon_Cake" >
+                                                            <CheckItemAction targettag="triggerer_player" itemidentifiers="Touhou_Moon_Cake" >
                                                                 <Success>
                                                                     <ConversationAction targettag="triggerer_player" dialogtype="Small" text="”感谢你做出的贡献，我会记住的。“" />
                                                                     <RemoveItemAction targettag="triggerer_player" itemidentifier="Touhou_Fullmoon_Dumpling" />
-                                                                    <RemoveItemAction targettag="triggerer_player" itemidentifier="Touhou_Fullmoon_Cake" />
+                                                                    <RemoveItemAction targettag="triggerer_player" itemidentifier="Touhou_Moon_Cake" />
                                                                     <ReputationAction targettype="Faction" identifier="Touhou_Gensokyo" increase="2" />
                                                                     <RNGAction chance="0.7">
                                                                         <Success>

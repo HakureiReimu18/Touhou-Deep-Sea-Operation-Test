@@ -834,13 +834,23 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15" />
+            </Abilities>
+        </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+                <AbilityConditionHasAffliction afflictionidentifier="Flandre_Weapons" />
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional Touhou_MRE_Akyuu_Effect="gt 0"/>
+                    <Conditional Destruction_Of_Mu="gt 0"/>
                     <Conditional HealthPercentage="gt 50"/>
                 </AbilityConditionCharacter>
                 <AbilityConditionServerRandom randomchance="0.04" />
@@ -852,11 +862,12 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+                <AbilityConditionHasAffliction afflictionidentifier="Flandre_Weapons" />
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional HealthPercentage="lte 50"/>
-                    <Conditional Touhou_MRE_Akyuu_Effect="eq 0"/>
+                    <Conditional Destruction_Of_Mu="eq 0"/>
                 </AbilityConditionCharacter>
                 <AbilityConditionServerRandom randomchance="0.04" />
             </Conditions>
@@ -867,13 +878,14 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+                <AbilityConditionHasAffliction afflictionidentifier="Flandre_Weapons" />
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional Touhou_MRE_Akyuu_Effect="gt 0"/>
+                    <Conditional Destruction_Of_Mu="gt 0"/>
                     <Conditional HealthPercentage="gt 50"/>
                 </AbilityConditionCharacter>
-                <AbilityConditionServerRandom randomchance="0.06" />
+                <AbilityConditionServerRandom randomchance="0.08" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData implode="true" />
@@ -882,13 +894,14 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet" />
+                <AbilityConditionHasAffliction afflictionidentifier="Flandre_Weapons" />
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional HealthPercentage="lte 50"/>
-                    <Conditional Touhou_MRE_Akyuu_Effect="eq 0"/>
+                    <Conditional Destruction_Of_Mu="eq 0"/>
                 </AbilityConditionCharacter>
-                <AbilityConditionServerRandom randomchance="0.06" />
+                <AbilityConditionServerRandom randomchance="0.08" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData implode="true" />

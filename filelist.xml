@@ -60,6 +60,7 @@
   <Item file="%ModDir%/Items/Materials/Touhou_Doll.xml" />
   <Item file="%ModDir%/Items/Materials/Food_Ingredients.xml" />
   <Item file="%ModDir%/Items/Materials/Touhou_Cuisine.xml" />
+  <Item file="%ModDir%/Items/Materials/Touhou_Drinks.xml" />
   <!--weapons-->
   <Item file="%ModDir%/Items/Weapons/TouhouWeapon.xml" />
   <Item file="%ModDir%/Items/Weapons/OtherWeapons.xml" />

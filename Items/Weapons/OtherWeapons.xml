@@ -2806,7 +2806,7 @@
                 </StatusEffect>
             </Button>
         </CustomInterface>
-        <RangedWeapon barrelpos="135,9" weapondamagemodifier="1.4" penetrationmultiplier="1.0" penetration="0.3" spread="0.1" maxchargetime="0.4"
+        <RangedWeapon barrelpos="135,9" weapondamagemodifier="1.6" penetrationmultiplier="1.0" penetration="0.3" spread="0.1" maxchargetime="0.4"
                       combatPriority="80" ReloadSkillRequirement="Touhou_Magic" Reload="1.6" ReloadNoSkill="3.0" holdtrigger="true" ProjectileCount="2"
                       drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
@@ -3039,9 +3039,9 @@
         <Body width="30" height="80" density="10" gravityscale="0" waterdragcoefficient="1" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="3" hitscan="false" maxtargetstohit="6" removeonhit="false" damagedoors="true" >
-            <Attack itemdamage="30" levelwalldamage="20" targetforce="3" targetimpulse="3" penetration="0.3" severlimbsprobability="1.0">
-                <Affliction identifier="explosiondamage" strength="15" />
-                <Affliction identifier="burn" strength="15" />
+            <Attack itemdamage="30" levelwalldamage="20" targetforce="3" targetimpulse="3" penetration="0.35" severlimbsprobability="1.0">
+                <Affliction identifier="explosiondamage" strength="16" />
+                <Affliction identifier="burn" strength="16" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
                 <Affliction identifier="stun" strength="0.1" />
                 <Affliction identifier="stun" strength="0.2" probability="0.3"/>
@@ -3604,9 +3604,8 @@
     </Item>
 
     <!--电荷中继器-->
-    <Item name="电荷中继器" identifier="Touhou_Charge_Rifle_Ammo" scale="0.32" subcategory="Touhou" category="Weapon"
-          maxstacksize="16" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate"
-          tags="smallitem" impactsoundtag="impact_metal_light" >
+    <Item name="电荷中继器" identifier="Touhou_Charge_Rifle_Ammo" scale="0.32" subcategory="Touhou" category="Weapon" maxstacksize="16" Health="150"
+          maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" >
         <PreferredContainer secondary="armcab" />
         <Price baseprice="200" minleveldifficulty="10">
             <Price storeidentifier="merchantoutpost" maxavailable="3" sold="false" />
@@ -3620,12 +3619,14 @@
             <RequiredSkill identifier="Touhou_Magic" level="30" />
             <RequiredItem identifier="fpgacircuit" amount="3" />
             <RequiredItem identifier="plastic" amount="2" />
+            <RequiredItem identifier="rubber" amount="2" />
             <RequiredItem identifier="Touhou_Base_Metal" />
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" requiredtime="10" displayname="recycleitem" >
             <RequiredSkill identifier="Touhou_Magic" level="30" />
             <RequiredItem identifier="fpgacircuit" amount="3" />
             <RequiredItem identifier="plastic" amount="2" />
+            <RequiredItem identifier="rubber" amount="2" />
             <RequiredItem identifier="Touhou_Charge_Rifle_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Charge_Rifle_Ammo.png" sourcerect="0,0,72,72" depth="0.45" origin="0.5,0.5" />
@@ -3636,7 +3637,7 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Charge_Rifle_Bullet" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-0.5" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="This" condition="-1" disabledeltatime="true" >
                 <SpawnItem identifiers="Touhou_Charge_Rifle_Bullet" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>

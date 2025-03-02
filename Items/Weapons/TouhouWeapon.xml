@@ -928,8 +928,9 @@
             <StatusEffect type="OnBroken" target="this" stackable="false" delay="0.4">
                 <remove />
             </StatusEffect>
-            <StatusEffect type="OnImpact" target="UseTarget">
-                <Affliction identifier="lacerations" strength="20" />
+            <StatusEffect type="OnImpact" target="Limb">
+                <Affliction identifier="lacerations" strength="50" />
+                <Affliction identifier="bleeding" strength="50" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="20.0" showeffects="false" force="0.5" penetration="0.36" >
@@ -1159,10 +1160,10 @@
         <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-33,0"  allowhitmultiple="true"
                      holdangle="30" aimangle="20" reload="0.8" range="80" combatPriority="30" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="2" severlimbsprobability="0.55" itemdamage="60" structuredamage="0.2" structuresoundtype="StructureSlash" penetration="0.2">
-                <Affliction identifier="lacerations" strength="26" />
+                <Affliction identifier="lacerations" strength="28" />
                 <Affliction identifier="Reiki_Pressure" strength="2" />
                 <Affliction identifier="Touhou_Lost_Heart" strength="2.5" />
-                <Affliction identifier="stun" strength="0.1" probability="0.6" />
+                <Affliction identifier="stun" strength="0.1" probability="0.45" />
             </Attack>
             <StatusEffect type="OnActive" target="Character">
                 <Affliction identifier="Touhou_Lou_Guan_Sword" strength="10" />
@@ -1284,7 +1285,7 @@
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
             <StatusEffect  type="OnActive" target="This" disabledeltatime="true">
-                <ParticleEmitter particle="Tenshi_Peach_Effect" ScaleMultiplier="0.1,0.1" ParticlesPerSecond="30" ColorMultiplier="255,55,205,255" Angle="0" Distance="28" CopyEntityAngle="True" CopyTargetAngle="True" />
+                <ParticleEmitter particle="Tenshi_Peach_Effect" ScaleMultiplier="0.1,0.1" ParticlesPerSecond="50" ColorMultiplier="255,55,205,255" Angle="0" Distance="28" CopyEntityAngle="True" CopyTargetAngle="True" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <Conditional entitytype="eq Character" />
@@ -4922,8 +4923,8 @@
             </StatusEffect>
             <Attack targetimpulse="5" severlimbsprobability="0.5" itemdamage="10" penetration="0.1">
                 <Affliction identifier="Reiki_Pressure" strength="2" />
-                <Affliction identifier="lacerations" strength="20" />
-                <Affliction identifier="bleeding" strength="5" />
+                <Affliction identifier="lacerations" strength="23" />
+                <Affliction identifier="bleeding" strength="15" />
                 <Affliction identifier="stun" strength="0.2" probability="0.4" />
                 <StatusEffect type="OnUse" target="UseTarget">
                     <Conditional entitytype="eq Character"/>
@@ -5660,7 +5661,7 @@
                 <Conditional Voltage="lt 0.5" />
             </StatusEffect>
         </Holdable>
-        <RangedWeapon reload="0.4" holdtrigger="true" maxchargetime="0.8" barrelpos="54,2" spread="5" unskilledspread="14"
+        <RangedWeapon reload="0.4" holdtrigger="true" maxchargetime="0.8" barrelpos="52,0" spread="5" unskilledspread="14"
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="0,0,180,180" />
@@ -5685,7 +5686,7 @@
         </ItemContainer>
         <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
         <Quality>
-            <QualityStat stattype="FirepowerMultiplier" value="0.0834" />
+            <QualityStat stattype="FirepowerMultiplier" value="0.1" />
             <QualityStat stattype="FiringRateMultiplier" value="0.0667" />
         </Quality>
         <SkillRequirementHint identifier="weapons" level="60" />
@@ -6251,7 +6252,7 @@
 
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Sword.png" sourcerect="6,0,693,128" depth="0.55" origin="0.5,0.5" />
         <Body width="693" height="128" density="10" />
-        <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-48,-2" handle2="-42,-1" holdangle="20" aimangle="0" reload="0.9" range="130" combatPriority="50"
+        <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-44,0" handle2="-42,-1" holdangle="20" aimangle="0" reload="0.9" range="130" combatPriority="50"
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
                 <Conditional Perfect_And_Elegant_Servant="gt 0"/>
@@ -6361,7 +6362,7 @@
 
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Sword.png" sourcerect="10,128,690,123" depth="0.55" origin="0.5,0.5" />
         <Body width="690" height="123" density="10" />
-        <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-48,-2" handle2="-42,-1" holdangle="20" aimangle="0" reload="0.9" range="130" combatPriority="50"
+        <MeleeWeapon slots="Any,RightHand,LeftHand" aimpos="35,10" handle1="-44,0" handle2="-42,-1" holdangle="20" aimangle="0" reload="0.9" range="130" combatPriority="50"
                      allowhitmultiple="true" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
                 <Conditional Perfect_And_Elegant_Servant="gt 0"/>
@@ -7867,7 +7868,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="50" />
             <RequiredItem identifier="Touhou_Crystal_Pistol_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false" />
             <RequiredItem identifier="Touhou_Base_Metal" />
-            <RequiredItem identifier="Yin_Alchemical" />
+            <RequiredItem identifier="Yang_Alchemical" />
             <RequiredItem tag="munition_core" />
         </Fabricate>
         <Deconstruct time="6">
@@ -7895,7 +7896,7 @@
             <Attack targetforce="3" itemdamage="30" severlimbsprobability="0.45" penetration="0.15">
                 <Affliction identifier="burn" strength="8" />
                 <Affliction identifier="burn" strength="4" probability="0.5" />
-                <Affliction identifier="lacerations" strength="8" />
+                <Affliction identifier="lacerations" strength="10" />
                 <Affliction identifier="explosiondamage" strength="4" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.75"/>
                 <Affliction identifier="stun" strength="0.25" probability="0.5" />
@@ -8427,7 +8428,7 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect03" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnBroken" target="This" Condition="100" setvalue="true" disabledeltatime="true" delay="5" stackable="false" />
+            <StatusEffect type="OnBroken" target="This" Condition="100" setvalue="true" disabledeltatime="true" delay="7" stackable="false" />
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart02.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>

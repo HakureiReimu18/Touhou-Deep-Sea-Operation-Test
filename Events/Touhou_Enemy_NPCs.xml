@@ -22,7 +22,9 @@
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform3" equip="true" />
-                <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" />
+                <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
                     <Item identifier="Touhou_Blunderbuss_Enemy_Magazine02" />
                 </Item>
@@ -37,6 +39,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform3" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
@@ -55,6 +58,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform3" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="handcannon" equip="true">
@@ -90,7 +94,9 @@
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform2" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
                     <Item identifier="Touhou_Blunderbuss_Enemy_Magazine01" />
                 </Item>
@@ -104,6 +110,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform2" equip="true" />
                 <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
@@ -120,6 +127,7 @@
                 <Item identifier="securityseparatistsuniform3" equip="true" />
                 <Item identifier="banditoutfit" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
@@ -153,7 +161,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Hompson_Contender_Enemy" equip="true">
                     <Item identifier="revolverround" amount="4" />
                 </Item>
@@ -167,7 +177,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Magic_Automatic_Shotgun" equip="true">
                     <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="12" />
                 </Item>
@@ -182,6 +194,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
                 <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Magic_Automatic_Shotgun" equip="true">
@@ -215,7 +228,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Fire_Element_Book" />
                 <Item identifier="Water_Element_Book" />
                 <Item identifier="boardingaxe"/>
@@ -227,7 +242,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Water_Element_Book" />
                 <Item identifier="Iron_Element_Book" />
                 <Item identifier="cyanideantidote" amount="3"/>
@@ -239,7 +256,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Iron_Element_Book" />
                 <Item identifier="Earth_Element_Book" />
                 <Item identifier="boardingaxe"/>
@@ -251,7 +270,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Earth_Element_Book" />
                 <Item identifier="Fire_Element_Book" />
                 <Item identifier="boardingaxe"/>
@@ -286,6 +307,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securitypatrolclothes" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Lunarquake_Fake" equip="true">
@@ -305,6 +327,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securitypatrolclothes" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
@@ -323,6 +346,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securitypatrolclothes" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="handcannon" equip="true">
@@ -358,7 +382,9 @@
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform2" equip="true" />
-                <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" />
+                <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Lunarquake_Fake" equip="true">
                     <Item identifier="Touhou_Lunar_Center_Fake" />
                 </Item>
@@ -375,6 +401,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform2" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
@@ -394,6 +421,7 @@
                 <Item identifier="securityseparatistsuniform3" equip="true" />
                 <Item identifier="banditoutfit" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Lunarquake_Fake" equip="true">
@@ -430,7 +458,9 @@
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Hompson_Contender_Enemy" equip="true">
                     <Item identifier="revolverround" amount="4" />
                 </Item>
@@ -447,7 +477,9 @@
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Magic_Automatic_Shotgun" equip="true">
                     <Item identifier="Touhou_Magic_Automatic_Shotgun_Bullet" amount="12" />
                 </Item>
@@ -465,6 +497,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
                 <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="youmusmg" equip="true">
@@ -500,7 +533,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked03" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Fire_Element_Book" />
                 <Item identifier="Water_Element_Book" />
                 <Item identifier="boardingaxe"/>
@@ -512,7 +547,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked03" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Water_Element_Book" />
                 <Item identifier="Iron_Element_Book" />
                 <Item identifier="cyanideantidote" amount="3"/>
@@ -524,7 +561,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Iron_Element_Book" />
                 <Item identifier="Earth_Element_Book" />
                 <Item identifier="boardingaxe"/>
@@ -536,7 +575,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Earth_Element_Book" />
                 <Item identifier="Fire_Element_Book" />
                 <Item identifier="boardingaxe"/>
@@ -556,7 +597,7 @@
                 job="Magician_Enemy"
                 behavior="Patrol"
                 healthmultiplier="2.0"
-                healthmultiplierinmultiplayer="2.5"
+                healthmultiplierinmultiplayer="2.0"
                 reactionTime="0.1"
                 aimspeed="50"
                 aimaccuracy="0.3"
@@ -565,12 +606,13 @@
                 FindWeaponsRange="3000">
             <ItemSet commonness="0.3">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
+                <Item identifier="Illness_Recovery_Charm_Locked04" equip="true" >
                     <Item identifier="Touhou_MEID" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes_Lunatic" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Nail_Head_Book" equip="true">
@@ -586,12 +628,13 @@
             </ItemSet>
             <ItemSet commonness="0.3">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
+                <Item identifier="Illness_Recovery_Charm_Locked04" equip="true" >
                     <Item identifier="Touhou_MEID" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes_Lunatic" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Magic_Automatic_Shotgun" equip="true">
@@ -603,12 +646,13 @@
             </ItemSet>
             <ItemSet commonness="0.3">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
+                <Item identifier="Illness_Recovery_Charm_Locked04" equip="true" >
                     <Item identifier="Touhou_MEID" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes_Lunatic" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Arc_Salute_Cannon" equip="true">
@@ -644,13 +688,13 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes_Lunatic" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Aphelion" equip="true">
                     <Item identifier="Touhou_Aphelion_Ammo" />
                 </Item>
                 <Item identifier="Touhou_Aphelion_Ammo" amount="3" />
-                <Item identifier="boardingaxe"/>
             </ItemSet>
         </npc>
 
@@ -670,7 +714,7 @@
                 reportrange="1500"
                 skillmultiplier="5"
                 FindWeaponsRange="3000">
-            <ItemSet commonness="0.45">
+            <ItemSet commonness="0.5">
                 <Item identifier="idcard" equip="true" />
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
                     <Item identifier="Touhou_MEID" />
@@ -678,6 +722,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Pollution_Shotgun" equip="true">
@@ -685,12 +730,11 @@
                 </Item>
                 <Item identifier="Touhou_Magic_Pollution_Shotgun_Bullet" amount="36" />
                 <Item identifier="Touhou_Magic_Pollution_Shotgun_Bullet" amount="36" />
-                <Item identifier="boardingaxe"/>
                 <Item identifier="antibleeding2" amount="4"/>
                 <Item identifier="deusizine" amount="2"/>
                 <Item identifier="Power_Point" />
             </ItemSet>
-            <ItemSet commonness="0.45">
+            <ItemSet commonness="0.5">
                 <Item identifier="idcard" equip="true" />
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
                     <Item identifier="Touhou_MEID" />
@@ -698,6 +742,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Pollution_Rifle" equip="true">
@@ -706,31 +751,9 @@
                 <Item identifier="riflebullet" amount="12" />
                 <Item identifier="riflebullet" amount="12" />
                 <Item identifier="riflebullet" amount="12" />
-                <Item identifier="boardingaxe"/>
                 <Item identifier="deusizine" amount="2"/>
                 <Item identifier="Touhou_Precious_Metal" />
                 <Item identifier="Power_Point" />
-            </ItemSet>
-            <ItemSet commonness="0.1">
-                <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
-                    <Item identifier="Touhou_MEID" />
-                </Item>
-                <Item identifier="piratehelmet" equip="true" />
-                <Item identifier="Pollution_Magician_Clothes" equip="true" />
-                <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
-                    <Item identifier="combatstimulantsyringe" />
-                </Item>
-                <Item identifier="Touhou_Aphelion" equip="true">
-                    <Item identifier="Touhou_Aphelion_Ammo" />
-                </Item>
-                <Item identifier="Touhou_Aphelion_Ammo" amount="4" />
-                <Item identifier="Touhou_Aphelion_Ammo" amount="4" />
-                <Item identifier="boardingaxe"/>
-                <Item identifier="antibleeding2" amount="4"/>
-                <Item identifier="deusizine" amount="2"/>
-                <Item identifier="Touhou_Precious_Metal" amount="2" />
-                <Item identifier="Power_Point" amount="2" />
             </ItemSet>
         </npc>
 
@@ -758,6 +781,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes_Lunatic" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Lunarquake_Fake" equip="true">
@@ -777,6 +801,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes_Lunatic" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
@@ -795,6 +820,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="Pollution_Magician_Clothes_Lunatic" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Arc_Salute_Cannon" equip="true">
@@ -825,12 +851,14 @@
                 FindWeaponsRange="3000">
             <ItemSet commonness="0.5">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
+                <Item identifier="Illness_Recovery_Charm_Locked03" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform2" equip="true" />
-                <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" />
+                <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Nail_Head_Book" equip="true">
                     <Item identifier="Touhou_Nail_Head_Book_Ammo" />
                 </Item>
@@ -844,12 +872,13 @@
             </ItemSet>
             <ItemSet commonness="0.35">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
+                <Item identifier="Illness_Recovery_Charm_Locked01" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform2" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Blunderbuss_Enemy" equip="true">
@@ -869,6 +898,7 @@
                 <Item identifier="securityseparatistsuniform3" equip="true" />
                 <Item identifier="banditoutfit" equip="true" />
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Lunarquake_Fake" equip="true">
@@ -900,12 +930,14 @@
                 FindWeaponsRange="3000">
             <ItemSet commonness="0.4">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Locked01" equip="true" >
+                <Item identifier="Illness_Recovery_Charm_Locked03" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Nail_Head_Book" equip="true">
                     <Item identifier="Touhou_Nail_Head_Book_Ammo" />
                 </Item>
@@ -920,12 +952,14 @@
             </ItemSet>
             <ItemSet commonness="0.4">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Locked01" equip="true" >
+                <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" >
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Magic_Automatic_Shotgun" equip="true">
                     <Item identifier="Touhou_Magic_Pollution_Shotgun_Bullet" amount="12" />
                 </Item>
@@ -943,6 +977,7 @@
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="securityseparatistsuniform1" equip="true" />
                 <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
                 <Item identifier="Touhou_Arc_Salute_Cannon" equip="true">
@@ -974,10 +1009,12 @@
                 FindWeaponsRange="3000">
             <ItemSet commonness="0.25">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Locked01" equip="true" />
+                <Item identifier="Illness_Recovery_Charm_Locked03" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Fire_Element_Book" />
                 <Item identifier="Water_Element_Book" />
                 <Item identifier="boardingaxe"/>
@@ -986,10 +1023,12 @@
             </ItemSet>
             <ItemSet commonness="0.25">
                 <Item identifier="idcard" equip="true" />
-                <Item identifier="Illness_Recovery_Charm_Locked01" equip="true" />
+                <Item identifier="Illness_Recovery_Charm_Locked03" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Touhou_Arc_Salute_Cannon" equip="true">
                     <Item identifier="Touhou_Arc_Salute_Cannon_Ammo"  />
                 </Item>
@@ -1003,7 +1042,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Iron_Element_Book" />
                 <Item identifier="Earth_Element_Book" />
                 <Item identifier="boardingaxe"/>
@@ -1015,7 +1056,9 @@
                 <Item identifier="Illness_Recovery_Charm_Locked02" equip="true" />
                 <Item identifier="piratehelmet" equip="true" />
                 <Item identifier="doctorsuniform1" equip="true" />
-                <Item identifier="Ether_Divinggear_Enemy" equip="true" />
+                <Item identifier="Ether_Divinggear_Enemy" equip="true" >
+                    <Item identifier="oxygentank"/>
+                </Item>
                 <Item identifier="Earth_Element_Book" />
                 <Item identifier="Fire_Element_Book" />
                 <Item identifier="boardingaxe"/>
