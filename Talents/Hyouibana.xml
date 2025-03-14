@@ -859,9 +859,6 @@
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="None">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Perfect_And_Elegant_Servant" />
-            </Conditions>
             <Abilities>
                 <CharacterAbilityGiveResistance resistanceid="Touhou_Luna_Clock_Effect" multiplier="0" />
                 <CharacterAbilityGiveResistance resistanceid="Touhou_Luna_Clock_Effect_Debuff" multiplier="0" />

@@ -210,7 +210,8 @@
             <Item identifier="Reiki_Dust" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="0.5" amount="2">
-            <RequiredSkill identifier="medical" level="60" />
+            <RequiredSkill identifier="medical" level="10" />
+            <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="Reiki_Dust" />
             <RequiredItem identifier="Plant_Essential_Oil" />
         </Fabricate>
@@ -954,7 +955,7 @@
     </Item>
 
     <!--灵异珠-波纹-->
-    <Item name="灵异珠-波纹" identifier="Touhou_Mysterious_Pearl_Rippling" tags="smallitem,loadable,battery,Touhou_Mysterious_Pearl_Rippling,alienartifact" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" scale="0.2">
+    <Item name="灵异珠-波纹" identifier="Touhou_Mysterious_Pearl_Rippling" tags="smallitem,Touhou_Mysterious_Pearl_Rippling,alienartifact" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate" scale="0.2">
         <PreferredContainer primary="ruintreasure" amount="1" spawnprobability="0.02" />
         <PreferredContainer secondary="ruinstoragelarge" amount="1" spawnprobability="0.01" />
         <PreferredContainer primary="Touhou_Rippling" amount="1" spawnprobability="1" />

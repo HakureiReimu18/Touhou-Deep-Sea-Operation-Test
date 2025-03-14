@@ -284,10 +284,6 @@
   <entitydescription.Touhou_Apple>所幸来得及时，它还没有变成Bad Apple!!</entitydescription.Touhou_Apple>
   <entityname.Touhou_Golden_Carrot>金胡萝卜</entityname.Touhou_Golden_Carrot>
   <entitydescription.Touhou_Golden_Carrot>幸运的象征</entitydescription.Touhou_Golden_Carrot>
-  <!--Display Name-->
-  <displayname.Touhou_Efficient_Extraction>[itemname] (高效提取)</displayname.Touhou_Efficient_Extraction>
-  <displayname.Touhou_Efficient_Synthesis>[itemname] (高效合成)</displayname.Touhou_Efficient_Synthesis>
-  <displayname.Touhou_Material_Reduction>[itemname] (材料还原)</displayname.Touhou_Material_Reduction>
 
   <!--后半段翻译内容-->
   <entityname.Touhou_Tenshi_Peach>天桃</entityname.Touhou_Tenshi_Peach>
@@ -317,7 +313,7 @@
   <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>河童们根据天子的要求，最后做出来的成品，虽然与理想中的“要石”有一些差距，但其便捷发射要石的功能很让她满意。只是在水下使用时常常会伤及自己……‖color:gui.orange‖（小心友伤）‖color:end‖
   使用‖color:gui.yellow‖电能要石‖end‖。</entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>
   <entityname.Lightning_Kanameishi>电能要石</entityname.Lightning_Kanameishi>
-  <entitydescription.Lightning_Kanameishi>在特殊天气下，一块被闪电注能的要石，可作为聚能电弧发射器的供能单元，也可以作为正常电池充电。\n“按理说，要石应该绝缘才对吧……”‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Lightning_Kanameishi>
+  <entitydescription.Lightning_Kanameishi>在特殊天气下，一块被闪电注能的要石，可作为聚能电弧发射器的供能单元。\n“按理说，要石应该绝缘才对吧……”‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Lightning_Kanameishi>
   <entityname.Patchouli_Doll>帕秋莉人偶</entityname.Patchouli_Doll>
   <entitydescription.Patchouli_Doll>姆Q！（放入任意瓶装元素后，携带使用，能缓慢治愈伤势，手持时右键可以使效果翻倍）</entitydescription.Patchouli_Doll>
   <!--临时新添加的物品-->
@@ -535,8 +531,6 @@
   <entitydescription.Touhou_Alice_Puppet_Suitcase>爱丽丝用于容纳人偶的手提箱，可以保护里面的人偶远离木卫二冰冷的海水。还可以加快人偶能量的恢复。</entitydescription.Touhou_Alice_Puppet_Suitcase>
   <entityname.Touhou_Berry_Wine>红莓酒</entityname.Touhou_Berry_Wine>
   <entitydescription.Touhou_Berry_Wine>妖怪们来到木卫二后，汲取灵感制成的特色酒，可以补充失血，还有缓解毒素的妙用。但一般人类都不胜酒力</entitydescription.Touhou_Berry_Wine>
-  <entityname.Touhou_Tengu_Dance>天狗踊</entityname.Touhou_Tengu_Dance>
-  <entitydescription.Touhou_Tengu_Dance>传说连天狗喝了也会开心地跳舞的美味清酒，但一般人类都不胜酒力，一口便醉。</entitydescription.Touhou_Tengu_Dance>
   <entityname.Touhou_Life_Needle>生命指针</entityname.Touhou_Life_Needle>
   <entitydescription.Touhou_Life_Needle>用于从死亡的敌对个体上采集恐惧，外表看上去却是人畜无害的指针样式。</entitydescription.Touhou_Life_Needle>
   <entityname.Touhou_Tide>潮汐</entityname.Touhou_Tide>
@@ -736,7 +730,25 @@
   <entityname.Touhou_Charge_Rifle_Ammo>电荷中继器</entityname.Touhou_Charge_Rifle_Ammo>
   <entitydescription.Touhou_Charge_Rifle_Ammo>电荷步枪的关键元件，是整把武器运作的核心</entitydescription.Touhou_Charge_Rifle_Ammo>
   <entityname.Touhou_Dichromatic_Lotus_Butterfly>二色莲花蝶</entityname.Touhou_Dichromatic_Lotus_Butterfly>
-  <entitydescription.Touhou_Dichromatic_Lotus_Butterfly>一股保护身体的神秘的灵气，很是排斥外来的效果，但会放大使用者身上的增益效果</entitydescription.Touhou_Dichromatic_Lotus_Butterfly>
+  <entitydescription.Touhou_Dichromatic_Lotus_Butterfly>一股保护身体的神秘的灵气，很是排斥外来的效果，但会放大使用者身上的增益效果。拥有五个勾玉空缺</entitydescription.Touhou_Dichromatic_Lotus_Butterfly>
+  <entityname.Touhou_Poison_Soaked_Dagger>浸毒匕首</entityname.Touhou_Poison_Soaked_Dagger>
+  <entitydescription.Touhou_Poison_Soaked_Dagger>我这把匕首上可是沾满了剧毒~</entitydescription.Touhou_Poison_Soaked_Dagger>
+  <entityname.Touhou_Gilding_Dagger>鎏金匕首</entityname.Touhou_Gilding_Dagger>
+  <entitydescription.Touhou_Gilding_Dagger>鎏金的不仅仅是记忆，更是未来</entitydescription.Touhou_Gilding_Dagger>
+  <entityname.Touhou_Black_Wings_Knife>黑翼</entityname.Touhou_Black_Wings_Knife>
+  <entitydescription.Touhou_Black_Wings_Knife>黑色羽翼形状的刀刃，能有效限制目标的行动</entitydescription.Touhou_Black_Wings_Knife>
+  <entityname.Touhou_White_Wings_Knife>白翼</entityname.Touhou_White_Wings_Knife>
+  <entitydescription.Touhou_White_Wings_Knife>白色羽翼形状的刀刃，能造成痛苦的灼烧</entitydescription.Touhou_White_Wings_Knife>
+  <entityname.Touhou_Detoxificatioin_Pill>解毒药片</entityname.Touhou_Detoxificatioin_Pill>
+  <entitydescription.Touhou_Detoxificatioin_Pill>能解除毒素的影响，尤其是来源未知的毒性蔓延</entitydescription.Touhou_Detoxificatioin_Pill>
+  <entityname.Touhou_Rose_Gift_Bag>蔷薇礼物袋</entityname.Touhou_Rose_Gift_Bag>
+  <entitydescription.Touhou_Rose_Gift_Bag>
+    为了追求甜蜜节日的真谛，恋奔走探寻。
+    三种自注射槽位会在30%/60%/90%血量阈值时触发，还可以让无意识慕斯的效果持续生效</entitydescription.Touhou_Rose_Gift_Bag>
+  <entityname.Touhou_Rose_Wand>蔷薇魔杖</entityname.Touhou_Rose_Wand>
+  <entitydescription.Touhou_Rose_Wand>蔷薇的魔力在其中缓缓绽放……使用‖color:gui.yellow‖海底蔷薇‖end‖</entitydescription.Touhou_Rose_Wand>
+  <entityname.Touhou_Rose_Wand_Ammo>海底蔷薇</entityname.Touhou_Rose_Wand_Ammo>
+  <entitydescription.Touhou_Rose_Wand_Ammo>某种不可思议的魔法让这朵蔷薇在海底绽放</entitydescription.Touhou_Rose_Wand_Ammo>
 
   <!--食物部分-->
   <entityname.Touhou_Ingredient_Refrigerator>食材存储柜</entityname.Touhou_Ingredient_Refrigerator>
@@ -1059,6 +1071,7 @@
   <entitydescription.Touhou_Dumplings>海的另一边，红美铃小姐家乡的著名食谱。用面粉制作成的筋道面皮，在其中包入任意喜欢的食材，放入沸腾的热水中煮熟，就会成为超级美味的食物。外表看起来朴素无华，内在却包着世间的宝藏（Lv2）</entitydescription.Touhou_Dumplings>
   <entityname.Touhou_Tangyuan>汤圆</entityname.Touhou_Tangyuan>
   <entitydescription.Touhou_Tangyuan>海的另一边，红美铃小姐家乡的著名食谱。用弹牙的糯米揉成小团，在其中包入甜品食材，放入沸腾的热水中煮熟，就会成为超级可口的甜品。外表看起来朴素无华，内在却包着世间的甜蜜（Lv2）</entitydescription.Touhou_Tangyuan>
+
   <!--料理Tag：
   黑暗物质：Dark_Matter
   昂贵：Expensive
@@ -1117,6 +1130,20 @@
   <entitydescription.Touhou_Sangetsusei>纯米酒，有着妖精的祝福。度数不高，口感柔顺，价格平易近人，是居酒屋受欢迎的选择（Lv2）</entitydescription.Touhou_Sangetsusei>
   <entityname.Touhou_Umeshu>梅酒</entityname.Touhou_Umeshu>
   <entitydescription.Touhou_Umeshu>人间之里的人类自酿的梅子酒。因为喝起来很甜，所以经常有不了解它的生物被它的后劲儿击倒（Lv2）</entitydescription.Touhou_Umeshu>
+  <entityname.Touhou_Tengu_Tango>天狗踊</entityname.Touhou_Tengu_Tango>
+  <entitydescription.Touhou_Tengu_Tango>传说连天狗喝了也会开心地跳舞的美味清酒，在妖怪之山开一次店就可以验证了吧。不同于其他无色的清酒，天狗踊带有淡淡的琥珀色（Lv2）</entitydescription.Touhou_Tengu_Tango>
+  <entityname.Touhou_Bloody_Remy>猩红恶魔</entityname.Touhou_Bloody_Remy>
+  <entitydescription.Touhou_Bloody_Remy>由伏特加、番茄汁、柠檬片、芹菜根混合调制，甜、酸、苦、辣四味俱全。因血红的颜色让人联想到某洋馆的吸血鬼，故得此名（Lv2）</entitydescription.Touhou_Bloody_Remy>
+  <entityname.Touhou_Divine_Wheat>神之麦</entityname.Touhou_Divine_Wheat>
+  <entitydescription.Touhou_Divine_Wheat>使用妖怪之山上被秋天的神明们所庇佑的大麦所酿造的大麦烧酒（Lv2）</entitydescription.Touhou_Divine_Wheat>
+  <entityname.Touhou_Dassai>水獭祭</entityname.Touhou_Dassai>
+  <entitydescription.Touhou_Dassai>鬼杰组的战利品之一。因为水獭灵把敌组的战利品摆在地上的样子仿佛祭典，于是随便取的名字。实际上好像是相当高级的纯米大吟酿（Lv3）</entitydescription.Touhou_Dassai>
+  <entityname.Touhou_Akatsuki>晓</entityname.Touhou_Akatsuki>
+  <entitydescription.Touhou_Akatsuki>针对幻想乡居民口味改良的威士忌。在保留威士忌独有的气味的同时也有着顺滑的口感（Lv4）</entitydescription.Touhou_Akatsuki>
+  <entityname.Touhou_Sparrow_Sake>雀酒</entityname.Touhou_Sparrow_Sake>
+  <entitydescription.Touhou_Sparrow_Sake>传说中由麻雀酿的酒。将米粒藏入截断的竹中，当竹中有水时，日经月累便成佳酿。据说喝了此酒会舞无休止，是带着“诅咒”的美味呢（Lv2）</entitydescription.Touhou_Sparrow_Sake>
+  <entityname.Touhou_Scarlet_Tea>红魔馆红茶</entityname.Touhou_Scarlet_Tea>
+  <entitydescription.Touhou_Scarlet_Tea>使用柠檬、佛手柑和女仆长精心挑选的红茶品种烘培出带有独特香味的红茶饮料。为了扩张红魔馆的威严，非常普通地以红魔馆命名（Lv2）</entitydescription.Touhou_Scarlet_Tea>
 
 <!--饮品Tag：
   无酒精：No_Alcohol
@@ -1141,6 +1168,12 @@
   现代：Modern
   提神：Stimulating
 -->
+  <entityname.Touhou_Godsplitter>裂神者</entityname.Touhou_Godsplitter>
+  <entitydescription.Touhou_Godsplitter>这把平衡性极佳的武器是先进冶金术的产物</entitydescription.Touhou_Godsplitter>
+  <entityname.Touhou_Living_Cleaver>活体劈刀</entityname.Touhou_Living_Cleaver>
+  <entitydescription.Touhou_Living_Cleaver>其核心内命火灼灼，光华闪耀。在潜艇外用活体劈刀击杀一百个生物即可完成进化。玩家死亡后进度重置</entitydescription.Touhou_Living_Cleaver>
+  <entityname.Touhou_Sentient_Greatcleaver>感知劈刀</entityname.Touhou_Sentient_Greatcleaver>
+  <entitydescription.Touhou_Sentient_Greatcleaver>悄无声息之间，活体劈刀灵智已开，完成了进化。‖color:gui.red‖为敌人送上致命的斩击‖end‖</entitydescription.Touhou_Sentient_Greatcleaver>
 
   <!--凭依效果-->
   <talentname.Hyouibana_Reimu>凭依灵梦</talentname.Hyouibana_Reimu>

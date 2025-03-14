@@ -809,7 +809,7 @@
                 <Conditional HealthPercentage="lt 100"/>
                 <ReduceAffliction type="damage" strength="0.02" />
             </StatusEffect>
-            <StatValue stattype="MaximumHealthMultiplier" value="0.3" />
+            <StatValue stattype="MaximumHealthMultiplier" value="0.25" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Grunt_Security_Tengu.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -1219,18 +1219,26 @@
 
     <!--笼中鸟-->
     <Affliction name="笼中鸟" identifier="FlandreTalent4_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
-                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" MinSkillMultiplier="0.55" MaxSkillMultiplier="0.55" resistancefor="damage,burn" minresistance="0.5" maxresistance="0.5"
-                MinSpeedMultiplier="0.4" MaxSpeedMultiplier="0.4" strengthchange="-40">
-            <StatValue stattype="AttackMultiplier" value="-1.4" />
+                duration="0.15" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="10" MinSkillMultiplier="0.6" MaxSkillMultiplier="0.6"
+                MinSpeedMultiplier="0.4" MaxSpeedMultiplier="0.4" >
+            <StatusEffect type="OnDamaged" target="Character" Interval="1.0">
+                <requiredaffliction type="damage,burn,bleeding" minstrength="15" />
+                <Conditional CanRun="eq false"/>
+                <ParticleEmitter particle="Magic_Shield_OnAttacked" AngleMax="360" ScaleMultiplier="2,4" EmitInterval="1" ParticleAmount="3" ColorMultiplier="255,72,36,255" DrawOnTop="True" />
+                <particleemitter particle="weldspark" drawontop="true" particleamount="4" velocitymin="100" velocitymax="500" anglemin="0" anglemax="360" distancemin="0" distancemax="20" scalemin="0.1" scalemax="0.35" />
+                <Sound file="%ModDir%/Sounds/Weapons/Hit_Magic_Shield.ogg" range="800" selectionmode="Random" />
+                <Explosion range="180.0" force="1" showeffects="false" camerashake="1.0" />
+            </StatusEffect>
+            <StatValue stattype="AttackMultiplier" value="-1.0" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Younger_Sister_Of_Scarlet.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
     <!--笼中鸟CD-->
-    <Affliction name="笼中鸟护盾剩余时长" identifier="FlandreTalent4_Effect_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
+    <Affliction name="笼中鸟护盾剩余时长" identifier="FlandreTalent4_Effect_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="15"
                 showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" strengthchange="-1.0"/>
+        <Effect minstrength="0" maxstrength="15" />
         <Icon texture="%ModDir%/Images/Afflictions/FlandreTalent4_Effect_CD.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
 
@@ -1860,7 +1868,7 @@
     <Affliction name="出血效应-露娜·切露德" identifier="MRE_Effect_Luna" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" maxstrength="300"
                 indicatorlimb="Head" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
         <Effect minstrength="0" maxstrength="300" minspeedmultiplier="1" maxspeedmultiplier="1.2" minvitalitydecrease="0" maxvitalitydecrease="-50"
-                multiplybymaxvitality="false" minskillmultiplier="1" maxskillmultiplier="1.2" strengthchange="-1">
+                multiplybymaxvitality="false" minskillmultiplier="1" maxskillmultiplier="1.2" strengthchange="-0.1">
             <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.2" />
             <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.2" />
         </Effect>
@@ -2182,7 +2190,7 @@
             limbspecific="false"
             maxstrength="1">
         <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" >
-            <StatValue stattype="RangedSpreadReduction" value="0.5" />
+            <StatValue stattype="RangedSpreadReduction" value="0.3" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Touhou_Blood_Clock_Time.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>
@@ -2543,7 +2551,6 @@
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
         <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" >
             <StatValue stattype="RangedAttackMultiplier" value="0.15" />
-            <StatValue stattype="RangedAttackSpeed" value="0.15" />
             <StatValue stattype="MeleeAttackSpeed" value="0.15" />
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Reisen_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255" />

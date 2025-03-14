@@ -817,7 +817,7 @@
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 120" />
-                <Conditional Touhou_Magic_Boost="gte 149" />
+                <Conditional Touhou_Magic_Boost="gte 148" />
                 <Affliction identifier="Touhou_Magic_Boost" amount="6" />
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
@@ -1009,7 +1009,7 @@
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 120" />
-                <Conditional Touhou_Magic_Boost="gte 149" />
+                <Conditional Touhou_Magic_Boost="gte 148" />
                 <Affliction identifier="Touhou_Magic_Boost" amount="6" />
             </StatusEffect>
             <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
@@ -1050,8 +1050,8 @@
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
             <SkillModifier skillidentifier="mechanical" skillvalue="-50" />
             <SkillModifier skillidentifier="electrical" skillvalue="-50" />
-            <SkillModifier skillidentifier="weapons" skillvalue="15" />
-            <SkillModifier skillidentifier="medical" skillvalue="20" />
+            <SkillModifier skillidentifier="weapons" skillvalue="10" />
+            <SkillModifier skillidentifier="medical" skillvalue="10" />
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="35" />
         </Wearable>
         <ItemContainer capacity="0" hideitems="true" slotsperrow="2">
@@ -1236,9 +1236,9 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent" />
             </StatusEffect>
 
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
-            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.52" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.1" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.2" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="haste" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="psychosisresistance" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="slow" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -1249,7 +1249,7 @@
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.0" damagesound="LimbArmor" />
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="alieninfection" damagemultiplier="1" probabilitymultiplier="0.1" damagesound="LimbArmor" />
-            <SkillModifier skillidentifier="weapons" skillvalue="-25" />
+            <SkillModifier skillidentifier="weapons" skillvalue="-30" />
             <SkillModifier skillidentifier="medical" skillvalue="20" />
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="30" />
         </Wearable>

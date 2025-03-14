@@ -610,7 +610,7 @@
             <RequiredItems items="Earth_Element_Book_Ammo" type="Contained" />
         </RangedWeapon>
 
-        <ItemContainer autofill="false" capacity="1" maxstacksize="1" hideitems="true" drawinventory="false" containedstateindicatorslot="0"  removecontaineditemsondeconstruct="true">
+        <ItemContainer autofill="false" capacity="1" maxstacksize="1" hideitems="true" drawinventory="false" containedstateindicatorslot="0" removecontaineditemsondeconstruct="true">
             <Containable items="Earth_Element_Book_Ammo" />
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
         </ItemContainer>
@@ -2175,7 +2175,7 @@
             <RequiredItem identifier="Tu_Alchemical" amount="2"/>
             <RequiredItem identifier="Shui_Alchemical" amount="2"/>
             <RequiredItem identifier="Yin_Alchemical" amount="2"/>
-            <RequiredItem identifier="Touhou_Precious_Metal" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="4" />
             <RequiredItem identifier="Power_Point" />
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" displayname="recycleitem" requiredtime="2.5">
@@ -2360,7 +2360,7 @@
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true" />
-            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
         </Holdable>
         <LightComponent LightColor="1.0,0.6,0.6,0.8" Range="0" powerconsumption="10" IsOn="true" >
             <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Scorching_Ray_Gun_Light.png" sourcerect="0,0,300,100" origin="0.5,0.5" />
@@ -2708,7 +2708,7 @@
                 <ParticleEmitter particle="casingfirearm" particleamount="1" colormultiplier="255,55,55,255" ScaleMultiplier="1.5,1.5" anglemin="90" anglemax="150" velocitymin="50" velocitymax="250" CopyEntityAngle="true" />
                 <Explosion range="250.0" force="1.2" shockwave="false" smoke="true" flash="true" sparks="false" flames="false" underwaterbubble="false" camerashake="12.0" />
             </StatusEffect>
-            <RequiredItems items="Touhou_Magic_Automatic_Shotgun_Bullet,Touhou_Magic_Pollution_Shotgun_Bullet,shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
+            <RequiredItems items="shotgunammo" type="Contained" msg="ItemMsgAmmoRequired" />
             <RequiredSkill identifier="weapons" level="80" />
             <StatusEffect type="OnUse" target="Character" disabledeltatime="true" >
                 <Conditional skillrequirement="true" weapons="lt 40" />
@@ -2722,7 +2722,7 @@
             </StatusEffect>
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="7" hideitems="false" containedstateindicatorstyle="bullet" ShowTotalStackCapacityInContainedStateIndicator="true" containedstateindicatorslot="0" containedspritedepth="0.56">
-            <Containable items="Touhou_Magic_Automatic_Shotgun_Bullet,Touhou_Magic_Pollution_Shotgun_Bullet,shotgunammo" hide="true">
+            <Containable items="shotgunammo" hide="true">
                 <StatusEffect type="OnInserted" target="This" holdpos="50,-10" holdangle="-50" maxchargetime="999" setvalue="true" />
                 <StatusEffect type="OnInserted" target="This" setvalue="true">
                     <Conditional isActive="eq true"/>
@@ -2779,7 +2779,7 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" Condition="2.0" Interval="1.0" disabledeltatime="true">
+            <StatusEffect type="OnActive" target="This" Condition="3.0" Interval="1.0" disabledeltatime="true">
                 <Conditional condition="gte 0" />
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true" />
@@ -2806,8 +2806,8 @@
                 </StatusEffect>
             </Button>
         </CustomInterface>
-        <RangedWeapon barrelpos="135,9" weapondamagemodifier="1.6" penetrationmultiplier="1.0" penetration="0.3" spread="0.1" maxchargetime="0.4"
-                      combatPriority="80" ReloadSkillRequirement="Touhou_Magic" Reload="1.6" ReloadNoSkill="3.0" holdtrigger="true" ProjectileCount="2"
+        <RangedWeapon barrelpos="135,9" weapondamagemodifier="1.6" penetrationmultiplier="1.0" penetration="0.3" spread="0.1" maxchargetime="0.1"
+                      combatPriority="80" ReloadSkillRequirement="Touhou_Magic" Reload="1.4" ReloadNoSkill="3.0" holdtrigger="true" ProjectileCount="2"
                       drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256" />
@@ -3038,7 +3038,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Aphelion_Ammo_Light.png" sourcerect="0,0,112,108" depth="0.45" origin="0.5,0.5" />
         <Body width="30" height="80" density="10" gravityscale="0" waterdragcoefficient="1" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-        <Projectile characterusable="false" launchimpulse="3" hitscan="false" maxtargetstohit="6" removeonhit="false" damagedoors="true" >
+        <Projectile characterusable="false" launchimpulse="3.2" hitscan="false" maxtargetstohit="6" removeonhit="false" damagedoors="true" >
             <Attack itemdamage="30" levelwalldamage="20" targetforce="3" targetimpulse="3" penetration="0.35" severlimbsprobability="1.0">
                 <Affliction identifier="explosiondamage" strength="16" />
                 <Affliction identifier="burn" strength="16" />
@@ -3074,7 +3074,7 @@
             <StatusEffect type="OnBroken" target="This" disabledeltatime="true" >
                 <Remove/>
             </StatusEffect>
-            <StatusEffect type="OnNotContained" target="This" delay="3.0" stackable="false" >
+            <StatusEffect type="OnNotContained" target="This" delay="3.5" stackable="false" >
                 <Remove />
             </StatusEffect>
         </Projectile>
@@ -3308,13 +3308,13 @@
         </Price>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
             <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="6"/>
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal" />
             <RequiredItem identifier="Score_Point" />
         </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="5" displayname="recycleitem" >
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="5" displayname="Touhou_Recharge" >
             <RequiredSkill identifier="Touhou_Magic" level="45" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
             <RequiredItem identifier="Touhou_Stellar_Staff" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Deconstruct time="5">
@@ -3675,6 +3675,448 @@
                 <Remove />
             </StatusEffect>
         </Projectile>
+    </Item>
+
+    <!--裂神者-->
+    <Item name="裂神者" identifier="Touhou_Godsplitter" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="5000" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+            <Price storeidentifier="merchantcity" multiplier="1.0" />
+            <Price storeidentifier="merchantresearch" multiplier="1.2" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="steel" amount="2" />
+            <Item identifier="Reiki_Stone" amount="96" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Godsplitter.png" sourcerect="488,0,172,140" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Godsplitter.png" sourcerect="0,0,478,120" depth="0.55" origin="0.5,0.5" />
+        <Body width="480" height="100" density="10" />
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-58,0" handle2="-50,0" holdangle="30" aimangle="0" combatPriority="70"
+                     reload="0.9" range="100" SwingPos="3.0,-0.5" SwingForce="1,-0.2" msg="ItemMsgPickUpSelect" allowhitmultiple="true">
+            <Attack targetimpulse="2" severlimbsprobability="1.0" itemdamage="50" structuresoundtype="StructureSlash" penetration="0.3">
+                <Affliction identifier="lacerations" strength="20" />
+                <Affliction identifier="stun" strength="0.15" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
+                <Conditional increasedmeleedamage="gte 50"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="2.0" Duration="2.0">
+                <Conditional increasedmeleedamage_temporary="gt 0"/>
+                <Affliction identifier="Touhou_Decreased_Meleedamage_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" >
+                <Affliction identifier="Sleepless_Nightmare" strength="10" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="limb" >
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="explosiondamage" strength="15" />
+                <ParticleEmitter particle="weldspark" particleamount="8" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.0" scalemax="1.0" drawontop="true" colormultiplier="255,100,200,180" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" AngleMax="360" VelocityMin="500" VelocityMax="800" ScaleMin="0.2" ScaleMax="0.6"
+                                 ScaleMultiplier="0.2,0.2" ParticleAmount="3" ColorMultiplier="150,150,255,255" DrawOnTop="True"/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" stackable="false">
+                <Explosion range="450.0" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
+            <RequiredSkill identifier="weapons" level="100" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="0.9" setvalue="true" delay="1.5" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="weapons" level="100" />
+    </Item>
+
+    <!--浸毒匕首-->
+    <Item name="浸毒匕首" identifier="Touhou_Poison_Soaked_Dagger" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="1.0" impactsoundtag="impact_metal_light" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="2000" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+            <Price storeidentifier="merchantcity" multiplier="1.0" />
+            <Price storeidentifier="merchantresearch" multiplier="1.2" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="steel" amount="2" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Poison_Soaked_Dagger.png" sourcerect="67,0,57,42" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Poison_Soaked_Dagger.png" sourcerect="0,0,64,22" depth="0.55" origin="0.5,0.5" />
+        <Body width="58" height="23" density="10" />
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-28,0" holdangle="30" aimangle="0" combatPriority="40"
+                     reload="0.7" range="50" SwingPos="3.0,-0.5" SwingForce="1,-0.2" msg="ItemMsgPickUpSelect" allowhitmultiple="true">
+            <Attack targetimpulse="2" severlimbsprobability="1.0" itemdamage="50" structuresoundtype="StructureSlash" penetration="0.1">
+                <Affliction identifier="lacerations" strength="15" />
+                <Affliction identifier="stun" strength="0.15" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="limb" >
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="Reiki_Side_Effect" strength="1" />
+                <ParticleEmitter particle="weldspark" particleamount="8" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.0" scalemax="1.0" drawontop="true" colormultiplier="155,100,200,180" />
+                <ParticleEmitter particle="acidmistemitter" AngleMax="360" VelocityMin="500" VelocityMax="800" ScaleMin="0.2" ScaleMax="0.6"
+                                 ScaleMultiplier="0.15,0.15" ParticleAmount="4" ColorMultiplier="150,150,255,255" DrawOnTop="True"/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" stackable="false">
+                <Explosion range="250.0" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.3" setvalue="true" />
+            <RequiredSkill identifier="weapons" level="70" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="0.7" setvalue="true" delay="1.3" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="weapons" level="50" />
+    </Item>
+
+    <!--鎏金匕首-->
+    <Item name="鎏金匕首" identifier="Touhou_Gilding_Dagger" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="1.0" impactsoundtag="impact_metal_light" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="2000" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+            <Price storeidentifier="merchantcity" multiplier="1.0" />
+            <Price storeidentifier="merchantresearch" multiplier="1.2" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="steel" amount="2" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Gilding_Dagger.png" sourcerect="67,0,43,43" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Gilding_Dagger.png" sourcerect="0,0,58,23" depth="0.55" origin="0.5,0.5" />
+        <Body width="58" height="23" density="10" />
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-28,0" holdangle="30" aimangle="0" combatPriority="40"
+                     reload="0.9" range="50" SwingPos="3.0,-0.5" SwingForce="1,-0.2" msg="ItemMsgPickUpSelect" allowhitmultiple="true">
+            <Attack targetimpulse="2" severlimbsprobability="1.0" itemdamage="50" structuresoundtype="StructureSlash" penetration="0.1">
+                <Affliction identifier="lacerations" strength="10" />
+                <Affliction identifier="stun" strength="0.15" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="limb" >
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="burn" strength="15" />
+                <ParticleEmitter particle="weldspark" particleamount="8" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.0" scalemax="1.0" drawontop="true" colormultiplier="255,200,100,180" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" stackable="false">
+                <Explosion range="250.0" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
+            <RequiredSkill identifier="weapons" level="70" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="0.9" setvalue="true" delay="1.5" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="weapons" level="50" />
+    </Item>
+
+    <!--黑翼-->
+    <Item name="黑翼" identifier="Touhou_Black_Wings_Knife" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.7" impactsoundtag="impact_metal_light" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="3000" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+            <Price storeidentifier="merchantcity" multiplier="1.0" />
+            <Price storeidentifier="merchantresearch" multiplier="1.2" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="steel" amount="2" />
+            <Item identifier="Reiki_Stone" amount="8" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Wings_Knife.png" sourcerect="0,0,114,41" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Wings_Knife.png" sourcerect="0,0,114,41" depth="0.55" origin="0.5,0.5" />
+        <Body width="114" height="41" density="10" />
+        <MeleeWeapon slots="Any,RightHand" aimpos="35,10" handle1="-35,0" holdangle="30" aimangle="0" combatPriority="50"
+                     reload="0.8" range="75" SwingPos="3.0,-0.2" SwingForce="1,-0.2" msg="ItemMsgPickUpSelect" allowhitmultiple="true">
+            <Attack targetimpulse="2" severlimbsprobability="1.0" itemdamage="50" structuresoundtype="StructureSlash" penetration="0.2">
+                <Affliction identifier="lacerations" strength="20" />
+                <Affliction identifier="Sleepless_Nightmare" strength="10" />
+                <Affliction identifier="stun" strength="0.15" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="limb" >
+                <Affliction identifier="slow" strength="35" />
+                <Affliction identifier="burn" strength="15" />
+                <ParticleEmitter particle="Touhou_Black_Blue_Toxin" AngleMax="360" ScaleMultiplier="0.7,0.7" ParticleAmount="2" ColorMultiplier="255,255,255,255" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" stackable="false">
+                <Explosion range="250.0" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
+            <RequiredSkill identifier="weapons" level="70" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="1.5" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="weapons" level="70" />
+    </Item>
+
+    <!--白翼-->
+    <Item name="白翼" identifier="Touhou_White_Wings_Knife" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Low" cargocontaineridentifier="metalcrate" scale="0.7" impactsoundtag="impact_metal_light" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="3000" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+            <Price storeidentifier="merchantcity" multiplier="1.0" />
+            <Price storeidentifier="merchantresearch" multiplier="1.2" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="steel" amount="2" />
+            <Item identifier="Reiki_Stone" amount="8" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Wings_Knife.png" sourcerect="0,43,114,35" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Wings_Knife.png" sourcerect="0,43,114,35" depth="0.55" origin="0.5,0.5" />
+        <Body width="114" height="35" density="10" />
+        <MeleeWeapon slots="Any,LeftHand" aimpos="35,10" handle1="-35,0" holdangle="30" aimangle="0" combatPriority="50"
+                     reload="0.8" range="75" SwingPos="3.0,-0.5" SwingForce="1,-0.2" msg="ItemMsgPickUpSelect" allowhitmultiple="true">
+            <Attack targetimpulse="2" severlimbsprobability="1.0" itemdamage="50" structuresoundtype="StructureSlash" penetration="0.2">
+                <Affliction identifier="lacerations" strength="20" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" />
+                <Affliction identifier="stun" strength="0.15" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="limb" >
+                <Affliction identifier="acidburn" strength="10" />
+                <Affliction identifier="burn" strength="10" />
+                <ParticleEmitter particle="weldspark" particleamount="8" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.0" scalemax="1.0" drawontop="true" colormultiplier="255,200,100,180" />
+                <ParticleEmitter particle="GlowDot" scalemin="1.1" scalemax="1.4" particlespersecond="50" anglemin="0" anglemax="360" colormultiplier="255,255,255,170" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" stackable="false">
+                <Explosion range="250.0" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="10.0" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
+            <RequiredSkill identifier="weapons" level="70" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="1.5" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="weapons" level="70" />
+    </Item>
+
+
+    <!--活体劈刀-->
+    <Item name="活体劈刀" identifier="Touhou_Living_Cleaver" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal,Touhou_Living_Cleaver" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="5000" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+            <Price storeidentifier="merchantcity" multiplier="1.0" />
+            <Price storeidentifier="merchantresearch" multiplier="1.2" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="steel" amount="2" />
+            <Item identifier="Reiki_Stone" amount="96" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Living_Cleaver.png" sourcerect="0,0,316,325" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Living_Cleaver.png" sourcerect="323,0,421,131" depth="0.55" origin="0.5,0.5" />
+        <Body width="421" height="131" density="10" />
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-48,0" handle2="-40,0" holdangle="30" aimangle="0" combatPriority="70"
+                     reload="1.5" range="75" SwingPos="3.0,-0.5" SwingForce="1,-0.2" msg="ItemMsgPickUpSelect" allowhitmultiple="true">
+            <Attack targetimpulse="2" severlimbsprobability="1.0" itemdamage="50" structuresoundtype="StructureSlash" penetration="0.2">
+                <Affliction identifier="lacerations" strength="10" />
+                <Affliction identifier="bleeding" strength="15" />
+                <Affliction identifier="stun" strength="0.15" probability="0.45" />
+                <Affliction identifier="stun" strength="0.15" probability="0.2" />
+            </Attack>
+            <StatusEffect type="OnActive" target="Character" interval="5">
+                <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Living_Cleaver_Talent" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This" interval="1.0" disabledeltatime="true">
+                <Conditional Touhou_Living_Cleaver_Talent_Effect="gt 0" targetcontainer="true"/>
+                <RemoveItem />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" >
+                <Affliction identifier="Sleepless_Nightmare" strength="10" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="limb" >
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="explosiondamage" strength="10" />
+                <ParticleEmitter particle="weldspark" particleamount="8" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.0" scalemax="1.0" drawontop="true" colormultiplier="255,100,200,180" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" AngleMax="360" VelocityMin="500" VelocityMax="800" ScaleMin="0.2" ScaleMax="0.6"
+                                 ScaleMultiplier="0.2,0.2" ParticleAmount="3" ColorMultiplier="150,150,255,255" DrawOnTop="True"/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" stackable="false">
+                <Explosion range="450.0" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="2.0" setvalue="true" />
+            <RequiredSkill identifier="weapons" level="100" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="1.5" setvalue="true" delay="2.0" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="weapons" level="50" />
+    </Item>
+
+    <!--感知劈刀-->
+    <Item name="感知劈刀" identifier="Touhou_Sentient_Greatcleaver" subcategory="Touhou" category="Weapon"
+          Tags="smallitem,weapon,High_Alchemical_Metal,Touhou_Cam_Offset_Normal" cargocontaineridentifier="metalcrate" scale="0.3" impactsoundtag="impact_metal_light" >
+        <PreferredContainer primary="secarmcab" secondary="armcab" />
+        <Price baseprice="15000" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.2" />
+            <Price storeidentifier="merchantcity" multiplier="1.0" />
+            <Price storeidentifier="merchantresearch" multiplier="1.2" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" />
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+            <Price storeidentifier="merchantarmory" multiplier="0.9" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="steel" amount="2" />
+            <Item identifier="Reiki_Stone" amount="96" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Sentient_Greatcleaver.png" sourcerect="0,0,352,324" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sentient_Greatcleaver.png" sourcerect="361,0,439,115" depth="0.55" origin="0.5,0.5" />
+        <Body width="439" height="115" density="10" />
+        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="35,10" handle1="-48,0" handle2="-40,0" holdangle="30" aimangle="0" combatPriority="70"
+                     reload="1.25" range="105" SwingPos="3.0,-0.5" SwingForce="1,-0.2" msg="ItemMsgPickUpSelect" allowhitmultiple="true">
+            <Attack targetimpulse="2" severlimbsprobability="1.0" itemdamage="50" structuresoundtype="StructureSlash" penetration="0.35">
+                <Affliction identifier="lacerations" strength="38" />
+                <Affliction identifier="bleeding" strength="25" />
+                <Affliction identifier="stun" strength="0.15" probability="0.75" />
+                <Affliction identifier="stun" strength="0.1" probability="0.5" />
+                <Affliction identifier="stun" strength="0.05" probability="0.25" />
+            </Attack>
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5" disabledeltatime="true">
+                <Affliction identifier="Touhou_Sentient_Greatcleaver_Effect" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" >
+                <Affliction identifier="Sleepless_Nightmare" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="limb" >
+                <Affliction identifier="Reiki_Pressure" strength="5" />
+                <Affliction identifier="explosiondamage" strength="10" />
+                <ParticleEmitter particle="weldspark" particleamount="8" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.0" scalemax="1.0" drawontop="true" colormultiplier="255,100,200,180" />
+                <ParticleEmitter particle="Touhou_Electric_Shock" AngleMax="360" VelocityMin="500" VelocityMax="800" ScaleMin="0.2" ScaleMax="0.6"
+                                 ScaleMultiplier="0.2,0.2" ParticleAmount="3" ColorMultiplier="150,150,255,255" DrawOnTop="True"/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional entitytype="eq Character" />
+                <Sound file="Content/Sounds/Damage/LimbSlash1.ogg" selectionmode="random" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash2.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash3.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash4.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash5.ogg" range="500" />
+                <Sound file="Content/Sounds/Damage/LimbSlash6.ogg" range="500" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" stackable="false">
+                <Explosion range="450.0" flash="false" shockwave="false" smoke="false" flames="false" sparks="false" underwaterbubble="false" camerashake="20.0" />
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" reload="1.5" setvalue="true" />
+            <RequiredSkill identifier="weapons" level="100" />
+            <!--Reset the reload speed-->
+            <StatusEffect type="OnUse" target="This" reload="1.25" setvalue="true" delay="1.5" />
+        </MeleeWeapon>
+        <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
+        <SkillRequirementHint identifier="weapons" level="100" />
     </Item>
 
 </Items>
