@@ -44,6 +44,20 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
+        <AbilityGroupInterval interval="3">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo" invert="true" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character">
+                            <ReduceAffliction identifier="Memory_Of_Gensokyo_Round_End" amount="100"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
         <AbilityGroupInterval>
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo" />

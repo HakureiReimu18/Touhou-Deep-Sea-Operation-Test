@@ -139,13 +139,13 @@
             </Containable>
             <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
             <SubContainer capacity="3" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,toolbox"/>
+                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box"/>
             </SubContainer>
             <SubContainer capacity="4" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox"/>
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box"/>
             </SubContainer>
             <SubContainer capacity="12" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,tsm_ammobox,toolbox"/>
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,tsm_ammobox,toolbox,Touhou_Magic_Charging_Box"/>
             </SubContainer>
         </ItemContainer>
 
@@ -210,12 +210,15 @@
             </Containable>
             <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,93,120,29" origin="0.5,0.45" />
             <SubContainer capacity="3" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,toolbox"/>
+                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box"/>
             </SubContainer>
             <SubContainer capacity="8" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox"/>
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box"/>
             </SubContainer>
-            <SubContainer capacity="8" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
+            <SubContainer capacity="6" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,tsm_ammobox,toolbox,Touhou_Magic_Charging_Box"/>
+            </SubContainer>
+            <SubContainer capacity="2" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,tsm_ammobox,toolbox"/>
             </SubContainer>
         </ItemContainer>
@@ -1550,7 +1553,10 @@
                     </StatusEffect>
                 </Containable>
             </SubContainer>
-            <SubContainer capacity="15" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
+            <SubContainer capacity="11" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
+                <Containable items="smallitem,mediumitem,mountableweapon" excludeditems="backpack,crate,Touhou_Magic_Charging_Box"/>
+            </SubContainer>
+            <SubContainer capacity="4" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem,mediumitem,mountableweapon,tsm_gun" excludeditems="backpack,crate"/>
             </SubContainer>
         </ItemContainer>
@@ -2289,10 +2295,10 @@
                 <Containable items="chem,syringe" />
             </SubContainer>
             <SubContainer capacity="8" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt"/>
+                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,Touhou_Magic_Charging_Box"/>
             </SubContainer>
             <SubContainer capacity="4" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt"/>
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,Touhou_Magic_Charging_Box"/>
             </SubContainer>
             <SubContainer capacity="2" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem,mediumitem,Touhou_Magic_Charging_Box" excludeditems="backpack,crate,toolbelt"/>
@@ -2332,8 +2338,6 @@
         </Price>
         <Deconstruct time="10">
             <Item identifier="steel" amount="3" />
-            <Item identifier="organicfiber" amount="3" />
-            <Item identifier="plastic" amount="3" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
@@ -2390,14 +2394,14 @@
                     <RequiredItem identifier="Lightning_Kanameishi,Touhou_Cyber_Homing_Amulet,Touhou_Perfect_Snowflake,Touhou_Sakuya_Knife_Ether,
                     Touhou_Crystal_Pistol_Ammo,Touhou_Huge_Sugar_Coated_Cannonball,Touhou_Stellar_Staff" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
-                <!--冻青蛙，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，月震中心-->
+                <!--冻青蛙，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，月震中心，核能电容弹匣-->
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem identifier="Touhou_Frozen_Frog,Touhou_Love_Maze,Youmu_Smgmagazine_Plus,Touhou_Lunar_Orbit_Gun_Ammo,
-                    Touhou_Lunar_Energy_Magazine,Touhou_Yukari_Folding_Fan_Ammo,Touhou_Lunar_Center" type="Contained" ExcludeBroken="false" />
+                    Touhou_Lunar_Energy_Magazine,Touhou_Yukari_Folding_Fan_Ammo,Touhou_Lunar_Center,Touhou_Nuclear_Energy_Capacitor_Magazine" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-2.0" disabledeltatime="true" >
                     <RequiredItem identifier="Touhou_Frozen_Frog,Touhou_Love_Maze,Youmu_Smgmagazine_Plus,Touhou_Lunar_Orbit_Gun_Ammo,
-                    Touhou_Lunar_Energy_Magazine,Touhou_Yukari_Folding_Fan_Ammo,Touhou_Lunar_Center" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                    Touhou_Lunar_Energy_Magazine,Touhou_Yukari_Folding_Fan_Ammo,Touhou_Lunar_Center,Touhou_Nuclear_Energy_Capacitor_Magazine" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
             </Button>
         </CustomInterface>
@@ -2420,17 +2424,14 @@
         </Price>
         <Deconstruct time="10">
             <Item identifier="steel" amount="3" />
-            <Item identifier="organicfiber" amount="3" />
-            <Item identifier="plastic" amount="3" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
-            <RequiredItem identifier="Touhou_Base_Metal" amount="6"/>
-            <RequiredItem tag="advmunition_core" amount="6"/>
-            <RequiredItem identifier="steel" amount="6"/>
+            <RequiredItem identifier="Seven_Elements_Alchemical_Fake" mincondition="0.2" usecondition="true" />
+            <RequiredItem identifier="Reiki_Stone" amount="6"/>
+            <RequiredItem identifier="Byproduct_Alchemical" amount="6"/>
             <RequiredItem identifier="titaniumaluminiumalloy" amount="6"/>
-            <RequiredItem identifier="organicfiber" amount="6"/>
-            <RequiredItem identifier="plastic" amount="6"/>
+            <RequiredItem identifier="plastic" amount="12"/>
             <RequiredItem identifier="ballisticfiber" amount="6"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Magic_Charging_Box_Medium.png" sourcerect="0,0,140,120" origin="0.5,0.5" />
@@ -2464,7 +2465,7 @@
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem identifier="Stardust_Reverie,Touhou_Royal_Diamond_Ring_Ammo,Touhou_Brilliant_Dragon_Bullet" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" Condition="-4.0" disabledeltatime="true" >
+                <StatusEffect type="OnUse" target="This" Condition="-5.0" disabledeltatime="true" >
                     <RequiredItem identifier="Stardust_Reverie,Touhou_Royal_Diamond_Ring_Ammo,Touhou_Brilliant_Dragon_Bullet" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
                 <!--灵之御扎，冰晶，文文的团扇，铁制飞刀，水轮，糖衣炮弹，电荷中继器-->
@@ -2485,16 +2486,16 @@
                     <RequiredItem identifier="Lightning_Kanameishi,Touhou_Cyber_Homing_Amulet,Touhou_Perfect_Snowflake,Touhou_Sakuya_Knife_Ether,
                     Touhou_Crystal_Pistol_Ammo,Touhou_Mysterious_Pearl_Rippling,Touhou_Huge_Sugar_Coated_Cannonball,Touhou_Stellar_Staff" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
-                <!--冻青蛙，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，海底蔷薇，灼热核心，微缩地月系统，月震中心，远日点能量核心-->
+                <!--冻青蛙，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，海底蔷薇，灼热核心，微缩地月系统，月震中心，远日点能量核心，核能电容弹匣-->
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem identifier="Touhou_Frozen_Frog,Touhou_Love_Maze,Youmu_Smgmagazine_Plus,Touhou_Lunar_Orbit_Gun_Ammo,
                     Touhou_Lunar_Energy_Magazine,Touhou_Yukari_Folding_Fan_Ammo,Touhou_Rose_Wand_Ammo,Touhou_Scorching_Ray_Gun_Ammo,
-                    Touhou_Miniature_Earth_Moon_System,Touhou_Lunar_Center,Touhou_Aphelion_Ammo" type="Contained" ExcludeBroken="false" />
+                    Touhou_Miniature_Earth_Moon_System,Touhou_Lunar_Center,Touhou_Aphelion_Ammo,Touhou_Nuclear_Energy_Capacitor_Magazine" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-2.0" disabledeltatime="true" >
                     <RequiredItem identifier="Touhou_Frozen_Frog,Touhou_Love_Maze,Youmu_Smgmagazine_Plus,Touhou_Lunar_Orbit_Gun_Ammo,
                     Touhou_Lunar_Energy_Magazine,Touhou_Yukari_Folding_Fan_Ammo,Touhou_Rose_Wand_Ammo,Touhou_Scorching_Ray_Gun_Ammo,
-                    Touhou_Miniature_Earth_Moon_System,Touhou_Lunar_Center,Touhou_Aphelion_Ammo" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                    Touhou_Miniature_Earth_Moon_System,Touhou_Lunar_Center,Touhou_Aphelion_Ammo,Touhou_Nuclear_Energy_Capacitor_Magazine" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
             </Button>
         </CustomInterface>
@@ -2510,7 +2511,7 @@
 
     <!--魔法武器充能箱（大型）-->
     <Item name="魔法武器充能箱（大型）" identifier="Touhou_Magic_Charging_Box_Huge" subcategory="Touhou" category="Equipment" Health="300"
-          tags="bigitem,Touhou_Magic_Charging_Box,toolbox" scale="0.4" cargocontaineridentifier="metalcrate" >
+          tags="mobilecontainer,Touhou_Magic_Charging_Box,toolbox" scale="0.4" cargocontaineridentifier="metalcrate" >
         <PreferredContainer primary="crewcab" notcampaign="true"/>
         <Price baseprice="5000" minleveldifficulty="30" >
             <Price storeidentifier="merchantoutpost" sold="false"/>
@@ -2521,8 +2522,6 @@
         </Price>
         <Deconstruct time="10">
             <Item identifier="steel" amount="3" />
-            <Item identifier="organicfiber" amount="3" />
-            <Item identifier="plastic" amount="3" />
         </Deconstruct>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Magic_Charging_Box_Huge.png" sourcerect="0,0,140,120" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Magic_Charging_Box_Huge.png" sourcerect="0,0,140,120" depth="0.55" origin="0.5,0.5" />
@@ -2576,16 +2575,16 @@
                     <RequiredItem identifier="Lightning_Kanameishi,Touhou_Cyber_Homing_Amulet,Touhou_Perfect_Snowflake,Touhou_Sakuya_Knife_Ether,
                     Touhou_Crystal_Pistol_Ammo,Touhou_Mysterious_Pearl_Rippling,Touhou_Huge_Sugar_Coated_Cannonball,Touhou_Stellar_Staff" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
-                <!--冻青蛙，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，海底蔷薇，灼热核心，微缩地月系统，月震中心，远日点能量核心-->
+                <!--冻青蛙，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，海底蔷薇，灼热核心，微缩地月系统，月震中心，远日点能量核心，核能电容弹匣-->
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem identifier="Touhou_Frozen_Frog,Touhou_Love_Maze,Youmu_Smgmagazine_Plus,Touhou_Lunar_Orbit_Gun_Ammo,
                     Touhou_Lunar_Energy_Magazine,Touhou_Yukari_Folding_Fan_Ammo,Touhou_Rose_Wand_Ammo,Touhou_Scorching_Ray_Gun_Ammo,
-                    Touhou_Miniature_Earth_Moon_System,Touhou_Lunar_Center,Touhou_Aphelion_Ammo" type="Contained" ExcludeBroken="false" />
+                    Touhou_Miniature_Earth_Moon_System,Touhou_Lunar_Center,Touhou_Aphelion_Ammo,Touhou_Nuclear_Energy_Capacitor_Magazine" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-2.0" disabledeltatime="true" >
                     <RequiredItem identifier="Touhou_Frozen_Frog,Touhou_Love_Maze,Youmu_Smgmagazine_Plus,Touhou_Lunar_Orbit_Gun_Ammo,
                     Touhou_Lunar_Energy_Magazine,Touhou_Yukari_Folding_Fan_Ammo,Touhou_Rose_Wand_Ammo,Touhou_Scorching_Ray_Gun_Ammo,
-                    Touhou_Miniature_Earth_Moon_System,Touhou_Lunar_Center,Touhou_Aphelion_Ammo" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                    Touhou_Miniature_Earth_Moon_System,Touhou_Lunar_Center,Touhou_Aphelion_Ammo,Touhou_Nuclear_Energy_Capacitor_Magazine" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
             </Button>
         </CustomInterface>

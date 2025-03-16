@@ -184,6 +184,8 @@
     <afflictiondescription.Touhou_Drinks_Effect04>此生难忘的味道！免疫操作翻转（晕眩），提高近战攻击伤害</afflictiondescription.Touhou_Drinks_Effect04>
     <afflictionname.Touhou_Rose_Fragrance>蔷薇芬芳</afflictionname.Touhou_Rose_Fragrance>
     <afflictiondescription.Touhou_Rose_Fragrance>甜蜜的气味让你身心愉悦，身体能力得到提升</afflictiondescription.Touhou_Rose_Fragrance>
+    <afflictionname.Touhou_Sentient_Greatcleaver_Effect>受猎</afflictionname.Touhou_Sentient_Greatcleaver_Effect>
+    <afflictiondescription.Touhou_Sentient_Greatcleaver_Effect>更容易成为敌人攻击的目标</afflictiondescription.Touhou_Sentient_Greatcleaver_Effect>
 
     <!--死法-->
     <afflictioncauseofdeath.Reiki_Pressure>灵压崩溃</afflictioncauseofdeath.Reiki_Pressure>
@@ -252,4 +254,6 @@
     <afflictiondescription.Hyouibana_Effect_Prefect_Reisen>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Reisen>
     <afflictionname.Hyouibana_Effect_Prefect_Yukari>紫-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Yukari>
     <afflictiondescription.Hyouibana_Effect_Prefect_Yukari>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Yukari>
+    <afflictionname.Hyouibana_Effect_Prefect_Merry>梅莉-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Merry>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Merry>攻击伤害增加10%</afflictiondescription.Hyouibana_Effect_Prefect_Merry>
 </infotexts>

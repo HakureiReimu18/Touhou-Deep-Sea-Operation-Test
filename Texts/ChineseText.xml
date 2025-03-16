@@ -1174,12 +1174,18 @@
   <entitydescription.Touhou_Living_Cleaver>其核心内命火灼灼，光华闪耀。在潜艇外用活体劈刀击杀一百个生物即可完成进化。玩家死亡后进度重置</entitydescription.Touhou_Living_Cleaver>
   <entityname.Touhou_Sentient_Greatcleaver>感知劈刀</entityname.Touhou_Sentient_Greatcleaver>
   <entitydescription.Touhou_Sentient_Greatcleaver>悄无声息之间，活体劈刀灵智已开，完成了进化。‖color:gui.red‖为敌人送上致命的斩击‖end‖</entitydescription.Touhou_Sentient_Greatcleaver>
+  <entityname.Touhou_Magic_Charging_Box_Small>魔法武器充能箱（小型）</entityname.Touhou_Magic_Charging_Box_Small>
+  <entitydescription.Touhou_Magic_Charging_Box_Small>可以给大部分魔法武器弹药充能（不包括需求星界层的武器）</entitydescription.Touhou_Magic_Charging_Box_Small>
+  <entityname.Touhou_Magic_Charging_Box_Medium>魔法武器充能箱（中型）</entityname.Touhou_Magic_Charging_Box_Medium>
+  <entitydescription.Touhou_Magic_Charging_Box_Medium>可以给所有魔法武器弹药充能</entitydescription.Touhou_Magic_Charging_Box_Medium>
+  <entityname.Touhou_Magic_Charging_Box_Huge>魔法武器充能箱（大型）</entityname.Touhou_Magic_Charging_Box_Huge>
+  <entitydescription.Touhou_Magic_Charging_Box_Huge>可以给所有魔法武器弹药充能，并且更加耐用</entitydescription.Touhou_Magic_Charging_Box_Huge>
 
   <!--凭依效果-->
   <talentname.Hyouibana_Reimu>凭依灵梦</talentname.Hyouibana_Reimu>
   <talentdescription.Hyouibana_Reimu>游泳速度提高40%，行走速度提高10%，技能获取速度提高50%。</talentdescription.Hyouibana_Reimu>
   <talentname.Hyouibana_Aya>凭依文文</talentname.Hyouibana_Aya>
-  <talentdescription.Hyouibana_Aya>完成巡回获得的经验增加25%，移动速度提高20%。</talentdescription.Hyouibana_Aya>
+  <talentdescription.Hyouibana_Aya>完成巡回获得的经验增加25%，攻击速度提高7.5%，移动速度提高20%。</talentdescription.Hyouibana_Aya>
   <talentname.Hyouibana_Marisa>凭依魔理沙</talentname.Hyouibana_Marisa>
   <talentdescription.Hyouibana_Marisa>对烧伤、酸性烧伤的抗性更高，从烧伤、酸性烧伤中恢复更快，攻击伤害提高5%。</talentdescription.Hyouibana_Marisa>
   <talentname.Hyouibana_Mokou>凭依妹红</talentname.Hyouibana_Mokou>
@@ -1191,7 +1197,7 @@
   <talentname.Hyouibana_Nitori>凭依荷取</talentname.Hyouibana_Nitori>
   <talentdescription.Hyouibana_Nitori>游泳速度提高20%，机械工程和电气工程都大于60后，在水中可缓慢恢复伤势。</talentdescription.Hyouibana_Nitori>
   <talentname.Hyouibana_Patchouli>凭依帕秋莉</talentname.Hyouibana_Patchouli>
-  <talentdescription.Hyouibana_Patchouli>游泳速度提高25%，技能获取速度提高25%，使用医疗物品的效果提高10%，增益效果在自己身上持续时间更久。</talentdescription.Hyouibana_Patchouli>
+  <talentdescription.Hyouibana_Patchouli>游泳速度提高25%，技能获取速度提高25%，增益效果在自己身上持续时间更久。</talentdescription.Hyouibana_Patchouli>
   <talentname.Hyouibana_Tenshi>凭依天子</talentname.Hyouibana_Tenshi>
   <talentdescription.Hyouibana_Tenshi>对气质剥离的抗性更高，从气质剥离中恢复得更快，最大生命值提高10%。</talentdescription.Hyouibana_Tenshi>
   <talentname.Hyouibana_Momizi>凭依椛</talentname.Hyouibana_Momizi>
@@ -1209,7 +1215,7 @@
   <talentname.Hyouibana_Cirno>凭依琪露诺</talentname.Hyouibana_Cirno>
   <talentdescription.Hyouibana_Cirno>在水中缓慢恢复伤势,造成的冻结伤害提高10%。</talentdescription.Hyouibana_Cirno>
   <talentname.Hyouibana_Koishi>凭依恋</talentname.Hyouibana_Koishi>
-  <talentdescription.Hyouibana_Koishi>提高5%近战伤害,对怪奇电话影响到的敌人造成10%额外伤害，血量低于40%时，受到的伤害减少10%。</talentdescription.Hyouibana_Koishi>
+  <talentdescription.Hyouibana_Koishi>提高10%近战伤害,对怪奇电话影响到的敌人造成10%额外伤害，血量低于40%时，受到的伤害减少10%。</talentdescription.Hyouibana_Koishi>
   <talentname.Hyouibana_Alice>凭依爱丽丝</talentname.Hyouibana_Alice>
   <talentdescription.Hyouibana_Alice>游泳速度提高10%，技能获取速度提高40%，buff效果持续时间增加10%。</talentdescription.Hyouibana_Alice>
   <talentname.Hyouibana_Sunny>凭依桑尼</talentname.Hyouibana_Sunny>
@@ -1224,7 +1230,7 @@
   <talentdescription.Hyouibana_Sanae>当你拥有任意一种奇迹时，受到的伤害下降10%，否则最大生命值增加10%</talentdescription.Hyouibana_Sanae>
   <talentname.Hyouibana_Reisen>凭依铃仙</talentname.Hyouibana_Reisen>
   <talentdescription.Hyouibana_Reisen>略微提高对精神病的抗性，受到带有精神病敌人攻击的伤害下降10%</talentdescription.Hyouibana_Reisen>
-  <talentname.Hyouibana_Yukari>凭依紫</talentname.Hyouibana_Yukari>
-  <talentdescription.Hyouibana_Yukari>受到的伤害减少5%，增加25%技能获取速度</talentdescription.Hyouibana_Yukari>
+  <talentname.Hyouibana_Merry>凭依梅莉</talentname.Hyouibana_Merry>
+  <talentdescription.Hyouibana_Merry>其他船员的平均血量在60%以上时，减少10%受到的伤害</talentdescription.Hyouibana_Merry>
 
 </infotexts>

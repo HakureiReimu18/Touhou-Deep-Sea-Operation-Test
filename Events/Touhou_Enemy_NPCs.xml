@@ -1088,7 +1088,7 @@
                 reportrange="800"
                 skillmultiplier="5"
                 FindWeaponsRange="3000">
-            <ItemSet commonness="0.35">
+            <ItemSet commonness="0.7">
                 <Item identifier="idcard" equip="true" />
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
                     <Item identifier="Touhou_MEID" />
@@ -1099,13 +1099,13 @@
                     <Item identifier="oxygentank" />
                     <Item identifier="combatstimulantsyringe" />
                 </Item>
-                <Item identifier="Touhou_Godsplitter"/>
+                <Item identifier="Touhou_Living_Cleaver"/>
                 <Item identifier="antibleeding2" amount="4"/>
                 <Item identifier="deusizine" amount="2"/>
                 <Item identifier="Touhou_Precious_Metal" />
                 <Item identifier="Touhou_Detoxificatioin_Pill" />
             </ItemSet>
-            <ItemSet commonness="0.35">
+            <ItemSet commonness="0.15">
                 <Item identifier="idcard" equip="true" />
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
                     <Item identifier="Touhou_MEID" />
@@ -1122,7 +1122,7 @@
                 <Item identifier="deusizine" amount="2"/>
                 <Item identifier="Touhou_Detoxificatioin_Pill" amount="2"/>
             </ItemSet>
-            <ItemSet commonness="0.3">
+            <ItemSet commonness="0.15">
                 <Item identifier="idcard" equip="true" />
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true" >
                     <Item identifier="Touhou_MEID" />
@@ -1219,7 +1219,7 @@
                 job="Magician_Enemy"
                 behavior="Passive"
                 healthmultiplier="1.5"
-                healthmultiplierinmultiplayer="1.6"
+                healthmultiplierinmultiplayer="1.7"
                 reactionTime="0.3"
                 aimspeed="15"
                 aimaccuracy="0.5"
@@ -1286,7 +1286,7 @@
                 job="Magician_Enemy"
                 behavior="Patrol"
                 healthmultiplier="1.2"
-                healthmultiplierinmultiplayer="1.5"
+                healthmultiplierinmultiplayer="1.6"
                 reactionTime="0.4"
                 aimspeed="10"
                 aimaccuracy="0.6"

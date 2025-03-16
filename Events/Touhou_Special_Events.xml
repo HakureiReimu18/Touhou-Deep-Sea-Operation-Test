@@ -968,6 +968,8 @@
                     <WaitAction time="40.0" />
                 </Failure>
             </RNGAction>
+            <SpawnAction npcsetidentifier="Touhou_ODM6_Enemy_NPC" npcidentifier="Touhou_ODM06_Enemy_Human_Hard" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
+            <SpawnAction npcsetidentifier="Touhou_ODM6_Enemy_NPC" npcidentifier="Touhou_ODM06_Enemy_Human_Normal" lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false" />
             <StatusEffectAction targettag="TP_player">
                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true" >
                     <Affliction identifier="Touhou_ODM06_TP_Effect" strength="10"/>
@@ -981,7 +983,7 @@
                 <Option text="Eventtext.Touhou_OutpostDestroyMission06_Event.c3.o1" endconversation="true" >
                     <TagAction Criteria="player" Tag="Poison_Player" IgnoreIncapacitatedCharacters="true" ChooseRandom="true"/>
                     <WaitAction time="3.0" />
-                    <StatusEffectAction targettag="Poison_Player">
+                    <StatusEffectAction targettag="TP_player">
                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true" >
                             <Affliction identifier="Touhou_ODM6_Poison_Effect" strength="10"/>
                         </StatusEffect>
@@ -992,7 +994,7 @@
                 </Option>
                 <Option text="Eventtext.Touhou_OutpostDestroyMission06_Event.c3.o2" endconversation="true" >
                     <WaitAction time="60.0" />
-                    <StatusEffectAction targettag="Poison_Player">
+                    <StatusEffectAction targettag="TP_player">
                         <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true" >
                             <Affliction identifier="Touhou_ODM6_Poison_Effect" strength="10"/>
                         </StatusEffect>
@@ -1009,19 +1011,19 @@
         <ScriptedEvent identifier="Touhou_OutpostDestroyMission06_BGM">
             <TagAction criteria="player" tag="player" />
             <WaitAction time="1" />
-            <StatusEffectAction targettag="Poison_Player">
+            <StatusEffectAction targettag="player">
                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true" >
                     <Affliction identifier="Touhou_ODM06_BGM_Player01" strength="10"/>
                 </StatusEffect>
             </StatusEffectAction>
             <WaitAction time="188" />
             <Label name="BGMloop" />
-            <StatusEffectAction targettag="Poison_Player">
+            <StatusEffectAction targettag="player">
                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true" >
                     <Affliction identifier="Touhou_ODM06_BGM_Player02" strength="10"/>
                 </StatusEffect>
             </StatusEffectAction>
-            <WaitAction time="60" />
+            <WaitAction time="30" />
             <CheckDataAction identifier="Touhou_OutpostDestroyMission06_End" condition="eq true">
                 <Success>
 
@@ -1036,16 +1038,16 @@
         <ScriptedEvent identifier="Touhou_ODM6_Poison_Event">
             <TagAction criteria="player" tag="player" />
             <SetDataAction value="false" identifier="Touhou_OutpostDestroyMission06_Poison_End" />
-            <StatusEffectAction targettag="Poison_Player">
+            <StatusEffectAction targettag="player">
                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true" >
                     <Affliction identifier="Touhou_ODM6_Poison_Effect" strength="1"/>
                 </StatusEffect>
             </StatusEffectAction>
             <Label name="eventloop" />
             <WaitAction time="10.0" />
-            <StatusEffectAction targettag="Poison_Player">
+            <StatusEffectAction targettag="player">
                 <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true" >
-                    <Affliction identifier="Touhou_ODM6_Poison_Effect" strength="3.0"/>
+                    <Affliction identifier="Touhou_ODM6_Poison_Effect" strength="5.0"/>
                 </StatusEffect>
             </StatusEffectAction>
             <CheckDataAction identifier="Touhou_OutpostDestroyMission06_Poison_End" condition="eq true">
