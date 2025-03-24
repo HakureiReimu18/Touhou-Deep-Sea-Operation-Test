@@ -43,7 +43,7 @@
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="0.9" probabilitymultiplier="0.85" />
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.9" />
 
-            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
+            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" interval="1.0" Duration="1.0" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />
                 <Affliction identifier="Touhou_Thermalgoggles" strength="1" />
@@ -117,7 +117,7 @@
                 <Affliction identifier="Grunt_Security_Tengu" strength="50" />
                 <Affliction identifier="Momizi_Tail_Spawn" strength="10" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
+            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" interval="1.0" Duration="1.0" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />
                 <Affliction identifier="Touhou_Thermalgoggles" strength="1" />

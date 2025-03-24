@@ -47,7 +47,7 @@
             <SkillModifier skillidentifier="mechanical" skillvalue="5" />
             <SkillModifier skillidentifier="electrical" skillvalue="5" />
 
-            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
+            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" interval="1.0" Duration="1.0" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />
                 <Affliction identifier="Touhou_Thermalgoggles" strength="1" />
@@ -122,7 +122,7 @@
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true">
                 <Affliction identifier="Candid_Friend" amount="50" />
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
+            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" interval="1.0" Duration="1.0" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />
                 <Affliction identifier="Touhou_Thermalgoggles" strength="1" />

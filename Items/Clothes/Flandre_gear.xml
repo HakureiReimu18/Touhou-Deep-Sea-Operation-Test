@@ -47,7 +47,7 @@
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="5" />
             <SkillModifier skillidentifier="weapons" skillvalue="10" />
 
-            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
+            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" interval="1.0" Duration="1.0" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />
                 <Affliction identifier="Touhou_Thermalgoggles" strength="1" />
@@ -113,7 +113,7 @@
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85" />
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="10" />
             <SkillModifier skillidentifier="weapons" skillvalue="20" />
-            <SkillModifier skillidentifier="medical" skillvalue="-160" />
+            <SkillModifier skillidentifier="medical" skillvalue="-100" />
 
             <StatusEffect type="OnWearing" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="FlandreTalent" />
@@ -123,7 +123,7 @@
                 <Affliction identifier="Younger_Sister_Of_Scarlet" strength="50" />
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
+            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" interval="1.0" Duration="1.0" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />
                 <Affliction identifier="Touhou_Thermalgoggles" strength="1" />
@@ -191,7 +191,7 @@
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="5" />
             <SkillModifier skillidentifier="weapons" skillvalue="10" />
 
-            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
+            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" interval="1.0" Duration="1.0" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />
                 <Affliction identifier="Touhou_Thermalgoggles" strength="1" />
@@ -257,7 +257,7 @@
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85" />
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="10" />
             <SkillModifier skillidentifier="weapons" skillvalue="20" />
-            <SkillModifier skillidentifier="medical" skillvalue="-160" />
+            <SkillModifier skillidentifier="medical" skillvalue="-100" />
 
             <StatusEffect type="OnWearing" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="FlandreTalent" />
@@ -268,7 +268,7 @@
                 <Affliction identifier="Flandre_Wings_Spawn" strength="10" />
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" />
+            <StatusEffect type="OnWearing" target="This" targetitemcomponent="StatusHUD" drawhudwhenequipped="false" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false" showdeadcharacters="false" showtexts="true" interval="1.0" Duration="1.0" />
             <StatusEffect type="OnWearing" target="Character" Interval="0.5" Duration="0.5" >
                 <RequiredItem items="thermalgoggles" type="Contained" />
                 <Affliction identifier="Touhou_Thermalgoggles" strength="1" />
