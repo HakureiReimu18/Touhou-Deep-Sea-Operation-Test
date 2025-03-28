@@ -115,19 +115,21 @@
     <Talent identifier="Talents_Magician_Primary06">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Ranged.png" sheetindex="0,0" sheetelementsize="400,400" />
         <Description tag="talentdescription.Talents_Magician_Primary06"/>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="3.0">
             <Conditions>
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="400" invert="true" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="MovementSpeed" maxvalue="0.1" skillidentifier="Touhou_Magic" />
                 <CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxvalue="0.1" skillidentifier="Touhou_Magic" />
-                <CharacterAbilityModifyStatToSkill stattype="AttackMultiplier" maxvalue="0.1" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.1" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.1" skillidentifier="Touhou_Magic" />
             </Abilities>
             <FallbackAbilities>
                 <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.4" />
                 <CharacterAbilityModifyStat stattype="RangedAttackSpeed" value="0.4" />
-                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.4" />
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.4" />
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.4" />
             </FallbackAbilities>
         </AbilityGroupInterval>
     </Talent>
@@ -160,10 +162,6 @@
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
                 <CharacterAbilityGiveStat stattype="FlowResistance" value="0.3"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
-            <Abilities>
                 <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.15"/>
             </Abilities>
         </AbilityGroupEffect>
@@ -550,7 +548,8 @@
         <Description tag="talentdescription.Hermes"/>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityGiveStat stattype="AttackMultiplier" value="0.10"/>
+                <CharacterAbilityGiveStat stattype="RangedAttackMultiplier" value="0.10"/>
+                <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.10"/>
                 <CharacterAbilityGiveStat stattype="RangedAttackSpeed" value="0.10"/>
                 <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.10"/>
             </Abilities>

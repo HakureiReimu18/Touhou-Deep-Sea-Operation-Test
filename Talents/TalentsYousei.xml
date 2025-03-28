@@ -170,25 +170,29 @@
     <Talent identifier="Talents_Yousei_Primary09">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400" />
         <Description tag="talentdescription.Talents_Yousei_Primary09"/>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="3.0">
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.04" skillidentifier="helm" />
                 <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.04" skillidentifier="weapons" />
                 <CharacterAbilityModifyStatToSkill stattype="RepairSpeed" maxvalue="0.04" skillidentifier="mechanical" />
                 <CharacterAbilityModifyStatToSkill stattype="RepairSpeed" maxvalue="0.04" skillidentifier="electrical" />
-                <CharacterAbilityModifyStatToSkill stattype="AttackMultiplier" maxvalue="0.04" skillidentifier="medical" />
-                <CharacterAbilityModifyStatToSkill stattype="AttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.04" skillidentifier="medical" />
+                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.04" skillidentifier="medical" />
+                <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic" />
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="3.0">
             <Conditions>
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="400" invert="true" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStatToSkill stattype="AttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic" />
             </Abilities>
             <FallbackAbilities>
-                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.16" />
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.16" />
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.16" />
             </FallbackAbilities>
         </AbilityGroupInterval>
     </Talent>

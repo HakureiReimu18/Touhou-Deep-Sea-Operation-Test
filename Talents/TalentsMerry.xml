@@ -67,7 +67,7 @@
                 <CharacterAbilityModifyValue multiplyvalue="1.35"/>
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupInterval Interval="0.9">
+        <AbilityGroupInterval Interval="1.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Merry" />
                 <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_240CD" />
@@ -83,7 +83,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="3.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Merry" />
                 <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_240CD" />
@@ -91,10 +91,11 @@
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200" invert="true" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStatToSkill stattype="AttackMultiplier" maxvalue="0.3" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.25" skillidentifier="Touhou_Magic" />
+                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.25" skillidentifier="Touhou_Magic" />
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="3.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Merry" />
                 <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_240CD" />
@@ -102,7 +103,8 @@
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.6"/>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.5"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.5"/>
             </Abilities>
         </AbilityGroupInterval>
 
@@ -129,9 +131,6 @@
                 <AbilityConditionLevelsBehindHighest levelsbehind="1" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="ExtraLevelGain" value="0.5"/>
-            </Abilities>
-            <FallbackAbilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
@@ -139,7 +138,7 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
-            </FallbackAbilities>
+            </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
