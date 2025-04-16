@@ -49,7 +49,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval>
+        <AbilityGroupInterval Interval="1.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Merry" />
                 <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_240CD" />
@@ -67,7 +67,7 @@
                 <CharacterAbilityModifyValue multiplyvalue="1.35"/>
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupInterval Interval="1.9">
+        <AbilityGroupInterval Interval="4.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Merry" />
                 <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_240CD" />
@@ -83,11 +83,10 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="3.0">
+        <AbilityGroupInterval interval="5.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Merry" />
                 <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_240CD" />
-                <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_Dream" />
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200" invert="true" />
             </Conditions>
             <Abilities>
@@ -99,7 +98,6 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Merry" />
                 <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_240CD" />
-                <AbilityConditionHasAffliction afflictionidentifier="MerryTalent_Dream" />
                 <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200" />
             </Conditions>
             <Abilities>

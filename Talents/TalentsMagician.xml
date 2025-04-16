@@ -526,7 +526,7 @@
         <Description tag="talentdescription.Touhou_Buff"/>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
-                <CharacterAbilityGiveStat stattype="BuffDurationMultiplier" value="0.3"/>
+                <CharacterAbilityGiveStat stattype="BuffItemApplyingMultiplier" value="0.3"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="29.0">

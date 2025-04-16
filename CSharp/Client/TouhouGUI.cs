@@ -30,9 +30,9 @@ namespace TouhouGUI
 
         public void Initialize()
         {
-            // 先卸载 JiuzhouHint 的补丁
+/*            // 先卸载 JiuzhouHint 的补丁
             Harmony jiuzhouHarmony = new Harmony("Jiuzhou.Hint.Esirprus");
-            jiuzhouHarmony.UnpatchAll("Jiuzhou.Hint.Esirprus");
+            jiuzhouHarmony.UnpatchSelf("Jiuzhou.Hint.Esirprus");*/
 
             LuaCsLogger.Log($"TouhouGUI loading...");
             harmonyInstance = new Harmony("Touhou.GUI.ThanksEsirprus");
@@ -40,7 +40,7 @@ namespace TouhouGUI
 
         public void Dispose()
         {
-            harmonyInstance?.UnpatchAll();
+            harmonyInstance?.UnpatchSelf();
             LuaCsLogger.Log("TouhouGUI disposed!");
         }
 
