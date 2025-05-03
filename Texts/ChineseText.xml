@@ -1275,6 +1275,14 @@
   <entityname.Touhou_Metamorphosis>‖color:150,150,220,155‖嬗变‖color:end‖</entityname.Touhou_Metamorphosis>
   <entitydescription.Touhou_Metamorphosis>爱丽丝很久很久以前留在某个魔法国度的武器，如今凭借记忆将其在木卫二上简单还原了出来。每一发射弹都蕴含嬗变与解放的能力，能轻易扭曲生物的生理结构。用完即弃。
     如果爱丽丝用嬗变击杀了生物，会补充大量人偶能量。使用时消耗自身耐久，随时间生成弹药</entitydescription.Touhou_Metamorphosis>
+  <entityname.Touhou_Prometheus_Clothes>‖color:255,0,0,155‖普罗米修斯‖color:end‖</entityname.Touhou_Prometheus_Clothes>
+  <entitydescription.Touhou_Prometheus_Clothes>极度危险的一套服装</entitydescription.Touhou_Prometheus_Clothes>
+  <entityname.Touhou_Blood_Crown>‖color:255,0,0,155‖独一王冠‖color:end‖</entityname.Touhou_Blood_Crown>
+  <entitydescription.Touhou_Blood_Crown>只是看一眼就深知其中危险的王冠</entitydescription.Touhou_Blood_Crown>
+  <entityname.Touhou_Feather_Wings>‖color:100,100,200,200‖羽翊‖color:end‖</entityname.Touhou_Feather_Wings>
+  <entitydescription.Touhou_Feather_Wings>比那名居天子为木卫二人讲述了许多关于天空的故事，有心人将其提炼为毛皮与羽翊的故事流传在坊间，不知不觉间便有人献上了这把做工精良的武器。使用‖color:gui.yellow‖编织羽翊‖end‖</entitydescription.Touhou_Feather_Wings>
+  <entityname.Touhou_Feather_Wings_Ammo>‖color:100,100,200,200‖编织羽翊‖color:end‖</entityname.Touhou_Feather_Wings_Ammo>
+  <entitydescription.Touhou_Feather_Wings_Ammo>做工精良的一枚徽章，用纤维房照羽毛的模样编织而成，虽然做工不够优雅，但心意恰到好处。作为‖color:gui.yellow‖羽翊‖end‖的弹药</entitydescription.Touhou_Feather_Wings_Ammo>
 
 
 

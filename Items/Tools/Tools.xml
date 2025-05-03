@@ -476,7 +476,7 @@
     </Item>
 
     <!--元素腰带-->
-    <Item name="元素腰带" identifier="Magic_Pouch" scale="0.3" subcategory="Touhou" category="Equipment" tags="mediumitem,mobilecontainer,tool,backpack,locker,container" fireproof="true" waterproof="true" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Item name="元素腰带" identifier="Magic_Pouch" scale="0.3" subcategory="Touhou" category="Equipment" tags="mediumitem,mobilecontainer,tool,backpack,locker,container,Magic_Pouch" fireproof="true" waterproof="true" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="medcab" />
         <Price baseprice="1000" minleveldifficulty="10">
             <Price storeidentifier="merchantoutpost" multiplier="1.4" sold="false" />
@@ -604,10 +604,10 @@
                     inherittexturescale="false" hideotherwearables="false" sourcerect="0,0,160,136" origin="0.6,0.0" scale="0.23" />
             <StatusEffect type="OnWearing" target="Character" OxygenAvailable="0.0" UseHullOxygen="true" />
 
-            <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
+            <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="1.0" setvalue="true" disabledeltatime="true" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 60" />
-                <Conditional Touhou_Magic_Boost="lte 148" />
-                <Affliction identifier="Touhou_Magic_Boost" amount="1.0" />
+                <Conditional Touhou_Magic_Boost="lte 150" />
+                <Affliction identifier="Touhou_Magic_Boost" amount="149.5" />
             </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.75" damagesound="LimbArmor" deflectprojectiles="true" />
@@ -713,7 +713,7 @@
 
 
     <!--元素腰带-医疗拓展-->
-    <Item name="元素腰带-医疗拓展" identifier="Magic_Pouch_Medical_Expansion" scale="0.3" subcategory="Touhou" category="Equipment" tags="mediumitem,mobilecontainer,tool,backpack,locker,container,refrigerated" fireproof="true" waterproof="true" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
+    <Item name="元素腰带-医疗拓展" identifier="Magic_Pouch_Medical_Expansion" scale="0.3" subcategory="Touhou" category="Equipment" tags="mediumitem,mobilecontainer,tool,backpack,locker,container,refrigerated,Magic_Pouch" fireproof="true" waterproof="true" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="medcab" />
         <Price baseprice="2000" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" multiplier="1.4" sold="false" />
@@ -835,10 +835,10 @@
         </CustomInterface>
 
         <Wearable limbtype="Torso" slots="Bag" msg="ItemMsgEquipSelect" canbeselected="false" canbepicked="true" pickkey="Select" displaycontainedstatus="true">
-            <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="0.5" disabledeltatime="true" >
+            <StatusEffect type="OnWearing" target="Character" comparison="And" Interval="1.0" setvalue="true" disabledeltatime="true" >
                 <Conditional skillrequirement="true" Touhou_Magic="gt 60" />
-                <Conditional Touhou_Magic_Boost="lte 148" />
-                <Affliction identifier="Touhou_Magic_Boost" amount="1" />
+                <Conditional Touhou_Magic_Boost="lte 150" />
+                <Affliction identifier="Touhou_Magic_Boost" amount="149.5" />
             </StatusEffect>
 
             <sprite name="Backpack Wearable" texture="%ModDir%/Images/Tools/Magic_Pouch.png" limb="Torso" hidelimb="false" inheritlimbdepth="true"
@@ -914,7 +914,7 @@
             <!-- when using, the contained welding fuel tank will detoriate (= lose fuel) -->
             <StatusEffect type="OnUse" targettype="Contained" targets="weldingfueltank" Condition="-2.7" />
             <StatusEffect type="OnUse" targettype="Contained" targets="incendiumfueltank" Condition="-1.5" />
-            <StatusEffect type="OnUse" targettype="Contained" targets="Touhou_Fix_Foamg_Tank" Condition="-0.15" />
+            <StatusEffect type="OnUse" targettype="Contained" targets="Touhou_Fix_Foamg_Tank" Condition="-0.2" />
             <StatusEffect type="OnUse" target="This" structurefixamount="5.0" setvalue="true" Interval="0.5" disabledeltatime="true" >
                 <RequiredItems items="Touhou_Fix_Foamg_Tank" type="Contained" />
             </StatusEffect>

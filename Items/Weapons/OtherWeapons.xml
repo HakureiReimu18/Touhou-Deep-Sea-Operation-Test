@@ -2804,7 +2804,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Aphelion_Ammo.png" sourcerect="0,0,88,88" depth="0.45" origin="0.5,0.5" />
         <Body width="88" height="88" density="10" />
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
-        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Aphelion_Ammo_Light" removecontaineditemsondeconstruct="true"
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Aphelion_Ammo_Light" />
@@ -2812,14 +2812,6 @@
             <StatusEffect type="OnUse" target="This" condition="-10.0" disabledeltatime="true" >
                 <SpawnItem identifiers="Touhou_Aphelion_Ammo_Light" spawnposition="ThisInventory" />
             </StatusEffect>
-<!--            <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true" >
-                <Conditional Touhou_Aphelion_Mod_Effect="lte 0" targetcontainer="true" TargetGrandParent="true"/>
-                <SpawnItem identifiers="Touhou_Aphelion_Ammo_Light" spawnposition="ThisInventory" />
-            </StatusEffect>
-            <StatusEffect type="OnUse" target="This" condition="-1.0" disabledeltatime="true" >
-                <Conditional Touhou_Aphelion_Mod_Effect="gt 0" TargetGrandParent="true"/>
-                <SpawnItem identifiers="Touhou_Aphelion_Ammo_Light_Ball" spawnposition="ThisInventory" />
-            </StatusEffect>-->
         </ItemContainer>
     </Item>
 
