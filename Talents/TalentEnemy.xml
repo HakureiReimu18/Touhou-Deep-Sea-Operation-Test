@@ -7,6 +7,7 @@
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
                 <CharacterAbilityGiveResistance resistanceid="burn,gaze,stun" multiplier="0.8" />
+                <CharacterAbilityGiveResistance resistanceid="damage" multiplier="0.75" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
@@ -24,6 +25,15 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2" />
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionAboveVitality vitalitypercentage="0.5"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Any"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.4" />
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
