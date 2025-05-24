@@ -6,7 +6,7 @@
 
 local function CharacterToClient(character)
 
-    if not SERVER then return nil end
+    if not CLIENT then return nil end
 
     for key,client in pairs(Client.ClientList) do
         if client.Character == character then
@@ -17,24 +17,21 @@ local function CharacterToClient(character)
     return nil
 end
 
-Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", function(effect, deltaTime, item, targets, worldPosition, client)
+Hook.Add("Touhou_Alice_Magic_Book.OnUse", "Touhou.Alice_Doll_Control_Change", function(effect, deltaTime, item, targets, worldPosition)
 
-    if targets[1] == nil then return end
+    if not CLIENT and character ~= Character.Controlled then return end
+
+    local character = targets[1]
+
+    print(character)
+    print(targets[1])
+
+    if character == nil then return end
 
     print(targets[1].Name .. " Used the Touhou_Alice_Magic_Book!")
 
-    if client == nil then
-        print("Error: client is nil.")
-    end
-
-    local character = targets[1]
-    local client = CharacterToClient(targets[1])
-
     Timer.Wait(function()
         Character.Controlled = character
-    end,60000)
-    Timer.Wait(function()
-        client.SetClientCharacter(character)
     end,60000)
 end)
 

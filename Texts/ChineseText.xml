@@ -224,7 +224,7 @@
   <entityname.Touhou_Elements_Book>‖color:120,75,100,255‖七曜魔导书‖color:end‖</entityname.Touhou_Elements_Book>
   <entitydescription.Touhou_Elements_Book>记载着元素转换与结合奥秘的魔导书，可以快速切换不同的元素能量应对不同的场景，只有修炼多年的魔法使才能发挥它的威力。
     \n（元素生成需要置入贤者之石或贤者之石（仿制），注意元素生成会移除原有的内容物！）</entitydescription.Touhou_Elements_Book>
-  <entityname.Kanameishi_Cannon>‖color:5,105,195,160‖要石「乾坤鸣动炮」‖color:end‖（加农炮）</entityname.Kanameishi_Cannon>
+  <entityname.Kanameishi_Cannon>‖color:5,105,195,160‖要石「乾坤鸣动炮」‖color:end‖（破片加农炮）</entityname.Kanameishi_Cannon>
   <entitydescription.Kanameishi_Cannon>在幻想乡，不管是插下要石还是拔出要石，都只有比那名居一族能够做到。（作为加农炮炮弹使用）</entitydescription.Kanameishi_Cannon>
   <entityname.Immortal_Moon_Smoke>‖color:255,72,36,255‖飘上月球，不死之烟‖color:end‖</entityname.Immortal_Moon_Smoke>
   <entitydescription.Immortal_Moon_Smoke>飘上月球，不死之烟</entitydescription.Immortal_Moon_Smoke>
@@ -408,14 +408,14 @@
   <entityname.Touhou_Nue_Midnight>‖color:90,80,100,255‖午鵺‖end‖</entityname.Touhou_Nue_Midnight>
   <entitydescription.Touhou_Nue_Midnight>■真■■■■■相■■■■■\n■■■■■■■■■■■■不\n■■■■■■■■■■■■■\n■■明■■■■■■■■■</entitydescription.Touhou_Nue_Midnight>
   <entityname.Touhou_Laevatein>‖color:255,36,0,255‖莱瓦汀‖end‖</entityname.Touhou_Laevatein>
-  <entitydescription.Touhou_Laevatein>整把剑燃烧不止，散发着比太阳还要明亮的光芒。这把剑的大小实在过于惊人，就算是吸血鬼也无法将其挥舞得非常迅速。\n莱瓦汀的每一次攻击都会附带微量的最大生命值上限的伤害——目之破坏，当目之破坏积累到100%后，必定死亡。</entitydescription.Touhou_Laevatein>
+  <entitydescription.Touhou_Laevatein>整把剑燃烧不止，散发着比太阳还要明亮的光芒。这把剑的大小实在过于惊人，就算是吸血鬼也无法将其挥舞得非常迅速。\n芙兰朵露使用莱瓦汀的每一次攻击都会附带微量的最大生命值上限的伤害——目之破坏，当目之破坏积累到100%后，必定死亡。</entitydescription.Touhou_Laevatein>
   <entityname.Touhou_Mysterious_Pearl_Rippling>灵异珠-波纹</entityname.Touhou_Mysterious_Pearl_Rippling>
   <entitydescription.Touhou_Mysterious_Pearl_Rippling>散发着神秘气息的灵异珠，靠近能增强神秘力量，仔细看去，其中好像有一片湖泊，中央正有一只神似腕龙的脑袋探出水面。作为‖color:gui.yellow‖涟漪‖end‖的弹药\n‖color:gui.yellow‖手持灵异珠可以解锁特定天赋。‖end‖</entitydescription.Touhou_Mysterious_Pearl_Rippling>
   <entityname.Touhou_Eternal_Night_Bow>永夜</entityname.Touhou_Eternal_Night_Bow>
   <entitydescription.Touhou_Eternal_Night_Bow>模仿永琳的长弓所制作的一柄武器，威力更多取决于使用的箭矢。遗憾的是，模仿终究只是模仿。使用‖color:gui.yellow‖箭矢类‖end‖弹药。</entitydescription.Touhou_Eternal_Night_Bow>
   <entityname.Touhou_Magic_Metal_Arrow>魔箭</entityname.Touhou_Magic_Metal_Arrow>
   <entitydescription.Touhou_Magic_Metal_Arrow>由魔法金属制成的、最基础的魔箭，命中后可以有效限制对象的行动。作为‖color:gui.yellow‖永夜/三妖精的三重大弩炮‖end‖的弹药</entitydescription.Touhou_Magic_Metal_Arrow>
-  <entityname.Touhou_Starbow_Break>‖color:gui.red‖禁弹「星弧破碎」‖end‖（加农炮）</entityname.Touhou_Starbow_Break>
+  <entityname.Touhou_Starbow_Break>‖color:gui.red‖禁弹「星弧破碎」‖end‖（破片加农炮）</entityname.Touhou_Starbow_Break>
   <entitydescription.Touhou_Starbow_Break>这家伙也是能遇到就很幸运的稀有角色。（作为破片加农炮弹药使用）</entitydescription.Touhou_Starbow_Break>
   <entityname.Touhou_Mysterious_Pearl_Rippling_Mission>灵异珠-波纹</entityname.Touhou_Mysterious_Pearl_Rippling_Mission>
   <entitydescription.Touhou_Mysterious_Pearl_Rippling_Mission>‖color:gui.yellow‖手持可获得任务完成凭证。‖end‖‖color:gui.red‖仅作为任务物品（需要在造物运输箱收容）‖end‖</entitydescription.Touhou_Mysterious_Pearl_Rippling_Mission>
@@ -664,7 +664,7 @@
   <entitydescription.Touhou_Lunar_Energy_Assault_Rifle>铃仙在解析月球遗物后还原出来的一把全自动武器，能使用多种弹药的同时，威力也不容小觑。使用‖color:gui.yellow‖月能弹匣、冲锋枪弹药或突击步枪弹药‖end‖</entitydescription.Touhou_Lunar_Energy_Assault_Rifle>
   <entityname.Touhou_Lunar_Energy_Magazine>‖color:220,100,220,255‖月能弹匣‖color:end‖</entityname.Touhou_Lunar_Energy_Magazine>
   <entitydescription.Touhou_Lunar_Energy_Magazine>用魔力拘束的一块高能弹匣，专为月能步枪使用。作为‖color:gui.yellow‖月能步枪‖end‖的弹药</entitydescription.Touhou_Lunar_Energy_Magazine>
-  <entityname.Touhou_Nue_Danmaku_Chimera>鵺符「弹幕奇美拉」（加农炮）</entityname.Touhou_Nue_Danmaku_Chimera>
+  <entityname.Touhou_Nue_Danmaku_Chimera>鵺符「弹幕奇美拉」（破片加农炮）</entityname.Touhou_Nue_Danmaku_Chimera>
   <entitydescription.Touhou_Nue_Danmaku_Chimera>被这个弹幕击中的话，中弹者会因为变得原形不明而死。不用喝酒就能迷糊到忘了自己是谁很幸运吧？（作为加农炮弹药使用）</entitydescription.Touhou_Nue_Danmaku_Chimera>
   <entityname.Touhou_Waterwheel_Gun>水轮枪</entityname.Touhou_Waterwheel_Gun>
   <entitydescription.Touhou_Waterwheel_Gun>阿求委托工程师为自己制造的一把简单的水枪，较高的水压使其能对陆地生物产生不小的威胁，因为灵水难以融入木卫二的特性，使其在水下的效力仍然足够高。使用时需要‖color:gui.yellow‖水轮和灵水‖end‖</entitydescription.Touhou_Waterwheel_Gun>
@@ -1237,7 +1237,7 @@
   <entityname.Touhou_Merciless_Ammo>‖color:255,15,15,255‖无情之心‖end‖</entityname.Touhou_Merciless_Ammo>
   <entitydescription.Touhou_Merciless_Ammo>外表如同树皮一般的心脏，不止触感冰冷，哪怕红色的外表也看不出丝毫温暖的感觉。作为‖color:gui.yellow‖无情‖end‖的弹药</entitydescription.Touhou_Merciless_Ammo>
   <entityname.Touhou_Corrupted_Merciless_Ammo>‖color:255,0,0,155‖腐化无情之心‖end‖</entityname.Touhou_Corrupted_Merciless_Ammo>
-  <entitydescription.Touhou_Corrupted_Merciless_Ammo>被恐惧与恶意腐化后的无情之心，仿佛已不是这世间的活物。‖color:gui.yellow‖无法使用充能箱补充。‖end‖作为‖color:gui.yellow‖腐化无情‖end‖的弹药</entitydescription.Touhou_Corrupted_Merciless_Ammo>
+  <entitydescription.Touhou_Corrupted_Merciless_Ammo>被恐惧与恶意腐化后的无情之心，仿佛已不是这世间的活物。作为‖color:gui.yellow‖腐化无情‖end‖的弹药</entitydescription.Touhou_Corrupted_Merciless_Ammo>
   <entityname.Touhou_Base_Metal_Environment>魔法水晶矿</entityname.Touhou_Base_Metal_Environment>
   <entitydescription.Touhou_Base_Metal_Environment>不知何时在木卫二被发现的特殊矿石，内部魔力暗流涌动，可以拆解出魔法材料，若是在炼金桌上配合炼金术副产物加工，还可以获得炼金产物</entitydescription.Touhou_Base_Metal_Environment>
   <entityname.Touhou_Labyrinth>‖color:255,15,155,255‖迷失‖end‖</entityname.Touhou_Labyrinth>
@@ -1305,7 +1305,40 @@
   <entitydescription.Touhou_Sakuya_Knife_Lunatic>相传是咲夜在月面战争时特制的飞刀发射装置，相比传统方法更便携且更具威力。正反两面共两个发射槽，使其依然可以一次发射两把飞刀。使用‖color:gui.yellow‖冷却飞刀能量核心‖end‖</entitydescription.Touhou_Sakuya_Knife_Lunatic>
   <entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>‖color:150,150,200,255‖冷却飞刀能量核心‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>
   <entitydescription.Touhou_Sakuya_Knife_Lunatic_Ammo>冷却飞刀的供能装置，允许咲夜长时间不断发射高能飞刀。作为‖color:gui.yellow‖月战型冷却飞刀‖end‖的弹药</entitydescription.Touhou_Sakuya_Knife_Lunatic_Ammo>
-
+  <entityname.Touhou_Closed_Third_Eye>‖color:200,50,200,255‖紧闭之瞳‖color:end‖</entityname.Touhou_Closed_Third_Eye>
+  <entitydescription.Touhou_Closed_Third_Eye>恋在封闭内心后，外化出的紧闭眼瞳。使用‖color:gui.yellow‖恋之埋火‖end‖</entitydescription.Touhou_Closed_Third_Eye>
+  <entityname.Touhou_Closed_Third_Eye_Ammo01>‖color:200,50,200,255‖恋之埋火‖color:end‖</entityname.Touhou_Closed_Third_Eye_Ammo01>
+  <entitydescription.Touhou_Closed_Third_Eye_Ammo01>恋无意识内心的一部分，如果只是这样简单的心便再好不过了。作为‖color:gui.yellow‖紧闭之瞳‖end‖的弹药</entitydescription.Touhou_Closed_Third_Eye_Ammo01>
+  <entityname.Touhou_Treasure_Bag_Nue>宝藏袋-封兽鵺</entityname.Touhou_Treasure_Bag_Nue>
+  <entitydescription.Touhou_Treasure_Bag_Nue>作为击败封兽鵺的奖励</entitydescription.Touhou_Treasure_Bag_Nue>
+  <entityname.Touhou_Treasure_Bag_Piece>宝藏袋-月</entityname.Touhou_Treasure_Bag_Piece>
+  <entitydescription.Touhou_Treasure_Bag_Piece>作为击败月的奖励</entitydescription.Touhou_Treasure_Bag_Piece>
+  <entityname.Touhou_Bear_Doll_Bag>小熊腰包</entityname.Touhou_Bear_Doll_Bag>
+  <entitydescription.Touhou_Bear_Doll_Bag>如果只是一个普通的小熊玩偶的话，想必早就被捏碎了。因此帕秋莉为芙兰朵露亲自缝制了这只玩偶，保护她的同时也方便她在木卫二上活动</entitydescription.Touhou_Bear_Doll_Bag>
+  <entityname.Touhou_Knightmare_Shotgun>幻崩霰弹枪</entityname.Touhou_Knightmare_Shotgun>
+  <entitydescription.Touhou_Knightmare_Shotgun>炼金实验室解析魔法材料后，研发的武器之一。最初的作用是保护冰洋下的人类，现如今成为非法活动和暴力手段的主要武器。使用‖color:gui.yellow‖三种幻崩霰弹枪电池或霰弹枪弹药‖end‖</entitydescription.Touhou_Knightmare_Shotgun>
+  <entityname.Touhou_Knightmare_Shotgun_Ammo01>幻崩霰弹枪电池</entityname.Touhou_Knightmare_Shotgun_Ammo01>
+  <entitydescription.Touhou_Knightmare_Shotgun_Ammo01>取代零散且不便于携带的弹药，幻崩霰弹枪使用电池发射同样危险的光束。作为‖color:gui.yellow‖幻崩霰弹枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Shotgun_Ammo01>
+  <entityname.Touhou_Knightmare_Shotgun_Ammo02>幻崩霰弹枪高能电池</entityname.Touhou_Knightmare_Shotgun_Ammo02>
+  <entitydescription.Touhou_Knightmare_Shotgun_Ammo02>更具杀伤力的幻崩电池，对付冰洋下的危险生物相当好用。作为‖color:gui.yellow‖幻崩霰弹枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Shotgun_Ammo02>
+  <entityname.Touhou_Knightmare_Shotgun_Ammo03>幻崩霰弹枪贫化电池</entityname.Touhou_Knightmare_Shotgun_Ammo03>
+  <entitydescription.Touhou_Knightmare_Shotgun_Ammo03>实验性的幻崩电池，作为试验弹药未经稳定测试，但威力惊人。‖color:gui.yellow‖无法使用充能箱补充‖end‖。作为‖color:gui.yellow‖幻崩霰弹枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Shotgun_Ammo03>
+  <entityname.Touhou_Knightmare_Submachine_Gun>幻崩冲锋枪</entityname.Touhou_Knightmare_Submachine_Gun>
+  <entitydescription.Touhou_Knightmare_Submachine_Gun>炼金实验室解析魔法材料后，研发的武器之一。对于研习神秘学与魔法的人来说，它拥有相当优异的性能，是魔法使最爱傍身的武器之一。使用‖color:gui.yellow‖两种幻崩冲锋枪电池或冲锋枪弹药‖end‖</entitydescription.Touhou_Knightmare_Submachine_Gun>
+  <entityname.Touhou_Knightmare_Submachine_Gun_Ammo01>幻崩冲锋枪电池</entityname.Touhou_Knightmare_Submachine_Gun_Ammo01>
+  <entitydescription.Touhou_Knightmare_Submachine_Gun_Ammo01>取代零散且不便于携带的弹药，幻崩霰弹枪使用电池发射同样危险的光束。作为‖color:gui.yellow‖幻崩霰弹枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Submachine_Gun_Ammo01>
+  <entityname.Touhou_Knightmare_Submachine_Gun_Ammo02>幻崩冲锋枪贫化电池</entityname.Touhou_Knightmare_Submachine_Gun_Ammo02>
+  <entitydescription.Touhou_Knightmare_Submachine_Gun_Ammo02>更具杀伤力的幻崩电池，对付冰洋下的危险生物相当好用。‖color:gui.yellow‖无法使用充能箱补充‖end‖。作为‖color:gui.yellow‖幻崩霰弹枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Submachine_Gun_Ammo02>
+  <entityname.Touhou_Knightmare_Experimental_Rifle>幻崩实验性步枪</entityname.Touhou_Knightmare_Experimental_Rifle>
+  <entitydescription.Touhou_Knightmare_Experimental_Rifle>炼金实验室曾经的领导者在离开前，研发的最后一把武器。利用魔法回路拘束两种毒性材料，使之对任何生物都有极高的威胁性。它会对附着一定量辐射病或者足量酸性烧伤的敌人造成额外伤害。使用‖color:gui.yellow‖两种幻崩实验性步枪电池‖end‖</entitydescription.Touhou_Knightmare_Experimental_Rifle>
+  <entityname.Touhou_Knightmare_Experimental_Rifle_Ammo01>幻崩实验性贫化电池</entityname.Touhou_Knightmare_Experimental_Rifle_Ammo01>
+  <entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo01>用魔法回路拘束的放射性武器能源，相当危险。‖color:gui.yellow‖无法使用充能箱补充‖end‖。作为‖color:gui.yellow‖幻崩实验性步枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo01>
+  <entityname.Touhou_Knightmare_Experimental_Rifle_Ammo02>幻崩实验性腐蚀电池</entityname.Touhou_Knightmare_Experimental_Rifle_Ammo02>
+  <entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo02>用魔法回路拘束的腐蚀性武器能源，相当危险。‖color:gui.yellow‖无法使用充能箱补充‖end‖。作为‖color:gui.yellow‖幻崩实验性步枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo02>
+  <entityname.Touhou_Mind_Star_Mine>心灵烟花</entityname.Touhou_Mind_Star_Mine>
+  <entitydescription.Touhou_Mind_Star_Mine>月球遗物，曾在伪月面战争后大范围使用，破坏力一流。作为‖color:gui.yellow‖喇叭枪或怜悯‖end‖的弹药</entitydescription.Touhou_Mind_Star_Mine>
+  <entityname.Touhou_Knightmare_Experimental_Rifle_Ammo02>狂月爆破</entityname.Touhou_Knightmare_Experimental_Rifle_Ammo02>
+  <entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo02>月球遗物，极度危险的子弹，即便是伪月面战争中，也常常被禁止使用。作为‖color:gui.yellow‖喇叭枪或怜悯‖end‖的弹药</entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo02>
 
 
 
@@ -1352,7 +1385,7 @@
   <Character.Touhou_Empathy_Basic_Training_For_Magicians>魔法使的基础练习</Character.Touhou_Empathy_Basic_Training_For_Magicians>
   <entitydescription.Touhou_Empathy_Basic_Training_For_Magicians>最大生命值减少20%，弹幕伤害提高10%\n在魔法使手中它便能变成真正的破坏性兵器。</entitydescription.Touhou_Empathy_Basic_Training_For_Magicians>
   <Character.Touhou_Empathy_Essential_Stone_Of_Patience>忍耐的要石</Character.Touhou_Empathy_Essential_Stone_Of_Patience>
-  <entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>剩余血量越低，受到的伤害越少，最少10%\n防御才是最好的攻击！</entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>
+  <entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>剩余血量越低，受到的伤害越少，最多减少10%\n防御才是最好的攻击！</entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>
   <Character.Touhou_Empathy_Essential_Stone_Missile>要石导弹</Character.Touhou_Empathy_Essential_Stone_Missile>
   <entitydescription.Touhou_Empathy_Essential_Stone_Missile>减少30%移动速度，增加10最大生命值和5%攻击伤害\n攻击力很高的同时还能当作防御手段。没错，这就是要石。</entitydescription.Touhou_Empathy_Essential_Stone_Missile>
   <Character.Touhou_Empathy_Encouraging_Komainu>激励狛犬</Character.Touhou_Empathy_Encouraging_Komainu>
