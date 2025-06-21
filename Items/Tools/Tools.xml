@@ -523,7 +523,7 @@
                     <StatusEffect type="OnContaining" target="Contained" targetslot="2" Condition="-0.01" Interval="1.0" disabledeltatime="true" >
                         <Conditional HasTag="eq Magic_Pouch_Open" TargetContainer="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="true" setvalue="true"/>
+                    <StatusEffect type="OnContaining" target="This" TargetItemComponent="CustomInterface" Interval="1.0" drawhudwhenequipped="true" setvalue="true"/>
                     <StatusEffect type="OnRemoved" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" setvalue="true"/>
                 </Containable>
                 <Containable items="Mu_Alchemical">
@@ -759,7 +759,7 @@
                     <StatusEffect type="OnContaining" target="Contained" targetslot="2" Condition="-0.01" Interval="1.0" disabledeltatime="true" >
                         <Conditional HasTag="eq Magic_Pouch_Open" TargetContainer="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="true" setvalue="true"/>
+                    <StatusEffect type="OnContaining" target="This" TargetItemComponent="CustomInterface" Interval="1.0" drawhudwhenequipped="true" setvalue="true"/>
                     <StatusEffect type="OnRemoved" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" setvalue="true"/>
                 </Containable>
                 <Containable items="Mu_Alchemical">
@@ -890,7 +890,7 @@
         <!-- physics body -->
         <Body width="120" height="60" density="10" />
         <!-- the character will hold the item 50 pixels in front of him, with his hands at the handle1 and handle2 positions -->
-        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="30,0" handle1="-15,-16" handle2="-10,-6" msg="ItemMsgPickUpSelect" >
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="50,0" handle1="-15,-16" handle2="-10,-6" msg="ItemMsgPickUpSelect" >
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
                 <Conditional Candid_Friend="gt 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Nitori="gt 0"/>
@@ -1435,7 +1435,7 @@
                         <Conditional HasTag="eq Tactical_Open"/>
                         <Affliction identifier="Nitori_Backpack_Tactical_Expansion_Effect02" amount="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="true" setvalue="true"/>
+                    <StatusEffect type="OnContaining" target="This" TargetItemComponent="CustomInterface" Interval="1.0" drawhudwhenequipped="true" setvalue="true"/>
                     <StatusEffect type="OnRemoved" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" setvalue="true"/>
                 </Containable>
                 <Containable items="Touhou_Nuclear_Energy_Capacitor_Magazine">
@@ -1451,7 +1451,7 @@
                         <Conditional HasTag="eq Tactical_Open"/>
                         <Affliction identifier="Nitori_Backpack_Tactical_Expansion_Effect" amount="10" />
                     </StatusEffect>
-                    <StatusEffect type="OnInserted" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="true" setvalue="true"/>
+                    <StatusEffect type="OnContaining" target="This" TargetItemComponent="CustomInterface" Interval="1.0" drawhudwhenequipped="true" setvalue="true"/>
                     <StatusEffect type="OnRemoved" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" setvalue="true"/>
                 </Containable>
             </SubContainer>
@@ -2438,7 +2438,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="20" />
             <RequiredItem identifier="organicfiber" amount="6" />
             <RequiredItem identifier="Magic_Material" amount="2"/>
-            <RequiredItem identifier="Power_Point" />
+            <RequiredItem identifier="Score_Point" amount="2" />
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Rose_Gift_Bag.png" sourcerect="55,0,49,36" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Rose_Gift_Bag.png" depth="0.5" sourcerect="0,0,52,34" origin="0.5,0.5" />
@@ -2496,7 +2496,7 @@
                 <Affliction identifier="Touhou_Rose_Fragrance" amount="10" />
             </StatusEffect>
 
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,burn" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="10" />
             <SkillModifier skillidentifier="weapons" skillvalue="10" />
         </Wearable>

@@ -1529,7 +1529,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Mokou_Flamer.png" depth="0.4" sourcerect="0,0,140,185" scale="0.4"/>
         <Body width="60" height="80" density="10" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
-            <RequiredSkill identifier="medical" level="60" />
+            <RequiredSkill identifier="medical" level="160" />
             <StatusEffect type="OnSuccess" target="This" Condition="-10.0" />
             <StatusEffect type="OnFailure" target="This" Condition="-10.0" />
             <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="10">
@@ -1579,7 +1579,7 @@
                 <Conditional qualitylevel="eq 2"/>
             </StatusEffect>
         </Holdable>
-        <SkillRequirementHint identifier="medical" level="200" />
+        <SkillRequirementHint identifier="medical" level="160" />
         <Quality>
             <QualityStat stattype="Condition" value="0.334"/>
         </Quality>
@@ -9866,11 +9866,11 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" hitscan="true" maxtargetstohit="1" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.1" colormultiplier="100,100,205,255"/>
-            <Attack itemdamage="40" levelwalldamage="20" targetimpulse="5" penetration="0.3" severlimbsprobability="0.5">
-                <Affliction identifier="Touhou_Freeze" strength="33" />
-                <Affliction identifier="lacerations" strength="18" />
+            <Attack itemdamage="40" levelwalldamage="20" targetimpulse="5" penetration="0.3" severlimbsprobability="0.75">
+                <Affliction identifier="Touhou_Freeze" strength="21" />
+                <Affliction identifier="lacerations" strength="27" />
                 <Affliction identifier="lacerations" strength="9" probability="0.33" />
-                <Affliction identifier="acidburn" strength="1" />
+                <Affliction identifier="acidburn" strength="3" />
                 <Affliction identifier="Slow_Baka" strength="30" probability="0.3" />
                 <Affliction identifier="stun" strength="0.3" probability="0.3" />
                 <Affliction identifier="stun" strength="0.45" probability="0.3"/>
@@ -11186,7 +11186,7 @@
                 <ParticleEmitter particle="Touhou_Blue_Explosionfire" particleamount="1" />
                 <Explosion range="30" force="6.0" itemdamage="20" levelwalldamage="30" shockwave="false" smoke="false" flames="false" flash="false"
                            DistanceFalloff="false" sparks="false" camerashake="10" penetration="0.25" >
-                    <Affliction identifier="explosiondamage" strength="10" />
+                    <Affliction identifier="explosiondamage" strength="15" />
                     <Affliction identifier="blunttrauma" strength="35" />
                 </Explosion>
                 <sound file="Content/Items/Weapons/ExplosionLarge1.ogg" volume="0.4" selectionmode="Random" range="1000" />

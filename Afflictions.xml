@@ -3605,9 +3605,10 @@
     <Description textidentifier="afflictiondescription.Touhou_Rose_Fragrance" minstrength="0" maxstrength="10"/>
     <Effect minstrength="0" maxstrength="100" minbuffmultiplier="1.2" maxbuffmultiplier="1.2"
             resistancefor="bleeding,burn,stun" minresistance="0.1" maxresistance="0.1">
-      <StatusEffect target="Character" Interval="1.0" Duration="1.0" >
+      <StatusEffect target="Character" Interval="1.0" disabledeltatime="true" >
         <ReduceAffliction type="burn" strength="0.2" />
       </StatusEffect>
+      <StatValue stattype="MeleeAttackSpeed" value="0.1" />
       <StatValue stattype="RangedSpreadReduction" value="0.1" />
       <StatValue stattype="TeamAttackMultiplier" value="-0.1" />
       <StatValue stattype="PropulsionSpeed" value="0.25" />

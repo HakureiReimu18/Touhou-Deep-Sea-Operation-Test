@@ -1896,7 +1896,7 @@
             <RequiredSkill identifier="weapons" level="85" />
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItem identifier="Score_Point" amount="4" />
-            <RequiredItem identifier="Touhou_Precious_Metal" amount="4" />
+            <RequiredItem identifier="Touhou_Precious_Metal" amount="2" />
             <RequiredItem identifier="Touhou_Boss_Fight_Piece" />
         </Fabricate>
         <Deconstruct time="5">
@@ -2823,7 +2823,7 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="3.2" hitscan="false" maxtargetstohit="6" removeonhit="false" damagedoors="true" >
             <Attack itemdamage="30" levelwalldamage="20" targetforce="3" targetimpulse="3" penetration="0.3" severlimbsprobability="1.0">
-                <Affliction identifier="explosiondamage" strength="18" />
+                <Affliction identifier="explosiondamage" strength="16" />
                 <Affliction identifier="burn" strength="16" />
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" />
                 <Affliction identifier="stun" strength="0.1" />
@@ -4269,7 +4269,7 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.15" colormultiplier="255,10,255,220"/>
             <Attack itemdamage="100" levelwalldamage="120" targetforce="5" targetimpulse="5" penetration="0.35" severlimbsprobability="1.0">
                 <Affliction identifier="gunshotwound" strength="60" />
-                <Affliction identifier="lacerations" strength="20" />
+                <Affliction identifier="lacerations" strength="30" />
                 <Affliction identifier="burn" strength="10" />
                 <Affliction identifier="stun" strength="1.0" />
                 <Affliction identifier="stun" strength="0.4" probability="0.6"/>
@@ -5759,7 +5759,7 @@
         <Body width="30" height="80" density="10" gravityscale="0" waterdragcoefficient="1" />
         <Projectile characterusable="false" hitscan="true" HitScanCount="3" maxtargetstohit="3" removeonhit="true" damagedoors="true" Spread="6" StaticSpread="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" scalemultiplier="1,0.35" colormultiplier="255,100,100,255"/>
-            <Attack itemdamage="30" levelwalldamage="20" targetforce="3" targetimpulse="3" penetration="0.3" severlimbsprobability="0.3">
+            <Attack itemdamage="30" levelwalldamage="20" targetforce="3" targetimpulse="3" penetration="0.45" severlimbsprobability="0.3">
                 <Affliction identifier="explosiondamage" strength="6" />
                 <Affliction identifier="lacerations" strength="8" />
                 <Affliction identifier="burn" strength="6" />
@@ -6483,7 +6483,6 @@
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItem tag="munition_propulsion" amount="2" />
             <RequiredItem identifier="iron" />
-            <RequiredItem identifier="lithium" />
             <RequiredItem identifier="Reiki_Stone" amount="4" />
             <RequiredItem identifier="Touhou_Knightmare_Shotgun_Ammo02" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
@@ -7760,7 +7759,7 @@
             <RequiredItem tag="munition_propulsion" amount="4" />
             <RequiredItem identifier="Huo_Alchemical" amount="2" />
         </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleiteem" requiresrecipe="true" HideIfNoRecipe="true" >
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem" requiresrecipe="true" HideIfNoRecipe="true" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
             <RequiredItem identifier="Reiki_Stone" amount="6" />
             <RequiredItem tag="munition_propulsion" amount="4" />
