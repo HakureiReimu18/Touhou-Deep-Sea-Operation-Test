@@ -133,11 +133,11 @@
         <Body width="40" radius="25" density="10" />
         <AiTarget sightrange="1000" static="true" />
         <LevelResource deattachduration="4" randomoffsetfromwall="80">
-            <Commonness commonness="0.15" cavecommonness="0.17" abysscommonness="10" />
-            <Commonness commonness="0.35" cavecommonness="0.21" abysscommonness="15" leveltype="europanridge" />
-            <Commonness commonness="0.4" cavecommonness="0.25" abysscommonness="20" leveltype="theaphoticplateau" />
-            <Commonness commonness="0.5" cavecommonness="0.29" abysscommonness="25" leveltype="thegreatsea" />
-            <Commonness commonness="0.5" cavecommonness="0.34" abysscommonness="30" leveltype="hydrothermalwastes" />
+            <Commonness commonness="0.18" cavecommonness="0.18" abysscommonness="15" />
+            <Commonness commonness="0.25" cavecommonness="0.18" abysscommonness="15" leveltype="europanridge" />
+            <Commonness commonness="0.35" cavecommonness="0.2" abysscommonness="20" leveltype="theaphoticplateau" />
+            <Commonness commonness="0.45" cavecommonness="0.29" abysscommonness="25" leveltype="thegreatsea" />
+            <Commonness commonness="0.45" cavecommonness="0.34" abysscommonness="30" leveltype="hydrothermalwastes" />
             <RequiredItem items="cuttingequipment" type="Equipped" />
         </LevelResource>
         <Holdable slots="Any,RightHand,LeftHand" msg="ItemMsgUsePlasmaCutter" handle1="0,0" pickingtime="3.0" attachable="true" reattachable="false" />

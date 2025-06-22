@@ -219,6 +219,14 @@
     <missionfailure.Touhou_OutpostDestroyMission10>满身疮痍</missionfailure.Touhou_OutpostDestroyMission10>
     <missionsuccess.Touhou_OutpostDestroyMission10>结局好坏与否，由当局者决定</missionsuccess.Touhou_OutpostDestroyMission10>
 
+    <!--普罗米修斯-->
+    <missionname.Touhou_Monster_Boss_Mission01>幽灵生物</missionname.Touhou_Monster_Boss_Mission01>
+    <missiondescription.Touhou_Monster_Boss_Mission01>航路上的小幽灵被清理后，反而滋生了一团巨大且无法定位的光球，游荡在各个海域间，站点管理员重金寻找有意者前去调查事件的真相</missiondescription.Touhou_Monster_Boss_Mission01>
+    <missionheader.Touhou_Monster_Boss_Mission01>调查完成</missionheader.Touhou_Monster_Boss_Mission01>
+    <missionmessage.Touhou_Monster_Boss_Mission01>幽灵生物似乎正在守护着什么</missionmessage.Touhou_Monster_Boss_Mission01>
+    <missionfailure.Touhou_Monster_Boss_Mission01>满身疮痍</missionfailure.Touhou_Monster_Boss_Mission01>
+    <missionsuccess.Touhou_Monster_Boss_Mission01>真相尚未明确</missionsuccess.Touhou_Monster_Boss_Mission01>
+
     <!--任务失败-->
     <missionfailure.Clear_Reiki_Erode_Crawler_Nest>满身疮痍</missionfailure.Clear_Reiki_Erode_Crawler_Nest>
     <missionfailure.Salvage_Mysterious_Pearl_Cave>满身疮痍</missionfailure.Salvage_Mysterious_Pearl_Cave>

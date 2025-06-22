@@ -5925,7 +5925,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Lightsmithing.png" sourcerect="185,145,98,103" depth="0.56" origin="0.5,0.5" />
         <Body width="170" height="10" density="10" gravityscale="0.2" waterdragcoefficient="0.1" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
-        <Projectile launchimpulse="15" characterusable="false" hitscan="false" removeonhit="true" damagedoors="true" >
+        <Projectile launchimpulse="18" characterusable="false" hitscan="false" removeonhit="true" damagedoors="true" >
             <Attack itemdamage="50" levelwalldamage="20" targetimpulse="2" penetration="0.1" severlimbsprobability="0.8">
                 <Affliction identifier="lacerations" strength="5" />
                 <Affliction identifier="blunttrauma" strength="15" />
@@ -6042,7 +6042,7 @@
             </SubContainer>
         </ItemContainer>
         <Quality>
-            <QualityStat stattype="firepowermultiplier" value="0.2"/>
+            <QualityStat stattype="firepowermultiplier" value="0.15"/>
         </Quality>
         <aitarget sightrange="1000" soundrange="3000" fadeouttime="5" />
         <SkillRequirementHint identifier="Touhou_Magic" level="95" />
@@ -6104,7 +6104,7 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.2" colormultiplier="200,100,255,255"/>
             <Attack itemdamage="50" levelwalldamage="20" targetimpulse="3" penetration="0.15" severlimbsprobability="0.4">
-                <Affliction identifier="lacerations" strength="60" />
+                <Affliction identifier="lacerations" strength="80" />
                 <Affliction identifier="burn" strength="10" />
                 <Affliction identifier="lacerations" strength="20" probability="0.6" />
                 <Affliction identifier="Sleepless_Nightmare" strength="15" />
@@ -6249,11 +6249,11 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.14" colormultiplier="255,255,255,255"/>
-            <Attack itemdamage="15" levelwalldamage="20" targetimpulse="2" penetration="0.25" severlimbsprobability="0.3">
-                <Affliction identifier="lacerations" strength="14" />
+            <Attack itemdamage="20" levelwalldamage="20" targetimpulse="2" penetration="0.25" severlimbsprobability="0.3">
+                <Affliction identifier="lacerations" strength="13" />
                 <Affliction identifier="burn" strength="1" />
                 <Affliction identifier="lacerations" strength="4" probability="0.6" />
-                <Affliction identifier="bleeding" strength="10" />
+                <Affliction identifier="bleeding" strength="20" />
                 <Affliction identifier="Sleepless_Nightmare" strength="3" />
                 <Affliction identifier="stun" strength="0.1" probability="0.2" />
                 <Affliction identifier="stun" strength="0.15" probability="0.1"/>
@@ -6649,7 +6649,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.65" setvalue="true" />
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true" />
         </Holdable>
-        <RangedWeapon reload="0.2" holdtrigger="true" barrelpos="180,28" spread="3" unskilledspread="12" weapondamagemodifier="1.5" penetration="0.05" penetrationmultiplier="1.0"
+        <RangedWeapon reload="0.17" holdtrigger="true" barrelpos="180,28" spread="3" unskilledspread="12" weapondamagemodifier="1.4" penetration="0.05" penetrationmultiplier="1.0"
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair02.png" sourcerect="0,0,160,160" />
             <ParticleEmitter particle="FlareBubbles" scalemin="0.4" scalemax="0.8" particleamount="14" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
@@ -6817,7 +6817,7 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.12" colormultiplier="255,55,255,255"/>
-            <Attack itemdamage="6" levelwalldamage="20" targetimpulse="2" penetration="0.15" severlimbsprobability="0.5">
+            <Attack itemdamage="6" levelwalldamage="20" targetimpulse="2" penetration="0.2" severlimbsprobability="0.5">
                 <Affliction identifier="lacerations" strength="12" />
                 <Affliction identifier="bleeding" strength="10" />
                 <Affliction identifier="radiationsickness" strength="2.5" />
@@ -6825,7 +6825,7 @@
                 <Affliction identifier="stun" strength="0.2" probability="0.2"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
-                <Affliction identifier="lacerations" strength="6" />
+                <Affliction identifier="lacerations" strength="6" penetration="0.1" />
                 <Affliction identifier="burn" strength="2" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
@@ -7309,7 +7309,7 @@
                 <SpawnItem identifier="Touhou_Knightmare_Grenade_Gun_Bullet_Explosive" spawnposition="This" count="10" aimspread="180" rotationtype="Collider" rotation="0" />
                 <Explosion range="200.0" ballastfloradamage="80" structuredamage="10" levelwalldamage="120" itemdamage="20" force="5.0" severlimbsprobability="0.4" penetration="0.25">
                     <Affliction identifier="burn" strength="25" />
-                    <Affliction identifier="explosiondamage" strength="25" />
+                    <Affliction identifier="explosiondamage" strength="50" />
                     <Affliction identifier="bleeding" strength="20" />
                     <Affliction identifier="Sleepless_Nightmare" strength="10" />
                 </Explosion>
@@ -7351,19 +7351,6 @@
                 </Explosion>
                 <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="1" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
                 <Remove />
-            </StatusEffect>
-            <StatusEffect type="OnBroken" target="This">
-                <Remove />
-            </StatusEffect>
-            <StatusEffect type="OnActive" target="This" delay="0.8" stackable="false" checkconditionalalways="true">
-                <Conditional Removed="false" />
-                <Explosion range="30.0" structuredamage="5" force="15.0" itemdamage="50" camerashake="10.0" severlimbsprobability="0.2" decal="explosion" decalsize="0.5">
-                    <Affliction identifier="explosiondamage" strength="30" />
-                    <Affliction identifier="bleeding" strength="30" />
-                    <Affliction identifier="bleeding" strength="15" probability="0.1" dividebylimbcount="false"/>
-                </Explosion>
-                <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="2" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
-                <RemoveItem />
             </StatusEffect>
         </Projectile>
     </Item>
@@ -7788,7 +7775,7 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.3" colormultiplier="255,255,255,200"/>
             <Attack itemdamage="100" severlimbsprobability="0.65" penetration="0.35">
                 <Affliction identifier="burn" strength="15" />
-                <Affliction identifier="lacerations" strength="35" />
+                <Affliction identifier="lacerations" strength="45" />
                 <Affliction identifier="stun" strength="0.25" />
                 <Affliction identifier="stun" strength="0.2" probability="0.2" />
                 <Affliction identifier="stun" strength="0.15" probability="0.1" />
@@ -7876,6 +7863,8 @@
                 <ParticleEmitter particle="Touhou_Blue_Explosionfire" particleamount="20" anglemin="0" anglemax="360" distancemin="0" distancemax="50" scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0" />
                 <Explosion range="300.0" force="20" camerashake="50.0" camerashakerange="1000" itemdamage="100" severlimbsprobability="0.75" penetration="0.75" decal="explosion" decalsize="0.8">
                     <Affliction identifier="explosiondamage" strength="250" />
+                    <Affliction identifier="explosiondamage" strength="150" probability="0.6" />
+                    <Affliction identifier="explosiondamage" strength="50" probability="0.3" />
                     <Affliction identifier="stun" strength="5" />
                 </Explosion>
                 <sound file="Content/Items/Weapons/GRAVITYSHELLS_explosion.ogg" volume="2" dontmuffle="true" range="7000" />
@@ -7883,7 +7872,7 @@
             </StatusEffect>
         </Projectile>
 
-        <TriggerComponent triggeredby="Creature,Human" force="700" radius="3000" distancebasedforce="false" />
+        <TriggerComponent triggeredby="Creature,Human" force="700" radius="1000" distancebasedforce="false" />
 
         <TriggerComponent triggeredby="Creature,Human" force="200" radius="500">
             <Attack>

@@ -1025,4 +1025,26 @@
   </OutpostDestroyMission>
 
 
+  <MonsterMission
+          name="幽灵生物"
+          identifier="Touhou_Monster_Boss_Mission01"
+          tags="Touhou_Monster_Boss_Mission01"
+          type="Monster"
+          difficulty="4"
+          commonness="0"
+          reward="12000"
+          maxsonarmarkerdistance="10000"
+          sonarlabel="target">
+    <monster character="Touhou_Monster_Unknown_Spectral" min="1" max="1"/>
+    <Reputation identifier="location" amount="4" />
+    <Reputation identifier="Touhou_Gensokyo" amount="4" />
+    <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons04.png" sourcerect="0,0,256,256" />
+    <message header="missionheader.Touhou_Monster_Boss_Mission01" text="missionmessage.Touhou_Monster_Boss_Mission01"/>
+    <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Lunatic_Mission_Resistance_Event" campaignonly="true"/>
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+    <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Monster_Boss_Mission01_Event" campaignonly="true" />
+  </MonsterMission>
+
+
+
 </Missions>

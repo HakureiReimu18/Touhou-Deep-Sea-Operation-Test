@@ -40,7 +40,7 @@
       </StatusEffect>
     </Effect>
 
-    <Effect minstrength="40" maxstrength="80" strengthchange="0.4" minvitalitydecrease="40" maxvitalitydecrease="80">
+    <Effect minstrength="40" maxstrength="80" strengthchange="0.4" minvitalitydecrease="40" maxvitalitydecrease="120">
       <StatusEffect target="Character" Interval="0.3" >
         <Affliction identifier="bloodloss" strength="1.8"/>
         <Affliction identifier="bleeding" strength="4.2" />
@@ -48,7 +48,7 @@
       </StatusEffect>
     </Effect>
 
-    <Effect minstrength="80" maxstrength="90" strengthchange="-0.1" minvitalitydecrease="80" maxvitalitydecrease="160">
+    <Effect minstrength="80" maxstrength="90" strengthchange="-0.1" minvitalitydecrease="120" maxvitalitydecrease="200">
       <StatusEffect target="Character" Interval="0.1" >
         <Affliction identifier="Reiki_Pressure" strength="1.5" penetration="0.8"/>
         <Affliction identifier="bleeding" strength="1" penetration="0.8"/>
@@ -56,7 +56,7 @@
       </StatusEffect>
     </Effect>
 
-    <Effect minstrength="90" maxstrength="100" strengthchange="-0.05" minvitalitydecrease="160" maxvitalitydecrease="400">
+    <Effect minstrength="90" maxstrength="100" strengthchange="-0.05" minvitalitydecrease="200" maxvitalitydecrease="400">
       <StatusEffect target="Character" Interval="0.1" >
         <Affliction identifier="Reiki_Pressure" strength="10"/>
         <Affliction identifier="bleeding" strength="8"/>
@@ -3217,7 +3217,7 @@
       <StatValue stattype="RangedSpreadReduction" value="-0.3" />
       <StatValue stattype="ExplosionRadiusMultiplier" value="-0.5" />
       <StatValue stattype="ExplosionDamageMultiplier" value="-0.5" />
-      <StatValue stattype="TeamAttackMultiplier" value="-0.5" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
     </Effect>
     <Effect minstrength="150" maxstrength="165" resistancefor="damage,debuff" minresistance="-0.15" maxresistance="-0.15"
             minvitalitydecrease="-25" maxvitalitydecrease="-50" multiplybymaxvitality="false" strengthchange="0.4" >
@@ -3227,7 +3227,7 @@
       <StatValue stattype="RangedSpreadReduction" value="-0.3" />
       <StatValue stattype="ExplosionRadiusMultiplier" value="-0.5" />
       <StatValue stattype="ExplosionDamageMultiplier" value="-0.5" />
-      <StatValue stattype="TeamAttackMultiplier" value="-0.5" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
     </Effect>
     <Effect minstrength="165" maxstrength="180" resistancefor="damage,burn,debuff" minresistance="-0.25" maxresistance="-0.25"
             minvitalitydecrease="0" maxvitalitydecrease="0" multiplybymaxvitality="false" strengthchange="0.4" >
@@ -3237,7 +3237,7 @@
       <StatValue stattype="RangedSpreadReduction" value="-0.3" />
       <StatValue stattype="ExplosionRadiusMultiplier" value="-0.5" />
       <StatValue stattype="ExplosionDamageMultiplier" value="-0.5" />
-      <StatValue stattype="TeamAttackMultiplier" value="-0.5" />
+      <StatValue stattype="TeamAttackMultiplier" value="-0.25" />
     </Effect>
     <Effect minstrength="180" maxstrength="200" resistancefor="damage,burn,debuff" minresistance="-0.25" maxresistance="-0.25"
             minvitalitydecrease="0" maxvitalitydecrease="1" multiplybymaxvitality="true" strengthchange="0.4" >
@@ -3676,8 +3676,8 @@
     <Effect minstrength="0" maxstrength="1" resistancefor="sym_unconsciousness,stun" minresistance="10.0" maxresistance="10.0" minskillmultiplier="1.25" maxskillmultiplier="1.25"
             minvitalitydecrease="0.5" maxvitalitydecrease="0.5" multiplybymaxvitality="true" >
       <StatValue stattype="AttackMultiplier" value="0.25" />
-      <StatValue stattype="MedicalItemEffectivenessMultiplier" minvalue="-0.25" value="-0.25" />
-      <StatValue stattype="BuffItemApplyingMultiplier" minvalue="-0.25" value="-0.25" />
+      <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.25" />
+      <StatValue stattype="BuffItemApplyingMultiplier" value="-0.25" />
       <StatusEffect target="Character" Interval="1.0" Duration="1.0">
         <Affliction identifier="implacable" amount="10.0" />
       </StatusEffect>

@@ -1844,6 +1844,7 @@
                 </Failure>
             </RNGAction>
             <WaitAction time="1" />
+            <TagAction criteria="humanprefabidentifier:Touhou_ODM08_Enemy_Human_Hard_Super" tag="Touhou_ODM08_Enemy_Human" continueifnotargetsfound="true" />
             <TagAction criteria="humanprefabidentifier:Touhou_ODM08_Enemy_Human_Special" tag="Touhou_ODM08_Enemy_Human" continueifnotargetsfound="true" />
             <TagAction criteria="humanprefabidentifier:Touhou_ODM08_Enemy_Human_Lunatic" tag="Touhou_ODM08_Enemy_Human" continueifnotargetsfound="true" />
             <TagAction criteria="humanprefabidentifier:Touhou_ODM08_Enemy_Human_Hard" tag="Touhou_ODM08_Enemy_Human" continueifnotargetsfound="true" />
