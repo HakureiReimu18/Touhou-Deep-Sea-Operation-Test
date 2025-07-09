@@ -268,10 +268,11 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
         <Projectile characterusable="false" hitscan="true" maxtargetstohit="1" hitscancount="2" removeonhit="true" spread="15" damagedoors="true" friendlyfire="false">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="55,55,255,255"/>
-            <Attack structuredamage="10" targetforce="0" itemdamage="20" severlimbsprobability="0.25" penetration="0.5">
-                <Affliction identifier="Psychosis" strength="10" />
+            <Attack structuredamage="10" targetforce="1" itemdamage="20" severlimbsprobability="0.25" penetration="0.5">
+                <Affliction identifier="Psychosis" strength="7" />
+                <Affliction identifier="lacerations" strength="8" />
                 <Affliction identifier="Reiki_Pressure" strength="1" />
-                <Affliction identifier="stun" strength="0.75" probability="0.4" />
+                <Affliction identifier="stun" strength="0.5" probability="0.4" />
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="4" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="7,7" colormultiplier="255,115,95,150" lifetimemultiplier="0.5"/>

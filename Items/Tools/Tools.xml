@@ -37,15 +37,29 @@
             </LightComponent>
             <StatusEffect type="OnSecondaryUse" target="This" voltage="1.0" setvalue="true"/>
         </Holdable>
-        <Propulsion force="280" usablein="Both" ApplyToHands="false" particles="bubbles">
+        <Propulsion force="280" usablein="Both" ApplyToHands="false" >
             <sound file="Content/Items/Diving/ScooterLoop.ogg" type="OnUse" range="800.0" loop="true" />
+<!--            <sound file="%ModDir%/Sounds/Tools/Marisa_Broom_Use.ogg" type="OnUse" volume="0.5" range="800.0" loop="true" />-->
             <LightComponent LightColor="1.0,1.0,1.0,0.8" range="1000" AllowInGameEditing="false">
                 <LightTexture texture="Content/Lights/lightcone.png" origin="-0.03, 0.5" size="1.5,1.0" />
             </LightComponent>
-            <StatusEffect type="Always" target="This" force="280" setvalue="true" >
+            <StatusEffect type="OnUse" target="This" disabledeltatime="true" Interval="0.1" >
+                <Conditional InWater="true" />
+                <ParticleEmitter particle="Touhou_Marisa_Broom_Star" scalemin="1.0" scalemax="2.0" particleamount="4" CopyEntityAngle="True" anglemin="165"
+                                 anglemax="195" distancemin="20" distancemax="20" velocitymin="100" velocitymax="200" colormultiplier="255,200,150,255" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" disabledeltatime="true" Interval="0.1" >
+                <Conditional InWater="false" />
+                <ParticleEmitter particle="Touhou_Marisa_Broom_Star" scalemin="0.4" scalemax="0.8" particleamount="2" CopyEntityAngle="True" anglemin="165"
+                                 anglemax="195" distancemin="20" distancemax="20" velocitymin="100" velocitymax="200" colormultiplier="255,200,150,255" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" setvalue="true" >
+                <sound file="%ModDir%/Sounds/Tools/Marisa_Broom_Use.ogg" type="OnUse" volume="0.2" range="800.0" loop="true" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" force="280" setvalue="true" >
                 <Conditional InWater="true" />
             </StatusEffect>
-            <StatusEffect type="Always" target="This" force="160" setvalue="true" >
+            <StatusEffect type="OnUse" target="This" force="160" setvalue="true" >
                 <Conditional InWater="false" />
             </StatusEffect>
         </Propulsion>
@@ -57,7 +71,8 @@
 
 
     <!--文文的充电宝-->
-    <Item name="" identifier="Power_Bank" tags="mediumitem,batterycellrecharger,loadable,Power_Bank" subcategory="Touhou" category="Electrical" scale="0.4" >
+    <Item name="" identifier="Power_Bank" tags="mediumitem,batterycellrecharger,loadable,Power_Bank" subcategory="Touhou" category="Electrical" scale="0.4"
+          damagedbyexplosions="true" explosiondamagemultiplier="0.1" Health="200">
         <Price baseprice="800" minleveldifficulty="5">
             <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="1" sold="true" maxavailable="1" />
@@ -69,29 +84,34 @@
             <Item identifier="batterycell" amount="4"/>
             <Item identifier="Magic_Material" />
         </Deconstruct>
-        <Fabricate suitablefabricators="fabricator" requiredtime="60">
+        <Fabricate suitablefabricators="fabricator" requiredtime="30" outcondition="0">
             <RequiredSkill identifier="electrical" level="60" />
             <RequiredSkill identifier="medical" level="60" />
-            <RequiredItem identifier="Magic_Material" />
+            <RequiredItem identifier="Score_Point" />
             <RequiredItem identifier="batterycell" amount="4"/>
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Power_Bank.png" sourcerect="0,0,72,76" depth="0.15" scale="0.5" origin="0.5,0.5" />
         <Body width="50" height="50" density="10" />
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="Always" target="Contained" Condition="2.5" Interval="1.0" Duration="1.0" >
-                <Conditional TargetContainer="true" condition="gt 0" />
-            </StatusEffect>
-            <StatusEffect type="Always" target="This" targetslot="0" Condition="-1.5" Interval="1.0" >
+            <StatusEffect type="Always" target="This" Condition="-0.2" Interval="1.0" disabledeltatime="true" >
                 <RequiredItems items="loadable,battery,mobilebattery" type="Contained" />
                 <Conditional condition="lt 100" TargetContainedItem="true" />
             </StatusEffect>
         </Holdable>
         <ItemContainer capacity="2" maxstacksize="1" canbeselected="true" hideitems="true" >
-            <Containable items="loadable,battery" excludeditems="Power_Bank"/>
+            <Containable items="loadable,battery" excludeditems="Power_Bank">
+                <StatusEffect type="OnContaining" targettype="Contained" Condition="2.5" Interval="1.0" disabledeltatime="true" >
+                    <Conditional TargetContainer="true" condition="gt 0" />
+                </StatusEffect>
+            </Containable>
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
             <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
         </ItemContainer>
+        <Repairable />
+        <Quality>
+            <QualityStat stattype="Condition" value="0.2" />
+        </Quality>
     </Item>
 
 
@@ -323,8 +343,8 @@
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false" />
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="50" disabledeltatime="true" delay="2" stackable="false" />
-            <StatusEffect type="OnUse" targettype="Contained" targets="Spiritual_Water" Condition="-2" />
-            <StatusEffect type="OnUse" targettype="Contained" targets="batterycell" Condition="-2.5" />
+            <StatusEffect type="OnUse" targettype="Contained" targets="Spiritual_Water" Condition="-0.8" />
+            <StatusEffect type="OnUse" targettype="Contained" targets="batterycell" Condition="-2.0" />
             <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumbatterycell" Condition="-1.0" />
             <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="door,windoweddoor,hatch,ductblock,aliendoor,alienhatch" Stuck="-30.0" Condition="-200.0" />
             <StatusEffect type="OnUse" target="UseTarget" targetidentifiers="ore" DeattachTimer="0.35" Condition="-75.0" />
@@ -585,7 +605,7 @@
                 </Containable>
             </SubContainer>
             <SubContainer capacity="9" depth="0.5" maxstacksize="64" displaycontainedstatus="true" ExtraStackSize="2">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,bigitem,bulkyweapon,Touhou_Magic_Charging_Box"/>
+                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,bigitem,toolbox,bulkyweapon,Touhou_Magic_Charging_Box"/>
             </SubContainer>
             <SubContainer capacity="3" depth="0.5" maxstacksize="64" displaycontainedstatus="true"  ExtraStackSize="2">
                 <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,bigitem,bulkyweapon"/>
@@ -859,7 +879,7 @@
 
     <!--河童工具枪-->
     <Item name="河童工具枪" identifier="Touhou_Kappa_Welding_Tool" category="Equipment" subcategory="Touhou"
-          Tags="smallitem,weldingequipment,tool,Welding_Mode_Parent,Laser_Mode_Parent,Normal_Alchemical_Metal,Touhou_Cam_Offset_Normal"
+          Tags="smallitem,weldingequipment,tool,Welding_Mode_Parent,Laser_Mode_Parent,Touhou_Weapon_Level03,Touhou_Cam_Offset_Normal"
           cargocontaineridentifier="metalcrate" description="" Scale="0.75" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.04"/>
         <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab,outpostengcab" amount="1" spawnprobability="0.04"/>
@@ -1050,7 +1070,7 @@
 
     <!--河能燃料-->
     <Item name="“河能燃料”" identifier="Touhou_Nuclear_Battery" scale="0.5" subcategory="Touhou" category="Equipment" maxstacksize="8" cargocontaineridentifier="metalcrate"
-          tags="smallitem,Touhou_Kappa_Welding_Tool_Ammo,Normal_Alchemical_Metal" impactsoundtag="impact_metal_light" >
+          tags="smallitem,Touhou_Kappa_Welding_Tool_Ammo,Touhou_Weapon_Level03" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="Touhou_Kappa_Welding_Tool" amount="1" spawnprobability="1" />
         <Price baseprice="2000" minleveldifficulty="10" sold="false">
             <Price storeidentifier="merchantoutpost" maxavailable="3" />
@@ -1836,10 +1856,10 @@
                 <SpawnItem identifier="Salvage_Mysterious_Pearl_Mission_Completed" spawnposition="SameInventory" SpawnIfInventoryFull="true" SpawnIfNotInInventory="true" />
                 <TriggerEvent identifier="Salvage_Mysterious_Pearl_Completed" />
             </StatusEffect>
-            <StatusEffect type="Always" Interval="180.0" disabledeltatime="true" target="This" >
+            <StatusEffect type="OnContained" Interval="180.0" disabledeltatime="true" target="This" >
                 <Conditional hastag="neq artifactcontainer" targetcontainer="true" />
                 <Conditional voltage="lte 0" targetcontainer="true" />
-                <SpawnCharacter speciesname="Touhou_reiki_erode_crawler" count="1" TotalMaxCount="8" spread="100" />
+                <SpawnCharacter speciesname="Touhou_Spectral_Core" count="1" TotalMaxCount="8" spread="100" />
             </StatusEffect>
         </Holdable>
         <AiTarget soundrange="350000" sonarlabel="???" sight="500" staticsight="true"/>
@@ -2541,39 +2561,35 @@
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="1" range="200.0" loop="false" />
                 </StatusEffect>
                 <!--1级消耗-->
-                <!--灵之御扎，冰晶，文文的团扇，铁制飞刀，水轮，糖衣炮弹，电荷中继器-->
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-0.2" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
 
                 <!--2级消耗-->
-                <!--星星弹幕，幽冥弹匣-->
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-0.5" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
 
                 <!--3级消耗-->
-                <!--电子御扎，完美雪花，以太飞刀，星海水晶，糖衣大炮弹，星辰法杖，核能电容弹匣，闪光魔方，简单回路-->
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
 
                 <!--4级消耗-->
-                <!--电能要石，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，月震中心，未知弹幕碎片，无情之心，精密回路-->
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-3.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
 
             </Button>
@@ -2620,40 +2636,38 @@
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="1" range="200.0" loop="false" />
                 </StatusEffect>
                 <!--1级消耗-->
-                <!--灵之御扎，冰晶，文文的团扇，铁制飞刀，水轮，糖衣炮弹，电荷中继器-->
+                <StatusEffect type="OnUse" target="This" Condition="-0.16" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="This" Condition="-0.2" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
 
                 <!--2级消耗-->
                 <!--星星弹幕，幽冥弹匣-->
+                <StatusEffect type="OnUse" target="This" Condition="-0.4" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" Condition="-0.5" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
-                </StatusEffect>
 
                 <!--3级消耗-->
-                <!--电子御扎，完美雪花，以太飞刀，星海水晶，糖衣大炮弹，星辰法杖，核能电容弹匣，闪光魔方，简单回路-->
+                <StatusEffect type="OnUse" target="This" Condition="-0.85" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
-                </StatusEffect>
 
                 <!--4级消耗-->
-                <!--电能要石，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，月震中心，未知弹幕碎片，无情之心，精密回路-->
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-2.5" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
+
             </Button>
         </CustomInterface>
         <RepairTool barrelpos="64,16" >
@@ -2694,58 +2708,53 @@
                 </StatusEffect>
 
                 <!--1级消耗-->
-                <!--灵之御扎，冰晶，文文的团扇，铁制飞刀，水轮，糖衣炮弹，电荷中继器-->
+                <StatusEffect type="OnUse" target="This" Condition="-0.1" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" Condition="-0.2" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
-                </StatusEffect>
 
                 <!--2级消耗-->
-                <!--星星弹幕，幽冥弹匣-->
+                <StatusEffect type="OnUse" target="This" Condition="-0.35" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" Condition="-0.5" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
-                </StatusEffect>
 
                 <!--3级消耗-->
-                <!--电子御扎，完美雪花，以太飞刀，星海水晶，糖衣大炮弹，星辰法杖，核能电容弹匣，闪光魔方，简单回路-->
+                <StatusEffect type="OnUse" target="This" Condition="-0.8" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
                 <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeBroken="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
-                </StatusEffect>
 
                 <!--4级消耗-->
-                <!--电能要石，恋之迷宫，幽冥弹匣Plus，月面流矢，月能弹匣，折扇机关，月震中心，未知弹幕碎片，无情之心，精密回路-->
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-2.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
 
                 <!--5级消耗-->
-                <!--星屑幻想，皇家钻戒燃料，耀眼的龙玉-->
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging05" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-4.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging05" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging05" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
 
                 <!--6级消耗-->
-                <!--灼热核心，怜悯弹匣-->
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
-                    <RequiredItem items="Touhou_Magic_Charging06" type="Contained" ExcludeBroken="false" />
-                </StatusEffect>
                 <StatusEffect type="OnUse" target="This" Condition="-8.0" disabledeltatime="true" >
                     <RequiredItem items="Touhou_Magic_Charging06" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
                 </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Magic_Charging06" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
+
             </Button>
         </CustomInterface>
         <RepairTool barrelpos="64,16" >
@@ -2860,14 +2869,14 @@
         </Price>
         <Deconstruct time="10">
             <Item identifier="fulgurium" amount="4" />
-            <Item identifier="incendium" amount="4" />
+            <Item identifier="incendium" amount="2" />
             <Item identifier="Power_Point" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" >
             <RequiredSkill identifier="Touhou_Magic" level="70" />
             <RequiredSkill identifier="medical" level="70" />
             <RequiredItem identifier="fulgurium" amount="4" />
-            <RequiredItem identifier="incendium" amount="4" />
+            <RequiredItem identifier="incendium" amount="2" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="6" />
             <RequiredItem identifier="Power_Point" />
         </Fabricate>
@@ -2904,13 +2913,13 @@
         <Deconstruct time="10">
             <Item identifier="fulgurium" amount="4" />
             <Item identifier="incendium" amount="4" />
-            <Item identifier="Power_Point" amount="2" />
+            <Item identifier="Power_Point" />
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" >
             <RequiredSkill identifier="Touhou_Magic" level="100" />
             <RequiredSkill identifier="medical" level="100" />
             <RequiredItem identifier="advancedgenesplicer" />
-            <RequiredItem identifier="Touhou_Precious_Metal" />
+            <RequiredItem identifier="Touhou_Precision_Parts" amount="2" />
             <RequiredItem identifier="Power_Point" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Empathy_Device.png" sourcerect="6,116,165,47" depth="0.45" />
@@ -4156,7 +4165,7 @@
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.2" anchor="Center" absoluteoffset="0,-95" style="ItemUI" />
             <Button text="uilabel.Touhou_Open">
-                <StatusEffect type="OnUse" target="Character" delay="0.1" >
+                <StatusEffect type="OnUse" target="Character" EventUserTag="Open_player" oneshot="true" delay="0.1" >
                     <TriggerEvent identifier="Touhou_Gift_Box_Open" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" disabledeltatime="true">
@@ -4179,7 +4188,7 @@
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.2" anchor="Center" absoluteoffset="0,-95" style="ItemUI" />
             <Button text="uilabel.Touhou_Open">
-                <StatusEffect type="OnUse" target="Character" delay="0.1" >
+                <StatusEffect type="OnUse" target="Character" EventUserTag="Open_player" oneshot="true" delay="0.1" >
                     <TriggerEvent identifier="Touhou_Devil_Box_Open" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" disabledeltatime="true">
@@ -4313,9 +4322,6 @@
         <Body width="16" height="12" density="10" />
         <Deconstruct time="1"/>
         <Holdable slots="RightHand+LeftHand" aimpos="30,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="Always" targettype="This" Condition="-1" >
-                <Conditional HasTag="eq Opened"/>
-            </StatusEffect>
             <StatusEffect type="OnBroken" target="This">
                 <DropContainedItems />
                 <Remove />
@@ -4324,24 +4330,29 @@
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.15,0.1" anchor="Center" absoluteoffset="20,95" style="ItemUI" />
             <Button text="uilabel.Touhou_Open">
+                <StatusEffect type="OnUse" targettype="This" delay="0.21" Condition="-100" disabledeltatime="true" />
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" >
+                    <Conditional HasTag="neq Opened"/>
                     <SpawnItem identifiers="Touhou_Precious_Metal" spawnposition="ThisInventory" />
                     <SpawnItem identifiers="Touhou_Boss_Fight_Music_Nue" spawnposition="ThisInventory" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" >
+                    <Conditional HasTag="neq Opened"/>
                     <SpawnItem identifiers="Score_Point" spawnposition="ThisInventory" MinCount="3" MaxCount="6" />
                     <SpawnItem identifiers="Score_Point" spawnposition="ThisInventory" MinCount="1" MaxCount="3" Probability="0.5" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" >
+                    <Conditional HasTag="neq Opened"/>
                     <SpawnItem identifiers="Power_Point" spawnposition="ThisInventory" MinCount="2" MaxCount="4" />
                     <SpawnItem identifiers="Power_Point" spawnposition="ThisInventory" MinCount="1" MaxCount="2" Probability="0.5" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" >
+                    <Conditional HasTag="neq Opened"/>
                     <SpawnItem identifiers="Touhou_Precious_Metal" spawnposition="ThisInventory" MinCount="1" MaxCount="2" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" TargetItemComponent="ItemContainer" drawinventory="true" />
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" />
-                <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" tags="Opened" />
+                <StatusEffect type="OnUse" target="This" delay="0.1" stackable="false" tags="Opened" />
             </Button>
         </CustomInterface>
         <ItemContainer autofill="False" capacity="0" maxstacksize="1" drawinventory="false">
@@ -4359,9 +4370,6 @@
         <Body width="16" height="12" density="10" />
         <Deconstruct time="1"/>
         <Holdable slots="RightHand+LeftHand" aimpos="30,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" >
-            <StatusEffect type="Always" targettype="This" Condition="-3" >
-                <Conditional HasTag="eq Opened"/>
-            </StatusEffect>
             <StatusEffect type="OnBroken" target="This">
                 <DropContainedItems />
                 <Remove />
@@ -4370,24 +4378,29 @@
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.15,0.1" anchor="Center" absoluteoffset="20,95" style="ItemUI" />
             <Button text="uilabel.Touhou_Open">
+                <StatusEffect type="OnUse" targettype="This" delay="0.21" Condition="-100" disabledeltatime="true" />
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" >
+                    <Conditional HasTag="neq Opened"/>
                     <SpawnItem identifiers="Touhou_Precious_Metal" spawnposition="ThisInventory" />
                     <SpawnItem identifiers="Touhou_Boss_Fight_Piece" spawnposition="ThisInventory" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" >
+                    <Conditional HasTag="neq Opened"/>
                     <SpawnItem identifiers="Score_Point" spawnposition="ThisInventory" MinCount="2" MaxCount="4" />
                     <SpawnItem identifiers="Score_Point" spawnposition="ThisInventory" MinCount="1" MaxCount="2" Probability="0.5" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" >
+                    <Conditional HasTag="neq Opened"/>
                     <SpawnItem identifiers="Power_Point" spawnposition="ThisInventory" MinCount="1" MaxCount="2" />
                     <SpawnItem identifiers="Power_Point" spawnposition="ThisInventory" Count="1" Probability="0.5" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" >
+                    <Conditional HasTag="neq Opened"/>
                     <SpawnItem identifiers="Touhou_Precious_Metal" spawnposition="ThisInventory" MinCount="1" MaxCount="2" />
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" TargetItemComponent="ItemContainer" drawinventory="true" />
                 <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" />
-                <StatusEffect type="OnUse" target="This" delay="0.2" stackable="false" tags="Opened" />
+                <StatusEffect type="OnUse" target="This" delay="0.1" stackable="false" tags="Opened" />
             </Button>
         </CustomInterface>
         <ItemContainer autofill="False" capacity="0" maxstacksize="1" drawinventory="false">
@@ -4508,6 +4521,183 @@
             <SkillModifier skillidentifier="medical" skillvalue="15" />
         </Wearable>
         <aitarget maxsightrange="1500" />
+    </Item>
+
+
+    <!--概率刷新物品-空-->
+    <Item name="概率刷新物品-空" identifier="Touhou_Spawner_Empty" subcategory="Touhou" category="Alien" maxstacksize="60" Tags="smallitem" hideinmenus="true"
+          spritecolor="255,255,255,10" cargocontaineridentifier="metalcrate" scale="0.15" impactsoundtag="impact_soft" impacttolerance="8" allowasextracargo="true">
+        <Sprite texture="%ModDir%/Images/Materials/Magics.png" depth="0.2" sourcerect="441,353,199,242" origin="0.5,0.5" />
+        <Body radius="30" density="10" waterdragcoefficient="20"/>
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+            <StatusEffect type="OnSpawn" target="This" Interval="0.1" oneshot="true" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" Interval="0.1" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnContained" target="This" Interval="0.1" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <Remove />
+            </StatusEffect>
+        </Holdable>
+    </Item>
+
+    <!--概率刷新正体不明用物品-->
+    <Item name="概率刷新正体不明用物品" identifier="Touhou_Spawner_Touhou_Little_Photosphere" subcategory="Touhou" category="Alien" maxstacksize="60" Tags="smallitem" hideinmenus="true"
+          spritecolor="255,255,255,10" cargocontaineridentifier="metalcrate" scale="0.15" impactsoundtag="impact_soft" impacttolerance="8" allowasextracargo="true">
+        <Sprite texture="%ModDir%/Images/Materials/Magics.png" depth="0.2" sourcerect="441,353,199,242" origin="0.5,0.5" />
+        <Body radius="30" density="10" waterdragcoefficient="20"/>
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+            <StatusEffect type="OnSpawn" target="This" Interval="0.1" oneshot="true" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <SpawnCharacter speciesname="Touhou_Little_Photosphere" Count="1" spread="10" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" Interval="0.1" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnContained" target="This" Interval="0.1" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <Remove />
+            </StatusEffect>
+        </Holdable>
+    </Item>
+
+    <!--概率刷新幽灵体用物品-->
+    <Item name="概率刷新幽灵体用物品" identifier="Touhou_Spawner_Touhou_Spectral_Core" subcategory="Touhou" category="Alien" maxstacksize="60" Tags="smallitem" hideinmenus="true"
+          spritecolor="255,255,255,10" cargocontaineridentifier="metalcrate" scale="0.15" impactsoundtag="impact_soft" impacttolerance="8" allowasextracargo="true">
+        <Sprite texture="%ModDir%/Images/Materials/Magics.png" depth="0.2" sourcerect="441,353,199,242" origin="0.5,0.5" />
+        <Body radius="30" density="10" waterdragcoefficient="20"/>
+        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" >
+            <StatusEffect type="OnSpawn" target="This" Interval="0.1" oneshot="true" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <SpawnCharacter speciesname="Touhou_Spectral_Core" Count="1" spread="10" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" Interval="0.1" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnContained" target="This" Interval="0.1" disabledeltatime="true">
+                <Conditional Removed="false" />
+                <Remove />
+            </StatusEffect>
+        </Holdable>
+    </Item>
+
+    <!--崩解石-->
+    <Item name="崩解石" identifier="Touhou_Disintegration_Stone" category="Misc" subcategory="Touhou" maxstacksize="32" tags="smallitem" scale="0.5" cargocontaineridentifier="metalcrate" description="">
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Disintegration_Stone.png" sourcerect="0,0,60,64" depth="0.55" />
+        <Body width="96" height="96" density="10" />
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="2" >
+            <RequiredItem identifier="iron" />
+            <RequiredItem tag="Patchouli_Book" />
+        </Fabricate>
+        <Deconstruct time="2"/>
+        <Holdable slots="Any,RightHand,LeftHand" aimpos="30,0" handle1="-15,-3" msg="ItemMsgPickUpSelect" />
+        <aitarget soundrange="800" fadeouttime="5" />
+    </Item>
+
+    <!--魔药燃料棒-->
+    <Item name="魔药燃料棒" identifier="Touhou_Magic_Plant_Fuelrod" Category="Fuel" subcategory="Touhou" Tags="smallitem,reactorfuel,divingsuitfuel,fuelrod" maxstacksize="32"
+          maxstacksizecharacterinventory="12" cargocontaineridentifier="metalcrate" health="60" scale="0.4">
+        <PreferredContainer primary="reactorcab" />
+        <Price baseprice="80" sold="true" >
+            <Price storeidentifier="merchantoutpost" />
+            <Price storeidentifier="merchantcity" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+            <Price storeidentifier="merchantmine" multiplier="1.1" />
+            <Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="2" />
+        </Price>
+        <Deconstruct time="10"/>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
+            <RequiredSkill identifier="Touhou_Magic" level="40" />
+            <RequiredSkill identifier="electrical" level="40" />
+            <RequiredItem tag="plantitem" />
+            <RequiredItem identifier="Plant_Essential_Oil" amount="6" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Magic_Plant_Fuelrod.png" sourcerect="0,0,136,160" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Magic_Plant_Fuelrod.png" sourcerect="150,11,188,62" depth="0.55" />
+        <Body radius="6" height="55" density="20" />
+        <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnBroken" target="This" >
+                <RemoveItem />
+            </StatusEffect>
+        </Holdable>
+    </Item>
+
+    <!--幽灵燃料棒-->
+    <Item name="幽灵燃料棒" identifier="Touhou_Spectral_Core_Fuelrod" Category="Fuel" subcategory="Touhou" Tags="smallitem,reactorfuel,divingsuitfuel,thoriumfuelrod" maxstacksize="32"
+          maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" health="500" scale="0.5">
+        <PreferredContainer primary="reactorcab" />
+        <Price baseprice="400" sold="false" >
+            <Price storeidentifier="merchantoutpost" />
+            <Price storeidentifier="merchantcity" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.25" />
+            <Price storeidentifier="merchantmine" multiplier="1.1" />
+            <Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="2" />
+        </Price>
+        <Deconstruct time="10"/>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
+            <RequiredSkill identifier="Touhou_Magic" level="60" />
+            <RequiredItem identifier="Touhou_Spectral_Core_Item" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Spectral_Core_Fuelrod.png" sourcerect="0,0,150,160" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Spectral_Core_Fuelrod.png" sourcerect="161,0,204,65" depth="0.55" />
+        <Body radius="6" height="55" density="20" />
+        <Holdable handle1="0,0" slots="Any,RightHand,LeftHand" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnBroken" target="This" >
+                <RemoveItem />
+            </StatusEffect>
+        </Holdable>
+        <ItemContainer hideitems="true" capacity="1" itemrotation="90" drawinventory="false" canbeselected="false" SpawnWithId="Touhou_Spectral_Core_Fuelrod_Bolt" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
+            <Containable items="Touhou_Spectral_Core_Fuelrod_Bolt" />
+            <StatusEffect type="OnUse" target="This" condition="-20" disabledeltatime="true">
+                <SpawnItem identifiers="Touhou_Spectral_Core_Fuelrod_Bolt" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+    <Item name="Touhou_Spectral_Core_Fuelrod_Bolt" identifier="Touhou_Spectral_Core_Fuelrod_Bolt" category="Weapon" scale="0.5" sonarsize="2" hideinmenus="true">
+        <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55" origin="0.5,0.5" />
+        <Body width="170" height="10" density="20" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <Projectile characterusable="false" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracernucleargun" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.75" colormultiplier="55,55,255,255" />
+            <ParticleEmitter particle="FlareBubbles" emitacrossrayinterval="50" />
+            <Attack structuredamage="15" targetforce="5" itemdamage="35" severlimbsprobability="0.5" penetration="0.3">
+                <Affliction identifier="explosiondamage" strength="50" />
+                <Affliction identifier="lacerations" strength="25" />
+                <Affliction identifier="Touhou_Freeze" strength="25" />
+                <Affliction identifier="stun" strength="0.5" />
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="muzzleflashnucleargun" anglemin="0" anglemax="360" particleamount="10" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="0.75,0.75" />
+                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="150,255,195,180" />
+                <ParticleEmitter particle="FlareBubbles" particleamount="3" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <Conditional entitytype="eq Structure" />
+                <Conditional hastag="eq door" />
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" disabledeltatime="true">
+                <Explosion range="125.0" ballastfloradamage="50" structuredamage="0" itemdamage="0" force="5.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,0,0,255" penetration="1">
+                    <Affliction identifier="burn" strength="25" />
+                    <Affliction identifier="stun" strength="1" />
+                </Explosion>
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
     </Item>
 
 </Items>

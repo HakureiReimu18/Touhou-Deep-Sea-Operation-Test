@@ -4,7 +4,7 @@
   <CargoMission
           name="魔法物质运输"
           identifier="cargoMagicItems"
-          tags="cargoMagicItems"
+          tags="cargoMagicItems,Touhou_Mission_Easy"
           type="Cargo"
           difficulty="1"
           commonness="100"
@@ -27,7 +27,7 @@
   <CargoMission
           name="食材原料运输"
           identifier="Cargo_Touhou_Food_Ingredients"
-          tags="Cargo_Touhou_Food_Ingredients"
+          tags="Cargo_Touhou_Food_Ingredients,Touhou_Mission_Easy"
           type="Cargo"
           difficulty="1"
           commonness="100"
@@ -73,7 +73,7 @@
   <MonsterMission
           name="清理毛玉"
           identifier="killMaoyu"
-          tags="killMaoyu"
+          tags="killMaoyu,Touhou_Mission_Easy"
           type="Monster"
           difficulty="1"
           commonness="100"
@@ -92,7 +92,7 @@
   <MonsterMission
           name="幽灵线"
           identifier="killghost"
-          tags="killghost"
+          tags="killghost,Touhou_Mission_Easy"
           type="Monster"
           difficulty="2"
           commonness="100"
@@ -102,7 +102,7 @@
           description="似乎是因为某种都市传说，总之，这条航路上漂浮着一些非常危险的幽灵，从外表看他们没有什么威胁性，但却给这条航线上的人们带来了不小的麻烦。清理时务必小心！">
     <monster character="Touhou_Little_Ghost" min="5" max="7" />
     <Monster character="Touhou_Little_Ghost" min="3" max="3" multiplayeronly="true"/>
-    <Reputation identifier="location" amount="3" />
+    <Reputation identifier="location" amount="1" />
     <Reputation identifier="Touhou_Gensokyo" amount="1" />
     <LocationType from="AnyOutpost" to="AnyOutpost" />
     <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons01.png" sourcerect="0,0,256,256" />
@@ -112,7 +112,7 @@
   <MonsterMission
           name="长眠不醒的噩梦"
           identifier="killphotosphere"
-          tags="killphotosphere"
+          tags="killphotosphere,Touhou_Mission_Normal"
           type="Monster"
           difficulty="3"
           commonness="100"
@@ -470,7 +470,7 @@
   <NestMission
           identifier="Clear_Reiki_Erode_Crawler_Nest"
           textidentifier="Clear_Reiki_Erode_Crawler_Nest"
-          tags="nest,Clear_Reiki_Erode_Crawler_Nest"
+          tags="Touhou_Mission_Normal,Clear_Reiki_Erode_Crawler_Nest"
           achievementidentifier="nestmission"
           type="Nest"
           spawntype="cave"
@@ -549,7 +549,7 @@
   <NestMission
           identifier="Clear_Reiki_Erode_Mudraptor_Nest"
           textidentifier="Clear_Reiki_Erode_Mudraptor_Nest"
-          tags="nest,Clear_Reiki_Erode_Mudraptor_Nest"
+          tags="Touhou_Mission_Hard,Clear_Reiki_Erode_Mudraptor_Nest"
           achievementidentifier="nestmission"
           type="Nest"
           spawntype="cave"
@@ -592,7 +592,7 @@
   <NestMission
           identifier="Clear_Reiki_Deterioration_Tigerthresher_Nest"
           textidentifier="Clear_Reiki_Deterioration_Tigerthresher_Nest"
-          tags="nest,Clear_Reiki_Deterioration_Tigerthresher_Nest"
+          tags="Touhou_Mission_Hard,Clear_Reiki_Deterioration_Tigerthresher_Nest"
           achievementidentifier="nestmission"
           type="Nest"
           spawntype="cave"
@@ -629,7 +629,7 @@
   <MonsterMission
           identifier="Kill_Reiki_Deterioration_Hammerhead"
           textidentifier="Kill_Reiki_Deterioration_Hammerhead"
-          tags="killmonster,Kill_Reiki_Deterioration_Hammerhead"
+          tags="Touhou_Mission_Hard,Kill_Reiki_Deterioration_Hammerhead"
           type="Monster"
           difficulty="4"
           commonness="100"
@@ -1024,9 +1024,30 @@
     </Characters>
   </OutpostDestroyMission>
 
+  <MonsterMission
+          name="拨乱反正"
+          identifier="Touhou_Monster_UFO_Clear_Mission"
+          tags="Touhou_Mission_Normal,Touhou_Monster_UFO_Clear_Mission"
+          type="Monster"
+          difficulty="4"
+          commonness="0"
+          reward="6000"
+          maxsonarmarkerdistance="10000"
+          sonarlabel="target">
+    <Monster character="Touhou_red_ufo" min="1" max="1" />
+    <Monster character="Touhou_red_ufo_range" min="1" max="1" />
+    <Monster character="Touhou_green_ufo" min="1" max="1"/>
+    <Monster character="Touhou_red_ufo_range" min="1" max="1" multiplayeronly="true"/>
+    <Monster character="Touhou_blue_ufo" min="1" max="1" multiplayeronly="true"/>
+    <Reputation identifier="location" amount="1" />
+    <Reputation identifier="Touhou_Gensokyo" amount="1" />
+    <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256" />
+    <message header="missionheader.Touhou_Monster_UFO_Clear_Mission" text="missionmessage.Touhou_Monster_UFO_Clear_Mission"/>
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+  </MonsterMission>
 
   <MonsterMission
-          name="幽灵生物"
+          name="往世来生"
           identifier="Touhou_Monster_Boss_Mission01"
           tags="Touhou_Monster_Boss_Mission01"
           type="Monster"
@@ -1043,6 +1064,50 @@
     <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Lunatic_Mission_Resistance_Event" campaignonly="true"/>
     <LocationType from="AnyOutpost" to="AnyOutpost" />
     <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Monster_Boss_Mission01_Event" campaignonly="true" />
+  </MonsterMission>
+
+  <MonsterMission
+          name="幽灵生物-序幕"
+          identifier="Touhou_Monster_Spectral_Mission01"
+          tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Normal"
+          type="Monster"
+          difficulty="4"
+          commonness="100"
+          reward="8000"
+          maxsonarmarkerdistance="10000"
+          sonarlabel="target">
+    <monster character="Touhou_Spectral_Shark" min="4" max="4"/>
+    <monster character="Touhou_Spectral_Shark_Event" min="1" max="1"/>
+    <monster character="Touhou_Little_Ghost" min="2" max="2"/>
+    <Monster character="Touhou_Spectral_Shark" min="3" max="3" multiplayeronly="true"/>
+    <Monster character="Touhou_Little_Ghost" min="2" max="2" multiplayeronly="true"/>
+    <Reputation identifier="location" amount="2" />
+    <Reputation identifier="Touhou_Gensokyo" amount="1" />
+    <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256" />
+    <message header="missionheader.Touhou_Monster_Spectral_Mission01" text="missionmessage.Touhou_Monster_Spectral_Mission01"/>
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+  </MonsterMission>
+
+  <MonsterMission
+          name="幽灵生物-序幕"
+          identifier="Touhou_Monster_Spectral_Mission02"
+          tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Normal"
+          type="Monster"
+          difficulty="4"
+          commonness="100"
+          reward="10000"
+          maxsonarmarkerdistance="10000"
+          sonarlabel="target">
+    <monster character="Touhou_Spectral_Creeper" min="5" max="5"/>
+    <monster character="Touhou_Spectral_Shark" min="1" max="1"/>
+    <monster character="Touhou_Spectral_Shark_Event" min="1" max="1"/>
+    <Monster character="Touhou_Spectral_Creeper" min="3" max="3" multiplayeronly="true"/>
+    <Monster character="Touhou_Spectral_Shark" min="2" max="2" multiplayeronly="true"/>
+    <Reputation identifier="location" amount="2" />
+    <Reputation identifier="Touhou_Gensokyo" amount="1" />
+    <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256" />
+    <message header="missionheader.Touhou_Monster_Spectral_Mission01" text="missionmessage.Touhou_Monster_Spectral_Mission01"/>
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
   </MonsterMission>
 
 

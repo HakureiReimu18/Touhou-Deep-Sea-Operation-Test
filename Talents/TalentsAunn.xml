@@ -35,7 +35,7 @@
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.5" />
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.25" />
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="4.9">

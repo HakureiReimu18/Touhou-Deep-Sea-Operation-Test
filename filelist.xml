@@ -136,6 +136,11 @@
   <Character file="%ModDir%/Characters/Touhou_Alice_Doll/Touhou_Alice_Doll_ShangHai/Touhou_Alice_Doll_ShangHai.xml" />
   <Character file="%ModDir%/Characters/Touhou_Alice_Doll/Touhou_Alice_Doll_PengLai/Touhou_Alice_Doll_PengLai.xml" />
   <Character file="%ModDir%/Characters/Touhou_Maoyu_Pet/Touhou_Maoyu_Pet.xml" />
+  <Character file="%ModDir%/Characters/Touhou_Spectral_Shark/Touhou_Spectral_Shark.xml" />
+  <Character file="%ModDir%/Characters/Touhou_Spectral_Shark/Touhou_Spectral_Shark_Event.xml" />
+  <Character file="%ModDir%/Characters/Touhou_Spectral_Core/Touhou_Spectral_Core.xml" />
+  <Character file="%ModDir%/Characters/Touhou_Spectral_Creeper/Touhou_Spectral_Creeper.xml" />
+  <Character file="%ModDir%/Characters/Touhou_Spectral_Whale/Touhou_Spectral_Whale.xml" />
   <!--Talents-->
   <Talents file="%ModDir%/Talents/Hyouibana.xml" />
   <Talents file="%ModDir%/Talents/TalentEnemy.xml" />
@@ -186,7 +191,6 @@
   <Wreck file="%ModDir%/Sub/Touhou_Wreck02.sub"/>
   <Submarine file="%ModDir%/Sub/Touhou_Wreck03.sub" />
   <Wreck file="%ModDir%/Sub/Touhou_Wreck04.sub"/>
-  <Wreck file="%ModDir%/Sub/Touhou_Wreck05.sub"/>
 
   <OutpostConfig file="%ModDir%/Map/OutpostGenerationParameters.xml" />
   <LocationTypes file="%ModDir%/Map/Touhou_LocationTypes.xml" />

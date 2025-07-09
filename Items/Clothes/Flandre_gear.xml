@@ -68,7 +68,7 @@
 
 
     <!--芙兰plus-->
-    <Item identifier="Flandre_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,clownmask,clowngear,clowns" scale="0.5" impactsoundtag="impact_soft">
+    <Item identifier="Flandre_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab" />
         <Price baseprice="1500" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" minavailable="1" />
