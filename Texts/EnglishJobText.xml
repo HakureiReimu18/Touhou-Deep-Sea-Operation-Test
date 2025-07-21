@@ -115,7 +115,7 @@
     <talentname.Touhou_Candy_Fun>Candy Fun</talentname.Touhou_Candy_Fun>
     <talentdescription.Touhou_Candy_Fun>When you finished at least one mission in a round，you will gain a ‖color:gui.orange‖Candy Of Yokai（Grapefruit Flavour）‖end‖，You can get different kinds of positive buffs that last for ‖color:gui.green‖150‖end‖ seconds by using Candies in your health pad：
         ‖color:gui.yellow‖Apple Flavour‖end‖：‖color:gui.orange‖Extreme speed‖end‖ increase ‖color:gui.green‖150 points‖end‖；
-        ‖color:gui.yellow‖Peach Flavour‖end‖：‖color:gui.orange‖MaximumHealth‖end‖ increase by ‖color:gui.green‖15%‖end‖；
+        ‖color:gui.yellow‖Peach Flavour‖end‖：‖color:gui.orange‖MaximumHealth‖end‖ increase by ‖color:gui.green‖10%‖end‖；
         ‖color:gui.yellow‖Lemon Flavour‖end‖：‖color:gui.orange‖AttackSpeed‖end‖ increase by ‖color:gui.green‖10%‖end‖；
         ‖color:gui.yellow‖Grapefruit Flavour‖end‖：‖color:gui.orange‖AttackDamage‖end‖ increase by‖color:gui.green‖10%‖end‖。</talentdescription.Touhou_Candy_Fun>
     <talentname.Touhou_Insouciance>Insouciance</talentname.Touhou_Insouciance>
@@ -141,7 +141,7 @@
         Unlock recepies：‖color:gui.orange‖Ice Sword Of The Warrior，Torch Of Hell，The Three Fairies' Triple Heavy Crossbow‖end‖。</talentdescription.Eastern_And_Little_Nature_Deity>
     <talenttree.Mischievous_Mischief>Mischievous Mischief</talenttree.Mischievous_Mischief>
     <talentname.Touhou_Magical_Assistant>Magical Assistant</talentname.Touhou_Magical_Assistant>
-    <talentdescription.Touhou_Magical_Assistant>If there is a magician on broad，provide her with extra ‖color:gui.green‖25%‖end‖ of the ‖color:gui.orange‖SkillgainSpeed‖end‖，gain extra ‖color:gui.green‖10%‖end‖ of money</talentdescription.Touhou_Magical_Assistant>
+    <talentdescription.Touhou_Magical_Assistant>If there is a magician on broad，provide her with extra ‖color:gui.green‖25%‖end‖ of the ‖color:gui.orange‖SkillgainSpeed‖end‖，gain extra ‖color:gui.green‖5%‖end‖ of money</talentdescription.Touhou_Magical_Assistant>
     <talentname.Touhou_Self_Made>Self Made</talentname.Touhou_Self_Made>
     <talentdescription.Touhou_Self_Made>If you completed at least one mission in a round，you will get a ‖color:gui.orange‖Bas Mental‖end‖，If nobody died，gain extra ‖color:gui.green‖10%‖end‖ exp</talentdescription.Touhou_Self_Made>
     <talentname.Quiet_And_Well_Behaved>Well Behaved</talentname.Quiet_And_Well_Behaved>

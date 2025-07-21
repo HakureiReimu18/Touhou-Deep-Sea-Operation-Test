@@ -6091,7 +6091,7 @@
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
             <Containable items="Touhou_Night_Watcher_Bullet" />
             <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
-            <StatusEffect type="OnUse" target="This" condition="-3.0" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="This" condition="-4.5" disabledeltatime="true" >
                 <SpawnItem identifiers="Touhou_Night_Watcher_Bullet" spawnposition="ThisInventory" />
             </StatusEffect>
         </ItemContainer>
@@ -6106,19 +6106,20 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.2" colormultiplier="200,100,255,255"/>
             <Attack itemdamage="50" levelwalldamage="20" targetimpulse="3" penetration="0.1" severlimbsprobability="0.2">
                 <Affliction identifier="lacerations" strength="80" />
-                <Affliction identifier="burn" strength="10" />
-                <Affliction identifier="lacerations" strength="20" probability="0.6" />
+                <Affliction identifier="burn" strength="15" />
+                <Affliction identifier="lacerations" strength="30" probability="0.6" />
                 <Affliction identifier="Sleepless_Nightmare" strength="15" />
-                <Affliction identifier="Touhou_Freeze" strength="10" />
-                <Affliction identifier="bleeding" strength="25" />
+                <Affliction identifier="Touhou_Freeze" strength="15" />
+                <Affliction identifier="bleeding" strength="35" />
                 <Affliction identifier="stun" strength="0.2" probability="0.25" />
                 <Affliction identifier="stun" strength="0.3" probability="0.5"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
-                <Affliction identifier="lacerations" strength="25" penetration="0.1" />
+                <Affliction identifier="lacerations" strength="45" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Dream" strength="5.0" />
+                <Affliction identifier="Sleepless_Nightmare" strength="5.0" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="10,10,200,255" />
@@ -8519,7 +8520,7 @@
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.2" colormultiplier="200,100,255,255"/>
-            <Attack itemdamage="10" levelwalldamage="20" targetimpulse="3" penetration="0.3" severlimbsprobability="0.3">
+            <Attack itemdamage="10" levelwalldamage="20" targetimpulse="3" penetration="0.25" severlimbsprobability="0.3">
                 <Affliction identifier="lacerations" strength="12" />
                 <Affliction identifier="burn" strength="1" />
                 <Affliction identifier="Touhou_Freeze" strength="1" />

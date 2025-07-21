@@ -76,7 +76,7 @@
         Each ranged attack will slowly increase your ‖color:gui.yellow‖"Magic Overload"‖end‖, which reduces your ‖color:gui.orange‖maximum health and ranged attack speed‖end‖ by up to ‖color:gui.red‖20%‖end‖
         ‖color:gui.yellow‖Magic Overload‖end‖ will naturally recover over time, and the lower your ‖color:gui.orange‖magic power‖end‖, the faster ‖color:gui.yellow‖Magic Overload‖end‖ will grow
         \nIncrease damage dealt by ‖color:gui.green‖4%‖end‖, ranged damage by ‖color:gui.green‖4%‖end‖, ranged barrage damage (non-turret) by ‖color:gui.green‖4%‖end‖, ‖color:gui.yellow‖burn‖end‖ damage by ‖color:gui.green‖4%‖end‖, and damage against non-human creatures by ‖color:gui.green‖4%‖end‖
-        \nEach time a ranged barrage causes ‖color:gui.yellow‖burn‖end‖, there is a ‖color:gui.green‖25%‖end‖ chance to additionally inflict ‖color:gui.yellow‖Dream Loss‖end‖
+        \nEach time a ranged barrage , there is a ‖color:gui.green‖25%‖end‖ chance to additionally inflict ‖color:gui.yellow‖Dream Loss‖end‖
         \nThere is a 15% chance to find ‖color:gui.orange‖"The Grimoire"‖end‖ each time you open a wreck container
         \nWearing Marisa's Hat will slightly increase resistance and attack damage.
     </talentdescription.Casket_Of_Star>
@@ -384,9 +384,15 @@ After the events of Subterranean Animism, she was sent to Gensokyo by Hecatia, w
 
     <!--Cirno-->
     <entityname.Cirno_gear>‖color:60,90,255,255‖Cirno's Outfit‖end‖</entityname.Cirno_gear>
-<entitydescription.Cirno_gear>Sometimes even in summer, extreme low temperatures can occur near the lakeside. The fairy you encounter in such conditions is likely the Ice Fairy. She is the leader of the fairies near the Misty Lake and is stronger than other fairies.</entitydescription.Cirno_gear>
-<entityname.Cirno_Plus>‖color:60,90,255,255‖Cirno's Outfit+‖end‖</entityname.Cirno_Plus>
-<entitydescription.Cirno_Plus>Sometimes even in summer, extreme low temperatures can occur near the lakeside. The fairy you encounter in such conditions is likely the Ice Fairy. She is the leader of the fairies near the Misty Lake and is stronger than other fairies.</entitydescription.Cirno_Plus>
+    <entitydescription.Cirno_gear>Sometimes even in summer, extreme low temperatures can occur near the lakeside. The fairy you encounter in such conditions is likely the Ice Fairy. She is the leader of the fairies near the Misty Lake and is stronger than other fairies.</entitydescription.Cirno_gear>
+    <entityname.Cirno_Plus>‖color:60,90,255,255‖Cirno's Outfit+‖end‖</entityname.Cirno_Plus>
+    <entitydescription.Cirno_Plus>Sometimes even in summer, extreme low temperatures can occur near the lakeside. The fairy you encounter in such conditions is likely the Ice Fairy. She is the leader of the fairies near the Misty Lake and is stronger than other fairies.</entitydescription.Cirno_Plus>
+    <entityname.Cirno_Eclipse_Valentines>‖color:60,90,210,255‖Cirno's Outfit (Valentines)‖end‖</entityname.Cirno_Eclipse_Valentines>
+    <entitydescription.Cirno_Eclipse_Valentines>Sometimes even in summer, extreme low temperatures can occur near the lakeside. The fairy you encounter in such conditions is likely the Ice Fairy. She is the leader of the fairies near the Misty Lake and is stronger than other fairies.</entitydescription.Cirno_Eclipse_Valentines>
+    <entityname.Cirno_Eclipse_Valentines_Plus>‖color:60,90,210,255‖Cirno's Outfit+  (Valentines)‖end‖</entityname.Cirno_Eclipse_Valentines_Plus>
+    <entitydescription.Cirno_Eclipse_Valentines_Plus>Sometimes even in summer, extreme low temperatures can occur near the lakeside. The fairy you encounter in such conditions is likely the Ice Fairy. She is the leader of the fairies near the Misty Lake and is stronger than other fairies.</entitydescription.Cirno_Eclipse_Valentines_Plus>
+    <entityname.Cirno_Eclipse_Valentines_Headpiece>‖color:60,90,210,255‖Lemon hair accessory (Valentines)‖end‖</entityname.Cirno_Eclipse_Valentines_Headpiece>
+    <entitydescription.Cirno_Eclipse_Valentines_Headpiece>A slice of lemon adorns the sweet and refreshing mint.</entitydescription.Cirno_Eclipse_Valentines_Headpiece>
 <talentname.CirnoTalent>Ice Warrior</talentname.CirnoTalent>
 <talentdescription.CirnoTalent>When you are wearing Cirno's Outfit+,
         You have very low resistance to burns.

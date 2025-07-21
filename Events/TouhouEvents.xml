@@ -1606,6 +1606,7 @@
       <ConversationAction text="EventText.Touhou_Hard_Mission01.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small" eventsprite="Reimu_Mission" />
       <MissionAction missiontag="Touhou_Mission_Hard" />
       <MissionAction missiontag="Touhou_Mission_Hard" />
+      <MissionAction missiontag="Touhou_Mission_Hard" />
       <MissionAction missiontag="killmonster_set4" />
     </ScriptedEvent>
 

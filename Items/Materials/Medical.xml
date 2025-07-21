@@ -1305,7 +1305,7 @@
           cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="2"
           scale="0.25" useinhealthinterface="true" RequireAimToUse="True">
         <PreferredContainer primary="medcab" secondary="medcontainer" />
-        <Price baseprice="800" >
+        <Price baseprice="700" >
             <Price storeidentifier="merchantoutpost" minavailable="2" />
             <Price storeidentifier="merchantcity" minavailable="2" />
             <Price storeidentifier="merchantresearch" minavailable="2" />
@@ -1398,7 +1398,7 @@
           cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="4" Health="200"
           scale="0.1" useinhealthinterface="true" RequireAimToUse="True">
         <PreferredContainer primary="medcab" secondary="medcontainer" />
-        <Price baseprice="800" >
+        <Price baseprice="700" >
             <Price storeidentifier="merchantoutpost" minavailable="2" />
             <Price storeidentifier="merchantcity" minavailable="2" />
             <Price storeidentifier="merchantresearch" minavailable="2" />

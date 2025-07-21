@@ -222,10 +222,10 @@
             <Label name="delay" />
             <RNGAction chance="0.5">
                 <Success>
-                    <WaitAction time="60" />
+                    <WaitAction time="4" />
                 </Success>
                 <Failure>
-                    <WaitAction time="30" />
+                    <WaitAction time="2" />
                 </Failure>
             </RNGAction>
             <GoTo name="delay" maxtimes="150" />

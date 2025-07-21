@@ -141,6 +141,7 @@
   <Character file="%ModDir%/Characters/Touhou_Spectral_Core/Touhou_Spectral_Core.xml" />
   <Character file="%ModDir%/Characters/Touhou_Spectral_Creeper/Touhou_Spectral_Creeper.xml" />
   <Character file="%ModDir%/Characters/Touhou_Spectral_Whale/Touhou_Spectral_Whale.xml" />
+  <Character file="%ModDir%/Characters/Touhou_Spectral_Runner/Touhou_Spectral_Runner.xml" />
   <!--Talents-->
   <Talents file="%ModDir%/Talents/Hyouibana.xml" />
   <Talents file="%ModDir%/Talents/TalentEnemy.xml" />

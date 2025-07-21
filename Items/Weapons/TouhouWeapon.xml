@@ -59,10 +59,10 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100" />
             </StatusEffect>
-            <StatusEffect type="OnContained" target="This" Condition="5">
+            <StatusEffect type="OnContained" target="This" Condition="4.0" Interval="2.0" disabledeltatime="true">
                 <Conditional condition="gt 0" />
             </StatusEffect>
-            <StatusEffect type="InWater" target="This" Condition="2">
+            <StatusEffect type="InWater" target="This" Condition="1" Interval="1.0" disabledeltatime="true">
                 <Conditional condition="gt 0" />
             </StatusEffect>
             <StatusEffect type="OnBroken" target="This" Condition="8" disabledeltatime="true" delay="5" stackable="false" />
@@ -87,9 +87,11 @@
                 <RequiredItems items="Hakkeroammo" type="Contained" msg="ItemMsgAmmoRequired" />
                 <Use />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-4" disabledeltatime="true" />
-            <StatusEffect type="OnUse" target="This" Condition="+1" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="This" Condition="-3" disabledeltatime="true" >
                 <RequiredItems items="Hakkero_Laser_Ammo" type="Contained" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-4" disabledeltatime="true" >
+                <RequiredItems items="Star_Danmu,Stardust_Reverie" type="Contained" />
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" reload="0.15" setvalue="true" >
                 <RequiredItems items="Hakkero_Laser_Ammo" type="Contained" />
@@ -221,7 +223,7 @@
 
     <!--星星弹幕-->
     <Item name="" identifier="Star_Danmu" scale="0.32" subcategory="Touhou" category="Weapon" interactthroughwalls="true"
-          cargocontaineridentifier="metalcrate" tags="smallitem,Hakkeroammo,Touhou_Weapon_Level01,Touhou_Magic_Charging02" impactsoundtag="impact_metal_light" >
+          cargocontaineridentifier="metalcrate" tags="smallitem,Star_Danmu,Hakkeroammo,Touhou_Weapon_Level01,Touhou_Magic_Charging02" impactsoundtag="impact_metal_light" >
         <Deconstruct time="2">
             <Item identifier="Magic_Material" amount="2" />
         </Deconstruct>
@@ -293,7 +295,7 @@
 
     <!--星屑幻想-->
     <Item name="" identifier="Stardust_Reverie" spritecolor="255,0,0,255" scale="0.5" subcategory="Touhou" category="Weapon" interactthroughwalls="true"
-          cargocontaineridentifier="metalcrate" tags="smallitem,Hakkeroammo,Touhou_Weapon_Level05,Touhou_Magic_Charging05" impactsoundtag="impact_metal_light" maxstacksize="1">
+          cargocontaineridentifier="metalcrate" tags="smallitem,Stardust_Reverie,Hakkeroammo,Touhou_Weapon_Level05,Touhou_Magic_Charging05" impactsoundtag="impact_metal_light" maxstacksize="1">
         <Deconstruct time="60">
             <Item identifier="Power_Point" amount="4" />
             <Item identifier="Score_Point" amount="2" />
@@ -913,7 +915,8 @@
             <RequiredItems items="Gungnier_Bolt" type="Contained" />
             <RequiredSkill identifier="Touhou_Magic" level="100" />
         </RangedWeapon>
-        <ItemContainer SpawnWithId="Gungnier_Bolt" itempos="0,-4" iteminterval="0,0" drawinventory="false" hideitems="false" capacity="1" maxstacksize="1" containedstateindicatorstyle="spear" containedspritedepths="0.551,0.552,0.553,0.554,0.555,0.556">
+        <ItemContainer SpawnWithId="Gungnier_Bolt" itempos="0,-4" iteminterval="0,0" drawinventory="false" hideitems="false" capacity="1" maxstacksize="1" containedspritedepths="0.551,0.552,0.553,0.554,0.555,0.556">
+            <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
             <Containable items="Gungnier_Bolt" />
         </ItemContainer>
         <SkillRequirementHint identifier="Touhou_Magic" level="100" />
@@ -4220,7 +4223,7 @@
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true" />
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon barrelpos="50,10" spread="3" unskilledspread="9" reload="0.21" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="3" >
+        <RangedWeapon barrelpos="50,10" spread="3" unskilledspread="9" reload="0.21" combatPriority="50" drawhudwhenequipped="true" crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.7" DualWieldAccuracyPenalty="6" >
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Icicle_Fall.png" sourcerect="145,0,199,199" />
             <!--
@@ -4254,7 +4257,7 @@
     </Item>
 
     <!--完美雪花-->
-    <Item name="完美雪花" identifier="Touhou_Perfect_Snowflake" tags="smallitem,weapon,Touhou_Weapon_Level03,Touhou_Magic_Charging03" subcategory="Touhou" category="Weapon" scale="0.5" >
+    <Item name="完美雪花" identifier="Touhou_Perfect_Snowflake" tags="smallitem,weapon,Touhou_Weapon_Level03,Touhou_Magic_Charging04" subcategory="Touhou" category="Weapon" scale="0.5" >
         <Deconstruct time="6">
             <Item identifier="Magic_Material" amount="2" />
         </Deconstruct>
@@ -4267,11 +4270,12 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="recycleitem" >
             <RequiredSkill identifier="Touhou_Magic" level="50" />
             <RequiredItem identifier="Shui_Alchemical" />
+            <RequiredItem identifier="Magic_Material" />
             <RequiredItem identifier="Touhou_Perfect_Snowflake" mincondition="0.0" maxcondition="0.5" usecondition="false" />
         </Fabricate>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Perfect_Snowflake.png" sourcerect="0,0,108,108" origin="0.5,0.5" depth="0.46" />
         <Body width="96" height="96" density="10" />
-        <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <Holdable canBeCombined="true" slots="RightHand+LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
         <LightComponent lightcolor="255,255,255,150" range="40" powerconsumption="0" IsOn="true">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,108,11" origin="0.15,0" />
         </LightComponent>
@@ -4326,7 +4330,7 @@
         <Holdable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,0" handle2="0,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="33" hitscan="false" sticktocharacters="true" sticktoitems="true" stickostructrures="true"
                     sticktodoors="true" maxtargetstohit="2" removeonhit="true" friendlyfire="false">
-            <Attack structuredamage="0" itemdamage="5" targetforce="0.2" penetration="0.2">
+            <Attack structuredamage="0" itemdamage="5" targetforce="0.2" penetration="0.1">
                 <Affliction identifier="Touhou_Freeze" strength="9" />
                 <Affliction identifier="explosiondamage" strength="1" />
                 <Affliction identifier="Slow_Baka" strength="3" />
@@ -4640,10 +4644,10 @@
                 <Affliction identifier="stun" strength="0.3" probability="0.2" />
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
-                <Affliction identifier="explosiondamage" strength="4" />
+                <Affliction identifier="explosiondamage" strength="2" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Touhou_Lost_Dream" strength="2" probability="0.5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="1" probability="0.5" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" scalemin="0.5" scalemax="0.8" scalemultiplier="7,7" colormultiplier="255,115,95,150" lifetimemultiplier="0.5"/>
@@ -9881,12 +9885,12 @@
         <Projectile characterusable="false" hitscan="true" maxtargetstohit="1" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.1" colormultiplier="100,100,205,255"/>
             <Attack itemdamage="40" levelwalldamage="20" targetimpulse="5" penetration="0.3" severlimbsprobability="0.75">
-                <Affliction identifier="Touhou_Freeze" strength="21" />
-                <Affliction identifier="lacerations" strength="33" />
+                <Affliction identifier="Touhou_Freeze" strength="18" />
+                <Affliction identifier="lacerations" strength="36" />
                 <Affliction identifier="lacerations" strength="9" probability="0.33" />
                 <Affliction identifier="acidburn" strength="3" />
                 <Affliction identifier="Slow_Baka" strength="30" probability="0.3" />
-                <Affliction identifier="stun" strength="0.3" probability="0.3" />
+                <Affliction identifier="stun" strength="0.15" probability="0.3" />
                 <Affliction identifier="stun" strength="0.45" probability="0.3"/>
                 <Affliction identifier="stun" strength="0.9" probability="0.3"/>
                 <StatusEffect type="OnUse" target="Limb" targetLimbs="Head">
@@ -9895,7 +9899,7 @@
                 </StatusEffect>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb" >
-                <Affliction identifier="lacerations" strength="10" />
+                <Affliction identifier="lacerations" strength="10" penetration="0.15" />
                 <Affliction identifier="Touhou_Minus_K_Bullet_Effect" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
@@ -11705,7 +11709,7 @@
         <LightComponent LightColor="200,60,60,150" Range="180" powerconsumption="0" IsOn="true" >
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="1,1,1,1" origin="0.15,0" />
         </LightComponent>
-        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="65,0" handle1="-80,-13" handle2="0,-12" holdangle="-25" >
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="65,0" handle1="-65,-13" handle2="0,-12" holdangle="-25" >
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
                 <Conditional scarletdevil="gt 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Remilia="gt 0"/>
@@ -11752,13 +11756,13 @@
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <Explosion range="200.0" camerashake="10" force="0.6" flames="false" shockwave="false" sparks="false" smoke="false" underwaterbubble="false" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="+1" disabledeltatime="true" />
+            <StatusEffect type="OnUse" target="This" Condition="+2" disabledeltatime="true" />
             <StatusEffect type="OnUse" target="Contained" >
                 <RequiredItems items="Touhou_Night_Dance_Ammo" type="Contained" msg="ItemMsgAmmoRequired" />
                 <Use />
             </StatusEffect>
             <RequiredItems items="Touhou_Night_Dance_Ammo" type="Contained" msg="ItemMsgAmmoRequired" />
-            <RequiredSkill identifier="Touhou_Magic" level="80" />
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
         </RangedWeapon>
         <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
             <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
@@ -11836,7 +11840,7 @@
         <Projectile characterusable="false" hitscan="true" maxtargetstohit="1" removeonhit="true" damagedoors="true" >
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.12" colormultiplier="255,10,10,255"/>
             <Attack itemdamage="10" levelwalldamage="20" targetimpulse="3" penetration="0.1" severlimbsprobability="0.2">
-                <Affliction identifier="lacerations" strength="13" />
+                <Affliction identifier="lacerations" strength="12" />
                 <Affliction identifier="explosiondamage" strength="2" />
                 <Affliction identifier="Sleepless_Nightmare" strength="2" />
                 <Affliction identifier="bleeding" strength="20" />
@@ -11858,6 +11862,290 @@
                 <Conditional entitytype="eq Structure"/>
                 <Conditional hastag="eq door"/>
                 <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" colormultiplier="255,50,50,255"/>
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+    <!--太阳花之祝福-->
+    <Item name="太阳花之祝福" identifier="Touhou_Blessings_Sunflowers" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate" allowasextracargo="true"
+          tags="mediumitem,bulkyweapon,weapon,Touhou_Weapon_Level04,Touhou_Cam_Offset_Normal" Scale="0.3" impactsoundtag="impact_metal_heavy">
+        <PreferredContainer primary="secarmcab" secondary="weaponholder,armcab"/>
+        <Price baseprice="9000" >
+            <Price storeidentifier="merchantoutpost" multiplier="1.5" />
+            <Price storeidentifier="merchantcity" multiplier="1.25" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" />
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="1" maxavailable="2" sold="true"/>
+            <Price storeidentifier="merchantmine" multiplier="1.25" />
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="physicorium" />
+            <Item identifier="Power_Point" amount="2" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" outcondition="0.05" >
+            <RequiredSkill identifier="Touhou_Magic" level="70" />
+            <RequiredItem identifier="physicorium" />
+            <RequiredItem identifier="Yang_Alchemical" amount="4" />
+            <RequiredItem tag="Sun_Flower_Petal" amount="4" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="4" />
+            <RequiredItem identifier="Power_Point" amount="2" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="406,0,174,141" origin="0.5,0.5" />
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="0,0,400,161" depth="0.55" origin="0.5,0.5" />
+        <Body width="400" height="140" density="10" />
+        <LightComponent LightColor="200,60,60,150" Range="180" powerconsumption="0" IsOn="true" >
+            <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="1,1,1,1" origin="0.15,0" />
+        </LightComponent>
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="65,0" handle1="-75,-13" handle2="0,-12" holdangle="-25" >
+            <StatusEffect type="OnActive" target="Character" Interval="0.5">
+                <Conditional Flowers_Of_Four_Seasons="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Yuka="gt 0"/>
+                <Affliction identifier="Yuka_Weapons" strength="50" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
+                <Conditional Flowers_Of_Four_Seasons="gt 0"/>
+                <Conditional Hyouibana_Effect_Prefect_Yuka="gt 0"/>
+                <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" Interval="0.5" >
+                <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
+                <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect01" strength="100" />
+            </StatusEffect>
+            <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true" />
+            <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true" />
+        </Holdable>
+        <RangedWeapon reload="0.5" holdtrigger="true" barrelpos="200,0" spread="3" unskilledspread="12" combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256" />
+            <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair02.png" sourcerect="0,0,160,160" />
+            <ParticleEmitter particle="FlareBubbles" scalemin="0.4" scalemax="0.8" particleamount="10" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50" />
+            <ParticleEmitter particle="GlowDot" scalemin="0.4" scalemax="0.4" particleamount="10" anglemin="0" anglemax="360" velocitymin="0" velocitymax="0" colormultiplier="255,200,150,255" />
+            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Flandre_Destroyer/Touhou_Flandre_Destroyer_Attack01.ogg" type="OnUse" range="3000" volume="2.0" selectionmode="Random" />
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Flandre_Destroyer/Touhou_Flandre_Destroyer_Attack02.ogg" type="OnUse" range="3000" volume="2.0" selectionmode="Random" />
+                <Sound file="%ModDir%/Sounds/Weapons/Touhou_Flandre_Destroyer/Touhou_Flandre_Destroyer_Attack03.ogg" type="OnUse" range="3000" volume="2.0" selectionmode="Random" />
+                <Explosion range="300.0" camerashake="15" force="1.0" flames="false" shockwave="false" sparks="false" smoke="false" underwaterbubble="false" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                <Explosion range="200.0" camerashake="10" force="0.6" flames="false" shockwave="false" sparks="false" smoke="false" underwaterbubble="false" />
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="Contained" >
+                <RequiredItems items="Touhou_Blessings_Sunflowers_Ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+                <Use />
+            </StatusEffect>
+            <RequiredItems items="Touhou_Blessings_Sunflowers_Ammo" type="Contained" msg="ItemMsgAmmoRequired" />
+            <RequiredSkill identifier="Touhou_Magic" level="70" />
+        </RangedWeapon>
+        <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
+            <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
+            <SlotIcon slotindex="0" texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="1,138,51,72" origin="0.5,0.5" />
+            <SubContainer capacity="1" maxstacksize="1" >
+                <Containable items="Touhou_Blessings_Sunflowers_Ammo" hide="true" itempos="-21,-3" depth="0.56" setactive="true" >
+                    <StatusEffect type="OnContaining" target="This" reload="1.0" setvalue="true" Interval="0.5" disabledeltatime="true" >
+                        <RequiredItem items="Touhou_Blessings_Sunflowers_Ammo01" type="Contained"  />
+                    </StatusEffect>
+                    <StatusEffect type="OnContaining" target="This" reload="0.5" setvalue="true" Interval="0.5" disabledeltatime="true" >
+                        <RequiredItem items="Touhou_Blessings_Sunflowers_Ammo02" type="Contained"  />
+                    </StatusEffect>
+                    <StatusEffect type="OnInserted" target="This" holdpos="46,-40" holdangle="70" maxchargetime="999" setvalue="true" />
+                    <StatusEffect type="OnInserted" target="This" setvalue="true" >
+                        <Conditional isActive="eq true"/>
+                        <Sound file="%ModDir%/Sounds/Weapons/Touhou_Unknown_X_Reload.ogg" type="OnUse" range="500" volume="1.2" selectionmode="Random" />
+                    </StatusEffect>
+                    <StatusEffect target="This" holdpos="60,-15" aimpos="65,0" handle1="-75,-13" handle2="0,-12" holdangle="-25" maxchargetime="0" disabledeltatime="true" checkconditionalalways="true" delay="1.0" setvalue="true">
+                        <Conditional maxchargetime="eq 999" />
+                    </StatusEffect>
+                </Containable>
+            </SubContainer>
+        </ItemContainer>
+        <aitarget sightrange="1500" soundrange="3000" fadeouttime="5" />
+        <Quality>
+            <QualityStat stattype="firepowermultiplier" value="0.05"/>
+        </Quality>
+        <SkillRequirementHint identifier="Touhou_Magic" level="70" />
+    </Item>
+
+    <!--太阳花培养液（黄）-->
+    <Item name="太阳花培养液（黄）" identifier="Touhou_Blessings_Sunflowers_Ammo01" scale="0.5" subcategory="Touhou" category="Weapon" maxstacksize="16"
+          maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" tags="smallitem,Touhou_Blessings_Sunflowers_Ammo,Touhou_Magic_Charging04" impactsoundtag="impact_metal_light" >
+        <PreferredContainer secondary="armcab" />
+        <Price baseprice="200" sold="false">
+            <Price storeidentifier="merchantoutpost" maxavailable="3" />
+            <Price storeidentifier="merchantcity" maxavailable="2" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" maxavailable="1" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.25" maxavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" maxavailable="3" />
+            <Price storeidentifier="merchantengineering" maxavailable="1" multiplier="0.9"/>
+        </Price>
+        <Deconstruct time="6">
+            <Item identifier="Reiki_Stone" amount="2" />
+            <Item identifier="titaniumaluminiumalloy" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" >
+            <RequiredSkill identifier="Touhou_Magic" level="60" />
+            <RequiredItem tag="advmunition_core" amount="2" />
+            <RequiredItem identifier="plastic" amount="2" />
+            <RequiredItem identifier="titaniumaluminiumalloy" />
+            <RequiredItem tag="Sun_Flower_Petal" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+        </Fabricate>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="Touhou_Recharge" >
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
+            <RequiredItem tag="advmunition_core" amount="2" />
+            <RequiredItem identifier="Reiki_Stone" amount="3" />
+            <RequiredItem tag="Sun_Flower_Petal" amount="2" />
+            <RequiredItem identifier="plastic" />
+            <RequiredItem tag="Touhou_Blessings_Sunflowers_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="411,143,45,98" depth="0.56" origin="0.5,0.5" />
+        <Body width="30" height="80" density="10" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Blessings_Sunflowers_Bullet01" removecontaineditemsondeconstruct="true"
+                       containedstateindicatorstyle="bullet" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <Containable items="Touhou_Blessings_Sunflowers_Bullet01" />
+            <StatusEffect type="OnUse" target="This" condition="-5.0" disabledeltatime="true" >
+                <SpawnItem identifiers="Touhou_Blessings_Sunflowers_Bullet01" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+    <!--太阳花祝福之矛-->
+    <Item name="太阳花祝福之矛" identifier="Touhou_Blessings_Sunflowers_Bullet01" category="Weapon" tags="Touhou_Magic_Danmu" scale="0.75" sonarsize="0.5" hideinmenus="true" >
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="0,161,236,31" depth="0.56" origin="0.5,0.5" />
+        <Body width="170" height="10" density="10" gravityscale="0" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <LightComponent LightColor="220,200,80,100" Range="100" powerconsumption="0" IsOn="true" >
+            <sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="0,161,1,1" origin="0.5,0.5" />
+        </LightComponent>
+        <LightComponent LightColor="220,200,80,255" Range="0" powerconsumption="0" IsOn="true" >
+            <sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="0,161,236,31" origin="0.5,0.5" />
+        </LightComponent>
+        <Projectile characterusable="false" launchimpulse="25" hitscan="false" maxtargetstohit="2" removeonhit="false" sticktocharacters="true"
+                    sticktoitems="true" sticktostructures="true" sticktodeflective="true" sticktodoors="false" sticktolighttargets="true">
+            <Attack itemdamage="50" levelwalldamage="20" targetimpulse="3" penetration="0.35" severlimbsprobability="0.2">
+                <Affliction identifier="lacerations" strength="30" />
+                <Affliction identifier="burn" strength="5" />
+                <Affliction identifier="explosiondamage" strength="5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="5" />
+                <Affliction identifier="bleeding" strength="20" />
+                <Affliction identifier="bleeding" strength="10" probability="0.2" />
+                <Affliction identifier="stun" strength="0.2" probability="0.2" />
+                <Affliction identifier="stun" strength="0.35" probability="0.2"/>
+            </Attack>
+            <StatusEffect type="OnActive" target="UseTarget,This" checkconditionalalways="true" comparison="And" disabledeltatime="true">
+                <Conditional Snapped="false" />
+                <Conditional mass="lt 300" />
+                <Affliction identifier="drag" strength="1" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Touhou_Lost_Dream" strength="5.0" probability="0.5" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="weldspark" particleamount="3" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,50,50,255" />
+                <ParticleEmitter particle="FlareBubbles" particleamount="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="5" velocitymin="-10" velocitymax="-200" scalemin="0.5" scalemax="1" colormultiplier="255,50,50,255"/>
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" delay="4.0">
+                <Remove />
+            </StatusEffect>
+        </Projectile>
+        <Rope targetpullforce="1000" IncreaseForceForEscapingTargets="false" sourcepullforce="1000" projectilepullforce="10" maxlength="2500" snaponcollision="false" spritewidth="3" tile="true" origin="0.05,0.5" targetminmass="10" lerpforces="true" snapanimduration="0.5" ReelSoundPitchSlide="1.0,2.25">
+            <Sprite texture="Content/Map/Thalamus/thalamus.png" sourcerect="617,352,174,32" depth="0.57" origin="0.5,0.5" />
+            <SnapSound file="Content/Items/Weapons/HarpoonGun1.ogg" range="500" frequencymultiplier="3.0,4.0"/>
+            <ReelSound file="Content/Items/Weapons/WEAPON_harpoonGunReelLoop.ogg" range="1000" />
+            <StatusEffect type="OnUse" target="This" Snapped="true" delay="20"/>
+            <!-- Remove 1 second after snapping -->
+            <StatusEffect type="Always" target="This" delay="1" checkconditionalalways="true" conditionalcomparison="And">
+                <Conditional Snapped="true" TargetItemComponent="Rope"/>
+                <Conditional IsActive="true" TargetItemComponent="Projectile" />
+                <Remove />
+            </StatusEffect>
+            <!-- Snap after 5 seconds if not stuck to anything -->
+            <StatusEffect type="OnUse" target="This" Snapped="true" delay="5" checkconditionalalways="true">
+                <Conditional targetitemcomponent="Projectile" IsStuckToTarget="false" />
+            </StatusEffect>
+        </Rope>
+    </Item>
+
+    <!--太阳花培养液（红）-->
+    <Item name="太阳花培养液（红）" identifier="Touhou_Blessings_Sunflowers_Ammo02" scale="0.5" subcategory="Touhou" category="Weapon" maxstacksize="16"
+          maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" tags="smallitem,Touhou_Blessings_Sunflowers_Ammo,Touhou_Magic_Charging04" impactsoundtag="impact_metal_light" >
+        <PreferredContainer secondary="armcab" />
+        <Price baseprice="200" sold="false">
+            <Price storeidentifier="merchantoutpost" maxavailable="3" />
+            <Price storeidentifier="merchantcity" maxavailable="2" />
+            <Price storeidentifier="merchantresearch" multiplier="1.25" maxavailable="1" />
+            <Price storeidentifier="merchantmilitary" multiplier="1.25" maxavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="0.9" maxavailable="3" />
+            <Price storeidentifier="merchantengineering" maxavailable="1" multiplier="0.9"/>
+        </Price>
+        <Deconstruct time="6">
+            <Item identifier="Reiki_Stone" amount="2" />
+            <Item identifier="titaniumaluminiumalloy" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" >
+            <RequiredSkill identifier="Touhou_Magic" level="60" />
+            <RequiredItem tag="advmunition_core" amount="2" />
+            <RequiredItem identifier="plastic" amount="2" />
+            <RequiredItem identifier="titaniumaluminiumalloy" />
+            <RequiredItem tag="Sun_Flower_Petal" amount="2" />
+            <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
+        </Fabricate>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" displayname="Touhou_Recharge" >
+            <RequiredSkill identifier="Touhou_Magic" level="50" />
+            <RequiredItem tag="advmunition_core" amount="2" />
+            <RequiredItem identifier="Reiki_Stone" amount="3" />
+            <RequiredItem tag="Sun_Flower_Petal" amount="2" />
+            <RequiredItem identifier="plastic" />
+            <RequiredItem tag="Touhou_Blessings_Sunflowers_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false" />
+        </Fabricate>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="462,143,45,98" depth="0.56" origin="0.5,0.5" />
+        <Body width="30" height="80" density="10" />
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect" />
+        <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Blessings_Sunflowers_Bullet02" removecontaineditemsondeconstruct="true"
+                       containedstateindicatorstyle="bullet" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <Containable items="Touhou_Blessings_Sunflowers_Bullet02" />
+            <StatusEffect type="OnUse" target="This" condition="-2.0" disabledeltatime="true" >
+                <SpawnItem identifiers="Touhou_Blessings_Sunflowers_Bullet02" spawnposition="ThisInventory" />
+            </StatusEffect>
+        </ItemContainer>
+    </Item>
+
+    <!--太阳光线-->
+    <Item name="太阳光线" identifier="Touhou_Blessings_Sunflowers_Bullet02" category="Weapon" tags="Touhou_Magic_Danmu" scale="0.35" sonarsize="0.5" hideinmenus="true" >
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blessings_Sunflowers.png" sourcerect="0,161,236,31" depth="0.56" origin="0.5,0.5" />
+        <Body width="170" height="10" density="10" />
+        <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
+        <Projectile characterusable="false" hitscan="true" maxtargetstohit="1" removeonhit="true" damagedoors="true" >
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.12" colormultiplier="220,200,80,255"/>
+            <Attack itemdamage="40" levelwalldamage="20" targetimpulse="3" penetration="0.15" severlimbsprobability="0.5">
+                <Affliction identifier="lacerations" strength="40" />
+                <Affliction identifier="burn" strength="10" />
+                <Affliction identifier="explosiondamage" strength="5" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="4" />
+                <Affliction identifier="bleeding" strength="20" />
+                <Affliction identifier="bleeding" strength="10" probability="0.2" />
+                <Affliction identifier="stun" strength="0.1" probability="0.3" />
+                <Affliction identifier="stun" strength="0.15" probability="0.3"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Touhou_Lost_Dream" strength="2.0" probability="0.5" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="weldspark" particleamount="3" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350" scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="220,200,80,255" />
+                <ParticleEmitter particle="FlareBubbles" particleamount="2" anglemin="0" anglemax="360" velocitymin="0" velocitymax="50"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget" >
+                <Conditional entitytype="eq Structure"/>
+                <Conditional hastag="eq door"/>
+                <ParticleEmitter particle="spark" copyentityangle="true" anglemin="-10" anglemax="10" particleamount="8" velocitymin="100" velocitymax="200" scalemin="0.9" scalemax="1.8" colormultiplier="220,200,80,255"/>
             </StatusEffect>
             <StatusEffect type="OnNotContained" target="This">
                 <Remove />

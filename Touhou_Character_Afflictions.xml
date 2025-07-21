@@ -1555,7 +1555,7 @@
             <StatValue stattype="SkillGainSpeed" value="-0.3" />
             <StatValue stattype="MeleeAttackMultiplier" value="0.3"/>
             <StatValue stattype="RangedAttackMultiplier" value="-0.3"/>
-            <StatValue stattype="ExplosionDamageMultiplier" value="-0.4"/>
+            <StatValue stattype="ExplosionDamageMultiplier" value="-0.8"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Closed_Eyes_Of_Koishi.png" sourcerect="0,0,128,128" color="255,255,255,255" />
     </Affliction>

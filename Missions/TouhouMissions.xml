@@ -11,9 +11,9 @@
           reward="800"
           achievementidentifier="cargomission"
           requireddeliveryamount="0.8">
-    <Reputation identifier="location" amount="2" />
+    <Reputation identifier="location" amount="1" />
     <Items>
-      <Item identifier="mediccrate" reward="360" maxcount="8">
+      <Item identifier="mediccrate" reward="375" maxcount="8">
         <Item identifier="Touhou_Base_Metal" />
         <Item identifier="Reiki_Dust_Caking" amount="2"/>
         <Item identifier="Byproduct_Alchemical" amount="4"/>
@@ -34,9 +34,9 @@
           reward="800"
           achievementidentifier="cargomission"
           requireddeliveryamount="0.8">
-    <Reputation identifier="location" amount="4" />
+    <Reputation identifier="location" amount="3" />
     <Items>
-      <Item identifier="mediccrate" reward="500" maxcount="6">
+      <Item identifier="mediccrate" reward="500" maxcount="5">
         <Item identifier="Touhou_Food_Ingredients_Random_Box_Seafood" />
         <Item identifier="Touhou_Food_Ingredients_Random_Box_Meat" />
         <Item identifier="Touhou_Food_Ingredients_Random_Box_Vegetarian" />
@@ -77,7 +77,7 @@
           type="Monster"
           difficulty="1"
           commonness="100"
-          reward="1800"
+          reward="1500"
           sonarlabel="Maoyu"
           maxsonarmarkerdistance="10000"
           description="海里游荡的毛玉，虽然他们几乎没有攻击性，但声呐上密密麻麻的光点总是让人心头一紧，得知是毛玉后又哭笑不得">
@@ -96,7 +96,7 @@
           type="Monster"
           difficulty="2"
           commonness="100"
-          reward="4800"
+          reward="4000"
           sonarlabel="Touhou_Little_Ghost"
           maxsonarmarkerdistance="10000"
           description="似乎是因为某种都市传说，总之，这条航路上漂浮着一些非常危险的幽灵，从外表看他们没有什么威胁性，但却给这条航线上的人们带来了不小的麻烦。清理时务必小心！">
@@ -116,7 +116,7 @@
           type="Monster"
           difficulty="3"
           commonness="100"
-          reward="7000"
+          reward="6000"
           textidentifier="killphotosphere"
           maxsonarmarkerdistance="10000"
           sonarlabel="Touhou_Little_Photosphere">
@@ -1073,7 +1073,7 @@
           type="Monster"
           difficulty="4"
           commonness="100"
-          reward="8000"
+          reward="7000"
           maxsonarmarkerdistance="10000"
           sonarlabel="target">
     <monster character="Touhou_Spectral_Shark" min="4" max="4"/>
@@ -1082,7 +1082,6 @@
     <Monster character="Touhou_Spectral_Shark" min="3" max="3" multiplayeronly="true"/>
     <Monster character="Touhou_Little_Ghost" min="2" max="2" multiplayeronly="true"/>
     <Reputation identifier="location" amount="2" />
-    <Reputation identifier="Touhou_Gensokyo" amount="1" />
     <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256" />
     <message header="missionheader.Touhou_Monster_Spectral_Mission01" text="missionmessage.Touhou_Monster_Spectral_Mission01"/>
     <LocationType from="AnyOutpost" to="AnyOutpost" />
@@ -1095,7 +1094,7 @@
           type="Monster"
           difficulty="4"
           commonness="100"
-          reward="10000"
+          reward="8000"
           maxsonarmarkerdistance="10000"
           sonarlabel="target">
     <monster character="Touhou_Spectral_Creeper" min="5" max="5"/>
@@ -1104,9 +1103,53 @@
     <Monster character="Touhou_Spectral_Creeper" min="3" max="3" multiplayeronly="true"/>
     <Monster character="Touhou_Spectral_Shark" min="2" max="2" multiplayeronly="true"/>
     <Reputation identifier="location" amount="2" />
+    <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256" />
+    <message header="missionheader.Touhou_Monster_Spectral_Mission02" text="missionmessage.Touhou_Monster_Spectral_Mission02"/>
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+  </MonsterMission>
+
+  <MonsterMission
+          name="幽灵生物-第一幕"
+          identifier="Touhou_Monster_Spectral_Mission03"
+          tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Hard"
+          type="Monster"
+          difficulty="4"
+          commonness="100"
+          reward="9000"
+          maxsonarmarkerdistance="10000"
+          sonarlabel="target">
+    <monster character="Touhou_Spectral_Whale" min="4" max="4"/>
+    <monster character="Touhou_Spectral_Creeper" min="1" max="1"/>
+    <monster character="Touhou_Spectral_Shark" min="1" max="1"/>
+    <Monster character="Touhou_Spectral_Whale" min="3" max="3" multiplayeronly="true"/>
+    <Monster character="Touhou_Spectral_Creeper" min="1" max="1" multiplayeronly="true"/>
+    <Monster character="Touhou_Spectral_Shark" min="1" max="1" multiplayeronly="true"/>
+    <Reputation identifier="location" amount="3" />
     <Reputation identifier="Touhou_Gensokyo" amount="1" />
     <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256" />
-    <message header="missionheader.Touhou_Monster_Spectral_Mission01" text="missionmessage.Touhou_Monster_Spectral_Mission01"/>
+    <message header="missionheader.Touhou_Monster_Spectral_Mission03" text="missionmessage.Touhou_Monster_Spectral_Mission03"/>
+    <LocationType from="AnyOutpost" to="AnyOutpost" />
+  </MonsterMission>
+
+  <MonsterMission
+          name="幽灵生物-第二幕"
+          identifier="Touhou_Monster_Spectral_Mission04"
+          tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Hard"
+          type="Monster"
+          difficulty="4"
+          commonness="100"
+          reward="10000"
+          maxsonarmarkerdistance="10000"
+          sonarlabel="target">
+    <monster character="Touhou_Spectral_Runner" min="3" max="3"/>
+    <monster character="Touhou_Spectral_Whale" min="1" max="1"/>
+    <monster character="Touhou_Spectral_Creeper" min="1" max="1"/>
+    <monster character="Touhou_Spectral_Shark" min="1" max="1"/>
+    <Monster character="Touhou_Spectral_Runner" min="2" max="2" multiplayeronly="true"/>
+    <Reputation identifier="location" amount="3" />
+    <Reputation identifier="Touhou_Gensokyo" amount="1" />
+    <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256" />
+    <message header="missionheader.Touhou_Monster_Spectral_Mission04" text="missionmessage.Touhou_Monster_Spectral_Mission04"/>
     <LocationType from="AnyOutpost" to="AnyOutpost" />
   </MonsterMission>
 

@@ -148,11 +148,12 @@
         </AbilityGroupInterval>
 
         <!--凭依武装效果-->
-        <AbilityGroupInterval Interval="2.9">
+        <AbilityGroupInterval Interval="1.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Hyouibana_Armor_Effect01" />
             </Conditions>
             <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="Touhou_Hyouibana_Armor_Effect_No_Fuel" multiplier="0.0" />
                 <CharacterAbilityModifyResistance resistanceid="radiationsickness" multiplier="0.0" />
                 <CharacterAbilityModifyResistance resistanceid="alieninfection" multiplier="0.2" />
                 <CharacterAbilityModifyResistance resistanceid="paralysis" multiplier="0.3" />

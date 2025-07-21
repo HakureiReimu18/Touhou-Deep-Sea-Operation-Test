@@ -1082,7 +1082,7 @@
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="2.5">
             <RequiredSkill identifier="weapons" level="60" />
             <RequiredItem identifier="Jin_Alchemical" amount="2" />
-            <RequiredItem identifier="dementonite" amount="4" />
+            <RequiredItem identifier="dementonite" amount="5" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
             <RequiredItem identifier="Celestial_Decay" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
@@ -1111,8 +1111,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false" />
         <Projectile characterusable="false" launchimpulse="60" spread="5" removeonhit="true" damagedoors="true">
             <Attack structuredamage="10" itemdamage="10" targetforce="30" targetimpulse="30" penetration="0.35" severlimbsprobability="0.5" >
-                <Affliction identifier="lacerations" strength="16" />
-                <Affliction identifier="lacerations" strength="6" probability="0.75" />
+                <Affliction identifier="lacerations" strength="15" />
+                <Affliction identifier="lacerations" strength="5" probability="0.75" />
                 <Affliction identifier="bleeding" strength="2" />
             </Attack>
             <StatusEffect type="OnImpact" target="This" >

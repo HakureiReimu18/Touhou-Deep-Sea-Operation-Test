@@ -116,7 +116,7 @@
     <talentname.Touhou_Candy_Fun>糖果乐事</talentname.Touhou_Candy_Fun>
     <talentdescription.Touhou_Candy_Fun>巡回结束完成任意任务，获得‖color:gui.orange‖妖精糖果（柚子味）‖end‖，在医疗界面使用不同的糖果可以获得不同的额外增益各‖color:gui.green‖150‖end‖秒：
         ‖color:gui.yellow‖苹果味‖end‖：‖color:gui.orange‖极速‖end‖‖color:gui.green‖150点‖end‖；
-        ‖color:gui.yellow‖蜜桃味‖end‖：‖color:gui.orange‖最大生命值‖end‖提高‖color:gui.green‖15%‖end‖；
+        ‖color:gui.yellow‖蜜桃味‖end‖：‖color:gui.orange‖最大生命值‖end‖提高‖color:gui.green‖10%‖end‖；
         ‖color:gui.yellow‖柠檬味‖end‖：‖color:gui.orange‖攻击速度‖end‖提高‖color:gui.green‖10%‖end‖；
         ‖color:gui.yellow‖柚子味‖end‖：‖color:gui.orange‖攻击伤害‖end‖提高‖color:gui.green‖提高10%‖end‖。</talentdescription.Touhou_Candy_Fun>
     <talentname.Touhou_Insouciance>无忧无虑</talentname.Touhou_Insouciance>
@@ -138,11 +138,11 @@
     <talentdescription.Touhou_Cute_Prank>每次击杀生物都有‖color:gui.green‖50%‖end‖概率为自己增加‖color:gui.green‖2‖end‖点异变能量，当异变能量大于‖color:gui.green‖30‖end‖时，增加‖color:gui.green‖10%‖end‖最大生命值，炮塔的射速提高‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Cute_Prank>
     <talentname.Eastern_And_Little_Nature_Deity>妖精大战争</talentname.Eastern_And_Little_Nature_Deity>
     <talentdescription.Eastern_And_Little_Nature_Deity>
-        异变能量大于‖color:gui.green‖40‖end‖时，提高‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击伤害‖end‖，减少‖color:gui.green‖10%‖end‖受到的‖color:gui.orange‖物理伤害‖end‖，提高‖color:gui.green‖10%‖end‖技能水平。
+        异变能量大于‖color:gui.green‖40‖end‖时，提高‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击伤害‖end‖，‖color:gui.orange‖物理伤害抗性‖end‖增加‖color:gui.green‖10%‖end‖，提高‖color:gui.green‖10%‖end‖技能水平。
         解锁配方：‖color:gui.orange‖冰之勇者剑，地狱火炬，三妖精的三重大弩炮‖end‖。</talentdescription.Eastern_And_Little_Nature_Deity>
     <talenttree.Mischievous_Mischief>稚气未脱</talenttree.Mischievous_Mischief>
     <talentname.Touhou_Magical_Assistant>魔法助理</talentname.Touhou_Magical_Assistant>
-    <talentdescription.Touhou_Magical_Assistant>如果船上有魔法使，则为其提供‖color:gui.green‖25%‖end‖‖color:gui.orange‖技能获取速度‖end‖，每个巡回获得额外‖color:gui.green‖10%‖end‖金钱</talentdescription.Touhou_Magical_Assistant>
+    <talentdescription.Touhou_Magical_Assistant>如果船上有魔法使，则为其提供‖color:gui.green‖25%‖end‖‖color:gui.orange‖技能获取速度‖end‖，每个巡回获得额外‖color:gui.green‖5%‖end‖金钱</talentdescription.Touhou_Magical_Assistant>
     <talentname.Touhou_Self_Made>自学成才</talentname.Touhou_Self_Made>
     <talentdescription.Touhou_Self_Made>每个巡回完成任意任务，可以获得一块‖color:gui.orange‖以太层金属‖end‖，若无人死亡，还将额外获得‖color:gui.green‖10%‖end‖的经验</talentdescription.Touhou_Self_Made>
     <talentname.Quiet_And_Well_Behaved>安静乖巧</talentname.Quiet_And_Well_Behaved>

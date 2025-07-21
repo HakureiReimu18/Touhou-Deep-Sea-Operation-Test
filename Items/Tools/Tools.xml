@@ -97,18 +97,16 @@
                 <RequiredItems items="loadable,battery,mobilebattery" type="Contained" />
                 <Conditional condition="lt 100" TargetContainedItem="true" />
             </StatusEffect>
+            <StatusEffect type="Always" targettype="Contained" Condition="2.5" Interval="1.0" disabledeltatime="true" >
+                <Conditional TargetContainer="true" condition="gt 0" />
+            </StatusEffect>
         </Holdable>
         <ItemContainer capacity="2" maxstacksize="1" canbeselected="true" hideitems="true" >
-            <Containable items="loadable,battery" excludeditems="Power_Bank">
-                <StatusEffect type="OnContaining" targettype="Contained" Condition="2.5" Interval="1.0" disabledeltatime="true" >
-                    <Conditional TargetContainer="true" condition="gt 0" />
-                </StatusEffect>
-            </Containable>
+            <Containable items="loadable,battery" excludeditems="Power_Bank"/>
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
             <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
         </ItemContainer>
-        <Repairable />
         <Quality>
             <QualityStat stattype="Condition" value="0.2" />
         </Quality>
@@ -607,8 +605,11 @@
             <SubContainer capacity="9" depth="0.5" maxstacksize="64" displaycontainedstatus="true" ExtraStackSize="2">
                 <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,bigitem,toolbox,bulkyweapon,Touhou_Magic_Charging_Box"/>
             </SubContainer>
-            <SubContainer capacity="3" depth="0.5" maxstacksize="64" displaycontainedstatus="true"  ExtraStackSize="2">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,bigitem,bulkyweapon"/>
+            <SubContainer capacity="1" depth="0.5" maxstacksize="64" displaycontainedstatus="true"  ExtraStackSize="2">
+                <Containable items="smallitem,mediumitem,Touhou_Magic_Charging_Box" excludeditems="backpack,crate,toolbelt,bigitem,bulkyweapon"/>
+            </SubContainer>
+            <SubContainer capacity="2" depth="0.5" maxstacksize="64" displaycontainedstatus="true"  ExtraStackSize="2">
+                <Containable items="smallitem,mediumitem,bulkyweapon,Touhou_Magic_Charging_Box" excludeditems="backpack,crate,toolbelt,bigitem"/>
             </SubContainer>
         </ItemContainer>
 
@@ -663,7 +664,7 @@
     </Item>
 
     <!--文文的信物-->
-    <Item name="文文的信物" identifier="Touhou_Aya_Token" category="Misc" subcategory="Touhou" maxstacksize="32" tags="smallitem" scale="0.35" cargocontaineridentifier="metalcrate" description="">
+    <Item name="天狗的信物" identifier="Touhou_Aya_Token" category="Misc" subcategory="Touhou" maxstacksize="32" tags="smallitem" scale="0.35" cargocontaineridentifier="metalcrate" description="">
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Aya_Token.png" sourcerect="0,0,108,108" depth="0.55" />
         <Body width="96" height="96" density="10" />
         <Fabricate suitablefabricators="fabricator" requiredtime="4" requiresrecipe="true" >
@@ -844,7 +845,7 @@
                 <Containable items="smallitem,Power_Bank,chem,medical,refrigerated,stasisbag" excludeditems="backpack,toolbelt,toolbox,bandolier,organ,bulkyweapon,mobilecontainer,organcrate"/>
             </SubContainer>
             <SubContainer capacity="2" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,Power_Bank,chem,medical,refrigerated,stasisbag,Touhou_Magic_Charging_Box,toolbox" excludeditems="backpack,toolbelt,bandolier,organ,bulkyweapon,organcrate"/>
+                <Containable items="smallitem,Power_Bank,chem,medical,refrigerated,stasisbag,Touhou_Magic_Charging_Box,toolbox,bulkyweapon" excludeditems="backpack,toolbelt,bandolier,organ,bulkyweapon,organcrate"/>
             </SubContainer>
         </ItemContainer>
         <Holdable slots="RightHand+LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30" aimable="false" msg="ItemMsgPickUpUse" canbeselected="false"
@@ -922,7 +923,7 @@
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100" />
             </StatusEffect>
         </Holdable>
-        <RepairTool firedamage="10.0" structurefixamount="3.5" range="200" barrelpos="25,5" particles="weld" repairmultiple="true" repairthroughwalls="false" levelwallfixamount="-0.8" targetforce="10">
+        <RepairTool firedamage="10.0" structurefixamount="3.0" range="200" barrelpos="25,5" particles="weld" repairmultiple="true" repairthroughwalls="false" levelwallfixamount="-0.8" targetforce="10">
             <!-- the item must contain a welding fuel tank for it to work -->
             <RequiredItems items="weldingtoolfuel,Touhou_Fix_Foamg_Tank" type="Contained" />
             <RequiredItems items="Welding_Mode" type="Contained" />
@@ -939,10 +940,10 @@
             <StatusEffect type="OnUse" targettype="Contained" targets="weldingfueltank" Condition="-2.7" />
             <StatusEffect type="OnUse" targettype="Contained" targets="incendiumfueltank" Condition="-1.5" />
             <StatusEffect type="OnUse" targettype="Contained" targets="Touhou_Fix_Foamg_Tank" Condition="-0.2" />
-            <StatusEffect type="OnUse" target="This" structurefixamount="4.5" setvalue="true" Interval="0.5" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="This" structurefixamount="4.0" setvalue="true" Interval="0.5" disabledeltatime="true" >
                 <RequiredItems items="Touhou_Fix_Foamg_Tank" type="Contained" />
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" structurefixamount="3.5" setvalue="true" Interval="0.5" disabledeltatime="true" >
+            <StatusEffect type="OnUse" target="This" structurefixamount="3.0" setvalue="true" Interval="0.5" disabledeltatime="true" >
                 <RequiredItems items="weldingfueltank,incendiumfueltank,Touhou_Kappa_Welding_Tool_Ammo" type="Contained" />
             </StatusEffect>
             <!-- welding a door, it will get stuck after a while -->
@@ -1327,7 +1328,7 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.5" colormultiplier="255,100,100,220"/>
             <Attack itemdamage="110" targetforce="2" targetimpulse="6" penetration="0.1" severlimbsprobability="0.4">
                 <Affliction identifier="lacerations" strength="5" />
-                <Affliction identifier="burn" strength="15" />
+                <Affliction identifier="burn" strength="10" />
                 <Affliction identifier="gunshotwound" strength="5" />
                 <Affliction identifier="Touhou_Weakness" strength="0.7" />
                 <Affliction identifier="stun" strength="0.1" probability="0.6"/>
@@ -2999,7 +3000,7 @@
     <!--共情物：阴阳玉-->
     <Item name="" identifier="Touhou_Empathy_Yin_Yang_Orb" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3030,7 +3031,7 @@
     <!--共情物：阴阳玉（针）-->
     <Item name="共情物：阴阳玉（针）" identifier="Touhou_Empathy_Yin_Yang_Orb_Needle" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3061,7 +3062,7 @@
     <!--共情物：珍贵御扎-->
     <Item name="共情物：珍贵御扎" identifier="Touhou_Empathy_Precious_Amulet" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3092,7 +3093,7 @@
     <!--共情物：茶杯灵梦-->
     <Item name="共情物：茶杯灵梦" identifier="Touhou_Empathy_Tea_Cup_Reimu" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3123,7 +3124,7 @@
     <!--共情物：迷你八卦炉-->
     <Item name="共情物：迷你八卦炉" identifier="Touhou_Empathy_Mini_Hakkero" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3154,7 +3155,7 @@
     <!--共情物：迷你八卦炉（导弹）-->
     <Item name="共情物：迷你八卦炉（导弹）" identifier="Touhou_Empathy_Mini_Hakkero_Missile" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3185,7 +3186,7 @@
     <!--共情物：茶杯魔理沙-->
     <Item name="共情物：茶杯魔理沙" identifier="Touhou_Empathy_Tea_Cup_Marisa" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3216,7 +3217,7 @@
     <!--共情物：收藏家的教训-->
     <Item name="共情物：收藏家的教训" identifier="Touhou_Empathy_The_Collector_Lesson" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3247,7 +3248,7 @@
     <!--共情物：吸血鬼之牙-->
     <Item name="共情物：吸血鬼之牙" identifier="Touhou_Empathy_Vampire_Fangs" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3278,7 +3279,7 @@
     <!--共情物：半灵的一半-->
     <Item name="共情物：半灵的一半" identifier="Touhou_Empathy_Half_Of_Half_Spirit" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3309,7 +3310,7 @@
     <!--共情物：备用半灵-->
     <Item name="共情物：备用半灵" identifier="Touhou_Empathy_Spare_Half_Spirit" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3340,7 +3341,7 @@
     <!--共情物：疾风木屐-->
     <Item name="共情物：疾风木屐" identifier="Touhou_Empathy_Hurricane_Sandals" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3371,7 +3372,7 @@
     <!--共情物：不死鸟之尾-->
     <Item name="共情物：不死鸟之尾" identifier="Touhou_Empathy_Phoenix_Tail" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3402,7 +3403,7 @@
     <!--共情物：未雨绸缪之符-->
     <Item name="共情物：未雨绸缪之符" identifier="Touhou_Empathy_Spell_Card_Of_Preparedness" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3433,7 +3434,7 @@
     <!--共情物：魔法使的基础练习-->
     <Item name="共情物：魔法使的基础练习" identifier="Touhou_Empathy_Basic_Training_For_Magicians" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3464,7 +3465,7 @@
     <!--共情物：忍耐的要石-->
     <Item name="共情物：忍耐的要石" identifier="Touhou_Empathy_Essential_Stone_Of_Patience" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3495,7 +3496,7 @@
     <!--共情物：要石导弹-->
     <Item name="共情物：要石导弹" identifier="Touhou_Empathy_Essential_Stone_Missile" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3526,7 +3527,7 @@
     <!--共情物：激励狛犬-->
     <Item name="共情物：激励狛犬" identifier="Touhou_Empathy_Encouraging_Komainu" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3557,7 +3558,7 @@
     <!--共情物：守护狛犬-->
     <Item name="共情物：守护狛犬" identifier="Touhou_Empathy_Guardian_Komainu" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3588,7 +3589,7 @@
     <!--共情物：破坏的美学-->
     <Item name="共情物：破坏的美学" identifier="Touhou_Empathy_Aesthetics_Of_Destruction" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3619,7 +3620,7 @@
     <!--共情物：恼人的UFO-->
     <Item name="共情物：恼人的UFO" identifier="Touhou_Empathy_Annoying_UFO" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3650,7 +3651,7 @@
     <!--共情物：疯狂之月-->
     <Item name="共情物：疯狂之月" identifier="Touhou_Empathy_Lunatic_Moon" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3681,7 +3682,7 @@
     <!--共情物：燃烧生命的火把-->
     <Item name="共情物：燃烧生命的火把" identifier="Touhou_Empathy_Torch_Of_Burning_Life" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3712,7 +3713,7 @@
     <!--共情物：冰之妖精-->
     <Item name="共情物：冰之妖精" identifier="Touhou_Empathy_Ice_Fairy" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3743,7 +3744,7 @@
     <!--共情物：小石子帽子-->
     <Item name="共情物：小石子帽子" identifier="Touhou_Empathy_Pebble_Hat" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3774,7 +3775,7 @@
     <!--共情物：上海人偶-->
     <Item name="共情物：上海人偶" identifier="Touhou_Empathy_Shanghai_Doll" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3805,7 +3806,7 @@
     <!--共情物：活泼的无力-->
     <Item name="共情物：活泼的无力" identifier="Touhou_Empathy_Lively_Powerlessness" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3836,7 +3837,7 @@
     <!--共情物：疯狂的寂静-->
     <Item name="共情物：疯狂的寂静" identifier="Touhou_Empathy_Crazy_Silence" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3867,7 +3868,7 @@
     <!--共情物：静谧的闪耀-->
     <Item name="共情物：静谧的闪耀" identifier="Touhou_Empathy_Tranquil_Shimmer" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3898,7 +3899,7 @@
     <!--共情物：女仆飞刀-->
     <Item name="共情物：女仆飞刀" identifier="Touhou_Empathy_Maid_Knife" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3929,7 +3930,7 @@
     <!--共情物：女仆飞刀（跳弹）-->
     <Item name="共情物：女仆飞刀（跳弹）" identifier="Touhou_Empathy_Maid_Knife_Bouncing" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3960,7 +3961,7 @@
     <!--共情物：守财奴的教诲-->
     <Item name="共情物：守财奴的教诲" identifier="Touhou_Empathy_The_Miser_Lesson" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -3991,7 +3992,7 @@
     <!--共情物：资本主义的困境-->
     <Item name="共情物：资本主义的困境" identifier="Touhou_Empathy_The_Dilemma_Of_Capitalism" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -4022,7 +4023,7 @@
     <!--共情物：平安归来蛙护身符-->
     <Item name="共情物：平安归来蛙护身符" identifier="Touhou_Empathy_Frog_Amulet_For_Safe_Return" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -4053,7 +4054,7 @@
     <!--共情物：放入蛇蜕的护身符-->
     <Item name="共情物：放入蛇蜕的护身符" identifier="Touhou_Empathy_Snake_Skin_Amulet" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -4084,7 +4085,7 @@
     <!--共情物：画面的界线-->
     <Item name="共情物：画面的界线" identifier="Touhou_Empathy_Boundary_Of_The_Screen" nameidentifier="Touhou_Empathy_Item" category="Material" subcategory="Touhou" maxstacksize="16" tags="smallitem,Touhou_Empathy_Item" cargocontaineridentifier="mediccrate" scale="0.2" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medfabcab" />
-        <Price baseprice="750" sold="false">
+        <Price baseprice="250" sold="false">
             <Price storeidentifier="merchantcity"/>
             <Price storeidentifier="merchantresearch" multiplier="1.2" />
         </Price>
@@ -4415,7 +4416,7 @@
     <!--小熊腰包-->
     <Item name="小熊腰包" identifier="Touhou_Bear_Doll_Bag" scale="0.8" subcategory="Touhou" category="Equipment" tags="mediumitem,Touhou_Bear_Doll_Bag,backpack" fireproof="true" waterproof="true" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="medcab" />
-        <Price baseprice="5000" minleveldifficulty="15">
+        <Price baseprice="4000" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" multiplier="1.4" sold="false" />
             <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1" />
             <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" />
@@ -4604,9 +4605,9 @@
 
     <!--魔药燃料棒-->
     <Item name="魔药燃料棒" identifier="Touhou_Magic_Plant_Fuelrod" Category="Fuel" subcategory="Touhou" Tags="smallitem,reactorfuel,divingsuitfuel,fuelrod" maxstacksize="32"
-          maxstacksizecharacterinventory="12" cargocontaineridentifier="metalcrate" health="60" scale="0.4">
+          maxstacksizecharacterinventory="12" cargocontaineridentifier="metalcrate" health="50" scale="0.2">
         <PreferredContainer primary="reactorcab" />
-        <Price baseprice="80" sold="true" >
+        <Price baseprice="70" sold="true" >
             <Price storeidentifier="merchantoutpost" />
             <Price storeidentifier="merchantcity" />
             <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -4614,12 +4615,14 @@
             <Price storeidentifier="merchantmine" multiplier="1.1" />
             <Price storeidentifier="merchantengineering" multiplier="0.9" minavailable="2" />
         </Price>
-        <Deconstruct time="10"/>
+        <Deconstruct time="5"/>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
-            <RequiredSkill identifier="Touhou_Magic" level="40" />
-            <RequiredSkill identifier="electrical" level="40" />
+            <RequiredSkill identifier="Touhou_Magic" level="20" />
+            <RequiredSkill identifier="electrical" level="20" />
             <RequiredItem tag="plantitem" />
             <RequiredItem identifier="Plant_Essential_Oil" amount="6" />
+            <RequiredItem identifier="carbon" />
+            <RequiredItem identifier="chlorine" />
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Magic_Plant_Fuelrod.png" sourcerect="0,0,136,160" origin="0.5,0.5" />
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Magic_Plant_Fuelrod.png" sourcerect="150,11,188,62" depth="0.55" />
@@ -4633,9 +4636,9 @@
 
     <!--幽灵燃料棒-->
     <Item name="幽灵燃料棒" identifier="Touhou_Spectral_Core_Fuelrod" Category="Fuel" subcategory="Touhou" Tags="smallitem,reactorfuel,divingsuitfuel,thoriumfuelrod" maxstacksize="32"
-          maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" health="500" scale="0.5">
+          maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" health="500" scale="0.25">
         <PreferredContainer primary="reactorcab" />
-        <Price baseprice="400" sold="false" >
+        <Price baseprice="200" sold="false" >
             <Price storeidentifier="merchantoutpost" />
             <Price storeidentifier="merchantcity" />
             <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -4647,6 +4650,7 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
             <RequiredSkill identifier="Touhou_Magic" level="60" />
             <RequiredItem identifier="Touhou_Spectral_Core_Item" />
+            <RequiredItem identifier="Reiki_Dust" amount="16" />
             <RequiredItem identifier="Touhou_Base_Metal" amount="2" />
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Spectral_Core_Fuelrod.png" sourcerect="0,0,150,160" origin="0.5,0.5" />

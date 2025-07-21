@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Items>
 
-    <Item name="" identifier="Power_Point" tags="smallitem,Touhou_Power_Point" subcategory="Touhou" category="Misc" maxstacksize="32">
+    <Item name="" identifier="Power_Point" tags="smallitem,Touhou_Power_Point,disallowduplicatedeconstructoutput" subcategory="Touhou" category="Misc" maxstacksize="32">
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.01" />
         <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.02" />
         <PreferredContainer primary="ruintreasure" amount="1" spawnprobability="0.04" />
@@ -32,7 +32,7 @@
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
     </Item>
 
-    <Item name="" identifier="Score_Point" tags="smallitem" subcategory="Touhou" category="Misc" maxstacksize="32">
+    <Item name="" identifier="Score_Point" tags="smallitem,disallowduplicatedeconstructoutput" subcategory="Touhou" category="Misc" maxstacksize="32">
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="2" spawnprobability="0.06" />
         <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="3" spawnprobability="0.12" />
         <PreferredContainer primary="ruintreasure" minamount="2" maxamount="3" spawnprobability="0.15" />
@@ -236,8 +236,7 @@
             <Price storeidentifier="merchantmilitary" minavailable="56" />
             <Price storeidentifier="merchantmine" minavailable="60"/>
         </Price>
-        <Deconstruct time="1">
-        </Deconstruct>
+        <Deconstruct time="1"/>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="0.5" amount="3">
             <RequiredSkill identifier="Touhou_Magic" level="10" />
             <RequiredItem identifier="carbon" amount="2"/>
@@ -481,7 +480,7 @@
 
     <!--《文文。新闻》-->
     <Item identifier="Aya_News" tags="smallitem" subcategory="Touhou" category="Misc" cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.1" >
-        <Price baseprice="1200" >
+        <Price baseprice="800" >
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
             <Price storeidentifier="merchantcity" minavailable="8" />
             <Price storeidentifier="merchantresearch" minavailable="8" />
@@ -741,7 +740,7 @@
         <PreferredContainer primary="ruintreasure" amount="1" spawnprobability="0.02" />
         <PreferredContainer secondary="ruinstoragelarge" amount="1" spawnprobability="0.01" />
         <PreferredContainer primary="Touhou_Rippling" amount="1" spawnprobability="1" />
-        <Price baseprice="10000" sold="false">
+        <Price baseprice="1000" sold="false">
             <Price locationtype="outpost" multiplier="1.1" minavailable="6" />
             <Price locationtype="city" multiplier="0.9" minavailable="14" />
             <Price locationtype="research" multiplier="0.85" maxavailable="16" />
@@ -819,15 +818,8 @@
 
     <!--《红斑博物志》-->
     <Item name="《红斑博物志》" identifier="Touhou_Red_Spot_Freak_Report" tags="smallitem" subcategory="Touhou" category="Misc" cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.75" >
-        <Price baseprice="400" sold="false">
-            <Price storeidentifier="merchantoutpost" minavailable="8"/>
-            <Price storeidentifier="merchantcity" minavailable="8" />
-            <Price storeidentifier="merchantresearch" minavailable="8" />
-            <Price storeidentifier="merchantmilitary" minavailable="8" />
-            <Price storeidentifier="merchantmine" minavailable="8"/>
-        </Price>
         <Deconstruct time="1" >
-            <Item identifier="organicfiber" amount="3" />
+            <Item identifier="organicfiber" amount="2" />
         </Deconstruct>
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Red_Spot_Freak_Report.png" depth="0.4" sourcerect="0,0,36,52" />
         <Body width="28" height="36" density="10" />
