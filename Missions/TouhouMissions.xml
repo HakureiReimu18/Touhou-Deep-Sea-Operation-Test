@@ -665,6 +665,7 @@
     <Reputation identifier="coalition" amount="6" />
     <Reputation identifier="Touhou_Gensokyo" amount="6" />
     <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons04.png" sourcerect="0,0,256,256" />
+    <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Lunatic_Mission_Resistance_Event" campaignonly="true"/>
     <LocationType from="AnyOutpost" to="AnyOutpost" />
     <message header="missionheader.FindClownpiece" text="missionmessage.FindClownpiece"/>
   </MonsterMission>
@@ -894,18 +895,11 @@
     <LocationTypeChange from="Touhou_Trojan_Green_Asteroid_Outpost_LocationType" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5" />
     <message header="missionheader.Touhou_OutpostDestroyMission09" text="missionmessage.Touhou_OutpostDestroyMission09" />
     <Characters>
-      <Character identifier="Touhou_ODM09_Enemy_Human_Lunatic" from="Touhou_ODM9_Enemy_NPC" moduleflags="researchmodule" requirekill="true" asfaraspossible="true" />
-      <Character identifier="Touhou_ODM09_Enemy_Human_Lunatic" from="Touhou_ODM9_Enemy_NPC" moduleflags="securitymodule" requirekill="true" multiplayeronly="true" asfaraspossible="true" />
-      <Character identifier="Touhou_ODM09_Enemy_Human_Lunatic" from="Touhou_ODM9_Enemy_NPC" moduleflags="securitymodule" requirekill="true" multiplayeronly="true" asfaraspossible="true" />
       <Character identifier="Touhou_ODM09_Enemy_Human_Hard" from="Touhou_ODM9_Enemy_NPC" moduleflags="crewmodule" requirekill="true" asfaraspossible="true" />
-      <Character identifier="Touhou_ODM09_Enemy_Human_Hard" from="Touhou_ODM9_Enemy_NPC" moduleflags="crewmodule" requirekill="true" asfaraspossible="true" />
-      <Character identifier="Touhou_ODM09_Enemy_Human_Hard" from="Touhou_ODM9_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" multiplayeronly="true" />
       <Character identifier="Touhou_ODM09_Enemy_Human_Hard" from="Touhou_ODM9_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" multiplayeronly="true" />
       <Character identifier="Touhou_ODM03_Enemy_Human_Normal" from="Touhou_ODM3_Enemy_NPC" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" asfaraspossible="true" />
-      <Character identifier="Touhou_ODM03_Enemy_Human_Normal" from="Touhou_ODM3_Enemy_NPC" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" />
       <Character identifier="Touhou_ODM03_Enemy_Human_Normal" from="Touhou_ODM3_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true" />
       <Character identifier="Touhou_ODM03_Enemy_Human_Easy" from="Touhou_ODM3_Enemy_NPC" moduleflags="researchmodule" requirekill="true" />
-      <Character identifier="Touhou_ODM03_Enemy_Human_Easy" from="Touhou_ODM3_Enemy_NPC" moduleflags="securitymodule" requirekill="true" />
       <Character identifier="Touhou_ODM03_Enemy_Human_Easy" from="Touhou_ODM3_Enemy_NPC" moduleflags="securitymodule" asfaraspossible="true" requirekill="true" />
     </Characters>
   </OutpostDestroyMission>

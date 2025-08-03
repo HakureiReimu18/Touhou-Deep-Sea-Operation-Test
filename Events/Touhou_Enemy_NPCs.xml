@@ -769,7 +769,6 @@
                 </Item>
                 <Item identifier="Touhou_Merciless_Ammo" amount="4"/>
                 <Item identifier="Power_Point" />
-                <Item identifier="Touhou_Precious_Metal" />
             </ItemSet>
         </npc>
 
@@ -806,7 +805,6 @@
                 <Item identifier="Touhou_Aphelion_Ammo" amount="4" />
                 <Item identifier="Touhou_External_Medicine_Box" />
                 <Item identifier="deusizine" amount="2"/>
-                <Item identifier="Touhou_Precious_Metal" />
             </ItemSet>
         </npc>
 
