@@ -4196,13 +4196,13 @@
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1" >
                 <Containable items="Touhou_Mercy_Barrel" hide="false" itempos="87,6.5" depth="0.56" setactive="true" >
-                    <StatusEffect type="OnInserted" target="This" penetration="0.25" barrelpos="1700,90" setvalue="true" />
+                    <StatusEffect type="OnContaining" target="This" penetration="0.25" barrelpos="1700,90" setvalue="true" />
                     <StatusEffect type="OnRemoved" target="This" penetration="0.1" barrelpos="1400,90" setvalue="true" />
                 </Containable>
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1" >
                 <Containable items="Touhou_Mercy_Sight" hide="false" itempos="-20,12.5" depth="0.56" setactive="true" >
-                    <StatusEffect type="OnInserted" target="This" weapondamagemodifier="1.5" setvalue="true" />
+                    <StatusEffect type="OnContaining" target="This" weapondamagemodifier="1.5" setvalue="true" />
                     <StatusEffect type="OnRemoved" target="This" weapondamagemodifier="1.2" setvalue="true" />
                 </Containable>
             </SubContainer>
