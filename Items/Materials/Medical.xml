@@ -219,8 +219,6 @@
                 <ReduceAffliction type="infection" amount="6" />
                 <ReduceAffliction type="triton_7L" amount="2" />
                 <ReduceAffliction type="tsm_bl" amount="2" />
-                <ReduceAffliction type="zlqy" amount="2" />
-                <ReduceAffliction type="respawnpenalty" amount="0.1" />
             </StatusEffect>
             <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" multiplyafflictionsbymaxvitality="true" >
                 <Affliction identifier="chemaddiction" amount="20" />

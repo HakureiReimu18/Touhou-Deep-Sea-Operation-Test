@@ -784,7 +784,7 @@
             <SlotIcon slotindex="0" texture="Content/UI/ContainerIndicators.png" sourcerect="1,123,120,29" origin="0.5,0.5" />
             <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="flashlight" hide="false" itempos="18,12" setactive="true" />
+                <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="false" itempos="18,12" setactive="true" />
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="0" soundrange="500" fadeouttime="2" />
@@ -1064,7 +1064,7 @@
             </Containable>
             <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="flashlight" hide="false" itempos="22,-1" setactive="true" />
+                <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="false" itempos="22,-1" setactive="true" />
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
@@ -2890,6 +2890,10 @@
         </Holdable>
         <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" containedstateindicatorstyle="battery">
             <Containable items="Lightning_Kanameishi"/>
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="false" itempos="30,0" setactive="true" />
+            </SubContainer>
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
         </ItemContainer>
         <Quality>
             <QualityStat stattype="FirepowerMultiplier" value="0.067" />
@@ -3100,6 +3104,13 @@
             <!--Reset the reload speed-->
             <StatusEffect type="OnUse" target="This" reload="0.8" setvalue="true" delay="1.5" />
         </MeleeWeapon>
+        <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
+            <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
+            <SlotIcon slotindex="0" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="true" itempos="30,0" setactive="true" />
+            </SubContainer>
+        </ItemContainer>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
             <QualityStat stattype="StrikingPowerMultiplier" value="0.15" />
@@ -4918,6 +4929,13 @@
             <!--Reset the reload speed-->
             <StatusEffect type="OnUse" target="This" reload="1.2" setvalue="true" delay="2.0" stackable="false" />
         </MeleeWeapon>
+        <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
+            <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
+            <SlotIcon slotindex="0" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="true" itempos="30,0" setactive="true" />
+            </SubContainer>
+        </ItemContainer>
         <Quality>
             <QualityStat stattype="StrikingPowerMultiplier" value="0.15" />
         </Quality>
@@ -6059,7 +6077,12 @@
         <Holdable canBeCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />
         <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Lunar_Orbit_Gun_Bullet" removecontaineditemsondeconstruct="true"
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
+            <SlotIcon slotindex="0" texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" origin="0.5,0.5" />
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
             <Containable items="Touhou_Lunar_Orbit_Gun_Bullet" />
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="false" itempos="30,0" setactive="true" />
+            </SubContainer>
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
             <StatusEffect type="OnUse" target="This" condition="-2.5" disabledeltatime="true" >
                 <SpawnItem identifiers="Touhou_Lunar_Orbit_Gun_Bullet" spawnposition="ThisInventory" />
@@ -6940,6 +6963,13 @@
             <!--Reset the reload speed-->
             <StatusEffect type="OnUse" target="This" reload="1.6" setvalue="true" delay="2.0" stackable="false" />
         </MeleeWeapon>
+        <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
+            <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
+            <SlotIcon slotindex="0" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="true" itempos="30,0" setactive="true" />
+            </SubContainer>
+        </ItemContainer>
         <RepairTool barrelpos="64,16" >
             <ParticleEmitter particle="Touhou_Blue_Explosion_Underwater" AngleMax="360" ScaleMultiplier="0.25,0.25" particlespersecond="40" ColorMultiplier="155,255,155,200" />
         </RepairTool>
@@ -7042,7 +7072,7 @@
         </RangedWeapon>
 
         <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorslot="1" containedspritedepth="0.56">
-            <Containable items="flashlight" hide="true" itempos="30,-3" setactive="true" />
+            <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="true" itempos="30,-3" setactive="true" />
             <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
             <SubContainer capacity="1" maxstacksize="12">
@@ -7423,7 +7453,11 @@
                     <Conditional maxchargetime="eq 999" />
                 </StatusEffect>
             </Containable>
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="false" itempos="30,0" setactive="true" />
+            </SubContainer>
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
         </ItemContainer>
         <aitarget sightrange="2000" soundrange="4000" fadeouttime="5" />
         <Quality>
@@ -7598,7 +7632,7 @@
             <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
             <SlotIcon slotindex="2" texture="%ModDir%/Images/Materials/Spiritual_Water.png" sourcerect="100,0,100,139" origin="0.5,0.5" />
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="flashlight" hide="false" itempos="22,-1" setactive="true" />
+                <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="false" itempos="22,-1" setactive="true" />
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="Spiritual_Water" hide="true" itempos="22,-1" setactive="true" />
@@ -8314,7 +8348,7 @@
                 </Containable>
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="flashlight" hide="false" itempos="12,-1" setactive="true" />
+                <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="false" itempos="12,-1" setactive="true" />
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="500" soundrange="1000" fadeouttime="5" />
@@ -8684,6 +8718,13 @@
             <!--Reset the reload speed-->
             <StatusEffect type="OnUse" target="This" reload="0.6" setvalue="true" delay="1.0" stackable="false" />
         </MeleeWeapon>
+        <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
+            <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
+            <SlotIcon slotindex="0" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="true" itempos="30,0" setactive="true" />
+            </SubContainer>
+        </ItemContainer>
         <aitarget sightrange="500" soundrange="250" fadeouttime="1" />
         <Quality>
             <QualityStat stattype="StrikingPowerMultiplier" value="0.1" />
@@ -8796,7 +8837,7 @@
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5" />
             <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="flashlight" hide="false" itempos="12,-1" setactive="true" />
+                <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="false" itempos="12,-1" setactive="true" />
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="500" soundrange="1000" fadeouttime="5" />
@@ -9405,7 +9446,7 @@
             <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5" />
             <Containable items="Touhou_Pellen_Bottle" itempos="3,-17" />
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="flashlight" hide="false" itempos="15,-5" setactive="true"/>
+                <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="false" itempos="15,-5" setactive="true"/>
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="2000" soundrange="500" fadeouttime="3" />
@@ -9808,6 +9849,7 @@
         </RangedWeapon>
         <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
             <SlotIcon slotindex="0" texture="%ModDir%/Images/OtherWeapons/Touhou_Minus_K.png" sourcerect="583,0,21,21" origin="0.5,0.5" />
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
             <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
             <SubContainer capacity="1" maxstacksize="1" >
                 <Containable items="Touhou_Minus_K_Ammo" hide="true" itempos="-21,-3" depth="0.56" setactive="true" >
@@ -9823,6 +9865,9 @@
                         <Conditional condition="gt 0" />
                     </StatusEffect>
                 </Containable>
+            </SubContainer>
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="false" itempos="30,0" setactive="true" />
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="1000" soundrange="3000" fadeouttime="5" />
@@ -9888,7 +9933,7 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.1" colormultiplier="100,100,205,255"/>
             <Attack itemdamage="40" levelwalldamage="20" targetimpulse="5" penetration="0.3" severlimbsprobability="0.75">
                 <Affliction identifier="Touhou_Freeze" strength="18" />
-                <Affliction identifier="lacerations" strength="36" />
+                <Affliction identifier="lacerations" strength="33" />
                 <Affliction identifier="lacerations" strength="9" probability="0.33" />
                 <Affliction identifier="acidburn" strength="3" />
                 <Affliction identifier="Slow_Baka" strength="30" probability="0.3" />
@@ -9905,7 +9950,7 @@
                 <Affliction identifier="Touhou_Minus_K_Bullet_Effect" strength="10" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Touhou_Lost_Dream" strength="5.0" />
+                <Affliction identifier="Touhou_Lost_Dream" strength="3.0" />
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" >
                 <Conditional Touhou_Minus_K_Bullet_Effect="gt 0"/>
@@ -10022,7 +10067,7 @@
             <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
             <SlotIcon slotindex="1" texture="Content/UI/CampaignUIAtlas2.png" sourcerect="896,536,128,64" origin="0.45,0.5" />
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="flashlight" hide="false" itempos="18,-1" setactive="true" />
+                <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="false" itempos="18,-1" setactive="true" />
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="1000" soundrange="3000" fadeouttime="5" />
@@ -11328,7 +11373,7 @@
                 </Containable>
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1">
-                <Containable items="flashlight" hide="false" itempos="30,0" setactive="true" />
+                <Containable items="flashlight,Touhou_Enhanced_Crystal" hide="false" itempos="30,0" setactive="true" />
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="1000" soundrange="3000" fadeouttime="5" />
@@ -11769,6 +11814,7 @@
         <ItemContainer capacity="0" maxstacksize="1" hideitems="true" containedstateindicatorslot="0">
             <ContainedStateIndicator texture="%ModDir%/Images/UI/Touhou_Magic_ContainerIndicators.png" sourcerect="0,0,120,32" />
             <SlotIcon slotindex="0" texture="%ModDir%/Images/OtherWeapons/Touhou_Night_Dance.png" sourcerect="1,138,51,72" origin="0.5,0.5" />
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
             <SubContainer capacity="1" maxstacksize="1" >
                 <Containable items="Touhou_Night_Dance_Ammo" hide="true" itempos="-21,-3" depth="0.56" setactive="true" >
                     <StatusEffect type="OnInserted" target="This" holdpos="46,-40" holdangle="70" maxchargetime="999" setvalue="true" />
@@ -11780,6 +11826,9 @@
                         <Conditional maxchargetime="eq 999" />
                     </StatusEffect>
                 </Containable>
+            </SubContainer>
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="false" itempos="30,0" setactive="true" />
             </SubContainer>
         </ItemContainer>
         <aitarget sightrange="1500" soundrange="3000" fadeouttime="5" />
@@ -12257,6 +12306,10 @@
                     <Conditional maxchargetime="eq 999" />
                 </StatusEffect>
             </Containable>
+            <SubContainer capacity="1" maxstacksize="1">
+                <Containable items="Touhou_Enhanced_Crystal" hide="false" itempos="30,0" setactive="true" />
+            </SubContainer>
+            <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5" />
         </ItemContainer>
         <aitarget sightrange="200" soundrange="400" fadeouttime="5" />
         <Quality>

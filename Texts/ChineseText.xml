@@ -1438,6 +1438,12 @@
   <entitydescription.Touhou_Noh_Performance_Fan_Ammo>内含喜悦感情的一团火焰，倍拘束在常见的能量球中便于操控。作为‖color:gui.yellow‖能乐表演扇‖end‖的弹药</entitydescription.Touhou_Noh_Performance_Fan_Ammo>
   <entityname.Touhou_Dark_Noh_Doll_Dagger>‖color:255,130,170,255‖暗黑能乐雏刀‖color:end‖</entityname.Touhou_Dark_Noh_Doll_Dagger>
   <entitydescription.Touhou_Dark_Noh_Doll_Dagger>在暗黑中跳能乐时表演用的道具。秦河胜使创造出能乐，但创造的具体细节还是个谜，也许暗黑能乐就是没有载入历史的能乐。秦心使用时若具有主要感情，则获得额外增益</entitydescription.Touhou_Dark_Noh_Doll_Dagger>
+  <entityname.Touhou_Enhanced_Crystal01>增幅水晶</entityname.Touhou_Enhanced_Crystal01>
+  <entitydescription.Touhou_Enhanced_Crystal01>水晶中不稳定的能量可以增幅弹幕的伤害，同时也会增加对友军的伤害。插入魔法武器的‖color:gui.yellow‖手电筒‖end‖或‖color:gui.yellow‖水晶‖end‖槽位中</entitydescription.Touhou_Enhanced_Crystal01>
+  <entityname.Touhou_Enhanced_Crystal02>气化水晶</entityname.Touhou_Enhanced_Crystal02>
+  <entitydescription.Touhou_Enhanced_Crystal02>水晶中微弱的能量可以减少远程弹幕的散布，并保护使用者，增加烧伤抗性。插入魔法武器的‖color:gui.yellow‖手电筒‖end‖或‖color:gui.yellow‖水晶‖end‖槽位中</entitydescription.Touhou_Enhanced_Crystal02>
+  <entityname.Touhou_Enhanced_Crystal03>深渊水晶</entityname.Touhou_Enhanced_Crystal03>
+  <entitydescription.Touhou_Enhanced_Crystal03>水晶中暗涌的能量可以减少远程弹幕的散布，并增加攻击伤害和眩晕抗性，但会极大限制使用者的移动并减少增益效果持续时间。插入魔法武器的‖color:gui.yellow‖手电筒‖end‖或‖color:gui.yellow‖水晶‖end‖槽位中</entitydescription.Touhou_Enhanced_Crystal03>
 
 
 
