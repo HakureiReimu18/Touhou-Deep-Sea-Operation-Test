@@ -29,9 +29,8 @@
     <modulecount flag="Airlock" count="1"/>
     <modulecount flag="Touhou_EngineeringModule_01" count="1"/>
     <modulecount flag="Touhou_AdminModule_01" count="1"/>
-    <modulecount flag="Touhou_CrewModule_01" count="1"/>
+    <modulecount flag="Touhou_CrewModule_01" count="2"/>
     <modulecount flag="Touhou_MedicalModule_01" count="1"/>
-    <modulecount flag="OptionalModule" probability="0.3" count="1"/>
 
     <npcs>
 
