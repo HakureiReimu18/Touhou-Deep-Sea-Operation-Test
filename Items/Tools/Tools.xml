@@ -2,7 +2,7 @@
 <Items>
 
     <!--魔理沙的扫帚-->
-    <Item name="" identifier="Marisa_Broom" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,provocative,scooter,underwaterscooter,light,Marisa_Broom" description="" impactsoundtag="impact_soft" scale="0.5" fireproof="true" isshootable="true">
+    <Item name="魔理沙的扫帚" identifier="Marisa_Broom" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="mediumitem,provocative,scooter,underwaterscooter,light,Marisa_Broom" description="" impactsoundtag="impact_soft" scale="0.5" fireproof="true" isshootable="true">
         <PreferredContainer primary="crewcab" amount="1" spawnprobability="0.12"/>
         <Price baseprice="1500">
             <Price storeidentifier="merchantoutpost" minavailable="1" />
@@ -72,7 +72,7 @@
 
 
     <!--文文的充电宝-->
-    <Item name="" identifier="Power_Bank" tags="mediumitem,batterycellrecharger,loadable,Power_Bank" subcategory="Touhou" category="Electrical" scale="0.4"
+    <Item name="文文的充电宝" identifier="Power_Bank" tags="mediumitem,batterycellrecharger,loadable,Power_Bank" subcategory="Touhou" category="Electrical" scale="0.4"
           damagedbyexplosions="true" explosiondamagemultiplier="0.1" Health="200">
         <Price baseprice="800" minleveldifficulty="5">
             <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
@@ -191,7 +191,7 @@
             <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" />
             <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
             <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
-            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.7" sold="false" />
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.7" />
         </Price>
         <Deconstruct time="10">
             <Item identifier="organicfiber" amount="2"/>
@@ -507,7 +507,7 @@
             <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" />
             <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
             <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
-            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.7" sold="false" />
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.7" />
         </Price>
         <Deconstruct time="10">
             <Item identifier="organicfiber" amount="4"/>
@@ -750,7 +750,7 @@
             <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1" />
             <Price storeidentifier="merchantmilitary" multiplier="1.2" sold="false" />
             <Price storeidentifier="merchantmine" multiplier="1.2" sold="false" />
-            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.7" sold="false" />
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.7" />
         </Price>
         <Deconstruct time="5">
             <Item identifier="Magic_Material" amount="2" />
@@ -2369,41 +2369,42 @@
         <StatusHUD drawhudwhenequipped="true" overlaycolor="150,0,0,120" range="4500" thermalgoggles="true" showdeadcharacters="false" showtexts="false" />
     </Item>
 
-<!--    &lt;!&ndash;品质升级器&ndash;&gt;
-    <Item identifier="Touhou_Quality_Upper_Machine" subcategory="Touhou" category="Equipment" scale="0.5" tags="smallitem" allowasextracargo="true" >
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.01"/>
-        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.01"/>
+    <!--品质升级器-->
+    <Item identifier="Touhou_Quality_Upper_Machine" subcategory="Touhou" category="Equipment" scale="0.35" tags="smallitem" allowasextracargo="true" >
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.025" />
+        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.025"/>
+        <Price baseprice="6000" sold="true" minleveldifficulty="15">
+            <Price locationtype="Merchant_Kawasiro_Nitori" maxavailable="1" />
+        </Price>
         <Deconstruct time="10"/>
-        <Sprite texture="%ModDir%/Images/Tools/Touhou_Quality_Upper_Machine.png" sourcerect="0,0,100,100" depth="0.45" />
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Quality_Upper_Machine.png" sourcerect="0,0,136,100" depth="0.45" />
         <Holdable slots="Any,RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect" />
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.2" anchor="Center" absoluteoffset="0,-95" style="ItemUI" />
             <Button text="uilabel.Touhou_Upper">
-                <StatusEffect target="Contained" qualitylevel="1" setValue="true" >
+                <StatusEffect type="OnUse" target="Contained" TargetItemComponent="Quality" quality="0" setValue="true" delay="0.04" stackable="false" >
+                    <Conditional qualitylevel="eq -1"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" TargetItemComponent="Quality" quality="1" setValue="true" delay="0.03" stackable="false" >
                     <Conditional qualitylevel="eq 0"/>
                 </StatusEffect>
-                <StatusEffect target="Contained" qualitylevel="2" setValue="true" >
+                <StatusEffect type="OnUse" target="Contained" TargetItemComponent="Quality" quality="2" setValue="true" delay="0.02" stackable="false" >
                     <Conditional qualitylevel="eq 1"/>
                 </StatusEffect>
-                <StatusEffect target="Contained" qualitylevel="3" setValue="true" >
+                <StatusEffect type="OnUse" target="Contained" TargetItemComponent="Quality" quality="3" setValue="true" delay="0.01" stackable="false" >
                     <Conditional qualitylevel="eq 2"/>
                 </StatusEffect>
                 <StatusEffect type="OnUse" target="This" disabledeltatime="true">
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" range="500.0" loop="false" />
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" delay="0.1" >
-                    <DropItem/>
-                </StatusEffect>
-                <StatusEffect type="OnUse" target="This" delay="0.3" >
-                    <RemoveItem/>
-                </StatusEffect>
+                <StatusEffect type="OnUse" target="This" Condition="-25" />
             </Button>
         </CustomInterface>
         <Body radius="8" width="48" density="10" />
-        <ItemContainer capacity="1" maxstacksize="1" >
-            <Containable items="Low_Alchemical_Metal,Normal_Alchemical_Metal,High_Alchemical_Metal" />
+        <ItemContainer capacity="1" maxstacksize="1" ShowTotalStackCapacityInContainedStateIndicator="true" >
+            <Containable items="Touhou_Weapon_Level01,Touhou_Weapon_Level02,Touhou_Weapon_Level03,Touhou_Weapon_Level04,Touhou_Weapon_Level05" />
         </ItemContainer>
-    </Item>-->
+    </Item>
 
 
     <!--表里一体之钥-->
@@ -2715,7 +2716,7 @@
             <Price storeidentifier="merchantresearch" maxavailable="1" />
             <Price storeidentifier="merchantmilitary" maxavailable="1"/>
             <Price storeidentifier="merchantmine" maxavailable="1" />
-            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.5" maxavailable="1" />
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.6" maxavailable="1" />
         </Price>
         <Deconstruct time="10">
             <Item identifier="steel" amount="3" />
@@ -2809,7 +2810,7 @@
             <Price storeidentifier="merchantmilitary" multiplier="1.25" maxavailable="1" />
             <Price storeidentifier="merchantmine" multiplier="0.9" maxavailable="7" />
             <Price storeidentifier="merchantengineering" maxavailable="5" multiplier="0.9"/>
-            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.5" maxavailable="1" />
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.6" maxavailable="1" />
         </Price>
         <Deconstruct time="10">
             <Item identifier="aluminium" amount="4" />
@@ -2930,7 +2931,7 @@
     <!--共情装置（3阶）-->
     <Item name="共情装置（3阶）" identifier="Touhou_Empathy_Device03" subcategory="Touhou" category="Equipment" scale="0.35" tags="smallitem,geneticdevice" allowasextracargo="true" >
         <PreferredContainer primary="medcab" secondary="medcab"/>
-        <Price baseprice="10000" sold="false" minleveldifficulty="30">
+        <Price baseprice="10000" sold="false" minleveldifficulty="40">
             <Price storeidentifier="merchantoutpost" />
             <Price storeidentifier="merchantcity" multiplier="0.9" />
             <Price storeidentifier="merchantresearch" multiplier="1.1" />
@@ -4954,5 +4955,133 @@
             <QualityStat stattype="Condition" value="0.1"/>
         </Quality>
     </Item>
+
+
+    <Item name="异星材料探测器" identifier="Touhou_Special_Material_Scanner" category="Equipment" Tags="smallitem,sonar,provocative"
+          cargocontaineridentifier="metalcrate" Scale="0.5" impactsoundtag="impact_metal_light" spritecolor="188,188,255,255">
+        <InventoryIcon texture="Content/Items/InventoryIconAtlas.png" sourcerect="64,0,64,64" origin="0.5,0.5" />
+        <Sprite texture="Content/Items/Tools/tools.png" sourcerect="227,163,48,24" depth="0.55" origin="0.5,0.5" />
+        <Body width="40" height="22" density="10" />
+        <AiTarget sight="500" staticsight="true"/>
+        <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-25,0" msg="ItemMsgPickUpSelect" />
+        <Sonar range="6000.0" powerconsumption="10" drawhudwhenequipped="true" detectsubmarinewalls="true" displaybordersize="-0.1" characterusable="false" hasmineralscanner="true" allowuioverlap="true">
+            <StatusEffect type="OnUse" targettype="Contained" Condition="-1.0" disabledeltatime="true">
+                <RequiredItem items="mobilebattery" type="Contained" />
+            </StatusEffect>
+            <sound file="Content/Items/Command/SonarPing.ogg" type="OnUse" range="1000.0" frequencymultiplier="1.5" />
+            <GuiFrame relativesize="0.4,0.4" anchor="CenterLeft" relativeoffset="0.006,-0.01"/>
+            <PingCircle texture="Content/Items/Command/pingCircle.png" origin="0.5,0.5" />
+            <DirectionalPingCircle texture="Content/Items/Command/directionalPingCircle.png" origin="0.0,0.5" />
+            <ScreenOverlay texture="Content/Items/Command/sonarOverlay.png" origin="0.5,0.5" />
+            <ScreenBackground texture="Content/Items/Command/sonarBackground.png" origin="0.5,0.5" />
+            <DirectionalPingBackground texture="Content/Items/Command/directionalPingBackground.png" origin="0.5,0.5" />
+            <DirectionalPingButton index="0" texture="Content/Items/Command/directionalPingButton.png" sourcerect="0,0,91,266" origin="-4.5275,0.5" />
+            <DirectionalPingButton index="1" texture="Content/Items/Command/directionalPingButton.png" sourcerect="133,0,91,266" origin="-4.5275,0.5" />
+            <DirectionalPingButton index="2" texture="Content/Items/Command/directionalPingButton.png" sourcerect="266,0,91,266" origin="-4.5275,0.5" />
+            <Blip texture="Content/Items/Command/sonarBlip.png" origin="0.5,0.5" />
+            <LineSprite texture="Content/Items/Command/NavUI.png" sourcerect="181,141,109,4" origin="0,0.5"/>
+            <icon identifier="outpost" texture="Content/UI/MainIconsAtlas.png" sourcerect="352,398,16,8" origin="0.5,0.5"/>
+            <icon identifier="submarine" texture="Content/UI/MainIconsAtlas.png" sourcerect="353,407,14,6" origin="0.5,0.5"/>
+            <icon identifier="shuttle" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,407,8,6" origin="0.5,0.5"/>
+            <icon identifier="artifact" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,414,8,8" origin="0.5,0.5"/>
+            <icon identifier="location" texture="Content/UI/MainIconsAtlas.png" sourcerect="349,435,11,11" origin="0.5,0.5"/>
+            <icon identifier="mineral" texture="Content/UI/MainIconsAtlas.png" sourcerect="336,434,7,12" origin="0.5,0.5"/>
+            <icon identifier="" texture="Content/UI/MainIconsAtlas.png" sourcerect="346,416,4,4" origin="0.5,0.5"/>
+            <LightComponent LightColor="120,255,120,255" range="25" powerconsumption="10" pulsefrequency="0.5" pulseamount="0.8" castshadows="false" IsOn="false" canbeselected="false">
+                <IsActive TargetItemComponent="Sonar" CurrentMode="Active"/>
+            </LightComponent>
+        </Sonar>
+        <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.06,0.2" anchor="BottomLeft" absoluteoffset="20,60" relativeoffset="0,0.5" style="ItemUI" />
+            <Button text="uilabel.Touhou_Special_Material_Scanner">
+                <StatusEffect type="OnUse" target="This" disabledeltatime="true" delay="0.1" stackable="false" >
+                    <TriggerEvent identifier="Touhou_Special_Material_Scanner_Mission" />
+                </StatusEffect>
+            </Button>
+        </CustomInterface>
+        <ItemContainer capacity="1" maxstacksize="1" hideitems="true" containedstateindicatorstyle="battery">
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5" />
+            <Containable items="mobilebattery">
+                <StatusEffect type="OnContaining" targettype="This" Voltage="1.0" setvalue="true" />
+            </Containable>
+        </ItemContainer>
+    </Item>
+
+
+    <!--便携式符卡充能工具（电磁枪+连射炮）-->
+    <Item name="便携式符卡充能工具（电磁枪+连射炮）" identifier="Touhou_Spell_Card_Charge_Box_Coligun" tags="mediumitem" subcategory="Touhou" category="Equipment" scale="0.1">
+        <Price baseprice="5000" minleveldifficulty="15">
+            <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
+            <Price storeidentifier="merchantcity" multiplier="1" sold="true" maxavailable="1" />
+            <Price storeidentifier="merchantresearch" multiplier="1.1" sold="true" maxavailable="1" />
+            <Price storeidentifier="merchantmilitary" multiplier="1" sold="true" maxavailable="1" />
+            <Price storeidentifier="merchantmine" multiplier="1.1" sold="true" maxavailable="1" />
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.8" sold="true" maxavailable="1" />
+        </Price>
+        <Deconstruct time="4">
+            <Item identifier="Magic_Material" />
+        </Deconstruct>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Spell_Card_Charge_Box_Coligun.png" sourcerect="0,0,260,224" depth="0.45" scale="0.5" origin="0.5,0.5" />
+        <Body width="50" height="50" density="10" />
+        <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-26,-11" msg="ItemMsgPickUpSelect"  />
+        <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.11,0.11" anchor="Center" absoluteoffset="20,196" style="ItemUI" />
+            <Button text="Text.Touhou_Magic_Charging_Box_Charge">
+                <StatusEffect type="OnUse" target="This" forceplaysounds="true">
+                    <RequiredItem identifier="Touhou_Small_Spell_Card_Ammo,Touhou_Rapidly_Spell_Card_Ammo" type="Contained" ExcludeFullCondition="true" />
+                    <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="1" range="200.0" loop="false" />
+                </StatusEffect>
+
+                <!--魔符「银河」-->
+                <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" >
+                    <RequiredItem items="Milky_Way_Ammo" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="50.0" disabledeltatime="true" >
+                    <RequiredItem items="Milky_Way_Ammo" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
+
+                <!--雪符「钻石风暴」-->
+                <StatusEffect type="OnUse" target="This" Condition="-2.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Diamond_Blizzard_Ammo" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="50.0" disabledeltatime="true" >
+                    <RequiredItem items="Touhou_Diamond_Blizzard_Ammo" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
+
+                <!--千根针的针山-->
+                <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true" >
+                    <RequiredItem items="Thousand_Needle_Ammo" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="80.0" disabledeltatime="true" >
+                    <RequiredItem items="Thousand_Needle_Ammo" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
+
+                <!--「幻想风靡」-->
+                <StatusEffect type="OnUse" target="This" Condition="-2.0" disabledeltatime="true" >
+                    <RequiredItem items="Fantasy_Wind" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="70.0" disabledeltatime="true" >
+                    <RequiredItem items="Fantasy_Wind" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
+
+                <!--天上剑「天人之五衰」-->
+                <StatusEffect type="OnUse" target="This" Condition="-10.0" disabledeltatime="true" >
+                    <RequiredItem items="Celestial_Decay" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false" />
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" Condition="40.0" disabledeltatime="true" >
+                    <RequiredItem items="Celestial_Decay" type="Contained" ExcludeBroken="false" />
+                </StatusEffect>
+
+            </Button>
+        </CustomInterface>
+        <ItemContainer capacity="1" maxstacksize="1" canbeselected="true" hideitems="true" >
+            <Containable items="Touhou_Small_Spell_Card_Ammo" excludeditems="Touhou_Silent_Selene_Ammo"/>
+            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32" />
+        </ItemContainer>
+        <Quality>
+            <QualityStat stattype="Condition" value="0.2" />
+        </Quality>
+    </Item>
+
 
 </Items>
