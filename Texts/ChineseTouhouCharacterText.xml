@@ -2,20 +2,13 @@
 <infotexts language="Simplified Chinese" translatedname="中文(简体)" nowhitespace="false">
     <!-- Remilia -->
     <entityname.remiliagear>‖color:255,36,0,255‖蕾米莉亚装束‖color:end‖</entityname.remiliagear>
-    <entitydescription.remiliagear>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet Devil（绯红恶魔）」。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.remiliagear>
+    <entitydescription.remiliagear>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet Devil（绯红恶魔）」。‖color:end‖\n（内置扫描仪槽位）</entitydescription.remiliagear>
     <entityname.Remilia_Plus>‖color:255,36,0,255‖蕾米莉亚装束+‖color:end‖</entityname.Remilia_Plus>
-    <entitydescription.Remilia_Plus>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet
-        Devil（绯红恶魔）」。‖color:end‖\n‖color:150,150,150,255‖注：穿上后记得看看天赋栏~‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Remilia_Plus>
+    <entitydescription.Remilia_Plus>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet Devil（绯红恶魔）」。‖color:end‖\n‖color:150,150,150,255‖注：穿上后记得看看天赋栏~‖color:end‖\n（内置扫描仪槽位）</entitydescription.Remilia_Plus>
     <entityname.Remilia_Eclipse_Anniversary>‖color:255,36,0,255‖蕾米莉亚装束（周年庆）‖color:end‖</entityname.Remilia_Eclipse_Anniversary>
-    <entitydescription.Remilia_Eclipse_Anniversary>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet
-        Devil（绯红恶魔）」。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Remilia_Eclipse_Anniversary>
+    <entitydescription.Remilia_Eclipse_Anniversary>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet Devil（绯红恶魔）」。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Remilia_Eclipse_Anniversary>
     <entityname.Remilia_Eclipse_Anniversary_Plus>‖color:255,36,0,255‖蕾米莉亚装束+（周年庆）‖color:end‖</entityname.Remilia_Eclipse_Anniversary_Plus>
-    <entitydescription.Remilia_Eclipse_Anniversary_Plus>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet
-        Devil（绯红恶魔）」。‖color:end‖\n‖color:150,150,150,255‖注：穿上后记得看看天赋栏~‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Remilia_Eclipse_Anniversary_Plus>
+    <entitydescription.Remilia_Eclipse_Anniversary_Plus>‖color:255,36,0,255‖洒落了的血使洋装变得鲜红，故被称为「Scarlet Devil（绯红恶魔）」。‖color:end‖\n‖color:150,150,150,255‖注：穿上后记得看看天赋栏~‖color:end‖\n（内置扫描仪槽位）</entitydescription.Remilia_Eclipse_Anniversary_Plus>
     <entityname.remiliadecalmask>‖color:255,36,0,255‖蕾米莉亚贴纸面具‖color:end‖</entityname.remiliadecalmask>
     <entitydescription.remiliadecalmask>‖color:255,36,0,255‖戴在脸上意外的不错呢。‖color:end‖</entitydescription.remiliadecalmask>
     <talentname.demonkingcradle>夜符「Demon King Cradle」</talentname.demonkingcradle>
@@ -28,8 +21,7 @@
         巡回内，你受到的伤害越多，造成的伤害越高，最高‖color:gui.green‖10%‖end‖。这个效果在巡回后清除
         你每次造成的出血总量概率随机转化为‖color:gui.green‖10%‖end‖的‖color:gui.orange‖失血‖end‖或‖color:gui.green‖150%‖end‖的‖color:gui.orange‖出血不止‖end‖或‖color:gui.green‖33.3%‖end‖‖color:gui.orange‖噬咬‖end‖。
         \n无法受到天赋‖color:gui.orange‖“过度放血”‖end‖给予的加成
-        \n\n‖color:150,150,150,255‖蕾米莉亚也同样遵从此定律，是个严重的自我主义者。B型血最美味。\n\n————《东方永夜抄》‖color:end‖
-    </talentdescription.demonkingcradle>
+        \n\n‖color:150,150,150,255‖蕾米莉亚也同样遵从此定律，是个严重的自我主义者。B型血最美味。\n\n————《东方永夜抄》‖color:end‖</talentdescription.demonkingcradle>
     <afflictionname.scarletdevil>猩红恶魔</afflictionname.scarletdevil>
     <afflictiondescription.scarletdevil>威严满满！</afflictiondescription.scarletdevil>
     <afflictionname.Demon_King_Cradle>夜符「Demon king Cradle」</afflictionname.Demon_King_Cradle>
@@ -42,35 +34,24 @@
 
     <!-- Youmu -->
     <entityname.youmugear>‖color:156,158,161,255‖妖梦装束‖color:end‖</entityname.youmugear>
-    <entitydescription.youmugear>
-        ‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.youmugear>
+    <entitydescription.youmugear>‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）</entitydescription.youmugear>
     <entityname.Youmu_Plus>‖color:156,158,161,255‖妖梦装束+‖color:end‖</entityname.Youmu_Plus>
-    <entitydescription.Youmu_Plus>
-        ‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Youmu_Plus>
+    <entitydescription.Youmu_Plus>‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）</entitydescription.Youmu_Plus>
     <entityname.Youmu_Skirt>‖color:156,158,161,255‖妖梦装束（庭师裙）‖end‖</entityname.Youmu_Skirt>
-    <entitydescription.Youmu_Skirt>
-        ‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Youmu_Skirt>
+    <entitydescription.Youmu_Skirt>‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）</entitydescription.Youmu_Skirt>
     <entityname.Youmu_Skirt_Plus>‖color:156,158,161,255‖妖梦装束+（庭师裙）‖end‖</entityname.Youmu_Skirt_Plus>
-    <entitydescription.Youmu_Skirt_Plus>
-        ‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Youmu_Skirt_Plus>
+    <entitydescription.Youmu_Skirt_Plus>‖color:156,158,161,255‖住在白玉楼工作的庭师。半人半幽灵、一半是生一半是死、一半是实体一半是虚幻的半吊子。但是剑有两把。\n————《东方萃梦想》‖color:end‖\n（内置扫描仪槽位）</entitydescription.Youmu_Skirt_Plus>
     <talentname.Life_And_Death_Half_Half>生与死的Half &amp; Half</talentname.Life_And_Death_Half_Half>
     <talentdescription.Life_And_Death_Half_Half>当你身着‖color:gui.orange‖魂魄妖梦装束+‖end‖时，
         血量越低，造成的伤害越低，最低‖color:gui.red‖15%‖end‖
         造成的‖color:gui.orange‖近战伤害‖end‖提高‖color:gui.green‖30%‖end‖
         ‖color:gui.orange‖行走速度‖end‖提高‖color:gui.green‖15%‖end‖
         根据自身的武器操作等级，提高其数值相应5%的‖color:gui.orange‖远程攻击速度‖end‖
-        \n同时持有‖color:gui.red‖白楼剑‖end‖和‖color:gui.red‖楼观剑‖end‖时，会获得大量伤害加成，并进一步加快行走速度
-    </talentdescription.Life_And_Death_Half_Half>
+        \n同时持有‖color:gui.red‖白楼剑‖end‖和‖color:gui.red‖楼观剑‖end‖时，会获得大量伤害加成，并进一步加快行走速度</talentdescription.Life_And_Death_Half_Half>
     <afflictionname.Ancient_Temple>半人半灵的庭师</afflictionname.Ancient_Temple>
     <afflictiondescription.Ancient_Temple>斩不断的东西几乎不存在</afflictiondescription.Ancient_Temple>
     <afflictionname.Touhou_Bai_Lou_And_Lou_Guan>人类与幽灵的混血</afflictionname.Touhou_Bai_Lou_And_Lou_Guan>
-    <afflictiondescription.Touhou_Bai_Lou_And_Lou_Guan>
-        魂魄妖梦是二刀流的高手，拥有有着一刀能杀死十只幽灵的楼观剑，与能够斩断人类迷茫的白楼剑。当然，两把剑都能普通地劈砍。
-    </afflictiondescription.Touhou_Bai_Lou_And_Lou_Guan>
+    <afflictiondescription.Touhou_Bai_Lou_And_Lou_Guan>魂魄妖梦是二刀流的高手，拥有有着一刀能杀死十只幽灵的楼观剑，与能够斩断人类迷茫的白楼剑。当然，两把剑都能普通地劈砍。</afflictiondescription.Touhou_Bai_Lou_And_Lou_Guan>
 
     <!-- Marisa -->
     <entityname.marisagear>‖color:255,255,0,255‖魔理沙装束‖color:end‖</entityname.marisagear>
@@ -80,14 +61,11 @@
     <entityname.marisahat>‖color:255,255,0,255‖魔理沙帽子‖color:end‖</entityname.marisahat>
     <entitydescription.marisahat>‖color:255,255,0,255‖普通的魔法使的帽子‖color:end‖</entitydescription.marisahat>
     <entityname.Marisa_Eclipse_Anniversary>‖color:255,255,0,255‖魔理沙装束（周年庆）‖color:end‖</entityname.Marisa_Eclipse_Anniversary>
-    <entitydescription.Marisa_Eclipse_Anniversary>‖color:255,255,0,255‖普通的魔法使‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Marisa_Eclipse_Anniversary>
+    <entitydescription.Marisa_Eclipse_Anniversary>‖color:255,255,0,255‖普通的魔法使‖color:end‖\n（内置扫描仪槽位）</entitydescription.Marisa_Eclipse_Anniversary>
     <entityname.Marisa_Eclipse_Anniversary_Plus>‖color:255,255,0,255‖魔理沙装束+（周年庆）‖color:end‖</entityname.Marisa_Eclipse_Anniversary_Plus>
-    <entitydescription.Marisa_Eclipse_Anniversary_Plus>‖color:255,255,0,255‖普通的魔法使‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Marisa_Eclipse_Anniversary_Plus>
+    <entitydescription.Marisa_Eclipse_Anniversary_Plus>‖color:255,255,0,255‖普通的魔法使‖color:end‖\n（内置扫描仪槽位）</entitydescription.Marisa_Eclipse_Anniversary_Plus>
     <entityname.Marisa_Hat_Eclipse_Anniversary>‖color:255,255,0,255‖魔理沙帽子（周年庆）‖color:end‖</entityname.Marisa_Hat_Eclipse_Anniversary>
-    <entitydescription.Marisa_Hat_Eclipse_Anniversary>‖color:255,255,0,255‖普通的魔法使的帽子‖color:end‖
-    </entitydescription.Marisa_Hat_Eclipse_Anniversary>
+    <entitydescription.Marisa_Hat_Eclipse_Anniversary>‖color:255,255,0,255‖普通的魔法使的帽子‖color:end‖</entitydescription.Marisa_Hat_Eclipse_Anniversary>
     <talentname.Casket_Of_Star>普通的魔法使</talentname.Casket_Of_Star>
     <talentdescription.Casket_Of_Star>当你身着‖color:gui.orange‖魔理沙装束+‖end‖时，从‖color:gui.yellow‖物理伤害、烧伤‖end‖中恢复得更快：
         每次远程攻击都会缓慢增长自身的‖color:gui.yellow‖“魔力过载”‖end‖，‖color:gui.yellow‖魔力过载‖end‖会减少自身‖color:gui.orange‖最大生命值和远程攻击速度‖end‖，最高‖color:gui.red‖20%‖end‖
@@ -106,13 +84,9 @@
 
     <!-- Aya -->
     <entityname.ayagear>‖color:255,255,255,255‖文文。装束‖color:end‖</entityname.ayagear>
-    <entitydescription.ayagear>
-        ‖color:255,255,255,255‖射命丸文是天狗之中速度很快的鸦天狗。手持相机，在幻想乡各处奔走，记录下各种有趣的事件。\n虽说是鸦天狗，外表和人类并无太大差别。\n————《东方求闻史纪》‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.ayagear>
+    <entitydescription.ayagear>‖color:255,255,255,255‖射命丸文是天狗之中速度很快的鸦天狗。手持相机，在幻想乡各处奔走，记录下各种有趣的事件。\n虽说是鸦天狗，外表和人类并无太大差别。\n————《东方求闻史纪》‖color:end‖\n（内置扫描仪槽位）</entitydescription.ayagear>
     <entityname.Aya_Plus>‖color:255,255,255,255‖文文。装束+‖color:end‖</entityname.Aya_Plus>
-    <entitydescription.Aya_Plus>
-        ‖color:255,255,255,255‖射命丸文是天狗之中速度很快的鸦天狗。手持相机，在幻想乡各处奔走，记录下各种有趣的事件。\n虽说是鸦天狗，外表和人类并无太大差别。\n————《东方求闻史纪》‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Aya_Plus>
+    <entitydescription.Aya_Plus>‖color:255,255,255,255‖射命丸文是天狗之中速度很快的鸦天狗。手持相机，在幻想乡各处奔走，记录下各种有趣的事件。\n虽说是鸦天狗，外表和人类并无太大差别。\n————《东方求闻史纪》‖color:end‖\n（内置扫描仪槽位）</entitydescription.Aya_Plus>
     <talentname.Mysterious_Mountain>妖怪之山</talentname.Mysterious_Mountain>
     <talentdescription.Mysterious_Mountain>当你身着‖color:gui.orange‖文文。装束+‖end‖时，
         在水中受到的伤害增加‖color:gui.red‖25%‖end‖
@@ -130,20 +104,16 @@
     <!--Reimu-->
     <entityname.Reimu_gear>‖color:255,81,75,255‖灵梦装束‖color:end‖</entityname.Reimu_gear>
     <entitydescription.Reimu_gear>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
-        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Reimu_gear>
+        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_gear>
     <entityname.Reimu_Plus>‖color:255,81,75,255‖灵梦装束+‖color:end‖</entityname.Reimu_Plus>
     <entitydescription.Reimu_Plus>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
-        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Reimu_Plus>
+        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Plus>
     <entityname.Reimu_Eclipse_Anniversary>‖color:255,81,75,255‖灵梦装束（周年庆）‖color:end‖</entityname.Reimu_Eclipse_Anniversary>
     <entitydescription.Reimu_Eclipse_Anniversary>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
-        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Reimu_Eclipse_Anniversary>
+        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Eclipse_Anniversary>
     <entityname.Reimu_Eclipse_Anniversary_Plus>‖color:255,81,75,255‖灵梦装束+（周年庆）‖color:end‖</entityname.Reimu_Eclipse_Anniversary_Plus>
     <entitydescription.Reimu_Eclipse_Anniversary_Plus>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
-        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Reimu_Eclipse_Anniversary_Plus>
+        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Eclipse_Anniversary_Plus>
     <entityname.Reimu_Decalmask>‖color:255,81,75,255‖灵梦贴纸面具‖color:end‖</entityname.Reimu_Decalmask>
     <entitydescription.Reimu_Decalmask>‖color:255,81,75,255‖戴在脸上意外的不错呢。‖color:end‖</entitydescription.Reimu_Decalmask>
     <talentname.Innocent_Treasures>童祭</talentname.Innocent_Treasures>
@@ -152,26 +122,19 @@
         增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖行走速度‖end‖
         对非人类生物造成的伤害提高‖color:gui.green‖10%‖end‖，穿甲提高‖color:gui.green‖5%‖end‖
         攻击造成的‖color:gui.yellow‖撕裂伤/枪伤/深层组织损伤/钝器伤/咬伤/器官损伤/内脏损伤‖end‖都有‖color:gui.green‖15%‖end‖概率转化为等额‖color:gui.yellow‖灵压‖end‖
-        \n‖color:gui.red‖没有专属武器的加成效果‖end‖
-    </talentdescription.Innocent_Treasures>
+        \n‖color:gui.red‖没有专属武器的加成效果‖end‖</talentdescription.Innocent_Treasures>
     <afflictionname.RedAndWhite>永远的巫女</afflictionname.RedAndWhite>
     <afflictiondescription.RedAndWhite>博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女</afflictiondescription.RedAndWhite>
     <afflictionname.Reimu_Weapons>博丽神社的巫女小姐</afflictionname.Reimu_Weapons>
-    <afflictiondescription.Reimu_Weapons>她有着一头黑发，长度及腰，脑后系着巨大红色蝴蝶结，两鬓有两束发髻扎在红白色装饰的束发带中
-    </afflictiondescription.Reimu_Weapons>
+    <afflictiondescription.Reimu_Weapons>她有着一头黑发，长度及腰，脑后系着巨大红色蝴蝶结，两鬓有两束发髻扎在红白色装饰的束发带中</afflictiondescription.Reimu_Weapons>
 
     <!--Akyuu-->
     <entityname.Akyuu_gear>‖color:193,204,65,255‖阿求装束‖color:end‖</entityname.Akyuu_gear>
-    <entitydescription.Akyuu_gear>
-        ‖color:193,204,65,255‖经常会去铃奈庵借书的“第九代学者”，拥有过目不忘程度的能力。“幻想乡的记忆”。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Akyuu_gear>
+    <entitydescription.Akyuu_gear>‖color:193,204,65,255‖经常会去铃奈庵借书的“第九代学者”，拥有过目不忘程度的能力。“幻想乡的记忆”。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Akyuu_gear>
     <entityname.Akyuu_Plus>‖color:193,204,65,255‖阿求装束+‖color:end‖</entityname.Akyuu_Plus>
-    <entitydescription.Akyuu_Plus>
-        ‖color:193,204,65,255‖经常会去铃奈庵借书的“第九代学者”，拥有过目不忘程度的能力。“幻想乡的记忆”。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Akyuu_Plus>
+    <entitydescription.Akyuu_Plus>‖color:193,204,65,255‖经常会去铃奈庵借书的“第九代学者”，拥有过目不忘程度的能力。“幻想乡的记忆”。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Akyuu_Plus>
     <entityname.Camellia_Hair_Accessory>‖color:193,204,65,255‖山茶花发饰‖color:end‖</entityname.Camellia_Hair_Accessory>
-    <entitydescription.Camellia_Hair_Accessory>美丽的山茶花发饰，制作上使用真花，因此完成度相当高。只要别上这个，健忘的毛病会完全改善。
-    </entitydescription.Camellia_Hair_Accessory>
+    <entitydescription.Camellia_Hair_Accessory>美丽的山茶花发饰，制作上使用真花，因此完成度相当高。只要别上这个，健忘的毛病会完全改善。</entitydescription.Camellia_Hair_Accessory>
     <afflictionname.Memory_Of_Gensokyo>幻想乡的记忆</afflictionname.Memory_Of_Gensokyo>
     <afflictiondescription.Memory_Of_Gensokyo>阿求有着一头紫色及肩短发，头顶偏左处有一朵山茶花作为头饰。</afflictiondescription.Memory_Of_Gensokyo>
     <talentname.Savant>第九代学者</talentname.Savant>
@@ -188,43 +151,31 @@
         ———————————————————————————————
         \n减少‖color:gui.red‖20%‖end‖移动速度和‖color:gui.red‖20%‖end‖最大生命值
         ‖color:gui.orange‖近战攻击伤害‖end‖减少‖color:gui.red‖25%‖end‖
-        ‖color:gui.orange‖远程攻击伤害‖end‖减少‖color:gui.red‖15%‖end‖
-    </talentdescription.Savant>
+        ‖color:gui.orange‖远程攻击伤害‖end‖减少‖color:gui.red‖15%‖end‖</talentdescription.Savant>
     <afflictionname.Akyuu_Weapons>第九代学者</afflictionname.Akyuu_Weapons>
     <afflictiondescription.Akyuu_Weapons>作为御阿礼之子，她头脑聪明，比起稗田家一般人更博识，相对的身体孱弱。</afflictiondescription.Akyuu_Weapons>
 
     <!--Mokou-->
     <entityname.Mokou_gear>‖color:255,72,36,255‖妹红装束‖color:end‖</entityname.Mokou_gear>
-    <entitydescription.Mokou_gear>
-        ‖color:255,72,36,255‖她原是贵族家的女儿，因服用蓬莱山辉夜留下的蓬莱之药而成为不老不死的人类。在再次遇到辉夜后开始了与她无尽的厮杀日常。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Mokou_gear>
+    <entitydescription.Mokou_gear>‖color:255,72,36,255‖她原是贵族家的女儿，因服用蓬莱山辉夜留下的蓬莱之药而成为不老不死的人类。在再次遇到辉夜后开始了与她无尽的厮杀日常。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Mokou_gear>
     <entityname.Mokou_Plus>‖color:255,72,36,255‖妹红装束+‖color:end‖</entityname.Mokou_Plus>
-    <entitydescription.Mokou_Plus>
-        ‖color:255,72,36,255‖她原是贵族家的女儿，因服用蓬莱山辉夜留下的蓬莱之药而成为不老不死的人类。在再次遇到辉夜后开始了与她无尽的厮杀日常。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Mokou_Plus>
+    <entitydescription.Mokou_Plus>‖color:255,72,36,255‖她原是贵族家的女儿，因服用蓬莱山辉夜留下的蓬莱之药而成为不老不死的人类。在再次遇到辉夜后开始了与她无尽的厮杀日常。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Mokou_Plus>
     <afflictionname.Possessed_By_Phoenix>蓬莱的人之形</afflictionname.Possessed_By_Phoenix>
     <afflictiodescription.Possessed_By_Phoenix>拥有不老不死能力的人类</afflictiodescription.Possessed_By_Phoenix>
     <talentname.Immortal_Human>不死鸟</talentname.Immortal_Human>
     <talentdescription.Immortal_Human>当你身着‖color:255,72,36,255‖妹红装束+‖end‖时，
         减少‖color:gui.red‖10%‖end‖最大生命值
         一个巡回中所有妹红装束+仅有一次，生命值归零后‖color:gui.green‖有额外5秒的清醒时间‖end‖，期间伤势会迅速恢复，但会短暂下降移动速度和造成的伤害。
-        \n造成‖color:gui.green‖不死鸟灼烧‖end‖时有额外‖color:gui.green‖30%‖end‖伤害。
-    </talentdescription.Immortal_Human>
+        \n造成‖color:gui.green‖不死鸟灼烧‖end‖时有额外‖color:gui.green‖30%‖end‖伤害。</talentdescription.Immortal_Human>
     <afflictionname.Mokou_Weapons>不老不死的竹林引路人</afflictionname.Mokou_Weapons>
-    <afflictiondescription.Mokou_Weapons>
-        如果灵魂与肉体分离，那么肉体会立即毁灭，而灵魂会在喜欢的地方制造生长出新的肉体。不过，虽然不会死亡，仍然会饿、会痛。
-    </afflictiondescription.Mokou_Weapons>
+    <afflictiondescription.Mokou_Weapons>如果灵魂与肉体分离，那么肉体会立即毁灭，而灵魂会在喜欢的地方制造生长出新的肉体。不过，虽然不会死亡，仍然会饿、会痛。</afflictiondescription.Mokou_Weapons>
 
 
     <!--Patchouli-->
     <entityname.Patchouli_gear>‖color:120,75,100,255‖帕秋莉装束‖color:end‖</entityname.Patchouli_gear>
-    <entitydescription.Patchouli_gear>
-        ‖color:120,75,100,255‖她是居住在红魔馆地下大图书馆中的魔女（魔法使），非常擅长魔法。她的绝大部分时间用于读书，和开发新的魔法。同时，她也会撰写魔导书，用以记录创造的魔法。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Patchouli_gear>
+    <entitydescription.Patchouli_gear>‖color:120,75,100,255‖她是居住在红魔馆地下大图书馆中的魔女（魔法使），非常擅长魔法。她的绝大部分时间用于读书，和开发新的魔法。同时，她也会撰写魔导书，用以记录创造的魔法。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Patchouli_gear>
     <entityname.Patchouli_Plus>‖color:120,75,100,255‖帕秋莉装束+‖color:end‖</entityname.Patchouli_Plus>
-    <entitydescription.Patchouli_Plus>
-        ‖color:120,75,100,255‖她是居住在红魔馆地下大图书馆中的魔女（魔法使），非常擅长魔法。她的绝大部分时间用于读书，和开发新的魔法。同时，她也会撰写魔导书，用以记录创造的魔法。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Patchouli_Plus>
+    <entitydescription.Patchouli_Plus>‖color:120,75,100,255‖她是居住在红魔馆地下大图书馆中的魔女（魔法使），非常擅长魔法。她的绝大部分时间用于读书，和开发新的魔法。同时，她也会撰写魔导书，用以记录创造的魔法。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Patchouli_Plus>
     <talentname.Knowledge_And_Solitude_Girl>知识与避世的少女</talentname.Knowledge_And_Solitude_Girl>
     <talentdescription.Knowledge_And_Solitude_Girl>当你身着‖color:gui.orange‖帕秋莉装束+‖end‖时，生命值越低，‖color:gui.yellow‖哮喘‖end‖疾病的增长速度越快：
         \n游泳速度提高‖color:gui.green‖40%‖end‖。
@@ -237,30 +188,22 @@
         \n增加‖color:gui.green‖300%‖end‖五种元素效果。
         \n根据当前‖color:gui.orange‖魔法能力‖end‖，提高相应‖color:gui.green‖5%‖end‖的‖color:gui.orange‖远程攻击伤害‖end‖，这个效果在‖color:gui.orange‖魔法能力‖end‖到达‖color:gui.green‖300‖end‖时达到上限
         \n静止一段时间后，额外增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害和最大生命值‖end‖
-        \n增加‖color:gui.green‖20%‖end‖灵压伤害。
-    </talentdescription.Knowledge_And_Solitude_Girl>
+        \n增加‖color:gui.green‖20%‖end‖灵压伤害。</talentdescription.Knowledge_And_Solitude_Girl>
     <afflictionname.The_Still_Library>不动的大图书馆</afflictionname.The_Still_Library>
-    <afflictiondescription.The_Still_Library>她的外表和人类没有任何差别。她身体飘飘悠悠，又瘦弱皮肤又白，患有哮喘和贫血。
-    </afflictiondescription.The_Still_Library>
+    <afflictiondescription.The_Still_Library>她的外表和人类没有任何差别。她身体飘飘悠悠，又瘦弱皮肤又白，患有哮喘和贫血。</afflictiondescription.The_Still_Library>
     <afflictionname.Patchouli_Weapons>红魔馆的魔女</afflictionname.Patchouli_Weapons>
-    <afflictiondescription.Patchouli_Weapons>帕秋莉是蕾米莉亚的好友，二人会亲切地互以昵称相称，经常纵容蕾米莉亚的任性要求。
-    </afflictiondescription.Patchouli_Weapons>
+    <afflictiondescription.Patchouli_Weapons>帕秋莉是蕾米莉亚的好友，二人会亲切地互以昵称相称，经常纵容蕾米莉亚的任性要求。</afflictiondescription.Patchouli_Weapons>
     <afflictionname.Patchouli_Asthma>哮喘</afflictionname.Patchouli_Asthma>
     <afflictiondescription.Patchouli_Asthma_1>暂时没有呼吸困难或其他症状，将状况控制在这个阶段最好不过了</afflictiondescription.Patchouli_Asthma_1>
-    <afflictiondescription.Patchouli_Asthma_2>患者可能会感到喉咙痒、咳嗽、胸闷或呼吸困难等早期症状，这是哮喘即将加重的信号。
-    </afflictiondescription.Patchouli_Asthma_2>
+    <afflictiondescription.Patchouli_Asthma_2>患者可能会感到喉咙痒、咳嗽、胸闷或呼吸困难等早期症状，这是哮喘即将加重的信号。</afflictiondescription.Patchouli_Asthma_2>
     <afflictiondescription.Patchouli_Asthma_3>患者的哮喘症状急剧加重，可能出现呼吸急促、胸闷、咳嗽加剧等症状。</afflictiondescription.Patchouli_Asthma_3>
     <afflictiondescription.Patchouli_Asthma_4>患者的身体状况逐渐恢复，但如果不治疗哮喘症状，状况会更加危险。</afflictiondescription.Patchouli_Asthma_4>
 
     <!--Tenshi-->
     <entityname.Tenshi_gear>‖color:5,105,195,200‖天子装束‖color:end‖</entityname.Tenshi_gear>
-    <entitydescription.Tenshi_gear>‖color:5,105,195,200‖作为“比那名居一族”，她能够操纵要石，通过插下和拔出要石平息或引发地震。
-        能够引发地表下沉、土崩石摧级别的灾难，甚至动摇整个幻想乡的地基。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Tenshi_gear>
+    <entitydescription.Tenshi_gear>‖color:5,105,195,200‖作为“比那名居一族”，她能够操纵要石，通过插下和拔出要石平息或引发地震。 能够引发地表下沉、土崩石摧级别的灾难，甚至动摇整个幻想乡的地基。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Tenshi_gear>
     <entityname.Tenshi_Plus>‖color:5,105,195,200‖天子装束+‖color:end‖</entityname.Tenshi_Plus>
-    <entitydescription.Tenshi_Plus>‖color:5,105,195,200‖作为“比那名居一族”，她能够操纵要石，通过插下和拔出要石平息或引发地震。
-        能够引发地表下沉、土崩石摧级别的灾难，甚至动摇整个幻想乡的地基。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Tenshi_Plus>
+    <entitydescription.Tenshi_Plus>‖color:5,105,195,200‖作为“比那名居一族”，她能够操纵要石，通过插下和拔出要石平息或引发地震。 能够引发地表下沉、土崩石摧级别的灾难，甚至动摇整个幻想乡的地基。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Tenshi_Plus>
     <entityname.Tenshi_Hat>‖color:5,105,195,200‖天子的桃帽‖color:end‖</entityname.Tenshi_Hat>
     <entitydescription.Tenshi_Hat>‖color:5,105,195,200‖”如果帽子上啥也没有就显得太空了，所以加上了桃子。“‖color:end‖</entitydescription.Tenshi_Hat>
     <talentname.TenshiTalent>有顶天的大小姐</talentname.TenshiTalent>
@@ -270,38 +213,27 @@
         \n增加‖color:gui.green‖15%‖end‖最大生命值。
         \n拥有气质剥离‖color:gui.green‖40%‖end‖的抗性。
         \n攻击拥有气质剥离效果的目标时，额外附加缓慢。
-        \n食用天桃后，受到的所有伤害降低50%，持续‖color:gui.green‖10s‖end‖。这个效果有1分钟冷却
-    </talentdescription.TenshiTalent>
+        \n食用天桃后，受到的所有伤害降低50%，持续‖color:gui.green‖10s‖end‖。这个效果有1分钟冷却</talentdescription.TenshiTalent>
     <afflictionname.The_Daughter_Of_Heaven>非想非非想天之女</afflictionname.The_Daughter_Of_Heaven>
-    <afflictiondescription.The_Daughter_Of_Heaven>
-        天子是十多岁的少女形象。瞳孔为红色。头发为蓝色长发，末端稍卷。头戴一顶黑色礼帽，帽子上装饰有桃子（可以吃）和桃树叶。
-    </afflictiondescription.The_Daughter_Of_Heaven>
+    <afflictiondescription.The_Daughter_Of_Heaven>天子是十多岁的少女形象。瞳孔为红色。头发为蓝色长发，末端稍卷。头戴一顶黑色礼帽，帽子上装饰有桃子（可以吃）和桃树叶。</afflictiondescription.The_Daughter_Of_Heaven>
     <afflictionname.Tenshi_Weapons>绯想一般远离浮世的天人</afflictionname.Tenshi_Weapons>
-    <afflictiondescription.Tenshi_Weapons>
-        此外，比那名居天子虽不具备天人应有的品行，但具备天人的许多特质。肉身十分强韧，刀子都刺不进天人的身体，天人的肉对妖怪而言是剧毒。
-    </afflictiondescription.Tenshi_Weapons>
+    <afflictiondescription.Tenshi_Weapons>此外，比那名居天子虽不具备天人应有的品行，但具备天人的许多特质。肉身十分强韧，刀子都刺不进天人的身体，天人的肉对妖怪而言是剧毒。</afflictiondescription.Tenshi_Weapons>
     <afflictionname.Tenshi_Blood>天人之血</afflictionname.Tenshi_Blood>
     <afflictiondescription.Tenshi_Blood>天人的血对妖怪是剧毒的</afflictiondescription.Tenshi_Blood>
 
     <!--Momizi-->
     <entityname.Momizi_gear>‖color:255,255,255,255‖椛装束‖end‖</entityname.Momizi_gear>
-    <entitydescription.Momizi_gear>
-        ‖color:255,255,255,255‖平日在九天瀑布内侧待机。因为妖怪之山入侵者很少，所以平时都很闲，于是会找附近同样闲的河童下大将棋。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Momizi_gear>
+    <entitydescription.Momizi_gear>‖color:255,255,255,255‖平日在九天瀑布内侧待机。因为妖怪之山入侵者很少，所以平时都很闲，于是会找附近同样闲的河童下大将棋。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Momizi_gear>
     <entityname.Momizi_Plus>‖color:255,255,255,255‖椛装束+‖end‖</entityname.Momizi_Plus>
-    <entitydescription.Momizi_Plus>
-        ‖color:255,255,255,255‖平日在九天瀑布内侧待机。因为妖怪之山入侵者很少，所以平时都很闲，于是会找附近同样闲的河童下大将棋。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Momizi_Plus>
+    <entitydescription.Momizi_Plus>‖color:255,255,255,255‖平日在九天瀑布内侧待机。因为妖怪之山入侵者很少，所以平时都很闲，于是会找附近同样闲的河童下大将棋。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Momizi_Plus>
     <talentname.MomiziTalent>山中的千里眼</talentname.MomiziTalent>
     <talentdescription.MomiziTalent>当你身着 椛装束+ 时，对咬伤和噬咬的抗性更高
         受到的烧伤增加‖color:gui.red‖30%‖end‖
         最大生命值提高‖color:gui.green‖25%‖end‖
         当附近有敌人时，你会得到警戒并提升‖color:gui.green‖15%‖end‖行走速度、‖color:gui.green‖10%‖end‖游泳速度和‖color:gui.green‖15%‖end‖近战攻击速度
-        当你受到攻击后，会短暂提升物理伤害抗性和‖color:gui.green‖25%‖end‖近战攻击伤害。
-    </talentdescription.MomiziTalent>
+        当你受到攻击后，会短暂提升物理伤害抗性和‖color:gui.green‖25%‖end‖近战攻击伤害。</talentdescription.MomiziTalent>
     <afflictionname.Grunt_Security_Tengu>基层警卫天狗</afflictionname.Grunt_Security_Tengu>
-    <afflictiondescription.Grunt_Security_Tengu>在妖怪之山上巡逻着的天狗。视觉、嗅觉均很优秀，可以瞬间发现入侵者。
-    </afflictiondescription.Grunt_Security_Tengu>
+    <afflictiondescription.Grunt_Security_Tengu>在妖怪之山上巡逻着的天狗。视觉、嗅觉均很优秀，可以瞬间发现入侵者。</afflictiondescription.Grunt_Security_Tengu>
     <afflictionname.Momizi_Weapons>狂犬断噬</afflictionname.Momizi_Weapons>
     <afflictiondescription.Momizi_Weapons>椛拥有看见千里之外程度的能力，加上拥有的优秀嗅觉，她能够瞬间发现入侵者。</afflictiondescription.Momizi_Weapons>
     <afflictionname.Grunt_Security_Tengu_Senor>警戒！！！</afflictionname.Grunt_Security_Tengu_Senor>
@@ -309,25 +241,18 @@
 
     <!--Yuka-->
     <entityname.Yuka_gear>‖color:117,128,110,255‖幽香装束‖end‖</entityname.Yuka_gear>
-    <entitydescription.Yuka_gear>
-        ‖color:117,128,110,255‖幽香生活在太阳花田，会消灭一切闯入打扰的人类和妖怪。由于活得久，最近很少离开花田周围活动。\n非常喜欢季节性开放的花朵，一年四季都生活在被自然的花包围的场所，以一年内所有时间都有花开放为目标而努力。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Yuka_gear>
+    <entitydescription.Yuka_gear>‖color:117,128,110,255‖幽香生活在太阳花田，会消灭一切闯入打扰的人类和妖怪。由于活得久，最近很少离开花田周围活动。\n非常喜欢季节性开放的花朵，一年四季都生活在被自然的花包围的场所，以一年内所有时间都有花开放为目标而努力。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Yuka_gear>
     <entityname.Yuka_Plus>‖color:117,128,110,255‖幽香装束+‖end‖</entityname.Yuka_Plus>
-    <entitydescription.Yuka_Plus>
-        ‖color:117,128,110,255‖幽香生活在太阳花田，会消灭一切闯入打扰的人类和妖怪。由于活得久，最近很少离开花田周围活动。\n非常喜欢季节性开放的花朵，一年四季都生活在被自然的花包围的场所，以一年内所有时间都有花开放为目标而努力。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Yuka_Plus>
+    <entitydescription.Yuka_Plus>‖color:117,128,110,255‖幽香生活在太阳花田，会消灭一切闯入打扰的人类和妖怪。由于活得久，最近很少离开花田周围活动。\n非常喜欢季节性开放的花朵，一年四季都生活在被自然的花包围的场所，以一年内所有时间都有花开放为目标而努力。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Yuka_Plus>
     <talentname.Lord_Of_Flowers>四季的鲜花之主</talentname.Lord_Of_Flowers>
     <talentdescription.Lord_Of_Flowers>当你身着 幽香装束+ 时，对毒药和出血的抗性提高
         对非人类造成的伤害下降‖color:gui.red‖10%‖end‖
         近战攻击伤害提高‖color:gui.green‖40%‖end‖
-        每个巡回都能获得一颗太阳花种子，太阳花会随机掉落不同的花瓣，每种花瓣使用后可以给自己提供不同的加成效果
-    </talentdescription.Lord_Of_Flowers>
+        每个巡回都能获得一颗太阳花种子，太阳花会随机掉落不同的花瓣，每种花瓣使用后可以给自己提供不同的加成效果</talentdescription.Lord_Of_Flowers>
     <afflictionname.Flowers_Of_Four_Seasons>太阳花田的主人</afflictionname.Flowers_Of_Four_Seasons>
-    <afflictiondescription.Flowers_Of_Four_Seasons>居住在幻想乡的妖怪。拥有操纵花程度的能力。以一年内所有时间都有花开放为目标而努力。
-    </afflictiondescription.Flowers_Of_Four_Seasons>
+    <afflictiondescription.Flowers_Of_Four_Seasons>居住在幻想乡的妖怪。拥有操纵花程度的能力。以一年内所有时间都有花开放为目标而努力。</afflictiondescription.Flowers_Of_Four_Seasons>
     <afflictionname.Yuka_Weapons>今昔幻想乡</afflictionname.Yuka_Weapons>
-    <afflictiondescription.Yuka_Weapons>幽香拥有操纵花程度的能力，能让花盛开、使向日葵面向太阳、让枯萎的花再度盛开等。
-    </afflictiondescription.Yuka_Weapons>
+    <afflictiondescription.Yuka_Weapons>幽香拥有操纵花程度的能力，能让花盛开、使向日葵面向太阳、让枯萎的花再度盛开等。</afflictiondescription.Yuka_Weapons>
     <afflictionname.Sun_Flower_Petal01_Effect>幻想春花-集中</afflictionname.Sun_Flower_Petal01_Effect>
     <afflictiondescription.Sun_Flower_Petal01_Effect>体内的力量更加集中，造成的伤害更高</afflictiondescription.Sun_Flower_Petal01_Effect>
     <afflictionname.Sun_Flower_Petal02_Effect>幻想春花-轻盈</afflictionname.Sun_Flower_Petal02_Effect>
@@ -337,13 +262,9 @@
 
     <!--Aunn-->
     <entityname.Aunn_gear>‖color:162,190,160,255‖阿吽装束‖end‖</entityname.Aunn_gear>
-    <entitydescription.Aunn_gear>‖color:162,190,160,255‖阿吽会找出、赖在并自说自话地守护可能聚集人类信仰的场所。
-        她平时不会显现出身姿，只有持有敌意的人出现的时候才会现身攻击，但是因为并不强所以经常输。\n每到夏天她就特别招青蛙喜欢。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Aunn_gear>
+    <entitydescription.Aunn_gear>‖color:162,190,160,255‖阿吽会找出、赖在并自说自话地守护可能聚集人类信仰的场所。 她平时不会显现出身姿，只有持有敌意的人出现的时候才会现身攻击，但是因为并不强所以经常输。\n每到夏天她就特别招青蛙喜欢。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Aunn_gear>
     <entityname.Aunn_Plus>‖color:162,190,160,255‖阿吽装束+‖end‖</entityname.Aunn_Plus>
-    <entitydescription.Aunn_Plus>‖color:162,190,160,255‖阿吽会找出、赖在并自说自话地守护可能聚集人类信仰的场所。
-        她平时不会显现出身姿，只有持有敌意的人出现的时候才会现身攻击，但是因为并不强所以经常输。\n每到夏天她就特别招青蛙喜欢。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Aunn_Plus>
+    <entitydescription.Aunn_Plus>‖color:162,190,160,255‖阿吽会找出、赖在并自说自话地守护可能聚集人类信仰的场所。 她平时不会显现出身姿，只有持有敌意的人出现的时候才会现身攻击，但是因为并不强所以经常输。\n每到夏天她就特别招青蛙喜欢。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Aunn_Plus>
     <talentname.AunnTalent>醉心神佛的守护神兽</talentname.AunnTalent>
     <talentdescription.AunnTalent>当你身着 阿吽装束+ 时，对灵压和精神攻击的抗性更高
         对人类造成的伤害下降‖color:gui.red‖10%‖end‖
@@ -351,11 +272,9 @@
         对船员造成的伤害为原本的‖color:gui.green‖75%‖end‖
         \n每个巡回一次，可以选择两种状态：狮子/狛犬
         狛犬：一次性使用生效，在你身边的船员能获得‖color:gui.orange‖守护神兽‖end‖的效果，该效果能提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害和精神病‖end‖抗性，并且对友方角色造成的伤害再下降‖color:gui.green‖15%‖end‖，更快地从‖color:gui.orange‖灵压、噬咬‖end‖中恢复，并提高‖color:gui.green‖10‖end‖点临时生命值
-        狮子：‖color:gui.orange‖物理伤害‖end‖抗性下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害、攻击速度、移动速度‖end‖增加‖color:gui.green‖10%‖end‖，对非友好角色（红名生物）造成的伤害额外增加‖color:gui.green‖10%‖end‖
-    </talentdescription.AunnTalent>
+        狮子：‖color:gui.orange‖物理伤害‖end‖抗性下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害、攻击速度、移动速度‖end‖增加‖color:gui.green‖10%‖end‖，对非友好角色（红名生物）造成的伤害额外增加‖color:gui.green‖10%‖end‖</talentdescription.AunnTalent>
     <afflictionname.Naivete_Koma_Inu>天真烂漫狛犬</afflictionname.Naivete_Koma_Inu>
-    <afflictiondescription.Naivete_Koma_Inu>她是狛犬，不过其实她同时拥有狮子和狛犬两种性质，是二位一体的神兽。身为神兽内心的狂暴和平和能够共存。
-    </afflictiondescription.Naivete_Koma_Inu>
+    <afflictiondescription.Naivete_Koma_Inu>她是狛犬，不过其实她同时拥有狮子和狛犬两种性质，是二位一体的神兽。身为神兽内心的狂暴和平和能够共存。</afflictiondescription.Naivete_Koma_Inu>
     <afflictionname.Aunn_Lion>狮子</afflictionname.Aunn_Lion>
     <afflictiondescription.Aunn_Lion>春意和勇敢，以及马马虎虎的强敌感。然后是悠闲角色的感觉。</afflictiondescription.Aunn_Lion>
     <afflictionname.Aunn_Koma_Inu>狛犬</afflictionname.Aunn_Koma_Inu>
@@ -363,29 +282,19 @@
     <afflictionname.Aunn_Koma_Inu_Others>守护神兽</afflictionname.Aunn_Koma_Inu_Others>
     <afflictiondescription.Aunn_Koma_Inu_Others>附近有神兽在守护你，这让你充满了信心。</afflictiondescription.Aunn_Koma_Inu_Others>
     <afflictionname.Aunn_Weapons>神色自若的狛犬</afflictionname.Aunn_Weapons>
-    <afflictiondescription.Aunn_Weapons>阿吽有着一头绿色及臀长发，刘海和及肩的头发为形似鬃毛的卷发，头顶长着一只灰色的独角。
-    </afflictiondescription.Aunn_Weapons>
+    <afflictiondescription.Aunn_Weapons>阿吽有着一头绿色及臀长发，刘海和及肩的头发为形似鬃毛的卷发，头顶长着一只灰色的独角。</afflictiondescription.Aunn_Weapons>
 
     <!--Flandre-->
     <entityname.Flandre_gear>‖color:255,36,0,255‖芙兰朵露装束‖end‖</entityname.Flandre_gear>
-    <entitydescription.Flandre_gear>
-        ‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Flandre_gear>
+    <entitydescription.Flandre_gear>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_gear>
     <entityname.Flandre_Plus>‖color:255,36,0,255‖芙兰朵露装束+‖end‖</entityname.Flandre_Plus>
-    <entitydescription.Flandre_Plus>
-        ‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Flandre_Plus>
+    <entitydescription.Flandre_Plus>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Plus>
     <entityname.Flandre_Eclipse_Anniversary>‖color:255,36,0,255‖芙兰朵露装束（周年庆）‖end‖</entityname.Flandre_Eclipse_Anniversary>
-    <entitydescription.Flandre_Eclipse_Anniversary>
-        ‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Flandre_Eclipse_Anniversary>
+    <entitydescription.Flandre_Eclipse_Anniversary>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Eclipse_Anniversary>
     <entityname.Flandre_Eclipse_Anniversary_Plus>‖color:255,36,0,255‖芙兰朵露装束+（周年庆）‖end‖</entityname.Flandre_Eclipse_Anniversary_Plus>
-    <entitydescription.Flandre_Eclipse_Anniversary_Plus>
-        ‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）
-    </entitydescription.Flandre_Eclipse_Anniversary_Plus>
+    <entitydescription.Flandre_Eclipse_Anniversary_Plus>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Eclipse_Anniversary_Plus>
     <talentname.FlandreTalent>吸血鬼的破坏性妹妹</talentname.FlandreTalent>
-    <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+
-        时，对物理伤害和烧伤的抗性非常低，同时，受到的物理伤害额外增加‖color:gui.green‖25%‖end‖，受到的烧伤额外增加‖color:gui.green‖50%‖end‖。
+    <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+ 时，对物理伤害和烧伤的抗性非常低，同时，受到的物理伤害额外增加‖color:gui.green‖25%‖end‖，受到的烧伤额外增加‖color:gui.green‖50%‖end‖。
         \n修复速度下降‖color:gui.green‖20%‖end‖。
         \n更快从‖color:gui.orange‖出血‖end‖和‖color:gui.orange‖失血‖end‖中恢复。
         \n‖color:gui.orange‖医疗水平‖end‖永远减少‖color:gui.red‖100‖end‖。
@@ -394,38 +303,27 @@
         \n四重分身：可拥有额外三种天赋，需要通过制作‖color:gui.red‖芙兰朵露人偶‖end‖并使用获得。
     </talentdescription.FlandreTalent>
     <talentname.FlandreTalent2>可怕的波动</talentname.FlandreTalent2>
-    <talentdescription.FlandreTalent2>当你身着 芙兰朵露装束+
-        时，攻击时有30%概率额外造成30%伤害，若生命值低于49.5%，造成的伤害提高‖color:gui.green‖49.5%‖end‖。
-    </talentdescription.FlandreTalent2>
+    <talentdescription.FlandreTalent2>当你身着 芙兰朵露装束+ 时，攻击时有30%概率额外造成30%伤害，若生命值低于49.5%，造成的伤害提高‖color:gui.green‖49.5%‖end‖。</talentdescription.FlandreTalent2>
     <talentname.FlandreTalent3>鲜红血液的恶魔</talentname.FlandreTalent3>
-    <talentdescription.FlandreTalent3>当你身着 芙兰朵露装束+
-        时，对debuff的抗性提高‖color:gui.green‖35%‖end‖。如果身旁紧邻友方船员，还可增加‖color:gui.green‖66‖end‖点医疗水平.
-    </talentdescription.FlandreTalent3>
+    <talentdescription.FlandreTalent3>当你身着 芙兰朵露装束+ 时，对debuff的抗性提高‖color:gui.green‖35%‖end‖。如果身旁紧邻友方船员，还可增加‖color:gui.green‖66‖end‖点医疗水平.</talentdescription.FlandreTalent3>
     <talentname.FlandreTalent4>笼中鸟</talentname.FlandreTalent4>
     <talentdescription.FlandreTalent4>当你身着 芙兰朵露装束+ 时，按下下蹲键（默认Ctrl）时，会覆盖一层护盾，降低70%自身受到的伤害，
         期间自己的移动速度下降‖color:gui.green‖60%‖end‖，攻击伤害下降‖color:gui.green‖100%‖end‖。
-        护盾持续时间‖color:gui.green‖15‖end‖秒，护盾剩余时间大于‖color:gui.green‖0‖end‖时，每秒恢复‖color:gui.green‖1‖end‖秒持续时间。否则将在时间耗尽后第‖color:gui.green‖30‖end‖秒重置时长。
-    </talentdescription.FlandreTalent4>
+        护盾持续时间‖color:gui.green‖15‖end‖秒，护盾剩余时间大于‖color:gui.green‖0‖end‖时，每秒恢复‖color:gui.green‖1‖end‖秒持续时间。否则将在时间耗尽后第‖color:gui.green‖30‖end‖秒重置时长。</talentdescription.FlandreTalent4>
     <afflictionname.Younger_Sister_Of_Scarlet>恶魔之妹</afflictionname.Younger_Sister_Of_Scarlet>
     <afflictionname.Younger_Sister_Of_Scarlet_NT>恶魔之妹</afflictionname.Younger_Sister_Of_Scarlet_NT>
-    <afflictiondescription.Younger_Sister_Of_Scarlet>
-        芙兰是蕾米莉亚·斯卡蕾特的妹妹，喜欢蕾米莉亚姐姐，却很少见到她和姐姐蕾米莉亚在一起。平日里与蕾米一起受女仆长十六夜咲夜的照顾。
-    </afflictiondescription.Younger_Sister_Of_Scarlet>
+    <afflictiondescription.Younger_Sister_Of_Scarlet>芙兰是蕾米莉亚·斯卡蕾特的妹妹，喜欢蕾米莉亚姐姐，却很少见到她和姐姐蕾米莉亚在一起。平日里与蕾米一起受女仆长十六夜咲夜的照顾。</afflictiondescription.Younger_Sister_Of_Scarlet>
     <afflictionname.Flandre_Weapons>U.N.OWEN就是她吗？</afflictionname.Flandre_Weapons>
-    <afflictiondescription.Flandre_Weapons>
-        芙兰朵露是蕾米莉亚·斯卡蕾特的妹妹，喜欢蕾米莉亚姐姐，却很少见到她和姐姐蕾米莉亚在一起。平日里与蕾米一起受女仆长十六夜咲夜的照顾。
-    </afflictiondescription.Flandre_Weapons>
+    <afflictiondescription.Flandre_Weapons>芙兰朵露是蕾米莉亚·斯卡蕾特的妹妹，喜欢蕾米莉亚姐姐，却很少见到她和姐姐蕾米莉亚在一起。平日里与蕾米一起受女仆长十六夜咲夜的照顾。</afflictiondescription.Flandre_Weapons>
     <afflictionname.FlandreTalent4_Effect_CD>笼中鸟-护盾剩余时长</afflictionname.FlandreTalent4_Effect_CD>
 
     <!--Nue-->
     <entityname.Nue_gear>‖color:90,80,100,255‖鵺 装束‖end‖</entityname.Nue_gear>
     <entitydescription.Nue_gear>‖color:90,80,100,255‖一看到别人在兴致勃勃做事，她就不由得想在暗地里阻挠别人，这就是她的性格。
-        曾在地底优哉游哉地过活，在间歇泉骚动后回到地上。现在已入门命莲寺，跟随圣白莲修行，然而却与其他的妖怪稍有些不合群。‖end‖\n（内置扫描仪槽位）
-    </entitydescription.Nue_gear>
+        曾在地底优哉游哉地过活，在间歇泉骚动后回到地上。现在已入门命莲寺，跟随圣白莲修行，然而却与其他的妖怪稍有些不合群。‖end‖\n（内置扫描仪槽位）</entitydescription.Nue_gear>
     <entityname.Nue_Plus>‖color:90,80,100,255‖鵺 装束+‖end‖</entityname.Nue_Plus>
     <entitydescription.Nue_Plus>‖color:90,80,100,255‖一看到别人在兴致勃勃做事，她就不由得想在暗地里阻挠别人，这就是她的性格。
-        曾在地底优哉游哉地过活，在间歇泉骚动后回到地上。现在已入门命莲寺，跟随圣白莲修行，然而却与其他的妖怪稍有些不合群。‖end‖\n（内置扫描仪槽位）
-    </entitydescription.Nue_Plus>
+        曾在地底优哉游哉地过活，在间歇泉骚动后回到地上。现在已入门命莲寺，跟随圣白莲修行，然而却与其他的妖怪稍有些不合群。‖end‖\n（内置扫描仪槽位）</entitydescription.Nue_Plus>
     <talentname.NueTalent>真相不明的黑暗</talentname.NueTalent>
     <talentdescription.NueTalent>当你身着 鵺 装束+ 时，对Debuff的抗性非常高。
         \n增益效果持续时间减少‖color:gui.red‖50%‖end‖。
@@ -434,39 +332,31 @@
         78个：提高‖color:gui.green‖50%‖end‖技能获取速度，移动速度提高‖color:gui.green‖10%‖end‖。
         156个：提高‖color:gui.green‖15%‖end‖经验获取速度，最大生命值增加‖color:gui.green‖10%‖end‖。
         234个：增益效果持续时间增加‖color:gui.green‖20%‖end‖，攻击速度增加‖color:gui.green‖10%‖end‖。
-        312个：提高‖color:gui.green‖10%‖end‖攻击伤害，游泳速度增加‖color:gui.green‖50%‖end‖。
-    </talentdescription.NueTalent>
+        312个：提高‖color:gui.green‖10%‖end‖攻击伤害，游泳速度增加‖color:gui.green‖50%‖end‖。</talentdescription.NueTalent>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl>未确认幻想飞行少女</afflictionname.Unconfirmed_Fantasy_Flying_Girl>
     <afflictiondescription.Unconfirmed_Fantasy_Flying_Girl>被人们降伏了许多次的妖怪，每次都被人传说为不同的姿态。可是传说终究是传说。
-        实际上，她从未在人们面前出现过。她只是乐在其中，她从远处看着人们害怕着、编造着各种关于自己的传说。
-    </afflictiondescription.Unconfirmed_Fantasy_Flying_Girl>
+        实际上，她从未在人们面前出现过。她只是乐在其中，她从远处看着人们害怕着、编造着各种关于自己的传说。</afflictiondescription.Unconfirmed_Fantasy_Flying_Girl>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl_Level01>真相不明的黑暗-第一阶段</afflictionname.Unconfirmed_Fantasy_Flying_Girl_Level01>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl_Level02>真相不明的黑暗-第二阶段</afflictionname.Unconfirmed_Fantasy_Flying_Girl_Level02>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl_Level03>真相不明的黑暗-第三阶段</afflictionname.Unconfirmed_Fantasy_Flying_Girl_Level03>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl_Level04>真相不明的黑暗-第四阶段</afflictionname.Unconfirmed_Fantasy_Flying_Girl_Level04>
     <afflictionname.Nue_Weapons>真相不明的真相</afflictionname.Nue_Weapons>
-    <afflictiondescription.Nue_Weapons>
-        命莲寺的妖怪都以圣白莲为中心，大家都相互信赖。但是作为后来才入门的她，立场就有些微妙了。她与其他的妖怪稍有些不合群，经常在寺外摆出一副很无所事事的表情。
-    </afflictiondescription.Nue_Weapons>
+    <afflictiondescription.Nue_Weapons>命莲寺的妖怪都以圣白莲为中心，大家都相互信赖。但是作为后来才入门的她，立场就有些微妙了。她与其他的妖怪稍有些不合群，经常在寺外摆出一副很无所事事的表情。</afflictiondescription.Nue_Weapons>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl_Stage02>平安时代的噩梦</afflictionname.Unconfirmed_Fantasy_Flying_Girl_Stage02>
-    <afflictiondescription.Unconfirmed_Fantasy_Flying_Girl_Stage02>生命值低于50%时，提高抗性。
-    </afflictiondescription.Unconfirmed_Fantasy_Flying_Girl_Stage02>
+    <afflictiondescription.Unconfirmed_Fantasy_Flying_Girl_Stage02>生命值低于50%时，提高抗性。</afflictiondescription.Unconfirmed_Fantasy_Flying_Girl_Stage02>
 
     <!--Piece-->
     <entityname.Piece_gear>‖color:255,90,40,255‖皮丝装束‖end‖</entityname.Piece_gear>
     <entitydescription.Piece_gear>皮丝是赫卡提亚·拉碧斯拉祖利的部下，对赫卡提亚很忠诚的同时也有自己的主见，称呼赫卡提亚为“主人”。
-        在绀珠传之后，被赫卡提亚派往幻想乡居住，结识了光之三妖精桑尼米尔克、露娜切露德、斯塔萨菲雅，与她们一起恶作剧。之后还先后结识了琪露诺、爱塔妮缇拉尔瓦等妖精。
-    </entitydescription.Piece_gear>
+        在绀珠传之后，被赫卡提亚派往幻想乡居住，结识了光之三妖精桑尼米尔克、露娜切露德、斯塔萨菲雅，与她们一起恶作剧。之后还先后结识了琪露诺、爱塔妮缇拉尔瓦等妖精。</entitydescription.Piece_gear>
     <entityname.Piece_Plus>‖color:255,90,40,255‖皮丝装束+‖end‖</entityname.Piece_Plus>
     <entitydescription.Piece_Plus>皮丝是赫卡提亚·拉碧斯拉祖利的部下，对赫卡提亚很忠诚的同时也有自己的主见，称呼赫卡提亚为“主人”。
-        在绀珠传之后，被赫卡提亚派往幻想乡居住，结识了光之三妖精桑尼米尔克、露娜切露德、斯塔萨菲雅，与她们一起恶作剧。之后还先后结识了琪露诺、爱塔妮缇拉尔瓦等妖精。
-    </entitydescription.Piece_Plus>
+        在绀珠传之后，被赫卡提亚派往幻想乡居住，结识了光之三妖精桑尼米尔克、露娜切露德、斯塔萨菲雅，与她们一起恶作剧。之后还先后结识了琪露诺、爱塔妮缇拉尔瓦等妖精。</entitydescription.Piece_Plus>
     <talentname.PieceTalent>地狱的妖精</talentname.PieceTalent>
     <talentdescription.PieceTalent>当你身着皮丝装束+时，
         对烧伤的抗性略高。
         精神病越高，‖color:gui.orange‖攻击伤害、攻击速度、对队友的伤害‖end‖越高。‖color:gui.orange‖攻击伤害和攻击速度‖end‖最高‖color:gui.green‖25%‖end‖，‖color:gui.orange‖友伤‖end‖最高提高到‖color:gui.green‖40%‖end‖
-        \n攻击目标的精神病越高，对其造成的伤害越高，最高‖color:gui.green‖20%‖end‖。
-    </talentdescription.PieceTalent>
+        \n攻击目标的精神病越高，对其造成的伤害越高，最高‖color:gui.green‖20%‖end‖。</talentdescription.PieceTalent>
     <afflictionname.Fairy_Of_Hell>地狱的妖精</afflictionname.Fairy_Of_Hell>
     <afflictiondescription.Fairy_Of_Hell>她受赫卡提亚的命令，令静海充满了自己从地狱带来的妖精们。</afflictiondescription.Fairy_Of_Hell>
     <afflictionname.Piece_Weapons>狂气的地狱妖精</afflictionname.Piece_Weapons>
@@ -474,21 +364,13 @@
 
     <!--Cirno-->
     <entityname.Cirno_gear>‖color:60,90,255,255‖琪露诺装束‖end‖</entityname.Cirno_gear>
-    <entitydescription.Cirno_gear>
-        有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强，
-    </entitydescription.Cirno_gear>
+    <entitydescription.Cirno_gear>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强，</entitydescription.Cirno_gear>
     <entityname.Cirno_Plus>‖color:60,90,255,255‖琪露诺装束+‖end‖</entityname.Cirno_Plus>
-    <entitydescription.Cirno_Plus>
-        有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强。
-    </entitydescription.Cirno_Plus>
+    <entitydescription.Cirno_Plus>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强。</entitydescription.Cirno_Plus>
     <entityname.Cirno_Eclipse_Valentines>‖color:60,90,210,255‖琪露诺装束（情人节）‖end‖</entityname.Cirno_Eclipse_Valentines>
-    <entitydescription.Cirno_Eclipse_Valentines>
-        有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强，
-    </entitydescription.Cirno_Eclipse_Valentines>
+    <entitydescription.Cirno_Eclipse_Valentines>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强，</entitydescription.Cirno_Eclipse_Valentines>
     <entityname.Cirno_Eclipse_Valentines_Plus>‖color:60,90,210,255‖琪露诺装束+（情人节）‖end‖</entityname.Cirno_Eclipse_Valentines_Plus>
-    <entitydescription.Cirno_Eclipse_Valentines_Plus>
-        有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强。
-    </entitydescription.Cirno_Eclipse_Valentines_Plus>
+    <entitydescription.Cirno_Eclipse_Valentines_Plus>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强。</entitydescription.Cirno_Eclipse_Valentines_Plus>
     <entityname.Cirno_Eclipse_Valentines_Headpiece>‖color:60,90,210,255‖柠檬发饰（情人节）‖end‖</entityname.Cirno_Eclipse_Valentines_Headpiece>
     <entitydescription.Cirno_Eclipse_Valentines_Headpiece>为甜美而清凉的薄荷点缀上一片柠檬</entitydescription.Cirno_Eclipse_Valentines_Headpiece>
     <talentname.CirnoTalent>冰之勇者</talentname.CirnoTalent>
@@ -498,8 +380,7 @@
         技能获取速度下降‖color:gui.red‖50%‖end‖。
         当你在水中时，增加‖color:gui.green‖20%‖end‖的‖color:gui.orange‖攻击速度‖end‖和‖color:gui.green‖20%‖end‖的‖color:gui.orange‖移动速度‖end‖，并持续治愈一些伤势。
         \n使用魔法近战武器时，每次攻击附带‖color:gui.green‖4~8‖end‖点‖color:gui.orange‖冻结‖end‖，这个效果随着武器制作难度的不同会上升。
-        \n远程弹幕（非炮塔）攻击半血以上的敌人时，每次攻击有‖color:gui.green‖35%‖end‖概率附带少量‖color:gui.orange‖冻结‖end‖。
-    </talentdescription.CirnoTalent>
+        \n远程弹幕（非炮塔）攻击半血以上的敌人时，每次攻击有‖color:gui.green‖35%‖end‖概率附带少量‖color:gui.orange‖冻结‖end‖。</talentdescription.CirnoTalent>
     <afflictionname.Fairy_Of_Ice>冰雪聪明冰之妖精</afflictionname.Fairy_Of_Ice>
     <afflictiondescription.Fairy_Of_Ice>在妖精中属于好战型。脑袋有些笨笨的。不过她本来就是个孩子而已。</afflictiondescription.Fairy_Of_Ice>
     <afflictionname.Cirno_Weapons>雾之湖的冰精</afflictionname.Cirno_Weapons>
@@ -507,13 +388,9 @@
 
     <!--Nitori-->
     <entityname.Nitori_Gear>‖color:52,94,60,255‖荷取装束‖color:end‖</entityname.Nitori_Gear>
-    <entitydescription.Nitori_Gear>
-        ‖color:52,94,60,255‖作为河童，对商业机遇很敏感，每当幻想乡内举办稍具规模的节庆活动或是集会，时常能在现场看见包括她在内的河童们出摊叫卖。\n————《人妖名鉴》‖color:end‖
-    </entitydescription.Nitori_Gear>
+    <entitydescription.Nitori_Gear>‖color:52,94,60,255‖作为河童，对商业机遇很敏感，每当幻想乡内举办稍具规模的节庆活动或是集会，时常能在现场看见包括她在内的河童们出摊叫卖。\n————《人妖名鉴》‖color:end‖</entitydescription.Nitori_Gear>
     <entityname.Nitori_Plus>‖color:52,94,60,255‖荷取装束+‖color:end‖</entityname.Nitori_Plus>
-    <entitydescription.Nitori_Plus>
-        ‖color:52,94,60,255‖作为河童，对商业机遇很敏感，每当幻想乡内举办稍具规模的节庆活动或是集会，时常能在现场看见包括她在内的河童们出摊叫卖。\n————《人妖名鉴》‖color:end‖
-    </entitydescription.Nitori_Plus>
+    <entitydescription.Nitori_Plus>‖color:52,94,60,255‖作为河童，对商业机遇很敏感，每当幻想乡内举办稍具规模的节庆活动或是集会，时常能在现场看见包括她在内的河童们出摊叫卖。\n————《人妖名鉴》‖color:end‖</entitydescription.Nitori_Plus>
     <entityname.Nitori_Hat>‖color:52,94,60,255‖荷取的鸭舌帽‖color:end‖</entityname.Nitori_Hat>
     <entitydescription.Nitori_Hat>常见的河童装饰</entitydescription.Nitori_Hat>
     <talentname.Kappa_Pororoca>芥川龙之介的河童</talentname.Kappa_Pororoca>
@@ -526,8 +403,7 @@
         \n当打开沉船容器时，有‖color:gui.green‖15%‖end‖概率找到简单零件，‖color:gui.green‖5%‖end‖概率找到精密零件
         \n当打开信标站容器时，有‖color:gui.green‖30%‖end‖概率找到精密零件
         \n修复的设备相当难以损坏
-        \n交易舰船时拥有‖color:gui.green‖10%‖end‖的折扣
-    </talentdescription.Kappa_Pororoca>
+        \n交易舰船时拥有‖color:gui.green‖10%‖end‖的折扣</talentdescription.Kappa_Pororoca>
     <afflictionname.Candid_Friend>超妖怪弹头</afflictionname.Candid_Friend>
     <afflictiondescription.Candid_Friend>擅长买卖且守财如命的河童</afflictiondescription.Candid_Friend>
     <afflictionname.Nitori_Weapons>水中的工程师</afflictionname.Nitori_Weapons>
@@ -537,23 +413,15 @@
 
     <!--Koishi-->
     <entityname.Koishi_gear>‖color:60,255,155,255‖恋恋装束‖end‖</entityname.Koishi_gear>
-    <entitydescription.Koishi_gear>
-        恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。
-    </entitydescription.Koishi_gear>
+    <entitydescription.Koishi_gear>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_gear>
     <entityname.Koishi_Plus>‖color:60,255,155,255‖恋恋装束+‖end‖</entityname.Koishi_Plus>
-    <entitydescription.Koishi_Plus>
-        恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。
-    </entitydescription.Koishi_Plus>
+    <entitydescription.Koishi_Plus>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_Plus>
     <entityname.Koishi_Hat>‖color:60,255,155,255‖小石子帽子‖end‖</entityname.Koishi_Hat>
     <entitydescription.Koishi_Hat>难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Koishi_Hat>
     <entityname.Koishi_Eclipse_Valentines>‖color:255,128,238,255‖恋恋装束（情人节）‖end‖</entityname.Koishi_Eclipse_Valentines>
-    <entitydescription.Koishi_Eclipse_Valentines>
-        恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。
-    </entitydescription.Koishi_Eclipse_Valentines>
+    <entitydescription.Koishi_Eclipse_Valentines>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_Eclipse_Valentines>
     <entityname.Koishi_Eclipse_Valentines_Plus>‖color:255,128,238,255‖恋恋装束+（情人节）‖end‖</entityname.Koishi_Eclipse_Valentines_Plus>
-    <entitydescription.Koishi_Eclipse_Valentines_Plus>
-        恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。
-    </entitydescription.Koishi_Eclipse_Valentines_Plus>
+    <entitydescription.Koishi_Eclipse_Valentines_Plus>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_Eclipse_Valentines_Plus>
     <entityname.Koishi_Eclipse_Valentines_Hat>‖color:255,128,238,255‖小石子帽子（情人节）‖end‖</entityname.Koishi_Eclipse_Valentines_Hat>
     <entitydescription.Koishi_Eclipse_Valentines_Hat>难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Koishi_Eclipse_Valentines_Hat>
     <talentname.KoishiTalent>地底蔷薇</talentname.KoishiTalent>
@@ -571,30 +439,22 @@
         \n无法受到天赋“特种部队”给予的加成。
     </talentdescription.KoishiTalent>
     <afflictionname.Closed_Eyes_Of_Koishi>紧闭的恋之瞳</afflictionname.Closed_Eyes_Of_Koishi>
-    <afflictiondescription.Closed_Eyes_Of_Koishi>她是觉妖怪，一种拥有读心能力的妖怪，但恋封闭内心后失去了该能力，同时获得操纵无意识的能力。
-    </afflictiondescription.Closed_Eyes_Of_Koishi>
+    <afflictiondescription.Closed_Eyes_Of_Koishi>她是觉妖怪，一种拥有读心能力的妖怪，但恋封闭内心后失去了该能力，同时获得操纵无意识的能力。</afflictiondescription.Closed_Eyes_Of_Koishi>
     <afflictionname.Koishi_Unconscious01>无意识</afflictionname.Koishi_Unconscious01>
     <afflictionname.Koishi_Unconscious02>无意识</afflictionname.Koishi_Unconscious02>
     <afflictionname.Koishi_Unconscious03>无意识</afflictionname.Koishi_Unconscious03>
     <afflictionname.Liberation_Of_Koishi>本能「本我的解放」</afflictionname.Liberation_Of_Koishi>
-    <afflictiondescription.Liberation_Of_Koishi>扣除最大生命值以换取近战攻击伤害加成和无意识效果，但是会大幅削弱远程攻击伤害和远程攻击速度
-    </afflictiondescription.Liberation_Of_Koishi>
+    <afflictiondescription.Liberation_Of_Koishi>扣除最大生命值以换取近战攻击伤害加成和无意识效果，但是会大幅削弱远程攻击伤害和远程攻击速度</afflictiondescription.Liberation_Of_Koishi>
     <afflictionname.Koishi_Weapons>空想上的人格保持者</afflictionname.Koishi_Weapons>
-    <afflictiondescription.Koishi_Weapons>
-        由于自己的能力，她很难和他人正常交流，也没去建立复杂的人际关系。她和姐姐古明地觉以及姐姐的宠物火焰猫燐、灵乌路空同居于地灵殿，关系较为亲密。
-    </afflictiondescription.Koishi_Weapons>
+    <afflictiondescription.Koishi_Weapons>由于自己的能力，她很难和他人正常交流，也没去建立复杂的人际关系。她和姐姐古明地觉以及姐姐的宠物火焰猫燐、灵乌路空同居于地灵殿，关系较为亲密。</afflictiondescription.Koishi_Weapons>
     <afflictionname.Touhou_Strange_Phone_Effect>被厌恶者的哲学</afflictionname.Touhou_Strange_Phone_Effect>
     <afflictiondescription.Touhou_Strange_Phone_Effect>略微减少移速，减少物理伤害和眩晕抗性</afflictiondescription.Touhou_Strange_Phone_Effect>
 
     <!--Alice-->
     <entityname.Alice_gear>‖color:150,150,255,255‖爱丽丝装束‖end‖</entityname.Alice_gear>
-    <entitydescription.Alice_gear>
-        爱丽丝平时独居在位于魔法森林的家玛格特洛依德邸中，喜欢一个人在家制作各种人偶，正在尝试制造一种会自动进行保养的人偶，也会撰写魔法书。因此，她不怎么爱出门，但是也会去祭典上表演人偶技艺。
-    </entitydescription.Alice_gear>
+    <entitydescription.Alice_gear>爱丽丝平时独居在位于魔法森林的家玛格特洛依德邸中，喜欢一个人在家制作各种人偶，正在尝试制造一种会自动进行保养的人偶，也会撰写魔法书。因此，她不怎么爱出门，但是也会去祭典上表演人偶技艺。</entitydescription.Alice_gear>
     <entityname.Alice_Plus>‖color:150,150,255,255‖爱丽丝装束+‖end‖</entityname.Alice_Plus>
-    <entitydescription.Alice_Plus>
-        爱丽丝平时独居在位于魔法森林的家玛格特洛依德邸中，喜欢一个人在家制作各种人偶，正在尝试制造一种会自动进行保养的人偶，也会撰写魔法书。因此，她不怎么爱出门，但是也会去祭典上表演人偶技艺。
-    </entitydescription.Alice_Plus>
+    <entitydescription.Alice_Plus>爱丽丝平时独居在位于魔法森林的家玛格特洛依德邸中，喜欢一个人在家制作各种人偶，正在尝试制造一种会自动进行保养的人偶，也会撰写魔法书。因此，她不怎么爱出门，但是也会去祭典上表演人偶技艺。</entitydescription.Alice_Plus>
     <talentname.AliceTalent>人偶裁判</talentname.AliceTalent>
     <talentdescription.AliceTalent>当你身着爱丽丝装束+时，
         \n增加‖color:gui.green‖40%‖end‖‖color:gui.orange‖游泳速度‖end‖。
@@ -612,19 +472,15 @@
     <afflictionname.Puppeteer_Of_Seven_Colors>七色的人偶师</afflictionname.Puppeteer_Of_Seven_Colors>
     <afflictiondescription.Puppeteer_Of_Seven_Colors>金发与白皙的皮肤，她本人也有着人偶般的外表。</afflictiondescription.Puppeteer_Of_Seven_Colors>
     <afflictionname.Alice_Weapons>布加勒斯特的人偶师</afflictionname.Alice_Weapons>
-    <afflictiondescription.Alice_Weapons>
-        爱丽丝对他人一点都不关心，却对魔法很执着，尽管外表看起来坚强却有着弱小的一面。她基本上不拘束于事物，性格上不固执不厌恶。她喜欢一个人独处，不过却常常参加宴会和在祭典上表演人偶剧。
-    </afflictiondescription.Alice_Weapons>
+    <afflictiondescription.Alice_Weapons>爱丽丝对他人一点都不关心，却对魔法很执着，尽管外表看起来坚强却有着弱小的一面。她基本上不拘束于事物，性格上不固执不厌恶。她喜欢一个人独处，不过却常常参加宴会和在祭典上表演人偶剧。</afflictiondescription.Alice_Weapons>
     <afflictionname.Alice_Doll_Energy>人偶能量</afflictionname.Alice_Doll_Energy>
     <afflictiondescription.Alice_Doll_Energy>激活人偶功能的能量</afflictiondescription.Alice_Doll_Energy>
 
     <!--Sunny-->
     <entityname.Sunny_gear>‖color:200,200,100,255‖桑尼装束‖end‖</entityname.Sunny_gear>
-    <entitydescription.Sunny_gear>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。
-    </entitydescription.Sunny_gear>
+    <entitydescription.Sunny_gear>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。</entitydescription.Sunny_gear>
     <entityname.Sunny_Plus>‖color:200,200,100,255‖桑尼装束+‖end‖</entityname.Sunny_Plus>
-    <entitydescription.Sunny_Plus>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。
-    </entitydescription.Sunny_Plus>
+    <entitydescription.Sunny_Plus>她是日光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与露娜切露德、斯塔萨菲雅合称为光之三妖精。</entitydescription.Sunny_Plus>
     <entityname.Sunnu_Scary_Mask>桑尼的试胆大会面具</entityname.Sunnu_Scary_Mask>
     <entitydescription.Sunnu_Scary_Mask>虽说是试胆大会，但似乎没有吓到任何人</entitydescription.Sunnu_Scary_Mask>
     <talentname.SunnyTalent>桑尼金红石折射</talentname.SunnyTalent>
@@ -638,8 +494,7 @@
         ‖color:gui.yellow‖日之光‖end‖：减少生物的攻击伤害，让怪物短时间内失去视野中的目标。
     </talentdescription.SunnyTalent>
     <afflictionname.Shining_Light_Of_The_Sun>闪耀的日之光</afflictionname.Shining_Light_Of_The_Sun>
-    <afflictiondescription.Shining_Light_Of_The_Sun>她有着一头橙色及肩短发，用红色蝴蝶结系成短双马尾，头顶戴着白色蕾丝状发箍。
-    </afflictiondescription.Shining_Light_Of_The_Sun>
+    <afflictiondescription.Shining_Light_Of_The_Sun>她有着一头橙色及肩短发，用红色蝴蝶结系成短双马尾，头顶戴着白色蕾丝状发箍。</afflictiondescription.Shining_Light_Of_The_Sun>
     <afflictionname.Light_Of_The_Sun_Effect>日之光</afflictionname.Light_Of_The_Sun_Effect>
 
     <!--Luna-->
@@ -659,19 +514,16 @@
         ‖color:gui.yellow‖月之光‖end‖：减少生物的攻击伤害，让怪物短时间内降低移动速度和抗性。
     </talentdescription.LunaTalent>
     <afflictionname.Tranquil_Light_Of_The_Moon>静谧的月之光</afflictionname.Tranquil_Light_Of_The_Moon>
-    <afflictiondescription.Tranquil_Light_Of_The_Moon>她有着一头稻草黄及肩短发，两侧各有三个螺旋状发辫，戴着两侧各系着两个黑色蝴蝶结的白色帽子。
-    </afflictiondescription.Tranquil_Light_Of_The_Moon>
+    <afflictiondescription.Tranquil_Light_Of_The_Moon>她有着一头稻草黄及肩短发，两侧各有三个螺旋状发辫，戴着两侧各系着两个黑色蝴蝶结的白色帽子。</afflictiondescription.Tranquil_Light_Of_The_Moon>
     <afflictionname.Light_Of_The_Moon_Effect>月之光</afflictionname.Light_Of_The_Moon_Effect>
     <afflictionname.MRE_Effect_Luna>出血效应·露娜切露德</afflictionname.MRE_Effect_Luna>
     <afflictiondescription.MRE_Effect_Luna>增加临时生命值</afflictiondescription.MRE_Effect_Luna>
 
     <!--Star-->
     <entityname.Star_gear>‖color:155,125,245,255‖斯塔装束‖end‖</entityname.Star_gear>
-    <entitydescription.Star_gear>她是星光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与桑尼米尔克、露娜切露德合称为光之三妖精。
-    </entitydescription.Star_gear>
+    <entitydescription.Star_gear>她是星光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与桑尼米尔克、露娜切露德合称为光之三妖精。</entitydescription.Star_gear>
     <entityname.Star_Plus>‖color:155,125,245,255‖斯塔装束+‖end‖</entityname.Star_Plus>
-    <entitydescription.Star_Plus>她是星光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与桑尼米尔克、露娜切露德合称为光之三妖精。
-    </entitydescription.Star_Plus>
+    <entitydescription.Star_Plus>她是星光妖精，从不知道什么时候开始她就居住在了幻想乡当中。与桑尼米尔克、露娜切露德合称为光之三妖精。</entitydescription.Star_Plus>
     <talentname.StarTalent>妖精灿烂的样子</talentname.StarTalent>
     <talentdescription.StarTalent>当你身着斯塔装束+时，
         \n减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
@@ -684,9 +536,7 @@
         ‖color:gui.yellow‖星之光‖end‖：减少生物的物理伤害抗性、攻击伤害、移动速度和技能水平。
     </talentdescription.StarTalent>
     <afflictionname.Cascading_Light_Of_The_Star>倾泻而下的星之光</afflictionname.Cascading_Light_Of_The_Star>
-    <afflictiondescription.Cascading_Light_Of_The_Star>
-        她有着一头深棕色及腰长发，头顶系着蓝色大蝴蝶结，在大战争中蝴蝶结边缘有白色褶子。她有着棕色的眼瞳。
-    </afflictiondescription.Cascading_Light_Of_The_Star>
+    <afflictiondescription.Cascading_Light_Of_The_Star>她有着一头深棕色及腰长发，头顶系着蓝色大蝴蝶结，在大战争中蝴蝶结边缘有白色褶子。她有着棕色的眼瞳。</afflictiondescription.Cascading_Light_Of_The_Star>
     <afflictionname.Light_Of_The_Star_Effect>星之光</afflictionname.Light_Of_The_Star_Effect>
     <afflictionname.Star_No_Attacked>藏匿的星云</afflictionname.Star_No_Attacked>
     <afflictiondescription.Star_No_Attacked>大幅加快生命恢复速度</afflictiondescription.Star_No_Attacked>
@@ -715,12 +565,9 @@
         \n你不会被月神之钟的效果影响
     </talentdescription.SakuyaTalent>
     <afflictionname.Perfect_And_Elegant_Servant>完美而潇洒的从者</afflictionname.Perfect_And_Elegant_Servant>
-    <afflictiondescription.Perfect_And_Elegant_Servant>
-        她有着一头银灰色及肩短发，除妖妖梦外两侧的鬓发扎成麻花并在末梢系着绿色蝴蝶结，及肩外鬓发及胸。她头上戴着喀秋莎头饰。
-    </afflictiondescription.Perfect_And_Elegant_Servant>
+    <afflictiondescription.Perfect_And_Elegant_Servant>她有着一头银灰色及肩短发，除妖妖梦外两侧的鬓发扎成麻花并在末梢系着绿色蝴蝶结，及肩外鬓发及胸。她头上戴着喀秋莎头饰。</afflictiondescription.Perfect_And_Elegant_Servant>
     <afflictionname.Sakuya_Weapons>女仆与血之怀表</afflictionname.Sakuya_Weapons>
-    <afflictiondescription.Sakuya_Weapons>身为女仆长，她大部分时间都待在红魔馆中，负责打扫卫生、指派任务、做料理、服侍大小姐等，偶尔会外出进行采购。
-    </afflictiondescription.Sakuya_Weapons>
+    <afflictiondescription.Sakuya_Weapons>身为女仆长，她大部分时间都待在红魔馆中，负责打扫卫生、指派任务、做料理、服侍大小姐等，偶尔会外出进行采购。</afflictiondescription.Sakuya_Weapons>
     <afflictionname.Touhou_Luna_Clock_Effect>月神之钟</afflictionname.Touhou_Luna_Clock_Effect>
     <afflictiondescription.Touhou_Luna_Clock_Effect>你的周围的空间就像凝滞了一般无法活动</afflictiondescription.Touhou_Luna_Clock_Effect>
 
@@ -748,26 +595,19 @@
         ‖color:gui.red‖风之奇迹‖end‖：‖color:gui.orange‖移动速度‖end‖提高‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击速度‖end‖提高‖color:gui.green‖10%‖end‖，降低‖color:gui.green‖20%‖end‖‖color:gui.orange‖友军伤害‖end‖
     </talentdescription.SanaeTalent>
     <afflictionname.Manifest_God_Of_Miracles>奇迹的现人神</afflictionname.Manifest_God_Of_Miracles>
-    <afflictiondescription.Manifest_God_Of_Miracles>早苗有着一头及腰绿色长发，头顶戴着青蛙发饰，左侧头发用青蛇发饰扎成一束。
-    </afflictiondescription.Manifest_God_Of_Miracles>
+    <afflictiondescription.Manifest_God_Of_Miracles>早苗有着一头及腰绿色长发，头顶戴着青蛙发饰，左侧头发用青蛇发饰扎成一束。</afflictiondescription.Manifest_God_Of_Miracles>
     <afflictionname.Sanae_Weapons>风与湖的通神者</afflictionname.Sanae_Weapons>
-    <afflictiondescription.Sanae_Weapons>
-        早苗是八坂神奈子的巫女，她用秘术引发的呼风唤雨的奇迹其实是由作为风神的神奈子引发的。早苗同样祭祀着洩矢诹访子，而且是诹访子的遥远的子孙。
-    </afflictiondescription.Sanae_Weapons>
+    <afflictiondescription.Sanae_Weapons>早苗是八坂神奈子的巫女，她用秘术引发的呼风唤雨的奇迹其实是由作为风神的神奈子引发的。早苗同样祭祀着洩矢诹访子，而且是诹访子的遥远的子孙。</afflictiondescription.Sanae_Weapons>
 
     <!--Reisen-->
     <entityname.Reisen_gear>‖color:220,25,200,255‖铃仙装束‖end‖</entityname.Reisen_gear>
-    <entitydescription.Reisen_gear>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。
-    </entitydescription.Reisen_gear>
+    <entitydescription.Reisen_gear>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。</entitydescription.Reisen_gear>
     <entityname.Reisen_Plus>‖color:220,25,200,255‖铃仙装束+‖end‖</entityname.Reisen_Plus>
-    <entitydescription.Reisen_Plus>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。
-    </entitydescription.Reisen_Plus>
+    <entitydescription.Reisen_Plus>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。</entitydescription.Reisen_Plus>
     <entityname.Reisen_Outfit>‖color:220,25,200,255‖铃仙装束（黑外套）‖end‖</entityname.Reisen_Outfit>
-    <entitydescription.Reisen_Outfit>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。
-    </entitydescription.Reisen_Outfit>
+    <entitydescription.Reisen_Outfit>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。</entitydescription.Reisen_Outfit>
     <entityname.Reisen_Outfit_Plus>‖color:220,25,200,255‖铃仙装束+（黑外套）‖end‖</entityname.Reisen_Outfit_Plus>
-    <entitydescription.Reisen_Outfit_Plus>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。
-    </entitydescription.Reisen_Outfit_Plus>
+    <entitydescription.Reisen_Outfit_Plus>铃仙曾是月之都中绵月家的月兔，在人类开始向月球发动侵略战争时从月球逃走。后逃到幻想乡，被蓬莱山辉夜收养。</entitydescription.Reisen_Outfit_Plus>
     <talentname.ReisenTalent>地上的月兔</talentname.ReisenTalent>
     <talentdescription.ReisenTalent>当你身着铃仙装束+时，
         减少‖color:gui.red‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖
@@ -779,9 +619,7 @@
         ‖color:gui.orange‖技能水平‖end‖增加‖color:gui.green‖10%‖end‖，远程攻击的散布减少‖color:gui.green‖15%‖end‖，对带有‖color:gui.yellow‖精神病‖end‖的敌人造成的伤害提高‖color:gui.green‖10%‖end‖
     </talentdescription.ReisenTalent>
     <afflictionname.Lunatic_Moon_Rabbit>狂气的月兔</afflictionname.Lunatic_Moon_Rabbit>
-    <afflictiondescription.Lunatic_Moon_Rabbit>
-        她有着一头浅紫色及踝长发，头上有一对皱巴巴的、从中间开始弯折的长长的兔耳朵，看起来像是人造品，但其实是真的兔耳
-    </afflictiondescription.Lunatic_Moon_Rabbit>
+    <afflictiondescription.Lunatic_Moon_Rabbit>她有着一头浅紫色及踝长发，头上有一对皱巴巴的、从中间开始弯折的长长的兔耳朵，看起来像是人造品，但其实是真的兔耳</afflictiondescription.Lunatic_Moon_Rabbit>
     <afflictionname.Reisen_Weapons>狂气的赤瞳</afflictionname.Reisen_Weapons>
     <afflictiondescription.Reisen_Weapons>现在她是蓬莱山辉夜的宠物，和其他兔子一样，被辉夜称作因幡。</afflictiondescription.Reisen_Weapons>
     <afflictionname.Touhou_Lunatic_Reisen_Effect>狂气</afflictionname.Touhou_Lunatic_Reisen_Effect>
@@ -789,11 +627,9 @@
 
     <!--Yukari-->
     <entityname.Yukari_gear>‖color:220,25,200,255‖紫 装束‖end‖</entityname.Yukari_gear>
-    <entitydescription.Yukari_gear>紫是幻想乡最古老的妖怪，也是曾参与创立幻想乡的妖怪贤者之一，一直以来暗中维护着幻想乡的安全与稳定。
-    </entitydescription.Yukari_gear>
+    <entitydescription.Yukari_gear>紫是幻想乡最古老的妖怪，也是曾参与创立幻想乡的妖怪贤者之一，一直以来暗中维护着幻想乡的安全与稳定。</entitydescription.Yukari_gear>
     <entityname.Yukari_Plus>‖color:220,25,200,255‖紫 装束+‖end‖</entityname.Yukari_Plus>
-    <entitydescription.Yukari_Plus>紫是幻想乡最古老的妖怪，也是曾参与创立幻想乡的妖怪贤者之一，一直以来暗中维护着幻想乡的安全与稳定。
-    </entitydescription.Yukari_Plus>
+    <entitydescription.Yukari_Plus>紫是幻想乡最古老的妖怪，也是曾参与创立幻想乡的妖怪贤者之一，一直以来暗中维护着幻想乡的安全与稳定。</entitydescription.Yukari_Plus>
     <talentname.YukariTalent>境界的妖怪</talentname.YukariTalent>
     <talentdescription.YukariTalent>当你身着紫 装束+时，
         受到的所有伤害和状态减少‖color:gui.green‖8%‖end‖，包含增益效果。
@@ -801,8 +637,7 @@
         你受到的‖color:gui.yellow‖钝器伤‖end‖将转化为‖color:gui.yellow‖撕裂伤‖end‖，‖color:gui.yellow‖枪伤‖end‖转化为‖color:gui.yellow‖咬伤‖end‖，‖color:gui.yellow‖深层组织损伤‖end‖转化为‖color:gui.yellow‖内脏损伤‖end‖，‖color:gui.yellow‖器官损伤‖end‖转化为‖color:gui.yellow‖灵压‖end‖，当生命值低于‖color:gui.green‖0‖end‖后，这种转化反向
         你造成的‖color:gui.yellow‖钝器伤‖end‖将转化为‖color:gui.yellow‖撕裂伤‖end‖，‖color:gui.yellow‖枪伤‖end‖转化为‖color:gui.yellow‖咬伤‖end‖，‖color:gui.yellow‖深层组织损伤‖end‖转化为‖color:gui.yellow‖内脏损伤‖end‖，‖color:gui.yellow‖器官损伤‖end‖转化为‖color:gui.yellow‖灵压‖end‖，每隔‖color:gui.green‖120‖end‖秒，这种转化反向
         所有人一巡回一次，你可以将所有清醒船员立刻传送到主潜艇位置
-        减少‖color:gui.red‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖，或者增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，两者每隔‖color:gui.green‖120‖end‖秒转换一次
-    </talentdescription.YukariTalent>
+        减少‖color:gui.red‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖，或者增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，两者每隔‖color:gui.green‖120‖end‖秒转换一次</talentdescription.YukariTalent>
     <talentname.Touhou_The_Key_Of_Duality_Talent>表里一体的境界</talentname.Touhou_The_Key_Of_Duality_Talent>
     <talentdescription.Touhou_The_Key_Of_Duality_Talent>当你身着紫 装束+时，
         每次使用表里一体之钥可以切换表里状态：
@@ -810,21 +645,15 @@
         里世界：友军伤害增加30%，最大生命值降低15%，造成的伤害增加20%
     </talentdescription.Touhou_The_Key_Of_Duality_Talent>
     <afflictionname.Realm_Of_Fantasy>幻想的境界</afflictionname.Realm_Of_Fantasy>
-    <afflictiondescription.Realm_Of_Fantasy>她有着一头金色及腰长发，略卷，身后的头发也戴着几个蝴蝶结。头戴白色荷叶边洋帽，前面用红色丝带系着大蝴蝶结。
-    </afflictiondescription.Realm_Of_Fantasy>
+    <afflictiondescription.Realm_Of_Fantasy>她有着一头金色及腰长发，略卷，身后的头发也戴着几个蝴蝶结。头戴白色荷叶边洋帽，前面用红色丝带系着大蝴蝶结。</afflictiondescription.Realm_Of_Fantasy>
     <afflictionname.Yukari_Weapons>神隐的主犯</afflictionname.Yukari_Weapons>
-    <afflictiondescription.Yukari_Weapons>紫大部分时间都在幻想乡艮之境的住所中睡觉。她一天要睡十二小时，只在傍晚到深夜这段时间活动，冬季还要冬眠
-    </afflictiondescription.Yukari_Weapons>
+    <afflictiondescription.Yukari_Weapons>紫大部分时间都在幻想乡艮之境的住所中睡觉。她一天要睡十二小时，只在傍晚到深夜这段时间活动，冬季还要冬眠</afflictiondescription.Yukari_Weapons>
     <afflictionname.Touhou_The_Key_Of_Duality_Outside>表世界</afflictionname.Touhou_The_Key_Of_Duality_Outside>
-    <afflictiondescription.Touhou_The_Key_Of_Duality_Outside>
-        表世界的状态下，友军伤害下降30%，技能水平增加15%，你最近下达指令的两个船员获得增幅：攻击速度增加10%
-    </afflictiondescription.Touhou_The_Key_Of_Duality_Outside>
+    <afflictiondescription.Touhou_The_Key_Of_Duality_Outside>表世界的状态下，友军伤害下降30%，技能水平增加15%，你最近下达指令的两个船员获得增幅：攻击速度增加10%</afflictiondescription.Touhou_The_Key_Of_Duality_Outside>
     <afflictionname.Touhou_The_Key_Of_Duality_Outside_Order>表世界</afflictionname.Touhou_The_Key_Of_Duality_Outside_Order>
-    <afflictiondescription.Touhou_The_Key_Of_Duality_Outside_Order>表世界的状态下，攻击速度增加10%
-    </afflictiondescription.Touhou_The_Key_Of_Duality_Outside_Order>
+    <afflictiondescription.Touhou_The_Key_Of_Duality_Outside_Order>表世界的状态下，攻击速度增加10%</afflictiondescription.Touhou_The_Key_Of_Duality_Outside_Order>
     <afflictionname.Touhou_The_Key_Of_Duality_Intside>里世界</afflictionname.Touhou_The_Key_Of_Duality_Intside>
-    <afflictiondescription.Touhou_The_Key_Of_Duality_Intside>里世界的状态下，友军伤害增加30%，最大生命值降低15%，造成的伤害增加20%
-    </afflictiondescription.Touhou_The_Key_Of_Duality_Intside>
+    <afflictiondescription.Touhou_The_Key_Of_Duality_Intside>里世界的状态下，友军伤害增加30%，最大生命值降低15%，造成的伤害增加20%</afflictiondescription.Touhou_The_Key_Of_Duality_Intside>
     <entityname.Touhou_The_Key_Of_Duality>表里一体之钥</entityname.Touhou_The_Key_Of_Duality>
     <entitydescription.Touhou_The_Key_Of_Duality>可以切换表里世界的钥匙，只有紫使用才能发挥作用</entitydescription.Touhou_The_Key_Of_Duality>
 
@@ -853,8 +682,7 @@
         失去意识时，获得对‖color:gui.yellow‖缺氧、失血‖end‖的‖color:gui.green‖60%‖end‖的抗性，所有船员增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度、额外生命值和技能水平‖end‖
     </talentdescription.MerryTalent>
     <afflictionname.Hifuu_Club_Merry>魔术师梅莉</afflictionname.Hifuu_Club_Merry>
-    <afflictiondescription.Hifuu_Club_Merry>梅莉有着一头金色及肩短发，微卷。紫色的白领口上衣和裙子，戴着一顶有荷叶边的白色小帽，穿着白色袜子。
-    </afflictiondescription.Hifuu_Club_Merry>
+    <afflictiondescription.Hifuu_Club_Merry>梅莉有着一头金色及肩短发，微卷。紫色的白领口上衣和裙子，戴着一顶有荷叶边的白色小帽，穿着白色袜子。</afflictiondescription.Hifuu_Club_Merry>
     <afflictionname.Hifuu_Club_Weapons>少女秘封俱乐部</afflictionname.Hifuu_Club_Weapons>
     <afflictiondescription.Hifuu_Club_Weapons>世界上不存在古典定义上的物质</afflictiondescription.Hifuu_Club_Weapons>
     <afflictionname.MerryTalent_Dream_Show>梦境</afflictionname.MerryTalent_Dream_Show>
@@ -892,14 +720,11 @@
         获得迫近的危险效果时，自身的天赋负面效果减益反转为等额正面效果增益，且生命值低于0后依然保持清醒
     </talentdescription.RenkoTalent>
     <afflictionname.Hifuu_Club_Renko>科学世纪莲子</afflictionname.Hifuu_Club_Renko>
-    <afflictiondescription.Hifuu_Club_Renko>莲子有着一头棕黑色的齐肩短发，整体较直而发尾处略有波浪卷，戴着黑色圆礼帽，上面绑着白色蝴蝶结。
-    </afflictiondescription.Hifuu_Club_Renko>
+    <afflictiondescription.Hifuu_Club_Renko>莲子有着一头棕黑色的齐肩短发，整体较直而发尾处略有波浪卷，戴着黑色圆礼帽，上面绑着白色蝴蝶结。</afflictiondescription.Hifuu_Club_Renko>
     <afflictionname.Touhou_Red_Spot_Freak_Report_Effect01>二人不值一提的博物志</afflictionname.Touhou_Red_Spot_Freak_Report_Effect01>
-    <afflictiondescription.Touhou_Red_Spot_Freak_Report_Effect01>增加10%技能水平，增加50%技能获取速度
-    </afflictiondescription.Touhou_Red_Spot_Freak_Report_Effect01>
+    <afflictiondescription.Touhou_Red_Spot_Freak_Report_Effect01>增加10%技能水平，增加50%技能获取速度</afflictiondescription.Touhou_Red_Spot_Freak_Report_Effect01>
     <afflictionname.Touhou_Red_Spot_Freak_Report_Effect02>比普朗克更短的须臾</afflictionname.Touhou_Red_Spot_Freak_Report_Effect02>
-    <afflictiondescription.Touhou_Red_Spot_Freak_Report_Effect02>增加30%技能水平，增加30%最大生命值
-    </afflictiondescription.Touhou_Red_Spot_Freak_Report_Effect02>
+    <afflictiondescription.Touhou_Red_Spot_Freak_Report_Effect02>增加30%技能水平，增加30%最大生命值</afflictiondescription.Touhou_Red_Spot_Freak_Report_Effect02>
 
     <!--Kokoro-->
     <entityname.Kokoro_gear>‖color:255,130,170,255‖秦心 装束‖end‖</entityname.Kokoro_gear>
@@ -922,21 +747,17 @@
         乐：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖技能水平‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.yellow‖眩晕抗性‖end‖，免疫‖color:gui.yellow‖精神病‖end‖类型的效果
     </talentdescription.KokoroTalent>
     <afflictionname.Expressive_Pokerface>熟练运用六十六种感情的面灵气</afflictionname.Expressive_Pokerface>
-    <afflictiondescription.Expressive_Pokerface>心有着一头粉色及腰长发，头的左前方浮着一个面具，即心正在佩戴的面具，代表着此时心的心情。
-    </afflictiondescription.Expressive_Pokerface>
+    <afflictiondescription.Expressive_Pokerface>心有着一头粉色及腰长发，头的左前方浮着一个面具，即心正在佩戴的面具，代表着此时心的心情。</afflictiondescription.Expressive_Pokerface>
     <afflictionname.Expressive_Pokerface_Mood01>感情-喜</afflictionname.Expressive_Pokerface_Mood01>
     <afflictiondescription.Expressive_Pokerface_Mood01>增加15%移动速度和攻击速度</afflictiondescription.Expressive_Pokerface_Mood01>
     <afflictionname.Expressive_Pokerface_Mood02>感情-怒</afflictionname.Expressive_Pokerface_Mood02>
-    <afflictiondescription.Expressive_Pokerface_Mood02>减少24%攻击速度，增加25%远程攻击伤害和50%近战攻击伤害
-    </afflictiondescription.Expressive_Pokerface_Mood02>
+    <afflictiondescription.Expressive_Pokerface_Mood02>减少24%攻击速度，增加25%远程攻击伤害和50%近战攻击伤害</afflictiondescription.Expressive_Pokerface_Mood02>
     <afflictionname.Expressive_Pokerface_Mood03>感情-哀</afflictionname.Expressive_Pokerface_Mood03>
     <afflictiondescription.Expressive_Pokerface_Mood03>减少15%受到的伤害，增加15%最大生命值</afflictiondescription.Expressive_Pokerface_Mood03>
     <afflictionname.Expressive_Pokerface_Mood04>感情-乐</afflictionname.Expressive_Pokerface_Mood04>
-    <afflictiondescription.Expressive_Pokerface_Mood04>增加20%技能水平，增加10%眩晕抗性，免疫精神病类型的效果
-    </afflictiondescription.Expressive_Pokerface_Mood04>
+    <afflictiondescription.Expressive_Pokerface_Mood04>增加20%技能水平，增加10%眩晕抗性，免疫精神病类型的效果</afflictiondescription.Expressive_Pokerface_Mood04>
     <afflictionname.Kokoro_Weapons>亡失的情感</afflictionname.Kokoro_Weapons>
-    <afflictiondescription.Kokoro_Weapons>虽然每个都有着固定的感情，不过因为实在是很多，因此平时似乎只会使用喜怒哀乐的面具而已
-    </afflictiondescription.Kokoro_Weapons>
+    <afflictiondescription.Kokoro_Weapons>虽然每个都有着固定的感情，不过因为实在是很多，因此平时似乎只会使用喜怒哀乐的面具而已</afflictiondescription.Kokoro_Weapons>
 
     <!--Ema-->
     <entityname.Ema_gear>‖color:255,140,170,255‖艾玛 装束‖end‖</entityname.Ema_gear>
@@ -956,7 +777,7 @@
         ‖color:gui.orange‖移动速度‖end‖增加‖color:gui.green‖15%‖end‖，‖color:gui.orange‖攻击伤害‖end‖增加‖color:gui.green‖15%‖end‖，获得‖color:gui.green‖20‖end‖‖color:gui.orange‖额外生命值‖end‖
         对含有魔女因子的生物造成的伤害提高‖color:gui.green‖35%‖end‖
         击杀任意血量足够高的生物后获得经验值，一个巡回最多‖color:gui.green‖10‖end‖次
-        食用‖color:gui.green‖4‖end‖级及以上等级料理或饮品可以提前解除魔女化效果。
+        食用‖color:gui.green‖3‖end‖级及以上等级料理或饮品可以提前解除魔女化效果。
 
         如果魔女化效果自然解除，则获得严重负面：
         ‖color:gui.orange‖攻击伤害‖end‖减少‖color:gui.green‖30%‖end‖，‖color:gui.orange‖移动速度‖end‖减少‖color:gui.green‖40%‖end‖，‖color:gui.orange‖最大生命值‖end‖减少‖color:gui.green‖50%‖end‖。巡回获得的经验值减少‖color:gui.green‖90%‖end‖
@@ -971,13 +792,9 @@
 
     <!--出血效应-->
     <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>记忆材料</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
-    <entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
-        在炼金桌内用炼金术材料可以进行精炼操作。如果能找到相关手册，效率应该会大大提高
-    </entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
+    <entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>在炼金桌内用炼金术材料可以进行精炼操作。如果能找到相关手册，效率应该会大大提高</entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
     <entityname.MRE_Material>出血物质（‖color:gui.yellow‖[type]‖end‖）</entityname.MRE_Material>
-    <entitydescription.MRE_Material>
-        每‖color:gui.green‖10%‖end‖的进度为一阶段，不同阶段需要使用不同材料进行精炼。进度满后，对相应角色健康界面使用可以解锁额外天赋。‖color:gui.yellow‖每个角色只能使用一次‖end‖
-    </entitydescription.MRE_Material>
+    <entitydescription.MRE_Material>每‖color:gui.green‖10%‖end‖的进度为一阶段，不同阶段需要使用不同材料进行精炼。进度满后，对相应角色健康界面使用可以解锁额外天赋。‖color:gui.yellow‖每个角色只能使用一次‖end‖</entitydescription.MRE_Material>
     <Character.MRE_Material_Reimu>灵梦的回忆</Character.MRE_Material_Reimu>
     <Character.MRE_Material_Remilia>蕾米莉亚的回忆</Character.MRE_Material_Remilia>
     <Character.MRE_Material_Marisa>魔理沙的回忆</Character.MRE_Material_Marisa>
@@ -1008,29 +825,23 @@
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有15%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
-    <talentdescription.MRE_Remilia>仅对蕾米莉亚装束+生效。专属武器效果造成的伤害增加15%，自身出血越高，造成的伤害越高，最高30%
-    </talentdescription.MRE_Remilia>
+    <talentdescription.MRE_Remilia>仅对蕾米莉亚装束+生效。专属武器效果造成的伤害增加15%，自身出血越高，造成的伤害越高，最高30%</talentdescription.MRE_Remilia>
     <talentname.MRE_Marisa>出血效应-雾雨魔理沙</talentname.MRE_Marisa>
     <talentdescription.MRE_Marisa>仅对魔理沙装束+生效。弹幕的伤害提高20%</talentdescription.MRE_Marisa>
     <talentname.MRE_Aya>出血效应-射命丸文</talentname.MRE_Aya>
     <talentdescription.MRE_Aya>仅对文文装束+生效。每次近战攻击都有5%概率额外造成50%伤害，如果是远程弹幕则效果下降为25%</talentdescription.MRE_Aya>
     <talentname.MRE_Youmu>出血效应-魂魄妖梦</talentname.MRE_Youmu>
-    <talentdescription.MRE_Youmu>仅对妖梦装束+生效。近战攻击速度提高20%，持有楼观剑和白楼剑时，伤害提高30%，受到的伤害减少30%
-    </talentdescription.MRE_Youmu>
+    <talentdescription.MRE_Youmu>仅对妖梦装束+生效。近战攻击速度提高20%，持有楼观剑和白楼剑时，伤害提高30%，受到的伤害减少30%</talentdescription.MRE_Youmu>
     <talentname.MRE_Nitori>出血效应-河城荷取</talentname.MRE_Nitori>
-    <talentdescription.MRE_Nitori>仅对荷取装束+生效。持有专属武器时提高20%攻击伤害，装备专属装备时增加15%最大生命值，同时装备后额外增加10%移动速度
-    </talentdescription.MRE_Nitori>
+    <talentdescription.MRE_Nitori>仅对荷取装束+生效。持有专属武器时提高20%攻击伤害，装备专属装备时增加15%最大生命值，同时装备后额外增加10%移动速度</talentdescription.MRE_Nitori>
     <talentname.MRE_Akyuu>出血效应-稗田阿求</talentname.MRE_Akyuu>
-    <talentdescription.MRE_Akyuu>仅对阿求装束+生效。技能水平提高20%，攻击并造成过伤害的敌人，在其血量低于30%时，造成额外30%的伤害
-    </talentdescription.MRE_Akyuu>
+    <talentdescription.MRE_Akyuu>仅对阿求装束+生效。技能水平提高20%，攻击并造成过伤害的敌人，在其血量低于30%时，造成额外30%的伤害</talentdescription.MRE_Akyuu>
     <talentname.MRE_Mokou>出血效应-藤原妹红</talentname.MRE_Mokou>
     <talentdescription.MRE_Mokou>仅对妹红装束+生效。最大生命值提高30%，自己的剩余血量越高，造成的伤害越高，最高20%</talentdescription.MRE_Mokou>
     <talentname.MRE_Patchouli>出血效应-帕秋莉·诺雷姬</talentname.MRE_Patchouli>
-    <talentdescription.MRE_Patchouli>仅对帕秋莉装束+生效。持有专属武器时，受到的攻击伤害减少15%。魔力提升达到300后，也减少15%
-    </talentdescription.MRE_Patchouli>
+    <talentdescription.MRE_Patchouli>仅对帕秋莉装束+生效。持有专属武器时，受到的攻击伤害减少15%。魔力提升达到300后，也减少15%</talentdescription.MRE_Patchouli>
     <talentname.MRE_Tenshi>出血效应-比那名居天子</talentname.MRE_Tenshi>
-    <talentdescription.MRE_Tenshi>仅对天子装束+生效。持有专属武器时，提高30%眩晕抗性。专属武器击杀任意生物后，短暂提高30%近战攻击速度和15%远程攻击速度
-    </talentdescription.MRE_Tenshi>
+    <talentdescription.MRE_Tenshi>仅对天子装束+生效。持有专属武器时，提高30%眩晕抗性。专属武器击杀任意生物后，短暂提高30%近战攻击速度和15%远程攻击速度</talentdescription.MRE_Tenshi>
     <talentname.MRE_Momizi>出血效应-犬走椛</talentname.MRE_Momizi>
     <talentdescription.MRE_Momizi>仅对椛装束+生效。受到攻击后短时间内，提高下一次攻击15%的伤害，如果血量低于50%，则效果翻倍</talentdescription.MRE_Momizi>
     <talentname.MRE_Yuka>出血效应-风见幽香</talentname.MRE_Yuka>
@@ -1038,29 +849,21 @@
     <talentname.MRE_Aunn>出血效应-高丽野阿吽</talentname.MRE_Aunn>
     <talentdescription.MRE_Aunn>仅对阿吽装束+生效。狛犬状态下，造成的伤害增加20%。狮子状态下，受到的伤害减少20%</talentdescription.MRE_Aunn>
     <talentname.MRE_Flandre>出血效应-芙兰朵露·斯卡雷特</talentname.MRE_Flandre>
-    <talentdescription.MRE_Flandre>
-        仅对芙兰朵露装束+生效。受到的伤害减少15%。使用专属武器攻击带有目之破坏或血量低于50%的敌人时，每次远程弹幕攻击都有4%的概率秒杀，若为近战则概率翻倍
-    </talentdescription.MRE_Flandre>
+    <talentdescription.MRE_Flandre>仅对芙兰朵露装束+生效。受到的伤害减少15%。使用专属武器攻击带有目之破坏或血量低于50%的敌人时，每次远程弹幕攻击都有4%的概率秒杀，若为近战则概率翻倍</talentdescription.MRE_Flandre>
     <talentname.MRE_Nue>出血效应-封兽鵺</talentname.MRE_Nue>
     <talentdescription.MRE_Nue>仅对鵺装束+生效。每次受到敌人的攻击时，将该伤害存储并强化下一次攻击的伤害，最高50%</talentdescription.MRE_Nue>
     <talentname.MRE_Piece>出血效应-克劳恩·皮丝</talentname.MRE_Piece>
-    <talentdescription.MRE_Piece>仅对皮丝装束+生效。没有精神病时，对自身精神病的效果提高100%。有精神病时，攻击有50%的概率对友军造成的伤害下降50%
-    </talentdescription.MRE_Piece>
+    <talentdescription.MRE_Piece>仅对皮丝装束+生效。没有精神病时，对自身精神病的效果提高100%。有精神病时，攻击有50%的概率对友军造成的伤害下降50%</talentdescription.MRE_Piece>
     <talentname.MRE_Cirno>出血效应-琪露诺</talentname.MRE_Cirno>
-    <talentdescription.MRE_Cirno>仅对琪露诺装束+生效。一巡回一次，不在水中时，生命值低于0后，仍然能保持清醒且不死一段时间，持续10秒
-    </talentdescription.MRE_Cirno>
+    <talentdescription.MRE_Cirno>仅对琪露诺装束+生效。一巡回一次，不在水中时，生命值低于0后，仍然能保持清醒且不死一段时间，持续10秒</talentdescription.MRE_Cirno>
     <talentname.MRE_Koishi>出血效应-古明地恋</talentname.MRE_Koishi>
     <talentdescription.MRE_Koishi>仅对恋装束+生效。对怪奇电话标记的生命值大于70%的目标额外造成51.4%的伤害</talentdescription.MRE_Koishi>
     <talentname.MRE_Alice>出血效应-爱丽丝</talentname.MRE_Alice>
-    <talentdescription.MRE_Alice>
-        仅对爱丽丝装束+生效。人偶能量超过50%后，提高25%最大生命值和10%攻击伤害，召唤人偶会让自身增加30%物理伤害抗性和烧伤抗性，持续20秒
-    </talentdescription.MRE_Alice>
+    <talentdescription.MRE_Alice>仅对爱丽丝装束+生效。人偶能量超过50%后，提高25%最大生命值和10%攻击伤害，召唤人偶会让自身增加30%物理伤害抗性和烧伤抗性，持续20秒</talentdescription.MRE_Alice>
     <talentname.MRE_Sunny>出血效应-桑尼·米尔克</talentname.MRE_Sunny>
-    <talentdescription.MRE_Sunny>仅对桑尼装束+生效。三月精其他角色的装束效果直接生效（斯塔的长时间未受攻击的自愈不包括在内）
-    </talentdescription.MRE_Sunny>
+    <talentdescription.MRE_Sunny>仅对桑尼装束+生效。三月精其他角色的装束效果直接生效（斯塔的长时间未受攻击的自愈不包括在内）</talentdescription.MRE_Sunny>
     <talentname.MRE_Luna>出血效应-露娜·切露德</talentname.MRE_Luna>
-    <talentdescription.MRE_Luna>仅对露娜装束+生效。击杀任意生物后（非炮塔），会给予自身临时生命值，临时生命值会额外增加最大20%移动速度、攻击速度和技能水平
-    </talentdescription.MRE_Luna>
+    <talentdescription.MRE_Luna>仅对露娜装束+生效。击杀任意生物后（非炮塔），会给予自身临时生命值，临时生命值会额外增加最大20%移动速度、攻击速度和技能水平</talentdescription.MRE_Luna>
     <talentname.MRE_Star>出血效应-斯塔·萨菲雅</talentname.MRE_Star>
     <talentdescription.MRE_Star>
         仅对斯塔装束+生效。受到伤害时，有30%概率给予自身随机增幅，这个效果有10秒冷却：
@@ -1070,27 +873,20 @@
         4.大幅增加移动速度
         5.对周围的怪物造成伤害并发生小范围爆炸
         6.短时间增加自身和所有妖精职业的船员物理伤害抗性和烧伤抗性
-        7.在原地留下一个星光陷阱，对周围目标造成持续伤害，持续10秒
-    </talentdescription.MRE_Star>
+        7.在原地留下一个星光陷阱，对周围目标造成持续伤害，持续10秒</talentdescription.MRE_Star>
     <talentname.MRE_Sakuya>出血效应-十六夜咲夜</talentname.MRE_Sakuya>
     <talentdescription.MRE_Sakuya>
         仅对咲夜装束+生效。血之时计和月之时计拥有额外不同的效果：
         当血之时计低于50%时，增加10%物理伤害抗性、烧伤抗性、眩晕抗性。
         当血之时计高于50%时，攻击伤害增加15%。
         攻击月之时计低于50%的目标时，攻击造成的出血有30%概率以50%的倍率转化为灵压。
-        攻击月之时计高于50%的目标时，攻击造成的伤害增加15%。
-    </talentdescription.MRE_Sakuya>
+        攻击月之时计高于50%的目标时，攻击造成的伤害增加15%。</talentdescription.MRE_Sakuya>
     <talentname.MRE_Sanae>出血效应-东风谷早苗</talentname.MRE_Sanae>
-    <talentdescription.MRE_Sanae>仅对早苗装束+生效。拥有奇迹时，对非人类敌人造成的伤害提高25%。否则，增加30%最大生命值，受到的伤害减少15%
-    </talentdescription.MRE_Sanae>
+    <talentdescription.MRE_Sanae>仅对早苗装束+生效。拥有奇迹时，对非人类敌人造成的伤害提高25%。否则，增加30%最大生命值，受到的伤害减少15%</talentdescription.MRE_Sanae>
     <talentname.MRE_Reisen>出血效应-铃仙·优昙华院·因幡</talentname.MRE_Reisen>
-    <talentdescription.MRE_Reisen>
-        仅对铃仙装束+生效。远程武器瞄准时的移动速度提高10%，散布减少25%，受到的伤害减少20%，攻击造成的枪伤增加15%，且额外附加精神病
-    </talentdescription.MRE_Reisen>
+    <talentdescription.MRE_Reisen>仅对铃仙装束+生效。远程武器瞄准时的移动速度提高10%，散布减少25%，受到的伤害减少20%，攻击造成的枪伤增加15%，且额外附加精神病</talentdescription.MRE_Reisen>
     <talentname.MRE_Yukari>出血效应-八云紫</talentname.MRE_Yukari>
-    <talentdescription.MRE_Yukari>仅对紫
-        装束+生效。根据你受到的伤害，逐渐增加你对那种伤害的抗性，最高15%，达到最高时，你造成的该种伤害增加15%（仅限原版和模组内的物理伤害、烧伤和不死鸟灼烧）
-    </talentdescription.MRE_Yukari>
+    <talentdescription.MRE_Yukari>仅对紫 装束+生效。根据你受到的伤害，逐渐增加你对那种伤害的抗性，最高15%，达到最高时，你造成的该种伤害增加15%（仅限原版和模组内的物理伤害、烧伤和不死鸟灼烧）</talentdescription.MRE_Yukari>
     <talentname.MRE_Kokoro>出血效应-秦心</talentname.MRE_Kokoro>
     <talentdescription.MRE_Kokoro>仅对秦心 装束+生效。每次切换主要感情时，都有概率获得其它感情，不限个数</talentdescription.MRE_Kokoro>
 </infotexts>

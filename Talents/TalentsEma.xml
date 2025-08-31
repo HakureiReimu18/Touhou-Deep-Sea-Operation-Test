@@ -81,7 +81,7 @@
         <AbilityGroupInterval interval="2.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ema_The_Loathed_One"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect04" invert="true"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect03" invert="true"/>
                 <AbilityConditionAboveVitality vitalitypercentage="0.5" invert="true"/>
             </Conditions>
             <Abilities>

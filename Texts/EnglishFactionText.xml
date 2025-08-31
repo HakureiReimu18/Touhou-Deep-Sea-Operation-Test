@@ -16,8 +16,7 @@
 
     <!-- Factions -->
     <faction.Touhou_Gensokyo>Gensokyo</faction.Touhou_Gensokyo>
-    <faction.Touhou_Gensokyo.description>Is it an illusion, or a castle in the air? Until dawn, this dream, the dream of the butterfly.
-    </faction.Touhou_Gensokyo.description>
+    <faction.Touhou_Gensokyo.description>Is it an illusion, or a castle in the air? Until dawn, this dream, the dream of the butterfly.</faction.Touhou_Gensokyo.description>
     <faction.Touhou_Gensokyo.shortdescription>The world in the illusory morning mist</faction.Touhou_Gensokyo.shortdescription>
 
     <!--Events Dialog-->
@@ -84,75 +83,41 @@
     <randomnews35>Dr. Patchouli stated that the rocket project will proceed as scheduled.</randomnews35>
     <randomnews36>Many people still have doubts about the Tengu Task Force, believing that it will bring about panic.</randomnews36>
     <randomnews37>Chief Scientist Apologizes to Dr. Patchouli for His Remarks on the Existence of the Philosopher’s Stone</randomnews37>
-    <randomnews38>Ever since the inhabitants of Gensokyo appeared, a rumor has begun to spread on Europa that humans have a special way to achieve
-        “evolution.”
-    </randomnews38>
-    <randomnews39>Members of the Husk cult have been increasingly active recently, often showing up in places where kappa gather, yet there are no
-        signs of husk parasitism.
-    </randomnews39>
+    <randomnews38>Ever since the inhabitants of Gensokyo appeared, a rumor has begun to spread on Europa that humans have a special way to achieve “evolution.”</randomnews38>
+    <randomnews39>Members of the Husk cult have been increasingly active recently, often showing up in places where kappa gather, yet there are no signs of husk parasitism.</randomnews39>
     <randomnews40>The number of the ghosts in the shipway is still increasing.</randomnews40>
     <randomnews41>Myoren Temple claims that it will deal with the UFO incident as soon as possible.</randomnews41>
-    <randomnews42>Some people encountered a large number of eerie entities along the flight route. Some say they were orbs of light, while others
-        claim they were UFOs. There is still no unified explanation.
-    </randomnews42>
+    <randomnews42>Some people encountered a large number of eerie entities along the flight route. Some say they were orbs of light, while others claim they were UFOs. There is still no unified explanation.</randomnews42>
     <randomnews43>The Kappa Heavy Industries Group has established new supply stations in multiple locations.</randomnews43>
-    <randomnews44>Aya Shameimaru's popularity among the residents of Europa is growing higher and higher. People take pride in owning a copy of "Kimi
-        no Shiru Monogatari"
-    </randomnews44>
-    <randomnews45>Some people claim to have seen a girl with green hair swimming towards the abyss without a diving suit. The authenticity of this
-        claim remains to be verified.
-    </randomnews45>
-    <randomnews46>A group of terrorists falsely claiming to be Moon People attacked several supply stations. The Kappa Heavy Industries Group declared
-        that they will definitely uncover the truth.
-    </randomnews46>
-    <randomnews47>Recently, a considerable number of witnesses have reported seeing strange lights emanating from the ruins from a great distance,
-        only for them to disappear shortly thereafter. The Tengu Task Force has announced that they have intervened in the investigation.
-    </randomnews47>
-    <randomnews48>A shrine maiden who wishes to remain anonymous has stated that she will sell talismans of peace to the captains at a low price.
-    </randomnews48>
+    <randomnews44>Aya Shameimaru's popularity among the residents of Europa is growing higher and higher. People take pride in owning a copy of "Kimi no Shiru Monogatari"</randomnews44>
+    <randomnews45>Some people claim to have seen a girl with green hair swimming towards the abyss without a diving suit. The authenticity of this claim remains to be verified.</randomnews45>
+    <randomnews46>A group of terrorists falsely claiming to be Moon People attacked several supply stations. The Kappa Heavy Industries Group declared that they will definitely uncover the truth.</randomnews46>
+    <randomnews47>Recently, a considerable number of witnesses have reported seeing strange lights emanating from the ruins from a great distance, only for them to disappear shortly thereafter. The Tengu Task Force has announced that they have intervened in the investigation.</randomnews47>
+    <randomnews48>A shrine maiden who wishes to remain anonymous has stated that she will sell talismans of peace to the captains at a low price.</randomnews48>
     <randomnews49>The “Multiflavor Juice” designed by the Eternity Pavilion has become a sensation across various regions.</randomnews49>
     <randomnews50>Remilia Scarlet publicly announced her intention to conquer Europa.</randomnews50>
     <randomnews51>The source of the earthquake has been found, and it turns out to be just a forgotten key stone.</randomnews51>
     <randomnews52>Shrine donation boxes have been set up at various locations, and the public is welcome to make contributions.</randomnews52>
     <randomnews53>More spiritual plants have been successfully cultivated on a small scale on Europa.</randomnews53>
-    <randomnews54>Multiple alchemists have complained that the efficiency of the alchemical ritual platforms is too low, and they need a higher degree
-        of automation.
-    </randomnews54>
-    <randomnews55>A new type of metal called "Divine Metal" has been discovered. Many scientists, once guided by Patchouli, are still studying its
-        properties.
-    </randomnews55>
+    <randomnews54>Multiple alchemists have complained that the efficiency of the alchemical ritual platforms is too low, and they need a higher degree of automation.</randomnews54>
+    <randomnews55>A new type of metal called "Divine Metal" has been discovered. Many scientists, once guided by Patchouli, are still studying its properties.</randomnews55>
     <randomnews56>A few UFOs are still scattered along the shipway.</randomnews56>
-    <randomnews57>Many residents have reported that items in their homes have mysteriously disappeared. The suspects appear to be blonde humans
-        dressed in black and white clothing.
-    </randomnews57>
-    <randomnews58>There has been a shift in beliefs among the jesters. A goblin who claims to be from hell seems to be closely related to this
-        change.
-    </randomnews58>
+    <randomnews57>Many residents have reported that items in their homes have mysteriously disappeared. The suspects appear to be blonde humans dressed in black and white clothing.</randomnews57>
+    <randomnews58>There has been a shift in beliefs among the jesters. A goblin who claims to be from hell seems to be closely related to this change.</randomnews58>
     <randomnews59>A group of peculiar light orbs known as Lunar Meteors continues to harass the submarines on their voyages.</randomnews59>
-    <randomnews60>The new object of the jesters' worship has still not revealed itself. According to descriptions, it seems to be related to the
-        moon.
-    </randomnews60>
+    <randomnews60>The new object of the jesters' worship has still not revealed itself. According to descriptions, it seems to be related to the moon.</randomnews60>
 
     <!--按钮文本等-->
     <uilabel.Alchemy_Table_Input>Spiritual Material</uilabel.Alchemy_Table_Input>
     <uilabel.Alchemy_Table_Output>Alchemy Product</uilabel.Alchemy_Table_Output>
     <Alchemy_Table.invalidinput>Waiting for Spiritual Materials</Alchemy_Table.invalidinput>
-    <Alchemy_Table.empty.infotext>Insert spiritual materials to conduct magical reactions. For instructions, refer to the "Patchouli Manual".
-    </Alchemy_Table.empty.infotext>
+    <Alchemy_Table.empty.infotext>Insert spiritual materials to conduct magical reactions. For instructions, refer to the "Patchouli Manual".</Alchemy_Table.empty.infotext>
     <Alchemy_Table.Research>Transform</Alchemy_Table.Research>
-    <Alchemy_Table.Research.Infotext>The alchemical process of transmuting substances has been simplified to the point where it can now be easily
-        performed on an alchemical table, thanks to Patchouli's guidance. (For spiritual materials, please refer to the Patchouli Manual.)
-    </Alchemy_Table.Research.Infotext>
-    <Alchemy_Table.Combine.Missingitem>Base metals have been incorporated, and various materials with different properties are added to complete the
-        alchemical transmutation. (For spiritual materials, please refer to the Patchouli Manual.)
-    </Alchemy_Table.Combine.Missingitem>
+    <Alchemy_Table.Research.Infotext>The alchemical process of transmuting substances has been simplified to the point where it can now be easily performed on an alchemical table, thanks to Patchouli's guidance. (For spiritual materials, please refer to the Patchouli Manual.)</Alchemy_Table.Research.Infotext>
+    <Alchemy_Table.Combine.Missingitem>Base metals have been incorporated, and various materials with different properties are added to complete the alchemical transmutation. (For spiritual materials, please refer to the Patchouli Manual.)</Alchemy_Table.Combine.Missingitem>
     <Alchemy_Table.Unlock>Unlock</Alchemy_Table.Unlock>
-    <Alchemy_Table.Unlock.Infotext>Consuming Izanagi material to unlock memory materials, extracting corresponding bleeding substances for different
-        characters, with results being random.
-    </Alchemy_Table.Unlock.Infotext>
-    <Alchemy_Table.Unlock.Missingitem>Memory materials have been placed. Consuming Izanagi material to unlock these memory materials, and extracting
-        bleeding substances corresponding to different characters, with results being random.
-    </Alchemy_Table.Unlock.Missingitem>
+    <Alchemy_Table.Unlock.Infotext>Consuming Izanagi material to unlock memory materials, extracting corresponding bleeding substances for different characters, with results being random.</Alchemy_Table.Unlock.Infotext>
+    <Alchemy_Table.Unlock.Missingitem>Memory materials have been placed. Consuming Izanagi material to unlock these memory materials, and extracting bleeding substances corresponding to different characters, with results being random.</Alchemy_Table.Unlock.Missingitem>
     <Alchemy_Table.Refine01>Refine-Kingdom</Alchemy_Table.Refine01>
     <Alchemy_Table.Refine02>Refine-Base</Alchemy_Table.Refine02>
     <Alchemy_Table.Refine03>Refine-Glory</Alchemy_Table.Refine03>
@@ -163,22 +128,14 @@
     <Alchemy_Table.Refine08>Refine-Understanding</Alchemy_Table.Refine08>
     <Alchemy_Table.Refine09>Refine-Wisdom</Alchemy_Table.Refine09>
     <Alchemy_Table.Refine10>Refine-Crown</Alchemy_Table.Refine10>
-    <Alchemy_Table.Refine.Infotext>Consuming alchemical materials to refine the bleeding substances, different materials have varying impacts on the
-        refinement process. Not only is success not guaranteed in one attempt, but it may even be possible to regress in the refinement progress.
-    </Alchemy_Table.Refine.Infotext>
-    <Alchemy_Table.Refine.Missingitem>The bleeding substance has been placed. Adding different alchemical materials for refinement, the impact of
-        different materials on the refinement process varies. Success is not guaranteed in one attempt, and it is even possible to regress in the
-        refinement progress.
-    </Alchemy_Table.Refine.Missingitem>
+    <Alchemy_Table.Refine.Infotext>Consuming alchemical materials to refine the bleeding substances, different materials have varying impacts on the refinement process. Not only is success not guaranteed in one attempt, but it may even be possible to regress in the refinement progress.</Alchemy_Table.Refine.Infotext>
+    <Alchemy_Table.Refine.Missingitem>The bleeding substance has been placed. Adding different alchemical materials for refinement, the impact of different materials on the refinement process varies. Success is not guaranteed in one attempt, and it is even possible to regress in the refinement progress.</Alchemy_Table.Refine.Missingitem>
     <terminalwelcomemsg.Touhou_Wreck04_01>——Investigation about spiritual erode and pollution
         Investigator: Patchouli Knowledge
 
-        Day 60 since the Breakshell:
-        The results have proven that the destructive power of spiritual pollution on the creatures of Europa is incomparable, and its harm to humans
-        is also quite significant. No matter what, the circulation of all products related to spiritual pollution should be banned. Those amateurs
-        will only mess everything up. It is imperative to recover and deal with all the pollutants before they spread further.
-        Humans are not worthy to be trusted
-    </terminalwelcomemsg.Touhou_Wreck04_01>
+       Day 60 since the Breakshell:
+       The results have proven that the destructive power of spiritual pollution on the creatures of Europa is incomparable, and its harm to humans is also quite significant. No matter what, the circulation of all products related to spiritual pollution should be banned. Those amateurs will only mess everything up. It is imperative to recover and deal with all the pollutants before they spread further.
+        Humans are not worthy to be trusted</terminalwelcomemsg.Touhou_Wreck04_01>
     <Touhou_Medical_Toolkit.All>All kinds of meds</Touhou_Medical_Toolkit.All>
     <Touhou_Medical_Toolkit.AntiDamage>Pain-relief meds</Touhou_Medical_Toolkit.AntiDamage>
     <Touhou_Medical_Toolkit.AntiBloodloss>Hemostatic drugs</Touhou_Medical_Toolkit.AntiBloodloss>
@@ -222,90 +179,55 @@
 
     <!--敌对AI使用-->
     <entityname.Illness_Recovery_Charm_Locked01>Illness Recovery Charm-Fake</entityname.Illness_Recovery_Charm_Locked01>
-    <entitydescription.Illness_Recovery_Charm_Locked01>A poor replica that consumes the user's life force to heal minor external injuries.
-    </entitydescription.Illness_Recovery_Charm_Locked01>
+    <entitydescription.Illness_Recovery_Charm_Locked01>A poor replica that consumes the user's life force to heal minor external injuries.</entitydescription.Illness_Recovery_Charm_Locked01>
     <entityname.Illness_Recovery_Charm_Locked02>Illness Recovery Charm-Fake</entityname.Illness_Recovery_Charm_Locked02>
-    <entitydescription.Illness_Recovery_Charm_Locked02>A poor replica that consumes the user's life force to heal minor external injuries.
-    </entitydescription.Illness_Recovery_Charm_Locked02>
+    <entitydescription.Illness_Recovery_Charm_Locked02>A poor replica that consumes the user's life force to heal minor external injuries.</entitydescription.Illness_Recovery_Charm_Locked02>
     <entityname.Illness_Recovery_Charm_Locked03>Illness Recovery Charm-Fake</entityname.Illness_Recovery_Charm_Locked03>
-    <entitydescription.Illness_Recovery_Charm_Locked03>A poor replica that consumes the user's life force to heal minor external injuries.
-    </entitydescription.Illness_Recovery_Charm_Locked03>
+    <entitydescription.Illness_Recovery_Charm_Locked03>A poor replica that consumes the user's life force to heal minor external injuries.</entitydescription.Illness_Recovery_Charm_Locked03>
     <entityname.Illness_Recovery_Charm_Locked04>Illness Recovery Charm-Fake</entityname.Illness_Recovery_Charm_Locked04>
-    <entitydescription.Illness_Recovery_Charm_Locked04>A poor replica that consumes the user's life force to heal minor external injuries.
-    </entitydescription.Illness_Recovery_Charm_Locked04>
+    <entitydescription.Illness_Recovery_Charm_Locked04>A poor replica that consumes the user's life force to heal minor external injuries.</entitydescription.Illness_Recovery_Charm_Locked04>
     <entityname.Illness_Recovery_Charm_Shield_Lunatic>Illness Recovery Charm-Fake</entityname.Illness_Recovery_Charm_Shield_Lunatic>
-    <entitydescription.Illness_Recovery_Charm_Shield_Lunatic>A poor replica that consumes the user's life force to heal minor external injuries.
-    </entitydescription.Illness_Recovery_Charm_Shield_Lunatic>
+    <entitydescription.Illness_Recovery_Charm_Shield_Lunatic>A poor replica that consumes the user's life force to heal minor external injuries.</entitydescription.Illness_Recovery_Charm_Shield_Lunatic>
     <entityname.Gensokyo_Divinggear_Enemy>Poor Fantasy Diving Suit</entityname.Gensokyo_Divinggear_Enemy>
-    <entitydescription.Gensokyo_Divinggear_Enemy>A replica cobbled together from expensive alchemical materials, simple in design but functional in
-        performance.
-    </entitydescription.Gensokyo_Divinggear_Enemy>
+    <entitydescription.Gensokyo_Divinggear_Enemy>A replica cobbled together from expensive alchemical materials, simple in design but functional in performance.</entitydescription.Gensokyo_Divinggear_Enemy>
     <entityname.Boudary_Divinggear_Enemy>Poor Boundary Diving Suit</entityname.Boudary_Divinggear_Enemy>
-    <entitydescription.Boudary_Divinggear_Enemy>A replica cobbled together from rare alchemical materials, barely able to withstand the cold of
-        Europa.
-    </entitydescription.Boudary_Divinggear_Enemy>
+    <entitydescription.Boudary_Divinggear_Enemy>A replica cobbled together from rare alchemical materials, barely able to withstand the cold of Europa.</entitydescription.Boudary_Divinggear_Enemy>
     <entityname.Ether_Divinggear_Enemy>Poor Secret Realm Diving Suit</entityname.Ether_Divinggear_Enemy>
-    <entitydescription.Ether_Divinggear_Enemy>A replica cobbled together from alchemical materials, passable as a replica.
-    </entitydescription.Ether_Divinggear_Enemy>
+    <entitydescription.Ether_Divinggear_Enemy>A replica cobbled together from alchemical materials, passable as a replica.</entitydescription.Ether_Divinggear_Enemy>
     <entityname.Ether_Divinggear_Enemy_Insatblility>Unstable Secret Realm Diving Suit</entityname.Ether_Divinggear_Enemy_Insatblility>
-    <entitydescription.Ether_Divinggear_Enemy_Insatblility>A replica cobbled together from alchemical materials, which will explode when the user
-        dies.
-    </entitydescription.Ether_Divinggear_Enemy_Insatblility>
+    <entitydescription.Ether_Divinggear_Enemy_Insatblility>A replica cobbled together from alchemical materials, which will explode when the user dies.</entitydescription.Ether_Divinggear_Enemy_Insatblility>
     <entityname.Touhou_Blunderbuss_Enemy>Replica Blunderbuss</entityname.Touhou_Blunderbuss_Enemy>
-    <entitydescription.Touhou_Blunderbuss_Enemy>An imitation rifle made in the shape of a blunderbuss, its performance is passable for a replica
-    </entitydescription.Touhou_Blunderbuss_Enemy>
+    <entitydescription.Touhou_Blunderbuss_Enemy>An imitation rifle made in the shape of a blunderbuss, its performance is passable for a replica</entitydescription.Touhou_Blunderbuss_Enemy>
     <entityname.Touhou_Blunderbuss_Enemy_Magazine01>Replicated Blunderbuss Ammunition Stack</entityname.Touhou_Blunderbuss_Enemy_Magazine01>
     <entityname.Touhou_Blunderbuss_Enemy_Magazine02>Replicated Blunderbuss Refined Ammunition Stack</entityname.Touhou_Blunderbuss_Enemy_Magazine02>
     <entityname.Touhou_Hompson_Contender_Enemy>Inferior Thompson Competitor</entityname.Touhou_Hompson_Contender_Enemy>
-    <entitydescription.Touhou_Hompson_Contender_Enemy>An artifact from a bygone era on Earth, this one that has made its way to Europa is clearly a
-        poor replica.
-    </entitydescription.Touhou_Hompson_Contender_Enemy>
+    <entitydescription.Touhou_Hompson_Contender_Enemy>An artifact from a bygone era on Earth, this one that has made its way to Europa is clearly a poor replica.</entitydescription.Touhou_Hompson_Contender_Enemy>
     <entityname.Touhou_Magic_Automatic_Shotgun>Magical Automatic Shotgun</entityname.Touhou_Magic_Automatic_Shotgun>
-    <entitydescription.Touhou_Magic_Automatic_Shotgun>A replica made from magical materials based on an automatic shotgun, which optimizes performance
-        but makes the weapon more unstable.
-    </entitydescription.Touhou_Magic_Automatic_Shotgun>
+    <entitydescription.Touhou_Magic_Automatic_Shotgun>A replica made from magical materials based on an automatic shotgun, which optimizes performance but makes the weapon more unstable.</entitydescription.Touhou_Magic_Automatic_Shotgun>
     <entityname.Touhou_Magic_Automatic_Shotgun_Bullet>Magical Shotgun Shell</entityname.Touhou_Magic_Automatic_Shotgun_Bullet>
-    <entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>A shotgun shell made from cheap magical materials. It's obvious to anyone with eyes that
-        this is just a bunch of iron chunks.
-    </entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>
+    <entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>A shotgun shell made from cheap magical materials. It's obvious to anyone with eyes that this is just a bunch of iron chunks.</entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>
     <entityname.Touhou_Magic_Pollution_Shotgun_Bullet>Polluted Shotgun Shell</entityname.Touhou_Magic_Pollution_Shotgun_Bullet>
-    <entitydescription.Touhou_Magic_Pollution_Shotgun_Bullet>A magical shotgun shell eroded by spiritual pollution. This is clearly beyond the realm
-        of what humans should touch.
-    </entitydescription.Touhou_Magic_Pollution_Shotgun_Bullet>
+    <entitydescription.Touhou_Magic_Pollution_Shotgun_Bullet>A magical shotgun shell eroded by spiritual pollution. This is clearly beyond the realm of what humans should touch.</entitydescription.Touhou_Magic_Pollution_Shotgun_Bullet>
     <entityname.Touhou_Lunarquake_Fake>Replica Lunarquake</entityname.Touhou_Lunarquake_Fake>
-    <entitydescription.Touhou_Lunarquake_Fake>A Lunarquake imitation made from cheap magical materials, lacking any of the original weapon's
-        characteristics.
-    </entitydescription.Touhou_Lunarquake_Fake>
+    <entitydescription.Touhou_Lunarquake_Fake>A Lunarquake imitation made from cheap magical materials, lacking any of the original weapon's characteristics.</entitydescription.Touhou_Lunarquake_Fake>
     <entityname.Touhou_Lunar_Center_Fake>Replica Lunar Center</entityname.Touhou_Lunar_Center_Fake>
     <entitydescription.Touhou_Lunar_Center_Fake>The crude imitation results in reduced capacity.</entitydescription.Touhou_Lunar_Center_Fake>
     <entityname.Touhou_Pollution_Lunar_Center_Fake>Polluted Lunar Center</entityname.Touhou_Pollution_Lunar_Center_Fake>
-    <entitydescription.Touhou_Pollution_Lunar_Center_Fake>A Lunar Center more severely eroded by pollution, losing its threat but gaining
-        significantly enhanced penetration.
-    </entitydescription.Touhou_Pollution_Lunar_Center_Fake>
+    <entitydescription.Touhou_Pollution_Lunar_Center_Fake>A Lunar Center more severely eroded by pollution, losing its threat but gaining significantly enhanced penetration.</entitydescription.Touhou_Pollution_Lunar_Center_Fake>
     <entityname.Touhou_Pollution_Shotgun>Polluted Shotgun</entityname.Touhou_Pollution_Shotgun>
-    <entitydescription.Touhou_Pollution_Shotgun>A shotgun tainted by unclean magic, unusable by anyone but a pollution mage. Perhaps the filth can be
-        purified.
-    </entitydescription.Touhou_Pollution_Shotgun>
+    <entitydescription.Touhou_Pollution_Shotgun>A shotgun tainted by unclean magic, unusable by anyone but a pollution mage. Perhaps the filth can be purified.</entitydescription.Touhou_Pollution_Shotgun>
     <entityname.Touhou_Pollution_Rifle>Polluted Rifle</entityname.Touhou_Pollution_Rifle>
-    <entitydescription.Touhou_Pollution_Rifle>A rifle tainted by unclean magic, unusable by anyone but a pollution mage. Perhaps the filth can be
-        purified.
-    </entitydescription.Touhou_Pollution_Rifle>
+    <entitydescription.Touhou_Pollution_Rifle>A rifle tainted by unclean magic, unusable by anyone but a pollution mage. Perhaps the filth can be purified.</entitydescription.Touhou_Pollution_Rifle>
     <entityname.Touhou_Arc_Salute_Cannon>Arc Salute Cannon</entityname.Touhou_Arc_Salute_Cannon>
-    <entitydescription.Touhou_Arc_Salute_Cannon>A weapon composed of unknown magic and materials, capable of firing dangerous plasma spheres.
-    </entitydescription.Touhou_Arc_Salute_Cannon>
+    <entitydescription.Touhou_Arc_Salute_Cannon>A weapon composed of unknown magic and materials, capable of firing dangerous plasma spheres.</entitydescription.Touhou_Arc_Salute_Cannon>
     <entityname.Touhou_Arc_Salute_Cannon_Ammo>Salute Cannon Plasma Canister</entityname.Touhou_Arc_Salute_Cannon_Ammo>
     <entitydescription.Touhou_Arc_Salute_Cannon_Ammo>A canister of tightly sealed plasma.</entitydescription.Touhou_Arc_Salute_Cannon_Ammo>
     <entityname.Touhou_Nail_Head_Book>Nail Head Book</entityname.Touhou_Nail_Head_Book>
-    <entitydescription.Touhou_Nail_Head_Book>A peculiar weapon, seemingly modified from another weapon, capable of firing highly penetrating
-        nail-shaped projectiles.
-    </entitydescription.Touhou_Nail_Head_Book>
+    <entitydescription.Touhou_Nail_Head_Book>A peculiar weapon, seemingly modified from another weapon, capable of firing highly penetrating nail-shaped projectiles.</entitydescription.Touhou_Nail_Head_Book>
     <entityname.Touhou_Nail_Head_Book_Ammo>Nail Head Battery</entityname.Touhou_Nail_Head_Book_Ammo>
-    <entitydescription.Touhou_Nail_Head_Book_Ammo>A battery for the Nail Head Book, but the charging method is unknown.
-    </entitydescription.Touhou_Nail_Head_Book_Ammo>
+    <entitydescription.Touhou_Nail_Head_Book_Ammo>A battery for the Nail Head Book, but the charging method is unknown.</entitydescription.Touhou_Nail_Head_Book_Ammo>
     <entityname.Touhou_Pollution_Riflebullet>Polluted Rifle Bullet</entityname.Touhou_Pollution_Riflebullet>
-    <entitydescription.Touhou_Pollution_Riflebullet>A rifle bullet eroded by spiritual pollution. This is clearly beyond the realm of what humans
-        should touch.
-    </entitydescription.Touhou_Pollution_Riflebullet>
+    <entitydescription.Touhou_Pollution_Riflebullet>A rifle bullet eroded by spiritual pollution. This is clearly beyond the realm of what humans should touch.</entitydescription.Touhou_Pollution_Riflebullet>
     <!--NPC显示名称-->
     <npctitle.Touhou_ODM03_Enemy_Human_Lunatic>Plunderer - Lunatic</npctitle.Touhou_ODM03_Enemy_Human_Lunatic>
     <npctitle.Touhou_ODM03_Enemy_Human_Hard>Plunderer - Hard</npctitle.Touhou_ODM03_Enemy_Human_Hard>
@@ -325,59 +247,44 @@
     <npctitle.Touhou_ODM06_Enemy_Human_Normal>Renegade Mage - Normal</npctitle.Touhou_ODM06_Enemy_Human_Normal>
     <npctitle.Touhou_ODM06_Enemy_Human_Easy>Renegade Mage - Easy</npctitle.Touhou_ODM06_Enemy_Human_Easy>
 
-    <locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>Abandoned Trojan Green Asteroid Outpost
-    </locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>
+    <locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>Abandoned Trojan Green Asteroid Outpost</locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>
 
     <!--书籍文本-->
     <entityname.Touhou_Secret_Classified_Reiki_Erode_Crawler>Secret：Reiki Erode Crawler</entityname.Touhou_Secret_Classified_Reiki_Erode_Crawler>
     <Touhou_Secret_Classified_Reiki_Erode_Crawler_Msg>
         Biological Name: Reiki Erode Crawler
         Hazard Level: Medium
-        Description: A magical creature that haunts the cold abyss and the Europan mid-ocean ridge, showing a tendency to spread deeper. It is a
-        creature transformed from the death of a spirit-polluted algal-maned crawler.
+        Description: A magical creature that haunts the cold abyss and the Europan mid-ocean ridge, showing a tendency to spread deeper. It is a creature transformed from the death of a spirit-polluted algal-maned crawler.
         Discovery Location: Cold Abyss: Mine Outpost - Wormhole Outpost: Wreckage (0.41-0.42)
         Discovery Time: Day 42 after the Breakshell
         Discoverer: Aine ApolloBiological
     </Touhou_Secret_Classified_Reiki_Erode_Crawler_Msg>
-    <entityname.Touhou_Confidential_Classified_Reiki_Erode_Crawler>Confidential：Reiki Erode Crawler
-    </entityname.Touhou_Confidential_Classified_Reiki_Erode_Crawler>
+    <entityname.Touhou_Confidential_Classified_Reiki_Erode_Crawler>Confidential：Reiki Erode Crawler</entityname.Touhou_Confidential_Classified_Reiki_Erode_Crawler>
     <Touhou_Confidential_Classified_Reiki_Erode_Crawler_Msg>
-        Project Number: GE-075
-        Project Level: III
-        Description: GE-075, commonly known as the "Spell Crawler," is a spiritual contamination variant of Europa's native algal-maned crawler.
-        GE-075 exhibits a unique luminescent ability, emitting a faint yellow glow, the purpose of which is unknown.
-        The most notable characteristic of GE-075 is its ability to manipulate and generate magical energy, using this ability to fire barrages imbued
-        with spiritual contamination. Targets contaminated by these barrages will gradually be eroded by spiritual pollution.
-        Anatomical results show that the creature's internal organs have lost most of the physiological structure of the original crawler, maintaining
-        only the external form of the algal-maned crawler. It is speculated that it spreads contamination by attacking its own kind.
-        GE-075 is approximately 150 centimeters in length, with a segmented body similar to that of an eel. Its head is covered with a small number of
-        luminous scales that emit a faint light. The creature can generate a localized magical energy field, allowing it to move quickly and agilely
-        in water.
-        This energy field also enables GE-075 to reinforce its skin and counter potential threats.
-        First Discovery Location: ██████
-        First Discovery Time: ██████
-        Discoverer: ███
+       Project Number: GE-075
+       Project Level: III
+       Description: GE-075, commonly known as the "Spell Crawler," is a spiritual contamination variant of Europa's native algal-maned crawler. GE-075 exhibits a unique luminescent ability, emitting a faint yellow glow, the purpose of which is unknown.
+       The most notable characteristic of GE-075 is its ability to manipulate and generate magical energy, using this ability to fire barrages imbued with spiritual contamination. Targets contaminated by these barrages will gradually be eroded by spiritual pollution.
+       Anatomical results show that the creature's internal organs have lost most of the physiological structure of the original crawler, maintaining only the external form of the algal-maned crawler. It is speculated that it spreads contamination by attacking its own kind.
+       GE-075 is approximately 150 centimeters in length, with a segmented body similar to that of an eel. Its head is covered with a small number of luminous scales that emit a faint light. The creature can generate a localized magical energy field, allowing it to move quickly and agilely in water.
+       This energy field also enables GE-075 to reinforce its skin and counter potential threats.
+       First Discovery Location: ██████
+       First Discovery Time: ██████
+       Discoverer: ███
     </Touhou_Confidential_Classified_Reiki_Erode_Crawler_Msg>
-    <entityname.Touhou_Top_Secret_Classified_Reiki_Erode_Crawler>Top Secret：Reiki Erode Crawler
-    </entityname.Touhou_Top_Secret_Classified_Reiki_Erode_Crawler>
+    <entityname.Touhou_Top_Secret_Classified_Reiki_Erode_Crawler>Top Secret：Reiki Erode Crawler</entityname.Touhou_Top_Secret_Classified_Reiki_Erode_Crawler>
     <Touhou_Top_Secret_Classified_Reiki_Erode_Crawler_Msg>
         Project Number: GE-075
         Project Level: III
         Description: GE-075, commonly known as the "Spell Crawler," is a variant of Europa's native algal-maned crawler produced after an experiment.
-        Reason for Experimental Failure: The alchemical petri dish was opened prematurely, causing the contamination to mutate upon contact with the
-        cabin air. This led to the contamination of the transport ship's crew and the surrounding algal-maned crawlers.
+        Reason for Experimental Failure: The alchemical petri dish was opened prematurely, causing the contamination to mutate upon contact with the cabin air. This led to the contamination of the transport ship's crew and the surrounding algal-maned crawlers.
         Recommendation for Improvement: Avoid selecting novice captains in the future.
         GE-075 exhibits a unique luminescent ability, emitting a faint yellow glow, the purpose of which is unknown.
-        The most notable characteristic of GE-075 is its ability to manipulate and generate magical energy. It uses this ability to fire barrages
-        imbued with spiritual contamination. Targets contaminated by these barrages will gradually be eroded by spiritual pollution.
-        Anatomical results show that the creature's internal organs have lost most of the physiological structure of the original crawler, maintaining
-        only the external form of the algal-maned crawler. It is speculated that it spreads contamination by attacking its own kind.
-        GE-075 is approximately 150 centimeters in length, with a segmented body similar to that of an eel. Its head is covered with a small number of
-        luminous scales that emit a faint light. The creature can generate a localized magical energy field, allowing it to move quickly and agilely
-        in water.
+        The most notable characteristic of GE-075 is its ability to manipulate and generate magical energy. It uses this ability to fire barrages imbued with spiritual contamination. Targets contaminated by these barrages will gradually be eroded by spiritual pollution.
+        Anatomical results show that the creature's internal organs have lost most of the physiological structure of the original crawler, maintaining only the external form of the algal-maned crawler. It is speculated that it spreads contamination by attacking its own kind.
+        GE-075 is approximately 150 centimeters in length, with a segmented body similar to that of an eel. Its head is covered with a small number of luminous scales that emit a faint light. The creature can generate a localized magical energy field, allowing it to move quickly and agilely in water.
         This energy field also enables GE-075 to reinforce its skin and counter potential threats.
-        The secondary contamination spread by this creature only affects algal-maned crawlers and is ineffective against humans, raptors, and other
-        creatures.
+        The secondary contamination spread by this creature only affects algal-maned crawlers and is ineffective against humans, raptors, and other creatures.
         First Discovery Location: Abyssal Sea Plain: New Order Outpost: Central Alchemical Laboratory
         First Discovery Time: 120 days before the Breakshell
         Discoverer: Director of the Alliance's Directly Affiliated Alchemical Laboratory
