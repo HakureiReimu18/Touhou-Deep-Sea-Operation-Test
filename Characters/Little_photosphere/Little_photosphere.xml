@@ -84,7 +84,7 @@
         <item Identifier="Touhou_Base_Metal"/>
     </inventory>
     <inventory Slots="Any,Any,Any" AccessibleWhenAlive="False" Commonness="0.35">
-        <item Identifier="Score_Point"/>
+        <item Identifier="Magic_Material" amount="2"/>
     </inventory>
     <inventory Slots="Any,Any,Any" AccessibleWhenAlive="False" Commonness="1">
         <item Identifier="Touhou_Base_Metal"/>

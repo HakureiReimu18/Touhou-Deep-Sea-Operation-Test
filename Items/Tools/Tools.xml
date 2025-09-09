@@ -22,14 +22,14 @@
             <RequiredSkill identifier="mechanical" level="30"/>
             <RequiredItem identifier="organicfiber"/>
             <RequiredItem identifier="carbon"/>
-            <RequiredItem identifier="Reiki_Stone"/>
+            <RequiredItem identifier="Touhou_Plant_Extract"/>
             <RequiredItem identifier="Score_Point"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" requiredtime="40">
             <RequiredSkill identifier="mechanical" level="60"/>
             <RequiredItem identifier="organicfiber"/>
             <RequiredItem identifier="carbon"/>
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="Touhou_Simple_Parts"/>
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Marisa_Items/broom.png" sourcerect="4,22,379,128" depth="0.3" origin="0.5,0.5"/>
@@ -145,7 +145,7 @@
             <RequiredItem identifier="organicfiber" amount="2"/>
             <RequiredItem identifier="plastic" amount="2"/>
             <RequiredItem identifier="Magic_Material"/>
-            <RequiredItem identifier="Reiki_Stone"/>
+            <RequiredItem identifier="Touhou_Plant_Extract"/>
         </Fabricate>
         <Sprite texture="%ModDir%/Images/Tools/Kappa_Backpack.png" depth="0.7" sourcerect="0,0,88,126" origin="0.5,0.5"/>
         <Body width="88" height="126" density="10"/>
@@ -325,7 +325,7 @@
 
     <!--河童采矿机-->
     <Item name="河童采矿机" identifier="Kappa_Miningdrill" subcategory="Touhou" category="Equipment" Tags="smallitem,cuttingequipment,tool"
-          cargocontaineridentifier="metalcrate" Scale="0.8" waterproof="true" impactsoundtag="impact_metal_light">
+          AddedPickingSpeedMultiplier="4.0" cargocontaineridentifier="metalcrate" Scale="0.8" waterproof="true" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="divingcab" minamount="1" maxamount="2" spawnprobability="0.32"/>
         <PreferredContainer primary="engcab" minamount="1" maxamount="2" spawnprobability="0.22"/>
         <PreferredContainer primary="wreckstoragecab" minamount="0" maxamount="2" spawnprobability="0.225"/>
@@ -339,16 +339,14 @@
             <Price storeidentifier="merchantengineering" multiplier="1.2" minavailable="3"/>
             <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.7" minavailable="3"/>
         </Price>
-        <Deconstruct time="10">
+        <Deconstruct time="5">
             <Item identifier="steel"/>
-            <Item identifier="plastic"/>
-            <Item identifier="Reiki_Stone"/>
         </Deconstruct>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20">
+        <Fabricate suitablefabricators="fabricator" requiredtime="10">
             <RequiredSkill identifier="mechanical" level="10"/>
             <RequiredItem identifier="steel"/>
             <RequiredItem identifier="carbon"/>
-            <RequiredItem identifier="Reiki_Stone" amount="2"/>
+            <RequiredItem identifier="Touhou_Plant_Extract"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Kappa_Miningdrill.png" sourcerect="0,0,95,82"/>
         <Sprite texture="%ModDir%/Images/Tools/Kappa_Miningdrill.png" sourcerect="0,85,107,56" depth="0.55" origin="0.5,0.5"/>
@@ -408,7 +406,7 @@
             <Fixable identifier="structure"/>
         </RepairTool>
         <ItemContainer autofill="True" capacity="1" maxstacksize="1" hideitems="true" slotsperrow="2" containedstateindicatorslot="0"
-                       ExtraStackSize="8">
+                       ExtraStackSize="16">
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32"/>
             <SlotIcon slotindex="1" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5"/>
             <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Kappa_Miningdrill_Ore_Indicator.png" sourcerect="0,0,56,56" origin="0.5,0.5"/>
@@ -513,7 +511,7 @@
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
             <Item identifier="organicfiber" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Research"
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
-            <Item identifier="Reiki_Stone" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Research"
+            <Item identifier="Touhou_Plant_Extract" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Research"
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
         </Deconstruct>
         <!--如果添加新职业，也许会用到配方解锁-->
@@ -522,7 +520,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="30"/>
             <RequiredItem identifier="Mu_Alchemical"/>
             <RequiredItem identifier="organicfiber"/>
-            <RequiredItem identifier="Reiki_Stone"/>
+            <RequiredItem identifier="Touhou_Plant_Extract"/>
         </Fabricate>
         <WifiComponent range="65000.0" LinkToChat="true" MinChatMessageInterval="0.0"/>
         <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect">
@@ -994,7 +992,7 @@
             </StatusEffect>
         </Holdable>
         <RepairTool firedamage="10.0" structurefixamount="3.0" range="200" barrelpos="25,5" particles="weld" repairmultiple="true"
-                    repairthroughwalls="false" levelwallfixamount="-0.8" targetforce="10">
+                    HitBrokenDoors="true" repairthroughwalls="false" levelwallfixamount="-0.8" targetforce="10">
             <!-- the item must contain a welding fuel tank for it to work -->
             <RequiredItems items="weldingtoolfuel,Touhou_Fix_Foamg_Tank" type="Contained"/>
             <RequiredItems items="Welding_Mode" type="Contained"/>
@@ -1025,6 +1023,9 @@
             <StatusEffect type="OnSuccess" targettype="UseTarget" targets="weldable" Stuck="15.0"/>
             <StatusEffect type="OnSuccess" targettype="UseTarget" targets="item" Condition="-9.0">
                 <Conditional HasTag="neq weldable"/>
+            </StatusEffect>
+            <StatusEffect type="OnSuccess" targettype="UseTarget" targets="item" Condition="9.0">
+                <Conditional HasTag="eq doors"/>
             </StatusEffect>
             <!-- do burn damage to characters -->
             <StatusEffect type="OnUse" target="UseTarget">
@@ -1482,11 +1483,11 @@
         </Price>
         <Deconstruct time="10">
             <Item identifier="iron" amount="8"/>
-            <Item identifier="Reiki_Stone" amount="12"/>
+            <Item identifier="Touhou_Plant_Extract" amount="2"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="15">
             <RequiredSkill identifier="mechanical" level="100"/>
-            <RequiredItem identifier="Reiki_Stone" amount="2"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="2"/>
             <RequiredItem identifier="Touhou_Precision_Parts"/>
             <RequiredItem identifier="Touhou_Simple_Parts"/>
             <RequiredItem identifier="fpgacircuit" amount="6"/>
@@ -1542,7 +1543,7 @@
             <RequiredItem identifier="Touhou_Precision_Parts" amount="2"/>
             <RequiredItem identifier="fpgacircuit" amount="6"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="6"/>
-            <RequiredItem identifier="Reiki_Stone" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Nitori_Backpack_Tactical_Expansion.png" sourcerect="0,0,100,132" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Tools/Kappa_Backpack.png" depth="0.7" sourcerect="0,0,88,126" origin="0.5,0.5"/>
@@ -1671,7 +1672,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="50"/>
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem identifier="organicfiber" amount="2"/>
-            <RequiredItem identifier="Reiki_Stone"/>
+            <RequiredItem identifier="Touhou_Plant_Extract"/>
         </Fabricate>
         <WifiComponent range="65000.0" LinkToChat="true" MinChatMessageInterval="0.0"/>
         <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect">
@@ -2045,12 +2046,12 @@
             <Price locationtype="Merchant_Kawasiro_Nitori" multiplier="0.7" maxavailable="1" sold="true"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="15">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="silicon"/>
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false"/>
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false"/>
@@ -2092,12 +2093,12 @@
             <Price locationtype="Merchant_Kawasiro_Nitori" multiplier="0.7" maxavailable="1" sold="true"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="15">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="silicon"/>
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false"/>
             <RequiredItem identifier="Jin_Alchemical" mincondition="0.5" usecondition="false"/>
@@ -2139,12 +2140,12 @@
             <Price locationtype="Merchant_Kawasiro_Nitori" multiplier="0.7" maxavailable="1" sold="true"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="15">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="silicon"/>
             <RequiredItem identifier="Mu_Alchemical" mincondition="0.5" usecondition="false"/>
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false"/>
@@ -2186,12 +2187,12 @@
             <Price locationtype="Merchant_Kawasiro_Nitori" multiplier="0.7" maxavailable="1" sold="true"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="15">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="silicon"/>
             <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" usecondition="false"/>
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false"/>
@@ -2233,12 +2234,12 @@
             <Price locationtype="Merchant_Kawasiro_Nitori" multiplier="0.7" maxavailable="1" sold="true"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="15">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="silicon"/>
             <RequiredItem identifier="Huo_Alchemical" mincondition="0.5" usecondition="false"/>
             <RequiredItem identifier="Yang_Alchemical" mincondition="0.5" usecondition="false"/>
@@ -2280,12 +2281,12 @@
             <Price locationtype="Merchant_Kawasiro_Nitori" multiplier="0.7" maxavailable="1" sold="true"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="15">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="silicon"/>
             <RequiredItem identifier="Shui_Alchemical" mincondition="0.5" usecondition="false"/>
             <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" usecondition="false"/>
@@ -2327,12 +2328,12 @@
             <Price locationtype="Merchant_Kawasiro_Nitori" multiplier="0.7" maxavailable="1" sold="true"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="15">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredItem identifier="Reiki_Stone" amount="3"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="silicon"/>
             <RequiredItem identifier="Jin_Alchemical" mincondition="0.5" usecondition="false"/>
             <RequiredItem identifier="Tu_Alchemical" mincondition="0.5" usecondition="false"/>
@@ -2379,7 +2380,7 @@
             <Price locationtype="mine" multiplier="0.8" maxavailable="8"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_White_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5"/>
@@ -2423,7 +2424,7 @@
             <Price locationtype="mine" multiplier="0.8" maxavailable="8"/>
         </Price>
         <Deconstruct time="10">
-            <Item identifier="Reiki_Stone" amount="3"/>
+            <Item identifier="Touhou_Plant_Extract" amount="3"/>
             <Item identifier="silicon"/>
         </Deconstruct>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Black_Hooked_Jade.png" sourcerect="0,0,68,68" depth="0.5" origin="0.5,0.5"/>
@@ -2461,8 +2462,7 @@
                 <Conditional IsDead="eq false"/>
                 <Conditional speciesgroup="neq human"/>
                 <Affliction identifier="burn" strength="3.5"/>
-                <Affliction identifier="explosiondamage" strength="3.5"/>
-                <Affliction identifier="Reiki_Pressure" strength="3.5"/>
+                <Affliction identifier="explosiondamage" strength="4.5"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="5"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" delay="9.5">
@@ -2706,7 +2706,7 @@
 
 
     <!--魔法武器充能箱（小型）-->
-    <Item name="魔法武器充能箱（小型）" identifier="Touhou_Magic_Charging_Box_Small" subcategory="Touhou" category="Equipment" Health="50"
+    <Item name="魔法武器充能箱（小型）" identifier="Touhou_Magic_Charging_Box_Small" subcategory="Touhou" category="Equipment" Health="60"
           tags="smallitem,Touhou_Magic_Charging_Box,toolbox" scale="0.4" cargocontaineridentifier="metalcrate">
         <PreferredContainer primary="crewcab" notcampaign="true"/>
         <Price baseprice="800">
@@ -2728,7 +2728,7 @@
             <RequiredItem identifier="titaniumaluminiumalloy" amount="3"/>
             <RequiredItem identifier="organicfiber" amount="3"/>
             <RequiredItem identifier="plastic" amount="3"/>
-            <RequiredItem identifier="Reiki_Dust" amount="6"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="2"/>
             <RequiredItem identifier="ballisticfiber" amount="3"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Magic_Charging_Box_Small.png" sourcerect="0,0,140,120" origin="0.5,0.5"/>
@@ -2784,7 +2784,7 @@
     </Item>
 
     <!--魔法武器充能箱（中型）-->
-    <Item name="魔法武器充能箱（中型）" identifier="Touhou_Magic_Charging_Box_Medium" subcategory="Touhou" category="Equipment"
+    <Item name="魔法武器充能箱（中型）" identifier="Touhou_Magic_Charging_Box_Medium" subcategory="Touhou" category="Equipment" Health="150"
           tags="mediumitem,Touhou_Magic_Charging_Box,toolbox" scale="0.4" cargocontaineridentifier="metalcrate">
         <PreferredContainer primary="crewcab" notcampaign="true"/>
         <Price baseprice="3000">
@@ -2804,8 +2804,8 @@
             <RequiredItem identifier="Score_Point" amount="3"/>
             <RequiredItem identifier="Byproduct_Alchemical" amount="6"/>
             <RequiredItem identifier="titaniumaluminiumalloy" amount="6"/>
-            <RequiredItem identifier="plastic" amount="12"/>
-            <RequiredItem identifier="Reiki_Dust" amount="24"/>
+            <RequiredItem identifier="plastic" amount="6"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
             <RequiredItem identifier="ballisticfiber" amount="6"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Magic_Charging_Box_Medium.png" sourcerect="0,0,140,120" origin="0.5,0.5"/>
@@ -3155,13 +3155,11 @@
     <!--共情物卡牌包-->
     <Item name="共情物卡牌包" identifier="Touhou_Empathy_Item_Box" tags="smallitem" maxstacksize="32" subcategory="Touhou" scale="0.25"
           category="Misc">
-        <PreferredContainer primary="medfabcab" amount="1" spawnprobability="0.075"/>
-        <PreferredContainer secondary="abandonedmedcab,wreckmedcab,outpostmedcab" amount="1" spawnprobability="0.125"/>
+        <PreferredContainer secondary="abandonedmedcab,wreckmedcab" amount="1" spawnprobability="0.125"/>
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="2" spawnprobability="0.125"/>
         <PreferredContainer primary="ruinstoragelarge" amount="3" spawnprobability="0.125"/>
         <PreferredContainer primary="wreckstoragecab" amount="1" spawnprobability="0.125"/>
-        <PreferredContainer primary="outpostcrewcabinet" amount="1" spawnprobability="0.15"/>
-        <Price baseprice="10000" sold="false" minleveldifficulty="30">
+        <Price baseprice="5000" sold="false" minleveldifficulty="30">
             <Price storeidentifier="Merchant_Kawasiro_Nitori" sold="true" multiplier="0.7"/>
         </Price>
         <Deconstruct time="3" amount="2" chooserandom="true">
@@ -4896,7 +4894,7 @@
 
             <sprite name="Backpack Wearable" texture="%ModDir%/Images/Tools/Touhou_Bear_Doll_Bag.png" sourcerect="0,0,41,56" limb="Torso"
                     hidelimb="false" inheritlimbdepth="true"
-                    inherittexturescale="false" hideotherwearables="false" origin="0.65,0.12" scale="0.6"/>
+                    inherittexturescale="false" hideotherwearables="false" origin="0.65,0.12" scale="0.4"/>
             <sprite name="Combat Diving Suit Torso" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightArm"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
             <sprite name="Combat Diving Suit Torso" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftArm"
@@ -5032,7 +5030,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="20"/>
             <RequiredSkill identifier="electrical" level="20"/>
             <RequiredItem tag="plantitem"/>
-            <RequiredItem identifier="Plant_Essential_Oil" amount="6"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" />
             <RequiredItem identifier="carbon"/>
             <RequiredItem identifier="chlorine"/>
         </Fabricate>
@@ -5049,7 +5047,7 @@
     <!--幽灵燃料棒-->
     <Item name="幽灵燃料棒" identifier="Touhou_Spectral_Core_Fuelrod" Category="Fuel" subcategory="Touhou"
           Tags="smallitem,reactorfuel,divingsuitfuel,thoriumfuelrod" maxstacksize="32"
-          maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" health="600" scale="0.25">
+          maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" health="700" scale="0.25">
         <PreferredContainer primary="reactorcab"/>
         <Price baseprice="300" sold="false">
             <Price storeidentifier="merchantoutpost"/>
@@ -5064,7 +5062,7 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
             <RequiredSkill identifier="Touhou_Magic" level="60"/>
             <RequiredItem identifier="Touhou_Spectral_Core_Item"/>
-            <RequiredItem identifier="Reiki_Dust" amount="16"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Spectral_Core_Fuelrod.png" sourcerect="0,0,150,160" origin="0.5,0.5"/>
@@ -5078,7 +5076,7 @@
         <ItemContainer hideitems="true" capacity="1" itemrotation="90" drawinventory="false" canbeselected="false"
                        SpawnWithId="Touhou_Spectral_Core_Fuelrod_Bolt" removecontaineditemsondeconstruct="true" showcontainedstateindicator="false">
             <Containable items="Touhou_Spectral_Core_Fuelrod_Bolt"/>
-            <StatusEffect type="OnUse" target="This" condition="-20" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This" condition="-35" disabledeltatime="true">
                 <SpawnItem identifiers="Touhou_Spectral_Core_Fuelrod_Bolt" spawnposition="ThisInventory"/>
             </StatusEffect>
         </ItemContainer>
@@ -5232,14 +5230,14 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5">
             <RequiredSkill identifier="Touhou_Magic" level="70"/>
             <RequiredItem tag="Elements_Book_Ammo" amount="3"/>
-            <RequiredItem identifier="Reiki_Stone" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
             <RequiredItem identifier="Touhou_Spectral_Core_Item"/>
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="3" displayname="recycleitem">
             <RequiredSkill identifier="Touhou_Magic" level="70"/>
             <RequiredItem tag="Elements_Book_Ammo" amount="3"/>
-            <RequiredItem identifier="Reiki_Stone" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem tag="Touhou_Enhanced_Crystal" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5"/>
@@ -5277,14 +5275,14 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5">
             <RequiredSkill identifier="Touhou_Magic" level="70"/>
             <RequiredItem tag="Elements_Book_Ammo" amount="3"/>
-            <RequiredItem identifier="Reiki_Stone" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
             <RequiredItem identifier="Touhou_Spectral_Core_Item"/>
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="3" displayname="recycleitem">
             <RequiredSkill identifier="Touhou_Magic" level="70"/>
             <RequiredItem tag="Elements_Book_Ammo" amount="3"/>
-            <RequiredItem identifier="Reiki_Stone" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem tag="Touhou_Enhanced_Crystal" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal02.png" sourcerect="0,0,60,100" origin="0.5,0.5"/>
@@ -5322,14 +5320,14 @@
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5">
             <RequiredSkill identifier="Touhou_Magic" level="70"/>
             <RequiredItem tag="Elements_Book_Ammo" amount="3"/>
-            <RequiredItem identifier="Reiki_Stone" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
             <RequiredItem identifier="Touhou_Spectral_Core_Item"/>
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="3" displayname="recycleitem">
             <RequiredSkill identifier="Touhou_Magic" level="70"/>
             <RequiredItem tag="Elements_Book_Ammo" amount="3"/>
-            <RequiredItem identifier="Reiki_Stone" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem tag="Touhou_Enhanced_Crystal" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal03.png" sourcerect="0,0,65,100" origin="0.5,0.5"/>
@@ -5472,7 +5470,7 @@
             </Button>
         </CustomInterface>
         <ItemContainer capacity="1" maxstacksize="1" canbeselected="true" hideitems="true">
-            <Containable items="Touhou_Small_Spell_Card_Ammo" excludeditems="Touhou_Silent_Selene_Ammo"/>
+            <Containable items="Touhou_Small_Spell_Card_Ammo,Touhou_Rapidly_Spell_Card_Ammo" excludeditems="Touhou_Silent_Selene_Ammo,Scarlet_Devil_Mansion"/>
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32"/>
         </ItemContainer>
         <Quality>

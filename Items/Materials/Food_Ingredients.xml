@@ -59,13 +59,13 @@
             <Price storeidentifier="merchantmine" multiplier="1.1" sold="true" maxavailable="1"/>
         </Price>
         <Deconstruct time="5">
-            <Item identifier="Reiki_Stone"/>
+            <Item identifier="Touhou_Plant_Extract"/>
             <Item identifier="carbon"/>
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="15">
             <RequiredSkill identifier="electrical" level="50"/>
             <RequiredSkill identifier="mechanical" level="50"/>
-            <RequiredItem identifier="Reiki_Stone" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem identifier="carbon" amount="4"/>
         </Fabricate>
         <Body width="160" height="160" density="30"/>
