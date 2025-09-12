@@ -5520,5 +5520,27 @@
         </Quality>
     </Item>
 
+    <!--魔法武器置物架-->
+    <Item name="魔法武器置物架" identifier="Touhou_Weapon_Holder" category="Equipment" tags="weaponholder" subcategory="Touhou" scale="0.25">
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Weapon_Holder.png" sourcerect="0,0,400,400" depth="0.45" scale="0.5"
+                origin="0.5,0.5"/>
+        <Body width="400" height="400" density="10"/>
+        <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" PickingTime="5.0" aimpos="65,-10" handle1="0,0" attachable="true"
+                  aimable="false">
+            <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.95" setvalue="true"/>
+        </Holdable>
+<!--        <CustomInterface canbeselected="true" drawhudwhenequipped="true" allowuioverlap="false" ElementStates="30, true">
+            <GuiFrame relativesize="0.2,0.15" anchor="CenterLeft" pivot="TopLeft" relativeoffset="0.006,0.006" style="ItemUI" />
+            <IntegerInput text="uilabel.Touhou_Weapon_Holder_Rotation" targetitemcomponent="ItemContainer" propertyname="itemrotation" min="0" max="360" step="1" GetValueInterval="0.5"/>
+            <TickBox text="uilabel.Touhou_Weapon_Holder_Hide" targetitemcomponent="ItemContainer" propertyname="drawinventory" ContinuousSignal="false" GetValueInterval="1" />
+        </CustomInterface>-->
+        <ItemContainer hideitems="false" drawinventory="true" capacity="1" AutoInteractWithContained="false" maxstacksize="1" slotsperrow="1"
+                       itempos="200,-200" itemrotation="30" containedspritedepth="0.44" canbeselected="true"
+                       msg="ItemMsgInteractSelect">
+            <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+            <Containable items="Touhou_Weapon_Level01,Touhou_Weapon_Level02,Touhou_Weapon_Level03,Touhou_Weapon_Level04,Touhou_Weapon_Level05" />
+        </ItemContainer>
+    </Item>
+
 
 </Items>

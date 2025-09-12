@@ -457,11 +457,11 @@
     <entityname.Touhou_Candy_Apple>妖精糖果（苹果味）</entityname.Touhou_Candy_Apple>
     <entitydescription.Touhou_Candy_Apple>妖精喜爱的糖果，也可以作为合成材料</entitydescription.Touhou_Candy_Apple>
     <entityname.Touhou_Candy_Peach>妖精糖果（蜜桃味）</entityname.Touhou_Candy_Peach>
-    <entitydescription.Touhou_Candy_Apple>妖精喜爱的糖果，也可以作为合成材料</entitydescription.Touhou_Candy_Apple>
+    <entitydescription.Touhou_Candy_Peach>妖精喜爱的糖果，也可以作为合成材料</entitydescription.Touhou_Candy_Peach>
     <entityname.Touhou_Candy_Lemon>妖精糖果（柠檬味）</entityname.Touhou_Candy_Lemon>
-    <entitydescription.Touhou_Candy_Apple>妖精喜爱的糖果，也可以作为合成材料</entitydescription.Touhou_Candy_Apple>
+    <entitydescription.Touhou_Candy_Lemon>妖精喜爱的糖果，也可以作为合成材料</entitydescription.Touhou_Candy_Lemon>
     <entityname.Touhou_Candy_Pomelo>妖精糖果（柚子味）</entityname.Touhou_Candy_Pomelo>
-    <entitydescription.Touhou_Candy_Apple>妖精喜爱的糖果，也可以作为合成材料</entitydescription.Touhou_Candy_Apple>
+    <entitydescription.Touhou_Candy_Pomelo>妖精喜爱的糖果，也可以作为合成材料</entitydescription.Touhou_Candy_Pomelo>
     <entityname.Touhou_Mutation_Candy>异变糖果</entityname.Touhou_Mutation_Candy>
     <entitydescription.Touhou_Mutation_Candy>在健康页面使用后可以增幅异变能量</entitydescription.Touhou_Mutation_Candy>
     <entityname.Touhou_Super_Candy>超级糖果</entityname.Touhou_Super_Candy>
@@ -1545,6 +1545,8 @@
     <entitydescription.Touhou_Lunar_Phantasm_Ammo>以幻惑之力铸造，贯穿敌人心神。每一次开火都仿佛精神的震荡，使对手陷入混乱与恐惧。作为‖color:gui.yellow‖幻胧月睨‖end‖的弹药</entitydescription.Touhou_Lunar_Phantasm_Ammo>
     <entityname.Touhou_Lunar_Phantasm_Sight>‖color:220,25,200,255‖幻胧月睨-瞄具‖color:end‖</entityname.Touhou_Lunar_Phantasm_Sight>
     <entitydescription.Touhou_Lunar_Phantasm_Sight>幻胧月睨的专用配件，提供高精度和更远的视野。作为‖color:gui.yellow‖幻胧月睨‖end‖的配件</entitydescription.Touhou_Lunar_Phantasm_Sight>
+    <entityname.Touhou_Weapon_Holder>魔法武器置物架</entityname.Touhou_Weapon_Holder>
+    <entitydescription.Touhou_Weapon_Holder>专为魔法武器准备的展示架（待进一步完善与美化）</entitydescription.Touhou_Weapon_Holder>
 
 
 

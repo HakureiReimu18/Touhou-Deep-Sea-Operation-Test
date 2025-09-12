@@ -4623,8 +4623,8 @@
         <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM10_Aff_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
-    <!--增幅宝石效果-->
-    <Affliction name="" identifier="Touhou_Enhanced_Crystal01_Effect" description="" type="Touhou_Buff" isbuff="true" limbspecific="false"
+    <!--增幅水晶效果-->
+    <Affliction name="增幅水晶效果" identifier="Touhou_Enhanced_Crystal01_Effect" description="" type="Touhou_Buff" isbuff="true" limbspecific="false"
                 indicatorlimb="Head" maxstrength="1"
                 duration="1.1" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="false"
                 iconcolors="94,94,94;163,164,164;255,255,255">
@@ -4637,8 +4637,8 @@
         <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM10_Aff_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
-    <!--气化宝石效果-->
-    <Affliction name="" identifier="Touhou_Enhanced_Crystal02_Effect" description="" type="Touhou_Buff" isbuff="true" limbspecific="false"
+    <!--气化水晶效果-->
+    <Affliction name="气化水晶效果" identifier="Touhou_Enhanced_Crystal02_Effect" description="" type="Touhou_Buff" isbuff="true" limbspecific="false"
                 indicatorlimb="Head" maxstrength="1"
                 duration="1.1" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="false"
                 iconcolors="94,94,94;163,164,164;255,255,255">
@@ -4649,8 +4649,8 @@
         <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM10_Aff_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
-    <!--深渊宝石效果-->
-    <Affliction name="" identifier="Touhou_Enhanced_Crystal03_Effect" description="" type="Touhou_Buff" isbuff="true" limbspecific="false"
+    <!--深渊水晶效果-->
+    <Affliction name="深渊水晶效果" identifier="Touhou_Enhanced_Crystal03_Effect" description="" type="Touhou_Buff" isbuff="true" limbspecific="false"
                 indicatorlimb="Head" maxstrength="1"
                 duration="1.1" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="false"
                 iconcolors="94,94,94;163,164,164;255,255,255">
@@ -4666,7 +4666,7 @@
     </Affliction>
 
     <!--肉桂熏香效果-->
-    <Affliction name="" identifier="Cinnamon_Incense_Effect" description="" type="Touhou_Buff" isbuff="true" limbspecific="false" indicatorlimb="Head"
+    <Affliction name="肉桂熏香效果" identifier="Cinnamon_Incense_Effect" description="" type="Touhou_Buff" isbuff="true" limbspecific="false" indicatorlimb="Head"
                 maxstrength="1"
                 duration="9.9" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="false"
                 iconcolors="94,94,94;163,164,164;255,255,255">

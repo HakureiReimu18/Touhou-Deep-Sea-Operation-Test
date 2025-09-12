@@ -38,6 +38,179 @@
 
     <charactername.youmukonpaku>Youmu Konpaku</charactername.youmukonpaku>
 
+
+
+
+    <entityname.Touhou_Koishi_Knife>‖color:60,200,130,255‖Koishi's Kitchen Knife‖end‖</entityname.Touhou_Koishi_Knife>
+    <entitydescription.Touhou_Koishi_Knife>At first glance, it's just a regular kitchen knife, but it's Koishi's personal weapon.</entitydescription.Touhou_Koishi_Knife>
+
+    <entityname.Aya_News>‖color:255,255,255,255‖Bunbunmaru Newspaper‖color:end‖</entityname.Aya_News>
+    <entitydescription.Aya_News>‖color:255,255,255,255‖Perfect for a boring afternoon with tea in hand. Can be sold at a good price, or handed to a friend to turn into a more valuable manuscript.‖color:end‖</entitydescription.Aya_News>
+
+    <entityname.Aya_Circular_Fan>Aya’s Maple Fan</entityname.Aya_Circular_Fan>
+    <entitydescription.Aya_Circular_Fan>A maple leaf-shaped fan, quite popular among the tengu. Requires ‖color:gui.yellow‖Maple Leaves‖end‖ to use.</entitydescription.Aya_Circular_Fan>
+
+    <entityname.Aya_Maple_Leaves>Maple Leaves</entityname.Aya_Maple_Leaves>
+    <entitydescription.Aya_Maple_Leaves>Fans are tools for creating wind: one swipe can knock down a house, two can topple a tree, and three can blow away a traveler’s cloak. Used as ammo for ‖color:gui.yellow‖Aya’s Maple Fan‖end‖</entitydescription.Aya_Maple_Leaves>
+
+    <entityname.Reimu_Paint>‖color:255,81,75,255‖Offering Box (Reimu Paint)‖color:end‖</entityname.Reimu_Paint>
+    <entitydescription.Reimu_Paint>A can of Reimu-themed paint, used in Touhou Sprayers.\n‖color:255,81,75,255‖When visiting the shrine, you don’t need money — just bring food or sake. Maybe that’s why the offering box is always empty…‖color:end‖</entitydescription.Reimu_Paint>
+
+    <!--Other-->
+    <entityname.Power_Point>P Point (Red)</entityname.Power_Point>
+    <entitydescription.Power_Point>Overflowing with power. Can be used at the ‖color:gui.yellow‖Magic Altar‖end‖ to craft powerful equipment.</entitydescription.Power_Point>
+
+    <entityname.Score_Point>P Point (Blue)</entityname.Score_Point>
+    <entitydescription.Score_Point>Does this icon feel a little... off?</entitydescription.Score_Point>
+
+    <entityname.Magic_Material>Izanagi Substance</entityname.Magic_Material>
+    <entitydescription.Magic_Material>A mystical substance synthesized from alien materials, said to be named after an album. An important ingredient at the ‖color:gui.yellow‖Magic Altar‖end‖</entitydescription.Magic_Material>
+
+    <entityname.Mc_SnowBall>Snowball</entityname.Mc_SnowBall>
+    <entitydescription.Mc_SnowBall>Sudden art style shift. Used as ammo for ‖color:gui.yellow‖Icicle‖end‖</entitydescription.Mc_SnowBall>
+
+    <entityname.Reiki_Stone>Spirit Stone</entityname.Reiki_Stone>
+    <entitydescription.Reiki_Stone>‖color:gui.yellow‖Deprecated material, please dismantle.‖end‖</entitydescription.Reiki_Stone>
+
+    <entityname.Spiritual_Water>Spiritual Water</entityname.Spiritual_Water>
+    <entitydescription.Spiritual_Water>Water gathered from alien sources, faintly infused with spiritual energy. Can be collected directly underwater.</entitydescription.Spiritual_Water>
+
+    <entityname.Reiki_Dust>Spirit Dust</entityname.Reiki_Dust>
+    <entitydescription.Reiki_Dust>‖color:gui.yellow‖Deprecated material, please dismantle.‖end‖</entitydescription.Reiki_Dust>
+
+    <entityname.Reiki_Dust_Caking>Spirit Dust (Caked)</entityname.Reiki_Dust_Caking>
+    <entitydescription.Reiki_Dust_Caking>‖color:gui.yellow‖Deprecated material, please dismantle.‖end‖</entitydescription.Reiki_Dust_Caking>
+
+    <entityname.Remilia_Doll>Remilia Doll</entityname.Remilia_Doll>
+    <entitydescription.Remilia_Doll>Full of dignity! (Load Remilia Paint into it and carry to slowly heal injuries. Right-click while held to double the effect.)</entitydescription.Remilia_Doll>
+
+    <entityname.Maoyu_Duffel_Bag>Keystar Shell</entityname.Maoyu_Duffel_Bag>
+    <entitydescription.Maoyu_Duffel_Bag>The soft outer shell left after a Keystar's spirit departs.\nThis might be why they’re so hard to eliminate — unless you deal with the source, they’ll just keep regenerating and drifting through the shipping lanes.</entitydescription.Maoyu_Duffel_Bag>
+
+    <!--Medical-->
+    <entityname.Plant_Essential_Oil>Plant Essential Oil</entityname.Plant_Essential_Oil>
+    <entitydescription.Plant_Essential_Oil>Extracted from plants using the ‖color:gui.yellow‖Magic Altar‖end‖. Used in alchemy rituals and healing common injuries.</entitydescription.Plant_Essential_Oil>
+
+    <entityname.Europa_Infusion>Europa Infusion</entityname.Europa_Infusion>
+    <entitydescription.Europa_Infusion>A complex infusion crafted using the ‖color:gui.yellow‖Magic Altar‖end‖. Highly magical.\nCan treat most injuries and enhance the body. Recipe is said to originate from a place called Eientei…</entitydescription.Europa_Infusion>
+
+    <entityname.Gilead_Branch_Seed>Seed of Gilead Tree</entityname.Gilead_Branch_Seed>
+    <entitydescription.Gilead_Branch_Seed>A mysterious plant growing on Europa. Might be the byproduct of a failed lab experiment...</entitydescription.Gilead_Branch_Seed>
+
+    <entityname.Gilead_Branch>Gilead Tree Branch</entityname.Gilead_Branch>
+    <entitydescription.Gilead_Branch>A naturally shed branch from the Gilead tree. Has medicinal value. Can be refined at the ‖color:gui.yellow‖Magic Altar‖end‖. Represents the ‖color:gui.yellow‖Wood Element‖end‖ in alchemy.</entitydescription.Gilead_Branch>
+
+    <entityname.Balm_Of_Gilead>Balm of Gilead</entityname.Balm_Of_Gilead>
+    <entitydescription.Balm_Of_Gilead>A magical balm made from Gilead Branch and essential oil. Has strong healing power — but be careful with timing, misuse may be fatal…</entitydescription.Balm_Of_Gilead>
+
+    <entityname.Cinnamon_Incense>Cinnamon Incense</entityname.Cinnamon_Incense>
+    <entitydescription.Cinnamon_Incense>A stick of unknown-origin incense, occasionally sold on the market. Soothing when burned… though some say this is a poor use of it.</entitydescription.Cinnamon_Incense>
+
+    <entityname.Touhou_Peach>Peach</entityname.Touhou_Peach>
+    <entitydescription.Touhou_Peach>A peach of unknown origin. Looks sweet and tempting — who knows what happens if you eat it?</entitydescription.Touhou_Peach>
+
+    <!--Weapon-->
+    <entityname.Hakkero>‖color:255,255,0,255‖Mini Hakkero‖color:end‖</entityname.Hakkero>
+    <entitydescription.Hakkero>A small octagonal furnace with a hole in the center and a bagua symbol on the front. Power source unknown. Uses ‖color:gui.yellow‖Star Danmaku, Stardust Reverie, or Star Bottles‖end‖</entitydescription.Hakkero>
+
+    <entityname.Star_Danmu>Star Danmaku</entityname.Star_Danmu>
+    <entitydescription.Star_Danmu>A simple star-shaped container used to fire plain star danmaku. Ammo for ‖color:gui.yellow‖Mini Hakkero‖end‖</entitydescription.Star_Danmu>
+
+    <entityname.Stardust_Reverie>Stardust Reverie</entityname.Stardust_Reverie>
+    <entitydescription.Stardust_Reverie>At a glance, it’s just a recolored version of standard Star Danmaku… Ammo for ‖color:gui.yellow‖Mini Hakkero‖end‖</entitydescription.Stardust_Reverie>
+
+    <entityname.Fake_Hakkero>Fake Mini Hakkero</entityname.Fake_Hakkero>
+    <entitydescription.Fake_Hakkero>A crude imitation of the Mini Hakkero — but still, it imitates the Mini Hakkero.</entitydescription.Fake_Hakkero>
+
+    <entityname.Homing_Amulet>Spirit Amulet</entityname.Homing_Amulet>
+    <entitydescription.Homing_Amulet>A stack of amulets that seem to contain mysterious power.</entitydescription.Homing_Amulet>
+
+    <entityname.Freeze_Icicle_Fall>Icicle</entityname.Freeze_Icicle_Fall>
+    <entitydescription.Freeze_Icicle_Fall>A large, puzzling chunk of ice — is that a frog inside? (Activate by inserting Snowballs, restore energy by soaking in water.)</entitydescription.Freeze_Icicle_Fall>
+
+    <entityname.Blunderbuss>Blunderbuss</entityname.Blunderbuss>
+    <entitydescription.Blunderbuss>A relic from the Moon — a highly unstable gun that might hurt its wielder. (Charge to use, consumes ‖color:gui.yellow‖Mind Tremor or Lunatic Eye‖end‖)</entitydescription.Blunderbuss>
+
+    <entityname.Mind_Bullet>Mind Tremor</entityname.Mind_Bullet>
+    <entitydescription.Mind_Bullet>A replica of a Moon relic. Incredibly powerful. Ammo for ‖color:gui.yellow‖Blunderbuss / Mercy‖end‖</entitydescription.Mind_Bullet>
+
+    <entityname.Lunatic_Bullet>Lunatic Eye</entityname.Lunatic_Bullet>
+    <entitydescription.Lunatic_Bullet>A replica of a terrifying Moon relic. Holds immense destructive power. Ammo for ‖color:gui.yellow‖Blunderbuss / Mercy‖end‖</entitydescription.Lunatic_Bullet>
+
+    <entityname.Touhou_Gungnier>‖color:255,36,0,255‖Gungnir‖color:end‖</entityname.Touhou_Gungnier>
+    <entitydescription.Touhou_Gungnier>A mysterious weapon from a distant land, brimming with devastating power. ‖color:gui.orange‖(Beware of friendly fire)‖color:end‖</entitydescription.Touhou_Gungnier>
+
+    <entityname.Mokou_Flamer>‖color:255,72,36,255‖Mokou’s Oxidizer‖color:end‖</entityname.Mokou_Flamer>
+    <entitydescription.Mokou_Flamer>A practical ignition tool, adapted to even light fires in Europa’s frozen environment.</entitydescription.Mokou_Flamer>
+
+    <entityname.Phoenix_Tail>‖color:255,72,36,255‖Immortal “Tail of the Phoenix”‖color:end‖</entityname.Phoenix_Tail>
+    <entitydescription.Phoenix_Tail>A mass-produced version of the phoenix tail. Cheap. Recently rated by the immortal community as more convenient than searching for the Hourai Elixir. Ammo for ‖color:gui.yellow‖Mokou’s Oxidizer‖end‖</entitydescription.Phoenix_Tail>
+
+    <entityname.Hisou_Sword>‖color:33,110,232,255‖Sword of Hisou‖color:end‖</entityname.Hisou_Sword>
+    <entitydescription.Hisou_Sword>Capable of striking at an opponent’s weak point with precision. Only a Celestial can wield it properly.</entitydescription.Hisou_Sword>
+
+    <entityname.Mine_Blast>‖color:233,160,32,255‖Momoyo’s Bomb‖color:end‖</entityname.Mine_Blast>
+    <entitydescription.Mine_Blast>“Your centipede grandpa is here!”</entitydescription.Mine_Blast>
+
+    <entityname.Sakuya_Knife>‖color:210,210,255,255‖Steel Throwing Knife‖color:end‖</entityname.Sakuya_Knife>
+    <entitydescription.Sakuya_Knife>A light weapon, easy to carry and throwable.</entitydescription.Sakuya_Knife>
+
+    <entityname.youmuceremonialsword2>‖color:156,158,161,255‖White Tower Sword‖color:end‖</entityname.youmuceremonialsword2>
+    <entitydescription.youmuceremonialsword2>A sword forged by youkai to sever confusion. Only those of the Konpaku family can use it.</entitydescription.youmuceremonialsword2>
+
+    <!--Shipborne Weapon-->
+    <entityname.Thousand_Needle_Ammo>‖color:255,36,0,255‖Hell Sign “Needle Mountain of a Thousand Needles”‖color:end‖ (Autocannon)</entityname.Thousand_Needle_Ammo>
+    <entitydescription.Thousand_Needle_Ammo>Those who break promises must swallow a thousand needles. (Used as autocannon ammo)</entitydescription.Thousand_Needle_Ammo>
+
+    <entityname.Phoenix_Wings_Ammo>‖color:255,72,36,255‖Immortal “Firebird - Phoenix Wing Flight”‖color:end‖ (Pulse Laser)</entityname.Phoenix_Wings_Ammo>
+    <entitydescription.Phoenix_Wings_Ammo>It is said the immortal phoenix rises from its own flames. (Used as pulse laser ammo)</entitydescription.Phoenix_Wings_Ammo>
+
+    <entityname.Milky_Way_Ammo>‖color:255,255,0,255‖Magic Sign “Milky Way”‖color:end‖ (Railgun)</entityname.Milky_Way_Ammo>
+    <entitydescription.Milky_Way_Ammo>A magical galaxy.\nThe star sand glitters with vibrant colors. (Used as railgun ammo)</entitydescription.Milky_Way_Ammo>
+
+    <entityname.Yin_Yang_Spirit_Orb>‖color:255,81,75,255‖Treasure “Yin-Yang Ghost Orb”‖color:end‖ (Railgun)</entityname.Yin_Yang_Spirit_Orb>
+    <entitydescription.Yin_Yang_Spirit_Orb>A spell card that hurls a massive yin-yang orb from who-knows-where. (Used as railgun ammo)</entitydescription.Yin_Yang_Spirit_Orb>
+
+    <!--Tools-->
+    <entitydescription.Marisa_Broom>A standard magician’s broom. Power source unknown, but somehow it can fly — even without a broom.</entitydescription.Marisa_Broom>
+    <entityname.Marisa_Broom>‖color:255,255,0,255‖Marisa’s Broom‖color:end‖</entityname.Marisa_Broom>
+
+    <entityname.Power_Bank>Aya’s Power Bank</entityname.Power_Bank>
+    <entitydescription.Power_Bank>A mysterious power bank seemingly powered by magic. Can recharge most batteries.</entitydescription.Power_Bank>
+
+    <entityname.Nitori_Backpack>Kappa Backpack</entityname.Nitori_Backpack>
+    <entitydescription.Nitori_Backpack>A standard kappa work backpack. Carries many items and provides oxygen — but ‖color:gui.yellow‖can’t withstand water pressure‖color:end‖</entitydescription.Nitori_Backpack>
+
+    <entityname.Kappa_Backpack_Plus>Kappa Backpack Plus</entityname.Kappa_Backpack_Plus>
+    <entitydescription.Kappa_Backpack_Plus>An upgraded kappa backpack. Though capacity remains the same, its enhanced spiritual energy grants protection — even against ‖color:gui.orange‖4000 meters‖color:end‖ of pressure.</entitydescription.Kappa_Backpack_Plus>
+
+    <entityname.Kappa_Miningdrill>Kappa Mining Drill</entityname.Kappa_Miningdrill>
+    <entitydescription.Kappa_Miningdrill>A mining tool favored by kappas — portable, easy to use, durable, and above all… cheap. Has 5 extra ore storage slots. Powered by ‖color:gui.yellow‖Spiritual Water or batteries‖end‖</entitydescription.Kappa_Miningdrill>
+
+    <entityname.Illness_Recovery_Charm>‖color:160,238,0,255‖Illness Recovery Charm‖color:end‖</entityname.Illness_Recovery_Charm>
+    <entitydescription.Illness_Recovery_Charm>A healing charm from Moriya Shrine. Restores durability using Wood Element at the alchemy table. (Occupies the headset slot)</entitydescription.Illness_Recovery_Charm>
+
+    <!--Alchemical-->
+    <entityname.Touhou_Base_Metal>Aetheric Metal</entityname.Touhou_Base_Metal>
+    <entitydescription.Touhou_Base_Metal>The second-stage magical metal, used in synthesizing base materials. Surprisingly widespread in Europa’s military tech.</entitydescription.Touhou_Base_Metal>
+
+    <entityname.Mu_Alchemical>Bottled Element (Wood)</entityname.Mu_Alchemical>
+    <entitydescription.Mu_Alchemical>A purified bottle of the Wood Element — a high-quality alchemical product.</entitydescription.Mu_Alchemical>
+
+    <!--Machine-->
+    <skillname.Touhou_Magic>Magic Ability</skillname.Touhou_Magic>
+
+    <entityname.Magic_Altar>Magic Altar</entityname.Magic_Altar>
+    <entitydescription.Magic_Altar>A ritual table for occult crafting. Used for synthesizing key items. ‖color:gui.yellow‖(Right-click + E to place, press E to pick up)‖end‖</entitydescription.Magic_Altar>
+
+    <entityname.Alchemy_Table>Alchemy Table</entityname.Alchemy_Table>
+    <entitydescription.Alchemy_Table>A table designed for alchemy, capable of handling many complex operations. ‖color:gui.yellow‖(Right-click + E to place, press E to pick up)‖end‖</entitydescription.Alchemy_Table>
+
+
+
+
+
+
     <entityname.Touhou_Elements_Book>‖color:120,75,100,255‖Seven Luminaries Grimoire‖color:end‖</entityname.Touhou_Elements_Book>
     <entitydescription.Touhou_Elements_Book>A grimoire that records the secrets of elemental conversion and fusion. It lets you rapidly switch elemental energies to adapt to different situations, but only a mage seasoned by years of practice can unleash its full power.
         \n(Element generation requires placing a Philosopher’s Stone or an Imitation Philosopher’s Stone. Note that generating an element removes any existing contents!)
@@ -87,10 +260,10 @@
     <entityname.Yin_Alchemical>Bottled Element (Bright Moon)</entityname.Yin_Alchemical>
     <entitydescription.Yin_Alchemical>Merely gazing at it brings a calm to the mind.</entitydescription.Yin_Alchemical>
 
-    <entityname.Seven_Elements_Alchemical_Fake>Imitation Philosopher’s Stone</entityname.Seven_Elements_Alchemical_Fake>
+    <entityname.Seven_Elements_Alchemical_Fake>Imitation Philosopher's Stone</entityname.Seven_Elements_Alchemical_Fake>
     <entitydescription.Seven_Elements_Alchemical_Fake>A simply fabricated imitation of the Philosopher’s Stone, yet it can at least perform basic magical functions.</entitydescription.Seven_Elements_Alchemical_Fake>
 
-    <entityname.Seven_Elements_Alchemical>Philosopher’s Stone</entityname.Seven_Elements_Alchemical>
+    <entityname.Seven_Elements_Alchemical>Philosopher's Stone</entityname.Seven_Elements_Alchemical>
     <entitydescription.Seven_Elements_Alchemical>A legendary creation whose structure and principles defy Europa’s science; to Patchouli, however, it’s merely an ordinary collectible.\nIt can replenish its energy anywhere—except in the cold depths of the sea.</entitydescription.Seven_Elements_Alchemical>
 
     <entityname.Byproduct_Alchemical>Alchemical Byproduct</entityname.Byproduct_Alchemical>

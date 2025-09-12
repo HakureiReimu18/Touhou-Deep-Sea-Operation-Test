@@ -3610,7 +3610,7 @@
     </Item>
 
     <!--电荷中继器-->
-    <Item name="电荷中继器" identifier="Touhou_Charge_Rifle_Ammo" scale="0.32" subcategory="Touhou" category="Weapon" maxstacksize="16" Health="100"
+    <Item name="电荷中继器" identifier="Touhou_Charge_Rifle_Ammo" scale="0.32" subcategory="Touhou" category="Weapon" maxstacksize="16" Health="80"
           maxstacksizecharacterinventory="4" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light">
         <PreferredContainer secondary="armcab"/>
         <Price baseprice="80" minleveldifficulty="10" sold="false">
@@ -9031,7 +9031,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.4" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.15" holdtrigger="true" barrelpos="200,5" spread="6" unskilledspread="15" maxchargetime="0.0"
+        <RangedWeapon reload="0.14" holdtrigger="true" barrelpos="200,5" spread="6" unskilledspread="15" maxchargetime="0.0"
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair02.png" sourcerect="0,0,160,160"/>
@@ -9154,15 +9154,14 @@
             <RequiredSkill identifier="Touhou_Magic" level="50"/>
             <RequiredItem tag="advmunition_core" amount="3"/>
             <RequiredItem identifier="plastic" amount="3"/>
-            <RequiredItem identifier="physicorium" amount="2"/>
             <RequiredItem identifier="Jin_Alchemical"/>
-            <RequiredItem identifier="Magic_Material" amount="4"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="4"/>
             <RequiredItem identifier="Touhou_Simple_Parts" amount="2"/>
+            <RequiredItem identifier="Power_Point" />
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="3" displayname="recycleitem">
             <RequiredSkill identifier="Touhou_Magic" level="50"/>
-            <RequiredItem tag="advmunition_core" amount="4"/>
+            <RequiredItem tag="advmunition_core" amount="3"/>
             <RequiredItem identifier="plastic" amount="3"/>
             <RequiredItem identifier="Jin_Alchemical"/>
             <RequiredItem identifier="Magic_Material" amount="4"/>
@@ -9288,7 +9287,7 @@
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Blast_Gun.png" sourcerect="400,0,179,123" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Blast_Gun.png" sourcerect="0,0,400,117" depth="0.55" origin="0.5,0.5"/>
         <Body width="356" height="130" density="10"/>
-        <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,0" handle1="-50,-10" handle2="30,-2" holdangle="-35">
+        <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,0" handle1="-90,-10" handle2="-20,-2" holdangle="-35">
             <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
                 <Conditional skillrequirement="true" Touhou_Magic="gte 70"/>
                 <Conditional skillrequirement="true" Touhou_Magic="lt 100"/>
@@ -9332,10 +9331,15 @@
                     <StatusEffect type="OnInserted" target="This" holdpos="46,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
                     <StatusEffect type="OnInserted" target="This" setvalue="true">
                         <Conditional isActive="eq true"/>
-                        <Sound file="%ModDir%/Sounds/Weapons/Touhou_Unknown_X_Reload.ogg" type="OnUse" range="500" volume="1.0"
+                        <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Weapon_Reload03.ogg" type="OnUse" range="500" volume="2.5"
                                selectionmode="Random"/>
                     </StatusEffect>
-                    <StatusEffect target="This" holdpos="60,-15" aimpos="60,0" handle1="-50,-10" handle2="30,-2" holdangle="-35" maxchargetime="0"
+                    <StatusEffect type="OnInserted" target="This" setvalue="true">
+                        <Conditional isActive="eq true"/>
+                        <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_1.ogg" type="OnUse" range="500" selectionmode="Random" volume="0.5"/>
+                        <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_2.ogg" type="OnUse" range="500" selectionmode="Random" volume="0.5"/>
+                    </StatusEffect>
+                    <StatusEffect target="This" holdpos="60,-15" aimpos="60,0" handle1="-90,-10" handle2="-20,-2" holdangle="-35" maxchargetime="0"
                                   disabledeltatime="true" checkconditionalalways="true" delay="1.1" setvalue="true">
                         <Conditional maxchargetime="eq 999"/>
                     </StatusEffect>
@@ -9401,7 +9405,7 @@
     </Item>
 
     <!--爆裂铳射弹-->
-    <Item name="爆裂铳射弹" identifier="Touhou_Blast_Gun_Bullet" category="Weapon" tags="Touhou_Magic_Danmu" scale="0.5" sonarsize="0.5"
+    <Item name="爆裂铳射弹" identifier="Touhou_Blast_Gun_Bullet" category="Weapon" tags="Touhou_Magic_Danmu" scale="1.0" sonarsize="0.5"
           hideinmenus="true">
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55"/>
         <Body width="170" height="10" density="10"/>
@@ -9417,16 +9421,16 @@
             </Attack>
             <sound file="Content/Items/Weapons/FragGrenade40mmShot1.ogg" type="OnImpact" range="3000" selectionmode="Random"/>
             <sound file="Content/Items/Weapons/FragGrenade40mmShot2.ogg" type="OnImpact" range="3000"/>
-            <StatusEffect type="OnImpact" target="This" Condition="-100.0" disabledeltatime="true">
+            <StatusEffect type="OnImpact" target="UseTarget" Condition="-100.0" disabledeltatime="true">
                 <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" volume="1" range="5000"/>
                 <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" volume="1" range="5000"/>
-                <SpawnItem identifier="Touhou_Blast_Gun_Bullet_Explosive" spawnposition="This" count="8" aimspread="360"
+                <SpawnItem identifier="Touhou_Blast_Gun_Bullet_Explosive" spawnposition="This" count="8" aimspread="90"
                            rotationtype="Collider" rotation="0"/>
-                <Explosion range="350.0" ballastfloradamage="300" structuredamage="50" levelwalldamage="120" itemdamage="100" force="5.0"
+                <Explosion range="450.0" ballastfloradamage="300" structuredamage="50" levelwalldamage="120" itemdamage="100" force="5.0"
                            severlimbsprobability="0.8" penetration="0.5" camerashake="50" camerashakerange="100" >
-                    <Affliction identifier="burn" strength="25"/>
+                    <Affliction identifier="burn" strength="15"/>
                     <Affliction identifier="lacerations" strength="50"/>
-                    <Affliction identifier="explosiondamage" strength="75"/>
+                    <Affliction identifier="explosiondamage" strength="25"/>
                     <Affliction identifier="bleeding" strength="20"/>
                     <Affliction identifier="Sleepless_Nightmare" strength="40"/>
                 </Explosion>
@@ -9443,11 +9447,11 @@
         <Sprite texture="Content/Items/Weapons/weapons_new.png" sourcerect="143,414,113,9" depth="0.55"/>
         <Body width="170" height="10" density="10" gravityscale="0"/>
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
-        <Projectile characterusable="false" launchimpulse="7.0" damagedoors="true" maxtargetstohit="3" DamageUser="true">
+        <Projectile characterusable="false" launchimpulse="6.0" damagedoors="true" maxtargetstohit="3" DamageUser="true">
             <Attack structuredamage="5" itemdamage="30" severlimbsprobability="1" penetration="0.4">
-                <Affliction identifier="lacerations" strength="4"/>
-                <Affliction identifier="explosiondamage" strength="4"/>
-                <Affliction identifier="bleeding" strength="3"/>
+                <Affliction identifier="lacerations" strength="5"/>
+                <Affliction identifier="explosiondamage" strength="5"/>
+                <Affliction identifier="bleeding" strength="5"/>
                 <Affliction identifier="stun" strength="0.05" probability="0.1"/>
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="0.3">
