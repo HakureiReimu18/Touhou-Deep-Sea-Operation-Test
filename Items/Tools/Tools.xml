@@ -2514,9 +2514,9 @@
 
     <!--品质升级器-->
     <Item identifier="Touhou_Quality_Upper_Machine" subcategory="Touhou" category="Equipment" scale="0.35" tags="smallitem" allowasextracargo="true">
-        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.025"/>
-        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.025"/>
-        <Price baseprice="6000" sold="true" minleveldifficulty="15">
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.035"/>
+        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.045"/>
+        <Price baseprice="6000" sold="true" >
             <Price locationtype="Merchant_Kawasiro_Nitori" maxavailable="1"/>
         </Price>
         <Deconstruct time="10"/>
@@ -2550,6 +2550,48 @@
         <Body radius="8" width="48" density="10"/>
         <ItemContainer capacity="1" maxstacksize="1" ShowTotalStackCapacityInContainedStateIndicator="true">
             <Containable items="Touhou_Weapon_Level01,Touhou_Weapon_Level02,Touhou_Weapon_Level03,Touhou_Weapon_Level04,Touhou_Weapon_Level05"/>
+        </ItemContainer>
+    </Item>
+
+    <!--品质升华器-->
+    <Item identifier="Touhou_Quality_Super_Upper_Machine" subcategory="Touhou" category="Equipment" scale="0.35" tags="smallitem"
+          spritecolor="150,150,255,255" allowasextracargo="true">
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.04"/>
+        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.04"/>
+        <Price baseprice="6000" sold="false" minleveldifficulty="15">
+            <Price locationtype="Merchant_Kawasiro_Nitori" maxavailable="1"/>
+        </Price>
+        <Deconstruct time="10"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Quality_Upper_Machine.png" sourcerect="0,0,136,100" depth="0.45"/>
+        <Holdable slots="Any,RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect"/>
+        <CustomInterface canbeselected="true" drawhudwhenequipped="true">
+            <GuiFrame relativesize="0.08,0.2" anchor="Center" absoluteoffset="0,-95" style="ItemUI"/>
+            <Button text="uilabel.Touhou_Upper">
+                <StatusEffect type="OnUse" target="Contained" TargetItemComponent="Quality" quality="1" setValue="true" delay="0.04"
+                              stackable="false">
+                    <Conditional qualitylevel="eq -1"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" TargetItemComponent="Quality" quality="2" setValue="true" delay="0.03"
+                              stackable="false">
+                    <Conditional qualitylevel="eq 0"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" TargetItemComponent="Quality" quality="3" setValue="true" delay="0.02"
+                              stackable="false">
+                    <Conditional qualitylevel="eq 1"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="Contained" TargetItemComponent="Quality" quality="3" setValue="true" delay="0.01"
+                              stackable="false">
+                    <Conditional qualitylevel="eq 2"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+                    <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" range="500.0" loop="false"/>
+                </StatusEffect>
+                <StatusEffect type="OnUse" target="This" Condition="-100"/>
+            </Button>
+        </CustomInterface>
+        <Body radius="8" width="48" density="10"/>
+        <ItemContainer capacity="1" maxstacksize="1" ShowTotalStackCapacityInContainedStateIndicator="true">
+            <Containable items="Touhou_Weapon_Level01,Touhou_Weapon_Level02,Touhou_Weapon_Level03,Touhou_Weapon_Level04,Touhou_Weapon_Level05,weapon"/>
         </ItemContainer>
     </Item>
 
@@ -2744,34 +2786,34 @@
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="1" range="200.0" loop="false"/>
                 </StatusEffect>
                 <!--1级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-0.2" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-0.4" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--2级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-0.5" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-1" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--3级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-2.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--4级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-3.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-6.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
@@ -2821,35 +2863,35 @@
                     <sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Charging.ogg" type="OnUse" volume="1" range="200.0" loop="false"/>
                 </StatusEffect>
                 <!--1级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-0.16" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-0.32" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--2级消耗-->
                 <!--星星弹幕，幽冥弹匣-->
-                <StatusEffect type="OnUse" target="This" Condition="-0.4" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-0.8" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--3级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-0.85" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-1.7" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--4级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-2.5" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-5" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
@@ -2895,50 +2937,50 @@
                 </StatusEffect>
 
                 <!--1级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-0.1" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-0.2" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging01" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--2级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-0.35" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-0.7" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging02" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--3级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-0.8" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-1.6" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging03" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--4级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-2.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-4.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging04" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--5级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-4.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-8.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging05" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging05" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
                 <!--6级消耗-->
-                <StatusEffect type="OnUse" target="This" Condition="-8.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="This" Condition="-16.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging06" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="10.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="20.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging06" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
 
@@ -5403,12 +5445,12 @@
     <!--便携式符卡充能工具（电磁枪+连射炮）-->
     <Item name="便携式符卡充能工具（电磁枪+连射炮）" identifier="Touhou_Spell_Card_Charge_Box_Coligun" tags="mediumitem" subcategory="Touhou"
           category="Equipment" scale="0.1">
-        <Price baseprice="5000" minleveldifficulty="15">
+        <Price baseprice="6000" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="1" sold="true" maxavailable="1"/>
             <Price storeidentifier="merchantresearch" multiplier="1.1" sold="true" maxavailable="1"/>
-            <Price storeidentifier="merchantmilitary" multiplier="1" sold="true" maxavailable="1"/>
-            <Price storeidentifier="merchantmine" multiplier="1.1" sold="true" maxavailable="1"/>
+            <Price storeidentifier="merchantmilitary" multiplier="1" sold="false" maxavailable="1"/>
+            <Price storeidentifier="merchantmine" multiplier="1.1" sold="false" maxavailable="1"/>
             <Price storeidentifier="Merchant_Kawasiro_Nitori" multiplier="0.8" sold="true" maxavailable="1"/>
         </Price>
         <Deconstruct time="4">

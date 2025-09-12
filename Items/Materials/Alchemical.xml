@@ -338,6 +338,12 @@
             <RequiredItem identifier="Touhou_Disintegration_Stone" mincondition="0" usecondition="true"/>
             <RequiredItem tag="Touhou_Weapon_Level01" mincondition="0" maxcondtion="100" usecondition="false"/>
         </Fabricate>
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="5" amount="3">
+            <RequiredSkill identifier="Touhou_Magic" level="5"/>
+            <RequiredItem identifier="Byproduct_Alchemical" />
+            <RequiredItem identifier="Magic_Material" />
+            <RequiredItem identifier="carbon" />
+        </Fabricate>
         <Deconstruct time="0.25" chooserandom="false" requireddeconstructor="Alchemy_Table">
             <!--吗啡炼金分解为要用鸦片*2+疗素-->
             <Item identifier="opium" amount="2" requiredotheritem="antidama1" activatebuttontext="Alchemy_Table.Research"

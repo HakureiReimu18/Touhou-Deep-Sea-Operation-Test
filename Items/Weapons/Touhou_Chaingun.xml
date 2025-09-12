@@ -771,7 +771,7 @@
     <!--月符「沉静的月神」-->
     <Item name="" identifier="Touhou_Silent_Selene_Ammo" scale="0.22"
           tags="coilgunequipment,coilgunammo,ammobox,Touhou_Silent_Selene_Ammo,Touhou_Small_Spell_Card_Ammo"
-          health="150" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
+          health="120" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy">
         <PreferredContainer primary="coilgunammoloader,ammoboxcontainer" mincondition="1"/>
         <PreferredContainer secondary="wreckcoilgunloader" amount="1" spawnprobability="0.07"/>
         <PreferredContainer secondary="wreckammoboxcontainer" amount="1" spawnprobability="0.07"/>
@@ -1184,7 +1184,7 @@
             <RequiredSkill identifier="weapons" level="80"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
             <RequiredItem identifier="Jin_Alchemical" amount="4"/>
-            <RequiredItem identifier="dementonite" amount="4"/>
+            <RequiredItem identifier="dementonite" amount="5"/>
             <RequiredItem identifier="Magic_Material" amount="4"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="2.5">
