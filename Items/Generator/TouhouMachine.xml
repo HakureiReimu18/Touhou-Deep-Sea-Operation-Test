@@ -1192,7 +1192,7 @@
                 <RequiredItems items="reactorfuel" type="Contained" targetslot="1"/>
                 <RequiredItems items="Touhou_Spectral_Core_Item" type="Contained" targetslot="2"/>
             </StatusEffect>
-            <StatusEffect type="OnActive" targettype="This" Interval="1.0" disabledeltatime="true" comparison="and" setvalue="true"
+            <StatusEffect type="OnActive" targettype="This" Interval="5.0" disabledeltatime="true" comparison="and" setvalue="true"
                           Tags="Mining_Machine_On" stackable="false">
                 <RequiredItems items="Spiritual_Water" type="Contained" targetslot="0"/>
                 <RequiredItems items="reactorfuel" type="Contained" targetslot="1"/>

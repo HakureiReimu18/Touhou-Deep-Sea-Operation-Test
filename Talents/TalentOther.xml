@@ -2307,7 +2307,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface_Switch"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
+                <AbilityConditionServerRandom randomchance="0.25"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
@@ -2323,7 +2323,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface_Switch"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
+                <AbilityConditionServerRandom randomchance="0.25"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
@@ -2339,7 +2339,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface_Switch"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
+                <AbilityConditionServerRandom randomchance="0.25"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
@@ -2355,7 +2355,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface_Switch"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
+                <AbilityConditionServerRandom randomchance="0.25"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>

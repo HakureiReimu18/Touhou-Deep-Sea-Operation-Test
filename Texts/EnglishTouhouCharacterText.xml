@@ -659,7 +659,7 @@
     <talentdescription.YukariTalent>While wearing Yukari's Outfit+:
         All damage and status effects received −‖color:gui.green‖8%‖end‖, including buffs.
         ‖color:gui.orange‖Skill gain speed‖end‖ +‖color:gui.green‖50%‖end‖.
-        Blunt damage you take converts to lacerations, gunshot wounds to bites, and deep tissue damage to internal injuries; when health <‖color:gui.green‖0‖end‖ this reverses.
+        Blunt damage you take converts to lacerations, gunshot wounds to bites, and deep tissue damage to internal injuries; when health less than ‖color:gui.green‖0‖end‖ this reverses.
         Damage you deal converts blunt→laceration, gunshot→bite, deep tissue→internal; reverses every ‖color:gui.green‖120‖end‖ seconds.
         Once per mission, you may teleport all conscious crew to the main submarine.
         Alternates every ‖color:gui.green‖120‖end‖ seconds between −‖color:gui.red‖10%‖end‖ attack damage and +‖color:gui.green‖10%‖end‖ max health.
@@ -795,7 +795,7 @@
         When health >‖color:gui.green‖50%‖end‖:
         Nearby crewmates gain +‖color:gui.green‖25%‖end‖ skill gain speed and +‖color:gui.green‖10%‖end‖ experience gain, while your damage taken −‖color:gui.green‖10%‖end‖.
         Taking damage increases ‖color:gui.yellow‖Witchification progress‖end‖.
-        When health <‖color:gui.green‖50%‖end‖, ‖color:gui.yellow‖Witchification progress‖end‖ also increases. At ‖color:gui.green‖100%‖end‖ progress (once per mission), gain Witchification:
+        When health less than ‖color:gui.green‖50%‖end‖, ‖color:gui.yellow‖Witchification progress‖end‖ also increases. At ‖color:gui.green‖100%‖end‖ progress (once per mission), gain Witchification:
         +‖color:gui.green‖15%‖end‖ movement speed, +‖color:gui.green‖15%‖end‖ attack damage, and +‖color:gui.green‖20‖end‖ extra health.
         Damage to creatures with Witch Factor +‖color:gui.green‖35%‖end‖.
         Gain experience upon any kill, up to ‖color:gui.green‖10‖end‖ times per mission.

@@ -6,7 +6,7 @@
           tags="mediumitem,provocative,scooter,underwaterscooter,light,Marisa_Broom" description="" impactsoundtag="impact_soft" scale="0.5"
           fireproof="true" isshootable="true">
         <PreferredContainer primary="crewcab" amount="1" spawnprobability="0.12"/>
-        <Price baseprice="1500">
+        <Price baseprice="1000">
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>
@@ -82,7 +82,7 @@
     <Item name="文文的充电宝" identifier="Power_Bank" tags="mediumitem,batterycellrecharger,loadable,Power_Bank" subcategory="Touhou"
           category="Electrical" scale="0.4"
           damagedbyexplosions="true" explosiondamagemultiplier="0.1" Health="200">
-        <Price baseprice="800" minleveldifficulty="5">
+        <Price baseprice="700" minleveldifficulty="5">
             <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="1" sold="true" maxavailable="1"/>
             <Price storeidentifier="merchantresearch" multiplier="1.1" sold="true" maxavailable="1"/>
@@ -505,15 +505,7 @@
         <Sprite texture="%ModDir%/Images/Tools/Illness_Recovery_Charm.png" sourcerect="0,0,128,128" depth="0.6" origin="0.5,0.5"/>
         <Body width="48" height="48" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" msg="ItemMsgPickUpSelect"/>
-        <Deconstruct time="3" chooserandom="false" amount="1" requireddeconstructor="Alchemy_Table">
-            <!--炼金桌内回收-->
-            <Item identifier="Mu_Alchemical" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Research"
-                  infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
-            <Item identifier="organicfiber" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Research"
-                  infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
-            <Item identifier="Touhou_Plant_Extract" requiredotheritem="Mu_Alchemical" activatebuttontext="Alchemy_Table.Research"
-                  infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
-        </Deconstruct>
+        <Deconstruct time="1" />
         <!--如果添加新职业，也许会用到配方解锁-->
         <!--        <Fabricate suitablefabricators="Magic_Altar" requiredtime="10" requiresrecipe="true">-->
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
@@ -5171,7 +5163,7 @@
           tags="mediumitem,Touhou_Moriya_Bag,backpack,Illness_Recovery_Charm" fireproof="true" waterproof="true" cargocontaineridentifier="metalcrate"
           impactsoundtag="impact_metal_light">
         <PreferredContainer primary="medcab"/>
-        <Price baseprice="6000" minleveldifficulty="15">
+        <Price baseprice="8000" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" multiplier="1.4" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1"/>
             <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1"/>
@@ -5254,8 +5246,8 @@
     <Item name="增幅水晶" identifier="Touhou_Enhanced_Crystal01" subcategory="Touhou" category="Equipment" Tags="smallitem,Touhou_Enhanced_Crystal"
           Scale="0.2"
           Health="200" impactsoundtag="impact_metal_light">
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05"/>
-        <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05"/>
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.04"/>
+        <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.04"/>
         <PreferredContainer primary="storagecab"/>
         <Price baseprice="300" sold="false">
             <Price storeidentifier="merchantoutpost" maxavailable="3"/>
@@ -5285,12 +5277,12 @@
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="68,0,50,34" depth="0.56" origin="0.5,0.5"/>
         <Body radius="35" density="10"/>
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect">
+        <Holdable canBeCombined="true" slots="Any,RightHand+LeftHand" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="1.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Enhanced_Crystal01_Effect" strength="1"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" Condition="-0.05" Interval="1.0" disabledeltatime="true"/>
-        </Pickable>
+        </Holdable>
         <Quality>
             <QualityStat stattype="Condition" value="0.1"/>
         </Quality>
@@ -5299,8 +5291,8 @@
     <Item name="气化水晶" identifier="Touhou_Enhanced_Crystal02" subcategory="Touhou" category="Equipment" Tags="smallitem,Touhou_Enhanced_Crystal"
           Scale="0.2"
           Health="200" impactsoundtag="impact_metal_light">
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05"/>
-        <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05"/>
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.04"/>
+        <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.04"/>
         <PreferredContainer primary="storagecab"/>
         <Price baseprice="300" sold="false">
             <Price storeidentifier="merchantoutpost" maxavailable="3"/>
@@ -5330,12 +5322,12 @@
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal02.png" sourcerect="0,0,60,100" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal02.png" sourcerect="60,0,50,31" depth="0.56" origin="0.5,0.5"/>
         <Body radius="35" density="10"/>
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect">
+        <Holdable canBeCombined="true" slots="Any,RightHand+LeftHand" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="1.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Enhanced_Crystal02_Effect" strength="1"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" Condition="-0.05" Interval="1.0" disabledeltatime="true"/>
-        </Pickable>
+        </Holdable>
         <Quality>
             <QualityStat stattype="Condition" value="0.1"/>
         </Quality>
@@ -5344,8 +5336,8 @@
     <Item name="深渊水晶" identifier="Touhou_Enhanced_Crystal03" subcategory="Touhou" category="Equipment" Tags="smallitem,Touhou_Enhanced_Crystal"
           Scale="0.2"
           Health="200" impactsoundtag="impact_metal_light">
-        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.05"/>
-        <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.05"/>
+        <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,wrecksupplycab,beaconsupplycab" amount="1" spawnprobability="0.04"/>
+        <PreferredContainer secondary="outpostcrewcabinet" amount="1" spawnprobability="0.04"/>
         <PreferredContainer primary="storagecab"/>
         <Price baseprice="300" sold="false">
             <Price storeidentifier="merchantoutpost" maxavailable="3"/>
@@ -5375,12 +5367,12 @@
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal03.png" sourcerect="0,0,65,100" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal03.png" sourcerect="60,0,50,33" depth="0.56" origin="0.5,0.5"/>
         <Body radius="35" density="10"/>
-        <Pickable slots="Any" msg="ItemMsgPickUpSelect">
+        <Holdable canBeCombined="true" slots="Any,RightHand+LeftHand" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="1.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Enhanced_Crystal03_Effect" strength="1"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" Condition="-0.05" Interval="1.0" disabledeltatime="true"/>
-        </Pickable>
+        </Holdable>
         <Quality>
             <QualityStat stattype="Condition" value="0.1"/>
         </Quality>
