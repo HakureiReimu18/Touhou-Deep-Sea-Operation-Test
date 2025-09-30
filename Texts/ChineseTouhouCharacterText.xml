@@ -275,7 +275,7 @@
         造成的咬伤提高‖color:gui.green‖15%‖end‖
         对船员造成的伤害为原本的‖color:gui.green‖75%‖end‖
         \n每个巡回一次，可以选择两种状态：狮子/狛犬
-        狛犬：一次性使用生效，在你身边的船员能获得‖color:gui.orange‖守护神兽‖end‖的效果，该效果能提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害和精神病‖end‖抗性，对友方角色造成的伤害再下降‖color:gui.green‖15%‖end‖，并提高‖color:gui.green‖10‖end‖点临时生命值
+        狛犬：一次性使用生效，在你身边的船员能获得‖color:gui.orange‖守护神兽‖end‖的效果，该效果能提高‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害和精神病‖end‖抗性，并提高‖color:gui.green‖10‖end‖点临时生命值
         狮子：‖color:gui.orange‖物理伤害‖end‖抗性下降‖color:gui.green‖10%‖end‖，‖color:gui.orange‖攻击伤害、攻击速度、移动速度‖end‖增加‖color:gui.green‖10%‖end‖，对非友好角色（红名生物）造成的伤害额外增加‖color:gui.green‖10%‖end‖</talentdescription.AunnTalent>
     <afflictionname.Naivete_Koma_Inu>天真烂漫狛犬</afflictionname.Naivete_Koma_Inu>
     <afflictiondescription.Naivete_Koma_Inu>她是狛犬，不过其实她同时拥有狮子和狛犬两种性质，是二位一体的神兽。身为神兽内心的狂暴和平和能够共存。</afflictiondescription.Naivete_Koma_Inu>
@@ -342,7 +342,7 @@
         154个：提高‖color:gui.green‖50%‖end‖技能获取速度，移动速度提高‖color:gui.green‖10%‖end‖。
         312个：提高‖color:gui.green‖15%‖end‖经验获取速度，最大生命值增加‖color:gui.green‖10%‖end‖。
         468个：增益效果持续时间增加‖color:gui.green‖20%‖end‖，攻击速度增加‖color:gui.green‖10%‖end‖。
-        624：提高‖color:gui.green‖10%‖end‖攻击伤害，游泳速度增加‖color:gui.green‖50%‖end‖。</talentdescription.NueTalent>
+        624个：提高‖color:gui.green‖20%‖end‖游泳速度，对附有长眠不醒的噩梦的生物造成的伤害增加‖color:gui.green‖10%‖end‖。</talentdescription.NueTalent>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl>未确认幻想飞行少女</afflictionname.Unconfirmed_Fantasy_Flying_Girl>
     <afflictiondescription.Unconfirmed_Fantasy_Flying_Girl>被人们降伏了许多次的妖怪，每次都被人传说为不同的姿态。可是传说终究是传说。
         实际上，她从未在人们面前出现过。她只是乐在其中，她从远处看着人们害怕着、编造着各种关于自己的传说。</afflictiondescription.Unconfirmed_Fantasy_Flying_Girl>

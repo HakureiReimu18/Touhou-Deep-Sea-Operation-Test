@@ -293,7 +293,7 @@
         Bite damage ‖color:gui.green‖+15%‖end‖
         Damage to crew reduced to ‖color:gui.green‖75%‖end‖ of normal.
         \nOnce per cycle, choose between two states: Lion / Komainu.
-        Komainu: Single-use. Crew nearby gain the ‖color:gui.orange‖Guardian Beast‖end‖ effect, which grants ‖color:gui.green‖+10%‖end‖ ‖color:gui.orange‖physical damage and mental resistance‖end‖, reduces friendly-fire damage by ‖color:gui.green‖15%‖end‖, and adds ‖color:gui.green‖10‖end‖ temporary vitality.
+        Komainu: Single-use. Crew nearby gain the ‖color:gui.orange‖Guardian Beast‖end‖ effect, which grants ‖color:gui.green‖+10%‖end‖ ‖color:gui.orange‖physical damage and mental resistance‖end‖, and adds ‖color:gui.green‖10‖end‖ temporary vitality.
         Lion: ‖color:gui.orange‖Physical damage resistance‖end‖ ‖color:gui.red‖−10%‖end‖; ‖color:gui.orange‖attack damage, attack speed, and movement speed‖end‖ ‖color:gui.green‖+10%‖end‖; damage to hostile entities (red names) further ‖color:gui.green‖+10%‖end‖.
     </talentdescription.AunnTalent>
     <afflictionname.Naivete_Koma_Inu>Naive and Cheerful Komainu</afflictionname.Naivete_Koma_Inu>
@@ -363,7 +363,7 @@
         154 counts: +‖color:gui.green‖50%‖end‖ skill gain speed, +‖color:gui.green‖10%‖end‖ movement speed.
         312 counts: +‖color:gui.green‖15%‖end‖ experience gain, +‖color:gui.green‖10%‖end‖ max health.
         468 counts: +‖color:gui.green‖20%‖end‖ buff duration, +‖color:gui.green‖10%‖end‖ attack speed.
-        624 counts: +‖color:gui.green‖10%‖end‖ attack damage, +‖color:gui.green‖50%‖end‖ swimming speed.
+        624 counts: +‖color:gui.green‖20%‖end‖swimming speed, and increases damage dealt to creatures afflicted with Endless Nightmare by ‖color:gui.green‖10%‖end‖.
     </talentdescription.NueTalent>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl>Unidentified Fantastic Flying Girl</afflictionname.Unconfirmed_Fantasy_Flying_Girl>
     <afflictiondescription.Unconfirmed_Fantasy_Flying_Girl>A youkai subdued many times, each legend portraying her differently. Yet they are only legends:
