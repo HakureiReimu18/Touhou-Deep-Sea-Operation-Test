@@ -139,6 +139,8 @@
     <uilabel.Sight_TickBox>瞄准开/关</uilabel.Sight_TickBox>
     <uilabel.Damage_Mode>伤害能量</uilabel.Damage_Mode>
     <uilabel.Healing_Mode>治愈能量</uilabel.Healing_Mode>
+    <Text.Touhou_Light>光源</Text.Touhou_Light>
+    <Text.Touhou_Immortal_Moon_Smoke_On>自燃</Text.Touhou_Immortal_Moon_Smoke_On>
 
     <!--Display Name-->
     <displayname.Touhou_Efficient_Extraction>[itemname] (高效提取)</displayname.Touhou_Efficient_Extraction>
@@ -261,10 +263,8 @@
     <npctitle.Touhou_ODM11_Enemy_Human_Easy>学徒-Easy</npctitle.Touhou_ODM11_Enemy_Human_Easy>
 
 
-    <locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>废弃空间站-鸟船遗迹
-    </locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>
-    <locationnameformat.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>废弃空间站
-    </locationnameformat.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>
+    <locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>废弃空间站-鸟船遗迹</locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>
+    <locationnameformat.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>废弃空间站</locationnameformat.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>
     <locationname.Touhou_Temporary_Shelter_LocationType>临时避难所</locationname.Touhou_Temporary_Shelter_LocationType>
     <locationnameformat.Touhou_Temporary_Shelter_LocationType>河童重工-临时避难所</locationnameformat.Touhou_Temporary_Shelter_LocationType>
     <locationdescription.Touhou_Temporary_Shelter_LocationType>
@@ -276,8 +276,7 @@
     <locationname.Touhou_LocationType.3>第八新妖怪之山</locationname.Touhou_LocationType.3>
     <locationname.Touhou_LocationType.4>第九新妖怪之山</locationname.Touhou_LocationType.4>
     <locationname.Touhou_LocationType.5>第十新妖怪之山</locationname.Touhou_LocationType.5>
-    <locationdescription.abandonedirradiated>与此前哨站的联络已中断。\n可能已遭受灵气污染侵蚀或供给不足而废弃。
-    </locationdescription.abandonedirradiated>
+    <locationdescription.abandonedirradiated>与此前哨站的联络已中断。\n可能已遭受灵气污染侵蚀或供给不足而废弃。</locationdescription.abandonedirradiated>
 
 
     <!--书籍文本-->

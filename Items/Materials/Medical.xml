@@ -31,12 +31,12 @@
             <RequiredSkill identifier="medical" level="42"/>
             <StatusEffect type="OnSuccess" target="This" Condition="-100.0" setvalue="true"/>
             <StatusEffect type="OnFailure" target="This" Condition="-100.0" setvalue="true"/>
-            <StatusEffect statuseffectstatuseffecttags="medical" type="OnSuccess" target="UseTarget">
+            <StatusEffect type="OnSuccess" target="UseTarget">
                 <Affliction identifier="Essential_Oil_Application" amount="120"/>
                 <Affliction identifier="Reiki_Side_Effect" amount="2"/>
                 <ReduceAffliction identifier="Potion_In_Effect" amount="600"/>
             </StatusEffect>
-            <StatusEffect statuseffectstatuseffecttags="medical" type="OnFailure" target="UseTarget">
+            <StatusEffect type="OnFailure" target="UseTarget">
                 <Affliction identifier="Essential_Oil_Application" amount="40"/>
                 <Affliction identifier="Reiki_Side_Effect" amount="8"/>
                 <ReduceAffliction identifier="Potion_In_Effect" amount="600"/>
@@ -268,7 +268,7 @@
             </TickBox>
         </CustomInterface>
         <!--治疗作用-->
-        <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,-10" handle2="0,-10" holdangle="0" throwforce="3.0" aimpos="30,-30"
+        <Throwable slots="Any,RightHand,LeftHand" holdpos="0,0" handle1="0,-10" handle2="0,-10" holdangle="0" throwforce="2.0" aimpos="30,-30"
                    msg="ItemMsgPickUpSelect"/>
         <LightComponent LightColor="119,73,39,180" Flicker="0.2" pulsefrequency="0.2" pulseamount="0.5" range="600" IsOn="false">
             <StatusEffect type="OnUse" targettype="This" IsOn="true"/>
@@ -351,7 +351,7 @@
         <PreferredContainer primary="medcab"/>
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" spawnprobability="0.04"/>
         <PreferredContainer secondary="wreckmedcab,abandonedmedcab" minamount="1" maxamount="1" spawnprobability="0.05"/>
-        <Price baseprice="10000" minleveldifficulty="36">
+        <Price baseprice="6000" minleveldifficulty="30">
             <Price storeidentifier="merchantoutpost" maxavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" maxavailable="1"/>
             <Price storeidentifier="merchantresearch" multiplier="1.1" maxavailable="1"/>
