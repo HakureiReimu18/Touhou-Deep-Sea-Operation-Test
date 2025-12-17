@@ -124,7 +124,7 @@
     <ItemMsg_Touhou_Waterwheel_Gun_Magazine>Waterwheel Required</ItemMsg_Touhou_Waterwheel_Gun_Magazine>
     <ItemMsg_Spiritual_Water>Spiritual Water Required</ItemMsg_Spiritual_Water>
     <ItemMsg_Spiritual_Water_Or_Batterycell>Battery or Spiritual Water Required</ItemMsg_Spiritual_Water_Or_Batterycell>
-    <ItemMsg_Mu_Alchemical>Bottled Element (Wood) Required</ItemMsg_Mu_Alchemical>
+    <ItemMsg_Bottle_Element>Bottled Element Required</ItemMsg_Bottle_Element>
 
     <uilabel.Doll_Normal_TransferControl>Manually Control Normal Doll</uilabel.Doll_Normal_TransferControl>
     <uilabel.Doll_ShangHai_TransferControl>Manually Control Shanghai Doll</uilabel.Doll_ShangHai_TransferControl>
@@ -147,6 +147,10 @@
     <Text.Touhou_Light>Light</Text.Touhou_Light>
 
     <Text.Touhou_Immortal_Moon_Smoke_On>Spontaneous Combustion</Text.Touhou_Immortal_Moon_Smoke_On>
+
+    <Text.Touhou_Machine_On>Activate Device</Text.Touhou_Machine_On>
+
+    <Text.Satori_Plus>Mind Reading</Text.Satori_Plus>
 
     <!--Display Name-->
     <displayname.Touhou_Efficient_Extraction>[itemname] (Efficient Extraction)</displayname.Touhou_Efficient_Extraction>
@@ -272,6 +276,11 @@
     <npctitle.Touhou_ODM11_Enemy_Human_Hard>Ascetic - Hard</npctitle.Touhou_ODM11_Enemy_Human_Hard>
     <npctitle.Touhou_ODM11_Enemy_Human_Normal>Supplicant - Normal</npctitle.Touhou_ODM11_Enemy_Human_Normal>
     <npctitle.Touhou_ODM11_Enemy_Human_Easy>Apprentice - Easy</npctitle.Touhou_ODM11_Enemy_Human_Easy>
+
+    <npctitle.Touhou_ODM12_Enemy_Human_Lunatic>Wizard Slayer - Lunatic</npctitle.Touhou_ODM12_Enemy_Human_Lunatic>
+    <npctitle.Touhou_ODM12_Enemy_Human_Hard>Administrator - Hard</npctitle.Touhou_ODM12_Enemy_Human_Hard>
+    <npctitle.Touhou_ODM12_Enemy_Human_Normal>Researcher - Normal</npctitle.Touhou_ODM12_Enemy_Human_Normal>
+    <npctitle.Touhou_ODM12_Enemy_Human_Easy>Staff - Easy</npctitle.Touhou_ODM12_Enemy_Human_Easy>
 
     <!--Location Names-->
     <locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>Abandoned Space Station - Bird Ship Ruins</locationname.Touhou_Trojan_Green_Asteroid_Outpost_LocationType>

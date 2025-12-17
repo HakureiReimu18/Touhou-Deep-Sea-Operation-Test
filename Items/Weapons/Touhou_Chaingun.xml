@@ -33,22 +33,8 @@
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem identifier="Thousand_Needle_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="0,0,227,227" origin="0.5,0.5"/>
-        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="227,0,227,227" maxcondition="87.5"
-                      origin="0.5,0.5"/>
-        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="454,0,227,227" maxcondition="75"
-                      origin="0.5,0.5"/>
-        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="681,0,227,227" maxcondition="62.5"
-                      origin="0.5,0.5"/>
-        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="908,0,227,227" maxcondition="50"
-                      origin="0.5,0.5"/>
-        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="1135,0,227,227" maxcondition="37.5"
-                      origin="0.5,0.5"/>
-        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="1362,0,227,227" maxcondition="25"
-                      origin="0.5,0.5"/>
-        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="1589,0,227,227" maxcondition="12.5"
-                      origin="0.5,0.5"/>
-        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="1816,0,227,227" maxcondition="0"
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="0,0,224,224" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Thousand_Needle_Ammo.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0"
                       origin="0.5,0.5"/>
 
         <Body width="180" height="180" density="16"/>
@@ -74,7 +60,7 @@
         <Projectile characterusable="false" launchimpulse="50" spread="3.5" removeonhit="false" damagedoors="true" maxtargetstohit="2">
             <Attack structuredamage="25" itemdamage="15" targetforce="5" targetimpulse="5" penetration="0.1" severlimbsprobability="0.25">
                 <Affliction identifier="lacerations" strength="6"/>
-                <Affliction identifier="lacerations" strength="6" probability="0.4"/>
+                <Affliction identifier="lacerations" strength="5" probability="0.4"/>
                 <Affliction identifier="bleeding" strength="10"/>
                 <Affliction identifier="stun" strength="0.025" probability="0.6"/>
             </Attack>
@@ -137,7 +123,9 @@
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem tag="Phoenix_Wings_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Phoenix_Wings_Ammo.png" depth="0.54" sourcerect="0,0,227,227" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Phoenix_Wings_Ammo.png" depth="0.54" sourcerect="0,0,224,224" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Phoenix_Wings_Ammo.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0"
+                      origin="0.5,0.5"/>
         <Body width="180" height="180" density="16"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -161,7 +149,7 @@
         <Projectile characterusable="false" hitscan="false" launchimpulse="120" removeonhit="true">
             <Attack structuredamage="70" targetforce="5" levelwalldamage="100" itemdamage="50" severlimbsprobability="0.6" penetration="0.25">
                 <Affliction identifier="explosiondamage" strength="35"/>
-                <Affliction identifier="burn" strength="25"/>
+                <Affliction identifier="burn" strength="20"/>
                 <Affliction identifier="lacerations" strength="20"/>
                 <Affliction identifier="stun" strength="1"/>
                 <Affliction identifier="stun" strength="2" probability="0.2"/>
@@ -271,7 +259,9 @@
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem tag="Milky_Way_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Milky_Way_Ammo.png" depth="0.54" sourcerect="0,0,226,226" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Milky_Way_Ammo.png" depth="0.54" sourcerect="0,0,224,224" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Milky_Way_Ammo.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0"
+                      origin="0.5,0.5"/>
         <Body width="180" height="180" density="15"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -295,12 +285,12 @@
         <Projectile characterusable="false" launchimpulse="50" damagedoors="true">
             <Attack structuredamage="25" itemdamage="20" levelwalldamage="20" severlimbsprobability="0.35" penetration="0.2">
                 <Affliction identifier="explosiondamage" strength="12"/>
-                <Affliction identifier="burn" strength="5"/>
+                <Affliction identifier="burn" strength="4"/>
                 <Affliction identifier="stun" strength="0.02"/>
                 <Affliction identifier="stun" strength="0.15" probability="0.1"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
-                <Affliction identifier="burn" strength="7"/>
+                <Affliction identifier="burn" strength="6"/>
                 <Affliction identifier="explosiondamage" strength="5"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" lifetime="1.2">
@@ -348,8 +338,7 @@
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="100"/>
-            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" usecondition="true" amount="1"/>
-            <RequiredItem identifier="Yang_Alchemical" mincondition="0.5" usecondition="true" amount="1"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2" />
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
@@ -375,9 +364,9 @@
                            debris="true"
                            decal="explosion" decalsize="1.0" camerashake="1000" camerashakerange="50000" flashrange="12000" flashduration="5.0"
                            screencolor="255,200,180,255" screencolorrange="10000" screencolorduration="5.0" penetration="0.6">
-                    <Affliction identifier="explosiondamage" strength="500"/>
+                    <Affliction identifier="explosiondamage" strength="300"/>
                     <Affliction identifier="Touhou_Lost_Dream" strength="300"/>
-                    <Affliction identifier="burn" strength="400"/>
+                    <Affliction identifier="burn" strength="300"/>
                     <Affliction identifier="stun" strength="20"/>
                 </Explosion>
                 <ParticleEmitter particle="underwaterexplosion" anglemin="0" anglemax="360" particleamount="3" velocitymin="0" velocitymax="0"
@@ -465,7 +454,7 @@
 
 
     <!--要石「乾坤鸣动炮」-->
-    <Item name="" identifier="Kanameishi_Cannon" scale="0.22"
+    <Item name="要石「乾坤鸣动炮」" identifier="Kanameishi_Cannon" scale="0.22"
           tags="flakcannonequipment,flakcannonammo,ammobox,Touhou_Large_Turret_Ammo,Touhou_Spell_Card_Ammo_Level03"
           health="100" subcategory="Touhou" category="Weapon" linkable="true" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
         <PreferredContainer primary="flakcannonammoloader" amount="1" mincondition="1"/>
@@ -487,8 +476,7 @@
             <RequiredSkill identifier="weapons" level="75"/>
             <RequiredItem identifier="physicorium" amount="3"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
-            <RequiredItem identifier="Huo_Alchemical"/>
-            <RequiredItem identifier="Jin_Alchemical"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Magic_Material"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="2.5">
@@ -498,7 +486,9 @@
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem identifier="Kanameishi_Cannon" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Kanameishi_Ammo.png" sourcerect="0,0,226,226" depth="0.55"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Kanameishi_Ammo.png" sourcerect="0,0,224,224" depth="0.55"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Kanameishi_Ammo.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0"
+                      origin="0.5,0.5"/>
         <Body width="180" height="180" density="20"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -525,7 +515,7 @@
                 <Affliction identifier="stun" strength="1"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
-                <Affliction identifier="lacerations" strength="6"/>
+                <Affliction identifier="lacerations" strength="5"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Aura_Strip" strength="10"/>
@@ -573,7 +563,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="20.0" impulsespread="0.5" damagedoors="true">
             <Attack structuredamage="0" itemdamage="1" severlimbsprobability="0.15" penetration="0.1">
-                <Affliction identifier="blunttrauma" strength="9"/>
+                <Affliction identifier="blunttrauma" strength="8"/>
                 <Affliction identifier="lacerations" strength="5"/>
                 <Affliction identifier="bleeding" strength="5"/>
                 <Affliction identifier="Aura_Strip" strength="6" probability="0.2"/>
@@ -630,7 +620,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="10" impulsespread="0.5" damagedoors="true">
             <Attack structuredamage="0" itemdamage="0" severlimbsprobability="0.15" penetration="0.1">
-                <Affliction identifier="blunttrauma" strength="4"/>
+                <Affliction identifier="blunttrauma" strength="3"/>
                 <Affliction identifier="bleeding" strength="3"/>
                 <Affliction identifier="lacerations" strength="3"/>
                 <Affliction identifier="stun" strength="0.2"/>
@@ -690,19 +680,21 @@
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="100"/>
             <RequiredSkill identifier="Touhou_Magic" level="100"/>
-            <RequiredItem identifier="Yang_Alchemical" amount="3"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="3"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
             <RequiredItem identifier="Seven_Elements_Alchemical_Fake" amount="3"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiresrecipe="true" requiredtime="2.5">
             <RequiredSkill identifier="weapons" level="60"/>
             <RequiredSkill identifier="Touhou_Magic" level="60"/>
-            <RequiredItem identifier="Yang_Alchemical" amount="2"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
             <RequiredItem identifier="Seven_Elements_Alchemical_Fake" amount="1"/>
             <RequiredItem identifier="Touhou_Royal_Flare" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Royal_Flare.png" sourcerect="0,0,226,226" depth="0.55"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Royal_Flare.png" sourcerect="0,0,224,224" depth="0.55"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Royal_Flare.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0"
+                      origin="0.5,0.5"/>
         <Body width="180" height="180" density="20"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -799,19 +791,21 @@
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="50"/>
             <RequiredSkill identifier="Touhou_Magic" level="50"/>
-            <RequiredItem identifier="Yin_Alchemical" amount="3"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="3"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
             <RequiredItem identifier="Seven_Elements_Alchemical_Fake" amount="3"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiresrecipe="true" requiredtime="2.5">
             <RequiredSkill identifier="weapons" level="45"/>
             <RequiredSkill identifier="Touhou_Magic" level="45"/>
-            <RequiredItem identifier="Yin_Alchemical" amount="2"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="3"/>
             <RequiredItem identifier="Seven_Elements_Alchemical_Fake" amount="1"/>
             <RequiredItem tag="Touhou_Silent_Selene_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Silent_Selene_Ammo.png" depth="0.54" sourcerect="0,0,226,226" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Silent_Selene_Ammo.png" depth="0.54" sourcerect="0,0,224,224" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Silent_Selene_Ammo.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0"
+                      origin="0.5,0.5"/>
         <Body width="180" height="180" density="15"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -903,19 +897,21 @@
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="100"/>
-            <RequiredItem identifier="Yang_Alchemical"/>
+            <RequiredItem identifier="Touhou_Bottle_Element"/>
             <RequiredItem identifier="fulgurium" amount="2"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="4"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="2.5">
             <RequiredSkill identifier="weapons" level="60"/>
-            <RequiredItem identifier="Yang_Alchemical"/>
+            <RequiredItem identifier="Touhou_Bottle_Element"/>
             <RequiredItem identifier="fulgurium" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem identifier="Touhou_Thunder_Drum_Bomb" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Thunder_Drum_Bomb.png" sourcerect="0,0,226,226" depth="0.55"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Thunder_Drum_Bomb.png" sourcerect="0,0,224,224" depth="0.55"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Thunder_Drum_Bomb.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0"
+                      origin="0.5,0.5"/>
         <Body width="180" height="180" density="20"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -940,7 +936,7 @@
         <Projectile characterusable="false" launchimpulse="50.0" damagedoors="true">
             <Attack structuredamage="20" itemdamage="30" severlimbsprobability="0.2" penetration="0.2">
                 <Affliction identifier="explosiondamage" strength="12"/>
-                <Affliction identifier="burn" strength="12"/>
+                <Affliction identifier="burn" strength="10"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="5"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.2"/>
                 <Affliction identifier="stun" strength="1"/>
@@ -1005,7 +1001,7 @@
             <Attack targetimpulse="10" penetration="0.5" structuredamage="0" itemdamage="0" severlimbsprobability="0.2">
                 <Affliction identifier="stun" strength="0.8"/>
                 <Affliction identifier="stun" strength="1.6" probability="0.4"/>
-                <Affliction identifier="burn" strength="40"/>
+                <Affliction identifier="burn" strength="30"/>
                 <Affliction identifier="explosiondamage" strength="40"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="5"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="10" probability="0.4"/>
@@ -1039,7 +1035,7 @@
                               rangemultiplierinwalls="0.2" outdoorsonly="true" powerconsumption="0" pickkey="Select">
             <Attack targetimpulse="5" penetration="0.2" structuredamage="0" itemdamage="0">
                 <Affliction identifier="stun" strength="0.2" probability="0.3"/>
-                <Affliction identifier="burn" strength="15"/>
+                <Affliction identifier="burn" strength="10"/>
                 <Affliction identifier="explosiondamage" strength="15"/>
                 <Affliction identifier="Touhou_Lost_Dream" strength="5" probability="0.3"/>
             </Attack>
@@ -1077,18 +1073,19 @@
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="80"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
-            <RequiredItem identifier="Mu_Alchemical" amount="3"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="3"/>
             <RequiredItem identifier="Aya_Maple_Leaves" amount="4"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="2.5">
             <RequiredSkill identifier="weapons" level="60"/>
-            <RequiredItem identifier="Mu_Alchemical" amount="4"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="4"/>
             <RequiredItem identifier="Aya_Maple_Leaves" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem identifier="Fantasy_Wind" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Fantasy_Wind.png" depth="0.54" sourcerect="0,0,227,227" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Fantasy_Wind.png" depth="0.54" sourcerect="0,0,224,224" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Fantasy_Wind.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0" origin="0.5,0.5"/>
         <Body width="180" height="180" density="16"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -1112,7 +1109,7 @@
         <Projectile characterusable="false" launchimpulse="100" spread="16" removeonhit="true" damagedoors="true">
             <Attack structuredamage="10" itemdamage="10" targetforce="10" targetimpulse="50" penetration="0.2" severlimbsprobability="0.4">
                 <Affliction identifier="lacerations" strength="10"/>
-                <Affliction identifier="lacerations" strength="10" probability="0.75"/>
+                <Affliction identifier="lacerations" strength="8" probability="0.75"/>
                 <Affliction identifier="bleeding" strength="4"/>
                 <Affliction identifier="stun" strength="0.04" probability="0.5"/>
             </Attack>
@@ -1193,18 +1190,19 @@
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="80"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
-            <RequiredItem identifier="Jin_Alchemical" amount="4"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="4"/>
             <RequiredItem identifier="dementonite" amount="5"/>
             <RequiredItem identifier="Magic_Material" amount="4"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="2.5">
             <RequiredSkill identifier="weapons" level="60"/>
-            <RequiredItem identifier="Jin_Alchemical" amount="2"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="dementonite" amount="5"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
             <RequiredItem identifier="Celestial_Decay" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Celestial_Decay.png" depth="0.54" sourcerect="0,0,227,227" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Celestial_Decay.png" depth="0.54" sourcerect="0,0,224,224" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Celestial_Decay.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0" origin="0.5,0.5"/>
         <Body width="180" height="180" density="16"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -1231,8 +1229,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="60" spread="5" removeonhit="true" damagedoors="true">
             <Attack structuredamage="10" itemdamage="10" targetforce="30" targetimpulse="30" penetration="0.35" severlimbsprobability="0.5">
-                <Affliction identifier="lacerations" strength="15"/>
-                <Affliction identifier="lacerations" strength="5" probability="0.75"/>
+                <Affliction identifier="lacerations" strength="14"/>
+                <Affliction identifier="lacerations" strength="4" probability="0.75"/>
                 <Affliction identifier="bleeding" strength="2"/>
             </Attack>
             <StatusEffect type="OnImpact" target="This">
@@ -1292,7 +1290,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="80" spread="5" removeonhit="true" damagedoors="true">
             <Attack structuredamage="10" itemdamage="10" targetforce="10" targetimpulse="10" penetration="0.1" severlimbsprobability="0.35">
-                <Affliction identifier="burn" strength="8"/>
+                <Affliction identifier="burn" strength="7"/>
                 <Affliction identifier="explosiondamage" strength="8"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
@@ -1328,7 +1326,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="2" spread="5" removeonhit="false" damagedoors="true">
             <Attack structuredamage="0" itemdamage="0" targetforce="10" targetimpulse="10" penetration="0.4" severlimbsprobability="1.0">
-                <Affliction identifier="acidburn" strength="4"/>
+                <Affliction identifier="acidburn" strength="3"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
                 <Affliction identifier="acidburn" strength="5"/>
@@ -1398,8 +1396,8 @@
             <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
             <RequiredItem identifier="Thousand_Needle_Ammo"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Scarlet_Devil_Mansion.png" depth="0.54" sourcerect="0,0,227,227" origin="0.5,0.5"/>
-
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Scarlet_Devil_Mansion.png" depth="0.54" sourcerect="0,0,224,224" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Scarlet_Devil_Mansion.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0" origin="0.5,0.5"/>
         <Body width="180" height="180" density="16"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -1458,7 +1456,7 @@
         <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="143,310,1,1" depth="0.55"/>
         <Body width="170" height="30" density="10"/>
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
-        <Projectile characterusable="false" maxtargetstohit="3" hitscan="true" spread="2.5" removeonhit="false" damagedoors="true">
+        <Projectile characterusable="false" maxtargetstohit="2" hitscan="true" spread="2.5" removeonhit="false" damagedoors="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,2.5"
                              colormultiplier="255,66,66,255"/>
             <Attack severlimbsprobability="0.1" penetration="0.3">
@@ -1466,7 +1464,7 @@
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
                 <Conditional speciesgroup="neq human"/>
-                <Affliction identifier="lacerations" strength="2"/>
+                <Affliction identifier="lacerations" strength="3"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="4" velocitymin="0" scalemin="0.5" scalemax="0.8"
@@ -1520,7 +1518,8 @@
             <RequiredItem identifier="incendium" amount="2"/>
             <RequiredItem identifier="Touhou_Starbow_Break" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Starbow_Break.png" sourcerect="0,0,226,226" depth="0.55"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Starbow_Break.png" sourcerect="0,0,224,224" depth="0.55"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Starbow_Break.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0" origin="0.5,0.5"/>
         <Body width="180" height="180" density="20"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -1582,7 +1581,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="60.0" maxtargetstohit="2">
             <Attack structuredamage="10" itemdamage="10" levelwalldamage="100" severlimbsprobability="0.3" penetration="0.3">
-                <Affliction identifier="internaldamage" strength="5"/>
+                <Affliction identifier="internaldamage" strength="4"/>
                 <Affliction identifier="bleeding" strength="13"/>
                 <Affliction identifier="stun" strength="0.5"/>
             </Attack>
@@ -1654,8 +1653,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="60.0" maxtargetstohit="2">
             <Attack structuredamage="10" itemdamage="10" levelwalldamage="100" severlimbsprobability="0.3" penetration="0.3">
-                <Affliction identifier="burn" strength="5"/>
-                <Affliction identifier="explosiondamage" strength="13"/>
+                <Affliction identifier="burn" strength="4"/>
+                <Affliction identifier="explosiondamage" strength="12"/>
                 <Affliction identifier="stun" strength="0.5"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
@@ -1725,7 +1724,7 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="60.0" maxtargetstohit="2">
             <Attack structuredamage="10" itemdamage="10" levelwalldamage="100" severlimbsprobability="0.3" penetration="0.3">
-                <Affliction identifier="lacerations" strength="12"/>
+                <Affliction identifier="lacerations" strength="10"/>
                 <Affliction identifier="bleeding" strength="12"/>
                 <Affliction identifier="stun" strength="0.5"/>
             </Attack>
@@ -1791,7 +1790,7 @@
         <Projectile characterusable="false" launchimpulse="60.0" maxtargetstohit="2">
             <Attack structuredamage="10" itemdamage="10" levelwalldamage="100" severlimbsprobability="0.3" penetration="0.3">
                 <Affliction identifier="acidburn" strength="2"/>
-                <Affliction identifier="acidburn" strength="2" probability="0.75"/>
+                <Affliction identifier="acidburn" strength="1" probability="0.75"/>
                 <Affliction identifier="stun" strength="0.5"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
@@ -1833,7 +1832,7 @@
         <Projectile characterusable="false" launchimpulse="60.0" removeonhit="true">
             <Attack structuredamage="10" itemdamage="10" levelwalldamage="100" severlimbsprobability="0.66" penetration="0.66">
                 <Affliction identifier="blunttrauma" strength="1.5"/>
-                <Affliction identifier="blunttrauma" strength="1.5" probability="0.66"/>
+                <Affliction identifier="blunttrauma" strength="1" probability="0.66"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
                 <Affliction identifier="blunttrauma" strength="4"/>
@@ -1889,7 +1888,8 @@
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem identifier="Touhou_Diamond_Blizzard_Ammo" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Diamond_Blizzard_Ammo.png" depth="0.54" sourcerect="0,0,226,226" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Diamond_Blizzard_Ammo.png" depth="0.54" sourcerect="0,0,224,224" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Diamond_Blizzard_Ammo.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0" origin="0.5,0.5"/>
         <Body width="180" height="180" density="15"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -1913,7 +1913,7 @@
         <Projectile characterusable="false" launchimpulse="50" damagedoors="true" maxtargetstohit="2">
             <Attack structuredamage="25" itemdamage="20" levelwalldamage="20" severlimbsprobability="0.25" penetration="0.3">
                 <Affliction identifier="explosiondamage" strength="10"/>
-                <Affliction identifier="Touhou_Freeze" strength="6"/>
+                <Affliction identifier="Touhou_Freeze" strength="4"/>
                 <Affliction identifier="stun" strength="0.02"/>
                 <Affliction identifier="stun" strength="0.15" probability="0.1"/>
             </Attack>
@@ -1962,19 +1962,18 @@
             <RequiredSkill identifier="weapons" level="75"/>
             <RequiredItem identifier="incendium"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
-            <RequiredItem identifier="Shui_Alchemical"/>
-            <RequiredItem identifier="Mu_Alchemical"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Magic_Material"/>
         </Fabricate>
         <Fabricate suitablefabricators="fabricator" displayname="recycleitem" requiredtime="2.5">
             <RequiredSkill identifier="weapons" level="60"/>
             <RequiredItem identifier="incendium"/>
-            <RequiredItem identifier="Mu_Alchemical"/>
-            <RequiredItem identifier="Shui_Alchemical"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal"/>
             <RequiredItem identifier="Touhou_Nue_Danmaku_Chimera" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Nue_Danmaku_Chimera.png" sourcerect="0,0,226,226" depth="0.55"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Nue_Danmaku_Chimera.png" sourcerect="0,0,224,224" depth="0.55"/>
+        <BrokenSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Nue_Danmaku_Chimera.png" depth="0.54" sourcerect="224,0,224,224" maxcondition="0" origin="0.5,0.5"/>
         <Body width="180" height="180" density="20"/>
         <Holdable canBeCombined="true" removeOnCombined="false" slots="RightHand,LeftHand" holdpos="0,-80" handle1="-40,30" handle2="40,30"
                   aimable="false" msg="ItemMsgPickUpSelect"/>
@@ -1997,8 +1996,8 @@
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="0.0">
             <Attack structuredamage="100" itemdamage="100" levelwalldamage="100" severlimbsprobability="0.3" penetration="0.2">
-                <Affliction identifier="lacerations" strength="40"/>
-                <Affliction identifier="bleeding" strength="60"/>
+                <Affliction identifier="lacerations" strength="50"/>
+                <Affliction identifier="bleeding" strength="50"/>
                 <Affliction identifier="Sleepless_Nightmare" strength="10"/>
                 <Affliction identifier="stun" strength="1"/>
             </Attack>
@@ -2089,11 +2088,10 @@
         <Deconstruct time="10">
             <Item identifier="Touhou_Plant_Extract"/>
         </Deconstruct>
-        <Fabricate suitablefabricators="fabricator" requiredtime="20">
+        <Fabricate suitablefabricators="fabricator" requiredtime="10">
             <RequiredSkill identifier="Touhou_Magic" level="50"/>
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="Yin_Alchemical" mincondition="0.5" usecondition="true" amount="1"/>
-            <RequiredItem identifier="Yang_Alchemical" mincondition="0.5" usecondition="true" amount="1"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
             <RequiredItem identifier="Magic_Material" amount="5"/>
@@ -2155,6 +2153,86 @@
                 <Remove/>
             </StatusEffect>
         </Projectile>
+    </Item>
+
+    <!--玻璃轨道炮-->
+    <Item name="玻璃轨道炮" identifier="Touhou_Glass_Railgun" tags="railgunequipment,railgunammo,containershell" category="Weapon"
+          subcategory="Touhou" linkable="true" scale="0.34" impactsoundtag="impact_metal_heavy" cargocontaineridentifier="">
+        <PreferredContainer primary="railgunammoloader,railgunammocontainer" mincondition="1"/>
+        <PreferredContainer secondary="wreckrailgunammocontainer" minamount="1" maxamount="2" spawnprobability="0.1"/>
+        <Price baseprice="100">
+            <Price storeidentifier="merchantoutpost" multiplier="1.2"/>
+            <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.2"/>
+            <Price storeidentifier="merchantmilitary" multiplier="0.9" minavailable="5"/>
+            <Price storeidentifier="merchantmine" multiplier="1.2"/>
+            <Price storeidentifier="merchantarmory" multiplier="0.9" minavailable="5"/>
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="Touhou_Plant_Extract"/>
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="10">
+            <RequiredSkill identifier="Touhou_Magic" level="50"/>
+            <RequiredSkill identifier="weapons" level="50"/>
+            <RequiredItem identifier="silicon" amount="4"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="2"/>
+            <RequiredItem identifier="steel" amount="2" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Glass_Railgun.png" sourcerect="0,54,136,87" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Glass_Railgun.png" sourcerect="0,0,300,54" depth="0.55" origin="0.5,0.5"/>
+        <Body width="300" height="54" density="10"/>
+        <Holdable canbecombined="false" slots="LeftHand,RightHand" holdpos="0,-15" handle1="-30,-5" holdangle="170" aimable="false" msg="ItemMsgPickUpSelect">
+            <StatValue stattype="MovementSpeed" value="-0.1" />
+            <StatusEffect type="OnActive" target="This" holdpos="-10,-15" handle1="0,-5" holdangle="70" setvalue="true" interval="1.1">
+                <Conditional InWater="true" />
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="This" holdpos="0,-15" handle1="-30,-5" holdangle="170" setvalue="true" interval="1.1">
+                <Conditional InWater="false" />
+            </StatusEffect>
+        </Holdable>
+        <Projectile characterusable="false" launchimpulse="0" maxtargetstohit="5" damagedoors="true">
+            <Attack structuredamage="15" itemdamage="50" severlimbsprobability="1.0" penetration="0.3" targetforce="50">
+                <Affliction identifier="lacerations" strength="50" />
+                <Affliction identifier="bleeding" strength="20" />
+                <Affliction identifier="stun" strength="1" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="bubbles" anglemin="0" anglemax="360" particleamount="5" velocitymin="0" velocitymax="50" scalemin="1" scalemax="3" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" allowwhenbroken="true" Condition="-20.0" />
+            <StatusEffect type="OnImpact" target="UseTarget,This" allowwhenbroken="true" Condition="-50.0" comparison="And">
+                <Conditional entitytype="eq Character"/>
+                <Conditional Health="gte 200"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget,This" condition="0" setvalue="true" comparison="And">
+                <Conditional entitytype="eq Structure"/>
+                <Conditional Health="gte 50"/>
+                <SpawnItem identifier="railgunshell_reduceddmg" spawnposition="This" count="1" aimspread="15" rotationtype="Collider" rotation="0" />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" allowwhenbroken="true" target="Contained">
+                <Use />
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" Condition="-100.0" delay="4.0" setvalue="true" />
+            <StatusEffect type="OnBroken" target="This">
+                <Remove />
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This">
+                <SpawnItem identifier="flakshrapneldirectional" spawnposition="This" count="3" aimspread="25" rotationtype="Collider" rotation="0" />
+                <Explosion range="30.0" structuredamage="20" levelwalldamage="100" camerashake="25.0" camerashakerange="2000" force="10.0" itemdamage="15" severlimbsprobability="0.1" decal="explosion" decalsize="0.3">
+                    <Affliction identifier="explosiondamage" strength="20" />
+                </Explosion>
+                <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" volume="2" selectionmode="Random" range="8000" />
+                <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" volume="2" selectionmode="Random" range="8000" />
+                <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" volume="2" selectionmode="Random" range="8000" />
+                <ParticleEmitter particle="shrapnel" anglemin="0" anglemax="360" particleamount="50" velocitymin="100" velocitymax="2000" scalemin="1" scalemax="2" />
+                <RemoveItem />
+            </StatusEffect>
+        </Projectile>
+        <ItemContainer hideitems="true" capacity="1" maxstacksize="1" canbeselected="false" containedstateindicatorstyle="explosive" containedspritedepth="0.81">
+            <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,384,64,64" origin="0.5,0.5" />
+            <GuiFrame relativesize="0.2,0.25" anchor="Center" minsize="140,170" maxsize="280,280" style="ItemUI" />
+            <Containable items="smallitem,explosive" />
+        </ItemContainer>
     </Item>
 
 

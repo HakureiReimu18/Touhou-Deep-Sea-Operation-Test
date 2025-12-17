@@ -3,7 +3,7 @@
            IsMachine="False" CanSpeak="False" ShowHealthBar="True" UseBossHealthBar="False" Noise="300" Visibility="300" BloodDecal="blackblood"
            BleedParticleAir="blackblooddrop" BleedParticleWater="blackwaterblood" BleedParticleMultiplier="1" CanEat="False" EatingSpeed="10"
            UsePathFinding="True" PathFinderPriority="1" HideInSonar="False" HideInThermalGoggles="True" SonarDisruption="0" DistantSonarRange="0"
-           DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer=""
+           DisableDistance="25000" SoundInterval="10" DrawLast="False" AITurretPriority="1" AISlowTurretPriority="1" DespawnContainer="duffelbag"
            tags="highpriority">
     <ragdolls folder="default"/>
     <animations folder="default"/>
@@ -28,7 +28,7 @@
     <sound File="Content/Characters/Human/male_damage9.ogg" State="Damage" Range="500" Volume="1" Tags="Male"/>
     <sound File="Content/Characters/Human/male_damage10.ogg" State="Damage" Range="500" Volume="1" Tags="Male"/>
     <sound File="Content/Characters/Human/male_damage11.ogg" State="Damage" Range="500" Volume="1" Tags="Male"/>
-    <health Vitality="450" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.8" BurnReduction="0.4"
+    <health Vitality="400" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.8" BurnReduction="0.4"
             ConstantHealthRegeneration="0.5" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1"
             EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="">
         <Limb name="Head">

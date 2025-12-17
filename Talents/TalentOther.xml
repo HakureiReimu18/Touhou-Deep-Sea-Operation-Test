@@ -774,6 +774,7 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Touhou_Instant_Blue_Talent_Effect" strength="3"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Instant_Blue_Talent_Debuff_Effect" strength="3"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -978,6 +979,75 @@
     </Talent>
 
 
+    <!--联盟隐秘天赋-->
+    <Talent identifier="Touhou_Coalition_Secret_Weapon_Talent" IsHiddenExtraTalent="true">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.Touhou_Corrupted_Weapon_Unlocked_Talent"/>
+        <!--骨爪天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Bone_Claw"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.9" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Bone_Claw"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.7" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Bone_Claw"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.5" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--酸牙天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Acid_Fang"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.9" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addedpenetration="0.03"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Acid_Fang"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.7" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addedpenetration="0.03"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Acid_Fang"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.5" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addedpenetration="0.04"/>
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+
     <!--解锁爆裂铳弹药-->
     <Talent identifier="Touhou_Blast_Gun_Talent" IsHiddenExtraTalent="true">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128"/>
@@ -997,6 +1067,18 @@
         <AddedRecipe itemidentifier="Touhou_Knightmare_Grenade_Gun_Ammo"/>
         <AddedRecipe itemidentifier="Touhou_Starkiller_Ammo"/>
         <AddedRecipe itemidentifier="Touhou_Dissolution"/>
+    </Talent>
+
+    <!--解锁联盟隐秘武器-->
+    <Talent identifier="Touhou_Coalition_Weapon_Unlocked_Talent" IsHiddenExtraTalent="true">
+        <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.Touhou_Corrupted_Weapon_Unlocked_Talent"/>
+        <AddedRecipe itemidentifier="Touhou_Bone_Claw"/>
+        <AddedRecipe itemidentifier="Touhou_Bone_Claw_Ammo"/>
+        <AddedRecipe itemidentifier="Touhou_Acid_Fang"/>
+        <AddedRecipe itemidentifier="Touhou_Acid_Fang_Ammo"/>
+        <AddedRecipe itemidentifier="Touhou_Mage_Slayer"/>
+        <AddedRecipe itemidentifier="Touhou_Mage_Slayer_Ammo"/>
     </Talent>
 
     <!--解锁药物套装配方-->
@@ -1194,14 +1276,14 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MeleeAttackSpeed" value="0.2"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.2"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple"/>
@@ -1237,25 +1319,25 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Candid_Friend"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Nitori_Weapons"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="RangedAttackMultiplier" value="0.2"/>
-                <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.2"/>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.2"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.2"/>
             </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Candid_Friend"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Nitori_Tools"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.25"/>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.15"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Candid_Friend"/>
@@ -1322,54 +1404,54 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.3"/>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.3"/>
             </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix"/>
                 <AbilityConditionAboveVitality vitalitypercentage="0.25"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="RangedAttackMultiplier" value="0.05"/>
-                <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.05"/>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.05"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.05"/>
             </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix"/>
                 <AbilityConditionAboveVitality vitalitypercentage="0.5"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="RangedAttackMultiplier" value="0.05"/>
-                <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.05"/>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.05"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.05"/>
             </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix"/>
                 <AbilityConditionAboveVitality vitalitypercentage="0.75"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="RangedAttackMultiplier" value="0.05"/>
-                <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.05"/>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.05"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.05"/>
             </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix"/>
                 <AbilityConditionAboveVitality vitalitypercentage="0.99"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="RangedAttackMultiplier" value="0.05"/>
-                <CharacterAbilityGiveStat stattype="MeleeAttackMultiplier" value="0.05"/>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.05"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.05"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--出血效应-帕秋莉·诺雷姬-->
@@ -1403,6 +1485,57 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="The_Still_Library"/>
+                <AbilityConditionServerRandom randomchance="0.1"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Mu_Elements_NoEffects" strength="2.0"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Mu_Elements" strength="2.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="The_Still_Library"/>
+                <AbilityConditionServerRandom randomchance="0.1"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Huo_Elements" strength="2.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="The_Still_Library"/>
+                <AbilityConditionServerRandom randomchance="0.1"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Tu_Elements" strength="2.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="The_Still_Library"/>
+                <AbilityConditionServerRandom randomchance="0.1"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Jin_Elements" strength="2.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="The_Still_Library"/>
+                <AbilityConditionServerRandom randomchance="0.1"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Shui_Elements" strength="2.0"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -1559,7 +1692,7 @@
                 <AbilityConditionIsAiming weapontype="ranged,Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="lacerations" addedmultiplier="0.25"/>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="lacerations" addedmultiplier="0.15"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
@@ -1568,7 +1701,7 @@
                 <AbilityConditionIsAiming weapontype="ranged,Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="blunttrauma" addedmultiplier="0.5"/>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="blunttrauma" addedmultiplier="0.3"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -1640,9 +1773,8 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional Destruction_Of_Mu="gt 0"/>
-                    <Conditional HealthPercentage="gt 50"/>
                 </AbilityConditionCharacter>
-                <AbilityConditionServerRandom randomchance="0.04"/>
+                <AbilityConditionServerRandom randomchance="0.03"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData implode="true"/>
@@ -1655,10 +1787,10 @@
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional HealthPercentage="lte 50"/>
+                    <Conditional HealthPercentage="lte 25"/>
                     <Conditional Destruction_Of_Mu="eq 0"/>
                 </AbilityConditionCharacter>
-                <AbilityConditionServerRandom randomchance="0.04"/>
+                <AbilityConditionServerRandom randomchance="0.03"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData implode="true"/>
@@ -1672,9 +1804,8 @@
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionCharacter targettype="Enemy">
                     <Conditional Destruction_Of_Mu="gt 0"/>
-                    <Conditional HealthPercentage="gt 50"/>
                 </AbilityConditionCharacter>
-                <AbilityConditionServerRandom randomchance="0.08"/>
+                <AbilityConditionServerRandom randomchance="0.06"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData implode="true"/>
@@ -1687,10 +1818,10 @@
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional HealthPercentage="lte 50"/>
+                    <Conditional HealthPercentage="lte 25"/>
                     <Conditional Destruction_Of_Mu="eq 0"/>
                 </AbilityConditionCharacter>
-                <AbilityConditionServerRandom randomchance="0.08"/>
+                <AbilityConditionServerRandom randomchance="0.06"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData implode="true"/>
@@ -2717,6 +2848,38 @@
         </AbilityGroupInterval>
     </Talent>
 
+    <!--出血效应-古明地觉-->
+    <Talent identifier="MRE_Satori">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.MRE_Satori"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Satori_3rd_Eye"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Satori_Effect" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
 
     <!--共情物-->
     <Talent identifier="Touhou_Empathy_Device_Talent" IsHiddenExtraTalent="true">
@@ -2901,7 +3064,7 @@
         <!--上海人偶-->
         <AbilityGroupInterval interval="4.9">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Essential_Stone_Of_Patience_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Shanghai_Doll_Effect"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Alice_Doll_Energy" minimumPercentage="0.5"/>
             </Conditions>
             <Abilities>
