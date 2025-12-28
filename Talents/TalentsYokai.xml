@@ -442,7 +442,7 @@
     140：增加10%最大生命值。双手部位的物理伤害抗性增加5%
     280：些许加快物理伤害、出血的恢复。有船员失去意识时，可以全速拖动生物
     420：增加10%的弹幕伤害-->
-    <Talent identifier="Talents_Yokai_Primary15" trackedstat="Yokai_Counter" trackedmax="480">
+    <Talent identifier="Talents_Yokai_Primary15" trackedstat="Yokai_Counter" trackedmax="420">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Talents_Yokai_Primary15"/>
         <AbilityGroupEffect abilityeffecttype="OnKillCharacter">

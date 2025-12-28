@@ -295,7 +295,7 @@
             </StatusEffect>
             <StatusEffect type="OnUse" target="This,UseTarget" Condition="-100.0" multiplyafflictionsbymaxvitality="true">
                 <Sound file="Content/Items/Medical/Syringe.ogg" range="300"/>
-                <ReduceAffliction type="debuff" amount="3"/>
+                <ReduceAffliction type="debuff" amount="0.9"/>
                 <ReduceAffliction type="psychosis" amount="15"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="This,UseTarget" Condition="-100.0" multiplyafflictionsbymaxvitality="true">

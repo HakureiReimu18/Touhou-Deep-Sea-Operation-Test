@@ -81,6 +81,7 @@
     <Item file="%ModDir%/Items/Weapons/Lock_Weapon.xml"/>
     <Item file="%ModDir%/Items/Weapons/Monster_Weapons.xml"/>
     <Item file="%ModDir%/Items/Weapons/PVP_Items.xml"/>
+    <Item file="%ModDir%/Items/Weapons/Touhou_Temporary_Item_Weapon.xml"/>
     <!--Plants-->
     <Item file="%ModDir%/Items/Gardening/Magic_Plants.xml"/>
     <!--Particles-->

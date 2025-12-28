@@ -827,6 +827,37 @@
             </CheckAfflictionAction>
         </ScriptedEvent>
 
+        <!--潜意识解码器随机临时武器事件-->
+        <ScriptedEvent identifier="Touhou_Subconscious_Decoder_Use">
+            <SpawnAction ItemTag="Touhou_Temporary_Item_Weapon" TargetTag="Touhou_Temporary_Item_Weapon" targetinventory="Touhou_Subconscious_Decoder_player" />
+            <RNGAction Chance="0.5">
+                <Success>
+                    <RNGAction Chance="0.4">
+                        <Success></Success>
+                        <Failure>
+                            <StatusEffectAction TargetTag="Touhou_Temporary_Item_Weapon">
+                                <StatusEffect target="This" TargetItemComponent="Quality" quality="1" setValue="true" />
+                            </StatusEffectAction>
+                        </Failure>
+                    </RNGAction>
+                </Success>
+                <Failure>
+                    <RNGAction Chance="0.6">
+                        <Success>
+                            <StatusEffectAction TargetTag="Touhou_Temporary_Item_Weapon">
+                                <StatusEffect target="This" TargetItemComponent="Quality" quality="2" setValue="true" />
+                            </StatusEffectAction>
+                        </Success>
+                        <Failure>
+                            <StatusEffectAction TargetTag="Touhou_Temporary_Item_Weapon">
+                                <StatusEffect target="This" TargetItemComponent="Quality" quality="3" setValue="true" />
+                            </StatusEffectAction>
+                        </Failure>
+                    </RNGAction>
+                </Failure>
+            </RNGAction>
+        </ScriptedEvent>
+
         <!--新年礼物随机事件-->
         <ScriptedEvent identifier="Touhou_Gift_Box_Open">
             <RNGAction Chance="0.5">
@@ -1044,6 +1075,122 @@
                                     <RNGAction Chance="0.5">
                                         <Success>
                                             <SpawnAction ItemTag="Touhou_Rapidly_Spell_Card_Ammo" targetinventory="Open_player" amount="2"/>
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemTag="Touhou_Small_Spell_Card_Ammo" targetinventory="Open_player" amount="2"/>
+                                        </Failure>
+                                    </RNGAction>
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Failure>
+            </RNGAction>
+            <ClearTagAction tag="Open_player"/>
+        </ScriptedEvent>
+
+        <!--被遗弃的物品袋随机事件-->
+        <ScriptedEvent identifier="Touhou_Lost_Storage_Bag_Open">
+            <RNGAction Chance="0.5">
+                <Success>
+                    <RNGAction Chance="0.5">
+                        <Success>
+                            <RNGAction Chance="0.5">
+                                <Success>
+                                    <RNGAction Chance="0.5">
+                                        <Success>
+                                            <SpawnAction ItemIdentifier="Touhou_Boudary_Divinggear" targetinventory="Open_player" amount="2"/>
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemTag="Alchemical" targetinventory="Open_player" amount="3"/>
+                                            <SpawnAction ItemTag="Alchemical" targetinventory="Open_player" amount="3"/>
+                                            <SpawnAction ItemTag="Alchemical" targetinventory="Open_player" amount="3"/>
+                                        </Failure>
+                                    </RNGAction>
+                                </Success>
+                                <Failure>
+                                    <RNGAction Chance="0.5">
+                                        <Success>
+                                            <SpawnAction ItemIdentifier="Score_Point" targetinventory="Open_player" amount="4"/>
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemIdentifier="Touhou_Base_Metal" targetinventory="Open_player" amount="8"/>
+                                        </Failure>
+                                    </RNGAction>
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                            <RNGAction Chance="0.25">
+                                <Success>
+                                    <RNGAction Chance="0.5">
+                                        <Success>
+                                            <SpawnAction ItemIdentifier="Touhou_Precious_Metal" targetinventory="Open_player"/>
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemIdentifier="Power_Point" targetinventory="Open_player" amount="1"/>
+                                        </Failure>
+                                    </RNGAction>
+                                </Success>
+                                <Failure>
+                                    <RNGAction Chance="0.5">
+                                        <Success>
+                                            <SpawnAction ItemTag="MRE_Material" targetinventory="Open_player" amount="1"/>
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemIdentifier="Hyouibana_Dream" targetinventory="Open_player" amount="1"/>
+                                        </Failure>
+                                    </RNGAction>
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Success>
+                <Failure>
+                    <RNGAction Chance="0.5">
+                        <Success>
+                            <RNGAction Chance="0.5">
+                                <Success>
+                                    <RNGAction Chance="0.5">
+                                        <Success>
+                                            <SpawnAction ItemTag="Touhou_Weapon_Level03" targetinventory="Open_player"/>
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemTag="Touhou_Weapon_Level04" targetinventory="Open_player"/>
+                                        </Failure>
+                                    </RNGAction>
+                                </Success>
+                                <Failure>
+                                    <RNGAction Chance="0.25">
+                                        <Success>
+                                            <SpawnAction ItemTag="Touhou_Weapon_Level05" targetinventory="Open_player"/>
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemIdentifier="Touhou_Gene_Splicer" targetinventory="Open_player"/>
+                                        </Failure>
+                                    </RNGAction>
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                            <RNGAction Chance="0.5">
+                                <Success>
+                                    <RNGAction Chance="0.5">
+                                        <Success>
+                                            <SpawnAction ItemTag="Touhou_Hooked_Jade" targetinventory="Open_player" amount="1"/>
+                                            <SpawnAction ItemTag="Touhou_Hooked_Jade" targetinventory="Open_player" amount="1"/>
+                                            <SpawnAction ItemTag="Touhou_Hooked_Jade" targetinventory="Open_player" amount="1"/>
+                                            <SpawnAction ItemTag="Touhou_Hooked_Jade" targetinventory="Open_player" amount="1"/>
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemTag="Touhou_Wearable_Equipment" targetinventory="Open_player"/>
+                                        </Failure>
+                                    </RNGAction>
+                                </Success>
+                                <Failure>
+                                    <RNGAction Chance="0.5">
+                                        <Success>
+                                            <SpawnAction ItemIdentifier="Touhou_Empathy_Item_Box" targetinventory="Open_player" amount="2"/>
                                         </Success>
                                         <Failure>
                                             <SpawnAction ItemTag="Touhou_Small_Spell_Card_Ammo" targetinventory="Open_player" amount="2"/>

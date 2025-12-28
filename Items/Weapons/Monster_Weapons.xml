@@ -9,10 +9,10 @@
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
         <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="true" sticktoitems="false" sticktodoors="false"
                     sticktostructures="true" friendlyfire="false" damagedoors="true">
-            <Attack structuredamage="5" itemdamage="10" stun="0.2" targetimpulse="2" penetration="0.1" severlimbsprobability="0.2">
+            <Attack structuredamage="5" itemdamage="10"  penetration="0.1" severlimbsprobability="0.2">
                 <Affliction identifier="burn" strength="3"/>
                 <Affliction identifier="lacerations" strength="1"/>
-                <Affliction identifier="stun" strength="1.0" probability="0.3"/>
+                <Affliction identifier="stun" strength="0.5" probability="0.3"/>
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="0.6">
                 <ParticleEmitter particle="GlowDot" scalemin="1.5" scalemax="2.0" particlespersecond="150" anglemin="0" anglemax="360"
@@ -52,7 +52,7 @@
                     sticktostructures="true" friendlyfire="false" damagedoors="true">
             <Attack structuredamage="10" itemdamage="5" targetimpulse="2" penetration="0.2" severlimbsprobability="0.2">
                 <Affliction identifier="lacerations" strength="12"/>
-                <Affliction identifier="stun" strength="1.0" probability="0.4"/>
+                <Affliction identifier="stun" strength="0.5" probability="0.4"/>
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="0.5">
                 <ParticleEmitter particle="GlowDot" scalemin="1.5" scalemax="2.0" particlespersecond="160" anglemin="0" anglemax="360"
@@ -549,8 +549,8 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55"/>
         <Body width="110" height="30" density="10"/>
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
-        <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="2" damagedoors="true" friendlyfire="false">
-            <Attack structuredamage="10" itemdamage="20" targetforce="2" targetimpulse="2" penetration="0.25">
+        <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="2" hitscan="true" damagedoors="true" friendlyfire="false">
+            <Attack itemdamage="10" targetforce="2" targetimpulse="2" penetration="0.25">
                 <Affliction identifier="burn" strength="2"/>
                 <Affliction identifier="lacerations" strength="9"/>
                 <Affliction identifier="bleeding" strength="8"/>
@@ -723,7 +723,7 @@
 
     <!--仿制喇叭枪-->
     <Item name="仿制喇叭枪" identifier="Touhou_Blunderbuss_Enemy" subcategory="Touhou" category="Equipment,Weapon" hideinmenus="true"
-          tags="smallitem,weapon" Scale="0.32" impactsoundtag="impact_metal_light" spritecolor="100,100,100,255">
+          tags="smallitem,weapon,ProvocativeToHumanAI" Scale="0.32" impactsoundtag="impact_metal_light" spritecolor="100,100,100,255">
         <PreferredContainer secondary="armcab"/>
         <Deconstruct time="3">
             <Item identifier="Touhou_Plant_Extract" amount="2"/>
@@ -773,6 +773,7 @@
                 <Containable items="Touhou_Blunderbuss_Enemy_Magazine" hide="true"/>
             </SubContainer>
         </ItemContainer>
+        <aitarget sightrange="1000" soundrange="3000" fadeouttime="5"/>
         <SkillRequirementHint identifier="weapons" level="70"/>
     </Item>
 
@@ -824,7 +825,7 @@
 
     <!--劣质汤普森竞争者-->
     <Item name="劣质汤普森竞争者" identifier="Touhou_Hompson_Contender_Enemy" subcategory="Touhou" category="Equipment,Weapon" hideinmenus="true"
-          tags="smallitem,weapon" Scale="0.25" impactsoundtag="impact_metal_light" spritecolor="100,100,100,255">
+          tags="smallitem,weapon,ProvocativeToHumanAI" Scale="0.25" impactsoundtag="impact_metal_light" spritecolor="100,100,100,255">
         <PreferredContainer secondary="armcab"/>
         <Deconstruct time="3">
             <Item identifier="Touhou_Plant_Extract" amount="2"/>
@@ -869,6 +870,7 @@
             <Containable items="revolverammo" hide="true"/>
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="256,448,64,64" origin="0.5,0.5"/>
         </ItemContainer>
+        <aitarget sightrange="1000" soundrange="3000" fadeouttime="5"/>
         <SkillRequirementHint identifier="weapons" level="80"/>
     </Item>
 
@@ -1149,7 +1151,7 @@
         <Projectile characterusable="false" hitscan="true" removeonhit="true" damagedoors="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.6"
                              colormultiplier="20,20,120,255"/>
-            <Attack itemdamage="20" levelwalldamage="20" targetforce="2" targetimpulse="2" penetration="0.25" severlimbsprobability="0.3">
+            <Attack itemdamage="10" levelwalldamage="20" targetforce="2" targetimpulse="2" penetration="0.25" severlimbsprobability="0.3">
                 <Affliction identifier="explosiondamage" strength="4"/>
                 <Affliction identifier="burn" strength="1"/>
                 <Affliction identifier="Touhou_Freeze" strength="1"/>
@@ -1198,7 +1200,7 @@
     </Item>
 
     <!--人偶用涟漪-普通-->
-    <Item name="人偶用涟漪-普通" identifier="Touhou_Rippling_DollUsed" tags="mediumitem,weapon" category="Weapon" hideinmenus="true"
+    <Item name="人偶用涟漪-普通" identifier="Touhou_Rippling_DollUsed" tags="mediumitem,weapon,ProvocativeToHumanAI" category="Weapon" hideinmenus="true"
           nonplayerteaminteractable="True"
           subcategory="Touhou" isshootable="true" Scale="1">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling.png" sourcerect="0,0,140,48" depth="0.5" origin="0.5,0.5"/>
@@ -1230,11 +1232,11 @@
                        containedstateindicatorstyle="battery">
             <Containable items="Touhou_Mysterious_Pearl_Rippling_DollUsed"/>
         </ItemContainer>
-        <aitarget sightrange="3000" soundrange="3000" fadeouttime="5"/>
+        <aitarget sightrange="1000" soundrange="3000" fadeouttime="5"/>
     </Item>
 
     <!--人偶用涟漪-上海-->
-    <Item name="人偶用涟漪-上海" identifier="Touhou_Rippling_DollUsed_ShangHai" tags="mediumitem,weapon" category="Weapon" hideinmenus="true"
+    <Item name="人偶用涟漪-上海" identifier="Touhou_Rippling_DollUsed_ShangHai" tags="mediumitem,weapon,ProvocativeToHumanAI" category="Weapon" hideinmenus="true"
           nonplayerteaminteractable="True"
           subcategory="Touhou" isshootable="true" Scale="1">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling.png" sourcerect="0,0,140,48" depth="0.5" origin="0.5,0.5"/>
@@ -1270,7 +1272,7 @@
     </Item>
 
     <!--人偶用涟漪-蓬莱-->
-    <Item name="人偶用涟漪-蓬莱" identifier="Touhou_Rippling_DollUsed_PengLai" tags="mediumitem,weapon" category="Weapon" hideinmenus="true"
+    <Item name="人偶用涟漪-蓬莱" identifier="Touhou_Rippling_DollUsed_PengLai" tags="mediumitem,weapon,ProvocativeToHumanAI" category="Weapon" hideinmenus="true"
           nonplayerteaminteractable="True"
           subcategory="Touhou" isshootable="true" Scale="1">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Rippling.png" sourcerect="0,0,140,48" depth="0.5" origin="0.5,0.5"/>
@@ -1362,7 +1364,7 @@
 
     <!--污染霰弹枪-->
     <Item name="污染霰弹枪" identifier="Touhou_Pollution_Shotgun" category="Weapon" cargocontaineridentifier="metalcrate" hideinmenus="true"
-          tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light">
+          tags="mediumitem,weapon,gun,gunsmith,mountableweapon,ProvocativeToHumanAI" Scale="0.35" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
         <Deconstruct time="60">
             <Item identifier="ballisticfiber"/>
@@ -1408,7 +1410,7 @@
 
     <!--污染步枪-->
     <Item name="污染步枪" identifier="Touhou_Pollution_Rifle" category="Weapon" cargocontaineridentifier="metalcrate" hideinmenus="true"
-          tags="mediumitem,weapon,gun,gunsmith,mountableweapon" Scale="0.35" impactsoundtag="impact_metal_light">
+          tags="mediumitem,weapon,gun,gunsmith,mountableweapon,ProvocativeToHumanAI" Scale="0.35" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
         <Deconstruct time="60">
             <Item identifier="ballisticfiber"/>
@@ -1560,7 +1562,7 @@
         <Body width="28" height="36" density="10"/>
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
         <Projectile characterusable="false" launchimpulse="25" damagedoors="true" removeonhit="true">
-            <Attack itemdamage="100" severlimbsprobability="0.3" penetration="0.25">
+            <Attack itemdamage="50" severlimbsprobability="0.3" penetration="0.25">
                 <Affliction identifier="bleeding" strength="10"/>
                 <Affliction identifier="burn" strength="10"/>
                 <Affliction identifier="burn" strength="2" probability="0.4"/>
@@ -1691,7 +1693,7 @@
         <Projectile characterusable="false" hitscan="true" maxtargetstohit="2" damagedoors="true" removeonhit="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.1"
                              colormultiplier="255,255,255,150"/>
-            <Attack itemdamage="25" severlimbsprobability="0.3" penetration="0.2">
+            <Attack itemdamage="15" severlimbsprobability="0.3" penetration="0.2">
                 <Affliction identifier="explosiondamage" strength="1"/>
                 <Affliction identifier="lacerations" strength="4"/>
                 <Affliction identifier="bleeding" strength="6"/>
@@ -1715,7 +1717,7 @@
     </Item>
 
     <!--怪物用魔光枪-->
-    <Item name="怪物用魔光枪" identifier="Touhou_Magic_Ray_Gun_MonsterUsed" tags="mediumitem,weapon,gun" Scale="0.23" category="Weapon"
+    <Item name="怪物用魔光枪" identifier="Touhou_Magic_Ray_Gun_MonsterUsed" tags="mediumitem,weapon,gun,ProvocativeToHumanAI" Scale="0.23" category="Weapon"
           hideinmenus="true" nonplayerteaminteractable="True"
           subcategory="Touhou" isshootable="true">
         <RangedWeapon reload="0.35" weapondamagemodifier="0.65" holdtrigger="true" barrelpos="42,8" spread="6" unskilledspread="12"
@@ -1783,7 +1785,7 @@
     </Item>
 
     <!--怪物用锻光-->
-    <Item name="怪物用锻光" identifier="Touhou_Lightsmithing_MonsterUsed" tags="mediumitem,weapon,gun" Scale="0.3" category="Weapon"
+    <Item name="怪物用锻光" identifier="Touhou_Lightsmithing_MonsterUsed" tags="mediumitem,weapon,gun,ProvocativeToHumanAI" Scale="0.3" category="Weapon"
           hideinmenus="true" nonplayerteaminteractable="True" subcategory="Touhou" isshootable="true">
         <RangedWeapon reload="1.5" holdtrigger="true" barrelpos="200,28" spread="3"
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5">

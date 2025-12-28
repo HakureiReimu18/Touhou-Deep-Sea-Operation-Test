@@ -727,7 +727,7 @@
         <SuitableTreatment type="Destruction_Of_Mu" suitability="1"/>
         <SuitableTreatment type="burn" suitability="10"/>
         <SuitableTreatment type="Phoenix_Burn" suitability="10"/>
-        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10"
+        <MeleeWeapon canBeCombined="true" removeOnCombined="false" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10"
                      aimangle="10" reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
             <StatusEffect type="OnSecondaryUse" target="This" Condition="-50.0"/>
             <StatusEffect type="OnSecondaryUse" target="Character" multiplyafflictionsbymaxvitality="true">

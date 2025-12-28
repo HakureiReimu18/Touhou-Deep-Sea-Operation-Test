@@ -8,7 +8,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Gensokyo_Divinggear_Effect08"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Gensokyo_Divinggear_Effect09"/>
-                <AbilityConditionServerRandom randomchance="0.2"/>
+                <AbilityConditionServerRandom randomchance="0.4"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.25"/>
@@ -18,7 +18,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Boudary_Divinggear_Effect08"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Boudary_Divinggear_Effect09"/>
-                <AbilityConditionServerRandom randomchance="0.15"/>
+                <AbilityConditionServerRandom randomchance="0.25"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15"/>
@@ -28,7 +28,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ether_Divinggear_Effect08"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Ether_Divinggear_Effect09"/>
-                <AbilityConditionServerRandom randomchance="0.1"/>
+                <AbilityConditionServerRandom randomchance="0.2"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15"/>
@@ -39,7 +39,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Magic_Veil_Effect02"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Magic_Veil_Effect03"/>
-                <AbilityConditionServerRandom randomchance="0.15"/>
+                <AbilityConditionServerRandom randomchance="0.3"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>
@@ -64,10 +64,10 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Dichromatic_Lotus_Butterfly_Effect02"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Dichromatic_Lotus_Butterfly_Effect03"/>
-                <AbilityConditionServerRandom randomchance="0.1"/>
+                <AbilityConditionServerRandom randomchance="0.3"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.25"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
@@ -714,6 +714,17 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Touhou_Lost_Dream" strength="5"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--心象解构器天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Mental_Image_Deconstructor"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targettype="Enemy" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Mental_Image_Deconstructor_Effect" strength="5"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

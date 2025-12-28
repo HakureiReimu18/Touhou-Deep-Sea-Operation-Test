@@ -1201,7 +1201,7 @@
         </AbilityGroupInterval>
     </Talent>
 
-    <!--凭依莉莉白-->
+    <!--凭依觉-->
     <Talent identifier="Hyouibana_Satori">
         <Icon texture="%ModDir%/Images/Talents/SatoriTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.Hyouibana_Satori"/>
@@ -1218,6 +1218,21 @@
             </Abilities>
         </AbilityGroupInterval>
 
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0"
+                                      multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Hyouibana_Effect_Prefect_Satori" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Sleepless_Nightmare" strength="2.0"/>

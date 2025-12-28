@@ -88,7 +88,7 @@
     <Item name="" identifier="Marisa_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing"
           description="" impactsoundtag="impact_soft" scale="0.5" fireproof="true">
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="500" minleveldifficulty="15">
+        <Price baseprice="200" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" multiplier="2.9" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="2.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" multiplier="2.9" minavailable="1"/>
@@ -298,7 +298,7 @@
     <Item identifier="Marisa_Eclipse_Anniversary_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate"
           tags="smallitem,clothing" scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="500" minleveldifficulty="15">
+        <Price baseprice="200" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" multiplier="2.9" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="2.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" multiplier="2.9" minavailable="1"/>

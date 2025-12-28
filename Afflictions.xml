@@ -30,7 +30,7 @@
     </Affliction>
 
     <!--灵气紊乱-->
-    <Affliction identifier="Reiki_Side_Effect" type="Reiki_Side_Effect" targets="human" limbspecific="false" indicatorlimb="Head"
+    <Affliction name="灵气紊乱" identifier="Reiki_Side_Effect" type="Reiki_Side_Effect" targets="human" limbspecific="false" indicatorlimb="Head"
                 showiconthreshold="16"
                 showinhealthscannerthreshold="16" treatmentthreshold="39" maxstrength="100" affectmachines="false" karmachangeonapplied="-0.1"
                 healcostmultiplier="2.85" MedicalSkillGain="0">
@@ -38,12 +38,14 @@
         <Description textidentifier="afflictiondescription.Reiki_Side_Effect_High" minstrength="40" maxstrength="100"/>
         <Effect minstrength="0" maxstrength="16" strengthchange="-0.1">
             <StatusEffect target="Character" setvalue="true" SpeedMultiplier="0.95"/>
+            <StatValue stattype="MedicalItemEffectivenessMultiplier" minvalue="0" maxvalue="-0.25"/>
         </Effect>
         <Effect minstrength="16" maxstrength="40" strengthchange="-0.1" >
             <StatusEffect target="Character" Interval="0.5">
                 <Affliction identifier="bloodloss" strength="0.5"/>
                 <Affliction identifier="organdamage" strength="0.4"/>
             </StatusEffect>
+            <StatValue stattype="MedicalItemEffectivenessMultiplier" minvalue="-0.25" maxvalue="-0.5"/>
         </Effect>
 
         <Effect minstrength="40" maxstrength="80" strengthchange="0.4" >
@@ -52,21 +54,24 @@
                 <Affliction identifier="bleeding" strength="4.2" />
                 <Affliction identifier="organdamage" strength="0.8" penetration="1.0"/>
             </StatusEffect>
+            <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.5" />
         </Effect>
 
-        <Effect minstrength="80" maxstrength="90" strengthchange="-0.1" >
+        <Effect minstrength="80" maxstrength="90" strengthchange="-0.05" >
             <StatusEffect target="Character" Interval="0.1">
                 <Affliction identifier="organdamage" strength="1.5" penetration="1.0"/>
                 <Affliction identifier="bleeding" strength="1" penetration="0.8"/>
                 <Affliction identifier="bloodloss" strength="0.4"/>
             </StatusEffect>
+            <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.5" />
         </Effect>
 
-        <Effect minstrength="90" maxstrength="100" strengthchange="-0.05" >
+        <Effect minstrength="90" maxstrength="100" strengthchange="0.05" >
             <StatusEffect target="Character" Interval="0.1">
                 <Affliction identifier="organdamage" strength="10"/>
                 <Affliction identifier="bleeding" strength="8"/>
             </StatusEffect>
+            <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.5" />
         </Effect>
 
         <PeriodicEffect mininterval="1" maxinterval="5" minstrength="1" maxstrength="100">
@@ -308,7 +313,7 @@
                                  scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,72,36,180"/>
                 <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.2" particlespersecond="60" anglemin="0" anglemax="360"
                                  colormultiplier="204,195,141,180"/>
-                <Affliction identifier="oxygenlow" amount="8"/>
+                <Affliction identifier="lacerations" amount="4" DivideByLimbCount="True"/>
             </StatusEffect>
         </PeriodicEffect>
         <PeriodicEffect mininterval="1" maxinterval="3">
@@ -327,8 +332,8 @@
                                  scalemin="1.8" scalemax="2.2" drawontop="true" colormultiplier="255,72,36,180"/>
                 <ParticleEmitter particle="GlowDot" scalemin="1.0" scalemax="1.2" particlespersecond="60" anglemin="0" anglemax="360"
                                  colormultiplier="204,195,141,180"/>
-                <Affliction identifier="burn" DivideByLimbCount="True" amount="6.0" penetration="0.5"/>
-                <Affliction identifier="burn" DivideByLimbCount="True" amount="12.0" probability="0.1" penetration="0.5"/>
+                <Affliction identifier="burn" DivideByLimbCount="True" amount="3.0" penetration="0.5"/>
+                <Affliction identifier="burn" DivideByLimbCount="True" amount="6.0" probability="0.1" penetration="0.5"/>
             </StatusEffect>
         </PeriodicEffect>
         <PeriodicEffect mininterval="0.5" maxinterval="1.5" minstrength="15" maxstrength="100">
@@ -1631,8 +1636,8 @@
             <StatValue stattype="MovementSpeed" value="0.2"/>
             <StatValue stattype="AttackMultiplier" value="0.2"/>
             <StatValue stattype="TeamAttackMultiplier" value="-0.3"/>
-            <StatValue stattype="MeleeAttackMultiplier" value="1.0"/>
-            <StatValue stattype="MeleeAttackSpeed" value="0.4"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.8"/>
+            <StatValue stattype="MeleeAttackSpeed" value="0.2"/>
             <StatValue stattype="FlowResistance" value="0.9"/>
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Water_Heart.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -1920,6 +1925,10 @@
         <Effect minstrength="0" maxstrength="10">
             <StatValue stattype="MeleeAttackSpeed" value="0.45"/>
             <StatValue stattype="MeleeAttackMultiplier" value="0.3"/>
+            <StatusEffect target="Character" targettype="Limb" targetlimb="Torso" Interval="5.0" Duration="3.0">
+                <Conditional HasTag="ScarletMode_Open"/>
+                <Affliction identifier="bleeding" strength="6.5"/>
+            </StatusEffect>
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Tide_Bolt_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
@@ -3346,7 +3355,7 @@
                 minresistance="1.0" maxresistance="1.0">
             <StatusEffect target="Character" OxygenAvailable="1000.0"/>
             <StatValue stattype="MovementSpeed" value="0.1"/>
-            <StatValue stattype="MeleeAttackMultiplier" value="0.8"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.5"/>
             <StatValue stattype="FlowResistance" value="0.9"/>
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Memory_Of_Gensokyo.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
@@ -4386,7 +4395,7 @@
                 limbspecific="false" indicatorlimb="Torso" maxstrength="1"
                 resetbetweenrounds="true" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_ODM11_Aff_Event_Effect" minstrength="0" maxstrength="1"/>
-        <Effect minstrength="0" maxstrength="1" resistancefor="sym_unconsciousness,stun" minresistance="10.0" maxresistance="10.0" tag="provocative">
+        <Effect minstrength="0" maxstrength="1" resistancefor="sym_unconsciousness,stun" minresistance="2.0" maxresistance="2.0" tag="provocative">
             <StatValue stattype="ExplosionDamageMultiplier" value="0.3"/>
             <StatValue stattype="ExplosionRadiusMultiplier" value="0.3"/>
             <StatValue stattype="TeamAttackMultiplier" value="-0.2"/>
@@ -4929,6 +4938,60 @@
         <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM9_Curse_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
+
+    <!--心象解构器效果-->
+    <Affliction name="心象解构器效果" identifier="Touhou_Mental_Image_Deconstructor_Effect" description=""
+                type="Touhou_Mental_Image_Deconstructor_Effect"
+                isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="5"
+                affectmachines="true" showiconthreshold="100" showinhealthscannerthreshold="100"
+                iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_ODM10_Aff_Event_Effect" minstrength="0" maxstrength="5"/>
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn,stun" minresistance="-0.15" maxresistance="-0.15" strengthchange="-0.145" />
+        <Effect minstrength="1" maxstrength="5" strengthchange="-1" >
+            <StatusEffect target="Character" Interval="1.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Touhou_Mental_Image_Deconstructor_Effect_Delay_Damage" amount="10"/>
+            </StatusEffect>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM10_Aff_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--心象解构器延迟伤害-->
+    <Affliction name="心象解构器延迟伤害" identifier="Touhou_Mental_Image_Deconstructor_Effect_Delay_Damage" description=""
+                type="Touhou_Mental_Image_Deconstructor_Effect_Delay_Damage"
+                isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="3" resetbetweenrounds="true"
+                affectmachines="true" showiconthreshold="100" showinhealthscannerthreshold="100"
+                iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_ODM10_Aff_Event_Effect" minstrength="0" maxstrength="3"/>
+        <Effect minstrength="0" maxstrength="1" strengthchange="-0.5" >
+            <StatusEffect target="Character" disabledeltatime="true" Interval="1.0">
+                <Affliction identifier="lacerations" strength="1" penetration="0.1" dividebylimbcount="false"/>
+                <Affliction identifier="lacerations" strength="75" penetration="0.35" dividebylimbcount="true"/>
+                <Affliction identifier="burn" strength="25" penetration="0.35" dividebylimbcount="true"/>
+            </StatusEffect>
+            <StatusEffect target="Character" disabledeltatime="true" Interval="1.0">
+                <Explosion range="5.0" force="6.0" >
+                    <Affliction identifier="burn" strength="5"/>
+                    <Affliction identifier="lacerations" strength="5"/>
+                </Explosion>
+            </StatusEffect>
+        </Effect>
+        <Effect minstrength="1" maxstrength="3" strengthchange="-1" />
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM10_Aff_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--太阳花田手杖伤害增幅-->
+    <Affliction name="太阳花田手杖伤害增幅" identifier="Touhou_Sunflower_Field_Cane_Effect" description=""
+                type="Touhou_Sunflower_Field_Cane_Effect"
+                isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="1"
+                duration="1.0" affectmachines="true" showiconthreshold="100" showinhealthscannerthreshold="100"
+                iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_ODM10_Aff_Event_Effect" minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM10_Aff_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
 
 
 </Afflictions>

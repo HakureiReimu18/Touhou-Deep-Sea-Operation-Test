@@ -364,9 +364,9 @@
         <afflictiontype.damage>物理伤害</afflictiontype.damage>
         <afflictiontype.alieninfection>异星感染</afflictiontype.alieninfection>
     </Override>
-    <loadingscreentip>去试试九州武库和T.S.M Missions吧</loadingscreentip>
-    <loadingscreentip>去试试九州武库和T.S.M Missions吧</loadingscreentip>
-    <loadingscreentip>去试试九州武库和T.S.M Missions吧</loadingscreentip>
+    <loadingscreentip>去试试T.S.M Missions吧</loadingscreentip>
+    <loadingscreentip>去试试T.S.M Missions吧</loadingscreentip>
+    <loadingscreentip>去试试T.S.M Missions吧</loadingscreentip>
     <loadingscreentip>比起在仪式台从零开始积累材料，购买或者弹幕游戏能更快积累伊奘诺物质</loadingscreentip>
     <loadingscreentip>比起在仪式台从零开始积累材料，购买或者弹幕游戏能更快积累伊奘诺物质</loadingscreentip>
     <loadingscreentip>星界层金属尤其昂贵，但其炼金效率也相当高</loadingscreentip>
@@ -589,11 +589,11 @@
     <entitydescription.Touhou_Black_Hooked_Jade>放入潜水服的勾玉格内，提供移速加成和头部与躯干的抗性，与太古的勾玉-白同时装配时，触发额外效果</entitydescription.Touhou_Black_Hooked_Jade>
     <talentname.Gensokyo_Divinggear_Talent>幻想入的深海</talentname.Gensokyo_Divinggear_Talent>
     <talentdescription.Gensokyo_Divinggear_Talent>
-        \n当你身着幻想潜水服时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖20%‖end‖的概率减少‖color:gui.green‖25%‖end‖的伤害
-        \n当你身着境界潜水服时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖15%‖end‖的概率减少‖color:gui.green‖15%‖end‖的伤害
-        \n当你身着秘境潜水服时：勾玉提供的效果‖color:gui.yellow‖一般‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖15%‖end‖的概率减少‖color:gui.green‖10%‖end‖的伤害
-        \n当你身着魔力披纱时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖15%‖end‖的概率减少‖color:gui.green‖20%‖end‖的伤害
-        \n当你身着二色莲花蝶时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖10%‖end‖的概率减少‖color:gui.green‖20%‖end‖的伤害，
+        \n当你身着幻想潜水服时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖40%‖end‖的概率减少‖color:gui.green‖25%‖end‖受到的伤害
+        \n当你身着境界潜水服时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖25%‖end‖的概率减少‖color:gui.green‖15%‖end‖受到的伤害
+        \n当你身着秘境潜水服时：勾玉提供的效果‖color:gui.yellow‖一般‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖20%‖end‖的概率减少‖color:gui.green‖15%‖end‖受到的伤害
+        \n当你身着魔力披纱时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖30%‖end‖的概率减少‖color:gui.green‖20%‖end‖受到的伤害
+        \n当你身着二色莲花蝶时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖30%‖end‖的概率减少‖color:gui.green‖25%‖end‖受到的伤害，
         且受击有‖color:gui.green‖30%‖end‖的概率对攻击者造成‖color:gui.yellow‖梦消失‖end‖
         \n当你身着任意凭依武装时：勾玉提供的效果将被重新改写
         \n使用上述潜水服/防具时，会使‖color:gui.orange‖摩洛克基因‖end‖的效果‖color:gui.red‖减半‖end‖
@@ -687,7 +687,9 @@
     <entityname.Touhou_Waterwheel_Gun_Magazine>‖color:193,204,65,255‖水轮‖color:end‖</entityname.Touhou_Waterwheel_Gun_Magazine>
     <entitydescription.Touhou_Waterwheel_Gun_Magazine>水轮枪自带的运作水轮，没有它，水轮枪就无法正常运作。作为‖color:gui.yellow‖水轮枪‖end‖的弹药</entitydescription.Touhou_Waterwheel_Gun_Magazine>
     <entityname.Touhou_Sunflower_Field_Cane>太阳花田手杖</entityname.Touhou_Sunflower_Field_Cane>
-    <entitydescription.Touhou_Sunflower_Field_Cane>幽香在木卫二照顾花朵的手杖，独特的设计让手杖在木卫二上也能发出温暖的阳光。在其中放入异常的太阳花种子或三种花瓣，可以获得额外的效果</entitydescription.Touhou_Sunflower_Field_Cane>
+    <entitydescription.Touhou_Sunflower_Field_Cane>幽香在木卫二照顾花朵的手杖，独特的设计让手杖在木卫二上也能发出温暖的阳光。手杖里藏有一把教训那些不听话的家伙们的短剑，威力不大，但在她的手里不容小觑</entitydescription.Touhou_Sunflower_Field_Cane>
+    <entityname.Touhou_Sunflower_Field_Cane_Dagger>太阳花田杖剑</entityname.Touhou_Sunflower_Field_Cane_Dagger>
+    <entitydescription.Touhou_Sunflower_Field_Cane_Dagger>一把性质独特的杖剑，平时藏锋于手杖内，能增加手杖本身的威力，偶尔也可以单独取出威吓敌人</entitydescription.Touhou_Sunflower_Field_Cane_Dagger>
     <entityname.Pollution_Magician_Clothes01>被玷污的法袍</entityname.Pollution_Magician_Clothes01>
     <entitydescription.Pollution_Magician_Clothes01>用魔力布料缝制而成的法袍，这件显然是沾染了不洁的魔法</entitydescription.Pollution_Magician_Clothes01>
     <entityname.Pollution_Magician_Clothes01_Lunatic>被玷污的法袍</entityname.Pollution_Magician_Clothes01_Lunatic>
@@ -1542,8 +1544,8 @@
     <entityname.Touhou_Weapon_Holder>魔法武器置物架</entityname.Touhou_Weapon_Holder>
     <entitydescription.Touhou_Weapon_Holder>专为魔法武器准备的展示架</entitydescription.Touhou_Weapon_Holder>
     <entityname.Touhou_Blast_Gun>爆裂铳</entityname.Touhou_Blast_Gun>
-    <entitydescription.Touhou_Blast_Gun_Ammo>一把可以发射高爆射弹的武器，内部结构似乎已经被强行改造，刻上了不完整且不可逆的魔法回路。
-        使用‖color:gui.yellow‖爆裂铳弹匣‖end‖</entitydescription.Touhou_Blast_Gun_Ammo>
+    <entitydescription.Touhou_Blast_Gun>一把可以发射高爆射弹的武器，内部结构似乎已经被强行改造，刻上了不完整且不可逆的魔法回路。
+        使用‖color:gui.yellow‖爆裂铳弹匣‖end‖</entitydescription.Touhou_Blast_Gun>
     <entityname.Touhou_Blast_Gun_Ammo>爆裂铳弹匣</entityname.Touhou_Blast_Gun_Ammo>
     <entitydescription.Touhou_Blast_Gun_Ammo>内部爆炸性的能量被拘束在小小的弹匣中，十分危险。作为‖color:gui.yellow‖爆裂铳‖end‖的弹药</entitydescription.Touhou_Blast_Gun_Ammo>
     <entityname.Touhou_TSM_Twilight>同昏-改</entityname.Touhou_TSM_Twilight>
@@ -1575,7 +1577,7 @@
         使用‖color:gui.yellow‖腐化AWM心灵弹匣‖end‖</entitydescription.Touhou_TSM_Corrupted_AWM>
     <entityname.Touhou_TSM_Corrupted_AWM_Ammo>‖color:255,0,0,155‖腐化AWM心灵弹匣‖end‖</entityname.Touhou_TSM_Corrupted_AWM_Ammo>
     <entitydescription.Touhou_TSM_Corrupted_AWM_Ammo>被无形之术腐化的弹匣，极度危险。
-        作为‖color:gui.yellow‖原本武器的弹药、AWM心灵弹匣或腐化AWM‖end‖的弹药</entitydescription.Touhou_TSM_Corrupted_AWM_Ammo>
+        作为‖color:gui.yellow‖原本武器的弹药、AWM-改或腐化AWM‖end‖的弹药</entitydescription.Touhou_TSM_Corrupted_AWM_Ammo>
     <entityname.Touhou_TSM_AA12>AA12-改</entityname.Touhou_TSM_AA12>
     <entitydescription.Touhou_TSM_AA12>由九州武库支持的蓝图配方，加以炼金实验室改造而来，具备魔法武器的性质，同时兼容原本武器的常用设计。
         使用‖color:gui.yellow‖原本武器的弹药、AA12心灵弹匣或AA12元素弹匣‖end‖</entitydescription.Touhou_TSM_AA12>
@@ -1723,6 +1725,122 @@
         在特殊槽位中放入魔法武器使用的弹药后，将会消耗背包能量自动补充魔法武器弹药。启用背包本身的充能功能后，将为背包本体充能。为背包充能需要‖color:gui.yellow‖三种魔法武器充能箱‖end‖</entitydescription.Touhou_Experimental_Charging_Backpack>
 
 
+    <entityname.Touhou_Mental_Image_Deconstructor>‖color:245,179,188,255‖心象解构器‖color:end‖</entityname.Touhou_Mental_Image_Deconstructor>
+    <entitydescription.Touhou_Mental_Image_Deconstructor>心象解构器会解析目标无意识中的行动预演，干扰决策路径，使攻击变形、迟疑，甚至自我破坏。
+        这把武器命中的目标敌人会延迟受到伤害，重复命中会刷新延迟。
+        使用‖color:gui.yellow‖符文燧发弹、心象干涉弹或手炮子弹‖end‖</entitydescription.Touhou_Mental_Image_Deconstructor>
+    <entityname.Touhou_Mental_Image_Bullet01>‖color:245,179,188,255‖符文燧发弹‖color:end‖</entityname.Touhou_Mental_Image_Bullet01>
+    <entitydescription.Touhou_Mental_Image_Bullet01>传统弹丸。当认知失效时，仍有一部分问题需要用最原始的方式解决。作为‖color:gui.yellow‖心象解构器‖end‖的弹药。</entitydescription.Touhou_Mental_Image_Bullet01>
+    <entityname.Touhou_Mental_Image_Bullet02>‖color:245,179,188,255‖心象干涉弹‖color:end‖</entityname.Touhou_Mental_Image_Bullet02>
+    <entitydescription.Touhou_Mental_Image_Bullet02>以符文与精神媒质取代部分火药结构的特殊弹丸。“造成的伤害并不总是致命。”错觉往往如此。作为‖color:gui.yellow‖心象解构器‖end‖的弹药。</entitydescription.Touhou_Mental_Image_Bullet02>
+
+    <entityname.Touhou_Lost_Storage_Bag_Hided>隐藏的失落储物袋</entityname.Touhou_Lost_Storage_Bag_Hided>
+    <entitydescription.Touhou_Lost_Storage_Bag_Hided>里面似乎是某人的藏品，也许应该打开看看</entitydescription.Touhou_Lost_Storage_Bag_Hided>
+
+    <entityname.Touhou_Lost_Storage_Bag_Thief>盗窃者的失落储物袋</entityname.Touhou_Lost_Storage_Bag_Thief>
+    <entitydescription.Touhou_Lost_Storage_Bag_Thief>一些被魔法简单封锁的基础物资，在解构仪可以拆解出材料</entitydescription.Touhou_Lost_Storage_Bag_Thief>
+
+    <entityname.Touhou_Lost_Storage_Bag_Disciple>门徒的的失落储物袋</entityname.Touhou_Lost_Storage_Bag_Disciple>
+    <entitydescription.Touhou_Lost_Storage_Bag_Disciple>一些被魔法简单封锁的基础物资，在解构仪可以拆解出材料</entitydescription.Touhou_Lost_Storage_Bag_Disciple>
+
+    <entityname.Touhou_Lost_Storage_Bag_Caster>施法者的的失落储物袋</entityname.Touhou_Lost_Storage_Bag_Caster>
+    <entitydescription.Touhou_Lost_Storage_Bag_Caster>一些被魔法简单封锁的基础物资，在解构仪可以拆解出材料</entitydescription.Touhou_Lost_Storage_Bag_Caster>
+
+    <entityname.Touhou_Lunar_Combat_High_Frequency_Katana>‖color:156,158,161,255‖月战型高频刀‖color:end‖</entityname.Touhou_Lunar_Combat_High_Frequency_Katana>
+    <entitydescription.Touhou_Lunar_Combat_High_Frequency_Katana>伪月面战争留下的未知科技武器，经由简单改造后，交由魂魄妖梦使用。刀身的高频震动使它能轻易切开生物的护甲。同时拥有楼观剑和白楼剑的属性</entitydescription.Touhou_Lunar_Combat_High_Frequency_Katana>
+
+    <entityname.Touhou_Subconscious_Decoder>‖color:245,179,188,255‖潜意识解码器‖color:end‖</entityname.Touhou_Subconscious_Decoder>
+    <entitydescription.Touhou_Subconscious_Decoder>由木卫二上的特殊金属采集而来制成的装置，古明地觉可以借此回想起其他角色曾使用过的同级魔法武器。每5分钟才能充能一次</entitydescription.Touhou_Subconscious_Decoder>
+
+    <entityname.Touhou_Incredible_Headpiece>不可思议的头饰</entityname.Touhou_Incredible_Headpiece>
+    <entitydescription.Touhou_Incredible_Headpiece>完全隐形的头饰，用不可思议的魔法将其隐藏了起来，也不影响原有的外观</entitydescription.Touhou_Incredible_Headpiece>
+
+    <entityname.Touhou_Glass_Katana>玻璃刀</entityname.Touhou_Glass_Katana>
+    <entitydescription.Touhou_Glass_Katana>用魔法加固玻璃之后制成的长刀，对付未着装甲的敌人相当好用</entitydescription.Touhou_Glass_Katana>
+
+    <entityname.Touhou_Depth_Charge_Shell_Deployment_Normal>深水可投放炮塔-标准型</entityname.Touhou_Depth_Charge_Shell_Deployment_Normal>
+    <entitydescription.Touhou_Depth_Charge_Shell_Deployment_Normal>河童们研制的，可投放的悬浮炮塔，投放后3秒即可部署。炮塔持续200秒，但威力会逐渐减弱。需要在深水炸弹投放器中使用</entitydescription.Touhou_Depth_Charge_Shell_Deployment_Normal>
+
+
+
+
+
+
+    <!--临时武器-->
+    <entityname.Touhou_Elements_Book_Temporary>‖color:245,179,188,255‖临时武器-七曜魔导书‖color:end‖</entityname.Touhou_Elements_Book_Temporary>
+    <entitydescription.Touhou_Elements_Book_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Elements_Book_Temporary>
+    <entityname.Five_Elements_Alchemical_Locked_Temporary>‖color:245,179,188,255‖临时物品-需求物‖color:end‖</entityname.Five_Elements_Alchemical_Locked_Temporary>
+    <entitydescription.Five_Elements_Alchemical_Locked_Temporary>临时武器需要消耗的能量填充物</entitydescription.Five_Elements_Alchemical_Locked_Temporary>
+    <entityname.Touhou_Concentrated_Energy_Arc_Emitter_Temporary>‖color:245,179,188,255‖临时武器-聚能电弧发射器-手持型‖color:end‖</entityname.Touhou_Concentrated_Energy_Arc_Emitter_Temporary>
+    <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Temporary>
+    <entityname.Lightning_Kanameishi_Temporary>‖color:245,179,188,255‖临时物品-需求物‖color:end‖</entityname.Lightning_Kanameishi_Temporary>
+    <entitydescription.Lightning_Kanameishi_Temporary>临时武器需要消耗的能量填充物</entitydescription.Lightning_Kanameishi_Temporary>
+    <entityname.Touhou_Cyber_Homing_Amulet_Temporary>‖color:245,179,188,255‖临时武器-电子御扎‖color:end‖</entityname.Touhou_Cyber_Homing_Amulet_Temporary>
+    <entitydescription.Touhou_Cyber_Homing_Amulet_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Cyber_Homing_Amulet_Temporary>
+    <entityname.Touhou_Crimson_Moonlight_Temporary>‖color:245,179,188,255‖临时武器-绯色月下‖color:end‖</entityname.Touhou_Crimson_Moonlight_Temporary>
+    <entitydescription.Touhou_Crimson_Moonlight_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Crimson_Moonlight_Temporary>
+    <entityname.Touhou_Nue_Midnight_Temporary>‖color:245,179,188,255‖临时武器-午鵺‖color:end‖</entityname.Touhou_Nue_Midnight_Temporary>
+    <entitydescription.Touhou_Nue_Midnight_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Nue_Midnight_Temporary>
+    <entityname.Touhou_Frozen_Frog_Temporary>‖color:245,179,188,255‖临时武器-冻青蛙‖color:end‖</entityname.Touhou_Frozen_Frog_Temporary>
+    <entitydescription.Touhou_Frozen_Frog_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Frozen_Frog_Temporary>
+    <entityname.Touhou_Perfect_Snowflake_Temporary>‖color:245,179,188,255‖临时物品-需求物‖color:end‖</entityname.Touhou_Perfect_Snowflake_Temporary>
+    <entitydescription.Touhou_Perfect_Snowflake_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Perfect_Snowflake_Temporary>
+    <entityname.Touhou_Love_Maze_Temporary>‖color:245,179,188,255‖临时武器-恋之迷宫‖color:end‖</entityname.Touhou_Love_Maze_Temporary>
+    <entitydescription.Touhou_Love_Maze_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Love_Maze_Temporary>
+    <entityname.Touhou_Koishi_Knife_Temporary>‖color:245,179,188,255‖临时武器-恋恋的菜刀‖color:end‖</entityname.Touhou_Koishi_Knife_Temporary>
+    <entitydescription.Touhou_Koishi_Knife_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Koishi_Knife_Temporary>
+    <entityname.Touhou_Gohei_Reimu_Temporary>‖color:245,179,188,255‖临时武器-博丽的御币‖color:end‖</entityname.Touhou_Gohei_Reimu_Temporary>
+    <entitydescription.Touhou_Gohei_Reimu_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Gohei_Reimu_Temporary>
+    <entityname.Touhou_Alice_Magic_Book_Temporary>‖color:245,179,188,255‖临时武器-魔法之国的魔导书‖color:end‖</entityname.Touhou_Alice_Magic_Book_Temporary>
+    <entitydescription.Touhou_Alice_Magic_Book_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Alice_Magic_Book_Temporary>
+    <entityname.Touhou_Sakuya_Knife_Ether_Temporary>‖color:245,179,188,255‖临时武器-以太飞刀‖color:end‖</entityname.Touhou_Sakuya_Knife_Ether_Temporary>
+    <entitydescription.Touhou_Sakuya_Knife_Ether_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Sakuya_Knife_Ether_Temporary>
+    <entityname.Touhou_Moriya_Shrine_Staff_Temporary>‖color:245,179,188,255‖临时武器-八荣铃杖‖color:end‖</entityname.Touhou_Moriya_Shrine_Staff_Temporary>
+    <entitydescription.Touhou_Moriya_Shrine_Staff_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Moriya_Shrine_Staff_Temporary>
+    <entityname.Touhou_Yukari_Folding_Fan_Temporary>‖color:245,179,188,255‖临时武器-八云紫的折扇‖color:end‖</entityname.Touhou_Yukari_Folding_Fan_Temporary>
+    <entitydescription.Touhou_Yukari_Folding_Fan_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Yukari_Folding_Fan_Temporary>
+    <entityname.Touhou_Yukari_Folding_Fan_Ammo_Temporary>‖color:245,179,188,255‖临时物品-需求物‖color:end‖</entityname.Touhou_Yukari_Folding_Fan_Ammo_Temporary>
+    <entitydescription.Touhou_Yukari_Folding_Fan_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Yukari_Folding_Fan_Ammo_Temporary>
+    <entityname.Touhou_Veterinary_Steel_Claws_Temporary>‖color:245,179,188,255‖临时武器-兽用钢爪‖color:end‖</entityname.Touhou_Veterinary_Steel_Claws_Temporary>
+    <entitydescription.Touhou_Veterinary_Steel_Claws_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Veterinary_Steel_Claws_Temporary>
+    <entityname.Touhou_Maple_Leaf_Revolver_Temporary>‖color:245,179,188,255‖临时武器-枫叶转轮手枪‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver_Temporary>
+    <entitydescription.Touhou_Maple_Leaf_Revolver_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Maple_Leaf_Revolver_Temporary>
+    <entityname.Touhou_Maple_Leaf_Revolver_Bullet_Temporary>‖color:245,179,188,255‖临时物品-旋风子弹‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver_Bullet_Temporary>
+    <entitydescription.Touhou_Maple_Leaf_Revolver_Bullet_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Maple_Leaf_Revolver_Bullet_Temporary>
+    <entityname.Touhou_Night_Dance_Temporary>‖color:245,179,188,255‖临时武器-夜晚之舞‖color:end‖</entityname.Touhou_Night_Dance_Temporary>
+    <entitydescription.Touhou_Night_Dance_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Night_Dance_Temporary>
+    <entityname.Touhou_Night_Dance_Ammo_Temporary>‖color:245,179,188,255‖临时物品-夜晚之雾‖color:end‖</entityname.Touhou_Night_Dance_Ammo_Temporary>
+    <entitydescription.Touhou_Night_Dance_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Night_Dance_Ammo_Temporary>
+    <entityname.Touhou_Noh_Performance_Fan_Temporary>‖color:245,179,188,255‖临时武器-能乐表演扇‖color:end‖</entityname.Touhou_Noh_Performance_Fan_Temporary>
+    <entitydescription.Touhou_Noh_Performance_Fan_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Noh_Performance_Fan_Temporary>
+    <entityname.Touhou_Noh_Performance_Fan_Ammo_Temporary>‖color:245,179,188,255‖临时物品-喜悦之火‖color:end‖</entityname.Touhou_Noh_Performance_Fan_Ammo_Temporary>
+    <entitydescription.Touhou_Noh_Performance_Fan_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Noh_Performance_Fan_Ammo_Temporary>
+    <entityname.Touhou_Whisper_Half_Phantom_Temporary>‖color:245,179,188,255‖临时武器-半灵低语‖color:end‖</entityname.Touhou_Whisper_Half_Phantom_Temporary>
+    <entitydescription.Touhou_Whisper_Half_Phantom_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Whisper_Half_Phantom_Temporary>
+    <entityname.Touhou_Whisper_Half_Phantom_Ammo01_Temporary>‖color:245,179,188,255‖临时物品-低语弹匣‖color:end‖</entityname.Touhou_Whisper_Half_Phantom_Ammo01_Temporary>
+    <entitydescription.Touhou_Whisper_Half_Phantom_Ammo01_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Whisper_Half_Phantom_Ammo01_Temporary>
+    <entityname.Touhou_Prayer_Wind_Bracer_Temporary>‖color:245,179,188,255‖临时武器-祈风之腕‖color:end‖</entityname.Touhou_Prayer_Wind_Bracer_Temporary>
+    <entitydescription.Touhou_Prayer_Wind_Bracer_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Prayer_Wind_Bracer_Temporary>
+    <entityname.Touhou_Prayer_Wind_Bracer_Ammo_Temporary>‖color:245,179,188,255‖临时物品-祈风核心‖color:end‖</entityname.Touhou_Prayer_Wind_Bracer_Ammo_Temporary>
+    <entitydescription.Touhou_Prayer_Wind_Bracer_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Prayer_Wind_Bracer_Ammo_Temporary>
+    <entityname.Touhou_Petal_Tempest_Temporary>‖color:245,179,188,255‖临时武器-花瓣暴风‖color:end‖</entityname.Touhou_Petal_Tempest_Temporary>
+    <entitydescription.Touhou_Petal_Tempest_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Petal_Tempest_Temporary>
+    <entityname.Touhou_Petal_Tempest_Ammo_Temporary>‖color:245,179,188,255‖临时物品-花瓣暴风弹匣‖color:end‖</entityname.Touhou_Petal_Tempest_Ammo_Temporary>
+    <entitydescription.Touhou_Petal_Tempest_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Petal_Tempest_Ammo_Temporary>
+    <entityname.Touhou_Lunacy_Phosphor_Torch_Temporary>‖color:245,179,188,255‖临时武器-狂月磷火‖color:end‖</entityname.Touhou_Lunacy_Phosphor_Torch_Temporary>
+    <entitydescription.Touhou_Lunacy_Phosphor_Torch_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Lunacy_Phosphor_Torch_Temporary>
+    <entityname.Touhou_Lunacy_Phosphor_Torch_Ammo_Temporary>‖color:245,179,188,255‖临时物品-磷火增压罐‖color:end‖</entityname.Touhou_Lunacy_Phosphor_Torch_Ammo_Temporary>
+    <entitydescription.Touhou_Lunacy_Phosphor_Torch_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Lunacy_Phosphor_Torch_Ammo_Temporary>
+    <entityname.Touhou_Sun_Dart_Phase_Gun_Temporary>‖color:245,179,188,255‖临时武器-日耀穿梭枪‖color:end‖</entityname.Touhou_Sun_Dart_Phase_Gun_Temporary>
+    <entitydescription.Touhou_Sun_Dart_Phase_Gun_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Sun_Dart_Phase_Gun_Temporary>
+    <entityname.Touhou_Sun_Dart_Phase_Gun_Ammo_Temporary>‖color:245,179,188,255‖临时物品-日耀相位符文‖color:end‖</entityname.Touhou_Sun_Dart_Phase_Gun_Ammo_Temporary>
+    <entitydescription.Touhou_Sun_Dart_Phase_Gun_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Sun_Dart_Phase_Gun_Ammo_Temporary>
+    <entityname.Touhou_Silent_Moon_Chakram_Temporary>‖color:245,179,188,255‖临时武器-无声月轮‖color:end‖</entityname.Touhou_Silent_Moon_Chakram_Temporary>
+    <entitydescription.Touhou_Silent_Moon_Chakram_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Silent_Moon_Chakram_Temporary>
+    <entityname.Touhou_Astrolite_Split_Caster_Temporary>‖color:245,179,188,255‖临时武器-星夜分光炮‖color:end‖</entityname.Touhou_Astrolite_Split_Caster_Temporary>
+    <entitydescription.Touhou_Astrolite_Split_Caster_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Astrolite_Split_Caster_Temporary>
+    <entityname.Touhou_Astrolite_Split_Caster_Ammo_Temporary>‖color:245,179,188,255‖临时物品-星辉相位棱晶‖color:end‖</entityname.Touhou_Astrolite_Split_Caster_Ammo_Temporary>
+    <entitydescription.Touhou_Astrolite_Split_Caster_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Astrolite_Split_Caster_Ammo_Temporary>
 
 
 

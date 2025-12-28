@@ -100,7 +100,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Spring_Bearer_Fairy"/>
-                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.3"/>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.5"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>
@@ -111,7 +111,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Spring_Bearer_Fairy"/>
                 <AbilityConditionHasTalent identifier="Touhou_Yousei_Alliance"/>
-                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.3"/>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.5"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1"/>

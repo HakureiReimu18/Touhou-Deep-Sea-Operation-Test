@@ -29,9 +29,9 @@
             faction="Touhou_Gensokyo"
             BiomeGate="Deny">
 
-        <AreaSettings zone="1" commonness="0.55"/>
+        <AreaSettings zone="1" commonness="0.5"/>
         <AreaSettings zone="2" commonness="0.9"/>
-        <AreaSettings zone="3" commonness="0.55"/>
+        <AreaSettings zone="3" commonness="0.45"/>
         <AreaSettings zone="4" commonness="0.4"/>
         <Symbol texture="%ModDir%/Images/Missions/Touhou_Temporary_Shelter.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
         <RadiationSymbol texture="%ModDir%/Images/Missions/Touhou_Temporary_Shelter.png" sourcerect="0,0,128,128" color="245,105,105"/>

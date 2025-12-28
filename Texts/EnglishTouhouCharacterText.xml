@@ -42,12 +42,19 @@
     <entitydescription.Youmu_Skirt>‖color:156,158,161,255‖A gardener working at Hakugyokurou. Half-human, half-phantom—half alive and half dead, half corporeal and half ethereal. A half-and-half being… but she does wield two swords.\n— “Immaterial and Missing Power”‖color:end‖\n(Built-in scanner slot)</entitydescription.Youmu_Skirt>
     <entityname.Youmu_Skirt_Plus>‖color:156,158,161,255‖Youmu Outfit+ (Gardener Skirt)‖end‖</entityname.Youmu_Skirt_Plus>
     <entitydescription.Youmu_Skirt_Plus>‖color:156,158,161,255‖A gardener working at Hakugyokurou. Half-human, half-phantom—half alive and half dead, half corporeal and half ethereal. A half-and-half being… but she does wield two swords.\n— “Immaterial and Missing Power”‖color:end‖\n(Built-in scanner slot)</entitydescription.Youmu_Skirt_Plus>
+    <entityname.Youmu_gear_Christmas>‖color:156,158,161,255‖Youmu's Outfit (Christmas)‖end‖</entityname.Youmu_gear_Christmas>
+    <entitydescription.Youmu_gear_Christmas>‖color:156,158,161,255‖A gardener working at Hakugyokurou. Half-human, half-phantom—half alive and half dead, half corporeal and half ethereal. A half-and-half being… but she does wield two swords.\n— “Immaterial and Missing Power”‖color:end‖\n(Built-in scanner slot)</entitydescription.Youmu_gear_Christmas>
+    <entityname.Youmu_Plus_Christmas>‖color:156,158,161,255‖Youmu's Outfit+ (Christmas)‖end‖</entityname.Youmu_Plus_Christmas>
+    <entitydescription.Youmu_Plus_Christmas>‖color:156,158,161,255‖A gardener working at Hakugyokurou. Half-human, half-phantom—half alive and half dead, half corporeal and half ethereal. A half-and-half being… but she does wield two swords.\n— “Immaterial and Missing Power”‖color:end‖\n(Built-in scanner slot)</entitydescription.Youmu_Plus_Christmas>
+    <entityname.Touhou_Youmu_Christmas_Bow>‖color:156,158,161,255‖Youmu's Christmas Ribbon‖end‖</entityname.Touhou_Youmu_Christmas_Bow>
+    <entitydescription.Touhou_Youmu_Christmas_Bow>A ribbon that Youmu had custom-made for herself to celebrate the arrival of Christmas</entitydescription.Touhou_Youmu_Christmas_Bow>
+
     <talentname.Life_And_Death_Half_Half>Life &amp; Death Half &amp; Half</talentname.Life_And_Death_Half_Half>
     <talentdescription.Life_And_Death_Half_Half>When wearing ‖color:gui.orange‖Youmu Outfit+‖end‖:
-        The lower your health, the lower the damage you deal, to a minimum of ‖color:gui.red‖15%‖end‖.
+        The lower your health, the lower the damage you deal, maximum reduction of ‖color:gui.red‖15%‖end‖.
         Increase ‖color:gui.orange‖Melee Damage‖end‖ by ‖color:gui.green‖30%‖end‖.
         Increase ‖color:gui.orange‖Walking Speed‖end‖ by ‖color:gui.green‖15%‖end‖.
-        Based on your Weapons skill, increase ‖color:gui.orange‖Ranged Attack Speed‖end‖ by an amount equal to ‖color:gui.green‖5%‖end‖ of that value.
+        Based on your Weapons skill, increase ‖color:gui.orange‖Ranged Attack Speed And Damage‖end‖ by an amount equal to ‖color:gui.green‖5%‖end‖ of that value.
         \nWhile holding both ‖color:gui.red‖Hakurouken‖end‖ and ‖color:gui.red‖Roukanken‖end‖, gain a large damage bonus and further increased walking speed.</talentdescription.Life_And_Death_Half_Half>
     <afflictionname.Ancient_Temple>Half-Human Half-Phantom Gardener</afflictionname.Ancient_Temple>
     <afflictiondescription.Ancient_Temple>There’s almost nothing she can’t cut.</afflictiondescription.Ancient_Temple>
@@ -223,7 +230,6 @@
         • Melee attackers briefly flee after striking you.
         • Ranged attack speed ‖color:gui.red‖−15%‖end‖.
         • Effect of ‖color:gui.orange‖Elegance Stripping‖end‖ ‖color:gui.green‖+35%‖end‖.
-        • Max health ‖color:gui.green‖+15%‖end‖.
         • Resistance to ‖color:gui.orange‖Elegance Stripping‖end‖ ‖color:gui.green‖+40%‖end‖.
         • Hitting a target afflicted with Elegance Stripping also slows them.
         • Eating a heavenly peach reduces all damage taken by 50% for ‖color:gui.green‖10 s‖end‖ (1-minute cooldown).
@@ -265,7 +271,7 @@
     <talentdescription.Lord_Of_Flowers>When you are wearing Yuuka Outfit+,
         resistance to poison and bleeding is increased
         damage dealt to nonhuman creatures is reduced by ‖color:gui.red‖10%‖end‖
-        melee attack damage is increased by ‖color:gui.green‖40%‖end‖
+        melee attack damage is increased by ‖color:gui.green‖30%‖end‖
         Each round has a ‖color:gui.green‖50%‖end‖ chance to obtain a Sunflower Seed. The sunflower randomly drops different petals; each petal, when used, grants a different bonus:
         Sharp Petal: increases ‖color:gui.green‖10%‖end‖ ranged damage and reduces ‖color:gui.green‖10%‖end‖ damage taken
         Light Petal: increases ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack speed and movement speed‖end‖
@@ -498,6 +504,8 @@
     <entitydescription.Alice_gear_Wedding>Alice lives alone in the Margatroid Manor of the Forest of Magic. She enjoys making dolls and is working on creating self-maintaining dolls, as well as writing grimoires. Although she seldom goes out, she performs doll shows at festivals.</entitydescription.Alice_gear_Wedding>
     <entityname.Alice_Plus_Wedding>‖color:150,150,255,255‖Alice's Outfit+(Wedding)‖end‖</entityname.Alice_Plus_Wedding>
     <entitydescription.Alice_Plus_Wedding>Alice lives alone in the Margatroid Manor of the Forest of Magic. She enjoys making dolls and is working on creating self-maintaining dolls, as well as writing grimoires. Although she seldom goes out, she performs doll shows at festivals.</entitydescription.Alice_Plus_Wedding>
+    <entityname.Alice_Headpiece>‖color:150,150,255,255‖Alice's Bridal Headpiece‖end‖</entityname.Alice_Headpiece>
+    <entitydescription.Alice_Headpiece>An accessory from a dress that Alice had custom-made a long time ago, quite exquisite</entitydescription.Alice_Headpiece>
     <talentname.AliceTalent>Doll Judge</talentname.AliceTalent>
     <talentdescription.AliceTalent>When wearing Alice Outfit+:
         \n‖color:gui.orange‖Walk speed‖end‖ –‖color:gui.red‖10%‖end‖.
@@ -573,7 +581,7 @@
 <entitydescription.Star_Plus>She is the Starlight Fairy, and no one knows when she began residing in Gensokyo. Together with Sunny Milk and Lunasa Prismriver, she is known as one of the Three Fairies of Light.</entitydescription.Star_Plus>
 <talentname.StarTalent>The Radiant Fairy</talentname.StarTalent>
 <talentdescription.StarTalent>When you are wearing Star's Outfit+,
-        \nDecrease ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖maximum health‖end‖.
+        \nDecrease ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖maximum health‖end‖.
         \nYou can sense the location of living creatures around you.
         After a long time without taking damage, increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖maximum health‖end‖, reduce damage taken by ‖color:gui.green‖20%‖end‖, and significantly increase health recovery speed.
         \nEnemies who have dealt damage to you:
@@ -631,7 +639,7 @@
         Wearing a talisman also gives you a random miracle.
         Twice per cycle, when a crewmate gains at least one skill point, you have a ‖color:gui.green‖25%‖end‖ chance to receive a random miracle. This effect has a cooldown of ‖color:gui.green‖1‖end‖ minute regardless of whether it triggers successfully.
         When you have any miracle, the damage taken is reduced by ‖color:gui.green‖10%‖end‖, and your ‖color:gui.orange‖maximum health‖end‖ is increased by ‖color:gui.green‖10%‖end‖.
-        The lower your health, the more damage you take. This can increase damage taken by up to ‖color:gui.green‖25%‖end‖.
+        The lower your health, the more damage you take. This can increase damage taken by up to ‖color:gui.red‖25%‖end‖.
       \nMiracles:
         ‖color:gui.red‖Miracle of the Stars‖end‖: Increases ‖color:gui.orange‖skill acquisition speed‖end‖ by ‖color:gui.green‖50%‖end‖ and raises ‖color:gui.orange‖skill level‖end‖ by ‖color:gui.green‖10%‖end‖.
         ‖color:gui.red‖Miracle of the Moon‖end‖: Increases ‖color:gui.orange‖repair speed and ship repair speed‖end‖ by ‖color:gui.green‖50%‖end‖ and raises ‖color:gui.orange‖stun resistance‖end‖ by ‖color:gui.green‖15%‖end‖.
@@ -850,7 +858,7 @@
         +‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖swim speed‖end‖
         Slowly recovers from ‖color:gui.yellow‖oxygen deprivation‖end‖
         After being attacked, briefly reduces the attacker’s ‖color:gui.orange‖attack damage‖end‖
-        When HP is below ‖color:gui.green‖30%‖end‖, incoming damage –‖color:gui.green‖20%‖end‖
+        When HP is below ‖color:gui.green‖50%‖end‖, incoming damage –‖color:gui.green‖20%‖end‖
         Using ‖color:gui.orange‖herbal medicine or candy‖end‖ on any creature grants +‖color:gui.green‖10‖end‖ HP for one round
         Grants nearby players a buff:
         +‖color:gui.green‖15%‖end‖ medicine effectiveness, +‖color:gui.green‖10%‖end‖ ‖color:gui.yellow‖opioid addiction, drug addiction, and oxygen deprivation resistance‖end‖.
@@ -1012,6 +1020,6 @@
     <talentname.MRE_Satori>Bleeding Effect – Komeiji Satori</talentname.MRE_Satori>
     <talentdescription.MRE_Lilywhite>Effective while wearing the Satori Outfit+. During Mind Reading, allows gaining the exclusive weapon effects of other characters.</talentdescription.MRE_Lilywhite>
     <talentname.MRE_Satori>Bleeding Effect – Komeiji Satori</talentname.MRE_Satori>
-    <talentdescription.MRE_Lilywhite>Only effective while wearing ‖color:gui.red‖Satori Outfit+‖end‖. During ‖color:gui.yellow‖Mind Reading‖end‖, allows gaining the unique weapon effects of other characters.</talentdescription.MRE_Lilywhite>
+    <talentdescription.MRE_Lilywhite>Only effective while wearing ‖color:gui.red‖Satori Outfit+‖end‖. Allows gaining the unique weapon effects of other characters.</talentdescription.MRE_Lilywhite>
 
 </infotexts>

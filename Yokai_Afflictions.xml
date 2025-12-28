@@ -246,8 +246,7 @@
             maxstrength="10"
             hideiconafterdelay="true"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="10" resistancefor="stun,sym_unconsciousness" minresistance="10.0" maxresistance="10.0"
-                minskillmultiplier="1.5" maxskillmultiplier="1.5" strengthchange="-1">
+        <Effect minstrength="0" maxstrength="10" minskillmultiplier="1.5" maxskillmultiplier="1.5" strengthchange="-1">
             <StatValue stattype="AttackMultiplier" value="-0.25"/>
             <StatusEffect target="Character">
                 <ParticleEmitter particle="Tenshi_Peach_Effect" particleamount="3" anglemin="0" anglemax="360" ColorMultiplier="255,55,205,255"

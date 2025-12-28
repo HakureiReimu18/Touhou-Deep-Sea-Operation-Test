@@ -79,13 +79,13 @@
     <talentdescription.MEID_Unlocked>When crafting magic-related items, there is a chance to not consume one of the required materials. Unlocks recipe: ‖color:gui.orange‖MEID‖end‖</talentdescription.MEID_Unlocked>
 
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect01>Fantasy Entry – Patchouli</afflictionname.Gensokyo_Divinggear_Unlocked_Effect01>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>Reduce friendly fire by 15% and increase all five elemental damages by 15%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>Reduce friendly fire by 15% and increase all five elemental damages by 10%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect02>Fantasy Entry – Marisa</afflictionname.Gensokyo_Divinggear_Unlocked_Effect02>
     <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>Reduce friendly fire by 15%; slightly increases all skills, especially magic ability.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect03>Fantasy Entry – Flandre</afflictionname.Gensokyo_Divinggear_Unlocked_Effect03>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>Reduce friendly fire by 15%; increase max HP by 20% based on magic skill, up to 40%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>Reduce friendly fire by 15%; +‖color:gui.green‖40%‖end‖ burn resistance. increase max HP by 10% based on magic skill, up to 20%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect04>Fantasy Entry – Alice</afflictionname.Gensokyo_Divinggear_Unlocked_Effect04>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>Reduce friendly fire by 15%; when controlling dolls, gain 20% physical and burn resistance and are harder to detect.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>Reduce friendly fire by 15%; Gain 20% physical and burn resistance and are harder to detect.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect05>Fantasy Entry – Emma</afflictionname.Gensokyo_Divinggear_Unlocked_Effect05>
     <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>Reduce friendly fire by 15%; increase skill levels by 40%, +15% max HP.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>
 <!--幻想入爱丽丝未完成-->
@@ -218,7 +218,7 @@
     <talentdescription.Talents_Yokai_Primary15>Each creature killed adds ‖color:gui.green‖1‖end‖ count. Reaching certain counts grants effects:
         ‖color:gui.green‖140‖end‖: +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖max HP‖end‖ and +‖color:gui.green‖5%‖end‖ ‖color:gui.orange‖physical resistance (hands)‖end‖.
         ‖color:gui.green‖280‖end‖: Slightly accelerate recovery of ‖color:gui.yellow‖physical damage and bleeding‖end‖; can drag creatures at full speed when a crew member is unconscious.
-        ‖color:gui.green‖420‖end‖: +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖projectile damage‖end‖.
+        ‖color:gui.green‖420‖end‖: +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Danmu projectile damage‖end‖.
     </talentdescription.Talents_Yokai_Primary15>
     <talentname.Talents_Yokai_Primary16>Rising Tide</talentname.Talents_Yokai_Primary16>
     <talentdescription.Talents_Yokai_Primary16>Based on ‖color:gui.green‖5%‖end‖ of current ‖color:gui.orange‖skill levels‖end‖, gain effects up to ‖color:gui.green‖15%‖end‖:
