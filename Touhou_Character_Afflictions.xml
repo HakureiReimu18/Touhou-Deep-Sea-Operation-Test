@@ -1263,7 +1263,7 @@
     <Affliction identifier="Younger_Sister_Of_Scarlet" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
                 hideiconafterdelay="false" maxstrength="10"
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
-        <Effect minstrength="0" maxstrength="10" resistancefor="damage" minresistance="-0.3" maxresistance="-0.3">
+        <Effect minstrength="0" maxstrength="10" >
             <StatusEffect target="Character" Interval="1.0" disabledeltatime="true" CanGiveMedicalSkill="false">
                 <Conditional bleeding="gt 0"/>
                 <Conditional bloodloss="gt 0"/>
@@ -1275,7 +1275,7 @@
                 <Conditional bloodloss="gt 0"/>
                 <ReduceAffliction type="bloodloss" strength="0.2"/>
             </StatusEffect>
-            <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.2"/>
+<!--            <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.2"/>-->
             <StatValue stattype="MedicalItemApplyingMultiplier" value="-0.2"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Younger_Sister_Of_Scarlet.png" sourcerect="0,0,128,128" color="255,255,255,255"/>

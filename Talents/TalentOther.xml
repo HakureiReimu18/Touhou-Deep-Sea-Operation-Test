@@ -392,6 +392,60 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.9"/>
             </Abilities>
         </AbilityGroupEffect>
+
+        <!--拯救者天赋-->
+        <AbilityGroupInterval Interval="1.0">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Savior"/>
+                <AbilityConditionIsAiming weapontype="ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="stun" multiplier="0.8"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Savior"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Savior_Mod_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Savior_Mod_Attack_Effect" strength="10.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Savior"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Savior_Mod_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionServerRandom randomchance="0.4"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="UseTarget" disabledeltatime="true" >
+                            <Explosion range="300.0" force="4.0" severlimbsprobability="0.2" smoke="false" flash="false"
+                                       sparks="false" penetration="0.1">
+                                <Affliction identifier="explosiondamage" strength="5"/>
+                                <Affliction identifier="burn" strength="5"/>
+                            </Explosion>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--腐化拯救者天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Corrupted_Savior"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Corrupted_Savior_Mod_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.5"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <!--解锁腐化武器-->
@@ -510,7 +564,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Leaves_Thorns"/>
                 <AbilityConditionAttackData tags="Touhou_Leaves_Thorns_Bullet" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter>
+                <AbilityConditionCharacter targetabilitytarget="true">
                     <Conditional HealthPercentage="gte 100"/>
                 </AbilityConditionCharacter>
             </Conditions>
@@ -522,7 +576,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Leaves_Thorns"/>
                 <AbilityConditionAttackData tags="Touhou_Leaves_Thorns_Bullet" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter>
+                <AbilityConditionCharacter targetabilitytarget="true">
                     <Conditional HealthPercentage="lte 90"/>
                     <Conditional HealthPercentage="gte 70"/>
                 </AbilityConditionCharacter>
@@ -535,7 +589,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Leaves_Thorns"/>
                 <AbilityConditionAttackData tags="Touhou_Leaves_Thorns_Bullet" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter>
+                <AbilityConditionCharacter targetabilitytarget="true">
                     <Conditional HealthPercentage="lte 70"/>
                     <Conditional HealthPercentage="gte 50"/>
                 </AbilityConditionCharacter>
@@ -548,7 +602,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Leaves_Thorns"/>
                 <AbilityConditionAttackData tags="Touhou_Leaves_Thorns_Bullet" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter>
+                <AbilityConditionCharacter targetabilitytarget="true">
                     <Conditional HealthPercentage="lte 50"/>
                     <Conditional HealthPercentage="gte 30"/>
                 </AbilityConditionCharacter>
@@ -561,7 +615,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Leaves_Thorns"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter>
+                <AbilityConditionCharacter targetabilitytarget="true">
                     <Conditional HealthPercentage="lte 30"/>
                 </AbilityConditionCharacter>
             </Conditions>
@@ -613,10 +667,10 @@
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
-                        <StatusEffect type="OnAbility" target="UseTarget" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                        <StatusEffect type="OnAbility" target="UseTarget" disabledeltatime="true" >
                             <Explosion range="300.0" force="4.0" severlimbsprobability="0.2" smoke="false" flash="false"
                                        sparks="false" penetration="0.1">
-                                <Affliction identifier="explosiondamage" strength="5"/>
+                                <Affliction identifier="explosiondamage" strength="7.5"/>
                             </Explosion>
                         </StatusEffect>
                     </StatusEffects>
@@ -628,7 +682,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Maskwheel_Resonator_Rifle"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter targettype="Enemy">
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true">
                     <Conditional Touhou_Lost_Dream="gt 1"/>
                 </AbilityConditionCharacter>
             </Conditions>
@@ -640,7 +694,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Maskwheel_Resonator_Rifle"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter targettype="Enemy">
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true">
                     <Conditional Ancient_Sorrow_Terror="gt 1"/>
                 </AbilityConditionCharacter>
             </Conditions>
@@ -652,7 +706,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Maskwheel_Resonator_Rifle"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter targettype="Enemy">
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true">
                     <Conditional Sleepless_Nightmare="gt 1"/>
                 </AbilityConditionCharacter>
             </Conditions>
@@ -664,7 +718,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Maskwheel_Resonator_Rifle"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter targettype="Enemy">
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true">
                     <Conditional Touhou_Weakness="gt 0.2"/>
                 </AbilityConditionCharacter>
             </Conditions>
@@ -677,7 +731,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Superconducting_Electromagnetic_Gun"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter targettype="Enemy">
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true">
                     <Conditional Touhou_Superconducting_Electromagnetic_Gun_Effect="gt 0"/>
                 </AbilityConditionCharacter>
             </Conditions>
@@ -721,7 +775,7 @@
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Mental_Image_Deconstructor"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
-                <AbilityConditionCharacter targettype="Enemy" />
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true" />
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Touhou_Mental_Image_Deconstructor_Effect" strength="5"/>
@@ -2589,15 +2643,6 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAffliction afflictionidentifiers="gunshotwound" addedmultiplier="0.15"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttackResult">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Lunatic_Moon_Rabbit"/>
-                <AbilityConditionAttackResult targettypes="Enemy" afflictions="gunshotwound"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityGiveAffliction affliction="psychosis" strength="5.0"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

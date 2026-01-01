@@ -619,6 +619,10 @@
                 <Affliction identifier="Touhou_Reiki_Stability" amount="40"/>
                 <Affliction identifier="chemaddiction" amount="2"/>
             </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget">
+                <Conditional Reiki_Side_Effect="gt 40"/>
+                <Affliction identifier="Touhou_Reiki_Stability" amount="80"/>
+            </StatusEffect>
             <StatusEffect type="OnSuccess" target="UseTarget">
                 <Conditional entitytype="eq Character"/>
                 <Sound file="Content/Items/Medical/Syringe.ogg" range="500"/>
@@ -1330,7 +1334,7 @@
 
     <!--永远亭外敷药箱-->
     <Item name="永远亭外敷药箱" identifier="Touhou_External_Medicine_Box" tags="smallitem,medical,Touhou_Magic_Item,Touhou_Magic_Medical"
-          subcategory="Touhou" category="medical" Health="100"
+          subcategory="Touhou" category="medical" Health="80"
           cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="2"
           scale="0.25" useinhealthinterface="true" RequireAimToUse="True">
         <PreferredContainer primary="medcab" secondary="medcontainer"/>

@@ -32,7 +32,7 @@
     <!--灵气紊乱-->
     <Affliction name="灵气紊乱" identifier="Reiki_Side_Effect" type="Reiki_Side_Effect" targets="human" limbspecific="false" indicatorlimb="Head"
                 showiconthreshold="16"
-                showinhealthscannerthreshold="16" treatmentthreshold="39" maxstrength="100" affectmachines="false" karmachangeonapplied="-0.1"
+                showinhealthscannerthreshold="8" treatmentthreshold="39" maxstrength="100" affectmachines="false" karmachangeonapplied="-0.1"
                 healcostmultiplier="2.85" MedicalSkillGain="0">
         <Description textidentifier="afflictiondescription.Reiki_Side_Effect_Low" minstrength="0" maxstrength="40"/>
         <Description textidentifier="afflictiondescription.Reiki_Side_Effect_High" minstrength="40" maxstrength="100"/>
@@ -371,16 +371,15 @@
 
     <!--无念-->
     <Affliction name="无念" identifier="Touhou_Water_Heart" description="" type="Touhou_Water_Heart" targets="human" isbuff="true"
-                limbspecific="false" indicatorlimb="Head" maxstrength="10"
+                limbspecific="false" indicatorlimb="Head" maxstrength="10" duration="5.0"
                 showiconthreshold="100" showinhealthscannerthreshold="100" hideiconafterdelay="true" affectmachines="false"
                 iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_Water_Heart" minstrength="0" maxstrength="10"/>
         <Effect minstrength="0" maxstrength="10"
-                strengthchange="-3"
                 resistancefor="hallucinating"
                 minresistance="0.35" maxresistance="0.35">
             <StatusEffect target="Character" Interval="1.0" disabledeltatime="true">
-                <Conditional HealthPercentage="lte 100"/>
+                <Conditional HealthPercentage="gt 0"/>
                 <ReduceAffliction type="damage" amount="0.05"/>
                 <ReduceAffliction type="organdamage" amount="0.05"/>
                 <ReduceAffliction type="burn" amount="0.1"/>
@@ -3430,7 +3429,7 @@
               origin="0,0"/>
     </Affliction>
 
-    <!--谎言效果-->
+    <!--谎言改装效果-->
     <Affliction name="衔尾蛇"
                 identifier="Touhou_Deceit_Mod_Effect"
                 type="Touhou_Deceit_Mod_Effect"
@@ -4991,6 +4990,82 @@
             <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM10_Aff_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+
+    <!--拯救者改装效果-->
+    <Affliction name="拯救者改装效果"
+                identifier="Touhou_Savior_Mod_Effect"
+                type="Touhou_Savior_Mod_Effect"
+                limbspecific="false"
+                indicatorlimb="Head"
+                isbuff="true"
+                maxstrength="1"
+                duration="15.0"
+                showiconthreshold="100"
+                showinhealthscannerthreshold="100"
+                affectmachines="true"
+                iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_Deceit_Mod_Effect" minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1">
+            <StatusEffect target="Character" disabledeltatime="true">
+                <ParticleEmitter particle="Tenshi_Peach_Effect" ScaleMultiplier="0.1,0.1" ParticlesPerSecond="10" ColorMultiplier="255,155,55,255"
+                                 Angle="-90" Distance="28"/>
+            </StatusEffect>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_Deceit_Mod_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--拯救者白热火焰效果-->
+    <Affliction name="白热火焰"
+                identifier="Touhou_Savior_Mod_Attack_Effect"
+                type="burn"
+                limbspecific="true"
+                maxstrength="100"
+                showiconthreshold="100"
+                showinhealthscannerthreshold="100"
+                affectmachines="true"
+                iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_Sparkfire_Shotgun_Effect" minstrength="0" maxstrength="20"/>
+        <Effect minstrength="0" maxstrength="20" resistancefor="burn" minresistance="0" maxresistance="-0.2" strengthchange="-1.0">
+            <StatusEffect target="Limb" Interval="1.0" disabledeltatime="true">
+                <Affliction identifier="burn" amount="1.2" penetration="0.5"/>
+            </StatusEffect>
+            <StatusEffect target="Character">
+                <Conditional InWater="false"/>
+                <ParticleEmitter particle="flameburningcharacter" DistanceMin="0" DistanceMax="30" ParticlesPerSecond="30" AngleMin="60"
+                                 colormultiplier="255,255,255,255" AngleMax="120" VelocityMax="20"/>
+            </StatusEffect>
+            <StatusEffect target="Character">
+                <Conditional InWater="false"/>
+                <sound file="Content/Sounds/FireSmall.ogg" range="200.0" volume="0.5"/>
+            </StatusEffect>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_Sparkfire_Shotgun_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"
+              origin="0,0"/>
+    </Affliction>
+
+    <!--腐化拯救者改装效果-->
+    <Affliction name="腐化拯救者改装效果"
+                identifier="Touhou_Corrupted_Savior_Mod_Effect"
+                type="Touhou_Corrupted_Savior_Mod_Effect"
+                limbspecific="false"
+                indicatorlimb="Head"
+                isbuff="true"
+                maxstrength="1"
+                duration="20.0"
+                showiconthreshold="100"
+                showinhealthscannerthreshold="100"
+                affectmachines="true"
+                iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_Deceit_Mod_Effect" minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1">
+            <StatusEffect target="Character" disabledeltatime="true">
+                <ParticleEmitter particle="Tenshi_Peach_Effect" ScaleMultiplier="0.1,0.1" ParticlesPerSecond="10" ColorMultiplier="255,10,10,255"
+                                 Angle="-90" Distance="28"/>
+            </StatusEffect>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_Deceit_Mod_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
 

@@ -2290,7 +2290,7 @@
 <!--        <Holdable slots="RightHand+LeftHand" aimable="false" msg="ItemMsgPickUpSelect" >
 
         </Holdable>-->
-        <Body width="128" height="85" density="10" gravityscale="0" />
+        <Body width="400" height="389" density="10" gravityscale="0" />
         <Turret
                 canbeselected="false"
                 spread="3.0"

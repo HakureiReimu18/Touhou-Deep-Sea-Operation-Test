@@ -129,7 +129,7 @@
     <entitydescription.Freeze_Icicle_Fall>A large, puzzling chunk of ice — is that a frog inside? (Activate by inserting Snowballs, restore energy by soaking in water.)</entitydescription.Freeze_Icicle_Fall>
 
     <entityname.Blunderbuss>Blunderbuss</entityname.Blunderbuss>
-    <entitydescription.Blunderbuss>A relic from the Moon — a highly unstable gun that might hurt its wielder. (Charge to use, consumes ‖color:gui.yellow‖Mind Tremor or Lunatic Eye‖end‖)</entitydescription.Blunderbuss>
+    <entitydescription.Blunderbuss>A relic from the Moon — a highly unstable gun that might hurt its wielder. Charge to use. consumes ‖color:gui.yellow‖Mind Tremor, Lunatic Eye, Mind Star Mine, Lunatic Blass or rifleammo‖end‖)</entitydescription.Blunderbuss>
 
     <entityname.Mind_Bullet>Mind Tremor</entityname.Mind_Bullet>
     <entitydescription.Mind_Bullet>A replica of a Moon relic. Incredibly powerful. Ammo for ‖color:gui.yellow‖Blunderbuss / Mercy‖end‖</entitydescription.Mind_Bullet>
@@ -188,11 +188,11 @@
     <entitydescription.Kappa_Miningdrill>A mining tool favored by kappas — portable, easy to use, durable, and above all… cheap. Has 5 extra ore storage slots. Powered by ‖color:gui.yellow‖Spiritual Water or batteries‖end‖</entitydescription.Kappa_Miningdrill>
 
     <entityname.Illness_Recovery_Charm>‖color:160,238,0,255‖Illness Recovery Charm‖color:end‖</entityname.Illness_Recovery_Charm>
-    <entitydescription.Illness_Recovery_Charm>A healing charm from Moriya Shrine. Restores durability using Wood Element at the alchemy table. (Occupies the headset slot)</entitydescription.Illness_Recovery_Charm>
+    <entitydescription.Illness_Recovery_Charm>The Moriya Shrine amulet that can heal injuries when the wearer is sober (occupies the ear slot)</entitydescription.Illness_Recovery_Charm>
 
     <!--Alchemical-->
     <entityname.Touhou_Base_Metal>Aetheric Metal</entityname.Touhou_Base_Metal>
-    <entitydescription.Touhou_Base_Metal>The second-stage magical metal, used in synthesizing base materials. Surprisingly widespread in Europa’s military tech.</entitydescription.Touhou_Base_Metal>
+    <entitydescription.Touhou_Base_Metal>The second-stage magical metal, used in synthesizing base materials. Surprisingly widespread in Europa's military tech.</entitydescription.Touhou_Base_Metal>
 
     <entityname.Mu_Alchemical>Bottled Element (Wood)</entityname.Mu_Alchemical>
     <entitydescription.Mu_Alchemical>A purified bottle of the Wood Element — a high-quality alchemical product.</entitydescription.Mu_Alchemical>
@@ -2208,6 +2208,37 @@
     <entitydescription.Touhou_Depth_Charge_Shell_Deployment_Normal>A deployable floating turret developed by the Kappa. It can be deployed 3 seconds after release.
         The turret remains active for 200 seconds, but its firepower gradually decreases over time.
         Must be used with a Depth Charge Launcher.</entitydescription.Touhou_Depth_Charge_Shell_Deployment_Normal>
+
+    <entityname.Touhou_Savior>‖color:222,199,75,255‖Savior‖end‖</entityname.Touhou_Savior>
+    <entitydescription.Touhou_Savior>Archive ID: Σ-10. Legend tells that when corruption eroded the heart of the world, the stars chose to fall upon themselves, forging this gun from their burning embers.
+        Harder to be stunned while aiming.
+        After enabling modification, barrage projectiles will ignite targets and have a chance to explode.
+        Weapon modification energy is displayed through the remaining durability; modification can only be used when the energy is fully charged.
+        Uses ‖color:gui.yellow‖Star of Salvation‖end‖
+    </entitydescription.Touhou_Savior>
+    <entityname.Touhou_Savior_Ammo>‖color:222,199,75,255‖Star of Salvation‖end‖</entityname.Touhou_Savior_Ammo>
+    <entitydescription.Touhou_Savior_Ammo>Compressed stellar core fragments, with the energy yield of a single shot roughly equivalent to a small nova eruption.
+        Ammunition for ‖color:gui.yellow‖Savior‖end‖
+    </entitydescription.Touhou_Savior_Ammo>
+
+    <entityname.Touhou_Corrupted_Savior>‖color:255,0,0,255‖Corrupted Savior‖end‖</entityname.Touhou_Corrupted_Savior>
+    <entitydescription.Touhou_Corrupted_Savior>Archive ID: Σ-10C. The concept of salvation from the void is the result of flawed logic. The void is salvation, life is corruption, and we are the cure for the suffering.
+        The higher the modification energy, the faster the weapon fires.
+        After enabling modification, ammunition consumption is reduced while barrage damage is greatly increased and can penetrate more armor.
+        Uses ‖color:gui.yellow‖Corrupted Star of Salvation‖end‖
+    </entitydescription.Touhou_Corrupted_Savior>
+    <entityname.Touhou_Corrupted_Savior_Ammo>‖color:255,0,0,255‖Corrupted Star of Salvation‖end‖</entityname.Touhou_Corrupted_Savior_Ammo>
+    <entitydescription.Touhou_Corrupted_Savior_Ammo>A product of the Star of Salvation soaked in void energy. The projectile surface is covered with obsidian-like crystals, releasing unreal distortions upon firing that may cause minor spatial rifts.
+        Ammunition for ‖color:gui.yellow‖Corrupted Savior‖end‖
+    </entitydescription.Touhou_Corrupted_Savior_Ammo>
+
+    <entityname.Touhou_Corrupted_Rifle_Bullet>‖color:255,0,0,255‖Corrupted Rifle Bullet‖end‖</entityname.Touhou_Corrupted_Rifle_Bullet>
+    <entitydescription.Touhou_Corrupted_Rifle_Bullet>Forged from pure base metals using forbidden techniques, it has lost its original metallic properties and gained entirely new penetration strength.
+        Ammunition for ‖color:gui.yellow‖weapons that use rifle ammunition‖end‖
+    </entitydescription.Touhou_Corrupted_Rifle_Bullet>
+
+
+
 
 
 

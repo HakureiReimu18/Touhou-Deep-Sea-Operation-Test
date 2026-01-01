@@ -269,22 +269,34 @@
         <PreferredContainer primary="medfabcab"/>
         <Deconstruct time="5" chooserandom="false" requireddeconstructor="Alchemy_Table">
             <!--木 森罗-->
-            <Item identifier="Touhou_Bottle_Element" amount="30" requiredotheritem="Cinnamon_Branch" activatebuttontext="Alchemy_Table.Research"
+            <Item identifier="Touhou_Bottle_Element" amount="30" requiredotheritem="Gilead_BranchGilead_Branch" activatebuttontext="Alchemy_Table.Research"
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
             <!--木 森罗-->
-            <Item identifier="Mu_Alchemical" amount="20" requiredotheritem="Cinnamon_Branch" activatebuttontext="Alchemy_Table.Research"
+            <Item identifier="Mu_Alchemical" amount="20" requiredotheritem="Gilead_Branch" activatebuttontext="Alchemy_Table.Research"
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
             <!--火 气炎-->
             <Item identifier="Huo_Alchemical" amount="20" requiredotheritem="aluminium" activatebuttontext="Alchemy_Table.Research"
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
+            <!--火 气炎-->
+            <Item identifier="Touhou_Bottle_Element" amount="30" requiredotheritem="aluminium" activatebuttontext="Alchemy_Table.Research"
+                  infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
             <!--土 灵峰-->
             <Item identifier="Tu_Alchemical" amount="20" requiredotheritem="silicon" activatebuttontext="Alchemy_Table.Research"
+                  infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
+            <!--土 灵峰-->
+            <Item identifier="Touhou_Bottle_Element" amount="30" requiredotheritem="silicon" activatebuttontext="Alchemy_Table.Research"
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
             <!--金 玄金-->
             <Item identifier="Jin_Alchemical" amount="20" requiredotheritem="iron" activatebuttontext="Alchemy_Table.Research"
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
+            <!--金 玄金-->
+            <Item identifier="Touhou_Bottle_Element" amount="30" requiredotheritem="iron" activatebuttontext="Alchemy_Table.Research"
+                  infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
             <!--水 啼水-->
             <Item identifier="Shui_Alchemical" amount="20" requiredotheritem="stabilozine" activatebuttontext="Alchemy_Table.Research"
+                  infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
+            <!--水 啼水-->
+            <Item identifier="Touhou_Bottle_Element" amount="30" requiredotheritem="stabilozine" activatebuttontext="Alchemy_Table.Research"
                   infotext="Alchemy_Table.Research.Infotext" infotextonotheritemmissing="Alchemy_Table.Combine.Missingitem"/>
             <!--日 烈阳-->
             <Item identifier="Yang_Alchemical" amount="20" requiredotheritem="Magic_Material" activatebuttontext="Alchemy_Table.Research"

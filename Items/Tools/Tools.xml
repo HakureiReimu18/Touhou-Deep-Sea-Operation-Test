@@ -688,7 +688,7 @@
                           multiplyafflictionsbymaxvitality="true">
                 <Conditional skillrequirement="true" Touhou_Magic="gt 60"/>
                 <Conditional Touhou_Magic_Boost="lte 150"/>
-                <Affliction identifier="Touhou_Magic_Boost" amount="149.5"/>
+                <Affliction identifier="Touhou_Magic_Boost" amount="149.5" setvalue="true" />
             </StatusEffect>
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.75" damagesound="LimbArmor"
@@ -767,7 +767,7 @@
     </Item>
 
     <!--糖果袋-->
-    <Item name="糖果袋" identifier="Touhou_Candy_Pouch" scale="0.3" subcategory="Touhou" category="Equipment" tags="smallitem,tool" fireproof="true"
+    <Item name="糖果袋" identifier="Touhou_Candy_Pouch" scale="0.15" subcategory="Touhou" category="Equipment" tags="smallitem,tool" fireproof="true"
           waterproof="true" cargocontaineridentifier="metalcrate" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="medcab"/>
         <Price baseprice="60">
@@ -788,8 +788,9 @@
             <Item identifier="organicfiber" amount="4"/>
             <Item identifier="plastic" amount="2"/>
         </Fabricate>
-        <Sprite texture="Content/Items/Gardening/GrowablePlants_Temp.png" sourcerect="841,704,49,65" depth="0.55" origin="0.5,0.5"/>
-        <Body width="45" height="60" density="12"/>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Candy_Pouch.png" sourcerect="0,0,100,152" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Candy_Pouch.png" depth="0.7" sourcerect="0,0,100,152" origin="0.5,0.5"/>
+        <Body width="100" height="152" density="12"/>
         <ItemContainer autofill="False" capacity="8" maxstacksize="63" hideitems="true" slotsperrow="2">
             <Containable items="Touhou_Candy"/>
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32"/>
@@ -935,7 +936,7 @@
                           multiplyafflictionsbymaxvitality="true">
                 <Conditional skillrequirement="true" Touhou_Magic="gt 60"/>
                 <Conditional Touhou_Magic_Boost="lte 150"/>
-                <Affliction identifier="Touhou_Magic_Boost" amount="149.5"/>
+                <Affliction identifier="Touhou_Magic_Boost" amount="149.5" setvalue="true"/>
             </StatusEffect>
 
             <sprite name="Backpack Wearable" texture="%ModDir%/Images/Tools/Magic_Pouch.png" limb="Torso" hidelimb="false" inheritlimbdepth="true"
@@ -2802,7 +2803,7 @@
         <Body width="50" height="100" density="10"/>
         <Holdable canBeCombined="true" slots="RightHand+LeftHand" msg="ItemMsgPickUpSelect" holdpos="50,-50" aimpos="50,-40" />
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
-            <GuiFrame relativesize="0.11,0.11" anchor="Center" absoluteoffset="20,196" style="ItemUI"/>
+            <GuiFrame relativesize="0.11,0.11" anchor="Center" absoluteoffset="20,240" style="ItemUI"/>
             <Button text="Text.Touhou_Magic_Charging_Box_Charge">
                 <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                     <RequiredItem identifier="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04"
@@ -2877,7 +2878,7 @@
         <Body width="50" height="100" density="10"/>
         <Holdable canBeCombined="true" slots="RightHand+LeftHand" msg="ItemMsgPickUpSelect" holdpos="50,-50" aimpos="50,-40" />
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
-            <GuiFrame relativesize="0.11,0.11" anchor="Center" absoluteoffset="20,196" style="ItemUI"/>
+            <GuiFrame relativesize="0.11,0.11" anchor="Center" absoluteoffset="20,240" style="ItemUI"/>
             <Button text="Text.Touhou_Magic_Charging_Box_Charge">
                 <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                     <RequiredItem identifier="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04"
@@ -2948,7 +2949,7 @@
         <Body width="50" height="100" density="10"/>
         <Holdable canBeCombined="true" slots="RightHand+LeftHand" msg="ItemMsgPickUpSelect" holdpos="50,-50" aimpos="50,-40" />
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
-            <GuiFrame relativesize="0.11,0.11" anchor="Center" absoluteoffset="20,196" style="ItemUI"/>
+            <GuiFrame relativesize="0.11,0.11" anchor="Center" absoluteoffset="20,240" style="ItemUI"/>
             <Button text="Text.Touhou_Magic_Charging_Box_Charge">
                 <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                     <RequiredItem identifier="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04,
@@ -4748,10 +4749,13 @@
         <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="40,-20" aimangle="-20" holdangle="30" handle1="-10,0"
                   msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnSecondaryUse" target="This" Condition="-25"/>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
-                <Conditional Condition="lte 0"/>
-                <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Corrupted_Weapon_Unlocked_Talent"/>
-                <RemoveItem/>
+            <StatusEffect type="OnSecondaryUse" target="This,Character"
+                          unlockrecipe="Touhou_Corrupted_Merciless,Touhou_Corrupted_Merciless_Ammo,Touhou_Corrupted_Deceit,
+                          Touhou_Corrupted_Aphelion,Touhou_Corrupted_Aphelion_Ammo,Touhou_TSM_Corrupted_Twilight,Touhou_TSM_Corrupted_Twilight_Ammo,
+                          Touhou_TSM_Corrupted_AWM,Touhou_TSM_Corrupted_AWM_Ammo,Touhou_TSM_Corrupted_AA12,Touhou_TSM_Corrupted_AA12_Ammo,
+                          Touhou_Corrupted_Savior,Touhou_Corrupted_Savior_Ammo,Touhou_Corrupted_Rifle_Bullet" disabledeltatime="true">
+                <Conditional Condition="lte 0" />
+                <RemoveItem />
             </StatusEffect>
         </Holdable>
     </Item>
@@ -4774,10 +4778,11 @@
         <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="40,-20" aimangle="-20" holdangle="30" handle1="-10,0"
                   msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnSecondaryUse" target="This" Condition="-25"/>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
-                <Conditional Condition="lte 0"/>
-                <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Prometheus_Weapon_Unlocked_Talent"/>
-                <RemoveItem/>
+            <StatusEffect type="OnSecondaryUse" target="This,Character"
+                          unlockrecipe="Touhou_Lightsmithing,Touhou_Lightsmithing_Ammo,Touhou_Night_Watcher,Touhou_Night_Watcher_Ammo,
+                          Touhou_Meniscate_Reflection,Touhou_Knightmare_Grenade_Gun_Ammo,Touhou_Starkiller_Ammo,Touhou_Dissolution" disabledeltatime="true">
+                <Conditional Condition="lte 0" />
+                <RemoveItem />
             </StatusEffect>
         </Holdable>
     </Item>
@@ -4800,10 +4805,11 @@
         <Holdable slots="Any,RightHand,LeftHand" aimable="false" aimpos="40,-20" aimangle="-20" holdangle="30" handle1="-10,0"
                   msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnSecondaryUse" target="This" Condition="-25"/>
-            <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
-                <Conditional Condition="lte 0"/>
-                <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Coalition_Weapon_Unlocked_Talent"/>
-                <RemoveItem/>
+            <StatusEffect type="OnSecondaryUse" target="This,Character"
+                          unlockrecipe="Touhou_Bone_Claw,Touhou_Bone_Claw_Ammo,Touhou_Acid_Fang,Touhou_Acid_Fang_Ammo,
+                          Touhou_Mage_Slayer,Touhou_Mage_Slayer_Ammo" disabledeltatime="true">
+                <Conditional Condition="lte 0" />
+                <RemoveItem />
             </StatusEffect>
         </Holdable>
     </Item>

@@ -325,10 +325,10 @@
     <entitydescription.Flandre_Eclipse_Anniversary_Plus>‖color:255,255,255,255‖Flandre lives in the Scarlet Devil Mansion’s basement and rarely goes outside. Although the others in the mansion restrict her from leaving because of her dangerous powers and unstable mind, in truth Flandre simply feels comfortable living there and chooses to stay.‖color:end‖\n(Built-in scanner slot)</entitydescription.Flandre_Eclipse_Anniversary_Plus>
     <talentname.FlandreTalent>Destructive Vampire Little Sister</talentname.FlandreTalent>
     <talentdescription.FlandreTalent>When wearing Flandre Outfit+:
-        Physical damage taken +‖color:gui.red‖30%‖end‖, burn damage taken +‖color:gui.red‖50%‖end‖.
+        Physical damage taken +‖color:gui.red‖10%‖end‖, burn damage taken +‖color:gui.red‖30%‖end‖.
         Repair speed −‖color:gui.red‖20%‖end‖.
         ‖color:gui.orange‖Medical skill‖end‖ permanently −‖color:gui.red‖100‖end‖.
-        ‖color:gui.orange‖Healing received‖end‖ −‖color:gui.red‖20%‖end‖.
+<!--        ‖color:gui.orange‖Healing received‖end‖ −‖color:gui.red‖20%‖end‖.-->
         ‖color:gui.orange‖Drug effectiveness‖end‖ −‖color:gui.red‖20%‖end‖.
         \nRecovers faster from ‖color:gui.orange‖Bleeding‖end‖ and ‖color:gui.orange‖Bloodloss‖end‖.
         Damage with ‖color:gui.orange‖exclusive weapons‖end‖ +‖color:gui.green‖10%‖end‖, melee damage +‖color:gui.green‖30%‖end‖.
@@ -1008,7 +1008,7 @@
     <talentname.MRE_Sanae>Bleeding Effect – Kochiya Sanae</talentname.MRE_Sanae>
     <talentdescription.MRE_Sanae>Effective only with Sanae Outfit+. With a Miracle active, +25% damage to non-human enemies; otherwise +30% max health and −15% damage taken.</talentdescription.MRE_Sanae>
     <talentname.MRE_Reisen>Bleeding Effect – Reisen Udongein Inaba</talentname.MRE_Reisen>
-    <talentdescription.MRE_Reisen>Effective only with Reisen Outfit+. While aiming ranged weapons: +10% move speed, −25% spread, −20% damage taken, +15% gunshot damage, and adds psychosis effect.</talentdescription.MRE_Reisen>
+    <talentdescription.MRE_Reisen>Effective only with Reisen Outfit+. While aiming ranged weapons: +10% move speed, −25% spread, −20% damage taken. Gunshot wounds caused by attacks have a probability of increasing by 15%.</talentdescription.MRE_Reisen>
     <talentname.MRE_Yukari>Bleeding Effect – Yakumo Yukari</talentname.MRE_Yukari>
     <talentdescription.MRE_Yukari>Effective only with Yukari Outfit+. Gradually increases resistance to damage types you receive, up to +15%; at max, your damage of that type +15% (only physical, burn base/mod).</talentdescription.MRE_Yukari>
     <talentname.MRE_Kokoro>Bleeding Effect – Hata no Kokoro</talentname.MRE_Kokoro>
@@ -1018,8 +1018,5 @@
         Each 1 point of Magic Ability increases Max HP by 0.2%, up to a maximum of 40%.
         When Magic Ability exceeds 120, grants an additional 20 Max HP.</talentdescription.MRE_Lilywhite>
     <talentname.MRE_Satori>Bleeding Effect – Komeiji Satori</talentname.MRE_Satori>
-    <talentdescription.MRE_Lilywhite>Effective while wearing the Satori Outfit+. During Mind Reading, allows gaining the exclusive weapon effects of other characters.</talentdescription.MRE_Lilywhite>
-    <talentname.MRE_Satori>Bleeding Effect – Komeiji Satori</talentname.MRE_Satori>
-    <talentdescription.MRE_Lilywhite>Only effective while wearing ‖color:gui.red‖Satori Outfit+‖end‖. Allows gaining the unique weapon effects of other characters.</talentdescription.MRE_Lilywhite>
-
+    <talentdescription.MRE_Satori>Effective while wearing the Satori Outfit+. During Mind Reading, allows gaining the exclusive weapon effects of other characters.</talentdescription.MRE_Satori>
 </infotexts>

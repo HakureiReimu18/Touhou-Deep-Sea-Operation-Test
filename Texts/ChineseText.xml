@@ -111,7 +111,7 @@
     <entityname.Freeze_Icicle_Fall>冰晶</entityname.Freeze_Icicle_Fall>
     <entitydescription.Freeze_Icicle_Fall>一大块意义不明的冰块，里面隐约有一只青蛙？（放入雪球可以激活它，泡在水里可以恢复它的能量）</entitydescription.Freeze_Icicle_Fall>
     <entityname.Blunderbuss>喇叭枪</entityname.Blunderbuss>
-    <entitydescription.Blunderbuss>月球遗物，一把相当不稳定的枪，会伤到自己（蓄力使用，消耗‖color:gui.yellow‖心灵震颤或者月狂之眼‖end‖）</entitydescription.Blunderbuss>
+    <entitydescription.Blunderbuss>月球遗物，一把相当不稳定的枪，会伤到自己（蓄力使用）。使用‖color:gui.yellow‖心灵震颤、月狂之眼、心灵烟花、狂月爆破或步枪子弹‖end‖</entitydescription.Blunderbuss>
     <entityname.Mind_Bullet>心灵震颤</entityname.Mind_Bullet>
     <entitydescription.Mind_Bullet>月球遗物的仿制品，威力巨大。作为‖color:gui.yellow‖喇叭枪/怜悯‖end‖的弹药</entitydescription.Mind_Bullet>
     <entityname.Lunatic_Bullet>月狂之眼</entityname.Lunatic_Bullet>
@@ -151,7 +151,7 @@
     <entityname.Kappa_Miningdrill>河童采矿机</entityname.Kappa_Miningdrill>
     <entitydescription.Kappa_Miningdrill>河童们的采矿工具，兼具便携性、易操作性、耐用等多种优点，关键是……它很便宜。内含额外五个矿石存储槽位。使用‖color:gui.yellow‖灵水或者电池‖end‖</entitydescription.Kappa_Miningdrill>
     <entityname.Illness_Recovery_Charm>‖color:160,238,0,255‖病气平愈护符‖color:end‖</entityname.Illness_Recovery_Charm>
-    <entitydescription.Illness_Recovery_Charm>可以疗伤的守矢神社护符。在炼金桌内消耗木元素可以补充耐久（占用耳机槽位）</entitydescription.Illness_Recovery_Charm>
+    <entitydescription.Illness_Recovery_Charm>佩戴者清醒时可以疗伤的守矢神社护符（占用耳机槽位）</entitydescription.Illness_Recovery_Charm>
     <!--Alchemical-->
     <entityname.Touhou_Base_Metal>以太层金属</entityname.Touhou_Base_Metal>
     <entitydescription.Touhou_Base_Metal>魔法金属的第二阶段，可用于基础材料的合成，在木卫二军事上，这种魔法材料意外地被大量采用</entitydescription.Touhou_Base_Metal>
@@ -1761,7 +1761,28 @@
     <entityname.Touhou_Depth_Charge_Shell_Deployment_Normal>深水可投放炮塔-标准型</entityname.Touhou_Depth_Charge_Shell_Deployment_Normal>
     <entitydescription.Touhou_Depth_Charge_Shell_Deployment_Normal>河童们研制的，可投放的悬浮炮塔，投放后3秒即可部署。炮塔持续200秒，但威力会逐渐减弱。需要在深水炸弹投放器中使用</entitydescription.Touhou_Depth_Charge_Shell_Deployment_Normal>
 
+    <entityname.Touhou_Savior>‖color:222,199,75,255‖拯救者‖end‖</entityname.Touhou_Savior>
+    <entitydescription.Touhou_Savior>档案编号：Σ-10。传说，腐坏侵蚀世界中心时，群星选择自我陨落，将燃烧的余烬铸成此枪。
+        瞄准时更难被眩晕
+        开启改装后，弹幕将会点燃目标并概率爆炸。
+        武器改装能量通过武器剩余耐久显示，改装能量充满时才可以使用改装。
+        使用‖color:gui.yellow‖救世之星‖end‖</entitydescription.Touhou_Savior>
+    <entityname.Touhou_Savior_Ammo>‖color:222,199,75,255‖救世之星‖end‖</entityname.Touhou_Savior_Ammo>
+    <entitydescription.Touhou_Savior_Ammo>压缩态星核碎片，单发能量当量约等于小型新星爆发。
+        作为‖color:gui.yellow‖拯救者‖end‖的弹药</entitydescription.Touhou_Savior_Ammo>
 
+    <entityname.Touhou_Corrupted_Savior>‖color:255,0,0,255‖腐化拯救者‖end‖</entityname.Touhou_Corrupted_Savior>
+    <entitydescription.Touhou_Corrupted_Savior>档案编号：Σ-10C。从虚无中拯救的概念是错误逻辑的结果。虚无才是拯救，生命才是腐化，而我们是受苦者的解药。
+        改装能量越高，武器射速越快。
+        开启改装后，弹药消耗速度降低，同时弹幕攻击伤害大幅增加，并能穿透更多的护甲。
+        使用‖color:gui.yellow‖腐化救世之星‖end‖</entitydescription.Touhou_Corrupted_Savior>
+    <entityname.Touhou_Corrupted_Savior_Ammo>‖color:255,0,0,255‖腐化救世之星‖end‖</entityname.Touhou_Corrupted_Savior_Ammo>
+    <entitydescription.Touhou_Corrupted_Savior_Ammo>救世之星被虚空能量浸泡后的产物。弹体表面覆盖黑曜石状结晶，击发时会释放非现实波动，可能造成空间微弱撕裂。
+        作为‖color:gui.yellow‖腐化拯救者‖end‖的弹药</entitydescription.Touhou_Corrupted_Savior_Ammo>
+
+    <entityname.Touhou_Corrupted_Rifle_Bullet>‖color:255,0,0,255‖腐化步枪子弹‖end‖</entityname.Touhou_Corrupted_Rifle_Bullet>
+    <entitydescription.Touhou_Corrupted_Rifle_Bullet>用纯粹的卑金属加以禁忌的工艺打造而成，失去了原本的金属体质，获得了全新的穿透强度
+        作为‖color:gui.yellow‖使用步枪弹药武器‖end‖的弹药</entitydescription.Touhou_Corrupted_Rifle_Bullet>
 
 
 

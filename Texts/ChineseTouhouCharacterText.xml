@@ -308,10 +308,10 @@
     <entitydescription.Flandre_Eclipse_Anniversary_Plus>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Eclipse_Anniversary_Plus>
     <talentname.FlandreTalent>吸血鬼的破坏性妹妹</talentname.FlandreTalent>
     <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+ 时，
-        受到的物理伤害额外增加‖color:gui.red‖30%‖end‖，受到的烧伤额外增加‖color:gui.red‖50%‖end‖。
+        受到的物理伤害额外增加‖color:gui.red‖10%‖end‖，受到的烧伤额外增加‖color:gui.red‖30%‖end‖。
         修复速度下降‖color:gui.red‖20%‖end‖。
         ‖color:gui.orange‖医疗水平‖end‖永远减少‖color:gui.red‖100‖end‖。
-        ‖color:gui.orange‖受到治疗效果‖end‖下降‖color:gui.red‖20%‖end‖。
+<!--        ‖color:gui.orange‖受到治疗效果‖end‖下降‖color:gui.red‖20%‖end‖。-->
         ‖color:gui.orange‖药物使用效果‖end‖下降‖color:gui.red‖20%‖end‖。
         \n更快从‖color:gui.orange‖出血‖end‖和‖color:gui.orange‖失血‖end‖中恢复。
         ‖color:gui.orange‖专属武器‖end‖造成的伤害增加‖color:gui.green‖10%‖end‖，近战再增加‖color:gui.green‖30%‖end‖
@@ -984,7 +984,7 @@
     <talentname.MRE_Sanae>出血效应-东风谷早苗</talentname.MRE_Sanae>
     <talentdescription.MRE_Sanae>仅对早苗装束+生效。拥有奇迹时，对非人类敌人造成的伤害提高25%。否则，增加30%最大生命值，受到的伤害减少15%</talentdescription.MRE_Sanae>
     <talentname.MRE_Reisen>出血效应-铃仙·优昙华院·因幡</talentname.MRE_Reisen>
-    <talentdescription.MRE_Reisen>仅对铃仙装束+生效。远程武器瞄准时的移动速度提高10%，散布减少25%，受到的伤害减少20%，攻击造成的枪伤增加15%，且额外附加精神病</talentdescription.MRE_Reisen>
+    <talentdescription.MRE_Reisen>仅对铃仙装束+生效。远程武器瞄准时的移动速度提高10%，散布减少25%，受到的伤害减少20%，攻击造成的枪伤有概率增加15%</talentdescription.MRE_Reisen>
     <talentname.MRE_Yukari>出血效应-八云紫</talentname.MRE_Yukari>
     <talentdescription.MRE_Yukari>仅对紫 装束+生效。根据你受到的伤害，逐渐增加你对那种伤害的抗性，最高15%，达到最高时，你造成的该种伤害增加15%（仅限原版和模组内的物理伤害、烧伤）</talentdescription.MRE_Yukari>
     <talentname.MRE_Kokoro>出血效应-秦心</talentname.MRE_Kokoro>
