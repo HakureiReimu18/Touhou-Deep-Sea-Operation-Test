@@ -1784,6 +1784,15 @@
     <entitydescription.Touhou_Corrupted_Rifle_Bullet>用纯粹的卑金属加以禁忌的工艺打造而成，失去了原本的金属体质，获得了全新的穿透强度
         作为‖color:gui.yellow‖使用步枪弹药武器‖end‖的弹药</entitydescription.Touhou_Corrupted_Rifle_Bullet>
 
+    <entityname.Touhou_Anguish>‖color:255,100,100,255‖痛苦‖end‖</entityname.Touhou_Anguish>
+    <entitydescription.Touhou_Anguish>名副其实，这把武器就是痛苦的完美化身。持握时，微刺会不断提醒你这把武器的本质，但当你目睹它如何将痛苦精准地注入每一个细胞，你会发现掌心那点刺痛不过是公平的代价。
+        对剩余血量越低的敌人造成的伤害越高
+        霰弹射击一次性会消耗所有弹丸。
+        使用‖color:gui.yellow‖痛苦弹丸或手炮子弹‖end‖</entitydescription.Touhou_Anguish>
+    <entityname.Touhou_Anguish_Bullet>‖color:255,100,100,255‖痛苦弹丸‖end‖</entityname.Touhou_Anguish_Bullet>
+    <entitydescription.Touhou_Anguish_Bullet>每一发都是一颗浓缩的痛苦种子，由受刑者的神经末梢结晶而成。
+        作为‖color:gui.yellow‖痛苦‖end‖的弹药</entitydescription.Touhou_Anguish_Bullet>
+
 
 
 

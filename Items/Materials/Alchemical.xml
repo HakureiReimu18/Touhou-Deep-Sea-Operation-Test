@@ -132,7 +132,7 @@
         <PreferredContainer secondary="ruinstoragelarge" minamount="1" maxamount="2" spawnprobability="0.1"/>
         <PreferredContainer secondary="ruintreasure" minamount="1" maxamount="3" spawnprobability="0.2"/>
         <!--        <Holdable canBeCombined="true" removeOnCombined="true" slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,0" handle2="0,0" />-->
-        <Price baseprice="350" minavailable="2" sold="false" minleveldifficulty="15">
+        <Price baseprice="450" minavailable="2" sold="false" minleveldifficulty="15">
             <Price locationtype="outpost" multiplier="1.2" maxavailable="8"/>
             <Price locationtype="city" multiplier="1" maxavailable="16"/>
             <Price locationtype="research" multiplier="1" maxavailable="12"/>
@@ -417,7 +417,7 @@
                         castshadows="false" allowingameediting="false">
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
         </LightComponent>
-        <Price baseprice="400" minavailable="1">
+        <Price baseprice="300" minavailable="1">
             <Price locationtype="outpost" multiplier="0.9" sold="false" maxavailable="4"/>
             <Price locationtype="city" multiplier="1" maxavailable="8"/>
             <Price locationtype="research" multiplier="1" maxavailable="6"/>

@@ -814,7 +814,7 @@
             <TagAction Criteria="crew" Tag="crew" IgnoreIncapacitatedCharacters="false"/>
             <CheckAfflictionAction identifier="Hifuu_Club_Merry" MinStrength="0.1" TargetTag="crew">
                 <Success>
-                    <StatusEffectAction targettag="crew">
+                    <StatusEffectAction targettag="Renko_player">
                         <StatusEffect target="Character" disabledeltatime="true">
                             <Conditional Hifuu_Club_Renko="gt 0"/>
                             <SpawnItem identifiers="Touhou_Red_Spot_Freak_Report" spawnposition="ThisInventory"/>

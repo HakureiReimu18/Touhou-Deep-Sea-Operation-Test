@@ -152,6 +152,8 @@
 
     <Text.Satori_Plus>Mind Reading</Text.Satori_Plus>
 
+    <uilabel.Shotgun_Shooting>Shotgun Shooting</uilabel.Shotgun_Shooting>
+
     <!--Display Name-->
     <displayname.Touhou_Efficient_Extraction>[itemname] (Efficient Extraction)</displayname.Touhou_Efficient_Extraction>
     <displayname.Touhou_Efficient_Synthesis>[itemname] (Efficient Synthesis)</displayname.Touhou_Efficient_Synthesis>

@@ -174,11 +174,11 @@
                 <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon"/>
             </SubContainer>
             <SubContainer capacity="4" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon"/>
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon,ammobox"/>
             </SubContainer>
             <SubContainer capacity="12" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem,mediumitem"
-                             excludeditems="backpack,crate,toolbelt,tsm_ammobox,toolbox,Touhou_Magic_Charging_Box,bulkyweapon"/>
+                             excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon"/>
             </SubContainer>
         </ItemContainer>
 
@@ -259,14 +259,14 @@
                 <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon"/>
             </SubContainer>
             <SubContainer capacity="8" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon"/>
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon,ammobox"/>
             </SubContainer>
             <SubContainer capacity="6" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem,mediumitem"
-                             excludeditems="backpack,crate,toolbelt,tsm_ammobox,toolbox,Touhou_Magic_Charging_Box,bulkyweapon"/>
+                             excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon,ammobox"/>
             </SubContainer>
             <SubContainer capacity="2" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem,Touhou_Magic_Charging_Box" excludeditems="backpack,crate,toolbelt,tsm_ammobox"/>
+                <Containable items="smallitem,mediumitem,Touhou_Magic_Charging_Box" excludeditems="backpack,crate,toolbelt"/>
             </SubContainer>
         </ItemContainer>
 
@@ -2712,7 +2712,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="20"/>
             <RequiredItem identifier="organicfiber" amount="6"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
-            <RequiredItem identifier="Score_Point" amount="2"/>
+            <RequiredItem identifier="Power_Point" />
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Rose_Gift_Bag.png" sourcerect="55,0,49,36" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Rose_Gift_Bag.png" depth="0.5" sourcerect="0,0,52,34" origin="0.5,0.5"/>

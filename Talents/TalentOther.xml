@@ -446,6 +446,68 @@
                 <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
+
+        <!--痛苦天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Savior"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targetabilitytarget="true">
+                    <Conditional HealthPercentage="lte 90"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Savior"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targetabilitytarget="true">
+                    <Conditional HealthPercentage="lte 70"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Savior"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targetabilitytarget="true">
+                    <Conditional HealthPercentage="lte 50"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Savior"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targetabilitytarget="true">
+                    <Conditional HealthPercentage="lte 30"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Savior"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targetabilitytarget="true">
+                    <Conditional HealthPercentage="lte 10"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <!--解锁腐化武器-->

@@ -143,6 +143,8 @@
     <Text.Touhou_Immortal_Moon_Smoke_On>自燃</Text.Touhou_Immortal_Moon_Smoke_On>
     <Text.Touhou_Machine_On>启动设备</Text.Touhou_Machine_On>
     <Text.Satori_Plus>心灵读取</Text.Satori_Plus>
+    <uilabel.Shotgun_Shooting>霰弹射击</uilabel.Shotgun_Shooting>
+
 
     <!--Display Name-->
     <displayname.Touhou_Efficient_Extraction>[itemname] (高效提取)</displayname.Touhou_Efficient_Extraction>

@@ -529,7 +529,7 @@
     <Affliction identifier="Nitori_Tools" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
                 maxstrength="10"
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" resistancefor="burn,bleeding" minresistance="0.1" maxresistance="0.1" strengthchange="-9">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn,bleeding" minresistance="0.1" maxresistance="0.1" >
             <StatValue stattype="MeleeAttackMultiplier" value="0.15"/>
             <StatValue stattype="RangedSpreadReduction" value="0.177"/>
             <StatValue stattype="MaximumHealthMultiplier" value="0.15"/>

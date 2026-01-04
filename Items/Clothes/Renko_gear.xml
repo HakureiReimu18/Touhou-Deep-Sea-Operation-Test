@@ -164,7 +164,7 @@
                 <Affliction identifier="Hifuu_Club_Renko" strength="50"/>
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="Character" Interval="5.0" oneshot="true" disabledeltatime="true" compaison="And">
+            <StatusEffect type="OnWearing" target="Character" EventUserTag="Renko_player" eventtargettag="Renko_player" Interval="5.0" oneshot="true" disabledeltatime="true" compaison="And">
                 <Conditional IsBot="false"/>
                 <Conditional Touhou_Red_Spot_Freak_Report_Mission_Check="gt 0"/>
                 <TriggerEvent identifier="RenkoTalent_MissionCompleted"/>

@@ -301,17 +301,16 @@
         <Price baseprice="240">
             <Price storeidentifier="merchantmedical" multiplier="0.9"/>
         </Price>
-        <Fabricate suitablefabricators="medicalfabricator" requiredtime="25" amount="2">
+        <Fabricate suitablefabricators="medicalfabricator" requiredtime="15" amount="2">
             <RequiredSkill identifier="medical" level="31"/>
             <RequiredItem identifier="alienblood" amount="2"/>
             <RequiredItem identifier="antibloodloss1" amount="2"/>
             <RequiredItem identifier="stabilozine" amount="1"/>
         </Fabricate>
-        <Fabricate suitablefabricators="medicalfabricator" requiredtime="10" amount="1">
-            <RequiredSkill identifier="medical" level="5"/>
+        <Fabricate suitablefabricators="medicalfabricator" requiredtime="5" amount="1">
             <RequiredItem identifier="antibloodloss2" amount="1"/>
         </Fabricate>
-        <Deconstruct time="20">
+        <Deconstruct time="10">
             <Item identifier="sodium"/>
             <Item identifier="stabilozine"/>
         </Deconstruct>
@@ -1361,8 +1360,8 @@
         <Fabricate suitablefabricators="medicalfabricator" requiredtime="20">
             <RequiredSkill identifier="medical" level="70"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="2"/>
-            <RequiredItem identifier="antibleeding3" amount="3"/>
-            <RequiredItem identifier="antidama1" amount="2"/>
+            <RequiredItem identifier="antibleeding3" />
+            <RequiredItem identifier="antidama1" amount="3"/>
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" amount="2">
             <RequiredSkill identifier="medical" level="70"/>

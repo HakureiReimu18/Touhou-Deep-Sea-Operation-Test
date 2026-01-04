@@ -14,8 +14,9 @@
 
     <!--迷你八卦炉-->
     <Item name="迷你八卦炉" identifier="Hakkero" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate"
-          tags="smallitem,weapon,DanMu_Game_Mode,ProvocativeToHumanAI,Touhou_Weapon_Level02,Touhou_Cam_Offset_Normal" Scale="0.32" impactsoundtag="impact_metal_light">
-        <Price baseprice="2200" minleveldifficulty="15">
+          tags="smallitem,weapon,DanMu_Game_Mode,ProvocativeToHumanAI,Touhou_Weapon_Level02,Touhou_Cam_Offset_Normal" Scale="0.32" impactsoundtag="impact_metal_light"
+          hideinmenus="true">
+<!--        <Price baseprice="2200" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" minavailable="1" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>
@@ -33,7 +34,7 @@
             <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
             <RequiredItem identifier="Score_Point"/>
-        </Fabricate>
+        </Fabricate>-->
         <InventoryIcon name="" texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,0,79,89" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,0,79,89" depth="0.3" origin="0.5,0.5"/>
 
@@ -167,8 +168,8 @@
 
     <!--星星罐-->
     <Item name="星星罐" identifier="Marisa_Star_Bottle" scale="0.5" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate"
-          tags="smallitem,Hakkero_Laser_Ammo,Hakkeroammo" impactsoundtag="impact_metal_light">
-        <Deconstruct time="6">
+          tags="smallitem,Hakkero_Laser_Ammo,Hakkeroammo" impactsoundtag="impact_metal_light" hideinmenus="true">
+<!--        <Deconstruct time="6">
             <Item identifier="Power_Point" amount="2"/>
             <Item identifier="Score_Point" amount="2"/>
         </Deconstruct>
@@ -177,7 +178,7 @@
             <RequiredItem identifier="Seven_Elements_Alchemical"/>
             <RequiredItem identifier="Touhou_Precious_Metal" amount="2"/>
             <RequiredItem identifier="Power_Point"/>
-        </Fabricate>
+        </Fabricate>-->
         <Sprite texture="%ModDir%/Images/OtherWeapons/Marisa_Star_Bottle.png" sourcerect="0,0,68,70" depth="0.45" origin="0.5,0.5"/>
         <Body width="64" height="64" density="10"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
@@ -240,8 +241,8 @@
     <Item name="星星弹幕" identifier="Star_Danmu" scale="0.32" subcategory="Touhou" category="Weapon" interactthroughwalls="true"
           cargocontaineridentifier="metalcrate"
           tags="smallitem,Star_Danmu,Hakkeroammo,Touhou_Weapon_Level01,Touhou_Magic_Charging02,disallowremovefabricationingredient"
-          maxstacksize="2" impactsoundtag="impact_metal_light">
-        <Deconstruct time="2">
+          maxstacksize="2" impactsoundtag="impact_metal_light" hideinmenus="true">
+<!--        <Deconstruct time="2">
             <Item identifier="Magic_Material" amount="2"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar,fabricator" requiredtime="10">
@@ -255,7 +256,7 @@
             <RequiredSkill identifier="Touhou_Magic" level="40"/>
             <RequiredItem identifier="Magic_Material"/>
             <RequiredItem identifier="Star_Danmu" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
-        </Fabricate>
+        </Fabricate>-->
         <InventoryIcon texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="8,96,67,64" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="8,96,67,64" origin="0.5,0.5"/>
         <Body width="30" height="30" density="10"/>
@@ -315,8 +316,8 @@
     <Item name="星屑幻想" identifier="Stardust_Reverie" spritecolor="255,0,0,255" scale="0.5" subcategory="Touhou" category="Weapon"
           interactthroughwalls="true" cargocontaineridentifier="metalcrate"
           tags="smallitem,Stardust_Reverie,Hakkeroammo,Touhou_Magic_Charging05,disallowremovefabricationingredient"
-          impactsoundtag="impact_metal_light" maxstacksize="1">
-        <Deconstruct time="60">
+          impactsoundtag="impact_metal_light" maxstacksize="1" hideinmenus="true">
+<!--        <Deconstruct time="60">
             <Item identifier="Power_Point" amount="4"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="10">
@@ -334,7 +335,7 @@
             <RequiredItem identifier="Score_Point"/>
             <RequiredItem identifier="alienpowercell" amount="1"/>
             <RequiredItem identifier="Stardust_Reverie" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
-        </Fabricate>
+        </Fabricate>-->
         <InventoryIcon texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="226,226,72,72" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="226,226,72,72" depth="0.45" origin="0.5,0.5"/>
         <Body width="72" height="72" density="10"/>
@@ -442,8 +443,8 @@
 
     <!--迷你八卦炉（仿制）-->
     <Item name="迷你八卦炉（仿制）" identifier="Fake_Hakkero" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate"
-          tags="smallitem,weapon,ProvocativeToHumanAI,Touhou_Weapon_Level01,Touhou_Cam_Offset_Low" Scale="0.42" impactsoundtag="impact_metal_light">
-        <Price baseprice="600">
+          tags="smallitem,weapon,ProvocativeToHumanAI,Touhou_Weapon_Level01,Touhou_Cam_Offset_Low" Scale="0.42" impactsoundtag="impact_metal_light" hideinmenus="true">
+<!--        <Price baseprice="600">
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>
@@ -458,7 +459,7 @@
             <RequiredSkill identifier="mechanical" level="30"/>
             <RequiredItem identifier="aluminium" amount="4"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="3"/>
-        </Fabricate>
+        </Fabricate>-->
         <InventoryIcon name="" texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,0,82,82" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,0,82,82" depth="0.3" origin="0.5,0.5"/>
         <Body width="84" height="84" density="16"/>
@@ -1079,7 +1080,7 @@
 
     <!--木卫二居合-->
     <Item name="冲锋枪|魂魄妖梦" identifier="youmusmg" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate"
-          tags="smallautoweapon,smallitem,weapon,ProvocativeToHumanAI,Touhou_Weapon_Level01,gunsmith,Touhou_Cam_Offset_Normal" Scale="0.5"
+          tags="smallautoweapon,smallitem,weapon,ProvocativeToHumanAI,Touhou_Weapon_Level01,gunsmith,Touhou_Cam_Offset_Normal" Scale="0.6"
           impactsoundtag="impact_metal_light">
         <PreferredContainer primary="secarmcab" amount="1" spawnprobability="0.1"/>
         <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.05"/>
@@ -1116,7 +1117,7 @@
         <InventoryIcon texture="%ModDir%/Images/Youmu_Items/Youmusmg_Icon.png" sourcerect="0,0,65,54" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Youmu_Items/Youmusmg_Sprite.png" sourcerect="0,0,147,79" depth="0.55" origin="0.5,0.5"/>
         <Body width="140" height="60" density="25"/>
-        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35"
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="40,-10" aimpos="50,-10" handle1="-30,-15" handle2="26,5" holdangle="-35"
                   msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5" disabledeltatime="true">
                 <Conditional Ancient_Temple="gt 0"/>
@@ -1170,7 +1171,7 @@
                     <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_1.ogg" type="OnUse" range="500" selectionmode="Random" volume="0.5"/>
                     <Sound file="Content/Items/Weapons/WEAPON_rifleReload50-_2.ogg" type="OnUse" range="500" selectionmode="Random" volume="0.5"/>
                 </StatusEffect>
-                <StatusEffect target="This" holdpos="40,-10" aimpos="45,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" maxchargetime="0"
+                <StatusEffect target="This" holdpos="40,-10" aimpos="50,-10" handle1="-30,-15" handle2="26,5" holdangle="-35" maxchargetime="0"
                               disabledeltatime="true" checkconditionalalways="true" delay="1.0" setvalue="true">
                     <Conditional maxchargetime="eq 999"/>
                 </StatusEffect>
@@ -13869,7 +13870,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.15" weapondamagemodifier="1.15" holdtrigger="true" barrelpos="124,2" spread="15" unskilledspread="25" combatPriority="80"
+        <RangedWeapon reload="0.15" weapondamagemodifier="1.15" holdtrigger="true" barrelpos="204,30" spread="15" unskilledspread="25" combatPriority="80"
                       DualWieldAccuracyPenalty="7" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="0,0,180,180"/>

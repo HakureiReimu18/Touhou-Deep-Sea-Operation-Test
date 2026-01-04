@@ -2237,7 +2237,14 @@
         Ammunition for ‖color:gui.yellow‖weapons that use rifle ammunition‖end‖
     </entitydescription.Touhou_Corrupted_Rifle_Bullet>
 
-
+    <entityname.Touhou_Anguish>‖color:255,100,100,255‖Anguish‖end‖</entityname.Touhou_Anguish>
+    <entitydescription.Touhou_Anguish>True to its name, this weapon is the perfect embodiment of anguish. Microscopic barbs constantly remind you of this weapon's nature when held, but when you witness how it precisely injects anguish into every cell, you'll find that slight prick in your palm is but a fair price.
+        Deals higher damage to enemies with lower remaining health
+        Shotgun shooting consumes all pellets at once.
+        Use ‖color:gui.yellow‖Anguish Pellets or Hand Cannon Bullets‖end‖</entitydescription.Touhou_Anguish>
+    <entityname.Touhou_Anguish_Bullet>‖color:255,100,100,255‖Anguish Pellets‖end‖</entityname.Touhou_Anguish_Bullet>
+    <entitydescription.Touhou_Anguish_Bullet>Each round is a concentrated seed of anguish, crystallized from the nerve endings of the tormented.
+        Ammo for ‖color:gui.yellow‖Anguish‖end‖</entitydescription.Touhou_Anguish_Bullet>
 
 
 

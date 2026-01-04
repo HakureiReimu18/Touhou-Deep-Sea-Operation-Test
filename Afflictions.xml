@@ -219,7 +219,7 @@
                 <ReduceAffliction type="Phoenix_Burn" amount="1.0"/>
                 <ReduceAffliction type="Aura_Strip" amount="0.6"/>
                 <ReduceAffliction type="bleeding" amount="0.25"/>
-                <ReduceAffliction type="burn" amount="1.6"/>
+                <ReduceAffliction type="burn" amount="0.8"/>
             </StatusEffect>
         </Effect>
         <Effect minstrength="30" maxstrength="60"
@@ -234,7 +234,7 @@
                 <ReduceAffliction type="Phoenix_Burn" amount="1.0"/>
                 <ReduceAffliction type="Aura_Strip" amount="1.2"/>
                 <ReduceAffliction type="bleeding" amount="0.5"/>
-                <ReduceAffliction type="burn" amount="3.2"/>
+                <ReduceAffliction type="burn" amount="1.6"/>
             </StatusEffect>
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Essential_Oil_Application.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
