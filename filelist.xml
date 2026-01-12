@@ -212,6 +212,7 @@
     <OutpostConfig file="%ModDir%/Map/OutpostGenerationParameters.xml"/>
     <LocationTypes file="%ModDir%/Map/Touhou_LocationTypes.xml"/>
     <OutpostModule file="%ModDir%/Sub/Touhou_TGAO_Module.sub"/>
+    <OutpostModule file="%ModDir%/Sub/Touhou_TGAO_Module02.sub"/>
     <OutpostModule file="%ModDir%/Sub/Touhou_TGAO_Airlock.sub"/>
 
     <OutpostModule file="%ModDir%/Sub/Touhou_DockingModule_01.sub"/>

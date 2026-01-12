@@ -778,7 +778,7 @@
                 reportrange="1400"
                 skillmultiplier="5"
                 FindWeaponsRange="3000">
-            <ItemSet commonness="0.5">
+<!--            <ItemSet commonness="0.5">
                 <Item identifier="idcard" equip="true"/>
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true">
                     <Item identifier="Touhou_MEID"/>
@@ -798,7 +798,7 @@
                 <Item identifier="Touhou_Godsplitter"/>
                 <Item identifier="Touhou_Mental_Metal"/>
                 <Item identifier="Touhou_Lost_Storage_Bag_Caster"/>
-            </ItemSet>
+            </ItemSet>-->
             <ItemSet commonness="0.5">
                 <Item identifier="idcard" equip="true"/>
                 <Item identifier="Illness_Recovery_Charm_Shield_Lunatic" equip="true">

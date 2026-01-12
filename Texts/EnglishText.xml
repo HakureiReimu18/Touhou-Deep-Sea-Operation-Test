@@ -152,8 +152,8 @@
     <entityname.Mine_Blast>‖color:233,160,32,255‖Momoyo’s Bomb‖color:end‖</entityname.Mine_Blast>
     <entitydescription.Mine_Blast>“Your centipede grandpa is here!”</entitydescription.Mine_Blast>
 
-    <entityname.Sakuya_Knife>‖color:210,210,255,255‖Steel Throwing Knife‖color:end‖</entityname.Sakuya_Knife>
-    <entitydescription.Sakuya_Knife>A light weapon, easy to carry and throwable.</entitydescription.Sakuya_Knife>
+    <entityname.Touhou_Sakuya_Knife_Iron>‖color:210,210,255,255‖Steel Throwing Knife‖color:end‖</entityname.Touhou_Sakuya_Knife_Iron>
+    <entitydescription.Touhou_Sakuya_Knife_Iron>A light weapon, easy to carry and throwable.</entitydescription.Touhou_Sakuya_Knife_Iron>
 
     <entityname.youmuceremonialsword2>‖color:156,158,161,255‖White Tower Sword‖color:end‖</entityname.youmuceremonialsword2>
     <entitydescription.youmuceremonialsword2>A sword forged by youkai to sever confusion. Only those of the Konpaku family can use it.</entitydescription.youmuceremonialsword2>
@@ -332,13 +332,13 @@
     <entityname.Water_Element_Book>Grimoire — Water</entityname.Water_Element_Book>
     <entitydescription.Water_Element_Book>A disposable grimoire with built-in mana that even novices can use with ease.</entitydescription.Water_Element_Book>
 
-    <entityname.Touhou_Concentrated_Energy_Arc_Emitter>Concentrated Energy Arc Emitter — Handheld</entityname.Touhou_Concentrated_Energy_Arc_Emitter>
+    <entityname.Touhou_Concentrated_Energy_Arc_Emitter>‖color:5,105,195,200‖Concentrated Energy Arc Emitter — Handheld‖color:end‖</entityname.Touhou_Concentrated_Energy_Arc_Emitter>
     <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>The kappa built this at Tenshi’s request. Though it falls short of an ideal “keystone,” its convenient keystone-launching function pleases her. Often injures the user underwater… ‖color:gui.orange‖(Beware of friendly fire.)‖color:end‖
         Uses ‖color:gui.yellow‖Electric Keystone‖end‖.
     </entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>
 
-    <entityname.Lightning_Kanameishi>Electric Keystone</entityname.Lightning_Kanameishi>
-    <entitydescription.Lightning_Kanameishi>A keystone energized by lightning during special weather—serves as the power module for the arc emitter.\n“By rights, shouldn’t a keystone be an insulator…?” Ammunition for the ‖color:gui.yellow‖Concentrated Energy Arc Emitter — Handheld‖end‖.</entitydescription.Lightning_Kanameishi>
+    <entityname.Touhou_Concentrated_Energy_Arc_Emitter_Ammo>‖color:5,105,195,200‖Electric Keystone‖color:end‖</entityname.Touhou_Concentrated_Energy_Arc_Emitter_Ammo>
+    <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Ammo>A keystone energized by lightning during special weather—serves as the power module for the arc emitter.\n“By rights, shouldn’t a keystone be an insulator…?” Ammunition for the ‖color:gui.yellow‖Concentrated Energy Arc Emitter — Handheld‖end‖.</entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Ammo>
 
     <entityname.Patchouli_Doll>Patchouli Doll</entityname.Patchouli_Doll>
     <entitydescription.Patchouli_Doll>Mu~Q! (Insert any bottled element, carry to slowly regenerate health. Right-click while held to double the effect.)</entitydescription.Patchouli_Doll>
@@ -633,8 +633,14 @@
     <entityname.Touhou_Alice_Needle>Alice’s Giant Sewing Needle</entityname.Touhou_Alice_Needle>
     <entitydescription.Touhou_Alice_Needle>Ordinarily, needles for sewing dolls are tiny—clearly this one was not meant for doll-making.</entitydescription.Touhou_Alice_Needle>
 
-    <entityname.Touhou_Alice_Puppet_Suitcase>Puppet Suitcase</entityname.Touhou_Alice_Puppet_Suitcase>
-    <entitydescription.Touhou_Alice_Puppet_Suitcase>Alice’s suitcase for storing dolls, protecting them from Europa’s frigid waters and accelerating doll energy recovery.</entitydescription.Touhou_Alice_Puppet_Suitcase>
+    <entityname.Touhou_Alice_Doll_Handbag>‖color:140,189,151,255‖Doll Handbag‖color:end‖</entityname.Touhou_Alice_Doll_Handbag>
+    <entitydescription.Touhou_Alice_Doll_Handbag>Alice's handheld bag, can store notes, keeping them away from Europa's frigid waters. Also increases doll energy recovery rate.</entitydescription.Touhou_Alice_Doll_Handbag>
+
+    <entityname.Touhou_Alice_Doll_Purse>‖color:105,164,185,255‖Doll Purse‖color:end‖</entityname.Touhou_Alice_Doll_Purse>
+    <entitydescription.Touhou_Alice_Doll_Purse>Alice's purse for storing tools, still waterproof and fireproof. Also increases doll energy recovery rate.</entitydescription.Touhou_Alice_Doll_Purse>
+
+    <entityname.Touhou_Alice_Doll_Suitcase>‖color:153,50,204,255‖Doll Suitcase‖color:end‖</entityname.Touhou_Alice_Doll_Suitcase>
+    <entitydescription.Touhou_Alice_Doll_Suitcase>Alice's suitcase for holding dolls, can protect the dolls inside from Europa's frigid waters. Also increases doll energy recovery rate.</entitydescription.Touhou_Alice_Doll_Suitcase>
 
     <entityname.Touhou_Berry_Wine>Red Berry Wine</entityname.Touhou_Berry_Wine>
     <entitydescription.Touhou_Berry_Wine>A specialty wine inspired by the youkai after arriving on Europa. Restores blood and helps detoxify, but ordinary humans may find it overpowering.</entitydescription.Touhou_Berry_Wine>
@@ -1514,7 +1520,7 @@
     <entitydescription.Touhou_Pellen_Bottle>A jar of specially blended pollen that, when sprayed, is surprisingly lethal. Ammo for ‖color:gui.yellow‖Pollen Sprayer‖end‖ (‖color:gui.yellow‖cannot be recharged‖end‖).</entitydescription.Touhou_Pellen_Bottle>
 
     <entityname.Touhou_Repair_Gun>Repair Pistol</entityname.Touhou_Repair_Gun>
-    <entitydescription.Touhou_Repair_Gun>Uses wood-element magic to remove external damage from a target.</entitydescription.Touhou_Repair_Gun>
+    <entitydescription.Touhou_Repair_Gun>Uses element magic to remove external damage from a target.</entitydescription.Touhou_Repair_Gun>
 
     <entityname.Touhou_Unknown_X>‖color:90,80,100,255‖Unknown X‖end‖</entityname.Touhou_Unknown_X>
     <entitydescription.Touhou_Unknown_X>A mysterious heavy machine gun modified by Nue’s unknown factors, firing bullets with varied effects. Unstable components may damage the weapon; requires fuel rods for stabilization. Uses ‖color:gui.yellow‖Unknown Bullet Shards or Heavy MG Mag‖end‖.</entitydescription.Touhou_Unknown_X>
@@ -1823,7 +1829,8 @@
     <entitydescription.Touhou_Blessings_Sunflowers_Ammo02>A warm nutrient fluid that powers the weapon to fire energy beams. Ammo for ‖color:gui.yellow‖Blessing of Sunflowers‖end‖.</entitydescription.Touhou_Blessings_Sunflowers_Ammo02>
 
     <entityname.Touhou_Moriya_Bag>Moriya Shrine Waist Pouch</entityname.Touhou_Moriya_Bag>
-    <entitydescription.Touhou_Moriya_Bag>Created by Sanae and local craftsmen to spread faith. Lightweight and simple, it also carries a charm’s blessing. Requires ‖color:gui.yellow‖Battery‖end‖ to activate: when the wearer has any Miracle effect, damage taken is reduced by 10%. Wearing a charm simultaneously further enhances the effect.</entitydescription.Touhou_Moriya_Bag>
+    <entitydescription.Touhou_Moriya_Bag>To better spread faith, Sanae crafted this waist bag together with local craftsmen. Lightweight and unassuming, it also possesses talismanic properties. Autoinjector activates at 70% health threshold.
+        Requires ‖color:gui.yellow‖battery‖end‖ to activate: When the wearer has any Miracle effect, damage taken is reduced by 10%. If worn together with a talisman, the effect is further enhanced.</entitydescription.Touhou_Moriya_Bag>
 
     <entityname.Touhou_Spectral_Ore01>Spectral Gem Ore</entityname.Touhou_Spectral_Ore01>
     <entitydescription.Touhou_Spectral_Ore01>Ore visible only through ghostly energy, can be dismantled into various minerals.</entitydescription.Touhou_Spectral_Ore01>

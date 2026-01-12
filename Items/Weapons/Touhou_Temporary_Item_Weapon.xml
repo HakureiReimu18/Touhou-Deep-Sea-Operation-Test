@@ -13,7 +13,8 @@
         <InventoryIcon name="" texture="%ModDir%/Images/OtherWeapons/Touhou_Elements_Book.png" sourcerect="0,0,110,110" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Elements_Book.png" sourcerect="0,0,110,110" depth="0.5" origin="0.5,0.5"/>
         <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair03.png" depth="0.45" sourcerect="0,0,128,128" origin="0.5,0.5"
-                          rotationspeed="90" scaleanim="Sine" ScaleAnimSpeed="5" ScaleAnimAmount="0.2,0.2">
+                          Offset="110,0" rotationspeed="90" scaleanim="Sine" ScaleAnimSpeed="5" ScaleAnimAmount="0.2,0.2">
+            <IsActiveConditional Condition="gt 0.0" />
         </DecorativeSprite>
         <LightComponent LightColor="255,255,255,255" Range="0" IsOn="true">
             <sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Stellar_Staff.png" sourcerect="0,23,1,1" origin="0.5,0.5"/>
@@ -46,7 +47,7 @@
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon weapondamagemodifier="1" barrelpos="90,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50"
+        <RangedWeapon weapondamagemodifier="1" barrelpos="110,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50"
                       drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.6" DualWieldAccuracyPenalty="12">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair01.png" sourcerect="0,0,160,160"/>
@@ -125,9 +126,9 @@
     <!--临时物品-聚能电弧发射器-手持型-->
     <Item name="临时物品-聚能电弧发射器-手持型" identifier="Touhou_Concentrated_Energy_Arc_Emitter_Temporary"
           tags="mediumitem,weapon,gun,ProvocativeToHumanAI,Touhou_Cam_Offset_Normal,Touhou_Temporary_Item_Weapon" category="Weapon"
-          subcategory="Touhou" isshootable="true" Scale="1" HideInEditors="true">
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Concentrated_Energy_Arc_Emitter.png" sourcerect="0,0,118,44" depth="0.5"
-                origin="0.5,0.5"/>
+          subcategory="Touhou" isshootable="true" Scale="0.26" HideInEditors="true">
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Concentrated_Energy_Arc_Emitter.png" sourcerect="400,0,182,125" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Concentrated_Energy_Arc_Emitter.png" sourcerect="0,0,400,132" depth="0.5" origin="0.5,0.5"/>
         <Deconstruct time="1"/>
         <Body width="130" height="55" density="25"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="60,-15" aimpos="60,-10" handle1="-25,-10" handle2="10,-3"
@@ -152,7 +153,7 @@
                 <Remove/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" Interval="1.0" disabledeltatime="true" stackable="false" oneshot="true">
-                <SpawnItem identifiers="Lightning_Kanameishi_Temporary" spawnposition="ThisInventory"/>
+                <SpawnItem identifiers="Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary" spawnposition="ThisInventory"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
@@ -173,11 +174,11 @@
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" Condition="-1.0" disabledeltatime="true"/>
             <RequiredSkill identifier="Touhou_Magic" level="55"/>
-            <RequiredItems items="Lightning_Kanameishi_Temporary" type="Contained"/>
+            <RequiredItems items="Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary" type="Contained"/>
         </RangedWeapon>
-        <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" SpawnWithId="Lightning_Kanameishi_Temporary"
+        <ItemContainer itemrotation="90" capacity="1" maxstacksize="1" hideitems="true" itempos="10,-5" containedspritedepth="0.56" SpawnWithId="Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary"
                        removecontaineditemsondeconstruct="true" containedstateindicatorstyle="battery">
-            <Containable items="Lightning_Kanameishi_Temporary"/>
+            <Containable items="Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary"/>
         </ItemContainer>
         <Quality>
             <QualityStat stattype="FirepowerMultiplier" value="0.067"/>
@@ -187,23 +188,23 @@
     </Item>
 
     <!--临时武器-电能要石-->
-    <Item name="临时武器-电能要石" identifier="Lightning_Kanameishi_Temporary" scale="0.32" subcategory="Touhou" category="Weapon" interactthroughwalls="true" Health="80"
+    <Item name="临时武器-电能要石" identifier="Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary" scale="0.32" subcategory="Touhou" category="Weapon" interactthroughwalls="true" Health="80"
           cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" hideinmenus="true">
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Kanameishi.png" sourcerect="3,0,92,72" origin="0.5,0.5"/>
-        <Body width="30" height="30" density="10"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Concentrated_Energy_Arc_Emitter.png" sourcerect="0,132,58,140" origin="0.5,0.5"/>
+        <Body width="58" height="140" density="10"/>
         <Pickable canBeCombined="true" slots="Any" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnBroken" target="This" Condition="100" disabledeltatime="true" delay="2" setvalue="true"/>
             <StatusEffect type="OnBroken" target="This">
                 <Sound file="%ModDir%/Sounds/Weapons/Touhou_Magic_Weapon_Reload01.ogg" type="OnUse" range="800" volume="1.5" selectionmode="Random"/>
             </StatusEffect>
         </Pickable>
-        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Lightning_Kanameishi_Bolt"
+        <ItemContainer autofill="False" hideitems="true" capacity="1" maxstacksize="1" SpawnWithId="Touhou_Concentrated_Energy_Arc_Emitter_Bullet"
                        removecontaineditemsondeconstruct="true"
                        drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true">
-            <Containable items="Lightning_Kanameishi_Bolt"/>
+            <Containable items="Touhou_Concentrated_Energy_Arc_Emitter_Bullet"/>
             <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32"/>
             <StatusEffect type="OnUse" target="This" condition="-2" disabledeltatime="true">
-                <SpawnItem identifiers="Lightning_Kanameishi_Bolt" spawnposition="ThisInventory"/>
+                <SpawnItem identifiers="Touhou_Concentrated_Energy_Arc_Emitter_Bullet" spawnposition="ThisInventory"/>
             </StatusEffect>
         </ItemContainer>
     </Item>
@@ -216,6 +217,10 @@
         <Deconstruct time="5"/>
         <InventoryIcon name="" texture="%ModDir%/Images/OtherWeapons/Touhou_Cyber_Homing_Amulet.png" sourcerect="0,0,146,56" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Cyber_Homing_Amulet.png" sourcerect="0,0,146,56" origin="0.5,0.5" depth="0.56"/>
+        <DecorativeSprite texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_2.png" sourcerect="0,0,64,64" depth="0.4" origin="0.5,0.5"
+                          Offset="150,0" rotationspeed="90" Scale="1.0" Color="255,255,255,200">
+            <IsActiveConditional Condition="gt 0.0" />
+        </DecorativeSprite>
         <Body width="126" height="46" density="10"/>
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="0,-5" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
@@ -236,7 +241,7 @@
         </Holdable>
 
         <!--武器参数-->
-        <RangedWeapon reload="0.4" holdtrigger="true" barrelpos="58,10" spread="3" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true"
+        <RangedWeapon reload="0.4" holdtrigger="true" barrelpos="120,10" spread="3" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true"
                       crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="8">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256"/>
@@ -443,6 +448,10 @@
         <Deconstruct time="10"/>
         <InventoryIcon name="" texture="%ModDir%/Images/OtherWeapons/Touhou_Frozen_Frog.png" sourcerect="0,0,112,140" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Frozen_Frog.png" sourcerect="0,0,112,140" depth="0.3" origin="0.5,0.5"/>
+        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair09.png" depth="0.45" sourcerect="0,0,512,512" origin="0.5,0.5"
+                          Offset="150,0" rotationspeed="90" Scale="0.3" Color="100,100,255,255">
+            <IsActiveConditional Condition="gt 0.0" />
+        </DecorativeSprite>
         <Body width="32" height="32" density="10"/>
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="0,0" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
@@ -468,7 +477,7 @@
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon barrelpos="50,10" spread="3" unskilledspread="9" reload="0.21" combatPriority="50" drawhudwhenequipped="true"
+        <RangedWeapon barrelpos="160,10" spread="3" unskilledspread="9" reload="0.21" combatPriority="50" drawhudwhenequipped="true"
                       crosshairscale="0.3" DualWieldReloadTimePenaltyMultiplier="1.7" DualWieldAccuracyPenalty="6">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Icicle_Fall.png" sourcerect="145,0,199,199"/>
@@ -540,6 +549,10 @@
         <Deconstruct time="0.5"/>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Love_Maze.png" sourcerect="0,0,63,190" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Love_Maze.png" sourcerect="0,0,63,190" depth="0.4" origin="0.5,0.5"/>
+        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair08.png" depth="0.45" sourcerect="0,0,512,512" origin="0.5,0.5"
+                          Offset="75,0" rotationspeed="450" Scale="0.12" Color="255,100,100,255">
+            <IsActiveConditional Condition="gt 0.0" />
+        </DecorativeSprite>
         <Body width="63" height="190" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdangle="-40" aimpos="63,0" handle1="0,0" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
@@ -590,7 +603,7 @@
         </Holdable>
 
         <!--武器参数-->
-        <RangedWeapon reload="0.2" maxchargetime="0.4" holdtrigger="true" barrelpos="40,2" spread="1" unskilledspread="8" ProjectileCount="1"
+        <RangedWeapon reload="0.2" maxchargetime="0.4" holdtrigger="true" barrelpos="75,2" spread="1" unskilledspread="8" ProjectileCount="1"
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.25">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Love_Maze_Crosshair.png" sourcerect="0,0,256,256"/>
             <!--            <ParticleEmitter particle="ElectricShock" AngleMax="360" ScaleMin="0.4" ScaleMax="0.8" ScaleMultiplier="0.2,0.2" ParticlesPerSecond="1"
@@ -823,6 +836,10 @@
         <Deconstruct time="5"/>
         <InventoryIcon name="" texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Magic_Book.png" sourcerect="0,0,80,64" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Alice_Magic_Book.png" sourcerect="80,0,84,112" depth="0.3" origin="0.5,0.5"/>
+        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair08.png" depth="0.45" sourcerect="0,0,512,512" origin="0.5,0.5"
+                          Offset="130,0" rotationspeed="360" Scale="0.3" Color="255,10,255,255">
+            <IsActiveConditional Condition="gt 0.0" />
+        </DecorativeSprite>
         <Body width="72" height="72" density="10"/>
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="40,-10" handle1="-26,-11" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
@@ -846,7 +863,7 @@
 
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon barrelpos="77,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50" drawhudwhenequipped="true"
+        <RangedWeapon barrelpos="140,2" spread="7" unskilledspread="28" reload="0.4" combatPriority="50" drawhudwhenequipped="true"
                       crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.5" DualWieldAccuracyPenalty="12">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair01.png" sourcerect="0,0,160,160"/>
@@ -921,6 +938,10 @@
         <Deconstruct time="3"/>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Knife_Silver.png" sourcerect="0,0,128,128" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Sakuya_Knife_Silver.png" sourcerect="128,41,123,59" depth="0.55" origin="0.5,0.5"/>
+        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair09.png" depth="0.45" sourcerect="0,0,512,512" origin="0.5,0.5"
+                          Offset="170,0" rotationspeed="360" Scale="0.3" Color="255,255,255,255">
+            <IsActiveConditional Condition="gt 0.0" />
+        </DecorativeSprite>
         <Body width="140" height="60" density="10"/>
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-4,0" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
@@ -942,7 +963,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.1" ProjectileCount="2" holdtrigger="true" barrelpos="58,10" spread="10" unskilledspread="16" combatPriority="80"
+        <RangedWeapon reload="0.1" ProjectileCount="2" holdtrigger="true" barrelpos="170,0" spread="10" unskilledspread="16" combatPriority="80"
                       drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.2" DualWieldAccuracyPenalty="8">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256"/>
@@ -1107,6 +1128,10 @@
         <Deconstruct time="3"/>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Yukari_Folding_Fan.png" sourcerect="0,0,102,102" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Yukari_Folding_Fan.png" sourcerect="102,0,97,146" depth="0.55" origin="0.5,0.5"/>
+        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair09.png" depth="0.45" sourcerect="0,0,512,512" origin="0.5,0.5"
+                          Offset="120,0" rotationspeed="360" Scale="0.2" Color="255,150,255,255">
+            <IsActiveConditional Condition="gt 0.0" />
+        </DecorativeSprite>
         <Body width="97" height="146" density="10"/>
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-4,0" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
@@ -1128,7 +1153,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="58,10" spread="4" unskilledspread="16" combatPriority="80"
+        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="120,5" spread="4" unskilledspread="16" combatPriority="80"
                       launchImpulse="5" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.2"
                       DualWieldAccuracyPenalty="8">
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair01.png" sourcerect="0,0,160,160"/>
@@ -1523,6 +1548,10 @@
         <Deconstruct time="3"/>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Noh_Performance_Fan.png" sourcerect="145,0,107,113" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Noh_Performance_Fan.png" sourcerect="0,0,130,240" depth="0.55" origin="0.5,0.5"/>
+        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair09.png" depth="0.45" sourcerect="0,0,512,512" origin="0.5,0.5"
+                          Offset="120,0" rotationspeed="360" Scale="0.2" Color="255,150,255,255">
+            <IsActiveConditional Condition="gt 0.0" />
+        </DecorativeSprite>
         <Body width="130" height="240" density="10"/>
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-20,-2" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
@@ -1544,7 +1573,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="100,10" spread="4" unskilledspread="16" combatPriority="80"
+        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="120,10" spread="4" unskilledspread="16" combatPriority="80"
                       launchImpulse="5" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.3"
                       DualWieldAccuracyPenalty="8">
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair01.png" sourcerect="0,0,160,160"/>
@@ -1563,7 +1592,7 @@
             <RequiredItems items="Touhou_Noh_Performance_Fan_Ammo_Temporary" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="Touhou_Magic" level="55"/>
         </RangedWeapon>
-        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="100,10" spread="4" unskilledspread="16" combatPriority="80"
+        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="120,10" spread="4" unskilledspread="16" combatPriority="80"
                       launchImpulse="5" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.3"
                       DualWieldAccuracyPenalty="8">
             <StatusEffect type="OnUse" target="Contained">
@@ -1572,7 +1601,7 @@
             <RequiredItems items="Touhou_Noh_Performance_Fan_Ammo_Temporary" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="Touhou_Magic" level="55"/>
         </RangedWeapon>
-        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="100,10" spread="4" unskilledspread="16" combatPriority="80"
+        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="120,10" spread="4" unskilledspread="16" combatPriority="80"
                       launchImpulse="5" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.3"
                       DualWieldAccuracyPenalty="8">
             <StatusEffect type="OnUse" target="Contained">
@@ -1581,7 +1610,7 @@
             <RequiredItems items="Touhou_Noh_Performance_Fan_Ammo_Temporary" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="Touhou_Magic" level="55"/>
         </RangedWeapon>
-        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="100,10" spread="4" unskilledspread="16" combatPriority="80"
+        <RangedWeapon reload="0.25" holdtrigger="true" barrelpos="120,10" spread="4" unskilledspread="16" combatPriority="80"
                       launchImpulse="5" drawhudwhenequipped="true" crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.3"
                       DualWieldAccuracyPenalty="8">
             <StatusEffect type="OnUse" target="Contained">
@@ -1611,7 +1640,7 @@
         </ItemContainer>
         <aitarget sightrange="200" soundrange="400" fadeouttime="5"/>
         <Quality>
-            <QualityStat stattype="FirepowerMultiplier" value="0.12"/>
+            <QualityStat stattype="FirepowerMultiplier" value="0.08"/>
         </Quality>
         <SkillRequirementHint identifier="Touhou_Magic" level="55"/>
     </Item>
@@ -1750,15 +1779,9 @@
         <Deconstruct time="3"/>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Prayer_Wind_Bracer.png" sourcerect="400,0,191,162" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Prayer_Wind_Bracer.png" sourcerect="0,0,400,202" depth="0.55" origin="0.5,0.5"/>
-        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Prayer_Wind_Bracer.png" depth="0.55" sourcerect="0,0,400,202" origin="0.5,0.5"
-                          offset="24,0" Scale="0.1"
-                          rotationspeed="100">
-            <IsActiveConditional Condition="gt 0.0"/>
-        </DecorativeSprite>
-        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Prayer_Wind_Bracer.png" depth="0.44" sourcerect="297,248,79,82" origin="0.5,0.5"
-                          offset="24,0" Scale="0.1"
-                          rotationspeed="100">
-            <IsActiveConditional Condition="gt 0.0"/>
+        <DecorativeSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair09.png" depth="0.4" sourcerect="0,0,512,512" origin="0.5,0.5"
+                          Offset="320,0" rotationspeed="360" Scale="0.28" Color="100,255,100,255">
+            <IsActiveConditional Condition="gt 0.0" />
         </DecorativeSprite>
         <Body width="400" height="202" density="10"/>
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" aimpos="63,0" handle1="-2,0" msg="ItemMsgPickUpSelect">
@@ -1781,7 +1804,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.7" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.11" holdtrigger="true" barrelpos="80,10" spread="4" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true"
+        <RangedWeapon reload="0.11" holdtrigger="true" barrelpos="320,10" spread="4" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true"
                       crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.3">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256"/>
@@ -1796,7 +1819,7 @@
             <RequiredItems items="Touhou_Prayer_Wind_Bracer_Ammo_Temporary" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="Touhou_Magic" level="55"/>
         </RangedWeapon>
-        <RangedWeapon reload="0.11" holdtrigger="true" barrelpos="80,10" spread="4" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true"
+        <RangedWeapon reload="0.11" holdtrigger="true" barrelpos="320,10" spread="4" unskilledspread="16" combatPriority="80" drawhudwhenequipped="true"
                       crosshairscale="0.2" DualWieldReloadTimePenaltyMultiplier="1.3">
             <StatusEffect type="OnUse" target="Contained">
                 <Use/>
@@ -1804,7 +1827,7 @@
             <RequiredItems items="Touhou_Prayer_Wind_Bracer_Ammo_Temporary" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="Touhou_Magic" level="55"/>
         </RangedWeapon>
-        <RepairTool range="800" barrelpos="20,5" wateramount="30.0" spread="8" repairmultiple="true" repairthroughwalls="false"
+        <RepairTool range="800" barrelpos="320,5" wateramount="30.0" spread="8" repairmultiple="true" repairthroughwalls="false"
                     repairthroughholes="true">
             <RequiredItems items="Touhou_Prayer_Wind_Bracer_Ammo_Temporary" type="Contained"/>
             <RequiredSkill identifier="Touhou_Magic" level="55"/>

@@ -129,13 +129,13 @@
     <entityname.Reimu_Decalmask>‖color:255,81,75,255‖Reimu's Sticker Mask‖color:end‖</entityname.Reimu_Decalmask>
     <entitydescription.Reimu_Decalmask>‖color:255,81,75,255‖Looks surprisingly good when worn.‖color:end‖</entitydescription.Reimu_Decalmask>
     <talentname.Innocent_Treasures>Innocent Treasures</talentname.Innocent_Treasures>
-    <talentdescription.Innocent_Treasures>When wearing ‖color:gui.orange‖Reimu's Outfit+‖end‖:
-        ‖color:gui.orange‖Swim Speed‖end‖ +‖color:gui.green‖60%‖end‖
-        ‖color:gui.orange‖Walk Speed‖end‖ +‖color:gui.green‖15%‖end‖
-        +‖color:gui.green‖10%‖end‖ damage to non-human creatures and +‖color:gui.green‖5%‖end‖ armor penetration.
-        Attacks causing ‖color:gui.yellow‖Laceration/Gunshot/Blunt/Bite‖end‖ have a ‖color:gui.green‖10%‖end‖ chance to convert that damage into ‖color:gui.yellow‖Deep Tissue Damage‖end‖.
-        \n‖color:gui.red‖No bonus effects from exclusive weapons‖end‖
-    </talentdescription.Innocent_Treasures>
+    <talentdescription.Innocent_Treasures>When wearing ‖color:gui.orange‖Reimu's Outfit+‖end‖,
+        Reduces ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖Maximum Health‖end‖ and ‖color:gui.red‖20%‖end‖ ‖color:gui.orange‖Physical Damage Resistance‖end‖
+        Increases ‖color:gui.green‖50%‖end‖ ‖color:gui.orange‖Swimming Speed‖end‖
+        Increases ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Walking Speed‖end‖
+        Increases damage to non-human creatures by ‖color:gui.green‖20%‖end‖ and armor penetration by ‖color:gui.green‖5%‖end‖
+        Reduces damage taken from non-humans by ‖color:gui.green‖20%‖end‖, and by only ‖color:gui.green‖10%‖end‖ from humans
+        \n‖color:gui.red‖No bonus effect for exclusive weapons‖end‖</talentdescription.Innocent_Treasures>
     <afflictionname.RedAndWhite>The Eternal Shrine Maiden</afflictionname.RedAndWhite>
     <afflictiondescription.RedAndWhite>Reimu Hakurei, the ever-present shrine maiden of Gensokyo’s Hakurei Shrine.</afflictiondescription.RedAndWhite>
     <afflictionname.Reimu_Weapons>Shrine Maiden of the Hakurei Shrine</afflictionname.Reimu_Weapons>
@@ -325,10 +325,9 @@
     <entitydescription.Flandre_Eclipse_Anniversary_Plus>‖color:255,255,255,255‖Flandre lives in the Scarlet Devil Mansion’s basement and rarely goes outside. Although the others in the mansion restrict her from leaving because of her dangerous powers and unstable mind, in truth Flandre simply feels comfortable living there and chooses to stay.‖color:end‖\n(Built-in scanner slot)</entitydescription.Flandre_Eclipse_Anniversary_Plus>
     <talentname.FlandreTalent>Destructive Vampire Little Sister</talentname.FlandreTalent>
     <talentdescription.FlandreTalent>When wearing Flandre Outfit+:
-        Physical damage taken +‖color:gui.red‖10%‖end‖, burn damage taken +‖color:gui.red‖30%‖end‖.
+        Physical damage taken +‖color:gui.red‖30%‖end‖, burn damage taken +‖color:gui.red‖50%‖end‖.
         Repair speed −‖color:gui.red‖20%‖end‖.
         ‖color:gui.orange‖Medical skill‖end‖ permanently −‖color:gui.red‖100‖end‖.
-<!--        ‖color:gui.orange‖Healing received‖end‖ −‖color:gui.red‖20%‖end‖.-->
         ‖color:gui.orange‖Drug effectiveness‖end‖ −‖color:gui.red‖20%‖end‖.
         \nRecovers faster from ‖color:gui.orange‖Bleeding‖end‖ and ‖color:gui.orange‖Bloodloss‖end‖.
         Damage with ‖color:gui.orange‖exclusive weapons‖end‖ +‖color:gui.green‖10%‖end‖, melee damage +‖color:gui.green‖30%‖end‖.
@@ -336,7 +335,7 @@
     </talentdescription.FlandreTalent>
     <talentname.FlandreTalent2>Terrifying Wave</talentname.FlandreTalent2>
     <talentdescription.FlandreTalent2>When wearing Flandre Outfit+:
-        If HP >‖color:gui.green‖50%‖end‖, an additional ‖color:gui.green‖30%‖end‖ chance to deal +‖color:gui.green‖49.5%‖end‖ ranged damage.</talentdescription.FlandreTalent2>
+        If HP >‖color:gui.green‖50%‖end‖, an additional ‖color:gui.green‖49.5%‖end‖ chance to deal +‖color:gui.green‖30%‖end‖ ranged damage.</talentdescription.FlandreTalent2>
     <talentname.FlandreTalent3>Crimson-Blood Devil</talentname.FlandreTalent3>
     <talentdescription.FlandreTalent3>When wearing Flandre Outfit+:
         Debuff resistance +‖color:gui.green‖15%‖end‖.
@@ -859,7 +858,11 @@
         Slowly recovers from ‖color:gui.yellow‖oxygen deprivation‖end‖
         After being attacked, briefly reduces the attacker’s ‖color:gui.orange‖attack damage‖end‖
         When HP is below ‖color:gui.green‖50%‖end‖, incoming damage –‖color:gui.green‖20%‖end‖
-        Using ‖color:gui.orange‖herbal medicine or candy‖end‖ on any creature grants +‖color:gui.green‖10‖end‖ HP for one round
+        After using ‖color:gui.orange‖plant-based medicine or candy‖end‖ on an another Yousei-class character,
+        grant ‖color:gui.green‖10‖end‖ bonus maximum health for one round.
+        If the talent ‖color:gui.red‖“Fairy Alliance”‖end‖ is unlocked,
+        this effect can be applied to all another creatures at half effectiveness.
+
         Grants nearby players a buff:
         +‖color:gui.green‖15%‖end‖ medicine effectiveness, +‖color:gui.green‖10%‖end‖ ‖color:gui.yellow‖opioid addiction, drug addiction, and oxygen deprivation resistance‖end‖.
         This buff is not enhanced by the ‖color:gui.orange‖Fairy Alliance‖end‖.</talentdescription.LilywhiteTalent>

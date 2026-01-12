@@ -30,8 +30,8 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="1.1"/>
-                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="1.3"/>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="1.3"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="1.5"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -92,10 +92,10 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet"/>
                 <AbilityConditionAboveVitality vitalitypercentage="0.5"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
+                <AbilityConditionServerRandom randomchance="0.495"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.495"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.3"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

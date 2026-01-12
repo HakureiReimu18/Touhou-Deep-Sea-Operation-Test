@@ -134,7 +134,7 @@
         <Effect minstrength="0" maxstrength="50"
                 multiplybymaxvitality="true"
                 minspeedmultiplier="1.0" maxspeedmultiplier="0.85"
-                minvitalitydecrease="0" maxvitalitydecrease="0.4"
+                minvitalitydecrease="0" maxvitalitydecrease="0.3"
                 strengthchange="-0.04">
             <StatValue stattype="RangedAttackSpeed" minvalue="0" value="-0.1"/>
             <StatValue stattype="MeleeAttackSpeed" minvalue="0" value="-0.1"/>
@@ -142,7 +142,7 @@
         <Effect minstrength="50" maxstrength="100"
                 multiplybymaxvitality="true"
                 minspeedmultiplier="0.85" maxspeedmultiplier="0.65"
-                minvitalitydecrease="0.4" maxvitalitydecrease="0.95">
+                minvitalitydecrease="0.3" maxvitalitydecrease="0.8">
             <StatusEffect target="Limb">
                 <ParticleEmitter particle="IcicleBoom" scalemin="0.3" scalemax="0.6" DistanceMin="0" DistanceMax="10" ParticlesPerSecond="1"
                                  AngleMin="60" AngleMax="120" VelocityMax="120" colormultiplier="200,200,255,255"/>
@@ -3502,7 +3502,7 @@
                 iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_Dark_Fog_Effect" minstrength="0" maxstrength="10"/>
         <Effect minstrength="0" maxstrength="10" MinScreenBlur="0.0" MaxScreenBlur="0.25"
-                minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.7" strengthchange="-0.4"/>
+                minafflictionoverlayalphamultiplier="0" maxafflictionoverlayalphamultiplier="0.6" strengthchange="-0.4"/>
         <AfflictionOverlay texture="%ModDir%/Images/Missions/Screen_Black.png"/>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Deceit_Mod_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
@@ -4000,13 +4000,9 @@
                 duration="3.0" hideiconafterdelay="true" showinhealthscannerthreshold="1000" affectmachines="true"
                 iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_Rose_Fragrance" minstrength="0" maxstrength="10"/>
-        <Effect minstrength="0" maxstrength="100" minbuffmultiplier="1.2" maxbuffmultiplier="1.2"
-                resistancefor="bleeding,burn,stun" minresistance="0.1" maxresistance="0.1">
-            <StatusEffect target="Character" Interval="1.0" disabledeltatime="true">
-                <ReduceAffliction type="burn" strength="0.2"/>
-            </StatusEffect>
+        <Effect minstrength="0" maxstrength="10" resistancefor="bleeding,burn,stun" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
-            <StatValue stattype="RangedSpreadReduction" value="0.11"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
             <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
             <StatValue stattype="PropulsionSpeed" value="0.25"/>
         </Effect>
@@ -4335,7 +4331,7 @@
                 duration="8.0" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true"
                 iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_Never_Give_Up_Effect" minstrength="0" maxstrength="1"/>
-        <Effect minstrength="0" maxstrength="1">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="-0.15" maxresistance="-0.15" >
             <StatValue stattype="MedicalItemApplyingMultiplier" value="-0.3"/>
             <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.3"/>
         </Effect>
@@ -4374,7 +4370,7 @@
                 limbspecific="false"
                 indicatorlimb="Head"
                 maxstrength="10"
-                duration="50"
+                duration="30"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
@@ -4609,11 +4605,12 @@
                 iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_Moriya_Bag_Effect" minstrength="0" maxstrength="10"/>
         <Effect minstrength="0" maxstrength="100"
-                resistancefor="psychosis" minresistance="0.25" maxresistance="0.25">
+                resistancefor="psychosis,debuff" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="DeconstructorSpeedMultiplier" value="0.6"/>
             <StatValue stattype="FabricationSpeed" value="0.6"/>
             <StatValue stattype="SwimmingSpeed" value="0.2"/>
             <StatValue stattype="RepairSpeed" value="0.2"/>
+            <StatValue stattype="RangedSpreadReduction" value="0.11"/>
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Moriya_Bag_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
@@ -4741,7 +4738,7 @@
                 duration="6.0" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true"
                 iconcolors="94,80,80;163,100,100;255,100,100">
         <Description textidentifier="afflictiondescription.Touhou_Never_Give_Up_Effect" minstrength="0" maxstrength="1"/>
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,bleeding,bloodloss" minresistance="-0.35" maxresistance="-0.35">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,bleeding,bloodloss" minresistance="-0.45" maxresistance="-0.45">
             <StatusEffect target="Character" Interval="0.5" disabledeltatime="true">
                 <ParticleEmitter particle="Touhou_Instant_Blue_Talent_Effect" particleamount="8" anglemin="0" anglemax="360"
                                  colormultiplier="255,0,0,255"
@@ -4766,7 +4763,7 @@
     <Affliction name="潮汐超导电磁枪爆炸效果" identifier="Touhou_Superconducting_Electromagnetic_Gun_Effect" description=""
                 type="Touhou_Superconducting_Electromagnetic_Gun_Effect"
                 isbuff="true" limbspecific="false" indicatorlimb="Head" maxstrength="1"
-                duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="false"
+                duration="5.0" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="false"
                 iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_ODM10_Aff_Event_Effect" minstrength="0" maxstrength="1"/>
         <Effect minstrength="0" maxstrength="1" minspeedmultiplier="0.5" maxspeedmultiplier="0.5" />
@@ -5062,7 +5059,7 @@
         <Effect minstrength="0" maxstrength="1">
             <StatusEffect target="Character" disabledeltatime="true">
                 <ParticleEmitter particle="Tenshi_Peach_Effect" ScaleMultiplier="0.1,0.1" ParticlesPerSecond="10" ColorMultiplier="255,10,10,255"
-                                 Angle="-90" Distance="28"/>
+                                 Angle="90" Distance="28"/>
             </StatusEffect>
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Deceit_Mod_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>

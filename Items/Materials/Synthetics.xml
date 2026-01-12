@@ -482,7 +482,7 @@
             <Price storeidentifier="merchantmine" minavailable="8"/>
         </Price>
         <Deconstruct time="4" >
-            <Item identifier="Touhou_Bottle_Element" amount="2" />
+            <Item identifier="Touhou_Bottle_Element" />
         </Deconstruct>
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Spell_Book.png" depth="0.4" sourcerect="0,0,36,52"/>
         <Body width="28" height="36" density="14"/>
@@ -513,7 +513,7 @@
             <Price storeidentifier="merchantmine" minavailable="8"/>
         </Price>
         <Deconstruct time="4" >
-            <Item identifier="Touhou_Bottle_Element" amount="2" />
+            <Item identifier="Touhou_Bottle_Element" />
         </Deconstruct>
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Spell_Tutorial.png" depth="0.4" sourcerect="0,0,36,52"/>
         <Body width="28" height="36" density="14"/>

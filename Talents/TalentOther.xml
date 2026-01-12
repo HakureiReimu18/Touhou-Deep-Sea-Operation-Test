@@ -442,8 +442,8 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.5"/>
-                <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.7"/>
+                <CharacterAbilityModifyAttackData addedpenetration="0.2"/>
             </Abilities>
         </AbilityGroupEffect>
 

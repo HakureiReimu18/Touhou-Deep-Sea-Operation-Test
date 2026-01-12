@@ -829,8 +829,8 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55"/>
         <Body width="72" height="72" density="10" gravityscale="0" waterdragcoefficient="1"/>
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
-        <Projectile characterusable="false" launchimpulse="15" damagedoors="true">
-            <Attack severlimbsprobability="0.4" penetration="0.7" maxtargetstohit="2">
+        <Projectile characterusable="false" launchimpulse="15" maxtargetstohit="2" damagedoors="true">
+            <Attack severlimbsprobability="0.4" penetration="0.5">
                 <Affliction identifier="explosiondamage" strength="10"/>
                 <Affliction identifier="acidburn" strength="2"/>
                 <Affliction identifier="Touhou_Freeze" strength="4"/>
@@ -840,7 +840,6 @@
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
                 <Affliction identifier="lacerations" strength="4"/>
-                <Affliction identifier="Touhou_Freeze" strength="3"/>
                 <Affliction identifier="acidburn" strength="3"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
@@ -1106,35 +1105,25 @@
         <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="143,310,369,66" depth="0.55"/>
         <Body width="170" height="10" density="10"/>
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
-        <Projectile characterusable="false" launchimpulse="100" spread="16" removeonhit="true" damagedoors="true">
-            <Attack structuredamage="10" itemdamage="10" targetforce="10" targetimpulse="50" penetration="0.2" severlimbsprobability="0.4">
+        <Projectile characterusable="false" hitscan="true" spread="14" removeonhit="true" damagedoors="true">
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.5"
+                             colormultiplier="253,232,130,255"/>
+            <Attack structuredamage="10" itemdamage="10" targetforce="5" targetimpulse="20" penetration="0.2" severlimbsprobability="0.4">
                 <Affliction identifier="lacerations" strength="10"/>
                 <Affliction identifier="lacerations" strength="8" probability="0.75"/>
+                <Affliction identifier="lacerations" strength="8" probability="0.5"/>
                 <Affliction identifier="bleeding" strength="4"/>
                 <Affliction identifier="stun" strength="0.04" probability="0.5"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
                 <Affliction identifier="explosiondamage" strength="3"/>
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" lifetime="3">
-                <ParticleEmitter particle="Leaves_Bolt02" copyentityangle="true" particleamount="1" anglemin="155" anglemax="205" velocitymin="600"
-                                 velocitymax="800"
-                                 scalemin="0.8" scalemax="1.4" drawontop="true" colormultiplier="255,255,255,100"/>
-            </StatusEffect>
-            <StatusEffect type="OnActive" target="This" interval="0.3">
-                <SpawnItem identifier="Fantasy_Wind_Bolt_Spawn" count="2" spawnposition="This" aimspread="360" rotationtype="Collider" rotation="0"/>
-                <Explosion range="10.0" showEffects="false" force="10.0"/>
-            </StatusEffect>
-            <!--            <StatusEffect type="OnActive" target="This" interval="0.6" >
-                            <SpawnItem identifier="Aya_Maple_Leaves_Bolt" spawnposition="This" aimspread="360" rotationtype="Collider" rotation="0" />
-                            <Explosion range="10.0" showEffects="false" force="10.0" />
-                        </StatusEffect>-->
-            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="1.0">
-                <Remove/>
-            </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="weldspark" copyentityangle="true" anglemin="-40" anglemax="40" particleamount="3" velocitymin="-300"
                                  velocitymax="-800" colormultiplier="255,200,60,200" scalemin="1" scalemax="2"/>
+                <ParticleEmitter particle="Leaves_Bolt02" copyentityangle="true" particleamount="1" anglemin="155" anglemax="205" velocitymin="600"
+                                 velocitymax="800"
+                                 scalemin="0.8" scalemax="1.4" drawontop="true" colormultiplier="255,255,255,100"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <Conditional entitytype="eq Structure"/>
@@ -2191,7 +2180,7 @@
             </StatusEffect>
         </Holdable>
         <Projectile characterusable="false" launchimpulse="0" maxtargetstohit="5" damagedoors="true">
-            <Attack structuredamage="15" itemdamage="50" severlimbsprobability="1.0" penetration="0.3" targetforce="50">
+            <Attack structuredamage="15" levelwalldamage="5" itemdamage="50" severlimbsprobability="1.0" penetration="0.3" targetforce="50">
                 <Affliction identifier="lacerations" strength="50" />
                 <Affliction identifier="bleeding" strength="20" />
                 <Affliction identifier="stun" strength="1" probability="0.5" />
@@ -2236,11 +2225,11 @@
     </Item>
 
     <!--深水可投放炮塔-标准型-->
-    <Item name="深水可投放炮塔-标准型" identifier="Touhou_Depth_Charge_Shell_Deployment_Normal" tags="depthchargeammo,demolitionsexpert" subcategory="Touhou" category="Weapon"
-          sonarsize="5" scale="0.13" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true"
+    <Item name="深水可投放炮塔-标准型" identifier="Touhou_Depth_Charge_Shell_Deployment_Normal" tags="depthchargeammo,demolitionsexpert"
+          subcategory="Touhou" category="Weapon" sonarsize="5" scale="0.13" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true"
           damagedbyprojectiles="true" damagedbymeleeweapons="true" indestructible="true" health="10" cargocontaineridentifier="">
         <PreferredContainer primary="depthchargeloader" secondary="ammoboxcontainer" />
-        <Price baseprice="1200" minavailable="1">
+        <Price baseprice="600" minavailable="1">
             <Price storeidentifier="merchantoutpost" multiplier="1.4" />
             <Price storeidentifier="merchantcity" multiplier="1.25" minavailable="2" />
             <Price storeidentifier="merchantresearch" multiplier="1.25" />
@@ -2253,16 +2242,16 @@
         <Fabricate suitablefabricators="fabricator" requiredtime="10">
             <RequiredSkill identifier="Touhou_Magic" level="50"/>
             <RequiredSkill identifier="weapons" level="50"/>
-            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
+            <RequiredItem identifier="Touhou_Bottle_Element" />
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
-            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
-            <RequiredItem identifier="Magic_Material" amount="5"/>
+            <RequiredItem identifier="Touhou_Base_Metal" />
+            <RequiredItem identifier="Magic_Material" amount="4"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Depth_Charge_Shell_Deployment.png" sourcerect="400,0,148,200" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Depth_Charge_Shell_Deployment.png" sourcerect="0,0,400,296" depth="0.55" origin="0.5,0.5"/>
         <Body width="128" height="85" density="10" />
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,20" handle2="10,20" aimable="false" msg="ItemMsgPickUpSelect" />
-        <Projectile characterusable="false" launchimpulse="2.0">
+        <Projectile characterusable="false" launchimpulse="4.5" impulsespread="0.7">
             <!-- Make destructible when launched -->
             <StatusEffect type="OnUse" target="This" Indestructible="false"/>
             <StatusEffect type="OnImpact" target="this" setvalue="true" condition="-100"/>
@@ -2282,7 +2271,8 @@
     </Item>
 
     <!--深水投放炮塔-标准型-发射器-->
-    <Item name="深水投放炮塔-标准型-发射器" identifier="Touhou_Depth_Charge_Shell_Deployment_Normal_Turret" tags="depthchargeammo,demolitionsexpert,provocative" subcategory="Touhou"
+    <Item name="深水投放炮塔-标准型-发射器" identifier="Touhou_Depth_Charge_Shell_Deployment_Normal_Turret"
+          tags="depthchargeammo,demolitionsexpert,provocative,Touhou_Depth_Charge_Shell_Deployment_Normal_Turret" subcategory="Touhou"
           category="Weapon" sonarsize="5" scale="0.13" impactsoundtag="impact_metal_heavy" damagedbymonsters="true" damagedbyexplosions="true" damagedbyrepairtools="true"
           damagedbyprojectiles="true" damagedbymeleeweapons="true" health="600" cargocontaineridentifier="" hideinmenus="true">
         <PreferredContainer primary="depthchargeloader" secondary="ammoboxcontainer" />

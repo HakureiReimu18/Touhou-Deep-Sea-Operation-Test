@@ -6,7 +6,7 @@
             identifier="Five_Elements_Alchemical_Locked"
             category="Material,Alien"
             subcategory="Touhou"
-            tags="smallitem,Elements_Book_Ammo"
+            tags="smallitem,Elements_Book_Ammo,Elements_Book_Ammo_Locked"
             canbepicked="true"
             cargocontaineridentifier="mediccrate"
             description=""

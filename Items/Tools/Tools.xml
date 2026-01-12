@@ -955,7 +955,7 @@
     <!--河童工具枪-->
     <Item name="河童工具枪" identifier="Touhou_Kappa_Welding_Tool" category="Equipment" subcategory="Touhou"
           Tags="smallitem,weldingequipment,tool,ProvocativeToHumanAI,Welding_Mode_Parent,Laser_Mode_Parent,Touhou_Weapon_Level03,Touhou_Cam_Offset_Normal"
-          cargocontaineridentifier="metalcrate" description="" Scale="0.75" impactsoundtag="impact_metal_light">
+          cargocontaineridentifier="metalcrate" description="" Scale="0.23" impactsoundtag="impact_metal_light">
         <PreferredContainer primary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.04"/>
         <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab,outpostengcab" amount="1" spawnprobability="0.04"/>
         <Price baseprice="2000">
@@ -967,8 +967,8 @@
             <Price storeidentifier="merchantengineering" maxavailable="1" multiplier="0.9"/>
             <Price storeidentifier="Merchant_Kawasiro_Nitori" maxavailable="1" multiplier="0.7"/>
         </Price>
-        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Kappa_Welding_Tool.png" sourcerect="0,0,90,76" origin="0.5,0.5"/>
-        <Sprite texture="%ModDir%/Images/Tools/Touhou_Kappa_Welding_Tool.png" depth="0.55" sourcerect="90,0,106,58" origin="0.5,0.5"/>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Kappa_Welding_Tool.png" sourcerect="401,0,171,135" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Kappa_Welding_Tool.png" depth="0.55" sourcerect="0,0,400,203" origin="0.5,0.5"/>
         <!-- the item takes 10 seconds to break down in a deconstructor and turns into steel and plastic -->
         <Deconstruct time="10">
             <Item identifier="steel" amount="4"/>
@@ -984,9 +984,9 @@
             <RequiredItem identifier="Score_Point"/>
         </Fabricate>
         <!-- physics body -->
-        <Body width="120" height="60" density="10"/>
+        <Body width="400" height="203" density="10"/>
         <!-- the character will hold the item 50 pixels in front of him, with his hands at the handle1 and handle2 positions -->
-        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="50,0" handle1="-15,-16" handle2="-10,-6" msg="ItemMsgPickUpSelect">
+        <Holdable slots="Any,RightHand+LeftHand" controlpose="true" aimpos="55,0" handle1="-65,-16" handle2="-20,-6" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="0.5">
                 <Conditional Candid_Friend="gt 0"/>
                 <Conditional Hyouibana_Effect_Prefect_Nitori="gt 0"/>
@@ -997,8 +997,9 @@
                 <Conditional Hyouibana_Effect_Prefect_Nitori="eq 0"/>
                 <Affliction identifier="Touhou_Character_Incompatible_Attack_Multiply_Effect01" strength="100"/>
             </StatusEffect>
+            <StatusEffect type="OnActive" target="This" comparison="And" Interval="0.5" disabledeltatime="true" setvalue="true" scale="0.23"/>
         </Holdable>
-        <RepairTool firedamage="10.0" structurefixamount="3.0" range="200" barrelpos="25,5" particles="weld" repairmultiple="true"
+        <RepairTool firedamage="10.0" structurefixamount="3.0" range="200" barrelpos="60,5" particles="weld" repairmultiple="true"
                     HitBrokenDoors="true" repairthroughwalls="false" levelwallfixamount="-0.8" targetforce="10">
             <!-- the item must contain a welding fuel tank for it to work -->
             <RequiredItems items="weldingtoolfuel,Touhou_Fix_Foamg_Tank" type="Contained"/>
@@ -1046,7 +1047,7 @@
             </LightComponent>
         </RepairTool>
         <!--武器参数-->
-        <RangedWeapon barrelpos="40,5" spread="1" unskilledspread="8" reload="0.4" maxchargetime="0.4" combatPriority="50" drawhudwhenequipped="true"
+        <RangedWeapon barrelpos="180,10" spread="1" unskilledspread="8" reload="0.4" maxchargetime="0.4" combatPriority="50" drawhudwhenequipped="true"
                       crosshairscale="0.4" penetrationmultiplier="1.0" penetration="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <ParticleEmitterCharge particle="ElectricShock" particlespersecond="30" scalemultiplier="0.5,0.5" scalemin="0.1" scalemax="0.2"
@@ -1084,7 +1085,7 @@
                         <StatusEffect type="OnUse" target="This" tags="Laser_Mode_Parent" setvalue="true" disabledeltatime="true" />
                     </Button>
                 </CustomInterface>-->
-        <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="12,-18" containedspritedepth="0.56"
+        <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="52,-46" containedspritedepth="0.56"
                        containedstateindicatorstyle="tank" containedstateindicatorslot="0">
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="64,448,64,64" origin="0.5,0.5"/>
             <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="320,448,64,64" origin="0.5,0.5"/>
@@ -1137,14 +1138,14 @@
             <Item identifier="steel" amount="4"/>
         </Deconstruct>
         <Fabricate suitablefabricators="Magic_Altar,fabricator" requiredtime="10">
-            <RequiredSkill identifier="mechanical" level="70"/>
+            <RequiredSkill identifier="mechanical" level="50"/>
             <RequiredItem identifier="aluminium" amount="4"/>
             <RequiredItem identifier="rubber" amount="6"/>
             <RequiredItem identifier="fixfoamgrenade" amount="2"/>
             <RequiredItem identifier="steel" amount="2"/>
         </Fabricate>
         <Fabricate suitablefabricators="Magic_Altar,fabricator" displayname="recycleitem" requiredtime="5">
-            <RequiredSkill identifier="mechanical" level="60"/>
+            <RequiredSkill identifier="mechanical" level="50"/>
             <RequiredItem identifier="Touhou_Fix_Foamg_Tank" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
             <RequiredItem identifier="sodium"/>
             <RequiredItem identifier="fixfoamgrenade"/>
@@ -1700,11 +1701,86 @@
         </Quality>
     </Item>
 
-    <!--人偶手提箱-->
-    <Item name="人偶手提箱" identifier="Touhou_Alice_Puppet_Suitcase" subcategory="Touhou" category="Equipment"
-          tags="mediumitem,Touhou_Alice_Puppet_Suitcase,backpack,toolbox" scale="0.4" cargocontaineridentifier="metalcrate" description="HONK">
+    <!--人偶手提袋-->
+    <Item name="人偶手提袋" identifier="Touhou_Alice_Doll_Handbag" subcategory="Touhou" category="Equipment"
+          tags="mediumitem,backpack,toolbox" scale="0.1" cargocontaineridentifier="metalcrate" >
         <PreferredContainer primary="crewcab" notcampaign="true"/>
-        <Price baseprice="700">
+        <Price baseprice="150">
+            <Price storeidentifier="merchantoutpost" sold="false"/>
+            <Price storeidentifier="merchantcity" maxavailable="1"/>
+            <Price storeidentifier="merchantresearch" maxavailable="1"/>
+            <Price storeidentifier="merchantmilitary" maxavailable="1"/>
+            <Price storeidentifier="merchantmine" maxavailable="1"/>
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" maxavailable="1" multiplier="0.6"/>
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="organicfiber" amount="3"/>
+            <Item identifier="plastic" />
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="10">
+            <RequiredSkill identifier="Touhou_Magic" level="20"/>
+            <RequiredItem identifier="organicfiber" amount="3"/>
+            <RequiredItem identifier="plastic" amount="3"/>
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Alice_Doll_Container.png" sourcerect="0,0,300,214" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Alice_Doll_Container.png" sourcerect="0,0,300,214" depth="0.55" origin="0.5,0.5"/>
+        <Body width="50" height="20" density="10"/>
+        <Holdable slots="RightHand+LeftHand,Any" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnContained" target="Character" Interval="5.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                <Conditional Puppeteer_Of_Seven_Colors="gt 0"/>
+                <Affliction identifier="Touhou_Alice_Puppet_Suitcase_Effect" amount="1"/>
+            </StatusEffect>
+        </Holdable>
+        <ItemContainer autofill="False" capacity="4" maxstacksize="64" slotsperrow="1">
+            <Containable identifiers="smallitem"
+                         excludeditems="backpack,crate,gun,weapon,toolbox,mobilecontainer,toolbelt,ammobox,Marisa_Broom,bulkyweapon,clothing"/>
+        </ItemContainer>
+        <aitarget soundrange="1" fadeouttime="5"/>
+    </Item>
+
+    <!--人偶手提包-->
+    <Item name="人偶手提包" identifier="Touhou_Alice_Doll_Purse" subcategory="Touhou" category="Equipment"
+          tags="mediumitem,backpack,toolbox" scale="0.16" cargocontaineridentifier="metalcrate" >
+        <PreferredContainer primary="crewcab" notcampaign="true"/>
+        <Price baseprice="400">
+            <Price storeidentifier="merchantoutpost" sold="false"/>
+            <Price storeidentifier="merchantcity" maxavailable="1"/>
+            <Price storeidentifier="merchantresearch" maxavailable="1"/>
+            <Price storeidentifier="merchantmilitary" maxavailable="1"/>
+            <Price storeidentifier="merchantmine" maxavailable="1"/>
+            <Price storeidentifier="Merchant_Kawasiro_Nitori" maxavailable="1" multiplier="0.6"/>
+        </Price>
+        <Deconstruct time="10">
+            <Item identifier="organicfiber" amount="3"/>
+            <Item identifier="plastic" amount="2"/>
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="10">
+            <RequiredSkill identifier="Touhou_Magic" level="20"/>
+            <RequiredItem identifier="Touhou_Base_Metal" />
+            <RequiredItem identifier="plastic" amount="3"/>
+            <RequiredItem identifier="Touhou_Alice_Doll_Handbag" />
+        </Fabricate>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Alice_Doll_Container.png" sourcerect="0,220,300,292" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Alice_Doll_Container.png" sourcerect="0,220,300,292" depth="0.55" origin="0.5,0.5"/>
+        <Body width="50" height="20" density="10"/>
+        <Holdable slots="RightHand+LeftHand,Any" msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnContained" target="Character" Interval="5.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                <Conditional Puppeteer_Of_Seven_Colors="gt 0"/>
+                <Affliction identifier="Touhou_Alice_Puppet_Suitcase_Effect" amount="1"/>
+            </StatusEffect>
+        </Holdable>
+        <ItemContainer autofill="False" capacity="6" maxstacksize="64" slotsperrow="2">
+            <Containable identifiers="smallitem,mediumitem"
+                         excludeditems="backpack,crate,gun,weapon,toolbox,mobilecontainer,toolbelt,ammobox,Marisa_Broom,bulkyweapon,clothing"/>
+        </ItemContainer>
+        <aitarget soundrange="1" fadeouttime="5"/>
+    </Item>
+
+    <!--人偶手提箱-->
+    <Item name="人偶手提箱" identifier="Touhou_Alice_Doll_Suitcase" subcategory="Touhou" category="Equipment"
+          tags="mediumitem,backpack,toolbox" scale="0.22" cargocontaineridentifier="metalcrate" >
+        <PreferredContainer primary="crewcab" notcampaign="true"/>
+        <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" sold="false"/>
             <Price storeidentifier="merchantcity" maxavailable="1"/>
             <Price storeidentifier="merchantresearch" maxavailable="1"/>
@@ -1718,23 +1794,24 @@
             <Item identifier="plastic" amount="3"/>
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="10">
-            <RequiredSkill identifier="Touhou_Magic" level="50"/>
-            <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
-            <RequiredItem identifier="steel" amount="3"/>
-            <RequiredItem identifier="organicfiber" amount="3"/>
-            <RequiredItem identifier="plastic" amount="3"/>
+            <RequiredSkill identifier="Touhou_Magic" level="20"/>
+            <RequiredItem identifier="Touhou_Base_Metal"  />
+            <RequiredItem identifier="Touhou_Bottle_Element" />
+            <RequiredItem identifier="Seven_Elements_Alchemical_Fake" />
+            <RequiredItem identifier="Touhou_Alice_Doll_Purse" />
         </Fabricate>
-        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Alice_Puppet_Suitcase.png" sourcerect="0,0,140,120" origin="0.5,0.5"/>
-        <Sprite texture="%ModDir%/Images/Tools/Touhou_Alice_Puppet_Suitcase.png" sourcerect="0,0,140,120" depth="0.55" origin="0.5,0.5"/>
+        <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Alice_Doll_Container.png" sourcerect="0,512,300,242" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Alice_Doll_Container.png" sourcerect="0,512,300,242" depth="0.55" origin="0.5,0.5"/>
         <Body width="50" height="20" density="10"/>
         <Holdable slots="RightHand+LeftHand,Any" msg="ItemMsgPickUpSelect">
-            <StatusEffect type="OnContained" target="This,Character" Interval="5.0" Duration="5.0" multiplyafflictionsbymaxvitality="true">
+            <StatusEffect type="OnContained" target="Character" Interval="5.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                 <Conditional Puppeteer_Of_Seven_Colors="gt 0"/>
                 <Affliction identifier="Touhou_Alice_Puppet_Suitcase_Effect" amount="1"/>
             </StatusEffect>
         </Holdable>
-        <ItemContainer autofill="False" capacity="12" maxstacksize="64" slotsperrow="3">
-            <Containable identifiers="smallitem,Power_Bank" excludeditems="backpack,crate,gun,toolbox,mobilecontainer"/>
+        <ItemContainer autofill="False" capacity="8" maxstacksize="64" slotsperrow="2">
+            <Containable identifiers="smallitem,mediumitem"
+                         excludeditems="backpack,crate,gun,weapon,toolbox,mobilecontainer,toolbelt,ammobox,Marisa_Broom,bulkyweapon,clothing"/>
         </ItemContainer>
         <aitarget soundrange="1" fadeouttime="5"/>
     </Item>
@@ -2074,7 +2151,7 @@
             identifier="Touhou_Peace_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Peace_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2120,7 +2197,7 @@
             identifier="Touhou_Hard_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Hard_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2166,7 +2243,7 @@
             identifier="Touhou_Soft_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Soft_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2212,7 +2289,7 @@
             identifier="Touhou_Warm_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Warm_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2258,7 +2335,7 @@
             identifier="Touhou_Boiling_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Boiling_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2304,7 +2381,7 @@
             identifier="Touhou_Icy_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Icy_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2350,7 +2427,7 @@
             identifier="Touhou_Smooth_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Smooth_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2396,7 +2473,7 @@
             identifier="Touhou_White_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_White_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2440,7 +2517,7 @@
             identifier="Touhou_Black_Hooked_Jade"
             category="Equipment"
             subcategory="Touhou"
-            maxstacksize="32"
+            maxstacksize="16"
             tags="smallitem,Touhou_Hooked_Jade,Touhou_Black_Hooked_Jade"
             cargocontaineridentifier="mediccrate"
             description=""
@@ -2551,14 +2628,14 @@
 
     <!--品质升级器-->
     <Item identifier="Touhou_Quality_Upper_Machine" subcategory="Touhou" category="Equipment" scale="0.35" tags="smallitem" allowasextracargo="true">
-        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.035"/>
-        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.045"/>
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.05"/>
+        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.05"/>
         <Price baseprice="6000" sold="true" >
             <Price locationtype="Merchant_Kawasiro_Nitori" maxavailable="1"/>
         </Price>
         <Deconstruct time="10"/>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Quality_Upper_Machine.png" sourcerect="0,0,136,100" depth="0.45"/>
-        <Holdable slots="Any,RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect"/>
+        <Holdable slots="RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect"/>
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.2" anchor="Center" absoluteoffset="0,-95" style="ItemUI"/>
             <Button text="uilabel.Touhou_Upper">
@@ -2593,14 +2670,14 @@
     <!--品质升华器-->
     <Item identifier="Touhou_Quality_Super_Upper_Machine" subcategory="Touhou" category="Equipment" scale="0.35" tags="smallitem"
           spritecolor="150,150,255,255" allowasextracargo="true">
-        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.04"/>
-        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.04"/>
+        <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab,piratesecarmcab" spawnprobability="0.03"/>
+        <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.03"/>
         <Price baseprice="6000" sold="false" minleveldifficulty="15">
             <Price locationtype="Merchant_Kawasiro_Nitori" maxavailable="1"/>
         </Price>
         <Deconstruct time="10"/>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Quality_Upper_Machine.png" sourcerect="0,0,136,100" depth="0.45"/>
-        <Holdable slots="Any,RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect"/>
+        <Holdable slots="RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect"/>
         <CustomInterface canbeselected="true" drawhudwhenequipped="true">
             <GuiFrame relativesize="0.08,0.2" anchor="Center" absoluteoffset="0,-95" style="ItemUI"/>
             <Button text="uilabel.Touhou_Upper">
@@ -2693,7 +2770,7 @@
           tags="mediumitem,Touhou_Rose_Gift_Bag,backpack,Touhou_Wearable_Equipment" fireproof="true" waterproof="true" cargocontaineridentifier="metalcrate"
           impactsoundtag="impact_metal_light">
         <PreferredContainer primary="medcab"/>
-        <Price baseprice="3000" minleveldifficulty="15">
+        <Price baseprice="5000" minleveldifficulty="15">
             <Price storeidentifier="merchantoutpost" multiplier="1.4" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="1.2" minavailable="1"/>
             <Price storeidentifier="merchantresearch" multiplier="0.9" minavailable="1"/>
@@ -5005,10 +5082,10 @@
                 </Containable>
             </SubContainer>
             <SubContainer capacity="3" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,Touhou_Magic_Charging_Box,bulkyweapon"/>
+                <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,Touhou_Magic_Charging_Box,bulkyweapon,ammobox"/>
             </SubContainer>
             <SubContainer capacity="6" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
-                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,Touhou_Magic_Charging_Box,bulkyweapon"/>
+                <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,Touhou_Magic_Charging_Box,bulkyweapon,ammobox"/>
             </SubContainer>
             <SubContainer capacity="2" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem,mediumitem,Touhou_Magic_Charging_Box" excludeditems="backpack,crate,toolbelt"/>
@@ -5279,7 +5356,7 @@
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Moriya_Bag.png" sourcerect="0,0,124,100" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/Tools/Touhou_Moriya_Bag.png" depth="0.5" sourcerect="0,0,124,100" origin="0.5,0.5"/>
         <Body width="41" height="56" density="10"/>
-        <ItemContainer autofill="False" hideitems="true" capacity="0" maxstacksize="1" ExtraStackSize="4" slotsperrow="4" AutoInjectThreshold="0.8">
+        <ItemContainer autofill="False" hideitems="true" capacity="0" maxstacksize="1" ExtraStackSize="4" slotsperrow="4" AutoInjectThreshold="0.7">
             <SlotIcon slotindex="0" texture="Content/UI/StatusMonitorUI.png" sourcerect="384,448,64,64" origin="0.5,0.5"/>
             <SlotIcon slotindex="1" texture="Content/UI/StatusMonitorUI.png" sourcerect="128,448,64,64" origin="0.5,0.5"/>
             <SlotIcon slotindex="12" texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6"/>
@@ -5415,7 +5492,7 @@
             <RequiredItem tag="Touhou_Enhanced_Crystal" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
         <InventoryIcon texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal02.png" sourcerect="0,0,60,100" origin="0.5,0.5"/>
-        <Sprite texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal02.png" sourcerect="60,0,50,31" depth="0.56" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal02.png" sourcerect="61,0,50,31" depth="0.56" origin="0.5,0.5"/>
         <Body radius="35" density="10"/>
         <Holdable canBeCombined="true" slots="Any,RightHand+LeftHand" msg="ItemMsgPickUpSelect">
             <StatusEffect type="OnActive" target="Character" Interval="1.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
@@ -5797,7 +5874,7 @@
             <SlotIcon slotindex="12" texture="%ModDir%/Images/Decoration/Touhou_Decoration_Icon04.png" sourcerect="0,0,128,128" origin="0.5,0.6"/>
             <SubContainer capacity="1" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="Touhou_Magic_Charging_Box" excludeditems="backpack,crate,toolbelt,bulkyweapon">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-1.6" Interval="1.0" disabledeltatime="true" comparison="And">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-1.5" Interval="1.0" disabledeltatime="true" comparison="And">
                         <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
                         <Conditional ConditionPercentage="lt 100" targetcontainer="true"/>
                         <RequiredItem items="Touhou_Magic_Charging_Box" type="Contained"/>
@@ -5983,6 +6060,49 @@
         </Deconstruct>
         <Holdable slots="Any,RightHand+LeftHand" aimpos="30,0" handle1="-5,-10" msg="ItemMsgPickUpSelect"/>
         <aitarget soundrange="800" fadeouttime="5"/>
+    </Item>
+
+
+    <Item name="粒子效果器-雨" identifier="Touhou_ParticleEmitter_Rain" subcategory="Touhou" category="Misc" Tags="smallitem" cargocontaineridentifier="metalcrate"
+          scale="0.5" impactsoundtag="impact_metal_light" spritecolor="255,255,255,0" nonplayerteaminteractable="True">
+        <InventoryIcon texture="Content/Items/JobGear/TalentGear.png" sourcerect="160,1,40,58" origin="0.5,0.5" />
+        <Sprite texture="Content/Items/JobGear/TalentGear.png" sourcerect="64,32,29,39" depth="0.55" origin="0.5,0.5" />
+        <Body width="30" height="40" density="10" />
+        <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" >
+            <StatusEffect type="OnNotContained" target="This" >
+                <ParticleEmitter particle="Touhou_Rain" AngleMin="-90" AngleMax="90" DistanceMin="-4000" DistanceMax="4000" VelocityMin="1000" VelocityMax="1000"
+                                 ScaleMultiplier="0.7,0.7" ParticleAmount="4" ParticlesPerSecond="15" ColorMultiplier="255,255,255,255"/>
+            </StatusEffect>
+        </Holdable>
+    </Item>
+
+
+    <Item name="电击陷阱" identifier="Touhou_Electric_Shocker" subcategory="Touhou" category="Weapon" Tags="smallitem" cargocontaineridentifier="metalcrate"
+          scale="0.1" impactsoundtag="impact_metal_light" >
+        <Sprite Texture="%ModDir%/Images/Tools/Touhou_Electric_Shocker.png" depth="0.5" sourcerect="0,0,400,296"/>
+        <Body width="400" height="296" density="10.1" />
+        <Holdable slots="Any,RightHand,LeftHand" holdangle="30" handle1="-10,0" msg="ItemMsgPickUpSelect" />
+        <ElectricalDischarger duration="0.25" raycastrange="300" range="300" rangemultiplierinwalls="0.1" powerconsumption="100" minvoltage="0.0">
+            <Attack targetimpulse="5" >
+                <Affliction identifier="stun" strength="1" probability="0.25" />
+                <Affliction identifier="burn" strength="25" />
+            </Attack>
+            <StatusEffect type="OnUse" target="This">
+                <sound file="Content/Items/Alien/AlienCoil1.ogg" range="8000" />
+                <sound file="Content/Items/Alien/AlienCoil2.ogg" range="8000" />
+                <sound file="Content/Items/Alien/AlienCoil3.ogg" range="8000" />
+                <ParticleEmitter particle="risingbubbles" anglemin="0" anglemax="360" particleamount="50" velocitymin="50" velocitymax="100" scalemin="1" scalemax="2" />
+                <Explosion range="500.0" stun="0" force="0.0" flames="false" shockwave="false" sparks="true" underwaterbubble="false" />
+            </StatusEffect>
+        </ElectricalDischarger>
+<!--        <MotionSensor range="150" canbeselected="false" IgnoreDead="true" minimumvelocity="0" updateinterval="0.09" target="Monster"
+                      DetectOwnMotion="false">
+        </MotionSensor>-->
+        <TriggerComponent width="160" height="300" triggeredby="Creature" sensor="true" IgnoreDead="true">
+            <StatusEffect type="OnActive" target="This" Interval="0.5">
+                <Use/>
+            </StatusEffect>
+        </TriggerComponent>
     </Item>
 
 

@@ -149,10 +149,10 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="Gensokyo_Divinggear_Talent"/>
             </StatusEffect>
 
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.55" damagesound="LimbArmor"
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.55" damagesound="LimbArmor" probabilitymultiplier="0.9"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.35" damagesound="LimbArmor"
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.35" probabilitymultiplier="0.6" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="paralysis" damagemultiplier="0.1" damagesound="LimbArmor"
@@ -813,7 +813,7 @@
 
     <!--魔力披纱（白）-->
     <Item name="" identifier="Magic_Veil" subcategory="Touhou" category="Diving,Equipment"
-          tags="bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear" scale="0.25" fireproof="true" description=""
+          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear" scale="0.25" fireproof="true" description=""
           allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Price baseprice="9000" minleveldifficulty="30">
             <Price storeidentifier="merchantoutpost" multiplier="0.95" sold="false"/>
@@ -1037,7 +1037,7 @@
 
     <!--魔力披纱(粉)-->
     <Item name="" identifier="Magic_Veil02" subcategory="Touhou" category="Diving,Equipment"
-          tags="bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear" scale="0.25" fireproof="true" description=""
+          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear" scale="0.25" fireproof="true" description=""
           allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Price baseprice="9000" minleveldifficulty="30">
             <Price storeidentifier="merchantoutpost" multiplier="0.95" sold="false"/>
@@ -1394,7 +1394,7 @@
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.75" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.25" damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.3" damagesound="LimbArmor"
+            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.3" probabilitymultiplier="0.3" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="haste" damagemultiplier="0.0" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
@@ -1402,7 +1402,7 @@
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="slow" damagemultiplier="0.0" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.6" damagesound="LimbArmor"
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.6" probabilitymultiplier="0.8" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.7" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="debuff" damagemultiplier="0.8" damagesound="LimbArmor"
@@ -1637,9 +1637,9 @@
 
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,lacerations,explosiondamage"
                             damagemultiplier="0.55" damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.65" probabilitymultiplier="0.65"
+            <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.65"
                             damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.6" probabilitymultiplier="0.6"
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.6" probabilitymultiplier="0.7"
                             damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.65" probabilitymultiplier="0.65" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
@@ -1903,8 +1903,8 @@
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,lacerations,explosiondamage"
                             damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.5"
-                            probabilitymultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.5" probabilitymultiplier="0.5"
+                            probabilitymultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true"/>
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.5"
                             damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" probabilitymultiplier="0.55" damagesound="LimbArmor"
                             deflectprojectiles="true"/>

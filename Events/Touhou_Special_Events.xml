@@ -814,7 +814,7 @@
             <TagAction Criteria="crew" Tag="crew" IgnoreIncapacitatedCharacters="false"/>
             <CheckAfflictionAction identifier="Hifuu_Club_Merry" MinStrength="0.1" TargetTag="crew">
                 <Success>
-                    <StatusEffectAction targettag="Renko_player">
+                    <StatusEffectAction targettag="crew">
                         <StatusEffect target="Character" disabledeltatime="true">
                             <Conditional Hifuu_Club_Renko="gt 0"/>
                             <SpawnItem identifiers="Touhou_Red_Spot_Freak_Report" spawnposition="ThisInventory"/>
@@ -3432,6 +3432,7 @@
             <TagAction criteria="player" tag="Aff_Player"/>
             <Label name="Touhou_ODM12_Weather_Delay"/>
             <WaitAction time="32"/>
+            <SpawnAction ItemIdentifier="Touhou_ParticleEmitter_Rain" SpawnLocation="outpost"/>
             <AfflictionAction affliction="Touhou_ODM12_Aff_Event_Weather_Effect01" strength="0.01" targettag="Aff_Player"/>
             <AfflictionAction affliction="Touhou_ODM12_Aff_Event_Weather_Effect04" strength="0.01" targettag="Aff_Player"/>
             <GoTo name="Touhou_ODM12_Weather_Delay" maxtimes="2"/>
@@ -3554,6 +3555,7 @@
             <WaitAction time="1"/>
             <ConversationAction text="Eventtext.Touhou_OutpostDestroyMission11_Event.c1" dialogtype="Small"/>
             <WaitAction time="3"/>
+            <TriggerEventAction identifier="Touhou_ODM11_BGM" nextround="false"/>
             <TriggerEventAction identifier="Touhou_ODM11_Aff_Event" nextround="false"/>
             <Label name="Spawn_Delay"/>
             <RNGAction chance="0.5">
@@ -3691,7 +3693,6 @@
             <TagAction criteria="player" tag="Aff_Player"/>
             <SetDataAction value="false" identifier="Touhou_OutpostDestroyMission11_End"/>
             <WaitAction time="3"/>
-            <TriggerEventAction identifier="Touhou_ODM11_BGM" nextround="false"/>
             <TriggerEventAction identifier="Touhou_ODM11_Weather" nextround="false"/>
             <AfflictionAction affliction="Touhou_ODM11_Aff_Event_Effect" strength="1000" targettag="Aff_Player"/>
             <Label name="Aff_Delay"/>

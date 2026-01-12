@@ -126,8 +126,8 @@
     <entitydescription.Hisou_Sword>使用绯想之剑，能够准确无误地击中对手的弱点，只有天人才能正确操使绯想之剑。</entitydescription.Hisou_Sword>
     <entityname.Mine_Blast>‖color:233,160,32,255‖百百世的炸药‖color:end‖</entityname.Mine_Blast>
     <entitydescription.Mine_Blast>“你蚣人爷爷来啦！”</entitydescription.Mine_Blast>
-    <entityname.Sakuya_Knife>‖color:210,210,255,255‖铁制飞刀‖color:end‖</entityname.Sakuya_Knife>
-    <entitydescription.Sakuya_Knife>轻巧的武器，便于携带，也能投掷使用。</entitydescription.Sakuya_Knife>
+    <entityname.Touhou_Sakuya_Knife_Iron>‖color:210,210,255,255‖铁制飞刀‖color:end‖</entityname.Touhou_Sakuya_Knife_Iron>
+    <entitydescription.Touhou_Sakuya_Knife_Iron>轻巧的武器，便于携带，也能投掷使用。</entitydescription.Touhou_Sakuya_Knife_Iron>
     <entityname.youmuceremonialsword2>‖color:156,158,161,255‖白楼剑‖color:end‖</entityname.youmuceremonialsword2>
     <entitydescription.youmuceremonialsword2>妖怪锻造的可以切断迷惘的刀，只有魂魄家的人可以使用</entitydescription.youmuceremonialsword2>
     <!--Shipborne Weapon-->
@@ -316,12 +316,12 @@
     <entitydescription.Fire_Element_Book>内置魔力的一次性魔导书，让新手也能轻松使用</entitydescription.Fire_Element_Book>
     <entityname.Water_Element_Book>魔导书-水</entityname.Water_Element_Book>
     <entitydescription.Water_Element_Book>内置魔力的一次性魔导书，让新手也能轻松使用</entitydescription.Water_Element_Book>
-    <entityname.Touhou_Concentrated_Energy_Arc_Emitter>聚能电弧发射器-手持型</entityname.Touhou_Concentrated_Energy_Arc_Emitter>
+    <entityname.Touhou_Concentrated_Energy_Arc_Emitter>‖color:5,105,195,200‖聚能电弧发射器-手持型‖color:end‖</entityname.Touhou_Concentrated_Energy_Arc_Emitter>
     <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>河童们根据天子的要求，最后做出来的成品，虽然与理想中的“要石”有一些差距，但其便捷发射要石的功能很让她满意。只是在水下使用时常常会伤及自己……‖color:gui.orange‖（小心友伤）‖color:end‖
-        使用‖color:gui.yellow‖电能要石‖end‖。
+        使用‖color:gui.yellow‖要石电容器‖end‖。
     </entitydescription.Touhou_Concentrated_Energy_Arc_Emitter>
-    <entityname.Lightning_Kanameishi>电能要石</entityname.Lightning_Kanameishi>
-    <entitydescription.Lightning_Kanameishi>在特殊天气下，一块被闪电注能的要石，可作为聚能电弧发射器的供能单元。\n“按理说，要石应该绝缘才对吧……”。作为‖color:gui.yellow‖聚能电弧发射器-手持型‖end‖的弹药</entitydescription.Lightning_Kanameishi>
+    <entityname.Touhou_Concentrated_Energy_Arc_Emitter_Ammo>‖color:5,105,195,200‖要石电容器‖color:end‖</entityname.Touhou_Concentrated_Energy_Arc_Emitter_Ammo>
+    <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Ammo>在特殊天气下，一块被闪电注能的要石，可作为聚能电弧发射器的供能单元。\n“按理说，要石应该绝缘才对吧……”。作为‖color:gui.yellow‖聚能电弧发射器-手持型‖end‖的弹药</entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Ammo>
     <entityname.Patchouli_Doll>帕秋莉人偶</entityname.Patchouli_Doll>
     <entitydescription.Patchouli_Doll>姆Q！（放入任意瓶装元素后，携带使用，能缓慢治愈伤势，手持时右键可以使效果翻倍）</entitydescription.Patchouli_Doll>
     <!--临时新添加的物品-->
@@ -538,8 +538,12 @@
     <!--1.0.8下半部分内容-->
     <entityname.Touhou_Alice_Needle>爱丽丝的大缝衣针</entityname.Touhou_Alice_Needle>
     <entitydescription.Touhou_Alice_Needle>通常来说，用来缝制人偶的针线应该很小，这根显然不是为了缝制人偶准备的</entitydescription.Touhou_Alice_Needle>
-    <entityname.Touhou_Alice_Puppet_Suitcase>人偶手提箱</entityname.Touhou_Alice_Puppet_Suitcase>
-    <entitydescription.Touhou_Alice_Puppet_Suitcase>爱丽丝用于容纳人偶的手提箱，可以保护里面的人偶远离木卫二冰冷的海水。还可以加快人偶能量的恢复。</entitydescription.Touhou_Alice_Puppet_Suitcase>
+    <entityname.Touhou_Alice_Doll_Handbag>‖color:140,189,151,255‖人偶手提袋‖color:end‖</entityname.Touhou_Alice_Doll_Handbag>
+    <entitydescription.Touhou_Alice_Doll_Handbag>爱丽丝随身携带的手提袋，可以存放便条，让它们远离木卫二冰冷的海水。还可以加快人偶能量的恢复。</entitydescription.Touhou_Alice_Doll_Handbag>
+    <entityname.Touhou_Alice_Doll_Purse>‖color:105,164,185,255‖人偶手提包‖color:end‖</entityname.Touhou_Alice_Doll_Purse>
+    <entitydescription.Touhou_Alice_Doll_Purse>爱丽丝用于存放工具的手提包，依然防水防火。还可以加快人偶能量的恢复。</entitydescription.Touhou_Alice_Doll_Purse>
+    <entityname.Touhou_Alice_Doll_Suitcase>‖color:153,50,204,255‖人偶手提箱‖color:end‖</entityname.Touhou_Alice_Doll_Suitcase>
+    <entitydescription.Touhou_Alice_Doll_Suitcase>爱丽丝用于容纳人偶的手提箱，可以保护里面的人偶远离木卫二冰冷的海水。还可以加快人偶能量的恢复。</entitydescription.Touhou_Alice_Doll_Suitcase>
     <entityname.Touhou_Berry_Wine>红莓酒</entityname.Touhou_Berry_Wine>
     <entitydescription.Touhou_Berry_Wine>妖怪们来到木卫二后，汲取灵感制成的特色酒，可以补充失血，还有缓解毒素的妙用。但一般人类都不胜酒力</entitydescription.Touhou_Berry_Wine>
     <entityname.Touhou_Life_Needle>生命指针</entityname.Touhou_Life_Needle>
@@ -1234,7 +1238,7 @@
     <entityname.Touhou_Pellen_Bottle>‖color:117,128,110,255‖花粉罐‖end‖</entityname.Touhou_Pellen_Bottle>
     <entitydescription.Touhou_Pellen_Bottle>装有精心调制的花粉罐子，通过特制喷枪喷出后拥有不俗的杀伤力。作为‖color:gui.yellow‖花粉喷枪‖end‖的弹药（‖color:gui.yellow‖无法使用充能箱补充‖end‖）</entitydescription.Touhou_Pellen_Bottle>
     <entityname.Touhou_Repair_Gun>修复手枪</entityname.Touhou_Repair_Gun>
-    <entitydescription.Touhou_Repair_Gun>利用木元素魔力清除目标身上的外在力量造成的破坏。</entitydescription.Touhou_Repair_Gun>
+    <entitydescription.Touhou_Repair_Gun>利用元素魔力清除目标身上的外在力量造成的破坏。</entitydescription.Touhou_Repair_Gun>
     <entityname.Touhou_Unknown_X>‖color:90,80,100,255‖未知X‖end‖</entityname.Touhou_Unknown_X>
     <entitydescription.Touhou_Unknown_X>鵺的不明因子改造重机枪后的神奇武器，由它发射的弹幕将附带各种不同的效果。而不稳定的因子在其中随时会破坏这把武器的构造，需要燃料棒进行约束。使用‖color:gui.yellow‖未知弹幕碎片或重机枪弹匣‖end‖</entitydescription.Touhou_Unknown_X>
     <entityname.Touhou_Unknown_X_Ammo>‖color:90,80,100,255‖未知弹幕碎片‖end‖</entityname.Touhou_Unknown_X_Ammo>
@@ -1483,7 +1487,7 @@
     <entityname.Touhou_Blessings_Sunflowers_Ammo02>‖color:220,200,80,255‖太阳花培养液（红）‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo02>
     <entitydescription.Touhou_Blessings_Sunflowers_Ammo02>温热的培养液，用于激活武器发射光束的能力。作为‖color:gui.yellow‖太阳花之祝福‖end‖的弹药</entitydescription.Touhou_Blessings_Sunflowers_Ammo02>
     <entityname.Touhou_Moriya_Bag>守矢神社腰包</entityname.Touhou_Moriya_Bag>
-    <entitydescription.Touhou_Moriya_Bag>为了更好地传播信仰，早苗和本地工匠一起制作了这款腰包，轻便朴素的同时，还拥有护符的属性。自注射在血量阈值80%时激活
+    <entitydescription.Touhou_Moriya_Bag>为了更好地传播信仰，早苗和本地工匠一起制作了这款腰包，轻便朴素的同时，还拥有护符的属性。自注射在血量阈值70%时激活
         使用时需要‖color:gui.yellow‖电池‖end‖激活：穿戴者拥有任意奇迹效果时，能减少10%受到的伤害。如果和护符同时穿戴，还能进一步提升效果</entitydescription.Touhou_Moriya_Bag>
     <entityname.Touhou_Spectral_Ore01>繁彩宝石矿</entityname.Touhou_Spectral_Ore01>
     <entitydescription.Touhou_Spectral_Ore01>幽灵体能量才能发现的矿石，可以拆解出各种矿石</entitydescription.Touhou_Spectral_Ore01>
@@ -1803,8 +1807,8 @@
     <entitydescription.Five_Elements_Alchemical_Locked_Temporary>临时武器需要消耗的能量填充物</entitydescription.Five_Elements_Alchemical_Locked_Temporary>
     <entityname.Touhou_Concentrated_Energy_Arc_Emitter_Temporary>‖color:245,179,188,255‖临时武器-聚能电弧发射器-手持型‖color:end‖</entityname.Touhou_Concentrated_Energy_Arc_Emitter_Temporary>
     <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Temporary>
-    <entityname.Lightning_Kanameishi_Temporary>‖color:245,179,188,255‖临时物品-需求物‖color:end‖</entityname.Lightning_Kanameishi_Temporary>
-    <entitydescription.Lightning_Kanameishi_Temporary>临时武器需要消耗的能量填充物</entitydescription.Lightning_Kanameishi_Temporary>
+    <entityname.Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary>‖color:245,179,188,255‖临时物品-需求物‖color:end‖</entityname.Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary>
+    <entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary>临时武器需要消耗的能量填充物</entitydescription.Touhou_Concentrated_Energy_Arc_Emitter_Ammo_Temporary>
     <entityname.Touhou_Cyber_Homing_Amulet_Temporary>‖color:245,179,188,255‖临时武器-电子御扎‖color:end‖</entityname.Touhou_Cyber_Homing_Amulet_Temporary>
     <entitydescription.Touhou_Cyber_Homing_Amulet_Temporary>由潜意识解码器所创造的临时武器，它会在耐久耗尽后消失。</entitydescription.Touhou_Cyber_Homing_Amulet_Temporary>
     <entityname.Touhou_Crimson_Moonlight_Temporary>‖color:245,179,188,255‖临时武器-绯色月下‖color:end‖</entityname.Touhou_Crimson_Moonlight_Temporary>

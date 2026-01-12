@@ -125,10 +125,10 @@
     <talentname.Innocent_Treasures>童祭</talentname.Innocent_Treasures>
     <talentdescription.Innocent_Treasures>当你身着‖color:gui.orange‖灵梦装束+‖end‖时，
         减少‖color:gui.red‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖和‖color:gui.red‖20%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖
-        增加‖color:gui.green‖60%‖end‖‖color:gui.orange‖游泳速度‖end‖
+        增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖游泳速度‖end‖
         增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖行走速度‖end‖
-        对非人类生物造成的伤害提高‖color:gui.green‖10%‖end‖，穿甲提高‖color:gui.green‖5%‖end‖
-        攻击造成的‖color:gui.yellow‖撕裂伤/枪伤/钝器伤/咬伤‖end‖都有‖color:gui.green‖10%‖end‖概率转化为等额‖color:gui.yellow‖深层组织损伤‖end‖
+        对非人类生物造成的伤害提高‖color:gui.green‖20%‖end‖，穿甲提高‖color:gui.green‖5%‖end‖
+        受到非人类造成的伤害降低‖color:gui.green‖20%‖end‖，若为人类则只降低‖color:gui.green‖10%‖end‖
         \n‖color:gui.red‖没有专属武器的加成效果‖end‖</talentdescription.Innocent_Treasures>
     <afflictionname.RedAndWhite>永远的巫女</afflictionname.RedAndWhite>
     <afflictiondescription.RedAndWhite>博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女</afflictiondescription.RedAndWhite>
@@ -308,10 +308,9 @@
     <entitydescription.Flandre_Eclipse_Anniversary_Plus>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Eclipse_Anniversary_Plus>
     <talentname.FlandreTalent>吸血鬼的破坏性妹妹</talentname.FlandreTalent>
     <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+ 时，
-        受到的物理伤害额外增加‖color:gui.red‖10%‖end‖，受到的烧伤额外增加‖color:gui.red‖30%‖end‖。
+        受到的物理伤害额外增加‖color:gui.red‖30%‖end‖，受到的烧伤额外增加‖color:gui.red‖50%‖end‖。
         修复速度下降‖color:gui.red‖20%‖end‖。
         ‖color:gui.orange‖医疗水平‖end‖永远减少‖color:gui.red‖100‖end‖。
-<!--        ‖color:gui.orange‖受到治疗效果‖end‖下降‖color:gui.red‖20%‖end‖。-->
         ‖color:gui.orange‖药物使用效果‖end‖下降‖color:gui.red‖20%‖end‖。
         \n更快从‖color:gui.orange‖出血‖end‖和‖color:gui.orange‖失血‖end‖中恢复。
         ‖color:gui.orange‖专属武器‖end‖造成的伤害增加‖color:gui.green‖10%‖end‖，近战再增加‖color:gui.green‖30%‖end‖
@@ -319,7 +318,7 @@
     </talentdescription.FlandreTalent>
     <talentname.FlandreTalent2>可怕的波动</talentname.FlandreTalent2>
     <talentdescription.FlandreTalent2>当你身着 芙兰朵露装束+ 时，
-        生命值高于‖color:gui.green‖50%‖end‖时，有‖color:gui.green‖30%‖end‖的概率额外造成‖color:gui.green‖49.5%‖end‖弹幕伤害。</talentdescription.FlandreTalent2>
+        生命值高于‖color:gui.green‖50%‖end‖时，有‖color:gui.green‖49.5%‖end‖的概率额外造成‖color:gui.green‖30%‖end‖弹幕伤害。</talentdescription.FlandreTalent2>
     <talentname.FlandreTalent3>鲜红血液的恶魔</talentname.FlandreTalent3>
     <talentdescription.FlandreTalent3>当你身着 芙兰朵露装束+ 时，
         对debuff的抗性提高‖color:gui.green‖15%‖end‖。如果身旁紧邻友方船员，还可增加‖color:gui.green‖66‖end‖点医疗水平.</talentdescription.FlandreTalent3>
@@ -839,7 +838,7 @@
         缓慢恢复‖color:gui.yellow‖缺氧‖end‖
         受到攻击后，短暂减少攻击者的‖color:gui.orange‖攻击伤害‖end‖
         生命值低于‖color:gui.green‖50%‖end‖时，减少‖color:gui.green‖20%‖end‖受到的伤害
-        对任意生物使用‖color:gui.orange‖植物药物或糖果‖end‖后，给予‖color:gui.green‖10‖end‖额外生命值，持续一个巡回
+        对其他妖精职业使用‖color:gui.orange‖植物药物或糖果‖end‖后，给予‖color:gui.green‖10‖end‖额外生命值，持续一个巡回。如果解锁了天赋‖color:gui.red‖“妖精联盟”‖end‖，则可以以半效作用于所有其他生物
         给予附近其他玩家增益：
         增加‖color:gui.green‖15%‖end‖使用药物的效果，增加‖color:gui.green‖10%‖end‖‖color:gui.yellow‖阿片类药物成瘾、药物成瘾抗性和缺氧抗性‖end‖。这个增益不会被‖color:gui.orange‖妖精联盟‖end‖增强。
     </talentdescription.LilywhiteTalent>
