@@ -34,7 +34,7 @@
         </Holdable>
         <ItemContainer autofill="False" capacity="64" slotsperrow="8" canbeselected="true" hideitems="true">
             <GuiFrame relativesize="0.4,0.6" anchor="Center" style="ItemUI"/>
-            <Containable identifiers="Touhou_Food_Ingredients,Touhou_Cuisine,io_box"/>
+            <Containable identifiers="Touhou_Food_Ingredients,Touhou_Cuisine,Touhou_Drinks,io_box"/>
         </ItemContainer>
     </Item>
 

@@ -597,7 +597,7 @@
                 <Conditional speciesname="neq human"/>
                 <Conditional speciesname="neq HumanTouhou_Tail"/>
                 <Conditional speciesname="neq HumanYuka"/>
-                <Affliction identifier="lacerations" strength="5"/>
+                <Affliction identifier="lacerations" strength="15"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This">
                 <SpawnItem identifier="Touhou_Rippling_Bolt_Spawn_Force" spawnposition="This" aimspread="360" rotationtype="Collider" rotation="0"/>
@@ -1188,7 +1188,7 @@
 
     <!--污染月震中心-->
     <Item name="污染月震中心" identifier="Touhou_Pollution_Lunar_Center_Fake" scale="0.2" subcategory="Touhou" category="Weapon" Health="150"
-          maxstacksize="16" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" hideinmenus="true" spritecolor="55,55,255,255"
+          maxstacksize="16" maxstacksizecharacterinventory="6" cargocontaineridentifier="metalcrate" hideinmenus="true"
           tags="smallitem,Touhou_Lunar_Center" impactsoundtag="impact_metal_light">
         <PreferredContainer secondary="armcab"/>
         <Deconstruct time="3">

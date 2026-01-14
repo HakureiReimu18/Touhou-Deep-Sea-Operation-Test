@@ -52,7 +52,7 @@
             <StatusEffect target="Character" Interval="0.3">
                 <Affliction identifier="bloodloss" strength="1.8" penetration="0.5"/>
                 <Affliction identifier="bleeding" strength="4.2" />
-                <Affliction identifier="organdamage" strength="0.8" penetration="1.0"/>
+                <Affliction identifier="organdamage" strength="1.1" penetration="1.0"/>
             </StatusEffect>
             <StatValue stattype="MedicalItemEffectivenessMultiplier" value="-0.5" />
         </Effect>
@@ -5063,6 +5063,35 @@
             </StatusEffect>
         </Effect>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Deceit_Mod_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--幸运胡萝卜-->
+    <Affliction name="幸运胡萝卜" identifier="Touhou_Carrot_Pendant_Effect" description="" type="resistance" isbuff="true" limbspecific="false"
+                indicatorlimb="Torso" maxstrength="10" showiconthreshold="100"
+                duration="3.0" hideiconafterdelay="true" showinhealthscannerthreshold="1000" affectmachines="true"
+                iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_Carrot_Pendant_Effect" minstrength="0" maxstrength="10"/>
+        <Effect minstrength="0" maxstrength="10" resistancefor="oxygenlow" minresistance="0.15" maxresistance="0.15" >
+            <StatValue stattype="SkillGainSpeed" value="0.25"/>
+            <StatValue stattype="HoldBreathMultiplier" value="0.25"/>
+            <StatValue stattype="PropulsionSpeed" value="0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Lucky_Ground_Rabbit.png" sourcerect="0,0,128,128" color="100,255,100,255" origin="0,0"/>
+    </Affliction>
+
+    <!--幸运兔尾巴-->
+    <Affliction name="幸运兔尾巴" identifier="Touhou_Rabbit_Waist_Pouch_Effect" description="" type="resistance" isbuff="true" limbspecific="false"
+                indicatorlimb="Torso" maxstrength="10" showiconthreshold="100"
+                duration="5.0" hideiconafterdelay="true" showinhealthscannerthreshold="1000" affectmachines="true"
+                iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_Carrot_Pendant_Effect" minstrength="0" maxstrength="10"/>
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1" >
+            <StatValue stattype="SkillGainSpeed" value="0.25"/>
+            <StatValue stattype="RepairSpeed" value="0.15"/>
+            <StatValue stattype="RepairToolStructureRepairMultiplier" value="0.15"/>
+            <StatValue stattype="PropulsionSpeed" value="0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Lucky_Ground_Rabbit.png" sourcerect="0,0,128,128" color="100,255,100,255" origin="0,0"/>
     </Affliction>
 
 

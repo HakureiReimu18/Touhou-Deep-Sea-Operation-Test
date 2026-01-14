@@ -8053,7 +8053,7 @@
                 <Conditional HasTag="eq High_Pressure_Shooting"/>
                 <Use/>
             </StatusEffect>
-            <RequiredItems items="smgammo,assaultriflemagazine,Touhou_Lunar_Energy_Magazine,tsm_magazine" type="Contained" msg="ItemMsgAmmoRequired"/>
+            <RequiredItems items="smgammo,assaultriflemagazine,Touhou_Lunar_Energy_Magazine" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="weapons" level="70"/>
             <RequiredSkill identifier="Touhou_Magic" level="70"/>
         </RangedWeapon>
@@ -8073,7 +8073,7 @@
                         <Conditional maxchargetime="eq 999"/>
                     </StatusEffect>
                 </Containable>
-                <Containable items="smgammo,assaultriflemagazine,tsm_magazine" excludeditems="tsm_58_mgmag" hide="true"
+                <Containable items="smgammo,assaultriflemagazine" excludeditems="tsm_58_mgmag" hide="true"
                              itempos="-21,-3" depth="0.56" setactive="true">
                     <StatusEffect type="OnInserted" target="This" holdpos="46,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
                     <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -9071,7 +9071,7 @@
         <PreferredContainer secondary="outpostsecarmcab" amount="1" spawnprobability="0.04"/>
         <PreferredContainer secondary="wrecksecarmcab,abandonedsecarmcab" amount="1" spawnprobability="0.04"/>
         <PreferredContainer secondary="armcab,weaponholder"/>
-        <Price baseprice="3000">
+        <Price baseprice="5000">
             <Price storeidentifier="merchantoutpost" multiplier="1.5"/>
             <Price storeidentifier="merchantcity" multiplier="1.25"/>
             <Price storeidentifier="merchantresearch" multiplier="1.25"/>

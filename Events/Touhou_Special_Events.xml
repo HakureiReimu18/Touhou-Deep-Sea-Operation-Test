@@ -247,7 +247,7 @@
                     <WaitAction time="2"/>
                 </Failure>
             </RNGAction>
-            <GoTo name="delay" maxtimes="150"/>
+            <GoTo name="delay" maxtimes="90"/>
             <CountTargetsAction targettag="player" MinAmount="3">
                 <Success>
 
@@ -1212,6 +1212,395 @@
         <ScriptedEvent identifier="Touhou_Spawn_Gift_Delay">
             <SpawnAction ItemIdentifier="Touhou_New_Year_Gift_Box" SpawnLocation="MainSub"/>
         </ScriptedEvent>
+
+
+        <!--兔子储物袋随机事件-->
+        <ScriptedEvent identifier="Touhou_Rabbit_Storage_Bag_Open">
+            <RNGAction Chance="0.65">
+                <Success>
+                    <RNGAction Chance="0.5">
+                        <Success>
+                            <RNGAction Chance="0.5">
+                                <Success>
+                                    <SpawnAction ItemIdentifier="Touhou_Carrot_Pendant" targetinventory="Open_player" />
+                                </Success>
+                                <Failure>
+                                    <RNGAction Chance="0.75">
+                                        <Success>
+                                            <SpawnAction ItemIdentifier="Touhou_External_Quick_Effect_Medicine" amount="3" targetinventory="Open_player" />
+                                        </Success>
+                                        <Failure>
+                                            <SpawnAction ItemIdentifier="Touhou_External_Quick_Effect_Medicine_Fake" targetinventory="Open_player" />
+                                        </Failure>
+                                    </RNGAction>
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                            <RNGAction Chance="0.5">
+                                <Success>
+                                    <SpawnAction ItemIdentifier="Touhou_Custom_Made_Repair_Tool" targetinventory="Open_player" />
+                                </Success>
+                                <Failure>
+                                    <SpawnAction ItemIdentifier="Touhou_Rabbit_Waist_Pouch" targetinventory="Open_player" />
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Success>
+                <Failure>
+                    <RNGAction Chance="0.65">
+                        <Success>
+                            <RNGAction Chance="0.5">
+                                <Success>
+                                    <SpawnAction ItemIdentifier="Touhou_Stellar_Staff" targetinventory="Open_player" />
+                                </Success>
+                                <Failure>
+                                    <SpawnAction ItemIdentifier="Touhou_Treatment_Grenade" amount="3" targetinventory="Open_player" />
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                            <RNGAction Chance="0.65">
+                                <Success>
+                                    <SpawnAction ItemIdentifier="Touhou_External_Medicine_Box" amount="2" targetinventory="Open_player" />
+                                </Success>
+                                <Failure>
+                                    <SpawnAction ItemIdentifier="Touhou_Chocolate_Cleaver" targetinventory="Open_player" />
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Failure>
+            </RNGAction>
+            <ClearTagAction tag="Open_player"/>
+        </ScriptedEvent>
+
+        <!--因幡天为攻击概率事件-->
+        <ScriptedEvent identifier="TewiTalent_OnAttack_Event" commonness="0">
+            <RNGAction chance="0.5">
+                <!--第一次随机-->
+                <Success>
+                    <RNGAction chance="0.5">
+                        <!--第二次随机-->
+                        <Success>
+                            <RNGAction chance="0.5">
+                                <!--幸运眷顾01：技能水平提高10%-->
+                                <Success>
+                                    <StatusEffectAction targettag="Tewi_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_Attack_Effect01" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Success>
+                                <!--幸运眷顾02：增加10点额外生命值-->
+                                <Failure>
+                                    <StatusEffectAction targettag="Tewi_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_Attack_Effect02" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                            <RNGAction chance="0.5">
+                                <!--幸运眷顾03：远程攻击伤害增加10%-->
+                                <Success>
+                                    <StatusEffectAction targettag="Tewi_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_Attack_Effect03" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Success>
+                                <!--幸运眷顾04：物理抗性增加10%-->
+                                <Failure>
+                                    <StatusEffectAction targettag="Tewi_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_Attack_Effect04" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Success>
+                <!--另外四项-->
+                <Failure>
+                    <RNGAction chance="0.5">
+                        <Success>
+                            <RNGAction chance="0.5">
+                                <!--幸运眷顾05：免疫精神病类的效果-->
+                                <Success>
+                                    <StatusEffectAction targettag="Tewi_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_Attack_Effect05" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Success>
+                                <!--幸运眷顾06：近战攻击伤害增加30%-->
+                                <Failure>
+                                    <StatusEffectAction targettag="Tewi_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_Attack_Effect06" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                            <RNGAction chance="0.5">
+                                <!--幸运眷顾07：造成的物理伤害以110%倍率转化为深层组织损伤-->
+                                <Success>
+                                    <StatusEffectAction targettag="Tewi_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_Attack_Effect07" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Success>
+                                <Failure>
+                                    <RNGAction chance="0.95">
+                                        <!--幸运眷顾08：增加35%眩晕抗性-->
+                                        <Success>
+                                            <StatusEffectAction targettag="Tewi_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="TewiTalent_Attack_Effect08" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Success>
+                                        <!--幸运眷顾隐藏：获得破釜沉舟效果-->
+                                        <Failure>
+                                            <StatusEffectAction targettag="Tewi_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="implacable" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Failure>
+                                    </RNGAction>
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Failure>
+            </RNGAction>
+            <ClearTagAction tag="Tewi_player"/>
+        </ScriptedEvent>
+
+        <!--因幡天为治疗概率事件-->
+        <ScriptedEvent identifier="TewiTalent_OnApplyTreatment_Event" commonness="0">
+            <RNGAction chance="0.5">
+                <!--第二次随机-->
+                <Success>
+                    <RNGAction chance="0.5">
+                        <!--幸运庇护01：受到治疗效果增加15%-->
+                        <Success>
+                            <StatusEffectAction targettag="Tewi_ApplyTreatment_player">
+                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                    <Affliction identifier="TewiTalent_OnApplyTreatment_Effect01" strength="10"/>
+                                </StatusEffect>
+                            </StatusEffectAction>
+                        </Success>
+                        <!--幸运庇护02：缓慢治愈出血和烧伤-->
+                        <Failure>
+                            <StatusEffectAction targettag="Tewi_ApplyTreatment_player">
+                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                    <Affliction identifier="TewiTalent_OnApplyTreatment_Effect02" strength="10"/>
+                                </StatusEffect>
+                            </StatusEffectAction>
+                        </Failure>
+                    </RNGAction>
+                </Success>
+                <!--另外四项-->
+                <Failure>
+                    <RNGAction chance="0.5">
+                        <!--幸运庇护03：增加20医疗水平-->
+                        <Success>
+                            <StatusEffectAction targettag="Tewi_ApplyTreatment_player">
+                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                    <Affliction identifier="TewiTalent_OnApplyTreatment_Effect03" strength="10"/>
+                                </StatusEffect>
+                            </StatusEffectAction>
+                        </Success>
+                        <!--幸运庇护04：抑制阿片类药物戒断、中毒和化学戒断-->
+                        <Failure>
+                            <StatusEffectAction targettag="Tewi_ApplyTreatment_player">
+                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                    <Affliction identifier="TewiTalent_OnApplyTreatment_Effect04" strength="10"/>
+                                </StatusEffect>
+                            </StatusEffectAction>
+                        </Failure>
+                    </RNGAction>
+                </Failure>
+            </RNGAction>
+            <ClearTagAction tag="Tewi_ApplyTreatment_player"/>
+        </ScriptedEvent>
+
+        <!--因幡天为出血效应事件-->
+        <ScriptedEvent identifier="MRE_Tewi_Event" commonness="0">
+            <RNGAction chance="0.334">
+                <Success>
+                    <RNGAction chance="0.5">
+                        <!--第一次随机-->
+                        <Success>
+                            <RNGAction chance="0.5">
+                                <!--第二次随机-->
+                                <Success>
+                                    <RNGAction chance="0.5">
+                                        <!--幸运眷顾01：技能水平提高10%-->
+                                        <Success>
+                                            <StatusEffectAction targettag="Tewi_MRE_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="TewiTalent_Attack_Effect01" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Success>
+                                        <!--幸运眷顾02：增加10点额外生命值-->
+                                        <Failure>
+                                            <StatusEffectAction targettag="Tewi_MRE_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="TewiTalent_Attack_Effect02" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Failure>
+                                    </RNGAction>
+                                </Success>
+                                <Failure>
+                                    <RNGAction chance="0.5">
+                                        <!--幸运眷顾03：远程攻击伤害增加10%-->
+                                        <Success>
+                                            <StatusEffectAction targettag="Tewi_MRE_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="TewiTalent_Attack_Effect03" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Success>
+                                        <!--幸运眷顾04：物理抗性增加10%-->
+                                        <Failure>
+                                            <StatusEffectAction targettag="Tewi_MRE_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="TewiTalent_Attack_Effect04" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Failure>
+                                    </RNGAction>
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <!--另外四项-->
+                        <Failure>
+                            <RNGAction chance="0.5">
+                                <Success>
+                                    <RNGAction chance="0.5">
+                                        <!--幸运眷顾05：免疫精神病类的效果-->
+                                        <Success>
+                                            <StatusEffectAction targettag="Tewi_MRE_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="TewiTalent_Attack_Effect05" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Success>
+                                        <!--幸运眷顾06：近战攻击伤害增加30%-->
+                                        <Failure>
+                                            <StatusEffectAction targettag="Tewi_MRE_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="TewiTalent_Attack_Effect06" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Failure>
+                                    </RNGAction>
+                                </Success>
+                                <Failure>
+                                    <RNGAction chance="0.5">
+                                        <!--幸运眷顾07：造成的物理伤害以110%倍率转化为深层组织损伤-->
+                                        <Success>
+                                            <StatusEffectAction targettag="Tewi_MRE_player">
+                                                <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                    <Affliction identifier="TewiTalent_Attack_Effect07" strength="10"/>
+                                                </StatusEffect>
+                                            </StatusEffectAction>
+                                        </Success>
+                                        <Failure>
+                                            <RNGAction chance="0.95">
+                                                <!--幸运眷顾08：增加35%眩晕抗性-->
+                                                <Success>
+                                                    <StatusEffectAction targettag="Tewi_MRE_player">
+                                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                            <Affliction identifier="TewiTalent_Attack_Effect08" strength="10"/>
+                                                        </StatusEffect>
+                                                    </StatusEffectAction>
+                                                </Success>
+                                                <!--幸运眷顾隐藏：获得破釜沉舟效果-->
+                                                <Failure>
+                                                    <StatusEffectAction targettag="Tewi_MRE_player">
+                                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                                            <Affliction identifier="implacable" strength="10"/>
+                                                        </StatusEffect>
+                                                    </StatusEffectAction>
+                                                </Failure>
+                                            </RNGAction>
+                                        </Failure>
+                                    </RNGAction>
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Success>
+                <Failure>
+                    <RNGAction chance="0.5">
+                        <!--第二次随机-->
+                        <Success>
+                            <RNGAction chance="0.5">
+                                <!--幸运庇护01：受到治疗效果增加15%-->
+                                <Success>
+                                    <StatusEffectAction targettag="Tewi_MRE_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_OnApplyTreatment_Effect01" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Success>
+                                <!--幸运庇护02：缓慢治愈出血和烧伤-->
+                                <Failure>
+                                    <StatusEffectAction targettag="Tewi_MRE_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_OnApplyTreatment_Effect02" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <!--另外四项-->
+                        <Failure>
+                            <RNGAction chance="0.5">
+                                <!--幸运庇护03：增加20医疗水平-->
+                                <Success>
+                                    <StatusEffectAction targettag="Tewi_MRE_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_OnApplyTreatment_Effect03" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Success>
+                                <!--幸运庇护04：抑制阿片类药物戒断、中毒和化学戒断-->
+                                <Failure>
+                                    <StatusEffectAction targettag="Tewi_MRE_player">
+                                        <StatusEffect target="Character" disabledeltatime="true" multiplybymaxvitality="true">
+                                            <Affliction identifier="TewiTalent_OnApplyTreatment_Effect04" strength="10"/>
+                                        </StatusEffect>
+                                    </StatusEffectAction>
+                                </Failure>
+                            </RNGAction>
+                        </Failure>
+                    </RNGAction>
+                </Failure>
+            </RNGAction>
+            <ClearTagAction tag="Tewi_MRE_player"/>
+        </ScriptedEvent>
+
+
+        <!--测试事件-->
+        <ScriptedEvent identifier="Touhou_Test_Event">
+            <TriggerEventAction identifier="Touhou_Test_EventSet" nextround="true"/>
+        </ScriptedEvent>
+
 
         <!--BGM-->
         <ScriptedEvent identifier="Touhou_OutpostDestroyMission05_BGM">
@@ -4859,5 +5248,7 @@
     <EventSet identifier="Touhou_Supply_Station_Store" chooserandom="false" triggereventcooldown="false" allowatstart="true">
         <ScriptedEvent identifier="Touhou_Supply_Station01" commonness="0" triggercooldown="false"/>
         <!--        <ScriptedEvent identifier="Touhou_Supply_Station02" commonness="0" triggercooldown="false" />-->
+        <MonsterEvent identifier="Touhou_Test_EventSet" characterfile="Touhou_Spectral_Shark" minamount="3" maxamount="4" spawntype="mainpath,sidepath" scatter="800"/>
     </EventSet>
+
 </Randomevents>

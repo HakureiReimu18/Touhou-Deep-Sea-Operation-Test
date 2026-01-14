@@ -54,6 +54,7 @@
     <Item file="%ModDir%/Items/Clothes/Kokoro_gear.xml"/>
     <Item file="%ModDir%/Items/Clothes/Lilywhite_gear.xml"/>
     <Item file="%ModDir%/Items/Clothes/Satori_gear.xml"/>
+    <Item file="%ModDir%/Items/Clothes/Tewi_gear.xml"/>
     <!--联动-->
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Ema_gear.xml"/>
     <!--tools-->
@@ -190,9 +191,11 @@
     <Talents file="%ModDir%/Talents/TalentsKokoro.xml"/>
     <Talents file="%ModDir%/Talents/TalentsLilywhite.xml"/>
     <Talents file="%ModDir%/Talents/TalentsSatori.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsTewi.xml"/>
     <Talents file="%ModDir%/Talents/TalentsMagician.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYousei.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYokai.xml"/>
+    <Talents file="%ModDir%/Talents/Talents_MRE.xml"/>
     <TalentTrees file="%ModDir%/Talents/TalentTrees.xml"/>
     <Talents file="%ModDir%/Talents/TalentsEma.xml"/>
     <!--Sounds-->

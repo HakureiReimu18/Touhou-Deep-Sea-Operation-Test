@@ -225,7 +225,7 @@
     <talentname.Yokai_Select_Vampire>吸血鬼</talentname.Yokai_Select_Vampire>
     <talentdescription.Yokai_Select_Vampire>选择此分支后，不可再解锁其它分支。对应角色：‖color:gui.orange‖蕾米莉亚·斯卡雷特，芙兰朵露·斯卡雷特‖end‖</talentdescription.Yokai_Select_Vampire>
     <talentname.Yokai_Select_Yaoshou>妖兽/兽人</talentname.Yokai_Select_Yaoshou>
-    <talentdescription.Yokai_Select_Yaoshou>选择此分支后，不可再解锁其它分支。对应角色：‖color:gui.orange‖高丽野阿吽，铃仙·优昙华院·因幡‖end‖</talentdescription.Yokai_Select_Yaoshou>
+    <talentdescription.Yokai_Select_Yaoshou>选择此分支后，不可再解锁其它分支。对应角色：‖color:gui.orange‖高丽野阿吽，铃仙·优昙华院·因幡，因幡天为‖end‖</talentdescription.Yokai_Select_Yaoshou>
     <talentname.Yokai_Select_Tiangou>天狗</talentname.Yokai_Select_Tiangou>
     <talentdescription.Yokai_Select_Tiangou>选择此分支后，不可再解锁其它分支。对应角色：‖color:gui.orange‖射命丸文，犬走椛‖end‖</talentdescription.Yokai_Select_Tiangou>
     <talentname.Yokai_Select_Tianren_Xianren>天人/仙人</talentname.Yokai_Select_Tianren_Xianren>
@@ -326,7 +326,7 @@
 
     <talenttree.Touhou_Yaoshou_Shouren>妖兽/兽人</talenttree.Touhou_Yaoshou_Shouren>
     <talentname.Touhou_Yaoshou_Shouren01>同族羁绊</talentname.Touhou_Yaoshou_Shouren01>
-    <talentdescription.Touhou_Yaoshou_Shouren01>周围有其他船员时，大大增加‖color:gui.yellow‖出血和失血‖end‖的恢复速度</talentdescription.Touhou_Yaoshou_Shouren01>
+    <talentdescription.Touhou_Yaoshou_Shouren01>在友方潜艇内时，大大增加‖color:gui.yellow‖出血和失血‖end‖的恢复速度</talentdescription.Touhou_Yaoshou_Shouren01>
     <talentname.Touhou_Yaoshou_Shouren02>伶牙俐齿</talentname.Touhou_Yaoshou_Shouren02>
     <talentdescription.Touhou_Yaoshou_Shouren02>提高‖color:gui.green‖5%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖，额外增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖咬伤抗性‖end‖。造成的‖color:gui.yellow‖咬伤‖end‖伤害增加‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Yaoshou_Shouren02>
     <talentname.Touhou_Yaoshou_Shouren03>游刃有余</talentname.Touhou_Yaoshou_Shouren03>
@@ -334,22 +334,26 @@
     <talentname.Touhou_Yaoshou_Shouren04>骨骼精奇</talentname.Touhou_Yaoshou_Shouren04>
     <talentdescription.Touhou_Yaoshou_Shouren04>近战攻击附带少量‖color:gui.yellow‖咬伤‖end‖。对生命值低于‖color:gui.green‖50%‖end‖的敌人造成额外‖color:gui.green‖10%‖end‖的伤害
         穿着‖color:gui.red‖阿吽装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。将‖color:gui.yellow‖“狮子”‖end‖的效果提高‖color:gui.green‖50%‖end‖
-        穿着‖color:gui.red‖铃仙装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。奔跑时，受到的伤害减少‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Yaoshou_Shouren04>
+        穿着‖color:gui.red‖铃仙装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。奔跑时，受到的伤害减少‖color:gui.green‖10%‖end‖
+        穿着‖color:gui.red‖因幡天为装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.yellow‖debuff抗性‖end‖。拥有‖color:gui.yellow‖幸运眷顾‖end‖时，受到的伤害减少‖color:gui.green‖7%‖end‖。拥有‖color:gui.yellow‖幸运庇护‖end‖时，再减少‖color:gui.green‖7%‖end‖</talentdescription.Touhou_Yaoshou_Shouren04>
     <talentname.Touhou_Yaoshou_Shouren05>意志坚定</talentname.Touhou_Yaoshou_Shouren05>
     <talentdescription.Touhou_Yaoshou_Shouren05>增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖精神病抗性‖end‖，大大加快‖color:gui.yellow‖幻觉‖end‖的恢复速度
         穿着‖color:gui.red‖阿吽装束+‖end‖时：获得技能点时，额外获得‖color:gui.green‖0.5‖end‖点技能。给周围船员‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度‖end‖和‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖加成
-        穿着‖color:gui.red‖铃仙装束+‖end‖时：增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖和‖color:gui.green‖15%‖end‖‖color:gui.orange‖经验获取速度‖end‖，提高‖color:gui.green‖20%‖end‖‖color:gui.yellow‖眩晕抗性‖end‖</talentdescription.Touhou_Yaoshou_Shouren05>
+        穿着‖color:gui.red‖铃仙装束+‖end‖时：增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖技能获取速度‖end‖和‖color:gui.green‖15%‖end‖‖color:gui.orange‖经验获取速度‖end‖，提高‖color:gui.green‖20%‖end‖‖color:gui.yellow‖眩晕抗性‖end‖
+        穿着‖color:gui.red‖因幡天为装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度‖end‖。每‖color:gui.green‖1‖end‖点‖color:gui.orange‖魔法能力‖end‖，提供‖color:gui.green‖0.1%‖end‖‖color:gui.orange‖攻击速度‖end‖。最多‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Yaoshou_Shouren05>
     <talentname.Touhou_Yaoshou_Shouren06>妖尾摆风</talentname.Touhou_Yaoshou_Shouren06>
     <talentdescription.Touhou_Yaoshou_Shouren06>根据‖color:gui.orange‖角色等级‖end‖增加‖color:gui.orange‖最大生命值‖end‖，每级增加‖color:gui.green‖0.5%‖end‖，最多‖color:gui.green‖10%‖end‖
         穿着‖color:gui.red‖阿吽装束+‖end‖时：增加‖color:gui.green‖10%‖end‖对人类敌人的伤害。根据角色等级给予不同的效果：
         ‖color:gui.green‖15‖end‖级：可以全速拖动生物
         ‖color:gui.green‖20‖end‖级：提高‖color:gui.green‖50%‖end‖‖color:gui.orange‖缺氧抗性‖end‖
         ‖color:gui.green‖25‖end‖级：失去意识后，不会成为怪物的攻击目标
-        穿着‖color:gui.red‖铃仙装束+‖end‖时：增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖远程攻击伤害‖end‖，远程弹幕伤害额外增加‖color:gui.green‖10%‖end‖，造成的‖color:gui.yellow‖枪伤‖end‖再额外增加‖color:gui.green‖5%‖end‖。</talentdescription.Touhou_Yaoshou_Shouren06>
+        穿着‖color:gui.red‖铃仙装束+‖end‖时：增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖远程攻击伤害‖end‖，远程弹幕伤害额外增加‖color:gui.green‖10%‖end‖，造成的‖color:gui.yellow‖枪伤‖end‖再额外增加‖color:gui.green‖5%‖end‖。
+        穿着‖color:gui.red‖因幡天为装束+‖end‖时：受到的伤害降低‖color:gui.green‖10%‖end‖。受到敌人伤害时，有概率给予攻击者‖color:gui.yellow‖梦消失和长眠不醒的噩梦‖end‖</talentdescription.Touhou_Yaoshou_Shouren06>
     <talentname.Touhou_Yaoshou_Shouren07>变幻莫测</talentname.Touhou_Yaoshou_Shouren07>
     <talentdescription.Touhou_Yaoshou_Shouren07>
         穿着‖color:gui.red‖阿吽装束+‖end‖时：只要周围有其他船员存活，你受到的伤害减少‖color:gui.green‖20%‖end‖
-        穿着‖color:gui.red‖铃仙装束+‖end‖时：生命值大于‖color:gui.green‖50%‖end‖时，造成的伤害增加‖color:gui.green‖15%‖end‖，生命值低于‖color:gui.green‖50%‖end‖时，增加‖color:gui.green‖15%‖end‖‖color:gui.yellow‖物理伤害抗性‖end‖和‖color:gui.yellow‖烧伤抗性‖end‖</talentdescription.Touhou_Yaoshou_Shouren07>
+        穿着‖color:gui.red‖铃仙装束+‖end‖时：生命值大于‖color:gui.green‖50%‖end‖时，造成的伤害增加‖color:gui.green‖15%‖end‖，生命值低于‖color:gui.green‖50%‖end‖时，增加‖color:gui.green‖15%‖end‖‖color:gui.yellow‖物理伤害抗性‖end‖和‖color:gui.yellow‖烧伤抗性‖end‖
+        穿着‖color:gui.red‖因幡天为装束+‖end‖时：巡回完成任意任务或船员击杀任意生物后，增加一层计数。使用任意药物时有概率临时给予自己额外生命值，这个效果生效后‖color:gui.red‖必须‖end‖消耗一层计数。拥有计数且生命值低于‖color:gui.green‖70%‖end‖时，弹幕伤害提高‖color:gui.green‖20%‖end‖，受到的伤害减少‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Yaoshou_Shouren07>
 
     <talenttree.Touhou_Tiangou>天狗</talenttree.Touhou_Tiangou>
     <talentname.Touhou_Tiangou01>酒中豪杰</talentname.Touhou_Tiangou01>

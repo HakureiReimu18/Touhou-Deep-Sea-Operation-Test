@@ -27,16 +27,13 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+        <AbilityGroupInterval Interval="5.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="RedAndWhite"/>
-                <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional speciesname="eq human"/>
-                </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1"/>
+                <CharacterAbilityModifyResistance resistanceid="Reiki_Side_Effect" multiplier="0.0"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
     </Talent>
 </Talents>

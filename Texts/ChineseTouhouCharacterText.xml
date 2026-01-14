@@ -125,10 +125,11 @@
     <talentname.Innocent_Treasures>童祭</talentname.Innocent_Treasures>
     <talentdescription.Innocent_Treasures>当你身着‖color:gui.orange‖灵梦装束+‖end‖时，
         减少‖color:gui.red‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖和‖color:gui.red‖20%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖
+        免疫‖color:gui.yellow‖灵气紊乱‖end‖
         增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖游泳速度‖end‖
-        增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖行走速度‖end‖
+        增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖行走速度‖end‖
         对非人类生物造成的伤害提高‖color:gui.green‖20%‖end‖，穿甲提高‖color:gui.green‖5%‖end‖
-        受到非人类造成的伤害降低‖color:gui.green‖20%‖end‖，若为人类则只降低‖color:gui.green‖10%‖end‖
+        受到非人类造成的伤害降低‖color:gui.green‖20%‖end‖
         \n‖color:gui.red‖没有专属武器的加成效果‖end‖</talentdescription.Innocent_Treasures>
     <afflictionname.RedAndWhite>永远的巫女</afflictionname.RedAndWhite>
     <afflictiondescription.RedAndWhite>博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女</afflictiondescription.RedAndWhite>
@@ -864,8 +865,8 @@
         人类的恐惧记忆：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖技能水平‖end‖
         水生物的恐惧记忆：增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖移动速度‖end‖，增加‖color:gui.green‖50%‖end‖‖color:gui.orange‖水流抗性‖end‖
         巨怪的恐惧记忆：增加‖color:gui.green‖25%‖end‖弹幕伤害，减少‖color:gui.green‖15%‖end‖受到的伤害
-        机械的危险数据：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖失血、出血、缺氧抗性‖end‖
-        异怪的恐惧记忆：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖debuff抗性‖end‖，免疫‖color:gui.yellow‖精神病类‖end‖效果的影响
+        机械的危险数据：增加‖color:gui.green‖20%‖end‖‖color:gui.yellow‖失血、出血、缺氧抗性‖end‖
+        异怪的恐惧记忆：增加‖color:gui.green‖10%‖end‖‖color:gui.yellow‖debuff抗性‖end‖，免疫‖color:gui.yellow‖精神病类‖end‖效果的影响
     </talentdescription.SatoriTalent>
     <afflictionname.Satori_3rd_Eye>少女觉　～ 3rd eye</afflictionname.Satori_3rd_Eye>
     <afflictiondescription.Satori_3rd_Eye>觉有着一头粉紫相间齐脖短发。头戴黑色发卡，上有黄色心形的装饰，且连接着第三只眼的一部分。</afflictiondescription.Satori_3rd_Eye>
@@ -885,6 +886,62 @@
     <afflictiondescription.SatoriTalent_Attack_Effect04>增加20%失血、出血、缺氧抗性</afflictiondescription.SatoriTalent_Attack_Effect04>
     <afflictionname.SatoriTalent_Attack_Effect05>异怪的恐惧记忆</afflictionname.SatoriTalent_Attack_Effect05>
     <afflictiondescription.SatoriTalent_Attack_Effect05>增加10%debuff抗性，免疫精神病类效果的影响</afflictiondescription.SatoriTalent_Attack_Effect05>
+
+    <!--Tewi-->
+    <entityname.Tewi_gear>‖color:252,146,147,255‖因幡天为 装束‖end‖</entityname.Tewi_gear>
+    <entitydescription.Tewi_gear>她是迷途竹林中野生的兔子与妖怪兔的领袖，自己也是妖怪兔。地上的兔子对她唯命是从，且只听她的命令</entitydescription.Tewi_gear>
+    <entityname.Tewi_Plus>‖color:252,146,147,255‖因幡天为 装束+‖end‖</entityname.Tewi_Plus>
+    <entitydescription.Tewi_Plus>她是迷途竹林中野生的兔子与妖怪兔的领袖，自己也是妖怪兔。地上的兔子对她唯命是从，且只听她的命令</entitydescription.Tewi_Plus>
+    <talentname.TewiTalent>幸运的白兔</talentname.TewiTalent>
+    <talentdescription.TewiTalent>当你身着因幡天为 装束+时，
+        ‖color:gui.orange‖技能获取速度‖end‖降低‖color:gui.red‖25%‖end‖
+        ‖color:gui.orange‖最大生命值‖end‖减少‖color:gui.red‖10%‖end‖
+        ‖color:gui.orange‖攻击伤害‖end‖降低‖color:gui.red‖10%‖end‖
+        受到攻击后，有概率短暂降低‖color:gui.orange‖攻击伤害‖end‖、‖color:gui.orange‖攻击速度‖end‖和‖color:gui.orange‖远程攻击精度‖end‖
+
+        ‖color:gui.orange‖移动速度‖end‖增加‖color:gui.green‖10%‖end‖
+        获得‖color:gui.green‖25%‖end‖‖color:gui.yellow‖灵气紊乱抗性‖end‖
+        ‖color:gui.orange‖使用药物的效果‖end‖增加‖color:gui.green‖10%‖end‖
+        ‖color:gui.orange‖减益效果持续时间‖end‖减少‖color:gui.green‖15%‖end‖
+        打开沉船、前哨站、遗迹的容器时，有概率找到‖color:gui.orange‖兔子储物袋‖end‖，允许打开获得特别的物品
+        攻击时，有概率给自己触发随机的‖color:gui.orange‖幸运眷顾效果‖end‖。这个效果有‖color:gui.green‖15‖end‖秒冷却。
+        使用魔法植物药物时，有概率给自己触发随机的‖color:gui.orange‖幸运庇护效果‖end‖。这个效果有‖color:gui.green‖3‖end‖分钟冷却
+    </talentdescription.TewiTalent>
+    <afflictionname.Lucky_Ground_Rabbit>地上兔</afflictionname.Lucky_Ground_Rabbit>
+    <afflictiondescription.Lucky_Ground_Rabbit>她有着一头黏糊糊、没有光泽的黑色短发。头上垂着一双毛绒绒的兔耳。</afflictiondescription.Lucky_Ground_Rabbit>
+    <afflictionname.Tewi_Weapons>巧言令色的白兔</afflictionname.Tewi_Weapons>
+    <afflictiondescription.Tewi_Weapons>天为拥有使人类变得幸运程度的能力，见到她的人就能变得幸运。</afflictiondescription.Tewi_Weapons>
+    <afflictionname.TewiTalent_Attack_Effect01>幸运眷顾</afflictionname.TewiTalent_Attack_Effect01>
+    <afflictiondescription.TewiTalent_Attack_Effect01>技能水平增加10%</afflictiondescription.TewiTalent_Attack_Effect01>
+    <afflictionname.TewiTalent_Attack_Effect02>幸运眷顾</afflictionname.TewiTalent_Attack_Effect02>
+    <afflictiondescription.TewiTalent_Attack_Effect02>增加10点额外生命值</afflictiondescription.TewiTalent_Attack_Effect02>
+    <afflictionname.TewiTalent_Attack_Effect03>幸运眷顾</afflictionname.TewiTalent_Attack_Effect03>
+    <afflictiondescription.TewiTalent_Attack_Effect03>远程攻击伤害增加10%</afflictiondescription.TewiTalent_Attack_Effect03>
+    <afflictionname.TewiTalent_Attack_Effect04>幸运眷顾</afflictionname.TewiTalent_Attack_Effect04>
+    <afflictiondescription.TewiTalent_Attack_Effect04>物理抗性增加10%</afflictiondescription.TewiTalent_Attack_Effect04>
+    <afflictionname.TewiTalent_Attack_Effect05>幸运眷顾</afflictionname.TewiTalent_Attack_Effect05>
+    <afflictiondescription.TewiTalent_Attack_Effect05>免疫精神病类的效果</afflictiondescription.TewiTalent_Attack_Effect05>
+    <afflictionname.TewiTalent_Attack_Effect06>幸运眷顾</afflictionname.TewiTalent_Attack_Effect06>
+    <afflictiondescription.TewiTalent_Attack_Effect06>近战攻击伤害增加30%</afflictiondescription.TewiTalent_Attack_Effect06>
+    <afflictionname.TewiTalent_Attack_Effect07>幸运眷顾</afflictionname.TewiTalent_Attack_Effect07>
+    <afflictiondescription.TewiTalent_Attack_Effect07>造成的物理伤害以110%倍率转化为深层组织损伤</afflictiondescription.TewiTalent_Attack_Effect07>
+    <afflictionname.TewiTalent_Attack_Effect08>幸运眷顾</afflictionname.TewiTalent_Attack_Effect08>
+    <afflictiondescription.TewiTalent_Attack_Effect08>增加35%眩晕抗性</afflictiondescription.TewiTalent_Attack_Effect08>
+    <afflictionname.TewiTalent_OnApplyTreatment_Effect01>幸运庇护</afflictionname.TewiTalent_OnApplyTreatment_Effect01>
+    <afflictiondescription.TewiTalent_OnApplyTreatment_Effect01>受到治疗效果增加15%</afflictiondescription.TewiTalent_OnApplyTreatment_Effect01>
+    <afflictionname.TewiTalent_OnApplyTreatment_Effect02>幸运庇护</afflictionname.TewiTalent_OnApplyTreatment_Effect02>
+    <afflictiondescription.TewiTalent_OnApplyTreatment_Effect02>缓慢治愈出血和烧伤</afflictiondescription.TewiTalent_OnApplyTreatment_Effect02>
+    <afflictionname.TewiTalent_OnApplyTreatment_Effect03>幸运庇护</afflictionname.TewiTalent_OnApplyTreatment_Effect03>
+    <afflictiondescription.TewiTalent_OnApplyTreatment_Effect03>增加20医疗水平</afflictiondescription.TewiTalent_OnApplyTreatment_Effect03>
+    <afflictionname.TewiTalent_OnApplyTreatment_Effect04>幸运庇护</afflictionname.TewiTalent_OnApplyTreatment_Effect04>
+    <afflictiondescription.TewiTalent_OnApplyTreatment_Effect04>抑制阿片类药物戒断、中毒和化学戒断</afflictiondescription.TewiTalent_OnApplyTreatment_Effect04>
+
+
+
+
+
+
+
 
 
     <!--出血效应-->
@@ -921,6 +978,7 @@
     <Character.MRE_Material_Kokoro>秦心的回忆</Character.MRE_Material_Kokoro>
     <Character.MRE_Material_Lilywhite>莉莉白的回忆</Character.MRE_Material_Lilywhite>
     <Character.MRE_Material_Satori>觉的回忆</Character.MRE_Material_Satori>
+    <Character.MRE_Material_Tewi>因幡天为的回忆</Character.MRE_Material_Tewi>
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有15%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
@@ -992,4 +1050,6 @@
     <talentdescription.MRE_Lilywhite>仅对莉莉白 装束+生效。每1点魔法能力增加0.2%最大生命值。最多增加40%。魔法能力超过120后，给予20额外生命值</talentdescription.MRE_Lilywhite>
     <talentname.MRE_Satori>出血效应-古明地觉</talentname.MRE_Satori>
     <talentdescription.MRE_Satori>仅对觉 装束+生效。允许获得其他角色的专属武器效果</talentdescription.MRE_Satori>
+    <talentname.MRE_Tewi>出血效应-因幡天为</talentname.MRE_Tewi>
+    <talentdescription.MRE_Tewi>仅对因幡天为 装束+生效。每一分钟获得随机一种幸运眷顾或幸运庇护效果</talentdescription.MRE_Tewi>
 </infotexts>

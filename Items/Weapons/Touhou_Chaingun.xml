@@ -1105,7 +1105,7 @@
         <Sprite texture="Content/Items/Weapons/TurretsAndDepthCharges.png" sourcerect="143,310,369,66" depth="0.55"/>
         <Body width="170" height="10" density="10"/>
         <Holdable slots="RightHand,LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
-        <Projectile characterusable="false" hitscan="true" spread="14" removeonhit="true" damagedoors="true">
+        <Projectile characterusable="false" hitscan="true" spread="11" removeonhit="true" damagedoors="true">
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.5"
                              colormultiplier="253,232,130,255"/>
             <Attack structuredamage="10" itemdamage="10" targetforce="5" targetimpulse="20" penetration="0.2" severlimbsprobability="0.4">

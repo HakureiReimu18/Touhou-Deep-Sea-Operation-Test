@@ -131,10 +131,11 @@
     <talentname.Innocent_Treasures>Innocent Treasures</talentname.Innocent_Treasures>
     <talentdescription.Innocent_Treasures>When wearing ‖color:gui.orange‖Reimu's Outfit+‖end‖,
         Reduces ‖color:gui.red‖10%‖end‖ ‖color:gui.orange‖Maximum Health‖end‖ and ‖color:gui.red‖20%‖end‖ ‖color:gui.orange‖Physical Damage Resistance‖end‖
+        Immune to Reiki Disorder.
         Increases ‖color:gui.green‖50%‖end‖ ‖color:gui.orange‖Swimming Speed‖end‖
-        Increases ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Walking Speed‖end‖
+        Increases ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Walking Speed‖end‖
         Increases damage to non-human creatures by ‖color:gui.green‖20%‖end‖ and armor penetration by ‖color:gui.green‖5%‖end‖
-        Reduces damage taken from non-humans by ‖color:gui.green‖20%‖end‖, and by only ‖color:gui.green‖10%‖end‖ from humans
+        Reduces damage taken from non-humans by ‖color:gui.green‖20%‖end‖
         \n‖color:gui.red‖No bonus effect for exclusive weapons‖end‖</talentdescription.Innocent_Treasures>
     <afflictionname.RedAndWhite>The Eternal Shrine Maiden</afflictionname.RedAndWhite>
     <afflictiondescription.RedAndWhite>Reimu Hakurei, the ever-present shrine maiden of Gensokyo’s Hakurei Shrine.</afflictiondescription.RedAndWhite>
@@ -913,6 +914,83 @@
     <afflictiondescription.SatoriTalent_Attack_Effect05>Increases debuff resistance by 10% and grants immunity to mental illness–type effects.</afflictiondescription.SatoriTalent_Attack_Effect05>
 
 
+    <!--Tewi-->
+    <entityname.Tewi_gear>‖color:252,146,147,255‖Inaba Tewi Outfit‖end‖</entityname.Tewi_gear>
+    <entitydescription.Tewi_gear>She is the leader of the wild rabbits and youkai rabbits of the Bamboo Forest of the Lost.
+        A youkai rabbit herself, all ground rabbits obey her absolutely and heed only her commands.</entitydescription.Tewi_gear>
+    <entityname.Tewi_Plus>‖color:252,146,147,255‖Inaba Tewi Outfit+‖end‖</entityname.Tewi_Plus>
+    <entitydescription.Tewi_Plus>She is the leader of the wild rabbits and youkai rabbits of the Bamboo Forest of the Lost.
+        A youkai rabbit herself, all ground rabbits obey her absolutely and heed only her commands.</entitydescription.Tewi_Plus>
+    <talentname.TewiTalent>Lucky White Rabbit</talentname.TewiTalent>
+    <talentdescription.TewiTalent>
+        While wearing ‖color:gui.red‖Inaba Tewi Outfit+‖end‖:
+
+        ‖color:gui.orange‖Skill gain rate‖end‖ reduced by ‖color:gui.red‖25%‖end‖
+        ‖color:gui.orange‖Maximum health‖end‖ reduced by ‖color:gui.red‖10%‖end‖
+        ‖color:gui.orange‖Attack damage‖end‖ reduced by ‖color:gui.red‖10%‖end‖
+        After taking damage, has a chance to briefly reduce ‖color:gui.orange‖attack damage‖end‖,
+        ‖color:gui.orange‖attack speed‖end‖, and ‖color:gui.orange‖ranged accuracy‖end‖
+
+        ‖color:gui.orange‖Movement speed‖end‖ increased by ‖color:gui.green‖10%‖end‖
+        Gain ‖color:gui.green‖25%‖end‖ ‖color:gui.yellow‖Aural Instability Resistance‖end‖
+        ‖color:gui.orange‖Effectiveness of medicines‖end‖ increased by ‖color:gui.green‖10%‖end‖
+        ‖color:gui.orange‖Debuff duration‖end‖ reduced by ‖color:gui.green‖15%‖end‖
+
+        When opening containers in wrecks, outposts, or ruins,
+        has a chance to find a ‖color:gui.orange‖Rabbit Storage Bag‖end‖,
+        which can be opened to obtain special items.
+
+        When attacking, has a chance to trigger a random
+        ‖color:gui.orange‖Lucky Favor‖end‖ effect on yourself.
+        This effect has a ‖color:gui.green‖15‖end‖ second cooldown.
+
+        When using magical plant-based medicine,
+        has a chance to trigger a random
+        ‖color:gui.orange‖Lucky Protection‖end‖ effect on yourself.
+        This effect has a ‖color:gui.green‖3‖end‖ minute cooldown.
+    </talentdescription.TewiTalent>
+    <afflictionname.Lucky_Ground_Rabbit>Ground Rabbit</afflictionname.Lucky_Ground_Rabbit>
+    <afflictiondescription.Lucky_Ground_Rabbit>She has sticky, dull black short hair, with a pair of fluffy rabbit ears drooping from her head.</afflictiondescription.Lucky_Ground_Rabbit>
+    <afflictionname.Tewi_Weapons>Silver-Tongued White Rabbit</afflictionname.Tewi_Weapons>
+    <afflictiondescription.Tewi_Weapons>Tewi possesses the ability to influence human luck.
+        Those who encounter her become more fortunate.</afflictiondescription.Tewi_Weapons>
+    <afflictionname.TewiTalent_Attack_Effect01>Lucky Favor</afflictionname.TewiTalent_Attack_Effect01>
+    <afflictiondescription.TewiTalent_Attack_Effect01>Skill levels increased by 10%</afflictiondescription.TewiTalent_Attack_Effect01>
+    <afflictionname.TewiTalent_Attack_Effect02>Lucky Favor</afflictionname.TewiTalent_Attack_Effect02>
+    <afflictiondescription.TewiTalent_Attack_Effect02>Gain 10 bonus maximum health</afflictiondescription.TewiTalent_Attack_Effect02>
+    <afflictionname.TewiTalent_Attack_Effect03>Lucky Favor</afflictionname.TewiTalent_Attack_Effect03>
+    <afflictiondescription.TewiTalent_Attack_Effect03>Ranged attack damage increased by 10%</afflictiondescription.TewiTalent_Attack_Effect03>
+    <afflictionname.TewiTalent_Attack_Effect04>Lucky Favor</afflictionname.TewiTalent_Attack_Effect04>
+    <afflictiondescription.TewiTalent_Attack_Effect04>Physical resistance increased by 10%</afflictiondescription.TewiTalent_Attack_Effect04>
+    <afflictionname.TewiTalent_Attack_Effect05>Lucky Favor</afflictionname.TewiTalent_Attack_Effect05>
+    <afflictiondescription.TewiTalent_Attack_Effect05>Immune to psychosis-related effects</afflictiondescription.TewiTalent_Attack_Effect05>
+    <afflictionname.TewiTalent_Attack_Effect06>Lucky Favor</afflictionname.TewiTalent_Attack_Effect06>
+    <afflictiondescription.TewiTalent_Attack_Effect06>Melee attack damage increased by 30%</afflictiondescription.TewiTalent_Attack_Effect06>
+    <afflictionname.TewiTalent_Attack_Effect07>Lucky Favor</afflictionname.TewiTalent_Attack_Effect07>
+    <afflictiondescription.TewiTalent_Attack_Effect07>Physical damage dealt is converted into deep tissue damage at 110% effectiveness</afflictiondescription.TewiTalent_Attack_Effect07>
+    <afflictionname.TewiTalent_Attack_Effect08>Lucky Favor</afflictionname.TewiTalent_Attack_Effect08>
+    <afflictiondescription.TewiTalent_Attack_Effect08>Stun resistance increased by 35%</afflictiondescription.TewiTalent_Attack_Effect08>
+    <afflictionname.TewiTalent_OnApplyTreatment_Effect01>Lucky Protection</afflictionname.TewiTalent_OnApplyTreatment_Effect01>
+    <afflictiondescription.TewiTalent_OnApplyTreatment_Effect01>Healing received increased by 15%</afflictiondescription.TewiTalent_OnApplyTreatment_Effect01>
+    <afflictionname.TewiTalent_OnApplyTreatment_Effect02>Lucky Protection</afflictionname.TewiTalent_OnApplyTreatment_Effect02>
+    <afflictiondescription.TewiTalent_OnApplyTreatment_Effect02>Slowly heals bleeding and burns</afflictiondescription.TewiTalent_OnApplyTreatment_Effect02>
+    <afflictionname.TewiTalent_OnApplyTreatment_Effect03>Lucky Protection</afflictionname.TewiTalent_OnApplyTreatment_Effect03>
+    <afflictiondescription.TewiTalent_OnApplyTreatment_Effect03>Medical skill increased by 20</afflictiondescription.TewiTalent_OnApplyTreatment_Effect03>
+    <afflictionname.TewiTalent_OnApplyTreatment_Effect04>Lucky Protection</afflictionname.TewiTalent_OnApplyTreatment_Effect04>
+    <afflictiondescription.TewiTalent_OnApplyTreatment_Effect04>Suppresses opioid withdrawal, opioid poisoning, and chemical withdrawal</afflictiondescription.TewiTalent_OnApplyTreatment_Effect04>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--Bleeding Effect-->
     <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>Memory Material</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
     <entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>Can be refined at the alchemy table using alchemical materials. Efficiency greatly improves if the related manual can be found.</entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
@@ -947,6 +1025,7 @@
     <Character.MRE_Material_Kokoro>Kokoro's Memory</Character.MRE_Material_Kokoro>
     <Character.MRE_Material_Lilywhite>Lilywhite's Memory</Character.MRE_Material_Lilywhite>
     <Character.MRE_Material_Satori>Satori's Memory</Character.MRE_Material_Satori>
+    <Character.MRE_Material_Tewi>Tewi's Memory</Character.MRE_Material_Tewi>
     <talentname.MRE_Reimu>Bleeding Effect – Hakurei Reimu</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Effective only with Reimu Outfit+. Grants exclusive weapon effect. Each time hit, 15% chance to avoid that damage.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Bleeding Effect – Remilia Scarlet</talentname.MRE_Remilia>
@@ -1022,4 +1101,8 @@
         When Magic Ability exceeds 120, grants an additional 20 Max HP.</talentdescription.MRE_Lilywhite>
     <talentname.MRE_Satori>Bleeding Effect – Komeiji Satori</talentname.MRE_Satori>
     <talentdescription.MRE_Satori>Effective while wearing the Satori Outfit+. During Mind Reading, allows gaining the exclusive weapon effects of other characters.</talentdescription.MRE_Satori>
+    <talentname.MRE_Tewi>Bleeding Effect – Inaba Tewi</talentname.MRE_Tewi>
+    <talentdescription.MRE_Tewi>Only effective while wearing ‖color:gui.red‖Inaba Tewi Outfit+‖end‖.
+        Gain one random ‖color:gui.orange‖Lucky Favor‖end‖ or ‖color:gui.orange‖Lucky Protection‖end‖ effect every minute.</talentdescription.MRE_Tewi>
+
 </infotexts>

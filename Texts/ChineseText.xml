@@ -1797,6 +1797,23 @@
     <entitydescription.Touhou_Anguish_Bullet>每一发都是一颗浓缩的痛苦种子，由受刑者的神经末梢结晶而成。
         作为‖color:gui.yellow‖痛苦‖end‖的弹药</entitydescription.Touhou_Anguish_Bullet>
 
+    <entityname.Touhou_Carrot_Pendant>胡萝卜吊坠</entityname.Touhou_Carrot_Pendant>
+    <entitydescription.Touhou_Carrot_Pendant>胡萝卜外形的精致吊坠，为兔子们佩戴后明显更加精神了。占用耳机槽位</entitydescription.Touhou_Carrot_Pendant>
+
+    <entityname.Touhou_External_Quick_Effect_Medicine>永远亭速效药</entityname.Touhou_External_Quick_Effect_Medicine>
+    <entitydescription.Touhou_External_Quick_Effect_Medicine>一枚神秘的药丸，据说拥有非常迅速的治疗效果，但听说最近混进去一批假药</entitydescription.Touhou_External_Quick_Effect_Medicine>
+    <entityname.Touhou_External_Quick_Effect_Medicine_Fake>永远亭速效药</entityname.Touhou_External_Quick_Effect_Medicine_Fake>
+    <entitydescription.Touhou_External_Quick_Effect_Medicine_Fake>一枚神秘的药丸，据说拥有非常迅速的治疗效果，但听说最近混进去一批假药</entitydescription.Touhou_External_Quick_Effect_Medicine_Fake>
+
+    <entityname.Touhou_Custom_Made_Repair_Tool>特制的修理工具</entityname.Touhou_Custom_Made_Repair_Tool>
+    <entitydescription.Touhou_Custom_Made_Repair_Tool>一把特制的修理工具，结合了扳手与螺丝刀的功能，但较为易碎</entitydescription.Touhou_Custom_Made_Repair_Tool>
+
+    <entityname.Touhou_Lucky_Four_Leaf_Clover_Headpiece>幸运的四叶草发饰</entityname.Touhou_Lucky_Four_Leaf_Clover_Headpiece>
+    <entitydescription.Touhou_Lucky_Four_Leaf_Clover_Headpiece>象征幸运的发饰，佩戴者都明确表示自己的大脑变得更清晰了</entitydescription.Touhou_Lucky_Four_Leaf_Clover_Headpiece>
+
+    <entityname.Touhou_Rabbit_Waist_Pouch>兔子腰包</entityname.Touhou_Rabbit_Waist_Pouch>
+    <entitydescription.Touhou_Rabbit_Waist_Pouch>兔子造型的小巧腰包，为兔子们装备后明显更加有活力了</entitydescription.Touhou_Rabbit_Waist_Pouch>
+
 
 
 
@@ -1971,7 +1988,7 @@
     <talentname.Hyouibana_Reimu>凭依灵梦</talentname.Hyouibana_Reimu>
     <talentdescription.Hyouibana_Reimu>游泳速度提高40%，行走速度提高10%，技能获取速度提高50%。</talentdescription.Hyouibana_Reimu>
     <talentname.Hyouibana_Aya>凭依文文</talentname.Hyouibana_Aya>
-    <talentdescription.Hyouibana_Aya>完成巡回获得的经验增加25%，攻击速度提高7.5%，移动速度提高20%。</talentdescription.Hyouibana_Aya>
+    <talentdescription.Hyouibana_Aya>攻击速度提高7.5%，移动速度提高20%。</talentdescription.Hyouibana_Aya>
     <talentname.Hyouibana_Marisa>凭依魔理沙</talentname.Hyouibana_Marisa>
     <talentdescription.Hyouibana_Marisa>对烧伤、酸性烧伤的抗性更高，从烧伤、酸性烧伤中恢复更快，攻击伤害提高5%。</talentdescription.Hyouibana_Marisa>
     <talentname.Hyouibana_Mokou>凭依妹红</talentname.Hyouibana_Mokou>
@@ -1981,7 +1998,7 @@
     <talentname.Hyouibana_Youmu>凭依妖梦</talentname.Hyouibana_Youmu>
     <talentdescription.Hyouibana_Youmu>行走速度提高10%，近战伤害提高20%。</talentdescription.Hyouibana_Youmu>
     <talentname.Hyouibana_Nitori>凭依荷取</talentname.Hyouibana_Nitori>
-    <talentdescription.Hyouibana_Nitori>游泳速度提高20%，机械工程和电气工程都大于60后，在水中可缓慢恢复伤势。</talentdescription.Hyouibana_Nitori>
+    <talentdescription.Hyouibana_Nitori>游泳速度提高20%，在水中可缓慢恢复伤势。</talentdescription.Hyouibana_Nitori>
     <talentname.Hyouibana_Patchouli>凭依帕秋莉</talentname.Hyouibana_Patchouli>
     <talentdescription.Hyouibana_Patchouli>游泳速度提高25%，技能获取速度提高25%，增益效果在自己身上持续时间更久。</talentdescription.Hyouibana_Patchouli>
     <talentname.Hyouibana_Tenshi>凭依天子</talentname.Hyouibana_Tenshi>
@@ -2028,5 +2045,7 @@
     <talentdescription.Hyouibana_Lilywhite>缓慢恢复缺氧，生命值低于30%时，减少10%受到的伤害</talentdescription.Hyouibana_Lilywhite>
     <talentname.Hyouibana_Satori>凭依觉</talentname.Hyouibana_Satori>
     <talentdescription.Hyouibana_Satori>所有攻击附加长眠不醒的噩梦</talentdescription.Hyouibana_Satori>
+    <talentname.Hyouibana_Tewi>凭依因幡天为</talentname.Hyouibana_Tewi>
+    <talentdescription.Hyouibana_Tewi>移动速度增加10%。获得灵气紊乱15%的抗性</talentdescription.Hyouibana_Tewi>
 
 </infotexts>

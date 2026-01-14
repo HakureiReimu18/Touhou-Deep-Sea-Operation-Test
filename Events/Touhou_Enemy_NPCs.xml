@@ -394,7 +394,7 @@
                 </Item>
                 <Item identifier="Touhou_Merciless_Ammo" amount="5"/>
                 <Item identifier="Touhou_Black_Wings_Knife"/>
-                <Item identifier="Touhou_External_Medicine_Box" amount="2"/>
+                <Item identifier="Touhou_External_Medicine_Box" />
                 <Item identifier="Touhou_Lost_Storage_Bag_Thief" amount="2"/>
             </ItemSet>
             <ItemSet commonness="0.2">
@@ -431,7 +431,7 @@
                 </Item>
                 <Item identifier="Touhou_Merciless_Ammo" amount="5"/>
                 <Item identifier="Touhou_White_Wings_Knife"/>
-                <Item identifier="Touhou_External_Medicine_Box" amount="2"/>
+                <Item identifier="Touhou_External_Medicine_Box" />
                 <Item identifier="Touhou_External_Within_Pill"/>
                 <Item identifier="Touhou_Lost_Storage_Bag_Thief"/>
             </ItemSet>

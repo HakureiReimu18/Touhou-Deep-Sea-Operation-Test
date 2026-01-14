@@ -2253,6 +2253,35 @@
     <entitydescription.Touhou_Anguish_Bullet>Each round is a concentrated seed of anguish, crystallized from the nerve endings of the tormented.
         Ammo for ‖color:gui.yellow‖Anguish‖end‖</entitydescription.Touhou_Anguish_Bullet>
 
+    <entityname.Touhou_Carrot_Pendant>Carrot Pendant</entityname.Touhou_Carrot_Pendant>
+    <entitydescription.Touhou_Carrot_Pendant>A finely crafted carrot-shaped pendant. Rabbits wearing it appear noticeably more energetic.
+        Occupies the headset slot.</entitydescription.Touhou_Carrot_Pendant>
+
+    <entityname.Touhou_External_Quick_Effect_Medicine>Eientei Fast-Acting Medicine</entityname.Touhou_External_Quick_Effect_Medicine>
+    <entitydescription.Touhou_External_Quick_Effect_Medicine>A mysterious pill said to possess extremely rapid healing effects.
+        However, rumors claim that a batch of counterfeit medicine has recently mixed into circulation.</entitydescription.Touhou_External_Quick_Effect_Medicine>
+
+    <entityname.Touhou_External_Quick_Effect_Medicine_Fake>Eientei Fast-Acting Medicine</entityname.Touhou_External_Quick_Effect_Medicine_Fake>
+    <entitydescription.Touhou_External_Quick_Effect_Medicine_Fake>A mysterious pill said to possess extremely rapid healing effects.
+        However, rumors claim that a batch of counterfeit medicine has recently mixed into circulation.</entitydescription.Touhou_External_Quick_Effect_Medicine_Fake>
+
+    <entityname.Touhou_Custom_Made_Repair_Tool>Custom-Made Repair Tool</entityname.Touhou_Custom_Made_Repair_Tool>
+    <entitydescription.Touhou_Custom_Made_Repair_Tool>A specially made repair tool that combines the functions of a wrench and a screwdriver,
+        but is relatively fragile.</entitydescription.Touhou_Custom_Made_Repair_Tool>
+
+    <entityname.Touhou_Lucky_Four_Leaf_Clover_Headpiece>Lucky Four-Leaf Clover Hairpin</entityname.Touhou_Lucky_Four_Leaf_Clover_Headpiece>
+    <entitydescription.Touhou_Lucky_Four_Leaf_Clover_Headpiece>A hair accessory symbolizing good fortune.
+        Wearers clearly report that their minds feel sharper and more focused.</entitydescription.Touhou_Lucky_Four_Leaf_Clover_Headpiece>
+
+    <entityname.Touhou_Rabbit_Waist_Pouch>Rabbit Waist Pouch</entityname.Touhou_Rabbit_Waist_Pouch>
+    <entitydescription.Touhou_Rabbit_Waist_Pouch>A small rabbit-shaped waist pouch.
+        Rabbits equipped with it appear noticeably more lively and energetic.</entitydescription.Touhou_Rabbit_Waist_Pouch>
+
+
+
+
+
+
 
 
 
@@ -2510,7 +2539,7 @@
     <talentdescription.Hyouibana_Reimu>Swimming speed +40%, walking speed +10%, skill gain rate +50%.</talentdescription.Hyouibana_Reimu>
 
     <talentname.Hyouibana_Aya>Possession: Aya</talentname.Hyouibana_Aya>
-    <talentdescription.Hyouibana_Aya>Circuit experience gain +25%, attack speed +7.5%, movement speed +20%.</talentdescription.Hyouibana_Aya>
+    <talentdescription.Hyouibana_Aya>Attack speed +7.5%, movement speed +20%.</talentdescription.Hyouibana_Aya>
 
     <talentname.Hyouibana_Marisa>Possession: Marisa</talentname.Hyouibana_Marisa>
     <talentdescription.Hyouibana_Marisa>Higher resistance and faster recovery from burns and acid burns; attack damage +5%.</talentdescription.Hyouibana_Marisa>
@@ -2595,6 +2624,9 @@
 
     <talentname.Hyouibana_Satori>Possession: Satori</talentname.Hyouibana_Satori>
     <talentdescription.Hyouibana_Satori>All attacks inflict the everlasting Endless Nightmare slumber.</talentdescription.Hyouibana_Satori>
+
+    <talentname.Hyouibana_Tewi>Possession: Inaba Tewi</talentname.Hyouibana_Tewi>
+    <talentdescription.Hyouibana_Tewi>Movement speed increased by 10%. Gain 15% resistance to Reiki Disorder.</talentdescription.Hyouibana_Tewi>
 
 
 </infotexts>

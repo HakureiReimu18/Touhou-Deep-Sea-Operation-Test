@@ -2861,6 +2861,7 @@
         <Body width="351" height="63" density="10"/>
         <Holdable slots="Any,RightHand+LeftHand" controlpose="true" holdpos="55,0" aimpos="58,-5" handle1="-100,-12" handle2="0,15" holdangle="-30"
                   msg="ItemMsgPickUpSelect">
+            <StatusEffect type="OnActive" target="This,Character" interval="5" unlockrecipe="Touhou_Aphelion_Ammo" disabledeltatime="true"/>
             <!--            <StatusEffect type="OnActive" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Aphelion_Talent" />
             </StatusEffect>-->
@@ -2982,7 +2983,7 @@
         <Deconstruct time="6">
             <Item identifier="titaniumaluminiumalloy" amount="2"/>
         </Deconstruct>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20">
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="20" requiresrecipe="true" HideIfNoRecipe="true">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="2"/>
             <RequiredItem identifier="Touhou_Bottle_Element"/>
@@ -2990,7 +2991,7 @@
             <RequiredItem identifier="titaniumaluminiumalloy" amount="2"/>
             <RequiredItem identifier="Touhou_Base_Metal" amount="2"/>
         </Fabricate>
-        <Fabricate suitablefabricators="Magic_Altar" requiredtime="3" displayname="recycleitem">
+        <Fabricate suitablefabricators="Magic_Altar" requiredtime="3" displayname="recycleitem" requiresrecipe="true" HideIfNoRecipe="true">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
             <RequiredItem identifier="Magic_Material" amount="2"/>
             <RequiredItem identifier="Touhou_Bottle_Element"/>
@@ -3509,18 +3510,6 @@
                 <Conditional skillrequirement="true" Touhou_Magic="gte 100"/>
                 <Affliction identifier="Touhou_Magic_Attack_Multiply_Effect02" strength="100"/>
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" penetration="0.0" weapondamagemodifier="1.0" setvalue="true" disabledeltatime="true">
-                <Conditional HasTag="eq Batterycell_Active"/>
-            </StatusEffect>
-            <StatusEffect type="OnActive" target="This" penetration="0.1" weapondamagemodifier="1.6" setvalue="true" disabledeltatime="true">
-                <Conditional HasTag="eq Fulguriumbatterycell_Active"/>
-            </StatusEffect>
-            <StatusEffect type="OnActive" target="This" penetration="0.15" weapondamagemodifier="1.8" setvalue="true" disabledeltatime="true">
-                <Conditional HasTag="eq Touhou_Spectral_Core_Battery_Active"/>
-            </StatusEffect>
-            <StatusEffect type="OnActive" target="This" penetration="0.2" weapondamagemodifier="2.0" setvalue="true" disabledeltatime="true">
-                <Conditional HasTag="eq Alienpowercell_Active"/>
-            </StatusEffect>
             <StatusEffect type="OnBroken" target="This">
                 <sound file="%ModDir%/Sounds/Tools/Overheating_Restart01.ogg" type="OnUse" range="500.0" loop="false"/>
             </StatusEffect>
@@ -3566,23 +3555,33 @@
             <SlotIcon slotindex="2" texture="%ModDir%/Images/Tools/Touhou_Enhanced_Crystal01.png" sourcerect="0,0,68,100" origin="0.5,0.5"/>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="mobilebattery,alienpowercell" setactive="true"/>
+                <Containable identifier="mobilebattery,alienpowercell">
+                    <StatusEffect type="OnContaining" target="This" penetration="0.0" weapondamagemodifier="1.0" setvalue="true" Interval="1.0" disabledeltatime="true">
+                        <Conditional condition="lte 0"/>
+                    </StatusEffect>
+                </Containable>
                 <Containable identifier="batterycell">
-                    <StatusEffect type="OnContaining" target="This" tags="Batterycell_Active" setvalue="true" Interval="1.0">
+                    <StatusEffect type="OnContaining" target="This" penetration="0.0" weapondamagemodifier="1.0" setvalue="true" Interval="1.0" disabledeltatime="true">
+                        <Conditional condition="gt 0"/>
+                    </StatusEffect>
+                </Containable>
+                <Containable items="tsm_kep_battery">
+                    <StatusEffect type="OnContaining" target="This" penetration="0.05" weapondamagemodifier="1.4" setvalue="true" Interval="1.0" disabledeltatime="true">
                         <Conditional condition="gt 0"/>
                     </StatusEffect>
                 </Containable>
                 <Containable items="fulguriumbatterycell">
-                    <StatusEffect type="OnContaining" target="This" tags="Fulguriumbatterycell_Active" setvalue="true" Interval="1.0">
-                        <Conditional condition="gt 0"/>
-                    </StatusEffect>
-                </Containable>
-                <Containable items="alienpowercell">
-                    <StatusEffect type="OnContaining" target="This" tags="Alienpowercell_Active" setvalue="true" Interval="1.0">
+                    <StatusEffect type="OnContaining" target="This" penetration="0.1" weapondamagemodifier="1.6" setvalue="true" Interval="1.0" disabledeltatime="true">
                         <Conditional condition="gt 0"/>
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Spectral_Core_Battery">
-                    <StatusEffect type="OnContaining" target="This" tags="Touhou_Spectral_Core_Battery_Active" setvalue="true" Interval="1.0">
+                    <StatusEffect type="OnContaining" target="This" penetration="0.15" weapondamagemodifier="1.8" setvalue="true" Interval="1.0" disabledeltatime="true">
+                        <Conditional condition="gt 0"/>
+                    </StatusEffect>
+                </Containable>
+                <Containable items="alienpowercell">
+                    <StatusEffect type="OnContaining" target="This" penetration="0.2" weapondamagemodifier="2.0" setvalue="true" Interval="1.0" disabledeltatime="true">
                         <Conditional condition="gt 0"/>
                     </StatusEffect>
                 </Containable>
@@ -6662,8 +6661,8 @@
             <RequiredSkill identifier="Touhou_Magic" level="70"/>
             <RequiredItem identifier="steel" amount="6"/>
             <RequiredItem identifier="plastic" amount="6"/>
-            <RequiredItem identifier="dementonite" amount="2"/>
-            <RequiredItem identifier="Touhou_Bottle_Element" amount="4"/>
+            <RequiredItem identifier="dementonite" />
+            <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Magic_Material" amount="6"/>
             <RequiredItem identifier="Touhou_Meniscate_Reflection" mincondition="0.0" maxcondition="0.5" usecondition="false"/>
         </Fabricate>
@@ -9559,7 +9558,7 @@
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
             <SlotIcon slotindex="0" texture="%ModDir%/Images/OtherWeapons/Touhou_TSM_Twilight.png" sourcerect="0,135,65,107" origin="0.5,0.5"/>
-            <Containable items="tsm_mag" itempos="-2,-8.5" setactive="true" >
+            <Containable items="tsm_mag" itempos="-2,-8.5" setactive="true" excludeditems="tsm_weightless_traction_laser_beam" >
                 <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
                 <StatusEffect type="OnInserted" target="This" setvalue="true">
                     <Conditional isActive="eq true"/>
@@ -9762,7 +9761,7 @@
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
             <SlotIcon slotindex="0" texture="%ModDir%/Images/OtherWeapons/Touhou_TSM_Twilight.png" sourcerect="0,135,65,107" origin="0.5,0.5"/>
-            <Containable items="tsm_mag,Touhou_TSM_Corrupted_Twilight_Ammo" itempos="-2,-8.5" setactive="true">
+            <Containable items="tsm_mag,Touhou_TSM_Corrupted_Twilight_Ammo" itempos="-2,-8.5" setactive="true" excludeditems="tsm_weightless_traction_laser_beam">
                 <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
                 <StatusEffect type="OnInserted" target="This" setvalue="true">
                     <Conditional isActive="eq true"/>
@@ -10841,12 +10840,12 @@
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>
         </Holdable>
         <RangedWeapon reload="0.4" barrelpos="186,10" holdtrigger="true" launchImpulse="35" combatPriority="80" unskilledspread="18" spread="5"
-                      DualWieldReloadTimePenaltyMultiplier="1.7" drawhudwhenequipped="true" crosshairscale="0.35">
-            <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Tide_Crosshair.png" sourcerect="0,0,256,256"/>
+                      DualWieldReloadTimePenaltyMultiplier="1.7" drawhudwhenequipped="true" crosshairscale="0.2">
+            <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Bone_Claw_Crosshair.png" sourcerect="0,0,512,512"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Tide_Crosshair.png" sourcerect="256,0,256,256"/>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <Sound file="%ModDir%/Sounds/Weapons/Touhou_Bone_Claw_Attack.ogg" type="OnUse" range="3000" volume="2.0" selectionmode="Random"/>
-                <Explosion range="200.0" camerashake="12" force="0.0" flames="false" shockwave="false" sparks="false" smoke="false" underwaterbubble="false"/>
+                <Explosion range="200.0" camerashake="12" force="0.2" flames="false" shockwave="false" sparks="false" smoke="false" underwaterbubble="false"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="Contained">
                 <Use/>
@@ -10989,13 +10988,13 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.4" barrelpos="186,10" holdtrigger="true" launchImpulse="35" combatPriority="80" unskilledspread="18" spread="5"
-                      DualWieldReloadTimePenaltyMultiplier="1.7" drawhudwhenequipped="true" crosshairscale="0.35">
-            <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Tide_Crosshair.png" sourcerect="0,0,256,256"/>
+        <RangedWeapon reload="0.4" barrelpos="190,18" holdtrigger="true" launchImpulse="35" combatPriority="80" unskilledspread="18" spread="5"
+                      DualWieldReloadTimePenaltyMultiplier="1.7" drawhudwhenequipped="true" crosshairscale="0.2">
+            <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Acid_Fang_Crosshair.png" sourcerect="0,0,512,512"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Tide_Crosshair.png" sourcerect="256,0,256,256"/>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <Sound file="%ModDir%/Sounds/Weapons/Touhou_Acid_Fang_Attack.ogg" type="OnUse" range="3000" volume="2.0" selectionmode="Random"/>
-                <Explosion range="200.0" camerashake="12" force="0.0" flames="false" shockwave="false" sparks="false" smoke="false" underwaterbubble="false"/>
+                <Explosion range="200.0" camerashake="12" force="0.2" flames="false" shockwave="false" sparks="false" smoke="false" underwaterbubble="false"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="Contained">
                 <Use/>

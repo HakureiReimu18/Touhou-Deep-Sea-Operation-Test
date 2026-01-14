@@ -372,7 +372,7 @@
                                 talentidentifiers="Hyouibana_Aya,Hyouibana_Marisa,Hyouibana_Mokou,Hyouibana_Remilia,Hyouibana_Youmu,Hyouibana_Nitori,Hyouibana_Patchouli,
                                 Hyouibana_Tenshi,Hyouibana_Reimu,Hyouibana_Momizi,Hyouibana_Yuka,Hyouibana_Aunn,Hyouibana_Flandre,Hyouibana_Nue,Hyouibana_Piece,
                                 Hyouibana_Cirno,Hyouibana_Koishi,Hyouibana_Alice,Hyouibana_Sunny,Hyouibana_Luna,Hyouibana_Star,Hyouibana_Sakuya,Hyouibana_Sanae，
-                                Hyouibana_Reisen,Hyouibana_Yukari,Hyouibana_Merry,Hyouibana_Renko,Hyouibana_Kokoro,Hyouibana_Lilywhite,Hyouibana_Satori"/>
+                                Hyouibana_Reisen,Hyouibana_Yukari,Hyouibana_Merry,Hyouibana_Renko,Hyouibana_Kokoro,Hyouibana_Lilywhite,Hyouibana_Satori,Hyouibana_Tewi"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <Conditional Hyouibana_Effect_Flag="gt 0"/>
@@ -1503,9 +1503,6 @@
                 <ReduceAffliction type="damage" amount="1"/>
                 <ReduceAffliction identifier="oxygenlow" amount="0.2"/>
             </StatusEffect>
-            <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" delay="5.0" stackable="false" duration="5.0">
-                <ReduceAffliction type="bleeding" amount="3"/>
-            </StatusEffect>
             <StatusEffect statuseffecttags="medical" type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Reiki_Side_Effect" amount="5.0"/>
                 <Affliction identifier="chemaddiction" amount="5"/>
@@ -1518,6 +1515,102 @@
         </MeleeWeapon>
         <SkillRequirementHint identifier="medical" level="50"/>
         <SkillRequirementHint identifier="Touhou_Magic" level="50"/>
+    </Item>
+
+    <!--永远亭速效药-->
+    <Item name="永远亭速效药" identifier="Touhou_External_Quick_Effect_Medicine" tags="smallitem,medical,Touhou_Magic_Item,Touhou_Magic_Medical"
+          subcategory="Touhou" category="medical"
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8"
+          scale="0.1" useinhealthinterface="true" RequireAimToUse="True">
+        <PreferredContainer primary="medcab" secondary="medcontainer"/>
+        <Deconstruct time="5">
+            <Item identifier="carbon"/>
+            <Item identifier="Plant_Essential_Oil" />
+            <Item identifier="stabilozine" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/Materials/Touhou_External_Quick_Effect_Medicine.png" sourcerect="100,0,73,92" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_External_Quick_Effect_Medicine.png" depth="0.4" sourcerect="0,0,100,40"/>
+        <Body width="100" height="40" density="10"/>
+        <!--治疗作用-->
+        <SuitableTreatment type="damage" suitability="50"/>
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10"
+                     reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+            <RequiredSkill identifier="medical" level="40"/>
+            <RequiredSkill identifier="Touhou_Magic" level="40"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100">
+                <Sound file="Content/Items/Medical/ITEM_eatingBiteQuick.ogg" range="250"/>
+            </StatusEffect>
+            <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" delay="1.0" stackable="false" duration="3.0">
+                <ReduceAffliction type="damage" amount="15"/>
+                <ReduceAffliction identifier="oxygenlow" amount="1.0"/>
+            </StatusEffect>
+            <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" delay="1.0" stackable="false" duration="3.0">
+                <ReduceAffliction type="damage" amount="8"/>
+                <ReduceAffliction identifier="oxygenlow" amount="0.2"/>
+            </StatusEffect>
+            <StatusEffect statuseffecttags="medical" type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Reiki_Side_Effect" amount="3.0"/>
+                <Affliction identifier="chemaddiction" amount="3"/>
+                <Affliction identifier="chemwithdrawal" amount="3"/>
+            </StatusEffect>
+            <!-- Remove the item when fully used -->
+            <StatusEffect type="OnBroken" target="This">
+                <Remove/>
+            </StatusEffect>
+        </MeleeWeapon>
+        <SkillRequirementHint identifier="medical" level="40"/>
+        <SkillRequirementHint identifier="Touhou_Magic" level="40"/>
+    </Item>
+
+    <!--可疑的永远亭速效药-->
+    <Item name="永远亭速效药" identifier="Touhou_External_Quick_Effect_Medicine_Fake" tags="smallitem,medical"
+          subcategory="Touhou" category="medical"
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8"
+          scale="0.1" useinhealthinterface="true" RequireAimToUse="True">
+        <PreferredContainer primary="medcab" secondary="medcontainer"/>
+        <Deconstruct time="5">
+            <Item identifier="carbon"/>
+            <Item identifier="sulphuricacid" />
+        </Deconstruct>
+        <InventoryIcon texture="%ModDir%/Images/Materials/Touhou_External_Quick_Effect_Medicine.png" sourcerect="100,0,73,92" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_External_Quick_Effect_Medicine.png" depth="0.4" sourcerect="0,0,100,40"/>
+        <Body width="100" height="40" density="10"/>
+        <!--治疗作用-->
+        <SuitableTreatment type="damage" suitability="50"/>
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10"
+                     reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
+            <RequiredSkill identifier="medical" level="40"/>
+            <RequiredSkill identifier="Touhou_Magic" level="40"/>
+            <StatusEffect type="OnUse" target="This" Condition="-100">
+                <Sound file="Content/Items/Medical/ITEM_eatingBiteQuick.ogg" range="250"/>
+            </StatusEffect>
+            <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" delay="1.0" stackable="false" duration="3.0">
+                <Conditional IsBot="true"/>
+                <ReduceAffliction type="damage" amount="10"/>
+                <ReduceAffliction identifier="oxygenlow" amount="1.0"/>
+            </StatusEffect>
+            <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" delay="1.0" stackable="false" duration="3.0">
+                <Conditional IsBot="true"/>
+                <ReduceAffliction type="damage" amount="5"/>
+                <ReduceAffliction identifier="oxygenlow" amount="0.2"/>
+            </StatusEffect>
+            <StatusEffect statuseffecttags="medical" type="OnUse" target="UseTarget" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Reiki_Side_Effect" amount="3.0"/>
+                <Affliction identifier="chemaddiction" amount="3"/>
+                <Affliction identifier="chemwithdrawal" amount="3"/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" duration="3.0" multiplyafflictionsbymaxvitality="true">
+                <Affliction identifier="Reiki_Side_Effect" amount="3.0"/>
+                <Affliction identifier="chemaddiction" amount="3"/>
+                <Affliction identifier="chemwithdrawal" amount="3"/>
+            </StatusEffect>
+            <!-- Remove the item when fully used -->
+            <StatusEffect type="OnBroken" target="This">
+                <Remove/>
+            </StatusEffect>
+        </MeleeWeapon>
+        <SkillRequirementHint identifier="medical" level="40"/>
+        <SkillRequirementHint identifier="Touhou_Magic" level="40"/>
     </Item>
 
 </Items>

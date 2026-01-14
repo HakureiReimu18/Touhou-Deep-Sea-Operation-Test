@@ -71,7 +71,7 @@
         <AbilityGroupInterval interval="5.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Renko"/>
-                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200" invert="true"/>
+                <AbilityConditionHasSkill skillidentifier="medical" minvalue="200" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxvalue="0.1" skillidentifier="medical"/>
