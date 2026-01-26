@@ -1216,7 +1216,7 @@
 
         <!--兔子储物袋随机事件-->
         <ScriptedEvent identifier="Touhou_Rabbit_Storage_Bag_Open">
-            <RNGAction Chance="0.65">
+            <RNGAction Chance="0.5">
                 <Success>
                     <RNGAction Chance="0.5">
                         <Success>
@@ -1249,11 +1249,11 @@
                     </RNGAction>
                 </Success>
                 <Failure>
-                    <RNGAction Chance="0.65">
+                    <RNGAction Chance="0.5">
                         <Success>
                             <RNGAction Chance="0.5">
                                 <Success>
-                                    <SpawnAction ItemIdentifier="Touhou_Stellar_Staff" targetinventory="Open_player" />
+                                    <SpawnAction ItemIdentifier="Touhou_Lucky_Four_Leaf_Clover_Headpiece" targetinventory="Open_player" />
                                 </Success>
                                 <Failure>
                                     <SpawnAction ItemIdentifier="Touhou_Treatment_Grenade" amount="3" targetinventory="Open_player" />
@@ -1263,10 +1263,10 @@
                         <Failure>
                             <RNGAction Chance="0.65">
                                 <Success>
-                                    <SpawnAction ItemIdentifier="Touhou_External_Medicine_Box" amount="2" targetinventory="Open_player" />
+                                    <SpawnAction ItemIdentifier="Touhou_External_Medicine_Box" targetinventory="Open_player" />
                                 </Success>
                                 <Failure>
-                                    <SpawnAction ItemIdentifier="Touhou_Chocolate_Cleaver" targetinventory="Open_player" />
+                                    <SpawnAction ItemIdentifier="Touhou_Lunar_Probability_Correction_Gun" targetinventory="Open_player" />
                                 </Failure>
                             </RNGAction>
                         </Failure>

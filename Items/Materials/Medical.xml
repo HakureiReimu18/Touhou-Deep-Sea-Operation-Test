@@ -1402,8 +1402,8 @@
                 <ReduceAffliction type="damage" amount="4"/>
             </StatusEffect>
             <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="10.0">
-                <ReduceAffliction type="infection" amount="40"/>
-                <ReduceAffliction type="bleeding" amount="3"/>
+                <ReduceAffliction type="infection" amount="1"/>
+                <ReduceAffliction type="bleeding" amount="2"/>
                 <ReduceAffliction type="burn" amount="1"/>
             </StatusEffect>
             <StatusEffect statuseffecttags="medical" type="OnFailure" target="This, Limb" duration="2.0">
@@ -1411,7 +1411,7 @@
                 <ReduceAffliction type="burn" amount="7.5"/>
             </StatusEffect>
             <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" duration="10.0">
-                <ReduceAffliction type="bleeding" amount="2"/>
+                <ReduceAffliction type="bleeding" amount="1"/>
                 <ReduceAffliction type="burn" amount="0.5"/>
             </StatusEffect>
             <StatusEffect statuseffecttags="medical" type="OnFailure" target="UseTarget" multiplyafflictionsbymaxvitality="true">
@@ -1521,7 +1521,7 @@
     <Item name="永远亭速效药" identifier="Touhou_External_Quick_Effect_Medicine" tags="smallitem,medical,Touhou_Magic_Item,Touhou_Magic_Medical"
           subcategory="Touhou" category="medical"
           cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8"
-          scale="0.1" useinhealthinterface="true" RequireAimToUse="True">
+          scale="0.15" useinhealthinterface="true" RequireAimToUse="True">
         <PreferredContainer primary="medcab" secondary="medcontainer"/>
         <Deconstruct time="5">
             <Item identifier="carbon"/>
@@ -1566,7 +1566,7 @@
     <Item name="永远亭速效药" identifier="Touhou_External_Quick_Effect_Medicine_Fake" tags="smallitem,medical"
           subcategory="Touhou" category="medical"
           cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8"
-          scale="0.1" useinhealthinterface="true" RequireAimToUse="True">
+          scale="0.15" useinhealthinterface="true" RequireAimToUse="True">
         <PreferredContainer primary="medcab" secondary="medcontainer"/>
         <Deconstruct time="5">
             <Item identifier="carbon"/>
@@ -1600,9 +1600,9 @@
                 <Affliction identifier="chemwithdrawal" amount="3"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget" duration="3.0" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Reiki_Side_Effect" amount="3.0"/>
-                <Affliction identifier="chemaddiction" amount="3"/>
-                <Affliction identifier="chemwithdrawal" amount="3"/>
+                <Affliction identifier="Reiki_Side_Effect" amount="4.0"/>
+                <Affliction identifier="chemaddiction" amount="4"/>
+                <Affliction identifier="chemwithdrawal" amount="4"/>
             </StatusEffect>
             <!-- Remove the item when fully used -->
             <StatusEffect type="OnBroken" target="This">

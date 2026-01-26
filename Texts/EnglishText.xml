@@ -110,14 +110,14 @@
     <entitydescription.Touhou_Peach>A peach of unknown origin. Looks sweet and tempting — who knows what happens if you eat it?</entitydescription.Touhou_Peach>
 
     <!--Weapon-->
-    <entityname.Hakkero>‖color:255,255,0,255‖Mini Hakkero‖color:end‖</entityname.Hakkero>
-    <entitydescription.Hakkero>A small octagonal furnace with a hole in the center and a bagua symbol on the front. Power source unknown. Uses ‖color:gui.yellow‖Star Danmaku, Stardust Reverie, or Star Bottles‖end‖</entitydescription.Hakkero>
+    <entityname.Touhou_Hakkero>‖color:255,255,0,255‖Mini Hakkero‖color:end‖</entityname.Touhou_Hakkero>
+    <entitydescription.Touhou_Hakkero>A small octagonal furnace with a hole in the center and a bagua symbol on the front. Power source unknown. Uses ‖color:gui.yellow‖Star Danmaku, Stardust Reverie, or Star Bottles‖end‖</entitydescription.Touhou_Hakkero>
 
-    <entityname.Star_Danmu>Star Danmaku</entityname.Star_Danmu>
-    <entitydescription.Star_Danmu>A simple star-shaped container used to fire plain star danmaku. Ammo for ‖color:gui.yellow‖Mini Hakkero‖end‖</entitydescription.Star_Danmu>
+    <entityname.Touhou_Hakkero_Ammo01>Star Danmaku</entityname.Touhou_Hakkero_Ammo01>
+    <entitydescription.Touhou_Hakkero_Ammo01>A simple star-shaped container used to fire plain star danmaku. Ammo for ‖color:gui.yellow‖Mini Hakkero‖end‖</entitydescription.Touhou_Hakkero_Ammo01>
 
-    <entityname.Stardust_Reverie>Stardust Reverie</entityname.Stardust_Reverie>
-    <entitydescription.Stardust_Reverie>At a glance, it’s just a recolored version of standard Star Danmaku… Ammo for ‖color:gui.yellow‖Mini Hakkero‖end‖</entitydescription.Stardust_Reverie>
+    <entityname.Touhou_Hakkero_Ammo02>Stardust Reverie</entityname.Touhou_Hakkero_Ammo02>
+    <entitydescription.Touhou_Hakkero_Ammo02>At a glance, it’s just a recolored version of standard Star Danmaku… Ammo for ‖color:gui.yellow‖Mini Hakkero‖end‖</entitydescription.Touhou_Hakkero_Ammo02>
 
     <entityname.Fake_Hakkero>Fake Mini Hakkero</entityname.Fake_Hakkero>
     <entitydescription.Fake_Hakkero>A crude imitation of the Mini Hakkero — but still, it imitates the Mini Hakkero.</entitydescription.Fake_Hakkero>
@@ -311,8 +311,8 @@
     <entityname.Origin_Deafult02>Gensokyo Flying Publication Day</entityname.Origin_Deafult02>
     <entitydescription.Origin_Deafult02>Official Tasogare Newspaper</entitydescription.Origin_Deafult02>
 
-    <entityname.Marisa_Star_Bottle>Star Jar</entityname.Marisa_Star_Bottle>
-    <entitydescription.Marisa_Star_Bottle>Starlight gathered over a long time is highly compressed within; it can no longer fire danmaku and is only suitable for large-scale starlight magic. Requires a very long time to accumulate starlight. Ammunition for the ‖color:gui.yellow‖Mini Hakkero‖end‖.\n“It’s not easy to collect stars under the sea!”</entitydescription.Marisa_Star_Bottle>
+    <entityname.Touhou_Hakkero_Star_Bottle>Star Jar</entityname.Touhou_Hakkero_Star_Bottle>
+    <entitydescription.Touhou_Hakkero_Star_Bottle>Starlight gathered over a long time is highly compressed within; it can no longer fire danmaku and is only suitable for large-scale starlight magic. Requires a very long time to accumulate starlight. Ammunition for the ‖color:gui.yellow‖Mini Hakkero‖end‖.\n“It’s not easy to collect stars under the sea!”</entitydescription.Touhou_Hakkero_Star_Bottle>
 
     <entityname.Touhou_Spell_Tutorial>“Magic Tutorial”</entityname.Touhou_Spell_Tutorial>
     <entitydescription.Touhou_Spell_Tutorial>An introductory magic primer suitable for beginners.</entitydescription.Touhou_Spell_Tutorial>
@@ -2276,6 +2276,79 @@
     <entityname.Touhou_Rabbit_Waist_Pouch>Rabbit Waist Pouch</entityname.Touhou_Rabbit_Waist_Pouch>
     <entitydescription.Touhou_Rabbit_Waist_Pouch>A small rabbit-shaped waist pouch.
         Rabbits equipped with it appear noticeably more lively and energetic.</entitydescription.Touhou_Rabbit_Waist_Pouch>
+
+    <entityname.Touhou_Lunar_Probability_Correction_Gun>‖color:252,146,147,255‖Lunar Probability Correction Gun‖end‖</entityname.Touhou_Lunar_Probability_Correction_Gun>
+    <entitydescription.Touhou_Lunar_Probability_Correction_Gun>An experimental Lunar weapon that attempts to “correct hit probability”.
+        The probability correction module embedded within the weapon recalculates the outcome before every shot,
+        but the calculation basis, reference data, and final conclusion are never disclosed to the user.
+        In theory, it can turn impossible hits into reality;
+        in practice, it merely redistributes “bad luck” onto someone even less fortunate.
+        Uses ‖color:gui.yellow‖Probability Magazine‖end‖</entitydescription.Touhou_Lunar_Probability_Correction_Gun>
+    <entityname.Touhou_Lunar_Probability_Correction_Gun_Ammo>‖color:252,146,147,255‖Probability Magazine‖end‖</entityname.Touhou_Lunar_Probability_Correction_Gun_Ammo>
+    <entitydescription.Touhou_Lunar_Probability_Correction_Gun_Ammo>In rare cases, the magazine contains more rounds than indicated;
+        on occasion, it may also fire a burst of air.
+        Serves as ammunition for the ‖color:gui.yellow‖Lunar Probability Correction Gun‖end‖</entitydescription.Touhou_Lunar_Probability_Correction_Gun_Ammo>
+
+    <entityname.Touhou_Carrot_Long_Handle_Knife>‖color:252,146,147,255‖Carrot Long-Handled Blade‖end‖</entityname.Touhou_Carrot_Long_Handle_Knife>
+    <entitydescription.Touhou_Carrot_Long_Handle_Knife>A temporarily assembled polearm blade.
+        Enhanced through Tewi Inaba’s special craftsmanship and minor modifications using Lunar Capital technology, it possesses considerable lethality.</entitydescription.Touhou_Carrot_Long_Handle_Knife>
+
+    <entityname.Touhou_Deviation_Erasure_Rifle>‖color:252,146,147,255‖Deviation Erasure Rifle‖end‖</entityname.Touhou_Deviation_Erasure_Rifle>
+    <entitydescription.Touhou_Deviation_Erasure_Rifle>No one knows where Tewi Inaba obtained this weapon.
+        Perhaps she simply happened to encounter someone extremely unlucky.
+        After striking the same target three times consecutively, the weapon’s projectiles deal additional damage.
+        While firing, it also has a chance to grant the user a random buff.
+        Uses ‖color:gui.yellow‖Deviation Core Fragment‖end‖</entitydescription.Touhou_Deviation_Erasure_Rifle>
+    <entityname.Touhou_Deviation_Erasure_Rifle_Ammo>‖color:252,146,147,255‖Deviation Core Fragment‖end‖</entityname.Touhou_Deviation_Erasure_Rifle_Ammo>
+    <entitydescription.Touhou_Deviation_Erasure_Rifle_Ammo>An energy magazine assembled from capacitor core fragments.
+        Serves as ammunition for the ‖color:gui.yellow‖Deviation Erasure Rifle‖end‖</entitydescription.Touhou_Deviation_Erasure_Rifle_Ammo>
+
+    <entityname.Touhou_Nightfall>‖color:100,200,255,255‖Nightfall‖end‖</entityname.Touhou_Nightfall>
+    <entitydescription.Touhou_Nightfall>Its surface pulses beneath your palm, as if something unseen were sliding underneath — licking — merely tasting — your flesh.
+        Each time your fingers brush the back of your neck, a numb shiver spreads.
+        If nightmares could be held in one’s hands, you are certain this is what they would feel like.
+
+        When modification energy is full, weapon damage multiplier increases and accuracy improves.
+        After activating modification, damage multiplier and accuracy return to normal.
+        Grants increased stun resistance, reduces ammunition consumption,
+        makes the user harder to detect by enemies,
+        and restores the wielder’s health when attacking.
+
+        Weapon modification energy is displayed through remaining durability.
+        Modification can only be activated when energy is fully charged.
+
+        Uses ‖color:gui.yellow‖Dusk Terror‖end‖</entitydescription.Touhou_Nightfall>
+    <entityname.Touhou_Nightfall_Ammo>‖color:100,200,255,255‖Dusk Terror‖end‖</entityname.Touhou_Nightfall_Ammo>
+    <entitydescription.Touhou_Nightfall_Ammo>Imagined shadows, half-heard whispers in the dark, tremors crawling through the blood… Nightmares are often like this.
+        As ammunition for ‖color:gui.yellow‖Nightfall‖end‖</entitydescription.Touhou_Nightfall_Ammo>
+
+    <entityname.Touhou_HouraiEmbers_Fireseed_Repeater>‖color:252,72,36,255‖Ember Repeater‖end‖</entityname.Touhou_HouraiEmbers_Fireseed_Repeater>
+    <entitydescription.Touhou_HouraiEmbers_Fireseed_Repeater>An archaic repeating gun that packs “fire” into machinery. It doesn’t rely on matchcord or flint to ignite, but on a repeatedly compressed fireseed capacitor—each pull of the trigger is a controlled discharge.
+        Uses ‖color:gui.yellow‖Fireseed Capacitor‖end‖.</entitydescription.Touhou_HouraiEmbers_Fireseed_Repeater>
+    <entityname.Touhou_HouraiEmbers_Fireseed_Repeater_Ammo>‖color:252,72,36,255‖Fireseed Capacitor‖end‖</entityname.Touhou_HouraiEmbers_Fireseed_Repeater_Ammo>
+    <entitydescription.Touhou_HouraiEmbers_Fireseed_Repeater_Ammo>A glass capacitor cartridge sealed with brass bands, with embers inside slowly swirling like a liquid.
+        It doesn’t “burn”—it just keeps searching for an outlet, and the muzzle is its favorite one. Used as ammunition for ‖color:gui.yellow‖Ember Repeater‖end‖.</entitydescription.Touhou_HouraiEmbers_Fireseed_Repeater_Ammo>
+
+    <entityname.Touhou_MistyLake_Shatterice_Sprayer>‖color:60,90,255,255‖Shatterice Sprayer‖end‖</entityname.Touhou_MistyLake_Shatterice_Sprayer>
+    <entitydescription.Touhou_MistyLake_Shatterice_Sprayer>Packs the chill of Misty Lake into the frame of a long gun: pull the trigger, and crushed ice and white mist erupt together—like a miniature blizzard crawling along the seawater. Uses ‖color:gui.yellow‖Shatterice Canister or Perfect Snowflake‖end‖.</entitydescription.Touhou_MistyLake_Shatterice_Sprayer>
+    <entityname.Touhou_MistyLake_Shatterice_Sprayer_Ammo>‖color:60,90,255,255‖Shatterice Canister‖end‖</entityname.Touhou_MistyLake_Shatterice_Sprayer_Ammo>
+    <entitydescription.Touhou_MistyLake_Shatterice_Sprayer_Ammo>A cryogenic canister loaded with a “shatterice mist core”: the blue condensate inside precipitates fine ice crystals when shaken, and turns into high-pressure frost mist once the release valve opens. Used as ammunition for ‖color:gui.yellow‖Shatterice Sprayer‖end‖.</entitydescription.Touhou_MistyLake_Shatterice_Sprayer_Ammo>
+
+    <entityname.Touhou_ScarletNight_Hailstorm>‖color:255,36,0,255‖Scarlet Night Hailstorm‖end‖</entityname.Touhou_ScarletNight_Hailstorm>
+    <entitydescription.Touhou_ScarletNight_Hailstorm>After a ruby-like crimson crystal was embedded into a weapon of unknown origin, its fate was forcibly twisted into that of a “danmaku generator.” When the trigger is pulled, the crystal is violently shattered inside the chamber, bursting forth as a spray of scarlet hail.
+        Deals additional laceration damage to mechanical creatures.
+        Killing any creature with this weapon briefly increases this weapon’s attack damage.
+        Uses ‖color:gui.yellow‖Crimson Crystal‖end‖.</entitydescription.Touhou_ScarletNight_Hailstorm>
+    <entityname.Touhou_ScarletNight_Hailstorm_Ammo>‖color:255,36,0,255‖Crimson Crystal‖end‖</entityname.Touhou_ScarletNight_Hailstorm_Ammo>
+    <entitydescription.Touhou_ScarletNight_Hailstorm_Ammo>An artificially domesticated “bloodstone ore.” Quiet as a ruby at room temperature, but once fed into a high-pressure shatter chamber, it collapses along pre-set fracture lines into razor-sharp crystal pellets, releasing trace contamination that makes wounds hard to close. Used as ammunition for ‖color:gui.yellow‖Scarlet Night Hailstorm‖end‖.</entitydescription.Touhou_ScarletNight_Hailstorm_Ammo>
+
+
+
+
+
+
+
+
 
 
 

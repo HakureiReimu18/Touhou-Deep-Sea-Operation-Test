@@ -6118,7 +6118,7 @@
         <Deconstruct time="3">
             <Item identifier="organicfiber" amount="2"/>
         </Deconstruct>
-        <WifiComponent range="65000.0" LinkToChat="true" MinChatMessageInterval="0.0"/>
+        <WifiComponent range="65000.0" LinkToChat="true" MinChatMessageInterval="0.0" TeamID="1"/>
         <Wearable limbtype="Head" slots="Any,Headset" msg="ItemMsgPickUpSelect">
             <sprite name="Headset Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Head"
                     hidelimb="false" inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.7" hideotherwearables="false"
@@ -6166,7 +6166,7 @@
     <!--特制的修理工具-->
     <Item name="特制的修理工具" identifier="Touhou_Custom_Made_Repair_Tool" category="Equipment" subcategory="Touhou" damagedbyexplosions="true" explosiondamagemultiplier="0.5"
           Tags="smallitem,tool,electricalrepairtool,mechanicalrepairtool,wrench,wrenchitem,screwdriver,screwdriveritem,multitool"
-          cargocontaineridentifier="metalcrate" Scale="0.1" impactsoundtag="impact_metal_light" RequireAimToUse="True"
+          cargocontaineridentifier="metalcrate" Scale="0.15" impactsoundtag="impact_metal_light" RequireAimToUse="True"
           addedrepairspeedmultiplier="0.4">
         <PreferredContainer primary="engcab"/>
         <Deconstruct time="10">
@@ -6207,10 +6207,10 @@
             <SlotIcon slotindex="12" texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6"/>
             <SlotIcon slotindex="13" texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6"/>
             <SlotIcon slotindex="14" texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6"/>
-            <SubContainer capacity="8" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
+            <SubContainer capacity="9" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon"/>
             </SubContainer>
-            <SubContainer capacity="4" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
+            <SubContainer capacity="3" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem,mediumitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box,bulkyweapon,mountableweapon,ammobox"/>
             </SubContainer>
             <SubContainer capacity="3" depth="0.5" maxstacksize="64" displaycontainedstatus="true">

@@ -21,7 +21,7 @@
                     <Conditional KokoroTalent_Mark="lte 0"/>
                 </AbilityConditionCharacter>
                 <AbilityConditionServerRandom randomchance="0.35"/>
-                <AbilityConditionHasPermanentStat statidentifier="Mood_Learning_Counter" min="67" invert="true"/>
+                <AbilityConditionHasPermanentStat statidentifier="Mood_Learning_Counter" min="66" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>

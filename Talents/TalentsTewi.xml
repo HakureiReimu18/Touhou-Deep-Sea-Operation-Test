@@ -27,7 +27,7 @@
                 <AbilityConditionItem tags="container,aliencontainer"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilitySpawnItemsToContainer randomchance="0.1" oncepercontainer="true">
+                <CharacterAbilitySpawnItemsToContainer randomchance="0.2" oncepercontainer="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="UseTarget">
                             <SpawnItem identifiers="Touhou_Rabbit_Storage_Bag" Count="1" spawnposition="ThisInventory"
@@ -44,7 +44,7 @@
                 <AbilityConditionItem tags="container,aliencontainer"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilitySpawnItemsToContainer randomchance="0.05" oncepercontainer="true">
+                <CharacterAbilitySpawnItemsToContainer randomchance="0.07" oncepercontainer="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="UseTarget">
                             <SpawnItem identifiers="Touhou_Rabbit_Storage_Bag" Count="1" spawnposition="ThisInventory"
@@ -61,7 +61,7 @@
                 <AbilityConditionItem tags="container,aliencontainer"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilitySpawnItemsToContainer randomchance="0.1" oncepercontainer="true">
+                <CharacterAbilitySpawnItemsToContainer randomchance="0.2" oncepercontainer="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="UseTarget">
                             <SpawnItem identifiers="Touhou_Rabbit_Storage_Bag" Count="1" spawnposition="ThisInventory"
@@ -78,7 +78,7 @@
                 <AbilityConditionItem tags="container,aliencontainer"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilitySpawnItemsToContainer randomchance="0.25" oncepercontainer="true">
+                <CharacterAbilitySpawnItemsToContainer randomchance="0.4" oncepercontainer="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="UseTarget">
                             <SpawnItem identifiers="Touhou_Rabbit_Storage_Bag" Count="1" spawnposition="ThisInventory"
