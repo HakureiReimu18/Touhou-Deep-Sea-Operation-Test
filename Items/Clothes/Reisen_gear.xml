@@ -89,7 +89,7 @@
 
 
     <!--铃仙plus-->
-    <Item identifier="Reisen_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing"
+    <Item identifier="Reisen_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes"
           scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">
@@ -286,7 +286,7 @@
 
 
     <!--黑外套plus-->
-    <Item identifier="Reisen_Outfit_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing"
+    <Item identifier="Reisen_Outfit_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes"
           scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">
