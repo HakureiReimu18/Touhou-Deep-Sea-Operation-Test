@@ -78,9 +78,7 @@
                                   thermalgoggles="false" showdeadcharacters="false" showtexts="false"/>
                 </Containable>
                 <SlotIcon slotindex="0" texture="%ModDir%/Images/General_Items/StatusMonitorUI.png" sourcerect="0,0,64,64" origin="0.5,0.5"/>
-                <SubContainer capacity="2" maxstacksize="8">
-                    <Containable items="smallitem,Power_Bank" excludeditems="toolbelt,toolbox,bandolier,clothing,healthscanner,thermalgoggles"/>
-                </SubContainer>
+
             </ItemContainer>
             <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false"
                        showtexts="false"/>
@@ -89,7 +87,7 @@
 
 
     <!--早苗plus-->
-    <Item identifier="Sanae_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes"
+    <Item identifier="Sanae_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes,Shrine_Maiden"
           scale="0.5" impactsoundtag="impact_soft">
         <PreferredContainer primary="crewcab"/>
         <Price baseprice="200" minleveldifficulty="15">
@@ -104,7 +102,7 @@
             <Item identifier="Magic_Material" amount="2"/>
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="20">
-            <RequiredSkill identifier="weapons" level="50"/>
+            <RequiredSkill identifier="weapons" level="20"/>
             <RequiredItem identifier="Sanae_gear"/>
             <RequiredItem identifier="Score_Point"/>
             <RequiredItem identifier="Touhou_Plant_Extract"/>
@@ -177,9 +175,7 @@
                                   thermalgoggles="false" showdeadcharacters="false" showtexts="false"/>
                 </Containable>
                 <SlotIcon slotindex="0" texture="%ModDir%/Images/General_Items/StatusMonitorUI.png" sourcerect="0,0,64,64" origin="0.5,0.5"/>
-                <SubContainer capacity="2" maxstacksize="8">
-                    <Containable items="smallitem,Power_Bank" excludeditems="toolbelt,toolbox,bandolier,clothing"/>
-                </SubContainer>
+
             </ItemContainer>
             <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false"
                        showtexts="false"/>

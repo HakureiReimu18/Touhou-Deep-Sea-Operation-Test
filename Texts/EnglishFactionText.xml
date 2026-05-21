@@ -17,6 +17,8 @@
     <charactername.Merchant_Kawasiro_Nitori>Kawashiro Nitori</charactername.Merchant_Kawasiro_Nitori>
     <charactername.Satellite_Event_Kawasiro_Nitori>Kawashiro Nitori</charactername.Satellite_Event_Kawasiro_Nitori>
     <npctitle.Merchant_Kawasiro_Nitori>Kappa Merchant</npctitle.Merchant_Kawasiro_Nitori>
+    <npctitle.Aya_Event_Outpost_Merchant>Gift Dump Vendor</npctitle.Aya_Event_Outpost_Merchant>
+    <npctitle.Mission_Yakumo_Yukari>Yakumo Yukari</npctitle.Mission_Yakumo_Yukari>
 
     <!--Factions-->
     <faction.Touhou_Gensokyo>Isolated Gensokyo</faction.Touhou_Gensokyo>
@@ -153,6 +155,13 @@
     <Text.Satori_Plus>Mind Reading</Text.Satori_Plus>
 
     <uilabel.Shotgun_Shooting>Shotgun Shooting</uilabel.Shotgun_Shooting>
+
+    <Text.Touhou_Missions_Collection_Spectral_Creature01>Spectral Creatures - Prologue I</Text.Touhou_Missions_Collection_Spectral_Creature01>
+    <Text.Touhou_Missions_Collection_Spectral_Creature02>Spectral Creatures - Prologue II</Text.Touhou_Missions_Collection_Spectral_Creature02>
+    <Text.Touhou_Missions_Collection_Spectral_Creature03>Spectral Creatures - Act I</Text.Touhou_Missions_Collection_Spectral_Creature03>
+    <Text.Touhou_Missions_Collection_Spectral_Creature04>Spectral Creatures - Act II</Text.Touhou_Missions_Collection_Spectral_Creature04>
+    <Text.Touhou_Missions_Collection_Spectral_Creature05>Past and Present</Text.Touhou_Missions_Collection_Spectral_Creature05>
+
 
     <!--Display Name-->
     <displayname.Touhou_Efficient_Extraction>[itemname] (Efficient Extraction)</displayname.Touhou_Efficient_Extraction>
@@ -346,4 +355,8 @@
         First Discovery Date: 120 days before Hatching
         Discoverer: Alliance Alchemy Laboratory Director
     </Touhou_Top_Secret_Classified_Reiki_Erode_Crawler_Msg>
+
+    <upgradecategory.Turret_Spell_Card_Cannon>Spell Card Launcher</upgradecategory.Turret_Spell_Card_Cannon>
+    <upgradename.Touhou_Turret_Increasedamage>Spell Card Launcher Damage Enhancement</upgradename.Touhou_Turret_Increasedamage>
+    <upgradedescription.Touhou_Turret_Increasedamage>Increases the power of the Spell Card Launcher and improves projectile velocity.</upgradedescription.Touhou_Turret_Increasedamage>
 </infotexts>

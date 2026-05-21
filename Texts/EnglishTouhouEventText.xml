@@ -58,7 +58,7 @@
     <EventText.aya_join.c13>Finally, her expression changed, and she anxiously asked, "That crew member—is it a white wolf tengu named Momiji Inubashiri?"</EventText.aya_join.c13>
     <EventText.aya_join.o14>"You guessed right. At a previous outpost, I found her without her ID and pocket money, so I helped her replace her documents and accompanied her to find her companions."</EventText.aya_join.o14>
     <EventText.aya_join.c14>Aya’s expression was lively. After a moment, she said: "Um… Captain, could you do me a favor?" She tried to calm down, but her trembling hands revealed her inner turmoil.</EventText.aya_join.c14>
-    <EventText.aya_join.c15>"Help me buy some gifts… here’s the list, don’t look! Just give the list to the merchant and they’ll know what to do…" She shoved a small note into your hand, saying: "Save me, or Momiji will eat me alive!"</EventText.aya_join.c15>
+    <EventText.aya_join.c15>"Help me buy some gifts… here’s the list, don’t look! Just give the list to the Gift Dump Vendor and they’ll know what to do…" She shoved a small note into your hand, saying: "Save me, or Momiji will eat me alive!"</EventText.aya_join.c15>
     <EventText.aya_join.o15>Take the list</EventText.aya_join.o15>
     <EventText.aya_join.o16>"Big scoop…? Well, we’re short-handed, so it’s fine if you come along. But what about your wings?"</EventText.aya_join.o16>
     <EventText.aya_join.o17>"Ma’am, it’s too dangerous for a journalist on a submarine. I’m afraid I can’t agree."</EventText.aya_join.o17>
@@ -74,7 +74,7 @@
     <EventText.aya_join.c20>"Ah! Thank you so much! I’ll go find Momiji now, see you!" The girl said this and hurried away.</EventText.aya_join.c20>
     <EventText.aya_join.o23>"Looks like future voyages will be a lot more interesting."</EventText.aya_join.o23>
     <EventText.aya_join.c21>Aya Shameimaru joins the crew</EventText.aya_join.c21>
-    <EventText.aya_join.c22>"Just give the list to the merchant, my fate is in your hands!"</EventText.aya_join.c22>
+    <EventText.aya_join.c22>"Just give the list to the Gift Dump Vendor, my fate is in your hands!"</EventText.aya_join.c22>
 
 
     <!--Mokou Joining Event Text-->
@@ -393,6 +393,62 @@
     <EventText.Touhou_Normal_Mission01.c1>“I just want to lie down... I’m so tired... I want to sleep...” The girl flips through her papers, then raises her weary eyes to meet yours. “You’re here for a commission, right? This one’s new—requires an experienced captain. Think you can handle it?” She hands you a sheet of paper.</EventText.Touhou_Normal_Mission01.c1>
     <EventText.Touhou_Hard_Mission01.c1>“If only Marisa were here... It’s really hard managing everything alone...” The girl fiddles with the papers in her hands and looks at you seriously. “You’re here for a commission, right? This is the latest one. The journey will be dangerous—please be careful.” She passes you a sheet of paper.</EventText.Touhou_Hard_Mission01.c1>
 
+    <!--Spectral Creature Event-->
+    <!--Prologue completed-->
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1>“Wait—are you the captain who dealt with that Spectral Shark?”</EventText.Touhou_Spectral_Mission.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1>No big deal</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1>The girl looks you up and down. “Interested in checking out nearby for the client? I really don’t want to get involved with whatever’s in there.” She hands you a list—she looks exhausted.</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1>Sure</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1.c1>“That’s a huge help.” The girl yawns, stretches, and walks off.</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2>Maybe next time</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2.c1>“Alright, alright. There are some easier commissions over there—take a look.” She takes the list back and drifts away lightly.</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--Act I completed-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1>“Oh, right. That client from last time was impressed with your work, and decided to have you handle the rest of those monsters.” The girl leans close and whispers, “I heard the bounty’s doubled this time.”</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1>Now that’s what I like to hear</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1>The girl studies you again. “Sounds easy when you say it like that. Still, I suggest you come prepared—this job has some risk.” She hands you a list. She looks a little worried.</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1>Leave it to me</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1.c1>“Be careful.” Worry flickers in her eyes as she slips away quietly.</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2>Maybe next time</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2.c1>“Alright, alright. There are some easier commissions over there—take a look.” She takes the list back and drifts away lightly.</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--Act II completed-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1>“Ah, it’s you.” The girl looks pleasantly surprised. “The client’s very happy with you—you did an excellent job.”</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1>You flatter me</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1>“Once the route was cleared of danger, the survey team quickly pinpointed the spectral creatures’ nest. You only need to investigate the nest—there shouldn’t be any danger.” She hands you a list; she looks much more relaxed.</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1>Leave it to me</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1.c1>“Safe travels.” She waves, then quietly walks away.</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2>Maybe next time</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2.c1>“Alright. There are some easier commissions over there—take a look.” She takes the list back and drifts away lightly.</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--Found the Occult Orb - placeholder text-->
+    <Eventtext.Touhou_Monster_Spectral_Mission05_Completed.c1>This is a very peculiar sphere—only the right people would understand what it is.</Eventtext.Touhou_Monster_Spectral_Mission05_Completed.c1>
+
+    <!--Act III completed-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1>“Of course it’s you.” The girl rubs her eyes, and after confirming it’s really you, blurts out, “Something big just happened.”</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1>What happened?</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1>“We were supposed to hand that Occult Orb over to Yukari and the others after recovering it, but now a huge thing has shown up in the shipping lane. It hasn’t caused any damage yet, but a lot of spectral creatures are starting to gather in that direction.” She hands you a long list. She looks anxious.</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1>I’ll deal with it right away</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1>“Be careful. This is just a small token—hope you can handle it safely.” She waves and hurries off.</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2>Maybe next time</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1>“Alright. There are some other commissions—take a look.” She takes the list back and hurries off.</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--Past and Present completed-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1>“So it was you.” The girl rubs her eyes. “Of course it was—you actually took down something that big.”</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1>It was my duty</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1>“You’ve worked hard lately—and you’ve saved me a lot of trouble.” She hands you a form. She looks genuinely pleased.</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1>I’ll take it</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1>“This is a gift from the client. It’ll be delivered to your sub in a bit. You’ve gotten pretty famous lately.” She waves with a smile and walks away.</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2>Gladly accept</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1>“This is a gift from the client. It’ll be delivered to your sub in a bit. Thanks to you, I can finally take a breather.” She takes the list back and walks away smiling.</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--Spectral creatures completed-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.s1.s1.c1>“So it’s you—still full of energy, aren’t you? These are the latest commissions. Take a look.” The girl hands you a list.</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.s1.s1.c1>
+
+
+
+
+
     <!--Darkness of Unclear Truth-->
     <Eventtext.FindHoujuuNue.c1>A strange light emerges from the murky sea, and a massive, bizarre creature surfaces from the depths.</Eventtext.FindHoujuuNue.c1>
     <Eventtext.FindHoujuuNue.c2>Your attacks are effective—the Nue’s mind seems to regain some clarity, but it grows even more ferocious.</Eventtext.FindHoujuuNue.c2>
@@ -493,6 +549,13 @@
 
     <!--Alliance Deploys Infected Creature-->
     <Eventtext.Touhou_OutpostDestroyMission12_Event_End_Mission.c1>The Coalition's stealth submarine has dropped strange creatures onto you</Eventtext.Touhou_OutpostDestroyMission12_Event_End_Mission.c1>
+
+    <!--Yukari Yakumo grants newbie rewards-->
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1>“Another new captain?” A blurry silhouette seems to be calling to you. The voice is strangely enchanting, making it hard to tell where it’s coming from.</EventText.Touhou_Yukari_Newbie_Rewards.c1>
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1.s1.c1>“So you’ve been here already…” As the voice fades away, the figure stops paying attention to you.</EventText.Touhou_Yukari_Newbie_Rewards.c1.s1.c1>
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1>You try to make out the figure, but for some reason, every time you’re about to see it clearly, your focus slips and your gaze won’t settle—like it’s being deliberately avoided.</EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1>
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1>Who are you?</EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1>
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1.c1>“Captain, you don’t look so well. Your old friend has something for you.” As she speaks, she slips a small box into your hand before you even notice. “I’m getting sleepy—I’ll be going now. Bye-bye~”</EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1.c1>
 
 
     <!--卫星事件-->

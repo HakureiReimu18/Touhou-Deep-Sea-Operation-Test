@@ -54,9 +54,9 @@
 
     <entityname.Aya_News>‖color:255,255,255,255‖《文文。新闻》‖color:end‖</entityname.Aya_News>
     <entitydescription.Aya_News>‖color:255,255,255,255‖这新闻适合在无聊的午后，手端红茶，用来打发时间，因此能卖出一个好价钱，或是交给某位朋友编纂出更有价值的书卷‖color:end‖</entitydescription.Aya_News>
-    <entityname.Aya_Circular_Fan>文文的团扇</entityname.Aya_Circular_Fan>
+    <entityname.Aya_Circular_Fan>‖color:255,255,255,255‖文文的团扇‖color:end‖</entityname.Aya_Circular_Fan>
     <entitydescription.Aya_Circular_Fan>枫叶形式的团扇，在鸦天狗中非常流行。使用时需要‖color:gui.yellow‖红叶‖end‖</entitydescription.Aya_Circular_Fan>
-    <entityname.Aya_Maple_Leaves>红叶</entityname.Aya_Maple_Leaves>
+    <entityname.Aya_Maple_Leaves>‖color:255,255,255,255‖红叶‖color:end‖</entityname.Aya_Maple_Leaves>
     <entitydescription.Aya_Maple_Leaves>团扇是起风的道具，一扇能刮倒屋子，二扇能刮倒大树，三扇能将旅人的斗篷吹飞。作为‖color:gui.yellow‖文文的团扇‖end‖的弹药</entitydescription.Aya_Maple_Leaves>
     <entityname.Reimu_Paint>‖color:255,81,75,255‖赛钱箱（灵梦涂料）‖color:end‖</entityname.Reimu_Paint>
     <entitydescription.Reimu_Paint>一罐灵梦的贴纸涂料，装入东方喷漆器中使用。\n‖color:255,81,75,255‖拜访神社的时候，不需要香钱，只要带些吃的或者酒就可以。正因如此，赛钱箱里经常空空如也呢……‖color:end‖</entitydescription.Reimu_Paint>
@@ -99,34 +99,42 @@
     <entitydescription.Touhou_Peach>来源不明的桃子，看上去甜美诱人，不知道吃下去会有什么效果</entitydescription.Touhou_Peach>
     <!--Weapon-->
     <entityname.Touhou_Hakkero>‖color:255,255,0,255‖迷你八卦炉‖color:end‖</entityname.Touhou_Hakkero>
-    <entitydescription.Touhou_Hakkero>这是一个外观呈八棱柱形，正面绘有八卦图案，中间有洞口的迷你八卦炉，动力来源不明。使用‖color:gui.yellow‖星星弹幕、星屑幻想或者星星罐‖end‖</entitydescription.Touhou_Hakkero>
-    <entityname.Touhou_Hakkero_Ammo01>星星弹幕</entityname.Touhou_Hakkero_Ammo01>
-    <entitydescription.Touhou_Hakkero_Ammo01>普普通通的星星容器，用于发射朴素的星形弹幕。作为‖color:gui.yellow‖迷你八卦炉‖end‖的弹药</entitydescription.Touhou_Hakkero_Ammo01>
-    <entityname.Touhou_Hakkero_Ammo02>星屑幻想</entityname.Touhou_Hakkero_Ammo02>
-    <entitydescription.Touhou_Hakkero_Ammo02>只从外表上看，相比常规的星星弹幕，似乎只是颜色变了……作为‖color:gui.yellow‖迷你八卦炉‖end‖的弹药</entitydescription.Touhou_Hakkero_Ammo02>
-    <entityname.Fake_Hakkero>迷你八卦炉（仿制）</entityname.Fake_Hakkero>
-    <entitydescription.Fake_Hakkero>对迷你八卦炉的拙劣模仿，但模仿的是迷你八卦炉</entitydescription.Fake_Hakkero>
-    <entityname.Homing_Amulet>灵之御扎</entityname.Homing_Amulet>
-    <entitydescription.Homing_Amulet>一沓御扎，似乎蕴含着一种神奇的力量</entitydescription.Homing_Amulet>
-    <entityname.Freeze_Icicle_Fall>冰晶</entityname.Freeze_Icicle_Fall>
+    <entitydescription.Touhou_Hakkero>这是一个外观呈八棱柱形，正面绘有八卦图案，中间有洞口的迷你八卦炉，动力来源不明。使用‖color:gui.yellow‖闪光星核、冰霜星核、超新星星核或者星星罐‖end‖</entitydescription.Touhou_Hakkero>
+    <entityname.Touhou_Hakkero_Ammo01>‖color:255,255,0,255‖闪光星核‖color:end‖</entityname.Touhou_Hakkero_Ammo01>
+    <entitydescription.Touhou_Hakkero_Ammo01>普普通通的星星容器，用于发射朴素的激光弹幕。作为‖color:gui.yellow‖迷你八卦炉‖end‖的弹药</entitydescription.Touhou_Hakkero_Ammo01>
+    <entityname.Touhou_Hakkero_Ammo02>‖color:255,255,0,255‖冰霜星核‖color:end‖</entityname.Touhou_Hakkero_Ammo02>
+    <entitydescription.Touhou_Hakkero_Ammo02>特制的星星容器，可以发射寒冷的冰霜星星弹幕，即便是木卫二的冰洋也要让它三分。作为‖color:gui.yellow‖迷你八卦炉‖end‖的弹药</entitydescription.Touhou_Hakkero_Ammo02>
+    <entityname.Touhou_Hakkero_Ammo03>‖color:255,255,0,255‖超新星星核‖color:end‖</entityname.Touhou_Hakkero_Ammo03>
+    <entitydescription.Touhou_Hakkero_Ammo03>魔理沙从异星中提取的能源，经由一番不可描述的实验后打造而成的危险星星容器，破坏力不容小觑。作为‖color:gui.yellow‖迷你八卦炉‖end‖的弹药</entitydescription.Touhou_Hakkero_Ammo03>
+    <entityname.Touhou_Hakkero_Star_Bottle>‖color:255,255,0,255‖星星罐‖color:end‖</entityname.Touhou_Hakkero_Star_Bottle>
+    <entitydescription.Touhou_Hakkero_Star_Bottle>花费长时间收集的星光高度压缩储存其中，因此不再能发射弹幕，只能用于大规模激光魔法。需要花很长时间积累星光。作为‖color:gui.yellow‖迷你八卦炉‖end‖的弹药\n“在海底要收集星星可不容易啊！”</entitydescription.Touhou_Hakkero_Star_Bottle>
+    <entityname.Fake_Hakkero>‖color:255,255,0,255‖迷你八卦炉（仿制）</entityname.Fake_Hakkero>
+    <entitydescription.Fake_Hakkero>对迷你八卦炉的拙劣模仿，但模仿的是迷你八卦炉。使用‖color:gui.yellow‖闪光星核、冰霜星核‖end‖</entitydescription.Fake_Hakkero>
+    <entityname.Touhou_Homing_Amulet>‖color:255,81,75,255‖灵之御扎‖color:end‖</entityname.Touhou_Homing_Amulet>
+    <entitydescription.Touhou_Homing_Amulet>一沓御扎，似乎蕴含着一种神奇的力量</entitydescription.Touhou_Homing_Amulet>
+    <entityname.Freeze_Icicle_Fall>‖color:60,90,255,255‖冰晶‖color:end‖</entityname.Freeze_Icicle_Fall>
     <entitydescription.Freeze_Icicle_Fall>一大块意义不明的冰块，里面隐约有一只青蛙？（放入雪球可以激活它，泡在水里可以恢复它的能量）</entitydescription.Freeze_Icicle_Fall>
-    <entityname.Blunderbuss>喇叭枪</entityname.Blunderbuss>
+    <entityname.Blunderbuss>‖color:220,25,200,255‖喇叭枪‖color:end‖</entityname.Blunderbuss>
     <entitydescription.Blunderbuss>月球遗物，一把相当不稳定的枪，会伤到自己（蓄力使用）。使用‖color:gui.yellow‖心灵震颤、月狂之眼、心灵烟花、狂月爆破或步枪子弹‖end‖</entitydescription.Blunderbuss>
-    <entityname.Mind_Bullet>心灵震颤</entityname.Mind_Bullet>
+    <entityname.Mind_Bullet>‖color:220,25,200,255‖心灵震颤‖color:end‖</entityname.Mind_Bullet>
     <entitydescription.Mind_Bullet>月球遗物的仿制品，威力巨大。作为‖color:gui.yellow‖喇叭枪/怜悯‖end‖的弹药</entitydescription.Mind_Bullet>
-    <entityname.Lunatic_Bullet>月狂之眼</entityname.Lunatic_Bullet>
+    <entityname.Lunatic_Bullet>‖color:220,25,200,255‖月狂之眼‖color:end‖</entityname.Lunatic_Bullet>
     <entitydescription.Lunatic_Bullet>月球遗物的仿制品，蕴含极其恐怖的破坏力。作为‖color:gui.yellow‖喇叭枪/怜悯‖end‖的弹药</entitydescription.Lunatic_Bullet>
+    <entityname.Touhou_Mind_Star_Mine>‖color:220,25,200,255‖心灵烟花‖color:end‖</entityname.Touhou_Mind_Star_Mine>
+    <entitydescription.Touhou_Mind_Star_Mine>月球遗物，曾在伪月面战争后大范围使用，破坏力一流。作为‖color:gui.yellow‖喇叭枪或怜悯‖end‖的弹药</entitydescription.Touhou_Mind_Star_Mine>
+    <entityname.Touhou_Lunatic_Blass>‖color:220,25,200,255‖狂月爆破‖color:end‖</entityname.Touhou_Lunatic_Blass>
+    <entitydescription.Touhou_Lunatic_Blass>月球遗物，极度危险的子弹，即便是伪月面战争中，也常常被禁止使用。作为‖color:gui.yellow‖喇叭枪或怜悯‖end‖的弹药</entitydescription.Touhou_Lunatic_Blass>
     <entityname.Touhou_Gungnier>‖color:255,36,0,255‖冈格尼尔‖color:end‖</entityname.Touhou_Gungnier>
     <entitydescription.Touhou_Gungnier>来自遥远地方的神秘武器，蕴含极其恐怖的破坏力。‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Touhou_Gungnier>
     <entityname.Mokou_Flamer>‖color:255,72,36,255‖妹红的氧化剂‖color:end‖</entityname.Mokou_Flamer>
     <entitydescription.Mokou_Flamer>因地制宜的快捷点火工具，即便是在冰冷的木卫二也能生出热烈的火焰</entitydescription.Mokou_Flamer>
     <entityname.Phoenix_Tail>‖color:255,72,36,255‖不灭「不死鸟之尾」‖color:end‖</entityname.Phoenix_Tail>
     <entitydescription.Phoenix_Tail>量产型的不死鸟之尾。比较便宜。最近在不死业界被评为，与其去找什么蓬莱之药，不如把命托付给这种便宜的药品比较方便。作为‖color:gui.yellow‖妹红的氧化剂‖end‖的弹药</entitydescription.Phoenix_Tail>
-    <entityname.Hisou_Sword>‖color:33,110,232,255‖绯想之剑‖color:end‖</entityname.Hisou_Sword>
+    <entityname.Hisou_Sword>‖color:5,105,195,200‖绯想之剑‖color:end‖</entityname.Hisou_Sword>
     <entitydescription.Hisou_Sword>使用绯想之剑，能够准确无误地击中对手的弱点，只有天人才能正确操使绯想之剑。</entitydescription.Hisou_Sword>
     <entityname.Mine_Blast>‖color:233,160,32,255‖百百世的炸药‖color:end‖</entityname.Mine_Blast>
     <entitydescription.Mine_Blast>“你蚣人爷爷来啦！”</entitydescription.Mine_Blast>
-    <entityname.Touhou_Sakuya_Knife_Iron>‖color:210,210,255,255‖铁制飞刀‖color:end‖</entityname.Touhou_Sakuya_Knife_Iron>
+    <entityname.Touhou_Sakuya_Knife_Iron>‖color:155,155,155,255‖铁制飞刀‖color:end‖</entityname.Touhou_Sakuya_Knife_Iron>
     <entitydescription.Touhou_Sakuya_Knife_Iron>轻巧的武器，便于携带，也能投掷使用。</entitydescription.Touhou_Sakuya_Knife_Iron>
     <entityname.youmuceremonialsword2>‖color:156,158,161,255‖白楼剑‖color:end‖</entityname.youmuceremonialsword2>
     <entitydescription.youmuceremonialsword2>妖怪锻造的可以切断迷惘的刀，只有魂魄家的人可以使用</entitydescription.youmuceremonialsword2>
@@ -140,8 +148,7 @@
     <entityname.Yin_Yang_Spirit_Orb>‖color:255,81,75,255‖宝具「阴阳鬼神玉」‖color:end‖（轨道炮）</entityname.Yin_Yang_Spirit_Orb>
     <entitydescription.Yin_Yang_Spirit_Orb>投掷出不知道平常藏在什么地方的巨大阴阳玉的符卡。（作为轨道炮弹药使用）</entitydescription.Yin_Yang_Spirit_Orb>
     <!--Tools-->
-    <entitydescription.Marisa_Broom>普通的魔法使的扫帚，动力不明，但似乎没有扫帚也可以飞起来……</entitydescription.Marisa_Broom>
-    <entityname.Marisa_Broom>‖color:255,255,0,255‖魔理沙的扫帚‖color:end‖</entityname.Marisa_Broom>
+
     <entityname.Power_Bank>文文的充电宝</entityname.Power_Bank>
     <entitydescription.Power_Bank>一块原理不详的充电宝，内部似乎是由某种魔法驱动，能给大多数电池供电</entitydescription.Power_Bank>
     <entityname.Nitori_Backpack>河童背包</entityname.Nitori_Backpack>
@@ -277,9 +284,9 @@
     <entitydescription.Touhou_Silent_Selene_Ammo>寂静的月光直视着每个残破的夜晚（作为电磁枪弹药使用）</entitydescription.Touhou_Silent_Selene_Ammo>
 
     <entityname.Hompson_Contender>汤普森竞争者-改</entityname.Hompson_Contender>
-    <entitydescription.Hompson_Contender>\n‖color:150,105,130,255‖至无阳光映照之处‖color:end‖\n</entitydescription.Hompson_Contender>
+    <entitydescription.Hompson_Contender>‖color:150,105,130,255‖至无阳光映照之处‖color:end‖</entitydescription.Hompson_Contender>
     <entityname.Touhou_Origin_Bullet>起源弹</entityname.Touhou_Origin_Bullet>
-    <entitydescription.Touhou_Origin_Bullet>\n‖color:150,105,130,255‖花开堪折直须折‖color:end‖\n</entitydescription.Touhou_Origin_Bullet>
+    <entitydescription.Touhou_Origin_Bullet>‖color:150,105,130,255‖花开堪折直须折‖color:end‖</entitydescription.Touhou_Origin_Bullet>
     <entityname.Byproduct_Alchemical>炼金术副产物</entityname.Byproduct_Alchemical>
     <entitydescription.Byproduct_Alchemical>炼金术提炼过程中的副产物，有轻微毒性，可用于炼金转换和制作药物。</entitydescription.Byproduct_Alchemical>
     <entityname.Touhou_Reiki_Stability_Potion>灵气稳定剂</entityname.Touhou_Reiki_Stability_Potion>
@@ -302,8 +309,6 @@
     <entityname.Origin_Deafult02>幻想郷フライング出版日</entityname.Origin_Deafult02>
     <entitydescription.Origin_Deafult02>官板黄昏新聞</entitydescription.Origin_Deafult02>
 
-    <entityname.Touhou_Hakkero_Star_Bottle>星星罐</entityname.Touhou_Hakkero_Star_Bottle>
-    <entitydescription.Touhou_Hakkero_Star_Bottle>花费长时间收集的星光高度压缩储存其中，因此不再能发射弹幕，只能用于大规模星光魔法。需要花很长时间积累星光。作为‖color:gui.yellow‖迷你八卦炉‖end‖的弹药\n“在海底要收集星星可不容易啊！”</entitydescription.Touhou_Hakkero_Star_Bottle>
     <entityname.Touhou_Spell_Tutorial>《魔法教学》</entityname.Touhou_Spell_Tutorial>
     <entitydescription.Touhou_Spell_Tutorial>一本适合新人入门的魔法教学书。</entitydescription.Touhou_Spell_Tutorial>
     <entityname.Touhou_Beer>啤酒</entityname.Touhou_Beer>
@@ -392,7 +397,7 @@
     <entitydescription.Touhou_Precious_Metal>相当珍贵的魔法金属，是炼金术转换的第三阶段产物，相比以太层金属，它的元素转化效率很高，也用于更重要的合成。</entitydescription.Touhou_Precious_Metal>
     <entityname.Touhou_Magic_Potion_Purification>魔法药水（净化）</entityname.Touhou_Magic_Potion_Purification>
     <entitydescription.Touhou_Magic_Potion_Purification>可以净化体内异星感染的魔法药水，可以快速杀死类似画皮这类异星生命，包括共生体。</entitydescription.Touhou_Magic_Potion_Purification>
-    <entityname.Touhou_Cyber_Homing_Amulet>电子御扎</entityname.Touhou_Cyber_Homing_Amulet>
+    <entityname.Touhou_Cyber_Homing_Amulet>‖color:255,81,75,255‖电子御扎‖color:end‖</entityname.Touhou_Cyber_Homing_Amulet>
     <entitydescription.Touhou_Cyber_Homing_Amulet>魔法与科技的结合，可充能的能量御扎拥有了更强大的威力，但牺牲了一部分射速。‖color:gui.orange‖（小心友伤）‖color:end‖</entitydescription.Touhou_Cyber_Homing_Amulet>
     <entityname.Magic_Pouch>元素腰带</entityname.Magic_Pouch>
     <entitydescription.Magic_Pouch>通过魔法材料制成的腰带，一经发售就深受魔法师喜爱。与魔力披纱配合可以提升使用者魔力到最大。同时内置三个元素瓶槽位，允许使用者放置不同的元素瓶提供不同的治疗效果。</entitydescription.Magic_Pouch>
@@ -408,15 +413,14 @@
     <entitydescription.Sun_Flower_Petal02>几乎感受不到重量的花瓣，风一吹就会消失不见（在医疗界面使用）</entitydescription.Sun_Flower_Petal02>
     <entityname.Sun_Flower_Petal03>活跃的花瓣</entityname.Sun_Flower_Petal03>
     <entitydescription.Sun_Flower_Petal03>仿佛活着的花瓣，捏在手里能感觉到轻微的震动（在医疗界面使用）</entitydescription.Sun_Flower_Petal03>
-    <entityname.Touhou_Crimson_Moonlight>‖color:255,36,0,255‖绯色月下‖end‖</entityname.Touhou_Crimson_Moonlight>
-    <entitydescription.Touhou_Crimson_Moonlight>‖color:255,36,0,255‖之后就一个人都没有了吗？‖end‖</entitydescription.Touhou_Crimson_Moonlight>
-    <entityname.Touhou_Crimson_Moonlight>‖color:255,36,0,255‖绯色月下‖end‖</entityname.Touhou_Crimson_Moonlight>
+    <entityname.Touhou_Crimson_Moonlight>‖color:220,55,55,255‖绯色月下‖end‖</entityname.Touhou_Crimson_Moonlight>
+    <entitydescription.Touhou_Crimson_Moonlight>之后就一个人都没有了吗？</entitydescription.Touhou_Crimson_Moonlight>
     <!--这里英文版的entityname和描述需要调整-->
     <entityname.Touhou_Magic_Potion_Candy>魔法药水（果果糖）</entityname.Touhou_Magic_Potion_Candy>
     <entitydescription.Touhou_Magic_Potion_Candy>直接饮用效果更加的魔法药水，掺入了可以治愈伤痛的成分，因为加入了糖类成分，很受小孩子喜欢。</entitydescription.Touhou_Magic_Potion_Candy>
     <entityname.Touhou_Nue_Midnight>‖color:90,80,100,255‖午鵺‖end‖</entityname.Touhou_Nue_Midnight>
     <entitydescription.Touhou_Nue_Midnight>■真■■■■■相■■■■■\n■■■■■■■■■■■■不\n■■■■■■■■■■■■■\n■■明■■■■■■■■■</entitydescription.Touhou_Nue_Midnight>
-    <entityname.Touhou_Laevatein>‖color:255,36,0,255‖莱瓦汀‖end‖</entityname.Touhou_Laevatein>
+    <entityname.Touhou_Laevatein>‖color:220,55,55,255‖莱瓦汀‖end‖</entityname.Touhou_Laevatein>
     <entitydescription.Touhou_Laevatein>整把剑燃烧不止，散发着比太阳还要明亮的光芒。这把剑的大小实在过于惊人，就算是吸血鬼也无法将其挥舞得非常迅速。\n芙兰朵露使用莱瓦汀的每一次攻击都会附带微量的最大生命值上限的伤害——目之破坏，当目之破坏积累到100%后，必定死亡。</entitydescription.Touhou_Laevatein>
     <entityname.Touhou_Mysterious_Pearl_Rippling>灵异珠-波纹</entityname.Touhou_Mysterious_Pearl_Rippling>
     <entitydescription.Touhou_Mysterious_Pearl_Rippling>散发着神秘气息的灵异珠，靠近能增强神秘力量，仔细看去，其中好像有一片湖泊，中央正有一只神似腕龙的脑袋探出水面。作为‖color:gui.yellow‖涟漪‖end‖的弹药\n‖color:gui.yellow‖手持灵异珠可以解锁特定天赋。‖end‖
@@ -445,10 +449,6 @@
 
     <talentprogress>进度: ‖color:gui.orange‖[amount]/[max]‖end‖</talentprogress>
 
-    <entityname.Touhou_Penglai_Jade_Branch>蓬莱玉枝</entityname.Touhou_Penglai_Jade_Branch>
-    <entitydescription.Touhou_Penglai_Jade_Branch>传说真正的蓬莱玉枝来自东海蓬莱山，银为枝，金作茎，果实为玉。而这一件是真是假不得而知，其中暗藏一个缺口，放入耀眼的龙玉就可以激活其发射弹幕的能力。‖color:gui.orange‖小心友伤‖end‖</entitydescription.Touhou_Penglai_Jade_Branch>
-    <entityname.Touhou_Brilliant_Dragon_Bullet>耀眼的龙玉</entityname.Touhou_Brilliant_Dragon_Bullet>
-    <entitydescription.Touhou_Brilliant_Dragon_Bullet>一块散发魔力的玉石，似乎与蓬莱玉枝密切相关。作为‖color:gui.yellow‖蓬莱玉枝‖end‖的弹药</entitydescription.Touhou_Brilliant_Dragon_Bullet>
     <entityname.Touhou_Blue_Rose>湛蓝玫瑰-改</entityname.Touhou_Blue_Rose>
     <entitydescription.Touhou_Blue_Rose>它是一种独特的转轮手枪，有着上下并排的两根枪管。使用‖color:gui.yellow‖手炮子弹‖end‖或‖color:gui.yellow‖Color Up子弹‖end‖</entitydescription.Touhou_Blue_Rose>
     <entityname.Color_Up_Bullet>Color Up子弹</entityname.Color_Up_Bullet>
@@ -477,9 +477,9 @@
     <entityname.Touhou_Candy_Pouch>糖果袋</entityname.Touhou_Candy_Pouch>
     <entitydescription.Touhou_Candy_Pouch>专用于存放糖果的便携口袋</entitydescription.Touhou_Candy_Pouch>
 
-    <entityname.Touhou_Frozen_Frog>冻青蛙</entityname.Touhou_Frozen_Frog>
+    <entityname.Touhou_Frozen_Frog>‖color:60,90,255,255‖冻青蛙‖end‖</entityname.Touhou_Frozen_Frog>
     <entitydescription.Touhou_Frozen_Frog>一块透着寒意的冰块，里面还封着一只青蛙。填入‖color:gui.yellow‖完美雪花‖end‖可以激活发射弹幕的能力。</entitydescription.Touhou_Frozen_Frog>
-    <entityname.Touhou_Perfect_Snowflake>完美雪花</entityname.Touhou_Perfect_Snowflake>
+    <entityname.Touhou_Perfect_Snowflake>‖color:60,90,255,255‖完美雪花‖end‖</entityname.Touhou_Perfect_Snowflake>
     <entitydescription.Touhou_Perfect_Snowflake>一块完美的六边形雪花，蕴含纯粹的寒气。作为‖color:gui.yellow‖冻青蛙‖end‖的弹药</entitydescription.Touhou_Perfect_Snowflake>
     <entityname.Touhou_Baka_Sword>‖color:60,90,255,255‖ 冰之勇者剑‖end‖</entityname.Touhou_Baka_Sword>
     <entitydescription.Touhou_Baka_Sword>“咱可是最强的！”</entitydescription.Touhou_Baka_Sword>
@@ -501,7 +501,7 @@
     <entitydescription.Touhou_Kappa_Multi_Functional_Tool>经由河童多次精细改进的简易维修工具，可同时维修机械和电气设备，对于熟练手来说，修复的效率会大大提高。</entitydescription.Touhou_Kappa_Multi_Functional_Tool>
     <entityname.Touhou_Hellfire_Torch>‖color:255,90,40,255‖地狱火炬‖end‖</entityname.Touhou_Hellfire_Torch>
     <entitydescription.Touhou_Hellfire_Torch>重新沾染地狱火焰的火炬，其中不稳定的能量会导致持有者的精神受到影响，只有地狱的妖精才能适应这柄火炬的魔力。</entitydescription.Touhou_Hellfire_Torch>
-    <entityname.Touhou_Love_Maze>‖color:255,90,40,255‖恋之迷宫‖end‖</entityname.Touhou_Love_Maze>
+    <entityname.Touhou_Love_Maze>‖color:220,55,55,255‖恋之迷宫‖end‖</entityname.Touhou_Love_Maze>
     <entitydescription.Touhou_Love_Maze>完全由火魔法凝聚而成的弓形武器，但发射的却是炽热的弹幕。对生命越低的敌人，造成的伤害也会越高。连续三次普通射击后，下一次将会暂时变为三连射击。</entitydescription.Touhou_Love_Maze>
 
     <entityname.Touhou_Simple_Parts>简单零件</entityname.Touhou_Simple_Parts>
@@ -526,7 +526,7 @@
     <entitydescription.Earth_Element_Book>内置魔力的一次性魔导书，让新手也能轻松使用</entitydescription.Earth_Element_Book>
     <entityname.Touhou_Pendulum_Necklace>灵摆项链</entityname.Touhou_Pendulum_Necklace>
     <entitydescription.Touhou_Pendulum_Necklace>赋予充盈魔力的水晶制成的项链，可略微提高使用者的魔力。当魔法能力大于80后，可解除帕秋莉的奔跑限制。占用耳机槽位。</entitydescription.Touhou_Pendulum_Necklace>
-    <entityname.Touhou_Gohei_Reimu>博丽的御币</entityname.Touhou_Gohei_Reimu>
+    <entityname.Touhou_Gohei_Reimu>‖color:255,81,75,255‖博丽的御币‖color:end‖</entityname.Touhou_Gohei_Reimu>
     <entitydescription.Touhou_Gohei_Reimu>降妖化兽</entitydescription.Touhou_Gohei_Reimu>
     <entityname.Youmu_Smgmagazine_Plus>‖color:156,158,161,255‖幽冥弹匣Plus‖color:end‖</entityname.Youmu_Smgmagazine_Plus>
     <entitydescription.Youmu_Smgmagazine_Plus>幽冥弹匣的升级款，具备更强的穿透力，射弹也更加锐利。作为‖color:gui.yellow‖冲锋枪|魂魄妖梦‖end‖的弹药</entitydescription.Youmu_Smgmagazine_Plus>
@@ -569,9 +569,9 @@
     <entityname.Ether_Divinggear>秘境潜水服</entityname.Ether_Divinggear>
     <entitydescription.Ether_Divinggear>由淡水的人鱼贡献的制作思路，经帕秋莉指点而生产的潜水服，能抵御4800米水压。拥有两个勾玉空缺。受击时会损耗勾玉的耐久\n启用照明需要‖color:gui.yellow‖宁静的勾玉/太古的勾玉-白‖end‖</entitydescription.Ether_Divinggear>
     <entityname.Magic_Veil>‖color:120,75,100,255‖魔力披纱‖color:end‖</entityname.Magic_Veil>
-    <entitydescription.Magic_Veil>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械。拥有六个勾玉空缺。受击时会损耗勾玉的耐久\n启用照明需要‖color:gui.yellow‖宁静的勾玉/太古的勾玉-白‖end‖</entitydescription.Magic_Veil>
+    <entitydescription.Magic_Veil>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械。搭配特定腰带或腰包可增强效果。拥有六个勾玉空缺。受击时会损耗勾玉的耐久\n启用照明需要‖color:gui.yellow‖宁静的勾玉/太古的勾玉-白‖end‖</entitydescription.Magic_Veil>
     <entityname.Magic_Veil02>‖color:120,75,100,255‖魔力披纱（异色）‖color:end‖</entityname.Magic_Veil02>
-    <entitydescription.Magic_Veil02></entitydescription.Magic_Veil02>
+    <entitydescription.Magic_Veil02>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械。搭配特定腰带或腰包可增强效果。拥有六个勾玉空缺。受击时会损耗勾玉的耐久\n启用照明需要‖color:gui.yellow‖宁静的勾玉/太古的勾玉-白‖end‖</entitydescription.Magic_Veil02>
 
     <entityname.Touhou_Peace_Hooked_Jade>宁静的勾玉</entityname.Touhou_Peace_Hooked_Jade>
     <entitydescription.Touhou_Peace_Hooked_Jade>放入潜水服的勾玉格内，提供眩晕抗性和照明效果</entitydescription.Touhou_Peace_Hooked_Jade>
@@ -629,12 +629,6 @@
     <entitydescription.Medical_Toolkit_Antibleeding1_Toolkit>绷带套装，可用于永远亭医疗套件</entitydescription.Medical_Toolkit_Antibleeding1_Toolkit>
     <entityname.Medical_Toolkit_Antibleeding2_Toolkit>可塑人造皮肤套装</entityname.Medical_Toolkit_Antibleeding2_Toolkit>
     <entitydescription.Medical_Toolkit_Antibleeding2_Toolkit>可塑人造皮肤套装，可用于永远亭医疗套件</entitydescription.Medical_Toolkit_Antibleeding2_Toolkit>
-    <entityname.Touhou_Small_Spell_Card_Cannon>小型符卡发射器</entityname.Touhou_Small_Spell_Card_Cannon>
-    <entitydescription.Touhou_Small_Spell_Card_Cannon>小体型的符卡发射器，可以使用电磁枪弹药和相关类型的符卡。相比电磁枪，小型符卡发射器的火力性能更高，平均射速略慢</entitydescription.Touhou_Small_Spell_Card_Cannon>
-    <entityname.Touhou_Rapidly_Spell_Card_Cannon>高速符卡发射器</entityname.Touhou_Rapidly_Spell_Card_Cannon>
-    <entitydescription.Touhou_Rapidly_Spell_Card_Cannon>高射速的符卡发射器，可以使用连射炮弹药和相关类型的符卡。相比连射炮，高速符卡发射器的火力性能和射速都更高，但散布需要持续射击才会减小</entitydescription.Touhou_Rapidly_Spell_Card_Cannon>
-    <entityname.Touhou_Huge_Spell_Card_Cannon>大型符卡发射器</entityname.Touhou_Huge_Spell_Card_Cannon>
-    <entitydescription.Touhou_Huge_Spell_Card_Cannon>大体型的符卡发射器，可以使用加农炮弹药、脉冲激光弹药和相关类型的符卡。相比其他炮塔，大型符卡发射器的火力性能大幅降低，但双联装弥补了这一点。</entitydescription.Touhou_Huge_Spell_Card_Cannon>
     <entityname.Touhou_Sun_Cannon>‖color:200,200,100,255‖阳光大炮‖color:end‖</entityname.Touhou_Sun_Cannon>
     <entitydescription.Touhou_Sun_Cannon>灼热的榴弹发射器，作为桑尼帮忙售卖商品的报酬，河童们为她打造了这把武器。可以发射‖color:gui.yellow‖普通榴弹或金红石榴弹‖end‖</entitydescription.Touhou_Sun_Cannon>
     <entityname.Touhou_Sun_Cannon_Ammo>‖color:200,200,100,255‖金红石榴弹‖color:end‖</entityname.Touhou_Sun_Cannon_Ammo>
@@ -660,29 +654,29 @@
     <entitydescription.Touhou_Diamond_Blizzard_Ammo>湖里飞散出来的水花结成冰的奇异现象（作为电磁枪弹药使用）</entitydescription.Touhou_Diamond_Blizzard_Ammo>
     <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>记忆材料</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
     <entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>来自地球的记忆，使用炼金桌可以破解不同角色专属的出血物质</entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
-    <entityname.Touhou_Sakuya_Knife_Ether>以太飞刀</entityname.Touhou_Sakuya_Knife_Ether>
+    <entityname.Touhou_Sakuya_Knife_Ether>‖color:155,155,155,255‖以太飞刀‖color:end‖</entityname.Touhou_Sakuya_Knife_Ether>
     <entitydescription.Touhou_Sakuya_Knife_Ether>用魔法材料制成的、更加锐利的飞刀，更容易击穿木卫二生物的表皮</entitydescription.Touhou_Sakuya_Knife_Ether>
     <entityname.Spirit_Rune_Dream_Seal>灵符「梦想封印」（轨道炮）</entityname.Spirit_Rune_Dream_Seal>
     <entitydescription.Spirit_Rune_Dream_Seal>在散发的终点，静寂将会到访。（作为轨道炮弹药使用）</entitydescription.Spirit_Rune_Dream_Seal>
-    <entityname.Touhou_Vampire_Fang_Sword>‖color:255,125,100,255‖吸血鬼之牙‖color:end‖</entityname.Touhou_Vampire_Fang_Sword>
+    <entityname.Touhou_Vampire_Fang_Sword>‖color:155,155,155,255‖吸血鬼之牙‖color:end‖</entityname.Touhou_Vampire_Fang_Sword>
     <entitydescription.Touhou_Vampire_Fang_Sword>本体是蕾米莉亚托付给她的吸血鬼之牙的魔力复制品。从牙的性质来看，比起蕾米莉亚身体的一部分，更像和咲夜同为从者。咲夜同时持有吸血鬼之牙与梦幻月之刃时将提高性能。拥有飞刀的属性</entitydescription.Touhou_Vampire_Fang_Sword>
-    <entityname.Touhou_Dream_Luna_Sword>‖color:175,175,175,255‖梦幻月之刃‖color:end‖</entityname.Touhou_Dream_Luna_Sword>
+    <entityname.Touhou_Dream_Luna_Sword>‖color:155,155,155,255‖梦幻月之刃‖color:end‖</entityname.Touhou_Dream_Luna_Sword>
     <entitydescription.Touhou_Dream_Luna_Sword>本体是某次异变时获得的妖器。虽然依然不能和它对话，但咲夜不知何时起能明白它的想法了。咲夜同时持有吸血鬼之牙与梦幻月之刃时将提高性能。拥有飞刀的属性</entitydescription.Touhou_Dream_Luna_Sword>
-    <entityname.Touhou_Luna_Clock>‖color:175,175,175,255‖月神之钟‖color:end‖</entityname.Touhou_Luna_Clock>
+    <entityname.Touhou_Luna_Clock>‖color:155,155,155,255‖月神之钟‖color:end‖</entityname.Touhou_Luna_Clock>
     <entitydescription.Touhou_Luna_Clock>指针转动之间，此时与彼时叠合成同一时刻，仿佛坠入了时间的皱褶。使用后让一定范围内的所有敌人无法行动</entitydescription.Touhou_Luna_Clock>
-    <entityname.Touhou_Moriya_Shrine_Staff>‖color:150,200,100,255‖八荣铃杖‖color:end‖</entityname.Touhou_Moriya_Shrine_Staff>
+    <entityname.Touhou_Moriya_Shrine_Staff>‖color:155,255,155,255‖八荣铃杖‖color:end‖</entityname.Touhou_Moriya_Shrine_Staff>
     <entitydescription.Touhou_Moriya_Shrine_Staff>神代的道具，每一次使用都会释放风祝的魔力</entitydescription.Touhou_Moriya_Shrine_Staff>
     <entityname.Touhou_Treatment_Grenade>‖color:gui.green‖治疗手雷‖color:end‖</entityname.Touhou_Treatment_Grenade>
     <entitydescription.Touhou_Treatment_Grenade>河童重工组推出的最新产品，内含治愈能量的手雷，爆破时会对友军放出治疗之风</entitydescription.Touhou_Treatment_Grenade>
-    <entityname.Touhou_New_Year_Gift_Box>‖color:gui.red‖新年礼物‖color:end‖</entityname.Touhou_New_Year_Gift_Box>
-    <entitydescription.Touhou_New_Year_Gift_Box>新年快乐</entitydescription.Touhou_New_Year_Gift_Box>
+    <entityname.Touhou_New_Year_Gift_Box>‖color:gui.red‖礼物‖color:end‖</entityname.Touhou_New_Year_Gift_Box>
+    <entitydescription.Touhou_New_Year_Gift_Box>里面会有什么？</entitydescription.Touhou_New_Year_Gift_Box>
     <entityname.Touhou_Quality_Upper_Machine>品质升级器</entityname.Touhou_Quality_Upper_Machine>
     <entitydescription.Touhou_Quality_Upper_Machine>河童重工组实验性生产的工具，可以提升魔法武器的品质，最高到大师品质为止</entitydescription.Touhou_Quality_Upper_Machine>
-    <entityname.Touhou_Alice_Magic_Book>魔法之国的魔导书</entityname.Touhou_Alice_Magic_Book>
+    <entityname.Touhou_Alice_Magic_Book>‖color:150,150,255,255‖魔法之国的魔导书‖color:end‖</entityname.Touhou_Alice_Magic_Book>
     <entitydescription.Touhou_Alice_Magic_Book>爱丽丝曾经的魔导书。消耗至少10点人偶能量可以召唤人偶。</entitydescription.Touhou_Alice_Magic_Book>
-    <entityname.Touhou_Lunar_Energy_Assault_Rifle>‖color:220,100,220,255‖月能步枪‖color:end‖</entityname.Touhou_Lunar_Energy_Assault_Rifle>
+    <entityname.Touhou_Lunar_Energy_Assault_Rifle>‖color:220,25,200,255‖月能步枪‖color:end‖</entityname.Touhou_Lunar_Energy_Assault_Rifle>
     <entitydescription.Touhou_Lunar_Energy_Assault_Rifle>铃仙在解析月球遗物后还原出来的一把全自动武器，能使用多种弹药的同时，威力也不容小觑。使用‖color:gui.yellow‖月能弹匣、冲锋枪弹药或突击步枪弹药‖end‖</entitydescription.Touhou_Lunar_Energy_Assault_Rifle>
-    <entityname.Touhou_Lunar_Energy_Magazine>‖color:220,100,220,255‖月能弹匣‖color:end‖</entityname.Touhou_Lunar_Energy_Magazine>
+    <entityname.Touhou_Lunar_Energy_Magazine>‖color:220,25,200,255‖月能弹匣‖color:end‖</entityname.Touhou_Lunar_Energy_Magazine>
     <entitydescription.Touhou_Lunar_Energy_Magazine>用魔力拘束的一块高能弹匣，专为月能步枪使用。作为‖color:gui.yellow‖月能步枪‖end‖的弹药</entitydescription.Touhou_Lunar_Energy_Magazine>
     <entityname.Touhou_Nue_Danmaku_Chimera>鵺符「弹幕奇美拉」（破片加农炮）</entityname.Touhou_Nue_Danmaku_Chimera>
     <entitydescription.Touhou_Nue_Danmaku_Chimera>被这个弹幕击中的话，中弹者会因为变得原形不明而死。不用喝酒就能迷糊到忘了自己是谁很幸运吧？（作为加农炮弹药使用）</entitydescription.Touhou_Nue_Danmaku_Chimera>
@@ -690,9 +684,9 @@
     <entitydescription.Touhou_Waterwheel_Gun>阿求委托工程师为自己制造的一把简单的水枪，较高的水压使其能对陆地生物产生不小的威胁，因为灵水难以融入木卫二的特性，使其在水下的效力仍然足够高。使用时需要‖color:gui.yellow‖水轮和灵水‖end‖</entitydescription.Touhou_Waterwheel_Gun>
     <entityname.Touhou_Waterwheel_Gun_Magazine>‖color:193,204,65,255‖水轮‖color:end‖</entityname.Touhou_Waterwheel_Gun_Magazine>
     <entitydescription.Touhou_Waterwheel_Gun_Magazine>水轮枪自带的运作水轮，没有它，水轮枪就无法正常运作。作为‖color:gui.yellow‖水轮枪‖end‖的弹药</entitydescription.Touhou_Waterwheel_Gun_Magazine>
-    <entityname.Touhou_Sunflower_Field_Cane>太阳花田手杖</entityname.Touhou_Sunflower_Field_Cane>
+    <entityname.Touhou_Sunflower_Field_Cane>‖color:117,128,110,255‖太阳花田手杖‖color:end‖</entityname.Touhou_Sunflower_Field_Cane>
     <entitydescription.Touhou_Sunflower_Field_Cane>幽香在木卫二照顾花朵的手杖，独特的设计让手杖在木卫二上也能发出温暖的阳光。手杖里藏有一把教训那些不听话的家伙们的短剑，威力不大，但在她的手里不容小觑</entitydescription.Touhou_Sunflower_Field_Cane>
-    <entityname.Touhou_Sunflower_Field_Cane_Dagger>太阳花田杖剑</entityname.Touhou_Sunflower_Field_Cane_Dagger>
+    <entityname.Touhou_Sunflower_Field_Cane_Dagger>‖color:117,128,110,255‖太阳花田杖剑‖color:end‖</entityname.Touhou_Sunflower_Field_Cane_Dagger>
     <entitydescription.Touhou_Sunflower_Field_Cane_Dagger>一把性质独特的杖剑，平时藏锋于手杖内，能增加手杖本身的威力，偶尔也可以单独取出威吓敌人</entitydescription.Touhou_Sunflower_Field_Cane_Dagger>
     <entityname.Pollution_Magician_Clothes01>被玷污的法袍</entityname.Pollution_Magician_Clothes01>
     <entitydescription.Pollution_Magician_Clothes01>用魔力布料缝制而成的法袍，这件显然是沾染了不洁的魔法</entitydescription.Pollution_Magician_Clothes01>
@@ -718,21 +712,21 @@
     <entitydescription.Touhou_Magic_Metal_Arrow_Luna>奇异的光线在空中汇聚出彩虹的模样。作为‖color:gui.yellow‖三妖精的三重大弩炮‖end‖的弹药</entitydescription.Touhou_Magic_Metal_Arrow_Luna>
     <entityname.Touhou_Magic_Metal_Arrow_Star>‖color:155,125,245,255‖星热「寒冰熔解器」‖color:end‖</entityname.Touhou_Magic_Metal_Arrow_Star>
     <entitydescription.Touhou_Magic_Metal_Arrow_Star>奇异的光线在空中汇聚出彩虹的模样。作为‖color:gui.yellow‖三妖精的三重大弩炮‖end‖的弹药</entitydescription.Touhou_Magic_Metal_Arrow_Star>
-    <entityname.Touhou_Yukari_Folding_Fan>‖color:255,125,255,255‖八云紫的折扇‖color:end‖</entityname.Touhou_Yukari_Folding_Fan>
+    <entityname.Touhou_Yukari_Folding_Fan>‖color:220,25,200,255‖八云紫的折扇‖color:end‖</entityname.Touhou_Yukari_Folding_Fan>
     <entitydescription.Touhou_Yukari_Folding_Fan>凝结了境界之力的扇子，在境界翻转间，可以迅速削弱敌人的防御。使用‖color:gui.yellow‖折扇机关‖end‖</entitydescription.Touhou_Yukari_Folding_Fan>
-    <entityname.Touhou_Yukari_Folding_Fan_Ammo>‖color:255,125,255,255‖折扇机关‖color:end‖</entityname.Touhou_Yukari_Folding_Fan_Ammo>
+    <entityname.Touhou_Yukari_Folding_Fan_Ammo>‖color:220,25,200,255‖折扇机关‖color:end‖</entityname.Touhou_Yukari_Folding_Fan_Ammo>
     <entitydescription.Touhou_Yukari_Folding_Fan_Ammo>折扇内部的精巧机关，让看似人畜无害的扇子也能发射弹幕。作为‖color:gui.yellow‖八云紫的折扇‖end‖的弹药</entitydescription.Touhou_Yukari_Folding_Fan_Ammo>
     <entityname.Touhou_Crystal_Pistol>‖color:gui.yellow‖水晶手枪‖color:end‖</entityname.Touhou_Crystal_Pistol>
     <entitydescription.Touhou_Crystal_Pistol>魔理沙在木卫二上采集了很久的水晶，才制作出这一把手枪，可以方便地发射水晶星星弹幕，对木卫二上的原住民有更大的杀伤力。使用‖color:gui.yellow‖星海水晶‖end‖</entitydescription.Touhou_Crystal_Pistol>
     <entityname.Touhou_Crystal_Pistol_Ammo>‖color:gui.yellow‖星海水晶‖color:end‖</entityname.Touhou_Crystal_Pistol_Ammo>
     <entitydescription.Touhou_Crystal_Pistol_Ammo>制作十分用心的一块水晶，仔细观察，能看到水晶里泛着淡淡的星光。作为‖color:gui.yellow‖水晶手枪‖end‖的弹药</entitydescription.Touhou_Crystal_Pistol_Ammo>
-    <entityname.Touhou_Ceremonial_Dagger>‖color:255,185,255,255‖仪式匕首‖color:end‖</entityname.Touhou_Ceremonial_Dagger>
+    <entityname.Touhou_Ceremonial_Dagger>‖color:120,75,100,255‖仪式匕首‖color:end‖</entityname.Touhou_Ceremonial_Dagger>
     <entitydescription.Touhou_Ceremonial_Dagger>帕秋莉在仪式魔法中使用的匕首，蕴含着仪式魔法的元素魔力</entitydescription.Touhou_Ceremonial_Dagger>
-    <entityname.Touhou_Veterinary_Steel_Claws>‖color:gui.green‖兽用钢爪‖color:end‖</entityname.Touhou_Veterinary_Steel_Claws>
+    <entityname.Touhou_Veterinary_Steel_Claws>‖color:162,190,160,255‖兽用钢爪‖color:end‖</entityname.Touhou_Veterinary_Steel_Claws>
     <entitydescription.Touhou_Veterinary_Steel_Claws>博丽灵梦为阿吽手工制作的一副钢爪，能撕开木卫二上的危险生物</entitydescription.Touhou_Veterinary_Steel_Claws>
-    <entityname.Touhou_Maple_Leaf_Revolver>‖color:255,185,55,255‖枫叶转轮手枪‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver>
+    <entityname.Touhou_Maple_Leaf_Revolver>‖color:255,255,255,255‖枫叶转轮手枪‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver>
     <entitydescription.Touhou_Maple_Leaf_Revolver>天狗特遣队分发的特制左轮手枪，连续射击后能大大提高性能。使用‖color:gui.yellow‖左轮子弹或旋风子弹‖end‖</entitydescription.Touhou_Maple_Leaf_Revolver>
-    <entityname.Touhou_Maple_Leaf_Revolver_Bullet>‖color:255,185,55,255‖旋风子弹‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver_Bullet>
+    <entityname.Touhou_Maple_Leaf_Revolver_Bullet>‖color:255,255,255,255‖旋风子弹‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver_Bullet>
     <entitydescription.Touhou_Maple_Leaf_Revolver_Bullet>根据左轮子弹研发的特制子弹，填入了妖怪之山的最新科技，也可以用在普通左轮手枪上。作为‖color:gui.yellow‖枫叶转轮手枪‖end‖的弹药</entitydescription.Touhou_Maple_Leaf_Revolver_Bullet>
     <entityname.Touhou_Stellar_Staff>‖color:155,155,255,255‖星辰法杖‖color:end‖</entityname.Touhou_Stellar_Staff>
     <entitydescription.Touhou_Stellar_Staff>木卫二上的魔法使们，用帕秋莉离开火箭研发中心前留下的珍贵资料研发的特殊法杖，能发射三种不同的星辰射弹</entitydescription.Touhou_Stellar_Staff>
@@ -740,9 +734,9 @@
     <entitydescription.Touhou_Sunflower_Headpiece>一副精心编织的太阳花发饰，花朵散发着神秘而迷人的清香，让头脑更加清醒</entitydescription.Touhou_Sunflower_Headpiece>
     <entityname.Touhou_Hakurei_Fox_Headpiece>‖color:255,205,55,255‖神社狐狸发卡‖color:end‖</entityname.Touhou_Hakurei_Fox_Headpiece>
     <entitydescription.Touhou_Hakurei_Fox_Headpiece>神社狐狸图案的发卡，蕴含来自博丽神社独有的气息</entitydescription.Touhou_Hakurei_Fox_Headpiece>
-    <entityname.Touhou_Royal_Diamond_Ring>‖color:255,55,155,255‖皇家钻戒‖color:end‖</entityname.Touhou_Royal_Diamond_Ring>
+    <entityname.Touhou_Royal_Diamond_Ring>‖color:120,75,100,255‖皇家钻戒‖color:end‖</entityname.Touhou_Royal_Diamond_Ring>
     <entitydescription.Touhou_Royal_Diamond_Ring>帕秋莉合成魔法的实验成果，一出手就可以压制全场的符卡。使用‖color:gui.yellow‖皇家钻戒燃料‖end‖</entitydescription.Touhou_Royal_Diamond_Ring>
-    <entityname.Touhou_Royal_Diamond_Ring_Ammo>‖color:255,55,155,255‖皇家钻戒燃料‖color:end‖</entityname.Touhou_Royal_Diamond_Ring_Ammo>
+    <entityname.Touhou_Royal_Diamond_Ring_Ammo>‖color:120,75,100,255‖皇家钻戒燃料‖color:end‖</entityname.Touhou_Royal_Diamond_Ring_Ammo>
     <entitydescription.Touhou_Royal_Diamond_Ring_Ammo>蕴含极度危险魔法能量的魔法球，内部的魔法拥有不俗的破坏力。作为‖color:gui.yellow‖皇家钻戒‖end‖的弹药</entitydescription.Touhou_Royal_Diamond_Ring_Ammo>
     <entityname.Touhou_Plant_Machine>魔法材料种植柜</entityname.Touhou_Plant_Machine>
     <entitydescription.Touhou_Plant_Machine>专门用于种植魔法材料的种植柜，可以进行特定魔法植物的种植</entitydescription.Touhou_Plant_Machine>
@@ -766,9 +760,9 @@
     <entitydescription.Touhou_Rose_Gift_Bag>为了追求甜蜜节日的真谛，恋奔走探寻。
         自注射槽位会在15%血量阈值时触发，还可以让无意识慕斯的效果持续生效
     </entitydescription.Touhou_Rose_Gift_Bag>
-    <entityname.Touhou_Rose_Wand>蔷薇魔杖</entityname.Touhou_Rose_Wand>
-    <entitydescription.Touhou_Rose_Wand>蔷薇的魔力在其中缓缓绽放……使用‖color:gui.yellow‖海底蔷薇‖end‖</entitydescription.Touhou_Rose_Wand>
-    <entityname.Touhou_Rose_Wand_Ammo>海底蔷薇</entityname.Touhou_Rose_Wand_Ammo>
+    <entityname.Touhou_Rose_Wand>‖color:60,255,155,255‖蔷薇魔杖‖color:end‖</entityname.Touhou_Rose_Wand>
+    <entitydescription.Touhou_Rose_Wand>蔷薇的魔力在其中缓缓绽放……每次弹幕攻击，有概率发射蔷薇之星，造成大量伤害。使用‖color:gui.yellow‖海底蔷薇‖end‖</entitydescription.Touhou_Rose_Wand>
+    <entityname.Touhou_Rose_Wand_Ammo>‖color:60,255,155,255‖海底蔷薇‖color:end‖</entityname.Touhou_Rose_Wand_Ammo>
     <entitydescription.Touhou_Rose_Wand_Ammo>某种不可思议的魔法让这朵蔷薇在海底绽放。作为‖color:gui.yellow‖蔷薇魔杖‖end‖的弹药</entitydescription.Touhou_Rose_Wand_Ammo>
 
     <!--食物部分-->
@@ -1290,15 +1284,15 @@
     </entitydescription.Touhou_Corrupted_Aphelion>
     <entityname.Touhou_Corrupted_Aphelion_Ammo>‖color:255,0,0,155‖腐化远日点能量核心‖color:end‖</entityname.Touhou_Corrupted_Aphelion_Ammo>
     <entitydescription.Touhou_Corrupted_Aphelion_Ammo>原本纯净的能量被完全侵蚀，已然走向另一个极端。作为‖color:gui.yellow‖腐化远日点‖end‖的弹药</entitydescription.Touhou_Corrupted_Aphelion_Ammo>
-    <entityname.Touhou_Minus_K>‖color:100,100,255,155‖熄焰‖color:end‖</entityname.Touhou_Minus_K>
+    <entityname.Touhou_Minus_K>‖color:60,90,255,255‖熄焰‖color:end‖</entityname.Touhou_Minus_K>
     <entitydescription.Touhou_Minus_K>琪露诺应允为炼金实验室提供了超低温冰块，作为回报，琪露诺得到了这把精致的武器。它发射的冰晶碎片能非常有效地伤害生物的肉体。使用‖color:gui.yellow‖熄焰水晶‖end‖</entitydescription.Touhou_Minus_K>
-    <entityname.Touhou_Minus_K_Ammo>‖color:100,100,255,155‖熄焰冰晶‖color:end‖</entityname.Touhou_Minus_K_Ammo>
+    <entityname.Touhou_Minus_K_Ammo>‖color:60,90,255,255‖熄焰冰晶‖color:end‖</entityname.Touhou_Minus_K_Ammo>
     <entitydescription.Touhou_Minus_K_Ammo>淬火与熄焰，无论多么灼热的物体，都会被推至冰冷的冬天。作为‖color:gui.yellow‖熄焰‖end‖的弹药</entitydescription.Touhou_Minus_K_Ammo>
-    <entityname.Touhou_Stagnant_Comet>‖color:255,100,255,155‖静滞彗星‖color:end‖</entityname.Touhou_Stagnant_Comet>
+    <entityname.Touhou_Stagnant_Comet>‖color:220,25,200,255‖静滞彗星‖color:end‖</entityname.Touhou_Stagnant_Comet>
     <entitydescription.Touhou_Stagnant_Comet>八云紫曾翻转境界造成的奇观——静滞的彗星，启发了木卫二的工程师，于是试验性地制作了这把不安的武器。
         使用者处于静止状态时，威力会略微提升。使用‖color:gui.yellow‖静滞的隙间‖end‖
     </entitydescription.Touhou_Stagnant_Comet>
-    <entityname.Touhou_Stagnant_Comet_Ammo>‖color:255,100,255,155‖静滞的隙间‖color:end‖</entityname.Touhou_Stagnant_Comet_Ammo>
+    <entityname.Touhou_Stagnant_Comet_Ammo>‖color:220,25,200,255‖静滞的隙间‖color:end‖</entityname.Touhou_Stagnant_Comet_Ammo>
     <entitydescription.Touhou_Stagnant_Comet_Ammo>从隙间里引导出激光弹幕，通过静滞彗星折射出两道危险的激光。作为‖color:gui.yellow‖静滞彗星‖end‖的弹药</entitydescription.Touhou_Stagnant_Comet_Ammo>
     <entityname.Touhou_Metamorphosis>‖color:150,150,220,155‖嬗变‖color:end‖</entityname.Touhou_Metamorphosis>
     <entitydescription.Touhou_Metamorphosis>爱丽丝很久很久以前留在某个魔法国度的武器，如今凭借记忆将其在木卫二上简单还原了出来。每一发射弹都蕴含嬗变与解放的能力，能轻易扭曲生物的生理结构。用完即弃。
@@ -1308,9 +1302,9 @@
     <entitydescription.Touhou_Prometheus_Clothes>极度危险的一套服装</entitydescription.Touhou_Prometheus_Clothes>
     <entityname.Touhou_Blood_Crown>‖color:255,0,0,155‖独一王冠‖color:end‖</entityname.Touhou_Blood_Crown>
     <entitydescription.Touhou_Blood_Crown>只是看一眼就深知其中危险的王冠</entitydescription.Touhou_Blood_Crown>
-    <entityname.Touhou_Feather_Wings>‖color:100,100,200,200‖羽翊‖color:end‖</entityname.Touhou_Feather_Wings>
+    <entityname.Touhou_Feather_Wings>‖color:5,105,195,200‖羽翊‖color:end‖</entityname.Touhou_Feather_Wings>
     <entitydescription.Touhou_Feather_Wings>比那名居天子为木卫二人讲述了许多关于天空的故事，有心人将其提炼为毛皮与羽翊的故事流传在坊间，不知不觉间便有人献上了这把做工精良的武器。使用‖color:gui.yellow‖编织羽翊‖end‖</entitydescription.Touhou_Feather_Wings>
-    <entityname.Touhou_Feather_Wings_Ammo>‖color:100,100,200,200‖编织羽翊‖color:end‖</entityname.Touhou_Feather_Wings_Ammo>
+    <entityname.Touhou_Feather_Wings_Ammo>‖color:5,105,195,200‖编织羽翊‖color:end‖</entityname.Touhou_Feather_Wings_Ammo>
     <entitydescription.Touhou_Feather_Wings_Ammo>做工精良的一枚徽章，用纤维房照羽毛的模样编织而成，虽然做工不够优雅，但心意恰到好处。作为‖color:gui.yellow‖羽翊‖end‖的弹药</entitydescription.Touhou_Feather_Wings_Ammo>
     <entityname.Touhou_Leaves_Thorns>‖color:155,255,155,255‖叶片棘刺‖color:end‖</entityname.Touhou_Leaves_Thorns>
     <entitydescription.Touhou_Leaves_Thorns>早苗为木卫二人带来诸多福祉后，作为回礼，一些民间工匠打造了这把武器。对剩余血量越高的目标，它能造成的直接攻击伤害越高，最高100%。反之，对血量低于30%的目标造成的直接攻击伤害下降100%。使用‖color:gui.yellow‖叶片符号‖end‖</entitydescription.Touhou_Leaves_Thorns>
@@ -1331,13 +1325,13 @@
     <entitydescription.Touhou_External_Medicine_Box>永远亭在木卫二建立蓬莱药局分局后，热销的新品药箱。能够快速治疗烧伤并止血。也能很好地治疗伤口感染</entitydescription.Touhou_External_Medicine_Box>
     <entityname.Touhou_External_Within_Pill>永远亭内服药丸</entityname.Touhou_External_Within_Pill>
     <entitydescription.Touhou_External_Within_Pill>永远亭在木卫二建立蓬莱药局分局后，替代常规治疗手段的新型药丸，服下后延时生效，能治愈人体的伤势。第一段治疗效果更快更迅速。第二段治疗效果更持久更温和。多次服用无法叠加效果</entitydescription.Touhou_External_Within_Pill>
-    <entityname.Touhou_Sakuya_Knife_Lunatic>‖color:150,150,200,255‖月战型冷却飞刀‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic>
+    <entityname.Touhou_Sakuya_Knife_Lunatic>‖color:155,155,155,255‖月战型冷却飞刀‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic>
     <entitydescription.Touhou_Sakuya_Knife_Lunatic>相传是咲夜在月面战争时特制的飞刀发射装置，相比传统方法更便携且更具威力。正反两面共两个发射槽，使其依然可以一次发射两把飞刀。使用‖color:gui.yellow‖冷却飞刀能量核心‖end‖</entitydescription.Touhou_Sakuya_Knife_Lunatic>
-    <entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>‖color:150,150,200,255‖冷却飞刀能量核心‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>
+    <entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>‖color:155,155,155,255‖冷却飞刀能量核心‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>
     <entitydescription.Touhou_Sakuya_Knife_Lunatic_Ammo>冷却飞刀的供能装置，允许咲夜长时间不断发射高能飞刀。作为‖color:gui.yellow‖月战型冷却飞刀‖end‖的弹药</entitydescription.Touhou_Sakuya_Knife_Lunatic_Ammo>
-    <entityname.Touhou_Closed_Third_Eye>‖color:200,50,200,255‖紧闭之瞳‖color:end‖</entityname.Touhou_Closed_Third_Eye>
+    <entityname.Touhou_Closed_Third_Eye>‖color:60,255,155,255‖紧闭之瞳‖color:end‖</entityname.Touhou_Closed_Third_Eye>
     <entitydescription.Touhou_Closed_Third_Eye>恋在封闭内心后，外化出的紧闭眼瞳。使用‖color:gui.yellow‖恋之埋火‖end‖</entitydescription.Touhou_Closed_Third_Eye>
-    <entityname.Touhou_Closed_Third_Eye_Ammo01>‖color:200,50,200,255‖恋之埋火‖color:end‖</entityname.Touhou_Closed_Third_Eye_Ammo01>
+    <entityname.Touhou_Closed_Third_Eye_Ammo01>‖color:60,255,155,255‖恋之埋火‖color:end‖</entityname.Touhou_Closed_Third_Eye_Ammo01>
     <entitydescription.Touhou_Closed_Third_Eye_Ammo01>恋无意识内心的一部分，如果只是这样简单的心便再好不过了。作为‖color:gui.yellow‖紧闭之瞳‖end‖的弹药</entitydescription.Touhou_Closed_Third_Eye_Ammo01>
     <entityname.Touhou_Treasure_Bag_Nue>宝藏袋-封兽鵺</entityname.Touhou_Treasure_Bag_Nue>
     <entitydescription.Touhou_Treasure_Bag_Nue>作为击败封兽鵺的奖励</entitydescription.Touhou_Treasure_Bag_Nue>
@@ -1366,10 +1360,6 @@
     <entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo01>用魔法回路拘束的放射性武器能源，相当危险。‖color:gui.yellow‖无法使用充能箱补充‖end‖。作为‖color:gui.yellow‖幻崩实验性步枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo01>
     <entityname.Touhou_Knightmare_Experimental_Rifle_Ammo02>幻崩实验性腐蚀电池</entityname.Touhou_Knightmare_Experimental_Rifle_Ammo02>
     <entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo02>用魔法回路拘束的腐蚀性武器能源，相当危险。‖color:gui.yellow‖无法使用充能箱补充‖end‖。作为‖color:gui.yellow‖幻崩实验性步枪‖end‖的弹药</entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo02>
-    <entityname.Touhou_Mind_Star_Mine>心灵烟花</entityname.Touhou_Mind_Star_Mine>
-    <entitydescription.Touhou_Mind_Star_Mine>月球遗物，曾在伪月面战争后大范围使用，破坏力一流。作为‖color:gui.yellow‖喇叭枪或怜悯‖end‖的弹药</entitydescription.Touhou_Mind_Star_Mine>
-    <entityname.Touhou_Lunatic_Blass>狂月爆破</entityname.Touhou_Lunatic_Blass>
-    <entitydescription.Touhou_Lunatic_Blass>月球遗物，极度危险的子弹，即便是伪月面战争中，也常常被禁止使用。作为‖color:gui.yellow‖喇叭枪或怜悯‖end‖的弹药</entitydescription.Touhou_Lunatic_Blass>
     <entityname.Touhou_Knightmare_Grenade_Gun>幻崩榴弹枪</entityname.Touhou_Knightmare_Grenade_Gun>
     <entitydescription.Touhou_Knightmare_Grenade_Gun>木卫二上被严令禁止使用的榴弹武器，极度危险，作为私自研发的产物，使用也相当困难，未经学习的新手很难发挥出其原有的射速。使用‖color:gui.yellow‖幻崩榴弹电池或榴弹‖end‖</entitydescription.Touhou_Knightmare_Grenade_Gun>
     <entityname.Touhou_Knightmare_Grenade_Gun_Ammo>幻崩榴弹电池</entityname.Touhou_Knightmare_Grenade_Gun_Ammo>
@@ -1390,7 +1380,7 @@
     <entitydescription.Touhou_Starkiller_Grenade>据说，这是它过去的名字。作为‖color:gui.yellow‖弑星者‖end‖的改装发射物</entitydescription.Touhou_Starkiller_Grenade>
     <entityname.Touhou_Dissolution>‖color:200,180,150,255‖消殒‖end‖</entityname.Touhou_Dissolution>
     <entitydescription.Touhou_Dissolution>一把极其不祥的武器，拥有远超想象的破坏力，每一次使用都将吞噬使用者的生命。‖color:gui.yellow‖无法使用充能箱补充‖end‖</entitydescription.Touhou_Dissolution>
-    <entityname.Touhou_Onmyo_Ball>‖color:200,100,100,255‖渴望鲜血的阴阳玉‖end‖</entityname.Touhou_Onmyo_Ball>
+    <entityname.Touhou_Onmyo_Ball>‖color:255,81,75,255‖渴望鲜血的阴阳玉‖end‖</entityname.Touhou_Onmyo_Ball>
     <entitydescription.Touhou_Onmyo_Ball>面对不听话的妖怪，用阴阳玉好好教训一顿就好了</entitydescription.Touhou_Onmyo_Ball>
     <entityname.Touhou_Mass_Shotgun>‖color:200,180,150,255‖未知霰弹枪‖end‖</entityname.Touhou_Mass_Shotgun>
     <entitydescription.Touhou_Mass_Shotgun>来源不明的武器，可以发射特殊弹药，在弹药飞行一段时间后分裂成多个小型弹丸。使用‖color:gui.yellow‖未知密封霰弹弹匣‖end‖</entitydescription.Touhou_Mass_Shotgun>
@@ -1402,9 +1392,9 @@
     <entitydescription.Touhou_Chocolate_Cleaver>经过特殊加工，拥有巧克力材质的刀。注意防止孩童误食</entitydescription.Touhou_Chocolate_Cleaver>
     <entityname.Touhou_Chocolate_Cleaver>巧克力刀</entityname.Touhou_Chocolate_Cleaver>
     <entitydescription.Touhou_Chocolate_Cleaver>经过特殊加工，拥有巧克力材质的刀。注意防止孩童误食</entitydescription.Touhou_Chocolate_Cleaver>
-    <entityname.Touhou_Cyclone_Electromagnetic_Gun>‖color:220,195,115,255‖疾风电磁枪‖color:end‖</entityname.Touhou_Cyclone_Electromagnetic_Gun>
+    <entityname.Touhou_Cyclone_Electromagnetic_Gun>‖color:255,255,255,255‖疾风电磁枪‖color:end‖</entityname.Touhou_Cyclone_Electromagnetic_Gun>
     <entitydescription.Touhou_Cyclone_Electromagnetic_Gun>为了应付木卫二上更具威胁的生物，文文找到河童研发了这款威力不容小觑的电磁武器。使用‖color:gui.yellow‖疾风电磁枪弹药匣或「幻想风靡」‖end‖</entitydescription.Touhou_Cyclone_Electromagnetic_Gun>
-    <entityname.Touhou_Cyclone_Electromagnetic_Gun_Ammo>‖color:220,195,115,255‖疾风电磁枪弹药匣‖color:end‖</entityname.Touhou_Cyclone_Electromagnetic_Gun_Ammo>
+    <entityname.Touhou_Cyclone_Electromagnetic_Gun_Ammo>‖color:255,255,255,255‖疾风电磁枪弹药匣‖color:end‖</entityname.Touhou_Cyclone_Electromagnetic_Gun_Ammo>
     <entitydescription.Touhou_Cyclone_Electromagnetic_Gun_Ammo>极具穿透力的一股能量，威力不容小觑。作为‖color:gui.yellow‖疾风电磁枪‖end‖的弹药</entitydescription.Touhou_Cyclone_Electromagnetic_Gun_Ammo>
     <entityname.Touhou_Flandre_Destroyer>‖color:220,55,55,255‖破坏者‖color:end‖</entityname.Touhou_Flandre_Destroyer>
     <entitydescription.Touhou_Flandre_Destroyer>曾有人试图解析芙兰朵露破坏力量而制成的一把武器，如今却被芙兰朵露本人意外得到，成为她的玩具之一。使用‖color:gui.yellow‖破坏宝石‖end‖</entitydescription.Touhou_Flandre_Destroyer>
@@ -1412,9 +1402,9 @@
     <entitydescription.Touhou_Flandre_Destroyer_Ammo>蕴含极其恐怖的破坏力量的宝石，隐隐折射出三种光线，据说曾被芙兰朵露当成好看的装饰摆在玩具架上。作为‖color:gui.yellow‖破坏者‖end‖的弹药</entitydescription.Touhou_Flandre_Destroyer_Ammo>
     <entityname.Touhou_Disintegration_Stone>崩解石</entityname.Touhou_Disintegration_Stone>
     <entitydescription.Touhou_Disintegration_Stone>拥有破坏与还原力量的宝石，可在仪式台将一些物品还原成炼金术副产物或以太层金属</entitydescription.Touhou_Disintegration_Stone>
-    <entityname.Touhou_Night_Dance>‖color:220,55,55,255‖夜晚之舞‖color:end‖</entityname.Touhou_Night_Dance>
+    <entityname.Touhou_Night_Dance>‖color:255,36,0,255‖夜晚之舞‖color:end‖</entityname.Touhou_Night_Dance>
     <entitydescription.Touhou_Night_Dance>曾有人试图解析蕾米莉亚命运的能力而制成的一把武器，如今却被蕾米莉亚本人意外得到，成为她的收藏之一。夜晚之舞使用时会增加能量条（以耐久条显示），能量条满后将额外提高威力。使用‖color:gui.yellow‖夜晚之雾‖end‖</entitydescription.Touhou_Night_Dance>
-    <entityname.Touhou_Night_Dance_Ammo>‖color:220,55,55,255‖夜晚之雾‖color:end‖</entityname.Touhou_Night_Dance_Ammo>
+    <entityname.Touhou_Night_Dance_Ammo>‖color:255,36,0,255‖夜晚之雾‖color:end‖</entityname.Touhou_Night_Dance_Ammo>
     <entitydescription.Touhou_Night_Dance_Ammo>蕴含神秘命运力量的雕塑，由于加工不完善，其中威力被削弱近半。作为‖color:gui.yellow‖夜晚之舞‖end‖的弹药</entitydescription.Touhou_Night_Dance_Ammo>
     <entityname.Touhou_Record_Scar>唱片Scar</entityname.Touhou_Record_Scar>
     <entitydescription.Touhou_Record_Scar>造型相当独特的一把武器，来自某个民间工匠的手笔，同时结合了音乐唱片与热武器，成为一些魔法使最爱的傍身武器，但使用起来却因为其脆弱的结构需要使用者小心翼翼。使用‖color:gui.yellow‖普通唱片弹匣或精致唱片弹匣‖end‖</entitydescription.Touhou_Record_Scar>
@@ -1480,11 +1470,11 @@
         黑勾玉效果：增加10%技能水平，增加10%物理伤害抗性和烧伤抗性
         平滑的勾玉效果：提供完全的水压防护，增加20%水下推进速度
     </entitydescription.Touhou_Hyouibana_Armor_Alchemical>
-    <entityname.Touhou_Blessings_Sunflowers>‖color:220,200,80,255‖太阳花之祝福‖color:end‖</entityname.Touhou_Blessings_Sunflowers>
+    <entityname.Touhou_Blessings_Sunflowers>‖color:117,128,110,255‖太阳花之祝福‖color:end‖</entityname.Touhou_Blessings_Sunflowers>
     <entitydescription.Touhou_Blessings_Sunflowers>在木卫二上能看到曾经的地球植物很是稀奇，一位不知名的工匠受到触动，擅自改动河童的成果研发出了这把武器。使用‖color:gui.yellow‖太阳花培养液‖end‖</entitydescription.Touhou_Blessings_Sunflowers>
-    <entityname.Touhou_Blessings_Sunflowers_Ammo01>‖color:220,200,80,255‖太阳花培养液（黄）‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo01>
+    <entityname.Touhou_Blessings_Sunflowers_Ammo01>‖color:117,128,110,255‖太阳花培养液（黄）‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo01>
     <entitydescription.Touhou_Blessings_Sunflowers_Ammo01>略有份量的培养液，用于激活武器发射能量矛的能力。作为‖color:gui.yellow‖太阳花之祝福‖end‖的弹药</entitydescription.Touhou_Blessings_Sunflowers_Ammo01>
-    <entityname.Touhou_Blessings_Sunflowers_Ammo02>‖color:220,200,80,255‖太阳花培养液（红）‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo02>
+    <entityname.Touhou_Blessings_Sunflowers_Ammo02>‖color:117,128,110,255‖太阳花培养液（红）‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo02>
     <entitydescription.Touhou_Blessings_Sunflowers_Ammo02>温热的培养液，用于激活武器发射光束的能力。作为‖color:gui.yellow‖太阳花之祝福‖end‖的弹药</entitydescription.Touhou_Blessings_Sunflowers_Ammo02>
     <entityname.Touhou_Moriya_Bag>守矢神社腰包</entityname.Touhou_Moriya_Bag>
     <entitydescription.Touhou_Moriya_Bag>为了更好地传播信仰，早苗和本地工匠一起制作了这款腰包，轻便朴素的同时，还拥有护符的属性。自注射在血量阈值70%时激活
@@ -1858,41 +1848,154 @@
     <entitydescription.Touhou_ScarletNight_Hailstorm>在一把来历不明的武器上嵌入红宝石般的绯红结晶后，这把武器的命运被强行扭转为作为“弹幕发生器”。扣动扳机时，结晶在腔内被暴力碎解，化作一阵猩红霰雨喷薄而出。
         对机械生物造成额外撕裂伤。
         使用此武器击杀任意生物时，短暂增加这把武器的攻击伤害。
-        使用‖color:gui.yellow‖绯红结晶‖end‖。</entitydescription.Touhou_ScarletNight_Hailstorm>
+        使用‖color:gui.yellow‖绯红结晶‖end‖</entitydescription.Touhou_ScarletNight_Hailstorm>
     <entityname.Touhou_ScarletNight_Hailstorm_Ammo>‖color:255,36,0,255‖绯红结晶‖end‖</entityname.Touhou_ScarletNight_Hailstorm_Ammo>
     <entitydescription.Touhou_ScarletNight_Hailstorm_Ammo>被人工驯化过的“血色矿”。在常温下安静得像红宝石，但一旦进入高压碎解腔，就会沿着预制的裂纹崩解成锋利的结晶霰粒，并释放出能让伤口难以收束的微量污染。作为‖color:gui.yellow‖绯夜霰雨‖end‖的弹药</entitydescription.Touhou_ScarletNight_Hailstorm_Ammo>
 
+    <entityname.Touhou_Crowfeather_RapidShooter>‖color:255,255,255,255‖鸦羽连射器‖end‖</entityname.Touhou_Crowfeather_RapidShooter>
+    <entitydescription.Touhou_Crowfeather_RapidShooter>把“取材”做成火力的天狗记者之器。镜筒里封着旋风的回声，扳机每一次跳动，都像快门在黑暗里咔嚓一声——先让你无处可藏，再让你无从辩解。
+        每次倾泻完火力，都需要稍事歇息。
+        每次使用将给予自身极速效果
+        使用‖color:gui.yellow‖鸦羽风涡核心‖end‖</entitydescription.Touhou_Crowfeather_RapidShooter>
+    <entityname.Touhou_Crowfeather_RapidShooter_Ammo>‖color:255,255,255,255‖鸦羽风涡核心‖end‖</entityname.Touhou_Crowfeather_RapidShooter_Ammo>
+    <entitydescription.Touhou_Crowfeather_RapidShooter_Ammo>一枚被压进透明腔体的风——像被卷入镜头的云，永远在寻找出口。作为‖color:gui.yellow‖鸦羽连射器‖end‖的弹药</entitydescription.Touhou_Crowfeather_RapidShooter_Ammo>
 
+    <entityname.Touhou_Aunn_Square_Shield>狛犬方盾</entityname.Touhou_Aunn_Square_Shield>
+    <entitydescription.Touhou_Aunn_Square_Shield>一面能稳稳立在地上的方盾，像神社门前的狛犬一样守着“这里不许通过”的界线。
+        阿吽携带这面盾牌时，会缓慢恢复耐久</entitydescription.Touhou_Aunn_Square_Shield>
 
-
-
-
-
-
-
-    <entityname.Touhou_Sunyori_Ceremony_Rifle>‖color:252,146,147,255‖须臾礼枪‖end‖</entityname.Touhou_Sunyori_Ceremony_Rifle>
-    <entitydescription.Touhou_Sunyori_Ceremony_Rifle>一把来自月都工艺与深海实用主义的折中产物。
-        每一次扣动扳机，都会发出短暂的回响。
-        可升级为‖color:252,146,147,255‖永夜与须臾的礼枪‖end‖
+    <entityname.Touhou_Sunyori_Ceremony_Rifle>‖color:154,124,204,255‖须臾礼枪‖end‖</entityname.Touhou_Sunyori_Ceremony_Rifle>
+    <entitydescription.Touhou_Sunyori_Ceremony_Rifle>一把来自月都工艺与深海实用主义的折中产物。每一次扣动扳机，都会发出短暂的回响。
+        可升级为‖color:154,124,204,255‖永远与须臾的罪孽‖end‖
         使用‖color:gui.yellow‖月华电容匣‖end‖</entitydescription.Touhou_Sunyori_Ceremony_Rifle>
+    <entityname.Touhou_Sunyori_Ceremony_Rifle_Ammo>‖color:154,124,204,255‖月华电容匣‖end‖</entityname.Touhou_Sunyori_Ceremony_Rifle_Ammo>
+    <entitydescription.Touhou_Sunyori_Ceremony_Rifle_Ammo>最基础、也最可靠的供能弹匣。作为‖color:gui.yellow‖须臾礼枪‖end‖或‖color:gui.yellow‖永远与须臾的罪孽‖end‖的弹药</entitydescription.Touhou_Sunyori_Ceremony_Rifle_Ammo>
 
-    <entityname.Touhou_Sunyori_Ceremony_Rifle_Ammo>‖color:252,146,147,255‖须臾电容‖end‖</entityname.Touhou_Sunyori_Ceremony_Rifle_Ammo>
-    <entitydescription.Touhou_Sunyori_Ceremony_Rifle_Ammo>>最基础、也最可靠的供能弹匣。作为‖color:gui.yellow‖须臾礼枪‖end‖或‖color:gui.yellow‖永夜与须臾的礼枪‖end‖的弹药</entitydescription.Touhou_Sunyori_Ceremony_Rifle_Ammo>
-
-    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle>‖color:252,146,147,255‖永夜与须臾的礼枪‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle>
-    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle>一把来自月都工艺与深海实用主义的折中产物。
-        每一次扣动扳机，都能隐约听见其中空灵遥远的回响，似乎是来自遥远的月球。
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle>‖color:154,124,204,255‖永远与须臾的罪孽‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle>一把来自月都工艺与深海实用主义的折中产物。每一次扣动扳机，都能隐约听见其中空灵遥远的回响，似乎是来自遥远的月球。
+        手持时，缓慢恢复眩晕.
         使用‖color:gui.yellow‖月华电容匣‖end‖与‖color:gui.yellow‖五难题宝物弹匣‖end‖</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo01>‖color:154,124,204,255‖蓬莱之玉枝匣‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo01>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo01>你能感到它在发热，像某种活着的根系。
+        弹幕攻击有概率造成：梦消失、长眠不醒的噩梦、虚弱、减速、回响
+        作为‖color:gui.yellow‖永远与须臾的罪孽‖end‖的弹药</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo01>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo02>‖color:154,124,204,255‖火鼠之裘匣‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo02>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo02>弹匣外壳覆着耐热的纹理，摸上去像烧不坏的布。
+        弹幕攻击有概率附加燃烧或爆炸
+        作为‖color:gui.yellow‖永远与须臾的罪孽‖end‖的弹药</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo02>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo03>‖color:154,124,204,255‖燕之子安贝匣‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo03>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo03>一枚温润的“贝”被嵌入匣面，像护符多过像武器部件。
+        每次发射弹幕有概率治愈使用者的伤势
+        作为‖color:gui.yellow‖永远与须臾的罪孽‖end‖的弹药</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo03>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo04>‖color:154,124,204,255‖佛御石之钵匣‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo04>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo04>匣芯像一只倒扣的钵，专门盛放电涌与噪声。
+        命弹幕攻击有概率造成更多眩晕和范围电击
+        作为‖color:gui.yellow‖永远与须臾的罪孽‖end‖的弹药</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo04>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo05>‖color:154,124,204,255‖龙之颈玉匣‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo05>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo05>细长的弹体像被打磨过的玉珠，冷而亮。
+        弹幕攻击造成更多伤害和更多穿甲
+        作为‖color:gui.yellow‖永远与须臾的罪孽‖end‖的弹药</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo05>
+
+    <entityname.Touhou_Hourai_Bullet_Branches>‖color:154,124,204,255‖蓬莱的弹枝‖end‖</entityname.Touhou_Hourai_Bullet_Branches>
+    <entitydescription.Touhou_Hourai_Bullet_Branches>传说真正的蓬莱玉枝来自东海蓬莱山，银为枝，金作茎，果实为玉。而这一件是真是假不得而知，其中暗藏一个缺口。使用‖color:gui.yellow‖弹枝宝玉‖end‖</entitydescription.Touhou_Hourai_Bullet_Branches>
+    <entityname.Touhou_Hourai_Bullet_Branches_Ammo>‖color:154,124,204,255‖弹枝宝玉‖end‖</entityname.Touhou_Hourai_Bullet_Branches_Ammo>
+    <entitydescription.Touhou_Hourai_Bullet_Branches_Ammo>一块散发魔力的玉石，内含复杂而多变的能量。作为‖color:gui.yellow‖蓬莱玉枝‖end‖的弹药</entitydescription.Touhou_Hourai_Bullet_Branches_Ammo>
+
+    <entityname.Touhou_PrayerInjector_Gun>‖color:154,124,204,255‖祈愿注射铳‖end‖</entityname.Touhou_PrayerInjector_Gun>
+    <entitydescription.Touhou_PrayerInjector_Gun>一把能利用治愈魔力的注射铳。
+        使用按钮切换不同治疗能力，命中生物即可进行治疗
+        使用‖color:gui.yellow‖祈愿针剂‖end‖。</entitydescription.Touhou_PrayerInjector_Gun>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo>‖color:154,124,204,255‖祈愿针剂‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo>一支带着淡淡香味的针剂。其中蕴含来自辉夜特制的魔力。作为‖color:gui.yellow‖祈愿注射铳‖end‖的弹药</entitydescription.Touhou_PrayerInjector_Gun_Ammo>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn01>‖color:154,124,204,255‖凝血祈愿针‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn01>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn01>特别魔法凝结的针剂，可以快速止血并简单处理伤势</entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn01>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn02>‖color:154,124,204,255‖清毒祈愿针‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn02>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn02>特别魔法凝结的针剂，可以快速消解毒素</entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn02>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn03>‖color:154,124,204,255‖提神祈愿针‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn03>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn03>特别魔法凝结的针剂，可以短时间提供大量氧气、叫醒队友和缓解伤势</entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn03>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn04>‖color:154,124,204,255‖须臾守护针‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn04>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn04>特别魔法凝结的针剂，可以短时间临时强化身体并屏蔽痛觉，降低攻击伤害，但不会处理伤势</entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn04>
+
+    <entityname.Touhou_Alpha_Omega>‖color:255,0,50,255‖始与终‖end‖</entityname.Touhou_Alpha_Omega>
+    <entitydescription.Touhou_Alpha_Omega>永生。停止。腐化承诺两者，但两者无法并存。每一个结束都需要一个开始，每个开始都需要一个结束。使用‖color:gui.yellow‖阿尔法/欧米茄‖end‖</entitydescription.Touhou_Alpha_Omega>
+    <entityname.Touhou_Alpha_Omega_Ammo>‖color:255,0,50,255‖阿尔法/欧米茄‖end‖</entityname.Touhou_Alpha_Omega_Ammo>
+    <entitydescription.Touhou_Alpha_Omega_Ammo>你很难说清它装的是燃料、还是记忆。但每一次“释放”，都会让某些东西更快抵达尽头。作为‖color:gui.yellow‖始与终‖end‖的弹药</entitydescription.Touhou_Alpha_Omega_Ammo>
+
+    <entityname.Touhou_Weapon_Durability_Bug_Reset_Tool>武器耐久BUG复位工具</entityname.Touhou_Weapon_Durability_Bug_Reset_Tool>
+    <entitydescription.Touhou_Weapon_Durability_Bug_Reset_Tool>用于处理因耐久延时处理原因导致的，巡回后武器耐久为0无法正常使用的情况。放入武器，点击按钮后30秒即可恢复耐久</entitydescription.Touhou_Weapon_Durability_Bug_Reset_Tool>
+
+    <entityname.Touhou_Starsea_Aurora>‖color:255,255,0,255‖星海极光‖end‖</entityname.Touhou_Starsea_Aurora>
+    <entitydescription.Touhou_Starsea_Aurora>以迷你八卦炉为蓝本并以星纹聚焦镜校准的高能激光器——像把一段星海压缩进了导轨。
+        可切换高压模式蓄力射击，双倍消耗弹药
+        按住扳机进行蓄能，伤害与贯穿能力随之变强。
+        使用‖color:gui.yellow‖星尘电容‖end‖。</entitydescription.Touhou_Starsea_Aurora>
+    <entityname.Touhou_Starsea_Aurora_Ammo>‖color:255,255,0,255‖星尘电容‖end‖</entityname.Touhou_Starsea_Aurora_Ammo>
+    <entitydescription.Touhou_Starsea_Aurora_Ammo>一截封装的星屑电容，为星海激光提供稳定的放电脉冲。作为‖color:gui.yellow‖星海极光‖end‖的弹药</entitydescription.Touhou_Starsea_Aurora_Ammo>
+
+    <entityname.Touhou_Assassin_Dagger>刺客匕首</entityname.Touhou_Assassin_Dagger>
+    <entitydescription.Touhou_Assassin_Dagger>光辉与毒液交织融合在一起，并没有相斥崩溃，而是交融在了一起。据说制造这把武器的工匠已失踪许久</entitydescription.Touhou_Assassin_Dagger>
+
+    <entityname.Touhou_Chaos_Wings_Knife>混沌双翼</entityname.Touhou_Chaos_Wings_Knife>
+    <entitydescription.Touhou_Chaos_Wings_Knife>黑与白交织融合在一起，并没有相斥崩溃，而是交融在了一起。据说制造这把武器的工匠已失踪许久</entitydescription.Touhou_Chaos_Wings_Knife>
+
+    <entityname.Touhou_HeartbeatScatter>‖color:60,255,155,255‖心音散射‖color:end‖</entityname.Touhou_HeartbeatScatter>
+    <entitydescription.Touhou_HeartbeatScatter>一把为“无意识的战斗本能”而生的短霰弹枪。乳白与粉金的外壳像被精心包裹的礼物，却在每一次扣动扳机时发出温柔的心电图脉冲——仿佛不是火药在燃烧，而是某种情绪在跳动。
+        使用‖color:gui.yellow‖心音能源核心‖end‖。</entitydescription.Touhou_HeartbeatScatter>
+    <entityname.Touhou_HeartbeatScatter_Ammo>‖color:60,255,155,255‖心音能源核心‖color:end‖</entityname.Touhou_HeartbeatScatter_Ammo>
+    <entitydescription.Touhou_HeartbeatScatter_Ammo>装在透明腔体里的粉色“心核”，像一瓶被封存的悸动。作为‖color:gui.yellow‖心音散射‖end‖的弹药</entitydescription.Touhou_HeartbeatScatter_Ammo>
+
+    <entityname.Touhou_Moriya_Duality_Carbine>‖color:155,255,155,255‖守矢两仪铳‖color:end‖</entityname.Touhou_Moriya_Duality_Carbine>
+    <entitydescription.Touhou_Moriya_Duality_Carbine>一把将神札、注连绳与金属机匣强行“拼”在一起的守矢式法铳。外表是可靠的机械结构：导轨、铆钉、封装舱与锁止机构一应俱全；但枪身深处流动的，却是以信仰为燃料的两仪回路。
+        弹幕攻击将降低目标的眩晕抗性。
+        使用‖color:gui.yellow‖青蛙相信仰核心、白蛇相信仰核心‖end‖。</entitydescription.Touhou_Moriya_Duality_Carbine>
+    <entityname.Touhou_Moriya_Duality_Carbine_Ammo01>‖color:155,255,155,255‖青蛙相信仰核心‖color:end‖</entityname.Touhou_Moriya_Duality_Carbine_Ammo01>
+    <entitydescription.Touhou_Moriya_Duality_Carbine_Ammo01>装入祈铳后点亮“蛙相”的祝水回路。核心内部是一汪明亮的青绿能量液，回路稳定、脉冲柔和，像细雨与潮气一样，不声不响地拖慢一切。作为‖color:gui.yellow‖守矢两仪铳‖end‖的弹药</entitydescription.Touhou_Moriya_Duality_Carbine_Ammo01>
+    <entityname.Touhou_Moriya_Duality_Carbine_Ammo02>‖color:155,255,155,255‖白蛇相信仰核心‖color:end‖</entityname.Touhou_Moriya_Duality_Carbine_Ammo02>
+    <entitydescription.Touhou_Moriya_Duality_Carbine_Ammo02>装入祈铳后点亮“蛇相”的穿刺回路。核心内部的能量更清亮、更锋利，放电节奏像一条收紧的白蛇：短促、精准、直指要害。作为‖color:gui.yellow‖守矢两仪铳‖end‖的弹药</entitydescription.Touhou_Moriya_Duality_Carbine_Ammo02>
+
+    <entityname.Tsukuyomi_Server_Center>‖color:0,116,143,255‖月读服务器中心‖end‖</entityname.Tsukuyomi_Server_Center>
+    <entitydescription.Tsukuyomi_Server_Center>‖color:gui.yellow‖仅联动物品‖end‖。用于为信号接收器充能。八千代活动所需的设备，如果想要离开月读活动，就要为接收器充满能量</entitydescription.Tsukuyomi_Server_Center>
+    <entityname.Touhou_Tsukuyomi_Signal_Receiver>‖color:0,116,143,255‖月读信号接收器‖end‖</entityname.Touhou_Tsukuyomi_Signal_Receiver>
+    <entitydescription.Touhou_Tsukuyomi_Signal_Receiver>‖color:gui.yellow‖仅联动物品‖end‖。插入章鱼腰包中，用于为八千代活动提供信号</entitydescription.Touhou_Tsukuyomi_Signal_Receiver>
+
+    <entityname.Touhou_Octopus_Waist_Pouch>‖color:0,116,143,255‖章鱼腰包‖end‖</entityname.Touhou_Octopus_Waist_Pouch>
+    <entitydescription.Touhou_Octopus_Waist_Pouch>‖color:gui.yellow‖仅联动物品‖end‖。月见八千代装备并插入月读信号接收器后，可以为八千代远离月读时提供能源</entitydescription.Touhou_Octopus_Waist_Pouch>
+
+    <entityname.Touhou_New_Year_Departure_Gift>出港礼物</entityname.Touhou_New_Year_Departure_Gift>
+    <entitydescription.Touhou_New_Year_Departure_Gift>一位自称“老朋友”的人送给你的礼物，包裹非常严实，必须用解构仪拆解才知道里面有什么</entitydescription.Touhou_New_Year_Departure_Gift>
+
+    <entityname.Touhou_External_Pain_Absorber>永远亭伤痛吸收体</entityname.Touhou_External_Pain_Absorber>
+    <entitydescription.Touhou_External_Pain_Absorber>永远亭曾经一度停产的特殊药物。对患者使用后会在一段时间内大大提高其受到药物治疗的效果，也会降低其身体机能和战斗能力</entitydescription.Touhou_External_Pain_Absorber>
+
+    <entityname.Touhou_Antibiotics_Infusion>广谱抗生素浸剂</entityname.Touhou_Antibiotics_Infusion>
+    <entitydescription.Touhou_Antibiotics_Infusion>民间研发的浓缩抗生素，为了方便服用并降低副作用，制作成了浸剂的形式。与原本的广谱抗生素功能几乎相同，但大大节省了运输空间</entitydescription.Touhou_Antibiotics_Infusion>
+
+    <entityname.Touhou_Fusion_Station>融合站</entityname.Touhou_Fusion_Station>
+    <entitydescription.Touhou_Fusion_Station>可以融合特殊材料的工作站，允许将同种共情物进行融合</entitydescription.Touhou_Fusion_Station>
+
+    <entityname.Touhou_Overlock_Coilgun_Ammo_Explosive>超频电磁枪爆破弹药箱</entityname.Touhou_Overlock_Coilgun_Ammo_Explosive>
+    <entitydescription.Touhou_Overlock_Coilgun_Ammo_Explosive>深冬工业重新蚀刻魔法纹路的能量爆破弹药箱，性能被放大数倍，也允许填入更多弹药。（作为电磁枪弹药）</entitydescription.Touhou_Overlock_Coilgun_Ammo_Explosive>
+
+    <entityname.Marisa_Broom>‖color:255,255,0,255‖魔理沙的扫帚‖color:end‖</entityname.Marisa_Broom>
+    <entitydescription.Marisa_Broom>普通的魔法使的扫帚，动力不明。放入电池后还能进一步提高来历不明的推力。</entitydescription.Marisa_Broom>
+
+    <entityname.Touhou_Elegant_Broom>‖color:255,255,0,255‖华丽扫帚‖color:end‖</entityname.Touhou_Elegant_Broom>
+    <entitydescription.Touhou_Elegant_Broom>为了适应水下环境重新制作的扫帚，利用魔力推进的效率更高，同时免去了对电池的依赖，全部由使用者提供推力</entitydescription.Touhou_Elegant_Broom>
+
+    <entityname.Touhou_Elegant_Transport_Broom>‖color:255,255,0,255‖华丽的运输扫帚‖color:end‖</entityname.Touhou_Elegant_Transport_Broom>
+    <entitydescription.Touhou_Elegant_Transport_Broom>稍加改装的华丽扫帚，重心有些难以保持，但运输能力不容小觑</entitydescription.Touhou_Elegant_Transport_Broom>
+
+    <entityname.Touhou_Pride_Amulet>‖color:255,0,0,255‖傲慢护符‖color:end‖</entityname.Touhou_Pride_Amulet>
+    <entitydescription.Touhou_Pride_Amulet>盗火者和他分道扬镳后，这块护符便不知流落到了何处。可以让所有拥有“改装”能力的武器，改装能量恢复速度+50%</entitydescription.Touhou_Pride_Amulet>
+
+    <entityname.Touhou_Star_Moon_Waist_Pouch>星月腰包</entityname.Touhou_Star_Moon_Waist_Pouch>
+    <entitydescription.Touhou_Star_Moon_Waist_Pouch>由精通魔法纹路的匠人手工缝制的昂贵腰包，能与魔力披纱产生更好的效果。同时也具有元素腰带的属性，同样拥有单独的元素瓶槽位。虽然槽位更少，但有了更好的效果。</entitydescription.Touhou_Star_Moon_Waist_Pouch>
 
 
-
-
-
-
-
-
-
-
+    <entityname.Touhou_Mixer_Gun>调音台</entityname.Touhou_Mixer_Gun>
+    <entitydescription.Touhou_Mixer_Gun>把乐器和武器结合，这种设计已有先例，但像调音台这样激进，却是绝无仅有的。插入稀有度越高的唱片，武器的威力越大。使用‖color:gui.yellow‖共鸣核心‖end‖。</entitydescription.Touhou_Mixer_Gun>
+    <entityname.Touhou_Mixer_Gun_Ammo>共鸣核心</entityname.Touhou_Mixer_Gun_Ammo>
+    <entitydescription.Touhou_Mixer_Gun_Ammo>用于提取音乐中每一处音符的能量，即便是简单的音符也能爆发出不容小觑的威力。作为‖color:gui.yellow‖调音台‖end‖的弹药</entitydescription.Touhou_Mixer_Gun_Ammo>
 
 
 
@@ -1999,78 +2102,152 @@
     <entitydescription.Touhou_Empathy_Item>放入共情装置内，佩戴后激活效果</entitydescription.Touhou_Empathy_Item>
     <Character.Touhou_Empathy_Yin_Yang_Orb>阴阳玉</Character.Touhou_Empathy_Yin_Yang_Orb>
     <entitydescription.Touhou_Empathy_Yin_Yang_Orb>对人类伤害降低5%，对非人类伤害增加5%</entitydescription.Touhou_Empathy_Yin_Yang_Orb>
+    <Character.Touhou_Empathy_Yin_Yang_Orb_Lv2>阴阳玉Lv2</Character.Touhou_Empathy_Yin_Yang_Orb_Lv2>
+    <entitydescription.Touhou_Empathy_Yin_Yang_Orb_Lv2>对非人类伤害增加5%</entitydescription.Touhou_Empathy_Yin_Yang_Orb_Lv2>
     <Character.Touhou_Empathy_Yin_Yang_Orb_Needle>阴阳玉（针）</Character.Touhou_Empathy_Yin_Yang_Orb_Needle>
     <entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle>物理伤害抗性减少10%，远程攻击伤害增加5%\n阴阳玉里会射出符札。这到底是什么结构……</entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle>
+    <Character.Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2>阴阳玉（针）Lv2</Character.Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2>
+    <entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2>物理伤害抗性减少5%，远程攻击伤害增加5%\n阴阳玉里会射出符札。这到底是什么结构……</entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2>
     <Character.Touhou_Empathy_Precious_Amulet>珍贵御扎</Character.Touhou_Empathy_Precious_Amulet>
     <entitydescription.Touhou_Empathy_Precious_Amulet>受击时有10%概率减少20%受到的伤害\n对妖怪来说，灵梦的针可以命中穴位。一定是痛并快乐着，才会乐意一直被扎</entitydescription.Touhou_Empathy_Precious_Amulet>
+    <Character.Touhou_Empathy_Precious_Amulet_Lv2>珍贵御扎Lv2</Character.Touhou_Empathy_Precious_Amulet_Lv2>
+    <entitydescription.Touhou_Empathy_Precious_Amulet_Lv2>受击时有20%概率减少20%受到的伤害\n对妖怪来说，灵梦的针可以命中穴位。一定是痛并快乐着，才会乐意一直被扎</entitydescription.Touhou_Empathy_Precious_Amulet_Lv2>
     <Character.Touhou_Empathy_Tea_Cup_Reimu>茶杯灵梦</Character.Touhou_Empathy_Tea_Cup_Reimu>
-    <entitydescription.Touhou_Empathy_Tea_Cup_Reimu>造成的眩晕提高5%，钝器伤提高10%\n你不知道吗？我以前有段时间就是丢坐垫的</entitydescription.Touhou_Empathy_Tea_Cup_Reimu>
+    <entitydescription.Touhou_Empathy_Tea_Cup_Reimu>造成的眩晕提高5%\n你不知道吗？我以前有段时间就是丢坐垫的</entitydescription.Touhou_Empathy_Tea_Cup_Reimu>
+    <Character.Touhou_Empathy_Tea_Cup_Reimu_Lv2>茶杯灵梦Lv2</Character.Touhou_Empathy_Tea_Cup_Reimu_Lv2>
+    <entitydescription.Touhou_Empathy_Tea_Cup_Reimu_Lv2>造成的眩晕提高5%，钝器伤提高10%\n你不知道吗？我以前有段时间就是丢坐垫的</entitydescription.Touhou_Empathy_Tea_Cup_Reimu_Lv2>
     <Character.Touhou_Empathy_Mini_Hakkero>迷你八卦炉</Character.Touhou_Empathy_Mini_Hakkero>
-    <entitydescription.Touhou_Empathy_Mini_Hakkero>造成的烧伤提高5%\n不管是人类还是妖怪，都想试试发射激光的感觉，所以是非常受欢迎的卡牌</entitydescription.Touhou_Empathy_Mini_Hakkero>
+    <entitydescription.Touhou_Empathy_Mini_Hakkero>最大生命值减少8%，造成的烧伤提高8%\n不管是人类还是妖怪，都想试试发射激光的感觉，所以是非常受欢迎的卡牌</entitydescription.Touhou_Empathy_Mini_Hakkero>
+    <Character.Touhou_Empathy_Mini_Hakkero_Lv2>迷你八卦炉Lv2</Character.Touhou_Empathy_Mini_Hakkero_Lv2>
+    <entitydescription.Touhou_Empathy_Mini_Hakkero_Lv2>造成的烧伤提高8%\n不管是人类还是妖怪，都想试试发射激光的感觉，所以是非常受欢迎的卡牌</entitydescription.Touhou_Empathy_Mini_Hakkero_Lv2>
     <Character.Touhou_Empathy_Mini_Hakkero_Missile>迷你八卦炉（导弹）</Character.Touhou_Empathy_Mini_Hakkero_Missile>
     <entitydescription.Touhou_Empathy_Mini_Hakkero_Missile>技能水平下降10%，远程伤害增加8%\n……曾经我是这么觉得的，但其实这单纯只是会提升攻击力下限的好用卡牌</entitydescription.Touhou_Empathy_Mini_Hakkero_Missile>
+    <Character.Touhou_Empathy_Mini_Hakkero_Missile_Lv2>迷你八卦炉（导弹）Lv2</Character.Touhou_Empathy_Mini_Hakkero_Missile_Lv2>
+    <entitydescription.Touhou_Empathy_Mini_Hakkero_Missile_Lv2>技能水平下降5%，远程伤害增加8%\n……曾经我是这么觉得的，但其实这单纯只是会提升攻击力下限的好用卡牌</entitydescription.Touhou_Empathy_Mini_Hakkero_Missile_Lv2>
     <Character.Touhou_Empathy_Tea_Cup_Marisa>茶杯魔理沙</Character.Touhou_Empathy_Tea_Cup_Marisa>
     <entitydescription.Touhou_Empathy_Tea_Cup_Marisa>受到的伤害减少5%\n有人告诉我这是拿到就能无敌的星星，所以我在黑市上买了一大堆，结果是假货</entitydescription.Touhou_Empathy_Tea_Cup_Marisa>
+    <Character.Touhou_Empathy_Tea_Cup_Marisa_Lv2>茶杯魔理沙Lv2</Character.Touhou_Empathy_Tea_Cup_Marisa_Lv2>
+    <entitydescription.Touhou_Empathy_Tea_Cup_Marisa_Lv2>受到的伤害减少5%，眩晕抗性提高5%\n有人告诉我这是拿到就能无敌的星星，所以我在黑市上买了一大堆，结果是假货</entitydescription.Touhou_Empathy_Tea_Cup_Marisa_Lv2>
     <Character.Touhou_Empathy_The_Collector_Lesson>收藏家的教训</Character.Touhou_Empathy_The_Collector_Lesson>
     <entitydescription.Touhou_Empathy_The_Collector_Lesson>巡回完成所有任务后，有30%概率获得1000马克\n盛夏里的连续入室盗窃犯</entitydescription.Touhou_Empathy_The_Collector_Lesson>
+    <Character.Touhou_Empathy_The_Collector_Lesson_Lv2>收藏家的教训Lv2</Character.Touhou_Empathy_The_Collector_Lesson_Lv2>
+    <entitydescription.Touhou_Empathy_The_Collector_Lesson_Lv2>巡回完成任意任务后，有50%概率获得1000马克\n盛夏里的连续入室盗窃犯</entitydescription.Touhou_Empathy_The_Collector_Lesson_Lv2>
     <Character.Touhou_Empathy_Vampire_Fangs>吸血鬼之牙</Character.Touhou_Empathy_Vampire_Fangs>
     <entitydescription.Touhou_Empathy_Vampire_Fangs>远程攻击伤害减少10%，近战攻击伤害增加25%\n符卡？可笑至极。这种敌人，只需咬一口便能解决</entitydescription.Touhou_Empathy_Vampire_Fangs>
+    <Character.Touhou_Empathy_Vampire_Fangs_Lv2>吸血鬼之牙Lv2</Character.Touhou_Empathy_Vampire_Fangs_Lv2>
+    <entitydescription.Touhou_Empathy_Vampire_Fangs_Lv2>远程攻击伤害减少5%，近战攻击伤害增加30%\n符卡？可笑至极。这种敌人，只需咬一口便能解决</entitydescription.Touhou_Empathy_Vampire_Fangs_Lv2>
     <Character.Touhou_Empathy_Half_Of_Half_Spirit>半灵的一半</Character.Touhou_Empathy_Half_Of_Half_Spirit>
-    <entitydescription.Touhou_Empathy_Half_Of_Half_Spirit>技能水平下降10%，远程弹幕附加少量断念，近战攻击有30%概率造成额外10%的伤害\n这不是半个妖梦，而是半个半灵。也就是四分之一</entitydescription.Touhou_Empathy_Half_Of_Half_Spirit>
+    <entitydescription.Touhou_Empathy_Half_Of_Half_Spirit>技能水平下降10%，近战攻击有50%概率造成额外10%的伤害\n这不是半个妖梦，而是半个半灵。也就是四分之一</entitydescription.Touhou_Empathy_Half_Of_Half_Spirit>
+    <Character.Touhou_Empathy_Half_Of_Half_Spirit_Lv2>半灵的一半Lv2</Character.Touhou_Empathy_Half_Of_Half_Spirit_Lv2>
+    <entitydescription.Touhou_Empathy_Half_Of_Half_Spirit_Lv2>技能水平下降10%，远程弹幕附加少量断念，近战攻击有50%概率造成额外20%的伤害\n这不是半个妖梦，而是半个半灵。也就是四分之一</entitydescription.Touhou_Empathy_Half_Of_Half_Spirit_Lv2>
     <Character.Touhou_Empathy_Spare_Half_Spirit>备用半灵</Character.Touhou_Empathy_Spare_Half_Spirit>
     <entitydescription.Touhou_Empathy_Spare_Half_Spirit>血量低于50%时，提高5%攻击伤害\n只有备用半灵的话，它会害羞起来</entitydescription.Touhou_Empathy_Spare_Half_Spirit>
+    <Character.Touhou_Empathy_Spare_Half_Spirit_Lv2>备用半灵Lv2</Character.Touhou_Empathy_Spare_Half_Spirit_Lv2>
+    <entitydescription.Touhou_Empathy_Spare_Half_Spirit_Lv2>血量低于50%时，提高10%攻击伤害\n只有备用半灵的话，它会害羞起来</entitydescription.Touhou_Empathy_Spare_Half_Spirit_Lv2>
     <Character.Touhou_Empathy_Hurricane_Sandals>疾风木屐</Character.Touhou_Empathy_Hurricane_Sandals>
     <entitydescription.Touhou_Empathy_Hurricane_Sandals>移动速度增加5%\n只有天狗才能做到这种主动引发判定欺诈的能力</entitydescription.Touhou_Empathy_Hurricane_Sandals>
+    <Character.Touhou_Empathy_Hurricane_Sandals_Lv2>疾风木屐Lv2</Character.Touhou_Empathy_Hurricane_Sandals_Lv2>
+    <entitydescription.Touhou_Empathy_Hurricane_Sandals_Lv2>移动速度增加10%\n只有天狗才能做到这种主动引发判定欺诈的能力</entitydescription.Touhou_Empathy_Hurricane_Sandals_Lv2>
     <Character.Touhou_Empathy_Phoenix_Tail>不死鸟之尾</Character.Touhou_Empathy_Phoenix_Tail>
     <entitydescription.Touhou_Empathy_Phoenix_Tail>减少10%最大生命值，增加15%烧伤抗性\n在不死的生命看来，一切都只是游戏规则</entitydescription.Touhou_Empathy_Phoenix_Tail>
+    <Character.Touhou_Empathy_Phoenix_Tail_Lv2>不死鸟之尾Lv2</Character.Touhou_Empathy_Phoenix_Tail_Lv2>
+    <entitydescription.Touhou_Empathy_Phoenix_Tail_Lv2>减少5%最大生命值，增加15%烧伤抗性\n在不死的生命看来，一切都只是游戏规则</entitydescription.Touhou_Empathy_Phoenix_Tail_Lv2>
     <Character.Touhou_Empathy_Spell_Card_Of_Preparedness>未雨绸缪之符</Character.Touhou_Empathy_Spell_Card_Of_Preparedness>
     <entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness>攻击伤害减少10%，最大生命值提高10%\n对于魔法使来说最重要的，肯定是保存魔力吧？</entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness>
+    <Character.Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2>未雨绸缪之符Lv2</Character.Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2>
+    <entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2>远程攻击伤害减少5%，最大生命值提高10%\n对于魔法使来说最重要的，肯定是保存魔力吧？</entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2>
     <Character.Touhou_Empathy_Basic_Training_For_Magicians>魔法使的基础练习</Character.Touhou_Empathy_Basic_Training_For_Magicians>
     <entitydescription.Touhou_Empathy_Basic_Training_For_Magicians>最大生命值减少20%，弹幕伤害提高10%\n在魔法使手中它便能变成真正的破坏性兵器。</entitydescription.Touhou_Empathy_Basic_Training_For_Magicians>
+    <Character.Touhou_Empathy_Basic_Training_For_Magicians_Lv2>魔法使的基础练习Lv2</Character.Touhou_Empathy_Basic_Training_For_Magicians_Lv2>
+    <entitydescription.Touhou_Empathy_Basic_Training_For_Magicians_Lv2>最大生命值减少10%，弹幕伤害提高10%\n在魔法使手中它便能变成真正的破坏性兵器。</entitydescription.Touhou_Empathy_Basic_Training_For_Magicians_Lv2>
     <Character.Touhou_Empathy_Essential_Stone_Of_Patience>忍耐的要石</Character.Touhou_Empathy_Essential_Stone_Of_Patience>
     <entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>剩余血量越低，受到的伤害越少，最多减少10%\n防御才是最好的攻击！</entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>
+    <Character.Touhou_Empathy_Essential_Stone_Of_Patience_Lv2>忍耐的要石Lv2</Character.Touhou_Empathy_Essential_Stone_Of_Patience_Lv2>
+    <entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience_Lv2>剩余血量越低，受到的伤害越少，血量需求阈值提高，最多减少10%\n防御才是最好的攻击！</entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience_Lv2>
     <Character.Touhou_Empathy_Essential_Stone_Missile>要石导弹</Character.Touhou_Empathy_Essential_Stone_Missile>
-    <entitydescription.Touhou_Empathy_Essential_Stone_Missile>减少30%移动速度，增加10%最大生命值\n攻击力很高的同时还能当作防御手段。没错，这就是要石。</entitydescription.Touhou_Empathy_Essential_Stone_Missile>
+    <entitydescription.Touhou_Empathy_Essential_Stone_Missile>减少30%移动速度，增加5%最大生命值\n攻击力很高的同时还能当作防御手段。没错，这就是要石。</entitydescription.Touhou_Empathy_Essential_Stone_Missile>
+    <Character.Touhou_Empathy_Essential_Stone_Missile_Lv2>要石导弹Lv2</Character.Touhou_Empathy_Essential_Stone_Missile_Lv2>
+    <entitydescription.Touhou_Empathy_Essential_Stone_Missile_Lv2>减少30%移动速度，增加10%最大生命值\n攻击力很高的同时还能当作防御手段。没错，这就是要石。</entitydescription.Touhou_Empathy_Essential_Stone_Missile_Lv2>
     <Character.Touhou_Empathy_Encouraging_Komainu>激励狛犬</Character.Touhou_Empathy_Encouraging_Komainu>
     <entitydescription.Touhou_Empathy_Encouraging_Komainu>减少5%最大生命值，增加10%近战攻击速度\n高丽野阿吽的能力</entitydescription.Touhou_Empathy_Encouraging_Komainu>
+    <Character.Touhou_Empathy_Encouraging_Komainu_Lv2>激励狛犬Lv2</Character.Touhou_Empathy_Encouraging_Komainu_Lv2>
+    <entitydescription.Touhou_Empathy_Encouraging_Komainu_Lv2>增加10%近战攻击速度\n高丽野阿吽的能力</entitydescription.Touhou_Empathy_Encouraging_Komainu_Lv2>
     <Character.Touhou_Empathy_Guardian_Komainu>守护狛犬</Character.Touhou_Empathy_Guardian_Komainu>
     <entitydescription.Touhou_Empathy_Guardian_Komainu>减少10%友军伤害\n高丽野阿吽的能力</entitydescription.Touhou_Empathy_Guardian_Komainu>
+    <Character.Touhou_Empathy_Guardian_Komainu_Lv2>守护狛犬Lv2</Character.Touhou_Empathy_Guardian_Komainu_Lv2>
+    <entitydescription.Touhou_Empathy_Guardian_Komainu_Lv2>减少10%友军伤害，增加10%咬伤抗性\n高丽野阿吽的能力</entitydescription.Touhou_Empathy_Guardian_Komainu_Lv2>
     <Character.Touhou_Empathy_Aesthetics_Of_Destruction>破坏的美学</Character.Touhou_Empathy_Aesthetics_Of_Destruction>
     <entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction>技能水平降低20%，攻击伤害增加10%\n弹幕在被破坏的那一刻才最美丽。而且也更轻松。</entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction>
+    <Character.Touhou_Empathy_Aesthetics_Of_Destruction_Lv2>破坏的美学Lv2</Character.Touhou_Empathy_Aesthetics_Of_Destruction_Lv2>
+    <entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction_Lv2>技能水平降低20%，所有攻击伤害增加10%\n弹幕在被破坏的那一刻才最美丽。而且也更轻松。</entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction_Lv2>
     <Character.Touhou_Empathy_Annoying_UFO>恼人的UFO</Character.Touhou_Empathy_Annoying_UFO>
-    <entitydescription.Touhou_Empathy_Annoying_UFO>减少10%眩晕抗性，获得长眠不醒的噩梦时，增加5%攻击伤害。否则增加5%最大生命值\n看过很多UFO的照片吧？但是从来没发生过宇宙战争。因为UFO只是单纯想飞才飞而已</entitydescription.Touhou_Empathy_Annoying_UFO>
+    <entitydescription.Touhou_Empathy_Annoying_UFO>减少30%眩晕抗性，获得长眠不醒的噩梦时，增加5%攻击伤害。否则增加5%最大生命值\n看过很多UFO的照片吧？但是从来没发生过宇宙战争。因为UFO只是单纯想飞才飞而已</entitydescription.Touhou_Empathy_Annoying_UFO>
+    <Character.Touhou_Empathy_Annoying_UFOLv2>恼人的UFO Lv2</Character.Touhou_Empathy_Annoying_UFOLv2>
+    <entitydescription.Touhou_Empathy_Annoying_UFOLv2>减少10%眩晕抗性，获得长眠不醒的噩梦时，增加5%攻击伤害。否则增加5%最大生命值\n看过很多UFO的照片吧？但是从来没发生过宇宙战争。因为UFO只是单纯想飞才飞而已</entitydescription.Touhou_Empathy_Annoying_UFOLv2>
     <Character.Touhou_Empathy_Lunatic_Moon>疯狂之月</Character.Touhou_Empathy_Lunatic_Moon>
     <entitydescription.Touhou_Empathy_Lunatic_Moon>无法获得精神抗性，增加5%技能水平\n果然月亮（确实）超酷啊！</entitydescription.Touhou_Empathy_Lunatic_Moon>
+    <Character.Touhou_Empathy_Lunatic_Moon_Lv2>疯狂之月Lv2</Character.Touhou_Empathy_Lunatic_Moon_Lv2>
+    <entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>增加5%技能水平\n果然月亮（确实）超酷啊！</entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>
     <Character.Touhou_Empathy_Torch_Of_Burning_Life>燃烧生命的火把</Character.Touhou_Empathy_Torch_Of_Burning_Life>
-    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>持续获得烧伤，增加10%攻击速度\n看她的火把时肯定不会觉得平静舒畅。</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>持续获得烧伤和精神病，增加10%攻击速度\n看她的火把时肯定不会觉得平静舒畅。</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
+    <Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>燃烧生命的火把Lv2</Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>持续获得精神病，增加10%攻击速度\n看她的火把时肯定不会觉得平静舒畅。</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
     <Character.Touhou_Empathy_Ice_Fairy>冰之妖精</Character.Touhou_Empathy_Ice_Fairy>
-    <entitydescription.Touhou_Empathy_Ice_Fairy>增加25%远程攻击散布，远程攻击伤害增加9%\n对于冰之妖精来说这就是最强的证明</entitydescription.Touhou_Empathy_Ice_Fairy>
+    <entitydescription.Touhou_Empathy_Ice_Fairy>增加30%远程攻击散布，远程攻击伤害增加9%\n对于冰之妖精来说这就是最强的证明</entitydescription.Touhou_Empathy_Ice_Fairy>
+    <Character.Touhou_Empathy_Ice_Fairy_Lv2>冰之妖精Lv2</Character.Touhou_Empathy_Ice_Fairy_Lv2>
+    <entitydescription.Touhou_Empathy_Ice_Fairy_Lv2>增加20%远程攻击散布，远程攻击伤害增加9%\n对于冰之妖精来说这就是最强的证明</entitydescription.Touhou_Empathy_Ice_Fairy_Lv2>
     <Character.Touhou_Empathy_Pebble_Hat>小石子帽子</Character.Touhou_Empathy_Pebble_Hat>
-    <entitydescription.Touhou_Empathy_Pebble_Hat>减少15%物理伤害抗性，增加10%攻击伤害\n难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Touhou_Empathy_Pebble_Hat>
+    <entitydescription.Touhou_Empathy_Pebble_Hat>减少15%物理伤害抗性，增加5%攻击伤害\n难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Touhou_Empathy_Pebble_Hat>
+    <Character.Touhou_Empathy_Pebble_Hat_Lv2>小石子帽子Lv2</Character.Touhou_Empathy_Pebble_Hat_Lv2>
+    <entitydescription.Touhou_Empathy_Pebble_Hat_Lv2>减少10%物理伤害抗性，增加5%所有攻击伤害\n难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Touhou_Empathy_Pebble_Hat_Lv2>
     <Character.Touhou_Empathy_Shanghai_Doll>上海人偶</Character.Touhou_Empathy_Shanghai_Doll>
     <entitydescription.Touhou_Empathy_Shanghai_Doll>人偶能量超过50%后，增加10%最大生命值\n从动作看来像是拥有自我意识，但人偶是没有自我的。大概吧……</entitydescription.Touhou_Empathy_Shanghai_Doll>
+    <Character.Touhou_Empathy_Shanghai_Doll_Lv2>上海人偶Lv2</Character.Touhou_Empathy_Shanghai_Doll_Lv2>
+    <entitydescription.Touhou_Empathy_Shanghai_Doll_Lv2>人偶能量超过10%后，增加10%最大生命值\n从动作看来像是拥有自我意识，但人偶是没有自我的。大概吧……</entitydescription.Touhou_Empathy_Shanghai_Doll_Lv2>
     <Character.Touhou_Empathy_Lively_Powerlessness>活泼的无力</Character.Touhou_Empathy_Lively_Powerlessness>
     <entitydescription.Touhou_Empathy_Lively_Powerlessness>攻击伤害减少5%，最大生命值增加5%\n弹幕游戏！？而且敌人会从各种地方出现吧。那如果不全方位攻击不就要死了吗！</entitydescription.Touhou_Empathy_Lively_Powerlessness>
+    <Character.Touhou_Empathy_Lively_Powerlessness_Lv2>活泼的无力Lv2</Character.Touhou_Empathy_Lively_Powerlessness_Lv2>
+    <entitydescription.Touhou_Empathy_Lively_Powerlessness_Lv2>最大生命值增加5%\n弹幕游戏！？而且敌人会从各种地方出现吧。那如果不全方位攻击不就要死了吗！</entitydescription.Touhou_Empathy_Lively_Powerlessness_Lv2>
     <Character.Touhou_Empathy_Crazy_Silence>疯狂的寂静</Character.Touhou_Empathy_Crazy_Silence>
     <entitydescription.Touhou_Empathy_Crazy_Silence>攻击伤害减少5%，眩晕抗性增加10%\n哎，玩弹幕游戏真是辛苦啊。特别是大家经常对身后毫无防备。</entitydescription.Touhou_Empathy_Crazy_Silence>
+    <Character.Touhou_Empathy_Crazy_Silence_Lv2>疯狂的寂静Lv2</Character.Touhou_Empathy_Crazy_Silence_Lv2>
+    <entitydescription.Touhou_Empathy_Crazy_Silence_Lv2>眩晕抗性增加10%\n哎，玩弹幕游戏真是辛苦啊。特别是大家经常对身后毫无防备。</entitydescription.Touhou_Empathy_Crazy_Silence_Lv2>
     <Character.Touhou_Empathy_Tranquil_Shimmer>静谧的闪耀</Character.Touhou_Empathy_Tranquil_Shimmer>
     <entitydescription.Touhou_Empathy_Tranquil_Shimmer>攻击伤害减少5%，增加10%debuff抗性\n没事没事。我会好好攻击的。</entitydescription.Touhou_Empathy_Tranquil_Shimmer>
+    <Character.Touhou_Empathy_Tranquil_Shimmer_Lv2>静谧的闪耀Lv2</Character.Touhou_Empathy_Tranquil_Shimmer_Lv2>
+    <entitydescription.Touhou_Empathy_Tranquil_Shimmer_Lv2>增加10%debuff抗性\n没事没事。我会好好攻击的。</entitydescription.Touhou_Empathy_Tranquil_Shimmer_Lv2>
     <Character.Touhou_Empathy_Maid_Knife>女仆飞刀</Character.Touhou_Empathy_Maid_Knife>
     <entitydescription.Touhou_Empathy_Maid_Knife>减少5%最大生命值，减少10%射击散布\n直到能瞄准并贯穿妖精为止，都没有做女仆的资格。</entitydescription.Touhou_Empathy_Maid_Knife>
+    <Character.Touhou_Empathy_Maid_Knife_Lv2>女仆飞刀Lv2</Character.Touhou_Empathy_Maid_Knife_Lv2>
+    <entitydescription.Touhou_Empathy_Maid_Knife_Lv2>减少10%射击散布\n直到能瞄准并贯穿妖精为止，都没有做女仆的资格。</entitydescription.Touhou_Empathy_Maid_Knife_Lv2>
     <Character.Touhou_Empathy_Maid_Knife_Bouncing>女仆飞刀（跳弹）</Character.Touhou_Empathy_Maid_Knife_Bouncing>
     <entitydescription.Touhou_Empathy_Maid_Knife_Bouncing>减少5%最大生命值，增加5%对非人类伤害\n射击变得华丽真是太好了，攻击方式就是越花哨越好</entitydescription.Touhou_Empathy_Maid_Knife_Bouncing>
+    <Character.Touhou_Empathy_Maid_Knife_Bouncing_Lv2>女仆飞刀（跳弹）Lv2</Character.Touhou_Empathy_Maid_Knife_Bouncing_Lv2>
+    <entitydescription.Touhou_Empathy_Maid_Knife_Bouncing_Lv2>增加5%对非友方伤害\n射击变得华丽真是太好了，攻击方式就是越花哨越好</entitydescription.Touhou_Empathy_Maid_Knife_Bouncing_Lv2>
     <Character.Touhou_Empathy_The_Miser_Lesson>守财奴的教诲</Character.Touhou_Empathy_The_Miser_Lesson>
     <entitydescription.Touhou_Empathy_The_Miser_Lesson>巡回完成所有任务后，有10%概率获得简单零件\n既然河童能伸长手臂，那肯定是利用这一招来网罗万物的</entitydescription.Touhou_Empathy_The_Miser_Lesson>
+    <Character.Touhou_Empathy_The_Miser_Lesson_Lv2>守财奴的教诲Lv2</Character.Touhou_Empathy_The_Miser_Lesson_Lv2>
+    <entitydescription.Touhou_Empathy_The_Miser_Lesson_Lv2>巡回完成任意任务后，有20%概率获得简单零件\n既然河童能伸长手臂，那肯定是利用这一招来网罗万物的</entitydescription.Touhou_Empathy_The_Miser_Lesson_Lv2>
     <Character.Touhou_Empathy_The_Dilemma_Of_Capitalism>资本主义的困境</Character.Touhou_Empathy_The_Dilemma_Of_Capitalism>
     <entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism>巡回获得的经验减少15%，金钱增加5%\n背后有人在操纵着这一切。而我会将其彻底摧毁。</entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism>
+    <Character.Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2>资本主义的困境Lv2</Character.Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2>
+    <entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2>巡回获得的金钱增加5%\n背后有人在操纵着这一切。而我会将其彻底摧毁。</entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2>
     <Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return>平安归来蛙护身符</Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return>
     <entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return>攻击伤害减少5%，物理伤害抗性增加5%\n据说带着这个护身符便能平安回家。</entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return>
+    <Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2>平安归来蛙护身符Lv2</Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2>
+    <entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2>物理伤害抗性增加5%\n据说带着这个护身符便能平安回家。</entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2>
     <Character.Touhou_Empathy_Snake_Skin_Amulet>放入蛇蜕的护身符</Character.Touhou_Empathy_Snake_Skin_Amulet>
     <entitydescription.Touhou_Empathy_Snake_Skin_Amulet>移动速度减少10%，远程攻击伤害增加5%\n据说带着这个护身符就能身强体健</entitydescription.Touhou_Empathy_Snake_Skin_Amulet>
+    <Character.Touhou_Empathy_Snake_Skin_Amulet_Lv2>放入蛇蜕的护身符Lv2</Character.Touhou_Empathy_Snake_Skin_Amulet_Lv2>
+    <entitydescription.Touhou_Empathy_Snake_Skin_Amulet_Lv2>移动速度减少5%，远程攻击伤害增加5%\n据说带着这个护身符就能身强体健</entitydescription.Touhou_Empathy_Snake_Skin_Amulet_Lv2>
     <Character.Touhou_Empathy_Boundary_Of_The_Screen>画面的界线</Character.Touhou_Empathy_Boundary_Of_The_Screen>
     <entitydescription.Touhou_Empathy_Boundary_Of_The_Screen>眩晕抗性降低5%，技能水平提高5%\n许多人因其话题性对它兴趣满满，是一张高人气卡牌</entitydescription.Touhou_Empathy_Boundary_Of_The_Screen>
+    <Character.Touhou_Empathy_Boundary_Of_The_Screen_Lv2>画面的界线Lv2</Character.Touhou_Empathy_Boundary_Of_The_Screen_Lv2>
+    <entitydescription.Touhou_Empathy_Boundary_Of_The_Screen_Lv2>技能水平提高5%\n许多人因其话题性对它兴趣满满，是一张高人气卡牌</entitydescription.Touhou_Empathy_Boundary_Of_The_Screen_Lv2>
     <Character.Touhou_Empathy_Season_Of_The_Item>道具的季节</Character.Touhou_Empathy_Season_Of_The_Item>
     <entitydescription.Touhou_Empathy_Season_Of_The_Item>物理伤害抗性降低5%，最大生命值提高5%\n她是道具携带者，身上带着符卡或者生命的碎片</entitydescription.Touhou_Empathy_Season_Of_The_Item>
+    <Character.Touhou_Empathy_Season_Of_The_Item_Lv2>道具的季节Lv2</Character.Touhou_Empathy_Season_Of_The_Item_Lv2>
+    <entitydescription.Touhou_Empathy_Season_Of_The_Item_Lv2>最大生命值提高5%\n她是道具携带者，身上带着符卡或者生命的碎片</entitydescription.Touhou_Empathy_Season_Of_The_Item_Lv2>
 
 
     <!--凭依效果-->
@@ -2136,5 +2313,7 @@
     <talentdescription.Hyouibana_Satori>所有攻击附加长眠不醒的噩梦</talentdescription.Hyouibana_Satori>
     <talentname.Hyouibana_Tewi>凭依因幡天为</talentname.Hyouibana_Tewi>
     <talentdescription.Hyouibana_Tewi>移动速度增加10%。获得灵气紊乱15%的抗性</talentdescription.Hyouibana_Tewi>
+    <talentname.Hyouibana_Kaguya>凭依辉夜</talentname.Hyouibana_Kaguya>
+    <talentdescription.Hyouibana_Kaguya>增益效果时间延长30%。获得10%出血抗性</talentdescription.Hyouibana_Kaguya>
 
 </infotexts>

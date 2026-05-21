@@ -12,6 +12,21 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25"/>
             </Abilities>
         </AbilityGroupEffect>
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl"/>
+                <AbilityConditionInWater invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" stackable="false" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Wind_God_Girl_NotInWater" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl"/>
@@ -44,7 +59,7 @@
         </AbilityGroupEffect>
         <AbilityGroupInterval interval="3.0">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxvalue="0.05" skillidentifier="Touhou_Magic"/>

@@ -51,7 +51,7 @@
     <talentname.Spell_Card_Recycle_Unlocked>Alchemical Infinity</talentname.Spell_Card_Recycle_Unlocked>
     <talentdescription.Spell_Card_Recycle_Unlocked>Bottled element purchase price –‖color:gui.green‖25%‖end‖; +‖color:gui.green‖5%‖end‖ ‖color:gui.orange‖physical and burn resistance to both hands‖end‖. Unlock recipe: recycle ‖color:gui.orange‖Sun/Moon Spell Cards‖end‖.</talentdescription.Spell_Card_Recycle_Unlocked>
     <talentname.Magic_Breakthrough>Magic Breakthrough</talentname.Magic_Breakthrough>
-    <talentdescription.Magic_Breakthrough>Crafted item quality +‖color:gui.green‖1‖end‖. If wearing Patchouli+/Marisa+/Flandre+/Alice+/Emma+ outfits, quality +‖color:gui.green‖1‖end‖ more.</talentdescription.Magic_Breakthrough>
+    <talentdescription.Magic_Breakthrough>Crafted item quality +‖color:gui.green‖1‖end‖. If wearing Patchouli+/Marisa+/Flandre+/Alice+/Ema+/Hiro+ outfits, quality +‖color:gui.green‖1‖end‖ more.</talentdescription.Magic_Breakthrough>
     <talentname.Foul_Potion_Unlocked>Inverted Hermit</talentname.Foul_Potion_Unlocked>
     <talentdescription.Foul_Potion_Unlocked>Magic material crafting speed +‖color:gui.green‖50%‖end‖; poison effects +‖color:gui.green‖20%‖end‖. Unlock recipe: ‖color:gui.orange‖Foul Potion‖end‖.</talentdescription.Foul_Potion_Unlocked>
     <talentname.Touhou_Buff>Upright Hermit</talentname.Touhou_Buff>
@@ -88,7 +88,9 @@
     <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>Reduce friendly fire by 15%; Gain 20% physical and burn resistance and are harder to detect.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect05>Fantasy Entry – Emma</afflictionname.Gensokyo_Divinggear_Unlocked_Effect05>
     <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>Reduce friendly fire by 15%; increase skill levels by 40%, +15% max HP.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>
-<!--幻想入爱丽丝未完成-->
+    <afflictionname.Gensokyo_Divinggear_Unlocked_Effect06>Fantasy Entry - Hiro</afflictionname.Gensokyo_Divinggear_Unlocked_Effect06>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>Reduces friendly fire damage by 15% and increases danmaku damage by 20%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>
+    <!--幻想入爱丽丝未完成-->
 
     <!--Fairy Class-->
     <!--Fairy Birth-->
@@ -168,7 +170,7 @@
     <talentname.Gensokyo_Divinggear_Unlocked_Yousei>Fantasy Entry – Child of Nature</talentname.Gensokyo_Divinggear_Unlocked_Yousei>
     <talentdescription.Gensokyo_Divinggear_Unlocked_Yousei>Gain ‖color:gui.green‖1‖end‖ point to all skills and magic at the end of each voyage.</talentdescription.Gensokyo_Divinggear_Unlocked_Yousei>
     <talentname.Hermes_Yousei>Triple Greatness – Child of Nature</talentname.Hermes_Yousei>
-    <talentdescription.Hermes_Yousei>Unlock recipe: Philosopher’s Stone.</talentdescription.Hermes_Yousei>
+    <talentdescription.Hermes_Yousei>Increases maximum vitality and physical damage resistance by 5%.</talentdescription.Hermes_Yousei>
     <talentname.MEID_Unlocked_Yousei>Magic Genius – Child of Nature</talentname.MEID_Unlocked_Yousei>
     <talentdescription.MEID_Unlocked_Yousei>Unlock recipes: P-Point (Red) (Efficient Synthesis), MEID.</talentdescription.MEID_Unlocked_Yousei>
     <talentname.Gensokyo_Banquet_Yousei>Banquet – Child of Nature</talentname.Gensokyo_Banquet_Yousei>

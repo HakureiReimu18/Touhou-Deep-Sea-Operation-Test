@@ -80,9 +80,7 @@
                                   thermalgoggles="false" showdeadcharacters="false" showtexts="false"/>
                 </Containable>
                 <SlotIcon slotindex="0" texture="%ModDir%/Images/General_Items/StatusMonitorUI.png" sourcerect="0,0,64,64" origin="0.5,0.5"/>
-                <SubContainer capacity="2" maxstacksize="8">
-                    <Containable items="smallitem,Power_Bank" excludeditems="toolbelt,toolbox,bandolier,clothing,healthscanner,thermalgoggles"/>
-                </SubContainer>
+
             </ItemContainer>
             <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false"
                        showtexts="false"/>
@@ -106,7 +104,7 @@
             <Item identifier="Magic_Material" amount="2"/>
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="20">
-            <RequiredSkill identifier="weapons" level="50"/>
+            <RequiredSkill identifier="weapons" level="20"/>
             <RequiredItem identifier="Nitori_gear"/>
             <RequiredItem identifier="Score_Point"/>
             <RequiredItem identifier="Touhou_Plant_Extract"/>
@@ -152,8 +150,8 @@
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.9" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="1" probabilitymultiplier="0.85"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85"/>
-            <SkillModifier skillidentifier="mechanical" skillvalue="15"/>
-            <SkillModifier skillidentifier="electrical" skillvalue="10"/>
+            <SkillModifier skillidentifier="mechanical" skillvalue="25"/>
+            <SkillModifier skillidentifier="electrical" skillvalue="15"/>
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="-15"/>
 
             <StatusEffect type="OnWearing" target="Character" interval="5">

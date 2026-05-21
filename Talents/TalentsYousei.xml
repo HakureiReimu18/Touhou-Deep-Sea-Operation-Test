@@ -735,11 +735,20 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--三重伟大 解锁配方：贤者之石-->
+    <!--三重伟大 增加5%最大生命值和物理伤害抗性-->
     <Talent identifier="Hermes_Yousei">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Hermes_Yousei"/>
-        <AddedRecipe itemidentifier="Seven_Elements_Alchemical"/>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.05"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="4.9">
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.95"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--魔法天才 解锁配方：MEID-->

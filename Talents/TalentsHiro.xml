@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+    <Talent identifier="HiroTalent">
+        <Icon texture="%ModDir%/Images/Talents/HiroTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.HiroTalent"/>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect03" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect03" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" duration="1.0" stackable="false">
+                            <Affliction identifier="HiroTalent_Witch_Transformation" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupInterval interval="2.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect03" invert="true"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.5" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="HiroTalent_Witch_Transformation" amount="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionHasAffliction afflictionidentifier="HiroTalent_Witch_Transformation" minimumPercentage="0.99"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect03" invert="true"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Drinks_Effect03" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="HiroTalent_Witch_Transformation_End" amount="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnGainMissionExperience">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionHasAffliction afflictionidentifier="HiroTalent_Witch_Transformation_End" minimumPercentage="0.99"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyValue multiplyvalue="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionHasAffliction afflictionidentifier="HiroTalent_Witch_Transformation" minimumPercentage="0.99"/>
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+                <AbilityConditionCharacter targettype="Any">
+                    <Conditional EmaTalent_Witch_Factor="gt 0"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+
+        <!--Lua内容-->
+        <AbilityGroupInterval maxtriggercount="1">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionHasAffliction afflictionidentifier="No_Effects_Hiro" invert="true"/>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.01"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" delay="1.0" disabledeltatime="true">
+                            <Affliction identifier="HiroTalent_Death_Loop_Health_Effect" amount="300"/>
+                            <Affliction identifier="HiroTalent_Death_Loop_Health_Strengthen_Effect" amount="300"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+<!--                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+                            <LuaHook name="Touhou_Hiro_Death_Loop_Trigger" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>-->
+                <CharacterAbilityApplyStatusEffectsToAllies allowself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" delay="1.0">
+                            <Affliction identifier="No_Effects_Hiro" strength="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+</Talents>

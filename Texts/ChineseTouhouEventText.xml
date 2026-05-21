@@ -51,7 +51,7 @@
     <EventText.aya_join.c13>最后，她突然脸色一变，慌张地对你问道：“那个船员，是不是一个叫犬走椛的白狼天狗？”</EventText.aya_join.c13>
     <EventText.aya_join.o14>“你猜对了。我在之前的一个站点捡到了身上证件和零花钱都被同伴带走的她，然后帮她补办了证件一路带着她寻找同伴。”</EventText.aya_join.o14>
     <EventText.aya_join.c14>射命丸文的表情十分精彩。半晌，她对你说道：“额……这位船长，能不能帮我个忙？”她很努力地想要冷静下来，只是她的手抖得不成样子表明了她的内心活动有多么剧烈。</EventText.aya_join.c14>
-    <EventText.aya_join.c15>“帮我去买些礼物……这是清单，你千万别看！把清单给商人他就知道要做什么了……”她把一张小纸条塞到你手中，然后说道：“救救咱吧，不然椛椛要把咱生吞了的！”</EventText.aya_join.c15>
+    <EventText.aya_join.c15>“帮我去买些礼物……这是清单，你千万别看！把清单给礼物倾销商他就知道要做什么了……”她把一张小纸条塞到你手中，然后说道：“救救咱吧，不然椛椛要把咱生吞了的！”</EventText.aya_join.c15>
     <EventText.aya_join.o15>接过清单</EventText.aya_join.o15>
     <EventText.aya_join.o16>“大新闻……？算了，正好缺人，你要来的话也行。不过，你的翅膀是怎么回事？”</EventText.aya_join.o16>
     <EventText.aya_join.o17>“小姐，对于一个记者来说恐怕潜艇上还是太危险了一点，抱歉我不能同意你的请求。”</EventText.aya_join.o17>
@@ -67,7 +67,7 @@
     <EventText.aya_join.c20>“啊！真是非常感谢！之后还请多多关照我就先去找椛椛了再见！”少女说完了这些话后就火急火燎地离开了。</EventText.aya_join.c20>
     <EventText.aya_join.o23>“真是……看起来，未来的航行会有趣很多了呢。”</EventText.aya_join.o23>
     <EventText.aya_join.c21>射命丸文入组</EventText.aya_join.c21>
-    <EventText.aya_join.c22>“就把清单给商人就行了，我的命运可都在你手上了！”</EventText.aya_join.c22>
+    <EventText.aya_join.c22>“就把清单给礼物倾销商就行了，我的命运可都在你手上了！”</EventText.aya_join.c22>
 
     <!--妹红入组事件文本-->
     <EventText.mokou_join.c1>当你结束了潜航，出色地完成了一次危险的航行后，其他船员都会拿着分发的赏金去好好享受劫后余生的时光。毕竟，每一次下潜都是九死一生的冒险，而像你们这样的队伍，每天都有数以百记在木卫二的各个角落悄然消失。人总是会死的，所以必须在生命无忧时抓紧欢纵。 　　但是他们能享受，你不行。毕竟，你是船长，你要去找站点总督洽谈事务，要把站点工程部的工程师们找来修缮船体，还有那些武器弹药和各种必需品的补充，这些都需要你来操心。</EventText.mokou_join.c1>
@@ -438,6 +438,58 @@
     <EventText.Touhou_Normal_Mission01.c1>”好想躺平，好累，好想睡觉……“，少女翻动手中的文件，抬起疲倦的眼睛看了你一眼，”你是来找委托吧，这是最新的任务，需要有经验的船长，你能胜任吗。“，说完，少女把一张清单塞到你的手上</EventText.Touhou_Normal_Mission01.c1>
     <EventText.Touhou_Hard_Mission01.c1>”要是魔理沙在就好了，一个人实在忙不过来啊……“，少女把玩着手中的文件，认真地看着你，”你是来找委托吧，这是最新的任务，旅途很危险，务必小心。“，说完，少女把一张清单塞到你的手上</EventText.Touhou_Hard_Mission01.c1>
 
+    <!--幽灵生物事件-->
+    <!--序幕完成-->
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1>“等一下，你就是那个解决了幽灵鲨的船长吧？”</EventText.Touhou_Spectral_Mission.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1>举手之劳</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1>少女上下打量了你一番：“有兴趣帮委托人调查一下附近的海域吗，我完全不想掺和这里面的事情。”少女递过来一张清单，她看起来很是疲惫</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1>当然可以</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1.c1>“帮大忙了。”少女打了个哈欠，伸着懒腰走开了</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2>还是下次吧</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2.c1>“好吧好吧，那边还有些轻松的委托，你看看吧。”少女拿回清单，轻飘飘地走开了</EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--第一幕完成-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1>“对了，上次那个委托人看你做的不错，决定让你处理后续的那些怪物。”少女凑近你的耳边小声说道，“据说这次赏金翻倍哦。”</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1>有这种好事</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1>少女重新审视了你一眼：“只是说起来轻巧，我还是建议你做好准备，任务有一定危险。”少女递过来一张清单，她看起来有些担心</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1>交给我吧</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1.c1>“千万小心。”少女眼神中夹杂意思忧虑，轻轻地走开了</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2>还是下次吧</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2.c1>“好吧好吧，那边还有些轻松的委托，你看看吧。”少女拿回清单，轻飘飘地走开了</EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--第二幕完成-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1>“啊，是你。”少女有些惊喜，“委托人对你很满意，你做的很出色哦。”</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1>过奖了</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1>“清理掉航道上的危险后，探测队很快定位到了幽灵生物的巢穴。只需要调查巢穴就行了，不会有什么危险的。”少女递过来一张清单，她看起来轻松不少</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1>放心交给我</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1.c1>“一路平安。”少女挥挥手后，轻轻地走开了</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2>还是下次吧</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2.c1>“好吧，那边还有些轻松的委托，你看看吧。”少女拿回清单，轻飘飘地走开了</EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--找到灵异珠-虚空文本-->
+    <Eventtext.Touhou_Monster_Spectral_Mission05_Completed.c1>这是一枚非常奇特的球体，只有相关的人才了解了</Eventtext.Touhou_Monster_Spectral_Mission05_Completed.c1>
+
+    <!--第三幕完成-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1>“果然是你。”少女有揉了揉眼睛，确认是你后，急忙说道：“出大事了。”</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1>发生什么了？</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1>“本来回收那颗灵异珠后，应该交给紫她们处理的，结果现在航道里出现了个大家伙，虽然它还没造成什么破坏，不过大量的幽灵生物都开始朝哪个方向聚集了。”少女递过来一张长长的清单，她看起来有些焦虑</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1>我马上去处理</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1>“千万小心，这是一点心意，希望你们能顺利解决。”少女挥挥手后，匆匆走开了</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2>还是下次吧</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1>“好吧，还有些别的委托，你看看吧。”少女拿回清单，匆匆走开了</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--往世来生完成-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1>“原来是你。”少女有揉了揉眼睛，“不愧是你，居然解决了那么大的家伙。”</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1>责任所在</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1>“这段时间辛苦你了，也算帮我省去了不少麻烦。”少女递过来一张表单，她看起来心情愉悦</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1>收下</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1>“这是委托人给你的礼物，一会儿就送到你的船上，这段时间你可算出名了。”少女挥挥手后，笑着走开了</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2>欣然收下</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2>
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1>“这是委托人给你的礼物，一会儿就送到你的船上，这段时间多亏你了，终于能歇一会儿了。”少女拿回清单，笑着走开了</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1>
+
+    <!--幽灵生物完成-->
+    <EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.s1.c1>“原来是你，真是有用不完的精力，这些是最近的委托，你看看吧。”少女递过来一张清单</EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.s1.c1>
+
     <!--真相不明的黑暗-->
     <Eventtext.FindHoujuuNue.c1>浑浊的海水中涌现一股奇异的光芒，一只体型巨大的奇特生物从暗中涌现</Eventtext.FindHoujuuNue.c1>
     <Eventtext.FindHoujuuNue.c2>你的攻击效果显著，鵺的精神似乎清醒了些许，也变得更加凶险</Eventtext.FindHoujuuNue.c2>
@@ -540,6 +592,13 @@
     <!--联盟投放寄染生物-->
     <Eventtext.Touhou_OutpostDestroyMission12_Event_End_Mission.c1>联盟的隐形潜艇向你投放了怪异的生物</Eventtext.Touhou_OutpostDestroyMission12_Event_End_Mission.c1>
 
+    <!--八云紫给予新手奖励-->
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1>“又是新来的船长吗？”一个模糊的人影似乎在叫你，声音听起来极具魔力，让人分不清来源</EventText.Touhou_Yukari_Newbie_Rewards.c1>
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1.s1.c1>“看来已经来过了呢……”随着声音远去，那道身影也不再关注你</EventText.Touhou_Yukari_Newbie_Rewards.c1.s1.c1>
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1>你想看清那个人影，但不知出于什么缘故，每次视图看清，视线便无法再集中，就像被刻意避开了一样</EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1>
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1>请问你是谁？</EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1>
+    <EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1.c1>“这位船长，你看上去气色不太好啊，你的老朋友有些东西要给你。”说着，神不知鬼不觉地在你手里塞了一个小盒子，“有些困了，我先走了，bye bye~”</EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1.c1>
+
     <!--卫星事件-->
     <Eventtext.Touhou_Kappa_Satellite_Event.c1>自从废弃空间站在无光海原出现后，大部分河童都离开了站点，转而去废弃空间站周边建立研究设施，只剩下少部分河童经营自己的商铺。\n但面前这位似乎有着不一样的事情要做。</Eventtext.Touhou_Kappa_Satellite_Event.c1>
     <Eventtext.Touhou_Kappa_Satellite_Event.c2>少女似乎正沉浸在手中的设计图里，完全没注意到你的存在。</Eventtext.Touhou_Kappa_Satellite_Event.c2>
@@ -562,5 +621,4 @@
     <Eventtext.Touhou_Kappa_Satellite_Event.c2.o1.c3.o1.c2.o1.c1.o1.c1>“和人类交流很困难的，这样吧，以后找我买东西，我都给你打九折”</Eventtext.Touhou_Kappa_Satellite_Event.c2.o1.c3.o1.c2.o1.c1.o1.c1>
     <Eventtext.Touhou_Kappa_Satellite_Event.c2.o1.c3.o2>找这些材料可费了我好大工夫，我现在更想要报酬</Eventtext.Touhou_Kappa_Satellite_Event.c2.o1.c3.o2>
     <Eventtext.Touhou_Kappa_Satellite_Event.c2.o1.c3.o2.c1>“给你打九五折还不够吗，真是贪心啊……”少女在手里的设计图上写下一个名字，送到你手里，“最近的火箭计划忙得我头疼，在海底天天这么压抑更头疼了。你帮我找到这个人，这个人之前参与过火箭项目，后来自己退出了项目，如果能把他请回来，我就轻松多啦。”</Eventtext.Touhou_Kappa_Satellite_Event.c2.o1.c3.o2.c1>
-
 </infotexts>

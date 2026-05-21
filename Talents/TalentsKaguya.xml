@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+    <Talent identifier="KaguyaTalent" >
+        <Icon texture="%ModDir%/Images/Talents/KaguyaTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.KaguyaTalent"/>
+        <AbilityGroupInterval Interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="bleeding" multiplier="0.75"/>
+                <CharacterAbilityModifyResistance resistanceid="Reiki_Side_Effect" multiplier="0.75"/>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--佛体的金刚石天赋-->
+    <Talent identifier="Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond_Talent" IsHiddenExtraTalent="true" >
+        <Icon texture="%ModDir%/Images/Talents/KaguyaTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond_Talent"/>
+        <AbilityGroupInterval Interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9"/>
+                <CharacterAbilityModifyResistance resistanceid="oxygenlow" multiplier="0.7"/>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--火蜥蜴之盾天赋-->
+    <Talent identifier="Touhou_Kaguya_Treasure_Fire_Lizard_Shield_Talent" IsHiddenExtraTalent="true" >
+        <Icon texture="%ModDir%/Images/Talents/KaguyaTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.Touhou_Kaguya_Treasure_Fire_Lizard_Shield_Talent"/>
+        <AbilityGroupInterval Interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+                <AbilityConditionHasItem tags="Touhou_Kaguya_Treasure_Fire_Lizard_Shield"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="0.9"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+                <AbilityConditionHasItem tags="Touhou_Kaguya_Treasure_Fire_Lizard_Shield"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="burn" addedmultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="3.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+                <AbilityConditionHasItem tags="Touhou_Kaguya_Treasure_Fire_Lizard_Shield"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects SetUser="false">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <ReduceAffliction type="burn" amount="0.3"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="3.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+                <AbilityConditionInSubmarine submarinetype="Player" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="0.25"/>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--无限的生命之泉天赋-->
+    <Talent identifier="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life_Talent" IsHiddenExtraTalent="true" >
+        <Icon texture="%ModDir%/Images/Talents/KaguyaTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life_Talent"/>
+        <AbilityGroupInterval maxtriggercount="1" Interval="1.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+                <AbilityConditionHasItem tags="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life"/>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life_Effect" amount="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="1.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+                <AbilityConditionHasItem tags="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life_Effect"/>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life_Effect" amount="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+    <!--蓬莱的玉枝天赋-->
+    <Talent identifier="Touhou_Kaguya_Treasure_Penglai_Jade_Branch_Talent" IsHiddenExtraTalent="true" >
+        <Icon texture="%ModDir%/Images/Talents/KaguyaTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.Touhou_Kaguya_Treasure_Penglai_Jade_Branch_Talent"/>
+        <AbilityGroupInterval Interval="4.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1"/>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Kaguya_Treasure_Penglai_Jade_Branch_Effect" amount="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+</Talents>

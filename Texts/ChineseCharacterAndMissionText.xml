@@ -273,18 +273,9 @@
     <missionfailure.Touhou_Special_Material_Scanner_Mission>满身疮痍</missionfailure.Touhou_Special_Material_Scanner_Mission>
     <missionsuccess.Touhou_Special_Material_Scanner_Mission>材料已收集完毕</missionsuccess.Touhou_Special_Material_Scanner_Mission>
 
-    <!--往世来生-->
-    <!--待完成-->
-    <missionname.Touhou_Monster_Boss_Mission01>往世来生</missionname.Touhou_Monster_Boss_Mission01>
-    <missiondescription.Touhou_Monster_Boss_Mission01>航路上的幽灵生物被清理后，反而滋生了一团巨大且无法定位的光球，游荡在各个海域间，站点管理员重金寻找有意者前去调查事件的真相
-    </missiondescription.Touhou_Monster_Boss_Mission01>
-    <missionheader.Touhou_Monster_Boss_Mission01>调查完成</missionheader.Touhou_Monster_Boss_Mission01>
-    <missionmessage.Touhou_Monster_Boss_Mission01>幽灵生物似乎正在守护着什么</missionmessage.Touhou_Monster_Boss_Mission01>
-    <missionfailure.Touhou_Monster_Boss_Mission01>满身疮痍</missionfailure.Touhou_Monster_Boss_Mission01>
-    <missionsuccess.Touhou_Monster_Boss_Mission01>真相尚未明确</missionsuccess.Touhou_Monster_Boss_Mission01>
-
     <!--幽灵生物-序幕-->
     <missionname.Touhou_Monster_Spectral_Mission01>幽灵生物-序幕一</missionname.Touhou_Monster_Spectral_Mission01>
+    <missionname.Touhou_Monster_Spectral_Mission01_Collection>幽灵生物-序幕一</missionname.Touhou_Monster_Spectral_Mission01_Collection>
     <missiondescription.Touhou_Monster_Spectral_Mission01>
         继小幽灵出现后，航路上出现了形态类似的幽灵生物——一群幽灵鲨对来往的潜艇造成了很大烦扰，解决掉它们就能拿到丰厚的赏金，但更多人对这件事背后的原因相当感兴趣
     </missiondescription.Touhou_Monster_Spectral_Mission01>
@@ -296,6 +287,7 @@
 
     <!--幽灵生物-序章-->
     <missionname.Touhou_Monster_Spectral_Mission02>幽灵生物-序幕二</missionname.Touhou_Monster_Spectral_Mission02>
+    <missionname.Touhou_Monster_Spectral_Mission02_Collection>幽灵生物-序幕二</missionname.Touhou_Monster_Spectral_Mission02_Collection>
     <missiondescription.Touhou_Monster_Spectral_Mission02>
         航路上出现了形态类似的幽灵生物——一群幽灵鲨和幽灵爬行者对来往的潜艇造成了很大烦扰，解决掉它们就能拿到丰厚的赏金，但更多人对这件事背后的原因相当感兴趣
     </missiondescription.Touhou_Monster_Spectral_Mission02>
@@ -307,6 +299,7 @@
 
     <!--幽灵生物-第一幕-->
     <missionname.Touhou_Monster_Spectral_Mission03>幽灵生物-第一幕</missionname.Touhou_Monster_Spectral_Mission03>
+    <missionname.Touhou_Monster_Spectral_Mission03_Collection>幽灵生物-第一幕</missionname.Touhou_Monster_Spectral_Mission03_Collection>
     <missiondescription.Touhou_Monster_Spectral_Mission03>
         幽灵生物的出现原因似乎与炼金实验室过去的一次实验有关，如今还出现了更加危险的幽灵鲸，造成的相当大的破坏。但他们对此绝口不提，这其中一定有什么隐藏的联系……总之得先保护周遭居民的安全
     </missiondescription.Touhou_Monster_Spectral_Mission03>
@@ -318,6 +311,7 @@
 
     <!--幽灵生物-第二幕-->
     <missionname.Touhou_Monster_Spectral_Mission04>幽灵生物-第二幕</missionname.Touhou_Monster_Spectral_Mission04>
+    <missionname.Touhou_Monster_Spectral_Mission04_Collection>幽灵生物-第二幕</missionname.Touhou_Monster_Spectral_Mission04_Collection>
     <missiondescription.Touhou_Monster_Spectral_Mission04>
         清除幽灵鲨、幽灵爬行者和幽灵鲸后，本来应当平息的海域却出现了更加危险的存在，常规声呐无法探测，只能凭视野观察确认是一种高速移动的生物，必须尽快清理以保证海域的安全
     </missiondescription.Touhou_Monster_Spectral_Mission04>
@@ -331,9 +325,42 @@
     <missionname.Touhou_Monster_Spectral_Mission05>幽灵生物-第三幕</missionname.Touhou_Monster_Spectral_Mission05>
     <missiondescription.Touhou_Monster_Spectral_Mission05>这是首次发现洞穴里徘徊的幽灵生物——在此之前，幽灵生物都只出现在航道中，这次任务必须保密，只有极少数人知道这次行动</missiondescription.Touhou_Monster_Spectral_Mission05>
     <missionheader.Touhou_Monster_Spectral_Mission05>调查完成</missionheader.Touhou_Monster_Spectral_Mission05>
-    <missionmessage.Touhou_Monster_Spectral_Mission05>源头竟然是一颗灵异珠</missionmessage.Touhou_Monster_Spectral_Mission05>
+    <missionmessage.Touhou_Monster_Spectral_Mission05>源头竟然是一颗从未见过的灵异珠，当地相关部门应该会解决此事</missionmessage.Touhou_Monster_Spectral_Mission05>
     <missionfailure.Touhou_Monster_Spectral_Mission05>满身疮痍</missionfailure.Touhou_Monster_Spectral_Mission05>
     <missionsuccess.Touhou_Monster_Spectral_Mission05>真相略微清晰</missionsuccess.Touhou_Monster_Spectral_Mission05>
+
+    <!--往世来生-->
+    <missionname.Touhou_Monster_Spectral_Mission06>往世来生</missionname.Touhou_Monster_Spectral_Mission06>
+    <missionname.Touhou_Monster_Spectral_Mission06_Collection>往世来生</missionname.Touhou_Monster_Spectral_Mission06_Collection>
+    <missiondescription.Touhou_Monster_Spectral_Mission06>幽灵守护者</missiondescription.Touhou_Monster_Spectral_Mission06>
+    <missionheader.Touhou_Monster_Spectral_Mission06>调查完成</missionheader.Touhou_Monster_Spectral_Mission06>
+    <missionmessage.Touhou_Monster_Spectral_Mission06>那可不像是木卫二上能长出来的东西，真相只有这么简单吗</missionmessage.Touhou_Monster_Spectral_Mission06>
+    <missionfailure.Touhou_Monster_Spectral_Mission06>满身疮痍</missionfailure.Touhou_Monster_Spectral_Mission06>
+    <missionsuccess.Touhou_Monster_Spectral_Mission06>相关部门给出解释：这是灵异珠影响周围生物后，长期聚集不明生物中的一种。</missionsuccess.Touhou_Monster_Spectral_Mission06>
+
+    <!--小型幽灵气息-->
+    <missionname.Touhou_Monster_Spectral_Creature_Clear_Mission01>小型幽灵气息</missionname.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission01>一些零星的幽灵生物正骚扰附近的前哨站，有人请你去解决它们</missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission01>清理完成</missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission01>日常扫除</missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission01>满身疮痍</missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission01>吹灰之力</missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+
+    <!--中型幽灵气息-->
+    <missionname.Touhou_Monster_Spectral_Creature_Clear_Mission02>中型幽灵气息</missionname.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission02>一些幽灵生物正有序地骚扰附近的前哨站，有人请你去解决它们</missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission02>清理完成</missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission02>危险扫除</missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission02>满身疮痍</missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission02>顺利完成</missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+
+    <!--大型幽灵气息-->
+    <missionname.Touhou_Monster_Spectral_Creature_Clear_Mission03>大型幽灵气息</missionname.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission03>一些大体型幽灵生物正骚扰附近的航道，前哨站请你去解决它们</missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission03>清理完成</missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission03>危机解除</missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission03>满身疮痍</missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission03>凯旋</missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission03>
 
     <!--拨乱反正-->
     <missionname.Touhou_Monster_UFO_Clear_Mission>拨乱反正</missionname.Touhou_Monster_UFO_Clear_Mission>
@@ -399,4 +426,6 @@
     <character.Touhou_Spectral_Whale>幽灵鲸</character.Touhou_Spectral_Whale>
     <character.Touhou_Spectral_Runner>幽灵穿梭者</character.Touhou_Spectral_Runner>
     <character.Touhou_Crystal_Carrier>水晶运载体</character.Touhou_Crystal_Carrier>
+    <character.Touhou_Spectral_Piercer>幽灵穿刺者</character.Touhou_Spectral_Piercer>
+    <character.Touhou_Spectral_Guardian>幽灵守护生物</character.Touhou_Spectral_Guardian>
 </infotexts>

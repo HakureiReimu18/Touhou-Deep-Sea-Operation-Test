@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UpgradeModules>
+    <UpgradeCategory name="" identifier="Turret_Spell_Card_Cannon" items="Spell_Card_Cannon"/>
+  <UpgradeModule identifier="Touhou_Turret_Increasedamage" maxlevel="6" categories="Turret_Spell_Card_Cannon" increaseontooltip="5">
+    <Price baseprice="2000" increaselow="+0%" increasehigh="+100%" />
+      <ResourceCost item="fulgurium" amount="4" levels="1-2"/>
+      <ResourceCost item="Power_Point" amount="2" levels="3-4"/>
+      <ResourceCost item="Seven_Elements_Alchemical" amount="2" levels="5-6"/>
+    <MaxLevel tier="1" level="2" />
+    <MaxLevel tier="2" level="4" />
+    <Turret damagemultiplier="+5%" launchimpulse="+5%" />
+      <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="512,896,128,128" origin="0.5,0.5"/>
+  </UpgradeModule>
+</UpgradeModules>

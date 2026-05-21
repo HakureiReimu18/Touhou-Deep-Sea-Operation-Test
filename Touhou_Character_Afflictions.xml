@@ -263,8 +263,8 @@
                 maxstrength="100" HealableInMedicalClinic="false"
                 showinhealthscannerthreshold="100" iconcolors="120,20,20;180,40,40;220,80,80;255,100,100">
         <Effect minstrength="0" maxstrength="100" strengthchange="-0.2">
-            <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="-0.2"/>
-            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="-0.2"/>
+            <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="-0.3"/>
+            <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="-0.3"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Ordinary_Magician.png" sourcerect="0,0,128,128" color="255,10,10,10"/>
     </Affliction>
@@ -320,9 +320,6 @@
                 maxstrength="10"
                 duration="1.0" showinhealthscannerthreshold="100">
         <Effect minstrength="0" maxstrength="10">
-            <StatusEffect type="NotInWater" target="Character" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Wind_God_Girl_NotInWater" strength="50"/>
-            </StatusEffect>
             <StatValue stattype="SwimmingSpeed" value="0.3"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Wind_God_Girl.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
@@ -346,9 +343,9 @@
 
     <!--风神少女-干燥环境效果-->
     <Affliction identifier="Wind_God_Girl_NotInWater" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
-                showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="10"
+                showiconthreshold="100" showinhealthscannerthreshold="100" maxstrength="10" duration="1.0"
                 iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" strengthchange="-10">
+        <Effect minstrength="0" maxstrength="10" >
             <StatValue stattype="SkillGainSpeed" value="0.5"/>
             <StatValue stattype="WalkingSpeed" value="0.2"/>
             <StatValue stattype="RangedAttackSpeed" value="0.1"/>
@@ -390,7 +387,7 @@
     <Affliction identifier="Aya_Weapons" type="Aya_Weapons" isbuff="true" limbspecific="false" hideiconafterdelay="false" maxstrength="10"
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
-<!--            <StatValue stattype="RangedAttackMultiplier" value="0.1"/>-->
+            <StatValue stattype="RangedAttackMultiplier" value="0.05"/>
             <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
             <StatValue stattype="RangedAttackSpeed" value="0.1"/>
         </Effect>
@@ -591,13 +588,21 @@
                 maxstrength="10"
                 duration="1.0" showinhealthscannerthreshold="100" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
         <Effect minstrength="0" maxstrength="10" resistancefor="Phoenix_Burn" minresistance="0.4" maxresistance="0.4">
-            <StatusEffect target="Character" Interval="5.0" disabledeltatime="true" CanGiveMedicalSkill="false">
-                <ReduceAffliction type="damage" strength="0.25"/>
+            <StatusEffect target="Character" Interval="3.0" disabledeltatime="true" CanGiveMedicalSkill="false">
+                <ReduceAffliction type="damage" strength="0.15"/>
                 <ReduceAffliction identifier="Phoenix_Burn" strength="5.0"/>
-                <Reduceaffliction type="burn" amount="0.5"/>
+                <Reduceaffliction type="burn" amount="0.3"/>
             </StatusEffect>
             <StatValue stattype="MaximumHealthMultiplier" value="-0.1"/>
         </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Possessed_By_Phoenix.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--妹红攻击烧伤减抗效果-->
+    <Affliction identifier="Mokou_Talent_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="1" showiconthreshold="100" showinhealthscannerthreshold="100"
+                duration="5.0" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="1" resistancefor="burn,damage" minresistance="-0.25" maxresistance="-0.25"/>
         <Icon texture="%ModDir%/Images/Afflictions/Possessed_By_Phoenix.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
@@ -644,20 +649,20 @@
             </StatusEffect>
             <StatusEffect target="Character" CanGiveMedicalSkill="false">
                 <ReduceAffliction type="damage" amount="6"/>
-                <ReduceAffliction type="burn" amount="4"/>
+                <ReduceAffliction type="burn" amount="5"/>
                 <ReduceAffliction type="oxygenlow" amount="20"/>
                 <ReduceAffliction type="poison" amount="20"/>
-                <ReduceAffliction type="infection" amount="4"/>
+                <ReduceAffliction type="infection" amount="5"/>
                 <ReduceAffliction identifier="Phoenix_Burn" amount="20"/>
                 <ReduceAffliction identifier="paralysis" amount="20"/>
-                <ReduceAffliction type="bleeding" amount="5"/>
+                <ReduceAffliction type="bleeding" amount="10"/>
                 <ReduceAffliction identifier="bloodloss" amount="10"/>
-                <ReduceAffliction identifier="stun" amount="10"/>
+                <ReduceAffliction identifier="stun" amount="100"/>
                 <ReduceAffliction identifier="Psychosis" amount="10"/>
                 <ReduceAffliction type="invertcontrols" amount="10"/>
                 <ReduceAffliction type="alieninfection" amount="10"/>
                 <ReduceAffliction identifier="Aura_Strip" amount="5"/>
-                <ReduceAffliction type="debuff" amount="3"/>
+                <ReduceAffliction type="debuff" amount="5"/>
                 <ReduceAffliction type="fractures" amount="40"/>
                 <ReduceAffliction type="arterialcut" amount="20"/>
                 <ReduceAffliction type="gaze" amount="20"/>
@@ -3175,8 +3180,8 @@
         <Effect minstrength="0" maxstrength="10" resistancefor="psychosis" minresistance="1.0" maxresistance="1.0">
             <StatValue stattype="MovementSpeed" value="-0.15"/>
             <StatValue stattype="MaximumHealthMultiplier" value="-0.15"/>
-            <StatValue stattype="RangedAttackMultiplier" value="-0.25"/>
-            <StatValue stattype="MeleeAttackMultiplier" value="-0.25"/>
+            <StatValue stattype="RangedAttackMultiplier" value="-0.2"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="-0.2"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Hifuu_Club_Renko.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -3402,7 +3407,7 @@
         <Icon texture="%ModDir%/Images/Afflictions/Ema_The_Loathed_One.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
-    <!--魔女化进度-->
+    <!--艾玛魔女化进度-->
     <Affliction name="魔女化进度" identifier="EmaTalent_Witch_Transformation" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
                 hideiconafterdelay="false" maxstrength="100.1"
                 resetbetweenrounds="true" iconcolors="255,255,255;255,255,200;255,255,150;255,255,100">
@@ -3426,7 +3431,7 @@
         <Icon texture="%ModDir%/Images/Afflictions/Ema_The_Loathed_One.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
-    <!--魔女化强制解除进度-->
+    <!--艾玛魔女化强制解除进度-->
     <Affliction name="魔女化强制解除进度" identifier="EmaTalent_Witch_Transformation_End" type="Touhou_Character_Affliction" isbuff="true"
                 limbspecific="false" hideiconafterdelay="false" maxstrength="100.1"
                 resetbetweenrounds="true" showiconthreshold="99" showinhealthscannerthreshold="99"
@@ -3909,9 +3914,7 @@
                 maxstrength="10"
                 showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
         <Effect minstrength="0" maxstrength="10">
-            <StatusEffect target="Character" Interval="1.0" Duration="1.0" CanGiveMedicalSkill="false">
-                <ReduceAffliction type="oxygenlow" strength="1.0"/>
-            </StatusEffect>
+            <StatValue stattype="MovementSpeed" value="0.1"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Lucky_Ground_Rabbit.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -3943,6 +3946,419 @@
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Tewi_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
+
+    <!--永远与须臾的罪人-->
+    <Affliction identifier="Sinner_Of_Eternity_And_The_Ephemeral" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,stun" minresistance="-0.2" maxresistance="-0.2" >
+            <StatValue stattype="RangedAttackMultiplier" value="-0.15"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="-0.4"/>
+            <StatValue stattype="MovementSpeed" value="-0.1"/>
+            <StatValue stattype="DebuffDurationMultiplier" value="-0.15"/>
+            <StatValue stattype="BuffDurationMultiplier" value="0.5"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Sinner_Of_Eternity_And_The_Ephemeral.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--耀眼的龙玉效果-->
+    <Affliction identifier="Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="1" duration="10.0"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.1" maxresistance="0.1" >
+            <StatusEffect target="Character" Interval="1.0" disabledeltatime="true">
+                <ReduceAffliction type="bleeding" amount="0.1"/>
+                <ReduceAffliction type="infection" amount="0.1"/>
+            </StatusEffect>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Sinner_Of_Eternity_And_The_Ephemeral.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--无限的生命之拳临时不死效果-->
+    <Affliction identifier="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="60" resetbetweenrounds="true"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="59" >
+            <AbilityFlag flagtype="CanNotDieToAfflictions"/>
+        </Effect>
+        <Effect minstrength="59" maxstrength="60" />
+        <Icon texture="%ModDir%/Images/Afflictions/Sinner_Of_Eternity_And_The_Ephemeral.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--蓬莱的玉枝效果-->
+    <Affliction identifier="Touhou_Kaguya_Treasure_Penglai_Jade_Branch_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="1" duration="5.0"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" multiplybymaxvitality="false"
+                minvitalitydecrease="-10" maxvitalitydecrease="-10"/>
+        <Icon texture="%ModDir%/Images/Afflictions/Sinner_Of_Eternity_And_The_Ephemeral.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--凭依辉夜-->
+    <Affliction identifier="Hyouibana_Kaguya_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="bleeding" minresistance="0.1" maxresistance="0.1" />
+        <Icon texture="%ModDir%/Images/Afflictions/Sinner_Of_Eternity_And_The_Ephemeral.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--辉夜-完全凭依-->
+    <Affliction identifier="Hyouibana_Effect_Prefect_Kaguya" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="true"
+                showinhealthscannerthreshold="100" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="%ModDir%/Images/Afflictions/Sinner_Of_Eternity_And_The_Ephemeral.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--出血效应-蓬莱山辉夜-->
+    <Affliction name="" identifier="MRE_Kaguya_Effect" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="10"
+                Duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10"/>
+        <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--出血效应-蓬莱山辉夜-收集完成效果-->
+    <Affliction name="" identifier="MRE_Kaguya_Collection_Effect" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="10"
+                Duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10" minskillmultiplier="1.25" maxskillmultiplier="1.25" />
+        <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--辉夜-专属武器效果-->
+    <Affliction identifier="Kaguya_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
+            <StatValue stattype="RangedAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Kaguya_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--超时空辉耀姬-->
+    <Affliction identifier="Princess_Kaguya" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" >
+            <StatValue stattype="RangedAttackMultiplier" value="-0.1"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.3"/>
+            <StatValue stattype="DebuffDurationMultiplier" value="-0.15"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Princess_Kaguya.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--肚子空空-->
+    <Affliction name="肚子空空" identifier="Princess_Kaguya_Hungry" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="100" showiconthreshold="10" showinhealthscannerthreshold="1000" >
+        <Effect minstrength="0" maxstrength="10"/>
+        <Effect minstrength="10" maxstrength="100" minskillmultiplier="1.0" maxskillmultiplier="0.85">
+            <StatValue stattype="ExperienceGainMultiplier" minvalue="0" maxvalue="-0.3"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Princess_Kaguya_Hungry.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--悦耳歌声-->
+    <Affliction name="悦耳歌声" identifier="Princess_Kaguya_Melodious_Voice" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="100" showinhealthscannerthreshold="1000" >
+        <Effect minstrength="0" maxstrength="100" resistancefor="damage" minresistance="0.1" maxresistance="0.1" strengthchange="-0.25">
+            <StatValue stattype="RangedAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Princess_Kaguya_Melodious_Voice.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--辉耀姬-专属武器效果-->
+    <Affliction identifier="Princess_Kaguya_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
+            <StatValue stattype="RangedAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Kaguya_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--月读管理员-->
+    <Affliction identifier="Tsukuyomi_Administrator" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" >
+            <StatValue stattype="RangedAttackMultiplier" value="0.1"/>
+            <StatValue stattype="DebuffDurationMultiplier" value="-0.15"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Tsukuyomi_Administrator.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--电量充沛-->
+    <Affliction name="电量充沛" identifier="Touhou_Octopus_Waist_Pouch_Effect" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                duration="3.1" maxstrength="10" showiconthreshold="100" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="10" />
+        <icon texture="%ModDir%/Images/Afflictions/Princess_Kaguya_Hungry.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--休息时间-->
+    <Affliction name="休息时间" identifier="Tsukuyomi_Administrator_Low_Power" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                duration="3.1" maxstrength="10" showiconthreshold="100" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="10" >
+            <StatValue stattype="RangedAttackMultiplier" value="-0.2"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="-0.2"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Princess_Kaguya_Hungry.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--悦耳歌声-->
+    <Affliction name="悦耳歌声" identifier="Tsukuyomi_Administrator_Melodious_Voice" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="100" showinhealthscannerthreshold="1000" >
+        <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="false" minvitalitydecrease="-10" maxvitalitydecrease="-10" strengthchange="-0.25" >
+            <StatValue stattype="MovementSpeed" value="0.1"/>
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Tsukuyomi_Administrator_Melodious_Voice.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--八千代-专属武器效果-->
+    <Affliction identifier="Yachiyo_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="false" minvitalitydecrease="-10" maxvitalitydecrease="-10" >
+            <StatValue stattype="MovementSpeed" value="0.1"/>
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Kaguya_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+
+    <!--正义的执行者-->
+    <Affliction identifier="Hiro_Executor_Of_Justice" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" >
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.15"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Executor_Of_Justice.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--希罗死亡回溯增加临时生命值-->
+    <Affliction name="希罗死亡回溯增加临时生命值" identifier="HiroTalent_Death_Loop_Health_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="false" maxstrength="60" resetbetweenrounds="true"
+                showiconthreshold="100" showinhealthscannerthreshold="100"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="60" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="-1" strengthchange="-1"/>
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Executor_Of_Justice.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--希罗死亡回溯临时增益-->
+    <Affliction name="希罗死亡回溯临时增益" identifier="HiroTalent_Death_Loop_Health_Strengthen_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="false" maxstrength="10" resetbetweenrounds="true" duration="30.0"
+                showiconthreshold="100" showinhealthscannerthreshold="100"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" >
+            <StatusEffect target="Character">
+                <ParticleEmitter particle="StarDanmuBoom" particleamount="1" anglemin="0" anglemax="360" velocitymin="200" velocitymax="350"
+                                 scalemin="0.1" scalemax="0.2" drawontop="true" colormultiplier="255,0,0,150"/>
+            </StatusEffect>
+            <StatValue stattype="MovementSpeed" value="0.25"/>
+            <StatValue stattype="RangedAttackMultiplier" value="0.35"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="1.0"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Executor_Of_Justice.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--希罗死亡回溯检测-->
+    <Affliction name="希罗死亡回溯检测" identifier="No_Effects_Hiro" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="false" maxstrength="10" resetbetweenrounds="true"
+                showiconthreshold="100" showinhealthscannerthreshold="100"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" />
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Executor_Of_Justice.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--伪证-->
+    <Affliction name="伪证" identifier="Hiro_Pseudo_Buff" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="false" maxstrength="1" resetbetweenrounds="true" duration="15.0"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatusEffect target="Character" disabledeltatime="true">
+                <ParticleEmitter particle="Touhou_Koishi_Unconscious" AngleMax="360" ScaleMultiplier="1,1" ParticlesPerSecond="5"
+                                 ColorMultiplier="255,50,50,200"
+                                 Angle="90" Distance="25" CopyEntityAngle="True" CopyTargetAngle="True"/>
+                <ParticleEmitter particle="Touhou_Koishi_Unconscious" AngleMax="360" ScaleMultiplier="1,1" ParticlesPerSecond="5"
+                                 ColorMultiplier="255,50,50,200"
+                                 Angle="0" Distance="0" CopyEntityAngle="True" CopyTargetAngle="True"/>
+            </StatusEffect>
+            <StatValue stattype="SoundRangeMultiplier" value="-1.0"/>
+            <StatValue stattype="SightRangeMultiplier" value="-1.0"/>
+            <StatusEffect target="Character" indetectable="true"/>
+            <AbilityFlag flagtype="IgnoredByEnemyAI"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Pseudo_Buff.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--希罗魔女化进度-->
+    <Affliction name="魔女化进度" identifier="HiroTalent_Witch_Transformation" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="false" maxstrength="100.1"
+                resetbetweenrounds="true" iconcolors="255,255,255;255,255,200;255,255,150;255,255,100">
+        <Effect minstrength="0" maxstrength="100">
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
+                <Conditional Touhou_Cuisine_Effect03="gt 0"/>
+                <Conditional Touhou_Drinks_Effect03="gt 0"/>
+                <ReduceAffliction identifier="HiroTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+        </Effect>
+        <Effect minstrength="100" maxstrength="100.1" resistancefor="damage,burn" minresistance="0.15" maxresistance="0.15"
+                multiplybymaxvitality="false" minvitalitydecrease="-20" maxvitalitydecrease="-20">
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
+                <Conditional Touhou_Cuisine_Effect03="gt 0"/>
+                <Conditional Touhou_Drinks_Effect03="gt 0"/>
+                <ReduceAffliction identifier="HiroTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+            <StatValue stattype="RangedAttackMultiplier" value="0.15"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.35"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Executor_Of_Justice.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--希罗魔女化强制解除进度-->
+    <Affliction name="魔女化强制解除进度" identifier="HiroTalent_Witch_Transformation_End" type="Touhou_Character_Affliction" isbuff="true"
+                limbspecific="false" hideiconafterdelay="false" maxstrength="100.1"
+                resetbetweenrounds="true" showiconthreshold="99" showinhealthscannerthreshold="99"
+                iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="100"/>
+        <Effect minstrength="100" maxstrength="100.1">
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.5">
+                <ReduceAffliction identifier="HiroTalent_Witch_Transformation" strength="500"/>
+            </StatusEffect>
+            <StatValue stattype="MovementSpeed" value="-0.4"/>
+            <StatValue stattype="RangedAttackMultiplier" value="-0.6"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="-0.6"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Executor_Of_Justice.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+
+
+    <!--彩叶尾巴-->
+    <AfflictionHusk
+            name="彩叶尾巴"
+            identifier="Iroha_Tail_Spawn"
+            type="Iroha_Tail_Spawn"
+            limbspecific="false"
+            targets="human"
+            huskedspeciesname="[speciesname]Touhou_Tail"
+            indicatorlimb="Torso"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            needsair="true"
+            causespeechimpediment="false"
+            treatmentthreshold="1000"
+            dormantthreshold="0"
+            activethreshold="0"
+            transitionthreshold="1000"
+            transformthresholdondeath="1000"
+            sendmessages="false"
+            maxstrength="10"
+            iconcolors="94,54,95;163,73,164;200,191,231">
+        <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0"/>
+        <Effect minstrength="0" maxstrength="10"/>
+    </AfflictionHusk>
+
+    <!--全才适应-->
+    <Affliction identifier="Iroha_Versatile_Adaptation" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" />
+        <Icon texture="%ModDir%/Images/Afflictions/Iroha_Versatile_Adaptation.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--疲惫-->
+    <Affliction name="疲惫" identifier="Touhou_Iroha_Fatigue" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="100" showinhealthscannerthreshold="50" >
+        <Effect minstrength="0" maxstrength="30" />
+        <Effect minstrength="30" maxstrength="100" resistancefor="damage" minresistance="0" maxresistance="-0.2" >
+            <StatValue stattype="MovementSpeed" minvalue="0" value="-0.4"/>
+            <StatValue stattype="RangedAttackMultiplier" minvalue="0" value="-0.35"/>
+            <StatValue stattype="MeleeAttackMultiplier" minvalue="0" value="-0.35"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_Iroha_Fatigue.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--工程师模式-->
+    <Affliction name="工程师模式" identifier="Iroha_Mode_Engineer" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                duration="11.1" maxstrength="1" hideiconafterdelay="true" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="RepairSpeed" value="0.3"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Iroha_Versatile_Adaptation.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--机械师模式-->
+    <Affliction name="机械师模式" identifier="Iroha_Mode_Mechanic" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                duration="11.1" maxstrength="1" hideiconafterdelay="true" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0.15" maxresistance="0.15" >
+            <StatValue stattype="RepairSpeed" value="0.15"/>
+            <StatValue stattype="RepairToolStructureRepairMultiplier" value="0.15"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Iroha_Versatile_Adaptation.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--安全官模式-->
+    <Affliction name="安全官模式" identifier="Iroha_Mode_SafetyOfficer" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                duration="11.1" maxstrength="1" hideiconafterdelay="true" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="1" multiplybymaxvitality="false" minvitalitydecrease="-10" maxvitalitydecrease="-10" >
+            <StatValue stattype="AttackMultiplier" value="0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Iroha_Versatile_Adaptation.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--医生模式-->
+    <Affliction name="医生模式" identifier="Iroha_Mode_Doctor" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                duration="11.1" maxstrength="1" hideiconafterdelay="true" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="MedicalItemApplyingMultiplier" value="0.1"/>
+            <StatValue stattype="MedicalItemEffectivenessMultiplier" value="0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Iroha_Versatile_Adaptation.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--船长模式-->
+    <Affliction name="船长模式" identifier="Iroha_Mode_Captain" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                duration="11.1" maxstrength="1" hideiconafterdelay="true" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="1" resistancefor="psychosis" minresistance="1.0" maxresistance="1.0"/>
+        <icon texture="%ModDir%/Images/Afflictions/Iroha_Versatile_Adaptation.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--创造者模式-->
+    <Affliction name="创造者模式" identifier="Iroha_Mode_Creator" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                duration="11.1" maxstrength="1" hideiconafterdelay="true" showinhealthscannerthreshold="100" >
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="SkillGainSpeed" value="0.5"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Iroha_Versatile_Adaptation.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--月读镜片负面效果累计-->
+    <Affliction name="月读镜片负面效果累计" identifier="Touhou_Tsukuyomi_Stealth_VR_Glasses_Effect" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="300" showiconthreshold="1000" showinhealthscannerthreshold="1000" >
+        <Effect minstrength="0" maxstrength="300" strengthchange="-0.3" />
+        <icon texture="%ModDir%/Images/Afflictions/Iroha_Versatile_Adaptation.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+
+    <!--彩叶-专属武器效果-->
+    <Affliction identifier="Iroha_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="false" minvitalitydecrease="-10" maxvitalitydecrease="-10" >
+            <StatValue stattype="MovementSpeed" value="0.1"/>
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Kaguya_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
 
 
 </Afflictions>

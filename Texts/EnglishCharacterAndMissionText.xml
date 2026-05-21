@@ -249,18 +249,9 @@
     <missionfailure.Touhou_Special_Material_Scanner_Mission>Scarred and battered.</missionfailure.Touhou_Special_Material_Scanner_Mission>
     <missionsuccess.Touhou_Special_Material_Scanner_Mission>All materials have been collected.</missionsuccess.Touhou_Special_Material_Scanner_Mission>
 
-    <!--Past and Future Lives-->
-    <missionname.Touhou_Monster_Boss_Mission01>Past and Future Lives</missionname.Touhou_Monster_Boss_Mission01>
-    <missiondescription.Touhou_Monster_Boss_Mission01>
-        After the small ghosts were cleared, a massive, untrackable photosphere appeared, drifting between sea regions. The station administrator offers a large reward to investigate the truth.
-    </missiondescription.Touhou_Monster_Boss_Mission01>
-    <missionheader.Touhou_Monster_Boss_Mission01>Investigation Complete</missionheader.Touhou_Monster_Boss_Mission01>
-    <missionmessage.Touhou_Monster_Boss_Mission01>The spectral creature seems to be guarding something.</missionmessage.Touhou_Monster_Boss_Mission01>
-    <missionfailure.Touhou_Monster_Boss_Mission01>Scarred and battered.</missionfailure.Touhou_Monster_Boss_Mission01>
-    <missionsuccess.Touhou_Monster_Boss_Mission01>The truth remains unclear.</missionsuccess.Touhou_Monster_Boss_Mission01>
-
     <!--Spectral Creature – Prologue-->
     <missionname.Touhou_Monster_Spectral_Mission01>Spectral Creature – Prologue</missionname.Touhou_Monster_Spectral_Mission01>
+    <missionname.Touhou_Monster_Spectral_Mission01_Collection>Spectral Creature – Prologue</missionname.Touhou_Monster_Spectral_Mission01_Collection>
     <missiondescription.Touhou_Monster_Spectral_Mission01>
         After the appearance of small ghosts, similar ghostly creatures—Spectral Sharks—began harassing submarines. Eliminating them yields a rich bounty, but many are more curious about the cause.
     </missiondescription.Touhou_Monster_Spectral_Mission01>
@@ -271,6 +262,7 @@
 
     <!--Spectral Creature – Prologue II-->
     <missionname.Touhou_Monster_Spectral_Mission02>Spectral Creature – Prologue II</missionname.Touhou_Monster_Spectral_Mission02>
+    <missionname.Touhou_Monster_Spectral_Mission02_Collection>Spectral Creature – Prologue II</missionname.Touhou_Monster_Spectral_Mission02_Collection>
     <missiondescription.Touhou_Monster_Spectral_Mission02>
         Ghostly beings—Spectral Sharks and Spectral Crawlers—now trouble passing submarines. Eliminating them yields bounty, but the cause remains of great interest.
     </missiondescription.Touhou_Monster_Spectral_Mission02>
@@ -281,6 +273,7 @@
 
     <!--Spectral Creature – Act I-->
     <missionname.Touhou_Monster_Spectral_Mission03>Spectral Creature – Act I</missionname.Touhou_Monster_Spectral_Mission03>
+    <missionname.Touhou_Monster_Spectral_Mission03_Collection>Spectral Creature – Act I</missionname.Touhou_Monster_Spectral_Mission03_Collection>
     <missiondescription.Touhou_Monster_Spectral_Mission03>
         The appearance of spectral creatures seems tied to a past alchemy experiment. Now even more dangerous Spectral Whales have emerged, causing major damage. The lab remains silent—surely hiding something. First, protect nearby residents.
     </missiondescription.Touhou_Monster_Spectral_Mission03>
@@ -291,6 +284,7 @@
 
     <!--Spectral Creature – Act II-->
     <missionname.Touhou_Monster_Spectral_Mission04>Spectral Creature – Act II</missionname.Touhou_Monster_Spectral_Mission04>
+    <missionname.Touhou_Monster_Spectral_Mission04_Collection>Spectral Creature – Act II</missionname.Touhou_Monster_Spectral_Mission04_Collection>
     <missiondescription.Touhou_Monster_Spectral_Mission04>
         After clearing Spectral Sharks, Crawlers, and Whales, an even more dangerous entity appeared. Standard sonar can’t detect it—only visual confirmation shows a high-speed creature. Eliminate it quickly to secure the sea.
     </missiondescription.Touhou_Monster_Spectral_Mission04>
@@ -299,15 +293,47 @@
     <missionfailure.Touhou_Monster_Spectral_Mission04>Scarred and battered.</missionfailure.Touhou_Monster_Spectral_Mission04>
     <missionsuccess.Touhou_Monster_Spectral_Mission04>Some clues have emerged.</missionsuccess.Touhou_Monster_Spectral_Mission04>
 
-    <!--Spectral Creature – Act III-->
-    <missionname.Touhou_Monster_Spectral_Mission05>Spectral Creature – Act III</missionname.Touhou_Monster_Spectral_Mission05>
-    <missiondescription.Touhou_Monster_Spectral_Mission05>
-        For the first time, spectral creatures were found in caves rather than routes. This mission is classified; only a select few know of it.
-    </missiondescription.Touhou_Monster_Spectral_Mission05>
+    <!--Spectral Creatures - Act III-->
+    <missionname.Touhou_Monster_Spectral_Mission05>Spectral Creatures - Act III</missionname.Touhou_Monster_Spectral_Mission05>
+    <missiondescription.Touhou_Monster_Spectral_Mission05>This marks the first discovery of spectral creatures roaming inside caves—until now, they had only ever appeared along the shipping lanes. This mission must remain confidential; only a handful of people even know the operation is taking place.</missiondescription.Touhou_Monster_Spectral_Mission05>
     <missionheader.Touhou_Monster_Spectral_Mission05>Investigation Complete</missionheader.Touhou_Monster_Spectral_Mission05>
-    <missionmessage.Touhou_Monster_Spectral_Mission05>The source turned out to be a Spirit Pearl.</missionmessage.Touhou_Monster_Spectral_Mission05>
-    <missionfailure.Touhou_Monster_Spectral_Mission05>Scarred and battered.</missionfailure.Touhou_Monster_Spectral_Mission05>
-    <missionsuccess.Touhou_Monster_Spectral_Mission05>The truth becomes slightly clearer.</missionsuccess.Touhou_Monster_Spectral_Mission05>
+    <missionmessage.Touhou_Monster_Spectral_Mission05>The source turned out to be an occult orb unlike anything we’ve ever seen. The relevant local authorities should handle it from here.</missionmessage.Touhou_Monster_Spectral_Mission05>
+    <missionfailure.Touhou_Monster_Spectral_Mission05>Battered and Bruised</missionfailure.Touhou_Monster_Spectral_Mission05>
+    <missionsuccess.Touhou_Monster_Spectral_Mission05>The truth is a little clearer</missionsuccess.Touhou_Monster_Spectral_Mission05>
+
+    <!--Past and Present-->
+    <missionname.Touhou_Monster_Spectral_Mission06>Past and Present</missionname.Touhou_Monster_Spectral_Mission06>
+    <missionname.Touhou_Monster_Spectral_Mission06_Collection>Past and Present</missionname.Touhou_Monster_Spectral_Mission06_Collection>
+    <missiondescription.Touhou_Monster_Spectral_Mission06>Spectral Guardian</missiondescription.Touhou_Monster_Spectral_Mission06>
+    <missionheader.Touhou_Monster_Spectral_Mission06>Investigation Complete</missionheader.Touhou_Monster_Spectral_Mission06>
+    <missionmessage.Touhou_Monster_Spectral_Mission06>That doesn’t look like something that could grow on Europa. Is the truth really that simple?</missionmessage.Touhou_Monster_Spectral_Mission06>
+    <missionfailure.Touhou_Monster_Spectral_Mission06>Battered and Bruised</missionfailure.Touhou_Monster_Spectral_Mission06>
+    <missionsuccess.Touhou_Monster_Spectral_Mission06>The authorities’ explanation: this is one of the unidentified creatures that formed after the occult orb affected nearby life and drew strange organisms together over a long period of time.</missionsuccess.Touhou_Monster_Spectral_Mission06>
+
+    <!--Minor Spectral Presence-->
+    <missionname.Touhou_Monster_Spectral_Creature_Clear_Mission01>Minor Spectral Presence</missionname.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission01>Scattered spectral creatures are harassing a nearby outpost. Someone has asked you to deal with them.</missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission01>Cleanup Complete</missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission01>Routine sweep</missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission01>Battered and Bruised</missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+    <missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission01>Easy as dusting</missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission01>
+
+    <!--Medium Spectral Presence-->
+    <missionname.Touhou_Monster_Spectral_Creature_Clear_Mission02>Moderate Spectral Presence</missionname.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission02>Some spectral creatures are harassing a nearby outpost in an organized manner. Someone has asked you to eliminate them.</missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission02>Cleanup Complete</missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission02>Hazard sweep</missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission02>Battered and Bruised</missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+    <missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission02>Completed smoothly</missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission02>
+
+    <!--Major Spectral Presence-->
+    <missionname.Touhou_Monster_Spectral_Creature_Clear_Mission03>Major Spectral Presence</missionname.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission03>Several large spectral creatures are harassing the nearby shipping lanes. The outpost wants you to deal with them.</missiondescription.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission03>Cleanup Complete</missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission03>Crisis averted</missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission03>Battered and Bruised</missionfailure.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+    <missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission03>Triumphant return</missionsuccess.Touhou_Monster_Spectral_Creature_Clear_Mission03>
+
 
     <!--Restore Order-->
     <missionname.Touhou_Monster_UFO_Clear_Mission>Restore Order</missionname.Touhou_Monster_UFO_Clear_Mission>
@@ -377,4 +403,6 @@
     <character.Touhou_Spectral_Whale>Spectral Whale</character.Touhou_Spectral_Whale>
     <character.Touhou_Spectral_Runner>Spectral Runner</character.Touhou_Spectral_Runner>
     <character.Touhou_Crystal_Carrier>Crystal Carrier</character.Touhou_Crystal_Carrier>
+    <character.Touhou_Spectral_Piercer>Spectral Piercer</character.Touhou_Spectral_Piercer>
+    <character.Touhou_Spectral_Guardian>Spectral Guardian Creature</character.Touhou_Spectral_Guardian>
 </infotexts>

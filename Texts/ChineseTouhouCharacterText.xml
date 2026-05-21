@@ -74,7 +74,7 @@
     <entitydescription.Marisa_Hat_Eclipse_Anniversary>‖color:255,255,0,255‖普通的魔法使的帽子‖color:end‖</entitydescription.Marisa_Hat_Eclipse_Anniversary>
     <talentname.Casket_Of_Star>普通的魔法使</talentname.Casket_Of_Star>
     <talentdescription.Casket_Of_Star>当你身着‖color:gui.orange‖魔理沙装束+‖end‖时，从‖color:gui.yellow‖物理伤害、烧伤‖end‖中恢复得更快：
-        每次远程攻击都会缓慢增长自身的‖color:gui.yellow‖“魔力过载”‖end‖，‖color:gui.yellow‖魔力过载‖end‖会减少自身‖color:gui.orange‖最大生命值和远程攻击速度‖end‖，最高‖color:gui.red‖20%‖end‖
+        每次远程攻击都会缓慢增长自身的‖color:gui.yellow‖“魔力过载”‖end‖，‖color:gui.yellow‖魔力过载‖end‖会减少自身‖color:gui.orange‖最大生命值和远程攻击速度‖end‖，最高‖color:gui.red‖30%‖end‖
         ‖color:gui.yellow‖魔力过载‖end‖会随时间自然恢复，‖color:gui.orange‖魔法能力‖end‖越低，‖color:gui.yellow‖魔力过载‖end‖增长速度也会越快
         \n造成的伤害提高‖color:gui.green‖4%‖end‖，远程伤害提高‖color:gui.green‖4%‖end‖，远程弹幕伤害（非炮塔）提高‖color:gui.green‖4%‖end‖，造成的‖color:gui.yellow‖烧伤‖end‖提高‖color:gui.green‖4%‖end‖，对非人类生物造成的伤害提高‖color:gui.green‖4%‖end‖
         \n次远程弹幕有‖color:gui.green‖25%‖end‖概率额外造成‖color:gui.yellow‖梦消失‖end‖
@@ -120,6 +120,12 @@
     <entityname.Reimu_Eclipse_Anniversary_Plus>‖color:255,81,75,255‖灵梦装束+（周年庆）‖color:end‖</entityname.Reimu_Eclipse_Anniversary_Plus>
     <entitydescription.Reimu_Eclipse_Anniversary_Plus>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
         她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Eclipse_Anniversary_Plus>
+    <entityname.Reimu_Eclipse_Valentines>‖color:255,81,75,255‖灵梦装束（情人节）‖color:end‖</entityname.Reimu_Eclipse_Valentines>
+    <entitydescription.Reimu_Eclipse_Valentines>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
+        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Eclipse_Valentines>
+    <entityname.Reimu_Eclipse_Valentines_Plus>‖color:255,81,75,255‖灵梦装束+（情人节）‖color:end‖</entityname.Reimu_Eclipse_Valentines_Plus>
+    <entitydescription.Reimu_Eclipse_Valentines_Plus>‖color:255,81,75,255‖博丽灵梦是位于幻想乡内的神社——博丽神社的现任巫女\n————《东方求闻史纪》。
+        她平日居住在博丽神社中，在有工作或异变发生时也会出现在幻想乡内的各个地方乃至幻想乡外的世界中。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Reimu_Eclipse_Valentines_Plus>
     <entityname.Reimu_Decalmask>‖color:255,81,75,255‖灵梦贴纸面具‖color:end‖</entityname.Reimu_Decalmask>
     <entitydescription.Reimu_Decalmask>‖color:255,81,75,255‖戴在脸上意外的不错呢。‖color:end‖</entitydescription.Reimu_Decalmask>
     <talentname.Innocent_Treasures>童祭</talentname.Innocent_Treasures>
@@ -175,7 +181,10 @@
     <talentname.Immortal_Human>不死鸟</talentname.Immortal_Human>
     <talentdescription.Immortal_Human>当你身着‖color:255,72,36,255‖妹红装束+‖end‖时，
         减少‖color:gui.red‖10%‖end‖最大生命值
-        一个巡回中所有妹红装束+仅有一次，生命值归零后‖color:gui.green‖有额外5秒的清醒时间‖end‖，期间伤势会迅速恢复，但会短暂下降移动速度和造成的伤害。
+        一个巡回中所有妹红装束+仅有一次，生命值归零后‖color:gui.green‖可触发涅槃，有额外10秒的清醒时间‖end‖，期间伤势会迅速恢复，但会短暂下降移动速度和造成的伤害。
+        触发涅槃前，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖
+        触发涅槃后，降低‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖
+        对附带烧伤的目标造成的弹幕伤害将进一步降低其‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖
         \n造成的‖color:gui.yellow‖烧伤‖end‖增加‖color:gui.green‖10%‖end‖</talentdescription.Immortal_Human>
     <afflictionname.Mokou_Weapons>不老不死的竹林引路人</afflictionname.Mokou_Weapons>
     <afflictiondescription.Mokou_Weapons>如果灵魂与肉体分离，那么肉体会立即毁灭，而灵魂会在喜欢的地方制造生长出新的肉体。不过，虽然不会死亡，仍然会饿、会痛。</afflictiondescription.Mokou_Weapons>
@@ -217,6 +226,12 @@
     <entitydescription.Tenshi_Plus>‖color:5,105,195,200‖作为“比那名居一族”，她能够操纵要石，通过插下和拔出要石平息或引发地震。 能够引发地表下沉、土崩石摧级别的灾难，甚至动摇整个幻想乡的地基。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Tenshi_Plus>
     <entityname.Tenshi_Hat>‖color:5,105,195,200‖天子的桃帽‖color:end‖</entityname.Tenshi_Hat>
     <entitydescription.Tenshi_Hat>‖color:5,105,195,200‖”如果帽子上啥也没有就显得太空了，所以加上了桃子。“‖color:end‖</entitydescription.Tenshi_Hat>
+    <entityname.Tenshi_Eclipse_Anniversary>‖color:5,105,195,200‖天子装束（周年庆）‖color:end‖</entityname.Tenshi_Eclipse_Anniversary>
+    <entitydescription.Tenshi_Eclipse_Anniversary>‖color:5,105,195,200‖作为“比那名居一族”，她能够操纵要石，通过插下和拔出要石平息或引发地震。 能够引发地表下沉、土崩石摧级别的灾难，甚至动摇整个幻想乡的地基。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Tenshi_Eclipse_Anniversary>
+    <entityname.Tenshi_Eclipse_Anniversary_Plus>‖color:5,105,195,200‖天子装束+（周年庆）‖color:end‖</entityname.Tenshi_Eclipse_Anniversary_Plus>
+    <entitydescription.Tenshi_Eclipse_Anniversary_Plus>‖color:5,105,195,200‖作为“比那名居一族”，她能够操纵要石，通过插下和拔出要石平息或引发地震。 能够引发地表下沉、土崩石摧级别的灾难，甚至动摇整个幻想乡的地基。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Tenshi_Eclipse_Anniversary_Plus>
+    <entityname.Tenshi_Eclipse_Anniversary_Headpiece>‖color:5,105,195,200‖桃子发饰‖color:end‖</entityname.Tenshi_Eclipse_Anniversary_Headpiece>
+    <entitydescription.Tenshi_Eclipse_Anniversary_Headpiece>别出心裁地、桃子外形的发饰</entitydescription.Tenshi_Eclipse_Anniversary_Headpiece>
     <talentname.TenshiTalent>有顶天的大小姐</talentname.TenshiTalent>
     <talentdescription.TenshiTalent>当你身着‖color:gui.orange‖天子装束+‖end‖时，受到近距离攻击会让攻击者短暂逃离一段时间
         \n减少‖color:gui.red‖15%‖end‖远程攻击速度。
@@ -299,13 +314,13 @@
     <afflictiondescription.Aunn_Weapons>阿吽有着一头绿色及臀长发，刘海和及肩的头发为形似鬃毛的卷发，头顶长着一只灰色的独角。</afflictiondescription.Aunn_Weapons>
 
     <!--Flandre-->
-    <entityname.Flandre_gear>‖color:255,36,0,255‖芙兰朵露装束‖end‖</entityname.Flandre_gear>
+    <entityname.Flandre_gear>‖color:220,55,55,255‖芙兰朵露装束‖end‖</entityname.Flandre_gear>
     <entitydescription.Flandre_gear>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_gear>
-    <entityname.Flandre_Plus>‖color:255,36,0,255‖芙兰朵露装束+‖end‖</entityname.Flandre_Plus>
+    <entityname.Flandre_Plus>‖color:220,55,55,255‖芙兰朵露装束+‖end‖</entityname.Flandre_Plus>
     <entitydescription.Flandre_Plus>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Plus>
-    <entityname.Flandre_Eclipse_Anniversary>‖color:255,36,0,255‖芙兰朵露装束（周年庆）‖end‖</entityname.Flandre_Eclipse_Anniversary>
+    <entityname.Flandre_Eclipse_Anniversary>‖color:220,55,55,255‖芙兰朵露装束（周年庆）‖end‖</entityname.Flandre_Eclipse_Anniversary>
     <entitydescription.Flandre_Eclipse_Anniversary>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Eclipse_Anniversary>
-    <entityname.Flandre_Eclipse_Anniversary_Plus>‖color:255,36,0,255‖芙兰朵露装束+（周年庆）‖end‖</entityname.Flandre_Eclipse_Anniversary_Plus>
+    <entityname.Flandre_Eclipse_Anniversary_Plus>‖color:220,55,55,255‖芙兰朵露装束+（周年庆）‖end‖</entityname.Flandre_Eclipse_Anniversary_Plus>
     <entitydescription.Flandre_Eclipse_Anniversary_Plus>‖color:255,255,255,255‖芙兰朵露生活在红魔馆的地下室里，极少外出红魔馆。虽然红魔馆的其他人因为芙兰朵露拥有危险的能力和精神有些问题而限制她离开红魔馆，但其实芙兰朵露是觉得住着挺舒服才老实地待在红魔馆里。‖color:end‖\n（内置扫描仪槽位）</entitydescription.Flandre_Eclipse_Anniversary_Plus>
     <talentname.FlandreTalent>吸血鬼的破坏性妹妹</talentname.FlandreTalent>
     <talentdescription.FlandreTalent>当你身着 芙兰朵露装束+ 时，
@@ -733,12 +748,12 @@
     <talentname.RenkoTalent>少女秘封俱乐部-莲子</talentname.RenkoTalent>
     <talentdescription.RenkoTalent>当你身着莲子 装束+时，
         减少‖color:gui.red‖15%‖end‖移动速度和‖color:gui.red‖15%‖end‖最大生命值。
-        ‖color:gui.orange‖攻击伤害‖end‖减少‖color:gui.red‖25%‖end‖
+        ‖color:gui.orange‖攻击伤害‖end‖减少‖color:gui.red‖20%‖end‖
 
         免疫精神病类型的效果
         持有的魔法武器都能获得自己的专属武器效果
         搜寻沉船、遗迹容器时，有‖color:gui.green‖10%‖end‖概率发现‖color:gui.yellow‖伊奘诺物质或以太层金属‖end‖。
-        根据自身‖color:gui.orange‖医疗水平‖end‖，获得对应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击速度‖end‖。最高‖color:gui.green‖20%‖end‖
+        根据自身‖color:gui.orange‖医疗水平‖end‖，获得对应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖攻击速度‖end‖。最高‖color:gui.green‖10%‖end‖
 
         与梅莉一起开始巡回、巡回结束时完成所有任务并且等级大于‖color:gui.green‖5‖end‖，获得‖color:gui.yellow‖《红斑博物志》‖end‖
         莲子阅读‖color:gui.yellow‖《红斑博物志》‖end‖后，以下效果随机触发（可全部触发或全部不触发）：
@@ -936,6 +951,177 @@
     <afflictionname.TewiTalent_OnApplyTreatment_Effect04>幸运庇护</afflictionname.TewiTalent_OnApplyTreatment_Effect04>
     <afflictiondescription.TewiTalent_OnApplyTreatment_Effect04>抑制阿片类药物戒断、中毒和化学戒断</afflictiondescription.TewiTalent_OnApplyTreatment_Effect04>
 
+    <!--Kaguya-->
+    <entityname.Kaguya_gear>‖color:154,124,204,255‖辉夜 装束‖end‖</entityname.Kaguya_gear>
+    <entitydescription.Kaguya_gear>辉夜在被流放到地上前曾居住在月之都，在杀死月之使者后的一千多年里隐居在迷途竹林内的永远亭中，如今不再隐居，过着普通的生活</entitydescription.Kaguya_gear>
+    <entityname.Kaguya_Plus>‖color:154,124,204,255‖辉夜 装束+‖end‖</entityname.Kaguya_Plus>
+    <entitydescription.Kaguya_Plus>辉夜在被流放到地上前曾居住在月之都，在杀死月之使者后的一千多年里隐居在迷途竹林内的永远亭中，如今不再隐居，过着普通的生活</entitydescription.Kaguya_Plus>
+    <talentname.KaguyaTalent>月之公主</talentname.KaguyaTalent>
+    <talentdescription.KaguyaTalent>当你身着辉夜 装束+时，
+        ‖color:gui.orange‖物理伤害抗性和眩晕抗性‖end‖降低‖color:gui.red‖20%‖end‖
+        ‖color:gui.orange‖远程攻击伤害‖end‖降低‖color:gui.red‖10%‖end‖
+        ‖color:gui.orange‖近战攻击伤害‖end‖降低‖color:gui.red‖40%‖end‖
+        ‖color:gui.orange‖移动速度‖end‖降低‖color:gui.red‖10%‖end‖
+        ‖color:gui.orange‖机械工程、电气工程‖end‖降低‖color:gui.red‖30‖end‖，‖color:gui.orange‖武器操作‖end‖降低‖color:gui.red‖60‖end‖
+
+        获得‖color:gui.green‖25%‖end‖‖color:gui.yellow‖出血抗性、灵气紊乱抗性‖end‖
+        ‖color:gui.orange‖增益效果持续时间‖end‖增加‖color:gui.green‖50%‖end‖
+        ‖color:gui.orange‖减益效果持续时间‖end‖减少‖color:gui.green‖15%‖end‖
+        在友方潜艇内时，增加‖color:gui.green‖25%‖end‖‖color:gui.orange‖技能获取速度‖end‖
+        允许将五种宝物（耀眼的龙玉，佛体的金刚石，火蜥蜴之盾，无限的生命之泉，蓬莱的玉枝）制作成宝物，可通过不同方式为自己提供永久增益
+    </talentdescription.KaguyaTalent>
+    <afflictionname.Sinner_Of_Eternity_And_The_Ephemeral>永远和须臾的罪人</afflictionname.Sinner_Of_Eternity_And_The_Ephemeral>
+    <afflictiondescription.Sinner_Of_Eternity_And_The_Ephemeral>辉夜有着一头黑色长发，留着姬发式，刘海过眉。她有着黑色的眼瞳。</afflictiondescription.Sinner_Of_Eternity_And_The_Ephemeral>
+    <afflictionname.Kaguya_Weapons>被囚于地上的蓬莱人</afflictionname.Kaguya_Weapons>
+    <afflictiondescription.Kaguya_Weapons>她能集合人类无法感知的一瞬间，以此来使用和行动。集合了须臾的时间也是在时间中流动，人类们却完全无法感知，利用这时间就能弄出复数不同的历史来。</afflictiondescription.Kaguya_Weapons>
+
+    <entityname.Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel>‖color:154,124,204,255‖耀眼的龙玉‖end‖</entityname.Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel>
+    <entitydescription.Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel>一枚被打磨到近乎刺眼的玉珠，内部有细小的光旋像活物般游走。占用‖color:gui.yellow‖任意快捷栏‖end‖槽位
+        携带后，增加10%眩晕抗性，并允许缓慢恢复部分伤势
+        （仅对辉夜装束+生效）</entitydescription.Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel>
+    <entityname.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond>‖color:154,124,204,255‖佛体的金刚石‖end‖</entityname.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond>
+    <entitydescription.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond>看似平平无奇的透明结晶，却在边缘处呈现出不可思议的切面。在‖color:gui.yellow‖健康界面‖end‖使用后永久生效
+        使用后，增加10%物理伤害抗性，大幅增加缺氧抗性
+        （仅对辉夜装束+生效）</entitydescription.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond>
+    <entityname.Touhou_Kaguya_Treasure_Fire_Lizard_Shield>‖color:154,124,204,255‖火蜥蜴之盾‖end‖</entityname.Touhou_Kaguya_Treasure_Fire_Lizard_Shield>
+    <entitydescription.Touhou_Kaguya_Treasure_Fire_Lizard_Shield>这面盾的纹理像烧过的岩层，裂隙里仍有余温在呼吸。占用‖color:gui.yellow‖耳机‖end‖槽位
+        佩戴后，增加10%烧伤抗性，允许缓慢恢复烧伤，增加造成的烧伤伤害
+        （仅对辉夜装束+生效）</entitydescription.Touhou_Kaguya_Treasure_Fire_Lizard_Shield>
+    <entityname.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life>‖color:154,124,204,255‖无限的生命之泉‖end‖</entityname.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life>
+    <entitydescription.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life>一只不大的石泉，水面平静得近乎不自然。占用‖color:gui.yellow‖基因拼接器‖end‖槽位
+        佩戴后，一巡回一次，生命值低于0后有1分钟时间不会死亡。
+        （仅对辉夜装束+生效）</entitydescription.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life>
+    <entityname.Touhou_Kaguya_Treasure_Penglai_Jade_Branch>‖color:154,124,204,255‖蓬莱的玉枝‖end‖</entityname.Touhou_Kaguya_Treasure_Penglai_Jade_Branch>
+    <entitydescription.Touhou_Kaguya_Treasure_Penglai_Jade_Branch>一截看似枯枝的玉木，却在枝节处结着柔亮的宝色晶芽。在‖color:gui.yellow‖健康界面‖end‖使用后永久生效
+        使用后，增加10%攻击伤害、物理伤害抗性、移动速度、技能水平并给予10额外生命值
+        （仅对辉夜装束+生效）</entitydescription.Touhou_Kaguya_Treasure_Penglai_Jade_Branch>
+
+    <!--Cosmic Princess Kaguya-->
+    <entityname.Cosmic_Princess_Kaguya_gear>‖color:252,253,116,255‖辉耀姬 装束‖end‖</entityname.Cosmic_Princess_Kaguya_gear>
+    <entitydescription.Cosmic_Princess_Kaguya_gear>来自月球的神秘少女，为了追求愉悦而在虚拟空间“月读”开始了网络主播活动，喜欢彩叶。</entitydescription.Cosmic_Princess_Kaguya_gear>
+    <entityname.Cosmic_Princess_Kaguya_Plus>‖color:252,253,116,255‖辉耀姬 装束+‖end‖</entityname.Cosmic_Princess_Kaguya_Plus>
+    <entitydescription.Cosmic_Princess_Kaguya_Plus>来自月球的神秘少女，为了追求愉悦而在虚拟空间“月读”开始了网络主播活动，喜欢彩叶。</entitydescription.Cosmic_Princess_Kaguya_Plus>
+    <talentname.Cosmic_Princess_KaguyaTalent>超时空辉耀姬</talentname.Cosmic_Princess_KaguyaTalent>
+    <talentdescription.Cosmic_Princess_KaguyaTalent>当你身着辉耀姬 装束+时，
+        ‖color:gui.orange‖远程攻击伤害‖end‖降低‖color:gui.red‖10%‖end‖
+        长时间未食用料理时获得肚子空空效果，‖color:gui.orange‖技能水平‖end‖最多下降‖color:gui.red‖15%‖end‖，‖color:gui.orange‖经验获取速度‖end‖最多下降‖color:gui.red‖30%‖end‖
+
+        ‖color:gui.orange‖机械工程和电气工程‖end‖增加‖color:gui.green‖15‖end‖点
+        ‖color:gui.orange‖近战攻击伤害‖end‖增加‖color:gui.green‖35%‖end‖
+        食用任意等级‖color:gui.orange‖料理‖end‖并生效时，‖color:gui.orange‖技能获取速度‖end‖增加‖color:gui.green‖50%‖end‖
+        ‖color:gui.orange‖减益效果持续时间‖end‖减少‖color:gui.green‖15%‖end‖
+        在友方潜艇内时，增加‖color:gui.green‖25%‖end‖‖color:gui.orange‖技能获取速度‖end‖
+        在友方潜艇内，允许使用麦克风为附近所有船员提供加成：
+        增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖攻击伤害‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖
+    </talentdescription.Cosmic_Princess_KaguyaTalent>
+    <afflictionname.Princess_Kaguya>超时空辉耀姬</afflictionname.Princess_Kaguya>
+    <afflictiondescription.Princess_Kaguya>充满梦想与希望的虚拟空间“月读”，两个女孩通过歌曲结识，彩叶负责音乐制作和作词，辉耀则专注于直播和演唱，两人合作无间，彼此的关系也更加亲密。</afflictiondescription.Princess_Kaguya>
+    <afflictionname.Princess_Kaguya_Hungry>肚子空空</afflictionname.Princess_Kaguya_Hungry>
+    <afflictiondescription.Princess_Kaguya_Hungry>技能水平下降最多15%，经验获取速度最多下降30%</afflictiondescription.Princess_Kaguya_Hungry>
+    <afflictionname.Princess_Kaguya_Melodious_Voice>悦耳歌声</afflictionname.Princess_Kaguya_Melodious_Voice>
+    <afflictiondescription.Princess_Kaguya_Melodious_Voice>增加10%攻击伤害，增加10%物理伤害抗性</afflictiondescription.Princess_Kaguya_Melodious_Voice>
+<!--
+    <afflictionname.Kaguya_Weapons>被囚于地上的蓬莱人</afflictionname.Kaguya_Weapons>
+    <afflictiondescription.Kaguya_Weapons>她能集合人类无法感知的一瞬间，以此来使用和行动。集合了须臾的时间也是在时间中流动，人类们却完全无法感知，利用这时间就能弄出复数不同的历史来。</afflictiondescription.Kaguya_Weapons>
+-->
+
+    <!--Yachiyo-->
+    <entityname.Yachiyo_gear>‖color:0,116,143,255‖八千代 装束‖end‖</entityname.Yachiyo_gear>
+    <entitydescription.Yachiyo_gear>虚拟空间“月读”的创造者、管理员，同时也是一名顶级网络主播，是具有“会唱歌会跳舞还会分身的8000岁”这一设定的神秘人工智能。</entitydescription.Yachiyo_gear>
+    <entityname.Yachiyo_Plus>‖color:0,116,143,255‖八千代 装束+‖end‖</entityname.Yachiyo_Plus>
+    <entitydescription.Yachiyo_Plus>虚拟空间“月读”的创造者、管理员，同时也是一名顶级网络主播，是具有“会唱歌会跳舞还会分身的8000岁”这一设定的神秘人工智能。</entitydescription.Yachiyo_Plus>
+    <talentname.YachiyoTalent>月读管理员</talentname.YachiyoTalent>
+    <talentdescription.YachiyoTalent>当你身着八千代 装束+时，
+        需要在潜艇上安置‖color:gui.yellow‖“月读”‖end‖、为自身装备‖color:gui.yellow‖章鱼腰包‖end‖并装备‖color:gui.yellow‖“信号接收器”‖end‖，必须使用‖color:gui.yellow‖“月读”‖end‖按时为‖color:gui.orange‖“接收器”‖end‖充能
+        否则将在低电量时降低‖color:gui.red‖20%‖end‖‖color:gui.orange‖攻击伤害‖end‖，电量耗尽后，若不在友方潜艇内，则有概率间歇性失去意识一段时间
+
+        ‖color:gui.orange‖远程攻击伤害‖end‖增加‖color:gui.green‖10%‖end‖
+        消灭敌对怪物时，有概率获取金钱。一个巡回最多触发‖color:gui.green‖10‖end‖次
+        ‖color:gui.orange‖减益效果持续时间‖end‖减少‖color:gui.green‖15%‖end‖
+        在友方潜艇内时，增加‖color:gui.green‖25%‖end‖‖color:gui.orange‖技能获取速度‖end‖
+        在友方潜艇内，允许使用麦克风为所有船员提供加成：
+        增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖移动速度‖end‖，减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖友军伤害‖end‖，给予‖color:gui.green‖10‖end‖点‖color:gui.orange‖额外生命值‖end‖
+    </talentdescription.YachiyoTalent>
+    <afflictionname.Tsukuyomi_Administrator>月读管理员</afflictionname.Tsukuyomi_Administrator>
+    <afflictiondescription.Tsukuyomi_Administrator>彩叶在得知八千代的真相后，大学转为研发机械义体技术。八千代因此得到现实世界的实体。</afflictiondescription.Tsukuyomi_Administrator>
+    <afflictionname.Tsukuyomi_Administrator_Low_Power>休息时间</afflictionname.Tsukuyomi_Administrator_Low_Power>
+    <afflictiondescription.Tsukuyomi_Administrator_Low_Power>能量不太足够了呢</afflictiondescription.Tsukuyomi_Administrator_Low_Power>
+    <afflictionname.Tsukuyomi_Administrator_Melodious_Voice>悦耳歌声</afflictionname.Tsukuyomi_Administrator_Melodious_Voice>
+    <afflictiondescription.Tsukuyomi_Administrator_Melodious_Voice>增加10%移动速度，减少10%友军伤害，给予10点额外生命值</afflictiondescription.Tsukuyomi_Administrator_Melodious_Voice>
+
+
+
+    <!--Hiro-->
+    <entityname.Hiro_gear>‖color:255,50,50,255‖希罗 装束‖end‖</entityname.Hiro_gear>
+    <entitydescription.Hiro_gear>怀着强烈的责任感和自尊心生活，她的价值观永远只有“正确”与“不正确”；因过度追求“正确”，容易陷入偏执思想。（安装前置模组后，穿戴后可解锁装束+）</entitydescription.Hiro_gear>
+    <entityname.Hiro_Plus>‖color:255,50,50,255‖希罗 装束+‖end‖</entityname.Hiro_Plus>
+    <entitydescription.Hiro_Plus>她是应受厌恶之人。而比任何人都厌恶她的，正是她本人。</entitydescription.Hiro_Plus>
+    <entityname.Hiro_Headpiece>‖color:255,50,50,255‖希罗的发饰‖end‖</entityname.Hiro_Headpiece>
+    <entitydescription.Hiro_Headpiece>彼岸花装饰的发饰</entitydescription.Hiro_Headpiece>
+    <talentname.HiroTalent>正义绝对之人</talentname.HiroTalent>
+    <talentdescription.HiroTalent>当你身着希罗 装束+时，
+        ‖color:gui.orange‖最大生命值‖end‖减少‖color:gui.green‖15%‖end‖，受到的伤害增加‖color:gui.green‖15%‖end‖
+
+        弹幕伤害增加‖color:gui.green‖10%‖end‖
+        一巡回所有人一次，角色血量低于‖color:gui.green‖1%‖end‖时触发。触发后移除尽可能多的状态，同时尽可能多地增加额外生命值，并添加‖color:gui.green‖30‖end‖秒的‖color:gui.orange‖移动速度和近战伤害‖end‖增益。最后给角色增加‖color:gui.green‖20‖end‖点‖color:gui.yellow‖精神病‖end‖。
+
+        受到攻击时，增长‖color:gui.yellow‖魔女化进度‖end‖
+        自身生命值低于‖color:gui.green‖50%‖end‖时，增长‖color:gui.yellow‖魔女化进度‖end‖。
+        ‖color:gui.yellow‖魔女化进度‖end‖达到‖color:gui.green‖100%‖end‖后，一巡回一次，获得魔女化效果：
+        ‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖增加‖color:gui.green‖15%‖end‖，‖color:gui.orange‖攻击伤害‖end‖增加‖color:gui.green‖15%‖end‖，额外获得‖color:gui.green‖20%‖end‖‖color:gui.orange‖近战伤害‖end‖
+        对含有魔女因子的生物造成的伤害提高‖color:gui.green‖25%‖end‖
+        食用‖color:gui.green‖3‖end‖级及以上等级料理或饮品可以提前解除魔女化效果。
+
+        如果魔女化效果自然解除，则获得严重负面：
+        ‖color:gui.orange‖攻击伤害‖end‖减少‖color:gui.red‖60%‖end‖，‖color:gui.orange‖移动速度‖end‖减少‖color:gui.red‖40%‖end‖。巡回获得的经验值减少‖color:gui.red‖90%‖end‖
+
+        5分钟一次，使用快捷键Alt+X后，获得“伪证”效果，效果存在期间，不会被敌人主动探查到
+        （部分效果需要安装lua补丁）
+    </talentdescription.HiroTalent>
+    <afflictionname.Hiro_Executor_Of_Justice>正义的执行者</afflictionname.Hiro_Executor_Of_Justice>
+    <afflictiondescription.Hiro_Executor_Of_Justice>对她而言，木卫二的深渊并不是最可怕的。真正可怕的，是在这里死亡之后——还能重新开始</afflictiondescription.Hiro_Executor_Of_Justice>
+    <afflictionname.HiroTalent_Witch_Transformation>魔女化进度</afflictionname.HiroTalent_Witch_Transformation>
+    <afflictionname.HiroTalent_Witch_Transformation_End>魔女化强制解除进度</afflictionname.HiroTalent_Witch_Transformation_End>
+    <afflictionname.Hiro_Pseudo_Buff>伪证</afflictionname.Hiro_Pseudo_Buff>
+
+
+    <!--Iroha-->
+    <entityname.Iroha_gear>‖color:107,63,160,255‖彩叶 装束‖end‖</entityname.Iroha_gear>
+    <entitydescription.Iroha_gear>是虚拟空间「月夜见」顶流主播兼管理员月见八千代的狂热粉丝，甚至在卧室里为八千代的立牌专门设置了一个小小的神龛。（安装前置模组后，穿戴后可解锁装束+）</entitydescription.Iroha_gear>
+    <entityname.Iroha_Plus>‖color:107,63,160,255‖彩叶 装束+‖end‖</entityname.Iroha_Plus>
+    <entitydescription.Iroha_Plus>是虚拟空间「月夜见」顶流主播兼管理员月见八千代的狂热粉丝，甚至在卧室里为八千代的立牌专门设置了一个小小的神龛。</entitydescription.Iroha_Plus>
+    <talentname.IrohaTalent>全才适应</talentname.IrohaTalent>
+    <talentdescription.IrohaTalent>当你身着彩叶 装束+时，
+        （非静止状态下）随时间获得‖color:gui.yellow‖“疲惫”‖end‖效果，最多减少‖color:gui.red‖40%‖end‖‖color:gui.orange‖移动速度‖end‖，‖color:gui.red‖35%‖end‖‖color:gui.orange‖攻击伤害‖end‖，‖color:gui.red‖20%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖
+        等级大于‖color:gui.green‖8‖end‖时，‖color:gui.yellow‖“疲惫”‖end‖增长速度减半
+        保持生命值在‖color:gui.green‖50%‖end‖以上并食用‖color:gui.green‖3‖end‖级以上料理，可以逐渐消解‖color:gui.yellow‖“疲惫”‖end‖
+
+        根据角色当前的最高技能等级，自动激活对应的增益模式。多个技能并列最高时，允许同时生效。
+
+        电气工程最高 → ‖color:gui.orange‖工程师模式‖end‖：‖color:gui.orange‖设备维修速度‖end‖‖color:gui.green‖+30%‖end‖，造成的辐射伤害有‖color:gui.green‖25%‖end‖概率将以‖color:gui.green‖50%‖end‖的效率转化为‖color:gui.yellow‖烧伤‖end‖
+        机械工程最高 → ‖color:gui.orange‖机械师模式‖end‖：‖color:gui.orange‖修复速度和船体修复速度‖end‖‖color:gui.green‖+15%‖end‖，‖color:gui.orange‖烧伤抗性‖end‖‖color:gui.green‖+15%‖end‖
+        武器操作最高 → ‖color:gui.orange‖安全官模式‖end‖：所有伤害‖end‖‖color:gui.green‖+10%‖end‖，获得额外‖color:gui.green‖10‖end‖生命值
+        医疗水平最高 → ‖color:gui.orange‖医生模式‖end‖：‖color:gui.orange‖医疗物品使用效果‖end‖‖color:gui.green‖+10%‖end‖，‖color:gui.orange‖受到药物治疗效果‖end‖‖color:gui.green‖+10%‖end‖
+        驾驶水平最高 → ‖color:gui.orange‖船长模式‖end‖：‖color:gui.orange‖引擎输出功率‖end‖‖color:gui.green‖+10%‖end‖，免疫‖color:gui.yellow‖精神病‖end‖
+        魔法能力最高 → ‖color:gui.orange‖创造者模式‖end‖：‖color:gui.orange‖技能获取速度‖end‖‖color:gui.green‖+50%‖end‖，巡回完成任意任务后，有概率获得独特物品：‖color:gui.orange‖月读VR镜片‖end‖
+
+        佩戴‖color:gui.orange‖月读VR镜片‖end‖后，无论技能水平如何，上述技能水平的加成效果全部生效。持续‖color:gui.green‖5‖end‖分钟后，快速积累‖color:gui.yellow‖“疲惫”‖end‖
+        （部分效果需要安装lua补丁）
+    </talentdescription.IrohaTalent>
+    <afflictionname.Iroha_Versatile_Adaptation>全能P主</afflictionname.Iroha_Versatile_Adaptation>
+    <afflictiondescription.Iroha_Versatile_Adaptation>热爱打游戏的17岁普通女高中生</afflictiondescription.Iroha_Versatile_Adaptation>
+    <afflictionname.Touhou_Iroha_Fatigue>疲惫</afflictionname.Touhou_Iroha_Fatigue>
+
+    <entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>‖color:107,63,160,255‖月读VR镜片‖end‖</entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>
+    <entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>小巧的VR眼镜</entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>
+
+    <!--通用-->
+    <entityname.Normal_Yousei_Clothes>妖精常服</entityname.Normal_Yousei_Clothes>
+    <entitydescription.Normal_Yousei_Clothes>随处可见的妖精的常服</entitydescription.Normal_Yousei_Clothes>
+
+
+
+
 
 
 
@@ -979,6 +1165,7 @@
     <Character.MRE_Material_Lilywhite>莉莉白的回忆</Character.MRE_Material_Lilywhite>
     <Character.MRE_Material_Satori>觉的回忆</Character.MRE_Material_Satori>
     <Character.MRE_Material_Tewi>因幡天为的回忆</Character.MRE_Material_Tewi>
+    <Character.MRE_Material_Kaguya>辉夜的回忆</Character.MRE_Material_Kaguya>
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有15%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
@@ -986,7 +1173,7 @@
     <talentname.MRE_Marisa>出血效应-雾雨魔理沙</talentname.MRE_Marisa>
     <talentdescription.MRE_Marisa>仅对魔理沙装束+生效。弹幕的伤害提高20%</talentdescription.MRE_Marisa>
     <talentname.MRE_Aya>出血效应-射命丸文</talentname.MRE_Aya>
-    <talentdescription.MRE_Aya>仅对文文装束+生效。每次近战攻击都有5%概率额外造成50%伤害，如果是远程弹幕则效果下降为25%</talentdescription.MRE_Aya>
+    <talentdescription.MRE_Aya>仅对文文装束+生效。每次近战攻击都有50%概率额外造成50%伤害，如果是远程弹幕则效果下降为25%</talentdescription.MRE_Aya>
     <talentname.MRE_Youmu>出血效应-魂魄妖梦</talentname.MRE_Youmu>
     <talentdescription.MRE_Youmu>仅对妖梦装束+生效。近战攻击速度提高10%，持有楼观剑和白楼剑时，伤害提高30%，受到的伤害减少20%</talentdescription.MRE_Youmu>
     <talentname.MRE_Nitori>出血效应-河城荷取</talentname.MRE_Nitori>
@@ -1052,4 +1239,6 @@
     <talentdescription.MRE_Satori>仅对觉 装束+生效。允许获得其他角色的专属武器效果</talentdescription.MRE_Satori>
     <talentname.MRE_Tewi>出血效应-因幡天为</talentname.MRE_Tewi>
     <talentdescription.MRE_Tewi>仅对因幡天为 装束+生效。每一分钟获得随机一种幸运眷顾或幸运庇护效果</talentdescription.MRE_Tewi>
+    <talentname.MRE_Kaguya>出血效应-蓬莱山辉夜</talentname.MRE_Kaguya>
+    <talentdescription.MRE_Kaguya>仅对辉夜 装束+生效。所有船员立刻获得一个天赋点。如果收集完并应用五种宝物（耀眼的龙玉，佛体的金刚石，火蜥蜴之盾，无限的生命之泉，蓬莱的玉枝），则提高25%技能水平，并免疫毒药和麻痹</talentdescription.MRE_Kaguya>
 </infotexts>

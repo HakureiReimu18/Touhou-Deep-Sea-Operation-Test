@@ -178,6 +178,20 @@
     </Affliction>
 
     <Affliction
+            name="幻想入-希罗"
+            identifier="Gensokyo_Divinggear_Unlocked_Effect06"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="5.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" />
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Executor_Of_Justice.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <Affliction
             identifier="Spell_Card_Recycle_Unlocked_Effect"
             type="talentbuff"
             isbuff="true"

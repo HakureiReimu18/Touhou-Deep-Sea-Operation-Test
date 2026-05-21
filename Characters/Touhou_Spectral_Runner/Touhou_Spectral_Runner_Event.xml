@@ -1,0 +1,8 @@
+﻿<Charactervariant inherit="Touhou_Spectral_Runner" speciesname="Touhou_Spectral_Runner_Event">
+    <health vitality="1000"/>
+    <ragdoll scalemultiplier="1.0"/>
+    <attack damagemultiplier="1.2" rangemultiplier="1.05" impactmultiplier="1.05"/>
+    <StatusEffect type="OnDeath" target="this" AllowWhenBroken="true">
+        <TriggerEvent identifier="Touhou_Monster_Spectral_Mission04_Completed"/>
+    </StatusEffect>
+</Charactervariant>

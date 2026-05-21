@@ -320,10 +320,11 @@
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="8.0">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect01" />
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Drinks_Effect01" />
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="burn,bleeding" multiplier="0.85"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="0.85"/>
+                <CharacterAbilityModifyResistance resistanceid="bleeding" multiplier="0.85"/>
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1"/>
             </Abilities>
         </AbilityGroupInterval>
@@ -453,6 +454,29 @@
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.4"/>
             </Abilities>
         </AbilityGroupInterval>
+        <AbilityGroupInterval interval="4.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Gensokyo_Divinggear_Unlocked_Effect06" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2"/>
+            </Abilities>
+        </AbilityGroupEffect>
         <AddedRecipe itemidentifier="gensokyo_divinggear"/>
     </Talent>
 
@@ -481,7 +505,7 @@
         <AddedRecipe itemidentifier="Touhou_Silent_Selene_Ammo"/>
     </Talent>
 
-    <!--魔法突破 制造所有物品时质量提升1，如果是帕秋莉+/魔理沙+/芙兰朵露+/爱丽丝+装束，则质量再提升1-->
+    <!--魔法突破 制造所有物品时质量提升1，如果是帕秋莉+/魔理沙+/芙兰朵露+/爱丽丝+/艾玛+/希罗+装束，则质量再提升1-->
     <Talent identifier="Magic_Breakthrough">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Magic_Breakthrough"/>
@@ -555,6 +579,20 @@
         <AbilityGroupInterval interval="4.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ema_The_Loathed_One"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Magic_Breakthrough_Effect02" strength="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="4.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hiro_Executor_Of_Justice"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>

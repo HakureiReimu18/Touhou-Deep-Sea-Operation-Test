@@ -80,7 +80,7 @@
                         DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="debuff"/>
         <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.25" ProbabilityMultiplier="1" ArmorSector="0,360"
                         DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="stun"/>
-        <attack cooldown="0" range="2000" damagerange="2000" duration="1" structuredamage="0" itemdamage="0" structuresoundtype="StructureSlash"
+        <attack cooldown="0" range="1500" damagerange="1500" duration="1" structuredamage="0" itemdamage="0" structuresoundtype="StructureSlash"
                 targetforce="0" severlimbsprobability="0" torque="0" force="0" applyforceonlimbs="" context="Any" targettype="Character"
                 targetlimbtype="None" hitdetectiontype="Distance" afterattack="IdleUntilCanAttack" afterattackdelay="0" reverse="False"
                 retreat="False" secondarycooldown="0" cooldownrandomfactor="0" fullspeedafterattack="True" penetration="0" levelwalldamage="0"
@@ -125,7 +125,7 @@
                         DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="debuff"/>
         <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.25" ProbabilityMultiplier="1" ArmorSector="0,360"
                         DeflectProjectiles="True" AfflictionIdentifiers="" AfflictionTypes="stun"/>
-        <attack cooldown="0" range="2000" damagerange="2000" duration="1" structuredamage="0" itemdamage="0" structuresoundtype="StructureSlash"
+        <attack cooldown="0" range="1500" damagerange="1500" duration="1" structuredamage="0" itemdamage="0" structuresoundtype="StructureSlash"
                 targetforce="0" severlimbsprobability="0" torque="0" force="0" applyforceonlimbs="" context="Any" targettype="Character"
                 targetlimbtype="None" hitdetectiontype="Distance" afterattack="IdleUntilCanAttack" afterattackdelay="0" reverse="False"
                 retreat="False" secondarycooldown="0" cooldownrandomfactor="0" fullspeedafterattack="True" penetration="0" levelwalldamage="0"

@@ -126,6 +126,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionServerRandom randomchance="0.5"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.25"/>
@@ -135,6 +136,7 @@
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Wind_God_Girl"/>
                 <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="Melee"/>
+                <AbilityConditionServerRandom randomchance="0.5"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.5"/>
@@ -200,17 +202,16 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="9.9">
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Candid_Friend"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Nitori_Weapons"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.2"/>
-                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.2"/>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2"/>
             </Abilities>
-        </AbilityGroupInterval>
-        <AbilityGroupInterval interval="9.9">
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="4.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Candid_Friend"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Nitori_Tools"/>
@@ -219,16 +220,16 @@
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.15"/>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
+        <AbilityGroupInterval interval="1.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Candid_Friend"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Nitori_Weapons"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Nitori_Tools"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="MovementSpeed" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MovementSpeed" value="0.1"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--出血效应-稗田阿求-->
@@ -1793,6 +1794,73 @@
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" EventUserTag="Tewi_MRE_player" delay="0.5" stackable="false" >
                             <TriggerEvent identifier="MRE_Tewi_Event"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
+
+    <!--出血效应-蓬莱山辉夜-->
+    <Talent identifier="MRE_Kaguya">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.MRE_Kaguya"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Kaguya_Effect" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="MRE_Kaguya_Marked" min="1" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveTalentPointsToAllies amount="1" />
+                <CharacterAbilityGivePermanentStat statidentifier="MRE_Kaguya_Marked" value="1" />
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Sinner_Of_Eternity_And_The_Ephemeral"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel_Effect"/>
+                <AbilityConditionHasItem tags="Touhou_Kaguya_Treasure_Fire_Lizard_Shield"/>
+                <AbilityConditionHasItem tags="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life"/>
+                <AbilityConditionHasTalent identifier="Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond_Talent"/>
+                <AbilityConditionHasTalent identifier="Touhou_Kaguya_Treasure_Fire_Lizard_Shield_Talent"/>
+                <AbilityConditionHasTalent identifier="Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life_Talent"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kaguya_Treasure_Penglai_Jade_Branch_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="poison" multiplier="0.0"/>
+                <CharacterAbilityModifyResistance resistanceid="paralysis" multiplier="0.0"/>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Kaguya_Collection_Effect" amount="10.0"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

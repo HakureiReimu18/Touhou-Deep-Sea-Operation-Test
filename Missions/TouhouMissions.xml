@@ -12,7 +12,7 @@
             achievementidentifier="cargomission"
             requireddeliveryamount="0.8">
         <Items>
-            <Item identifier="mediccrate" reward="250" maxcount="8">
+            <Item identifier="mediccrate" reward="300" maxcount="8">
                 <Item identifier="Touhou_Base_Metal"/>
                 <Item identifier="Reiki_Dust_Caking" amount="2"/>
                 <Item identifier="Byproduct_Alchemical" amount="4"/>
@@ -46,18 +46,18 @@
         <message header="missionheader.Cargo_Touhou_Food_Ingredients" text="missionmessage.Cargo_Touhou_Food_Ingredients"/>
         <LocationType from="AnyOutpost" to="AnyOutpost"/>
     </CargoMission>
-
+<!--
     <CargoMission
             name="新年礼物运输"
             identifier="Touhou_Cargo_New_Year_Gift"
-            tags="Touhou_Cargo_New_Year_Gift"
+            tags="Touhou_Cargo_New_Year_Gift,Touhou_Mission_Easy,Touhou_Mission_Normal"
             type="Cargo"
             difficulty="1"
             commonness="100"
-            reward="2000"
+            reward="1000"
             achievementidentifier="cargomission"
             requireddeliveryamount="0.98">
-        <Reputation identifier="location" amount="2"/>
+        <Reputation identifier="location" amount="1"/>
         <Items>
             <Item identifier="metalcrate" reward="2000" maxcount="1">
                 <Item identifier="Touhou_New_Year_Gift_Box" amount="1"/>
@@ -67,7 +67,7 @@
         <message header="missionheader.Touhou_Cargo_New_Year_Gift" text="missionmessage.Touhou_Cargo_New_Year_Gift"/>
         <LocationType from="AnyOutpost" to="AnyOutpost"/>
         <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Spawn_Gift" campaignonly="true"/>
-    </CargoMission>
+    </CargoMission>-->
 
     <MonsterMission
             name="清理毛玉"
@@ -539,8 +539,6 @@
             <Character identifier="Touhou_ODM03_Enemy_Human_Hard" from="Touhou_ODM3_Enemy_NPC" moduleflags="securitymodule" requirekill="true"
                        asfaraspossible="true" multiplayeronly="true"/>
             <Character identifier="Touhou_ODM03_Enemy_Human_Hard" from="Touhou_ODM3_Enemy_NPC" moduleflags="researchmodule" requirekill="true"
-                       multiplayeronly="true" asfaraspossible="true"/>
-            <Character identifier="Touhou_ODM03_Enemy_Human_Hard" from="Touhou_ODM3_Enemy_NPC" moduleflags="researchmodule" requirekill="true"
                        asfaraspossible="true"/>
             <Character identifier="Touhou_ODM03_Enemy_Human_Normal" from="Touhou_ODM3_Enemy_NPC" moduleflags="researchmodule" requirekill="true"
                        multiplayeronly="true" asfaraspossible="true"/>
@@ -553,11 +551,7 @@
                        multiplayeronly="true"/>
             <Character identifier="Touhou_ODM03_Enemy_Human_Easy" from="Touhou_ODM3_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true"
                        asfaraspossible="true"/>
-            <Character identifier="Touhou_ODM03_Enemy_Human_Easy" from="Touhou_ODM3_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true"
-                       asfaraspossible="true"/>
             <Character identifier="Touhou_ODM03_Enemy_Human_Easy" from="Touhou_ODM3_Enemy_NPC" moduleflags="securitymodule" requirekill="true"/>
-            <Character identifier="Touhou_ODM03_Enemy_Human_Easy" from="Touhou_ODM3_Enemy_NPC" moduleflags="securitymodule" asfaraspossible="true"
-                       requirekill="true"/>
         </Characters>
     </OutpostDestroyMission>
 
@@ -700,7 +694,7 @@
             identifier="Touhou_OutpostDestroyMission04"
             tags="abandonedoutpost,Touhou_OutpostDestroyMission_Hard"
             type="OutpostDestroy"
-            reward="10000"
+            reward="9000"
             ExperienceMultiplier="0.7"
             description="一伙强盗占据了一处废弃站点，炼金实验室特别委托你消灭所有强盗，他们会接管这里"
             difficulty="4"
@@ -725,8 +719,6 @@
                        multiplayeronly="true" asfaraspossible="true"/>
             <Character identifier="Touhou_ODM04_Enemy_Human_Lunatic" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true"
                        multiplayeronly="true" asfaraspossible="true"/>
-            <Character identifier="Touhou_ODM04_Enemy_Human_Hard" from="Touhou_ODM4_Enemy_NPC" moduleflags="crewmodule" requirekill="true"
-                       asfaraspossible="true"/>
             <Character identifier="Touhou_ODM04_Enemy_Human_Hard" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true"
                        asfaraspossible="true" multiplayeronly="true"/>
             <Character identifier="Touhou_ODM04_Enemy_Human_Hard" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true"
@@ -743,8 +735,6 @@
                        multiplayeronly="true"/>
             <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true"/>
             <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true"/>
-            <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true"/>
-            <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true"/>
             <Character identifier="Touhou_ODM04_Enemy_Human_Easy" from="Touhou_ODM4_Enemy_NPC" moduleflags="securitymodule" requirekill="true"
                        asfaraspossible="true"/>
         </Characters>
@@ -1134,7 +1124,7 @@
         <message header="missionheader.Touhou_Monster_UFO_Clear_Mission" text="missionmessage.Touhou_Monster_UFO_Clear_Mission"/>
         <LocationType from="AnyOutpost" to="AnyOutpost"/>
     </MonsterMission>
-
+<!--
     <MonsterMission
             name="往世来生"
             identifier="Touhou_Monster_Boss_Mission01"
@@ -1142,7 +1132,7 @@
             type="Monster"
             difficulty="4"
             commonness="0"
-            reward="12000"
+            reward="15000"
             maxsonarmarkerdistance="10000"
             sonarlabel="target">
         <monster character="Touhou_Monster_Unknown_Spectral" min="1" max="1"/>
@@ -1153,12 +1143,12 @@
         <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Lunatic_Mission_Resistance_Event" campaignonly="true"/>
         <LocationType from="AnyOutpost" to="AnyOutpost"/>
         <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Monster_Boss_Mission01_Event" campaignonly="true"/>
-    </MonsterMission>
+    </MonsterMission>-->
 
     <MonsterMission
             name="幽灵生物-序幕一"
             identifier="Touhou_Monster_Spectral_Mission01"
-            tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Normal"
+            tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Normal,Touhou_Monster_Spectral_Mission01"
             type="Monster"
             difficulty="4"
             commonness="100"
@@ -1179,7 +1169,7 @@
     <MonsterMission
             name="幽灵生物-序幕二"
             identifier="Touhou_Monster_Spectral_Mission02"
-            tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Normal"
+            tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Normal,Touhou_Monster_Spectral_Mission02"
             type="Monster"
             difficulty="4"
             commonness="100"
@@ -1189,7 +1179,8 @@
             sonarlabel="target">
         <monster character="Touhou_Spectral_Creeper" min="5" max="5"/>
         <Monster character="Touhou_Spectral_Creeper" min="3" max="3" multiplayeronly="true" />
-        <Monster character="Touhou_Spectral_Shark" min="2" max="2" />
+        <Monster character="Touhou_Spectral_Shark" min="1" max="1" />
+        <monster character="Touhou_Spectral_Shark_Event" min="1" max="1"/>
         <Reputation identifier="location" amount="2"/>
         <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256"/>
         <message header="missionheader.Touhou_Monster_Spectral_Mission02" text="missionmessage.Touhou_Monster_Spectral_Mission02"/>
@@ -1199,7 +1190,7 @@
     <MonsterMission
             name="幽灵生物-第一幕"
             identifier="Touhou_Monster_Spectral_Mission03"
-            tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Hard"
+            tags="Touhou_Monster_Spectral_Mission,Touhou_Monster_Spectral_Mission03"
             type="Monster"
             difficulty="4"
             commonness="100"
@@ -1207,7 +1198,8 @@
             ExperienceMultiplier="0.6"
             maxsonarmarkerdistance="10000"
             sonarlabel="target">
-        <monster character="Touhou_Spectral_Whale" min="4" max="4"/>
+        <monster character="Touhou_Spectral_Whale" min="3" max="3"/>
+        <monster character="Touhou_Spectral_Whale_Event" min="1" max="1"/>
         <monster character="Touhou_Spectral_Creeper" min="2" max="2"/>
         <Monster character="Touhou_Spectral_Whale" min="2" max="2" multiplayeronly="true" />
         <Monster character="Touhou_Spectral_Creeper" min="1" max="1" />
@@ -1222,7 +1214,7 @@
     <MonsterMission
             name="幽灵生物-第二幕"
             identifier="Touhou_Monster_Spectral_Mission04"
-            tags="Touhou_Monster_Spectral_Mission,Touhou_Mission_Hard"
+            tags="Touhou_Monster_Spectral_Mission,Touhou_Monster_Spectral_Mission04"
             type="Monster"
             difficulty="4"
             commonness="100"
@@ -1230,7 +1222,8 @@
             ExperienceMultiplier="0.5"
             maxsonarmarkerdistance="10000"
             sonarlabel="target">
-        <monster character="Touhou_Spectral_Runner" min="4" max="4"/>
+        <monster character="Touhou_Spectral_Runner" min="3" max="3"/>
+        <monster character="Touhou_Spectral_Runner_Event" min="1" max="1"/>
         <monster character="Touhou_Spectral_Whale" min="1" max="1" multiplayeronly="true"/>
         <monster character="Touhou_Spectral_Creeper" min="1" max="1" multiplayeronly="true"/>
         <Reputation identifier="location" amount="3"/>
@@ -1240,53 +1233,285 @@
         <LocationType from="AnyOutpost" to="AnyOutpost"/>
     </MonsterMission>
 
-<!--    <MineralMission
-            identifier="Touhou_Special_Material_Scanner_Mission"
-            tags="Touhou_Special_Material_Scanner_Mission"
-            achievementidentifier="miningmission"
-            type="Mineral"
-            difficulty="3"
-            commonness="0"
-            resourceHandoverAmount="0.5"
-            positionType="abysscave"
-            reward="0">
-        <Items>
-            <Item identifier="Touhou_Magic_Crystal_Mission"/>
-            <Item identifier="Touhou_Magic_Crystal_Mission"/>
-        </Items>
-        <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+    <!--幽灵生物-第三幕-->
+    <SalvageMission
+            name="幽灵生物-第三幕"
+            identifier="Touhou_Monster_Spectral_Mission05"
+            textidentifier="Touhou_Monster_Spectral_Mission05"
+            tags="Touhou_Monster_Spectral_Mission,Touhou_Monster_Spectral_Mission05"
+            type="Salvage"
+            difficulty="4"
+            commonness="1"
+            reward="2000"
+            achievementidentifier="artifactmission"
+            sonaricon="artifact"
+            spawntype="cave"
+            itemtag="Touhou_Mysterious_Pearl_Void_Mission"
+            existingitemtag="Touhou_Mysterious_Pearl_Void_Mission">
+        <Portrait texture="Content/Map/LocationPortraits/AlienRuins.png" sourcerect="0,0,2160,1080" premultiplyalpha="false"/>
+        <Portrait texture="Content/Map/LocationPortraits/AlienRuins2.png" sourcerect="0,0,2160,1080" premultiplyalpha="false"/>
+        <Portrait texture="Content/Map/LocationPortraits/AlienRuins3.png" sourcerect="0,0,2160,1080" premultiplyalpha="false"/>
+        <Portrait texture="Content/Map/LocationPortraits/AlienRuins4.png" sourcerect="0,0,2160,1080" premultiplyalpha="false"/>
+        <Reputation identifier="location" amount="2"/>
         <Reputation identifier="Touhou_Gensokyo" amount="5"/>
         <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons01.png" sourcerect="0,0,256,256"/>
-        <message header="missionheader.Touhou_Special_Material_Scanner_Mission" text="missionmessage.Touhou_Special_Material_Scanner_Mission"/>
         <LocationType from="AnyOutpost" to="AnyOutpost"/>
-    </MineralMission>
+        <message header="missionheader.Touhou_Monster_Spectral_Mission05" text="missionmessage.Touhou_Monster_Spectral_Mission05"/>
+    </SalvageMission>
 
-
-    <OutpostDestroyMission
-            identifier="Touhou_Rocket_Event_Mission01"
-            tags="abandonedoutpost"
-            type="AbandonedOutpost"
-            achievementidentifier="huskcultrescuesubra"
-            reward="0"
+    <!--往世来生-->
+    <MonsterMission
+            name="往世来生"
+            identifier="Touhou_Monster_Spectral_Mission06"
+            tags="Touhou_Monster_Spectral_Mission06"
+            type="Monster"
             difficulty="4"
-            commonness="0"
-            allowretry="true"
-            hostageskilledmessage="subrakilled"
-            allowothermissionsinlevel="false"
-            unhideentitysubcategories="abandonedmonster"
-            BlockLocationTypeChanges="true">
+            commonness="200"
+            reward="20000"
+            ExperienceMultiplier="0.7"
+            textidentifier="Touhou_Monster_Spectral_Mission06"
+            maxsonarmarkerdistance="10000"
+            spawntype="Abyss"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Guardian" min="1" max="1"/>
+        <Reputation identifier="location" amount="5"/>
         <Reputation identifier="Touhou_Gensokyo" amount="5"/>
-        <LocationType identifier="Abandoned"/>
-        <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5"/>
-        <Characters>
-            <Character identifier="husk" min="5" max="10"/>
-            <Character identifier="jacovsubra" from="customnpcs1" asfaraspossible="true" requirerescue="true"/>
-        </Characters>
-        <TriggerEvent state="0" delay="5" eventidentifier="waytoascensionfoundsubra" campaignonly="true"/>
-        <Metadata identifier="waytoascension" value="8"/>
+        <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons04.png" sourcerect="0,0,256,256"/>
+        <message header="missionheader.Touhou_Monster_Spectral_Mission06" text="missionmessage.Touhou_Monster_Spectral_Mission06"/>
+        <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Lunatic_Mission_Resistance_Event" campaignonly="true"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+
+    <MonsterMission
+            name="小型幽灵气息"
+            identifier="Touhou_Monster_Spectral_Creature_Clear_Mission01"
+            tags="Touhou_Mission_Normal,Touhou_Monster_Spectral_Creature_Clear_Mission"
+            type="Monster"
+            difficulty="4"
+            commonness="100"
+            reward="6000"
+            ExperienceMultiplier="0.5"
+            maxsonarmarkerdistance="10000"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Shark" min="3" max="3"/>
+        <monster character="Touhou_Spectral_Piercer" min="2" max="2"/>
+        <Monster character="Touhou_Spectral_Shark" min="2" max="2" multiplayeronly="true" />
+        <Reputation identifier="location" amount="1"/>
+        <Reputation identifier="Touhou_Gensokyo" amount="1"/>
+        <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256"/>
+        <message header="missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission01" text="missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission01"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+    <MonsterMission
+            name="中型幽灵气息"
+            identifier="Touhou_Monster_Spectral_Creature_Clear_Mission02"
+            tags="Touhou_Mission_Hard,Touhou_Monster_Spectral_Creature_Clear_Mission"
+            type="Monster"
+            difficulty="4"
+            commonness="100"
+            reward="8000"
+            ExperienceMultiplier="0.5"
+            maxsonarmarkerdistance="10000"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Shark" min="3" max="3"/>
+        <monster character="Touhou_Spectral_Piercer" min="2" max="2"/>
+        <monster character="Touhou_Spectral_Creeper" min="5" max="5"/>
+        <Monster character="Touhou_Spectral_Creeper" min="3" max="3" multiplayeronly="true" />
+        <Reputation identifier="location" amount="1"/>
+        <Reputation identifier="Touhou_Gensokyo" amount="1"/>
         <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256"/>
-        <message header="missionheader.Touhou_Special_Material_Scanner_Mission" text="missionmessage.Touhou_Special_Material_Scanner_Mission"/>
-    </OutpostDestroyMission>-->
+        <message header="missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission02" text="missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission02"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+    <MonsterMission
+            name="大型幽灵气息"
+            identifier="Touhou_Monster_Spectral_Creature_Clear_Mission03"
+            tags="Touhou_Mission_Hard,Touhou_Monster_Spectral_Creature_Clear_Mission"
+            type="Monster"
+            difficulty="4"
+            commonness="100"
+            reward="10000"
+            ExperienceMultiplier="0.5"
+            maxsonarmarkerdistance="10000"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Runner" min="3" max="3"/>
+        <monster character="Touhou_Spectral_Runner_Event" min="1" max="1"/>
+        <monster character="Touhou_Spectral_Whale" min="1" max="1" multiplayeronly="true"/>
+        <monster character="Touhou_Spectral_Creeper" min="1" max="1" multiplayeronly="true"/>
+        <Monster character="Touhou_Spectral_Shark" min="2" max="2" multiplayeronly="true" />
+        <Reputation identifier="location" amount="1"/>
+        <Reputation identifier="Touhou_Gensokyo" amount="1"/>
+        <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256"/>
+        <message header="missionheader.Touhou_Monster_Spectral_Creature_Clear_Mission03" text="missionmessage.Touhou_Monster_Spectral_Creature_Clear_Mission03"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+
+    <MonsterMission
+            name="幽灵生物-序幕一-任务日志"
+            identifier="Touhou_Monster_Spectral_Mission01_Collection"
+            textidentifier="Touhou_Monster_Spectral_Mission01"
+            tags="Touhou_Monster_Spectral_Mission"
+            type="Monster"
+            difficulty="4"
+            commonness="100"
+            reward="4000"
+            ExperienceMultiplier="0.4"
+            maxsonarmarkerdistance="10000"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Shark" min="4" max="4"/>
+        <Monster character="Touhou_Spectral_Shark" min="2" max="2" multiplayeronly="true" />
+        <Monster character="Touhou_Little_Ghost" min="2" max="2" />
+        <Reputation identifier="location" amount="1"/>
+        <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256"/>
+        <message header="missionheader.Touhou_Monster_Spectral_Mission01" text="missionmessage.Touhou_Monster_Spectral_Mission01"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+    <MonsterMission
+            name="幽灵生物-序幕二-任务日志"
+            identifier="Touhou_Monster_Spectral_Mission02_Collection"
+            textidentifier="Touhou_Monster_Spectral_Mission02"
+            tags="Touhou_Monster_Spectral_Mission"
+            type="Monster"
+            difficulty="4"
+            commonness="100"
+            reward="5000"
+            ExperienceMultiplier="0.35"
+            maxsonarmarkerdistance="10000"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Creeper" min="5" max="5"/>
+        <Monster character="Touhou_Spectral_Creeper" min="3" max="3" multiplayeronly="true" />
+        <Monster character="Touhou_Spectral_Shark" min="2" max="2" />
+        <Reputation identifier="location" amount="1"/>
+        <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons02.png" sourcerect="0,0,256,256"/>
+        <message header="missionheader.Touhou_Monster_Spectral_Mission02" text="missionmessage.Touhou_Monster_Spectral_Mission02"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+    <MonsterMission
+            name="幽灵生物-第一幕-任务日志"
+            identifier="Touhou_Monster_Spectral_Mission03_Collection"
+            textidentifier="Touhou_Monster_Spectral_Mission03"
+            tags="Touhou_Monster_Spectral_Mission"
+            type="Monster"
+            difficulty="4"
+            commonness="100"
+            reward="6000"
+            ExperienceMultiplier="0.3"
+            maxsonarmarkerdistance="10000"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Whale" min="3" max="3"/>
+        <monster character="Touhou_Spectral_Whale_Event" min="1" max="1"/>
+        <monster character="Touhou_Spectral_Creeper" min="2" max="2"/>
+        <Monster character="Touhou_Spectral_Whale" min="2" max="2" multiplayeronly="true" />
+        <Monster character="Touhou_Spectral_Creeper" min="1" max="1" />
+        <Monster character="Touhou_Spectral_Shark" min="1" max="1" />
+        <Reputation identifier="location" amount="1"/>
+        <Reputation identifier="Touhou_Gensokyo" amount="1"/>
+        <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256"/>
+        <message header="missionheader.Touhou_Monster_Spectral_Mission03" text="missionmessage.Touhou_Monster_Spectral_Mission03"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+    <MonsterMission
+            name="幽灵生物-第二幕-任务日志"
+            identifier="Touhou_Monster_Spectral_Mission04_Collection"
+            textidentifier="Touhou_Monster_Spectral_Mission04"
+            tags="Touhou_Monster_Spectral_Mission"
+            type="Monster"
+            difficulty="4"
+            commonness="100"
+            reward="7000"
+            ExperienceMultiplier="0.25"
+            maxsonarmarkerdistance="10000"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Runner" min="3" max="3"/>
+        <monster character="Touhou_Spectral_Runner_Event" min="1" max="1"/>
+        <monster character="Touhou_Spectral_Whale" min="1" max="1" multiplayeronly="true"/>
+        <monster character="Touhou_Spectral_Creeper" min="1" max="1" multiplayeronly="true"/>
+        <Reputation identifier="location" amount="1"/>
+        <Reputation identifier="Touhou_Gensokyo" amount="1"/>
+        <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256"/>
+        <message header="missionheader.Touhou_Monster_Spectral_Mission04" text="missionmessage.Touhou_Monster_Spectral_Mission04"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+    <!--往世来生-->
+    <MonsterMission
+            name="往世来生-任务日志"
+            identifier="Touhou_Monster_Spectral_Mission06_Collection"
+            textidentifier="Touhou_Monster_Spectral_Mission06"
+            tags="Touhou_Monster_Spectral_Mission"
+            type="Monster"
+            difficulty="4"
+            commonness="200"
+            reward="10000"
+            ExperienceMultiplier="0.35"
+            maxsonarmarkerdistance="10000"
+            spawntype="Abyss"
+            sonarlabel="target">
+        <monster character="Touhou_Spectral_Guardian" min="1" max="1"/>
+        <Reputation identifier="location" amount="2"/>
+        <Reputation identifier="Touhou_Gensokyo" amount="2"/>
+        <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons04.png" sourcerect="0,0,256,256"/>
+        <message header="missionheader.Touhou_Monster_Spectral_Mission06" text="missionmessage.Touhou_Monster_Spectral_Mission06"/>
+        <TriggerEvent state="0" delay="5" eventidentifier="Touhou_Lunatic_Mission_Resistance_Event" campaignonly="true"/>
+        <LocationType from="AnyOutpost" to="AnyOutpost"/>
+    </MonsterMission>
+
+
+
+    <!--    <MineralMission
+                identifier="Touhou_Special_Material_Scanner_Mission"
+                tags="Touhou_Special_Material_Scanner_Mission"
+                achievementidentifier="miningmission"
+                type="Mineral"
+                difficulty="3"
+                commonness="0"
+                resourceHandoverAmount="0.5"
+                positionType="abysscave"
+                reward="0">
+            <Items>
+                <Item identifier="Touhou_Magic_Crystal_Mission"/>
+                <Item identifier="Touhou_Magic_Crystal_Mission"/>
+            </Items>
+            <Icon texture="Content/UI/MissionIcons2.png" sourcerect="256,0,256,256" color="243,146,55"/>
+            <Reputation identifier="Touhou_Gensokyo" amount="5"/>
+            <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons01.png" sourcerect="0,0,256,256"/>
+            <message header="missionheader.Touhou_Special_Material_Scanner_Mission" text="missionmessage.Touhou_Special_Material_Scanner_Mission"/>
+            <LocationType from="AnyOutpost" to="AnyOutpost"/>
+        </MineralMission>
+
+
+        <OutpostDestroyMission
+                identifier="Touhou_Rocket_Event_Mission01"
+                tags="abandonedoutpost"
+                type="AbandonedOutpost"
+                achievementidentifier="huskcultrescuesubra"
+                reward="0"
+                difficulty="4"
+                commonness="0"
+                allowretry="true"
+                hostageskilledmessage="subrakilled"
+                allowothermissionsinlevel="false"
+                unhideentitysubcategories="abandonedmonster"
+                BlockLocationTypeChanges="true">
+            <Reputation identifier="Touhou_Gensokyo" amount="5"/>
+            <LocationType identifier="Abandoned"/>
+            <LocationTypeChange from="Abandoned" to="Outpost" requireddurationrange="2,3" cooldownafterchange="5"/>
+            <Characters>
+                <Character identifier="husk" min="5" max="10"/>
+                <Character identifier="jacovsubra" from="customnpcs1" asfaraspossible="true" requirerescue="true"/>
+            </Characters>
+            <TriggerEvent state="0" delay="5" eventidentifier="waytoascensionfoundsubra" campaignonly="true"/>
+            <Metadata identifier="waytoascension" value="8"/>
+            <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256"/>
+            <message header="missionheader.Touhou_Special_Material_Scanner_Mission" text="missionmessage.Touhou_Special_Material_Scanner_Mission"/>
+        </OutpostDestroyMission>-->
 
 
     <!--ODM是摧毁废站任务的简写-->
@@ -1314,13 +1539,11 @@
         <message header="missionheader.Touhou_OutpostDestroyMission12" text="missionmessage.Touhou_OutpostDestroyMission12"/>
         <Characters>
             <Character identifier="Touhou_ODM12_Enemy_Human_Hard" from="Touhou_ODM12_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" multiplayeronly="true"/>
-            <Character identifier="Touhou_ODM12_Enemy_Human_Hard" from="Touhou_ODM12_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" multiplayeronly="true"/>
             <Character identifier="Touhou_ODM12_Enemy_Human_Hard" from="Touhou_ODM12_Enemy_NPC" moduleflags="securitymodule" requirekill="true" asfaraspossible="true" />
             <Character identifier="Touhou_ODM12_Enemy_Human_Normal" from="Touhou_ODM12_Enemy_NPC" moduleflags="researchmodule" requirekill="true" multiplayeronly="true" asfaraspossible="true"/>
             <Character identifier="Touhou_ODM12_Enemy_Human_Normal" from="Touhou_ODM12_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true"/>
             <Character identifier="Touhou_ODM12_Enemy_Human_Normal" from="Touhou_ODM12_Enemy_NPC" moduleflags="engineeringmodule" requirekill="true"/>
             <Character identifier="Touhou_ODM12_Enemy_Human_Easy" from="Touhou_ODM12_Enemy_NPC" moduleflags="researchmodule" requirekill="true"/>
-            <Character identifier="Touhou_ODM12_Enemy_Human_Easy" from="Touhou_ODM12_Enemy_NPC" moduleflags="securitymodule" asfaraspossible="true" requirekill="true"/>
             <Character identifier="Touhou_ODM12_Enemy_Human_Easy" from="Touhou_ODM12_Enemy_NPC" moduleflags="securitymodule" asfaraspossible="true" requirekill="true"/>
         </Characters>
     </OutpostDestroyMission>
@@ -1337,7 +1560,7 @@
             maxsonarmarkerdistance="10000"
             sonarlabel="target">
         <monster character="Touhou_Crystal_Carrier" min="3" max="3"/>
-        <Monster character="Touhou_Crystal_Carrier" min="2" max="2" multiplayeronly="true" />
+        <Monster character="Touhou_Crystal_Carrier" min="1" max="1" multiplayeronly="true" />
         <Reputation identifier="Touhou_Gensokyo" amount="1"/>
         <Icon texture="%ModDir%/Images/Missions/Touhou_MissionIcons03.png" sourcerect="0,0,256,256"/>
         <message header="missionheader.Touhou_Monster_Coalition_Mission01" text="missionmessage.Touhou_Monster_Coalition_Mission01"/>

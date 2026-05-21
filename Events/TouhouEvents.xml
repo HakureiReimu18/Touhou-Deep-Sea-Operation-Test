@@ -1684,33 +1684,333 @@
 
         <!--站点一般任务-->
         <ScriptedEvent identifier="Touhou_Normal_Mission01" commonness="100">
+            <TagAction criteria="player" tag="player"/>
             <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Hakurei_Reimu" targettag="missionnpc" spawnlocation="Outpost"
                          spawnpointtype="Human"/>
-            <ConversationAction text="EventText.Touhou_Normal_Mission01.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+            <TriggerAction target1tag="missionnpc" target2tag="player" applytotarget2="triggerer_player" radius="150" waitforinteraction="true"/>
+            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Normal_Mission01.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
                                 eventsprite="Reimu_Mission"/>
-            <MissionAction missiontag="Touhou_Mission_Normal"/>
-            <MissionAction missiontag="Touhou_Mission_Normal"/>
-            <MissionAction missiontag="killmonster_set3"/>
-            <!--      <CheckDataAction identifier="Touhou_Monster_Spectral_Mission01_Completed" condition="eq true">
-                    <Success>
-                      <MissionAction MissionIdentifier="Touhou_Monster_Spectral_Mission03" />
-                    </Success>
-                    <Failure>
-                    </Failure>
-                  </CheckDataAction>-->
+            <CheckDataAction identifier="Touhou_Monster_Spectral_Mission01_Completed" condition="eq true">
+                <Success>
+                    <CheckDataAction identifier="Touhou_Monster_Spectral_Mission03_Completed" condition="eq true">
+                        <Success>
+                            <CheckDataAction identifier="Touhou_Monster_Spectral_Mission04_Completed" condition="eq true">
+                                <Success>
+                                    <CheckDataAction identifier="Touhou_Monster_Spectral_Mission05_Completed" condition="eq true">
+                                        <Success>
+                                            <CheckDataAction identifier="Touhou_Monster_Spectral_Mission06_Completed" condition="eq true">
+                                                <Success>
+                                                    <CheckDataAction identifier="Touhou_Monster_Spectral_Mission_All_Completed" condition="eq true">
+                                                        <Success>
+                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.s1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                                                eventsprite="Reimu_Mission"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                            <MissionAction missiontag="killmonster_set3"/>
+                                                        </Success>
+                                                        <Failure>
+                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                                                eventsprite="Reimu_Mission">
+                                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1">
+                                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1">
+                                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                                                            <TriggerEventAction identifier="Touhou_Spawn_Gift_Delay" />
+                                                                            <SetDataAction value="true" identifier="Touhou_Monster_Spectral_Mission_All_Completed"/>
+                                                                        </Option>
+                                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2">
+                                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                                                            <TriggerEventAction identifier="Touhou_Spawn_Gift_Delay" />
+                                                                            <SetDataAction value="true" identifier="Touhou_Monster_Spectral_Mission_All_Completed"/>
+                                                                        </Option>
+                                                                    </ConversationAction>
+                                                                </Option>
+                                                            </ConversationAction>
+                                                        </Failure>
+                                                    </CheckDataAction>
+                                                </Success>
+                                                <Failure>
+                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                                        eventsprite="Reimu_Mission">
+                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1">
+                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1">
+                                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                                                    <MissionAction missiontag="Touhou_Monster_Spectral_Mission06"/>
+                                                                    <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                                    <MissionAction missiontag="killmonster_set3"/>
+                                                                </Option>
+                                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2">
+                                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                                                    <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                                    <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                                    <MissionAction missiontag="killmonster_set3"/>
+                                                                </Option>
+                                                            </ConversationAction>
+                                                        </Option>
+                                                    </ConversationAction>
+                                                </Failure>
+                                            </CheckDataAction>
+                                        </Success>
+                                        <Failure>
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                                eventsprite="Reimu_Mission">
+                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1">
+                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1">
+                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                                            <MissionAction missiontag="Touhou_Monster_Spectral_Mission05"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                            <MissionAction missiontag="killmonster_set3"/>
+                                                        </Option>
+                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2">
+                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                            <MissionAction missiontag="killmonster_set3"/>
+                                                        </Option>
+                                                    </ConversationAction>
+                                                </Option>
+                                            </ConversationAction>
+                                        </Failure>
+                                    </CheckDataAction>
+                                </Success>
+                                <Failure>
+                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                        eventsprite="Reimu_Mission">
+                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1">
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                                <Option text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1">
+                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                                    <MissionAction missiontag="Touhou_Monster_Spectral_Mission04"/>
+                                                    <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                    <MissionAction missiontag="killmonster_set3"/>
+                                                </Option>
+                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2">
+                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                                    <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                    <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                                    <MissionAction missiontag="killmonster_set3"/>
+                                                </Option>
+                                            </ConversationAction>
+                                        </Option>
+                                    </ConversationAction>
+                                </Failure>
+                            </CheckDataAction>
+                        </Success>
+                        <Failure>
+                            <ConversationAction text="EventText.Touhou_Spectral_Mission.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                eventsprite="Reimu_Mission">
+                                <Option text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1">
+                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                        <Option text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1">
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                            <MissionAction missiontag="Touhou_Monster_Spectral_Mission03"/>
+                                            <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                            <MissionAction missiontag="killmonster_set3"/>
+                                        </Option>
+                                        <Option text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2">
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                            <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                            <MissionAction missiontag="Touhou_Mission_Normal"/>
+                                            <MissionAction missiontag="killmonster_set3"/>
+                                        </Option>
+                                    </ConversationAction>
+                                </Option>
+                            </ConversationAction>
+                        </Failure>
+                    </CheckDataAction>
+                </Success>
+                <Failure>
+                    <MissionAction missiontag="Touhou_Mission_Normal"/>
+                    <MissionAction missiontag="Touhou_Mission_Normal"/>
+                    <MissionAction missiontag="killmonster_set3"/>
+                </Failure>
+            </CheckDataAction>
         </ScriptedEvent>
 
         <!--站点困难任务-->
         <ScriptedEvent identifier="Touhou_Hard_Mission01" commonness="100">
+            <TagAction criteria="player" tag="player"/>
             <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Hakurei_Reimu" targettag="missionnpc" spawnlocation="Outpost"
                          spawnpointtype="Human"/>
-            <ConversationAction text="EventText.Touhou_Hard_Mission01.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+            <TriggerAction target1tag="missionnpc" target2tag="player" applytotarget2="triggerer_player" radius="150" waitforinteraction="true"/>
+            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Hard_Mission01.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
                                 eventsprite="Reimu_Mission"/>
-            <MissionAction missiontag="Touhou_Mission_Hard"/>
-            <MissionAction missiontag="Touhou_Mission_Hard"/>
-            <MissionAction missiontag="Touhou_Mission_Hard"/>
-            <MissionAction missiontag="killmonster_set4"/>
+            <CheckDataAction identifier="Touhou_Monster_Spectral_Mission01_Completed" condition="eq true">
+                <Success>
+                    <CheckDataAction identifier="Touhou_Monster_Spectral_Mission03_Completed" condition="eq true">
+                        <Success>
+                            <CheckDataAction identifier="Touhou_Monster_Spectral_Mission04_Completed" condition="eq true">
+                                <Success>
+                                    <CheckDataAction identifier="Touhou_Monster_Spectral_Mission05_Completed" condition="eq true">
+                                        <Success>
+                                            <CheckDataAction identifier="Touhou_Monster_Spectral_Mission06_Completed" condition="eq true">
+                                                <Success>
+                                                    <CheckDataAction identifier="Touhou_Monster_Spectral_Mission_All_Completed" condition="eq true">
+                                                        <Success>
+                                                            <ConversationAction text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.s1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                                                eventsprite="Reimu_Mission"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                            <MissionAction missiontag="killmonster_set4"/>
+                                                        </Success>
+                                                        <Failure>
+                                                            <ConversationAction text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                                                eventsprite="Reimu_Mission">
+                                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1">
+                                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1">
+                                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                                                            <TriggerEventAction identifier="Touhou_Spawn_Gift_Delay" />
+                                                                            <SetDataAction value="true" identifier="Touhou_Monster_Spectral_Mission_All_Completed"/>
+                                                                        </Option>
+                                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2">
+                                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                                                            <TriggerEventAction identifier="Touhou_Spawn_Gift_Delay" />
+                                                                            <SetDataAction value="true" identifier="Touhou_Monster_Spectral_Mission_All_Completed"/>
+                                                                        </Option>
+                                                                    </ConversationAction>
+                                                                </Option>
+                                                            </ConversationAction>
+                                                        </Failure>
+                                                    </CheckDataAction>
+                                                </Success>
+                                                <Failure>
+                                                    <ConversationAction text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                                        eventsprite="Reimu_Mission">
+                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1">
+                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1">
+                                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                                                    <MissionAction missiontag="Touhou_Monster_Spectral_Mission06"/>
+                                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                                    <MissionAction missiontag="killmonster_set4"/>
+                                                                </Option>
+                                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2">
+                                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                                    <MissionAction missiontag="killmonster_set4"/>
+                                                                </Option>
+                                                            </ConversationAction>
+                                                        </Option>
+                                                    </ConversationAction>
+                                                </Failure>
+                                            </CheckDataAction>
+                                        </Success>
+                                        <Failure>
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                                eventsprite="Reimu_Mission">
+                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1">
+                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1">
+                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                                            <MissionAction missiontag="Touhou_Monster_Spectral_Mission05"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                            <MissionAction missiontag="killmonster_set4"/>
+                                                        </Option>
+                                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2">
+                                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                            <MissionAction missiontag="killmonster_set4"/>
+                                                        </Option>
+                                                    </ConversationAction>
+                                                </Option>
+                                            </ConversationAction>
+                                        </Failure>
+                                    </CheckDataAction>
+                                </Success>
+                                <Failure>
+                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                        eventsprite="Reimu_Mission">
+                                        <Option text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1">
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                                <Option text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1">
+                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                                    <MissionAction missiontag="Touhou_Monster_Spectral_Mission04"/>
+                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                    <MissionAction missiontag="killmonster_set4"/>
+                                                </Option>
+                                                <Option text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2">
+                                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                                    <MissionAction missiontag="killmonster_set4"/>
+                                                </Option>
+                                            </ConversationAction>
+                                        </Option>
+                                    </ConversationAction>
+                                </Failure>
+                            </CheckDataAction>
+                        </Success>
+                        <Failure>
+                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.f1.c1" speakertag="missionnpc" endeventifinterrupted="false" dialogtype="Small"
+                                                eventsprite="Reimu_Mission">
+                                <Option text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1">
+                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1" eventsprite="Reimu_Mission">
+                                        <Option text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1">
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o1.c1" eventsprite="Reimu_Mission"/>
+                                            <MissionAction missiontag="Touhou_Monster_Spectral_Mission03"/>
+                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                            <MissionAction missiontag="killmonster_set4"/>
+                                        </Option>
+                                        <Option text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2">
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Spectral_Mission.s1.f1.c1.o1.c1.o2.c1" eventsprite="Reimu_Mission"/>
+                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                            <MissionAction missiontag="Touhou_Mission_Hard"/>
+                                            <MissionAction missiontag="killmonster_set4"/>
+                                        </Option>
+                                    </ConversationAction>
+                                </Option>
+                            </ConversationAction>
+                        </Failure>
+                    </CheckDataAction>
+                </Success>
+                <Failure>
+                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                    <MissionAction missiontag="Touhou_Mission_Hard"/>
+                    <MissionAction missiontag="killmonster_set4"/>
+                </Failure>
+            </CheckDataAction>
         </ScriptedEvent>
+
+
+        <!--八云紫-新年出港事件-->
+        <ScriptedEvent identifier="Touhou_Yukari_Newbie_Rewards" commonness="100">
+            <TagAction criteria="player" tag="player"/>
+            <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Yakumo_Yukari" targettag="Mission_Yakumo_Yukari" spawnlocation="Outpost"
+                         spawnpointtype="Human"/>
+            <TriggerAction target1tag="Mission_Yakumo_Yukari" target2tag="player" applytotarget2="triggerer_player" radius="150" waitforinteraction="true"/>
+            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small"/>
+            <CheckDataAction identifier="Touhou_Yukari_Newbie_Rewards_Completed" condition="eq true">
+                <Success>
+                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.s1.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small"/>
+                </Success>
+                <Failure>
+                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small">
+                        <Option text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1">
+                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1.c1" />
+                            <SpawnAction itemidentifier="Touhou_New_Year_Departure_Gift" targetinventory="triggerer_player"/>
+                            <SetDataAction value="true" identifier="Touhou_Yukari_Newbie_Rewards_Completed"/>
+                        </Option>
+                    </ConversationAction>
+                </Failure>
+            </CheckDataAction>
+        </ScriptedEvent>
+
+
 
         <!--站点商人01-->
         <!--    <ScriptedEvent identifier="Touhou_Merchant_Event01" commonness="100">
@@ -1852,6 +2152,14 @@
                   onceperoutpost="true" eventcount="1" additive="true" selectalways="true"
                   locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion,tsm_city,tsm_military,tsm_mine,Touhou_Temporary_Shelter_LocationType">
             <ScriptedEvent identifier="Touhou_Akyuu_Mission" commonness="50"/>
+        </EventSet>
+    </EventSet>
+    <EventSet identifier="Touhou_Newbie_Events01" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="35"
+              chooserandom="false" ignorecooldown="true" additive="true" selectalways="true" campaign="true">
+        <EventSet identifier="Touhou_Newbie_Events01_Yukari" minleveldifficulty="0" maxleveldifficulty="35" allowatstart="true" chooserandom="true"
+                  onceperoutpost="true" eventcount="1" additive="true" selectalways="true"
+                  locationtype="outpost,city,research,military,mine,colony,settlement,construction,camp,base,blockade,survey,excavation,study,lab,clinic,hospital,surgery,hydroponics,biosphere,nourishment,factory,shipyard,fusion,tsm_city,tsm_military,tsm_mine,Touhou_Temporary_Shelter_LocationType">
+            <ScriptedEvent identifier="Touhou_Yukari_Newbie_Rewards" commonness="50"/>
         </EventSet>
     </EventSet>
     <!--  <EventSet identifier="Touhou_Merchant_Events01" leveltype="outpost" allowatstart="true" minleveldifficulty="0" maxleveldifficulty="100" chooserandom="false" ignorecooldown="true" additive="true" selectalways="true" campaign="true">

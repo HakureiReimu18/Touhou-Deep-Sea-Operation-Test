@@ -17,6 +17,8 @@
     <charactername.Merchant_Kawasiro_Nitori>河城荷取</charactername.Merchant_Kawasiro_Nitori>
     <charactername.Satellite_Event_Kawasiro_Nitori>河城荷取</charactername.Satellite_Event_Kawasiro_Nitori>
     <npctitle.Merchant_Kawasiro_Nitori>河童商人</npctitle.Merchant_Kawasiro_Nitori>
+    <npctitle.Aya_Event_Outpost_Merchant>礼物倾销商</npctitle.Aya_Event_Outpost_Merchant>
+    <npctitle.Mission_Yakumo_Yukari>八云紫</npctitle.Mission_Yakumo_Yukari>
 
 
     <!-- Factions -->
@@ -144,6 +146,12 @@
     <Text.Touhou_Machine_On>启动设备</Text.Touhou_Machine_On>
     <Text.Satori_Plus>心灵读取</Text.Satori_Plus>
     <uilabel.Shotgun_Shooting>霰弹射击</uilabel.Shotgun_Shooting>
+    <Text.Touhou_Missions_Collection_Spectral_Creature01>幽灵生物-序幕一</Text.Touhou_Missions_Collection_Spectral_Creature01>
+    <Text.Touhou_Missions_Collection_Spectral_Creature02>幽灵生物-序幕二</Text.Touhou_Missions_Collection_Spectral_Creature02>
+    <Text.Touhou_Missions_Collection_Spectral_Creature03>幽灵生物-第一幕</Text.Touhou_Missions_Collection_Spectral_Creature03>
+    <Text.Touhou_Missions_Collection_Spectral_Creature04>幽灵生物-第二幕</Text.Touhou_Missions_Collection_Spectral_Creature04>
+    <Text.Touhou_Missions_Collection_Spectral_Creature05>往世来生</Text.Touhou_Missions_Collection_Spectral_Creature05>
+
 
 
     <!--Display Name-->
@@ -178,42 +186,32 @@
     <entityname.Touhou_Blunderbuss_Enemy_Magazine02>仿制喇叭精致弹药堆</entityname.Touhou_Blunderbuss_Enemy_Magazine02>
     <entityname.Touhou_Hompson_Contender_Enemy>劣质汤普森竞争者</entityname.Touhou_Hompson_Contender_Enemy>
     <entitydescription.Touhou_Hompson_Contender_Enemy>地球曾经某个时代的造物，如今流传到木卫二上的这把显然是拙劣的复制品，还是拆解掉比较好</entitydescription.Touhou_Hompson_Contender_Enemy>
-    <entityname.Touhou_Magic_Automatic_Shotgun>魔术自动霰弹枪</entityname.Touhou_Magic_Automatic_Shotgun>
-    <entitydescription.Touhou_Magic_Automatic_Shotgun>在自动霰弹枪的基础上增加魔法材料制成的复制品，优化了性能释放，但却让这把武器愈加不稳定，还是拆解掉比较好
-    </entitydescription.Touhou_Magic_Automatic_Shotgun>
+    <entityname.Touhou_Magic_Automatic_Shotgun>逆位自动霰弹枪</entityname.Touhou_Magic_Automatic_Shotgun>
+    <entitydescription.Touhou_Magic_Automatic_Shotgun>在自动霰弹枪的基础上增加魔法材料制成的复制品，优化了性能释放，但却让这把武器愈加不稳定，还是拆解掉比较好</entitydescription.Touhou_Magic_Automatic_Shotgun>
     <entityname.Touhou_Magic_Automatic_Shotgun_Bullet>魔术霰弹</entityname.Touhou_Magic_Automatic_Shotgun_Bullet>
-    <entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>用便宜魔法材料制成的霰弹子弹，是个明眼人都看得出来，这只是一堆铁块而已，还是拆解掉比较好
-    </entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>
-    <entityname.Touhou_Magic_Pollution_Shotgun_Bullet>污染霰弹</entityname.Touhou_Magic_Pollution_Shotgun_Bullet>
-    <entitydescription.Touhou_Magic_Pollution_Shotgun_Bullet>被灵气污染侵蚀过的魔术霰弹，这显然已经不是人类能接触的范畴了
-    </entitydescription.Touhou_Magic_Pollution_Shotgun_Bullet>
+    <entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>用便宜魔法材料制成的霰弹子弹，是个明眼人都看得出来，这只是一堆铁块而已，还是拆解掉比较好</entitydescription.Touhou_Magic_Automatic_Shotgun_Bullet>
+    <entityname.Touhou_Magic_Pollution_Shotgun_Bullet>逆位霰弹</entityname.Touhou_Magic_Pollution_Shotgun_Bullet>
+    <entitydescription.Touhou_Magic_Pollution_Shotgun_Bullet>被灵气污染侵蚀过的魔术霰弹，这显然已经不是人类能接触的范畴了</entitydescription.Touhou_Magic_Pollution_Shotgun_Bullet>
     <entityname.Touhou_Lunarquake_Fake>仿制月震</entityname.Touhou_Lunarquake_Fake>
-    <entitydescription.Touhou_Lunarquake_Fake>用便宜魔法材料模仿的月震，完全没有原武器任何特色，还是拆解掉比较好
-    </entitydescription.Touhou_Lunarquake_Fake>
+    <entitydescription.Touhou_Lunarquake_Fake>用便宜魔法材料模仿的月震，完全没有原武器任何特色，还是拆解掉比较好</entitydescription.Touhou_Lunarquake_Fake>
     <entityname.Touhou_Lunar_Center_Fake>仿制月震中心</entityname.Touhou_Lunar_Center_Fake>
     <entitydescription.Touhou_Lunar_Center_Fake>粗糙的模仿带来的是更少的容量，还是拆解掉比较好</entitydescription.Touhou_Lunar_Center_Fake>
     <entityname.Touhou_Pollution_Lunar_Center_Fake>污染月震中心</entityname.Touhou_Pollution_Lunar_Center_Fake>
-    <entitydescription.Touhou_Pollution_Lunar_Center_Fake>侵蚀更加严重的月震中心，失去了威胁性，但穿透能力大幅增强
-    </entitydescription.Touhou_Pollution_Lunar_Center_Fake>
-    <entityname.Touhou_Pollution_Shotgun>污染霰弹枪</entityname.Touhou_Pollution_Shotgun>
-    <entitydescription.Touhou_Pollution_Shotgun>一把被不洁的魔法侵染的霰弹枪，污染魔法使以外的生物都无法正常使用，也许可以想办法净化掉这些污秽
-    </entitydescription.Touhou_Pollution_Shotgun>
-    <entityname.Touhou_Pollution_Rifle>污染步枪</entityname.Touhou_Pollution_Rifle>
-    <entitydescription.Touhou_Pollution_Rifle>一把被不洁的魔法侵染的步枪，污染魔法使以外的生物都无法正常使用，也许可以想办法净化掉这些污秽
-    </entitydescription.Touhou_Pollution_Rifle>
+    <entitydescription.Touhou_Pollution_Lunar_Center_Fake>侵蚀更加严重的月震中心，失去了威胁性，但穿透能力大幅增强</entitydescription.Touhou_Pollution_Lunar_Center_Fake>
+    <entityname.Touhou_Pollution_Shotgun>逆位霰弹枪</entityname.Touhou_Pollution_Shotgun>
+    <entitydescription.Touhou_Pollution_Shotgun>一把被不洁的魔法侵染的霰弹枪，污染魔法使以外的生物都无法正常使用，也许可以想办法净化掉这些污秽</entitydescription.Touhou_Pollution_Shotgun>
+    <entityname.Touhou_Pollution_Rifle>逆位步枪</entityname.Touhou_Pollution_Rifle>
+    <entitydescription.Touhou_Pollution_Rifle>一把被不洁的魔法侵染的步枪，污染魔法使以外的生物都无法正常使用，也许可以想办法净化掉这些污秽</entitydescription.Touhou_Pollution_Rifle>
     <entityname.Touhou_Arc_Salute_Cannon>电弧礼炮</entityname.Touhou_Arc_Salute_Cannon>
-    <entitydescription.Touhou_Arc_Salute_Cannon>由来源不明的魔法和物质构成的武器，能发射危险的电浆球，还是拆解掉比较好
-    </entitydescription.Touhou_Arc_Salute_Cannon>
+    <entitydescription.Touhou_Arc_Salute_Cannon>由来源不明的魔法和物质构成的武器，能发射危险的电浆球，还是拆解掉比较好</entitydescription.Touhou_Arc_Salute_Cannon>
     <entityname.Touhou_Arc_Salute_Cannon_Ammo>礼炮电浆罐</entityname.Touhou_Arc_Salute_Cannon_Ammo>
     <entitydescription.Touhou_Arc_Salute_Cannon_Ammo>一罐封存严实的电浆</entitydescription.Touhou_Arc_Salute_Cannon_Ammo>
     <entityname.Touhou_Nail_Head_Book>钉头书</entityname.Touhou_Nail_Head_Book>
-    <entitydescription.Touhou_Nail_Head_Book>造型奇特的一把武器，似乎是从某把武器改造而来，能发射极具穿透力的钉形射弹，还是拆解掉比较好
-    </entitydescription.Touhou_Nail_Head_Book>
+    <entitydescription.Touhou_Nail_Head_Book>造型奇特的一把武器，似乎是从某把武器改造而来，能发射极具穿透力的钉形射弹，还是拆解掉比较好</entitydescription.Touhou_Nail_Head_Book>
     <entityname.Touhou_Nail_Head_Book_Ammo>钉头电池</entityname.Touhou_Nail_Head_Book_Ammo>
     <entitydescription.Touhou_Nail_Head_Book_Ammo>钉头书专用的电池，但充电方法未知</entitydescription.Touhou_Nail_Head_Book_Ammo>
     <entityname.Touhou_Pollution_Riflebullet>污染步枪子弹</entityname.Touhou_Pollution_Riflebullet>
-    <entitydescription.Touhou_Pollution_Riflebullet>被灵气污染侵蚀过的步枪子弹，这显然已经不是人类能接触的范畴了
-    </entitydescription.Touhou_Pollution_Riflebullet>
+    <entitydescription.Touhou_Pollution_Riflebullet>被灵气污染侵蚀过的步枪子弹，这显然已经不是人类能接触的范畴了</entitydescription.Touhou_Pollution_Riflebullet>
 
     <!--NPC显示名称-->
     <npctitle.Touhou_ODM03_Enemy_Human_Lunatic>掠夺者-Lunatic</npctitle.Touhou_ODM03_Enemy_Human_Lunatic>
@@ -317,4 +315,17 @@
         第一次发现时间：破壳日前120天
         发现者：联盟直属炼金实验室主任
     </Touhou_Top_Secret_Classified_Reiki_Erode_Crawler_Msg>
+
+    <upgradecategory.Turret_Spell_Card_Cannon>符卡发射器</upgradecategory.Turret_Spell_Card_Cannon>
+    <upgradename.Touhou_Turret_Increasedamage>符卡发射器伤害增强</upgradename.Touhou_Turret_Increasedamage>
+    <upgradedescription.Touhou_Turret_Increasedamage>提高符卡发射器威力，加强抛射速度</upgradedescription.Touhou_Turret_Increasedamage>
+    <entityname.Touhou_Small_Spell_Card_Cannon>小型符卡发射器</entityname.Touhou_Small_Spell_Card_Cannon>
+    <entitydescription.Touhou_Small_Spell_Card_Cannon>小体型的符卡发射器，可以使用电磁枪弹药和相关类型的符卡。相比电磁枪，小型符卡发射器的火力性能更高，平均射速略慢</entitydescription.Touhou_Small_Spell_Card_Cannon>
+    <entityname.Touhou_Rapidly_Spell_Card_Cannon>高速符卡发射器</entityname.Touhou_Rapidly_Spell_Card_Cannon>
+    <entitydescription.Touhou_Rapidly_Spell_Card_Cannon>高射速的符卡发射器，可以使用连射炮弹药和相关类型的符卡。相比连射炮，高速符卡发射器的火力性能和射速都更高，但散布需要持续射击才会减小</entitydescription.Touhou_Rapidly_Spell_Card_Cannon>
+    <entityname.Touhou_Huge_Spell_Card_Cannon>大型符卡发射器</entityname.Touhou_Huge_Spell_Card_Cannon>
+    <entitydescription.Touhou_Huge_Spell_Card_Cannon>大体型的符卡发射器，可以使用加农炮弹药、脉冲激光弹药和相关类型的符卡。相比其他炮塔，大型符卡发射器的火力性能大幅降低，但双联装弥补了这一点。</entitydescription.Touhou_Huge_Spell_Card_Cannon>
+    <entityname.Touhou_Scatter_Spell_Card_Cannon>散射符卡发射器</entityname.Touhou_Scatter_Spell_Card_Cannon>
+    <entitydescription.Touhou_Scatter_Spell_Card_Cannon>低射速的散射符卡发射器，可以使用连射炮弹药和相关类型的符卡。相比连射炮，散射符卡发射器通过蓄力发射多枚射弹，可以压制成群的敌人</entitydescription.Touhou_Scatter_Spell_Card_Cannon>
+
 </infotexts>

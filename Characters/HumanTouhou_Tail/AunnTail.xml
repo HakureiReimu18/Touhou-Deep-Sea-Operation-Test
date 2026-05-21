@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <huskappendage>
     <!-- 肢体-尾巴 -->
-    <limb name="Aunn_Tail" id="17" radius="10" height="80" mass="0" type="Tail" flip="True" pullpos="0,0" healthindex="5" attackpriority="0.1"
+    <limb name="Aunn_Tail" id="17" radius="10" height="80" mass="0" type="Tail" flip="True" pullpos="0,0" healthindex="1" attackpriority="0.1"
           steerforce="0" stepoffset="0,0" width="0" density="5" refjoint="-1" ignorecollisions="false" notes="" friction="0.3" restitution="0.05"
           spriteorientation="NaN" mirrorvertically="False" mirrorhorizontally="False" hide="False" angulardamping="7" mouthpos="0,0"
           constanttorque="0" constantangle="0" scale="1" attackforcemultiplier="1" minseverancedamage="200" inheritlimbdepth="None"

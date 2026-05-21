@@ -1,4 +1,4 @@
-﻿<Ragdoll type="endworm" Texture="%ModDir%/Images/Characters/Touhou_Spectral_Runner/Touhou_Spectral_Runner.png" Color="255,255,255,255"
+﻿<Ragdoll type="Touhou_Spectral_Runner" Texture="%ModDir%/Images/Characters/Touhou_Spectral_Runner/Touhou_Spectral_Runner.png" Color="255,255,255,255"
          SpritesheetOrientation="0" LimbScale="0.5" JointScale="0.5" TextureScale="1" SourceRectScale="1" ColliderHeightFromFloor="45"
          ImpactTolerance="300" CanEnterSubmarine="Partial" CanWalk="False" Draggable="True" MainLimb="Head">
     <collider Name="Main Collider" Radius="200" Height="0" Width="0" BodyType="Dynamic"/>

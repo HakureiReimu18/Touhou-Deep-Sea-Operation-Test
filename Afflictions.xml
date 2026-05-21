@@ -852,8 +852,6 @@
                 maxscreenblur="2.0"
                 screeneffectfluctuationfrequency="0.05"
                 strengthchange="-0.1"
-                minskillmultiplier="1.0"
-                maxskillmultiplier="0.8"
                 resistancefor="damage,stun"
                 minresistance="0"
                 maxresistance="-0.35">
@@ -2213,7 +2211,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso" minresistance="0.35"
+        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso,Waist" minresistance="0.35"
                 maxresistance="0.35"/>
         <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
@@ -2231,7 +2229,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso" minresistance="0.075" maxresistance="0.075"/>
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso,Waist" minresistance="0.075" maxresistance="0.075"/>
         <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
@@ -2316,7 +2314,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" ResistanceLimbs="Head,Torso"
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" ResistanceLimbs="Head,Torso,Waist"
                 resistancefor="damage,burn"
                 minresistance="0.15" maxresistance="0.15"/>
         <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -2410,7 +2408,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso" minresistance="0.25"
+        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso,Waist" minresistance="0.25"
                 maxresistance="0.25"/>
         <icon texture="%ModDir%/Images/Afflictions/Boudary_Divinggear_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
@@ -2428,7 +2426,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso" minresistance="0.05" maxresistance="0.05"/>
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso,Waist" minresistance="0.05" maxresistance="0.05"/>
         <icon texture="%ModDir%/Images/Afflictions/Boudary_Divinggear_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
@@ -2513,7 +2511,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.05" maxskillmultiplier="1.05" ResistanceLimbs="Head,Torso"
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.05" maxskillmultiplier="1.05" ResistanceLimbs="Head,Torso,Waist"
                 resistancefor="damage,burn"
                 minresistance="0.125" maxresistance="0.125"/>
         <icon texture="%ModDir%/Images/Afflictions/Boudary_Divinggear_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -2607,7 +2605,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso" minresistance="0.15"
+        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,infection" ResistanceLimbs="Head,Torso,Waist" minresistance="0.15"
                 maxresistance="0.15"/>
         <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
@@ -2625,7 +2623,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso" minresistance="0.025" maxresistance="0.025"/>
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" ResistanceLimbs="Head,Torso,Waist" minresistance="0.025" maxresistance="0.025"/>
         <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
@@ -2708,7 +2706,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.05" maxskillmultiplier="1.05" ResistanceLimbs="Head,Torso"
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.05" maxskillmultiplier="1.05" ResistanceLimbs="Head,Torso,Waist"
                 resistancefor="damage,burn"
                 minresistance="0.1" maxresistance="0.1"/>
         <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -2783,7 +2781,7 @@
             maxstrength="1"
             Duration="10.1"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" ResistanceLimbs="Head,Torso"
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1" ResistanceLimbs="Head,Torso,Waist"
                 resistancefor="damage,burn"
                 minresistance="0.05" maxresistance="0.05"/>
         <icon texture="%ModDir%/Images/Afflictions/Hyouibana_Effect_Flag.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
@@ -5031,7 +5029,7 @@
         <Description textidentifier="afflictiondescription.Touhou_Sparkfire_Shotgun_Effect" minstrength="0" maxstrength="20"/>
         <Effect minstrength="0" maxstrength="20" resistancefor="burn" minresistance="0" maxresistance="-0.2" strengthchange="-1.0">
             <StatusEffect target="Limb" Interval="1.0" disabledeltatime="true">
-                <Affliction identifier="burn" amount="1.2" penetration="0.5"/>
+                <Affliction identifier="burn" amount="2.4" penetration="0.5"/>
             </StatusEffect>
             <StatusEffect target="Character">
                 <Conditional InWater="false"/>
@@ -5177,6 +5175,126 @@
         <Description textidentifier="afflictiondescription.Touhou_Deceit_Mod_Effect" minstrength="0" maxstrength="1"/>
         <Effect minstrength="0" maxstrength="1" />
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Deceit_Mod_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+
+    <!--回响-->
+    <Affliction
+            name="回响"
+            identifier="Touhou_Echo"
+            type="debuff"
+            limbspecific="false"
+            indicatorlimb="Head"
+            activationthreshold="0"
+            maxstrength="100"
+            treatmentthreshold="5"
+            healcostmultiplier="2.5">
+        <Description
+                textidentifier="afflictiondescription.Touhou_Echo"
+                target="Self"
+                minstrength="0"
+                maxstrength="100"/>
+        <Effect minstrength="0" maxstrength="100"
+                strengthchange="-2.5"
+                resistancefor="damage"
+                minresistance="0"
+                maxresistance="-0.2">
+            <StatValue stattype="AttackMultiplier" minvalue="0" maxvalue="-0.1"/>
+        </Effect>
+        <PeriodicEffect mininterval="0.5" maxinterval="1.5">
+            <StatusEffect target="Character">
+                <Affliction identifier="organdamage" amount="3.0" penetration="0.5"/>
+                <Explosion range="100.0" force="0.0" shockwave="true" smoke="false" flash="false" sparks="false" flames="false"
+                           camerashake="0.0" underwaterbubble="false" />
+            </StatusEffect>
+        </PeriodicEffect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_Echo.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--须臾守护-->
+    <Affliction
+            name="须臾守护"
+            identifier="Touhou_PrayerInjector_Gun_Bullet04_Effect"
+            type="Touhou_PrayerInjector_Gun_Bullet04_Effect"
+            isbuff="true"
+            limbspecific="false"
+            indicatorlimb="Head"
+            activationthreshold="0"
+            maxstrength="10"
+            treatmentthreshold="5"
+            healcostmultiplier="2.5">
+        <Description
+                textidentifier="afflictiondescription.Touhou_PrayerInjector_Gun_Bullet04_Effect"
+                target="Self"
+                minstrength="0"
+                maxstrength="10"/>
+        <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="true" minvitalitydecrease="0" maxvitalitydecrease="-0.5"
+                resistancefor="damage" minresistance="0" maxresistance="0.25" strengthchange="-1">
+            <StatValue stattype="AttackMultiplier" minvalue="0" maxvalue="-0.5"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_Reiki_Stability.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--守矢两仪铳攻击效果-->
+    <Affliction
+            name="守矢两仪铳攻击效果"
+            identifier="Touhou_Moriya_Duality_Carbine_Effect"
+            type="debuff"
+            limbspecific="false"
+            indicatorlimb="Head"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            maxstrength="1"
+            duration="5.0"
+            treatmentthreshold="5"
+            healcostmultiplier="2.5">
+        <Description
+                textidentifier="afflictiondescription.Touhou_Echo"
+                target="Self"
+                minstrength="0"
+                maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1"
+                resistancefor="stun"
+                minresistance="-0.3"
+                maxresistance="-0.3">
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_Echo.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+
+    <!--伤痛吸收体-->
+    <Affliction name="伤痛吸收体" identifier="Touhou_External_Pain_Absorber_Effect" description="" type="resistance" isbuff="true" limbspecific="false" maxstrength="70"
+                hideiconafterdelay="true" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Description textidentifier="afflictiondescription.Touhou_External_Pain_Absorber_Effect" minstrength="0" maxstrength="70"/>
+        <Effect minstrength="0" maxstrength="70" resistancefor="damage,stun,burn" minresistance="0" maxresistance="-0.35" strengthchange="-1">
+            <StatusEffect target="Character" Interval="1.0" disabledeltatime="true" CanGiveMedicalSkill="false">
+                <ReduceAffliction type="debuff" amount="0.15"/>
+                <ReduceAffliction type="damage" amount="0.5"/>
+            </StatusEffect>
+            <StatValue stattype="MedicalItemEffectivenessMultiplier" minvalue="0" maxvalue="0.5"/>
+            <StatValue stattype="AttackMultiplier" minvalue="0" maxvalue="-0.3"/>
+            <StatValue stattype="MaximumHealthMultiplier" minvalue="0" maxvalue="-0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_External_Pain_Absorber_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--傲慢护符效果-->
+    <Affliction name="傲慢护符效果" identifier="Touhou_Pride_Amulet_Effect" description="" type="Touhou_Pride_Amulet_Effect" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100">
+        <Description textidentifier="afflictiondescription.Touhou_External_Pain_Absorber_Effect" minstrength="0" maxstrength="70"/>
+        <Effect minstrength="0" maxstrength="1" />
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_External_Pain_Absorber_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--星月腰包效果-->
+    <Affliction name="星月腰包效果" identifier="Touhou_Star_Moon_Waist_Pouch_Effect" description="" type="Touhou_Star_Moon_Waist_Pouch" isbuff="true" limbspecific="false" maxstrength="1"
+                duration="10.1" showiconthreshold="100" showinhealthscannerthreshold="100">
+        <Description textidentifier="afflictiondescription.Touhou_External_Pain_Absorber_Effect" minstrength="0" maxstrength="1"/>
+        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,poison" minresistance="0.1" maxresistance="0.1" minskillmultiplier="1.1" maxskillmultiplier="1.1">
+            <StatValue stattype="BuffDurationMultiplier" value="0.25"/>
+            <StatValue stattype="MaximumHealthMultiplier" value="0.1"/>
+        </Effect>
+        <icon texture="%ModDir%/Images/Afflictions/Touhou_External_Pain_Absorber_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
 

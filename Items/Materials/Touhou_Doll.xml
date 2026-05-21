@@ -99,7 +99,7 @@
             </StatusEffect>
             <StatusEffect type="OnContained" target="Contained" condition="0.005" Interval="1.0" disabledeltatime="true">
                 <RequiredItem items="Elements_Book_Ammo" type="Contained"/>
-                <Conditional Hastag="Magic_Veil"/>
+                <Conditional Touhou_Magic_Boost="gt 299" targetcontainer="true"/>
             </StatusEffect>
             <StatusEffect type="OnContained" target="Character" comparison="And" Interval="1.0" disabledeltatime="true">
                 <RequiredItem items="Elements_Book_Ammo" type="Contained"/>

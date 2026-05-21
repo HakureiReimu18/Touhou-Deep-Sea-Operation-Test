@@ -242,7 +242,7 @@
     <afflictionname.Touhou_ODM6_Poison_Effect>Toxic Spread</afflictionname.Touhou_ODM6_Poison_Effect>
     <afflictiondescription.Touhou_ODM6_Poison_Effect>
         Foul magical toxins severely weaken your body. The sticky air greatly diminishes your strength.
-        -75% ranged damage, +25% movement speed, +60% melee damage, -50% friendly fire damage, reduced physical resistance.
+        -75% ranged damage, +25% movement speed, +60% melee damage, -25% friendly fire damage, reduced physical resistance.
         Health temporarily +25 until the toxin fully spreads, after which severe consequences occur.
     </afflictiondescription.Touhou_ODM6_Poison_Effect>
 
@@ -356,7 +356,7 @@
 
     <afflictionname.Touhou_Lunatic_Mission_Resistance_Effect>Blessing</afflictionname.Touhou_Lunatic_Mission_Resistance_Effect>
     <afflictiondescription.Touhou_Lunatic_Mission_Resistance_Effect>
-        The mission is arduous, but someone from Gensokyo guards you. Greatly increases resistance to debuffs, stun, and Reiki pressure.
+        The mission is arduous, but someone from Gensokyo guards you. Greatly increases resistance to debuffs, stun.
     </afflictiondescription.Touhou_Lunatic_Mission_Resistance_Effect>
 
     <afflictionname.Touhou_ODM11_Aff_Event_Effect>Impulse to Destroy</afflictionname.Touhou_ODM11_Aff_Event_Effect>
@@ -426,6 +426,13 @@
 
     <afflictionname.Touhou_OutpostDestroyMission12_Aff_Event_Effect>Rain Corrosion</afflictionname.Touhou_OutpostDestroyMission12_Aff_Event_Effect>
     <afflictiondescription.Touhou_OutpostDestroyMission12_Aff_Event_Effect>Reduces movement speed by 15% and physical damage resistance by 15%.</afflictiondescription.Touhou_OutpostDestroyMission12_Aff_Event_Effect>
+
+    <afflictionname.Touhou_Echo>Echo</afflictionname.Touhou_Echo>
+    <afflictiondescription.Touhou_Echo>A dark current surges through your body, lowering your resistances and causing intermittent physical damage.</afflictiondescription.Touhou_Echo>
+
+    <afflictionname.Touhou_External_Pain_Absorber_Effect>Pain Absorber</afflictionname.Touhou_External_Pain_Absorber_Effect>
+    <afflictiondescription.Touhou_External_Pain_Absorber_Effect>An unbelievable warm current flows through your body—you feel your limbs go weak, and drowsiness creeps in.</afflictiondescription.Touhou_External_Pain_Absorber_Effect>
+
 
 
 
@@ -536,4 +543,11 @@
 
     <afflictionname.Hyouibana_Effect_Prefect_Satori>Satori - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Satori>
     <afflictiondescription.Hyouibana_Effect_Prefect_Satori>Grants this character’s exclusive weapon effect.</afflictiondescription.Hyouibana_Effect_Prefect_Satori>
+
+    <afflictionname.Hyouibana_Effect_Prefect_Tewi>Tewi Inaba - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Tewi>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Tewi>Grants the exclusive weapon effects of the corresponding character.</afflictiondescription.Hyouibana_Effect_Prefect_Tewi>
+
+    <afflictionname.Hyouibana_Effect_Prefect_Kaguya>Kaguya Houraisan - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Kaguya>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Kaguya>Grants the exclusive weapon effects of the corresponding character.</afflictiondescription.Hyouibana_Effect_Prefect_Kaguya>
+
 </infotexts>

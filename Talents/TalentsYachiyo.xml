@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+    <Talent identifier="YachiyoTalent">
+        <Icon texture="%ModDir%/Images/Talents/YachiyoTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.YachiyoTalent"/>
+
+        <AbilityGroupInterval interval="16.8">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tsukuyomi_Administrator"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Octopus_Waist_Pouch_Effect" invert="true"/>
+                <AbilityConditionInFriendlySubmarine invert="true" />
+                <AbilityConditionServerRandom randomchance="0.5"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects allowSelf="true" >
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="stun" strength="8" peneration="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <!--击杀给予金钱-->
+        <AbilityGroupEffect abilityeffecttype="OnRoundEnd">
+            <Abilities>
+                <CharacterAbilityResetPermanentStat statidentifier="Yachiyo_Beat"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="None">
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Yachiyo_Beat" value="0" setvalue="true"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tsukuyomi_Administrator"/>
+                <AbilityConditionHasPermanentStat statidentifier="Yachiyo_Beat" min="10" invert="true"/>
+                <AbilityConditionHasLevel minlevel="8" invert="true"/>
+                <AbilityConditionServerRandom randomchance="0.5"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityBountyHunter vitalitypercentage="0.2"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tsukuyomi_Administrator"/>
+                <AbilityConditionHasPermanentStat statidentifier="Yachiyo_Beat" min="10" invert="true"/>
+                <AbilityConditionHasLevel minlevel="8" />
+                <AbilityConditionHasLevel minlevel="16" invert="true"/>
+                <AbilityConditionServerRandom randomchance="0.5"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityBountyHunter vitalitypercentage="0.3"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tsukuyomi_Administrator"/>
+                <AbilityConditionHasPermanentStat statidentifier="Yachiyo_Beat" min="10" invert="true"/>
+                <AbilityConditionHasLevel minlevel="16" />
+                <AbilityConditionServerRandom randomchance="0.5"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityBountyHunter vitalitypercentage="0.2"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tsukuyomi_Administrator"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGivePermanentStat statidentifier="Yachiyo_Beat" value="1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+
+        <AbilityGroupInterval interval="3.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Tsukuyomi_Administrator"/>
+                <AbilityConditionInSubmarine submarinetype="Player" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="SkillGainSpeed" value="0.25"/>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="OnUseRangedWeapon">
+            <Conditions>
+                <AbilityConditionItem tags="Touhou_Microphone"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Tsukuyomi_Administrator"/>
+                <AbilityConditionInSubmarine submarinetype="Player" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectsToAllies allowSelf="true" maxdistance="1000">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Tsukuyomi_Administrator_Melodious_Voice" strength="100"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAllies>
+            </Abilities>
+        </AbilityGroupEffect>
+
+    </Talent>
+</Talents>

@@ -10,9 +10,9 @@
         <Projectile characterusable="false" launchimpulse="100" maxtargetstohit="3" sticktocharacters="true" sticktoitems="false" sticktodoors="false"
                     sticktostructures="true" friendlyfire="false" damagedoors="true">
             <Attack structuredamage="5" itemdamage="10"  penetration="0.1" severlimbsprobability="0.2">
-                <Affliction identifier="burn" strength="3"/>
-                <Affliction identifier="lacerations" strength="1"/>
-                <Affliction identifier="stun" strength="0.5" probability="0.3"/>
+                <Affliction identifier="burn" strength="2"/>
+                <Affliction identifier="lacerations" strength="1.5"/>
+                <Affliction identifier="stun" strength="0.2" probability="0.3"/>
             </Attack>
             <StatusEffect type="OnActive" target="This" lifetime="0.6">
                 <ParticleEmitter particle="GlowDot" scalemin="1.5" scalemax="2.0" particlespersecond="150" anglemin="0" anglemax="360"
@@ -35,7 +35,7 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This" disabledeltatime="true">
                 <Explosion range="80.0" ballastfloradamage="50" severlimbsprobability="0.5" structuredamage="8" levelwalldamage="40" itemdamage="20"
-                           force="3.0" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,115,95,150">
+                           force="0.3" flames="false" smoke="false" sparks="false" underwaterbubble="false" flashcolor="255,115,95,150">
                     <Affliction identifier="burn" strength="2"/>
                 </Explosion>
             </StatusEffect>
@@ -549,7 +549,7 @@
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55"/>
         <Body width="110" height="30" density="10"/>
         <Holdable slots="RightHand+LeftHand" holdpos="0,-50" handle1="-10,0" handle2="10,0" aimable="false"/>
-        <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="2" hitscan="true" damagedoors="true" friendlyfire="false">
+        <Projectile characterusable="false" launchimpulse="50" maxtargetstohit="2" hitscan="true" damagedoors="true" friendlyfire="false">
             <Attack itemdamage="10" targetforce="2" targetimpulse="2" penetration="0.25">
                 <Affliction identifier="burn" strength="2"/>
                 <Affliction identifier="lacerations" strength="9"/>
@@ -563,7 +563,7 @@
                                  colormultiplier="135,50,105,220"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This">
-                <Explosion range="200.0" sparks="false" underwaterbubble="false" flash="false" flames="false" force="3.0" camerashake="20"
+                <Explosion range="200.0" sparks="false" underwaterbubble="false" flash="false" flames="false" force="1.0" camerashake="10"
                            camerashakerange="20"/>
                 <sound file="Content/Items/Weapons/ExplosionDebris4.ogg" range="4000"/>
                 <sound file="Content/Items/Weapons/ExplosionDebris5.ogg" range="4000"/>
@@ -762,6 +762,7 @@
                 <Conditional jobidentifier="neq Magician_Enemy"/>
                 <Conditional jobidentifier="neq Magician_Enemy_Rescue"/>
                 <Affliction identifier="Reiki_Side_Effect" amount="8"/>
+                <Affliction identifier="organdamage" amount="10" penetration="0.5"/>
             </StatusEffect>
         </RangedWeapon>
 
@@ -863,6 +864,7 @@
                 <Conditional jobidentifier="neq Magician_Enemy"/>
                 <Conditional jobidentifier="neq Magician_Enemy_Rescue"/>
                 <Affliction identifier="Reiki_Side_Effect" amount="6"/>
+                <Affliction identifier="organdamage" amount="10" penetration="0.5"/>
             </StatusEffect>
         </RangedWeapon>
 
@@ -911,6 +913,7 @@
                 <Conditional jobidentifier="neq Magician_Enemy"/>
                 <Conditional jobidentifier="neq Magician_Enemy_Rescue"/>
                 <Affliction identifier="Reiki_Side_Effect" amount="6"/>
+                <Affliction identifier="organdamage" amount="10" penetration="0.5"/>
             </StatusEffect>
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="12" hideitems="false" containedstateindicatorstyle="bullet"
@@ -957,7 +960,7 @@
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This" disabledeltatime="true">
                 <Explosion range="40.0" applyFireEffects="false" ballastfloradamage="50" severlimbsprobability="0.5" structuredamage="8"
-                           levelwalldamage="40" itemdamage="10" force="3.0" flames="false" smoke="false" sparks="false" underwaterbubble="false"
+                           levelwalldamage="40" itemdamage="3" force="1.0" flames="false" smoke="false" sparks="false" underwaterbubble="false"
                            flashcolor="255,115,95,150">
                     <Affliction identifier="burn" strength="1"/>
                 </Explosion>
@@ -1412,6 +1415,7 @@
                 <Conditional jobidentifier="neq Magician_Enemy"/>
                 <Conditional jobidentifier="neq Magician_Enemy_Rescue"/>
                 <Affliction identifier="Reiki_Side_Effect" amount="100"/>
+                <Affliction identifier="organdamage" amount="10" penetration="0.5"/>
             </StatusEffect>
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="12" hideitems="false" containedstateindicatorstyle="bullet"
@@ -1458,6 +1462,7 @@
                 <Conditional jobidentifier="neq Magician_Enemy"/>
                 <Conditional jobidentifier="neq Magician_Enemy_Rescue"/>
                 <Affliction identifier="Reiki_Side_Effect" amount="100"/>
+                <Affliction identifier="organdamage" amount="30" penetration="0.5"/>
             </StatusEffect>
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="12" hideitems="false" containedstateindicatorstyle="bullet"
@@ -1640,7 +1645,7 @@
         <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
         <Deconstruct time="3">
             <Item identifier="Touhou_Plant_Extract" amount="2"/>
-            <Item identifier="Magic_Material" amount="2"/>
+            <Item identifier="Magic_Material" amount="2" />
         </Deconstruct>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Nail_Head_Book.png" sourcerect="0,0,200,60" depth="0.55" origin="0.5,0.5"/>
         <Body width="200" height="60" density="10"/>
@@ -1684,7 +1689,7 @@
           interactthroughwalls="true"
           hideinmenus="true" cargocontaineridentifier="metalcrate" tags="smallitem" impactsoundtag="impact_metal_light" maxstacksize="16">
         <Deconstruct time="2">
-            <Item identifier="Magic_Material"/>
+            <Item identifier="Touhou_Plant_Extract"/>
         </Deconstruct>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Nail_Head_Book_Ammo.png" sourcerect="0,0,48,168" origin="0.5,0.5"/>
         <Body width="48" height="168" density="10"/>
@@ -1735,7 +1740,7 @@
     <Item name="怪物用魔光枪" identifier="Touhou_Magic_Ray_Gun_MonsterUsed" tags="mediumitem,weapon,gun,ProvocativeToHumanAI" Scale="0.23" category="Weapon"
           hideinmenus="true" nonplayerteaminteractable="True"
           subcategory="Touhou" isshootable="true">
-        <RangedWeapon reload="0.35" weapondamagemodifier="0.65" holdtrigger="true" barrelpos="42,8" spread="6" unskilledspread="12"
+        <RangedWeapon reload="0.35" weapondamagemodifier="0.85" holdtrigger="true" barrelpos="42,8" spread="6" unskilledspread="12"
                       combatPriority="80" drawhudwhenequipped="true" crosshairscale="0.5">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair02.png" sourcerect="0,0,160,160"/>
@@ -1863,5 +1868,151 @@
         </ItemContainer>
     </Item>
 
+
+    <!--幽灵守护者-实体弹幕-->
+    <Item name="幽灵守护者-实体弹幕" identifier="Touhou_Spectral_Guardian_Bullet" tags="smallitem" category="Weapon" sonarsize="5" scale="1" impactsoundtag="impact_metal_heavy"
+          hideinmenus="true">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55"/>
+        <Body width="48" height="48" density="10"/>
+        <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="3" damagedoors="true" friendlyfire="false">
+            <Attack structuredamage="20" itemdamage="2.5" severlimbsprobability="0.5" penetration="0.3" targetforce="1000">
+                <Affliction identifier="blunttrauma" strength="15"/>
+                <Affliction identifier="explosiondamage" strength="5"/>
+                <Affliction identifier="stun" strength="0.25" probability="0.25"/>
+            </Attack>
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="GlowDot" scalemin="2.5" scalemax="3.0" particlespersecond="160" anglemin="0" anglemax="360"
+                                 colormultiplier="55,75,255,170"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="This" allowwhenbroken="true" Condition="-40.0" setvalue="true">
+                <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" selectionmode="Random" range="1000"/>
+                <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" selectionmode="Random" range="1000"/>
+                <sound file="Content/Items/Weapons/ExplosionSmall3.ogg" selectionmode="Random" range="1000"/>
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet_Spawn" spawnposition="This" MinCount="3" MaxCount="6" aimspread="360" rotationtype="Collider" rotation="0"/>
+                <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="3" velocitymin="100"
+                                 velocitymax="2000" scalemin="1.0" scalemax="1.0"/>
+                <Explosion range="250.0" ballastfloradamage="100" structuredamage="20" itemdamage="5" force="10.0" severlimbsprobability="0.5"
+                           decal="explosion" decalsize="0.3" penetration="0.5">
+                    <Affliction identifier="explosiondamage" strength="10"/>
+                    <Affliction identifier="stun" strength="0.5" probability="0.5"/>
+                </Explosion>
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This">
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" delay="2.0" stackable="false" checkconditionalalways="true">
+                <Conditional Removed="false"/>
+                <Explosion range="40.0" structuredamage="5" force="15.0" itemdamage="0" camerashake="10.0" camerashakerange="1000"
+                           severlimbsprobability="0.1" decal="explosion" decalsize="0.5">
+                    <Affliction identifier="bleeding" strength="5"/>
+                    <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="1.0" selectionmode="Random" range="500"/>
+                </Explosion>
+                <Remove/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+    <!--幽灵守护者-弹幕飞溅-->
+    <Item name="" identifier="Touhou_Spectral_Guardian_Bullet_Spawn" scale="0.3" tags="smallitem" category="Weapon" hideinmenus="true">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55"/>
+        <Body width="24" height="24" density="10"/>
+        <Projectile characterusable="false" launchimpulse="30" maxtargetstohit="4" damagedoors="true" friendlyfire="false">
+            <Attack structuredamage="0" itemdamage="0" severlimbsprobability="0.25" penetration="0.1">
+                <Affliction identifier="bleeding" strength="5"/>
+                <Affliction identifier="lacerations" strength="10"/>
+                <Affliction identifier="Sleepless_Nightmare" strength="10" probability="0.4"/>
+                <Affliction identifier="stun" strength="0.2" probability="0.5" />
+            </Attack>
+            <StatusEffect type="OnActive" target="This" lifetime="1">
+                <ParticleEmitter particle="GlowDot" scalemin="2.0" scalemax="4.0" particlespersecond="100" anglemin="0" anglemax="360"
+                                 colormultiplier="55,55,255,255"/>
+                <ParticleEmitter particle="ammotrailwater" copyentityangle="true" anglemin="-5" anglemax="5" particleamount="1" velocitymin="-10"
+                                 velocitymax="-100" scalemin="0.5" scalemax="1"/>
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" delay="0.7" stackable="false">
+                <Conditional Removed="false"/>
+                <Remove/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+    <!--幽灵守护者-激光-->
+    <Item name="幽灵守护者-激光" identifier="Touhou_Spectral_Guardian_Laser" hideinmenus="true" category="Misc" subcategory="Touhou" tags="smallitem" Scale="0.5">
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Bolt_Normal.png" sourcerect="0,0,72,72" depth="0.55"/>
+        <Body width="48" height="48" density="10"/>
+        <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
+        <Projectile characterusable="false" hitscan="true" maxtargetstohit="1" hitscancount="2" removeonhit="true" spread="10" damagedoors="true"
+                    friendlyfire="false">
+            <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="55,55,255,255"/>
+            <Attack structuredamage="20" targetforce="1" itemdamage="50" severlimbsprobability="0.25" penetration="0.6">
+                <Affliction identifier="lacerations" strength="30"/>
+                <Affliction identifier="Touhou_Freeze" strength="5"/>
+                <Affliction identifier="stun" strength="0.3" probability="0.2"/>
+            </Attack>
+            <StatusEffect type="OnImpact" target="Limb" comparison="And">
+                <Conditional speciesname="neq human"/>
+                <Conditional speciesname="neq HumanTouhou_Tail"/>
+                <Conditional speciesname="neq HumanYuka"/>
+                <Affliction identifier="lacerations" strength="35"/>
+            </StatusEffect>
+            <StatusEffect type="OnImpact" target="UseTarget">
+                <ParticleEmitter particle="impactfirearm" anglemin="0" anglemax="360" particleamount="4" velocitymin="0" scalemin="0.5" scalemax="0.8"
+                                 scalemultiplier="7,7" colormultiplier="255,115,95,150" lifetimemultiplier="0.5"/>
+                <ParticleEmitter particle="weldspark" particleamount="5" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350"
+                                 scalemin="1.5" scalemax="1.9" drawontop="true" colormultiplier="255,200,225,180"/>
+            </StatusEffect>
+        </Projectile>
+    </Item>
+
+
+    <!--幽灵守护者-重力拳-->
+    <Item name="幽灵守护者-重力拳" identifier="Touhou_Spectral_Guardian_Gravity_Punch" tags="smallitem" category="Weapon" sonarsize="15" scale="1" impactsoundtag="impact_metal_heavy"
+          damagedbyprojectiles="true" Health="250" hideinmenus="true">
+        <Sprite texture="%ModDir%/Images/Characters/Touhou_Spectral_Guardian/Touhou_Spectral_Guardian.png" sourcerect="545,0,360,227" depth="0.25"/>
+        <Body width="360" height="227" density="10"/>
+        <Projectile characterusable="false" launchimpulse="60" maxtargetstohit="4" damagedoors="true" friendlyfire="false">
+            <Attack structuredamage="10" itemdamage="2.5" severlimbsprobability="0.5" penetration="0.3" targetforce="1000">
+                <Affliction identifier="blunttrauma" strength="10"/>
+                <Affliction identifier="stun" strength="0.5" probability="0.5"/>
+            </Attack>
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="GlowDot" scalemin="2.5" scalemax="3.0" particlespersecond="160" anglemin="0" anglemax="360"
+                                 colormultiplier="55,75,255,170"/>
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This">
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnBroken" target="This" delay="2.0" stackable="false" checkconditionalalways="true">
+                <Conditional Removed="false"/>
+                <Explosion range="500.0" structuredamage="5" force="15.0" itemdamage="0" camerashake="10.0" camerashakerange="40"
+                           severlimbsprobability="0.1" decal="explosion" decalsize="0.5">
+                    <Affliction identifier="bleeding" strength="5"/>
+                    <sound file="Content/Items/Weapons/ExplosionLarge2.ogg" volume="1.0" selectionmode="Random" range="2500"/>
+                </Explosion>
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnNotContained" target="This" delay="21.0" stackable="false">
+                <Conditional Removed="false"/>
+                <Remove/>
+            </StatusEffect>
+        </Projectile>
+
+        <TriggerComponent triggeredby="Creature,Human" force="400" radius="600" distancebasedforce="false"/>
+
+        <TriggerComponent triggeredby="Creature,Human" force="200" radius="300">
+            <Attack penetration="0.3">
+                <Affliction identifier="blunttrauma" strength="25"/>
+                <Affliction identifier="Sleepless_Nightmare" strength="20"/>
+                <Affliction identifier="stun" strength="1.5"/>
+            </Attack>
+            <StatusEffect type="OnActive" target="This">
+                <ParticleEmitter particle="cyborgammotracer" particlespersecond="5" anglemin="0" anglemax="360" distancemin="0" distancemax="50"
+                                 scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0"/>
+                <ParticleEmitter particle="Touhou_Blue_Explosionfire" particlespersecond="5" anglemin="0" anglemax="360" distancemin="0"
+                                 distancemax="50" scalemin="1" scalemax="2.5" velocitymin="-50" velocitymax="0"/>
+                <sound file="Content/Items/Weapons/GRAVITYSHELLS_damageLoop.ogg" volume="1" range="3000.0" loop="true"/>
+            </StatusEffect>
+        </TriggerComponent>
+    </Item>
 
 </Items>

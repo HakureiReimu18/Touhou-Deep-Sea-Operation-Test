@@ -410,7 +410,7 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Savior_Mod_Attack_Effect" strength="10.0"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Savior_Mod_Attack_Effect" strength="50.0"/>
             </Abilities>
         </AbilityGroupEffect>
         <AbilityGroupEffect abilityeffecttype="OnAttack">
@@ -425,9 +425,9 @@
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="UseTarget" disabledeltatime="true" >
                             <Explosion range="300.0" force="4.0" severlimbsprobability="0.2" smoke="false" flash="false"
-                                       sparks="false" penetration="0.1">
-                                <Affliction identifier="explosiondamage" strength="5"/>
-                                <Affliction identifier="burn" strength="5"/>
+                                       sparks="false" penetration="0.5">
+                                <Affliction identifier="explosiondamage" strength="10"/>
+                                <Affliction identifier="burn" strength="10"/>
                             </Explosion>
                         </StatusEffect>
                     </StatusEffects>
@@ -614,7 +614,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Stagnant_Comet"/>
-                <AbilityConditionHasVelocity velocity="0"/>
+                <AbilityConditionHasVelocity velocity="0.5" invert="true"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
             </Conditions>
             <Abilities>
@@ -880,6 +880,45 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--永远与须臾的罪孽天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Evernight_Sunyori_Ceremony_Rifle"/>
+                <AbilityConditionAttackData tags="Touhou_Evernight_Sunyori_Ceremony_Rifle_Bullet02" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionServerRandom randomchance="0.5"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="UseTarget" disabledeltatime="true" >
+                            <Explosion range="200.0" force="4.0" severlimbsprobability="0.2" smoke="false" flash="true"
+                                       sparks="false" penetration="0.2">
+                                <Affliction identifier="explosiondamage" strength="25"/>
+                                <Affliction identifier="Touhou_Savior_Mod_Attack_Effect" strength="25"/>
+                            </Explosion>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Evernight_Sunyori_Ceremony_Rifle"/>
+                <AbilityConditionAttackData tags="Touhou_Evernight_Sunyori_Ceremony_Rifle_Bullet03" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionServerRandom randomchance="0.75"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects applytoself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" duration="0.5" CanGiveMedicalSkill="false">
+                            <ReduceAffliction identifier="damage" strength="3.5"/>
+                            <ReduceAffliction identifier="burn" strength="3.5"/>
+                            <ReduceAffliction identifier="bleeding" strength="7"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -1286,232 +1325,4 @@
         </AbilityGroupEffect>
     </Talent>
 
-
-    <!--共情物-->
-    <Talent identifier="Touhou_Empathy_Device_Talent" IsHiddenExtraTalent="true">
-        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128"/>
-        <Description tag="talentdescription.MRE_Yukari"/>
-
-        <!--阴阳玉-->
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Yin_Yang_Orb_Effect"/>
-                <AbilityConditionCharacter>
-                    <Conditional speciesname="eq human"/>
-                </AbilityConditionCharacter>
-                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.05"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Yin_Yang_Orb_Effect"/>
-                <AbilityConditionCharacter>
-                    <Conditional speciesname="neq human"/>
-                </AbilityConditionCharacter>
-                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--珍贵御扎-->
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Precious_Amulet_Effect"/>
-                <AbilityConditionServerRandom randomchance="0.1"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--茶杯灵梦-->
-        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Tea_Cup_Reimu_Effect"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="stun" addedmultiplier="0.05"/>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="blunttrauma" addedmultiplier="0.1"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--迷你八卦炉-->
-        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Mini_Hakkero_Effect"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAffliction afflictionidentifiers="burn" addedmultiplier="0.05"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--茶杯魔理沙-->
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Tea_Cup_Marisa_Effect"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.05"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--收藏家的教训-->
-        <AbilityGroupEffect abilityeffecttype="OnAllMissionsCompleted">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_The_Collector_Lesson_Effect"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityGiveMoney amount="1000"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--半灵的一半-->
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Half_Of_Half_Spirit_Effect"/>
-                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Lost_Heart" strength="1.0"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Half_Of_Half_Spirit_Effect"/>
-                <AbilityConditionAttackData weapontype="Melee"/>
-                <AbilityConditionServerRandom randomchance="0.3"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--备用半灵-->
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Spare_Half_Spirit_Effect"/>
-                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.5"/>
-                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--魔法使的基础练习-->
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Basic_Training_For_Magicians_Effect"/>
-                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--忍耐的要石-->
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Essential_Stone_Of_Patience_Effect"/>
-                <AbilityConditionAboveVitality vitalitypercentage="0.6"/>
-                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.9"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.03"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Essential_Stone_Of_Patience_Effect"/>
-                <AbilityConditionAboveVitality vitalitypercentage="0.3"/>
-                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.6"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.06"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAttacked">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Essential_Stone_Of_Patience_Effect"/>
-                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.3"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--恼人的UFO-->
-        <AbilityGroupInterval interval="4.9">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Annoying_UFO_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Sleepless_Nightmare"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.05"/>
-                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.05"/>
-            </Abilities>
-        </AbilityGroupInterval>
-        <AbilityGroupInterval interval="4.9">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Annoying_UFO_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Sleepless_Nightmare" invert="true"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.05"/>
-            </Abilities>
-        </AbilityGroupInterval>
-
-        <!--上海人偶-->
-        <AbilityGroupInterval interval="4.9">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Shanghai_Doll_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Alice_Doll_Energy" minimumPercentage="0.5"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1"/>
-            </Abilities>
-        </AbilityGroupInterval>
-
-        <!--女仆飞刀（跳弹）-->
-        <AbilityGroupEffect abilityeffecttype="OnAttack">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_Maid_Knife_Bouncing_Effect"/>
-                <AbilityConditionCharacter>
-                    <Conditional speciesname="neq human"/>
-                </AbilityConditionCharacter>
-                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.05"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--守财奴的教训-->
-        <AbilityGroupEffect abilityeffecttype="OnAllMissionsCompleted">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_The_Miser_Lesson_Effect"/>
-                <AbilityConditionServerRandom randomchance="0.1"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityPutItem itemidentifier="Touhou_Simple_Parts" amount="1"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-        <!--资本主义的困境-->
-        <AbilityGroupEffect abilityeffecttype="OnGainMissionMoney">
-            <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Empathy_The_Dilemma_Of_Capitalism_Effect"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityModifyValue addedvalue="0.05"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
-    </Talent>
 </Talents>

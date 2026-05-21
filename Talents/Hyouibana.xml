@@ -1278,4 +1278,43 @@
         </AbilityGroupInterval>
 
     </Talent>
+
+    <!--凭依辉夜-->
+    <Talent identifier="Hyouibana_Kaguya">
+        <Icon texture="%ModDir%/Images/Talents/KaguyaTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.Hyouibana_Kaguya"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Hyouibana_Kaguya_Effect" amount="10.0"/>
+                            <Affliction identifier="Hyouibana_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0"
+                                      multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Hyouibana_Effect_Prefect_Kaguya" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="5.0">
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="BuffDurationMultiplier" value="0.3"/>
+            </Abilities>
+        </AbilityGroupInterval>
+
+    </Talent>
 </Talents>

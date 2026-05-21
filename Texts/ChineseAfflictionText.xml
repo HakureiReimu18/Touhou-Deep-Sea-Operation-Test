@@ -170,7 +170,7 @@
     <afflictionname.Touhou_ODM6_Poison_Effect>毒性蔓延</afflictionname.Touhou_ODM6_Poison_Effect>
     <afflictiondescription.Touhou_ODM6_Poison_Effect>
         不洁魔法的剧毒让你的身体机能严重下降，粘滞的空气大幅降低了你的身体。
-        远程武器相关伤害-75%，移动速度+25%，近战伤害+60%，友军伤害下降50%，身体抗性下降。直到毒性发作前，生命值固定增加25点
+        远程武器相关伤害-75%，移动速度+25%，近战伤害+60%，友军伤害下降25%，身体抗性下降。直到毒性发作前，生命值固定增加25点
         如果毒性蔓延满全身，将会有非常麻烦的后果
     </afflictiondescription.Touhou_ODM6_Poison_Effect>
     <afflictionname.Touhou_Cuisine_Effect01>温饱</afflictionname.Touhou_Cuisine_Effect01>
@@ -240,7 +240,7 @@
     <afflictiondescription.Touhou_OutpostDestroyMission04_Event_Player_Weakness>特殊陷阱暂时阻碍了你的行动
     </afflictiondescription.Touhou_OutpostDestroyMission04_Event_Player_Weakness>
     <afflictionname.Touhou_Lunatic_Mission_Resistance_Effect>赐福</afflictionname.Touhou_Lunatic_Mission_Resistance_Effect>
-    <afflictiondescription.Touhou_Lunatic_Mission_Resistance_Effect>任务艰巨，来自幻想乡的某位正守护着你。大幅提高对debuff、眩晕和灵压的抗性
+    <afflictiondescription.Touhou_Lunatic_Mission_Resistance_Effect>任务艰巨，来自幻想乡的某位正守护着你。大幅提高对debuff、眩晕的抗性
     </afflictiondescription.Touhou_Lunatic_Mission_Resistance_Effect>
     <afflictionname.Touhou_ODM11_Aff_Event_Effect>破坏的冲动</afflictionname.Touhou_ODM11_Aff_Event_Effect>
     <afflictiondescription.Touhou_ODM11_Aff_Event_Effect>
@@ -285,6 +285,10 @@
     <afflictiondescription.Touhou_Errata_Lanthorn_Effect>增加15%移动速度，增加15额外生命值</afflictiondescription.Touhou_Errata_Lanthorn_Effect>
     <afflictionname.Touhou_OutpostDestroyMission12_Aff_Event_Effect>雨水腐蚀</afflictionname.Touhou_OutpostDestroyMission12_Aff_Event_Effect>
     <afflictiondescription.Touhou_OutpostDestroyMission12_Aff_Event_Effect>减少15%移动速度，减少15%物理伤害抗性</afflictiondescription.Touhou_OutpostDestroyMission12_Aff_Event_Effect>
+    <afflictionname.Touhou_Echo>回响</afflictionname.Touhou_Echo>
+    <afflictiondescription.Touhou_Echo>一股暗流在体内奔涌，降低了身体抗性，并附带间歇性身体损伤</afflictiondescription.Touhou_Echo>
+    <afflictionname.Touhou_External_Pain_Absorber_Effect>伤痛吸收体</afflictionname.Touhou_External_Pain_Absorber_Effect>
+    <afflictiondescription.Touhou_External_Pain_Absorber_Effect>一股不可思议的暖流在体内涌过，你感觉四肢发软，昏昏欲睡</afflictiondescription.Touhou_External_Pain_Absorber_Effect>
 
 
     <!--死法-->
@@ -373,4 +377,8 @@
     <afflictiondescription.Hyouibana_Effect_Prefect_Lilywhite>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Lilywhite>
     <afflictionname.Hyouibana_Effect_Prefect_Satori>觉-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Satori>
     <afflictiondescription.Hyouibana_Effect_Prefect_Satori>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Satori>
+    <afflictionname.Hyouibana_Effect_Prefect_Tewi>因幡天为-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Tewi>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Tewi>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Tewi>
+    <afflictionname.Hyouibana_Effect_Prefect_Kaguya>辉夜-完全凭依</afflictionname.Hyouibana_Effect_Prefect_Kaguya>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Kaguya>拥有对应角色的专属武器效果</afflictiondescription.Hyouibana_Effect_Prefect_Kaguya>
 </infotexts>

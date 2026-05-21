@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+    <Talent identifier="IrohaTalent">
+        <Icon texture="%ModDir%/Images/Talents/IrohaTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.IrohaTalent"/>
+        <AbilityGroupInterval interval="3">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character">
+                            <ReduceAffliction identifier="Iroha_Tail_Spawn" amount="100"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="6.0">
+            <Conditions>
+                <AbilityConditionHasVelocity velocity="0.5" />
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.03"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="6.0">
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="8" invert="true"/>
+                <AbilityConditionHasVelocity velocity="0.5" />
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.03"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="6.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Tsukuyomi_Stealth_VR_Glasses_Effect"  minimumPercentage="0.99"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="2"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="5.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.5" />
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect03" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects allowself="true" >
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <ReduceAffliction identifier="Touhou_Iroha_Fatigue" strength="6.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+
+        <AbilityGroupEffect abilityeffecttype="OnAddDamageAffliction">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Mode_Engineer"/>
+                <AbilityConditionServerRandom randomchance="0.25"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAffliction afflictionidentifiers="radiationsickness" replacewith="burn" addedmultiplier="-0.5"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupInterval interval="60">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Mode_Captain"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveItemStatToTags tags="engine" stattype="EngineSpeed" stackable="false" value="1.1" />
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Versatile_Adaptation"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Iroha_Mode_Creator"/>
+                <AbilityConditionServerRandom randomchance="0.15"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityPutItem itemidentifier="Touhou_Tsukuyomi_Stealth_VR_Glasses" amount="1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+    </Talent>
+
+</Talents>

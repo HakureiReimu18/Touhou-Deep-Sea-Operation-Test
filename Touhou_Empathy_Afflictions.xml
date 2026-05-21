@@ -17,7 +17,23 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
-    <!--共情物：珍贵御扎-->
+    <!--共情物：阴阳玉Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Yin_Yang_Orb_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：阴阳玉（针）-->
     <Affliction
             identifier="Touhou_Empathy_Yin_Yang_Orb_Needle_Effect"
             type="Touhou_Empathy_Effect"
@@ -35,9 +51,43 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：阴阳玉（针）Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="-0.05" maxresistance="-0.05">
+            <StatValue stattype="RangedAttackMultiplier" value="0.05"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：珍贵御扎-->
     <Affliction
             identifier="Touhou_Empathy_Precious_Amulet_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：珍贵御扎Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Precious_Amulet_Lv2_Effect"
             type="Touhou_Empathy_Effect"
             isbuff="true"
             limbspecific="false"
@@ -67,9 +117,43 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：茶杯灵梦Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Tea_Cup_Reimu_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：迷你八卦炉-->
     <Affliction
             identifier="Touhou_Empathy_Mini_Hakkero_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.08"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：迷你八卦炉Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Mini_Hakkero_Lv2_Effect"
             type="Touhou_Empathy_Effect"
             isbuff="true"
             limbspecific="false"
@@ -101,6 +185,24 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：迷你八卦炉（导弹）Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Mini_Hakkero_Missile_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="0.95" maxskillmultiplier="0.95">
+            <StatValue stattype="RangedAttackMultiplier" value="0.08"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：茶杯魔理沙-->
     <Affliction
             identifier="Touhou_Empathy_Tea_Cup_Marisa_Effect"
@@ -117,9 +219,41 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：茶杯魔理沙Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Tea_Cup_Marisa_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.05" maxresistance="0.05"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：收藏家的教训-->
     <Affliction
             identifier="Touhou_Empathy_The_Collector_Lesson_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：收藏家的教训Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_The_Collector_Lesson_Lv2_Effect"
             type="Touhou_Empathy_Effect"
             isbuff="true"
             limbspecific="false"
@@ -152,6 +286,25 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：吸血鬼之牙Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Vampire_Fangs_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="RangedAttackMultiplier" value="-0.1"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.25"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：半灵的一半-->
     <Affliction
             identifier="Touhou_Empathy_Half_Of_Half_Spirit_Effect"
@@ -168,9 +321,41 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：半灵的一半Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Half_Of_Half_Spirit_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：备用半灵-->
     <Affliction
             identifier="Touhou_Empathy_Spare_Half_Spirit_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：备用半灵Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Spare_Half_Spirit_Lv2_Effect"
             type="Touhou_Empathy_Effect"
             isbuff="true"
             limbspecific="false"
@@ -202,6 +387,24 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：疾风木屐Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Hurricane_Sandals_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MovementSpeed" value="0.1"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：不死鸟之尾-->
     <Affliction
             identifier="Touhou_Empathy_Phoenix_Tail_Effect"
@@ -216,6 +419,24 @@
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0.15" maxresistance="0.15">
             <StatValue stattype="MaximumHealthMultiplier" value="-0.1"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：不死鸟之尾Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Phoenix_Tail_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0.15" maxresistance="0.15">
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.05"/>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
@@ -240,6 +461,25 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：未雨绸缪之符Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MaximumHealthMultiplier" value="0.1"/>
+            <StatValue stattype="RangedAttackMultiplier" value="-0.05"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：魔法使的基础练习-->
     <Affliction
             identifier="Touhou_Empathy_Basic_Training_For_Magicians_Effect"
@@ -254,6 +494,24 @@
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1">
             <StatValue stattype="MaximumHealthMultiplier" value="-0.2"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：魔法使的基础练习Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Basic_Training_For_Magicians_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MaximumHealthMultiplier" value="-0.1"/>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
@@ -274,9 +532,44 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：忍耐的要石Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Essential_Stone_Of_Patience_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：要石导弹-->
     <Affliction
             identifier="Touhou_Empathy_Essential_Stone_Missile_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MaximumHealthMultiplier" value="0.05"/>
+            <StatValue stattype="MovementSpeed" value="-0.3"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：要石导弹Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Essential_Stone_Missile_Lv2_Effect"
             type="Touhou_Empathy_Effect"
             isbuff="true"
             limbspecific="false"
@@ -312,6 +605,24 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：激励狛犬Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Encouraging_Komainu_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：守护狛犬-->
     <Affliction
             identifier="Touhou_Empathy_Guardian_Komainu_Effect"
@@ -325,6 +636,24 @@
             hideiconafterdelay="true"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：守护狛犬Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Guardian_Komainu_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="bitewounds" minresistance="0.1" maxresistance="0.1">
             <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
@@ -349,9 +678,43 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：破坏的美学Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Aesthetics_Of_Destruction_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="0.8" maxskillmultiplier="0.8">
+            <StatValue stattype="AttackMultiplier" value="0.1"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：恼人的UFO-->
     <Affliction
             identifier="Touhou_Empathy_Annoying_UFO_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="-0.3" maxresistance="-0.3"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：恼人的UFOLv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Annoying_UFOLv2_Effect"
             type="Touhou_Empathy_Effect"
             isbuff="true"
             limbspecific="false"
@@ -382,6 +745,22 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：疯狂之月Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Lunatic_Moon_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.05" maxskillmultiplier="1.05"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：燃烧生命的火把-->
     <Affliction
             identifier="Touhou_Empathy_Torch_Of_Burning_Life_Effect"
@@ -399,6 +778,29 @@
             <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
             <StatusEffect target="Character" Interval="10.0" disabledeltatime="true">
                 <Affliction identifier="burn" strength="1.0" penetration="0.3"/>
+                <Affliction identifier="psychosis" strength="6.0" penetration="0.3"/>
+            </StatusEffect>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：燃烧生命的火把Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Torch_Of_Burning_Life_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="RangedAttackSpeed" value="0.1"/>
+            <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
+            <StatusEffect target="Character" Interval="10.0" disabledeltatime="true">
+                <Affliction identifier="psychosis" strength="6.0" penetration="0.3"/>
             </StatusEffect>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
@@ -418,7 +820,26 @@
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1">
             <StatValue stattype="RangedAttackMultiplier" value="0.09"/>
-            <StatValue stattype="RangedSpreadReduction" value="-0.25"/>
+            <StatValue stattype="RangedSpreadReduction" value="-0.34"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：冰之妖精Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Ice_Fairy_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="RangedAttackMultiplier" value="0.09"/>
+            <StatValue stattype="RangedSpreadReduction" value="-0.22"/>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
@@ -436,8 +857,26 @@
             hideiconafterdelay="true"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="-0.15" maxresistance="-0.15">
-            <StatValue stattype="RangedAttackMultiplier" value="0.1"/>
-            <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
+            <StatValue stattype="RangedAttackMultiplier" value="0.05"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.05"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：小石子帽子Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Pebble_Hat_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="-0.1" maxresistance="-0.1">
+            <StatValue stattype="AttackMultiplier" value="0.05"/>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
@@ -445,6 +884,22 @@
     <!--共情物：上海人偶-->
     <Affliction
             identifier="Touhou_Empathy_Shanghai_Doll_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：上海人偶Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Shanghai_Doll_Lv2_Effect"
             type="Touhou_Empathy_Effect"
             isbuff="true"
             limbspecific="false"
@@ -478,6 +933,24 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：活泼的无力Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Lively_Powerlessness_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="MaximumHealthMultiplier" value="0.05"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：疯狂的寂静-->
     <Affliction
             identifier="Touhou_Empathy_Crazy_Silence"
@@ -494,6 +967,22 @@
             <StatValue stattype="RangedAttackMultiplier" value="-0.05"/>
             <StatValue stattype="MeleeAttackMultiplier" value="-0.05"/>
         </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：疯狂的寂静Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Crazy_Silence_Lv2_Silence"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="stun" minresistance="0.1" maxresistance="0.1"/>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
@@ -516,6 +1005,22 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：静谧的闪耀Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Tranquil_Shimmer_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="debuff" minresistance="0.1" maxresistance="0.1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：女仆飞刀-->
     <Affliction
             identifier="Touhou_Empathy_Maid_Knife_Effect"
@@ -530,7 +1035,25 @@
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1">
             <StatValue stattype="MaximumHealthMultiplier" value="-0.05"/>
-            <StatValue stattype="RangedSpreadReduction" value="0.1"/>
+            <StatValue stattype="RangedSpreadReduction" value="0.11"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：女仆飞刀Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Maid_Knife_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="RangedSpreadReduction" value="0.11"/>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
@@ -553,9 +1076,41 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：女仆飞刀（跳弹）Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Maid_Knife_Bouncing_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：守财奴的教诲-->
     <Affliction
             identifier="Touhou_Empathy_The_Miser_Lesson_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：守财奴的教诲Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_The_Miser_Lesson_Lv2_Effect"
             type="Touhou_Empathy_Effect"
             isbuff="true"
             limbspecific="false"
@@ -587,6 +1142,22 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：资本主义的困境Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：平安归来蛙护身符-->
     <Affliction
             identifier="Touhou_Empathy_Frog_Amulet_For_Safe_Return_Effect"
@@ -600,9 +1171,25 @@
             hideiconafterdelay="true"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="0.05" maxresistance="0.05">
-            <StatValue stattype="RangedAttackMultiplier" value="-0.1"/>
-            <StatValue stattype="MeleeAttackMultiplier" value="-0.1"/>
+            <StatValue stattype="RangedAttackMultiplier" value="-0.05"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="-0.05"/>
         </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：平安归来蛙护身符Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="0.05" maxresistance="0.05"/>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
@@ -625,6 +1212,25 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：放入蛇蜕的护身符Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Snake_Skin_Amulet_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1">
+            <StatValue stattype="RangedAttackMultiplier" value="0.05"/>
+            <StatValue stattype="MovementSpeed" value="-0.05"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：画面的界线-->
     <Affliction
             identifier="Touhou_Empathy_Boundary_Of_The_Screen_Effect"
@@ -642,6 +1248,22 @@
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
+    <!--共情物：画面的界线Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Boundary_Of_The_Screen_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.05" maxskillmultiplier="1.05"/>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
     <!--共情物：道具的季节-->
     <Affliction
             identifier="Touhou_Empathy_Season_Of_The_Item_Effect"
@@ -655,6 +1277,24 @@
             hideiconafterdelay="true"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage" minresistance="-0.05" maxresistance="-0.05" >
+            <StatValue stattype="MaximumHealthMultiplier" value="0.05"/>
+        </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <!--共情物：道具的季节Lv2-->
+    <Affliction
+            identifier="Touhou_Empathy_Season_Of_The_Item_Lv2_Effect"
+            type="Touhou_Empathy_Effect"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" >
             <StatValue stattype="MaximumHealthMultiplier" value="0.05"/>
         </Effect>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>

@@ -27,7 +27,7 @@
     <sound File="Content/Characters/Human/female_damage8.ogg" State="Damage" Range="500" Volume="1" Tags="Female"/>
     <sound File="Content/Characters/Human/female_damage9.ogg" State="Damage" Range="500" Volume="1" Tags="Female"/>
     <sound File="Content/Characters/Human/female_damage10.ogg" State="Damage" Range="500" Volume="1" Tags="Female"/>
-    <health Vitality="300" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.8" BurnReduction="0.4"
+    <health Vitality="200" DoesBleed="True" CrushDepth="Infinity" UseHealthWindow="False" BleedingReduction="0.8" BurnReduction="0.4"
             ConstantHealthRegeneration="0.5" HealthRegenerationWhenEating="0" StunImmunity="False" PoisonImmunity="True" PoisonVulnerability="1"
             EmpVulnerability="0" ApplyAfflictionColors="False" Immunities="">
         <MedUISilhouette texture="Content/UI/Health/MedUI_Silhouette.png" columns="8" rows="2" sourcerect="0,0,1008,748"/>

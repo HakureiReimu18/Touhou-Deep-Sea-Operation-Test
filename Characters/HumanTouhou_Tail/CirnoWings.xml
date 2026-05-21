@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <huskappendage>
     <!-- 肢体-翅膀 -->
-    <limb name="Cirno_Wings" id="19" radius="0" height="10" mass="0" type="Tail" flip="True" pullpos="0,0" healthindex="5" attackpriority="0.1"
+    <limb name="Cirno_Wings" id="19" radius="0" height="10" mass="0" type="Tail" flip="True" pullpos="0,0" healthindex="1" attackpriority="0.1"
           steerforce="0"
           stepoffset="0,0" width="100" density="5" refjoint="-1" ignorecollisions="false" notes="" friction="0.5" restitution="0.05"
           spriteorientation="NaN"

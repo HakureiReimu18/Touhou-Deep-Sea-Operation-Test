@@ -1,0 +1,722 @@
+﻿<Ragdoll type="" Texture="%ModDir%/Images/Characters/Touhou_Spectral_Guardian/Touhou_Spectral_Guardian.png" Color="255,255,255,255" SpritesheetOrientation="0" LimbScale="1"
+         JointScale="1" TextureScale="1" SourceRectScale="1" ColliderHeightFromFloor="45" ImpactTolerance="200" CanEnterSubmarine="False" CanWalk="False" Draggable="True"
+         MainLimb="Torso">
+    <collider Name="Main Collider" Radius="600" Height="0" Width="0" BodyType="Dynamic"/>
+    <limb Name="Head" ID="0" Type="Head" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="300" Height="0" Width="600" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,1" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="19,264,1497,887" Origin="0.49550107,0.5040135" Depth="0.2" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"></deformablesprite>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.25" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.35" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+        <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough"
+                AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="4500"
+                DamageRange="4500" MinRange="0" Duration="0.75" CoolDown="2.5" SecondaryCoolDown="0" CoolDownRandomFactor="0" FullSpeedAfterAttack="False" StructureDamage="0"
+                CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False"
+                RequiredAngle="1" RequiredAngleToShoot="0" AimRotationTorque="180" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False"
+                ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0"
+                ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1"
+                SeverLimbsProbability="0" Priority="0" Blink="False">
+            <StatusEffect type="OnFailure" target="This">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="4" aimspread="25" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.1">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.2">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="6" aimspread="30" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.3">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.4">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Laser" spawnposition="This" count="4" aimspread="20" rotationtype="Collider" rotation="0"/>
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Gravity_Punch" spawnposition="This" Probability="0.85" count="1" aimspread="10" rotationtype="Collider"
+                           rotation="0"/>
+            </StatusEffect>
+        </attack>
+    </limb>
+    <limb Name="Belly" ID="1" Type="Torso" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="500" Height="0" Width="0" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="False" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.5" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0,0" BlinkTextureOffsetOut="0,0"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="1" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite subdivisions="15,15" SourceRect="110,1145,1318,903" Origin="0.49962693,0.43289593" Depth="0.9" Texture="" IgnoreTint="False" Color="255,255,255,255"
+                          DeadColor="255,255,255,255" DeadColorTime="0"></deformablesprite>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.15" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.5" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.1" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+        <StatusEffect type="OnDamaged" target="This" onlyplayertriggered="true">
+            <requiredaffliction type="damage" minstrength="50"/>
+            <requiredaffliction type="burn" minstrength="50"/>
+            <Conditional isdead="False"/>
+            <particleemitter particle="blackwaterblood" drawontop="True" particleamount="1" velocitymin="0" velocitymax="100" anglemin="0" anglemax="360" scalemin="7" scalemax="15"
+                             emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False"/>
+            <particleemitter particle="blackgib" drawontop="True" particleamount="10" velocitymin="200" velocitymax="700" anglemin="0" anglemax="360" scalemin="1" scalemax="2"
+                             emitinterval="0" particlespersecond="0" highqualitycollisiondetection="False" copyentityangle="False"/>
+            <sound file="Content/Characters/Latcher/ABYSSM_damage.ogg" range="30000" volume="1" selectionmode="random"/>
+            <sound file="Content/Characters/Latcher/ABYSSM_damage_1.ogg" range="30000" volume="1" selectionmode="random"/>
+            <sound file="Content/Characters/Latcher/ABYSSM_damage_2.ogg" range="30000" volume="1" selectionmode="random"/>
+            <sound file="Content/Characters/Latcher/ABYSSM_damage_3.ogg" range="30000" volume="1" selectionmode="random"/>
+        </StatusEffect>
+    </limb>
+    <!--手臂弱点-->
+    <limb Name="Right Leg 1A" ID="2" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="800" Width="100" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="True" ApplySineMovement="False"
+          SineFrequencyMultiplier="-4" SineAmplitudeMultiplier="4" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="3" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1553,5,224,894" Origin="0.5041666,0.5003841" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+    </limb>
+    <limb Name="Right Leg 1B" ID="3" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="800" Width="100" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="True" ApplySineMovement="False"
+          SineFrequencyMultiplier="-10" SineAmplitudeMultiplier="0" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="0" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="3" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1553,5,224,894" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+    </limb>
+    <limb Name="Right Leg 1C" ID="4" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="150" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="-10" SineAmplitudeMultiplier="0" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="3" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="0,0,496,267" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+        <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough"
+                AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="4500"
+                DamageRange="4500" MinRange="0" Duration="0.75" CoolDown="2.5" SecondaryCoolDown="0" CoolDownRandomFactor="0" FullSpeedAfterAttack="False" StructureDamage="0"
+                CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False"
+                RequiredAngle="1" RequiredAngleToShoot="0" AimRotationTorque="180" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False"
+                ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0"
+                ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1"
+                SeverLimbsProbability="0" Priority="0" Blink="False">
+            <StatusEffect type="OnFailure" target="This">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="4" aimspread="25" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.1">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.2">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="6" aimspread="30" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.3">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.4">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Laser" spawnposition="This" count="4" aimspread="20" rotationtype="Collider" rotation="0"/>
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Gravity_Punch" spawnposition="This" Probability="0.85" count="1" aimspread="10" rotationtype="Collider"
+                           rotation="0"/>
+            </StatusEffect>
+        </attack>
+    </limb>
+    <limb Name="Left Leg 1A" ID="5" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="800" Width="100" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="True" ApplySineMovement="False"
+          SineFrequencyMultiplier="2" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="2" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1553,5,224,894" Origin="0.49616405,0.5" Depth="1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.5" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+    </limb>
+    <limb Name="Tail (6)" ID="6" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="1000" Width="150" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="True"
+          SineFrequencyMultiplier="5" SineAmplitudeMultiplier="-5" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="2" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1550,911,235,1114" Origin="0.50648147,0.50298154" Depth="0.4999999" Texture="" IgnoreTint="False" Color="255,255,255,255"
+                          DeadColor="255,255,255,255" DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.5" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+    </limb>
+    <limb Name="Tail (7)" ID="7" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="800" Width="100" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="True"
+          SineFrequencyMultiplier="5" SineAmplitudeMultiplier="-5" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="5" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1553,5,224,894" Origin="0.5,0.50052637" Depth="1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.25" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.35" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.5" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+    </limb>
+    <limb Name="Tail (8)" ID="8" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="1000" Width="150" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="-10" SineAmplitudeMultiplier="0" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="5" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1550,911,235,1114" Origin="0.5,0.5" Depth="0.4999999" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.5" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+    </limb>
+    <limb Name="Left Leg 1A" ID="9" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="800" Width="100" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="10" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="True" ApplySineMovement="False"
+          SineFrequencyMultiplier="-4" SineAmplitudeMultiplier="4" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="4" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1553,5,224,894" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.35" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+    </limb>
+    <limb Name="Left Leg 1B" ID="10" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="800" Width="100" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="True" ApplySineMovement="False"
+          SineFrequencyMultiplier="-10" SineAmplitudeMultiplier="0" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="0" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="4" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1553,5,224,894" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.35" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+    </limb>
+    <limb Name="Left Leg 1C" ID="11" Type="Tail" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="180" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="150" Width="250" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="10" SineAmplitudeMultiplier="0" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="4" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="0,0,496,270" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.2" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+        <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough"
+                AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="4500"
+                DamageRange="4500" MinRange="0" Duration="0.75" CoolDown="2.5" SecondaryCoolDown="0" CoolDownRandomFactor="0" FullSpeedAfterAttack="False" StructureDamage="0"
+                CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False"
+                RequiredAngle="1" RequiredAngleToShoot="0" AimRotationTorque="180" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False"
+                ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0"
+                ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1"
+                SeverLimbsProbability="0" Priority="0" Blink="False">
+            <StatusEffect type="OnFailure" target="This">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="4" aimspread="25" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.1">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.2">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="6" aimspread="30" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.3">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.4">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Laser" spawnposition="This" count="4" aimspread="20" rotationtype="Collider" rotation="0"/>
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Gravity_Punch" spawnposition="This" Probability="0.85" count="1" aimspread="10" rotationtype="Collider"
+                           rotation="0"/>
+            </StatusEffect>
+        </attack>
+    </limb>
+    <limb Name="Limb 12" ID="12" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="True"
+          SpriteOrientation="0" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="66.6" Width="57.6" Density="1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <sprite SourceRect="741,429,64,74" Origin="0.5,0.5" Depth="0.61" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0"/>
+        <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough"
+                AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="4500"
+                DamageRange="4500" MinRange="0" Duration="0.75" CoolDown="2.5" SecondaryCoolDown="0" CoolDownRandomFactor="0" FullSpeedAfterAttack="False" StructureDamage="0"
+                CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False"
+                RequiredAngle="1" RequiredAngleToShoot="0" AimRotationTorque="180" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False"
+                ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0"
+                ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1"
+                SeverLimbsProbability="0" Priority="0" Blink="False">
+            <StatusEffect type="OnFailure" target="This">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="15" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.1">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="2" aimspread="10" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.2">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="5" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.3">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="2" aimspread="10" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.4">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Laser" spawnposition="This" count="4" aimspread="20" rotationtype="Collider" rotation="0"/>
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Gravity_Punch" spawnposition="This" Probability="0.85" count="1" aimspread="10" rotationtype="Collider"
+                           rotation="0"/>
+            </StatusEffect>
+        </attack>
+    </limb>
+    <limb Name="Limb 13" ID="13" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="200" Width="120" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1829,1021,194,262" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 14" ID="14" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="180" Width="200" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1798,1298,254,233" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 15" ID="15" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="200" Width="120" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1829,1021,194,262" Origin="0.5,0.5" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 16" ID="16" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="180" Width="200" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1798,1298,254,233" Origin="0.5,0.5" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 17" ID="17" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="200" Width="120" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1829,1021,194,262" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 18" ID="18" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="180" Width="200" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1798,1298,254,233" Origin="0.5,0.5" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 19" ID="19" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="200" Width="120" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1829,1021,194,262" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 20" ID="20" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="180" Width="200" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1798,1298,254,233" Origin="0.5,0.5" Depth="0.1" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 21" ID="21" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="400" Width="200" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1792,1563,258,486" Origin="0.5,0.5" Depth="0.3" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 22" ID="22" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="400" Width="200" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1792,1563,258,486" Origin="0.5,0.5" Depth="0.3" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 23" ID="23" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="400" Width="200" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1792,1563,258,486" Origin="0.5,0.5" Depth="0.3" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="Limb 24" ID="24" Type="None" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="400" Width="200" Density="0.1" IgnoreCollisions="True" AngularDamping="7"
+          AttackPriority="1" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <deformablesprite SourceRect="1792,1563,258,486" Origin="0.5,0.5" Depth="0.3" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255"
+                          DeadColorTime="0">
+            <spritedeformation type="inflate" typename="inflate" Frequency="2" Scale="0.5" Sync="-1" BlendMode="Add" Strength="1" MaxRotation="90" UseMovementSine="True"
+                               StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0.75" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.5" Amplitude="1" ChangeSpeed="0.1" Sync="-1" BlendMode="Add" Strength="0" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.1" Amplitude="0.5" ChangeSpeed="1" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <spritedeformation type="noise" typename="noise" Frequency="0.01" Amplitude="0.5" ChangeSpeed="0.5" Sync="1" BlendMode="Add" Strength="1" MaxRotation="90"
+                               UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0" Resolution="3,3"/>
+            <SpriteDeformation type="custom" row0="1,1 1,1 1,1" row1="0.5,0.5 0.5,0.5 0.5,0.5" row2="0,0 0,0 0,0" typename="custom" Frequency="0" Amplitude="1" Sync="-1"
+                               BlendMode="Multiply" Strength="1" MaxRotation="90" UseMovementSine="False" StopWhenHostIsDead="False" OnlyInWater="False" SineOffset="0"
+                               Resolution="3,3"/>
+        </deformablesprite>
+    </limb>
+    <limb Name="LeftHand (25)" ID="25" Type="LeftHand" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="231" Width="411" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <sprite SourceRect="514,0,411,231" Origin="0.5,0.5147502" Depth="0.6" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.5" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+        <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough"
+                AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="4500"
+                DamageRange="4500" MinRange="0" Duration="0.75" CoolDown="2.5" SecondaryCoolDown="0" CoolDownRandomFactor="0" FullSpeedAfterAttack="False" StructureDamage="0"
+                CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False"
+                RequiredAngle="1" RequiredAngleToShoot="0" AimRotationTorque="180" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False"
+                ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0"
+                ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1"
+                SeverLimbsProbability="0" Priority="0" Blink="False">
+            <StatusEffect type="OnFailure" target="This">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="4" aimspread="25" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.1">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.2">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="6" aimspread="30" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.3">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.4">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Laser" spawnposition="This" count="4" aimspread="20" rotationtype="Collider" rotation="0"/>
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Gravity_Punch" spawnposition="This" Probability="0.85" count="1" aimspread="10" rotationtype="Collider"
+                           rotation="0"/>
+            </StatusEffect>
+        </attack>
+    </limb>
+    <limb Name="RightHand (26)" ID="26" Type="RightHand" SecondaryType="None" Notes="" Scale="1" Flip="True" MirrorVertically="False" MirrorHorizontally="False" Hide="False"
+          SpriteOrientation="NaN" InheritLimbDepth="None" SteerForce="0" Radius="0" Height="231" Width="411" Density="10" IgnoreCollisions="False" AngularDamping="7"
+          AttackPriority="5" PullPos="0,0" StepOffset="0,0" RefJoint="-1" MouthPos="0,0" EatTorque="50" EatImpulse="2" ConstantTorque="0" ConstantAngle="0"
+          AttackForceMultiplier="1" MinSeveranceDamage="1" CanBeSeveredAlive="True" SeveredFadeOutTime="10" ApplyTailAngle="False" ApplySineMovement="False"
+          SineFrequencyMultiplier="1" SineAmplitudeMultiplier="1" BlinkFrequency="0" BlinkDurationIn="0.2" BlinkDurationOut="0.5" BlinkHoldTime="0" BlinkRotationIn="0"
+          BlinkRotationOut="45" BlinkForce="50" OnlyBlinkInWater="False" UseTextureOffsetForBlinking="False" BlinkTextureOffsetIn="0.5,0.5" BlinkTextureOffsetOut="0.5,0.5"
+          BlinkTransitionIn="Linear" BlinkTransitionOut="Linear" HealthIndex="0" Friction="0.3" Restitution="0.05" CanEnterSubmarine="True" InheritHiding="None">
+        <sprite SourceRect="514,0,411,231" Origin="0.5,0.5" Depth="0.6" Texture="" IgnoreTint="False" Color="255,255,255,255" DeadColor="255,255,255,255" DeadColorTime="0"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="bleeding,damage,burn"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.75" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="False" AfflictionIdentifiers=""
+                        AfflictionTypes="debuff,gaze"/>
+        <damagemodifier DamageSound="" DamageParticle="" DamageMultiplier="0.5" ProbabilityMultiplier="1" ArmorSector="0,360" DeflectProjectiles="True" AfflictionIdentifiers=""
+                        AfflictionTypes="triton_7L,tsm_bl"/>
+        <attack StructureSoundType="StructureBlunt" Context="Any" TargetType="Any" TargetLimbType="None" HitDetectionType="Distance" AfterAttack="FollowThrough"
+                AfterAttackDelay="0" AfterAttackSecondary="FallBack" AfterAttackSecondaryDelay="0" Reverse="False" SnapRopeOnNewAttack="True" Retreat="False" Range="4500"
+                DamageRange="4500" MinRange="0" Duration="0.75" CoolDown="2.5" SecondaryCoolDown="0" CoolDownRandomFactor="0" FullSpeedAfterAttack="False" StructureDamage="0"
+                CreateWallDamageProjectiles="False" EmitStructureDamageParticles="True" ItemDamage="0" Penetration="0" LevelWallDamage="0" Ranged="True" AvoidFriendlyFire="False"
+                RequiredAngle="1" RequiredAngleToShoot="0" AimRotationTorque="180" RotationLimbIndex="-1" SwayAmount="0" SwayFrequency="5" Stun="0" OnlyHumans="False"
+                ApplyForceOnLimbs="" Force="0" RootForceWorldStart="0,0" RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0"
+                ApplyForcesOnlyOnce="False" TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1"
+                SeverLimbsProbability="0" Priority="0" Blink="False">
+            <StatusEffect type="OnFailure" target="This">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="4" aimspread="25" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.1">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.2">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="6" aimspread="30" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.3">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Bullet" spawnposition="This" count="3" aimspread="20" rotationtype="Collider" rotation="0"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This" delay="0.4">
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Laser" spawnposition="This" count="4" aimspread="20" rotationtype="Collider" rotation="0"/>
+                <SpawnItem identifier="Touhou_Spectral_Guardian_Gravity_Punch" spawnposition="This" Probability="0.85" count="1" aimspread="10" rotationtype="Collider"
+                           rotation="0"/>
+            </StatusEffect>
+        </attack>
+    </limb>
+    <joint Name="Joint 0 - 1" Limb1="0" Limb2="1" Limb1Anchor="0,-225.4056" Limb2Anchor="0,205.06482" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore"
+           LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 2" Limb1="0" Limb2="2" Limb1Anchor="366.62848,-384.16974" Limb2Anchor="-2.4720623,359.70718" CanBeSevered="True" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="100.999985" LowerLimit="-40.00002" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 2 - 3" Limb1="2" Limb2="3" Limb1Anchor="57.996952,-370.81512" Limb2Anchor="-2.4720623,359.70718" CanBeSevered="True" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="140" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 3 - 4" Limb1="3" Limb2="4" Limb1Anchor="-1.7753633,-352.17227" Limb2Anchor="-152.13712,-2.2023044" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="36.999996" LowerLimit="-152.00002" Stiffness="0.1" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 5" Limb1="0" Limb2="5" Limb1Anchor="-274.709,-188.71877" Limb2Anchor="-2.4720623,359.70718" CanBeSevered="True" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="10" LowerLimit="-90" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 7" Limb1="0" Limb2="7" Limb1Anchor="279.4352,-198.69884" Limb2Anchor="-2.4720623,359.70718" CanBeSevered="True" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="173.00002" LowerLimit="-10" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 9" Limb1="0" Limb2="9" Limb1Anchor="-364.39343,-398.02228" Limb2Anchor="-2.4720623,359.70718" CanBeSevered="True" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="17.999994" LowerLimit="-112.00002" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 9 - 10" Limb1="9" Limb2="10" Limb1Anchor="44.536507,-388.39987" Limb2Anchor="-2.4720623,359.70718" CanBeSevered="True" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="-140" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 10 - 11" Limb1="10" Limb2="11" Limb1Anchor="-1.9904028,-357.1" Limb2Anchor="-149.64505,-2.308299" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="19.999996" LowerLimit="-156" Stiffness="0.1" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 12" Limb1="0" Limb2="12" Limb1Anchor="9.540629,-185.35425" Limb2Anchor="0,0" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore"
+           LimitEnabled="True" UpperLimit="0" LowerLimit="-17.000013" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 13" Limb1="0" Limb2="13" Limb1Anchor="460.89636,319.28522" Limb2Anchor="-2.6754034,-97.423965" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.1" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 14" Limb1="0" Limb2="14" Limb1Anchor="-670.12604,-28.42874" Limb2Anchor="-5,-79.92" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 15" Limb1="0" Limb2="15" Limb1Anchor="-622.93884,41.544018" Limb2Anchor="-2.6754034,-97.423965" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.1" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 16" Limb1="0" Limb2="16" Limb1Anchor="-560.0518,62.61374" Limb2Anchor="-5,-79.92" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore"
+           LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 17" Limb1="0" Limb2="17" Limb1Anchor="-443.1698,302.92526" Limb2Anchor="-2.6754034,-97.423965" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.1" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 18" Limb1="0" Limb2="18" Limb1Anchor="680.5479,-47.309486" Limb2Anchor="-5,-79.92" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 19" Limb1="0" Limb2="19" Limb1Anchor="636.9388,-0.91527915" Limb2Anchor="-2.6754034,-97.423965" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.1" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 20" Limb1="0" Limb2="20" Limb1Anchor="537.7746,69.21404" Limb2Anchor="-5,-79.92" CanBeSevered="False" SeveranceProbabilityModifier="0" BreakSound="gore"
+           LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 21" Limb1="0" Limb2="21" Limb1Anchor="195.1613,-11.411591" Limb2Anchor="7.975556,-192.11275" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 22" Limb1="0" Limb2="22" Limb1Anchor="-276.88635,292.15753" Limb2Anchor="0.9871154,-188.04143" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 23" Limb1="0" Limb2="23" Limb1Anchor="-186.35788,-11.651888" Limb2Anchor="5.0228925,-188.79222" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 0 - 24" Limb1="0" Limb2="24" Limb1Anchor="-0.59781075,-260.30835" Limb2Anchor="-0.65473694,-187.46527" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="0" LowerLimit="0" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 5 - 6" Limb1="5" Limb2="6" Limb1Anchor="16.97,-390.42" Limb2Anchor="-9.85,487.89" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore"
+           LimitEnabled="True" UpperLimit="54.000008" LowerLimit="-119.00001" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 7 - 8" Limb1="7" Limb2="8" Limb1Anchor="17,-387.58" Limb2Anchor="-3.29,477.14" CanBeSevered="True" SeveranceProbabilityModifier="0" BreakSound="gore"
+           LimitEnabled="True" UpperLimit="147" LowerLimit="-4.999999" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 6 - 25" Limb1="6" Limb2="25" Limb1Anchor="-51.72933,-465.25668" Limb2Anchor="-130.28917,0.65784353" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="19.999996" LowerLimit="-155.00002" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+    <joint Name="Joint 8 - 26" Limb1="8" Limb2="26" Limb1Anchor="-45.2,-468.47" Limb2Anchor="-125.670135,-1.4163194" CanBeSevered="False" SeveranceProbabilityModifier="0"
+           BreakSound="gore" LimitEnabled="True" UpperLimit="-155.00002" LowerLimit="-104.000015" Stiffness="0.25" Scale="1" WeldJoint="False" ClockWiseRotation="False"/>
+</Ragdoll>

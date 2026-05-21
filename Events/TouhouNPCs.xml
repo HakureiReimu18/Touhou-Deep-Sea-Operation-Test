@@ -68,6 +68,40 @@
             </ItemSet>
         </npc>
 
+        <!--八云紫-初始装备-->
+        <npc identifier="Mission_Yakumo_Yukari" moduleflags="none" behavior="Passive" healthmultiplier="5.0">
+            <Character speciesname="human" tags="female,head14" additionaltalentpoints="0" hairindex="7" beardindex="0" moustacheindex="0"
+                       faceattachmentindex="10" skincolor="200,165,131,255" haircolor="71,54,55,255" facialhaircolor="106,59,55,255"
+                       startitemsgiven="false" ragdoll="" personality="laid-back" missionscompletedsincedeath="29">
+                <job identifier="Magician">
+                    <skill identifier="weapons" level="100"/>
+                    <skill identifier="mechanical" level="100"/>
+                    <skill identifier="electrical" level="100"/>
+                    <skill identifier="medical" level="100"/>
+                    <skill identifier="helm" level="100"/>
+                    <skill identifier="Touhou_Magic" level="100"/>
+                </job>
+                <talents>
+                    <talent identifier="Talents_Magician_Primary07"/>
+                    <talent identifier="Gensokyo_Hermit"/>
+                    <talent identifier="Touhou_Buff"/>
+                    <talent identifier="buff"/>
+                    <talent identifier="firstaidtraining"/>
+                    <talent identifier="mudraptorwrestler"/>
+                    <talent identifier="heavylifting"/>
+                    <talent identifier="nonthreatening"/>
+                </talents>
+            </Character>
+            <ItemSet commonness="1">
+                <Item identifier="idcard" equip="true"/>
+                <Item identifier="Illness_Recovery_Charm" equip="true" showpreview="false" quality="3"/>
+                <Item identifier="Yukari_gear" equip="true"/>
+                <Item identifier="gensokyo_divinggear_Locked" equip="true">
+                    <Item identifier="oxygentank" showpreview="false"/>
+                </Item>
+            </ItemSet>
+        </npc>
+
         <!--阿求-交易-->
         <npc identifier="Store_Hieda_no_Akyuu01" moduleflags="none" behavior="Passive" healthmultiplier="3.0">
             <Character speciesname="human" tags="female,head14" additionaltalentpoints="0" hairindex="7" beardindex="0" moustacheindex="0"
@@ -485,7 +519,7 @@
             </ItemSet>
         </npc>
 
-        <!--文文任务-站点商人-->
+        <!--文文任务-站点礼物倾销商-->
         <npc identifier="Aya_Event_Outpost_Merchant" job="captain" tags="outpostmanager" spawnpointtags="admin" behavior="StayInHull"
              preferredoutpostmoduletypes="admin,adminmodule">
             <ItemSet commonness="1">

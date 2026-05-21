@@ -75,7 +75,8 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Sun_Flower_Petal03_Effect"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="damage,burn" multiplier="0.9"/>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="0.9"/>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>

@@ -76,7 +76,7 @@
     <entitydescription.Marisa_Hat_Eclipse_Anniversary>‖color:255,255,0,255‖The hat of an ordinary magician.‖color:end‖</entitydescription.Marisa_Hat_Eclipse_Anniversary>
     <talentname.Casket_Of_Star>Ordinary Magician</talentname.Casket_Of_Star>
     <talentdescription.Casket_Of_Star>When wearing ‖color:gui.orange‖Marisa Outfit+‖end‖, you recover faster from ‖color:gui.yellow‖Physical Damage and Burns‖end‖:
-        Each ranged attack slowly builds ‖color:gui.yellow‖Magic Overload‖end‖, which reduces your ‖color:gui.orange‖Max Health and Ranged Attack Speed‖end‖, up to ‖color:gui.red‖20%‖end‖.
+        Each ranged attack slowly builds ‖color:gui.yellow‖Magic Overload‖end‖, which reduces your ‖color:gui.orange‖Max Health and Ranged Attack Speed‖end‖, up to ‖color:gui.red‖30%‖end‖.
         ‖color:gui.yellow‖Magic Overload‖end‖ recovers naturally over time; the lower your ‖color:gui.orange‖Magic‖end‖ skill, the faster ‖color:gui.yellow‖Overload‖end‖ accumulates.
         \nIncrease total damage by ‖color:gui.green‖4%‖end‖, ranged damage by ‖color:gui.green‖4%‖end‖, non-turret projectile damage by ‖color:gui.green‖4%‖end‖, burn damage dealt by ‖color:gui.green‖4%‖end‖, and damage to non-humans by ‖color:gui.green‖4%‖end‖.
         \nRanged projectiles have a ‖color:gui.green‖25%‖end‖ chance to additionally inflict ‖color:gui.yellow‖Dream Vanish‖end‖.
@@ -118,6 +118,7 @@
     <entitydescription.Reimu_Plus>‖color:255,81,75,255‖Reimu Hakurei is the current shrine maiden of the Hakurei Shrine in Gensokyo.
         ————“Touhou Hisoutensoku”.
         She usually resides at the shrine and appears throughout Gensokyo—and even beyond—whenever incidents arise.‖color:end‖\n(Built-in scanner slot)</entitydescription.Reimu_Plus>
+
     <entityname.Reimu_Eclipse_Anniversary>‖color:255,81,75,255‖Reimu's Outfit (Anniversary)‖color:end‖</entityname.Reimu_Eclipse_Anniversary>
     <entitydescription.Reimu_Eclipse_Anniversary>‖color:255,81,75,255‖Reimu Hakurei is the current shrine maiden of the Hakurei Shrine in Gensokyo.
         ————“Touhou Hisoutensoku”.
@@ -126,6 +127,16 @@
     <entitydescription.Reimu_Eclipse_Anniversary_Plus>‖color:255,81,75,255‖Reimu Hakurei is the current shrine maiden of the Hakurei Shrine in Gensokyo.
         ————“Touhou Hisoutensoku”.
         She usually resides at the shrine and appears throughout Gensokyo—and even beyond—whenever incidents arise.‖color:end‖\n(Built-in scanner slot)</entitydescription.Reimu_Eclipse_Anniversary_Plus>
+
+    <entityname.Reimu_Eclipse_Valentines>‖color:255,81,75,255‖Reimu's Outfit (Valentines)‖color:end‖</entityname.Reimu_Eclipse_Valentines>
+    <entitydescription.Reimu_Eclipse_Valentines>‖color:255,81,75,255‖Reimu Hakurei is the current shrine maiden of the Hakurei Shrine in Gensokyo.
+        ————“Touhou Hisoutensoku”.
+        She usually resides at the shrine and appears throughout Gensokyo—and even beyond—whenever incidents arise.‖color:end‖\n(Built-in scanner slot)</entitydescription.Reimu_Eclipse_Valentines>
+    <entityname.Reimu_Eclipse_Valentines_Plus>‖color:255,81,75,255‖Reimu's Outfit+ (Valentines)‖color:end‖</entityname.Reimu_Eclipse_Valentines_Plus>
+    <entitydescription.Reimu_Eclipse_Valentines_Plus>‖color:255,81,75,255‖Reimu Hakurei is the current shrine maiden of the Hakurei Shrine in Gensokyo.
+        ————“Touhou Hisoutensoku”.
+        She usually resides at the shrine and appears throughout Gensokyo—and even beyond—whenever incidents arise.‖color:end‖\n(Built-in scanner slot)</entitydescription.Reimu_Eclipse_Valentines_Plus>
+
     <entityname.Reimu_Decalmask>‖color:255,81,75,255‖Reimu's Sticker Mask‖color:end‖</entityname.Reimu_Decalmask>
     <entitydescription.Reimu_Decalmask>‖color:255,81,75,255‖Looks surprisingly good when worn.‖color:end‖</entitydescription.Reimu_Decalmask>
     <talentname.Innocent_Treasures>Innocent Treasures</talentname.Innocent_Treasures>
@@ -179,11 +190,13 @@
     <afflictionname.Possessed_By_Phoenix>Human of Hourai</afflictionname.Possessed_By_Phoenix>
     <afflictiodescription.Possessed_By_Phoenix>A human possessing true immortality.</afflictiodescription.Possessed_By_Phoenix>
     <talentname.Immortal_Human>Phoenix</talentname.Immortal_Human>
-    <talentdescription.Immortal_Human>While wearing ‖color:255,72,36,255‖Mokou's Outfit+‖end‖:
-        • Max health ‖color:gui.red‖−10%‖end‖.
-        • Once per mission cycle, if health reaches zero you gain ‖color:gui.green‖5 s of consciousness‖end‖ during which wounds heal rapidly but movement speed and damage are reduced.
-        • Burn damage dealt ‖color:gui.green‖+10%‖end‖.
-    </talentdescription.Immortal_Human>
+    <talentdescription.Immortal_Human>While wearing ‖color:255,72,36,255‖Mokou Outfit+‖end‖:
+        Reduce maximum vitality by ‖color:gui.red‖10%‖end‖.
+        Once per round across all Mokou Outfit+ wearers, when your vitality drops to zero, you can trigger ‖color:gui.green‖Nirvana, granting an additional 10 seconds of consciousness‖end‖. During this time, your injuries rapidly recover, but your movement speed and damage dealt are briefly reduced.
+        Before Nirvana triggers, increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack damage‖end‖.
+        After Nirvana triggers, reduce ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack damage‖end‖ and increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖maximum vitality‖end‖.
+        Danmaku damage dealt to targets afflicted with burns will further reduce their ‖color:gui.orange‖physical damage resistance and burn resistance‖end‖.
+        \nDamage dealt as ‖color:gui.yellow‖burns‖end‖ is increased by ‖color:gui.green‖10%‖end‖.</talentdescription.Immortal_Human>
     <afflictionname.Mokou_Weapons>Immortal Guide of the Bamboo Forest</afflictionname.Mokou_Weapons>
     <afflictiondescription.Mokou_Weapons>If the soul separates from the body, the body is destroyed and the soul forms a new one in a place it favors. Though deathless, she still feels hunger and pain.</afflictiondescription.Mokou_Weapons>
 
@@ -226,6 +239,12 @@
     <entitydescription.Tenshi_Plus>‖color:5,105,195,200‖A member of the Hinanawi clan who manipulates the keystone “Yao Stone,” calming or causing earthquakes by driving it in or pulling it out. Capable of ground-collapsing, mountain-shattering disasters that shake all of Gensokyo.‖color:end‖\n(Built-in scanner slot)</entitydescription.Tenshi_Plus>
     <entityname.Tenshi_Hat>‖color:5,105,195,200‖Tenshi's Peach Hat‖color:end‖</entityname.Tenshi_Hat>
     <entitydescription.Tenshi_Hat>‖color:5,105,195,200‖“If the hat were bare it’d look too plain, so I added a peach.”‖color:end‖</entitydescription.Tenshi_Hat>
+    <entityname.Tenshi_Eclipse_Anniversary>‖color:5,105,195,200‖Tenshi's Outfit(Anniversary)‖color:end‖</entityname.Tenshi_Eclipse_Anniversary>
+    <entitydescription.Tenshi_Eclipse_Anniversary>‖color:5,105,195,200‖A member of the Hinanawi clan who manipulates the keystone “Yao Stone,” calming or causing earthquakes by driving it in or pulling it out. Capable of ground-collapsing, mountain-shattering disasters that shake all of Gensokyo.‖color:end‖\n(Built-in scanner slot)</entitydescription.Tenshi_Eclipse_Anniversary>
+    <entityname.Tenshi_Eclipse_Anniversary_Plus>‖color:5,105,195,200‖Tenshi's Outfit+(Anniversary)‖color:end‖</entityname.Tenshi_Eclipse_Anniversary_Plus>
+    <entitydescription.Tenshi_Eclipse_Anniversary_Plus>‖color:5,105,195,200‖A member of the Hinanawi clan who manipulates the keystone “Yao Stone,” calming or causing earthquakes by driving it in or pulling it out. Capable of ground-collapsing, mountain-shattering disasters that shake all of Gensokyo.‖color:end‖\n(Built-in scanner slot)</entitydescription.Tenshi_Eclipse_Anniversary_Plus>
+    <entityname.Tenshi_Eclipse_Anniversary_Headpiece>‖color:5,105,195,200‖Tenshi's Peach Headpiece‖color:end‖</entityname.Tenshi_Eclipse_Anniversary_Headpiece>
+    <entitydescription.Tenshi_Eclipse_Anniversary_Headpiece>An ingeniously designed peach-shaped hair ornament</entitydescription.Tenshi_Eclipse_Anniversary_Headpiece>
     <talentname.TenshiTalent>Lady of the Firmament</talentname.TenshiTalent>
     <talentdescription.TenshiTalent>While wearing ‖color:gui.orange‖Tenshi's Outfit+‖end‖:
         • Melee attackers briefly flee after striking you.
@@ -759,11 +778,11 @@
     <talentname.RenkoTalent>Secret Sealing Club – Renko</talentname.RenkoTalent>
     <talentdescription.RenkoTalent>While wearing Renko's Outfit+:
         −‖color:gui.red‖15%‖end‖ movement speed and −‖color:gui.red‖15%‖end‖ maximum health.
-        ‖color:gui.orange‖Attack damage‖end‖ −‖color:gui.red‖25%‖end‖.
+        ‖color:gui.orange‖Attack damage‖end‖ −‖color:gui.red‖20%‖end‖.
         Immune to psychosis effects.
         All magic weapons gain their own exclusive weapon effect.
         When searching shipwreck or ruin containers, ‖color:gui.green‖10%‖end‖ chance to find ‖color:gui.yellow‖Izanagi Matter or Aether Layer Metal‖end‖.
-        Based on your ‖color:gui.orange‖medical skill‖end‖, gain +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack speed‖end‖, up to ‖color:gui.green‖20%‖end‖.
+        Based on your ‖color:gui.orange‖medical skill‖end‖, gain +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack speed‖end‖, up to ‖color:gui.green‖10%‖end‖.
         When starting or finishing a mission with Merry and completing all tasks while level >‖color:gui.green‖5‖end‖, obtain ‖color:gui.yellow‖“Red Spot Bestiary”‖end‖.
         Reading ‖color:gui.yellow‖“Red Spot Bestiary”‖end‖ triggers random effects (may all trigger or none):
         1. All crew gain +‖color:gui.green‖1‖end‖ point in every skill and +‖color:gui.green‖50%‖end‖ skill gain speed.
@@ -980,6 +999,188 @@
     <afflictiondescription.TewiTalent_OnApplyTreatment_Effect04>Suppresses opioid withdrawal, opioid poisoning, and chemical withdrawal</afflictiondescription.TewiTalent_OnApplyTreatment_Effect04>
 
 
+    <!--Kaguya-->
+    <entityname.Kaguya_gear>‖color:154,124,204,255‖Kaguya Outfit‖end‖</entityname.Kaguya_gear>
+    <entitydescription.Kaguya_gear>Kaguya once lived in the Lunar Capital before being exiled to Earth. After killing a Lunarian emissary, she spent more than a thousand years in seclusion at Eientei within the Bamboo Forest of the Lost. Now she no longer hides away, and lives an ordinary life.</entitydescription.Kaguya_gear>
+    <entityname.Kaguya_Plus>‖color:154,124,204,255‖Kaguya Outfit+‖end‖</entityname.Kaguya_Plus>
+    <entitydescription.Kaguya_Plus>Kaguya once lived in the Lunar Capital before being exiled to Earth. After killing a Lunarian emissary, she spent more than a thousand years in seclusion at Eientei within the Bamboo Forest of the Lost. Now she no longer hides away, and lives an ordinary life.</entitydescription.Kaguya_Plus>
+    <talentname.KaguyaTalent>Princess of the Moon</talentname.KaguyaTalent>
+    <talentdescription.KaguyaTalent>While wearing Kaguya Outfit+:
+        ‖color:gui.orange‖Physical damage resistance and stun resistance‖end‖ are reduced by ‖color:gui.red‖20%‖end‖.
+        ‖color:gui.orange‖Ranged Attack damage‖end‖ is reduced by ‖color:gui.red‖10%‖end‖.
+        ‖color:gui.orange‖Melee Attack damage‖end‖ is reduced by ‖color:gui.red‖40%‖end‖.
+        ‖color:gui.orange‖Movement speed‖end‖ is reduced by ‖color:gui.red‖10%‖end‖.
+        ‖color:gui.orange‖Mechanical Engineering and Electrical Engineering‖end‖ are reduced by ‖color:gui.red‖30‖end‖, and ‖color:gui.orange‖Weapons‖end‖ is reduced by ‖color:gui.red‖60‖end‖.
+
+        Gain ‖color:gui.green‖25%‖end‖ ‖color:gui.yellow‖bleeding resistance and aura disruption resistance‖end‖.
+        ‖color:gui.orange‖Buff duration‖end‖ is increased by ‖color:gui.green‖50%‖end‖.
+        ‖color:gui.orange‖Debuff duration‖end‖ is reduced by ‖color:gui.green‖15%‖end‖.
+        While inside a friendly submarine, increase ‖color:gui.green‖25%‖end‖ ‖color:gui.orange‖skill gain rate‖end‖.
+        Allows the Five Treasures (Radiant Dragon Jewel, Vajra of the Buddha’s Body, Fire Lizard Shield, Fountain of Infinite Life, Jeweled Branch of Hourai) to be crafted into treasure consumables. Using them from the Health interface grants permanent bonuses.</talentdescription.KaguyaTalent>
+    <afflictionname.Sinner_Of_Eternity_And_The_Ephemeral>Sinner of Eternity and the Ephemeral</afflictionname.Sinner_Of_Eternity_And_The_Ephemeral>
+    <afflictiondescription.Sinner_Of_Eternity_And_The_Ephemeral>Kaguya has long black hair styled in a hime cut, with bangs that fall past her eyebrows. She has black eyes.</afflictiondescription.Sinner_Of_Eternity_And_The_Ephemeral>
+    <afflictionname.Kaguya_Weapons>The Hourai Immortal Imprisoned on Earth</afflictionname.Kaguya_Weapons>
+    <afflictiondescription.Kaguya_Weapons>She can gather together instants too brief for humans to perceive, and use them to act and move. Even time in the realm of the moment flows within time itself, yet humans cannot sense it at all—by exploiting it, she can produce multiple different histories.</afflictiondescription.Kaguya_Weapons>
+
+    <entityname.Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel>‖color:154,124,204,255‖Radiant Dragon Jewel‖end‖</entityname.Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel>
+    <entitydescription.Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel>A jade bead polished to an almost blinding shine, with tiny whorls of light drifting inside like living things. Occupies ‖color:gui.yellow‖any quickbar‖end‖ slot.
+        While carried, increases stun resistance by 10% and allows slow recovery from some injuries.
+        (Only active when equipped with Kaguya's outfit)</entitydescription.Touhou_Kaguya_Treasure_Radiant_Dragon_Jewel>
+    <entityname.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond>‖color:154,124,204,255‖Vajra of the Buddha’s Body‖end‖</entityname.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond>
+    <entitydescription.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond>An unassuming clear crystal, yet its edges display impossible facets. Takes effect permanently after being used from the ‖color:gui.yellow‖Health interface‖end‖.
+        After use, increases physical damage resistance by 10% and greatly increases hypoxia resistance.
+        (Only active when equipped with Kaguya's outfit)</entitydescription.Touhou_Kaguya_Treasure_Vajra_Buddha_Diamond>
+    <entityname.Touhou_Kaguya_Treasure_Fire_Lizard_Shield>‖color:154,124,204,255‖Fire Lizard Shield‖end‖</entityname.Touhou_Kaguya_Treasure_Fire_Lizard_Shield>
+    <entitydescription.Touhou_Kaguya_Treasure_Fire_Lizard_Shield>The shield’s grain resembles scorched strata, and warmth still “breathes” within its cracks. Occupies the ‖color:gui.yellow‖headset‖end‖ slot.
+        While equipped, increases burn resistance by 10%, allows slow recovery from burns, and increases burn damage dealt.
+        (Only active when equipped with Kaguya's outfit)</entitydescription.Touhou_Kaguya_Treasure_Fire_Lizard_Shield>
+    <entityname.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life>‖color:154,124,204,255‖Fountain of Infinite Life‖end‖</entityname.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life>
+    <entitydescription.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life>A small stone spring whose surface is unnaturally still. Occupies the ‖color:gui.yellow‖gene splicer‖end‖ slot.
+        While equipped, once per round, if your vitality drops below 0, you will not die for 1 minute.
+        (Only active when equipped with Kaguya's outfit)</entitydescription.Touhou_Kaguya_Treasure_Fountain_Of_Infinite_Life>
+    <entityname.Touhou_Kaguya_Treasure_Penglai_Jade_Branch>‖color:154,124,204,255‖Jeweled Branch of Hourai‖end‖</entityname.Touhou_Kaguya_Treasure_Penglai_Jade_Branch>
+    <entitydescription.Touhou_Kaguya_Treasure_Penglai_Jade_Branch>A piece of jade wood that looks like a dead branch, yet its joints bear softly gleaming, jewel-toned crystal buds. Takes effect permanently after being used from the ‖color:gui.yellow‖Health interface‖end‖.
+        After use, increases attack damage, physical damage resistance, movement speed, and skill levels by 10%, and grants 10 additional vitality.
+        (Only active when equipped with Kaguya's outfit)</entitydescription.Touhou_Kaguya_Treasure_Penglai_Jade_Branch>
+
+    <!--Cosmic Princess Kaguya-->
+    <entityname.Cosmic_Princess_Kaguya_gear>‖color:252,253,116,255‖Cosmic Princess Kaguya Outfit‖end‖</entityname.Cosmic_Princess_Kaguya_gear>
+    <entitydescription.Cosmic_Princess_Kaguya_gear>A mysterious girl from the Moon. Chasing fun and excitement, she began streaming in the virtual space “Tsukuyomi,” and she likes Caiye.</entitydescription.Cosmic_Princess_Kaguya_gear>
+    <entityname.Cosmic_Princess_Kaguya_Plus>‖color:252,253,116,255‖Cosmic Princess Kaguya Outfit+‖end‖</entityname.Cosmic_Princess_Kaguya_Plus>
+    <entitydescription.Cosmic_Princess_Kaguya_Plus>A mysterious girl from the Moon. Chasing fun and excitement, she began streaming in the virtual space “Tsukuyomi,” and she likes Caiye.</entitydescription.Cosmic_Princess_Kaguya_Plus>
+    <talentname.Cosmic_Princess_KaguyaTalent>Cosmic Radiant Princess</talentname.Cosmic_Princess_KaguyaTalent>
+    <talentdescription.Cosmic_Princess_KaguyaTalent>While wearing Cosmic Princess Kaguya Outfit+:
+        ‖color:gui.orange‖Ranged attack damage‖end‖ is reduced by ‖color:gui.red‖10%‖end‖.
+        If you go a long time without eating any meals, you gain the Empty Stomach effect: ‖color:gui.orange‖skill levels‖end‖ are reduced by up to ‖color:gui.red‖15%‖end‖, and ‖color:gui.orange‖experience gain rate‖end‖ is reduced by up to ‖color:gui.red‖30%‖end‖.
+
+        ‖color:gui.orange‖Mechanical Engineering and Electrical Engineering‖end‖ increase by ‖color:gui.green‖15‖end‖ points.
+        ‖color:gui.orange‖Melee attack damage‖end‖ increases by ‖color:gui.green‖35%‖end‖.
+        While any tier of ‖color:gui.orange‖meal‖end‖ is active, ‖color:gui.orange‖skill gain rate‖end‖ increases by ‖color:gui.green‖50%‖end‖.
+        ‖color:gui.orange‖Debuff duration‖end‖ is reduced by ‖color:gui.green‖15%‖end‖.
+        While inside a friendly submarine, increase ‖color:gui.green‖25%‖end‖ ‖color:gui.orange‖skill gain rate‖end‖.
+        While inside a friendly submarine, you may use a microphone to buff all nearby crew members:
+        Increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack damage‖end‖ and increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖physical damage resistance‖end‖.</talentdescription.Cosmic_Princess_KaguyaTalent>
+    <afflictionname.Princess_Kaguya>Cosmic Radiant Princess</afflictionname.Princess_Kaguya>
+    <afflictiondescription.Princess_Kaguya>In the virtual space “Tsukuyomi,” filled with dreams and hope, two girls met through song. Caiye handles composition and lyrics, while Huiyao focuses on streaming and singing. Their partnership is seamless, and their relationship grows even closer.</afflictiondescription.Princess_Kaguya>
+    <afflictionname.Princess_Kaguya_Hungry>Empty Stomach</afflictionname.Princess_Kaguya_Hungry>
+    <afflictiondescription.Princess_Kaguya_Hungry>Skill levels reduced by up to 15%, experience gain rate reduced by up to 30%.</afflictiondescription.Princess_Kaguya_Hungry>
+    <afflictionname.Princess_Kaguya_Melodious_Voice>Melodious Voice</afflictionname.Princess_Kaguya_Melodious_Voice>
+    <afflictiondescription.Princess_Kaguya_Melodious_Voice>Increases attack damage by 10% and physical damage resistance by 10%.</afflictiondescription.Princess_Kaguya_Melodious_Voice>
+
+    <!--
+    <afflictionname.Kaguya_Weapons>The Hourai Immortal Imprisoned on Earth</afflictionname.Kaguya_Weapons>
+    <afflictiondescription.Kaguya_Weapons>She can gather together instants too brief for humans to perceive, and use them to act and move. Even time in the realm of the moment flows within time itself, yet humans cannot sense it at all—by exploiting it, she can produce multiple different histories.</afflictiondescription.Kaguya_Weapons>
+    -->
+
+    <!--Yachiyo-->
+    <entityname.Yachiyo_gear>‖color:0,116,143,255‖Yachiyo Outfit‖end‖</entityname.Yachiyo_gear>
+    <entitydescription.Yachiyo_gear>The creator and administrator of the virtual space “Tsukuyomi,” and also a top-tier streamer—a mysterious AI with the setting of “an 8000-year-old who can sing, dance, and even split into copies.”</entitydescription.Yachiyo_gear>
+    <entityname.Yachiyo_Plus>‖color:0,116,143,255‖Yachiyo Outfit+‖end‖</entityname.Yachiyo_Plus>
+    <entitydescription.Yachiyo_Plus>The creator and administrator of the virtual space “Tsukuyomi,” and also a top-tier streamer—a mysterious AI with the setting of “an 8000-year-old who can sing, dance, and even split into copies.”</entitydescription.Yachiyo_Plus>
+    <talentname.YachiyoTalent>Tsukuyomi Administrator</talentname.YachiyoTalent>
+    <talentdescription.YachiyoTalent>While wearing Yachiyo Outfit+:
+        You must install ‖color:gui.orange‖“Tsukuyomi”‖end‖ on the submarine, equip the ‖color:gui.orange‖Octopus Waist Pouch‖end‖, and equip a ‖color:gui.orange‖“Receiver”‖end‖. You must use ‖color:gui.orange‖“Tsukuyomi”‖end‖ to recharge the ‖color:gui.orange‖“Receiver”‖end‖ on schedule.
+        Otherwise, at low battery, ‖color:gui.orange‖attack damage‖end‖ is reduced by ‖color:gui.green‖20%‖end‖. When the battery is fully depleted, if you are not inside a friendly submarine, you have a chance to intermittently lose consciousness for a period of time.
+
+        ‖color:gui.orange‖Ranged attack damage‖end‖ increases by ‖color:gui.green‖10%‖end‖.
+        When killing hostile monsters, you have a chance to gain money. Triggers up to ‖color:gui.green‖10‖end‖ times per round.
+        ‖color:gui.orange‖Debuff duration‖end‖ is reduced by ‖color:gui.green‖15%‖end‖.
+        While inside a friendly submarine, increase ‖color:gui.green‖25%‖end‖ ‖color:gui.orange‖skill gain rate‖end‖.
+        While inside a friendly submarine, you may use a microphone to buff all crew members:
+        Increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖movement speed and skill levels‖end‖, reduce ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖friendly fire damage‖end‖, and grant ‖color:gui.green‖10‖end‖ points of ‖color:gui.orange‖additional vitality‖end‖.</talentdescription.YachiyoTalent>
+    <afflictionname.Tsukuyomi_Administrator>Tsukuyomi Administrator</afflictionname.Tsukuyomi_Administrator>
+    <afflictiondescription.Tsukuyomi_Administrator>After learning the truth about Yachiyo, Caiye switched her university major to research mechanical prosthetics. Yachiyo thus gained a physical body in the real world.</afflictiondescription.Tsukuyomi_Administrator>
+    <afflictionname.Tsukuyomi_Administrator_Low_Power>Break Time</afflictionname.Tsukuyomi_Administrator_Low_Power>
+    <afflictiondescription.Tsukuyomi_Administrator_Low_Power>Running a bit low on power.</afflictiondescription.Tsukuyomi_Administrator_Low_Power>
+    <entityname.Tsukuyomi_Server_Center>‖color:0,116,143,255‖Tsukuyomi Server Center‖end‖</entityname.Tsukuyomi_Server_Center>
+    <entitydescription.Tsukuyomi_Server_Center>The equipment required for Yachiyo’s activities. If you want to leave Tsukuyomi activities, you must fully charge the receiver.</entitydescription.Tsukuyomi_Server_Center>
+    <afflictionname.Tsukuyomi_Administrator_Melodious_Voice>Melodious Voice</afflictionname.Tsukuyomi_Administrator_Melodious_Voice>
+    <afflictiondescription.Tsukuyomi_Administrator_Melodious_Voice>Increases movement speed by 10%, reduces friendly fire damage by 10%, and grants 10 additional vitality.</afflictiondescription.Tsukuyomi_Administrator_Melodious_Voice>
+
+
+
+    <!--Hiro-->
+    <entityname.Hiro_gear>‖color:255,50,50,255‖Hiro Outfit‖end‖</entityname.Hiro_gear>
+    <entitydescription.Hiro_gear>She lives with a strong sense of responsibility and self-esteem; her values are strictly divided into “right” and “wrong.” Her excessive pursuit of “correctness” often leads her into obsessive thinking. (After installing the prerequisite mod, equipping this unlocks Outfit+)</entitydescription.Hiro_gear>
+
+    <entityname.Hiro_Plus>‖color:255,50,50,255‖Hiro Outfit+‖end‖</entityname.Hiro_Plus>
+    <entitydescription.Hiro_Plus>She is someone who deserves to be hated. And the one who hates her more than anyone else… is herself.</entitydescription.Hiro_Plus>
+
+    <entityname.Hiro_Headpiece>‖color:255,50,50,255‖Hiro’s Headpiece‖end‖</entityname.Hiro_Headpiece>
+    <entitydescription.Hiro_Headpiece>A headpiece adorned with red spider lilies.</entitydescription.Hiro_Headpiece>
+
+    <talentname.HiroTalent>The One Who Embodies Absolute Justice</talentname.HiroTalent>
+    <talentdescription.HiroTalent>When wearing Hiro Outfit+:
+        ‖color:gui.orange‖Maximum Health‖end‖ is reduced by ‖color:gui.green‖15%‖end‖, and damage taken is increased by ‖color:gui.green‖15%‖end‖
+
+        Increases danmaku damage by 20%.
+        Once per round for all characters, triggers when health falls below ‖color:gui.green‖1%‖end‖. Upon activation, removes as many status effects as possible, grants as much bonus health as possible,
+        and applies a ‖color:gui.green‖30‖end‖ second buff that increases ‖color:gui.orange‖movement speed and melee damage‖end‖. Finally, applies ‖color:gui.green‖20‖end‖ points of ‖color:gui.yellow‖psychosis‖end‖.
+
+        Taking damage increases ‖color:gui.yellow‖Witch Transformation Progress‖end‖.
+        When health falls below ‖color:gui.green‖50%‖end‖, ‖color:gui.yellow‖Witch Transformation Progress‖end‖ also increases.
+        When ‖color:gui.yellow‖Witch Transformation Progress‖end‖ reaches ‖color:gui.green‖100%‖end‖, once per round, gain the Witch Transformation effect:
+        ‖color:gui.orange‖Physical Resistance and Burn Resistance‖end‖ increased by ‖color:gui.green‖15%‖end‖,
+        ‖color:gui.orange‖Attack Damage‖end‖ increased by ‖color:gui.green‖15%‖end‖,
+        additionally gain ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖Melee Damage‖end‖
+        Deal ‖color:gui.green‖25%‖end‖ more damage to creatures with Witch factors
+        Consuming food or drinks of level ‖color:gui.green‖3‖end‖ or higher can prematurely end the transformation.
+
+        If the Witch Transformation ends naturally, gain severe penalties:
+        ‖color:gui.orange‖Attack Damage‖end‖ reduced by ‖color:gui.red‖60%‖end‖,
+        ‖color:gui.orange‖Movement Speed‖end‖ reduced by ‖color:gui.red‖40%‖end‖,
+        experience gained this round reduced by ‖color:gui.red‖90%‖end‖
+
+        Once every five minutes, pressing Alt+X grants the “False Testimony” effect; while active, enemies will not actively detect you.
+        (Some effects require the installation of a Lua patch)
+    </talentdescription.HiroTalent>
+    <afflictionname.Hiro_Executor_Of_Justice>Executor of Justice</afflictionname.Hiro_Executor_Of_Justice>
+    <afflictiondescription.Hiro_Executor_Of_Justice>To her, the abyss of Europa is not the most terrifying thing. What truly terrifies her is that even after dying here—she can start all over again.</afflictiondescription.Hiro_Executor_Of_Justice>
+    <afflictionname.HiroTalent_Witch_Transformation>Witch Transformation Progress</afflictionname.HiroTalent_Witch_Transformation>
+    <afflictionname.HiroTalent_Witch_Transformation_End>Forced Witch Transformation Termination Progress</afflictionname.HiroTalent_Witch_Transformation_End>
+    <afflictionname.Hiro_Pseudo_Buff>False Testimony</afflictionname.Hiro_Pseudo_Buff>
+
+    <!--Hiro-->
+    <entityname.Iroha_gear>‖color:107,63,160,255‖Iroha Outfit‖end‖</entityname.Iroha_gear>
+    <entitydescription.Iroha_gear>A devoted fan of Yachiyo Tsukuyomi, the top streamer and administrator of the virtual space “Tsukuyomi.” She even set up a small shrine in her bedroom dedicated to Yachiyo’s standee. (After installing the prerequisite mod, equipping this unlocks Outfit+)</entitydescription.Iroha_gear>
+
+    <entityname.Iroha_Plus>‖color:107,63,160,255‖Iroha Outfit+‖end‖</entityname.Iroha_Plus>
+    <entitydescription.Iroha_Plus>A devoted fan of Yachiyo Tsukuyomi, the top streamer and administrator of the virtual space “Tsukuyomi.” She even set up a small shrine in her bedroom dedicated to Yachiyo’s standee.</entitydescription.Iroha_Plus>
+
+    <talentname.IrohaTalent>Versatile Adaptation</talentname.IrohaTalent>
+    <talentdescription.IrohaTalent>While wearing Iroha Outfit+,
+        gain the ‖color:gui.yellow‖“Fatigue”‖end‖ effect over time while moving, reducing up to ‖color:gui.red‖40%‖end‖ ‖color:gui.orange‖movement speed‖end‖, ‖color:gui.red‖35%‖end‖ ‖color:gui.orange‖attack damage‖end‖, and ‖color:gui.red‖20%‖end‖ ‖color:gui.orange‖physical damage resistance‖end‖
+        When level is above ‖color:gui.green‖8‖end‖, the accumulation speed of ‖color:gui.yellow‖“Fatigue”‖end‖ is halved
+        Keeping health above ‖color:gui.green‖50%‖end‖ and consuming food of quality level ‖color:gui.green‖3‖end‖ or higher gradually removes ‖color:gui.yellow‖“Fatigue”‖end‖
+
+        Based on the character’s current highest skill, the corresponding enhancement mode is automatically activated. If multiple skills are tied for highest, all corresponding modes can activate simultaneously.
+
+        Highest Electrical Engineering → ‖color:gui.orange‖Engineer Mode‖end‖: ‖color:gui.orange‖device repair speed‖end‖ ‖color:gui.green‖+30%‖end‖, radiation damage dealt has a ‖color:gui.green‖25%‖end‖ chance to convert into ‖color:gui.yellow‖burn damage‖end‖ at ‖color:gui.green‖50%‖end‖ efficiency
+        Highest Mechanical Engineering → ‖color:gui.orange‖Mechanic Mode‖end‖: ‖color:gui.orange‖repair speed and hull repair speed‖end‖ ‖color:gui.green‖+15%‖end‖, ‖color:gui.orange‖burn resistance‖end‖ ‖color:gui.green‖+15%‖end‖
+        Highest Weapons Skill → ‖color:gui.orange‖Security Officer Mode‖end‖: all damage ‖color:gui.green‖+10%‖end‖, gain an additional ‖color:gui.green‖10‖end‖ maximum health
+        Highest Medical Skill → ‖color:gui.orange‖Doctor Mode‖end‖: ‖color:gui.orange‖medical item effectiveness‖end‖ ‖color:gui.green‖+10%‖end‖, ‖color:gui.orange‖healing received from medicine‖end‖ ‖color:gui.green‖+10%‖end‖
+        Highest Helm Skill → ‖color:gui.orange‖Captain Mode‖end‖: ‖color:gui.orange‖engine output‖end‖ ‖color:gui.green‖+10%‖end‖, immune to ‖color:gui.yellow‖psychosis‖end‖
+        Highest Magical Ability → ‖color:gui.orange‖Creator Mode‖end‖: ‖color:gui.orange‖skill gain speed‖end‖ ‖color:gui.green‖+50%‖end‖, after completing any mission during a round, there is a chance to obtain the unique item: ‖color:gui.orange‖Tsukuyomi VR Lens‖end‖
+
+        After equipping the ‖color:gui.orange‖Tsukuyomi VR Lens‖end‖, all skill-based enhancement effects above become active regardless of skill levels. After ‖color:gui.green‖5‖end‖ minutes, rapidly accumulate ‖color:gui.yellow‖“Fatigue”‖end‖
+        (Some effects require the installation of a Lua patch)
+    </talentdescription.IrohaTalent>
+
+    <afflictionname.Iroha_Versatile_Adaptation>All-Round Producer</afflictionname.Iroha_Versatile_Adaptation>
+    <afflictiondescription.Iroha_Versatile_Adaptation>An ordinary 17-year-old high school girl who loves playing games</afflictiondescription.Iroha_Versatile_Adaptation>
+
+    <afflictionname.HiroTalent_Witch_Transformation>Fatigue</afflictionname.HiroTalent_Witch_Transformation>
+
+    <entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>‖color:107,63,160,255‖Tsukuyomi VR Lens‖end‖</entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>
+    <entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>A compact VR headset</entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>
+
+    <!--通用-->
+    <entityname.Normal_Yousei_Clothes>Fairy Casual Wear</entityname.Normal_Yousei_Clothes>
+    <entitydescription.Normal_Yousei_Clothes>Common casual wear seen everywhere on fairies</entitydescription.Normal_Yousei_Clothes>
+
+
+
+
 
 
 
@@ -1026,6 +1227,7 @@
     <Character.MRE_Material_Lilywhite>Lilywhite's Memory</Character.MRE_Material_Lilywhite>
     <Character.MRE_Material_Satori>Satori's Memory</Character.MRE_Material_Satori>
     <Character.MRE_Material_Tewi>Tewi's Memory</Character.MRE_Material_Tewi>
+    <Character.MRE_Material_Kaguya>Kaguya's Memory</Character.MRE_Material_Kaguya>
     <talentname.MRE_Reimu>Bleeding Effect – Hakurei Reimu</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Effective only with Reimu Outfit+. Grants exclusive weapon effect. Each time hit, 15% chance to avoid that damage.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Bleeding Effect – Remilia Scarlet</talentname.MRE_Remilia>
@@ -1033,7 +1235,7 @@
     <talentname.MRE_Marisa>Bleeding Effect – Kirisame Marisa</talentname.MRE_Marisa>
     <talentdescription.MRE_Marisa>Effective only with Marisa Outfit+. Bullet damage +20%.</talentdescription.MRE_Marisa>
     <talentname.MRE_Aya>Bleeding Effect – Shameimaru Aya</talentname.MRE_Aya>
-    <talentdescription.MRE_Aya>Effective only with Aya Outfit+. Each melee attack has 5% chance to deal +50% damage; ranged bullets deal +25% instead.</talentdescription.MRE_Aya>
+    <talentdescription.MRE_Aya>Effective only with Aya Outfit+. Each melee attack has 50% chance to deal +50% damage; ranged bullets deal +25% instead.</talentdescription.MRE_Aya>
     <talentname.MRE_Youmu>Bleeding Effect – Konpaku Youmu</talentname.MRE_Youmu>
     <talentdescription.MRE_Youmu>Effective only with Youmu Outfit+. Melee attack speed +10%. With Roukanken and Hakurouken, damage +30%, damage taken −20%.</talentdescription.MRE_Youmu>
     <talentname.MRE_Nitori>Bleeding Effect – Kawashiro Nitori</talentname.MRE_Nitori>
@@ -1104,5 +1306,7 @@
     <talentname.MRE_Tewi>Bleeding Effect – Inaba Tewi</talentname.MRE_Tewi>
     <talentdescription.MRE_Tewi>Only effective while wearing ‖color:gui.red‖Inaba Tewi Outfit+‖end‖.
         Gain one random ‖color:gui.orange‖Lucky Favor‖end‖ or ‖color:gui.orange‖Lucky Protection‖end‖ effect every minute.</talentdescription.MRE_Tewi>
+    <talentname.MRE_Kaguya>Bleeding Effect - Kaguya Houraisan</talentname.MRE_Kaguya>
+    <talentdescription.MRE_Kaguya>Only takes effect with Kaguya Outfit+. All crew members immediately gain 1 talent point. If all five treasures have been collected and applied, increase skill levels by 25% and become immune to poisons and paralysis.</talentdescription.MRE_Kaguya>
 
 </infotexts>

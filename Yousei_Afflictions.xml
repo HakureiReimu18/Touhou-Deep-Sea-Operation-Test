@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
 
+    <!--通用妖精翅膀-->
+    <AfflictionHusk
+            name="通用妖精翅膀"
+            identifier="Normal_Yousei_Wings_Spawn"
+            type="Normal_Yousei_Wings_Spawn"
+            limbspecific="false"
+            targets="human"
+            duration="5.0"
+            huskedspeciesname="[speciesname]Touhou_Tail"
+            indicatorlimb="Torso"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            needsair="true"
+            causespeechimpediment="false"
+            treatmentthreshold="1000"
+            dormantthreshold="0"
+            activethreshold="0"
+            transitionthreshold="1000"
+            transformthresholdondeath="1000"
+            sendmessages="false"
+            maxstrength="10"
+            iconcolors="94,54,95;163,73,164;200,191,231">
+        <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0"/>
+        <Effect minstrength="0" maxstrength="10"/>
+    </AfflictionHusk>
+
+
     <!--    <Affliction
                 identifier="Talents_Yousei_Primary02_Effect"
                 type="talentbuff"

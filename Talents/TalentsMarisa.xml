@@ -3,7 +3,7 @@
     <Talent identifier="Casket_Of_Star">
         <Icon texture="%ModDir%/Images/Talents/Casket_Of_Star.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.Casket_Of_Star"/>
-        <AbilityGroupInterval Interval="5.0">
+        <AbilityGroupInterval Interval="3.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ordinary_Magician"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Marisa_Weapons"/>

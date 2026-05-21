@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <Items>
+        <!--二阶堂希罗装束-->
+        <Item identifier="Hiro_Plus" subcategory="Touhou" category="Equipment" cargocontaineridentifier="metalcrate" tags="smallitem,clothing,Touhou_Clothes" scale="0.5" impactsoundtag="impact_soft">
+            <PreferredContainer primary="crewcab"/>
+            <Price baseprice="1500"  minleveldifficulty="15">
+                <Price storeidentifier="merchantoutpost" multiplier="1.0" minavailable="1"/>
+                <Price storeidentifier="merchantcity" multiplier="1.0" minavailable="1"/>
+                <Price storeidentifier="merchantresearch" multiplier="1.0" minavailable="1"/>
+                <Price storeidentifier="merchantmilitary" multiplier="1.0" minavailable="1"/>
+                <Price storeidentifier="merchantmine" multiplier="1.0" minavailable="1"/>
+            </Price>
+            <Deconstruct time="5">
+                <Item identifier="organicfiber" amount="2"/>
+            </Deconstruct>
+            <Fabricate suitablefabricators="fabricator" requiredtime="10" requiresrecipe="true" HideIfNoRecipe="true">
+                <RequiredSkill identifier="weapons" level="20"/>
+                <RequiredItem identifier="organicfiber"/>
+                <RequiredItem identifier="Score_Point"/>
+                <RequiredItem identifier="Touhou_Plant_Extract"/>
+            </Fabricate>
+            <InventoryIcon name="" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_1.png" sourcerect="1310,75,131,131" origin="0.5,0.5"/>
+            <Sprite name="Captain's Uniform 1" texture="Content/Items/Jobgear/MiscJobGear.png" sourcerect="247,209,125,77" depth="0.6" origin="0.5,0.5"/>
+            <Body width="100" height="50" density="15" friction="0.8" restitution="0.01"/>
+            <Pickable slots="RightHand+LeftHand"/>
+            <Wearable slots="Any,InnerClothes" msg="ItemMsgPickUpSelect" variants="2">
+                <sprite name="Head" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="Head" hidelimb="true" hideotherwearables="false" inherittexturescale="false" scale="0.29" hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287" sourcerect="1168,14,306,431" />
+                <sprite name="Torso" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="Torso" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435" />
+                <sprite name="Waist" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="Waist" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.587,0.538" sourcerect="273,11,202,262" />
+                <sprite name="Right Hand" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="RightHand" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120" />
+                <sprite name="Left Hand" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="LeftHand" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120" />
+                <sprite name="Right Lower Arm" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="RightArm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180" />
+                <sprite name="Left Lower Arm" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="LeftArm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                <sprite name="Right Upper Arm" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="822,199,163,118"/>
+                <sprite name="Left Upper Arm" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="LeftForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118" />
+                <sprite name="Right Thigh" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="RightThigh" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230" />
+                <sprite name="Left Thigh" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="LeftThigh" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230" />
+                <sprite name="Right Leg" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="RightLeg" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192" />
+                <sprite name="Left Leg" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="LeftLeg" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192" />
+                <sprite name="Right Shoe" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="RightFoot" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164" />
+                <sprite name="Left Shoe" texture="%ModDir%/Images/Hiro_Clothes/Hiro_Clothes_[VARIANT].png" limb="LeftFoot" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164" />      <!-- Resistance-->
+
+                <!-- Resistance-->
+                <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.9" deflectprojectiles="true"/>
+                <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.85" deflectprojectiles="true"/>
+                <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.9" deflectprojectiles="true"/>
+                <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.85" deflectprojectiles="true"/>
+                <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="huskinfection" damagemultiplier="1" probabilitymultiplier="0.85"/>
+                <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.85"/>
+
+                <StatusEffect type="OnWearing" target="Character" interval="5">
+                    <GiveTalentInfo giverandom="false" talentidentifiers="HiroTalent"/>
+                </StatusEffect>
+                <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true">
+                    <Affliction identifier="Hiro_Executor_Of_Justice" strength="50"/>
+                </StatusEffect>
+
+                <StatusEffect target="This,Character" type="OnWearing" targetitemcomponent="Wearable" variant="2" setvalue="true" disabledeltatime="true" Interval="1.0">
+                    <Conditional HiroTalent_Witch_Transformation="gte 100"/>
+                </StatusEffect>
+
+                <StatusEffect target="This,Character" type="OnWearing" targetitemcomponent="Wearable" variant="1" setvalue="true" disabledeltatime="true" Interval="1.0">
+                    <Conditional HiroTalent_Witch_Transformation="lt 100"/>
+                </StatusEffect>
+
+                <ItemContainer capacity="1" maxstacksize="1" slotsperrow="1" hideitems="true" containedstateindicatorslot="0">
+                    <Containable items="healthscanner" excludebroken="false">
+                        <StatusEffect type="OnContaining" target="This" targetitemcomponent="StatusHUD" overlaycolor="0,176,0,0" range="3000" thermalgoggles="false"
+                                      showdeadcharacters="false" showtexts="true"/>
+                        <StatusEffect type="OnRemoved" target="This" targetitemcomponent="StatusHUD" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false"
+                                      showdeadcharacters="false" showtexts="false"/>
+                    </Containable>
+                    <Containable items="thermalgoggles" excludebroken="false">
+                        <StatusEffect type="OnContaining" target="This" targetitemcomponent="StatusHUD" overlaycolor="176,0,0,120" range="3000" thermalgoggles="true"
+                                      showdeadcharacters="false" showtexts="false"/>
+                        <StatusEffect type="OnRemoved" target="This" targetitemcomponent="StatusHUD" overlaycolor="0,0,0,0" range="3000" thermalgoggles="false"
+                                      showdeadcharacters="false" showtexts="false"/>
+                    </Containable>
+                    <SlotIcon slotindex="0" texture="%ModDir%/Images/General_Items/StatusMonitorUI.png" sourcerect="0,0,64,64" origin="0.5,0.5"/>
+                </ItemContainer>
+                <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false" showtexts="false"/>
+            </Wearable>
+        </Item>
+
+
+    </Items>

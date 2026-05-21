@@ -1,0 +1,8 @@
+﻿<Charactervariant inherit="Touhou_Spectral_Whale" speciesname="Touhou_Spectral_Whale_Event">
+    <health vitality="400"/>
+    <ragdoll scalemultiplier="1.0"/>
+    <attack damagemultiplier="1.2" rangemultiplier="1.05" impactmultiplier="1.05"/>
+    <StatusEffect type="OnDeath" target="this" AllowWhenBroken="true">
+        <TriggerEvent identifier="Touhou_Monster_Spectral_Mission03_Completed"/>
+    </StatusEffect>
+</Charactervariant>

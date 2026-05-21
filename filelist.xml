@@ -55,8 +55,15 @@
     <Item file="%ModDir%/Items/Clothes/Lilywhite_gear.xml"/>
     <Item file="%ModDir%/Items/Clothes/Satori_gear.xml"/>
     <Item file="%ModDir%/Items/Clothes/Tewi_gear.xml"/>
+    <Item file="%ModDir%/Items/Clothes/Kaguya_gear.xml"/>
     <!--联动-->
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Ema_gear.xml"/>
+    <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Cosmic_Princess_Kaguya_gear.xml"/>
+    <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Yachiyo_gear.xml"/>
+    <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Hiro_gear.xml"/>
+    <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Iroha_gear.xml"/>
+    <!--通用-->
+    <Item file="%ModDir%/Items/Clothes/Normal_Yousei_Clothes.xml"/>
     <!--tools-->
     <Item file="%ModDir%/Items/Tools/Tools.xml"/>
     <Item file="%ModDir%/Items/Tools/MusicPlayer.xml"/>
@@ -65,6 +72,7 @@
     <Item file="%ModDir%/Items/Diving/Touhou_Enemy_Divinggear.xml"/>
     <Item file="%ModDir%/Items/Generator/TouhouMachine.xml"/>
     <Item file="%ModDir%/Items/Tools/Touhou_Decoration.xml"/>
+    <Item file="%ModDir%/Items/Tools/Touhou_Empathy_Item.xml"/>
     <!--Materials-->
     <Item file="%ModDir%/Items/Materials/Synthetics.xml"/>
     <Item file="%ModDir%/Items/Materials/Alchemical.xml"/>
@@ -118,6 +126,8 @@
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/EmaWings.xml"/>
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/Lilywhite_Wings.xml"/>
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/Lilywhite_Black_Wings.xml"/>
+    <Other file="%ModDir%/Characters/HumanTouhou_Tail/IrohaTail.xml"/>
+    <Other file="%ModDir%/Characters/HumanTouhou_Tail/Normal_YouseiWings.xml"/>
     <Character file="%ModDir%/Characters/Maoyu/Maoyu.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Little_Ghost/Touhou_Little_Ghost.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Little_Photosphere/Touhou_Little_Photosphere.xml"/>
@@ -152,10 +162,14 @@
     <Character file="%ModDir%/Characters/Touhou_Spectral_Core/Touhou_Spectral_Core.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Spectral_Creeper/Touhou_Spectral_Creeper.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Spectral_Whale/Touhou_Spectral_Whale.xml"/>
+    <Character file="%ModDir%/Characters/Touhou_Spectral_Whale/Touhou_Spectral_Whale_Event.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Spectral_Runner/Touhou_Spectral_Runner.xml"/>
+    <Character file="%ModDir%/Characters/Touhou_Spectral_Runner/Touhou_Spectral_Runner_Event.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Crystal_Carrier/Touhou_Crystal_Carrier.xml" />
     <Character file="%ModDir%/Characters/Touhou_Crystal_Parasite_Crawler/Touhou_Crystal_Parasite_Crawler.xml" />
     <Character file="%ModDir%/Characters/Touhou_Crystal_Parasite_Human/Touhou_Crystal_Parasite_Human.xml" />
+    <Character file="%ModDir%/Characters/Touhou_Spectral_Guardian/Touhou_Spectral_Guardian.xml"/>
+    <Character file="%ModDir%/Characters/Touhou_Spectral_Piercer/Touhou_Spectral_Piercer.xml"/>
     <!--Talents-->
     <Talents file="%ModDir%/Talents/Hyouibana.xml"/>
     <Talents file="%ModDir%/Talents/TalentEnemy.xml"/>
@@ -192,12 +206,18 @@
     <Talents file="%ModDir%/Talents/TalentsLilywhite.xml"/>
     <Talents file="%ModDir%/Talents/TalentsSatori.xml"/>
     <Talents file="%ModDir%/Talents/TalentsTewi.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsKaguya.xml"/>
     <Talents file="%ModDir%/Talents/TalentsMagician.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYousei.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYokai.xml"/>
     <Talents file="%ModDir%/Talents/Talents_MRE.xml"/>
     <TalentTrees file="%ModDir%/Talents/TalentTrees.xml"/>
     <Talents file="%ModDir%/Talents/TalentsEma.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsCosmic_Princess_Kaguya.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsYachiyo.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsHiro.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsIroha.xml"/>
+    <Talents file="%ModDir%/Talents/Talents_Touhou_Empathy.xml"/>
     <!--Sounds-->
     <Sounds file="%ModDir%/Sounds/BGM/Music_Override.xml"/>
     <!--Style-->
@@ -225,4 +245,6 @@
     <OutpostModule file="%ModDir%/Sub/Touhou_MedicalModule_01.sub"/>
     <OutpostModule file="%ModDir%/Sub/Touhou_MedicalModule_02.sub"/>
     <OutpostModule file="%ModDir%/Sub/Touhou_ResearchModule_01.sub"/>
+
+    <UpgradeModules file="%ModDir%/UpgradeModules.xml" />
 </contentpackage>

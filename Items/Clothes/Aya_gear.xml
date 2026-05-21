@@ -91,9 +91,7 @@
                                   showtexts="false"/>
                 </Containable>
                 <SlotIcon slotindex="0" texture="%ModDir%/Images/General_Items/StatusMonitorUI.png" sourcerect="0,0,64,64" origin="0.5,0.5"/>
-                <SubContainer capacity="2" maxstacksize="8">
-                    <Containable items="smallitem,Power_Bank" excludeditems="toolbelt,toolbox,bandolier,clothing,healthscanner,thermalgoggles"/>
-                </SubContainer>
+
             </ItemContainer>
             <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false"
                        showtexts="false"/>
@@ -118,7 +116,7 @@
             <Item identifier="Magic_Material" amount="2"/>
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="20">
-            <RequiredSkill identifier="weapons" level="50"/>
+            <RequiredSkill identifier="weapons" level="20"/>
             <RequiredItem identifier="ayagear"/>
             <RequiredItem identifier="Score_Point"/>
             <RequiredItem identifier="Touhou_Plant_Extract"/>
@@ -181,11 +179,11 @@
             <StatusEffect type="OnWearing" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="Mysterious_Mountain"/>
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true">
+            <StatusEffect type="OnWearing" target="Character" Interval="0.5" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                 <Conditional IsBot="false"/>
                 <Affliction identifier="Wind_God_Girl" strength="50"/>
             </StatusEffect>
-            <StatusEffect type="OnWearing" target="Character" Interval="5.0" disabledeltatime="true">
+            <StatusEffect type="OnWearing" target="Character" Interval="5.0" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
                 <Conditional IsBot="true"/>
                 <Affliction identifier="Wind_God_Girl_Bot" strength="50"/>
             </StatusEffect>
@@ -206,9 +204,7 @@
                                   showtexts="false"/>
                 </Containable>
                 <SlotIcon slotindex="0" texture="%ModDir%/Images/General_Items/StatusMonitorUI.png" sourcerect="0,0,64,64" origin="0.5,0.5"/>
-                <SubContainer capacity="2" maxstacksize="8">
-                    <Containable items="smallitem,Power_Bank" excludeditems="toolbelt,toolbox,bandolier,clothing"/>
-                </SubContainer>
+
             </ItemContainer>
             <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false"
                        showtexts="false"/>

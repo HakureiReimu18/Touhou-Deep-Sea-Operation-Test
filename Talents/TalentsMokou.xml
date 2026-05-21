@@ -60,24 +60,45 @@
             </Abilities>
         </AbilityGroupInterval>
 
-<!--        <AbilityGroupInterval interval="0.9">
+        <AbilityGroupInterval Interval="4.9">
             <Conditions>
-                <AbilityConditionHasAffliction afflictionidentifier="Resurrection"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix"/>
+                <AbilityConditionHasPermanentStat statidentifier="Mokou_Resurrection" min="1" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityApplyStatusEffectsToAllies allowself="true">
-                    <StatusEffects>
-                        <StatusEffect type="OnAbility" target="Character">
-                            <Affliction identifier="No_Effects10" strength="1"/>
-                        </StatusEffect>
-                    </StatusEffects>
-                </CharacterAbilityApplyStatusEffectsToAllies>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1"/>
             </Abilities>
-        </AbilityGroupInterval>-->
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval Interval="4.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix"/>
+                <AbilityConditionHasPermanentStat statidentifier="Mokou_Resurrection" min="1" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="-0.1"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="-0.1"/>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1"/>
+            </Abilities>
+        </AbilityGroupInterval>
 
         <AbilityGroupEffect abilityeffecttype="OnRoundEnd">
             <Abilities>
                 <CharacterAbilityResetPermanentStat statidentifier="Mokou_Resurrection"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Possessed_By_Phoenix"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional burn="gt 5"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Mokou_Talent_Effect" strength="10"/>
             </Abilities>
         </AbilityGroupEffect>
 

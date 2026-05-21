@@ -2031,7 +2031,8 @@
                 <AbilityConditionHasAffliction afflictionidentifier="scarletdevil"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="damage,burn" multiplier="0.95"/>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.95"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="0.95"/>
             </Abilities>
         </AbilityGroupInterval>
         <!--芙兰朵露-->
@@ -2063,7 +2064,8 @@
         <Description tag="talentdescription.Touhou_Vampire05"/>
         <AbilityGroupInterval interval="9.9">
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="debuff,poison" multiplier="0.85"/>
+                <CharacterAbilityModifyResistance resistanceid="debuff" multiplier="0.85"/>
+                <CharacterAbilityModifyResistance resistanceid="poison" multiplier="0.85"/>
             </Abilities>
         </AbilityGroupInterval>
         <!--蕾米莉亚-->
@@ -2686,7 +2688,8 @@
                 <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.5"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="damage,burn" multiplier="0.85"/>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.85"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="0.85"/>
             </Abilities>
         </AbilityGroupInterval>
         <!--因幡天为-->
@@ -2891,7 +2894,8 @@
                 <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1"/>
             </Abilities>
             <FallbackAbilities>
-                <CharacterAbilityModifyResistance resistanceid="damage,burn" multiplier="0.9"/>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="0.9"/>
             </FallbackAbilities>
         </AbilityGroupInterval>
         <!--射命丸文-->
@@ -3661,7 +3665,7 @@
         <AbilityGroupInterval interval="0.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Expressive_Pokerface"/>
-                <AbilityConditionHasVelocity velocity="0"/>
+                <AbilityConditionHasVelocity velocity="0.5" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>

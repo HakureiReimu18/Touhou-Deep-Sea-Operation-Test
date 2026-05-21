@@ -16,7 +16,9 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Realm_Of_Fantasy"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="infection,debuff,poison" multiplier="0.92"/>
+                <CharacterAbilityModifyResistance resistanceid="infection" multiplier="0.92"/>
+                <CharacterAbilityModifyResistance resistanceid="debuff" multiplier="0.92"/>
+                <CharacterAbilityModifyResistance resistanceid="poison" multiplier="0.92"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval Interval="1.0">

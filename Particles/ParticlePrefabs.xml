@@ -7,17 +7,17 @@
                      deleteoncollision="true" friction="0.5" restitution="0.5" startsizemin="0.9,0.9" startsizemax="0.7,0.7" growtime="0.02"
                      startcolor="255,255,255,255"
                      endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False">
-        <sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,84,82,82" origin="0.5,0.5"/>
+        <sprite texture="%ModDir%/Images/Particles/StarDanmuBoom.png" sourcerect="0,0,160,160" origin="0.5,0.5"/>
     </StarDanmuTracer>
 
     <StarDanmuBoom lifetime="0.6" fadeouttime="1" startdelaymin="0" startdelaymax="0" angularvelocitymin="10" angularvelocitymax="30"
                    startrotationmin="5" startrotationmax="15"
                    rotatetodirection="False" drag="0" waterdrag="0" velocitychange="0,0" velocitychangewater="0,0" collisionradius="0"
                    usecollision="False"
-                   deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="1.0,1.0" startsizemax="0.7,0.7" growtime="0.02"
+                   deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="0.8,0.8" startsizemax="0.5,0.5" growtime="0.02"
                    startcolor="255,255,255,255"
                    endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False">
-        <sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,172,76,76" origin="0.5,0.5"/>
+        <sprite texture="%ModDir%/Images/Particles/StarDanmuBoom.png" sourcerect="0,0,160,160" origin="0.5,0.5"/>
     </StarDanmuBoom>
 
     <StarDanmuBoomShort lifetime="0.5" fadeouttime="0.6" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0"
@@ -27,7 +27,7 @@
                         deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="1.0,1.0" startsizemax="0.7,0.7" growtime="0.02"
                         startcolor="255,255,255,255"
                         endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False">
-        <sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,172,76,76" origin="0.5,0.5"/>
+        <sprite texture="%ModDir%/Images/Particles/StarDanmuBoom.png" sourcerect="0,0,160,160" origin="0.5,0.5"/>
     </StarDanmuBoomShort>
 
     <StarDustTracer lifetime="3" fadeouttime="9" startdelaymin="0" startdelaymax="0" angularvelocitymin="75" angularvelocitymax="90"
@@ -37,7 +37,7 @@
                     deleteoncollision="true" friction="0.5" restitution="0.5" startsizemin="0.9,0.9" startsizemax="0.7,0.7" growtime="0.02"
                     startcolor="255,255,255,255"
                     endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False">
-        <sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="226,226,72,72" origin="0.5,0.5"/>
+        <sprite texture="%ModDir%/Images/Particles/StarDanmuBoom.png" sourcerect="0,0,160,160" origin="0.5,0.5"/>
     </StarDustTracer>
     <StarDustBoom lifetime="0.6" fadeouttime="1" startdelaymin="0" startdelaymax="0" angularvelocitymin="10" angularvelocitymax="30"
                   startrotationmin="5" startrotationmax="15"
@@ -46,7 +46,7 @@
                   deleteoncollision="False" friction="0.5" restitution="0.5" startsizemin="1.0,1.0" startsizemax="0.7,0.7" growtime="0.02"
                   startcolor="30,30,30,255"
                   endcolor="50,50,50,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False">
-        <sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,172,76,76" origin="0.5,0.5"/>
+        <sprite texture="%ModDir%/Images/Particles/StarDanmuBoom.png" sourcerect="0,0,160,160" origin="0.5,0.5"/>
     </StarDustBoom>
 
     <AmuletTracer lifetime="2" fadeouttime="2" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0"
@@ -56,7 +56,7 @@
                   deleteoncollision="true" friction="0.5" restitution="0.5" startsizemin="1.0,0.9" startsizemax="1.0,0.7" growtime="0.02"
                   startcolor="255,255,255,255"
                   endcolor="255,255,255,0" drawtarget="Both" drawontop="True" blendstate="Additive" loopanim="False">
-        <sprite texture="%ModDir%/Images/Marisa_Items/Hakkero.png" sourcerect="0,29,29,16" origin="0.5,0.5"/>
+        <sprite texture="%ModDir%/Images/Particles/StarDanmuBoom.png" sourcerect="0,0,160,160" origin="0.5,0.5"/>
     </AmuletTracer>
 
     <IcicleTracer lifetime="5" fadeouttime="5" startdelaymin="0" startdelaymax="0" angularvelocitymin="0" angularvelocitymax="0" startrotationmin="0"
@@ -555,10 +555,7 @@
             Priority="5"
             AnimDuration="1"
             LoopAnim="False">
-        <sprite
-                texture="%ModDir%/Images/Marisa_Items/Hakkero.png"
-                sourcerect="0,172,76,76"
-                origin="0.5,0.5"/>
+        <sprite texture="%ModDir%/Images/Particles/StarDanmuBoom.png" sourcerect="0,0,160,160" origin="0.5,0.5"/>
     </Tenshi_Peach_Effect>
 
     <Touhou_Electric_Shock
@@ -1117,10 +1114,7 @@
             Priority="15"
             AnimDuration="1"
             LoopAnim="False">
-        <sprite
-                texture="%ModDir%/Images/Marisa_Items/Hakkero.png"
-                sourcerect="0,172,76,76"
-                origin="0.5,0.5"/>
+        <sprite texture="%ModDir%/Images/Particles/StarDanmuBoom.png" sourcerect="0,0,160,160" origin="0.5,0.5"/>
     </Touhou_Instant_Blue_Talent_Effect>
 
     <Touhou_FlareBubbles

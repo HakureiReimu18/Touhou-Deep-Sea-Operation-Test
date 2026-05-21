@@ -47,10 +47,10 @@
     <entityname.Aya_News>‖color:255,255,255,255‖Bunbunmaru Newspaper‖color:end‖</entityname.Aya_News>
     <entitydescription.Aya_News>‖color:255,255,255,255‖Perfect for a boring afternoon with tea in hand. Can be sold at a good price, or handed to a friend to turn into a more valuable manuscript.‖color:end‖</entitydescription.Aya_News>
 
-    <entityname.Aya_Circular_Fan>Aya’s Maple Fan</entityname.Aya_Circular_Fan>
+    <entityname.Aya_Circular_Fan>‖color:255,255,255,255‖Aya’s Maple Fan‖color:end‖</entityname.Aya_Circular_Fan>
     <entitydescription.Aya_Circular_Fan>A maple leaf-shaped fan, quite popular among the tengu. Requires ‖color:gui.yellow‖Maple Leaves‖end‖ to use.</entitydescription.Aya_Circular_Fan>
 
-    <entityname.Aya_Maple_Leaves>Maple Leaves</entityname.Aya_Maple_Leaves>
+    <entityname.Aya_Maple_Leaves>‖color:255,255,255,255‖Maple Leaves‖color:end‖</entityname.Aya_Maple_Leaves>
     <entitydescription.Aya_Maple_Leaves>Fans are tools for creating wind: one swipe can knock down a house, two can topple a tree, and three can blow away a traveler’s cloak. Used as ammo for ‖color:gui.yellow‖Aya’s Maple Fan‖end‖</entitydescription.Aya_Maple_Leaves>
 
     <entityname.Reimu_Paint>‖color:255,81,75,255‖Offering Box (Reimu Paint)‖color:end‖</entityname.Reimu_Paint>
@@ -110,32 +110,44 @@
     <entitydescription.Touhou_Peach>A peach of unknown origin. Looks sweet and tempting — who knows what happens if you eat it?</entitydescription.Touhou_Peach>
 
     <!--Weapon-->
-    <entityname.Touhou_Hakkero>‖color:255,255,0,255‖Mini Hakkero‖color:end‖</entityname.Touhou_Hakkero>
-    <entitydescription.Touhou_Hakkero>A small octagonal furnace with a hole in the center and a bagua symbol on the front. Power source unknown. Uses ‖color:gui.yellow‖Star Danmaku, Stardust Reverie, or Star Bottles‖end‖</entitydescription.Touhou_Hakkero>
+    <entityname.Touhou_Hakkero>‖color:255,255,0,255‖Mini-Hakkero‖color:end‖</entityname.Touhou_Hakkero>
+    <entitydescription.Touhou_Hakkero>A Mini-Hakkero shaped like an octagonal prism, with a Bagua pattern on the front and an opening in the center. Its power source is unknown. Uses ‖color:gui.yellow‖Glitter Star Core, Frost Star Core, Supernova Star Core, or Star Jar‖end‖.</entitydescription.Touhou_Hakkero>
 
-    <entityname.Touhou_Hakkero_Ammo01>Star Danmaku</entityname.Touhou_Hakkero_Ammo01>
-    <entitydescription.Touhou_Hakkero_Ammo01>A simple star-shaped container used to fire plain star danmaku. Ammo for ‖color:gui.yellow‖Mini Hakkero‖end‖</entitydescription.Touhou_Hakkero_Ammo01>
+    <entityname.Touhou_Hakkero_Ammo01>‖color:255,255,0,255‖Glitter Star Core‖color:end‖</entityname.Touhou_Hakkero_Ammo01>
+    <entitydescription.Touhou_Hakkero_Ammo01>An ordinary star container used to fire simple laser danmaku. Used as ammunition for ‖color:gui.yellow‖Mini-Hakkero‖end‖.</entitydescription.Touhou_Hakkero_Ammo01>
 
-    <entityname.Touhou_Hakkero_Ammo02>Stardust Reverie</entityname.Touhou_Hakkero_Ammo02>
-    <entitydescription.Touhou_Hakkero_Ammo02>At a glance, it’s just a recolored version of standard Star Danmaku… Ammo for ‖color:gui.yellow‖Mini Hakkero‖end‖</entitydescription.Touhou_Hakkero_Ammo02>
+    <entityname.Touhou_Hakkero_Ammo02>‖color:255,255,0,255‖Frost Star Core‖color:end‖</entityname.Touhou_Hakkero_Ammo02>
+    <entitydescription.Touhou_Hakkero_Ammo02>A specially made star container that fires chilling frost-star danmaku—cold enough to make even Europa’s ice ocean give it a wide berth. Used as ammunition for ‖color:gui.yellow‖Mini-Hakkero‖end‖.</entitydescription.Touhou_Hakkero_Ammo02>
 
-    <entityname.Fake_Hakkero>Fake Mini Hakkero</entityname.Fake_Hakkero>
-    <entitydescription.Fake_Hakkero>A crude imitation of the Mini Hakkero — but still, it imitates the Mini Hakkero.</entitydescription.Fake_Hakkero>
+    <entityname.Touhou_Hakkero_Ammo03>‖color:255,255,0,255‖Supernova Star Core‖color:end‖</entityname.Touhou_Hakkero_Ammo03>
+    <entitydescription.Touhou_Hakkero_Ammo03>A dangerous star container forged from energy Marisa extracted from an alien world, refined through a series of indescribable experiments. Its destructive power is not to be underestimated. Used as ammunition for ‖color:gui.yellow‖Mini-Hakkero‖end‖.</entitydescription.Touhou_Hakkero_Ammo03>
 
-    <entityname.Homing_Amulet>Spirit Amulet</entityname.Homing_Amulet>
-    <entitydescription.Homing_Amulet>A stack of amulets that seem to contain mysterious power.</entitydescription.Homing_Amulet>
+    <entityname.Touhou_Hakkero_Star_Bottle>‖color:255,255,0,255‖Star Jar‖color:end‖</entityname.Touhou_Hakkero_Star_Bottle>
+    <entitydescription.Touhou_Hakkero_Star_Bottle>Highly compressed starlight collected over a long time is stored inside. It can no longer fire danmaku, and can only be used for large-scale laser magic. It takes a long time to accumulate starlight. Used as ammunition for ‖color:gui.yellow‖Mini-Hakkero‖end‖.\n“It’s not easy collecting stars under the sea!”</entitydescription.Touhou_Hakkero_Star_Bottle>
 
-    <entityname.Freeze_Icicle_Fall>Icicle</entityname.Freeze_Icicle_Fall>
+    <entityname.Fake_Hakkero>‖color:255,255,0,255‖Fake Mini Hakkero‖color:end‖</entityname.Fake_Hakkero>
+    <entitydescription.Fake_Hakkero>A crude imitation of the Mini Hakkero — but still, it imitates the Mini Hakkero. Uses ‖color:gui.yellow‖Glitter Star Core, Frost Star Core‖end‖.</entitydescription.Fake_Hakkero>
+
+    <entityname.Touhou_Homing_Amulet>‖color:255,81,75,255‖Spirit Amulet‖color:end‖</entityname.Touhou_Homing_Amulet>
+    <entitydescription.Touhou_Homing_Amulet>A stack of amulets that seem to contain mysterious power.</entitydescription.Touhou_Homing_Amulet>
+
+    <entityname.Freeze_Icicle_Fall>‖color:60,90,255,255‖Icicle‖color:end‖</entityname.Freeze_Icicle_Fall>
     <entitydescription.Freeze_Icicle_Fall>A large, puzzling chunk of ice — is that a frog inside? (Activate by inserting Snowballs, restore energy by soaking in water.)</entitydescription.Freeze_Icicle_Fall>
 
-    <entityname.Blunderbuss>Blunderbuss</entityname.Blunderbuss>
+    <entityname.Blunderbuss>‖color:220,25,200,255‖Blunderbuss‖color:end‖</entityname.Blunderbuss>
     <entitydescription.Blunderbuss>A relic from the Moon — a highly unstable gun that might hurt its wielder. Charge to use. consumes ‖color:gui.yellow‖Mind Tremor, Lunatic Eye, Mind Star Mine, Lunatic Blass or rifleammo‖end‖)</entitydescription.Blunderbuss>
 
-    <entityname.Mind_Bullet>Mind Tremor</entityname.Mind_Bullet>
+    <entityname.Mind_Bullet>‖color:220,25,200,255‖Mind Tremor‖color:end‖</entityname.Mind_Bullet>
     <entitydescription.Mind_Bullet>A replica of a Moon relic. Incredibly powerful. Ammo for ‖color:gui.yellow‖Blunderbuss / Mercy‖end‖</entitydescription.Mind_Bullet>
 
-    <entityname.Lunatic_Bullet>Lunatic Eye</entityname.Lunatic_Bullet>
+    <entityname.Lunatic_Bullet>‖color:220,25,200,255‖Lunatic Eye‖color:end‖</entityname.Lunatic_Bullet>
     <entitydescription.Lunatic_Bullet>A replica of a terrifying Moon relic. Holds immense destructive power. Ammo for ‖color:gui.yellow‖Blunderbuss / Mercy‖end‖</entitydescription.Lunatic_Bullet>
+
+    <entityname.Touhou_Mind_Star_Mine>‖color:220,25,200,255‖Mind Star Mine‖color:end‖</entityname.Touhou_Mind_Star_Mine>
+    <entitydescription.Touhou_Mind_Star_Mine>A lunar relic widely used after the pseudo-lunar war, with formidable destructive power. Ammo for ‖color:gui.yellow‖Blunderbuss or Mercy‖end‖.</entitydescription.Touhou_Mind_Star_Mine>
+
+    <entityname.Touhou_Lunatic_Blass>‖color:220,25,200,255‖Lunatic Blast‖color:end‖</entityname.Touhou_Lunatic_Blass>
+    <entitydescription.Touhou_Lunatic_Blass>A highly dangerous lunar relic bullet, often banned even during the pseudo-lunar war. Ammo for ‖color:gui.yellow‖Blunderbuss or Mercy‖end‖.</entitydescription.Touhou_Lunatic_Blass>
 
     <entityname.Touhou_Gungnier>‖color:255,36,0,255‖Gungnir‖color:end‖</entityname.Touhou_Gungnier>
     <entitydescription.Touhou_Gungnier>A mysterious weapon from a distant land, brimming with devastating power. ‖color:gui.orange‖(Beware of friendly fire)‖color:end‖</entitydescription.Touhou_Gungnier>
@@ -146,13 +158,13 @@
     <entityname.Phoenix_Tail>‖color:255,72,36,255‖Immortal “Tail of the Phoenix”‖color:end‖</entityname.Phoenix_Tail>
     <entitydescription.Phoenix_Tail>A mass-produced version of the phoenix tail. Cheap. Recently rated by the immortal community as more convenient than searching for the Hourai Elixir. Ammo for ‖color:gui.yellow‖Mokou’s Oxidizer‖end‖</entitydescription.Phoenix_Tail>
 
-    <entityname.Hisou_Sword>‖color:33,110,232,255‖Sword of Hisou‖color:end‖</entityname.Hisou_Sword>
+    <entityname.Hisou_Sword>‖color:5,105,195,200‖Sword of Hisou‖color:end‖</entityname.Hisou_Sword>
     <entitydescription.Hisou_Sword>Capable of striking at an opponent’s weak point with precision. Only a Celestial can wield it properly.</entitydescription.Hisou_Sword>
 
     <entityname.Mine_Blast>‖color:233,160,32,255‖Momoyo’s Bomb‖color:end‖</entityname.Mine_Blast>
     <entitydescription.Mine_Blast>“Your centipede grandpa is here!”</entitydescription.Mine_Blast>
 
-    <entityname.Touhou_Sakuya_Knife_Iron>‖color:210,210,255,255‖Steel Throwing Knife‖color:end‖</entityname.Touhou_Sakuya_Knife_Iron>
+    <entityname.Touhou_Sakuya_Knife_Iron>‖color:155,155,155,255‖Steel Throwing Knife‖color:end‖</entityname.Touhou_Sakuya_Knife_Iron>
     <entitydescription.Touhou_Sakuya_Knife_Iron>A light weapon, easy to carry and throwable.</entitydescription.Touhou_Sakuya_Knife_Iron>
 
     <entityname.youmuceremonialsword2>‖color:156,158,161,255‖White Tower Sword‖color:end‖</entityname.youmuceremonialsword2>
@@ -172,8 +184,6 @@
     <entitydescription.Yin_Yang_Spirit_Orb>A spell card that hurls a massive yin-yang orb from who-knows-where. (Used as railgun ammo)</entitydescription.Yin_Yang_Spirit_Orb>
 
     <!--Tools-->
-    <entitydescription.Marisa_Broom>A standard magician’s broom. Power source unknown, but somehow it can fly — even without a broom.</entitydescription.Marisa_Broom>
-    <entityname.Marisa_Broom>‖color:255,255,0,255‖Marisa’s Broom‖color:end‖</entityname.Marisa_Broom>
 
     <entityname.Power_Bank>Aya’s Power Bank</entityname.Power_Bank>
     <entitydescription.Power_Bank>A mysterious power bank seemingly powered by magic. Can recharge most batteries.</entitydescription.Power_Bank>
@@ -279,10 +289,10 @@
     <entitydescription.Touhou_Silent_Selene_Ammo>Silent moonlight gazes upon every broken night. (Used as Coilgun ammo.)</entitydescription.Touhou_Silent_Selene_Ammo>
 
     <entityname.Hompson_Contender>Thompson Contender - Custom</entityname.Hompson_Contender>
-    <entitydescription.Hompson_Contender>\n‖color:150,105,130,255‖Where sunlight never reaches‖color:end‖\n</entitydescription.Hompson_Contender>
+    <entitydescription.Hompson_Contender>‖color:150,105,130,255‖Where sunlight never reaches‖color:end‖</entitydescription.Hompson_Contender>
 
     <entityname.Touhou_Origin_Bullet>Origin Round</entityname.Touhou_Origin_Bullet>
-    <entitydescription.Touhou_Origin_Bullet>\n‖color:150,105,130,255‖Pluck the blossom while it blooms‖color:end‖\n</entitydescription.Touhou_Origin_Bullet>
+    <entitydescription.Touhou_Origin_Bullet>‖color:150,105,130,255‖Pluck the blossom while it blooms‖color:end‖</entitydescription.Touhou_Origin_Bullet>
 
     <entityname.Byproduct_Alchemical>Alchemical Byproduct</entityname.Byproduct_Alchemical>
     <entitydescription.Byproduct_Alchemical>A byproduct of alchemical refinement. Slightly toxic; can be used for transmutation and medicines.</entitydescription.Byproduct_Alchemical>
@@ -310,9 +320,6 @@
 
     <entityname.Origin_Deafult02>Gensokyo Flying Publication Day</entityname.Origin_Deafult02>
     <entitydescription.Origin_Deafult02>Official Tasogare Newspaper</entitydescription.Origin_Deafult02>
-
-    <entityname.Touhou_Hakkero_Star_Bottle>Star Jar</entityname.Touhou_Hakkero_Star_Bottle>
-    <entitydescription.Touhou_Hakkero_Star_Bottle>Starlight gathered over a long time is highly compressed within; it can no longer fire danmaku and is only suitable for large-scale starlight magic. Requires a very long time to accumulate starlight. Ammunition for the ‖color:gui.yellow‖Mini Hakkero‖end‖.\n“It’s not easy to collect stars under the sea!”</entitydescription.Touhou_Hakkero_Star_Bottle>
 
     <entityname.Touhou_Spell_Tutorial>“Magic Tutorial”</entityname.Touhou_Spell_Tutorial>
     <entitydescription.Touhou_Spell_Tutorial>An introductory magic primer suitable for beginners.</entitydescription.Touhou_Spell_Tutorial>
@@ -456,10 +463,8 @@
     <entityname.Sun_Flower_Petal03>Active Petal</entityname.Sun_Flower_Petal03>
     <entitydescription.Sun_Flower_Petal03>A petal that seems alive—you can feel a faint vibration when pinched. (Use in the medical interface.)</entitydescription.Sun_Flower_Petal03>
 
-    <entityname.Touhou_Crimson_Moonlight>‖color:255,36,0,255‖Crimson Moonlight‖end‖</entityname.Touhou_Crimson_Moonlight>
-    <entitydescription.Touhou_Crimson_Moonlight>‖color:255,36,0,255‖“And then… was there no one left?”‖end‖</entitydescription.Touhou_Crimson_Moonlight>
-
-    <entityname.Touhou_Crimson_Moonlight>‖color:255,36,0,255‖Crimson Moonlight‖end‖</entityname.Touhou_Crimson_Moonlight>
+    <entityname.Touhou_Crimson_Moonlight>‖color:220,55,55,255‖Crimson Moonlight‖end‖</entityname.Touhou_Crimson_Moonlight>
+    <entitydescription.Touhou_Crimson_Moonlight>“And then… was there no one left?”</entitydescription.Touhou_Crimson_Moonlight>
 
     <entityname.Touhou_Magic_Potion_Candy>Magic Potion (Candy)</entityname.Touhou_Magic_Potion_Candy>
     <entitydescription.Touhou_Magic_Potion_Candy>A magic potion formulated for direct drinking, with added curative components. The sweeteners make it popular among children.</entitydescription.Touhou_Magic_Potion_Candy>
@@ -467,7 +472,7 @@
     <entityname.Touhou_Nue_Midnight>‖color:90,80,100,255‖Noonday Nue‖end‖</entityname.Touhou_Nue_Midnight>
     <entitydescription.Touhou_Nue_Midnight>■The ■■uth is ■■■■■■\n■■■■■■■■■■■■no\n■■■■■■■■■■■■■\n■■clar■■■■■■■■■</entitydescription.Touhou_Nue_Midnight>
 
-    <entityname.Touhou_Laevatein>‖color:255,36,0,255‖Laevatein‖end‖</entityname.Touhou_Laevatein>
+    <entityname.Touhou_Laevatein>‖color:220,55,55,255‖Laevatein‖end‖</entityname.Touhou_Laevatein>
     <entitydescription.Touhou_Laevatein>The entire sword burns endlessly, shining brighter than the sun. Its size is so immense that even a vampire cannot swing it swiftly.\nEach strike Flandre delivers with Laevatein inflicts damage equal to a small portion of the target’s maximum health—“Eye of Destruction.” When the Eye of Destruction reaches 100%, death is inevitable.</entitydescription.Touhou_Laevatein>
 
     <entityname.Touhou_Mysterious_Pearl_Rippling>Mysterious Pearl – Rippling</entityname.Touhou_Mysterious_Pearl_Rippling>
@@ -504,12 +509,6 @@
     <talentdescription.Touhou_Mysterious_Pearl_Rippling_Talent>Unlocks recipe: ‖color:gui.orange‖Nue Outfit+‖end‖</talentdescription.Touhou_Mysterious_Pearl_Rippling_Talent>
 
     <talentprogress>Progress: ‖color:gui.orange‖[amount]/[max]‖end‖</talentprogress>
-
-    <entityname.Touhou_Penglai_Jade_Branch>Penglai Jade Branch</entityname.Touhou_Penglai_Jade_Branch>
-    <entitydescription.Touhou_Penglai_Jade_Branch>Legend says the true Penglai Jade Branch comes from Mount Penglai in the Eastern Sea, with silver for branches, gold for stems, and fruit of jade. Whether this one is genuine is unknown. A hidden notch allows insertion of the Brilliant Dragon Pearl to activate its danmaku-firing ability. ‖color:gui.orange‖Beware of friendly fire.‖end‖</entitydescription.Touhou_Penglai_Jade_Branch>
-
-    <entityname.Touhou_Brilliant_Dragon_Bullet>Brilliant Dragon Pearl</entityname.Touhou_Brilliant_Dragon_Bullet>
-    <entitydescription.Touhou_Brilliant_Dragon_Bullet>A gem radiating magical power, seemingly linked to the Penglai Jade Branch. Ammunition for ‖color:gui.yellow‖Penglai Jade Branch‖end‖.</entitydescription.Touhou_Brilliant_Dragon_Bullet>
 
     <entityname.Touhou_Blue_Rose>Azure Rose – Custom</entityname.Touhou_Blue_Rose>
     <entitydescription.Touhou_Blue_Rose>A unique revolver with two parallel barrels. Uses ‖color:gui.yellow‖Hand Cannon Rounds‖end‖ or ‖color:gui.yellow‖Color Up Rounds‖end‖.</entitydescription.Touhou_Blue_Rose>
@@ -550,10 +549,10 @@
     <entityname.Touhou_Candy_Pouch>Candy Pouch</entityname.Touhou_Candy_Pouch>
     <entitydescription.Touhou_Candy_Pouch>A portable pouch designed specifically for storing candy.</entitydescription.Touhou_Candy_Pouch>
 
-    <entityname.Touhou_Frozen_Frog>Frozen Frog</entityname.Touhou_Frozen_Frog>
+    <entityname.Touhou_Frozen_Frog>‖color:60,90,255,255‖Frozen Frog‖end‖</entityname.Touhou_Frozen_Frog>
     <entitydescription.Touhou_Frozen_Frog>An icy block encasing a frog. Insert ‖color:gui.yellow‖Perfect Snowflake‖end‖ to activate its danmaku ability.</entitydescription.Touhou_Frozen_Frog>
 
-    <entityname.Touhou_Perfect_Snowflake>Perfect Snowflake</entityname.Touhou_Perfect_Snowflake>
+    <entityname.Touhou_Perfect_Snowflake>‖color:60,90,255,255‖Perfect Snowflake‖end‖</entityname.Touhou_Perfect_Snowflake>
     <entitydescription.Touhou_Perfect_Snowflake>A perfectly shaped hexagonal snowflake imbued with pure cold. Ammunition for ‖color:gui.yellow‖Frozen Frog‖end‖.</entitydescription.Touhou_Perfect_Snowflake>
 
     <entityname.Touhou_Baka_Sword>‖color:60,90,255,255‖Sword of the Ice Hero‖end‖</entityname.Touhou_Baka_Sword>
@@ -586,7 +585,7 @@
     <entityname.Touhou_Hellfire_Torch>‖color:255,90,40,255‖Hellfire Torch‖end‖</entityname.Touhou_Hellfire_Torch>
     <entitydescription.Touhou_Hellfire_Torch>A torch rekindled with hellfire; its unstable energy can disturb the bearer’s mind. Only fairies of hell can fully attune to its magic.</entitydescription.Touhou_Hellfire_Torch>
 
-    <entityname.Touhou_Love_Maze>‖color:255,90,40,255‖Labyrinth of Love‖end‖</entityname.Touhou_Love_Maze>
+    <entityname.Touhou_Love_Maze>‖color:220,55,55,255‖Labyrinth of Love‖end‖</entityname.Touhou_Love_Maze>
     <entitydescription.Touhou_Love_Maze>A bow-shaped weapon formed entirely of fire magic, firing scorching danmaku. Deals greater damage to enemies with lower health. After three normal shots, the next shot temporarily becomes a triple burst.</entitydescription.Touhou_Love_Maze>
 
     <entityname.Touhou_Simple_Parts>Simple Parts</entityname.Touhou_Simple_Parts>
@@ -618,7 +617,7 @@
     <entityname.Touhou_Pendulum_Necklace>Pendulum Necklace</entityname.Touhou_Pendulum_Necklace>
     <entitydescription.Touhou_Pendulum_Necklace>A necklace made of crystal imbued with abundant magic, slightly increasing the wearer’s magical power. When magic ability exceeds 80, it removes Patchouli’s running restriction. Occupies the headset slot.</entitydescription.Touhou_Pendulum_Necklace>
 
-    <entityname.Touhou_Gohei_Reimu>Hakurei’s Gohei</entityname.Touhou_Gohei_Reimu>
+    <entityname.Touhou_Gohei_Reimu>‖color:255,81,75,255‖Hakurei’s Gohei‖color:end‖</entityname.Touhou_Gohei_Reimu>
     <entitydescription.Touhou_Gohei_Reimu>Exorcises demons and beasts.</entitydescription.Touhou_Gohei_Reimu>
 
     <entityname.Youmu_Smgmagazine_Plus>‖color:156,158,161,255‖Nether Magazine Plus‖color:end‖</entityname.Youmu_Smgmagazine_Plus>
@@ -676,10 +675,14 @@
     <entitydescription.Ether_Divinggear>Designed with ideas from freshwater mermaids and refined by Patchouli, this suit withstands 4800 m of pressure. Contains two magatama slots; durability decreases when struck.\nLighting requires ‖color:gui.yellow‖Peaceful Magatama / Ancient Magatama – White‖end‖.</entitydescription.Ether_Divinggear>
 
     <entityname.Magic_Veil>‖color:120,75,100,255‖Magic Veil‖color:end‖</entityname.Magic_Veil>
-    <entitydescription.Magic_Veil>A protective veil designed by Patchouli to guard against magical harm, created because she disliked the breathing environment inside diving suits. Withstands 8000 m of water pressure and enhances the wearer’s magical affinity, but offers little physical defense and makes it difficult to approach electronics or machinery. Contains six magatama slots; durability decreases when struck.\nLighting requires ‖color:gui.yellow‖Peaceful Magatama / Ancient Magatama – White‖end‖.</entitydescription.Magic_Veil>
+    <entitydescription.Magic_Veil>A veil designed by Patchouli to protect her body from magical harm. She created it because she was deeply dissatisfied with the breathing environment inside diving suits. It can withstand the pressure of depths up to 8000 meters while increasing the wearer's affinity with magic, but its conventional physical protection is clearly lacking.
+        The nature of its material also makes it difficult for the user to approach electrical devices and machinery.
+        Its effects can be enhanced when paired with specific belts or waist packs. Contains six magatama slots. Receiving attacks will reduce the durability of the magatama.\nLighting requires ‖color:gui.yellow‖Tranquil Magatama / Ancient Magatama - White‖end‖</entitydescription.Magic_Veil>
 
     <entityname.Magic_Veil02>‖color:120,75,100,255‖Magic Veil (Alternate Color)‖color:end‖</entityname.Magic_Veil02>
-    <entitydescription.Magic_Veil02>A protective veil designed by Patchouli to guard against magical harm, created because she disliked the breathing environment inside diving suits. Withstands 8000 m of water pressure and enhances the wearer’s magical affinity, but offers little physical defense and makes it difficult to approach electronics or machinery. Contains six magatama slots; durability decreases when struck.\nLighting requires ‖color:gui.yellow‖Peaceful Magatama / Ancient Magatama – White‖end‖.</entitydescription.Magic_Veil02>
+    <entitydescription.Magic_Veil02>A veil designed by Patchouli to protect her body from magical harm. She created it because she was deeply dissatisfied with the breathing environment inside diving suits. It can withstand the pressure of depths up to 8000 meters while increasing the wearer's affinity with magic, but its conventional physical protection is clearly lacking.
+        The nature of its material also makes it difficult for the user to approach electrical devices and machinery.
+        Its effects can be enhanced when paired with specific belts or waist packs. Contains six magatama slots. Receiving attacks will reduce the durability of the magatama.\nLighting requires ‖color:gui.yellow‖Tranquil Magatama / Ancient Magatama - White‖end‖</entitydescription.Magic_Veil02>
 
     <entityname.Touhou_Peace_Hooked_Jade>Peaceful Magatama</entityname.Touhou_Peace_Hooked_Jade>
     <entitydescription.Touhou_Peace_Hooked_Jade>Insert into a diving suit’s magatama slot to provide stun resistance and illumination.</entitydescription.Touhou_Peace_Hooked_Jade>
@@ -754,15 +757,6 @@
     <entityname.Medical_Toolkit_Antibleeding2_Toolkit>Malleable Synthetic Skin Set</entityname.Medical_Toolkit_Antibleeding2_Toolkit>
     <entitydescription.Medical_Toolkit_Antibleeding2_Toolkit>Malleable synthetic skin set, usable with the Eientei Medical Kit.</entitydescription.Medical_Toolkit_Antibleeding2_Toolkit>
 
-    <entityname.Touhou_Small_Spell_Card_Cannon>Small Spell Card Launcher</entityname.Touhou_Small_Spell_Card_Cannon>
-    <entitydescription.Touhou_Small_Spell_Card_Cannon>A compact spell card launcher capable of using Coilgun ammunition and related spell cards. Compared to a Coilgun, it offers higher firepower with a slightly slower average rate of fire.</entitydescription.Touhou_Small_Spell_Card_Cannon>
-
-    <entityname.Touhou_Rapidly_Spell_Card_Cannon>High-Speed Spell Card Launcher</entityname.Touhou_Rapidly_Spell_Card_Cannon>
-    <entitydescription.Touhou_Rapidly_Spell_Card_Cannon>A high-rate spell card launcher that can use gatling ammunition and related spell cards. Compared to a gatling gun, it boasts greater firepower and rate of fire, but requires continuous fire to reduce spread.</entitydescription.Touhou_Rapidly_Spell_Card_Cannon>
-
-    <entityname.Touhou_Huge_Spell_Card_Cannon>Large Spell Card Launcher</entityname.Touhou_Huge_Spell_Card_Cannon>
-    <entitydescription.Touhou_Huge_Spell_Card_Cannon>A large spell card launcher capable of using cannon or pulse-laser ammunition and related spell cards. Its firepower is much lower than other turrets, but its twin-barrel design compensates for the deficit.</entitydescription.Touhou_Huge_Spell_Card_Cannon>
-
     <entityname.Touhou_Sun_Cannon>‖color:200,200,100,255‖Sun Cannon‖color:end‖</entityname.Touhou_Sun_Cannon>
     <entitydescription.Touhou_Sun_Cannon>A scorching grenade launcher crafted by kappas as payment for Sunny’s assistance. Fires ‖color:gui.yellow‖Standard Grenades or Garnet Grenades‖end‖.</entitydescription.Touhou_Sun_Cannon>
 
@@ -798,40 +792,40 @@
     <entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>Memory Material</entityname.Touhou_Memory_Relationship_Effect_Material_Unresearched>
     <entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>Memories from Earth; can be analyzed at the alchemy table to unlock exclusive bleeding substances for specific characters.</entitydescription.Touhou_Memory_Relationship_Effect_Material_Unresearched>
 
-    <entityname.Touhou_Sakuya_Knife_Ether>Ether Throwing Knife</entityname.Touhou_Sakuya_Knife_Ether>
+    <entityname.Touhou_Sakuya_Knife_Ether>‖color:155,155,155,255‖Ether Throwing Knife‖color:end‖</entityname.Touhou_Sakuya_Knife_Ether>
     <entitydescription.Touhou_Sakuya_Knife_Ether>A sharper throwing knife made from magical materials, more easily piercing the hides of Europa’s creatures.</entitydescription.Touhou_Sakuya_Knife_Ether>
 
     <entityname.Spirit_Rune_Dream_Seal>Spirit Sign “Dream Seal” (Orbital Cannon)</entityname.Spirit_Rune_Dream_Seal>
     <entitydescription.Spirit_Rune_Dream_Seal>At the end of its release, silence arrives. (Used as orbital cannon ammunition.)</entitydescription.Spirit_Rune_Dream_Seal>
 
-    <entityname.Touhou_Vampire_Fang_Sword>‖color:255,125,100,255‖Vampire Fang‖color:end‖</entityname.Touhou_Vampire_Fang_Sword>
+    <entityname.Touhou_Vampire_Fang_Sword>‖color:155,155,155,255‖Vampire Fang‖color:end‖</entityname.Touhou_Vampire_Fang_Sword>
     <entitydescription.Touhou_Vampire_Fang_Sword>A magical replica of the vampire fang entrusted to Remilia. From its nature, it seems less a part of Remilia and more a companion to Sakuya. When Sakuya wields both the Vampire Fang and the Illusory Moon Blade, performance improves. Possesses throwing-knife properties.</entitydescription.Touhou_Vampire_Fang_Sword>
 
-    <entityname.Touhou_Dream_Luna_Sword>‖color:175,175,175,255‖Illusory Moon Blade‖color:end‖</entityname.Touhou_Dream_Luna_Sword>
+    <entityname.Touhou_Dream_Luna_Sword>‖color:155,155,155,255‖Illusory Moon Blade‖color:end‖</entityname.Touhou_Dream_Luna_Sword>
     <entitydescription.Touhou_Dream_Luna_Sword>A youkai weapon acquired during an incident. Though it cannot speak, Sakuya has somehow come to understand its will. When Sakuya wields both the Vampire Fang and the Illusory Moon Blade, performance improves. Possesses throwing-knife properties.</entitydescription.Touhou_Dream_Luna_Sword>
 
-    <entityname.Touhou_Luna_Clock>‖color:175,175,175,255‖Moon God’s Clock‖color:end‖</entityname.Touhou_Luna_Clock>
+    <entityname.Touhou_Luna_Clock>‖color:155,155,155,255‖Moon God’s Clock‖color:end‖</entityname.Touhou_Luna_Clock>
     <entitydescription.Touhou_Luna_Clock>With each turn of the hands, past and present merge into a single moment, as if falling into a fold of time. Upon use, all enemies within a certain range are immobilized.</entitydescription.Touhou_Luna_Clock>
 
-    <entityname.Touhou_Moriya_Shrine_Staff>‖color:150,200,100,255‖Yae-Bell Staff‖color:end‖</entityname.Touhou_Moriya_Shrine_Staff>
+    <entityname.Touhou_Moriya_Shrine_Staff>‖color:155,255,155,255‖Yae-Bell Staff‖color:end‖</entityname.Touhou_Moriya_Shrine_Staff>
     <entitydescription.Touhou_Moriya_Shrine_Staff>An ancient divine tool that releases the magic of the Wind Priestess with each use.</entitydescription.Touhou_Moriya_Shrine_Staff>
 
     <entityname.Touhou_Treatment_Grenade>‖color:gui.green‖Healing Grenade‖color:end‖</entityname.Touhou_Treatment_Grenade>
     <entitydescription.Touhou_Treatment_Grenade>The latest product of Kappa Heavy Industries, a grenade filled with restorative energy that releases a healing wind to aid allies upon detonation.</entitydescription.Touhou_Treatment_Grenade>
 
-    <entityname.Touhou_New_Year_Gift_Box>‖color:gui.red‖New Year Gift‖color:end‖</entityname.Touhou_New_Year_Gift_Box>
-    <entitydescription.Touhou_New_Year_Gift_Box>Happy New Year!</entitydescription.Touhou_New_Year_Gift_Box>
+    <entityname.Touhou_New_Year_Gift_Box>‖color:gui.red‖Gift‖color:end‖</entityname.Touhou_New_Year_Gift_Box>
+    <entitydescription.Touhou_New_Year_Gift_Box>Happy!</entitydescription.Touhou_New_Year_Gift_Box>
 
     <entityname.Touhou_Quality_Upper_Machine>Quality Enhancer</entityname.Touhou_Quality_Upper_Machine>
     <entitydescription.Touhou_Quality_Upper_Machine>An experimental tool produced by Kappa Heavy Industries that upgrades magical weapons up to master quality.</entitydescription.Touhou_Quality_Upper_Machine>
 
-    <entityname.Touhou_Alice_Magic_Book>Magical Nation Grimoire</entityname.Touhou_Alice_Magic_Book>
+    <entityname.Touhou_Alice_Magic_Book>‖color:150,150,255,255‖Magical Nation Grimoire‖color:end‖</entityname.Touhou_Alice_Magic_Book>
     <entitydescription.Touhou_Alice_Magic_Book>A grimoire once owned by Alice. Consuming at least 10 doll energy allows summoning of dolls.</entitydescription.Touhou_Alice_Magic_Book>
 
-    <entityname.Touhou_Lunar_Energy_Assault_Rifle>‖color:220,100,220,255‖Lunar Energy Rifle‖color:end‖</entityname.Touhou_Lunar_Energy_Assault_Rifle>
+    <entityname.Touhou_Lunar_Energy_Assault_Rifle>‖color:220,25,200,255‖Lunar Energy Rifle‖color:end‖</entityname.Touhou_Lunar_Energy_Assault_Rifle>
     <entitydescription.Touhou_Lunar_Energy_Assault_Rifle>A fully automatic weapon reconstructed by Reisen after analyzing lunar relics. It can use various types of ammunition and delivers formidable power. Uses ‖color:gui.yellow‖Lunar Energy Magazines, SMG Ammo, or Assault Rifle Ammo‖end‖.</entitydescription.Touhou_Lunar_Energy_Assault_Rifle>
 
-    <entityname.Touhou_Lunar_Energy_Magazine>‖color:220,100,220,255‖Lunar Energy Magazine‖color:end‖</entityname.Touhou_Lunar_Energy_Magazine>
+    <entityname.Touhou_Lunar_Energy_Magazine>‖color:220,25,200,255‖Lunar Energy Magazine‖color:end‖</entityname.Touhou_Lunar_Energy_Magazine>
     <entitydescription.Touhou_Lunar_Energy_Magazine>A high-energy magazine bound by magic, designed specifically for the Lunar Energy Rifle. Ammunition for ‖color:gui.yellow‖Lunar Energy Rifle‖end‖.</entitydescription.Touhou_Lunar_Energy_Magazine>
 
     <entityname.Touhou_Nue_Danmaku_Chimera>Nue Sign “Danmaku Chimera” (Fragmentation Cannon)</entityname.Touhou_Nue_Danmaku_Chimera>
@@ -843,12 +837,12 @@
     <entityname.Touhou_Waterwheel_Gun_Magazine>Waterwheel</entityname.Touhou_Waterwheel_Gun_Magazine>
     <entitydescription.Touhou_Waterwheel_Gun_Magazine>The operating wheel built into the Waterwheel Gun; without it the weapon cannot function. Ammunition for ‖color:gui.yellow‖Waterwheel Gun‖end‖.</entitydescription.Touhou_Waterwheel_Gun_Magazine>
 
-    <entityname.Touhou_Sunflower_Field_Cane>Sunflower Field Cane</entityname.Touhou_Sunflower_Field_Cane>
+    <entityname.Touhou_Sunflower_Field_Cane>‖color:117,128,110,255‖Sunflower Field Cane‖color:end‖</entityname.Touhou_Sunflower_Field_Cane>
     <entitydescription.Touhou_Sunflower_Field_Cane>A cane carried by Yuuka while tending her flowers on Europa. Its unique design allows it to radiate warm sunlight even beneath the icy seas.
         Hidden within the cane is a short blade used to discipline those who refuse to behave. Its raw power is not remarkable, but in her hands it is anything but negligible.
     </entitydescription.Touhou_Sunflower_Field_Cane>
 
-    <entityname.Touhou_Sunflower_Field_Cane_Dagger>Sunflower Field Cane Blade</entityname.Touhou_Sunflower_Field_Cane_Dagger>
+    <entityname.Touhou_Sunflower_Field_Cane_Dagger>‖color:117,128,110,255‖Sunflower Field Cane Blade‖color:end‖</entityname.Touhou_Sunflower_Field_Cane_Dagger>
     <entitydescription.Touhou_Sunflower_Field_Cane_Dagger>A cane blade of a peculiar nature. Normally concealed within the cane, it enhances the cane’s overall lethality.
         On occasion, it can also be drawn on its own to intimidate enemies.
     </entitydescription.Touhou_Sunflower_Field_Cane_Dagger>
@@ -888,10 +882,10 @@
     <entityname.Touhou_Magic_Metal_Arrow_Star>‖color:155,125,245,255‖Star Heat “Ice-Melt Device”‖color:end‖</entityname.Touhou_Magic_Metal_Arrow_Star>
     <entitydescription.Touhou_Magic_Metal_Arrow_Star>Strange rays merge into a rainbow pattern in the air. Ammunition for ‖color:gui.yellow‖Three-Fairy Triple Heavy Crossbow‖end‖.</entitydescription.Touhou_Magic_Metal_Arrow_Star>
 
-    <entityname.Touhou_Yukari_Folding_Fan>‖color:255,125,255,255‖Yukari Yakumo’s Folding Fan‖color:end‖</entityname.Touhou_Yukari_Folding_Fan>
+    <entityname.Touhou_Yukari_Folding_Fan>‖color:220,25,200,255‖Yukari Yakumo’s Folding Fan‖color:end‖</entityname.Touhou_Yukari_Folding_Fan>
     <entitydescription.Touhou_Yukari_Folding_Fan>A fan infused with the power of boundaries, capable of rapidly weakening enemy defenses as the borders shift. Uses ‖color:gui.yellow‖Fan Mechanism‖end‖.</entitydescription.Touhou_Yukari_Folding_Fan>
 
-    <entityname.Touhou_Yukari_Folding_Fan_Ammo>‖color:255,125,255,255‖Fan Mechanism‖color:end‖</entityname.Touhou_Yukari_Folding_Fan_Ammo>
+    <entityname.Touhou_Yukari_Folding_Fan_Ammo>‖color:220,25,200,255‖Fan Mechanism‖color:end‖</entityname.Touhou_Yukari_Folding_Fan_Ammo>
     <entitydescription.Touhou_Yukari_Folding_Fan_Ammo>The intricate mechanism within the fan allows it to unleash danmaku despite its harmless appearance. Ammunition for ‖color:gui.yellow‖Yukari Yakumo’s Folding Fan‖end‖.</entitydescription.Touhou_Yukari_Folding_Fan_Ammo>
 
     <entityname.Touhou_Crystal_Pistol>‖color:gui.yellow‖Crystal Pistol‖color:end‖</entityname.Touhou_Crystal_Pistol>
@@ -900,16 +894,16 @@
     <entityname.Touhou_Crystal_Pistol_Ammo>‖color:gui.yellow‖Stellar Crystal‖color:end‖</entityname.Touhou_Crystal_Pistol_Ammo>
     <entitydescription.Touhou_Crystal_Pistol_Ammo>A carefully crafted crystal that reveals a faint starlight when observed closely. Ammunition for ‖color:gui.yellow‖Crystal Pistol‖end‖.</entitydescription.Touhou_Crystal_Pistol_Ammo>
 
-    <entityname.Touhou_Ceremonial_Dagger>‖color:255,185,255,255‖Ceremonial Dagger‖color:end‖</entityname.Touhou_Ceremonial_Dagger>
+    <entityname.Touhou_Ceremonial_Dagger>‖color:120,75,100,255‖Ceremonial Dagger‖color:end‖</entityname.Touhou_Ceremonial_Dagger>
     <entitydescription.Touhou_Ceremonial_Dagger>A dagger used by Patchouli in ritual magic, imbued with elemental ritual power.</entitydescription.Touhou_Ceremonial_Dagger>
 
-    <entityname.Touhou_Veterinary_Steel_Claws>‖color:gui.green‖Beast Steel Claws‖color:end‖</entityname.Touhou_Veterinary_Steel_Claws>
+    <entityname.Touhou_Veterinary_Steel_Claws>‖color:162,190,160,255‖Beast Steel Claws‖color:end‖</entityname.Touhou_Veterinary_Steel_Claws>
     <entitydescription.Touhou_Veterinary_Steel_Claws>A pair of steel claws handmade by Reimu Hakurei for Aunn, capable of rending Europa’s dangerous creatures.</entitydescription.Touhou_Veterinary_Steel_Claws>
 
-    <entityname.Touhou_Maple_Leaf_Revolver>‖color:255,185,55,255‖Maple Leaf Revolver‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver>
+    <entityname.Touhou_Maple_Leaf_Revolver>‖color:255,255,255,255‖Maple Leaf Revolver‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver>
     <entitydescription.Touhou_Maple_Leaf_Revolver>A special revolver issued to the Tengu task force. Continuous firing greatly enhances its performance. Uses ‖color:gui.yellow‖Revolver Bullets or Cyclone Bullets‖end‖.</entitydescription.Touhou_Maple_Leaf_Revolver>
 
-    <entityname.Touhou_Maple_Leaf_Revolver_Bullet>‖color:255,185,55,255‖Cyclone Bullet‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver_Bullet>
+    <entityname.Touhou_Maple_Leaf_Revolver_Bullet>‖color:255,255,255,255‖Cyclone Bullet‖color:end‖</entityname.Touhou_Maple_Leaf_Revolver_Bullet>
     <entitydescription.Touhou_Maple_Leaf_Revolver_Bullet>A custom bullet developed from revolver rounds with the latest youkai mountain technology. It can also be used in standard revolvers. Ammunition for ‖color:gui.yellow‖Maple Leaf Revolver‖end‖.</entitydescription.Touhou_Maple_Leaf_Revolver_Bullet>
 
     <entityname.Touhou_Stellar_Staff>‖color:155,155,255,255‖Stellar Staff‖color:end‖</entityname.Touhou_Stellar_Staff>
@@ -921,10 +915,10 @@
     <entityname.Touhou_Hakurei_Fox_Headpiece>‖color:255,205,55,255‖Shrine Fox Hairpin‖color:end‖</entityname.Touhou_Hakurei_Fox_Headpiece>
     <entitydescription.Touhou_Hakurei_Fox_Headpiece>A hairpin with a shrine fox motif, imbued with the unique aura of the Hakurei Shrine.</entitydescription.Touhou_Hakurei_Fox_Headpiece>
 
-    <entityname.Touhou_Royal_Diamond_Ring>‖color:255,55,155,255‖Royal Diamond Ring‖color:end‖</entityname.Touhou_Royal_Diamond_Ring>
+    <entityname.Touhou_Royal_Diamond_Ring>‖color:120,75,100,255‖Royal Diamond Ring‖color:end‖</entityname.Touhou_Royal_Diamond_Ring>
     <entitydescription.Touhou_Royal_Diamond_Ring>A result of Patchouli’s magical synthesis experiments, capable of suppressing spell cards instantly. Uses ‖color:gui.yellow‖Royal Diamond Fuel‖end‖.</entitydescription.Touhou_Royal_Diamond_Ring>
 
-    <entityname.Touhou_Royal_Diamond_Ring_Ammo>‖color:255,55,155,255‖Royal Diamond Fuel‖color:end‖</entityname.Touhou_Royal_Diamond_Ring_Ammo>
+    <entityname.Touhou_Royal_Diamond_Ring_Ammo>‖color:120,75,100,255‖Royal Diamond Fuel‖color:end‖</entityname.Touhou_Royal_Diamond_Ring_Ammo>
     <entitydescription.Touhou_Royal_Diamond_Ring_Ammo>A magical orb filled with highly dangerous magic energy, its internal power possesses considerable destructive force. Ammunition for ‖color:gui.yellow‖Royal Diamond Ring‖end‖.</entitydescription.Touhou_Royal_Diamond_Ring_Ammo>
 
     <entityname.Touhou_Plant_Machine>Magical Material Grow Cabinet</entityname.Touhou_Plant_Machine>
@@ -958,10 +952,10 @@
     <entitydescription.Touhou_Rose_Gift_Bag>To pursue the true meaning of a sweet holiday, Koishi wandered far and wide.
         Three auto-injection slots trigger at 15% health thresholds and can also keep the Unconscious Mousse effect active.</entitydescription.Touhou_Rose_Gift_Bag>
 
-    <entityname.Touhou_Rose_Wand>Rose Wand</entityname.Touhou_Rose_Wand>
-    <entitydescription.Touhou_Rose_Wand>The rose’s magic slowly blooms within… Uses ‖color:gui.yellow‖Undersea Rose‖end‖.</entitydescription.Touhou_Rose_Wand>
+    <entityname.Touhou_Rose_Wand>‖color:60,255,155,255‖Rose Wand‖color:end‖</entityname.Touhou_Rose_Wand>
+    <entitydescription.Touhou_Rose_Wand>Rose magic slowly blooms within… Each danmaku hit has a chance to launch a Rose Star, dealing massive damage. Uses ‖color:gui.yellow‖Undersea Rose‖end‖.</entitydescription.Touhou_Rose_Wand>
 
-    <entityname.Touhou_Rose_Wand_Ammo>Undersea Rose</entityname.Touhou_Rose_Wand_Ammo>
+    <entityname.Touhou_Rose_Wand_Ammo>‖color:60,255,155,255‖Undersea Rose‖color:end‖</entityname.Touhou_Rose_Wand_Ammo>
     <entitydescription.Touhou_Rose_Wand_Ammo>An incredible magic allows this rose to bloom beneath the sea. Ammunition for ‖color:gui.yellow‖Rose Wand‖end‖.</entitydescription.Touhou_Rose_Wand_Ammo>
 
 
@@ -1585,16 +1579,16 @@
     <entityname.Touhou_Corrupted_Aphelion_Ammo>‖color:255,0,0,155‖Corrupted Aphelion Energy Core‖color:end‖</entityname.Touhou_Corrupted_Aphelion_Ammo>
     <entitydescription.Touhou_Corrupted_Aphelion_Ammo>Energy once pure now utterly tainted. Ammo for ‖color:gui.yellow‖Corrupted Aphelion‖end‖.</entitydescription.Touhou_Corrupted_Aphelion_Ammo>
 
-    <entityname.Touhou_Minus_K>‖color:100,100,255,155‖Flame Extinguish‖color:end‖</entityname.Touhou_Minus_K>
+    <entityname.Touhou_Minus_K>‖color:60,90,255,255‖Flame Extinguish‖color:end‖</entityname.Touhou_Minus_K>
     <entitydescription.Touhou_Minus_K>Cirno provided ultra-low-temperature ice to the alchemy lab and received this exquisite weapon in return. It fires ice crystals that effectively harm flesh. Uses ‖color:gui.yellow‖Extinguish Crystal‖end‖.</entitydescription.Touhou_Minus_K>
 
-    <entityname.Touhou_Minus_K_Ammo>‖color:100,100,255,155‖Extinguish Ice Crystal‖color:end‖</entityname.Touhou_Minus_K_Ammo>
+    <entityname.Touhou_Minus_K_Ammo>‖color:60,90,255,255‖Extinguish Ice Crystal‖color:end‖</entityname.Touhou_Minus_K_Ammo>
     <entitydescription.Touhou_Minus_K_Ammo>Quenching and extinguishing bring even the hottest object into frozen winter. Ammo for ‖color:gui.yellow‖Flame Extinguish‖end‖.</entitydescription.Touhou_Minus_K_Ammo>
 
-    <entityname.Touhou_Stagnant_Comet>‖color:255,100,255,155‖Stagnant Comet‖color:end‖</entityname.Touhou_Stagnant_Comet>
+    <entityname.Touhou_Stagnant_Comet>‖color:220,25,200,255‖Stagnant Comet‖color:end‖</entityname.Touhou_Stagnant_Comet>
     <entitydescription.Touhou_Stagnant_Comet>Inspired by a phenomenon Yukari Yakumo once caused by twisting boundaries—a comet frozen in stillness—Europa engineers built this restless weapon. Power slightly increases while stationary. Uses ‖color:gui.yellow‖Stagnant Gap‖end‖.</entitydescription.Touhou_Stagnant_Comet>
 
-    <entityname.Touhou_Stagnant_Comet_Ammo>‖color:255,100,255,155‖Stagnant Gap‖color:end‖</entityname.Touhou_Stagnant_Comet_Ammo>
+    <entityname.Touhou_Stagnant_Comet_Ammo>‖color:220,25,200,255‖Stagnant Gap‖color:end‖</entityname.Touhou_Stagnant_Comet_Ammo>
     <entitydescription.Touhou_Stagnant_Comet_Ammo>Laser barrages drawn from the gap, refracted by the Stagnant Comet into two dangerous beams. Ammo for ‖color:gui.yellow‖Stagnant Comet‖end‖.</entitydescription.Touhou_Stagnant_Comet_Ammo>
 
     <entityname.Touhou_Metamorphosis>‖color:150,150,220,155‖Metamorphosis‖color:end‖</entityname.Touhou_Metamorphosis>
@@ -1606,10 +1600,10 @@
     <entityname.Touhou_Blood_Crown>‖color:255,0,0,155‖Blood Crown‖color:end‖</entityname.Touhou_Blood_Crown>
     <entitydescription.Touhou_Blood_Crown>A crown whose danger is obvious at a glance.</entitydescription.Touhou_Blood_Crown>
 
-    <entityname.Touhou_Feather_Wings>‖color:100,100,200,200‖Feather Wings‖color:end‖</entityname.Touhou_Feather_Wings>
+    <entityname.Touhou_Feather_Wings>‖color:5,105,195,200‖Feather Wings‖color:end‖</entityname.Touhou_Feather_Wings>
     <entitydescription.Touhou_Feather_Wings>After Tenshi Hinanawi told stories of the sky to Europa, admirers crafted this fine weapon inspired by feathers and fur. Uses ‖color:gui.yellow‖Woven Feather Sigil‖end‖.</entitydescription.Touhou_Feather_Wings>
 
-    <entityname.Touhou_Feather_Wings_Ammo>‖color:100,100,200,200‖Woven Feather Sigil‖color:end‖</entityname.Touhou_Feather_Wings_Ammo>
+    <entityname.Touhou_Feather_Wings_Ammo>‖color:5,105,195,200‖Woven Feather Sigil‖color:end‖</entityname.Touhou_Feather_Wings_Ammo>
     <entitydescription.Touhou_Feather_Wings_Ammo>A finely made badge woven with fibers to resemble feathers; though not elegant, it carries perfect sentiment. Ammo for ‖color:gui.yellow‖Feather Wings‖end‖.</entitydescription.Touhou_Feather_Wings_Ammo>
 
     <entityname.Touhou_Leaves_Thorns>‖color:155,255,155,255‖Leaf Thorns‖color:end‖</entityname.Touhou_Leaves_Thorns>
@@ -1639,16 +1633,16 @@
     <entityname.Touhou_External_Within_Pill>Eientei Internal Medicine Pill</entityname.Touhou_External_Within_Pill>
     <entitydescription.Touhou_External_Within_Pill>A new pill from Eientei’s Europa branch that replaces conventional treatment. Provides fast initial healing followed by lasting gentle recovery. Effects don’t stack with multiple doses.</entitydescription.Touhou_External_Within_Pill>
 
-    <entityname.Touhou_Sakuya_Knife_Lunatic>‖color:150,150,200,255‖Lunar War Cooldown Knives‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic>
+    <entityname.Touhou_Sakuya_Knife_Lunatic>‖color:155,155,155,255‖Lunar War Cooldown Knives‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic>
     <entitydescription.Touhou_Sakuya_Knife_Lunatic>Rumored to be Sakuya’s custom launcher from the Lunar War, more portable and powerful than traditional methods. Dual-sided firing slots allow two knives at once. Uses ‖color:gui.yellow‖Cooling Knife Energy Core‖end‖.</entitydescription.Touhou_Sakuya_Knife_Lunatic>
 
-    <entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>‖color:150,150,200,255‖Cooling Knife Energy Core‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>
+    <entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>‖color:155,155,155,255‖Cooling Knife Energy Core‖color:end‖</entityname.Touhou_Sakuya_Knife_Lunatic_Ammo>
     <entitydescription.Touhou_Sakuya_Knife_Lunatic_Ammo>The power source for the Cooling Knives, enabling Sakuya to continuously fire high-energy blades. Ammo for ‖color:gui.yellow‖Lunar War Cooldown Knives‖end‖.</entitydescription.Touhou_Sakuya_Knife_Lunatic_Ammo>
 
-    <entityname.Touhou_Closed_Third_Eye>‖color:200,50,200,255‖Closed Third Eye‖color:end‖</entityname.Touhou_Closed_Third_Eye>
+    <entityname.Touhou_Closed_Third_Eye>‖color:60,255,155,255‖Closed Third Eye‖color:end‖</entityname.Touhou_Closed_Third_Eye>
     <entitydescription.Touhou_Closed_Third_Eye>A manifestation of Koishi’s sealed heart, shaped as a closed eye. Uses ‖color:gui.yellow‖Ember of Love‖end‖.</entitydescription.Touhou_Closed_Third_Eye>
 
-    <entityname.Touhou_Closed_Third_Eye_Ammo01>‖color:200,50,200,255‖Ember of Love‖color:end‖</entityname.Touhou_Closed_Third_Eye_Ammo01>
+    <entityname.Touhou_Closed_Third_Eye_Ammo01>‖color:60,255,155,255‖Ember of Love‖color:end‖</entityname.Touhou_Closed_Third_Eye_Ammo01>
     <entitydescription.Touhou_Closed_Third_Eye_Ammo01>A fragment of Koishi’s unconscious heart. Ammo for ‖color:gui.yellow‖Closed Third Eye‖end‖.</entitydescription.Touhou_Closed_Third_Eye_Ammo01>
 
     <entityname.Touhou_Treasure_Bag_Nue>Treasure Bag - Nue</entityname.Touhou_Treasure_Bag_Nue>
@@ -1690,12 +1684,6 @@
     <entityname.Touhou_Knightmare_Experimental_Rifle_Ammo02>Knightmare Corrosive Experimental Battery</entityname.Touhou_Knightmare_Experimental_Rifle_Ammo02>
     <entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo02>Corrosive energy source constrained by magic circuits, extremely dangerous. ‖color:gui.yellow‖Cannot be recharged‖end‖. Ammo for ‖color:gui.yellow‖Knightmare Experimental Rifle‖end‖.</entitydescription.Touhou_Knightmare_Experimental_Rifle_Ammo02>
 
-    <entityname.Touhou_Mind_Star_Mine>Mind Star Mine</entityname.Touhou_Mind_Star_Mine>
-    <entitydescription.Touhou_Mind_Star_Mine>A lunar relic widely used after the pseudo-lunar war, with formidable destructive power. Ammo for ‖color:gui.yellow‖Blunderbuss or Mercy‖end‖.</entitydescription.Touhou_Mind_Star_Mine>
-
-    <entityname.Touhou_Lunatic_Blass>Lunatic Blast</entityname.Touhou_Lunatic_Blass>
-    <entitydescription.Touhou_Lunatic_Blass>A highly dangerous lunar relic bullet, often banned even during the pseudo-lunar war. Ammo for ‖color:gui.yellow‖Blunderbuss or Mercy‖end‖.</entitydescription.Touhou_Lunatic_Blass>
-
     <entityname.Touhou_Knightmare_Grenade_Gun>Knightmare Grenade Launcher</entityname.Touhou_Knightmare_Grenade_Gun>
     <entitydescription.Touhou_Knightmare_Grenade_Gun>An extremely dangerous grenade weapon strictly banned on Europa. Difficult to operate without training and hard to achieve its full fire rate. Uses ‖color:gui.yellow‖Knightmare Grenade Battery or grenades‖end‖.</entitydescription.Touhou_Knightmare_Grenade_Gun>
 
@@ -1726,7 +1714,7 @@
     <entityname.Touhou_Dissolution>‖color:200,180,150,255‖Dissolution‖end‖</entityname.Touhou_Dissolution>
     <entitydescription.Touhou_Dissolution>An ominous weapon of unimaginable destructive power that drains the user’s life with every shot. ‖color:gui.yellow‖Cannot be recharged‖end‖.</entitydescription.Touhou_Dissolution>
 
-    <entityname.Touhou_Onmyo_Ball>‖color:200,100,100,255‖Bloodthirsty Yin-Yang Orb‖end‖</entityname.Touhou_Onmyo_Ball>
+    <entityname.Touhou_Onmyo_Ball>‖color:255,81,75,255‖Bloodthirsty Yin-Yang Orb‖end‖</entityname.Touhou_Onmyo_Ball>
     <entitydescription.Touhou_Onmyo_Ball>For disobedient youkai, a good lesson with a Yin-Yang Orb works wonders.</entitydescription.Touhou_Onmyo_Ball>
 
     <entityname.Touhou_Mass_Shotgun>‖color:200,180,150,255‖Unknown Shotgun‖end‖</entityname.Touhou_Mass_Shotgun>
@@ -1741,10 +1729,10 @@
     <entityname.Touhou_Chocolate_Cleaver>Chocolate Cleaver</entityname.Touhou_Chocolate_Cleaver>
     <entitydescription.Touhou_Chocolate_Cleaver>A knife crafted from chocolate through special processing. Keep out of children’s reach to prevent accidental eating.</entitydescription.Touhou_Chocolate_Cleaver>
 
-    <entityname.Touhou_Cyclone_Electromagnetic_Gun>‖color:220,195,115,255‖Cyclone Electromagnetic Gun‖color:end‖</entityname.Touhou_Cyclone_Electromagnetic_Gun>
+    <entityname.Touhou_Cyclone_Electromagnetic_Gun>‖color:255,255,255,255‖Cyclone Electromagnetic Gun‖color:end‖</entityname.Touhou_Cyclone_Electromagnetic_Gun>
     <entitydescription.Touhou_Cyclone_Electromagnetic_Gun>To combat stronger Europa creatures, Aya collaborated with kappa to create this formidable electromagnetic weapon. Uses ‖color:gui.yellow‖Cyclone EM Ammo or “Illusion Gale”‖end‖.</entitydescription.Touhou_Cyclone_Electromagnetic_Gun>
 
-    <entityname.Touhou_Cyclone_Electromagnetic_Gun_Ammo>‖color:220,195,115,255‖Cyclone EM Ammo‖color:end‖</entityname.Touhou_Cyclone_Electromagnetic_Gun_Ammo>
+    <entityname.Touhou_Cyclone_Electromagnetic_Gun_Ammo>‖color:255,255,255,255‖Cyclone EM Ammo‖color:end‖</entityname.Touhou_Cyclone_Electromagnetic_Gun_Ammo>
     <entitydescription.Touhou_Cyclone_Electromagnetic_Gun_Ammo>Highly penetrating energy of remarkable power. Ammo for ‖color:gui.yellow‖Cyclone Electromagnetic Gun‖end‖.</entitydescription.Touhou_Cyclone_Electromagnetic_Gun_Ammo>
 
     <entityname.Touhou_Flandre_Destroyer>‖color:220,55,55,255‖Destroyer‖color:end‖</entityname.Touhou_Flandre_Destroyer>
@@ -1756,10 +1744,10 @@
     <entityname.Touhou_Disintegration_Stone>Disintegration Stone</entityname.Touhou_Disintegration_Stone>
     <entitydescription.Touhou_Disintegration_Stone>A gem of both destruction and restoration, used at the ritual table to break items back into alchemical by-products or Aether Layer Metal.</entitydescription.Touhou_Disintegration_Stone>
 
-    <entityname.Touhou_Night_Dance>‖color:220,55,55,255‖Dance of the Night‖color:end‖</entityname.Touhou_Night_Dance>
+    <entityname.Touhou_Night_Dance>‖color:255,36,0,255‖Dance of the Night‖color:end‖</entityname.Touhou_Night_Dance>
     <entitydescription.Touhou_Night_Dance>A weapon created from attempts to analyze Remilia’s fate manipulation, now part of her collection. Builds an energy bar (shown as durability) that boosts power when full. Uses ‖color:gui.yellow‖Mist of the Night‖end‖.</entitydescription.Touhou_Night_Dance>
 
-    <entityname.Touhou_Night_Dance_Ammo>‖color:220,55,55,255‖Mist of the Night‖color:end‖</entityname.Touhou_Night_Dance_Ammo>
+    <entityname.Touhou_Night_Dance_Ammo>‖color:255,36,0,255‖Mist of the Night‖color:end‖</entityname.Touhou_Night_Dance_Ammo>
     <entitydescription.Touhou_Night_Dance_Ammo>A sculpture imbued with mysterious fate energy, its power halved by imperfect processing. Ammo for ‖color:gui.yellow‖Dance of the Night‖end‖.</entitydescription.Touhou_Night_Dance_Ammo>
 
     <entityname.Touhou_Record_Scar>Record Scar</entityname.Touhou_Record_Scar>
@@ -1819,13 +1807,13 @@
         (Same magatama effects as above)
     </entitydescription.Touhou_Hyouibana_Armor_Alchemical>
 
-    <entityname.Touhou_Blessings_Sunflowers>‖color:220,200,80,255‖Blessing of Sunflowers‖color:end‖</entityname.Touhou_Blessings_Sunflowers>
+    <entityname.Touhou_Blessings_Sunflowers>‖color:117,128,110,255‖Blessing of Sunflowers‖color:end‖</entityname.Touhou_Blessings_Sunflowers>
     <entitydescription.Touhou_Blessings_Sunflowers>Seeing former Earth plants on Europa is rare. Moved by this, an unknown artisan modified kappa technology to create this weapon. Uses ‖color:gui.yellow‖Sunflower Culture Fluid‖end‖.</entitydescription.Touhou_Blessings_Sunflowers>
 
-    <entityname.Touhou_Blessings_Sunflowers_Ammo01>‖color:220,200,80,255‖Sunflower Culture Fluid (Yellow)‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo01>
+    <entityname.Touhou_Blessings_Sunflowers_Ammo01>‖color:117,128,110,255‖Sunflower Culture Fluid (Yellow)‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo01>
     <entitydescription.Touhou_Blessings_Sunflowers_Ammo01>A slightly heavy nutrient fluid that activates the weapon to fire energy lances. Ammo for ‖color:gui.yellow‖Blessing of Sunflowers‖end‖.</entitydescription.Touhou_Blessings_Sunflowers_Ammo01>
 
-    <entityname.Touhou_Blessings_Sunflowers_Ammo02>‖color:220,200,80,255‖Sunflower Culture Fluid (Red)‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo02>
+    <entityname.Touhou_Blessings_Sunflowers_Ammo02>‖color:117,128,110,255‖Sunflower Culture Fluid (Red)‖color:end‖</entityname.Touhou_Blessings_Sunflowers_Ammo02>
     <entitydescription.Touhou_Blessings_Sunflowers_Ammo02>A warm nutrient fluid that powers the weapon to fire energy beams. Ammo for ‖color:gui.yellow‖Blessing of Sunflowers‖end‖.</entitydescription.Touhou_Blessings_Sunflowers_Ammo02>
 
     <entityname.Touhou_Moriya_Bag>Moriya Shrine Waist Pouch</entityname.Touhou_Moriya_Bag>
@@ -2342,16 +2330,144 @@
     <entityname.Touhou_ScarletNight_Hailstorm_Ammo>‖color:255,36,0,255‖Crimson Crystal‖end‖</entityname.Touhou_ScarletNight_Hailstorm_Ammo>
     <entitydescription.Touhou_ScarletNight_Hailstorm_Ammo>An artificially domesticated “bloodstone ore.” Quiet as a ruby at room temperature, but once fed into a high-pressure shatter chamber, it collapses along pre-set fracture lines into razor-sharp crystal pellets, releasing trace contamination that makes wounds hard to close. Used as ammunition for ‖color:gui.yellow‖Scarlet Night Hailstorm‖end‖.</entitydescription.Touhou_ScarletNight_Hailstorm_Ammo>
 
+    <entityname.Touhou_Crowfeather_RapidShooter>‖color:255,255,255,255‖Crowfeather Rapid Shooter‖end‖</entityname.Touhou_Crowfeather_RapidShooter>
+    <entitydescription.Touhou_Crowfeather_RapidShooter>A tengu reporter’s tool that turns “scoops” into firepower. The scope tube seals an echo of a cyclone; each twitch of the trigger snaps like a shutter in the dark—first leaving you nowhere to hide, then leaving you nothing to argue.
+        After each full burst, it needs a brief cooldown.
+        Each use grants the user a burst of extreme speed.
+        Uses ‖color:gui.yellow‖Crowfeather Wind-Vortex Core‖end‖.</entitydescription.Touhou_Crowfeather_RapidShooter>
+    <entityname.Touhou_Crowfeather_RapidShooter_Ammo>‖color:255,255,255,255‖Crowfeather Wind-Vortex Core‖end‖</entityname.Touhou_Crowfeather_RapidShooter_Ammo>
+    <entitydescription.Touhou_Crowfeather_RapidShooter_Ammo>A gust of wind compressed into a transparent chamber—like a cloud caught in a lens, forever searching for an exit. Used as ammunition for ‖color:gui.yellow‖Crowfeather Rapid Shooter‖end‖.</entitydescription.Touhou_Crowfeather_RapidShooter_Ammo>
+
+    <entityname.Touhou_Aunn_Square_Shield>Komainu Square Shield</entityname.Touhou_Aunn_Square_Shield>
+    <entitydescription.Touhou_Aunn_Square_Shield>A square shield that can stand firmly on the ground, guarding the line of “no passage” like the komainu before a shrine gate.
+        When Aunn carries this shield, it slowly regenerates durability.</entitydescription.Touhou_Aunn_Square_Shield>
 
 
+    <entityname.Touhou_Sunyori_Ceremony_Rifle>‖color:154,124,204,255‖Sunyori Ceremony Rifle‖end‖</entityname.Touhou_Sunyori_Ceremony_Rifle>
+    <entitydescription.Touhou_Sunyori_Ceremony_Rifle>A compromise between Lunarian craftsmanship and abyssal pragmatism. Each pull of the trigger leaves a brief echo.
+        Can be upgraded into ‖color:154,124,204,255‖The Sin of Everlasting and Momentary‖end‖.
+        Uses ‖color:gui.yellow‖Moonglow Capacitor Magazine‖end‖.</entitydescription.Touhou_Sunyori_Ceremony_Rifle>
+    <entityname.Touhou_Sunyori_Ceremony_Rifle_Ammo>‖color:154,124,204,255‖Moonglow Capacitor Magazine‖end‖</entityname.Touhou_Sunyori_Ceremony_Rifle_Ammo>
+    <entitydescription.Touhou_Sunyori_Ceremony_Rifle_Ammo>The most basic—and most reliable—power-supply magazine. Used as ammunition for ‖color:gui.yellow‖Sunyori Ceremony Rifle‖end‖ or ‖color:gui.yellow‖The Sin of Everlasting and Momentary‖end‖.</entitydescription.Touhou_Sunyori_Ceremony_Rifle_Ammo>
 
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle>‖color:154,124,204,255‖The Sin of Everlasting and Momentary‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle>A compromise between Lunarian craftsmanship and abyssal pragmatism. With every pull of the trigger, you can faintly hear a hollow, distant echo within—like it comes from the faraway Moon.
+        While held, slowly recovers stun.
+        Uses ‖color:gui.yellow‖Moonglow Capacitor Magazine‖end‖ and ‖color:gui.yellow‖Five Impractical Treasures Magazine‖end‖.</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo01>‖color:154,124,204,255‖Jeweled Branch of Hourai Magazine‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo01>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo01>You can feel it warming up, like some living root system.
+        Danmaku hits have a chance to inflict: Dream Dissolution, Sleepless Nightmare, Weakness, Slowness, and Echo.
+        Used as ammunition for ‖color:gui.yellow‖The Sin of Everlasting and Momentary‖end‖.</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo01>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo02>‖color:154,124,204,255‖Fire Rat’s Robe Magazine‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo02>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo02>The magazine casing is patterned with heat-resistant texture, feeling like cloth that can’t be burned.
+        Danmaku hits have a chance to apply Burning or trigger an Explosion.
+        Used as ammunition for ‖color:gui.yellow‖The Sin of Everlasting and Momentary‖end‖.</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo02>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo03>‖color:154,124,204,255‖Swallow’s Cowrie Shell Magazine‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo03>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo03>A smooth “shell” is set into the faceplate—more like a charm than a weapon part.
+        Each danmaku shot has a chance to heal the user’s injuries.
+        Used as ammunition for ‖color:gui.yellow‖The Sin of Everlasting and Momentary‖end‖.</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo03>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo04>‖color:154,124,204,255‖Buddha’s Stone Bowl Magazine‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo04>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo04>The core is shaped like an upturned bowl, made to hold surges and noise.
+        Danmaku hits have a chance to cause more stun and area electrical shocks.
+        Used as ammunition for ‖color:gui.yellow‖The Sin of Everlasting and Momentary‖end‖.</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo04>
+    <entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo05>‖color:154,124,204,255‖Dragon’s Neck Jewel Magazine‖end‖</entityname.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo05>
+    <entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo05>The slender payload is like polished jade beads—cold and bright.
+        Danmaku hits deal more damage and pierce armor more effectively.
+        Used as ammunition for ‖color:gui.yellow‖The Sin of Everlasting and Momentary‖end‖.</entitydescription.Touhou_Evernight_Sunyori_Ceremony_Rifle_Ammo05>
 
+    <entityname.Touhou_Hourai_Bullet_Branches>‖color:154,124,204,255‖Hourai Bullet Branches‖end‖</entityname.Touhou_Hourai_Bullet_Branches>
+    <entitydescription.Touhou_Hourai_Bullet_Branches>Legend says the true Jeweled Branch of Hourai comes from Mount Hourai in the Eastern Sea—its branches are silver, its trunk is gold, and its fruit is jade. Whether this piece is real or not is unknown, but it hides a missing notch. Uses ‖color:gui.yellow‖Bullet-Branch Jewel‖end‖.</entitydescription.Touhou_Hourai_Bullet_Branches>
+    <entityname.Touhou_Hourai_Bullet_Branches_Ammo>‖color:154,124,204,255‖Bullet-Branch Jewel‖end‖</entityname.Touhou_Hourai_Bullet_Branches_Ammo>
+    <entitydescription.Touhou_Hourai_Bullet_Branches_Ammo>A jade stone that radiates magic, containing complex and ever-shifting energy. Used as ammunition for ‖color:gui.yellow‖Hourai Bullet Branches‖end‖.</entitydescription.Touhou_Hourai_Bullet_Branches_Ammo>
 
+    <entityname.Touhou_PrayerInjector_Gun>‖color:154,124,204,255‖Prayer Injector Gun‖end‖</entityname.Touhou_PrayerInjector_Gun>
+    <entitydescription.Touhou_PrayerInjector_Gun>An injector gun that channels healing magic.
+        Use the button to switch between different healing functions; hitting a creature will administer treatment.
+        Uses ‖color:gui.yellow‖Prayer Ampoules‖end‖.</entitydescription.Touhou_PrayerInjector_Gun>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo>‖color:154,124,204,255‖Prayer Ampoule‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo>A faintly scented ampoule infused with Kaguya’s specially prepared magic. Used as ammunition for ‖color:gui.yellow‖Prayer Injector Gun‖end‖.</entitydescription.Touhou_PrayerInjector_Gun_Ammo>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn01>‖color:154,124,204,255‖Clotting Prayer Needle‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn01>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn01>A specially magic-congealed needle that quickly stops bleeding and provides basic wound treatment.</entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn01>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn02>‖color:154,124,204,255‖Purifying Prayer Needle‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn02>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn02>A specially magic-congealed needle that rapidly neutralizes toxins.</entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn02>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn03>‖color:154,124,204,255‖Revitalizing Prayer Needle‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn03>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn03>A specially magic-congealed needle that briefly provides a large amount of oxygen, wakes up allies, and alleviates injuries.</entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn03>
+    <entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn04>‖color:154,124,204,255‖Momentary Guardian Needle‖end‖</entityname.Touhou_PrayerInjector_Gun_Ammo_Spawn04>
+    <entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn04>A specially magic-congealed needle that temporarily strengthens the body and numbs pain, reducing attack damage, but does not treat injuries.</entitydescription.Touhou_PrayerInjector_Gun_Ammo_Spawn04>
 
+    <entityname.Touhou_Alpha_Omega>‖color:255,0,0,255‖Alpha and Omega‖end‖</entityname.Touhou_Alpha_Omega>
+    <entitydescription.Touhou_Alpha_Omega>Immortality. Cessation. Corruption promises both—yet the two cannot coexist. Every ending demands a beginning, and every beginning demands an ending. Uses ‖color:gui.yellow‖Alpha/Omega‖end‖.</entitydescription.Touhou_Alpha_Omega>
+    <entityname.Touhou_Alpha_Omega_Ammo>‖color:255,0,0,255‖Alpha/Omega‖end‖</entityname.Touhou_Alpha_Omega_Ammo>
+    <entitydescription.Touhou_Alpha_Omega_Ammo>It’s hard to tell whether it holds fuel or memories. But every “release” makes something reach its end a little faster. Used as ammunition for ‖color:gui.yellow‖Alpha and Omega‖end‖.</entitydescription.Touhou_Alpha_Omega_Ammo>
 
+    <entityname.Touhou_Weapon_Durability_Bug_Reset_Tool>Weapon Durability Bug Reset Tool</entityname.Touhou_Weapon_Durability_Bug_Reset_Tool>
+    <entitydescription.Touhou_Weapon_Durability_Bug_Reset_Tool>Used to fix cases where, due to delayed durability handling, a weapon’s durability becomes 0 after a round and can’t be used normally. Insert the weapon and press the button; its durability will be restored after 30 seconds.</entitydescription.Touhou_Weapon_Durability_Bug_Reset_Tool>
 
+    <entityname.Touhou_Starsea_Aurora>‖color:255,255,0,255‖Starsea Aurora‖end‖</entityname.Touhou_Starsea_Aurora>
+    <entitydescription.Touhou_Starsea_Aurora>A high-energy laser calibrated with a star-etched focusing lens, modeled after the Mini-Hakkero—like a slice of starlit ocean compressed into a rail.
+        Can switch to High-Pressure Mode for charged shots, consuming ammo at double rate.
+        Hold the trigger to charge; damage and penetration increase as it builds.
+        Uses ‖color:gui.yellow‖Stardust Capacitor‖end‖.</entitydescription.Touhou_Starsea_Aurora>
+    <entityname.Touhou_Starsea_Aurora_Ammo>‖color:255,255,0,255‖Stardust Capacitor‖end‖</entityname.Touhou_Starsea_Aurora_Ammo>
+    <entitydescription.Touhou_Starsea_Aurora_Ammo>A sealed stardust capacitor segment that supplies steady discharge pulses for the Starsea laser. Used as ammunition for ‖color:gui.yellow‖Starsea Aurora‖end‖.</entitydescription.Touhou_Starsea_Aurora_Ammo>
 
+    <entityname.Touhou_Assassin_Dagger>Assassin’s Dagger</entityname.Touhou_Assassin_Dagger>
+    <entitydescription.Touhou_Assassin_Dagger>Radiance and venom intertwine as one—there is no repulsion, no collapse, only fusion. The craftsman said to have forged this weapon has been missing for a long time.</entitydescription.Touhou_Assassin_Dagger>
 
+    <entityname.Touhou_Chaos_Wings_Knife>Chaos Wings</entityname.Touhou_Chaos_Wings_Knife>
+    <entitydescription.Touhou_Chaos_Wings_Knife>Black and white intertwine as one—there is no repulsion, no collapse, only fusion. The craftsman said to have forged this weapon has been missing for a long time.</entitydescription.Touhou_Chaos_Wings_Knife>
+
+    <entityname.Touhou_HeartbeatScatter>‖color:60,255,155,255‖Heartbeat Scatter‖color:end‖</entityname.Touhou_HeartbeatScatter>
+    <entitydescription.Touhou_HeartbeatScatter>A short shotgun born for “unconscious fighting instinct.” Its milky-white and rose-gold casing looks like a carefully wrapped gift, yet every pull of the trigger sends out a gentle ECG-like pulse—as if it isn’t gunpowder burning, but some kind of emotion beating.
+        Uses ‖color:gui.yellow‖Heartbeat Power Core‖end‖.</entitydescription.Touhou_HeartbeatScatter>
+    <entityname.Touhou_HeartbeatScatter_Ammo>‖color:60,255,155,255‖Heartbeat Power Core‖color:end‖</entityname.Touhou_HeartbeatScatter_Ammo>
+    <entitydescription.Touhou_HeartbeatScatter_Ammo>A pink “heart core” sealed in a transparent chamber—like a bottle of preserved fluttering. Used as ammunition for ‖color:gui.yellow‖Heartbeat Scatter‖end‖.</entitydescription.Touhou_HeartbeatScatter_Ammo>
+
+    <entityname.Touhou_Moriya_Duality_Carbine>‖color:155,255,155,255‖Moriya Duality Carbine‖color:end‖</entityname.Touhou_Moriya_Duality_Carbine>
+    <entitydescription.Touhou_Moriya_Duality_Carbine>A Moriya-style ritual gun that forcibly “splices” ofuda, shimenawa, and a metal receiver into one. On the outside it’s dependable machinery—rails, rivets, sealed housings, and locking mechanisms all in place; but deep inside the frame flows a duality circuit fueled by faith.
+        Danmaku attacks reduce the target’s stun resistance.
+        Uses ‖color:gui.yellow‖Frog Faith Core and White Serpent Faith Core‖end‖.</entitydescription.Touhou_Moriya_Duality_Carbine>
+    <entityname.Touhou_Moriya_Duality_Carbine_Ammo01>‖color:155,255,155,255‖Frog Faith Core‖color:end‖</entityname.Touhou_Moriya_Duality_Carbine_Ammo01>
+    <entitydescription.Touhou_Moriya_Duality_Carbine_Ammo01>When loaded into the prayer gun, it lights the “Frog Aspect” blessed-water circuit. Inside is a pool of bright blue-green energy fluid—stable loops and gentle pulses that, like drizzle and damp air, quietly slow everything down. Used as ammunition for ‖color:gui.yellow‖Moriya Duality Carbine‖end‖.</entitydescription.Touhou_Moriya_Duality_Carbine_Ammo01>
+    <entityname.Touhou_Moriya_Duality_Carbine_Ammo02>‖color:155,255,155,255‖White Serpent Faith Core‖color:end‖</entityname.Touhou_Moriya_Duality_Carbine_Ammo02>
+    <entitydescription.Touhou_Moriya_Duality_Carbine_Ammo02>When loaded into the prayer gun, it lights the “Serpent Aspect” piercing circuit. The energy inside is clearer and sharper; its discharge rhythm is like a tightening white snake—short, precise, and aimed straight at vital points. Used as ammunition for ‖color:gui.yellow‖Moriya Duality Carbine‖end‖.</entitydescription.Touhou_Moriya_Duality_Carbine_Ammo02>
+
+    <entityname.Tsukuyomi_Server_Center>‖color:0,116,143,255‖Tsukuyomi Server Center‖end‖</entityname.Tsukuyomi_Server_Center>
+    <entitydescription.Tsukuyomi_Server_Center>‖color:gui.yellow‖Link-only item‖end‖. Used to charge the signal receiver.</entitydescription.Tsukuyomi_Server_Center>
+
+    <entityname.Touhou_Tsukuyomi_Signal_Receiver>‖color:0,116,143,255‖Tsukuyomi Signal Receiver‖end‖</entityname.Touhou_Tsukuyomi_Signal_Receiver>
+    <entitydescription.Touhou_Tsukuyomi_Signal_Receiver>‖color:gui.yellow‖Link-only item‖end‖. Provides the signal required for Yachiyo’s activities.</entitydescription.Touhou_Tsukuyomi_Signal_Receiver>
+
+    <entityname.Touhou_New_Year_Departure_Gift>Departure Gift</entityname.Touhou_New_Year_Departure_Gift>
+    <entitydescription.Touhou_New_Year_Departure_Gift>A gift from someone who calls themself an “old friend.” It’s wrapped extremely tightly—you’ll have to deconstruct it to find out what’s inside.</entitydescription.Touhou_New_Year_Departure_Gift>
+
+    <entityname.Touhou_External_Pain_Absorber>Eientei Pain Absorber</entityname.Touhou_External_Pain_Absorber>
+    <entitydescription.Touhou_External_Pain_Absorber>A special medication once discontinued by Eientei. When applied to a patient, it greatly increases the effectiveness of medicinal treatment for a period of time, but also reduces physical performance and combat capability.</entitydescription.Touhou_External_Pain_Absorber>
+
+    <entityname.Touhou_Antibiotics_Infusion>Broad-Spectrum Antibiotic Infusion</entityname.Touhou_Antibiotics_Infusion>
+    <entitydescription.Touhou_Antibiotics_Infusion>A concentrated antibiotic developed by civilians. To make it easier to consume and reduce side effects, it has been formulated as an infusion. It functions almost identically to standard broad-spectrum antibiotics, while significantly reducing transport space requirements.</entitydescription.Touhou_Antibiotics_Infusion>
+
+    <entityname.Touhou_Fusion_Station>Fusion Station</entityname.Touhou_Fusion_Station>
+    <entitydescription.Touhou_Fusion_Station>A workstation used to fuse special materials. Allows fusion of identical empathy items.</entitydescription.Touhou_Fusion_Station>
+
+    <entityname.Touhou_Overlock_Coilgun_Ammo_Explosive>Overclocked Coilgun Explosive Ammo Crate</entityname.Touhou_Overlock_Coilgun_Ammo_Explosive>
+    <entitydescription.Touhou_Overlock_Coilgun_Ammo_Explosive>An energy-based explosive ammunition crate re-engraved with magical patterns by Deepwinter Industries. Its performance has been amplified severalfold, and it allows more ammunition to be loaded. (Used as coilgun ammo)</entitydescription.Touhou_Overlock_Coilgun_Ammo_Explosive>
+
+    <entityname.Marisa_Broom>‖color:255,255,0,255‖Marisa’s Broom‖color:end‖</entityname.Marisa_Broom>
+    <entitydescription.Marisa_Broom>An ordinary magician’s broom with unknown propulsion. Inserting a battery further enhances its equally mysterious thrust.</entitydescription.Marisa_Broom>
+
+    <entityname.Touhou_Elegant_Broom>‖color:255,255,0,255‖Elegant Broom‖color:end‖</entityname.Touhou_Elegant_Broom>
+    <entitydescription.Touhou_Elegant_Broom>A broom redesigned for underwater environments. It utilizes magical propulsion more efficiently, eliminating the need for batteries—the user provides all the thrust.</entitydescription.Touhou_Elegant_Broom>
+
+    <entityname.Touhou_Elegant_Transport_Broom>‖color:255,255,0,255‖Elegant Transport Broom‖color:end‖</entityname.Touhou_Elegant_Transport_Broom>
+    <entitydescription.Touhou_Elegant_Transport_Broom>A slightly modified Elegant Broom. Its center of gravity is harder to control, but its transport capability is impressive.</entitydescription.Touhou_Elegant_Transport_Broom>
+
+    <entityname.Touhou_Pride_Amulet>‖color:255,0,0,255‖Pride Amulet‖color:end‖</entityname.Touhou_Pride_Amulet>
+    <entitydescription.Touhou_Pride_Amulet>After the fire thief parted ways with him, this amulet's whereabouts became unknown. Increases modification energy recovery speed by 50% for all weapons with "modification" capability.</entitydescription.Touhou_Pride_Amulet>
+
+    <entityname.Touhou_Star_Moon_Waist_Pouch>Star Moon Waist Pouch</entityname.Touhou_Star_Moon_Waist_Pouch>
+    <entitydescription.Touhou_Star_Moon_Waist_Pouch>An expensive waist pouch handcrafted by artisans skilled in magical inscriptions, capable of producing enhanced effects when used together with the Magic Veil. It also possesses the properties of an elemental belt and includes its own dedicated elemental vial slots.
+        Although it has fewer slots, the resulting effects are significantly stronger.</entitydescription.Touhou_Star_Moon_Waist_Pouch>
 
 
 
@@ -2495,115 +2611,231 @@
     <entitydescription.Touhou_Empathy_Item>Insert into the Empathy Device to activate effects when worn.</entitydescription.Touhou_Empathy_Item>
 
     <Character.Touhou_Empathy_Yin_Yang_Orb>Yin-Yang Orb</Character.Touhou_Empathy_Yin_Yang_Orb>
-    <entitydescription.Touhou_Empathy_Yin_Yang_Orb>Reduces damage to humans by 5% and increases damage to non-humans by 5%.</entitydescription.Touhou_Empathy_Yin_Yang_Orb>
+    <entitydescription.Touhou_Empathy_Yin_Yang_Orb>Damage to humans reduced by 5%, damage to non-humans increased by 5%</entitydescription.Touhou_Empathy_Yin_Yang_Orb>
+
+    <Character.Touhou_Empathy_Yin_Yang_Orb_Lv2>Yin-Yang Orb Lv2</Character.Touhou_Empathy_Yin_Yang_Orb_Lv2>
+    <entitydescription.Touhou_Empathy_Yin_Yang_Orb_Lv2>Damage to non-humans increased by 5%</entitydescription.Touhou_Empathy_Yin_Yang_Orb_Lv2>
 
     <Character.Touhou_Empathy_Yin_Yang_Orb_Needle>Yin-Yang Orb (Needle)</Character.Touhou_Empathy_Yin_Yang_Orb_Needle>
-    <entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle>Physical damage resistance −10%, ranged attack damage +5%.\nThe orb fires talismans—what an odd mechanism…</entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle>
+    <entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle>Physical damage resistance reduced by 10%, ranged attack damage increased by 5%\nTalismans are fired from inside the Yin-Yang Orb. What kind of structure is this...?</entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle>
+
+    <Character.Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2>Yin-Yang Orb (Needle) Lv2</Character.Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2>
+    <entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2>Physical damage resistance reduced by 5%, ranged attack damage increased by 5%\nTalismans are fired from inside the Yin-Yang Orb. What kind of structure is this...?</entitydescription.Touhou_Empathy_Yin_Yang_Orb_Needle_Lv2>
 
     <Character.Touhou_Empathy_Precious_Amulet>Precious Ofuda</Character.Touhou_Empathy_Precious_Amulet>
-    <entitydescription.Touhou_Empathy_Precious_Amulet>10% chance to reduce damage taken by 20% when hit.\nFor youkai, Reimu’s needles strike key points—painful yet oddly pleasant.</entitydescription.Touhou_Empathy_Precious_Amulet>
+    <entitydescription.Touhou_Empathy_Precious_Amulet>10% chance to reduce damage taken by 20% when hit\nFor youkai, Reimu's needles can strike acupuncture points. It must be painful yet pleasurable, or they wouldn’t willingly keep getting stabbed</entitydescription.Touhou_Empathy_Precious_Amulet>
+
+    <Character.Touhou_Empathy_Precious_Amulet_Lv2>Precious Ofuda Lv2</Character.Touhou_Empathy_Precious_Amulet_Lv2>
+    <entitydescription.Touhou_Empathy_Precious_Amulet_Lv2>20% chance to reduce damage taken by 20% when hit\nFor youkai, Reimu's needles can strike acupuncture points. It must be painful yet pleasurable, or they wouldn’t willingly keep getting stabbed</entitydescription.Touhou_Empathy_Precious_Amulet_Lv2>
 
     <Character.Touhou_Empathy_Tea_Cup_Reimu>Teacup Reimu</Character.Touhou_Empathy_Tea_Cup_Reimu>
-    <entitydescription.Touhou_Empathy_Tea_Cup_Reimu>+5% stun inflicted, +10% blunt damage.\n“Didn’t you know? I once spent a whole period just throwing cushions.”</entitydescription.Touhou_Empathy_Tea_Cup_Reimu>
+    <entitydescription.Touhou_Empathy_Tea_Cup_Reimu>Stun dealt increased by 5%\nDidn't you know? There was a time when I used to throw cushions</entitydescription.Touhou_Empathy_Tea_Cup_Reimu>
+
+    <Character.Touhou_Empathy_Tea_Cup_Reimu_Lv2>Teacup Reimu Lv2</Character.Touhou_Empathy_Tea_Cup_Reimu_Lv2>
+    <entitydescription.Touhou_Empathy_Tea_Cup_Reimu_Lv2>Stun dealt increased by 5%, blunt damage increased by 10%\nDidn't you know? There was a time when I used to throw cushions</entitydescription.Touhou_Empathy_Tea_Cup_Reimu_Lv2>
 
     <Character.Touhou_Empathy_Mini_Hakkero>Mini Hakkero</Character.Touhou_Empathy_Mini_Hakkero>
-    <entitydescription.Touhou_Empathy_Mini_Hakkero>+5% burn damage.\nHuman or youkai, everyone wants to try firing a laser—this card is extremely popular.</entitydescription.Touhou_Empathy_Mini_Hakkero>
+    <entitydescription.Touhou_Empathy_Mini_Hakkero>Max health reduced by 8%, burn damage dealt increased by 8%\nWhether human or youkai, everyone wants to try firing lasers, so it's a very popular card</entitydescription.Touhou_Empathy_Mini_Hakkero>
+
+    <Character.Touhou_Empathy_Mini_Hakkero_Lv2>Mini Hakkero Lv2</Character.Touhou_Empathy_Mini_Hakkero_Lv2>
+    <entitydescription.Touhou_Empathy_Mini_Hakkero_Lv2>Burn damage dealt increased by 8%\nWhether human or youkai, everyone wants to try firing lasers, so it's a very popular card</entitydescription.Touhou_Empathy_Mini_Hakkero_Lv2>
 
     <Character.Touhou_Empathy_Mini_Hakkero_Missile>Mini Hakkero (Missile)</Character.Touhou_Empathy_Mini_Hakkero_Missile>
-    <entitydescription.Touhou_Empathy_Mini_Hakkero_Missile>Skill level −10%, ranged damage +8%.\n“I used to think that, but really it just lowers the minimum attack power—still a handy card.”</entitydescription.Touhou_Empathy_Mini_Hakkero_Missile>
+    <entitydescription.Touhou_Empathy_Mini_Hakkero_Missile>Skill level reduced by 10%, ranged damage increased by 8%\n...I used to think so, but actually it's just a very useful card that raises the lower bound of attack power</entitydescription.Touhou_Empathy_Mini_Hakkero_Missile>
+
+    <Character.Touhou_Empathy_Mini_Hakkero_Missile_Lv2>Mini Hakkero (Missile) Lv2</Character.Touhou_Empathy_Mini_Hakkero_Missile_Lv2>
+    <entitydescription.Touhou_Empathy_Mini_Hakkero_Missile_Lv2>Skill level reduced by 5%, ranged damage increased by 8%\n...I used to think so, but actually it's just a very useful card that raises the lower bound of attack power</entitydescription.Touhou_Empathy_Mini_Hakkero_Missile_Lv2>
 
     <Character.Touhou_Empathy_Tea_Cup_Marisa>Teacup Marisa</Character.Touhou_Empathy_Tea_Cup_Marisa>
-    <entitydescription.Touhou_Empathy_Tea_Cup_Marisa>Damage taken −5%.\n“Someone told me this star makes you invincible, so I bought a ton on the black market… turned out to be fakes.”</entitydescription.Touhou_Empathy_Tea_Cup_Marisa>
+    <entitydescription.Touhou_Empathy_Tea_Cup_Marisa>Damage taken reduced by 5%\nSomeone told me this was a star that grants invincibility upon pickup, so I bought a bunch on the black market—turned out they were fake</entitydescription.Touhou_Empathy_Tea_Cup_Marisa>
 
-    <Character.Touhou_Empathy_The_Collector_Lesson>Collector’s Lesson</Character.Touhou_Empathy_The_Collector_Lesson>
-    <entitydescription.Touhou_Empathy_The_Collector_Lesson>After completing all missions in a circuit, 30% chance to gain 1000 marks.\n“A midsummer serial burglar.”</entitydescription.Touhou_Empathy_The_Collector_Lesson>
+    <Character.Touhou_Empathy_Tea_Cup_Marisa_Lv2>Teacup Marisa Lv2</Character.Touhou_Empathy_Tea_Cup_Marisa_Lv2>
+    <entitydescription.Touhou_Empathy_Tea_Cup_Marisa_Lv2>Damage taken reduced by 5%, stun resistance increased by 5%\nSomeone told me this was a star that grants invincibility upon pickup, so I bought a bunch on the black market—turned out they were fake</entitydescription.Touhou_Empathy_Tea_Cup_Marisa_Lv2>
+
+    <Character.Touhou_Empathy_The_Collector_Lesson>Collector's Lesson</Character.Touhou_Empathy_The_Collector_Lesson>
+    <entitydescription.Touhou_Empathy_The_Collector_Lesson>After completing all missions in a round, 30% chance to gain 1000 Marks\nA serial home-invading thief in midsummer</entitydescription.Touhou_Empathy_The_Collector_Lesson>
+
+    <Character.Touhou_Empathy_The_Collector_Lesson_Lv2>Collector's Lesson Lv2</Character.Touhou_Empathy_The_Collector_Lesson_Lv2>
+    <entitydescription.Touhou_Empathy_The_Collector_Lesson_Lv2>After completing any mission in a round, 50% chance to gain 1000 Marks\nA serial home-invading thief in midsummer</entitydescription.Touhou_Empathy_The_Collector_Lesson_Lv2>
 
     <Character.Touhou_Empathy_Vampire_Fangs>Vampire Fangs</Character.Touhou_Empathy_Vampire_Fangs>
-    <entitydescription.Touhou_Empathy_Vampire_Fangs>Ranged damage −10%, melee damage +25%.\n“Spell cards? Ridiculous. One bite is enough to end them.”</entitydescription.Touhou_Empathy_Vampire_Fangs>
+    <entitydescription.Touhou_Empathy_Vampire_Fangs>Ranged attack damage reduced by 10%, melee attack damage increased by 25%\nSpell cards? Laughable. Enemies like this can be dealt with in a single bite</entitydescription.Touhou_Empathy_Vampire_Fangs>
+
+    <Character.Touhou_Empathy_Vampire_Fangs_Lv2>Vampire Fangs Lv2</Character.Touhou_Empathy_Vampire_Fangs_Lv2>
+    <entitydescription.Touhou_Empathy_Vampire_Fangs_Lv2>Ranged attack damage reduced by 5%, melee attack damage increased by 30%\nSpell cards? Laughable. Enemies like this can be dealt with in a single bite</entitydescription.Touhou_Empathy_Vampire_Fangs_Lv2>
 
     <Character.Touhou_Empathy_Half_Of_Half_Spirit>Half of a Half-Spirit</Character.Touhou_Empathy_Half_Of_Half_Spirit>
-    <entitydescription.Touhou_Empathy_Half_Of_Half_Spirit>Skill level −10%, ranged barrages inflict minor “disruption,” melee attacks have a 30% chance to deal +10% damage.\n“Not half a Youmu—just a quarter of a half-spirit.”</entitydescription.Touhou_Empathy_Half_Of_Half_Spirit>
+    <entitydescription.Touhou_Empathy_Half_Of_Half_Spirit>Skill level reduced by 10%, melee attacks have a 50% chance to deal an additional 10% damage\nThis is not half of Youmu, but half of a half-spirit—that is, one quarter</entitydescription.Touhou_Empathy_Half_Of_Half_Spirit>
+
+    <Character.Touhou_Empathy_Half_Of_Half_Spirit_Lv2>Half of a Half-Spirit Lv2</Character.Touhou_Empathy_Half_Of_Half_Spirit_Lv2>
+    <entitydescription.Touhou_Empathy_Half_Of_Half_Spirit_Lv2>Skill level reduced by 10%, ranged danmaku gains slight "Severing Thought", melee attacks have a 50% chance to deal an additional 20% damage\nThis is not half of Youmu, but half of a half-spirit—that is, one quarter</entitydescription.Touhou_Empathy_Half_Of_Half_Spirit_Lv2>
 
     <Character.Touhou_Empathy_Spare_Half_Spirit>Spare Half-Spirit</Character.Touhou_Empathy_Spare_Half_Spirit>
-    <entitydescription.Touhou_Empathy_Spare_Half_Spirit>+5% attack damage when HP less than 50%.\n“A lone spare half-spirit gets shy.”</entitydescription.Touhou_Empathy_Spare_Half_Spirit>
+    <entitydescription.Touhou_Empathy_Spare_Half_Spirit>When HP is below 50%, attack damage increased by 5%\nWith only a spare half-spirit, it becomes shy</entitydescription.Touhou_Empathy_Spare_Half_Spirit>
+
+    <Character.Touhou_Empathy_Spare_Half_Spirit_Lv2>Spare Half-Spirit Lv2</Character.Touhou_Empathy_Spare_Half_Spirit_Lv2>
+    <entitydescription.Touhou_Empathy_Spare_Half_Spirit_Lv2>When HP is below 50%, attack damage increased by 10%\nWith only a spare half-spirit, it becomes shy</entitydescription.Touhou_Empathy_Spare_Half_Spirit_Lv2>
 
     <Character.Touhou_Empathy_Hurricane_Sandals>Hurricane Geta</Character.Touhou_Empathy_Hurricane_Sandals>
-    <entitydescription.Touhou_Empathy_Hurricane_Sandals>+5% movement speed.\n“Only tengu can so boldly bend the rules.”</entitydescription.Touhou_Empathy_Hurricane_Sandals>
+    <entitydescription.Touhou_Empathy_Hurricane_Sandals>Movement speed increased by 5%\nOnly tengu can actively induce this kind of hitbox manipulation</entitydescription.Touhou_Empathy_Hurricane_Sandals>
+
+    <Character.Touhou_Empathy_Hurricane_Sandals_Lv2>Hurricane Geta Lv2</Character.Touhou_Empathy_Hurricane_Sandals_Lv2>
+    <entitydescription.Touhou_Empathy_Hurricane_Sandals_Lv2>Movement speed increased by 10%\nOnly tengu can actively induce this kind of hitbox manipulation</entitydescription.Touhou_Empathy_Hurricane_Sandals_Lv2>
 
     <Character.Touhou_Empathy_Phoenix_Tail>Phoenix Tail</Character.Touhou_Empathy_Phoenix_Tail>
-    <entitydescription.Touhou_Empathy_Phoenix_Tail>−10% max HP, +15% burn resistance.\n“To an immortal life, everything is just a game.”</entitydescription.Touhou_Empathy_Phoenix_Tail>
+    <entitydescription.Touhou_Empathy_Phoenix_Tail>Max health reduced by 10%, burn resistance increased by 15%\nTo an immortal being, everything is just part of the rules of the game</entitydescription.Touhou_Empathy_Phoenix_Tail>
+
+    <Character.Touhou_Empathy_Phoenix_Tail_Lv2>Phoenix Tail Lv2</Character.Touhou_Empathy_Phoenix_Tail_Lv2>
+    <entitydescription.Touhou_Empathy_Phoenix_Tail_Lv2>Max health reduced by 5%, burn resistance increased by 15%\nTo an immortal being, everything is just part of the rules of the game</entitydescription.Touhou_Empathy_Phoenix_Tail_Lv2>
 
     <Character.Touhou_Empathy_Spell_Card_Of_Preparedness>Spell Card of Preparedness</Character.Touhou_Empathy_Spell_Card_Of_Preparedness>
-    <entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness>Attack damage −10%, max HP +10%.\n“For magicians, preserving mana is most important, right?”</entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness>
+    <entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness>Attack damage reduced by 10%, max health increased by 10%\nFor a magician, the most important thing is preserving magic power, right?</entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness>
+
+    <Character.Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2>Spell Card of Preparedness Lv2</Character.Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2>
+    <entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2>Ranged attack damage reduced by 5%, max health increased by 10%\nFor a magician, the most important thing is preserving magic power, right?</entitydescription.Touhou_Empathy_Spell_Card_Of_Preparedness_Lv2>
 
     <Character.Touhou_Empathy_Basic_Training_For_Magicians>Basic Training for Magicians</Character.Touhou_Empathy_Basic_Training_For_Magicians>
-    <entitydescription.Touhou_Empathy_Basic_Training_For_Magicians>Max HP −20%, barrage damage +10%.\n“In a magician’s hands, it becomes truly destructive.”</entitydescription.Touhou_Empathy_Basic_Training_For_Magicians>
+    <entitydescription.Touhou_Empathy_Basic_Training_For_Magicians>Max health reduced by 20%, danmaku damage increased by 10%\nIn the hands of a magician, it becomes a truly destructive weapon</entitydescription.Touhou_Empathy_Basic_Training_For_Magicians>
 
-    <Character.Touhou_Empathy_Essential_Stone_Of_Patience>Essential Stone of Patience</Character.Touhou_Empathy_Essential_Stone_Of_Patience>
-    <entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>The lower your HP, the less damage you take, up to −10%.\n“Defense is the best offense!”</entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>
+    <Character.Touhou_Empathy_Basic_Training_For_Magicians_Lv2>Basic Training for Magicians Lv2</Character.Touhou_Empathy_Basic_Training_For_Magicians_Lv2>
+    <entitydescription.Touhou_Empathy_Basic_Training_For_Magicians_Lv2>Max health reduced by 10%, danmaku damage increased by 10%\nIn the hands of a magician, it becomes a truly destructive weapon</entitydescription.Touhou_Empathy_Basic_Training_For_Magicians_Lv2>
 
-    <Character.Touhou_Empathy_Essential_Stone_Missile>Essential Stone Missile</Character.Touhou_Empathy_Essential_Stone_Missile>
-    <entitydescription.Touhou_Empathy_Essential_Stone_Missile>Movement speed −30%, +10% max HP.\n“High attack and defense in one—that’s the Essential Stone.”</entitydescription.Touhou_Empathy_Essential_Stone_Missile>
+    <Character.Touhou_Empathy_Essential_Stone_Of_Patience>Keystone of Patience</Character.Touhou_Empathy_Essential_Stone_Of_Patience>
+    <entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>The lower the remaining HP, the less damage taken, up to 10%\nDefense is the best offense!</entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience>
+
+    <Character.Touhou_Empathy_Essential_Stone_Of_Patience_Lv2>Keystone of Patience Lv2</Character.Touhou_Empathy_Essential_Stone_Of_Patience_Lv2>
+    <entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience_Lv2>The lower the remaining HP, the less damage taken, with a higher HP threshold, up to 10%\nDefense is the best offense!</entitydescription.Touhou_Empathy_Essential_Stone_Of_Patience_Lv2>
+
+    <Character.Touhou_Empathy_Essential_Stone_Missile>Keystone Missile</Character.Touhou_Empathy_Essential_Stone_Missile>
+    <entitydescription.Touhou_Empathy_Essential_Stone_Missile>Movement speed reduced by 30%, max health increased by 5%\nHigh attack power and can also be used defensively. Yes, this is a keystone</entitydescription.Touhou_Empathy_Essential_Stone_Missile>
+
+    <Character.Touhou_Empathy_Essential_Stone_Missile_Lv2>Keystone Missile Lv2</Character.Touhou_Empathy_Essential_Stone_Missile_Lv2>
+    <entitydescription.Touhou_Empathy_Essential_Stone_Missile_Lv2>Movement speed reduced by 30%, max health increased by 10%\nHigh attack power and can also be used defensively. Yes, this is a keystone</entitydescription.Touhou_Empathy_Essential_Stone_Missile_Lv2>
 
     <Character.Touhou_Empathy_Encouraging_Komainu>Encouraging Komainu</Character.Touhou_Empathy_Encouraging_Komainu>
-    <entitydescription.Touhou_Empathy_Encouraging_Komainu>−5% max HP, +10% melee attack speed.\n“The power of Aunn Komano.”</entitydescription.Touhou_Empathy_Encouraging_Komainu>
+    <entitydescription.Touhou_Empathy_Encouraging_Komainu>Max health reduced by 5%, melee attack speed increased by 10%\nAbility of Aunn Komano</entitydescription.Touhou_Empathy_Encouraging_Komainu>
+
+    <Character.Touhou_Empathy_Encouraging_Komainu_Lv2>Encouraging Komainu Lv2</Character.Touhou_Empathy_Encouraging_Komainu_Lv2>
+    <entitydescription.Touhou_Empathy_Encouraging_Komainu_Lv2>Melee attack speed increased by 10%\nAbility of Aunn Komano</entitydescription.Touhou_Empathy_Encouraging_Komainu_Lv2>
 
     <Character.Touhou_Empathy_Guardian_Komainu>Guardian Komainu</Character.Touhou_Empathy_Guardian_Komainu>
-    <entitydescription.Touhou_Empathy_Guardian_Komainu>−10% friendly fire damage.\n“The power of Aunn Komano.”</entitydescription.Touhou_Empathy_Guardian_Komainu>
+    <entitydescription.Touhou_Empathy_Guardian_Komainu>Friendly fire reduced by 10%\nAbility of Aunn Komano</entitydescription.Touhou_Empathy_Guardian_Komainu>
+
+    <Character.Touhou_Empathy_Guardian_Komainu_Lv2>Guardian Komainu Lv2</Character.Touhou_Empathy_Guardian_Komainu_Lv2>
+    <entitydescription.Touhou_Empathy_Guardian_Komainu_Lv2>Friendly fire reduced by 10%, bite resistance increased by 10%\nAbility of Aunn Komano</entitydescription.Touhou_Empathy_Guardian_Komainu_Lv2>
 
     <Character.Touhou_Empathy_Aesthetics_Of_Destruction>Aesthetics of Destruction</Character.Touhou_Empathy_Aesthetics_Of_Destruction>
-    <entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction>Skill level −20%, attack damage +10%.\n“Danmaku is most beautiful the moment it’s destroyed—easier too.”</entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction>
+    <entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction>Skill level reduced by 20%, attack damage increased by 10%\nDanmaku is most beautiful at the moment it is destroyed. And it's easier that way too.</entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction>
+
+    <Character.Touhou_Empathy_Aesthetics_Of_Destruction_Lv2>Aesthetics of Destruction Lv2</Character.Touhou_Empathy_Aesthetics_Of_Destruction_Lv2>
+    <entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction_Lv2>Skill level reduced by 20%, all attack damage increased by 10%\nDanmaku is most beautiful at the moment it is destroyed. And it's easier that way too.</entitydescription.Touhou_Empathy_Aesthetics_Of_Destruction_Lv2>
 
     <Character.Touhou_Empathy_Annoying_UFO>Annoying UFO</Character.Touhou_Empathy_Annoying_UFO>
-    <entitydescription.Touhou_Empathy_Annoying_UFO>−10% stun resistance. While affected by Endless Nightmare, +5% attack damage; otherwise +5% max HP.\n“You’ve seen many UFO photos, right? Yet no space war ever broke out—they just fly because they want to.”</entitydescription.Touhou_Empathy_Annoying_UFO>
+    <entitydescription.Touhou_Empathy_Annoying_UFO>Stun resistance reduced by 30%. When afflicted with "Endless Slumber Nightmare", attack damage increased by 5%. Otherwise, max health increased by 5%\nYou've seen many UFO photos, right? Yet no space wars have ever happened. Because UFOs just fly simply because they want to.</entitydescription.Touhou_Empathy_Annoying_UFO>
+
+    <Character.Touhou_Empathy_Annoying_UFOLv2>Annoying UFO Lv2</Character.Touhou_Empathy_Annoying_UFOLv2>
+    <entitydescription.Touhou_Empathy_Annoying_UFOLv2>Stun resistance reduced by 10%. When afflicted with "Endless Slumber Nightmare", attack damage increased by 5%. Otherwise, max health increased by 5%\nYou've seen many UFO photos, right? Yet no space wars have ever happened. Because UFOs just fly simply because they want to.</entitydescription.Touhou_Empathy_Annoying_UFOLv2>
 
     <Character.Touhou_Empathy_Lunatic_Moon>Lunatic Moon</Character.Touhou_Empathy_Lunatic_Moon>
-    <entitydescription.Touhou_Empathy_Lunatic_Moon>No mental resistance, +5% skill level.\n“The moon really is super cool!”</entitydescription.Touhou_Empathy_Lunatic_Moon>
+    <entitydescription.Touhou_Empathy_Lunatic_Moon>Cannot gain sanity resistance, skill level increased by 5%\nThe moon really is super cool!</entitydescription.Touhou_Empathy_Lunatic_Moon>
+
+    <Character.Touhou_Empathy_Lunatic_Moon_Lv2>Lunatic Moon Lv2</Character.Touhou_Empathy_Lunatic_Moon_Lv2>
+    <entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>Skill level increased by 5%\nThe moon really is super cool!</entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>
 
     <Character.Touhou_Empathy_Torch_Of_Burning_Life>Torch of Burning Life</Character.Touhou_Empathy_Torch_Of_Burning_Life>
-    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>Continuously inflicts burn, +10% attack speed.\n“You can’t feel calm while watching her torch.”</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>Continuously gains burn and psychosis, attack speed increased by 10%\nLooking at her torch would never make you feel calm or at ease.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
+
+    <Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Torch of Burning Life Lv2</Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Continuously gains psychosis, attack speed increased by 10%\nLooking at her torch would never make you feel calm or at ease.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
 
     <Character.Touhou_Empathy_Ice_Fairy>Ice Fairy</Character.Touhou_Empathy_Ice_Fairy>
-    <entitydescription.Touhou_Empathy_Ice_Fairy>+25% ranged spread, +9% ranged damage.\n“For an ice fairy, this is the ultimate proof of strength.”</entitydescription.Touhou_Empathy_Ice_Fairy>
+    <entitydescription.Touhou_Empathy_Ice_Fairy>Ranged attack spread increased by 30%, ranged attack damage increased by 9%\nFor an ice fairy, this is proof of ultimate strength</entitydescription.Touhou_Empathy_Ice_Fairy>
+
+    <Character.Touhou_Empathy_Ice_Fairy_Lv2>Ice Fairy Lv2</Character.Touhou_Empathy_Ice_Fairy_Lv2>
+    <entitydescription.Touhou_Empathy_Ice_Fairy_Lv2>Ranged attack spread increased by 20%, ranged attack damage increased by 9%\nFor an ice fairy, this is proof of ultimate strength</entitydescription.Touhou_Empathy_Ice_Fairy_Lv2>
 
     <Character.Touhou_Empathy_Pebble_Hat>Pebble Hat</Character.Touhou_Empathy_Pebble_Hat>
-    <entitydescription.Touhou_Empathy_Pebble_Hat>Physical resistance −15%, attack damage +10%.\n“No one notices me? Great, that makes things easier.”</entitydescription.Touhou_Empathy_Pebble_Hat>
+    <entitydescription.Touhou_Empathy_Pebble_Hat>Physical damage resistance reduced by 15%, attack damage increased by 5%\nNo one noticed me? I see… that makes things easier.</entitydescription.Touhou_Empathy_Pebble_Hat>
+
+    <Character.Touhou_Empathy_Pebble_Hat_Lv2>Pebble Hat Lv2</Character.Touhou_Empathy_Pebble_Hat_Lv2>
+    <entitydescription.Touhou_Empathy_Pebble_Hat_Lv2>Physical damage resistance reduced by 10%, all attack damage increased by 5%\nNo one noticed me? I see… that makes things easier.</entitydescription.Touhou_Empathy_Pebble_Hat_Lv2>
 
     <Character.Touhou_Empathy_Shanghai_Doll>Shanghai Doll</Character.Touhou_Empathy_Shanghai_Doll>
-    <entitydescription.Touhou_Empathy_Shanghai_Doll>When doll energy >50%, max HP +10%.\n“It seems self-aware from its motions, but surely dolls have no will… right?”</entitydescription.Touhou_Empathy_Shanghai_Doll>
+    <entitydescription.Touhou_Empathy_Shanghai_Doll>When doll energy exceeds 50%, max health increased by 10%\nIt looks like it has self-awareness from its movements, but dolls don't have a self. Probably…</entitydescription.Touhou_Empathy_Shanghai_Doll>
+
+    <Character.Touhou_Empathy_Shanghai_Doll_Lv2>Shanghai Doll Lv2</Character.Touhou_Empathy_Shanghai_Doll_Lv2>
+    <entitydescription.Touhou_Empathy_Shanghai_Doll_Lv2>When doll energy exceeds 10%, max health increased by 10%\nIt looks like it has self-awareness from its movements, but dolls don't have a self. Probably…</entitydescription.Touhou_Empathy_Shanghai_Doll_Lv2>
 
     <Character.Touhou_Empathy_Lively_Powerlessness>Lively Powerlessness</Character.Touhou_Empathy_Lively_Powerlessness>
-    <entitydescription.Touhou_Empathy_Lively_Powerlessness>Attack damage −5%, max HP +5%.\n“Bullet hell?! Enemies come from all directions—you’ll die if you don’t attack everywhere!”</entitydescription.Touhou_Empathy_Lively_Powerlessness>
+    <entitydescription.Touhou_Empathy_Lively_Powerlessness>Attack damage reduced by 5%, max health increased by 5%\nDanmaku game!? And enemies come from all directions, right? Then if you don’t attack in all directions, you’ll die!</entitydescription.Touhou_Empathy_Lively_Powerlessness>
+
+    <Character.Touhou_Empathy_Lively_Powerlessness_Lv2>Lively Powerlessness Lv2</Character.Touhou_Empathy_Lively_Powerlessness_Lv2>
+    <entitydescription.Touhou_Empathy_Lively_Powerlessness_Lv2>Max health increased by 5%\nDanmaku game!? And enemies come from all directions, right? Then if you don’t attack in all directions, you’ll die!</entitydescription.Touhou_Empathy_Lively_Powerlessness_Lv2>
 
     <Character.Touhou_Empathy_Crazy_Silence>Crazy Silence</Character.Touhou_Empathy_Crazy_Silence>
-    <entitydescription.Touhou_Empathy_Crazy_Silence>Attack damage −5%, stun resistance +10%.\n“Danmaku games are tough, especially when everyone leaves their backs unguarded.”</entitydescription.Touhou_Empathy_Crazy_Silence>
+    <entitydescription.Touhou_Empathy_Crazy_Silence>Attack damage reduced by 5%, stun resistance increased by 10%\nSigh, playing danmaku games is really tough. Especially since people are often completely defenseless from behind.</entitydescription.Touhou_Empathy_Crazy_Silence>
+
+    <Character.Touhou_Empathy_Crazy_Silence_Lv2>Crazy Silence Lv2</Character.Touhou_Empathy_Crazy_Silence_Lv2>
+    <entitydescription.Touhou_Empathy_Crazy_Silence_Lv2>Stun resistance increased by 10%\nSigh, playing danmaku games is really tough. Especially since people are often completely defenseless from behind.</entitydescription.Touhou_Empathy_Crazy_Silence_Lv2>
 
     <Character.Touhou_Empathy_Tranquil_Shimmer>Tranquil Shimmer</Character.Touhou_Empathy_Tranquil_Shimmer>
-    <entitydescription.Touhou_Empathy_Tranquil_Shimmer>Attack damage −5%, debuff resistance +10%.\n“No worries. I’ll keep attacking steadily.”</entitydescription.Touhou_Empathy_Tranquil_Shimmer>
+    <entitydescription.Touhou_Empathy_Tranquil_Shimmer>Attack damage reduced by 5%, debuff resistance increased by 10%\nIt's fine, it's fine. I'll attack properly.</entitydescription.Touhou_Empathy_Tranquil_Shimmer>
 
-    <Character.Touhou_Empathy_Maid_Knife>Maid Knife</Character.Touhou_Empathy_Maid_Knife>
-    <entitydescription.Touhou_Empathy_Maid_Knife>−5% max HP, −10% shooting spread.\n“You’re not a true maid until you can aim and pierce a fairy.”</entitydescription.Touhou_Empathy_Maid_Knife>
+    <Character.Touhou_Empathy_Tranquil_Shimmer_Lv2>Tranquil Shimmer Lv2</Character.Touhou_Empathy_Tranquil_Shimmer_Lv2>
+    <entitydescription.Touhou_Empathy_Tranquil_Shimmer_Lv2>Debuff resistance increased by 10%\nIt's fine, it's fine. I'll attack properly.</entitydescription.Touhou_Empathy_Tranquil_Shimmer_Lv2>
 
-    <Character.Touhou_Empathy_Maid_Knife_Bouncing>Maid Knife (Ricochet)</Character.Touhou_Empathy_Maid_Knife_Bouncing>
-    <entitydescription.Touhou_Empathy_Maid_Knife_Bouncing>−5% max HP, +5% non-human damage.\n“It’s great when shots become flashy—the fancier the attack, the better.”</entitydescription.Touhou_Empathy_Maid_Knife_Bouncing>
+    <Character.Touhou_Empathy_Maid_Knife>Maid Throwing Knife</Character.Touhou_Empathy_Maid_Knife>
+    <entitydescription.Touhou_Empathy_Maid_Knife>Max health reduced by 5%, shooting spread reduced by 10%\nUntil you can aim and pierce a fairy, you’re not qualified to be a maid.</entitydescription.Touhou_Empathy_Maid_Knife>
 
-    <Character.Touhou_Empathy_The_Miser_Lesson>Miser’s Lesson</Character.Touhou_Empathy_The_Miser_Lesson>
-    <entitydescription.Touhou_Empathy_The_Miser_Lesson>After completing all missions in a circuit, 10% chance to gain Simple Parts.\n“If kappa can stretch their arms, surely they use that to grab everything.”</entitydescription.Touhou_Empathy_The_Miser_Lesson>
+    <Character.Touhou_Empathy_Maid_Knife_Lv2>Maid Throwing Knife Lv2</Character.Touhou_Empathy_Maid_Knife_Lv2>
+    <entitydescription.Touhou_Empathy_Maid_Knife_Lv2>Shooting spread reduced by 10%\nUntil you can aim and pierce a fairy, you’re not qualified to be a maid.</entitydescription.Touhou_Empathy_Maid_Knife_Lv2>
 
-    <Character.Touhou_Empathy_The_Dilemma_Of_Capitalism>Dilemma of Capitalism</Character.Touhou_Empathy_The_Dilemma_Of_Capitalism>
-    <entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism>Experience gained from circuits −15%, money gained +5%.\n“Someone’s pulling the strings behind all this. I’ll destroy it completely.”</entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism>
+    <Character.Touhou_Empathy_Maid_Knife_Bouncing>Maid Throwing Knife (Ricochet)</Character.Touhou_Empathy_Maid_Knife_Bouncing>
+    <entitydescription.Touhou_Empathy_Maid_Knife_Bouncing>Max health reduced by 5%, damage to non-humans increased by 5%\nIt's great that shooting has become flashy—the more flamboyant the attack style, the better</entitydescription.Touhou_Empathy_Maid_Knife_Bouncing>
 
-    <Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return>Safe Return Frog Amulet</Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return>
-    <entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return>Attack damage −5%, physical resistance +5%.\n“It’s said carrying this amulet ensures a safe trip home.”</entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return>
+    <Character.Touhou_Empathy_Maid_Knife_Bouncing_Lv2>Maid Throwing Knife (Ricochet) Lv2</Character.Touhou_Empathy_Maid_Knife_Bouncing_Lv2>
+    <entitydescription.Touhou_Empathy_Maid_Knife_Bouncing_Lv2>Damage to non-allies increased by 5%\nIt's great that shooting has become flashy—the more flamboyant the attack style, the better</entitydescription.Touhou_Empathy_Maid_Knife_Bouncing_Lv2>
 
-    <Character.Touhou_Empathy_Snake_Skin_Amulet>Snake-Shed Amulet</Character.Touhou_Empathy_Snake_Skin_Amulet>
-    <entitydescription.Touhou_Empathy_Snake_Skin_Amulet>Movement speed −10%, ranged damage +5%.\n“It’s said wearing this amulet brings robust health.”</entitydescription.Touhou_Empathy_Snake_Skin_Amulet>
+    <Character.Touhou_Empathy_The_Miser_Lesson>The Miser’s Lesson</Character.Touhou_Empathy_The_Miser_Lesson>
+    <entitydescription.Touhou_Empathy_The_Miser_Lesson>After completing all missions in a round, there is a 10% chance to obtain basic components\nIf kappa can extend their arms, then they must be using that trick to gather everything</entitydescription.Touhou_Empathy_The_Miser_Lesson>
+
+    <Character.Touhou_Empathy_The_Miser_Lesson_Lv2>The Miser’s Lesson Lv2</Character.Touhou_Empathy_The_Miser_Lesson_Lv2>
+    <entitydescription.Touhou_Empathy_The_Miser_Lesson_Lv2>After completing any mission in a round, there is a 20% chance to obtain basic components\nIf kappa can extend their arms, then they must be using that trick to gather everything</entitydescription.Touhou_Empathy_The_Miser_Lesson_Lv2>
+
+    <Character.Touhou_Empathy_The_Dilemma_Of_Capitalism>The Dilemma of Capitalism</Character.Touhou_Empathy_The_Dilemma_Of_Capitalism>
+    <entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism>Experience gained during missions is reduced by 15%, money gained is increased by 5%\nSomeone is manipulating everything behind the scenes. And I will destroy it completely.</entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism>
+
+    <Character.Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2>The Dilemma of Capitalism Lv2</Character.Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2>
+    <entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2>Money gained during missions is increased by 5%\nSomeone is manipulating everything behind the scenes. And I will destroy it completely.</entitydescription.Touhou_Empathy_The_Dilemma_Of_Capitalism_Lv2>
+
+    <Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return>Frog Amulet for Safe Return</Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return>
+    <entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return>Attack damage is reduced by 5%, physical damage resistance is increased by 5%\nIt is said that carrying this amulet ensures a safe return home.</entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return>
+
+    <Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2>Frog Amulet for Safe Return Lv2</Character.Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2>
+    <entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2>Physical damage resistance is increased by 5%\nIt is said that carrying this amulet ensures a safe return home.</entitydescription.Touhou_Empathy_Frog_Amulet_For_Safe_Return_Lv2>
+
+    <Character.Touhou_Empathy_Snake_Skin_Amulet>Amulet with Shed Snake Skin</Character.Touhou_Empathy_Snake_Skin_Amulet>
+    <entitydescription.Touhou_Empathy_Snake_Skin_Amulet>Movement speed is reduced by 10%, ranged damage is increased by 5%\nIt is said that carrying this amulet will make you strong and healthy</entitydescription.Touhou_Empathy_Snake_Skin_Amulet>
+
+    <Character.Touhou_Empathy_Snake_Skin_Amulet_Lv2>Amulet with Shed Snake Skin Lv2</Character.Touhou_Empathy_Snake_Skin_Amulet_Lv2>
+    <entitydescription.Touhou_Empathy_Snake_Skin_Amulet_Lv2>Movement speed is reduced by 5%, ranged damage is increased by 5%\nIt is said that carrying this amulet will make you strong and healthy</entitydescription.Touhou_Empathy_Snake_Skin_Amulet_Lv2>
 
     <Character.Touhou_Empathy_Boundary_Of_The_Screen>Boundary of the Screen</Character.Touhou_Empathy_Boundary_Of_The_Screen>
-    <entitydescription.Touhou_Empathy_Boundary_Of_The_Screen>Stun resistance −5%, skill level +5%.\n“Many are intrigued by its fame—this card enjoys high popularity.”</entitydescription.Touhou_Empathy_Boundary_Of_The_Screen>
+    <entitydescription.Touhou_Empathy_Boundary_Of_The_Screen>Stun resistance is reduced by 5%, skill level is increased by 5%\nMany people are fascinated by its topic value, making it a highly popular card</entitydescription.Touhou_Empathy_Boundary_Of_The_Screen>
 
-    <Character.Touhou_Empathy_Season_Of_The_Item>Season of the Item</Character.Touhou_Empathy_Season_Of_The_Item>
-    <entitydescription.Touhou_Empathy_Season_Of_The_Item>Physical damage resistance decreased by 5%, maximum health increased by 5%\nShe is a carrier of items, carrying spell cards or fragments of life</entitydescription.Touhou_Empathy_Season_Of_The_Item>
+    <Character.Touhou_Empathy_Boundary_Of_The_Screen_Lv2>Boundary of the Screen Lv2</Character.Touhou_Empathy_Boundary_Of_The_Screen_Lv2>
+    <entitydescription.Touhou_Empathy_Boundary_Of_The_Screen_Lv2>Skill level is increased by 5%\nMany people are fascinated by its topic value, making it a highly popular card</entitydescription.Touhou_Empathy_Boundary_Of_The_Screen_Lv2>
+
+    <Character.Touhou_Empathy_Season_Of_The_Item>Season of Items</Character.Touhou_Empathy_Season_Of_The_Item>
+    <entitydescription.Touhou_Empathy_Season_Of_The_Item>Physical damage resistance is reduced by 5%, maximum health is increased by 5%\nShe is an item bearer, carrying spell cards or fragments of life</entitydescription.Touhou_Empathy_Season_Of_The_Item>
+
+    <Character.Touhou_Empathy_Season_Of_The_Item_Lv2>Season of Items Lv2</Character.Touhou_Empathy_Season_Of_The_Item_Lv2>
+    <entitydescription.Touhou_Empathy_Season_Of_The_Item_Lv2>Maximum health is increased by 5%\nShe is an item bearer, carrying spell cards or fragments of life</entitydescription.Touhou_Empathy_Season_Of_The_Item_Lv2>
+
+
+
+
+
 
 
     <!--凭依天赋-->
@@ -2700,6 +2932,9 @@
 
     <talentname.Hyouibana_Tewi>Possession: Inaba Tewi</talentname.Hyouibana_Tewi>
     <talentdescription.Hyouibana_Tewi>Movement speed increased by 10%. Gain 15% resistance to Reiki Disorder.</talentdescription.Hyouibana_Tewi>
+
+    <talentname.Hyouibana_Kaguya>Possession: Kaguya</talentname.Hyouibana_Kaguya>
+    <talentdescription.Hyouibana_Kaguya>Buff duration is increased by 30%. Gain 10% bleeding resistance.</talentdescription.Hyouibana_Kaguya>
 
 
 </infotexts>

@@ -37,12 +37,12 @@
                     hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Mokou_Clothes/Mokou_Clothes.png" limb="RightArm" hidelimb="true"
                     hideotherwearables="false" inherittexturescale="true" inheritlimbdepth="false" origin="0.63,0.64" sourcerect="823,14,163,180"
-                    depth="0.01"/>
+                    depth="0.08"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Mokou_Clothes/Mokou_Clothes.png" limb="LeftArm" hidelimb="true"
                     hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Mokou_Clothes/Mokou_Clothes.png" limb="RightForearm" hidelimb="true"
                     hideotherwearables="false" inherittexturescale="true" inheritlimbdepth="false" origin="0.63,0.46" sourcerect="822,199,163,118"
-                    depth="0.02"/>
+                    depth="0.09"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Mokou_Clothes/Mokou_Clothes.png" limb="LeftForearm" hidelimb="true"
                     hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Mokou_Clothes/Mokou_Clothes.png" limb="RightThigh" hidelimb="true"
@@ -79,9 +79,7 @@
                                   thermalgoggles="false" showdeadcharacters="false" showtexts="false"/>
                 </Containable>
                 <SlotIcon slotindex="0" texture="%ModDir%/Images/General_Items/StatusMonitorUI.png" sourcerect="0,0,64,64" origin="0.5,0.5"/>
-                <SubContainer capacity="2" maxstacksize="8">
-                    <Containable items="smallitem,Power_Bank" excludeditems="toolbelt,toolbox,bandolier,clothing,healthscanner,thermalgoggles"/>
-                </SubContainer>
+
             </ItemContainer>
             <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false"
                        showtexts="false"/>
@@ -105,7 +103,7 @@
             <Item identifier="Magic_Material" amount="2"/>
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="20">
-            <RequiredSkill identifier="weapons" level="50"/>
+            <RequiredSkill identifier="weapons" level="20"/>
             <RequiredItem identifier="Mokou_gear"/>
             <RequiredItem identifier="Score_Point"/>
             <RequiredItem identifier="Touhou_Plant_Extract"/>
@@ -176,9 +174,7 @@
                                   thermalgoggles="false" showdeadcharacters="false" showtexts="false"/>
                 </Containable>
                 <SlotIcon slotindex="0" texture="%ModDir%/Images/General_Items/StatusMonitorUI.png" sourcerect="0,0,64,64" origin="0.5,0.5"/>
-                <SubContainer capacity="2" maxstacksize="8">
-                    <Containable items="smallitem,Power_Bank" excludeditems="toolbelt,toolbox,bandolier,clothing"/>
-                </SubContainer>
+
             </ItemContainer>
             <StatusHUD drawhudwhenequipped="true" overlaycolor="0,0,0,0" range="0" thermalgoggles="false" showdeadcharacters="false"
                        showtexts="false"/>

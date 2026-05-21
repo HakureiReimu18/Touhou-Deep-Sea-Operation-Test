@@ -3,7 +3,7 @@
 
     <Item name="P点（红）" identifier="Power_Point"
           tags="smallitem,Touhou_Magic_Item,Touhou_Power_Point,disallowduplicatedeconstructoutput"
-          subcategory="Touhou" category="Misc,Alien" maxstacksize="32">
+          subcategory="Touhou" category="Misc,Alien" maxstacksize="32" maxstacksizecharacterinventory="8" >
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="1" spawnprobability="0.02"/>
         <PreferredContainer primary="ruinstoragelarge" amount="1" spawnprobability="0.03"/>
         <PreferredContainer primary="ruintreasure" amount="1" spawnprobability="0.05"/>
@@ -45,7 +45,7 @@
 
     <Item name="P点（蓝）" identifier="Score_Point" tags="smallitem,Touhou_Magic_Item,disallowduplicatedeconstructoutput"
           subcategory="Touhou"
-          category="Misc,Alien" maxstacksize="32">
+          category="Misc,Alien" maxstacksize="32" maxstacksizecharacterinventory="12">
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" amount="2" spawnprobability="0.06"/>
         <PreferredContainer primary="ruinstoragelarge" minamount="1" maxamount="3" spawnprobability="0.12"/>
         <PreferredContainer primary="ruintreasure" minamount="2" maxamount="3" spawnprobability="0.15"/>
@@ -82,7 +82,7 @@
     <!--伊奘诺物质-->
     <Item name="伊奘诺物质" identifier="Magic_Material" tags="smallitem,Touhou_Magic_Item"
           subcategory="Touhou" category="Alien"
-          cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.4" HideConditionBar="true">
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.4" HideConditionBar="true">
         <PreferredContainer primary="ruinstorage,ruinstoragesmall" minamount="3" maxamount="6" spawnprobability="0.15"/>
         <PreferredContainer primary="ruinstoragelarge" minamount="4" maxamount="8" spawnprobability="0.1"/>
         <PreferredContainer secondary="supplycab,wreckstoragecab" minamount="1" maxamount="2" spawnprobability="0.05"/>
@@ -121,12 +121,12 @@
     <!--植物萃取物-->
     <Item name="植物萃取物" identifier="Touhou_Plant_Extract" tags="smallitem,Touhou_Plant_Extract,Touhou_Magic_Item" subcategory="Touhou"
           category="Material,Alien"
-          cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.25" HideConditionBar="true">
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.25" HideConditionBar="true">
         <PreferredContainer primary="medcab" secondary="medcontainer"/>
         <PreferredContainer secondary="outpostmedcompartment" amount="2" spawnprobability="0.06"/>
         <PreferredContainer secondary="supplycab" minamount="1" maxamount="4" spawnprobability="0.15" notcampaign="true"/>
         <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="2" maxamount="6" spawnprobability="0.25"/>
-        <Price baseprice="36">
+        <Price baseprice="34">
             <Price storeidentifier="merchantoutpost" minavailable="18"/>
             <Price storeidentifier="merchantcity" minavailable="30"/>
             <Price storeidentifier="merchantresearch" minavailable="21"/>
@@ -347,7 +347,7 @@
 
     <!--《东方求闻口授》（木卫二专供版）-->
     <Item name="" identifier="Symposium_Of_Post_Mysticism" tags="smallitem,Touhou_Book" subcategory="Touhou" category="Misc" cargocontaineridentifier="metalcrate"
-          maxstacksize="32" scale="0.5">
+          maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.5">
         <Price baseprice="400" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
             <Price storeidentifier="merchantcity" minavailable="8"/>
@@ -384,7 +384,7 @@
 
     <!--《东方求闻史纪》（木卫二专供版）-->
     <Item name="" identifier="Perfect_Memento_In_Strict_Sense" tags="smallitem,Touhou_Book" subcategory="Touhou" category="Misc"
-          cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.5">
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.5">
         <Price baseprice="400" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
             <Price storeidentifier="merchantcity" minavailable="8"/>
@@ -417,7 +417,7 @@
 
     <!--《东方求闻渊识》-->
     <Item name="" identifier="Touhou_Europa_Customs" tags="smallitem,Touhou_Book" subcategory="Touhou" category="Misc" cargocontaineridentifier="metalcrate"
-          maxstacksize="32" scale="0.75">
+          maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.75">
         <Price baseprice="1000" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
             <Price storeidentifier="merchantcity" minavailable="8"/>
@@ -472,7 +472,7 @@
 
     <!--《魔法书》-->
     <Item name="" identifier="Touhou_Spell_Book" tags="smallitem,Touhou_Book" subcategory="Touhou" category="Alien,Misc" cargocontaineridentifier="metalcrate"
-          maxstacksize="32" scale="0.8">
+          maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.8">
         <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" amount="1" spawnprobability="0.08"/>
         <Price baseprice="500" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
@@ -504,7 +504,7 @@
 
     <!--《魔法教学》-->
     <Item name="" identifier="Touhou_Spell_Tutorial" tags="smallitem" subcategory="Touhou" category="Alien,Misc" cargocontaineridentifier="metalcrate"
-          maxstacksize="32" scale="0.8">
+          maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.8">
         <Price baseprice="200" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
             <Price storeidentifier="merchantcity" minavailable="8"/>
@@ -550,7 +550,7 @@
     </Item>
 
     <!--《文文。新闻》-->
-    <Item identifier="Aya_News" tags="smallitem" subcategory="Touhou" category="Misc" cargocontaineridentifier="metalcrate" maxstacksize="32"
+    <Item identifier="Aya_News" tags="smallitem" subcategory="Touhou" category="Misc" cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16"
           scale="0.1">
         <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" minavailable="8"/>
@@ -826,8 +826,8 @@
 
     <!--灵异珠-波纹-->
     <Item name="灵异珠-波纹" identifier="Touhou_Mysterious_Pearl_Rippling"
-          tags="smallitem,Touhou_Mysterious_Pearl_Rippling,alienartifact,Touhou_Magic_Charging05" subcategory="Touhou" category="Alien"
-          cargocontaineridentifier="metalcrate" scale="0.2">
+          tags="smallitem,Touhou_Mysterious_Pearl_Rippling,alienartifact,Touhou_Magic_Charging05" subcategory="Touhou" category="Alien" maxstacksize="8"
+          maxstacksizecharacterinventory="2" cargocontaineridentifier="metalcrate" scale="0.2">
         <PreferredContainer primary="ruintreasure" amount="1" spawnprobability="0.02"/>
         <PreferredContainer secondary="ruinstoragelarge" amount="1" spawnprobability="0.01"/>
         <PreferredContainer primary="Touhou_Rippling" amount="1" spawnprobability="1"/>
@@ -858,7 +858,7 @@
 
     <!--简单零件-->
     <Item name="简单零件" identifier="Touhou_Simple_Parts" tags="smallitem" subcategory="Touhou" category="Alien"
-          cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.15" HideConditionBar="true">
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="12" scale="0.15" HideConditionBar="true">
         <PreferredContainer primary="engcab"/>
         <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab" minamount="1" maxamount="2" spawnprobability="0.13"/>
         <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" minamount="1" maxamount="2" spawnprobability="0.16"/>
@@ -883,7 +883,7 @@
 
     <!--精密零件-->
     <Item name="精密零件" identifier="Touhou_Precision_Parts" tags="smallitem" subcategory="Touhou" category="Alien"
-          cargocontaineridentifier="metalcrate" maxstacksize="48" scale="0.15" HideConditionBar="true">
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8" scale="0.15" HideConditionBar="true">
         <PreferredContainer primary="engcab"/>
         <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.025"/>
         <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.025"/>
@@ -905,7 +905,7 @@
 
     <!--恐惧精华-->
     <Item name="恐惧精华" identifier="Touhou_Fear_Item" tags="smallitem" subcategory="Touhou" category="Alien" cargocontaineridentifier="metalcrate"
-          maxstacksize="32" scale="0.2" HideConditionBar="true">
+          maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.2" HideConditionBar="true">
         <PreferredContainer primary="medcab"/>
         <Deconstruct time="2"/>
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Fear_Item.png" depth="0.4" sourcerect="0,0,72,68"/>
@@ -916,7 +916,7 @@
 
     <!--《红斑博物志》-->
     <Item name="《红斑博物志》" identifier="Touhou_Red_Spot_Freak_Report" tags="smallitem" subcategory="Touhou" category="Misc"
-          cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.75">
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.75">
         <Deconstruct time="1">
             <Item identifier="organicfiber" amount="2"/>
         </Deconstruct>
@@ -938,7 +938,7 @@
 
     <!--幽灵核心-->
     <Item name="幽灵核心" identifier="Touhou_Spectral_Core_Item" tags="smallitem" subcategory="Touhou" category="Alien"
-          cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.15">
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.15">
         <PreferredContainer primary="engcab"/>
         <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.025"/>
         <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.025"/>
@@ -958,7 +958,7 @@
 
     <!--繁彩宝石矿-->
     <Item name="繁彩宝石矿" identifier="Touhou_Spectral_Ore01" tags="smallitem,disallowduplicatedeconstructoutput" subcategory="Touhou"
-          category="Alien,Material" cargocontaineridentifier="metalcrate" maxstacksize="32" scale="0.15">
+          category="Alien,Material" cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.15">
         <PreferredContainer primary="engcab"/>
         <PreferredContainer secondary="wreckstoragecab,abandonedstoragecab,piratestoragecab" amount="1" spawnprobability="0.025"/>
         <PreferredContainer primary="wreckengcab,abandonedengcab,pirateengcab" amount="1" spawnprobability="0.025"/>

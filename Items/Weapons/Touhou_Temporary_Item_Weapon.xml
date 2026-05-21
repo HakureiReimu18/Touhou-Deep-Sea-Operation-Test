@@ -47,7 +47,7 @@
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.85" setvalue="true"/>
         </Holdable>
         <!--武器参数-->
-        <RangedWeapon weapondamagemodifier="1" barrelpos="110,20" spread="7" unskilledspread="28" reload="0.4" combatPriority="50"
+        <RangedWeapon weapondamagemodifier="1" barrelpos="150,15" spread="7" unskilledspread="28" reload="0.4" combatPriority="50"
                       drawhudwhenequipped="true" crosshairscale="0.4" DualWieldReloadTimePenaltyMultiplier="1.6" DualWieldAccuracyPenalty="12">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Touhou_Magic_Crosshair01.png" sourcerect="0,0,160,160"/>
@@ -158,7 +158,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.9" barrelpos="72,-4" holdtrigger="true" maxchargetime="0.6" launchImpulse="20" combatPriority="80"
+        <RangedWeapon reload="0.9" barrelpos="200,14" holdtrigger="true" maxchargetime="0.6" launchImpulse="20" combatPriority="80"
                       unskilledspread="16" spread="4" drawhudwhenequipped="true" crosshairscale="0.35">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Concentrated_Energy_Arc_Emitter_Crosshair.png" sourcerect="0,0,256,256"/>
             <ParticleEmitterCharge particle="chargenucleargun" particlespersecond="60" scalemultiplier="0.75,0.75" scalemin="1.0" scalemax="1.0"
@@ -1298,12 +1298,12 @@
 
     <!--临时武器-枫叶转轮手枪-->
     <Item name="临时武器-枫叶转轮手枪" identifier="Touhou_Maple_Leaf_Revolver_Temporary" subcategory="Touhou" category="Weapon" cargocontaineridentifier="metalcrate"
-          tags="smallitem,weapon,ProvocativeToHumanAI,Touhou_Cam_Offset_Normal,Touhou_Temporary_Item_Weapon" Scale="0.75" impactsoundtag="impact_metal_light"
+          tags="smallitem,weapon,ProvocativeToHumanAI,Touhou_Cam_Offset_Normal,Touhou_Temporary_Item_Weapon" Scale="0.17" impactsoundtag="impact_metal_light"
           HideInEditors="true">
         <PreferredContainer secondary="armcab,weaponholder"/>
         <Deconstruct time="5"/>
-        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Maple_Leaf_Revolver.png" sourcerect="57,0,46,55" origin="0.5,0.5"/>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Maple_Leaf_Revolver.png" sourcerect="0,0,55,35" depth="0.55" origin="0.5,0.5"/>
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Maple_Leaf_Revolver.png" sourcerect="400,0,150,161" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Maple_Leaf_Revolver.png" sourcerect="0,0,400,159" depth="0.55" origin="0.5,0.5"/>
         <Body width="140" height="60" density="10"/>
         <Holdable slots="Any,RightHand,LeftHand" controlpose="true" holdpos="55,-10" aimpos="75,-5" handle1="-15,-8" handle2="-18,-7" holdangle="-35"
                   msg="ItemMsgPickUpSelect">
@@ -1389,9 +1389,9 @@
     <Item name="临时物品-旋风子弹" identifier="Touhou_Maple_Leaf_Revolver_Bullet_Temporary" category="Weapon" subcategory="Touhou" interactthroughwalls="true"
           cargocontaineridentifier="metalcrate"
           maxstacksize="18" tags="smallitem,Touhou_Magic_Danmu" impactsoundtag="impact_metal_light"
-          scale="0.5" HideInEditors="true">
-        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Maple_Leaf_Revolver_Bullet.png" sourcerect="56,2,40,37" origin="0.5,0.5"/>
-        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Maple_Leaf_Revolver_Bullet.png" sourcerect="0,0,48,20" epth="0.55" origin="0.5,0.5"/>
+          scale="0.14" HideInEditors="true">
+        <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Maple_Leaf_Revolver.png" sourcerect="200,161,179,123" origin="0.5,0.5"/>
+        <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Maple_Leaf_Revolver.png" sourcerect="0,159,200,46" epth="0.55" origin="0.5,0.5"/>
         <Body width="40" height="30" density="10"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
         <Deconstruct time="1"/>
@@ -1700,7 +1700,7 @@
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
         </Holdable>
-        <RangedWeapon reload="0.15" weapondamagemodifier="1.15" holdtrigger="true" barrelpos="124,2" spread="15" unskilledspread="25" combatPriority="80"
+        <RangedWeapon reload="0.15" weapondamagemodifier="1.15" holdtrigger="true" barrelpos="204,30" spread="15" unskilledspread="25" combatPriority="80"
                       DualWieldAccuracyPenalty="7" drawhudwhenequipped="true" crosshairscale="0.2">
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="%ModDir%/Images/OtherWeapons/Youmu_Weapons.png" sourcerect="0,0,180,180"/>

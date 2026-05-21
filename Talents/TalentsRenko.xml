@@ -71,7 +71,7 @@
         <AbilityGroupInterval interval="5.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Renko"/>
-                <AbilityConditionHasSkill skillidentifier="medical" minvalue="200" invert="true"/>
+                <AbilityConditionHasSkill skillidentifier="medical" minvalue="100" invert="true"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxvalue="0.1" skillidentifier="medical"/>
@@ -81,11 +81,11 @@
         <AbilityGroupInterval interval="3.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Hifuu_Club_Renko"/>
-                <AbilityConditionHasSkill skillidentifier="medical" minvalue="200"/>
+                <AbilityConditionHasSkill skillidentifier="medical" minvalue="100"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityModifyStat stattype="RangedAttackSpeed" value="0.2"/>
-                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.2"/>
+                <CharacterAbilityModifyStat stattype="RangedAttackSpeed" value="0.1"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.1"/>
             </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
