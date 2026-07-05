@@ -20,6 +20,7 @@
     <NPCSets file="%ModDir%/Events/Touhou_Enemy_NPCs.xml"/>
     <RandomEvents file="%ModDir%/Events/TouhouEvents.xml"/>
     <RandomEvents file="%ModDir%/Events/Touhou_Special_Events.xml"/>
+    <RandomEvents file="%ModDir%/Events/Touhou_Talents_Event.xml"/>
     <Item file="%ModDir%/Items/ItemsRemilia.xml"/>
     <Item file="%ModDir%/Items/ItemsYoumu.xml"/>
     <Item file="%ModDir%/Items/Clothes/Remilia_gear.xml"/>
@@ -56,14 +57,18 @@
     <Item file="%ModDir%/Items/Clothes/Satori_gear.xml"/>
     <Item file="%ModDir%/Items/Clothes/Tewi_gear.xml"/>
     <Item file="%ModDir%/Items/Clothes/Kaguya_gear.xml"/>
+    <Item file="%ModDir%/Items/Clothes/Yuyuko_gear.xml"/>
     <!--联动-->
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Ema_gear.xml"/>
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Cosmic_Princess_Kaguya_gear.xml"/>
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Yachiyo_gear.xml"/>
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Hiro_gear.xml"/>
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Iroha_gear.xml"/>
+    <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Sherry_gear.xml"/>
     <!--通用-->
     <Item file="%ModDir%/Items/Clothes/Normal_Yousei_Clothes.xml"/>
+    <Item file="%ModDir%/Items/Clothes/Normal_Magician_Clothes.xml"/>
+    <Item file="%ModDir%/Items/Clothes/Normal_Yokai_Clothes.xml"/>
     <!--tools-->
     <Item file="%ModDir%/Items/Tools/Tools.xml"/>
     <Item file="%ModDir%/Items/Tools/MusicPlayer.xml"/>
@@ -128,6 +133,8 @@
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/Lilywhite_Black_Wings.xml"/>
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/IrohaTail.xml"/>
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/Normal_YouseiWings.xml"/>
+    <Other file="%ModDir%/Characters/HumanTouhou_Tail/Normal_YokaiTail.xml"/>
+    <Other file="%ModDir%/Characters/HumanTouhou_Tail/Normal_YokaiWings.xml"/>
     <Character file="%ModDir%/Characters/Maoyu/Maoyu.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Little_Ghost/Touhou_Little_Ghost.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Little_Photosphere/Touhou_Little_Photosphere.xml"/>
@@ -207,6 +214,7 @@
     <Talents file="%ModDir%/Talents/TalentsSatori.xml"/>
     <Talents file="%ModDir%/Talents/TalentsTewi.xml"/>
     <Talents file="%ModDir%/Talents/TalentsKaguya.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsYuyuko.xml"/>
     <Talents file="%ModDir%/Talents/TalentsMagician.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYousei.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYokai.xml"/>
@@ -217,6 +225,7 @@
     <Talents file="%ModDir%/Talents/TalentsYachiyo.xml"/>
     <Talents file="%ModDir%/Talents/TalentsHiro.xml"/>
     <Talents file="%ModDir%/Talents/TalentsIroha.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsSherry.xml"/>
     <Talents file="%ModDir%/Talents/Talents_Touhou_Empathy.xml"/>
     <!--Sounds-->
     <Sounds file="%ModDir%/Sounds/BGM/Music_Override.xml"/>

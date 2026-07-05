@@ -125,6 +125,14 @@
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Yokai_Talents_Locked_Counter" value="1" removeondeath="false"/>
             </Abilities>
         </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnGainMissionExperience">
+            <Conditions>
+                <AbilityConditionHasLevel minlevel="25"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyValue multiplyvalue="0.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <!--格物致知 增加15%技能获取速度，生命值大于60%时，这个效果翻倍-->
@@ -681,7 +689,8 @@
     </Talent>
 
     <!--斩断魂灵 对剩余生命值越高的敌人，穿透的护甲越高，最高10%。
-    穿着妖梦装束+时：对满血敌人的攻击造成额外30%伤害，额外10%穿甲。攻击拥有断念效果的敌人时将附带缓慢效果。-->
+    穿着妖梦装束+时：对满血敌人的攻击造成额外30%伤害，额外10%穿甲。攻击拥有断念效果的敌人时将附带缓慢效果。
+    穿着幽幽子装束+时：增加10%物理伤害抗性和烧伤抗性。对半血以下的敌人造成的穿甲增加10%。-->
     <Talent identifier="Touhou_Youling_Wangling03">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Indirect_Damage.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Youling_Wangling03"/>
@@ -718,6 +727,7 @@
                 <CharacterAbilityModifyAttackData addedpenetration="0.04"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--妖梦-->
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple"/>
@@ -743,10 +753,33 @@
                 <CharacterAbilityGiveAffliction affliction="slow" strength="10"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--幽幽子-->
+        <AbilityGroupInterval Interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="0.9"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional HealthPercentage="lte 50"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <!--三魂七魄 当血量低于30%时，一定时间内提高20%物理伤害抗性和烧伤抗性
-    穿着妖梦装束+时：增加10%最大生命值，增加20点武器操作-->
+    穿着妖梦装束+时：增加10%最大生命值，增加20点武器操作
+    穿着幽幽子装束+时：增加20%最大生命值-->
     <Talent identifier="Touhou_Youling_Wangling04">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Defense.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Youling_Wangling04"/>
@@ -773,10 +806,20 @@
                 <CharacterAbilityModifyStat stattype="WeaponsSkillBonus" value="20"/>
             </Abilities>
         </AbilityGroupInterval>
+        <!--幽幽子-->
+        <AbilityGroupInterval interval="5">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.2"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--或生或死 你杀死任意生物时，短暂提高自身眩晕抗性
-    穿着妖梦装束+时：你杀死任意生物后，短暂提高debuff抗性-->
+    穿着妖梦装束+时：你杀死任意生物后，短暂提高debuff抗性
+    穿着幽幽子装束+时：减少20%受到的伤害。食用可生效的料理后，增加5%所有伤害-->
     <Talent identifier="Touhou_Youling_Wangling05">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Defense.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Youling_Wangling05"/>
@@ -805,6 +848,7 @@
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Youling_Wangling05_Kill" value="-1"/>
             </Abilities>
         </AbilityGroupInterval>
+        <!--妖梦-->
         <AbilityGroupInterval Interval="0.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple"/>
@@ -826,10 +870,29 @@
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Youling_Wangling05_Kill" value="1"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--幽幽子-->
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect" />
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Cuisine_Effect03" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.05"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--轮回忘却 魔法能力超过100后，增加10%所有技能水平。减少10%友军伤害。
-    穿着妖梦装束+时：增加20%近战伤害，根据武器操作水平，提高相应10%的最大生命值。最多20%-->
+    穿着妖梦装束+时：增加20%近战伤害，根据武器操作水平，提高相应10%的最大生命值。最多20%
+    穿着幽幽子装束+时：增加10%技能水平。每有1点魔法能力，增加0.05%所有攻击伤害，最多10%-->
     <Talent identifier="Touhou_Youling_Wangling06">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Youling_Wangling06"/>
@@ -847,6 +910,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+        <!--妖梦-->
         <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple"/>
@@ -855,7 +919,7 @@
                 <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.2"/>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="5">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple"/>
                 <AbilityConditionHasSkill skillidentifier="weapons" minvalue="200" invert="true"/>
@@ -864,7 +928,7 @@
                 <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.1" skillidentifier="weapons"/>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="5">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Ancient_Temple"/>
                 <AbilityConditionHasSkill skillidentifier="weapons" minvalue="200"/>
@@ -873,9 +937,44 @@
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.2"/>
             </Abilities>
         </AbilityGroupInterval>
+        <!--幽幽子-->
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Youling_Wangling06_Effect_Yuyuko" amount="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="5">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToSkill stattype="AttackMultiplier" maxvalue="0.05" skillidentifier="Touhou_Magic"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="5">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="200"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.1"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
-    <!--须弥芥子 穿着妖梦装束+时：一巡回一次，生命值低于0时将保持清醒10秒，同时提高50%的技能水平，如果在10秒内杀死任何生物，将延长1秒持续时间。-->
+    <!--须弥芥子
+    穿着妖梦装束+时：一巡回一次，生命值低于0时将保持清醒10秒，同时提高50%的技能水平，如果在10秒内杀死任何生物，将延长1秒持续时间。
+    穿着幽幽子装束+时：只要当前生命值不满，就增加15%弹幕伤害，受到攻击后也会给予攻击者大量抗性减益-->
     <Talent identifier="Touhou_Youling_Wangling07">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Youling_Wangling07"/>
@@ -925,6 +1024,32 @@
         <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
             <Abilities>
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Youling_Wangling07_Kill" value="1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--幽幽子-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.99"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionAboveVitality invert="true" vitalitypercentage="0.99"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffectsToAttacker>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
+                            <Affliction identifier="Touhou_Youling_Wangling07_Effect_Yuyuko" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffectsToAttacker>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -2240,7 +2365,7 @@
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Direct_Damage.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Vampire07"/>
         <!--蕾米莉亚-->
-        <AbilityGroupInterval interval="0.5">
+        <AbilityGroupInterval interval="5.0">
             <Abilities>
                 <CharacterAbilityModifyStatToLevel stattype="RangedAttackMultiplier" statperlevel="0.01" maxlevel="20"/>
                 <CharacterAbilityModifyStatToLevel stattype="MeleeAttackMultiplier" statperlevel="0.01" maxlevel="20"/>
@@ -2261,7 +2386,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
-        <AbilityGroupInterval maxtriggercount="1">
+        <AbilityGroupInterval maxtriggercount="1" Interval="1.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="scarletdevil"/>
                 <AbilityConditionAboveVitality invert="true" vitalitypercentage="0"/>
@@ -2288,7 +2413,7 @@
                 <CharacterAbilityModifyAffliction afflictionidentifiers="burn,internaldamage,lacerations" addedmultiplier="0.2"/>
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupInterval maxtriggercount="1">
+        <AbilityGroupInterval maxtriggercount="1" Interval="1.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Younger_Sister_Of_Scarlet"/>
                 <AbilityConditionAboveVitality invert="true" vitalitypercentage="0"/>
@@ -3303,15 +3428,10 @@
 
     <!--神明/付丧神-->
 
-    <!--寄宿于物 物理伤害抗性减少10%，增加10%最大生命值。生命值高于50%时，更难被敌人发现-->
+    <!--寄宿于物 增加10%最大生命值。生命值高于50%时，更难被敌人发现-->
     <Talent identifier="Touhou_ShenMing01">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Survivable.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_ShenMing01"/>
-        <AbilityGroupInterval interval="9.9">
-            <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="1.1"/>
-            </Abilities>
-        </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
                 <CharacterAbilityGiveStat stattype="MaximumHealthMultiplier" value="0.1"/>
@@ -3481,7 +3601,7 @@
         怒：攻击目标将附加持续撕裂伤害，魔法武器攻击附加缓慢
         哀：魔法近战武器攻击生物将使其攻击伤害暂时降低25%，远程弹幕的效果则减半
         乐：根据所有技能水平平均值，增加对应5%的攻击伤害和移动速度。最多15%-->
-    <Talent identifier="Touhou_ShenMing06" trackedstat="Touhou_ShenMing06_Counter" trackedmax="4">
+    <Talent identifier="Touhou_ShenMing06" trackedstat="Touhou_ShenMing06_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_ShenMing06"/>
         <AbilityGroupEffect abilityeffecttype="OnRoundEnd">

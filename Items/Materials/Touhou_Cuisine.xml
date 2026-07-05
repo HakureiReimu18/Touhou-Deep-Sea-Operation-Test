@@ -3697,7 +3697,6 @@
         </Fabricate>
         <Fabricate suitablefabricators="Touhou_Cooktop02" requiredtime="100" amount="3">
             <RequiredSkill identifier="Touhou_Magic" level="10"/>
-            <RequiredSkill identifier="Touhou_Magic" level="10"/>
             <RequiredItem identifier="Touhou_Bamboo"/>
             <RequiredItem identifier="Touhou_Egg"/>
             <RequiredItem identifier="Touhou_Seaweed"/>

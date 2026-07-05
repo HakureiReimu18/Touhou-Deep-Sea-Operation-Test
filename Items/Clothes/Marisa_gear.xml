@@ -176,7 +176,7 @@
     <Item name="" identifier="marisahat" subcategory="Touhou" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate"
           description="" scale="0.25" fireproof="true">
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="1800">
+        <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>
@@ -386,7 +386,7 @@
     <Item name="" identifier="Marisa_Hat_Eclipse_Anniversary" subcategory="Touhou" category="Equipment" tags="smallitem,clothing"
           cargocontaineridentifier="metalcrate" description="" scale="0.25" fireproof="true">
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="1800">
+        <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>

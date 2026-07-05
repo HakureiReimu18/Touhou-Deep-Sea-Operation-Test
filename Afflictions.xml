@@ -954,7 +954,7 @@
                 limbspecific="false" indicatorlimb="Torso" maxstrength="10"
                 Duration="5.0" showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true"
                 iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="10" minvitalitydecrease="-20" maxvitalitydecrease="-20" multiplybymaxvitality="false"
+        <Effect minstrength="0" maxstrength="10" minvitalitydecrease="-10" maxvitalitydecrease="-10" multiplybymaxvitality="false"
                 minskillmultiplier="1.1" maxskillmultiplier="1.1"/>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Budesonide_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
@@ -3518,6 +3518,7 @@
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
+                resetbetweenrounds="true"
                 iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_Dark_Fog_Effect" minstrength="0" maxstrength="10"/>
         <Effect minstrength="0" maxstrength="10">
@@ -3648,6 +3649,7 @@
                 indicatorlimb="Head"
                 maxstrength="10"
                 duration="10"
+                resetbetweenrounds="true"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
@@ -3669,6 +3671,7 @@
                 indicatorlimb="Head"
                 maxstrength="10"
                 duration="10"
+                resetbetweenrounds="true"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
@@ -4114,6 +4117,7 @@
                 indicatorlimb="Head"
                 maxstrength="10"
                 duration="100"
+                resetbetweenrounds="true"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
@@ -4183,6 +4187,7 @@
                 indicatorlimb="Head"
                 maxstrength="10"
                 duration="50"
+                resetbetweenrounds="true"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
@@ -4371,6 +4376,7 @@
                 indicatorlimb="Head"
                 maxstrength="10"
                 duration="30"
+                resetbetweenrounds="true"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
@@ -4527,6 +4533,7 @@
                 indicatorlimb="Head"
                 maxstrength="10"
                 duration="10"
+                resetbetweenrounds="true"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
@@ -4839,6 +4846,7 @@
                 indicatorlimb="Head"
                 maxstrength="10"
                 duration="10"
+                resetbetweenrounds="true"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"
@@ -5021,7 +5029,7 @@
                 identifier="Touhou_Savior_Mod_Attack_Effect"
                 type="burn"
                 limbspecific="true"
-                maxstrength="100"
+                maxstrength="20"
                 showiconthreshold="100"
                 showinhealthscannerthreshold="100"
                 affectmachines="true"

@@ -26,7 +26,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.03"/>
+                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.02"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
@@ -42,7 +42,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.03"/>
+                            <Affliction identifier="Touhou_Iroha_Fatigue" amount="0.02"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

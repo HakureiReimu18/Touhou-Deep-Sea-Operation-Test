@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Talents>
+    <Talent identifier="YuyukoTalent">
+        <Icon texture="%ModDir%/Images/Talents/YuyukoTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.YuyukoTalent"/>
+        <AbilityGroupInterval maxtriggercount="1" Interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yuyuko_Character_Effect_Debuff" amount="100.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="Touhou_Cuisine_Effect01" multiplier="0.0"/>
+                <CharacterAbilityModifyResistance resistanceid="Touhou_Cuisine_Effect02" multiplier="0.0"/>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Yuyuko_Weapons"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged,Melee"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Yuyuko_Talent_Effect_Debuff" strength="5.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Yuyuko_Weapons"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Attack_Implode_CD" invert="true"/>
+                <AbilityConditionAttackData weapontype="Turret" invert="true"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionCharacter targetabilitytarget="true" targettype="Enemy">
+                    <Conditional isunconscious="true"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData implode="true"/>
+                <CharacterAbilityApplyStatusEffects applytpself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_Yuyuko_Attack_Implode_CD" amount="100.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionServerRandom randomchance="0.6"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityPutItem itemidentifier="Touhou_Spring_Fragment" amount="2"/>
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+</Talents>

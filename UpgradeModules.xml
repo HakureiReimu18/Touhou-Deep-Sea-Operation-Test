@@ -8,7 +8,7 @@
       <ResourceCost item="Seven_Elements_Alchemical" amount="2" levels="5-6"/>
     <MaxLevel tier="1" level="2" />
     <MaxLevel tier="2" level="4" />
-    <Turret damagemultiplier="+5%" launchimpulse="+5%" />
+    <Turret damagemultiplier="+4%" launchimpulse="+5%" />
       <Sprite texture="Content/UI/CampaignUIAtlas2.png" sourcerect="512,896,128,128" origin="0.5,0.5"/>
   </UpgradeModule>
 </UpgradeModules>

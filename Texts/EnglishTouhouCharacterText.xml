@@ -177,7 +177,7 @@
         +‖color:gui.green‖15%‖end‖ medical item effectiveness
         +‖color:gui.green‖20%‖end‖ projectile damage vs. non-human enemies
         After a total of ‖color:gui.green‖33‖end‖ campaign runs, the original movement speed and Max HP penalties are removed, +‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖skill levels‖end‖.
-        Count resets upon death.
+        When the count is not full, it will be cleared upon death.
     </talentdescription.Savant>
     <afflictionname.Akyuu_Weapons>Ninth-Generation Scholar</afflictionname.Akyuu_Weapons>
     <afflictiondescription.Akyuu_Weapons>As a child of the Hieda family’s Mikoto line, she is brilliant and far more knowledgeable than most of her clan, but physically frail.</afflictiondescription.Akyuu_Weapons>
@@ -672,6 +672,21 @@
 <afflictiondescription.Manifest_God_Of_Miracles>Sanae has waist-length green hair and wears a frog hairpin. Her left hair is tied into a bundle with a snake hairpin.</afflictiondescription.Manifest_God_Of_Miracles>
 <afflictionname.Sanae_Weapons>The Communicator of Wind and Lake</afflictionname.Sanae_Weapons>
 <afflictiondescription.Sanae_Weapons>Sanae is the shrine maiden of Sanae Kochiya. The miracles of summoning wind and rain she performs with secret techniques are actually triggered by Sanae, the Wind God. Sanae also worships Izanami, and is a distant descendant of Izanami.</afflictiondescription.Sanae_Weapons>
+    <afflictionname.SanaeTalent_Effect01>Star Miracle</afflictionname.SanaeTalent_Effect01>
+    <afflictiondescription.SanaeTalent_Effect01>+30% skill gain speed, +10% skill level.</afflictiondescription.SanaeTalent_Effect01>
+    <afflictionname.SanaeTalent_Effect02>Moon Miracle</afflictionname.SanaeTalent_Effect02>
+    <afflictiondescription.SanaeTalent_Effect02>+50% repair and hull repair speed, +15% stun resistance.</afflictiondescription.SanaeTalent_Effect02>
+    <afflictionname.SanaeTalent_Effect03>Sun Miracle</afflictionname.SanaeTalent_Effect03>
+    <afflictiondescription.SanaeTalent_Effect03>+5% ranged damage, +15% melee damage.</afflictiondescription.SanaeTalent_Effect03>
+    <afflictionname.SanaeTalent_Effect04>Mountain Miracle</afflictionname.SanaeTalent_Effect04>
+    <afflictiondescription.SanaeTalent_Effect04>+10% max health, +20% leg physical damage resistance.</afflictiondescription.SanaeTalent_Effect04>
+    <afflictionname.SanaeTalent_Effect05>Sea Miracle</afflictionname.SanaeTalent_Effect05>
+    <afflictiondescription.SanaeTalent_Effect05>+40% swim speed, +10% burn resistance.</afflictiondescription.SanaeTalent_Effect05>
+    <afflictionname.SanaeTalent_Effect06>Sky Miracle</afflictionname.SanaeTalent_Effect06>
+    <afflictiondescription.SanaeTalent_Effect06>Gain 7 random skill points, +15% experience gain speed.</afflictiondescription.SanaeTalent_Effect06>
+    <afflictionname.SanaeTalent_Effect07>Wind Miracle</afflictionname.SanaeTalent_Effect07>
+    <afflictiondescription.SanaeTalent_Effect07>+15% movement speed, -20% friendly fire damage.</afflictiondescription.SanaeTalent_Effect07>
+
 
     <!--Reisen-->
     <entityname.Reisen_gear>‖color:220,25,200,255‖Reisen's Outfit‖end‖</entityname.Reisen_gear>
@@ -1111,7 +1126,7 @@
 
     <talentname.HiroTalent>The One Who Embodies Absolute Justice</talentname.HiroTalent>
     <talentdescription.HiroTalent>When wearing Hiro Outfit+:
-        ‖color:gui.orange‖Maximum Health‖end‖ is reduced by ‖color:gui.green‖15%‖end‖, and damage taken is increased by ‖color:gui.green‖15%‖end‖
+        ‖color:gui.orange‖Maximum Health‖end‖ is reduced by ‖color:gui.red‖15%‖end‖, and damage taken is increased by ‖color:gui.red‖15%‖end‖
 
         Increases danmaku damage by 20%.
         Once per round for all characters, triggers when health falls below ‖color:gui.green‖1%‖end‖. Upon activation, removes as many status effects as possible, grants as much bonus health as possible,
@@ -1140,7 +1155,7 @@
     <afflictionname.HiroTalent_Witch_Transformation_End>Forced Witch Transformation Termination Progress</afflictionname.HiroTalent_Witch_Transformation_End>
     <afflictionname.Hiro_Pseudo_Buff>False Testimony</afflictionname.Hiro_Pseudo_Buff>
 
-    <!--Hiro-->
+    <!--Iroha-->
     <entityname.Iroha_gear>‖color:107,63,160,255‖Iroha Outfit‖end‖</entityname.Iroha_gear>
     <entitydescription.Iroha_gear>A devoted fan of Yachiyo Tsukuyomi, the top streamer and administrator of the virtual space “Tsukuyomi.” She even set up a small shrine in her bedroom dedicated to Yachiyo’s standee. (After installing the prerequisite mod, equipping this unlocks Outfit+)</entitydescription.Iroha_gear>
 
@@ -1174,11 +1189,94 @@
     <entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>‖color:107,63,160,255‖Tsukuyomi VR Lens‖end‖</entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>
     <entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>A compact VR headset</entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>
 
+
+    <!--Sherry-->
+    <entityname.Sherry_gear>‖color:255,50,50,255‖Sherry's Outfit‖end‖</entityname.Sherry_gear>
+    <entitydescription.Sherry_gear>A girl who is always smiling and full of energy. She calls herself a detective and loves mysteries and reasoning. (After installing the prerequisite mod, wearing this unlocks Outfit+)</entitydescription.Sherry_gear>
+    <entityname.Sherry_Plus>‖color:255,50,50,255‖Sherry's Outfit+‖end‖</entityname.Sherry_Plus>
+    <entitydescription.Sherry_Plus>A girl who is always smiling and full of energy. She calls herself a detective and loves mysteries and reasoning.</entitydescription.Sherry_Plus>
+    <entityname.Sherry_Hat>‖color:255,50,50,255‖Sherry's Hat‖end‖</entityname.Sherry_Hat>
+    <entitydescription.Sherry_Hat>A detective-style hat</entitydescription.Sherry_Hat>
+    <talentname.SherryTalent>Strong Detective</talentname.SherryTalent>
+    <talentdescription.SherryTalent>When wearing Sherry's Outfit+,
+        ‖color:gui.orange‖Maximum Health‖end‖ is reduced by ‖color:gui.red‖20%‖end‖, ranged attack damage is reduced by ‖color:gui.red‖15%‖end‖, and drug effects are reduced by ‖color:gui.red‖15%‖end‖
+
+        Increases ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Physical Damage Resistance‖end‖
+        ‖color:gui.orange‖Melee Attack Damage‖end‖ is increased by ‖color:gui.green‖40%‖end‖
+        Increases resistance to ‖color:gui.green‖50%‖end‖ ‖color:gui.yellow‖Psychosis-type‖end‖ effects
+        For every ‖color:gui.green‖1‖end‖ point of ‖color:gui.orange‖Magic Ability‖end‖, increases ‖color:gui.green‖0.1%‖end‖ ‖color:gui.orange‖Movement Speed‖end‖, up to a maximum of ‖color:gui.green‖20%‖end‖
+
+        When taking damage, increases ‖color:gui.yellow‖Witch Transformation Progress‖end‖
+        When own health is below ‖color:gui.green‖50%‖end‖, increases ‖color:gui.yellow‖Witch Transformation Progress‖end‖.
+        When ‖color:gui.yellow‖Witch Transformation Progress‖end‖ reaches ‖color:gui.green‖100%‖end‖, once per round, gain the Witch Transformation effect:
+        Damage taken is reduced by ‖color:gui.green‖15%‖end‖, ‖color:gui.orange‖Melee Attack Damage‖end‖ is increased by ‖color:gui.green‖40%‖end‖, and additionally gain ‖color:gui.green‖20‖end‖ points of ‖color:gui.orange‖Temporary Health‖end‖
+        Consuming level ‖color:gui.green‖3‖end‖ or higher food or drinks can prematurely remove the Witch Transformation effect.
+
+        If the Witch Transformation effect ends naturally, gain a severe negative effect:
+        ‖color:gui.orange‖Damage taken‖end‖ is increased by ‖color:gui.red‖200%‖end‖. Experience gained per round is reduced by ‖color:gui.red‖50%‖end‖
+    </talentdescription.SherryTalent>
+    <afflictionname.Sherry_Deduction>Curious Detective</afflictionname.Sherry_Deduction>
+    <afflictiondescription.Sherry_Deduction>A strong girl who calls herself a detective, with excessive curiosity and a flexible understanding of morality. Skilled at breaking doors, gathering evidence, and causing trouble.</afflictiondescription.Sherry_Deduction>
+    <afflictionname.SherryTalent_Witch_Transformation>Witch Transformation Progress</afflictionname.SherryTalent_Witch_Transformation>
+    <afflictionname.SherryTalent_Witch_Transformation_End>Witch Transformation Forced Removal Progress</afflictionname.SherryTalent_Witch_Transformation_End>
+
+
+
+    <!--Yuyuko-->
+    <entityname.Yuyuko_gear>‖color:162,195,219,255‖Yuyuko Outfit‖end‖</entityname.Yuyuko_gear>
+    <entitydescription.Yuyuko_gear>She is the Ghost Princess, the young lady of the Saigyouji family, and the one responsible for managing the spirits of the Netherworld.</entitydescription.Yuyuko_gear>
+
+    <entityname.Yuyuko_Plus>‖color:162,195,219,255‖Yuyuko Outfit+‖end‖</entityname.Yuyuko_Plus>
+    <entitydescription.Yuyuko_Plus>She is the Ghost Princess, the young lady of the Saigyouji family, and the one responsible for managing the spirits of the Netherworld.</entitydescription.Yuyuko_Plus>
+
+    <entityname.Yuyuko_Hat>‖color:162,195,219,255‖Yuyuko's New Hat‖end‖</entityname.Yuyuko_Hat>
+    <entitydescription.Yuyuko_Hat>A hat in a brand-new style.</entitydescription.Yuyuko_Hat>
+
+    <talentname.YuyukoTalent>Ghost of Hakugyokurou</talentname.YuyukoTalent>
+    <talentdescription.YuyukoTalent>While wearing Yuyuko Outfit+:
+        Healing received is reduced by ‖color:gui.red‖30%‖end‖
+        ‖color:gui.orange‖Weapons and Medical skill levels‖end‖ are reduced by ‖color:gui.red‖40‖end‖
+        At the start of every round, permanently lose ‖color:gui.red‖25%‖end‖ of your ‖color:gui.orange‖maximum health‖end‖
+        Food effects of level 2 and below will no longer take effect.
+
+        Immune to ‖color:gui.yellow‖Oxygen Low‖end‖
+        Bullet attacks from her exclusive weapon further reduce the target's resistances
+        Once per minute, her exclusive weapon can instantly ‖color:gui.red‖kill‖end‖ an unconscious hostile creature
+
+        After completing any mission during a campaign, there is a chance to obtain a ‖color:gui.orange‖Spring Fragment‖end‖, which can be used to craft a Saigyou Ayakashi Potted Plant or cultivate an existing ‖color:gui.orange‖Saigyou Ayakashi Potted Plant‖end‖
+        A ‖color:gui.orange‖Saigyou Ayakashi Potted Plant‖end‖ will gradually produce ‖color:gui.orange‖Spring Fragment‖end‖, which can substitute for certain cooking ingredients or be used in other crafting recipes
+
+        At the start of a round, if another crew member is wearing a ‖color:gui.orange‖Youmu Outfit+‖end‖, gain ‖color:gui.yellow‖“The Gardener's Duty”‖end‖, increasing ‖color:gui.green‖all damage dealt by 5%‖end‖
+    </talentdescription.YuyukoTalent>
+
+    <afflictionname.Touhou_Yuyuko_Character_Effect>Perfect and Elegant Ghost</afflictionname.Touhou_Yuyuko_Character_Effect>
+    <afflictiondescription.Touhou_Yuyuko_Character_Effect>She is cheerful and somewhat absent-minded, remarkably laid-back, difficult to predict, and acts entirely on her own whims.</afflictiondescription.Touhou_Yuyuko_Character_Effect>
+
+    <afflictionname.Yuyuko_Weapons>Ghost Girl of the Netherworld Pavilion</afflictionname.Yuyuko_Weapons>
+    <afflictiondescription.Yuyuko_Weapons>Yuyuko has existed as a ghost for over a thousand years and will forever reside in Hakugyokurou within the Netherworld.</afflictiondescription.Yuyuko_Weapons>
+
+    <entityname.Touhou_Spring_Fragment>‖color:162,195,219,255‖Spring Fragment‖end‖</entityname.Touhou_Spring_Fragment>
+    <entitydescription.Touhou_Spring_Fragment>A rare fragment of Spring found within the frozen ocean. Consuming it directly provides a small healing effect and cures the "Resurrection Butterfly" affliction. It can also be used as a substitute for certain cooking ingredients or crafted into other items.</entitydescription.Touhou_Spring_Fragment>
+    <entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>‖color:162,195,219,255‖Saigyou Ayakashi Potted Plant‖end‖</entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>
+    <entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>A plant resembling the Saigyou Ayakashi, grown through the gathering of Yuyuko's power and fragments of spring. It possesses similar abilities and will shed Spring Fragment over time.‖color:gui.yellow‖(Right-click + E to place, press E to pick up)‖end‖</entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>
+
+
+
+
+
+
+
+
+
+
+
     <!--通用-->
     <entityname.Normal_Yousei_Clothes>Fairy Casual Wear</entityname.Normal_Yousei_Clothes>
     <entitydescription.Normal_Yousei_Clothes>Common casual wear seen everywhere on fairies</entitydescription.Normal_Yousei_Clothes>
-
-
+    <entityname.Normal_Magician_Clothes>Magician Casual Wear</entityname.Normal_Magician_Clothes>
+    <entitydescription.Normal_Magician_Clothes>Casual wear for a magician who has just started out</entitydescription.Normal_Magician_Clothes>
+    <entityname.Normal_Yokai_Clothes>Common Youkai Outfit</entityname.Normal_Yokai_Clothes>
+    <entitydescription.Normal_Yokai_Clothes>The most commonly seen outfit among youkai</entitydescription.Normal_Yokai_Clothes>
 
 
 
@@ -1228,6 +1326,7 @@
     <Character.MRE_Material_Satori>Satori's Memory</Character.MRE_Material_Satori>
     <Character.MRE_Material_Tewi>Tewi's Memory</Character.MRE_Material_Tewi>
     <Character.MRE_Material_Kaguya>Kaguya's Memory</Character.MRE_Material_Kaguya>
+    <Character.MRE_Material_Yuyuko>Yuyuko's Memory</Character.MRE_Material_Yuyuko>
     <talentname.MRE_Reimu>Bleeding Effect – Hakurei Reimu</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Effective only with Reimu Outfit+. Grants exclusive weapon effect. Each time hit, 15% chance to avoid that damage.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Bleeding Effect – Remilia Scarlet</talentname.MRE_Remilia>
@@ -1308,5 +1407,7 @@
         Gain one random ‖color:gui.orange‖Lucky Favor‖end‖ or ‖color:gui.orange‖Lucky Protection‖end‖ effect every minute.</talentdescription.MRE_Tewi>
     <talentname.MRE_Kaguya>Bleeding Effect - Kaguya Houraisan</talentname.MRE_Kaguya>
     <talentdescription.MRE_Kaguya>Only takes effect with Kaguya Outfit+. All crew members immediately gain 1 talent point. If all five treasures have been collected and applied, increase skill levels by 25% and become immune to poisons and paralysis.</talentdescription.MRE_Kaguya>
+    <talentname.MRE_Yuyuko>Bleeding Effect - Saigyouji Yuyuko</talentname.MRE_Yuyuko>
+    <talentdescription.MRE_Yuyuko>Only active while wearing Yuyuko Outfit+. As long as health is above 0, you cannot be instantly killed. Exclusive weapon attacks apply "Resurrection Butterfly", which gradually drains the target's health and reduces their resistances.</talentdescription.MRE_Yuyuko>
 
 </infotexts>

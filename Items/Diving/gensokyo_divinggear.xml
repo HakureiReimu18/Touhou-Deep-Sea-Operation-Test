@@ -1555,22 +1555,22 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57"/>
-            <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightLeg" hidelimb="true"
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57"/>
+            <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightLeg" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38"/>
-            <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftLeg" hidelimb="true"
+            <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftLeg" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36"/>
 
             <StatusEffect type="OnWearing" target="Character" Interval="1.0" Duration="1.0">
@@ -1797,43 +1797,43 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="RightHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
             <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="LeftHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="RightArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="LeftArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png"
-                    limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
+                    limb="RightForearm" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
                     sourcerect="822,199,163,118"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57"/>
-            <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightLeg" hidelimb="true"
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57"/>
+            <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightLeg" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38"/>
-            <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftLeg" hidelimb="true"
+            <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftLeg" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36"/>
             <sprite name="Right Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54"/>
-            <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftFoot" hidelimb="true"
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54"/>
+            <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftFoot" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53"/>
             <sprite name="Combat Diving Suit HumanTail" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Tail"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
@@ -2076,44 +2076,44 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="RightHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
             <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="LeftHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="RightArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="LeftArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png"
-                    limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
+                    limb="RightForearm" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
                     sourcerect="822,199,163,118"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
             <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="RightLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
             <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="LeftLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
             <sprite name="Right Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="RightFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
             <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor01.png" limb="LeftFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
             <sprite name="Combat Diving Suit HumanTail" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Tail"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
 
@@ -2332,40 +2332,40 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="RightHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
             <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="LeftHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="RightArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="LeftArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png"
-                    limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
+                    limb="RightForearm" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
                     sourcerect="822,199,163,118"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
             <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="RightLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
             <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="LeftLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
             <sprite name="Right Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="RightFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
             <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor02.png" limb="LeftFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
             <sprite name="Combat Diving Suit HumanTail" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Tail"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
 
@@ -2390,40 +2390,40 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="RightHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
             <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="LeftHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="RightArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="LeftArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png"
-                    limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
+                    limb="RightForearm" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
                     sourcerect="822,199,163,118"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
             <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="RightLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
             <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="LeftLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
             <sprite name="Right Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="RightFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
             <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor03.png" limb="LeftFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
             <sprite name="Combat Diving Suit HumanTail" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Tail"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
 
@@ -2448,40 +2448,40 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="RightHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
             <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="LeftHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="RightArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="LeftArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png"
-                    limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
+                    limb="RightForearm" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
                     sourcerect="822,199,163,118"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
             <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="RightLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
             <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="LeftLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
             <sprite name="Right Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="RightFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
             <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor04.png" limb="LeftFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
             <sprite name="Combat Diving Suit HumanTail" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Tail"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
 
@@ -2506,40 +2506,40 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="RightHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
             <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="LeftHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="RightArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="LeftArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png"
-                    limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
+                    limb="RightForearm" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
                     sourcerect="822,199,163,118"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
             <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="RightLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
             <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="LeftLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
             <sprite name="Right Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="RightFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
             <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor05.png" limb="LeftFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
             <sprite name="Combat Diving Suit HumanTail" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Tail"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
 
@@ -2564,40 +2564,40 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="RightHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
             <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="LeftHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="RightArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="LeftArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png"
-                    limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
+                    limb="RightForearm" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
                     sourcerect="822,199,163,118"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
             <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="RightLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
             <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="LeftLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
             <sprite name="Right Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="RightFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
             <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor06.png" limb="LeftFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
             <sprite name="Combat Diving Suit HumanTail" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Tail"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
 
@@ -2622,40 +2622,40 @@
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
-            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="Head" hidelimb="true"
+            <sprite name="Head" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="Head" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431"/>
-            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="Torso" hidelimb="true"
+            <sprite name="Torso" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="Torso" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.6,0.362" sourcerect="0,0,260,435"/>
-            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="Waist" hidelimb="true"
+            <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
             <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="RightHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
             <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="LeftHand"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
             <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="RightArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
             <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="LeftArm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png"
-                    limb="RightForearm" hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
+                    limb="RightForearm" hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"
                     sourcerect="822,199,163,118"/>
             <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="LeftForearm"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46" sourcerect="994,199,163,118"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="RightThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57" sourcerect="481,13,163,230"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="LeftThigh"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.625,0.57" sourcerect="652,14,163,230"/>
             <sprite name="Right Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="RightLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.38" sourcerect="480,250,163,192"/>
             <sprite name="Left Leg" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="LeftLeg"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.66,0.36" sourcerect="651,251,163,192"/>
             <sprite name="Right Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="RightFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.53,0.54" sourcerect="273,279,98,164"/>
             <sprite name="Left Shoe" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor07.png" limb="LeftFoot"
-                    hidelimb="true" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.45,0.53" sourcerect="377,280,98,164"/>
             <sprite name="Combat Diving Suit HumanTail" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="Tail"
                     hidelimb="false" inherittexturescale="true" hideotherwearables="false" inheritorigin="true" inheritsourcerect="true"/>
 

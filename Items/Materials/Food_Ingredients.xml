@@ -125,7 +125,7 @@
             <ParticleEmitter particle="fleshsmoke" particlespersecond="2" scalemin="1" scalemax="2" mincondition="0.0" maxcondition="50.0"/>
         </Repairable>
 
-        <ItemContainer capacity="6" canbeselected="true" hideitems="true" slotsperrow="3" uilabel="" allowuioverlap="false">
+        <ItemContainer capacity="6" canbeselected="true" hideitems="true" slotsperrow="6" uilabel="" allowuioverlap="false">
             <Containable items="Touhou_Food_Ingredients,plastic,iron,plantitem"/>
         </ItemContainer>
         <ItemContainer capacity="1" canbeselected="true" hideitems="true" slotsperrow="2" uilabel="" allowuioverlap="true"/>

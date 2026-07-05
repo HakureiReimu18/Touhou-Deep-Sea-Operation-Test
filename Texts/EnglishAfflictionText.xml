@@ -198,20 +198,6 @@
     <afflictionname.Touhou_Miracles_Wind>Wind of Miracles</afflictionname.Touhou_Miracles_Wind>
     <afflictiondescription.Touhou_Miracles_Wind>Magic from the Wind Priestess protects and slowly heals you.</afflictiondescription.Touhou_Miracles_Wind>
 
-    <afflictionname.SanaeTalent_Effect01>Star Miracle</afflictionname.SanaeTalent_Effect01>
-    <afflictiondescription.SanaeTalent_Effect01>+50% skill gain speed, +10% skill level.</afflictiondescription.SanaeTalent_Effect01>
-    <afflictionname.SanaeTalent_Effect02>Moon Miracle</afflictionname.SanaeTalent_Effect02>
-    <afflictiondescription.SanaeTalent_Effect02>+50% repair and hull repair speed, +15% stun resistance.</afflictiondescription.SanaeTalent_Effect02>
-    <afflictionname.SanaeTalent_Effect03>Sun Miracle</afflictionname.SanaeTalent_Effect03>
-    <afflictiondescription.SanaeTalent_Effect03>+5% ranged damage, +15% melee damage.</afflictiondescription.SanaeTalent_Effect03>
-    <afflictionname.SanaeTalent_Effect04>Mountain Miracle</afflictionname.SanaeTalent_Effect04>
-    <afflictiondescription.SanaeTalent_Effect04>+10% max health, +20% leg physical damage resistance.</afflictiondescription.SanaeTalent_Effect04>
-    <afflictionname.SanaeTalent_Effect05>Sea Miracle</afflictionname.SanaeTalent_Effect05>
-    <afflictiondescription.SanaeTalent_Effect05>+40% swim speed, +10% burn resistance.</afflictiondescription.SanaeTalent_Effect05>
-    <afflictionname.SanaeTalent_Effect06>Sky Miracle</afflictionname.SanaeTalent_Effect06>
-    <afflictiondescription.SanaeTalent_Effect06>Gain 7 random skill points, +15% experience gain speed.</afflictiondescription.SanaeTalent_Effect06>
-    <afflictionname.SanaeTalent_Effect07>Wind Miracle</afflictionname.SanaeTalent_Effect07>
-    <afflictiondescription.SanaeTalent_Effect07>+15% movement speed, +10% attack speed, -20% friendly fire damage.</afflictiondescription.SanaeTalent_Effect07>
 
     <afflictionname.Touhou_Treatment_Grenade_Effect>Healing Wind</afflictionname.Touhou_Treatment_Grenade_Effect>
     <afflictiondescription.Touhou_Treatment_Grenade_Effect>A surge of healing energy miraculously treats your wounds.</afflictiondescription.Touhou_Treatment_Grenade_Effect>
@@ -452,6 +438,10 @@
     <afflictioncauseofdeathself.Reiki_Side_Effect_NT>Your reiki within has been polluted and eroded, collapsing from the inside out.</afflictioncauseofdeathself.Reiki_Side_Effect_NT>
     <afflictioncauseofdeath.Touhou_Freeze>Frozen Solid</afflictioncauseofdeath.Touhou_Freeze>
     <afflictioncauseofdeathself.Touhou_Freeze>Your breathing has completely stopped, frozen into a statue.</afflictioncauseofdeathself.Touhou_Freeze>
+    <afflictioncauseofdeath.Touhou_MRE_Yuyuko_Effect_Debuff>Reduced to a Restless Spirit</afflictioncauseofdeath.Touhou_MRE_Yuyuko_Effect_Debuff>
+    <afflictioncauseofdeathself.Touhou_MRE_Yuyuko_Effect_Debuff>Led to Death</afflictioncauseofdeathself.Touhou_MRE_Yuyuko_Effect_Debuff>
+
+
 
     <!--Possession / Bleed Effects-->
     <afflictionname.Hyouibana_Effect_Prefect_Reimu>Reimu - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Reimu>
@@ -550,4 +540,6 @@
     <afflictionname.Hyouibana_Effect_Prefect_Kaguya>Kaguya Houraisan - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Kaguya>
     <afflictiondescription.Hyouibana_Effect_Prefect_Kaguya>Grants the exclusive weapon effects of the corresponding character.</afflictiondescription.Hyouibana_Effect_Prefect_Kaguya>
 
+    <afflictionname.Hyouibana_Effect_Prefect_Yuyuko>Yuyuko - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Yuyuko>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Yuyuko>Grants the exclusive weapon effects of the corresponding character.</afflictiondescription.Hyouibana_Effect_Prefect_Yuyuko>
 </infotexts>

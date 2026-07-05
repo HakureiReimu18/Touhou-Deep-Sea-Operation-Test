@@ -186,7 +186,7 @@
     <Item identifier="Touhou_Sanae_Frog_Hairband" subcategory="Touhou" category="Equipment" tags="smallitem,clothing"
           cargocontaineridentifier="metalcrate" scale="0.5" hideinmenus="false">
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="1800">
+        <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>

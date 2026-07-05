@@ -567,7 +567,7 @@
     </Item>
 
     <!--帕秋莉手册-木元素-->
-    <Item name="帕秋莉手册-护符篇" identifier="Patchouli_Book_Charm_01" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-护符篇" identifier="Patchouli_Book_Charm_01" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
 <!--        <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -595,7 +595,7 @@
     </Item>
 
     <!--帕秋莉手册-五行元素转换-->
-    <Item name="帕秋莉手册-元素转换篇" identifier="Patchouli_Book_01" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-元素转换篇" identifier="Patchouli_Book_01" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
 <!--        <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -623,7 +623,7 @@
     </Item>
 
     <!--帕秋莉手册-以太层金属篇-->
-    <Item name="帕秋莉手册-以太层金属篇" identifier="Patchouli_Book_02" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-以太层金属篇" identifier="Patchouli_Book_02" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -651,7 +651,7 @@
     </Item>
 
     <!--帕秋莉手册-副产物篇-->
-    <Item name="帕秋莉手册-副产物篇" identifier="Patchouli_Book_03" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-副产物篇" identifier="Patchouli_Book_03" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -705,7 +705,7 @@
         </Item>-->
 
     <!--帕秋莉手册-伊奘诺物质篇-->
-    <Item name="帕秋莉手册-伊奘诺物质篇" identifier="Patchouli_Book_05" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-伊奘诺物质篇" identifier="Patchouli_Book_05" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -733,7 +733,7 @@
     </Item>
 
     <!--帕秋莉手册-记忆材料篇-->
-    <Item name="帕秋莉手册-记忆材料篇" identifier="Patchouli_Book_06" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-记忆材料篇" identifier="Patchouli_Book_06" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -761,7 +761,7 @@
     </Item>
 
     <!--帕秋莉手册-出血物质篇-->
-    <Item name="帕秋莉手册-出血物质篇" identifier="Patchouli_Book_07" category="Misc" hideinmenus="true" Tags="smallitem,Patchouli_Book"
+    <Item name="帕秋莉手册-出血物质篇" identifier="Patchouli_Book_07" category="Misc" Tags="smallitem,Patchouli_Book"
           cargocontaineridentifier="metalcrate" scale="0.5" impactsoundtag="impact_soft">
         <Price baseprice="20" canbespecial="false" sold="false">
             <Price storeidentifier="merchantoutpost" minavailable="1" maxavailable="2"/>
@@ -1043,6 +1043,39 @@
             <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
         </LightComponent>
     </Item>
+
+
+    <!--春度碎片-->
+    <Item name="春度碎片" identifier="Touhou_Spring_Fragment" tags="smallitem,Touhou_Food_Ingredients,Vegetarian,Mild" subcategory="Touhou" category="Alien"
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.25" useinhealthinterface="true">
+        <PreferredContainer primary="engcab"/>
+        <Deconstruct time="5"/>
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Spring_Fragment.png" depth="0.4" sourcerect="0,0,100,136"/>
+        <Body width="100" height="136" density="10.5" gravityscale="0.4"/>
+        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,-55" handle2="0,-55">
+            <StatusEffect type="OnBroken" target="This">
+                <Remove/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="This" Condition="-100">
+                <Sound file="Content/Items/Medical/ITEM_eatingBiteQuick.ogg" range="250"/>
+            </StatusEffect>
+            <StatusEffect type="OnUse" target="UseTarget" duration="5.0" >
+                <ReduceAffliction type="damage" amount="1"/>
+                <ReduceAffliction type="Touhou_MRE_Yuyuko_Effect_Debuff" amount="2"/>
+            </StatusEffect>
+        </Holdable>
+    </Item>
+
+    <!--虚空灰烬-->
+    <Item name="虚空灰烬" identifier="Touhou_Eidolon_Shard" tags="smallitem" subcategory="Touhou" category="Alien"
+          cargocontaineridentifier="metalcrate" maxstacksize="8" maxstacksizecharacterinventory="1" scale="0.25" >
+        <PreferredContainer primary="engcab"/>
+        <Deconstruct time="5"/>
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Eidolon_Shard.png" depth="0.4" sourcerect="0,0,96,100"/>
+        <Body width="96" height="100" density="10.5" gravityscale="0.4"/>
+        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,-55" handle2="0,-55"/>
+    </Item>
+
 
 
 </Items>

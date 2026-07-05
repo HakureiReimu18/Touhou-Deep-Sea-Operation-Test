@@ -166,7 +166,7 @@
         增加‖color:gui.green‖15%‖end‖的使用医疗物品效果
         对非人类敌人造成的弹幕伤害增加‖color:gui.green‖20%‖end‖
         总计‖color:gui.green‖33‖end‖个巡回后，原本的生命值和移动速度减益效果消失，增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖技能水平‖end‖
-        计数在死亡后清除。
+        计数未满时，会在死亡后清除。
     </talentdescription.Savant>
     <afflictionname.Akyuu_Weapons>第九代学者</afflictionname.Akyuu_Weapons>
     <afflictiondescription.Akyuu_Weapons>作为御阿礼之子，她头脑聪明，比起稗田家一般人更博识，相对的身体孱弱。</afflictiondescription.Akyuu_Weapons>
@@ -461,8 +461,8 @@
     <entitydescription.Koishi_Eclipse_Valentines_Hat>难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Koishi_Eclipse_Valentines_Hat>
     <talentname.KoishiTalent>地底蔷薇</talentname.KoishiTalent>
     <talentdescription.KoishiTalent>当你身着恋恋装束+时，
-        \n增加‖color:gui.green‖15%‖end‖完成任务获得的经验，但减少‖color:gui.green‖30%‖end‖‖color:gui.orange‖技能获取速度‖end‖。
-        ‖color:gui.orange‖远程攻击伤害、爆炸伤害‖end‖减少‖color:gui.green‖30%‖end‖，但‖color:gui.orange‖近战伤害‖end‖增加‖color:gui.green‖30%‖end‖。
+        \n增加‖color:gui.green‖15%‖end‖完成任务获得的经验，但减少‖color:gui.red‖30%‖end‖‖color:gui.orange‖技能获取速度‖end‖。
+        ‖color:gui.orange‖远程攻击伤害和爆炸伤害‖end‖减少‖color:gui.red‖30%‖end‖，但‖color:gui.orange‖近战伤害‖end‖增加‖color:gui.green‖30%‖end‖
         \n每隔随机时间‖color:gui.green‖（15s-30s）‖end‖，给予随机时长‖color:gui.green‖（5s-15s）‖end‖、随机等级‖color:gui.green‖（1级-3级）‖end‖‖color:gui.yellow‖无意识‖end‖效果。
         \n当你受到造成伤害的攻击后，会根据剩余血量获得不同等级的‖color:gui.yellow‖无意识‖end‖效果，最高‖color:gui.green‖3‖end‖级。并在原地留下幻影，幻影会短暂吸引部分目标的攻击。
         \n生命值满足75%/45%（2级、3级需求）以上时，可主动触发无意识效果，但会随等级支付一定生命值。
@@ -642,6 +642,22 @@
     <afflictiondescription.Manifest_God_Of_Miracles>早苗有着一头及腰绿色长发，头顶戴着青蛙发饰，左侧头发用青蛇发饰扎成一束。</afflictiondescription.Manifest_God_Of_Miracles>
     <afflictionname.Sanae_Weapons>风与湖的通神者</afflictionname.Sanae_Weapons>
     <afflictiondescription.Sanae_Weapons>早苗是八坂神奈子的巫女，她用秘术引发的呼风唤雨的奇迹其实是由作为风神的神奈子引发的。早苗同样祭祀着洩矢诹访子，而且是诹访子的遥远的子孙。</afflictiondescription.Sanae_Weapons>
+    <afflictionname.Touhou_Miracles_Wind>奇迹之风</afflictionname.Touhou_Miracles_Wind>
+    <afflictiondescription.Touhou_Miracles_Wind>来自风祝的魔力保护着你，并缓慢治愈伤势</afflictiondescription.Touhou_Miracles_Wind>
+    <afflictionname.SanaeTalent_Effect01>星之奇迹</afflictionname.SanaeTalent_Effect01>
+    <afflictiondescription.SanaeTalent_Effect01>增加30%技能获取速度，技能水平提高10%</afflictiondescription.SanaeTalent_Effect01>
+    <afflictionname.SanaeTalent_Effect02>月之奇迹</afflictionname.SanaeTalent_Effect02>
+    <afflictiondescription.SanaeTalent_Effect02>修复速度和船体修复速度提高50%，提高15%眩晕抗性</afflictiondescription.SanaeTalent_Effect02>
+    <afflictionname.SanaeTalent_Effect03>日之奇迹</afflictionname.SanaeTalent_Effect03>
+    <afflictiondescription.SanaeTalent_Effect03>远程攻击伤害提高5%，近战攻击伤害提高15%</afflictiondescription.SanaeTalent_Effect03>
+    <afflictionname.SanaeTalent_Effect04>山之奇迹</afflictionname.SanaeTalent_Effect04>
+    <afflictiondescription.SanaeTalent_Effect04>增加10%最大生命值，双腿的物理伤害抗性提高20%</afflictiondescription.SanaeTalent_Effect04>
+    <afflictionname.SanaeTalent_Effect05>海之奇迹</afflictionname.SanaeTalent_Effect05>
+    <afflictiondescription.SanaeTalent_Effect05>增加40%游泳速度，烧伤抗性提高10%</afflictiondescription.SanaeTalent_Effect05>
+    <afflictionname.SanaeTalent_Effect06>空之奇迹</afflictionname.SanaeTalent_Effect06>
+    <afflictiondescription.SanaeTalent_Effect06>获得随机技能7点，经验获取速度提高15%</afflictiondescription.SanaeTalent_Effect06>
+    <afflictionname.SanaeTalent_Effect07>风之奇迹</afflictionname.SanaeTalent_Effect07>
+    <afflictiondescription.SanaeTalent_Effect07>移动速度提高15%，降低20%友军伤害</afflictiondescription.SanaeTalent_Effect07>
 
     <!--Reisen-->
     <entityname.Reisen_gear>‖color:220,25,200,255‖铃仙装束‖end‖</entityname.Reisen_gear>
@@ -1060,7 +1076,7 @@
     <entitydescription.Hiro_Headpiece>彼岸花装饰的发饰</entitydescription.Hiro_Headpiece>
     <talentname.HiroTalent>正义绝对之人</talentname.HiroTalent>
     <talentdescription.HiroTalent>当你身着希罗 装束+时，
-        ‖color:gui.orange‖最大生命值‖end‖减少‖color:gui.green‖15%‖end‖，受到的伤害增加‖color:gui.green‖15%‖end‖
+        ‖color:gui.orange‖最大生命值‖end‖减少‖color:gui.red‖15%‖end‖，受到的伤害增加‖color:gui.red‖15%‖end‖
 
         弹幕伤害增加‖color:gui.green‖10%‖end‖
         一巡回所有人一次，角色血量低于‖color:gui.green‖1%‖end‖时触发。触发后移除尽可能多的状态，同时尽可能多地增加额外生命值，并添加‖color:gui.green‖30‖end‖秒的‖color:gui.orange‖移动速度和近战伤害‖end‖增益。最后给角色增加‖color:gui.green‖20‖end‖点‖color:gui.yellow‖精神病‖end‖。
@@ -1115,9 +1131,87 @@
     <entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>‖color:107,63,160,255‖月读VR镜片‖end‖</entityname.Touhou_Tsukuyomi_Stealth_VR_Glasses>
     <entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>小巧的VR眼镜</entitydescription.Touhou_Tsukuyomi_Stealth_VR_Glasses>
 
+
+
+    <!--Sherry-->
+    <entityname.Sherry_gear>‖color:60,100,220,255‖雪莉 装束‖end‖</entityname.Sherry_gear>
+    <entitydescription.Sherry_gear>她是一位不论何时都面带笑容，充满活力的少女。自称名侦探，十分喜欢悬疑和推理。（安装前置模组后，穿戴后可解锁装束+）</entitydescription.Sherry_gear>
+    <entityname.Sherry_Plus>‖color:60,100,220,255‖雪莉 装束+‖end‖</entityname.Sherry_Plus>
+    <entitydescription.Sherry_Plus>她是一位不论何时都面带笑容，充满活力的少女。自称名侦探，十分喜欢悬疑和推理。</entitydescription.Sherry_Plus>
+    <entityname.Sherry_Hat>‖color:60,100,220,255‖雪莉的帽子‖end‖</entityname.Sherry_Hat>
+    <entitydescription.Sherry_Hat>侦探风格的帽子</entitydescription.Sherry_Hat>
+    <talentname.SherryTalent>怪力侦探</talentname.SherryTalent>
+    <talentdescription.SherryTalent>当你身着雪莉 装束+时，
+        ‖color:gui.orange‖最大生命值‖end‖减少‖color:gui.red‖20%‖end‖，远程攻击伤害减少‖color:gui.red‖15%‖end‖，药物使用效果降低‖color:gui.red‖15%‖end‖
+
+        增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖
+        ‖color:gui.orange‖近战攻击伤害‖end‖增加‖color:gui.green‖40%‖end‖
+        增加‖color:gui.green‖50%‖end‖‖color:gui.yellow‖精神病类‖end‖的抗性
+        每有‖color:gui.green‖1‖end‖点‖color:gui.orange‖魔法能力‖end‖，增加‖color:gui.green‖0.1%‖end‖的‖color:gui.orange‖移动速度‖end‖，最多‖color:gui.green‖20%‖end‖
+
+        受到攻击时，增长‖color:gui.yellow‖魔女化进度‖end‖
+        自身生命值低于‖color:gui.green‖50%‖end‖时，增长‖color:gui.yellow‖魔女化进度‖end‖。
+        ‖color:gui.yellow‖魔女化进度‖end‖达到‖color:gui.green‖100%‖end‖后，一巡回一次，获得魔女化效果：
+        受到的伤害降低‖color:gui.green‖15%‖end‖，‖color:gui.orange‖近战攻击伤害‖end‖增加‖color:gui.green‖40%‖end‖，额外获得‖color:gui.green‖20点‖end‖‖color:gui.orange‖临时生命值‖end‖
+        食用‖color:gui.green‖3‖end‖级及以上等级料理或饮品可以提前解除魔女化效果。
+
+        如果魔女化效果自然解除，则获得严重负面：
+        ‖color:gui.orange‖受到的伤害‖end‖增加‖color:gui.red‖200%‖end‖。巡回获得的经验值减少‖color:gui.red‖50%‖end‖
+    </talentdescription.SherryTalent>
+    <afflictionname.Sherry_Deduction>好奇侦探</afflictionname.Sherry_Deduction>
+    <afflictiondescription.Sherry_Deduction>自称名侦探的怪力少女，拥有过剩的好奇心和对道德观念的灵活理解。擅长破门、搜证与制造麻烦。</afflictiondescription.Sherry_Deduction>
+    <afflictionname.SherryTalent_Witch_Transformation>魔女化进度</afflictionname.SherryTalent_Witch_Transformation>
+    <afflictionname.SherryTalent_Witch_Transformation_End>魔女化强制解除进度</afflictionname.SherryTalent_Witch_Transformation_End>
+
+
+    <!--Yuyuko-->
+    <entityname.Yuyuko_gear>‖color:162,195,219,255‖幽幽子 装束‖end‖</entityname.Yuyuko_gear>
+    <entitydescription.Yuyuko_gear>她是亡灵公主，西行寺家的大小姐，负责管理冥界的幽灵。</entitydescription.Yuyuko_gear>
+    <entityname.Yuyuko_Plus>‖color:162,195,219,255‖幽幽子 装束+‖end‖</entityname.Yuyuko_Plus>
+    <entitydescription.Yuyuko_Plus>她是亡灵公主，西行寺家的大小姐，负责管理冥界的幽灵。</entitydescription.Yuyuko_Plus>
+    <entityname.Yuyuko_Hat>‖color:162,195,219,255‖幽幽子的新帽子‖end‖</entityname.Yuyuko_Hat>
+    <entitydescription.Yuyuko_Hat>新风格的帽子</entitydescription.Yuyuko_Hat>
+    <talentname.YuyukoTalent>华胥的亡灵</talentname.YuyukoTalent>
+    <talentdescription.YuyukoTalent>当你身着幽幽子 装束+时，
+        受到的治疗减少‖color:gui.red‖30%‖end‖
+        减少‖color:gui.red‖40‖end‖‖color:gui.orange‖武器操作和医疗水平‖end‖
+        每个巡回开始时，固定减少‖color:gui.red‖25%‖end‖‖color:gui.orange‖生命值‖end‖
+        二级及以下的料理效果不再生效
+
+        免疫‖color:gui.yellow‖缺氧‖end‖
+        专属武器的弹幕攻击将额外降低目标的抗性
+        一分钟一次，专属武器可以立即‖color:gui.red‖杀死‖end‖失去意识的敌对生物
+
+        巡回完成任意任务后，有概率获得‖color:gui.orange‖春度碎片‖end‖，可以用于制作西行妖盆栽或培养‖color:gui.orange‖西行妖盆栽‖end‖
+        ‖color:gui.orange‖西行妖盆栽‖end‖将产出‖color:gui.orange‖春度碎片‖end‖，可以代替一部分食材，或用于其他合成
+
+        巡回开始时，如果其他船员有‖color:gui.orange‖妖梦装束+‖end‖，则给予‖color:gui.yellow‖“庭师的职责”‖end‖，增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖所有攻击伤害‖end‖
+    </talentdescription.YuyukoTalent>
+    <afflictionname.Touhou_Yuyuko_Character_Effect>天衣无缝的亡灵</afflictionname.Touhou_Yuyuko_Character_Effect>
+    <afflictiondescription.Touhou_Yuyuko_Character_Effect>她性格开朗，而且给人呆呆的感觉，十分慢性子，相当无法捉摸，任性妄为。</afflictiondescription.Touhou_Yuyuko_Character_Effect>
+    <afflictionname.Yuyuko_Weapons>幽冥楼阁的亡灵少女</afflictionname.Yuyuko_Weapons>
+    <afflictiondescription.Yuyuko_Weapons>幽幽子已经以亡灵的姿态存世千年以上，也将永远居住在冥界的白玉楼中。</afflictiondescription.Yuyuko_Weapons>
+
+    <entityname.Touhou_Spring_Fragment>‖color:162,195,219,255‖春度碎片‖end‖</entityname.Touhou_Spring_Fragment>
+    <entitydescription.Touhou_Spring_Fragment>在冰洋中相当难得的春度的一片，直接服用有少许治疗效果，能治疗“返魂蝶”，可以用于代替一些料理需求的食材，也可以制作其他物品</entitydescription.Touhou_Spring_Fragment>
+    <entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>‖color:162,195,219,255‖西行妖盆栽‖end‖</entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>
+    <entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>因为幽幽子和春度的聚集而生长的西行妖类似物，拥有相似的力量。随着时间推移，会散落春度碎片‖color:gui.yellow‖（右键+E键放置，按E直接拾取）‖end‖</entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>
+
+
+
+
+
+
+
+
     <!--通用-->
     <entityname.Normal_Yousei_Clothes>妖精常服</entityname.Normal_Yousei_Clothes>
     <entitydescription.Normal_Yousei_Clothes>随处可见的妖精的常服</entitydescription.Normal_Yousei_Clothes>
+    <entityname.Normal_Magician_Clothes>魔法使常服</entityname.Normal_Magician_Clothes>
+    <entitydescription.Normal_Magician_Clothes>刚入门的魔法使的常服</entitydescription.Normal_Magician_Clothes>
+    <entityname.Normal_Yokai_Clothes>常见的妖怪装束</entityname.Normal_Yokai_Clothes>
+    <entitydescription.Normal_Yokai_Clothes>最常出现的妖怪们的装束</entitydescription.Normal_Yokai_Clothes>
+
 
 
 
@@ -1166,6 +1260,7 @@
     <Character.MRE_Material_Satori>觉的回忆</Character.MRE_Material_Satori>
     <Character.MRE_Material_Tewi>因幡天为的回忆</Character.MRE_Material_Tewi>
     <Character.MRE_Material_Kaguya>辉夜的回忆</Character.MRE_Material_Kaguya>
+    <Character.MRE_Material_Yuyuko>幽幽子的回忆</Character.MRE_Material_Yuyuko>
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有15%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
@@ -1241,4 +1336,6 @@
     <talentdescription.MRE_Tewi>仅对因幡天为 装束+生效。每一分钟获得随机一种幸运眷顾或幸运庇护效果</talentdescription.MRE_Tewi>
     <talentname.MRE_Kaguya>出血效应-蓬莱山辉夜</talentname.MRE_Kaguya>
     <talentdescription.MRE_Kaguya>仅对辉夜 装束+生效。所有船员立刻获得一个天赋点。如果收集完并应用五种宝物（耀眼的龙玉，佛体的金刚石，火蜥蜴之盾，无限的生命之泉，蓬莱的玉枝），则提高25%技能水平，并免疫毒药和麻痹</talentdescription.MRE_Kaguya>
+    <talentname.MRE_Yuyuko>出血效应-西行寺幽幽子</talentname.MRE_Yuyuko>
+    <talentdescription.MRE_Yuyuko>仅对幽幽子 装束+生效。生命值高于0时，不会被秒杀。专属武器弹幕攻击附加“返魂蝶”，会逐渐减少目标生命值并降低抗性</talentdescription.MRE_Yuyuko>
 </infotexts>

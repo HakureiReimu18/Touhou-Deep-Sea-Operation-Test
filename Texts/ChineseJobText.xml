@@ -29,7 +29,7 @@
     <talentname.Talents_Magician_Primary06>修行</talentname.Talents_Magician_Primary06>
     <talentdescription.Talents_Magician_Primary06>根据当前魔法能力的水平，提高相应‖color:gui.green‖10%‖end‖的移动速度、远程射击速度。最多‖color:gui.green‖20%‖end‖</talentdescription.Talents_Magician_Primary06>
     <talentname.Talents_Magician_Primary07>妖怪退治</talentname.Talents_Magician_Primary07>
-    <talentdescription.Talents_Magician_Primary07>对非人类造成的物理伤害提高‖color:gui.green‖15%‖end‖，对友军造成的伤害减少‖color:gui.green‖30%‖end‖。</talentdescription.Talents_Magician_Primary07>
+    <talentdescription.Talents_Magician_Primary07>对非人类造成的物理伤害提高‖color:gui.green‖15%‖end‖，对友军造成的伤害减少‖color:gui.green‖20%‖end‖。</talentdescription.Talents_Magician_Primary07>
     <talentname.Talents_Magician_Primary08>物理魔法使</talentname.Talents_Magician_Primary08>
     <talentdescription.Talents_Magician_Primary08>受水流冲击影响减少‖color:gui.green‖30%‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖ ，解锁配方：‖color:gui.orange‖退魔圣焰‖end‖，‖color:gui.orange‖祓魔霰弹‖end‖。</talentdescription.Talents_Magician_Primary08>
     <!--忘却之人-->
@@ -50,7 +50,7 @@
     <talentname.Spell_Card_Recycle_Unlocked>炼金无限</talentname.Spell_Card_Recycle_Unlocked>
     <talentdescription.Spell_Card_Recycle_Unlocked>瓶装元素的购买价格降低‖color:gui.green‖25%‖end‖，双手部位的‖color:gui.orange‖物理伤害抗性和烧伤抗性‖end‖提高‖color:gui.green‖5%‖end‖，解锁配方：回收‖color:gui.orange‖日、月符卡‖end‖。</talentdescription.Spell_Card_Recycle_Unlocked>
     <talentname.Magic_Breakthrough>魔法突破</talentname.Magic_Breakthrough>
-    <talentdescription.Magic_Breakthrough>制造所有物品时质量提升‖color:gui.green‖1‖end‖，如果是帕秋莉+/魔理沙+装束/芙兰朵露+/爱丽丝+/艾玛+/希罗+装束，则质量再提升‖color:gui.green‖1‖end‖。</talentdescription.Magic_Breakthrough>
+    <talentdescription.Magic_Breakthrough>制造所有物品时质量提升‖color:gui.green‖1‖end‖，如果是帕秋莉+/魔理沙+装束/芙兰朵露+/爱丽丝+/艾玛+/希罗+/雪莉+装束，则质量再提升‖color:gui.green‖1‖end‖。</talentdescription.Magic_Breakthrough>
     <talentname.Foul_Potion_Unlocked>逆位隐士</talentname.Foul_Potion_Unlocked>
     <talentdescription.Foul_Potion_Unlocked>魔法材料的制造速度增加‖color:gui.green‖50%‖end‖，造成的毒药效果提高‖color:gui.green‖20%‖end‖，解锁配方：‖color:gui.orange‖污秽药剂‖end‖。</talentdescription.Foul_Potion_Unlocked>
     <talentname.Touhou_Buff>正位隐士</talentname.Touhou_Buff>
@@ -78,17 +78,19 @@
     <talentname.MEID_Unlocked>魔法天才</talentname.MEID_Unlocked>
     <talentdescription.MEID_Unlocked>制作魔法相关物品时，有概率不消耗其中一个材料。解锁配方：‖color:gui.orange‖MEID‖end‖</talentdescription.MEID_Unlocked>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect01>幻想入-帕秋莉</afflictionname.Gensokyo_Divinggear_Unlocked_Effect01>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>减少15%友军伤害，造成的五种元素对应的伤害增加10%</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>减少10%友军伤害，造成的五种元素对应的伤害增加10%</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect01>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect02>幻想入-魔理沙</afflictionname.Gensokyo_Divinggear_Unlocked_Effect02>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>减少15%友军伤害，所有技能，尤其是魔法能力得到小幅提升。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>减少10%友军伤害，所有技能，尤其是魔法能力得到小幅提升。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect02>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect03>幻想入-芙兰朵露</afflictionname.Gensokyo_Divinggear_Unlocked_Effect03>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>减少15%友军伤害，增加40%烧伤抗性。根据魔法能力的数值，增加相应10%的最大生命值,最多20%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>减少10%友军伤害，增加40%烧伤抗性。根据魔法能力的数值，增加相应10%的最大生命值,最多20%.</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect03>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect04>幻想入-爱丽丝</afflictionname.Gensokyo_Divinggear_Unlocked_Effect04>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>减少15%友军伤害，提高20%物理伤害抗性和烧伤抗性，且不容易被敌人察觉。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>减少10%友军伤害，提高20%物理伤害抗性和烧伤抗性，且不容易被敌人察觉。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect04>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect05>幻想入-艾玛</afflictionname.Gensokyo_Divinggear_Unlocked_Effect05>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>减少15%友军伤害，提高40%技能水平和15%最大生命值。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>减少10%友军伤害，提高40%技能水平和15%最大生命值。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect05>
     <afflictionname.Gensokyo_Divinggear_Unlocked_Effect06>幻想入-希罗</afflictionname.Gensokyo_Divinggear_Unlocked_Effect06>
-    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>减少15%友军伤害，提高20%弹幕伤害。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>减少10%友军伤害，提高20%弹幕伤害。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect06>
+    <afflictionname.Gensokyo_Divinggear_Unlocked_Effect07>幻想入-雪莉</afflictionname.Gensokyo_Divinggear_Unlocked_Effect07>
+    <afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect07>减少10%友军伤害，提高10%穿甲。</afflictiondescription.Gensokyo_Divinggear_Unlocked_Effect07>
 <!--幻想入爱丽丝未完成-->
 
     <!--妖精职业-->
@@ -185,13 +187,13 @@
     <talentname.Talents_Yokai_Primary04>中坚力量</talentname.Talents_Yokai_Primary04>
     <talentdescription.Talents_Yokai_Primary04>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖修复速度‖end‖和‖color:gui.green‖10%‖end‖‖color:gui.orange‖船体修复速度‖end‖。等级大于‖color:gui.green‖8‖end‖后，这个效果翻倍</talentdescription.Talents_Yokai_Primary04>
     <talentname.Talents_Yokai_Primary05>自然法则</talentname.Talents_Yokai_Primary05>
-    <talentdescription.Talents_Yokai_Primary05>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖对人类敌人的伤害</talentdescription.Talents_Yokai_Primary05>
+    <talentdescription.Talents_Yokai_Primary05>减少‖color:gui.red‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖对人类敌人的伤害</talentdescription.Talents_Yokai_Primary05>
     <talentname.Talents_Yokai_Primary06>弱肉强食</talentname.Talents_Yokai_Primary06>
-    <talentdescription.Talents_Yokai_Primary06>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖对非人类的伤害</talentdescription.Talents_Yokai_Primary06>
+    <talentdescription.Talents_Yokai_Primary06>减少‖color:gui.red‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖对非人类的伤害</talentdescription.Talents_Yokai_Primary06>
     <talentname.Talents_Yokai_Primary07>莺朋燕友</talentname.Talents_Yokai_Primary07>
-    <talentdescription.Talents_Yokai_Primary07>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，对友方造成的伤害减少‖color:gui.green‖20%‖end‖。</talentdescription.Talents_Yokai_Primary07>
+    <talentdescription.Talents_Yokai_Primary07>减少‖color:gui.red‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，对友方造成的伤害减少‖color:gui.green‖20%‖end‖。</talentdescription.Talents_Yokai_Primary07>
     <talentname.Talents_Yokai_Primary08>始作俑者</talentname.Talents_Yokai_Primary08>
-    <talentdescription.Talents_Yokai_Primary08>减少‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖所有类型的伤害（包括‖color:gui.orange‖爆炸伤害‖end‖，‖color:gui.orange‖炮塔伤害‖end‖）。</talentdescription.Talents_Yokai_Primary08>
+    <talentdescription.Talents_Yokai_Primary08>减少‖color:gui.red‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖5%‖end‖所有类型的伤害（包括‖color:gui.orange‖爆炸伤害‖end‖，‖color:gui.orange‖炮塔伤害‖end‖）。</talentdescription.Talents_Yokai_Primary08>
     <talentname.Talents_Yokai_Primary09>风行水上</talentname.Talents_Yokai_Primary09>
     <talentdescription.Talents_Yokai_Primary09>增加‖color:gui.green‖15%‖end‖的‖color:gui.orange‖游泳速度‖end‖，在‖color:gui.yellow‖开放海域‖end‖额外增加‖color:gui.green‖20%‖end‖</talentdescription.Talents_Yokai_Primary09>
     <talentname.Talents_Yokai_Primary10>分花拂柳</talentname.Talents_Yokai_Primary10>
@@ -221,7 +223,7 @@
 
     <talenttree.Yokai_Talents_Select>分支选择</talenttree.Yokai_Talents_Select>
     <talentname.Yokai_Select_Youling_Wangling>幽灵/亡灵</talentname.Yokai_Select_Youling_Wangling>
-    <talentdescription.Yokai_Select_Youling_Wangling>选择此分支后，不可再解锁其它分支。对应角色：‖color:gui.orange‖魂魄妖梦‖end‖</talentdescription.Yokai_Select_Youling_Wangling>
+    <talentdescription.Yokai_Select_Youling_Wangling>选择此分支后，不可再解锁其它分支。对应角色：‖color:gui.orange‖魂魄妖梦，西行寺幽幽子‖end‖</talentdescription.Yokai_Select_Youling_Wangling>
     <talentname.Yokai_Select_Yaoguai>妖怪</talentname.Yokai_Select_Yaoguai>
     <talentdescription.Yokai_Select_Yaoguai>选择此分支后，不可再解锁其它分支。对应角色：‖color:gui.orange‖风见幽香，封兽鵺，河城荷取，古明地恋，八云紫，古明地觉‖end‖</talentdescription.Yokai_Select_Yaoguai>
     <talentname.Yokai_Select_Vampire>吸血鬼</talentname.Yokai_Select_Vampire>
@@ -245,20 +247,25 @@
     <talentdescription.Touhou_Youling_Wangling02>对越‖color:gui.red‖弱小‖end‖的敌人造成越多额外伤害，最高‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Youling_Wangling02>
     <talentname.Touhou_Youling_Wangling03>斩断魂灵</talentname.Touhou_Youling_Wangling03>
     <talentdescription.Touhou_Youling_Wangling03>对‖color:gui.red‖剩余生命值‖end‖越高的敌人，穿透的护甲越高，最高‖color:gui.green‖10%‖end‖。
-        穿着‖color:gui.red‖妖梦装束+‖end‖时：对‖color:gui.red‖满血敌人‖end‖的攻击造成额外‖color:gui.green‖30%‖end‖伤害，额外‖color:gui.green‖10%‖end‖穿甲。攻击拥有‖color:gui.orange‖断念‖end‖效果的敌人时将附带‖color:gui.orange‖缓慢‖end‖效果。</talentdescription.Touhou_Youling_Wangling03>
+        穿着‖color:gui.red‖妖梦装束+‖end‖时：对‖color:gui.red‖满血敌人‖end‖的攻击造成额外‖color:gui.green‖30%‖end‖伤害，额外‖color:gui.green‖10%‖end‖穿甲。攻击拥有‖color:gui.orange‖断念‖end‖效果的敌人时将附带‖color:gui.orange‖缓慢‖end‖效果。
+        穿着‖color:gui.red‖幽幽子装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.yellow‖物理伤害抗性和烧伤抗性‖end‖。对半血以下的敌人造成的穿甲增加‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Youling_Wangling03>
     <talentname.Touhou_Youling_Wangling04>三魂七魄</talentname.Touhou_Youling_Wangling04>
     <talentdescription.Touhou_Youling_Wangling04>当血量低于‖color:gui.green‖30%‖end‖时，短暂提高‖color:gui.green‖20%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖和‖color:gui.orange‖烧伤抗性‖end‖
-        穿着‖color:gui.red‖妖梦装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖20‖end‖点‖color:gui.orange‖武器操作‖end‖。</talentdescription.Touhou_Youling_Wangling04>
+        穿着‖color:gui.red‖妖梦装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，增加‖color:gui.green‖20‖end‖点‖color:gui.orange‖武器操作‖end‖。
+        穿着‖color:gui.red‖幽幽子装束+‖end‖时：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖最大生命值‖end‖</talentdescription.Touhou_Youling_Wangling04>
     <talentname.Touhou_Youling_Wangling05>或生或死</talentname.Touhou_Youling_Wangling05>
     <talentdescription.Touhou_Youling_Wangling05>你杀死任意生物时，短暂提高自身‖color:gui.orange‖眩晕抗性‖end‖
-        穿着‖color:gui.red‖妖梦装束+‖end‖时：你杀死任意生物后，短暂提高‖color:gui.orange‖debuff抗性‖end‖</talentdescription.Touhou_Youling_Wangling05>
+        穿着‖color:gui.red‖妖梦装束+‖end‖时：你杀死任意生物后，短暂提高‖color:gui.orange‖debuff抗性‖end‖
+        穿着‖color:gui.red‖幽幽子装束+‖end‖时：减少‖color:gui.green‖20%‖end‖受到的伤害。食用可生效的料理后，增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖所有伤害‖end‖</talentdescription.Touhou_Youling_Wangling05>
     <talentname.Touhou_Youling_Wangling06>轮回忘却</talentname.Touhou_Youling_Wangling06>
-    <talentdescription.Touhou_Youling_Wangling06>根据‖color:gui.orange‖魔法能力‖end‖的‖color:gui.green‖10%‖end‖增加其他技能水平，最多‖color:gui.green‖30%‖end‖
-        穿着‖color:gui.red‖妖梦装束+‖end‖时：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖近战伤害‖end‖，根据‖color:gui.orange‖武器操作‖end‖水平，提高相应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖最大生命值‖end‖，最多‖color:gui.green‖20%‖end‖</talentdescription.Touhou_Youling_Wangling06>
+    <talentdescription.Touhou_Youling_Wangling06>‖color:gui.orange‖魔法能力‖end‖超过‖color:gui.green‖100‖end‖后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖技能水平‖end‖。减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖友军伤害‖end‖
+        穿着‖color:gui.red‖妖梦装束+‖end‖时：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖近战伤害‖end‖，根据‖color:gui.orange‖武器操作‖end‖水平，提高相应‖color:gui.green‖10%‖end‖的‖color:gui.orange‖最大生命值‖end‖，最多‖color:gui.green‖20%‖end‖
+        穿着‖color:gui.red‖幽幽子装束+‖end‖时：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖技能水平‖end‖。每有‖color:gui.green‖1‖end‖点‖color:gui.orange‖魔法能力‖end‖，增加‖color:gui.green‖0.05%‖end‖‖color:gui.orange‖所有攻击伤害‖end‖，最多‖color:gui.green‖10%‖end‖</talentdescription.Touhou_Youling_Wangling06>
     <talentname.Touhou_Youling_Wangling07>须弥芥子</talentname.Touhou_Youling_Wangling07>
     <talentdescription.Touhou_Youling_Wangling07>
         穿着‖color:gui.red‖妖梦装束+‖end‖时：一巡回一次，生命值低于‖color:gui.green‖0‖end‖时将保持清醒‖color:gui.green‖10‖end‖秒，同时提高‖color:gui.green‖50%‖end‖的‖color:gui.orange‖技能水平‖end‖。
-        如果在‖color:gui.green‖10‖end‖秒内杀死任何生物，将延长‖color:gui.green‖1‖end‖秒持续时间。</talentdescription.Touhou_Youling_Wangling07>
+        如果在‖color:gui.green‖10‖end‖秒内杀死任何生物，将延长‖color:gui.green‖1‖end‖秒持续时间。
+        穿着‖color:gui.red‖幽幽子装束+‖end‖时：只要当前生命值不满，就增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖弹幕伤害‖end‖，受到攻击后也会给予攻击者大量抗性减益</talentdescription.Touhou_Youling_Wangling07>
 
     <talenttree.Touhou_Yaoguai>妖怪</talenttree.Touhou_Yaoguai>
     <talentname.Touhou_Yaoguai01>隐秘传说</talentname.Touhou_Yaoguai01>
@@ -406,7 +413,7 @@
 
     <talenttree.Touhou_ShenMing>神明/付丧神</talenttree.Touhou_ShenMing>
     <talentname.Touhou_ShenMing01>寄宿于物</talentname.Touhou_ShenMing01>
-    <talentdescription.Touhou_ShenMing01>‖color:gui.orange‖物理伤害抗性‖end‖减少‖color:gui.red‖10%‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。生命值高于‖color:gui.green‖50%‖end‖时，更难被敌人发现</talentdescription.Touhou_ShenMing01>
+    <talentdescription.Touhou_ShenMing01>增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。生命值高于‖color:gui.green‖50%‖end‖时，更难被敌人发现</talentdescription.Touhou_ShenMing01>
     <talentname.Touhou_ShenMing02>光亮如新</talentname.Touhou_ShenMing02>
     <talentdescription.Touhou_ShenMing02>受到药物治疗的效果增加‖color:gui.green‖20%‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖debuff抗性‖end‖和‖color:gui.green‖35%‖end‖‖color:gui.orange‖毒药抗性‖end‖，减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖debuff持续时间‖end‖</talentdescription.Touhou_ShenMing02>
     <talentname.Touhou_ShenMing03>本质具现</talentname.Touhou_ShenMing03>

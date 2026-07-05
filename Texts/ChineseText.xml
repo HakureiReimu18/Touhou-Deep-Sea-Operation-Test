@@ -467,9 +467,9 @@
     <entityname.Touhou_Super_Candy>超级糖果</entityname.Touhou_Super_Candy>
     <entitydescription.Touhou_Super_Candy>拥有不俗治疗效果的特殊糖果，混合了四种口味</entitydescription.Touhou_Super_Candy>
     <entityname.Touhou_Candy_Cannon>糖果炮</entityname.Touhou_Candy_Cannon>
-    <entitydescription.Touhou_Candy_Cannon>可以发射糖衣炮弹的手持加农炮，不要被甜言蜜语欺骗了</entitydescription.Touhou_Candy_Cannon>
+    <entitydescription.Touhou_Candy_Cannon>可以发射糖衣炮弹的手持加农炮，不要被甜言蜜语欺骗了。使用‖color:gui.yellow‖糖衣炮弹或糖衣大炮弹‖end‖</entitydescription.Touhou_Candy_Cannon>
     <entityname.Touhou_Candy_Cannon_Plus>糖果炮Plus</entityname.Touhou_Candy_Cannon_Plus>
-    <entitydescription.Touhou_Candy_Cannon_Plus>甜而不腻</entitydescription.Touhou_Candy_Cannon_Plus>
+    <entitydescription.Touhou_Candy_Cannon_Plus>甜而不腻。使用‖color:gui.yellow‖糖衣炮弹或糖衣大炮弹‖end‖</entitydescription.Touhou_Candy_Cannon_Plus>
     <entityname.Touhou_Sugar_Coated_Cannonball>糖衣炮弹</entityname.Touhou_Sugar_Coated_Cannonball>
     <entitydescription.Touhou_Sugar_Coated_Cannonball>味道甘甜，但其中蕴藏的危险也不容忽视。作为‖color:gui.yellow‖糖果炮/糖果炮Plus‖end‖的弹药</entitydescription.Touhou_Sugar_Coated_Cannonball>
     <entityname.Touhou_Huge_Sugar_Coated_Cannonball>糖衣大炮弹</entityname.Touhou_Huge_Sugar_Coated_Cannonball>
@@ -1209,6 +1209,8 @@
     <entitydescription.Touhou_Magic_Charging_Box_Medium>可以给所有魔法武器弹药充能（不包括需求星界层的武器）</entitydescription.Touhou_Magic_Charging_Box_Medium>
     <entityname.Touhou_Magic_Charging_Box_Huge>魔法武器充能箱（大型）</entityname.Touhou_Magic_Charging_Box_Huge>
     <entitydescription.Touhou_Magic_Charging_Box_Huge>可以给所有魔法武器弹药充能，并且更加耐用</entitydescription.Touhou_Magic_Charging_Box_Huge>
+    <entityname.Touhou_Magic_Charging_Box_Special>魔法武器充能箱（定制）</entityname.Touhou_Magic_Charging_Box_Special>
+    <entitydescription.Touhou_Magic_Charging_Box_Special>可以给所有魔法武器弹药立刻充能至上限，可一次充能多个魔法武器弹药，只能使用5次</entitydescription.Touhou_Magic_Charging_Box_Special>
     <entityname.Touhou_Phoenix_Tail_Tank>不死鸟焊接罐</entityname.Touhou_Phoenix_Tail_Tank>
     <entitydescription.Touhou_Phoenix_Tail_Tank>不死鸟之羽加工成的焊接燃料，在耐久用尽前，它会缓慢恢复自身的耐久</entitydescription.Touhou_Phoenix_Tail_Tank>
     <entityname.Touhou_Merry_MobilePhone>梅莉的电话</entityname.Touhou_Merry_MobilePhone>
@@ -1991,12 +1993,27 @@
     <entityname.Touhou_Star_Moon_Waist_Pouch>星月腰包</entityname.Touhou_Star_Moon_Waist_Pouch>
     <entitydescription.Touhou_Star_Moon_Waist_Pouch>由精通魔法纹路的匠人手工缝制的昂贵腰包，能与魔力披纱产生更好的效果。同时也具有元素腰带的属性，同样拥有单独的元素瓶槽位。虽然槽位更少，但有了更好的效果。</entitydescription.Touhou_Star_Moon_Waist_Pouch>
 
-
     <entityname.Touhou_Mixer_Gun>调音台</entityname.Touhou_Mixer_Gun>
     <entitydescription.Touhou_Mixer_Gun>把乐器和武器结合，这种设计已有先例，但像调音台这样激进，却是绝无仅有的。插入稀有度越高的唱片，武器的威力越大。使用‖color:gui.yellow‖共鸣核心‖end‖。</entitydescription.Touhou_Mixer_Gun>
     <entityname.Touhou_Mixer_Gun_Ammo>共鸣核心</entityname.Touhou_Mixer_Gun_Ammo>
     <entitydescription.Touhou_Mixer_Gun_Ammo>用于提取音乐中每一处音符的能量，即便是简单的音符也能爆发出不容小觑的威力。作为‖color:gui.yellow‖调音台‖end‖的弹药</entitydescription.Touhou_Mixer_Gun_Ammo>
 
+    <entityname.Touhou_Corrupted_Shotgun_Bullet>‖color:255,0,0,255‖腐化霰弹‖end‖</entityname.Touhou_Corrupted_Shotgun_Bullet>
+    <entitydescription.Touhou_Corrupted_Shotgun_Bullet>用纯粹的卑金属加以禁忌的工艺打造而成，失去了原本的控制能力，对生物威胁性更高
+        作为‖color:gui.yellow‖使用霰弹弹药武器‖end‖的弹药</entitydescription.Touhou_Corrupted_Shotgun_Bullet>
+
+    <entityname.Touhou_Saigyou_Ayakashi_Branch_Gun>‖color:162,195,219,255‖西行妖枝‖end‖</entityname.Touhou_Saigyou_Ayakashi_Branch_Gun>
+    <entitydescription.Touhou_Saigyou_Ayakashi_Branch_Gun>用西行妖的一截枝干“生长”出的一件特殊武器，一收一放之间，好似有花朵绽放凋零。使用武器击杀任意生物后均可恢复伤势。使用‖color:gui.yellow‖西行妖花瓣匣‖end‖。</entitydescription.Touhou_Saigyou_Ayakashi_Branch_Gun>
+    <entityname.Touhou_Saigyou_Ayakashi_Branch_Gun_Ammo>‖color:162,195,219,255‖西行妖花瓣匣‖end‖</entityname.Touhou_Saigyou_Ayakashi_Branch_Gun_Ammo>
+    <entitydescription.Touhou_Saigyou_Ayakashi_Branch_Gun_Ammo>收集西行妖的花瓣制作的特殊匣子，蕴含生与死的神秘力量。作为‖color:gui.yellow‖西行妖枝‖end‖的弹药</entitydescription.Touhou_Saigyou_Ayakashi_Branch_Gun_Ammo>
+
+    <entityname.Touhou_Higanbana_Arbiter>‖color:162,195,219,255‖彼岸花裁决者‖end‖</entityname.Touhou_Higanbana_Arbiter>
+    <entitydescription.Touhou_Higanbana_Arbiter>用冥界特有的气息与彼岸花“种植”产生的一件武器，轻巧灵敏不失威力。使用‖color:gui.yellow‖彼岸花瓣匣‖end‖。</entitydescription.Touhou_Higanbana_Arbiter>
+    <entityname.Touhou_Higanbana_Arbiter_Ammo>‖color:162,195,219,255‖彼岸花瓣匣‖end‖</entityname.Touhou_Higanbana_Arbiter_Ammo>
+    <entitydescription.Touhou_Higanbana_Arbiter_Ammo>收集彼岸花花瓣制成的特殊能量匣。作为‖color:gui.yellow‖彼岸花裁决者‖end‖的弹药</entitydescription.Touhou_Higanbana_Arbiter_Ammo>
+
+    <entityname.Touhou_Yuyuko_Elegance>‖color:162,195,219,255‖幽雅‖end‖</entityname.Touhou_Yuyuko_Elegance>
+    <entitydescription.Touhou_Yuyuko_Elegance>幽幽子在木卫二上特制的一柄折扇外形的特殊武器，人畜无害的外表下藏着惊人的威力</entitydescription.Touhou_Yuyuko_Elegance>
 
 
 
@@ -2274,7 +2291,7 @@
     <talentname.Hyouibana_Yuka>凭依幽香</talentname.Hyouibana_Yuka>
     <talentdescription.Hyouibana_Yuka>对毒药和出血的抗性更高，近战伤害提高20%。</talentdescription.Hyouibana_Yuka>
     <talentname.Hyouibana_Aunn>凭依阿吽</talentname.Hyouibana_Aunn>
-    <talentdescription.Hyouibana_Aunn>对灵压和精神病的抗性更高，攻击伤害提高5%，友军伤害下降10%。</talentdescription.Hyouibana_Aunn>
+    <talentdescription.Hyouibana_Aunn>对精神病的抗性更高，攻击伤害提高5%，友军伤害下降10%。</talentdescription.Hyouibana_Aunn>
     <talentname.Hyouibana_Flandre>凭依芙兰朵露</talentname.Hyouibana_Flandre>
     <talentdescription.Hyouibana_Flandre>略微加快出血和失血的恢复，对血量低于50%的敌人造成额外5%的穿甲。</talentdescription.Hyouibana_Flandre>
     <talentname.Hyouibana_Nue>凭依鵺</talentname.Hyouibana_Nue>
@@ -2315,5 +2332,7 @@
     <talentdescription.Hyouibana_Tewi>移动速度增加10%。获得灵气紊乱15%的抗性</talentdescription.Hyouibana_Tewi>
     <talentname.Hyouibana_Kaguya>凭依辉夜</talentname.Hyouibana_Kaguya>
     <talentdescription.Hyouibana_Kaguya>增益效果时间延长30%。获得10%出血抗性</talentdescription.Hyouibana_Kaguya>
+    <talentname.Hyouibana_Yuyuko>凭依幽幽子</talentname.Hyouibana_Yuyuko>
+    <talentdescription.Hyouibana_Yuyuko>大幅增加缺氧抗性</talentdescription.Hyouibana_Yuyuko>
 
 </infotexts>

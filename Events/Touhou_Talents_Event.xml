@@ -1,0 +1,738 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RandomEvents>
+        <EventPrefabs>
+            <!--恋恋的无意识概率事件-->
+            <ScriptedEvent identifier="KoishiTalent_Unconscious" commonness="0">
+                <CheckAfflictionAction identifier="Koishi_Unconscious_Flag" MinStrength="0.1">
+                    <Success>
+
+                    </Success>
+                    <Failure>
+                        <RNGAction chance="0.5">
+                            <!--长时间无意识-->
+                            <Success>
+                                <RNGAction chance="0.5">
+                                    <!--最长时间无意识-->
+                                    <Success>
+                                        <RNGAction chance="0.33">
+                                            <!--3级无意识-->
+                                            <Success>
+                                                <StatusEffectAction targettag="statuseffectuser">
+                                                    <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                        <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                        <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                        <Affliction identifier="Koishi_Unconscious_Flag" strength="25"/>
+                                                        <Affliction identifier="Koishi_Unconscious03" strength="25"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Success>
+                                            <!--低等级无意识-->
+                                            <Failure>
+                                                <RNGAction chance="0.5">
+                                                    <!--2级无意识-->
+                                                    <Success>
+                                                        <StatusEffectAction targettag="statuseffectuser">
+                                                            <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                                <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                                <Affliction identifier="Koishi_Unconscious_Flag" strength="25"/>
+                                                                <Affliction identifier="Koishi_Unconscious02" strength="25"/>
+                                                            </StatusEffect>
+                                                        </StatusEffectAction>
+                                                    </Success>
+                                                    <!--1级无意识-->
+                                                    <Failure>
+                                                        <StatusEffectAction targettag="statuseffectuser">
+                                                            <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                                <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                                <Affliction identifier="Koishi_Unconscious_Flag" strength="25"/>
+                                                                <Affliction identifier="Koishi_Unconscious01" strength="25"/>
+                                                            </StatusEffect>
+                                                        </StatusEffectAction>
+                                                    </Failure>
+                                                </RNGAction>
+                                            </Failure>
+                                        </RNGAction>
+                                    </Success>
+                                    <!--较长时间无意识-->
+                                    <Failure>
+                                        <RNGAction chance="0.33">
+                                            <!--3级无意识-->
+                                            <Success>
+                                                <StatusEffectAction targettag="statuseffectuser">
+                                                    <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                        <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                        <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                        <Affliction identifier="Koishi_Unconscious_Flag" strength="12"/>
+                                                        <Affliction identifier="Koishi_Unconscious03" strength="12"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Success>
+                                            <!--低等级无意识-->
+                                            <Failure>
+                                                <RNGAction chance="0.5">
+                                                    <!--2级无意识-->
+                                                    <Success>
+                                                        <StatusEffectAction targettag="statuseffectuser">
+                                                            <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                                <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                                <Affliction identifier="Koishi_Unconscious_Flag" strength="12"/>
+                                                                <Affliction identifier="Koishi_Unconscious02" strength="12"/>
+                                                            </StatusEffect>
+                                                        </StatusEffectAction>
+                                                    </Success>
+                                                    <!--1级无意识-->
+                                                    <Failure>
+                                                        <StatusEffectAction targettag="statuseffectuser">
+                                                            <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                                <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                                <Affliction identifier="Koishi_Unconscious_Flag" strength="12"/>
+                                                                <Affliction identifier="Koishi_Unconscious01" strength="12"/>
+                                                            </StatusEffect>
+                                                        </StatusEffectAction>
+                                                    </Failure>
+                                                </RNGAction>
+                                            </Failure>
+                                        </RNGAction>
+                                    </Failure>
+                                </RNGAction>
+                            </Success>
+                            <!--短时间无意识-->
+                            <Failure>
+                                <RNGAction chance="0.5">
+                                    <!--较短时间无意识-->
+                                    <Success>
+                                        <RNGAction chance="0.33">
+                                            <!--3级无意识-->
+                                            <Success>
+                                                <StatusEffectAction targettag="statuseffectuser">
+                                                    <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                        <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                        <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                        <Affliction identifier="Koishi_Unconscious_Flag" strength="8"/>
+                                                        <Affliction identifier="Koishi_Unconscious03" strength="8"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Success>
+                                            <!--低等级无意识-->
+                                            <Failure>
+                                                <RNGAction chance="0.5">
+                                                    <!--2级无意识-->
+                                                    <Success>
+                                                        <StatusEffectAction targettag="statuseffectuser">
+                                                            <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                                <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                                <Affliction identifier="Koishi_Unconscious_Flag" strength="8"/>
+                                                                <Affliction identifier="Koishi_Unconscious02" strength="8"/>
+                                                            </StatusEffect>
+                                                        </StatusEffectAction>
+                                                    </Success>
+                                                    <!--1级无意识-->
+                                                    <Failure>
+                                                        <StatusEffectAction targettag="statuseffectuser">
+                                                            <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                                <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                                <Affliction identifier="Koishi_Unconscious_Flag" strength="8"/>
+                                                                <Affliction identifier="Koishi_Unconscious01" strength="8"/>
+                                                            </StatusEffect>
+                                                        </StatusEffectAction>
+                                                    </Failure>
+                                                </RNGAction>
+                                            </Failure>
+                                        </RNGAction>
+                                    </Success>
+                                    <!--最短时间无意识-->
+                                    <Failure>
+                                        <RNGAction chance="0.33">
+                                            <!--3级无意识-->
+                                            <Success>
+                                                <StatusEffectAction targettag="statuseffectuser">
+                                                    <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                        <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                        <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                        <Affliction identifier="Koishi_Unconscious_Flag" strength="5"/>
+                                                        <Affliction identifier="Koishi_Unconscious03" strength="5"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Success>
+                                            <!--低等级无意识-->
+                                            <Failure>
+                                                <RNGAction chance="0.5">
+                                                    <!--2级无意识-->
+                                                    <Success>
+                                                        <StatusEffectAction targettag="statuseffectuser">
+                                                            <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                                <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                                <Affliction identifier="Koishi_Unconscious_Flag" strength="5"/>
+                                                                <Affliction identifier="Koishi_Unconscious02" strength="5"/>
+                                                            </StatusEffect>
+                                                        </StatusEffectAction>
+                                                    </Success>
+                                                    <!--1级无意识-->
+                                                    <Failure>
+                                                        <StatusEffectAction targettag="statuseffectuser">
+                                                            <StatusEffect target="Character" disabledeltatime="true" comparison="And">
+                                                                <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
+                                                                <Conditional Koishi_Unconscious_Flag="lte 0"/>
+                                                                <Affliction identifier="Koishi_Unconscious_Flag" strength="5"/>
+                                                                <Affliction identifier="Koishi_Unconscious01" strength="5"/>
+                                                            </StatusEffect>
+                                                        </StatusEffectAction>
+                                                    </Failure>
+                                                </RNGAction>
+                                            </Failure>
+                                        </RNGAction>
+                                    </Failure>
+                                </RNGAction>
+                            </Failure>
+                        </RNGAction>
+                    </Failure>
+                </CheckAfflictionAction>
+            </ScriptedEvent>
+
+            <!--斯塔的出血效应概率事件-->
+            <!--概率：15*2,14*5-->
+            <ScriptedEvent identifier="MRE_Star_Talent_Attacked" commonness="0">
+                <RNGAction chance="0.7">
+                    <!--另外五项-->
+                    <Success>
+                        <RNGAction chance="0.5">
+                            <!--另外三项-->
+                            <Success>
+                                <RNGAction chance="0.666">
+                                    <!--另外两项-->
+                                    <Success>
+                                        <RNGAction chance="0.5">
+                                            <!--短时间增加攻击伤害-->
+                                            <Success>
+                                                <StatusEffectAction targettag="statuseffectuser">
+                                                    <StatusEffect target="Character" disabledeltatime="true">
+                                                        <Conditional MRE_Effect_Flag="gt 0"/>
+                                                        <Affliction identifier="MRE_Star_Talent_Attacked01" strength="10"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Success>
+                                            <!--短时间增加眩晕抗性-->
+                                            <Failure>
+                                                <StatusEffectAction targettag="statuseffectuser">
+                                                    <StatusEffect target="Character" disabledeltatime="true">
+                                                        <Conditional MRE_Effect_Flag="gt 0"/>
+                                                        <Affliction identifier="MRE_Star_Talent_Attacked02" strength="10"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Failure>
+                                        </RNGAction>
+                                    </Success>
+                                    <!--短时间避免被敌人发现-->
+                                    <Failure>
+                                        <StatusEffectAction targettag="statuseffectuser">
+                                            <StatusEffect target="Character" disabledeltatime="true">
+                                                <Conditional MRE_Effect_Flag="gt 0"/>
+                                                <Affliction identifier="MRE_Star_Talent_Attacked03" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Failure>
+                                </RNGAction>
+                            </Success>
+                            <!--另外两项-->
+                            <Failure>
+                                <RNGAction chance="0.5">
+                                    <!--大幅增加移动速度-->
+                                    <Success>
+                                        <StatusEffectAction targettag="statuseffectuser">
+                                            <StatusEffect target="Character" disabledeltatime="true">
+                                                <Conditional MRE_Effect_Flag="gt 0"/>
+                                                <Affliction identifier="MRE_Star_Talent_Attacked04" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Success>
+                                    <!--对周围的敌人造成一次伤害并发生小范围爆炸-->
+                                    <Failure>
+                                        <StatusEffectAction targettag="statuseffectuser">
+                                            <StatusEffect target="Character" disabledeltatime="true">
+                                                <Conditional MRE_Effect_Flag="gt 0"/>
+                                                <Affliction identifier="MRE_Star_Talent_Attacked05" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Failure>
+                                </RNGAction>
+                            </Failure>
+                        </RNGAction>
+                    </Success>
+                    <!--另外两项-->
+                    <Failure>
+                        <RNGAction chance="0.5">
+                            <!--短时间增加自身和所有穿戴妖精装束+的船员物理伤害抗性和烧伤抗性-->
+                            <Success>
+                                <StatusEffectAction targettag="statuseffectuser">
+                                    <StatusEffect target="Character" disabledeltatime="true">
+                                        <Conditional MRE_Effect_Flag="gt 0"/>
+                                        <Affliction identifier="MRE_Star_Talent_Attacked06" strength="10"/>
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Success>
+                            <!--在原地留下一个星光陷阱，对周围目标造成持续伤害，持续10秒-->
+                            <Failure>
+                                <StatusEffectAction targettag="statuseffectuser">
+                                    <StatusEffect target="Character" disabledeltatime="true">
+                                        <Conditional MRE_Effect_Flag="gt 0"/>
+                                        <Affliction identifier="MRE_Star_Talent_Attacked07" strength="10"/>
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Failure>
+                        </RNGAction>
+                    </Failure>
+                </RNGAction>
+            </ScriptedEvent>
+
+<!--
+            &lt;!&ndash;早苗的巡回开始降下奇迹概率事件&ndash;&gt;
+            &lt;!&ndash;概率：15*2,14*5&ndash;&gt;
+            <ScriptedEvent identifier="SanaeTalent_Effect" commonness="0">
+                <TagAction Criteria="crew" Tag="SanaeTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true"/>
+                <RNGAction chance="0.7">
+                    &lt;!&ndash;另外五项&ndash;&gt;
+                    <Success>
+                        <RNGAction chance="0.5">
+                            &lt;!&ndash;另外三项&ndash;&gt;
+                            <Success>
+                                <RNGAction chance="0.666">
+                                    &lt;!&ndash;另外两项&ndash;&gt;
+                                    <Success>
+                                        <RNGAction chance="0.5">
+                                            &lt;!&ndash;星之奇迹：增加50%技能获取速度，技能水平提高10%&ndash;&gt;
+                                            <Success>
+                                                <StatusEffectAction targettag="SanaeTalent_Target">
+                                                    <StatusEffect target="Character" delay="0.1" stackable="false" comparison="And" disabledeltatime="true">
+                                                        <Conditional Manifest_God_Of_Miracles="lte 0"/>
+                                                        <Conditional SanaeTalent_Effect_Flag="lte 0"/>
+                                                        <Affliction identifier="SanaeTalent_Effect01" strength="10"/>
+                                                        <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Success>
+                                            &lt;!&ndash;月之奇迹：修复速度和船体修复速度提高50%，提高15%眩晕抗性&ndash;&gt;
+                                            <Failure>
+                                                <StatusEffectAction targettag="SanaeTalent_Target">
+                                                    <StatusEffect target="Character" delay="0.2" stackable="false" comparison="And" disabledeltatime="true">
+                                                        <Conditional Manifest_God_Of_Miracles="lte 0"/>
+                                                        <Conditional SanaeTalent_Effect_Flag="lte 0"/>
+                                                        <Affliction identifier="SanaeTalent_Effect02" strength="10"/>
+                                                        <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Failure>
+                                        </RNGAction>
+                                    </Success>
+                                    &lt;!&ndash;日之奇迹：每次攻击有35%概率额外造成15%的伤害&ndash;&gt;
+                                    <Failure>
+                                        <StatusEffectAction targettag="SanaeTalent_Target">
+                                            <StatusEffect target="Character" delay="0.3" stackable="false" comparison="And" disabledeltatime="true">
+                                                <Conditional Manifest_God_Of_Miracles="lte 0"/>
+                                                <Conditional SanaeTalent_Effect_Flag="lte 0"/>
+                                                <Affliction identifier="SanaeTalent_Effect03" strength="10"/>
+                                                <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Failure>
+                                </RNGAction>
+                            </Success>
+                            &lt;!&ndash;另外两项&ndash;&gt;
+                            <Failure>
+                                <RNGAction chance="0.5">
+                                    &lt;!&ndash;山之奇迹：增加20%最大生命值，双腿的物理伤害抗性提高20%&ndash;&gt;
+                                    <Success>
+                                        <StatusEffectAction targettag="SanaeTalent_Target">
+                                            <StatusEffect target="Character" delay="0.4" stackable="false" comparison="And" disabledeltatime="true">
+                                                <Conditional Manifest_God_Of_Miracles="lte 0"/>
+                                                <Conditional SanaeTalent_Effect_Flag="lte 0"/>
+                                                <Affliction identifier="SanaeTalent_Effect04" strength="10"/>
+                                                <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Success>
+                                    &lt;!&ndash;海之奇迹：增加40%游泳速度，烧伤抗性提高10%&ndash;&gt;
+                                    <Failure>
+                                        <StatusEffectAction targettag="SanaeTalent_Target">
+                                            <StatusEffect target="Character" delay="0.5" stackable="false" comparison="And" disabledeltatime="true">
+                                                <Conditional Manifest_God_Of_Miracles="lte 0"/>
+                                                <Conditional SanaeTalent_Effect_Flag="lte 0"/>
+                                                <Affliction identifier="SanaeTalent_Effect05" strength="10"/>
+                                                <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Failure>
+                                </RNGAction>
+                            </Failure>
+                        </RNGAction>
+                    </Success>
+                    &lt;!&ndash;另外两项&ndash;&gt;
+                    <Failure>
+                        <RNGAction chance="0.5">
+                            &lt;!&ndash;空之奇迹：获得随机技能7点，经验获取速度提高20%&ndash;&gt;
+                            <Success>
+                                <StatusEffectAction targettag="SanaeTalent_Target">
+                                    <StatusEffect target="Character" delay="0.6" stackable="false" comparison="And" disabledeltatime="true">
+                                        <Conditional Manifest_God_Of_Miracles="lte 0"/>
+                                        <Conditional SanaeTalent_Effect_Flag="lte 0"/>
+                                        <Affliction identifier="SanaeTalent_Effect06" strength="10"/>
+                                        <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                        <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false"/>
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Success>
+                            &lt;!&ndash;风之奇迹：移动速度提高15%，攻击速度提高10%，降低20%友军伤害&ndash;&gt;
+                            <Failure>
+                                <StatusEffectAction targettag="SanaeTalent_Target">
+                                    <StatusEffect target="Character" delay="0.7" stackable="false" comparison="And" disabledeltatime="true">
+                                        <Conditional Manifest_God_Of_Miracles="lte 0"/>
+                                        <Conditional SanaeTalent_Effect_Flag="lte 0"/>
+                                        <Affliction identifier="SanaeTalent_Effect07" strength="10"/>
+                                        <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Failure>
+                        </RNGAction>
+                    </Failure>
+                </RNGAction>
+                <ClearTagAction tag="SanaeTalent_Target"/>
+            </ScriptedEvent>
+
+            &lt;!&ndash;早苗的巡回开始降下奇迹概率事件-对自己生效&ndash;&gt;
+            &lt;!&ndash;概率：15*2,14*5&ndash;&gt;
+            <ScriptedEvent identifier="SanaeTalent_Effect_Self" commonness="0">
+                <RNGAction chance="0.5">
+                    <Success>
+                        <RNGAction chance="0.5">
+                            <Success>
+                                <WaitAction time="0.5"/>
+                            </Success>
+                            <Failure>
+                                <WaitAction time="1.0"/>
+                            </Failure>
+                        </RNGAction>
+                    </Success>
+                    <Failure>
+                        <RNGAction chance="0.5">
+                            <Success>
+                                <WaitAction time="1.5"/>
+                            </Success>
+                            <Failure>
+                                <WaitAction time="2.0"/>
+                            </Failure>
+                        </RNGAction>
+                    </Failure>
+                </RNGAction>
+                <RNGAction chance="0.7">
+                    &lt;!&ndash;另外五项&ndash;&gt;
+                    <Success>
+                        <RNGAction chance="0.5">
+                            &lt;!&ndash;另外三项&ndash;&gt;
+                            <Success>
+                                <RNGAction chance="0.666">
+                                    &lt;!&ndash;另外两项&ndash;&gt;
+                                    <Success>
+                                        <RNGAction chance="0.5">
+                                            &lt;!&ndash;星之奇迹：增加50%技能获取速度，技能水平提高10%&ndash;&gt;
+                                            <Success>
+                                                <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
+                                                    <StatusEffect target="Character" disabledeltatime="true">
+                                                        <Affliction identifier="SanaeTalent_Effect01" strength="10"/>
+                                                        <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Success>
+                                            &lt;!&ndash;月之奇迹：修复速度和船体修复速度提高50%，提高15%眩晕抗性&ndash;&gt;
+                                            <Failure>
+                                                <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
+                                                    <StatusEffect target="Character" disabledeltatime="true">
+                                                        <Affliction identifier="SanaeTalent_Effect02" strength="10"/>
+                                                        <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                                    </StatusEffect>
+                                                </StatusEffectAction>
+                                            </Failure>
+                                        </RNGAction>
+                                    </Success>
+                                    &lt;!&ndash;日之奇迹：每次攻击有35%概率额外造成15%的伤害&ndash;&gt;
+                                    <Failure>
+                                        <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
+                                            <StatusEffect target="Character" disabledeltatime="true">
+                                                <Affliction identifier="SanaeTalent_Effect03" strength="10"/>
+                                                <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Failure>
+                                </RNGAction>
+                            </Success>
+                            &lt;!&ndash;另外两项&ndash;&gt;
+                            <Failure>
+                                <RNGAction chance="0.5">
+                                    &lt;!&ndash;山之奇迹：增加20%最大生命值，双腿的物理伤害抗性提高20%&ndash;&gt;
+                                    <Success>
+                                        <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
+                                            <StatusEffect target="Character" disabledeltatime="true">
+                                                <Affliction identifier="SanaeTalent_Effect04" strength="10"/>
+                                                <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Success>
+                                    &lt;!&ndash;海之奇迹：增加40%游泳速度，烧伤抗性提高10%&ndash;&gt;
+                                    <Failure>
+                                        <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
+                                            <StatusEffect target="Character" disabledeltatime="true">
+                                                <Affliction identifier="SanaeTalent_Effect05" strength="10"/>
+                                                <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                            </StatusEffect>
+                                        </StatusEffectAction>
+                                    </Failure>
+                                </RNGAction>
+                            </Failure>
+                        </RNGAction>
+                    </Success>
+                    &lt;!&ndash;另外两项&ndash;&gt;
+                    <Failure>
+                        <RNGAction chance="0.5">
+                            &lt;!&ndash;空之奇迹：获得随机技能7点，经验获取速度提高20%&ndash;&gt;
+                            <Success>
+                                <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
+                                    <StatusEffect target="Character" disabledeltatime="true">
+                                        <Affliction identifier="SanaeTalent_Effect06" strength="10"/>
+                                        <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                        <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false"/>
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Success>
+                            &lt;!&ndash;风之奇迹：移动速度提高15%，攻击速度提高10%，降低20%友军伤害&ndash;&gt;
+                            <Failure>
+                                <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
+                                    <StatusEffect target="Character" disabledeltatime="true">
+                                        <Affliction identifier="SanaeTalent_Effect07" strength="10"/>
+                                        <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Failure>
+                        </RNGAction>
+                    </Failure>
+                </RNGAction>
+                <ClearTagAction tag="SanaeTalent_Effect_Self_Target"/>
+            </ScriptedEvent>
+-->
+
+            <!--八云紫传送事件-->
+            <ScriptedEvent identifier="YukariTalent_Effect_Self" commonness="0">
+                <TagAction Criteria="player" Tag="YukariTalent_Effect_Self" IgnoreIncapacitatedCharacters="true"/>
+                <TeleportAction Position="MainSub" targettag="YukariTalent_Effect_Self" SpawnPointTag=""/>
+                <StatusEffectAction targettag="YukariTalent_Effect_Self">
+                    <StatusEffect target="Character" delay="1.0" disabledeltatime="true">
+                        <Affliction identifier="YukariTalent_Effect_Self_Effect" strength="10"/>
+                    </StatusEffect>
+                </StatusEffectAction>
+            </ScriptedEvent>
+
+            <!--莲子过巡回给予博物志事件-->
+            <ScriptedEvent identifier="RenkoTalent_MissionCompleted_Check" commonness="0">
+                <TagAction Criteria="crew" Tag="crew" IgnoreIncapacitatedCharacters="false"/>
+                <CheckAfflictionAction identifier="Hifuu_Club_Merry" MinStrength="0.1" TargetTag="crew">
+                    <Success>
+                        <TriggerEventAction identifier="RenkoTalent_MissionCompleted" nextround="true"/>
+                    </Success>
+                    <Failure>
+
+                    </Failure>
+                </CheckAfflictionAction>
+            </ScriptedEvent>
+
+            <!--莲子过巡回给予博物志事件-->
+            <ScriptedEvent identifier="RenkoTalent_MissionCompleted" commonness="0">
+                <TagAction Criteria="crew" Tag="crew" IgnoreIncapacitatedCharacters="false"/>
+                <CheckAfflictionAction identifier="Hifuu_Club_Merry" MinStrength="0.1" TargetTag="crew">
+                    <Success>
+                        <StatusEffectAction targettag="crew">
+                            <StatusEffect target="Character" disabledeltatime="true">
+                                <Conditional Hifuu_Club_Renko="gt 0"/>
+                                <SpawnItem identifiers="Touhou_Red_Spot_Freak_Report" spawnposition="ThisInventory"/>
+                            </StatusEffect>
+                        </StatusEffectAction>
+                    </Success>
+                    <Failure>
+
+                    </Failure>
+                </CheckAfflictionAction>
+            </ScriptedEvent>
+
+
+            <ScriptedEvent identifier="SanaeTalent_Effect01" Tags="SanaeTalent_Effect">
+                <!-- 星之奇迹：增加30%技能获取速度，技能水平提高10% -->
+                <AfflictionAction Affliction="SanaeTalent_Effect01" Strength="10" TargetTag="SanaeTalent_Target" />
+                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+            </ScriptedEvent>
+            <ScriptedEvent identifier="SanaeTalent_Effect02" Tags="SanaeTalent_Effect">
+                <!-- 月之奇迹：修复速度和船体修复速度提高30%，提高10%眩晕抗性 -->
+                <AfflictionAction Affliction="SanaeTalent_Effect02" Strength="10" TargetTag="SanaeTalent_Target" />
+                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+            </ScriptedEvent>
+            <ScriptedEvent identifier="SanaeTalent_Effect03" Tags="SanaeTalent_Effect">
+                <!-- 日之奇迹：远程攻击伤害提高5%，近战攻击伤害提高15% -->
+                <AfflictionAction Affliction="SanaeTalent_Effect03" Strength="10" TargetTag="SanaeTalent_Target" />
+                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+            </ScriptedEvent>
+            <ScriptedEvent identifier="SanaeTalent_Effect04" Tags="SanaeTalent_Effect">
+                <!-- 山之奇迹：增加10%最大生命值，双腿的物理伤害抗性提高20% -->
+                <AfflictionAction Affliction="SanaeTalent_Effect04" Strength="10" TargetTag="SanaeTalent_Target" />
+                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+            </ScriptedEvent>
+            <ScriptedEvent identifier="SanaeTalent_Effect05" Tags="SanaeTalent_Effect">
+                <!-- 海之奇迹：增加30%游泳速度，烧伤抗性提高10% -->
+                <AfflictionAction Affliction="SanaeTalent_Effect05" Strength="10" TargetTag="SanaeTalent_Target" />
+                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+            </ScriptedEvent>
+            <ScriptedEvent identifier="SanaeTalent_Effect06" Tags="SanaeTalent_Effect">
+                <!-- 空之奇迹：获得随机技能7点，经验获取速度提高10% -->
+                <StatusEffectAction targettag="SanaeTalent_Target">
+                    <StatusEffect target="Character">
+                        <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false" />
+                    </StatusEffect>
+                </StatusEffectAction>
+                <AfflictionAction Affliction="SanaeTalent_Effect06" Strength="10" TargetTag="SanaeTalent_Target" />
+                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+            </ScriptedEvent>
+            <ScriptedEvent identifier="SanaeTalent_Effect07" Tags="SanaeTalent_Effect">
+                <!--风之奇迹：移动速度提高10%，降低20%友军伤害-->
+                <AfflictionAction Affliction="SanaeTalent_Effect07" Strength="10" TargetTag="SanaeTalent_Target" />
+                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+            </ScriptedEvent>
+
+            <ScriptedEvent identifier="SanaeTalent_Effect">
+                <Label name="eventstart" />
+                <ClearTagAction tag="SanaeTalent_Target" />
+                <TagAction Criteria="crew" Tag="SanaeTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true" ChooseRandomExcludingTag="SanaeTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <TagAction Criteria="eventtag:SanaeTalent_Target" Tag="SanaeTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <CountTargetsAction TargetTag="SanaeTalent_Target" MinAmount="1">
+                    <Success>
+                        <CheckConditionalAction TargetTag="SanaeTalent_Target" LogicalOperator="And">
+                            <Conditional Manifest_God_Of_Miracles="lte 0" />
+                            <Conditional SanaeTalent_Effect_Flag="lte 0" />
+                            <Success>
+                                <StatusEffectAction TargetTag="SanaeTalent_Target">
+                                    <StatusEffect target="This" EventTargetTag="SanaeTalent_Target">
+                                        <!-- <TriggerEvent EventTag="SanaeTalent_Effect" /> -->
+                                        <TriggerEvent identifier="SanaeTalent_Effect_Self" />
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Success>
+                            <Failure>
+                                <GoTo Name="eventstart" />
+                            </Failure>
+                        </CheckConditionalAction>
+                    </Success>
+                </CountTargetsAction>
+            </ScriptedEvent>
+
+            <ScriptedEvent identifier="SanaeTalent_Effect_Self">
+                <RNGAction chance="0.7">
+                    <!--另外五项-->
+                    <Success>
+                        <RNGAction chance="0.5">
+                            <!--另外三项-->
+                            <Success>
+                                <RNGAction chance="0.666">
+                                    <!--另外两项-->
+                                    <Success>
+                                        <RNGAction chance="0.5">
+                                            <Success>
+                                                <!-- 星之奇迹：增加30%技能获取速度，技能水平提高10% -->
+                                                <AfflictionAction Affliction="SanaeTalent_Effect01" Strength="10" TargetTag="SanaeTalent_Target" />
+                                                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+                                            </Success>
+                                            <Failure>
+                                                <!-- 月之奇迹：修复速度和船体修复速度提高30%，提高10%眩晕抗性 -->
+                                                <AfflictionAction Affliction="SanaeTalent_Effect02" Strength="10" TargetTag="SanaeTalent_Target" />
+                                                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+                                            </Failure>
+                                        </RNGAction>
+                                    </Success>
+                                    <Failure>
+                                        <!-- 日之奇迹：远程攻击伤害提高5%，近战攻击伤害提高15% -->
+                                        <AfflictionAction Affliction="SanaeTalent_Effect03" Strength="10" TargetTag="SanaeTalent_Target" />
+                                        <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+                                    </Failure>
+                                </RNGAction>
+                            </Success>
+                            <!--另外两项-->
+                            <Failure>
+                                <RNGAction chance="0.5">
+                                    <Success>
+                                        <!-- 山之奇迹：增加10%最大生命值，双腿的物理伤害抗性提高20% -->
+                                        <AfflictionAction Affliction="SanaeTalent_Effect04" Strength="10" TargetTag="SanaeTalent_Target" />
+                                        <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+                                    </Success>
+                                    <Failure>
+                                        <!-- 海之奇迹：增加30%游泳速度，烧伤抗性提高10% -->
+                                        <AfflictionAction Affliction="SanaeTalent_Effect05" Strength="10" TargetTag="SanaeTalent_Target" />
+                                        <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+                                    </Failure>
+                                </RNGAction>
+                            </Failure>
+                        </RNGAction>
+                    </Success>
+                    <!--另外两项-->
+                    <Failure>
+                        <RNGAction chance="0.5">
+                            <Success>
+                                <!-- 空之奇迹：获得随机技能7点，经验获取速度提高10% -->
+                                <StatusEffectAction targettag="SanaeTalent_Target">
+                                    <StatusEffect target="Character">
+                                        <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false" />
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                                <AfflictionAction Affliction="SanaeTalent_Effect06" Strength="10" TargetTag="SanaeTalent_Target" />
+                                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+                            </Success>
+                            <Failure>
+                                <!--风之奇迹：移动速度提高10%，降低20%友军伤害-->
+                                <AfflictionAction Affliction="SanaeTalent_Effect07" Strength="10" TargetTag="SanaeTalent_Target" />
+                                <AfflictionAction Affliction="SanaeTalent_Effect_Flag" Strength="10" TargetTag="SanaeTalent_Target" />
+                            </Failure>
+                        </RNGAction>
+                    </Failure>
+                </RNGAction>
+            </ScriptedEvent>
+
+
+            <ScriptedEvent identifier="YuyukoTalent_Effect">
+                <Label name="eventstart" />
+                <ClearTagAction tag="YuyukoTalent_Target" />
+                <TagAction Criteria="crew" Tag="YuyukoTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true" ChooseRandomExcludingTag="SanaeTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <TagAction Criteria="eventtag:YuyukoTalent_Target" Tag="YuyukoTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <CountTargetsAction TargetTag="YuyukoTalent_Target" MinAmount="1">
+                    <Success>
+                        <CheckConditionalAction TargetTag="YuyukoTalent_Target" >
+                            <Conditional Ancient_Temple="gt 0" />
+                            <Success>
+                                <StatusEffectAction TargetTag="YuyukoTalent_Target">
+                                    <StatusEffect target="This" EventTargetTag="YuyukoTalent_Target">
+                                        <!-- <TriggerEvent EventTag="SanaeTalent_Effect" /> -->
+                                        <TriggerEvent identifier="YuyukoTalent_Effect_Self" />
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Success>
+                            <Failure>
+                                <GoTo Name="eventstart" />
+                            </Failure>
+                        </CheckConditionalAction>
+                    </Success>
+                </CountTargetsAction>
+            </ScriptedEvent>
+
+            <ScriptedEvent identifier="YuyukoTalent_Effect_Self">
+                <AfflictionAction Affliction="Touhou_Yuyuko_Youmu_Effect" Strength="10" TargetTag="YuyukoTalent_Target" />
+            </ScriptedEvent>
+
+        </EventPrefabs>
+</RandomEvents>

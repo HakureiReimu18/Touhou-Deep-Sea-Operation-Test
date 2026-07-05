@@ -100,7 +100,7 @@
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1">
-            <StatValue stattype="TeamAttackMultiplier" value="-0.15"/>
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/The_Still_Library.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -121,7 +121,7 @@
             <StatValue stattype="MechanicalSkillBonus" value="-5"/>
             <StatValue stattype="MedicalSkillBonus" value="-5"/>
             <StatValue stattype="WeaponsSkillBonus" value="-5"/>
-            <StatValue stattype="TeamAttackMultiplier" value="-0.15"/>
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Ordinary_Magician.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -137,7 +137,7 @@
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0.4" maxresistance="0.4">
-            <StatValue stattype="TeamAttackMultiplier" value="-0.15"/>
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Younger_Sister_Of_Scarlet.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
@@ -153,7 +153,7 @@
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" resistancefor="damage,burn" minresistance="0.2" maxresistance="0.2">
-            <StatValue stattype="TeamAttackMultiplier" value="-0.15"/>
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
             <StatValue stattype="SightRangeMultiplier" value="-0.3"/>
             <StatValue stattype="SoundRangeMultiplier" value="-0.6"/>
         </Effect>
@@ -171,7 +171,7 @@
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.4" maxskillmultiplier="1.4">
-            <StatValue stattype="TeamAttackMultiplier" value="-0.15"/>
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
             <StatValue stattype="MaximumHealthMultiplier" value="0.15"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Ema_The_Loathed_One.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
@@ -187,8 +187,26 @@
             hideiconafterdelay="true"
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" />
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
+        </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Hiro_Executor_Of_Justice.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <Affliction
+            name="幻想入-雪莉"
+            identifier="Gensokyo_Divinggear_Unlocked_Effect07"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="5.0"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" >
+            <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Sherry_Deduction.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
     <Affliction

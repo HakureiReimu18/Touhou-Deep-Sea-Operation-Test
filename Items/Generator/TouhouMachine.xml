@@ -324,7 +324,7 @@
             <StartMoveSound file="Content/Items/Weapons/RailgunStart.ogg"/>
             <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg"/>
 
-            <RequiredSkill identifier="Touhou_Magic" level="50"/>
+<!--            <RequiredSkill identifier="Touhou_Magic" level="50"/>-->
 
             <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" directional="true" IsOn="true" drawbehindsubs="true"
                             ignorecontinuoustoggle="true" InheritParentIsActive="false">
@@ -426,7 +426,7 @@
             <EndMoveSound file="Content/Items/Weapons/RailgunStop.ogg"/>
             <ChargeSound file="Content/Items/Weapons/CHAINGUN_chargeUp_loop.ogg" volume="2" range="10000"/>
 
-            <RequiredSkill identifier="Touhou_Magic" level="50"/>
+<!--            <RequiredSkill identifier="Touhou_Magic" level="50"/>-->
 
             <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="2500" directional="true" IsOn="true" drawbehindsubs="true"
                             ignorecontinuoustoggle="true" InheritParentIsActive="false">
@@ -670,7 +670,7 @@
                             ignorecontinuoustoggle="true" InheritParentIsActive="false">
                 <LightTexture texture="Content/Lights/lightcone.png" origin="0.0,0.5" size="1.0,1.0"/>
             </LightComponent>
-            <RequiredSkill identifier="Touhou_Magic" level="50"/>
+<!--            <RequiredSkill identifier="Touhou_Magic" level="50"/>-->
         </Turret>
 
         <aitarget maxsightrange="3000" maxsoundrange="8000" fadeouttime="5"/>
@@ -963,10 +963,6 @@
             <StatusEffect type="OnContained" target="Character" interval="5">
                 <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Plant_Machine_Talent"/>
             </StatusEffect>
-            <StatusEffect target="This" type="OnContained">
-                <Conditional attached="false" targetitemcomponentname="Holdable" />
-                <DropContainedItems />
-            </StatusEffect>
 <!--            <StatusEffect type="Always" target="This" comparison="And" Interval="1.0" disabledeltatime="true" setvalue="true"
                           Tags="Gilead_Branch_Seed_On" stackable="false">
                 <RequiredItems items="Spiritual_Water" type="Contained" targetslot="0"/>
@@ -1039,6 +1035,7 @@
                 <RequiredItems items="Gilead_Branch_Seed,Cinnamon_Branch_Seed,Sun_Flower_Seed,Touhou_Potion_Blending_Seeds" type="Contained" targetslot="4"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" targetitemcomponent="PowerContainer" interval="1" charge="1" stackable="false" disabledeltatime="true">
+                <Conditional targetitemcomponent="Holdable" Attached="eq true" />
                 <Conditional HasStatusTag="eq Touhou_Machine_On" />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" targetitemcomponent="PowerContainer" interval="10" charge="-1" stackable="false" disabledeltatime="true">
@@ -1632,6 +1629,64 @@
 
         <ItemContainer capacity="6" canbeselected="true" hideitems="true" slotsperrow="6" uilabel="" allowuioverlap="true"/>
         <ItemContainer capacity="2" canbeselected="true" hideitems="true" slotsperrow="2" uilabel="" allowuioverlap="true"/>
+    </Item>
+
+
+    <Item
+            name="西行妖盆栽"
+            identifier="Touhou_Saigyou_Ayakashi_Potted_Plant"
+            category="Machine"
+            subcategory="Touhou"
+            tags="container,Touhou_Saigyou_Ayakashi_Potted_Plant"
+            pickdistance="50"
+            linkable="true"
+            GrabWhenSelected="true"
+            scale="0.2">
+        <sprite texture="%ModDir%/Images/General_Items/Touhou_Saigyou_Ayakashi_Potted_Plant.png" sourcerect="840,2,400,430" depth="0.7"
+                premultiplyalpha="false" origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/General_Items/Touhou_Saigyou_Ayakashi_Potted_Plant.png" sourcerect="420,2,400,430" depth="0.5" maxcondition="66.6"
+                      origin="0.5,0.5"/>
+        <BrokenSprite texture="%ModDir%/Images/General_Items/Touhou_Saigyou_Ayakashi_Potted_Plant.png" sourcerect="0,2,400,430" depth="0.5" maxcondition="33.3"
+                      origin="0.5,0.5"/>
+        <Price baseprice="500" sold="false">
+            <Price storeidentifier="merchantoutpost" multiplier="1.1" maxavailable="1"/>
+            <Price storeidentifier="merchantcity" multiplier="1" maxavailable="1"/>
+            <Price storeidentifier="merchantresearch" multiplier="1.1" maxavailable="1"/>
+            <Price storeidentifier="merchantmilitary" multiplier="1" maxavailable="1"/>
+            <Price storeidentifier="merchantmine" multiplier="1.1" maxavailable="1"/>
+        </Price>
+        <Deconstruct time="5">
+            <Item identifier="steel" amount="2"/>
+        </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="10" outcondition="0.01">
+            <RequiredSkill identifier="mechanical" level="20"/>
+            <RequiredItem identifier="Touhou_Spring_Fragment" amount="2" />
+            <RequiredItem identifier="silicon" amount="3" />
+            <RequiredItem identifier="steel" amount="4"/>
+        </Fabricate>
+        <Body width="400" height="430" density="10"/>
+        <Holdable selectkey="Select" pickkey="Use" slots="RightHand+LeftHand" PickingTime="6.0" aimpos="65,-10" handle1="0,0" attachable="true"
+                  limitedattachable="true" aimable="false">
+            <StatusEffect type="OnContained" target="Character" interval="5">
+                <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Plant_Machine_Talent"/>
+            </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
+            <StatusEffect type="NotInWater" target="This" Interval="3" stackable="false" condition="0.1"/>
+            <StatusEffect type="Always" target="This" comparison="And" Interval="300" stackable="false" spawnItemRandomly="true">
+                <Conditional Condition="eq 100"/>
+                <Conditional targetitemcomponent="Holdable" Attached="eq true" />
+                <SpawnItem identifiers="Touhou_Spring_Fragment" spawnposition="ThisInventory"/>
+            </StatusEffect>
+        </Holdable>
+        <ItemContainer capacity="2" maxstacksize="63" canbeselected="true" hideitems="true">
+            <Containable items="Touhou_Spring_Fragment" />
+            <ContainedStateIndicator texture="Content/UI/ContainerIndicators.png" sourcerect="0,184,120,32"/>
+        </ItemContainer>
+
+        <LightComponent lightcolor="255,255,255,15" castshadows="false" range="250.0" IsOn="true" powerconsumption="0" alphablend="true"
+                        allowingameediting="false">
+            <sprite texture="Content/Items/Weapons/Loaders.png" sourcerect="348,921,1,1" origin="1.0,-1.0" alpha="1.0"/>
+        </LightComponent>
     </Item>
 
 

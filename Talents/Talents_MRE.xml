@@ -1869,4 +1869,45 @@
     </Talent>
 
 
+    <!--出血效应-西行寺幽幽子-->
+    <Talent identifier="MRE_Yuyuko">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.MRE_Yuyuko"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval Interval="2.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionAboveVitality vitalitypercentage="0.0"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyFlag flagtype="CanNotDieToAfflictions"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Yuyuko_Weapons"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" />
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional MaxHealth="lte 6000"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_MRE_Yuyuko_Effect_Debuff" strength="0.5"/>
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+
 </Talents>

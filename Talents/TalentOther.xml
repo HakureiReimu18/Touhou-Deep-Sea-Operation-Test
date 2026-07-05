@@ -438,6 +438,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasItem tags="Touhou_Corrupted_Savior"/>
+                <AbilityConditionHasItem tags="Corrupted_Savior_Mod"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Corrupted_Savior_Mod_Effect"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
             </Conditions>
@@ -921,6 +922,23 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
+        <!--西行妖枝天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnKillCharacter">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Saigyou_Ayakashi_Branch_Gun"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects applytoself="true">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" duration="1.0" CanGiveMedicalSkill="false">
+                            <ReduceAffliction identifier="damage" strength="8"/>
+                            <ReduceAffliction identifier="burn" strength="8"/>
+                            <ReduceAffliction identifier="bleeding" strength="16"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <Talent identifier="Touhou_Other_Weapon_Talent" IsHiddenExtraTalent="true">
@@ -1307,6 +1325,7 @@
         <AbilityGroupEffect abilityeffecttype="None">
             <Abilities>
                 <CharacterAbilityGivePermanentStat statidentifier="Touhou_Plant_Machine" stattype="MaxAttachableCount" value="3"/>
+                <CharacterAbilityGivePermanentStat statidentifier="Touhou_Saigyou_Ayakashi_Potted_Plant" stattype="MaxAttachableCount" value="1"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

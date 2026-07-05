@@ -1989,23 +1989,54 @@
 
         <!--八云紫-新年出港事件-->
         <ScriptedEvent identifier="Touhou_Yukari_Newbie_Rewards" commonness="100">
-            <TagAction criteria="player" tag="player"/>
-            <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Yakumo_Yukari" targettag="Mission_Yakumo_Yukari" spawnlocation="Outpost"
-                         spawnpointtype="Human"/>
-            <TriggerAction target1tag="Mission_Yakumo_Yukari" target2tag="player" applytotarget2="triggerer_player" radius="150" waitforinteraction="true"/>
-            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small"/>
             <CheckDataAction identifier="Touhou_Yukari_Newbie_Rewards_Completed" condition="eq true">
                 <Success>
-                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.s1.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small"/>
+                    <RNGAction chance="0.5">
+                        <Success>
+                            <TagAction criteria="player" tag="player"/>
+                            <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Yakumo_Yukari" targettag="Mission_Yakumo_Yukari" spawnlocation="Outpost"
+                                         spawnpointtype="Human"/>
+                            <TriggerAction target1tag="Mission_Yakumo_Yukari" target2tag="player" applytotarget2="triggerer_player" radius="150" waitforinteraction="true"/>
+                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small"/>
+                            <CheckDataAction identifier="Touhou_Yukari_Newbie_Rewards_Completed" condition="eq true">
+                                <Success>
+                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.s1.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small"/>
+                                </Success>
+                                <Failure>
+                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small">
+                                        <Option text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1">
+                                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1.c1" />
+                                            <SpawnAction itemidentifier="Touhou_New_Year_Departure_Gift" targetinventory="triggerer_player"/>
+                                            <SetDataAction value="true" identifier="Touhou_Yukari_Newbie_Rewards_Completed"/>
+                                        </Option>
+                                    </ConversationAction>
+                                </Failure>
+                            </CheckDataAction>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </RNGAction>
                 </Success>
                 <Failure>
-                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small">
-                        <Option text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1">
-                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1.c1" />
-                            <SpawnAction itemidentifier="Touhou_New_Year_Departure_Gift" targetinventory="triggerer_player"/>
-                            <SetDataAction value="true" identifier="Touhou_Yukari_Newbie_Rewards_Completed"/>
-                        </Option>
-                    </ConversationAction>
+                    <TagAction criteria="player" tag="player"/>
+                    <SpawnAction npcsetidentifier="touhounpc" npcidentifier="Mission_Yakumo_Yukari" targettag="Mission_Yakumo_Yukari" spawnlocation="Outpost"
+                                 spawnpointtype="Human"/>
+                    <TriggerAction target1tag="Mission_Yakumo_Yukari" target2tag="player" applytotarget2="triggerer_player" radius="150" waitforinteraction="true"/>
+                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small"/>
+                    <CheckDataAction identifier="Touhou_Yukari_Newbie_Rewards_Completed" condition="eq true">
+                        <Success>
+                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.s1.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small"/>
+                        </Success>
+                        <Failure>
+                            <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1" speakertag="Mission_Yakumo_Yukari" endeventifinterrupted="false" dialogtype="Small">
+                                <Option text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1">
+                                    <ConversationAction targettag="triggerer_player" text="EventText.Touhou_Yukari_Newbie_Rewards.c1.f1.c1.o1.c1" />
+                                    <SpawnAction itemidentifier="Touhou_New_Year_Departure_Gift" targetinventory="triggerer_player"/>
+                                    <SetDataAction value="true" identifier="Touhou_Yukari_Newbie_Rewards_Completed"/>
+                                </Option>
+                            </ConversationAction>
+                        </Failure>
+                    </CheckDataAction>
                 </Failure>
             </CheckDataAction>
         </ScriptedEvent>

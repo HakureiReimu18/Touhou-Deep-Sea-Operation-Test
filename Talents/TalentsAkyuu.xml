@@ -4,35 +4,48 @@
     <Talent identifier="Savant" trackedstat="Touhou_Akyuu_Counter" trackedmax="34">
         <Icon texture="%ModDir%/Images/Talents/Savant.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.Savant"/>
-        <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
-            <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="10"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo"/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityPutItem itemidentifier="Symposium_Of_Post_Mysticism" amount="1"/>
-            </Abilities>
-        </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
-            <Conditions>
-                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="10"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo"/>
-                <AbilityConditionNoCrewDied/>
-            </Conditions>
-            <Abilities>
-                <CharacterAbilityPutItem itemidentifier="Perfect_Memento_In_Strict_Sense" amount="1"/>
-            </Abilities>
-        </AbilityGroupEffect>
-
         <AbilityGroupEffect abilityeffecttype="OnAllMissionsCompleted">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo"/>
                 <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="33" invert="true"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGivePermanentStat statidentifier="Touhou_Akyuu_Counter" value="1" removeondeath="true"/>
+                <CharacterAbilityGivePermanentStat statidentifier="Touhou_Akyuu_Counter" value="1" removeondeath="false"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--  计数在死亡后清除  -->
+        <AbilityGroupEffect abilityeffecttype="OnDieToCharacter">
+            <Conditions>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="33" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityResetPermanentStat statidentifier="Touhou_Akyuu_Counter" requiresalive="false"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--  总计有9个巡回完成所有任务后，获得以下效果  -->
+        <!--  完成任意一个任务后，获得《东方求闻口授》（木卫二专供）  -->
+        <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="9"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityPutItem itemidentifier="Symposium_Of_Post_Mysticism" amount="1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--  完成任意一个任务，且无人死亡，获得《东方求闻史纪》（木卫二专供）。  -->
+        <AbilityGroupEffect abilityeffecttype="OnAnyMissionCompleted">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo"/>
+                <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="9"/>
+                <AbilityConditionNoCrewDied/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityPutItem itemidentifier="Perfect_Memento_In_Strict_Sense" amount="1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--  技能获取速度增加80%  -->
+        <!--  增加25%的使用医疗物品效果  -->
         <AbilityGroupInterval interval="2.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo"/>
@@ -43,19 +56,21 @@
                 <CharacterAbilityModifyStat stattype="MedicalItemApplyingMultiplier" value="0.25"/>
             </Abilities>
         </AbilityGroupInterval>
+        <!--  对非人类敌人造成的弹幕伤害增加20%  -->
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo"/>
                 <AbilityConditionHasPermanentStat statidentifier="Touhou_Akyuu_Counter" min="9"/>
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
                 <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional speciesname="neq human"/>
+                    <Conditional IsHuman="eq false"/>
                 </AbilityConditionCharacter>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.2"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--  总计33个巡回后，原本的生命值和移动速度减益效果消失，增加30%技能水平  -->
         <AbilityGroupInterval interval="2.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Memory_Of_Gensokyo"/>

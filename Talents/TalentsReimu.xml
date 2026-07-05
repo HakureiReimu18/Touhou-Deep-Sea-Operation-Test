@@ -19,9 +19,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="RedAndWhite"/>
-                <AbilityConditionCharacter targettype="Enemy">
-                    <Conditional speciesname="neq human"/>
-                </AbilityConditionCharacter>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" ignoreOwnAttacks="true" weapontype="NoWeapon,Melee"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>

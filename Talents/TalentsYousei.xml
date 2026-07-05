@@ -170,18 +170,6 @@
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Talents_Yousei_Primary09"/>
         <AbilityGroupInterval interval="30.0">
-            <Abilities>
-                <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.04" skillidentifier="helm"/>
-                <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.04" skillidentifier="weapons"/>
-                <CharacterAbilityModifyStatToSkill stattype="RepairSpeed" maxvalue="0.04" skillidentifier="mechanical"/>
-                <CharacterAbilityModifyStatToSkill stattype="RepairSpeed" maxvalue="0.04" skillidentifier="electrical"/>
-                <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.04" skillidentifier="medical"/>
-                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.04" skillidentifier="medical"/>
-                <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic"/>
-                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic"/>
-            </Abilities>
-        </AbilityGroupInterval>
-        <AbilityGroupInterval interval="30.0">
             <Conditions>
                 <AbilityConditionHasSkill skillidentifier="helm" minvalue="250" invert="true"/>
             </Conditions>
@@ -625,6 +613,13 @@
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAllies>
+                <CharacterAbilityApplyStatusEffects allowself="true" >
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Quiet_And_Well_Behaved_Effect" amount="1.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
     </Talent>

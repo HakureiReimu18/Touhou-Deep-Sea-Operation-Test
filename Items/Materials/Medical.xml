@@ -99,13 +99,6 @@
         <Sprite texture="%ModDir%/Images/Materials/Europa_Infusion.png" depth="0.4" sourcerect="0,0,43,63"/>
         <Body width="32" height="48" density="16"/>
         <!--治疗作用-->
-        <SuitableTreatment type="invertcontrols" suitability="10"/>
-        <SuitableTreatment type="damage" suitability="10"/>
-        <SuitableTreatment type="Phoenix_Burn" suitability="5"/>
-        <SuitableTreatment identifier="Touhou_Royal_Flare_Burn" suitability="5"/>
-        <SuitableTreatment identifier="Touhou_Silent_Selene_Dream" suitability="5"/>
-        <SuitableTreatment type="gaze" suitability="5"/>
-        <SuitableTreatment type="infection" suitability="5"/>
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220"
                      reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
             <RequiredSkill identifier="medical" level="80"/>
@@ -373,7 +366,7 @@
                                 Hyouibana_Tenshi,Hyouibana_Reimu,Hyouibana_Momizi,Hyouibana_Yuka,Hyouibana_Aunn,Hyouibana_Flandre,Hyouibana_Nue,Hyouibana_Piece,
                                 Hyouibana_Cirno,Hyouibana_Koishi,Hyouibana_Alice,Hyouibana_Sunny,Hyouibana_Luna,Hyouibana_Star,Hyouibana_Sakuya,Hyouibana_Sanae，
                                 Hyouibana_Reisen,Hyouibana_Yukari,Hyouibana_Merry,Hyouibana_Renko,Hyouibana_Kokoro,Hyouibana_Lilywhite,Hyouibana_Satori,Hyouibana_Tewi,
-                                Hyouibana_Kaguya"/>
+                                Hyouibana_Kaguya,Hyouibana_Yuyuko"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <Conditional Hyouibana_Effect_Flag="gt 0"/>
@@ -430,7 +423,7 @@
         <SuitableTreatment type="oxygenlow" suitability="50"/>
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="220"
                      reload="3.5" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
-            <RequiredSkill identifier="medical" level="40"/>
+            <RequiredSkill identifier="medical" level="30"/>
             <StatusEffect type="OnSuccess" target="This" Condition="-20.0"/>
             <StatusEffect type="OnFailure" target="This" Condition="-20.0"/>
             <StatusEffect statuseffecttags="medical" type="OnSuccess" target="UseTarget" duration="10">
@@ -1542,7 +1535,6 @@
         <Sprite texture="%ModDir%/Images/Materials/Touhou_External_Quick_Effect_Medicine.png" depth="0.4" sourcerect="0,0,100,40"/>
         <Body width="100" height="40" density="10"/>
         <!--治疗作用-->
-        <SuitableTreatment type="damage" suitability="50"/>
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10"
                      reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
             <RequiredSkill identifier="medical" level="40"/>
@@ -1586,7 +1578,6 @@
         <Sprite texture="%ModDir%/Images/Materials/Touhou_External_Quick_Effect_Medicine.png" depth="0.4" sourcerect="0,0,100,40"/>
         <Body width="100" height="40" density="10"/>
         <!--治疗作用-->
-        <SuitableTreatment type="damage" suitability="50"/>
         <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand,LeftHand" aimpos="40,5" handle1="0,0" holdangle="10"
                      reload="1.0" msg="ItemMsgPickUpSelect" HitOnlyCharacters="true">
             <RequiredSkill identifier="medical" level="40"/>

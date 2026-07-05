@@ -746,7 +746,7 @@
                     <Item identifier="Touhou_MEID"/>
                 </Item>
                 <Item identifier="piratehelmet" equip="true"/>
-                <Item identifier="Pollution_Magician_Clothes01" equip="true"/>
+                <Item identifier="Pollution_Magician_Clothes01_Touhou_Savior_Mod_Effect" equip="true"/>
                 <Item identifier="Gensokyo_Divinggear_Enemy" equip="true">
                     <Item identifier="oxygentank"/>
                     <Item identifier="combatstimulantsyringe"/>
@@ -854,7 +854,6 @@
                 </Item>
                 <Item identifier="Touhou_Lunar_Center" amount="2"/>
                 <Item identifier="Touhou_Assassin_Dagger"/>
-                <Item identifier="Touhou_External_Within_Pill"/>
                 <Item identifier="Touhou_Lost_Storage_Bag_Disciple" amount="2"/>
             </ItemSet>
             <ItemSet commonness="0.25">
@@ -2705,8 +2704,6 @@
                 </Item>
                 <Item identifier="Touhou_Mage_Slayer_Ammo" amount="4"/>
                 <Item identifier="Touhou_White_Wings_Knife"/>
-                <Item identifier="Touhou_External_Medicine_Box"/>
-                <Item identifier="Touhou_External_Within_Pill"/>
                 <Item identifier="Touhou_Special_Weapon_Unlocked_Book02"/>
                 <Item identifier="Touhou_Lost_Storage_Bag_Disciple"/>
             </ItemSet>
@@ -2797,7 +2794,6 @@
                     <Item identifier="Touhou_Knightmare_Experimental_Rifle_Ammo01"/>
                 </Item>
                 <Item identifier="Touhou_Knightmare_Experimental_Rifle_Ammo01" amount="4"/>
-                <Item identifier="Touhou_External_Medicine_Box"/>
                 <Item identifier="Touhou_Lost_Storage_Bag_Thief" amount="2"/>
             </ItemSet>
         </npc>

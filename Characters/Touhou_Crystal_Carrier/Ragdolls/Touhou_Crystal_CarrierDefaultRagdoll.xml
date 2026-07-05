@@ -29,6 +29,12 @@
                 RootForceWorldMiddle="0,0" RootForceWorldEnd="0,0" RootTransitionEasing="Linear" Torque="0" ApplyForcesOnlyOnce="False"
                 TargetImpulse="0" TargetImpulseWorld="0,0" TargetForce="0" TargetForceWorld="0,0" SubmarineImpactMultiplier="1"
                 SeverLimbsProbability="0" Priority="3" Blink="False">
+            <StatusEffect type="OnFailure" target="This">
+                <SpawnCharacter speciesname="Touhou_Crystal_Parasite_Crawler" count="1" spread="100"/>
+            </StatusEffect>
+            <StatusEffect type="OnFailure" target="This">
+                <SpawnCharacter speciesname="Touhou_Crystal_Parasite_Human" count="1" spread="100"/>
+            </StatusEffect>
             <Affliction Strength="100" Identifier="bitewounds" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False"/>
             <Affliction Strength="5" Identifier="stun" Probability="1" DivideByLimbCount="True" MultiplyByMaxVitality="False"/>
         </attack>

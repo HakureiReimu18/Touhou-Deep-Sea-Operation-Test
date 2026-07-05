@@ -311,9 +311,6 @@
                                  velocitymax="1500" scalemin="0.6" scalemax="1"/>
                 <Remove/>
             </StatusEffect>
-            <StatusEffect type="OnBroken" target="This">
-                <Remove/>
-            </StatusEffect>
         </Projectile>
     </Item>
 
@@ -1514,7 +1511,7 @@
                   aimable="false" msg="ItemMsgPickUpSelect"/>
         <ItemContainer hideitems="true" capacity="4" drawinventory="false" canbeselected="false" canbecombined="true"
                        ShowConditionInContainedStateIndicator="true" removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <StatusEffect type="OnUse" target="This" disabledeltatime="true">
+            <StatusEffect type="OnUse" target="This" disabledeltatime="true" >
                 <Conditional condition="gt 0"/>
                 <SpawnItem identifiers="Touhou_Starbow_Break_Bolt01" spawnposition="ThisInventory" Spread="6"/>
                 <SpawnItem identifiers="Touhou_Starbow_Break_Bolt02" spawnposition="ThisInventory" Spread="6"/>
@@ -2446,7 +2443,6 @@
                     <Affliction identifier="explosiondamage" strength="15" />
                 </Explosion>
                 <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
-                <Remove />
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" stackable="false" delay="3">
                 <Remove/>

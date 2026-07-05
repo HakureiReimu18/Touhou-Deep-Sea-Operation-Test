@@ -1,6 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Afflictions>
 
+
+    <!--通用妖怪尾巴-->
+    <AfflictionHusk
+            name="通用妖怪尾巴"
+            identifier="Normal_Yokai_Tail_Spawn"
+            type="Normal_YokaiTail.xml"
+            limbspecific="false"
+            targets="human"
+            duration="5.0"
+            huskedspeciesname="[speciesname]Touhou_Tail"
+            indicatorlimb="Torso"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            needsair="true"
+            causespeechimpediment="false"
+            treatmentthreshold="1000"
+            dormantthreshold="0"
+            activethreshold="0"
+            transitionthreshold="1000"
+            transformthresholdondeath="1000"
+            sendmessages="false"
+            maxstrength="10"
+            iconcolors="94,54,95;163,73,164;200,191,231">
+        <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0"/>
+        <Effect minstrength="0" maxstrength="10"/>
+    </AfflictionHusk>
+
+    <!--通用妖怪翅膀-->
+    <AfflictionHusk
+            name="通用妖怪翅膀"
+            identifier="Normal_Yokai_Wings_Spawn"
+            type="Normal_YokaiWings.xml"
+            limbspecific="false"
+            targets="human"
+            duration="5.0"
+            huskedspeciesname="[speciesname]Touhou_Tail"
+            indicatorlimb="Torso"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            needsair="true"
+            causespeechimpediment="false"
+            treatmentthreshold="1000"
+            dormantthreshold="0"
+            activethreshold="0"
+            transitionthreshold="1000"
+            transformthresholdondeath="1000"
+            sendmessages="false"
+            maxstrength="10"
+            iconcolors="94,54,95;163,73,164;200,191,231">
+        <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0"/>
+        <Effect minstrength="0" maxstrength="10"/>
+    </AfflictionHusk>
+
+
     <Affliction
             identifier="Talents_Yokai_Primary11_Effect"
             type="talentbuff"
@@ -228,11 +282,27 @@
             treatmentthreshold="1000"
             maxstrength="1"
             hideiconafterdelay="true"
-            duration="1.5"
+            duration="10"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
         <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1">
             <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
         </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Youling_Wangling06_Effect_Yuyuko"
+            type="talentbuff"
+            isbuff="true"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="1"
+            hideiconafterdelay="true"
+            duration="1.5"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.1" maxskillmultiplier="1.1"/>
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 
@@ -254,6 +324,21 @@
             </StatusEffect>
             <AbilityFlag flagtype="AlwaysStayConscious"/>
         </Effect>
+        <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
+    </Affliction>
+
+    <Affliction
+            identifier="Touhou_Youling_Wangling07_Effect_Yuyuko"
+            type="talentbuff"
+            limbspecific="false"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            treatmentthreshold="1000"
+            maxstrength="10"
+            duration="5.0"
+            hideiconafterdelay="true"
+            iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
+        <Effect minstrength="0" maxstrength="10" resistancefor="damage,burn,stun" minresistance="-0.3" maxresistance="-0.3" />
         <Icon texture="Content/UI/TalentsIcons4.png" sheetindex="2,0" sheetelementsize="128,128" origin="0,0"/>
     </Affliction>
 

@@ -314,569 +314,6 @@
         </ScriptedEvent>
 
 
-        <!--恋恋的无意识概率事件-->
-        <ScriptedEvent identifier="KoishiTalent_Unconscious" commonness="0">
-            <CheckAfflictionAction identifier="Koishi_Unconscious_Flag" MinStrength="0.1">
-                <Success>
-
-                </Success>
-                <Failure>
-                    <RNGAction chance="0.5">
-                        <!--长时间无意识-->
-                        <Success>
-                            <RNGAction chance="0.5">
-                                <!--最长时间无意识-->
-                                <Success>
-                                    <RNGAction chance="0.33">
-                                        <!--3级无意识-->
-                                        <Success>
-                                            <StatusEffectAction targettag="statuseffectuser">
-                                                <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                    <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                    <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                    <Affliction identifier="Koishi_Unconscious_Flag" strength="25"/>
-                                                    <Affliction identifier="Koishi_Unconscious03" strength="25"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Success>
-                                        <!--低等级无意识-->
-                                        <Failure>
-                                            <RNGAction chance="0.5">
-                                                <!--2级无意识-->
-                                                <Success>
-                                                    <StatusEffectAction targettag="statuseffectuser">
-                                                        <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                            <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                            <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                            <Affliction identifier="Koishi_Unconscious_Flag" strength="25"/>
-                                                            <Affliction identifier="Koishi_Unconscious02" strength="25"/>
-                                                        </StatusEffect>
-                                                    </StatusEffectAction>
-                                                </Success>
-                                                <!--1级无意识-->
-                                                <Failure>
-                                                    <StatusEffectAction targettag="statuseffectuser">
-                                                        <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                            <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                            <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                            <Affliction identifier="Koishi_Unconscious_Flag" strength="25"/>
-                                                            <Affliction identifier="Koishi_Unconscious01" strength="25"/>
-                                                        </StatusEffect>
-                                                    </StatusEffectAction>
-                                                </Failure>
-                                            </RNGAction>
-                                        </Failure>
-                                    </RNGAction>
-                                </Success>
-                                <!--较长时间无意识-->
-                                <Failure>
-                                    <RNGAction chance="0.33">
-                                        <!--3级无意识-->
-                                        <Success>
-                                            <StatusEffectAction targettag="statuseffectuser">
-                                                <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                    <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                    <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                    <Affliction identifier="Koishi_Unconscious_Flag" strength="12"/>
-                                                    <Affliction identifier="Koishi_Unconscious03" strength="12"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Success>
-                                        <!--低等级无意识-->
-                                        <Failure>
-                                            <RNGAction chance="0.5">
-                                                <!--2级无意识-->
-                                                <Success>
-                                                    <StatusEffectAction targettag="statuseffectuser">
-                                                        <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                            <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                            <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                            <Affliction identifier="Koishi_Unconscious_Flag" strength="12"/>
-                                                            <Affliction identifier="Koishi_Unconscious02" strength="12"/>
-                                                        </StatusEffect>
-                                                    </StatusEffectAction>
-                                                </Success>
-                                                <!--1级无意识-->
-                                                <Failure>
-                                                    <StatusEffectAction targettag="statuseffectuser">
-                                                        <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                            <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                            <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                            <Affliction identifier="Koishi_Unconscious_Flag" strength="12"/>
-                                                            <Affliction identifier="Koishi_Unconscious01" strength="12"/>
-                                                        </StatusEffect>
-                                                    </StatusEffectAction>
-                                                </Failure>
-                                            </RNGAction>
-                                        </Failure>
-                                    </RNGAction>
-                                </Failure>
-                            </RNGAction>
-                        </Success>
-                        <!--短时间无意识-->
-                        <Failure>
-                            <RNGAction chance="0.5">
-                                <!--较短时间无意识-->
-                                <Success>
-                                    <RNGAction chance="0.33">
-                                        <!--3级无意识-->
-                                        <Success>
-                                            <StatusEffectAction targettag="statuseffectuser">
-                                                <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                    <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                    <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                    <Affliction identifier="Koishi_Unconscious_Flag" strength="8"/>
-                                                    <Affliction identifier="Koishi_Unconscious03" strength="8"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Success>
-                                        <!--低等级无意识-->
-                                        <Failure>
-                                            <RNGAction chance="0.5">
-                                                <!--2级无意识-->
-                                                <Success>
-                                                    <StatusEffectAction targettag="statuseffectuser">
-                                                        <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                            <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                            <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                            <Affliction identifier="Koishi_Unconscious_Flag" strength="8"/>
-                                                            <Affliction identifier="Koishi_Unconscious02" strength="8"/>
-                                                        </StatusEffect>
-                                                    </StatusEffectAction>
-                                                </Success>
-                                                <!--1级无意识-->
-                                                <Failure>
-                                                    <StatusEffectAction targettag="statuseffectuser">
-                                                        <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                            <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                            <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                            <Affliction identifier="Koishi_Unconscious_Flag" strength="8"/>
-                                                            <Affliction identifier="Koishi_Unconscious01" strength="8"/>
-                                                        </StatusEffect>
-                                                    </StatusEffectAction>
-                                                </Failure>
-                                            </RNGAction>
-                                        </Failure>
-                                    </RNGAction>
-                                </Success>
-                                <!--最短时间无意识-->
-                                <Failure>
-                                    <RNGAction chance="0.33">
-                                        <!--3级无意识-->
-                                        <Success>
-                                            <StatusEffectAction targettag="statuseffectuser">
-                                                <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                    <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                    <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                    <Affliction identifier="Koishi_Unconscious_Flag" strength="5"/>
-                                                    <Affliction identifier="Koishi_Unconscious03" strength="5"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Success>
-                                        <!--低等级无意识-->
-                                        <Failure>
-                                            <RNGAction chance="0.5">
-                                                <!--2级无意识-->
-                                                <Success>
-                                                    <StatusEffectAction targettag="statuseffectuser">
-                                                        <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                            <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                            <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                            <Affliction identifier="Koishi_Unconscious_Flag" strength="5"/>
-                                                            <Affliction identifier="Koishi_Unconscious02" strength="5"/>
-                                                        </StatusEffect>
-                                                    </StatusEffectAction>
-                                                </Success>
-                                                <!--1级无意识-->
-                                                <Failure>
-                                                    <StatusEffectAction targettag="statuseffectuser">
-                                                        <StatusEffect target="Character" disabledeltatime="true" comparison="And">
-                                                            <Conditional Closed_Eyes_Of_Koishi="gt 0"/>
-                                                            <Conditional Koishi_Unconscious_Flag="lte 0"/>
-                                                            <Affliction identifier="Koishi_Unconscious_Flag" strength="5"/>
-                                                            <Affliction identifier="Koishi_Unconscious01" strength="5"/>
-                                                        </StatusEffect>
-                                                    </StatusEffectAction>
-                                                </Failure>
-                                            </RNGAction>
-                                        </Failure>
-                                    </RNGAction>
-                                </Failure>
-                            </RNGAction>
-                        </Failure>
-                    </RNGAction>
-                </Failure>
-            </CheckAfflictionAction>
-        </ScriptedEvent>
-
-        <!--斯塔的出血效应概率事件-->
-        <!--概率：15*2,14*5-->
-        <ScriptedEvent identifier="MRE_Star_Talent_Attacked" commonness="0">
-            <RNGAction chance="0.7">
-                <!--另外五项-->
-                <Success>
-                    <RNGAction chance="0.5">
-                        <!--另外三项-->
-                        <Success>
-                            <RNGAction chance="0.666">
-                                <!--另外两项-->
-                                <Success>
-                                    <RNGAction chance="0.5">
-                                        <!--短时间增加攻击伤害-->
-                                        <Success>
-                                            <StatusEffectAction targettag="statuseffectuser">
-                                                <StatusEffect target="Character" disabledeltatime="true">
-                                                    <Conditional MRE_Effect_Flag="gt 0"/>
-                                                    <Affliction identifier="MRE_Star_Talent_Attacked01" strength="10"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Success>
-                                        <!--短时间增加眩晕抗性-->
-                                        <Failure>
-                                            <StatusEffectAction targettag="statuseffectuser">
-                                                <StatusEffect target="Character" disabledeltatime="true">
-                                                    <Conditional MRE_Effect_Flag="gt 0"/>
-                                                    <Affliction identifier="MRE_Star_Talent_Attacked02" strength="10"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Failure>
-                                    </RNGAction>
-                                </Success>
-                                <!--短时间避免被敌人发现-->
-                                <Failure>
-                                    <StatusEffectAction targettag="statuseffectuser">
-                                        <StatusEffect target="Character" disabledeltatime="true">
-                                            <Conditional MRE_Effect_Flag="gt 0"/>
-                                            <Affliction identifier="MRE_Star_Talent_Attacked03" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Failure>
-                            </RNGAction>
-                        </Success>
-                        <!--另外两项-->
-                        <Failure>
-                            <RNGAction chance="0.5">
-                                <!--大幅增加移动速度-->
-                                <Success>
-                                    <StatusEffectAction targettag="statuseffectuser">
-                                        <StatusEffect target="Character" disabledeltatime="true">
-                                            <Conditional MRE_Effect_Flag="gt 0"/>
-                                            <Affliction identifier="MRE_Star_Talent_Attacked04" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Success>
-                                <!--对周围的敌人造成一次伤害并发生小范围爆炸-->
-                                <Failure>
-                                    <StatusEffectAction targettag="statuseffectuser">
-                                        <StatusEffect target="Character" disabledeltatime="true">
-                                            <Conditional MRE_Effect_Flag="gt 0"/>
-                                            <Affliction identifier="MRE_Star_Talent_Attacked05" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Failure>
-                            </RNGAction>
-                        </Failure>
-                    </RNGAction>
-                </Success>
-                <!--另外两项-->
-                <Failure>
-                    <RNGAction chance="0.5">
-                        <!--短时间增加自身和所有穿戴妖精装束+的船员物理伤害抗性和烧伤抗性-->
-                        <Success>
-                            <StatusEffectAction targettag="statuseffectuser">
-                                <StatusEffect target="Character" disabledeltatime="true">
-                                    <Conditional MRE_Effect_Flag="gt 0"/>
-                                    <Affliction identifier="MRE_Star_Talent_Attacked06" strength="10"/>
-                                </StatusEffect>
-                            </StatusEffectAction>
-                        </Success>
-                        <!--在原地留下一个星光陷阱，对周围目标造成持续伤害，持续10秒-->
-                        <Failure>
-                            <StatusEffectAction targettag="statuseffectuser">
-                                <StatusEffect target="Character" disabledeltatime="true">
-                                    <Conditional MRE_Effect_Flag="gt 0"/>
-                                    <Affliction identifier="MRE_Star_Talent_Attacked07" strength="10"/>
-                                </StatusEffect>
-                            </StatusEffectAction>
-                        </Failure>
-                    </RNGAction>
-                </Failure>
-            </RNGAction>
-        </ScriptedEvent>
-
-        <!--早苗的巡回开始降下奇迹概率事件-->
-        <!--概率：15*2,14*5-->
-        <ScriptedEvent identifier="SanaeTalent_Effect" commonness="0">
-            <TagAction Criteria="crew" Tag="SanaeTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true"/>
-            <RNGAction chance="0.7">
-                <!--另外五项-->
-                <Success>
-                    <RNGAction chance="0.5">
-                        <!--另外三项-->
-                        <Success>
-                            <RNGAction chance="0.666">
-                                <!--另外两项-->
-                                <Success>
-                                    <RNGAction chance="0.5">
-                                        <!--星之奇迹：增加50%技能获取速度，技能水平提高10%-->
-                                        <Success>
-                                            <StatusEffectAction targettag="SanaeTalent_Target">
-                                                <StatusEffect target="Character" delay="0.1" stackable="false" comparison="And" disabledeltatime="true">
-                                                    <Conditional Manifest_God_Of_Miracles="lte 0"/>
-                                                    <Conditional SanaeTalent_Effect_Flag="lte 0"/>
-                                                    <Affliction identifier="SanaeTalent_Effect01" strength="10"/>
-                                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Success>
-                                        <!--月之奇迹：修复速度和船体修复速度提高50%，提高15%眩晕抗性-->
-                                        <Failure>
-                                            <StatusEffectAction targettag="SanaeTalent_Target">
-                                                <StatusEffect target="Character" delay="0.2" stackable="false" comparison="And" disabledeltatime="true">
-                                                    <Conditional Manifest_God_Of_Miracles="lte 0"/>
-                                                    <Conditional SanaeTalent_Effect_Flag="lte 0"/>
-                                                    <Affliction identifier="SanaeTalent_Effect02" strength="10"/>
-                                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Failure>
-                                    </RNGAction>
-                                </Success>
-                                <!--日之奇迹：每次攻击有35%概率额外造成15%的伤害-->
-                                <Failure>
-                                    <StatusEffectAction targettag="SanaeTalent_Target">
-                                        <StatusEffect target="Character" delay="0.3" stackable="false" comparison="And" disabledeltatime="true">
-                                            <Conditional Manifest_God_Of_Miracles="lte 0"/>
-                                            <Conditional SanaeTalent_Effect_Flag="lte 0"/>
-                                            <Affliction identifier="SanaeTalent_Effect03" strength="10"/>
-                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Failure>
-                            </RNGAction>
-                        </Success>
-                        <!--另外两项-->
-                        <Failure>
-                            <RNGAction chance="0.5">
-                                <!--山之奇迹：增加20%最大生命值，双腿的物理伤害抗性提高20%-->
-                                <Success>
-                                    <StatusEffectAction targettag="SanaeTalent_Target">
-                                        <StatusEffect target="Character" delay="0.4" stackable="false" comparison="And" disabledeltatime="true">
-                                            <Conditional Manifest_God_Of_Miracles="lte 0"/>
-                                            <Conditional SanaeTalent_Effect_Flag="lte 0"/>
-                                            <Affliction identifier="SanaeTalent_Effect04" strength="10"/>
-                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Success>
-                                <!--海之奇迹：增加40%游泳速度，烧伤抗性提高10%-->
-                                <Failure>
-                                    <StatusEffectAction targettag="SanaeTalent_Target">
-                                        <StatusEffect target="Character" delay="0.5" stackable="false" comparison="And" disabledeltatime="true">
-                                            <Conditional Manifest_God_Of_Miracles="lte 0"/>
-                                            <Conditional SanaeTalent_Effect_Flag="lte 0"/>
-                                            <Affliction identifier="SanaeTalent_Effect05" strength="10"/>
-                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Failure>
-                            </RNGAction>
-                        </Failure>
-                    </RNGAction>
-                </Success>
-                <!--另外两项-->
-                <Failure>
-                    <RNGAction chance="0.5">
-                        <!--空之奇迹：获得随机技能7点，经验获取速度提高20%-->
-                        <Success>
-                            <StatusEffectAction targettag="SanaeTalent_Target">
-                                <StatusEffect target="Character" delay="0.6" stackable="false" comparison="And" disabledeltatime="true">
-                                    <Conditional Manifest_God_Of_Miracles="lte 0"/>
-                                    <Conditional SanaeTalent_Effect_Flag="lte 0"/>
-                                    <Affliction identifier="SanaeTalent_Effect06" strength="10"/>
-                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                    <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false"/>
-                                </StatusEffect>
-                            </StatusEffectAction>
-                        </Success>
-                        <!--风之奇迹：移动速度提高15%，攻击速度提高10%，降低20%友军伤害-->
-                        <Failure>
-                            <StatusEffectAction targettag="SanaeTalent_Target">
-                                <StatusEffect target="Character" delay="0.7" stackable="false" comparison="And" disabledeltatime="true">
-                                    <Conditional Manifest_God_Of_Miracles="lte 0"/>
-                                    <Conditional SanaeTalent_Effect_Flag="lte 0"/>
-                                    <Affliction identifier="SanaeTalent_Effect07" strength="10"/>
-                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                </StatusEffect>
-                            </StatusEffectAction>
-                        </Failure>
-                    </RNGAction>
-                </Failure>
-            </RNGAction>
-            <ClearTagAction tag="SanaeTalent_Target"/>
-        </ScriptedEvent>
-
-        <!--早苗的巡回开始降下奇迹概率事件-对自己生效-->
-        <!--概率：15*2,14*5-->
-        <ScriptedEvent identifier="SanaeTalent_Effect_Self" commonness="0">
-            <RNGAction chance="0.5">
-                <Success>
-                    <RNGAction chance="0.5">
-                        <Success>
-                            <WaitAction time="0.5"/>
-                        </Success>
-                        <Failure>
-                            <WaitAction time="1.0"/>
-                        </Failure>
-                    </RNGAction>
-                </Success>
-                <Failure>
-                    <RNGAction chance="0.5">
-                        <Success>
-                            <WaitAction time="1.5"/>
-                        </Success>
-                        <Failure>
-                            <WaitAction time="2.0"/>
-                        </Failure>
-                    </RNGAction>
-                </Failure>
-            </RNGAction>
-            <RNGAction chance="0.7">
-                <!--另外五项-->
-                <Success>
-                    <RNGAction chance="0.5">
-                        <!--另外三项-->
-                        <Success>
-                            <RNGAction chance="0.666">
-                                <!--另外两项-->
-                                <Success>
-                                    <RNGAction chance="0.5">
-                                        <!--星之奇迹：增加50%技能获取速度，技能水平提高10%-->
-                                        <Success>
-                                            <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
-                                                <StatusEffect target="Character" disabledeltatime="true">
-                                                    <Affliction identifier="SanaeTalent_Effect01" strength="10"/>
-                                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Success>
-                                        <!--月之奇迹：修复速度和船体修复速度提高50%，提高15%眩晕抗性-->
-                                        <Failure>
-                                            <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
-                                                <StatusEffect target="Character" disabledeltatime="true">
-                                                    <Affliction identifier="SanaeTalent_Effect02" strength="10"/>
-                                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                                </StatusEffect>
-                                            </StatusEffectAction>
-                                        </Failure>
-                                    </RNGAction>
-                                </Success>
-                                <!--日之奇迹：每次攻击有35%概率额外造成15%的伤害-->
-                                <Failure>
-                                    <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
-                                        <StatusEffect target="Character" disabledeltatime="true">
-                                            <Affliction identifier="SanaeTalent_Effect03" strength="10"/>
-                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Failure>
-                            </RNGAction>
-                        </Success>
-                        <!--另外两项-->
-                        <Failure>
-                            <RNGAction chance="0.5">
-                                <!--山之奇迹：增加20%最大生命值，双腿的物理伤害抗性提高20%-->
-                                <Success>
-                                    <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
-                                        <StatusEffect target="Character" disabledeltatime="true">
-                                            <Affliction identifier="SanaeTalent_Effect04" strength="10"/>
-                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Success>
-                                <!--海之奇迹：增加40%游泳速度，烧伤抗性提高10%-->
-                                <Failure>
-                                    <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
-                                        <StatusEffect target="Character" disabledeltatime="true">
-                                            <Affliction identifier="SanaeTalent_Effect05" strength="10"/>
-                                            <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                        </StatusEffect>
-                                    </StatusEffectAction>
-                                </Failure>
-                            </RNGAction>
-                        </Failure>
-                    </RNGAction>
-                </Success>
-                <!--另外两项-->
-                <Failure>
-                    <RNGAction chance="0.5">
-                        <!--空之奇迹：获得随机技能7点，经验获取速度提高20%-->
-                        <Success>
-                            <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
-                                <StatusEffect target="Character" disabledeltatime="true">
-                                    <Affliction identifier="SanaeTalent_Effect06" strength="10"/>
-                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                    <GiveSkill skillidentifier="randomskill" amount="7" triggertalents="false"/>
-                                </StatusEffect>
-                            </StatusEffectAction>
-                        </Success>
-                        <!--风之奇迹：移动速度提高15%，攻击速度提高10%，降低20%友军伤害-->
-                        <Failure>
-                            <StatusEffectAction targettag="SanaeTalent_Effect_Self_Target">
-                                <StatusEffect target="Character" disabledeltatime="true">
-                                    <Affliction identifier="SanaeTalent_Effect07" strength="10"/>
-                                    <Affliction identifier="SanaeTalent_Effect_Flag" strength="10"/>
-                                </StatusEffect>
-                            </StatusEffectAction>
-                        </Failure>
-                    </RNGAction>
-                </Failure>
-            </RNGAction>
-            <ClearTagAction tag="SanaeTalent_Effect_Self_Target"/>
-        </ScriptedEvent>
-
-        <!--八云紫传送事件-->
-        <ScriptedEvent identifier="YukariTalent_Effect_Self" commonness="0">
-            <TagAction Criteria="player" Tag="YukariTalent_Effect_Self" IgnoreIncapacitatedCharacters="true"/>
-            <TeleportAction Position="MainSub" targettag="YukariTalent_Effect_Self" SpawnPointTag=""/>
-            <StatusEffectAction targettag="YukariTalent_Effect_Self">
-                <StatusEffect target="Character" delay="1.0" disabledeltatime="true">
-                    <Affliction identifier="YukariTalent_Effect_Self_Effect" strength="10"/>
-                </StatusEffect>
-            </StatusEffectAction>
-        </ScriptedEvent>
-
-        <!--莲子过巡回给予博物志事件-->
-        <ScriptedEvent identifier="RenkoTalent_MissionCompleted_Check" commonness="0">
-            <TagAction Criteria="crew" Tag="crew" IgnoreIncapacitatedCharacters="false"/>
-            <CheckAfflictionAction identifier="Hifuu_Club_Merry" MinStrength="0.1" TargetTag="crew">
-                <Success>
-                    <TriggerEventAction identifier="RenkoTalent_MissionCompleted" nextround="true"/>
-                </Success>
-                <Failure>
-
-                </Failure>
-            </CheckAfflictionAction>
-        </ScriptedEvent>
-
-        <!--莲子过巡回给予博物志事件-->
-        <ScriptedEvent identifier="RenkoTalent_MissionCompleted" commonness="0">
-            <TagAction Criteria="crew" Tag="crew" IgnoreIncapacitatedCharacters="false"/>
-            <CheckAfflictionAction identifier="Hifuu_Club_Merry" MinStrength="0.1" TargetTag="crew">
-                <Success>
-                    <StatusEffectAction targettag="crew">
-                        <StatusEffect target="Character" disabledeltatime="true">
-                            <Conditional Hifuu_Club_Renko="gt 0"/>
-                            <SpawnItem identifiers="Touhou_Red_Spot_Freak_Report" spawnposition="ThisInventory"/>
-                        </StatusEffect>
-                    </StatusEffectAction>
-                </Success>
-                <Failure>
-
-                </Failure>
-            </CheckAfflictionAction>
-        </ScriptedEvent>
-
         <!--潜意识解码器随机临时武器事件-->
         <ScriptedEvent identifier="Touhou_Subconscious_Decoder_Use">
             <SpawnAction ItemTag="Touhou_Temporary_Item_Weapon" TargetTag="Touhou_Temporary_Item_Weapon" targetinventory="Touhou_Subconscious_Decoder_player" />
@@ -1715,9 +1152,78 @@
                     <WaitAction time="1.5"/>
                 </Failure>
             </RNGAction>
-            <GoTo name="delay" maxtimes="180"/>
+            <GoTo name="delay" maxtimes="170"/>
             <ConversationAction text="Eventtext.Touhou_OutpostDestroyMission05_Event.c2" dialogtype="Small"/>
+            <CountTargetsAction targettag="player" MinAmount="1">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
             <CountTargetsAction targettag="player" MinAmount="3">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
+            <CountTargetsAction targettag="player" MinAmount="6">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
+            <CountTargetsAction targettag="player" MinAmount="8">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
+            <CountTargetsAction targettag="player" MinAmount="10">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
+<!--            <CountTargetsAction targettag="player" MinAmount="3">
                 <Success>
                     <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic" lootingisstealing="false"
                                  spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -1766,7 +1272,7 @@
                         </Failure>
                     </RNGAction>
                 </Failure>
-            </CountTargetsAction>
+            </CountTargetsAction>-->
             <WaitAction time="1"/>
             <TagAction criteria="humanprefabidentifier:Touhou_ODM05_Enemy_Human_Lunatic" tag="Touhou_ODM05_Enemy_Human"
                        continueifnotargetsfound="true"/>
@@ -1787,7 +1293,55 @@
                 <Option text="Eventtext.Touhou_OutpostDestroyMission05_Event.c3.o2">
                     <ConversationAction text="Eventtext.Touhou_OutpostDestroyMission05_Event.c3.o2.c1" dialogtype="Small"
                                         ContinueAutomatically="true"/>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements"
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -1825,7 +1379,7 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                     <WaitAction time="1"/>
                     <TagAction criteria="humanprefabidentifier:Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements" tag="Touhou_ODM05_Enemy_Human"
                                continueifnotargetsfound="true"/>
@@ -2082,7 +1636,7 @@
         <!--控制刷新敌人-->
         <ScriptedEvent identifier="Touhou_ODM06_Enemy_Spawn">
             <TagAction criteria="player" tag="player"/>
-            <CountTargetsAction targettag="player" MinAmount="3">
+            <CountTargetsAction targettag="player" MinAmount="4">
                 <Success>
                     <SpawnAction npcsetidentifier="Touhou_ODM6_Enemy_NPC" npcidentifier="Touhou_ODM06_Enemy_Human_Hard" lootingisstealing="false"
                                  spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -2534,7 +2088,7 @@
             <Label name="End_Mission"/>
         </ScriptedEvent>
 
-        <!--不期而遇事件-->
+        <!--绕越事件-->
         <ScriptedEvent identifier="Touhou_OutpostDestroyMission08_Event">
             <TagAction criteria="crew" tag="crew"/>
             <TagAction criteria="bot" tag="bot"/>
@@ -2627,7 +2181,52 @@
             </RNGAction>
             <RNGAction chance="0.5">
                 <Success>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Hard_Super"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Hard_Super"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Hard_Super"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -2674,10 +2273,56 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Success>
                 <Failure>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <RNGAction chance="0.6">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Lunatic"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <SpawnAction npcsetidentifier="Touhou_ODM8_Enemy_NPC" npcidentifier="Touhou_ODM08_Enemy_Human_Lunatic"
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -2700,7 +2345,7 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Failure>
             </RNGAction>
             <WaitAction time="1"/>
@@ -2734,7 +2379,7 @@
             <Label name="End_Mission"/>
         </ScriptedEvent>
 
-        <!--不期而遇BGM-->
+        <!--绕越BGM-->
         <ScriptedEvent identifier="Touhou_ODM08_BGM">
             <TagAction criteria="player" tag="BGM_Player"/>
             <StatusEffectAction targettag="BGM_Player">
@@ -2985,7 +2630,43 @@
             <TagAction criteria="player" tag="player"/>
             <RNGAction chance="0.5">
                 <Success>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM3_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM3_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Easy"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM3_Enemy_NPC" npcidentifier="Touhou_ODM03_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="6">
                         <Success>
                             <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Lunatic"
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -3056,10 +2737,43 @@
                                 </Failure>
                             </CountTargetsAction>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Success>
                 <Failure>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="6">
                         <Success>
                             <SpawnAction npcsetidentifier="Touhou_ODM9_Enemy_NPC" npcidentifier="Touhou_ODM09_Enemy_Human_Lunatic"
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -3121,7 +2835,7 @@
                                 </Failure>
                             </CountTargetsAction>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Failure>
             </RNGAction>
             <WaitAction time="1"/>
@@ -3350,7 +3064,37 @@
             <TagAction criteria="player" tag="player"/>
             <RNGAction chance="0.5">
                 <Success>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -3382,10 +3126,53 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Success>
                 <Failure>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <RNGAction chance="0.6">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -3417,7 +3204,7 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Failure>
             </RNGAction>
             <WaitAction time="1"/>
@@ -3439,7 +3226,50 @@
             <TagAction criteria="player" tag="player"/>
             <RNGAction chance="0.5">
                 <Success>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <RNGAction chance="0.6">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -3471,10 +3301,53 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Success>
                 <Failure>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <RNGAction chance="0.6">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -3503,7 +3376,7 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Failure>
             </RNGAction>
             <WaitAction time="1"/>
@@ -3522,7 +3395,69 @@
         <!--普罗米修斯刷新敌人03-->
         <ScriptedEvent identifier="Touhou_ODM10_Enemy_Spawn03">
             <TagAction criteria="player" tag="player"/>
+            <CountTargetsAction targettag="player" MinAmount="1">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
+                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements_Special02"
+                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements_Special01"
+                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
             <CountTargetsAction targettag="player" MinAmount="3">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC"
+                                 npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements_Special02" lootingisstealing="false"
+                                 spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements_Special02"
+                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements_Special01"
+                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
+            <CountTargetsAction targettag="player" MinAmount="6">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
+                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
+                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
+            <CountTargetsAction targettag="player" MinAmount="8">
+                <Success>
+                    <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
+                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                    <WaitAction time="1"/>
+                    <RNGAction chance="0.6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Lunatic_Reinforcements"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+
+                        </Failure>
+                    </RNGAction>
+                </Success>
+                <Failure>
+                </Failure>
+            </CountTargetsAction>
+<!--            <CountTargetsAction targettag="player" MinAmount="3">
                 <Success>
                     <CountTargetsAction targettag="player" MinAmount="6">
                         <Success>
@@ -3596,7 +3531,7 @@
                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                     <WaitAction time="1"/>
                 </Failure>
-            </CountTargetsAction>
+            </CountTargetsAction>-->
             <WaitAction time="1"/>
             <SpawnAction npcsetidentifier="Touhou_ODM10_Enemy_NPC" npcidentifier="Touhou_ODM10_Enemy_Human_Extra" lootingisstealing="false"
                          spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -3755,7 +3690,49 @@
             <TagAction criteria="player" tag="player"/>
             <RNGAction chance="0.5">
                 <Success>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Easy"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -3796,10 +3773,49 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Success>
                 <Failure>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -3831,7 +3847,7 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Failure>
             </RNGAction>
             <WaitAction time="1"/>
@@ -3851,7 +3867,46 @@
             <TagAction criteria="player" tag="player"/>
             <RNGAction chance="0.5">
                 <Success>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -3889,10 +3944,46 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Success>
                 <Failure>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Lunatic"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -3930,7 +4021,7 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Failure>
             </RNGAction>
             <WaitAction time="1"/>
@@ -4125,7 +4216,46 @@
             </RNGAction>
             <RNGAction chance="0.5">
                 <Success>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <CountTargetsAction targettag="player" MinAmount="6">
                                 <Success>
@@ -4166,10 +4296,49 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Success>
                 <Failure>
+                    <CountTargetsAction targettag="player" MinAmount="1">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Easy"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
                     <CountTargetsAction targettag="player" MinAmount="3">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Normal"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="6">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+                    <CountTargetsAction targettag="player" MinAmount="8">
+                        <Success>
+                            <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Hard"
+                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                            <WaitAction time="1"/>
+                        </Success>
+                        <Failure>
+                        </Failure>
+                    </CountTargetsAction>
+<!--                    <CountTargetsAction targettag="player" MinAmount="3">
                         <Success>
                             <SpawnAction npcsetidentifier="Touhou_ODM11_Enemy_NPC" npcidentifier="Touhou_ODM11_Enemy_Human_Hard"
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
@@ -4189,7 +4358,7 @@
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Failure>
-                    </CountTargetsAction>
+                    </CountTargetsAction>-->
                 </Failure>
             </RNGAction>
             <WaitAction time="1"/>

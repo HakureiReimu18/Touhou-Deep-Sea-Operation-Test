@@ -25,7 +25,7 @@
         </Skills>
         <ItemSet>
             <Item identifier="idcard" equip="true" showpreview="false"/>
-            <Item identifier="doctorsuniform1" equip="true" outfit="true"/>
+            <Item identifier="Normal_Magician_Clothes01" equip="true" outfit="true"/>
             <Item identifier="Illness_Recovery_Charm" equip="true" showpreview="false"/>
             <Item identifier="Touhou_Base_Metal" amount="2"/>
             <Item identifier="Fire_Element_Book"/>
@@ -33,10 +33,28 @@
             <Item identifier="Touhou_Bottle_Element"/>
             <Item identifier="Cinnamon_Branch_Seed"/>
             <Item identifier="Touhou_Budesonide"/>
-            <PreviewSprites dims="120,109">
-                <sprite texture="Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0"/>
-                <sprite texture="Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15"/>
-            </PreviewSprites>
+        </ItemSet>
+        <ItemSet>
+            <Item identifier="idcard" equip="true" showpreview="false"/>
+            <Item identifier="Normal_Magician_Clothes02" equip="true" outfit="true"/>
+            <Item identifier="Illness_Recovery_Charm" equip="true" showpreview="false"/>
+            <Item identifier="Touhou_Base_Metal" amount="2"/>
+            <Item identifier="Fire_Element_Book"/>
+            <Item identifier="Patchouli_Book_02"/>
+            <Item identifier="Touhou_Bottle_Element"/>
+            <Item identifier="Cinnamon_Branch_Seed"/>
+            <Item identifier="Touhou_Budesonide"/>
+        </ItemSet>
+        <ItemSet>
+            <Item identifier="idcard" equip="true" showpreview="false"/>
+            <Item identifier="Normal_Magician_Clothes03" equip="true" outfit="true"/>
+            <Item identifier="Illness_Recovery_Charm" equip="true" showpreview="false"/>
+            <Item identifier="Touhou_Base_Metal" amount="2"/>
+            <Item identifier="Fire_Element_Book"/>
+            <Item identifier="Patchouli_Book_02"/>
+            <Item identifier="Touhou_Bottle_Element"/>
+            <Item identifier="Cinnamon_Branch_Seed"/>
+            <Item identifier="Touhou_Budesonide"/>
         </ItemSet>
         <AutonomousObjectives>
             <Order identifier="rescue" prioritymodifier="1"/>
@@ -152,17 +170,33 @@
         </Skills>
         <ItemSet>
             <Item identifier="idcard" equip="true" showpreview="false"/>
-            <Item identifier="doctorsuniform1" equip="true" outfit="true"/>
+            <Item identifier="Normal_Yokai_Clothes01" equip="true" outfit="true"/>
             <Item identifier="Illness_Recovery_Charm" equip="true" showpreview="false"/>
             <Item identifier="Touhou_Knightmare_Shotgun">
                 <Item identifier="Touhou_Knightmare_Shotgun_Ammo01"/>
             </Item>
             <Item identifier="Touhou_Base_Metal" amount="2"/>
             <Item identifier="Touhou_Berry_Wine"/>
-            <PreviewSprites dims="120,109">
-                <sprite texture="Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="2,38,120,109" offset="0,0"/>
-                <sprite texture="Content/Items/Jobgear/Assistant/assistant_torso_[GENDER]_1.png" sourcerect="121,0,76,80" offset="-20,15"/>
-            </PreviewSprites>
+        </ItemSet>
+        <ItemSet>
+            <Item identifier="idcard" equip="true" showpreview="false"/>
+            <Item identifier="Normal_Yokai_Clothes02" equip="true" outfit="true"/>
+            <Item identifier="Illness_Recovery_Charm" equip="true" showpreview="false"/>
+            <Item identifier="Touhou_Knightmare_Shotgun">
+                <Item identifier="Touhou_Knightmare_Shotgun_Ammo01"/>
+            </Item>
+            <Item identifier="Touhou_Base_Metal" amount="2"/>
+            <Item identifier="Touhou_Berry_Wine"/>
+        </ItemSet>
+        <ItemSet>
+            <Item identifier="idcard" equip="true" showpreview="false"/>
+            <Item identifier="Normal_Yokai_Clothes03" equip="true" outfit="true"/>
+            <Item identifier="Illness_Recovery_Charm" equip="true" showpreview="false"/>
+            <Item identifier="Touhou_Knightmare_Shotgun">
+                <Item identifier="Touhou_Knightmare_Shotgun_Ammo01"/>
+            </Item>
+            <Item identifier="Touhou_Base_Metal" amount="2"/>
+            <Item identifier="Touhou_Berry_Wine"/>
         </ItemSet>
     </Job>
 

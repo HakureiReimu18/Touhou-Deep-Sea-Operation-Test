@@ -188,7 +188,7 @@
           scale="0.45">
         <PreferredContainer primary="crewcab"/>
         <PreferredContainer primary="outpostcrewcabinet"/>
-        <Price baseprice="1800">
+        <Price baseprice="800">
             <Price storeidentifier="merchantoutpost" minavailable="2"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="3"/>
             <Price storeidentifier="merchantresearch" minavailable="2"/>

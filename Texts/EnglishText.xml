@@ -1480,6 +1480,9 @@
     <entityname.Touhou_Magic_Charging_Box_Huge>Magic Weapon Charging Box (Large)</entityname.Touhou_Magic_Charging_Box_Huge>
     <entitydescription.Touhou_Magic_Charging_Box_Huge>Can recharge all magic weapon ammunition and is more durable.</entitydescription.Touhou_Magic_Charging_Box_Huge>
 
+    <entityname.Touhou_Magic_Charging_Box_Special>Custom Magic Weapon Charging Box</entityname.Touhou_Magic_Charging_Box_Special>
+    <entitydescription.Touhou_Magic_Charging_Box_Special>Instantly recharges the ammunition of all magic weapons to full capacity. Can recharge multiple types of magic weapon ammunition at once. Can only be used 5 times.</entitydescription.Touhou_Magic_Charging_Box_Special>
+
     <entityname.Touhou_Phoenix_Tail_Tank>Phoenix Tail Welding Tank</entityname.Touhou_Phoenix_Tail_Tank>
     <entitydescription.Touhou_Phoenix_Tail_Tank>Welding fuel refined from phoenix feathers that slowly regenerates its own durability until exhausted.</entitydescription.Touhou_Phoenix_Tail_Tank>
 
@@ -2469,6 +2472,39 @@
     <entitydescription.Touhou_Star_Moon_Waist_Pouch>An expensive waist pouch handcrafted by artisans skilled in magical inscriptions, capable of producing enhanced effects when used together with the Magic Veil. It also possesses the properties of an elemental belt and includes its own dedicated elemental vial slots.
         Although it has fewer slots, the resulting effects are significantly stronger.</entitydescription.Touhou_Star_Moon_Waist_Pouch>
 
+    <entityname.Touhou_Mixer_Gun>Mixer Console</entityname.Touhou_Mixer_Gun>
+    <entitydescription.Touhou_Mixer_Gun>Combining musical instruments with weapons is not a new concept, but a design as radical as a mixer console is truly one of a kind. The higher the rarity of the inserted record, the greater the weapon's power. Uses ‖color:gui.yellow‖Resonance Cores‖end‖.</entitydescription.Touhou_Mixer_Gun>
+    <entityname.Touhou_Mixer_Gun_Ammo>Resonance Core</entityname.Touhou_Mixer_Gun_Ammo>
+    <entitydescription.Touhou_Mixer_Gun_Ammo>A device used to extract the energy contained within every note of a piece of music. Even the simplest notes can unleash surprising destructive power. Used as ammunition for the ‖color:gui.yellow‖Mixer Console‖end‖.</entitydescription.Touhou_Mixer_Gun_Ammo>
+
+    <entityname.Touhou_Corrupted_Shotgun_Bullet>‖color:255,0,0,255‖Corrupted Buckshot Shell‖end‖</entityname.Touhou_Corrupted_Shotgun_Bullet>
+    <entitydescription.Touhou_Corrupted_Shotgun_Bullet>Forged from pure base metal through forbidden craftsmanship, it has lost its original controllability but has become far more lethal to living creatures.
+        Used as ammunition for ‖color:gui.yellow‖weapons that fire shotgun shells‖end‖.</entitydescription.Touhou_Corrupted_Shotgun_Bullet>
+
+    <entityname.Touhou_Saigyou_Ayakashi_Branch_Gun>‖color:162,195,219,255‖Saigyou Ayakashi Branch‖end‖</entityname.Touhou_Saigyou_Ayakashi_Branch_Gun>
+    <entitydescription.Touhou_Saigyou_Ayakashi_Branch_Gun>A unique weapon "grown" from a branch of the Saigyou Ayakashi. Each opening and closing motion resembles blossoms blooming and withering in an instant. Killing any creature with this weapon restores the wielder's health. Uses ‖color:gui.yellow‖Saigyou Ayakashi Petal Cartridges‖end‖.</entitydescription.Touhou_Saigyou_Ayakashi_Branch_Gun>
+    <entityname.Touhou_Saigyou_Ayakashi_Branch_Gun_Ammo>‖color:162,195,219,255‖Saigyou Ayakashi Petal Cartridge‖end‖</entityname.Touhou_Saigyou_Ayakashi_Branch_Gun_Ammo>
+    <entitydescription.Touhou_Saigyou_Ayakashi_Branch_Gun_Ammo>A special cartridge crafted from collected Saigyou Ayakashi petals, imbued with the mysterious power of life and death. Used as ammunition for the ‖color:gui.yellow‖Saigyou Ayakashi Branch‖end‖.</entitydescription.Touhou_Saigyou_Ayakashi_Branch_Gun_Ammo>
+
+    <entityname.Touhou_Higanbana_Arbiter>‖color:162,195,219,255‖Higanbana Arbiter‖end‖</entityname.Touhou_Higanbana_Arbiter>
+    <entitydescription.Touhou_Higanbana_Arbiter>A weapon "grown" using the unique essence of the Netherworld together with higanbana flowers. Lightweight, agile, yet still powerful. Uses ‖color:gui.yellow‖Higanbana Petal Magazine‖end‖.</entitydescription.Touhou_Higanbana_Arbiter>
+    <entityname.Touhou_Higanbana_Arbiter_Ammo>‖color:162,195,219,255‖Higanbana Petal Magazine‖end‖</entityname.Touhou_Higanbana_Arbiter_Ammo>
+    <entitydescription.Touhou_Higanbana_Arbiter_Ammo>A special energy magazine crafted from collected higanbana petals. Used as ammunition for the ‖color:gui.yellow‖Higanbana Arbiter‖end‖.</entitydescription.Touhou_Higanbana_Arbiter_Ammo>
+
+    <entityname.Touhou_Yuyuko_Elegance>‖color:162,195,219,255‖Elegance‖end‖</entityname.Touhou_Yuyuko_Elegance>
+    <entitydescription.Touhou_Yuyuko_Elegance>A special folding fan crafted by Yuyuko on Europa. Beneath its harmless appearance lies astonishing destructive power.</entitydescription.Touhou_Yuyuko_Elegance>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2935,6 +2971,9 @@
 
     <talentname.Hyouibana_Kaguya>Possession: Kaguya</talentname.Hyouibana_Kaguya>
     <talentdescription.Hyouibana_Kaguya>Buff duration is increased by 30%. Gain 10% bleeding resistance.</talentdescription.Hyouibana_Kaguya>
+
+    <talentname.Hyouibana_Yuyuko>Possessed: Yuyuko</talentname.Hyouibana_Yuyuko>
+    <talentdescription.Hyouibana_Yuyuko>Greatly increases Oxygen Resistance.</talentdescription.Hyouibana_Yuyuko>
 
 
 </infotexts>
