@@ -1690,7 +1690,7 @@
                 resetbetweenrounds="true" showinhealthscannerthreshold="100" affectmachines="false" iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Nitori_Backpack_Tactical_Expansion_Effect" minstrength="0" maxstrength="10"/>
         <Effect minstrength="0" maxstrength="10"
-                resistancefor="bleeding,tsm_kep_buff"
+                resistancefor="bleeding"
                 minresistance="0.35" maxresistance="0.35"
                 strengthchange="-3">
             <StatusEffect target="Character" Interval="5.0">
@@ -4109,8 +4109,8 @@
         <icon texture="%ModDir%/Images/Afflictions/Touhou_ODM8_Aff_Event_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255" origin="0,0"/>
     </Affliction>
 
-    <!--不期而遇BGM-->
-    <Affliction name="不期而遇BGM"
+    <!--绕越BGM-->
+    <Affliction name="绕越BGM"
                 identifier="Touhou_OutpostDestroyMission08_BGM_Player"
                 type="Touhou_OutpostDestroyMission08_BGM_Player"
                 limbspecific="false"

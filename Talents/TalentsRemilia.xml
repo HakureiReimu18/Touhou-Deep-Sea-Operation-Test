@@ -51,7 +51,7 @@
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Blood_Needs_Remilia" amount="0.1"/>
+                            <Affliction identifier="Blood_Needs_Remilia" amount="0.06"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>

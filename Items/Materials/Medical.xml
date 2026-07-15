@@ -366,7 +366,7 @@
                                 Hyouibana_Tenshi,Hyouibana_Reimu,Hyouibana_Momizi,Hyouibana_Yuka,Hyouibana_Aunn,Hyouibana_Flandre,Hyouibana_Nue,Hyouibana_Piece,
                                 Hyouibana_Cirno,Hyouibana_Koishi,Hyouibana_Alice,Hyouibana_Sunny,Hyouibana_Luna,Hyouibana_Star,Hyouibana_Sakuya,Hyouibana_Sanae，
                                 Hyouibana_Reisen,Hyouibana_Yukari,Hyouibana_Merry,Hyouibana_Renko,Hyouibana_Kokoro,Hyouibana_Lilywhite,Hyouibana_Satori,Hyouibana_Tewi,
-                                Hyouibana_Kaguya,Hyouibana_Yuyuko"/>
+                                Hyouibana_Kaguya,Hyouibana_Yuyuko,Hyouibana_Shinki"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="UseTarget">
                 <Conditional Hyouibana_Effect_Flag="gt 0"/>

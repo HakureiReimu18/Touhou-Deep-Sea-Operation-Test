@@ -3345,7 +3345,7 @@
                     <RequiredItem items="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04,
                     Touhou_Magic_Charging05,Touhou_Magic_Charging06" type="Contained" ExcludeFullCondition="true" ExcludeBroken="false"/>
                 </StatusEffect>
-                <StatusEffect type="OnUse" target="Contained" Condition="100.0" disabledeltatime="true">
+                <StatusEffect type="OnUse" target="Contained" Condition="300.0" disabledeltatime="true">
                     <RequiredItem items="Touhou_Magic_Charging01,Touhou_Magic_Charging02,Touhou_Magic_Charging03,Touhou_Magic_Charging04,
                     Touhou_Magic_Charging05,Touhou_Magic_Charging06" type="Contained" ExcludeBroken="false"/>
                 </StatusEffect>
@@ -4753,7 +4753,7 @@
                         <Conditional IsActive="eq true" targetcontainer="true" TargetItemComponent="Wearable"/>
                         <Conditional Condition="gt 0" targetcontainer="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnContaining" target="This" Condition="-2.0" Interval="1.0" comparison="And" disabledeltatime="true" >
+                    <StatusEffect type="OnContaining" target="This" Condition="-1.8" Interval="1.0" comparison="And" disabledeltatime="true" >
                         <Conditional ConditionPercentage="lt 100" TargetContainedItem="true"/>
                     </StatusEffect>
                 </Containable>
@@ -4762,7 +4762,7 @@
                         <Conditional IsActive="eq true" targetcontainer="true" TargetItemComponent="Wearable"/>
                         <Conditional Condition="gt 0" targetcontainer="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnContaining" target="This" Condition="-4.0" Interval="1.0" comparison="And" disabledeltatime="true" >
+                    <StatusEffect type="OnContaining" target="This" Condition="-3.6" Interval="1.0" comparison="And" disabledeltatime="true" >
                         <Conditional ConditionPercentage="lt 100" TargetContainedItem="true"/>
                     </StatusEffect>
                 </Containable>
@@ -4771,7 +4771,7 @@
                         <Conditional IsActive="eq true" targetcontainer="true" TargetItemComponent="Wearable"/>
                         <Conditional Condition="gt 0" targetcontainer="true"/>
                     </StatusEffect>
-                    <StatusEffect type="OnContaining" target="This" Condition="-8.0" Interval="1.0" comparison="And" disabledeltatime="true" >
+                    <StatusEffect type="OnContaining" target="This" Condition="-7.0" Interval="1.0" comparison="And" disabledeltatime="true" >
                         <Conditional ConditionPercentage="lt 100" TargetContainedItem="true"/>
                     </StatusEffect>
                 </Containable>
@@ -4808,9 +4808,11 @@
                 <Conditional HasTag="eq Charging_Open" targetcontainer="true"/>
             </StatusEffect>-->
 
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.8" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true"/>
-            <SkillModifier skillidentifier="Touhou_Magic" skillvalue="5"/>
+            <SkillModifier skillidentifier="Touhou_Magic" skillvalue="10"/>
+            <SkillModifier skillidentifier="weapons" skillvalue="10"/>
         </Wearable>
         <aitarget maxsightrange="1500"/>
     </Item>

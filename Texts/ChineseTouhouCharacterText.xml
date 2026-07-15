@@ -16,7 +16,7 @@
         \n持续治疗‖color:gui.orange‖咬伤‖end‖。\n‖color:gui.green‖+15%‖end‖‖color:gui.orange‖移动速度‖end‖。\n获得‖color:gui.orange‖精神病抗性‖end‖。
         ————————————————————————————————————
         \n更容易出血
-        \n长时间不使用优质B型血，你的‖color:gui.orange‖攻击伤害、技能水平、最大生命值‖end‖均下降‖color:gui.green‖15%‖end‖
+        \n长时间不使用优质B型血，你的‖color:gui.orange‖攻击伤害、技能水平、最大生命值‖end‖均下降‖color:gui.red‖15%‖end‖
         \n当你击杀任意生物时，恢复‖color:gui.yellow‖失血和出血‖end‖
         巡回内，你受到的伤害越多，造成的伤害越高，最高‖color:gui.green‖10%‖end‖。这个效果在巡回后清除
         你每次造成的出血总量概率随机转化为‖color:gui.green‖150%‖end‖的‖color:gui.orange‖出血不止‖end‖或‖color:gui.green‖33.3%‖end‖‖color:gui.orange‖咬伤‖end‖。
@@ -389,7 +389,7 @@
     <talentname.PieceTalent>地狱的妖精</talentname.PieceTalent>
     <talentdescription.PieceTalent>当你身着皮丝装束+时，
         对烧伤的抗性略高。
-        精神病越高，‖color:gui.orange‖攻击伤害、攻击速度、对队友的伤害‖end‖越高。‖color:gui.orange‖攻击伤害和攻击速度‖end‖最高‖color:gui.green‖20%‖end‖，‖color:gui.orange‖友伤‖end‖最高提高到‖color:gui.green‖40%‖end‖
+        精神病越高，‖color:gui.orange‖攻击伤害、近战攻击速度、对队友的伤害‖end‖越高。‖color:gui.orange‖攻击伤害和近战攻击速度‖end‖最高‖color:gui.green‖20%‖end‖，‖color:gui.orange‖友伤‖end‖最高提高到‖color:gui.green‖40%‖end‖
         \n攻击目标的精神病越高，对其造成的伤害越高，最高‖color:gui.green‖15%‖end‖。</talentdescription.PieceTalent>
     <afflictionname.Fairy_Of_Hell>地狱的妖精</afflictionname.Fairy_Of_Hell>
     <afflictiondescription.Fairy_Of_Hell>她受赫卡提亚的命令，令静海充满了自己从地狱带来的妖精们。</afflictiondescription.Fairy_Of_Hell>
@@ -571,7 +571,7 @@
     <talentname.StarTalent>妖精灿烂的样子</talentname.StarTalent>
     <talentdescription.StarTalent>当你身着斯塔装束+时，
         \n减少‖color:gui.red‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖。
-        \n可以感知周围活体生物的位置
+        \n可以间歇性感知周围活体生物的位置
         长时间没有受到攻击后，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖，减少‖color:gui.green‖20%‖end‖受到的伤害，并大大增加生命恢复速度
         \n对你造成过伤害的敌人：
         当其生命值低于‖color:gui.green‖50%‖end‖时，远程弹幕（非炮塔）攻击有‖color:gui.green‖5%‖end‖概率对其造成额外‖color:gui.yellow‖眩晕、烧伤和星之光‖end‖，近战武器概率则为‖color:gui.green‖30%‖end‖
@@ -1195,7 +1195,43 @@
     <entityname.Touhou_Spring_Fragment>‖color:162,195,219,255‖春度碎片‖end‖</entityname.Touhou_Spring_Fragment>
     <entitydescription.Touhou_Spring_Fragment>在冰洋中相当难得的春度的一片，直接服用有少许治疗效果，能治疗“返魂蝶”，可以用于代替一些料理需求的食材，也可以制作其他物品</entitydescription.Touhou_Spring_Fragment>
     <entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>‖color:162,195,219,255‖西行妖盆栽‖end‖</entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>
-    <entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>因为幽幽子和春度的聚集而生长的西行妖类似物，拥有相似的力量。随着时间推移，会散落春度碎片‖color:gui.yellow‖（右键+E键放置，按E直接拾取）‖end‖</entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>
+    <entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>因为幽幽子和春度的聚集而生长的西行妖类似物，拥有相似的力量。随着时间推移，会散落春度碎片。需在干燥环境下生长。‖color:gui.yellow‖（右键+E键放置，按E直接拾取）‖end‖</entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>
+
+
+    <!--Shinki-->
+    <entityname.Shinki_gear>‖color:228,0,120,255‖神绮 装束‖end‖</entityname.Shinki_gear>
+    <entitydescription.Shinki_gear>神绮是魔界的创造神，某种意义上是所有魔界居民的母亲</entitydescription.Shinki_gear>
+    <entityname.Shinki_Plus>‖color:228,0,120,255‖神绮 装束+‖end‖</entityname.Shinki_Plus>
+    <entitydescription.Shinki_Plus>神绮是魔界的创造神，某种意义上是所有魔界居民的母亲</entitydescription.Shinki_Plus>
+    <talentname.ShinkiTalent>纯白创生</talentname.ShinkiTalent>
+    <talentdescription.ShinkiTalent>当你身着神绮 装束+时，
+        成为敌人优先攻击的目标
+        生命值低于‖color:gui.red‖70%‖end‖时，减少‖color:gui.red‖15%‖end‖‖color:gui.orange‖攻击伤害‖end‖
+        生命值低于‖color:gui.red‖40%‖end‖时，减少‖color:gui.red‖15%‖end‖‖color:gui.orange‖攻击速度‖end‖
+        生命值低于‖color:gui.red‖10%‖end‖时，减少‖color:gui.red‖20%‖end‖‖color:gui.orange‖物理伤害抗性‖end‖
+
+        生命值在‖color:gui.green‖80%‖end‖及以上时，缓慢治愈部分伤势
+        （仅玩家）死亡后，给予所有船员‖color:gui.yellow‖“魔界警示”‖end‖
+        ‖color:gui.yellow‖魔界警示‖end‖：增加‖color:gui.green‖20%‖end‖‖color:gui.orange‖技能水平‖end‖，免疫‖color:gui.yellow‖失血‖end‖。持续‖color:gui.green‖3‖end‖分钟
+
+        巡回完成任意任务后，有概率获得‖color:gui.orange‖魔素‖end‖，可作为泛用材料，也可以制作专属道具
+        ‖color:gui.orange‖魔素‖end‖也可以用部分材料转化获得
+
+        巡回开始时，如果其他船员有‖color:gui.orange‖爱丽丝装束+‖end‖，则给予‖color:gui.yellow‖“魔界之女”‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值‖end‖
+    </talentdescription.ShinkiTalent>
+    <afflictionname.Touhou_Shinki_Character_Effect>魔界之神</afflictionname.Touhou_Shinki_Character_Effect>
+    <afflictiondescription.Touhou_Shinki_Character_Effect>银色的披肩银发，以红色发带扎着一束偏左侧的头发，发带上还有两个球形饰品。</afflictiondescription.Touhou_Shinki_Character_Effect>
+    <afflictionname.Shinki_Weapons>神话幻想</afflictionname.Shinki_Weapons>
+    <afflictiondescription.Shinki_Weapons>生物和环境会自行演化，或许她在调控着演化方向。所谓创造并维持世界运行？</afflictiondescription.Shinki_Weapons>
+
+    <afflictionname.Touhou_Shinki_Talent_Death_For_Enemy>魔界压迫</afflictionname.Touhou_Shinki_Talent_Death_For_Enemy>
+    <afflictiondescription.Touhou_Shinki_Talent_Death_For_Enemy>来自魔界之神复苏前的压迫</afflictiondescription.Touhou_Shinki_Talent_Death_For_Enemy>
+    <afflictionname.Touhou_Shinki_Talent_Death_For_Team>魔界警示</afflictionname.Touhou_Shinki_Talent_Death_For_Team>
+    <afflictiondescription.Touhou_Shinki_Talent_Death_For_Team>魔界之神复苏前的警示。增加20%技能水平，免疫失血。持续3分钟</afflictiondescription.Touhou_Shinki_Talent_Death_For_Team>
+    <entityname.Touhou_Makai_Essence>‖color:228,0,120,255‖魔素‖end‖</entityname.Touhou_Makai_Essence>
+    <entitydescription.Touhou_Makai_Essence>神绮创造的特殊材料，可以取代常规材料的作用，也可以制作魔界特有的物品</entitydescription.Touhou_Makai_Essence>
+
+
 
 
 
@@ -1261,6 +1297,7 @@
     <Character.MRE_Material_Tewi>因幡天为的回忆</Character.MRE_Material_Tewi>
     <Character.MRE_Material_Kaguya>辉夜的回忆</Character.MRE_Material_Kaguya>
     <Character.MRE_Material_Yuyuko>幽幽子的回忆</Character.MRE_Material_Yuyuko>
+    <Character.MRE_Material_Shinki>神绮的回忆</Character.MRE_Material_Shinki>
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有15%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
@@ -1338,4 +1375,6 @@
     <talentdescription.MRE_Kaguya>仅对辉夜 装束+生效。所有船员立刻获得一个天赋点。如果收集完并应用五种宝物（耀眼的龙玉，佛体的金刚石，火蜥蜴之盾，无限的生命之泉，蓬莱的玉枝），则提高25%技能水平，并免疫毒药和麻痹</talentdescription.MRE_Kaguya>
     <talentname.MRE_Yuyuko>出血效应-西行寺幽幽子</talentname.MRE_Yuyuko>
     <talentdescription.MRE_Yuyuko>仅对幽幽子 装束+生效。生命值高于0时，不会被秒杀。专属武器弹幕攻击附加“返魂蝶”，会逐渐减少目标生命值并降低抗性</talentdescription.MRE_Yuyuko>
+    <talentname.MRE_Shinki>出血效应-神绮</talentname.MRE_Shinki>
+    <talentdescription.MRE_Shinki>仅对神绮 装束+生效。专属武器弹幕攻击对满血敌人施加“魔界压迫”。魔界压迫：降低25%物理伤害抗性，降低25%技能水平，降低20%移动速度。持续10秒</talentdescription.MRE_Shinki>
 </infotexts>

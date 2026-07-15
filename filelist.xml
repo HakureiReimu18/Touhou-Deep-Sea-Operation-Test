@@ -58,6 +58,7 @@
     <Item file="%ModDir%/Items/Clothes/Tewi_gear.xml"/>
     <Item file="%ModDir%/Items/Clothes/Kaguya_gear.xml"/>
     <Item file="%ModDir%/Items/Clothes/Yuyuko_gear.xml"/>
+    <Item file="%ModDir%/Items/Clothes/Shinki_gear.xml"/>
     <!--联动-->
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Ema_gear.xml"/>
     <Item file="%ModDir%/Items/Touhou_Mod_Linkage/Cosmic_Princess_Kaguya_gear.xml"/>
@@ -135,6 +136,7 @@
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/Normal_YouseiWings.xml"/>
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/Normal_YokaiTail.xml"/>
     <Other file="%ModDir%/Characters/HumanTouhou_Tail/Normal_YokaiWings.xml"/>
+    <Other file="%ModDir%/Characters/HumanTouhou_Tail/ShinkiWings.xml"/>
     <Character file="%ModDir%/Characters/Maoyu/Maoyu.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Little_Ghost/Touhou_Little_Ghost.xml"/>
     <Character file="%ModDir%/Characters/Touhou_Little_Photosphere/Touhou_Little_Photosphere.xml"/>
@@ -215,6 +217,7 @@
     <Talents file="%ModDir%/Talents/TalentsTewi.xml"/>
     <Talents file="%ModDir%/Talents/TalentsKaguya.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYuyuko.xml"/>
+    <Talents file="%ModDir%/Talents/TalentsShinki.xml"/>
     <Talents file="%ModDir%/Talents/TalentsMagician.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYousei.xml"/>
     <Talents file="%ModDir%/Talents/TalentsYokai.xml"/>

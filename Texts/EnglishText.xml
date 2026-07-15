@@ -2975,5 +2975,6 @@
     <talentname.Hyouibana_Yuyuko>Possessed: Yuyuko</talentname.Hyouibana_Yuyuko>
     <talentdescription.Hyouibana_Yuyuko>Greatly increases Oxygen Resistance.</talentdescription.Hyouibana_Yuyuko>
 
-
+    <talentname.Hyouibana_Shinki>Possessed Shinki</talentname.Hyouibana_Shinki>
+    <talentdescription.Hyouibana_Shinki>While Health is above 80%, gradually recover from some injuries.</talentdescription.Hyouibana_Shinki>
 </infotexts>

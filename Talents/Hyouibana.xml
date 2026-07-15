@@ -1351,7 +1351,56 @@
         </AbilityGroupInterval>
         <AbilityGroupInterval Interval="5.0">
             <Abilities>
-                <CharacterAbilityModifyResistance resistanceid="oxygenlow" multiplier="0.35"/>
+                <CharacterAbilityModifyResistance resistanceid="oxygenlow" multiplier="0.5"/>
+            </Abilities>
+        </AbilityGroupInterval>
+
+    </Talent>
+
+    <!--凭依神绮-->
+    <Talent identifier="Hyouibana_Shinki">
+        <Icon texture="%ModDir%/Images/Talents/ShinkiTalent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.Hyouibana_Shinki"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="Hyouibana_Shinki_Effect" amount="10.0"/>
+                            <Affliction identifier="Hyouibana_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Hyouibana_Effect_Prefect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" Duration="10.0"
+                                      multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Hyouibana_Effect_Prefect_Shinki" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="4.0">
+            <Conditions>
+                <AbilityConditionAboveVitality vitalitypercentage="0.8"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects SetUser="false">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <ReduceAffliction type="damage" amount="0.2"/>
+                            <ReduceAffliction type="burn" amount="0.2"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
 

@@ -44,7 +44,7 @@
                 <AbilityConditionHasAffliction afflictionidentifier="Yuyuko_Weapons"/>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Attack_Implode_CD" invert="true"/>
                 <AbilityConditionAttackData weapontype="Turret" invert="true"/>
-                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+                <AbilityConditionAttackData ignorenonharmfulattacks="true" weapontype="HandheldRanged,Melee"/>
                 <AbilityConditionCharacter targetabilitytarget="true" targettype="Enemy">
                     <Conditional isunconscious="true"/>
                 </AbilityConditionCharacter>
@@ -70,5 +70,21 @@
                 <CharacterAbilityPutItem itemidentifier="Touhou_Spring_Fragment" amount="2"/>
             </Abilities>
         </AbilityGroupEffect>
+
+        <AbilityGroupInterval maxtriggercount="1" Interval="10">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" EventTargetTag="YuyukoTalent_InValidTarget">
+                            <Conditional IsBot="false" />
+                            <TriggerEvent identifier="YuyukoTalent_Effect" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 </Talents>

@@ -1548,10 +1548,7 @@
                     hideotherwearables="false" inherittexturescale="false" scale="0.29"
                     hidewearablesoftype="moustache,beard,hair,faceattachment,husk,herpes,huskappendage" origin="0.727,0.287"
                     sourcerect="1168,14,306,431">
-                <LightComponent range="1600.0" lightcolor="140,140,140,130" powerconsumption="infinity" IsOn="true">
-                    <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
-                        <Conditional IsDead="false"/>
-                    </StatusEffect>
+                <LightComponent range="1200.0" lightcolor="160,160,160,135" powerconsumption="infinity" IsOn="false">
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
@@ -1790,10 +1787,7 @@
             <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" limb="Head"
                     inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" alphaclipotherwearables="false"
                     sourcerect="32,32,32,32" origin="0.5,0.5">
-                <LightComponent range="1600.0" lightcolor="140,140,140,130" powerconsumption="infinity" IsOn="true">
-                    <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
-                        <Conditional IsDead="false"/>
-                    </StatusEffect>
+                <LightComponent range="1400.0" lightcolor="160,160,160,135" powerconsumption="infinity" IsOn="false">
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
@@ -2069,10 +2063,7 @@
             <sprite name="Combat Diving Suit Helmet Wearable" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" limb="Head"
                     inheritlimbdepth="true" inheritscale="true" ignorelimbscale="true" scale="0.65" hidelimb="false" alphaclipotherwearables="false"
                     sourcerect="32,32,32,32" origin="0.5,0.5">
-                <LightComponent range="1600.0" lightcolor="160,160,160,140" powerconsumption="infinity" IsOn="true">
-                    <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
-                        <Conditional IsDead="false"/>
-                    </StatusEffect>
+                <LightComponent range="1600.0" lightcolor="160,160,160,135" powerconsumption="infinity" IsOn="false">
                     <sprite texture="Content/Particles/ParticleAtlas.png" sourcerect="395,15,1,1" origin="0.15,0"/>
                 </LightComponent>
             </sprite>
@@ -2191,7 +2182,7 @@
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.8" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma,gunshotwound,lacerations,explosiondamage"
-                            damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true"/>
+                            damagemultiplier="0.45" probabilitymultiplier="0.9" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.45" probabilitymultiplier="0.45"
                             damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.35" probabilitymultiplier="0.5"

@@ -1046,7 +1046,7 @@
 
 
     <!--春度碎片-->
-    <Item name="春度碎片" identifier="Touhou_Spring_Fragment" tags="smallitem,Touhou_Food_Ingredients,Vegetarian,Mild" subcategory="Touhou" category="Alien"
+    <Item name="春度碎片" identifier="Touhou_Spring_Fragment" tags="smallitem,Touhou_Food_Ingredients,Vegetarian,Mild,Premium,Sweet,Dreamy" subcategory="Touhou" category="Alien"
           cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="16" scale="0.25" useinhealthinterface="true">
         <PreferredContainer primary="engcab"/>
         <Deconstruct time="5"/>
@@ -1073,6 +1073,16 @@
         <Deconstruct time="5"/>
         <Sprite texture="%ModDir%/Images/Materials/Touhou_Eidolon_Shard.png" depth="0.4" sourcerect="0,0,96,100"/>
         <Body width="96" height="100" density="10.5" gravityscale="0.4"/>
+        <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,-55" handle2="0,-55"/>
+    </Item>
+
+    <!--魔素-->
+    <Item name="魔素" identifier="Touhou_Makai_Essence" tags="smallitem,advmunition_core,munition_core,munition_propulsion" subcategory="Touhou" category="Alien"
+          cargocontaineridentifier="metalcrate" maxstacksize="32" maxstacksizecharacterinventory="8" scale="0.25" >
+        <PreferredContainer primary="engcab"/>
+        <Deconstruct time="5"/>
+        <Sprite texture="%ModDir%/Images/Materials/Touhou_Makai_Essence.png" depth="0.4" sourcerect="0,0,64,72"/>
+        <Body width="96" height="100" density="10" />
         <Holdable slots="RightHand,LeftHand,Any" holdpos="0,0" handle1="0,-55" handle2="0,-55"/>
     </Item>
 

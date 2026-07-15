@@ -1885,7 +1885,7 @@
             </Abilities>
         </AbilityGroupInterval>
 
-        <AbilityGroupInterval Interval="2.9">
+        <AbilityGroupInterval Interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Yuyuko_Character_Effect"/>
                 <AbilityConditionAboveVitality vitalitypercentage="0.0"/>
@@ -1905,6 +1905,38 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Touhou_MRE_Yuyuko_Effect_Debuff" strength="0.5"/>
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
+
+    <!--出血效应-神绮-->
+    <Talent identifier="MRE_Shinki">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.MRE_Shinki"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Shinki_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Shinki_Weapons"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" />
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional WasFullHealth="true"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Shinki_Talent_Death_For_Enemy" strength="10"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>

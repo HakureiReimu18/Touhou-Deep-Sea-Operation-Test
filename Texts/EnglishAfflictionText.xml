@@ -542,4 +542,7 @@
 
     <afflictionname.Hyouibana_Effect_Prefect_Yuyuko>Yuyuko - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Yuyuko>
     <afflictiondescription.Hyouibana_Effect_Prefect_Yuyuko>Grants the exclusive weapon effects of the corresponding character.</afflictiondescription.Hyouibana_Effect_Prefect_Yuyuko>
+
+    <afflictionname.Hyouibana_Effect_Prefect_Shinki>Shinki - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Shinki>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Shinki>Grants the effects of the corresponding character's exclusive weapon.</afflictiondescription.Hyouibana_Effect_Prefect_Shinki>
 </infotexts>

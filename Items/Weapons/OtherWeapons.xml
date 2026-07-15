@@ -1593,7 +1593,7 @@
         <InventoryIcon texture="%ModDir%/Images/OtherWeapons/Touhou_Life_Needle.png" sourcerect="0,0,40,85" origin="0.5,0.5"/>
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_Life_Needle.png" sourcerect="56,3,147,20" depth="0.55" origin="0.5,0.5"/>
         <Body width="140" height="20" density="10"/>
-        <MeleeWeapon slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-22,2" holdangle="30" aimangle="10" reload="1.0" range="80"
+        <MeleeWeapon canBeCombined="true" removeOnCombined="true" slots="Any,RightHand+LeftHand" aimpos="50,0" handle1="-22,2" holdangle="30" aimangle="10" reload="1.0" range="80"
                      allowhitmultiple="true" combatPriority="10" msg="ItemMsgPickUpSelect">
             <Attack targetimpulse="5" severlimbsprobability="0.5" itemdamage="10" penetration="0.1">
                 <Affliction identifier="lacerations" strength="5"/>
@@ -6051,7 +6051,7 @@
             </SubContainer>
         </ItemContainer>
         <Quality>
-            <QualityStat stattype="firepowermultiplier" value="0.15"/>
+            <QualityStat stattype="firepowermultiplier" value="0.1"/>
         </Quality>
         <aitarget sightrange="1000" soundrange="3000" fadeouttime="5"/>
         <SkillRequirementHint identifier="Touhou_Magic" level="95"/>
@@ -9720,12 +9720,12 @@
             <StatusEffect type="OnUse" target="Contained">
                 <Use/>
             </StatusEffect>
-            <RequiredItems items="fkj_aa12_mag" type="Contained" msg="ItemMsgAmmoRequired"/>
+            <RequiredItems items="fkj_aa12_mag,shotgunmag" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="weapons" level="60"/>
             <RequiredSkill identifier="Touhou_Magic" level="80"/>
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
-            <Containable items="fkj_aa12_mag" hide="false" itempos="-5,-8" setactive="true">
+            <Containable items="fkj_aa12_mag,shotgunmag" hide="false" itempos="-5,-8" setactive="true">
                 <!--换弹-->
                 <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
                 <StatusEffect type="OnInserted" target="This" setvalue="true">
@@ -9754,7 +9754,7 @@
     <!--AA12心灵弹匣-->
     <Item name="AA12心灵弹匣" identifier="Touhou_TSM_AA12_Ammo01" subcategory="Touhou" scale="0.33" category="weapon" health="150"
           maxstacksize="16" maxstacksizecharacterinventory="4" cargocontaineridentifier="tsm_metalcrate"
-          tags="fkj_aa12_mag,fkj_12_zd,smallitem,fkj_mag,magazine,handheldammo,deep_aa12_mag,saigaammo,Touhou_TSM_AA12_Ammo,Touhou_Magic_Charging04"
+          tags="fkj_aa12_mag,fkj_12_zd,smallitem,fkj_mag,magazine,handheldammo,deep_aa12_mag,saigaammo,Touhou_TSM_AA12_Ammo,shotgunmag,Touhou_Magic_Charging04"
           impactsoundtag="impact_metal_light">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_TSM_AA12.png" depth="0.56" sourcerect="0,160,40,99" origin="0.5,0.5"/>
         <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
@@ -9829,7 +9829,7 @@
 
     <Item name="AA12元素弹匣" identifier="Touhou_TSM_AA12_Ammo02" subcategory="Touhou" scale="0.33" category="weapon" health="150" maxstacksize="16"
           maxstacksizecharacterinventory="4"
-          tags="fkj_aa12_mag,fkj_hzzd,smallitem,fkj_mag,magazine,handheldammo,deep_aa12_mag,saigaammo,Touhou_TSM_AA12_Ammo,Touhou_Magic_Charging04"
+          tags="fkj_aa12_mag,fkj_hzzd,smallitem,fkj_mag,magazine,handheldammo,deep_aa12_mag,saigaammo,Touhou_TSM_AA12_Ammo,shotgunmag,Touhou_Magic_Charging04"
           impactsoundtag="impact_metal_light">
         <Sprite texture="%ModDir%/Images/OtherWeapons/Touhou_TSM_AA12.png" depth="0.56" sourcerect="40,160,40,99" origin="0.5,0.5"/>
         <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
@@ -10013,7 +10013,7 @@
                 <Affliction identifier="Reiki_Side_Effect" amount="0.6" probability="0.1" penetration="0.1"/>
                 <Affliction identifier="organdamage" amount="1.2" penetration="0.5"/>
             </StatusEffect>
-            <RequiredItems items="fkj_aa12_mag,Touhou_TSM_Corrupted_AA12_Ammo" type="Contained" msg="ItemMsgAmmoRequired"/>
+            <RequiredItems items="fkj_aa12_mag,Touhou_TSM_Corrupted_AA12_Ammo,shotgunmag" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="weapons" level="100"/>
             <RequiredSkill identifier="Touhou_Magic" level="120"/>
         </RangedWeapon>
@@ -10031,12 +10031,12 @@
                 <Affliction identifier="Reiki_Side_Effect" amount="0.6" probability="0.1" penetration="0.1"/>
                 <Affliction identifier="organdamage" amount="1.2" penetration="0.5"/>
             </StatusEffect>
-            <RequiredItems items="fkj_aa12_mag,Touhou_TSM_Corrupted_AA12_Ammo" type="Contained" msg="ItemMsgAmmoRequired"/>
+            <RequiredItems items="fkj_aa12_mag,Touhou_TSM_Corrupted_AA12_Ammo,shotgunmag" type="Contained" msg="ItemMsgAmmoRequired"/>
             <RequiredSkill identifier="weapons" level="100"/>
             <RequiredSkill identifier="Touhou_Magic" level="120"/>
         </RangedWeapon>
         <ItemContainer capacity="1" maxstacksize="1" hideitems="false" containedstateindicatorstyle="bullet" containedstateindicatorslot="0">
-            <Containable items="fkj_aa12_mag,Touhou_TSM_Corrupted_AA12_Ammo" hide="false" itempos="-5,-8" setactive="true">
+            <Containable items="fkj_aa12_mag,Touhou_TSM_Corrupted_AA12_Ammo,shotgunmag" hide="false" itempos="-5,-8" setactive="true">
                 <!--换弹-->
                 <StatusEffect type="OnInserted" target="This" holdpos="20,-40" holdangle="70" maxchargetime="999" setvalue="true"/>
                 <StatusEffect type="OnInserted" target="This" setvalue="true">

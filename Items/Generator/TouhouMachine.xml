@@ -1095,50 +1095,50 @@
             <SlotIcon slotindex="4" texture="%ModDir%/Images/Gardening/Plants_Seed.png" sourcerect="0,0,68,102" origin="0.5,0.5"/>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="Spiritual_Water">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-0.025" Interval="1.0" disabledeltatime="true">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-0.25" Interval="10.0" disabledeltatime="true">
                         <Conditional HasStatusTag="eq Touhou_Machine_On" targetcontainer="true" />
                     </StatusEffect>
                 </Containable>
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="mobilebattery" setactive="true">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-0.05" Interval="1.0" disabledeltatime="true">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-0.5" Interval="10.0" disabledeltatime="true">
                         <Conditional HasStatusTag="eq Touhou_Machine_On" targetcontainer="true" />
                     </StatusEffect>
                 </Containable>
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="oxygensource">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-0.025" Interval="1.0" disabledeltatime="true">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-0.25" Interval="10.0" disabledeltatime="true">
                         <Conditional HasStatusTag="eq Touhou_Machine_On" targetcontainer="true" />
                     </StatusEffect>
                 </Containable>
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="fertilizer">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-0.12" Interval="1.0" disabledeltatime="true">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-1.2" Interval="10.0" disabledeltatime="true">
                         <Conditional HasStatusTag="eq Touhou_Machine_On" targetcontainer="true" />
                     </StatusEffect>
                 </Containable>
             </SubContainer>
             <SubContainer capacity="1" maxstacksize="1">
                 <Containable items="Gilead_Branch_Seed">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-0.006" Interval="1.0" disabledeltatime="true">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-0.06" Interval="10.0" disabledeltatime="true">
                         <Conditional HasStatusTag="eq Touhou_Machine_On" targetcontainer="true" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="Cinnamon_Branch_Seed">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-0.0035" Interval="1.0" disabledeltatime="true">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-0.035" Interval="10.0" disabledeltatime="true">
                         <Conditional HasStatusTag="eq Touhou_Machine_On" targetcontainer="true" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="Sun_Flower_Seed">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-0.0035" Interval="1.0" disabledeltatime="true">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-0.035" Interval="10.0" disabledeltatime="true">
                         <Conditional HasStatusTag="eq Touhou_Machine_On" targetcontainer="true" />
                     </StatusEffect>
                 </Containable>
                 <Containable items="Touhou_Potion_Blending_Seeds">
-                    <StatusEffect type="OnContaining" target="Contained" condition="-0.0075" Interval="1.0" disabledeltatime="true">
+                    <StatusEffect type="OnContaining" target="Contained" condition="-0.075" Interval="10.0" disabledeltatime="true">
                         <Conditional HasStatusTag="eq Touhou_Machine_On" targetcontainer="true" />
                     </StatusEffect>
                 </Containable>
@@ -1671,11 +1671,11 @@
                 <GiveTalentInfo giverandom="false" talentidentifiers="Touhou_Plant_Machine_Talent"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.9" setvalue="true"/>
-            <StatusEffect type="NotInWater" target="This" Interval="3" stackable="false" condition="0.1"/>
+            <StatusEffect type="NotInWater" target="This" Interval="3" condition="0.125" disabledeltatime="true"/>
             <StatusEffect type="Always" target="This" comparison="And" Interval="300" stackable="false" spawnItemRandomly="true">
                 <Conditional Condition="eq 100"/>
                 <Conditional targetitemcomponent="Holdable" Attached="eq true" />
-                <SpawnItem identifiers="Touhou_Spring_Fragment" spawnposition="ThisInventory"/>
+                <SpawnItem identifiers="Touhou_Spring_Fragment" spawnposition="ThisInventory" MinCount="1" MaxCount="2"/>
             </StatusEffect>
         </Holdable>
         <ItemContainer capacity="2" maxstacksize="63" canbeselected="true" hideitems="true">

@@ -115,12 +115,12 @@
             hideiconafterdelay="true"
             duration="5.0"
             iconcolors="33,75,78;126,211,224;126,211,224;227,247,249">
-        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.2" maxskillmultiplier="1.2">
-            <StatValue stattype="ElectricalSkillBonus" value="-5"/>
-            <StatValue stattype="HelmSkillBonus" value="-5"/>
-            <StatValue stattype="MechanicalSkillBonus" value="-5"/>
-            <StatValue stattype="MedicalSkillBonus" value="-5"/>
-            <StatValue stattype="WeaponsSkillBonus" value="-5"/>
+        <Effect minstrength="0" maxstrength="1" minskillmultiplier="1.25" maxskillmultiplier="1.25">
+            <StatValue stattype="ElectricalSkillBonus" value="-10"/>
+            <StatValue stattype="HelmSkillBonus" value="-10"/>
+            <StatValue stattype="MechanicalSkillBonus" value="-10"/>
+            <StatValue stattype="MedicalSkillBonus" value="-10"/>
+            <StatValue stattype="WeaponsSkillBonus" value="-10"/>
             <StatValue stattype="TeamAttackMultiplier" value="-0.1"/>
         </Effect>
         <Icon texture="%ModDir%/Images/Afflictions/Ordinary_Magician.png" sourcerect="0,0,128,128" color="255,255,255,255"/>

@@ -705,10 +705,11 @@
             </ScriptedEvent>
 
 
+            <!--庭师的职责天赋事件-->
             <ScriptedEvent identifier="YuyukoTalent_Effect">
                 <Label name="eventstart" />
                 <ClearTagAction tag="YuyukoTalent_Target" />
-                <TagAction Criteria="crew" Tag="YuyukoTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true" ChooseRandomExcludingTag="SanaeTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <TagAction Criteria="crew" Tag="YuyukoTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true" ChooseRandomExcludingTag="YuyukoTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
                 <TagAction Criteria="eventtag:YuyukoTalent_Target" Tag="YuyukoTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
                 <CountTargetsAction TargetTag="YuyukoTalent_Target" MinAmount="1">
                     <Success>
@@ -732,6 +733,38 @@
 
             <ScriptedEvent identifier="YuyukoTalent_Effect_Self">
                 <AfflictionAction Affliction="Touhou_Yuyuko_Youmu_Effect" Strength="10" TargetTag="YuyukoTalent_Target" />
+            </ScriptedEvent>
+
+
+
+            <!--魔界之女天赋事件-->
+            <ScriptedEvent identifier="ShinkiTalent_Effect">
+                <Label name="eventstart" />
+                <ClearTagAction tag="ShinkiTalent_Target" />
+                <TagAction Criteria="crew" Tag="ShinkiTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true" ChooseRandomExcludingTag="ShinkiTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <TagAction Criteria="eventtag:ShinkiTalent_Target" Tag="ShinkiTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <CountTargetsAction TargetTag="ShinkiTalent_Target" MinAmount="1">
+                    <Success>
+                        <CheckConditionalAction TargetTag="ShinkiTalent_Target" >
+                            <Conditional Puppeteer_Of_Seven_Colors="gt 0" />
+                            <Success>
+                                <StatusEffectAction TargetTag="ShinkiTalent_Target">
+                                    <StatusEffect target="This" EventTargetTag="ShinkiTalent_Target">
+                                        <!-- <TriggerEvent EventTag="SanaeTalent_Effect" /> -->
+                                        <TriggerEvent identifier="ShinkiTalent_Effect_Self" />
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Success>
+                            <Failure>
+                                <GoTo Name="eventstart" />
+                            </Failure>
+                        </CheckConditionalAction>
+                    </Success>
+                </CountTargetsAction>
+            </ScriptedEvent>
+
+            <ScriptedEvent identifier="ShinkiTalent_Effect_Self">
+                <AfflictionAction Affliction="Touhou_Shinki_Alice_Effect" Strength="10" TargetTag="ShinkiTalent_Target" />
             </ScriptedEvent>
 
         </EventPrefabs>

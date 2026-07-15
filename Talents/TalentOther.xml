@@ -939,6 +939,35 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupEffect>
+        <!--绮梦终焉仪天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Chimeric_Dreamer"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionServerRandom randomchance="0.35"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="UseTarget" limb="Torso" disabledeltatime="true" multiplyafflictionsbymaxvitality="true" >
+                            <Affliction identifier="Touhou_Alice_Magic_Book_Bolt_Effect" strength="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Chimeric_Dreamer"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional Touhou_Alice_Magic_Book_Bolt_Effect="gt 0"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <Talent identifier="Touhou_Other_Weapon_Talent" IsHiddenExtraTalent="true">

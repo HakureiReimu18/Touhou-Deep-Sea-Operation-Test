@@ -176,9 +176,14 @@
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.04" skillidentifier="helm"/>
             </Abilities>
-            <FallbackAbilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="30.0">
+            <Conditions>
+                <AbilityConditionHasSkill skillidentifier="helm" minvalue="250" />
+            </Conditions>
+            <Abilities>
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1"/>
-            </FallbackAbilities>
+            </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="30.0">
             <Conditions>
@@ -187,9 +192,14 @@
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.04" skillidentifier="weapons"/>
             </Abilities>
-            <FallbackAbilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="30.0">
+            <Conditions>
+                <AbilityConditionHasSkill skillidentifier="weapons" minvalue="250" />
+            </Conditions>
+            <Abilities>
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.1"/>
-            </FallbackAbilities>
+            </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="30.0">
             <Conditions>
@@ -198,9 +208,14 @@
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="RepairSpeed" maxvalue="0.04" skillidentifier="mechanical"/>
             </Abilities>
-            <FallbackAbilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="30.0">
+            <Conditions>
+                <AbilityConditionHasSkill skillidentifier="mechanical" minvalue="250" />
+            </Conditions>
+            <Abilities>
                 <CharacterAbilityModifyStat stattype="RepairSpeed" value="0.1"/>
-            </FallbackAbilities>
+            </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="30.0">
             <Conditions>
@@ -209,9 +224,14 @@
             <Abilities>
                 <CharacterAbilityModifyStatToSkill stattype="RepairSpeed" maxvalue="0.04" skillidentifier="electrical"/>
             </Abilities>
-            <FallbackAbilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="30.0">
+            <Conditions>
+                <AbilityConditionHasSkill skillidentifier="electrical" minvalue="250" />
+            </Conditions>
+            <Abilities>
                 <CharacterAbilityModifyStat stattype="RepairSpeed" value="0.1"/>
-            </FallbackAbilities>
+            </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="30.0">
             <Conditions>
@@ -221,10 +241,15 @@
                 <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.04" skillidentifier="medical"/>
                 <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.04" skillidentifier="medical"/>
             </Abilities>
-            <FallbackAbilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="30.0">
+            <Conditions>
+                <AbilityConditionHasSkill skillidentifier="medical" minvalue="250" />
+            </Conditions>
+            <Abilities>
                 <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.1"/>
                 <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1"/>
-            </FallbackAbilities>
+            </Abilities>
         </AbilityGroupInterval>
         <AbilityGroupInterval interval="30.0">
             <Conditions>
@@ -234,16 +259,21 @@
                 <CharacterAbilityModifyStatToSkill stattype="RangedAttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic"/>
                 <CharacterAbilityModifyStatToSkill stattype="MeleeAttackMultiplier" maxvalue="0.04" skillidentifier="Touhou_Magic"/>
             </Abilities>
-            <FallbackAbilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="30.0">
+            <Conditions>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="250" />
+            </Conditions>
+            <Abilities>
                 <CharacterAbilityModifyStat stattype="RangedAttackMultiplier" value="0.1"/>
                 <CharacterAbilityModifyStat stattype="MeleeAttackMultiplier" value="0.1"/>
-            </FallbackAbilities>
+            </Abilities>
         </AbilityGroupInterval>
     </Talent>
 
     <!--鹑居鷇食-->
 
-    <!--糖果乐事 巡回结束完成任意任务，获得妖精糖果（柚子味），在医疗界面使用不同的糖果可以获得不同的额外增益：苹果味：极速；蜜桃味：最大生命值提升；柠檬味:攻击速度；柚子味：攻击伤害。-->
+    <!--糖果乐事 巡回结束完成任意任务，获得妖精糖果（柚子味），在医疗界面使用不同的糖果可以获得不同的额外增益：苹果味：极速；蜜桃味：最大生命值提升；柠檬味:近战攻击速度；柚子味：攻击伤害。-->
     <Talent identifier="Touhou_Candy_Fun">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Production.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Candy_Fun"/>

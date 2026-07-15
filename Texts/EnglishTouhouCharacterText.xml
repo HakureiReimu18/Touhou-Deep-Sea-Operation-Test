@@ -16,7 +16,7 @@
         \nContinuous healing of ‖color:gui.orange‖Bite Wounds‖end‖.\n‖color:gui.green‖+15%‖end‖ ‖color:gui.orange‖Movement Speed‖end‖.\nGain ‖color:gui.orange‖Psychosis Resistance‖end‖.
         ————————————————————————————————————
         \nMore prone to bleeding
-        \nIf you go long without Premium Type-B Blood, your ‖color:gui.orange‖Attack Damage, Skill Level, and Max Health‖end‖ are each reduced by ‖color:gui.green‖15%‖end‖
+        \nIf you go long without Premium Type-B Blood, your ‖color:gui.orange‖Attack Damage, Skill Level, and Max Health‖end‖ are each reduced by ‖color:gui.red‖15%‖end‖
         \nKilling any creature restores ‖color:gui.yellow‖Bloodloss and Bleeding‖end‖
         During a patrol, the more damage you take, the more damage you deal, up to ‖color:gui.green‖10%‖end‖. This effect clears after the patrol
         Each time you inflict total bleeding there is a chance to convert it into ‖color:gui.green‖150%‖end‖ ‖color:gui.orange‖Severe Bleeding‖end‖ or ‖color:gui.green‖33.3%‖end‖ ‖color:gui.orange‖Bite Wounds‖end‖.
@@ -413,7 +413,7 @@
     <talentname.PieceTalent>Fairy of Hell</talentname.PieceTalent>
     <talentdescription.PieceTalent>While wearing Piece's Outfit+,
         gain slight burn resistance.
-        Higher insanity increases ‖color:gui.orange‖attack damage, attack speed, and friendly-fire damage‖end‖—up to ‖color:gui.green‖25%‖end‖ for attack damage and speed, and ‖color:gui.green‖40%‖end‖ for friendly-fire damage.
+        Higher insanity increases ‖color:gui.orange‖attack damage,melee attack speed, and friendly-fire damage‖end‖—up to ‖color:gui.green‖25%‖end‖ for attack damage and melee attack speed, and ‖color:gui.green‖40%‖end‖ for friendly-fire damage.
         \nTargets with higher insanity take up to ‖color:gui.green‖20%‖end‖ more damage.
     </talentdescription.PieceTalent>
     <afflictionname.Fairy_Of_Hell>Fairy of Hell</afflictionname.Fairy_Of_Hell>
@@ -1258,7 +1258,47 @@
     <entityname.Touhou_Spring_Fragment>‖color:162,195,219,255‖Spring Fragment‖end‖</entityname.Touhou_Spring_Fragment>
     <entitydescription.Touhou_Spring_Fragment>A rare fragment of Spring found within the frozen ocean. Consuming it directly provides a small healing effect and cures the "Resurrection Butterfly" affliction. It can also be used as a substitute for certain cooking ingredients or crafted into other items.</entitydescription.Touhou_Spring_Fragment>
     <entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>‖color:162,195,219,255‖Saigyou Ayakashi Potted Plant‖end‖</entityname.Touhou_Saigyou_Ayakashi_Potted_Plant>
-    <entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>A plant resembling the Saigyou Ayakashi, grown through the gathering of Yuyuko's power and fragments of spring. It possesses similar abilities and will shed Spring Fragment over time.‖color:gui.yellow‖(Right-click + E to place, press E to pick up)‖end‖</entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>
+    <entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>A plant resembling the Saigyou Ayakashi, grown through the gathering of Yuyuko's power and fragments of spring.
+        It possesses similar abilities and will shed Spring Fragment over time.Must be grown in a dry environment.‖color:gui.yellow‖(Right-click + E to place, press E to pick up)‖end‖</entitydescription.Touhou_Saigyou_Ayakashi_Potted_Plant>
+
+
+
+    <!--Shinki-->
+    <entityname.Shinki_gear>‖color:228,0,120,255‖Shinki Outfit‖end‖</entityname.Shinki_gear>
+    <entitydescription.Shinki_gear>Shinki is the Creator Goddess of Makai and, in a sense, the mother of all who dwell within it.</entitydescription.Shinki_gear>
+    <entityname.Shinki_Plus>‖color:228,0,120,255‖Shinki Outfit+‖end‖</entityname.Shinki_Plus>
+    <entitydescription.Shinki_Plus>Shinki is the Creator Goddess of Makai and, in a sense, the mother of all who dwell within it.</entitydescription.Shinki_Plus>
+    <talentname.ShinkiTalent>Pure White Creation</talentname.ShinkiTalent>
+    <talentdescription.ShinkiTalent>While wearing ‖color:gui.orange‖Shinki Outfit+‖end‖:
+        Becomes the enemies' highest-priority target.
+        When Health falls below ‖color:gui.red‖70%‖end‖, reduce ‖color:gui.orange‖Attack Damage‖end‖ by ‖color:gui.red‖15%‖end‖.
+        When Health falls below ‖color:gui.red‖40%‖end‖, reduce ‖color:gui.orange‖Attack Speed‖end‖ by ‖color:gui.red‖15%‖end‖.
+        When Health falls below ‖color:gui.red‖10%‖end‖, reduce ‖color:gui.orange‖Physical Damage Resistance‖end‖ by ‖color:gui.red‖20%‖end‖.
+
+        While Health is at or above ‖color:gui.green‖80%‖end‖, gradually recover from injuries.
+        (Player only) Upon death, all crew members gain ‖color:gui.yellow‖"Makai Warning"‖end‖.
+        ‖color:gui.yellow‖Makai Warning‖end‖: Increases ‖color:gui.orange‖Skill Levels‖end‖ by ‖color:gui.green‖20%‖end‖ and grants immunity to ‖color:gui.yellow‖Blood Loss‖end‖ for ‖color:gui.green‖3‖end‖ minutes.
+
+        After completing any mission during a campaign, there is a chance to obtain ‖color:gui.orange‖Makai Essence‖end‖, which can be used as a universal crafting material or to create Shinki-exclusive items.
+        ‖color:gui.orange‖Makai Essence‖end‖ can also be produced by converting certain materials.
+
+        At the start of a campaign, if another crew member is wearing ‖color:gui.orange‖Alice Outfit+‖end‖, grant ‖color:gui.yellow‖"Daughter of Makai"‖end‖, increasing ‖color:gui.orange‖Maximum Health‖end‖ by ‖color:gui.green‖10%‖end‖.
+    </talentdescription.ShinkiTalent>
+    <afflictionname.Touhou_Shinki_Character_Effect>Goddess of Makai</afflictionname.Touhou_Shinki_Character_Effect>
+    <afflictiondescription.Touhou_Shinki_Character_Effect>She has silver hair draped over a silver shawl, with a lock of hair tied to the left side by a red ribbon adorned with two spherical ornaments.</afflictiondescription.Touhou_Shinki_Character_Effect>
+    <afflictionname.Shinki_Weapons>Mythic Fantasy</afflictionname.Shinki_Weapons>
+    <afflictiondescription.Shinki_Weapons>Life and the environment evolve on their own... or perhaps she is quietly guiding that evolution. Is this what it means to create and sustain a world?</afflictiondescription.Shinki_Weapons>
+
+    <afflictionname.Touhou_Shinki_Talent_Death_For_Enemy>Makai Oppression</afflictionname.Touhou_Shinki_Talent_Death_For_Enemy>
+    <afflictiondescription.Touhou_Shinki_Talent_Death_For_Enemy>The overwhelming pressure that precedes the resurrection of the Goddess of Makai.</afflictiondescription.Touhou_Shinki_Talent_Death_For_Enemy>
+    <afflictionname.Touhou_Shinki_Talent_Death_For_Team>Makai Warning</afflictionname.Touhou_Shinki_Talent_Death_For_Team>
+    <afflictiondescription.Touhou_Shinki_Talent_Death_For_Team>A warning before the Goddess of Makai returns. Increases Skill Levels by 20% and grants immunity to Blood Loss. Lasts for 3 minutes.</afflictiondescription.Touhou_Shinki_Talent_Death_For_Team>
+
+    <entityname.Touhou_Makai_Essence>‖color:228,0,120,255‖Makai Essence‖end‖</entityname.Touhou_Makai_Essence>
+    <entitydescription.Touhou_Makai_Essence>A unique material created by Shinki. It can substitute for conventional crafting materials and is also used to create items unique to Makai.</entitydescription.Touhou_Makai_Essence>
+
+
+
 
 
 
@@ -1327,6 +1367,7 @@
     <Character.MRE_Material_Tewi>Tewi's Memory</Character.MRE_Material_Tewi>
     <Character.MRE_Material_Kaguya>Kaguya's Memory</Character.MRE_Material_Kaguya>
     <Character.MRE_Material_Yuyuko>Yuyuko's Memory</Character.MRE_Material_Yuyuko>
+    <Character.MRE_Material_Shinki>Shinki's Memory</Character.MRE_Material_Shinki>
     <talentname.MRE_Reimu>Bleeding Effect – Hakurei Reimu</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Effective only with Reimu Outfit+. Grants exclusive weapon effect. Each time hit, 15% chance to avoid that damage.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Bleeding Effect – Remilia Scarlet</talentname.MRE_Remilia>
@@ -1409,5 +1450,6 @@
     <talentdescription.MRE_Kaguya>Only takes effect with Kaguya Outfit+. All crew members immediately gain 1 talent point. If all five treasures have been collected and applied, increase skill levels by 25% and become immune to poisons and paralysis.</talentdescription.MRE_Kaguya>
     <talentname.MRE_Yuyuko>Bleeding Effect - Saigyouji Yuyuko</talentname.MRE_Yuyuko>
     <talentdescription.MRE_Yuyuko>Only active while wearing Yuyuko Outfit+. As long as health is above 0, you cannot be instantly killed. Exclusive weapon attacks apply "Resurrection Butterfly", which gradually drains the target's health and reduces their resistances.</talentdescription.MRE_Yuyuko>
-
+    <talentname.MRE_Shinki>Bleeding Effect - Shinki</talentname.MRE_Shinki>
+    <talentdescription.MRE_Shinki>Only effective while wearing Shinki Outfit+. Danmaku attacks from Shinki's exclusive weapon inflict Makai Oppression on enemies at full Health. Makai Oppression: Reduces Physical Damage Resistance by 25%, Skill Levels by 25%, and Movement Speed by 20% for 10 seconds.</talentdescription.MRE_Shinki>
 </infotexts>
