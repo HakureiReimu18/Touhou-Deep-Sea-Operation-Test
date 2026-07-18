@@ -1251,9 +1251,10 @@
 
     <afflictionname.Touhou_Yuyuko_Character_Effect>Perfect and Elegant Ghost</afflictionname.Touhou_Yuyuko_Character_Effect>
     <afflictiondescription.Touhou_Yuyuko_Character_Effect>She is cheerful and somewhat absent-minded, remarkably laid-back, difficult to predict, and acts entirely on her own whims.</afflictiondescription.Touhou_Yuyuko_Character_Effect>
-
     <afflictionname.Yuyuko_Weapons>Ghost Girl of the Netherworld Pavilion</afflictionname.Yuyuko_Weapons>
     <afflictiondescription.Yuyuko_Weapons>Yuyuko has existed as a ghost for over a thousand years and will forever reside in Hakugyokurou within the Netherworld.</afflictiondescription.Yuyuko_Weapons>
+    <afflictionname.Touhou_Yuyuko_Youmu_Effect>The Gardener's Duty</afflictionname.Touhou_Yuyuko_Youmu_Effect>
+    <afflictiondescription.Touhou_Yuyuko_Youmu_Effect>Increases all attack damage by 5%</afflictiondescription.Touhou_Yuyuko_Youmu_Effect>
 
     <entityname.Touhou_Spring_Fragment>‖color:162,195,219,255‖Spring Fragment‖end‖</entityname.Touhou_Spring_Fragment>
     <entitydescription.Touhou_Spring_Fragment>A rare fragment of Spring found within the frozen ocean. Consuming it directly provides a small healing effect and cures the "Resurrection Butterfly" affliction. It can also be used as a substitute for certain cooking ingredients or crafted into other items.</entitydescription.Touhou_Spring_Fragment>
@@ -1288,6 +1289,8 @@
     <afflictiondescription.Touhou_Shinki_Character_Effect>She has silver hair draped over a silver shawl, with a lock of hair tied to the left side by a red ribbon adorned with two spherical ornaments.</afflictiondescription.Touhou_Shinki_Character_Effect>
     <afflictionname.Shinki_Weapons>Mythic Fantasy</afflictionname.Shinki_Weapons>
     <afflictiondescription.Shinki_Weapons>Life and the environment evolve on their own... or perhaps she is quietly guiding that evolution. Is this what it means to create and sustain a world?</afflictiondescription.Shinki_Weapons>
+    <afflictionname.Touhou_Shinki_Alice_Effect>Daughter of Makai</afflictionname.Touhou_Shinki_Alice_Effect>
+    <afflictiondescription.Touhou_Shinki_Alice_Effect>Increases maximum health by 10%</afflictiondescription.Touhou_Shinki_Alice_Effect>
 
     <afflictionname.Touhou_Shinki_Talent_Death_For_Enemy>Makai Oppression</afflictionname.Touhou_Shinki_Talent_Death_For_Enemy>
     <afflictiondescription.Touhou_Shinki_Talent_Death_For_Enemy>The overwhelming pressure that precedes the resurrection of the Goddess of Makai.</afflictiondescription.Touhou_Shinki_Talent_Death_For_Enemy>

@@ -684,6 +684,11 @@
         The nature of its material also makes it difficult for the user to approach electrical devices and machinery.
         Its effects can be enhanced when paired with specific belts or waist packs. Contains six magatama slots. Receiving attacks will reduce the durability of the magatama.\nLighting requires ‖color:gui.yellow‖Tranquil Magatama / Ancient Magatama - White‖end‖</entitydescription.Magic_Veil02>
 
+    <entityname.Touhou_Astral_Veil>‖color:190,100,100,255‖Astral Veil‖color:end‖</entityname.Touhou_Astral_Veil>
+    <entitydescription.Touhou_Astral_Veil>A magical veil woven from exceptionally rare materials. Its abundant magical power offers superior protection to its wearer. Its effects can be enhanced when paired with certain belts or waist pouches. It has five Magatama slots. The durability of the equipped Magatama will be reduced when the wearer is hit.
+        Requires ‖color:gui.yellow‖Tranquil Magatama / Primordial Magatama - White‖end‖ to enable illumination.</entitydescription.Touhou_Astral_Veil>
+
+
     <entityname.Touhou_Peace_Hooked_Jade>Peaceful Magatama</entityname.Touhou_Peace_Hooked_Jade>
     <entitydescription.Touhou_Peace_Hooked_Jade>Insert into a diving suit’s magatama slot to provide stun resistance and illumination.</entitydescription.Touhou_Peace_Hooked_Jade>
 
@@ -718,6 +723,7 @@
         \nWhen wearing the Ether Diving Suit: Magatama effects are ‖color:gui.yellow‖normal‖end‖. With ‖color:gui.orange‖Black and White Magatama‖end‖, each hit has a ‖color:gui.green‖15%‖end‖ chance to reduce ‖color:gui.green‖10%‖end‖ damage.
         \nWhen wearing the Magic Veil: Magatama effects are ‖color:gui.yellow‖best‖end‖. With ‖color:gui.orange‖Black and White Magatama‖end‖, each hit has a ‖color:gui.green‖15%‖end‖ chance to reduce ‖color:gui.green‖20%‖end‖ damage.
         \nWhen wearing the Two-Color Lotus Butterfly: Magatama effects are ‖color:gui.yellow‖better‖end‖. With ‖color:gui.orange‖Black and White Magatama‖end‖, each hit has a ‖color:gui.green‖10%‖end‖ chance to reduce ‖color:gui.green‖20%‖end‖ damage and a ‖color:gui.green‖30%‖end‖ chance to inflict ‖color:gui.yellow‖Dream Vanish‖end‖ on the attacker.
+        \nWhen wearing the Astral Veil: the effects provided by Magatama are at their ‖color:gui.yellow‖maximum effectiveness‖end‖. When both the ‖color:gui.orange‖Black and White Magatama‖end‖ are equipped simultaneously, gain ‖color:gui.green‖30%‖end‖ ‖color:gui.yellow‖Poison Resistance‖end‖
         \nWhen wearing any Possession Armament: Magatama effects will be rewritten.
         \nWhile using the above suits/armor, the effect of ‖color:gui.orange‖Moloch Gene‖end‖ is ‖color:gui.red‖halved‖end‖.
     </talentdescription.Gensokyo_Divinggear_Talent>

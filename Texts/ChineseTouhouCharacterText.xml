@@ -1191,6 +1191,8 @@
     <afflictiondescription.Touhou_Yuyuko_Character_Effect>她性格开朗，而且给人呆呆的感觉，十分慢性子，相当无法捉摸，任性妄为。</afflictiondescription.Touhou_Yuyuko_Character_Effect>
     <afflictionname.Yuyuko_Weapons>幽冥楼阁的亡灵少女</afflictionname.Yuyuko_Weapons>
     <afflictiondescription.Yuyuko_Weapons>幽幽子已经以亡灵的姿态存世千年以上，也将永远居住在冥界的白玉楼中。</afflictiondescription.Yuyuko_Weapons>
+    <afflictionname.Touhou_Yuyuko_Youmu_Effect>庭师的职责</afflictionname.Touhou_Yuyuko_Youmu_Effect>
+    <afflictiondescription.Touhou_Yuyuko_Youmu_Effect>增加5%所有攻击伤害</afflictiondescription.Touhou_Yuyuko_Youmu_Effect>
 
     <entityname.Touhou_Spring_Fragment>‖color:162,195,219,255‖春度碎片‖end‖</entityname.Touhou_Spring_Fragment>
     <entitydescription.Touhou_Spring_Fragment>在冰洋中相当难得的春度的一片，直接服用有少许治疗效果，能治疗“返魂蝶”，可以用于代替一些料理需求的食材，也可以制作其他物品</entitydescription.Touhou_Spring_Fragment>
@@ -1223,6 +1225,8 @@
     <afflictiondescription.Touhou_Shinki_Character_Effect>银色的披肩银发，以红色发带扎着一束偏左侧的头发，发带上还有两个球形饰品。</afflictiondescription.Touhou_Shinki_Character_Effect>
     <afflictionname.Shinki_Weapons>神话幻想</afflictionname.Shinki_Weapons>
     <afflictiondescription.Shinki_Weapons>生物和环境会自行演化，或许她在调控着演化方向。所谓创造并维持世界运行？</afflictiondescription.Shinki_Weapons>
+    <afflictionname.Touhou_Shinki_Alice_Effect>魔界之女</afflictionname.Touhou_Shinki_Alice_Effect>
+    <afflictiondescription.Touhou_Shinki_Alice_Effect>增加10%最大生命值</afflictiondescription.Touhou_Shinki_Alice_Effect>
 
     <afflictionname.Touhou_Shinki_Talent_Death_For_Enemy>魔界压迫</afflictionname.Touhou_Shinki_Talent_Death_For_Enemy>
     <afflictiondescription.Touhou_Shinki_Talent_Death_For_Enemy>来自魔界之神复苏前的压迫</afflictiondescription.Touhou_Shinki_Talent_Death_For_Enemy>

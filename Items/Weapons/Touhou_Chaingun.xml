@@ -471,7 +471,7 @@
         </Deconstruct>
         <Fabricate suitablefabricators="fabricator" requiredtime="5">
             <RequiredSkill identifier="weapons" level="75"/>
-            <RequiredItem identifier="physicorium" amount="3"/>
+            <RequiredItem identifier="physicorium" amount="4"/>
             <RequiredItem identifier="Touhou_Plant_Extract" amount="6"/>
             <RequiredItem identifier="Touhou_Bottle_Element" amount="2"/>
             <RequiredItem identifier="Magic_Material"/>

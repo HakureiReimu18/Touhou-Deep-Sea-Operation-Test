@@ -11,6 +11,7 @@
           Friction="0.3" Restitution="0.05">
         <sprite SourceRect="48,0,47,37" Origin="0.48246408,0.34856105" Depth="0" Texture="" IgnoreTint="False" Color="255,255,255,255"
                 DeadColor="255,255,255,255" DeadColorTime="0"/>
+        <randomcolor colors="255,255,255,255; 163,54,54,255; 32,200,150,255; 50,80,200,255; 111,122,175,255; 115,200,178,255; 20,20,120,255; 100,180,180,255" />
         <attack stickchance="0" StructureSoundType="StructureSlash" Context="Ground" TargetType="Character" TargetLimbType="Torso"
                 HitDetectionType="Distance" AfterAttack="PursueIfCanAttack" AfterAttackDelay="0" Reverse="False" SnapRopeOnNewAttack="True"
                 Retreat="False" Range="200" DamageRange="100" MinRange="0" Duration="0.5" CoolDown="3" SecondaryCoolDown="0.01"

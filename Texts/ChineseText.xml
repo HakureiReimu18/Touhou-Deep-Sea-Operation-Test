@@ -572,6 +572,9 @@
     <entitydescription.Magic_Veil>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械。搭配特定腰带或腰包可增强效果。拥有六个勾玉空缺。受击时会损耗勾玉的耐久\n启用照明需要‖color:gui.yellow‖宁静的勾玉/太古的勾玉-白‖end‖</entitydescription.Magic_Veil>
     <entityname.Magic_Veil02>‖color:120,75,100,255‖魔力披纱（异色）‖color:end‖</entityname.Magic_Veil02>
     <entitydescription.Magic_Veil02>帕秋莉为自己设计的、能保护身体不受魔法侵害的披纱，因为她对潜水服内部的呼吸环境相当不满意，才有了这件披纱。能抵抗8000米的水压，同时提高穿戴者对魔力的亲和性，但在常规物理防御方面明显不足，其材质的特点让使用者难以接近电器和机械。搭配特定腰带或腰包可增强效果。拥有六个勾玉空缺。受击时会损耗勾玉的耐久\n启用照明需要‖color:gui.yellow‖宁静的勾玉/太古的勾玉-白‖end‖</entitydescription.Magic_Veil02>
+    <entityname.Touhou_Astral_Veil>‖color:190,100,100,255‖星界披纱‖color:end‖</entityname.Touhou_Astral_Veil>
+    <entitydescription.Touhou_Astral_Veil>用非常稀有的材料编制的一件魔法披纱，充盈的魔力能更好地保护使用者。搭配特定腰带或腰包可增强效果。拥有五个勾玉空缺。受击时会损耗勾玉的耐久\n启用照明需要‖color:gui.yellow‖宁静的勾玉/太古的勾玉-白‖end‖</entitydescription.Touhou_Astral_Veil>
+
 
     <entityname.Touhou_Peace_Hooked_Jade>宁静的勾玉</entityname.Touhou_Peace_Hooked_Jade>
     <entitydescription.Touhou_Peace_Hooked_Jade>放入潜水服的勾玉格内，提供眩晕抗性和照明效果</entitydescription.Touhou_Peace_Hooked_Jade>
@@ -597,7 +600,8 @@
         \n当你身着境界潜水服时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖25%‖end‖的概率减少‖color:gui.green‖15%‖end‖受到的伤害
         \n当你身着秘境潜水服时：勾玉提供的效果‖color:gui.yellow‖一般‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖20%‖end‖的概率减少‖color:gui.green‖15%‖end‖受到的伤害
         \n当你身着魔力披纱时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖30%‖end‖的概率减少‖color:gui.green‖20%‖end‖受到的伤害
-        \n当你身着二色莲花蝶时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖30%‖end‖的概率减少‖color:gui.green‖25%‖end‖受到的伤害，
+        \n当你身着二色莲花蝶时：勾玉提供的效果‖color:gui.yellow‖更好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，每次受击有‖color:gui.green‖30%‖end‖的概率减少‖color:gui.green‖25%‖end‖受到的伤害
+        \n当你身着星界披纱时：勾玉提供的效果‖color:gui.yellow‖最好‖end‖。同时装配‖color:gui.orange‖黑白勾玉‖end‖时，增加‖color:gui.green‖30%‖end‖‖color:gui.yellow‖毒药抗性‖end‖
         且受击有‖color:gui.green‖30%‖end‖的概率对攻击者造成‖color:gui.yellow‖梦消失‖end‖
         \n当你身着任意凭依武装时：勾玉提供的效果将被重新改写
         \n使用上述潜水服/防具时，会使‖color:gui.orange‖摩洛克基因‖end‖的效果‖color:gui.red‖减半‖end‖

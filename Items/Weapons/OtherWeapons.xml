@@ -10867,7 +10867,7 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.3"
                              colormultiplier="255,200,200,200"/>
             <Attack itemdamage="20" severlimbsprobability="0.75" penetration="0.35">
-                <Affliction identifier="lacerations" strength="85"/>
+                <Affliction identifier="lacerations" strength="95"/>
                 <Affliction identifier="bleeding" strength="25"/>
                 <Affliction identifier="stun" strength="0.25" probability="0.15"/>
                 <Affliction identifier="stun" strength="0.15" probability="0.1"/>
