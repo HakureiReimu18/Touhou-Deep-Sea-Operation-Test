@@ -238,7 +238,7 @@
     <talentname.Yokai_Select_Youling_Wangling>Ghost/Undead</talentname.Yokai_Select_Youling_Wangling>
     <talentdescription.Yokai_Select_Youling_Wangling>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Youmu Konpaku, Saigyouji Yuyuko‖end‖.</talentdescription.Yokai_Select_Youling_Wangling>
     <talentname.Yokai_Select_Yaoguai>Yokai</talentname.Yokai_Select_Yaoguai>
-    <talentdescription.Yokai_Select_Yaoguai>After selecting this branch, no others can be unlocked. Characters: ‖color:gui.orange‖Yuuka Kazami, Houjuu Nue, Nitori Kawashiro, Koishi Komeiji, Yukari Yakumo, Satori Komeji‖end‖.</talentdescription.Yokai_Select_Yaoguai>
+    <talentdescription.Yokai_Select_Yaoguai>After selecting this branch, no others can be unlocked. Characters: ‖color:gui.orange‖Yuuka Kazami, Houjuu Nue, Nitori Kawashiro, Koishi Komeiji, Yukari Yakumo, Satori, Koakuma‖end‖.</talentdescription.Yokai_Select_Yaoguai>
     <talentname.Yokai_Select_Vampire>Vampire</talentname.Yokai_Select_Vampire>
     <talentdescription.Yokai_Select_Vampire>After selecting this branch, no others can be unlocked. Characters: ‖color:gui.orange‖Remilia Scarlet, Flandre Scarlet‖end‖.</talentdescription.Yokai_Select_Vampire>
     <talentname.Yokai_Select_Yaoshou>Beast/Demi-Human</talentname.Yokai_Select_Yaoshou>
@@ -299,17 +299,20 @@
         Wearing ‖color:gui.red‖Koishi Outfit+‖end‖: +‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖movement speed‖end‖; if not ‖color:gui.yellow‖unconscious‖end‖, gain +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖physical resistance‖end‖.
         Wearing ‖color:gui.red‖Yukari Outfit+‖end‖: Gain permanent ‖color:gui.green‖50% (300/600)‖end‖ ‖color:gui.yellow‖Haste‖end‖; each hit has ‖color:gui.green‖25%‖end‖ chance to reduce damage taken by ‖color:gui.green‖25%‖end‖.</talentdescription.Touhou_Yaoguai05>
     <talentdescription.Touhou_Yaoguai05_02>When possessing ‖color:gui.yellow‖Parasite Resistance‖end‖, you become immune to water pressure.
-        Wearing ‖color:gui.red‖Satori Outfit+‖end‖: when attacking enemies affected by ‖color:gui.yellow‖Everlasting Nightmare‖end‖, the debuffs that reduce the target’s resistances are amplified.</talentdescription.Touhou_Yaoguai05_02>
+        Wearing ‖color:gui.red‖Satori Outfit+‖end‖: when attacking enemies affected by ‖color:gui.yellow‖Everlasting Nightmare‖end‖, the debuffs that reduce the target’s resistances are amplified.
+        Wearing ‖color:gui.red‖Koakuma Outfit+‖end‖, every ‖color:gui.green‖1‖end‖ point of ‖color:gui.orange‖Magic Ability‖end‖ increases ‖color:gui.orange‖Attack Damage and Maximum Vitality‖end‖ by ‖color:gui.green‖0.05%‖end‖, up to a maximum of ‖color:gui.green‖15%‖end‖.</talentdescription.Touhou_Yaoguai05_02>
     <talentname.Touhou_Yaoguai06>“Chimei Wangliang”</talentname.Touhou_Yaoguai06>
-    <talentdescription.Touhou_Yaoguai06>Slowly heals your ‖color:gui.orange‖Psychosis‖end‖. After running for a time, slightly increases next attack damage (15 s cooldown).
+    <talentdescription.Touhou_Yaoguai06>Slowly heals your ‖color:gui.yellow‖Psychosis‖end‖. After running for a time, slightly increases next attack damage (15 s cooldown).
         Wearing ‖color:gui.red‖Yuuka Outfit+‖end‖: Greatly amplifies each petal effect.
         Wearing ‖color:gui.red‖Nue Outfit+‖end‖: After completing four count stages, +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack speed‖end‖; immune to ‖color:gui.orange‖Endless Nightmare and Ancient Dread‖end‖; item quality +‖color:gui.green‖1‖end‖.
         Wearing ‖color:gui.red‖Nitori Outfit+‖end‖: +‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖repair and hull repair speed‖end‖; if HP > 50%, +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖physical resistance‖end‖, else +‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖attack damage‖end‖.
         Wearing ‖color:gui.red‖Koishi Outfit+‖end‖: +‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖skill levels‖end‖; immune to ‖color:gui.orange‖water flow push‖end‖; +‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖swim speed‖end‖.
         Wearing ‖color:gui.red‖Yukari Outfit+‖end‖: +‖color:gui.green‖50%‖end‖ ‖color:gui.orange‖swim speed‖end‖; if no crew deaths this campaign, gain +‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖attack damage‖end‖ for one campaign.</talentdescription.Touhou_Yaoguai06>
     <talentname.Touhou_Yaoguai06>“Demons and Apparitions”</talentname.Touhou_Yaoguai06>
-    <talentdescription.Touhou_Yaoguai06_02>Slowly heals your own ‖color:gui.orange‖psychosis‖end‖. After running for a period of time, slightly increases the damage of your next attack. Afterwards, this effect enters a ‖color:gui.green‖15‖end‖ second cooldown.
-        Wearing ‖color:gui.red‖Satori Outfit+‖end‖: after killing any creature, briefly increases ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖physical damage resistance‖end‖. When dealing damage to enemies, there is a chance to weaken the enemy’s attack power.</talentdescription.Touhou_Yaoguai06_02>
+    <talentdescription.Touhou_Yaoguai06_02>Slowly heals your own ‖color:gui.yellow‖psychosis‖end‖. After running for a period of time, slightly increases the damage of your next attack. Afterwards, this effect enters a ‖color:gui.green‖15‖end‖ second cooldown.
+        Wearing ‖color:gui.red‖Satori Outfit+‖end‖: after killing any creature, briefly increases ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖physical damage resistance‖end‖. When dealing damage to enemies, there is a chance to weaken the enemy’s attack power.
+        Wearing ‖color:gui.red‖Koakuma Outfit+‖end‖: Barrage attacks have a chance to additionally apply the ‖color:gui.yellow‖Seven Luminaries - Water or Seven Luminaries - Fire elemental‖end‖ effects. Deal ‖color:gui.green‖10%‖end‖ increased damage to enemies afflicted with any elemental effect.
+    </talentdescription.Touhou_Yaoguai06_02>
     <talentname.Touhou_Yaoguai07>Wushan Clouds &amp; Rain</talentname.Touhou_Yaoguai07>
     <talentdescription.Touhou_Yaoguai07>Wearing ‖color:gui.red‖Yuuka Outfit+‖end‖: Greatly speeds ‖color:gui.yellow‖bleed‖end‖ recovery; based on ‖color:gui.orange‖Magic‖end‖ level, +‖color:gui.green‖10%‖end‖ attack damage, ‖color:gui.orange‖melee speed, movement speed‖end‖, up to ‖color:gui.green‖20%‖end‖.
         Wearing ‖color:gui.red‖Nue Outfit+‖end‖: If ‖color:gui.orange‖Magic‖end‖ > ‖color:gui.green‖80‖end‖, +‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖max HP‖end‖; +‖color:gui.green‖20%‖end‖ damage to enemies below half HP.
@@ -319,6 +322,7 @@
     <talentname.Touhou_Yaoguai07_02>“Clouds and Rain over Mount Wu”</talentname.Touhou_Yaoguai07_02>
     <talentdescription.Touhou_Yaoguai07_02>
         Wearing ‖color:gui.red‖Satori Outfit+‖end‖: for each different crew job present, ‖color:gui.green‖projectile damage‖end‖ is increased by ‖color:gui.green‖3%‖end‖, up to a maximum of ‖color:gui.green‖30%‖end‖.
+        Wearing ‖color:gui.red‖Koakuma Outfit+‖end‖: While in the ‖color:gui.yellow‖Focused‖end‖ state, increase ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖barrage damage‖end‖. While in the ‖color:gui.yellow‖Relaxed‖end‖ state, reduce damage taken by ‖color:gui.green‖15%‖end‖.
     </talentdescription.Touhou_Yaoguai07_02>
 
     <talenttree.Touhou_Vampire>Vampire</talenttree.Touhou_Vampire>

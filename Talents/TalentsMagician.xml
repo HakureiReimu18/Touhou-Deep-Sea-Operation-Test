@@ -34,14 +34,14 @@
     <Talent identifier="Talents_Magician_Primary03">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Survivable.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Talents_Magician_Primary03"/>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupInterval interval="1.0">
             <Conditions>
                 <AbilityConditionInWater/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveStat stattype="SwimmingSpeed" value="0.15"/>
+                <CharacterAbilityModifyStat stattype="SwimmingSpeed" value="0.15"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionInWater/>

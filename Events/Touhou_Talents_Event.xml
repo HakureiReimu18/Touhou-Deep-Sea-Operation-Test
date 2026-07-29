@@ -767,5 +767,36 @@
                 <AfflictionAction Affliction="Touhou_Shinki_Alice_Effect" Strength="10" TargetTag="ShinkiTalent_Target" />
             </ScriptedEvent>
 
+
+            <!--职责所在天赋事件-->
+            <ScriptedEvent identifier="PatchouliTalent_Effect">
+                <Label name="eventstart" />
+                <ClearTagAction tag="PatchouliTalent_Target" />
+                <TagAction Criteria="crew" Tag="PatchouliTalent_Target" IgnoreIncapacitatedCharacters="true" ChooseRandom="true" ChooseRandomExcludingTag="PatchouliTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <TagAction Criteria="eventtag:PatchouliTalent_Target" Tag="PatchouliTalent_InValidTarget" ContinueIfNoTargetsFound="true" />
+                <CountTargetsAction TargetTag="PatchouliTalent_Target" MinAmount="1">
+                    <Success>
+                        <CheckConditionalAction TargetTag="PatchouliTalent_Target" >
+                            <Conditional Puppeteer_Of_Seven_Colors="gt 0" />
+                            <Success>
+                                <StatusEffectAction TargetTag="PatchouliTalent_Target">
+                                    <StatusEffect target="This" EventTargetTag="PatchouliTalent_Target">
+                                        <!-- <TriggerEvent EventTag="SanaeTalent_Effect" /> -->
+                                        <TriggerEvent identifier="PatchouliTalent_Effect_Self" />
+                                    </StatusEffect>
+                                </StatusEffectAction>
+                            </Success>
+                            <Failure>
+                                <GoTo Name="eventstart" />
+                            </Failure>
+                        </CheckConditionalAction>
+                    </Success>
+                </CountTargetsAction>
+            </ScriptedEvent>
+
+            <ScriptedEvent identifier="PatchouliTalent_Effect_Self">
+                <AfflictionAction Affliction="Touhou_Patchouli_Koakuma_Effect" Strength="10" TargetTag="PatchouliTalent_Target" />
+            </ScriptedEvent>
+
         </EventPrefabs>
 </RandomEvents>

@@ -94,5 +94,7 @@
                 </CharacterAbilityApplyStatusEffects>
             </Abilities>
         </AbilityGroupInterval>
+
+        <AddedRecipe itemidentifier="Touhou_Makai_Essence"/>
     </Talent>
 </Talents>

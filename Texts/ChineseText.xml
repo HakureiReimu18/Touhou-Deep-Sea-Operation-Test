@@ -167,9 +167,9 @@
     <!--Machine-->
     <skillname.Touhou_Magic>魔法能力</skillname.Touhou_Magic>
     <entityname.Magic_Altar>仪式台</entityname.Magic_Altar>
-    <entitydescription.Magic_Altar>一张为神秘学准备的桌子，关键物品的合成都在这张桌子上进行‖color:gui.yellow‖（右键+E键放置，按E直接拾取）‖end‖</entitydescription.Magic_Altar>
+    <entitydescription.Magic_Altar>一张为神秘学准备的桌子，关键物品的合成都在这张桌子上进行‖color:gui.yellow‖（右键+左键放置，按E直接拾取）‖end‖</entitydescription.Magic_Altar>
     <entityname.Alchemy_Table>炼金桌</entityname.Alchemy_Table>
-    <entitydescription.Alchemy_Table>一张为炼金术准备的桌子，能完成很多复杂的炼金操作‖color:gui.yellow‖（右键+E键放置，按E直接拾取）‖end‖</entitydescription.Alchemy_Table>
+    <entitydescription.Alchemy_Table>一张为炼金术准备的桌子，能完成很多复杂的炼金操作‖color:gui.yellow‖（右键+左键放置，按E直接拾取）‖end‖</entitydescription.Alchemy_Table>
 
     <!--Events Dialog-->
     <!--
@@ -743,7 +743,7 @@
     <entityname.Touhou_Royal_Diamond_Ring_Ammo>‖color:120,75,100,255‖皇家钻戒燃料‖color:end‖</entityname.Touhou_Royal_Diamond_Ring_Ammo>
     <entitydescription.Touhou_Royal_Diamond_Ring_Ammo>蕴含极度危险魔法能量的魔法球，内部的魔法拥有不俗的破坏力。作为‖color:gui.yellow‖皇家钻戒‖end‖的弹药</entitydescription.Touhou_Royal_Diamond_Ring_Ammo>
     <entityname.Touhou_Plant_Machine>魔法材料种植柜</entityname.Touhou_Plant_Machine>
-    <entitydescription.Touhou_Plant_Machine>专门用于种植魔法材料的种植柜，可以进行特定魔法植物的种植</entitydescription.Touhou_Plant_Machine>
+    <entitydescription.Touhou_Plant_Machine>专门用于种植魔法材料的种植柜，可以进行特定魔法植物的种植（右键+左键安装）</entitydescription.Touhou_Plant_Machine>
     <entityname.Touhou_Charge_Rifle>电荷步枪</entityname.Touhou_Charge_Rifle>
     <entitydescription.Touhou_Charge_Rifle>来自一个被称为闪耀世界地方的设计，发射高能电荷弹的突击步枪。电荷弹技术使得每发子弹在离开枪管时都会由不稳定能量进行充能，大大增加了子弹的伤害。需要‖color:gui.yellow‖电荷中继器和电池（包含异星电池）‖end‖</entitydescription.Touhou_Charge_Rifle>
     <entityname.Touhou_Charge_Rifle_Ammo>电荷中继器</entityname.Touhou_Charge_Rifle_Ammo>
@@ -1393,7 +1393,7 @@
     <entityname.Touhou_Mass_Shotgun_Ammo>‖color:200,180,150,255‖未知密封霰弹弹匣‖end‖</entityname.Touhou_Mass_Shotgun_Ammo>
     <entitydescription.Touhou_Mass_Shotgun_Ammo>特殊封装的霰弹弹匣，似乎是幻崩实验后的失败产物。作为‖color:gui.yellow‖未知霰弹枪‖end‖的弹药</entitydescription.Touhou_Mass_Shotgun_Ammo>
     <entityname.Touhou_Spiritual_Water_Collector>灵水收集器</entityname.Touhou_Spiritual_Water_Collector>
-    <entitydescription.Touhou_Spiritual_Water_Collector>特制的、专用于灵水收集的设备，能从海中快速汲取灵水所需成分，效率远超手动采集，耗电量也较为庞大（右键+E安装）</entitydescription.Touhou_Spiritual_Water_Collector>
+    <entitydescription.Touhou_Spiritual_Water_Collector>特制的、专用于灵水收集的设备，能从海中快速汲取灵水所需成分，效率远超手动采集，耗电量也较为庞大（右键+左键放置安装）</entitydescription.Touhou_Spiritual_Water_Collector>
     <entityname.Touhou_Chocolate_Cleaver>巧克力刀</entityname.Touhou_Chocolate_Cleaver>
     <entitydescription.Touhou_Chocolate_Cleaver>经过特殊加工，拥有巧克力材质的刀。注意防止孩童误食</entitydescription.Touhou_Chocolate_Cleaver>
     <entityname.Touhou_Chocolate_Cleaver>巧克力刀</entityname.Touhou_Chocolate_Cleaver>
@@ -1488,7 +1488,7 @@
     <entityname.Touhou_Spectral_Ore01>繁彩宝石矿</entityname.Touhou_Spectral_Ore01>
     <entitydescription.Touhou_Spectral_Ore01>幽灵体能量才能发现的矿石，可以拆解出各种矿石</entitydescription.Touhou_Spectral_Ore01>
     <entityname.Touhou_Pokect_Spectral_Mining_Machine>便携式幽灵采矿机</entityname.Touhou_Pokect_Spectral_Mining_Machine>
-    <entitydescription.Touhou_Pokect_Spectral_Mining_Machine>河童们利用幽灵体能源研发的新型采矿机器，便携式版本兼具效率与便携，成为人人喜爱的安全采矿机器，但依然相当耗电（右键+E安装）</entitydescription.Touhou_Pokect_Spectral_Mining_Machine>
+    <entitydescription.Touhou_Pokect_Spectral_Mining_Machine>河童们利用幽灵体能源研发的新型采矿机器，便携式版本兼具效率与便携，成为人人喜爱的安全采矿机器，但依然相当耗电（右键+左键放置安装）</entitydescription.Touhou_Pokect_Spectral_Mining_Machine>
     <entityname.Touhou_Noh_Performance_Fan>‖color:255,130,170,255‖能乐表演扇‖color:end‖</entityname.Touhou_Noh_Performance_Fan>
     <entitydescription.Touhou_Noh_Performance_Fan>秦心用于能乐表演的扇子，向四周挥洒焰火。使用‖color:gui.yellow‖喜悦之火‖end‖</entitydescription.Touhou_Noh_Performance_Fan>
     <entityname.Touhou_Noh_Performance_Fan_Ammo>‖color:255,130,170,255‖喜悦之火‖color:end‖</entityname.Touhou_Noh_Performance_Fan_Ammo>
@@ -1960,7 +1960,7 @@
     <entitydescription.Touhou_Moriya_Duality_Carbine_Ammo02>装入祈铳后点亮“蛇相”的穿刺回路。核心内部的能量更清亮、更锋利，放电节奏像一条收紧的白蛇：短促、精准、直指要害。作为‖color:gui.yellow‖守矢两仪铳‖end‖的弹药</entitydescription.Touhou_Moriya_Duality_Carbine_Ammo02>
 
     <entityname.Tsukuyomi_Server_Center>‖color:0,116,143,255‖月读服务器中心‖end‖</entityname.Tsukuyomi_Server_Center>
-    <entitydescription.Tsukuyomi_Server_Center>‖color:gui.yellow‖仅联动物品‖end‖。用于为信号接收器充能。八千代活动所需的设备，如果想要离开月读活动，就要为接收器充满能量</entitydescription.Tsukuyomi_Server_Center>
+    <entitydescription.Tsukuyomi_Server_Center>‖color:gui.yellow‖仅联动物品‖end‖。用于为信号接收器充能。八千代活动所需的设备，如果想要离开月读活动，就要为接收器充满能量（右键+左键放置）</entitydescription.Tsukuyomi_Server_Center>
     <entityname.Touhou_Tsukuyomi_Signal_Receiver>‖color:0,116,143,255‖月读信号接收器‖end‖</entityname.Touhou_Tsukuyomi_Signal_Receiver>
     <entitydescription.Touhou_Tsukuyomi_Signal_Receiver>‖color:gui.yellow‖仅联动物品‖end‖。插入章鱼腰包中，用于为八千代活动提供信号</entitydescription.Touhou_Tsukuyomi_Signal_Receiver>
 
@@ -2037,6 +2037,22 @@
     <entitydescription.Touhou_Chimeric_Dreamer>神绮力量的具现化产物，威力惊人。弹幕攻击有概率附加魔界之火。对燃起魔界之火的敌人造成额外10%的穿甲。使用‖color:gui.yellow‖绮梦幻想体‖end‖。</entitydescription.Touhou_Chimeric_Dreamer>
     <entityname.Touhou_Chimeric_Dreamer_Ammo>‖color:228,0,120,255‖绮梦幻想体‖end‖</entityname.Touhou_Chimeric_Dreamer_Ammo>
     <entitydescription.Touhou_Chimeric_Dreamer_Ammo>它本该是幻想中的产物，但因为魔界之神的引导再次降临。作为‖color:gui.yellow‖绮梦终焉仪‖end‖的弹药</entitydescription.Touhou_Chimeric_Dreamer_Ammo>
+
+
+    <entityname.Touhou_Ruby_Pistol>‖color:255,15,99,255‖红宝石手枪‖end‖</entityname.Touhou_Ruby_Pistol>
+    <entitydescription.Touhou_Ruby_Pistol>这枚红宝石曾浸染过火焰、鲜血与欲望。如今，它被铸入枪膛，将炽热与毁灭一同倾泻而出。使用‖color:gui.yellow‖红宝石弹匣‖end‖。</entitydescription.Touhou_Ruby_Pistol>
+    <entityname.Touhou_Ruby_Pistol_Ammo>‖color:255,15,99,255‖红宝石弹匣‖end‖</entityname.Touhou_Ruby_Pistol_Ammo>
+    <entitydescription.Touhou_Ruby_Pistol_Ammo>红宝石内部封存着被压缩的元素能量。当弹药被激发时，宝石会短暂地发出心脏般的脉动，仿佛仍有某种生命栖息其中。作为‖color:gui.yellow‖红宝石手枪‖end‖的弹药</entitydescription.Touhou_Ruby_Pistol_Ammo>
+
+    <entityname.Touhou_Crimson_Contract>‖color:255,15,99,255‖深红契约‖end‖</entityname.Touhou_Crimson_Contract>
+    <entitydescription.Touhou_Crimson_Contract>来自恶魔的风味设计，据说是由木卫二上已经失踪的工匠所打造。使用‖color:gui.yellow‖契约目录‖end‖。</entitydescription.Touhou_Crimson_Contract>
+    <entityname.Touhou_Crimson_Contract>‖color:255,15,99,255‖契约目录‖end‖</entityname.Touhou_Crimson_Contract>
+    <entitydescription.Touhou_Crimson_Contract>上面并没有记载关于契约的细节，但刻满的魔法纹路预示着它内含巨大的威力。作为‖color:gui.yellow‖深红契约‖end‖的弹药</entitydescription.Touhou_Crimson_Contract>
+
+    <entityname.Touhou_Forbidden_Book_Indexer>‖color:255,15,99,255‖禁书索引器‖end‖</entityname.Touhou_Forbidden_Book_Indexer>
+    <entitydescription.Touhou_Forbidden_Book_Indexer>有人用黄金交换真理，有人用生命窥视深渊，而它选择将一切记录下来。每次射击都有概率给敌人同时附加五种七曜元素。使用‖color:gui.yellow‖书页索引‖end‖。</entitydescription.Touhou_Forbidden_Book_Indexer>
+    <entityname.Touhou_Forbidden_Book_Indexer_Ammo>‖color:255,15,99,255‖书页索引‖end‖</entityname.Touhou_Forbidden_Book_Indexer_Ammo>
+    <entitydescription.Touhou_Forbidden_Book_Indexer_Ammo>书页终会泛黄，唯有知识不会。作为‖color:gui.yellow‖禁书索引器‖end‖的弹药</entitydescription.Touhou_Forbidden_Book_Indexer_Ammo>
 
 
 
@@ -2358,5 +2374,7 @@
     <talentdescription.Hyouibana_Yuyuko>大幅增加缺氧抗性</talentdescription.Hyouibana_Yuyuko>
     <talentname.Hyouibana_Shinki>凭依神绮</talentname.Hyouibana_Shinki>
     <talentdescription.Hyouibana_Shinki>生命值高于80%时，缓慢恢复部分伤势</talentdescription.Hyouibana_Shinki>
+    <talentname.Hyouibana_Koakuma>凭依小恶魔</talentname.Hyouibana_Koakuma>
+    <talentdescription.Hyouibana_Koakuma>生命值高于50%时，缓慢恢复物理伤害和出血</talentdescription.Hyouibana_Koakuma>
 
 </infotexts>

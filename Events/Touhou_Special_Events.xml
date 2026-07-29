@@ -3725,9 +3725,16 @@
                             <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
-                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
-                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
-                            <WaitAction time="1"/>
+                            <RNGAction chance="0.5">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
                         </Success>
                         <Failure>
                         </Failure>
@@ -3808,9 +3815,16 @@
                             <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
-                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
-                                         lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
-                            <WaitAction time="1"/>
+                            <RNGAction chance="0.5">
+                                <Success>
+                                    <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                                                 lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
+                                    <WaitAction time="1"/>
+                                </Success>
+                                <Failure>
+
+                                </Failure>
+                            </RNGAction>
                         </Success>
                         <Failure>
                         </Failure>
@@ -3869,7 +3883,7 @@
                 <Success>
                     <CountTargetsAction targettag="player" MinAmount="1">
                         <Success>
-                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
+                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Lunatic"
                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                             <WaitAction time="1"/>
                         </Success>
@@ -3895,7 +3909,7 @@
                                 <Failure>
                                     <CountTargetsAction targettag="player" MinAmount="8">
                                         <Success>
-                                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Lunatic"
+                                            <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Hard"
                                                          lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                                             <WaitAction time="1"/>
                                             <SpawnAction npcsetidentifier="Touhou_ODM12_Enemy_NPC" npcidentifier="Touhou_ODM12_Enemy_Human_Lunatic"

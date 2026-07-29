@@ -1941,5 +1941,52 @@
         </AbilityGroupEffect>
     </Talent>
 
+    <!--出血效应-小恶魔-->
+    <Talent identifier="MRE_Koakuma">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.MRE_Koakuma"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" />
+                <AbilityConditionCharacter targettype="Enemy"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="UseTarget" targetlimb="Torso" delay="0.1" disabledeltatime="true" stackable="false">
+                            <Affliction identifier="lacerations" strength="2.5"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" />
+                <AbilityConditionCharacter>
+                    <Conditional TeamID="Team1"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.8"/>
+            </Abilities>
+        </AbilityGroupEffect>
+    </Talent>
+
 
 </Talents>

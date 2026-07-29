@@ -4913,7 +4913,7 @@
         <Body width="44" height="56" density="10"/>
         <ItemContainer hideitems="true" capacity="1" drawinventory="false" canbeselected="false" ShowConditionInContainedStateIndicator="true"
                        removecontaineditemsondeconstruct="true" containedstateindicatorstyle="bullet">
-            <Containable items="Touhou_Magic_Danmu"/>
+            <Containable items="Touhou_Merciless_Round01,Touhou_Merciless_Round02"/>
             <StatusEffect type="OnUse" target="This" condition="-1.5625" disabledeltatime="true" comparison="And">
                 <Conditional Touhou_Merciless_Effect="gt 0" TargetContainer="true" TargetGrandParent="true"/>
                 <Conditional HasTag="eq Touhou_Merciless" TargetContainer="true"/>

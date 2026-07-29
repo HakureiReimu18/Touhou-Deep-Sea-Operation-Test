@@ -1178,18 +1178,17 @@
 
     <!--魔力提升-帕秋莉特殊效果-->
     <Affliction name="魔力提升-帕秋莉特殊效果" identifier="Touhou_Magic_Boost_Patchouli" description="" type="resistance" isbuff="true"
-                limbspecific="false" indicatorlimb="Torso" maxstrength="10"
+                limbspecific="false" indicatorlimb="Torso" maxstrength="10" duration="1.0"
                 showiconthreshold="100" showinhealthscannerthreshold="100" affectmachines="true" iconcolors="94,94,94;163,164,164;255,255,255">
         <Description textidentifier="afflictiondescription.Touhou_Magic_Boost" minstrength="0" maxstrength="10"/>
-        <Effect minstrength="0" maxstrength="10" strengthchange="-1"
-                resistancefor="damage,bloodloss,bleeding,Phoenix_Burn,debuff,alieninfection,poison,paralysis,stun,burn" minresistance="0.1"
-                maxresistance="0.1">
-            <StatusEffect target="Character" Interval="1.0" Duration="1.0">
+        <Effect minstrength="0" maxstrength="10"
+                resistancefor="damage,bloodloss,bleeding,Phoenix_Burn,debuff,alieninfection,poison,paralysis,stun,burn" minresistance="0.1" maxresistance="0.1">
+            <StatusEffect target="Character" Interval="1.0" disabledeltatime="true">
                 <Conditional HealthPercentage="gt 0"/>
-                <ReduceAffliction type="damage" strength="0.3"/>
-                <ReduceAffliction type="burn" strength="0.3"/>
+                <ReduceAffliction type="damage" strength="0.2"/>
+                <ReduceAffliction type="burn" strength="0.2"/>
             </StatusEffect>
-            <StatusEffect target="Character" Interval="1.0" Duration="1.0">
+            <StatusEffect target="Character" Interval="1.0" disabledeltatime="true">
                 <Conditional bleeding="gt 0"/>
                 <ReduceAffliction type="bleeding" strength="0.2"/>
             </StatusEffect>
@@ -2726,7 +2725,7 @@
             Duration="10.1"
             hideiconafterdelay="true"
             iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="1" resistancefor="poison,radiationsickness" minresistance="0.2" maxresistance="0.2">
+        <Effect minstrength="0" maxstrength="1" resistancefor="poison,radiationsickness" minresistance="0.3" maxresistance="0.3">
             <!--受到少量伤害减少勾玉耐久-->
             <StatusEffect type="OnDamaged" target="Character">
                 <RequiredAffliction type="damage,burn,bleeding" minstrength="3"/>
@@ -5298,7 +5297,7 @@
     <Affliction name="星月腰包效果" identifier="Touhou_Star_Moon_Waist_Pouch_Effect" description="" type="Touhou_Star_Moon_Waist_Pouch" isbuff="true" limbspecific="false" maxstrength="1"
                 duration="10.1" showiconthreshold="100" showinhealthscannerthreshold="100">
         <Description textidentifier="afflictiondescription.Touhou_External_Pain_Absorber_Effect" minstrength="0" maxstrength="1"/>
-        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,poison" minresistance="0.1" maxresistance="0.1" minskillmultiplier="1.1" maxskillmultiplier="1.1">
+        <Effect minstrength="0" maxstrength="1" resistancefor="bleeding,poison,radiationsickness" minresistance="0.1" maxresistance="0.1" minskillmultiplier="1.1" maxskillmultiplier="1.1">
             <StatValue stattype="BuffDurationMultiplier" value="0.25"/>
             <StatValue stattype="MaximumHealthMultiplier" value="0.1"/>
         </Effect>

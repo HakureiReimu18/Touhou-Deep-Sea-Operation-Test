@@ -220,6 +220,7 @@
         Based on current ‖color:gui.orange‖Magic Ability‖end‖, gain +‖color:gui.green‖5%‖end‖ ‖color:gui.orange‖ranged attack damage‖end‖ (max +‖color:gui.green‖15%‖end‖).
         +‖color:gui.green‖30%‖end‖ damage to targets not yet attacked.
         +‖color:gui.green‖5%‖end‖ armor penetration to targets already attacked.
+        At the start of a round, if another crewmate is wearing ‖color:gui.orange‖Koakuma Outfit+‖end‖, gain the ‖color:gui.yellow‖"Call of Duty"‖end‖ effect, increasing ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Burn Resistance‖end‖.
     </talentdescription.Knowledge_And_Solitude_Girl>
 
     <afflictionname.The_Still_Library>The Still Great Library</afflictionname.The_Still_Library>
@@ -488,6 +489,11 @@
     <entitydescription.Koishi_Eclipse_Valentines_Plus>Koishi is a paradoxical figure, born as a being without a defined character, a denial of character itself. Although she tries to avoid others’ malice to prevent being disliked, she still harbors much that is naturally off-putting and carries a certain darkness within.</entitydescription.Koishi_Eclipse_Valentines_Plus>
     <entityname.Koishi_Eclipse_Valentines_Hat>‖color:255,128,238,255‖Koishi's Hat (Valentine's)‖end‖</entityname.Koishi_Eclipse_Valentines_Hat>
     <entitydescription.Koishi_Eclipse_Valentines_Hat>Has no one noticed me? Well then, this makes things easier.</entitydescription.Koishi_Eclipse_Valentines_Hat>
+    <entityname.Koishi_Sponsor>‖color:60,255,155,255‖Koishi's Outfit(Sponsor)‖end‖</entityname.Koishi_Sponsor>
+    <entitydescription.Koishi_Sponsor>Koishi is a paradoxical figure, born as a being without a defined character, a denial of character itself. Although she tries to avoid others’ malice to prevent being disliked, she still harbors much that is naturally off-putting and carries a certain darkness within.</entitydescription.Koishi_Sponsor>
+    <entityname.Koishi_Sponsor_Plus>‖color:60,255,155,255‖Koishi's Outfit+(Sponsor)‖end‖</entityname.Koishi_Sponsor_Plus>
+    <entitydescription.Koishi_Sponsor_Plus>Koishi is a paradoxical figure, born as a being without a defined character, a denial of character itself. Although she tries to avoid others’ malice to prevent being disliked, she still harbors much that is naturally off-putting and carries a certain darkness within.</entitydescription.Koishi_Sponsor_Plus>
+
     <talentname.KoishiTalent>Rose of the Underground</talentname.KoishiTalent>
     <talentdescription.KoishiTalent>While wearing Koishi's Outfit+:
         \nGain ‖color:gui.green‖15%‖end‖ more experience from missions but reduce ‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖skill gain speed‖end‖.
@@ -1302,6 +1308,50 @@
 
 
 
+    <!--Koakuma-->
+    <entityname.Koakuma_gear>‖color:228,0,120,255‖Koakuma Outfit‖end‖</entityname.Koakuma_gear>
+    <entitydescription.Koakuma_gear>She is a lesser demon, a magical being of a similar nature to Patchouli Knowledge.</entitydescription.Koakuma_gear>
+
+    <entityname.Koakuma_Plus>‖color:228,0,120,255‖Koakuma Outfit+‖end‖</entityname.Koakuma_Plus>
+    <entitydescription.Koakuma_Plus>She is a lesser demon, a magical being of a similar nature to Patchouli Knowledge.</entitydescription.Koakuma_Plus>
+
+    <talentname.KoakumaTalent>The Demon of the Dusty Library</talentname.KoakumaTalent>
+    <talentdescription.KoakumaTalent>When wearing Koakuma Outfit+:
+        Reduce ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Attack Damage‖end‖.
+        Reduce ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Burn Resistance‖end‖.
+        While underwater, reduce ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Movement Speed‖end‖.
+        While outside the submarine, increase damage taken by ‖color:gui.green‖15%‖end‖.
+
+
+        Increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Skill Levels‖end‖, gain ‖color:gui.green‖10‖end‖ points of ‖color:gui.orange‖Vanilla Skill Levels‖end‖, and gain ‖color:gui.green‖10‖end‖ points of ‖color:gui.orange‖Magic Ability‖end‖.
+
+        ‖color:gui.green‖5‖end‖ minutes per use, Can enter the ‖color:gui.orange‖ "Focused" or "Relaxed" ‖end‖ state.
+
+        ‖color:gui.orange‖Focused‖end‖: Reduce ‖color:gui.green‖50%‖end‖ ‖color:gui.orange‖Skill Gain Speed‖end‖, increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Skill Levels‖end‖, increase ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Movement Speed‖end‖,
+        increase ‖color:gui.green‖25%‖end‖ ‖color:gui.orange‖Repair Speed and Hull Repair Speed‖end‖, and reduce ‖color:gui.green‖20%‖end‖ ‖color:gui.orange‖Ranged Weapon Spread‖end‖.
+
+        ‖color:gui.orange‖Relaxed‖end‖: Increase ‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖Ranged Weapon Spread‖end‖, gain ‖color:gui.green‖15‖end‖ points of ‖color:gui.orange‖Maximum Health‖end‖, and slowly recover from injuries while above ‖color:gui.green‖50%‖end‖ Health.
+
+        Allows crafting of ‖color:gui.orange‖"Refined Grimoire"‖end‖.
+
+
+    </talentdescription.KoakumaTalent>
+
+    <afflictionname.Touhou_Koakuma_Character_Effect>Nameless Demon</afflictionname.Touhou_Koakuma_Character_Effect>
+    <afflictiondescription.Touhou_Koakuma_Character_Effect>Koakuma has waist-length dark crimson hair and a pair of demonic wings on her head.</afflictiondescription.Touhou_Koakuma_Character_Effect>
+
+    <afflictionname.Koakuma_Weapons>Keeper of the Voile Magic Library</afflictionname.Koakuma_Weapons>
+    <afflictiondescription.Koakuma_Weapons>Although Koakuma is a demon employed by the Scarlet Devil Mansion and resides there, she has no particular duties and can be considered a completely free-spirited character.</afflictiondescription.Koakuma_Weapons>
+
+    <afflictionname.Touhou_Patchouli_Koakuma_Effect>Call of Duty</afflictionname.Touhou_Patchouli_Koakuma_Effect>
+    <afflictiondescription.Touhou_Patchouli_Koakuma_Effect>Increases Maximum Health by 10%</afflictiondescription.Touhou_Patchouli_Koakuma_Effect>
+
+    <entityname.Touhou_Refined_Grimoire>‖color:228,0,120,255‖Refined Grimoire‖end‖</entityname.Touhou_Refined_Grimoire>
+    <entitydescription.Touhou_Refined_Grimoire>A finely crafted grimoire whose contents are much easier to comprehend and absorb.</entitydescription.Touhou_Refined_Grimoire>
+
+
+
+
 
 
 
@@ -1455,4 +1505,6 @@
     <talentdescription.MRE_Yuyuko>Only active while wearing Yuyuko Outfit+. As long as health is above 0, you cannot be instantly killed. Exclusive weapon attacks apply "Resurrection Butterfly", which gradually drains the target's health and reduces their resistances.</talentdescription.MRE_Yuyuko>
     <talentname.MRE_Shinki>Bleeding Effect - Shinki</talentname.MRE_Shinki>
     <talentdescription.MRE_Shinki>Only effective while wearing Shinki Outfit+. Danmaku attacks from Shinki's exclusive weapon inflict Makai Oppression on enemies at full Health. Makai Oppression: Reduces Physical Damage Resistance by 25%, Skill Levels by 25%, and Movement Speed by 20% for 10 seconds.</talentdescription.MRE_Shinki>
+    <talentname.MRE_Koakuma>Bleeding Effect - Koakuma</talentname.MRE_Koakuma>
+    <talentdescription.MRE_Koakuma>Only effective while wearing Koakuma Outfit+. Barrage attacks inflict additional lacerations on enemies. Damage dealt to allies by barrage attacks is reduced by 80%.</talentdescription.MRE_Koakuma>
 </infotexts>

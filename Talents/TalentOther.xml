@@ -968,6 +968,23 @@
                 <CharacterAbilityModifyAttackData addedpenetration="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--禁书索引器天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Forbidden_Book_Indexer"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true" />
+                <AbilityConditionServerRandom randomchance="0.35"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Mu_Elements" strength="7"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Huo_Elements" strength="7"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Tu_Elements" strength="7"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Jin_Elements" strength="7"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Shui_Elements" strength="7"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Elements_Marked" strength="7"/>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <Talent identifier="Touhou_Other_Weapon_Talent" IsHiddenExtraTalent="true">

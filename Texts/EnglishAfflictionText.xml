@@ -545,4 +545,7 @@
 
     <afflictionname.Hyouibana_Effect_Prefect_Shinki>Shinki - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Shinki>
     <afflictiondescription.Hyouibana_Effect_Prefect_Shinki>Grants the effects of the corresponding character's exclusive weapon.</afflictiondescription.Hyouibana_Effect_Prefect_Shinki>
+
+    <afflictionname.Hyouibana_Effect_Prefect_Koakuma>Koakuma - Perfect Possession</afflictionname.Hyouibana_Effect_Prefect_Koakuma>
+    <afflictiondescription.Hyouibana_Effect_Prefect_Koakuma>Grants the exclusive weapon effects of the corresponding character.</afflictiondescription.Hyouibana_Effect_Prefect_Koakuma>
 </infotexts>

@@ -113,5 +113,22 @@
             </Abilities>
         </AbilityGroupEffect>
 
+        <AbilityGroupInterval maxtriggercount="1" Interval="10">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="The_Still_Library" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" EventTargetTag="PatchouliTalent_InValidTarget">
+                            <Conditional IsBot="false" />
+                            <TriggerEvent identifier="PatchouliTalent_Effect" />
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+
     </Talent>
 </Talents>

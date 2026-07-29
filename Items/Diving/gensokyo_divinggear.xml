@@ -1787,8 +1787,8 @@
                             damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds" damagemultiplier="0.5"
                             probabilitymultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.5"
-                            damagesound="LimbArmor" deflectprojectiles="true"/>
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" probabilitymultiplier="0.8"/>
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="infection" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" probabilitymultiplier="0.55" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.65" damagesound="" deflectprojectiles="true"/>

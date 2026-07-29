@@ -4618,4 +4618,119 @@
 
 
 
+
+    <!--小恶魔翅膀-->
+    <AfflictionHusk
+            name="小恶魔翅膀"
+            identifier="Koakuma_Wings_Spawn"
+            type="Koakuma_Wings_Spawn"
+            limbspecific="false"
+            targets="human"
+            duration="5.0"
+            huskedspeciesname="[speciesname]Touhou_Tail"
+            indicatorlimb="Torso"
+            showiconthreshold="100"
+            showinhealthscannerthreshold="100"
+            needsair="true"
+            causespeechimpediment="false"
+            treatmentthreshold="1000"
+            dormantthreshold="0"
+            activethreshold="0"
+            transitionthreshold="1000"
+            transformthresholdondeath="1000"
+            sendmessages="false"
+            maxstrength="10"
+            iconcolors="94,54,95;163,73,164;200,191,231">
+        <icon texture="Content/UI/TalentsIcons3.png" sheetindex="4,0" sheetelementsize="128,128" color="181,230,29,255" origin="0,0"/>
+        <Effect minstrength="0" maxstrength="10"/>
+    </AfflictionHusk>
+
+    <!--无名恶魔-->
+    <Affliction identifier="Touhou_Koakuma_Character_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="burn" minresistance="-0.15" maxresistance="-0.15" minskillmultiplier="1.1" maxskillmultiplier="1.1" >
+            <StatValue stattype="RangedAttackMultiplier" value="-0.15"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="-0.15"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Koakuma_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--无名恶魔状态切换CD-->
+    <Affliction identifier="Touhou_Koakuma_Character_Effect_State_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="300.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" />
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Shinki_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--专注-->
+    <Affliction identifier="Touhou_Koakuma_Character_State_Focused" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" minskillmultiplier="1.1" maxskillmultiplier="1.1" >
+            <StatValue stattype="SkillGainSpeed" value="-0.25"/>
+            <StatValue stattype="MovementSpeed" value="0.15"/>
+            <StatValue stattype="RepairSpeed" value="0.25"/>
+            <StatValue stattype="RepairToolStructureRepairMultiplier" value="0.25"/>
+            <StatValue stattype="RangedSpreadReduction" value="0.2"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Koakuma_Character_State_Focused.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--放松-->
+    <Affliction identifier="Touhou_Koakuma_Character_State_Relaxed" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" multiplybymaxvitality="false" minvitalitydecrease="-15" maxvitalitydecrease="-15" >
+            <StatValue stattype="RangedSpreadReduction" value="-0.2"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Koakuma_Character_State_Relaxed.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--帕秋莉给予小恶魔职责所在效果-->
+    <Affliction identifier="Touhou_Patchouli_Koakuma_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="true"
+                maxstrength="1" resetbetweenrounds="true" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="1" resistancefor="burn" minresistance="0.1" maxresistance="0.1" />
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Patchouli_Koakuma_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--凭依小恶魔-->
+    <Affliction identifier="Hyouibana_Koakuma_Effect" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10"  />
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Koakuma_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--小恶魔-完全凭依-->
+    <Affliction identifier="Hyouibana_Effect_Prefect_Koakuma" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="true"
+                showinhealthscannerthreshold="100" maxstrength="1" iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
+        <Effect minstrength="0" maxstrength="1"/>
+        <Icon texture="%ModDir%/Images/Afflictions/Touhou_Koakuma_Character_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--出血效应-小恶魔-->
+    <Affliction name="" identifier="MRE_Koakuma_Effect" description="" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                maxstrength="10"
+                Duration="10.0" showiconthreshold="100" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
+        <Effect minstrength="0" maxstrength="10"/>
+        <icon texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb.png" sourcerect="0,0,32,32" color="255,255,255,255" origin="0,0"/>
+    </Affliction>
+
+    <!--小恶魔-专属武器效果-->
+    <Affliction identifier="Koakuma_Weapons" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false" hideiconafterdelay="false"
+                maxstrength="10"
+                duration="1.0" showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="10" resistancefor="stun" minresistance="0.1" maxresistance="0.1">
+            <StatValue stattype="RangedAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackMultiplier" value="0.1"/>
+            <StatValue stattype="MeleeAttackSpeed" value="0.1"/>
+        </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Koakuma_Weapons.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+
+
 </Afflictions>

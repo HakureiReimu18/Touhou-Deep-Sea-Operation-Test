@@ -2444,10 +2444,7 @@
                 </Explosion>
                 <ParticleEmitter particle="shrapnel" copyentityangle="true" anglemin="0" anglemax="360" particleamount="10" velocitymin="100" velocitymax="2000" scalemin="0.25" scalemax="0.5" />
             </StatusEffect>
-            <StatusEffect type="OnActive" target="This" stackable="false" delay="3">
-                <Remove/>
-            </StatusEffect>
-            <StatusEffect type="OnBroken" target="This">
+            <StatusEffect type="OnNotContained" target="This" stackable="false" delay="3">
                 <Remove/>
             </StatusEffect>
         </Projectile>

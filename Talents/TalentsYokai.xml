@@ -1395,7 +1395,8 @@
 
     <!--生存法则02 拥有寄生抗性时，即可免疫水压。
 
-    穿着觉 装束+时，攻击附带长眠不醒的噩梦的效果的敌人时，将会放大目标身上减少抗性的负面效果-->
+    穿着觉 装束+时，攻击附带长眠不醒的噩梦的效果的敌人时，将会放大目标身上减少抗性的负面效果
+    穿着小恶魔 装束+时，每有1点魔法能力，增加0.05%攻击伤害和最大生命值，最多15%-->
     <Talent identifier="Touhou_Yaoguai05_02">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Yaoguai05_02"/>
@@ -1419,7 +1420,27 @@
                 <CharacterAbilityGiveAffliction affliction="Touhou_Yaoguai05_02_Sleepless_Nightmare_Effect" strength="100.0"/>
             </Abilities>
         </AbilityGroupEffect>
-
+        <!--小恶魔-->
+        <AbilityGroupInterval interval="5">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToSkill stattype="AttackMultiplier" maxvalue="0.05" skillidentifier="Touhou_Magic"/>
+                <CharacterAbilityModifyStatToSkill stattype="MaximumHealthMultiplier" maxvalue="0.05" skillidentifier="Touhou_Magic"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="5">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="AttackMultiplier" value="0.15"/>
+                <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.15"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--“魑魅魍魉” 缓慢治愈自身的精神病。奔跑一定时间后，些许增加下一次攻击的伤害。那之后有5秒冷却。
@@ -1601,7 +1622,8 @@
     </Talent>
 
     <!--“魑魅魍魉” 缓慢治愈自身的精神病。奔跑一定时间后，些许增加下一次攻击的伤害。那之后有5秒冷却。
-    穿着觉 装束+时：击杀任意生物后，短暂提高10%物理伤害抗性。对敌人造成伤害时，有概率削弱敌人的攻击能力。-->
+    穿着觉 装束+时：击杀任意生物后，短暂提高10%物理伤害抗性。对敌人造成伤害时，有概率削弱敌人的攻击能力。
+    穿着小恶魔 装束+时：弹幕攻击有概率额外附加七曜-水元素或七曜-火元素效果。对附着任意元素效果的敌人造成的伤害增加10%-->
     <Talent identifier="Touhou_Yaoguai06_02">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Direct_Damage.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Yaoguai06_02"/>
@@ -1691,9 +1713,43 @@
         <AbilityGroupEffect abilityeffecttype="OnAttack">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Satori_3rd_Eye"/>
+                <AbilityConditionServerRandom randomchance="0.4"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityGiveAffliction affliction="Touhou_Yaoguai06_02_Effect_Satori02" strength="2.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--小恶魔-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionServerRandom randomchance="0.4"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Huo_Elements" strength="10.0"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Elements_Marked" strength="10.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionServerRandom randomchance="0.4"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Shui_Elements" strength="10.0"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Elements_Marked" strength="10.0"/>
+            </Abilities>
+        </AbilityGroupEffect>
+
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionCharacter targettype="Enemy">
+                    <Conditional Touhou_Elements_Marked="lte 0"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -1891,7 +1947,8 @@
         <AddedRecipe itemidentifier="Touhou_The_Key_Of_Duality"/>
     </Talent>
     <!--巫山云雨
-    穿着觉 装束+时：船员中每有一种不同的职业，弹幕伤害提高3%。最多30%-->
+    穿着觉 装束+时：船员中每有一种不同的职业，弹幕伤害提高3%。最多30%
+    穿着小恶魔 装束+时：处于专注状态时，增加15%弹幕伤害。处于放松状态时，减少15%受到的伤害-->
     <Talent identifier="Touhou_Yaoguai07_02">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_Yaoguai07_02"/>
@@ -1993,6 +2050,26 @@
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.03"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <!--小恶魔-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_State_Focused"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="Ranged"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.15"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Koakuma_Character_State_Relaxed"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.15"/>
             </Abilities>
         </AbilityGroupEffect>
     </Talent>
@@ -2468,6 +2545,7 @@
                         <StatusEffect type="OnAbility" target="Character" multiplyafflictionsbymaxvitality="true" disabledeltatime="true">
                             <Affliction identifier="Touhou_Vampire07_Effect_Flandre" amount="100"/>
                             <Affliction identifier="implacable" amount="100"/>
+                            <ReduceAffliction identifier="stun" amount="100"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
