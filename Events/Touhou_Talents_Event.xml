@@ -777,7 +777,7 @@
                 <CountTargetsAction TargetTag="PatchouliTalent_Target" MinAmount="1">
                     <Success>
                         <CheckConditionalAction TargetTag="PatchouliTalent_Target" >
-                            <Conditional Puppeteer_Of_Seven_Colors="gt 0" />
+                            <Conditional Touhou_Koakuma_Character_Effect="gt 0" />
                             <Success>
                                 <StatusEffectAction TargetTag="PatchouliTalent_Target">
                                     <StatusEffect target="This" EventTargetTag="PatchouliTalent_Target">

@@ -151,7 +151,7 @@
 
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="damage" damagemultiplier="0.55" damagesound="LimbArmor" probabilitymultiplier="0.85"
                             deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true"/>
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.0" damagesound="LimbArmor" deflectprojectiles="true" probabilitymultiplier="0.8"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.35" probabilitymultiplier="0.6" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.5" probabilitymultiplier="0.85" damagesound="LimbArmor" deflectprojectiles="true"/>
@@ -812,7 +812,7 @@
 
     <!--魔力披纱（白）-->
     <Item name="" identifier="Magic_Veil" subcategory="Touhou" category="Diving,Equipment"
-          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear" scale="0.25" fireproof="true" description=""
+          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,deepdivinglarge" scale="0.25" fireproof="true" description=""
           allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Price baseprice="4000" minleveldifficulty="30">
             <Price storeidentifier="merchantoutpost" multiplier="0.95" sold="false"/>
@@ -1036,7 +1036,7 @@
 
     <!--魔力披纱(粉)-->
     <Item name="" identifier="Magic_Veil02" subcategory="Touhou" category="Diving,Equipment" variantof="Magic_Veil"
-          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear" scale="0.25" fireproof="true" description=""
+          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,deepdivinglarge" scale="0.25" fireproof="true" description=""
           allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Sprite name="Combat Diving Suit Item" texture="%ModDir%/Images/Divinggear/Magic_Veil02.png" sourcerect="0,0,196,244" depth="0.45"
                 origin="0.5,0.5"/>
@@ -1443,10 +1443,14 @@
             <sprite name="Waist" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="Waist" hidelimb="false"
                     hideotherwearables="false" inherittexturescale="true" origin="0.86,0.7" sourcerect="273,11,202,262" depth="0.1"
                     inheritlimbdepth="false"/>
-            <sprite name="Right Upper Arm" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightForearm"
-                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"/>
-            <sprite name="Left Upper Arm" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftForearm"
-                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.46"/>
+            <sprite name="Right Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="RightHand"
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="822,323,163,120"/>
+            <sprite name="Left Hand" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="LeftHand"
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.34" sourcerect="994,323,163,120"/>
+            <sprite name="Right Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="RightArm"
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="823,14,163,180"/>
+            <sprite name="Left Lower Arm" texture="%ModDir%/Images/Divinggear/Touhou_Hyouibana_Armor/Touhou_Hyouibana_Armor00.png" limb="LeftArm"
+                    hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.63,0.64" sourcerect="995,14,163,180"/>
             <sprite name="Right Thigh" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="RightThigh"
                     hidelimb="false" hideotherwearables="false" inherittexturescale="true" origin="0.65,0.57"/>
             <sprite name="Left Thigh" texture="%ModDir%/Images/Divinggear/Yin_Yang_Orb_0.png" sourcerect="32,32,32,32" limb="LeftThigh"
@@ -1523,7 +1527,7 @@
                             damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.6" probabilitymultiplier="0.7"
                             damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.65" probabilitymultiplier="0.65" damagesound="LimbArmor"
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.75" damagesound="" deflectprojectiles="true"/>
             <SkillModifier skillidentifier="Touhou_Magic" skillvalue="15"/>
@@ -1789,7 +1793,7 @@
                             probabilitymultiplier="0.6" damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" probabilitymultiplier="0.8"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="infection" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.55" probabilitymultiplier="0.55" damagesound="LimbArmor"
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.4" probabilitymultiplier="0.4" damagesound="LimbArmor"
                             deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.65" damagesound="" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="concussion" damagemultiplier="0.0"/>
@@ -2073,9 +2077,9 @@
                             damagesound="LimbArmor" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictiontypes="bleeding,infection" damagemultiplier="0.35" probabilitymultiplier="0.5"
                             damagesound="LimbArmor" deflectprojectiles="true"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.5" probabilitymultiplier="0.5" damagesound="LimbArmor"
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="stun" damagemultiplier="0.2" probabilitymultiplier="0.2" damagesound="LimbArmor"
                             deflectprojectiles="false"/>
-            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.6" damagesound="" deflectprojectiles="true"/>
+            <damagemodifier armorsector="0.0,360.0" afflictiontypes="burn" damagemultiplier="0.5" damagesound="" deflectprojectiles="true"/>
             <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="concussion" damagemultiplier="0.0"/>
             <SkillModifier skillidentifier="mechanical" skillvalue="-20"/>
             <SkillModifier skillidentifier="electrical" skillvalue="-20"/>
@@ -2115,9 +2119,7 @@
                                   multiplyafflictionsbymaxvitality="true">
                         <Affliction identifier="Touhou_Hyouibana_Armor_Effect02" strength="10"/>
                     </StatusEffect>
-                    <StatusEffect type="OnContaining" target="This" voltage="1.0" setvalue="true"/>
-                    <StatusEffect type="OnContaining" target="This" Interval="1.0" TargetItemComponent="CustomInterface" drawhudwhenequipped="true"
-                                  setvalue="true"/>
+                    <StatusEffect type="OnContaining" target="This" Interval="1.0" TargetItemComponent="CustomInterface" drawhudwhenequipped="true" setvalue="true"/>
                     <StatusEffect type="OnRemoved" target="This" TargetItemComponent="CustomInterface" drawhudwhenequipped="false" setvalue="true"/>
                 </Containable>
                 <Containable items="Touhou_Hard_Hooked_Jade">
@@ -2544,7 +2546,7 @@
 
     <!--星界披纱-->
     <Item name="" identifier="Touhou_Astral_Veil" subcategory="Touhou" category="Diving,Equipment"
-          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,Touhou_Astral_Veil" scale="0.13" fireproof="true" description=""
+          tags="mediumitem,bigitem,diving,deepdiving,divinggear_wearableindoors,provocative,Magic_Veil,Touhou_Divinggear,Touhou_Astral_Veil,deepdivinglarge" scale="0.13" fireproof="true" description=""
           allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
         <Price baseprice="12000" minleveldifficulty="36">
             <Price storeidentifier="merchantoutpost" multiplier="0.95" sold="false"/>

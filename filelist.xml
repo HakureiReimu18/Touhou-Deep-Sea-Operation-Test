@@ -14,6 +14,22 @@
     <Text file="%ModDir%/Texts/EnglishCharacterAndMissionText.xml"/>
     <Text file="%ModDir%/Texts/EnglishTouhouCharacterText.xml"/>
     <Text file="%ModDir%/Texts/EnglishTouhouEventText.xml"/>
+    <!-- Russian -->
+    <Text file="%ModDir%/Texts/RussianText.xml"/>
+    <Text file="%ModDir%/Texts/RussianFactionText.xml"/>
+    <Text file="%ModDir%/Texts/RussianJobText.xml"/>
+    <Text file="%ModDir%/Texts/RussianTouhouCharacterText.xml"/>
+    <Text file="%ModDir%/Texts/RussianCharacterAndMissionText.xml"/>
+    <Text file="%ModDir%/Texts/RussianAfflictionText.xml"/>
+    <Text file="%ModDir%/Texts/RussianTouhouEventText.xml"/>
+    <!-- Traditional Chinese -->
+    <Text file="%ModDir%/Texts/TraditionalChineseText.xml"/>
+    <Text file="%ModDir%/Texts/TraditionalChineseFactionText.xml"/>
+    <Text file="%ModDir%/Texts/TraditionalChineseJobText.xml"/>
+    <Text file="%ModDir%/Texts/TraditionalChineseTouhouCharacterText.xml"/>
+    <Text file="%ModDir%/Texts/TraditionalChineseCharacterAndMissionText.xml"/>
+    <Text file="%ModDir%/Texts/TraditionalChineseAfflictionText.xml"/>
+    <Text file="%ModDir%/Texts/TraditionalChineseTouhouEventText.xml"/>
     <Jobs file="%ModDir%/Jobs.xml"/>
     <Item file="%ModDir%/Items/ItemsGeneral.xml"/>
     <NPCSets file="%ModDir%/Events/TouhouNPCs.xml"/>

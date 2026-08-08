@@ -674,6 +674,8 @@
 <!--            <BarrelSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.012" sourcerect="513,189,252,575" origin="0.5,0.865"/>-->
             <BarrelSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.011" sourcerect="4,549,311,440" origin="0.5, 0.85" />
             <RailSprite texture="%ModDir%/Images/OtherWeapons/Touhou_Turrets.png" depth="0.012" sourcerect="513,189,252,575" origin="0.5,0.865"/>
+            <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,0,1,1"/>
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,0,1,1"/>
             <LightComponent LightColor="1.0,0.8,0.8,1.0" Flicker="0.0" range="4800" directional="true" IsOn="true" drawbehindsubs="true"
                             ignorecontinuoustoggle="true" InheritParentIsActive="false">
                 <LightTexture texture="Content/Lights/lightcone.png" origin="0.0,0.5" size="1.0,1.0"/>

@@ -2046,8 +2046,8 @@
 
     <entityname.Touhou_Crimson_Contract>‖color:255,15,99,255‖深红契约‖end‖</entityname.Touhou_Crimson_Contract>
     <entitydescription.Touhou_Crimson_Contract>来自恶魔的风味设计，据说是由木卫二上已经失踪的工匠所打造。使用‖color:gui.yellow‖契约目录‖end‖。</entitydescription.Touhou_Crimson_Contract>
-    <entityname.Touhou_Crimson_Contract>‖color:255,15,99,255‖契约目录‖end‖</entityname.Touhou_Crimson_Contract>
-    <entitydescription.Touhou_Crimson_Contract>上面并没有记载关于契约的细节，但刻满的魔法纹路预示着它内含巨大的威力。作为‖color:gui.yellow‖深红契约‖end‖的弹药</entitydescription.Touhou_Crimson_Contract>
+    <entityname.Touhou_Crimson_Contract_Ammo>‖color:255,15,99,255‖契约目录‖end‖</entityname.Touhou_Crimson_Contract_Ammo>
+    <entitydescription.Touhou_Crimson_Contract_Ammo>上面并没有记载关于契约的细节，但刻满的魔法纹路预示着它内含巨大的威力。作为‖color:gui.yellow‖深红契约‖end‖的弹药</entitydescription.Touhou_Crimson_Contract_Ammo>
 
     <entityname.Touhou_Forbidden_Book_Indexer>‖color:255,15,99,255‖禁书索引器‖end‖</entityname.Touhou_Forbidden_Book_Indexer>
     <entitydescription.Touhou_Forbidden_Book_Indexer>有人用黄金交换真理，有人用生命窥视深渊，而它选择将一切记录下来。每次射击都有概率给敌人同时附加五种七曜元素。使用‖color:gui.yellow‖书页索引‖end‖。</entitydescription.Touhou_Forbidden_Book_Indexer>

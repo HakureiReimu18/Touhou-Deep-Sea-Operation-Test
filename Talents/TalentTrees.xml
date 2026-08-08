@@ -378,4 +378,20 @@
         </SubTree>
     </TalentTree>
 
+
+
+
+    <TalentTree jobidentifier="Magician_Enemy">
+        <SubTree identifier="Magician_primary" nameidentifier="talenttree.Magician_primary" type="primary">
+            <TalentOptions requiredtalents="3" maxchosentalents="5">
+                <TalentOption identifier="Touhou_Remnant_Talent"/>
+            </TalentOptions>
+        </SubTree>
+        <SubTree identifier="Gensokyo_Life" type="specialization" requires="Magician_primary" >
+            <TalentOptions>
+                <TalentOption identifier="Talents_Magician_Primary02"/>
+            </TalentOptions>
+        </SubTree>
+    </TalentTree>
+
 </TalentTrees>

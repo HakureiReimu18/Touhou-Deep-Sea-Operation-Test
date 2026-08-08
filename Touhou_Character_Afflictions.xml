@@ -1343,7 +1343,8 @@
                 hideiconafterdelay="false" maxstrength="10"
                 duration="0.15" showiconthreshold="100" showinhealthscannerthreshold="100"
                 iconcolors="126,211,224;126,211,224;126,211,224;126,211,224">
-        <Effect minstrength="0" maxstrength="10" MinSpeedMultiplier="0.4" MaxSpeedMultiplier="0.4">
+        <Effect minstrength="0" maxstrength="10" MinSpeedMultiplier="0.4" MaxSpeedMultiplier="0.4"
+                minafflictionoverlayalphamultiplier="0.0" maxafflictionoverlayalphamultiplier="0.4">
             <StatusEffect type="OnDamaged" target="Character" Interval="1.0">
                 <requiredaffliction type="damage,burn,bleeding" minstrength="15"/>
                 <Conditional CanRun="eq false"/>
@@ -1358,6 +1359,7 @@
             <StatValue stattype="MeleeAttackMultiplier" value="-1.0"/>
             <StatValue stattype="ExplosionDamageMultiplier" value="-1.0"/>
         </Effect>
+        <AfflictionOverlay texture="%ModDir%/Images/Afflictions/FlandreTalent4_Effect_Screen.png"/>
         <Icon texture="%ModDir%/Images/Afflictions/Younger_Sister_Of_Scarlet.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
@@ -2070,7 +2072,7 @@
                 limbspecific="false" maxstrength="300"
                 indicatorlimb="Head" showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
         <Effect minstrength="0" maxstrength="300" minspeedmultiplier="1" maxspeedmultiplier="1.2" minvitalitydecrease="0" maxvitalitydecrease="-40"
-                multiplybymaxvitality="false" minskillmultiplier="1" maxskillmultiplier="1.2" strengthchange="-0.1">
+                multiplybymaxvitality="false" minskillmultiplier="1" maxskillmultiplier="1.2" strengthchange="-0.2">
             <StatValue stattype="MeleeAttackSpeed" minvalue="0" maxvalue="0.2"/>
             <StatValue stattype="RangedAttackSpeed" minvalue="0" maxvalue="0.2"/>
         </Effect>
@@ -2751,13 +2753,15 @@
         <Icon texture="%ModDir%/Images/Afflictions/Lunatic_Moon_Rabbit.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
-    <!--狂气-->
+    <!--月之狂气-->
     <Affliction name="狂气" identifier="Touhou_Lunatic_Reisen_Effect" description="" type="Touhou_Character_Affliction" isbuff="true"
                 limbspecific="false" maxstrength="30"
                 showinhealthscannerthreshold="100" iconcolors="94,94,94;163,164,164;255,255,255">
-        <Effect minstrength="0" maxstrength="30" minskillmultiplier="1.1" maxskillmultiplier="1.1" strengthchange="-1">
+        <Effect minstrength="0" maxstrength="30" minskillmultiplier="1.1" maxskillmultiplier="1.1" minafflictionoverlayalphamultiplier="0.05" maxafflictionoverlayalphamultiplier="0.1"
+                strengthchange="-1">
             <StatValue stattype="RangedSpreadReduction" value="0.177"/>
         </Effect>
+        <AfflictionOverlay texture="%ModDir%/Images/Afflictions/Touhou_Lunatic_Reisen_Effect_Screen.png"/>
         <icon texture="%ModDir%/Images/Afflictions/Touhou_Lunatic_Reisen_Effect.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 
@@ -4195,6 +4199,14 @@
             <StatusEffect target="Character" indetectable="true"/>
             <AbilityFlag flagtype="IgnoredByEnemyAI"/>
         </Effect>
+        <Icon texture="%ModDir%/Images/Afflictions/Hiro_Pseudo_Buff.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
+    </Affliction>
+
+    <!--伪证CD-->
+    <Affliction name="伪证CD" identifier="Hiro_Pseudo_Buff_CD" type="Touhou_Character_Affliction" isbuff="true" limbspecific="false"
+                hideiconafterdelay="false" maxstrength="1" resetbetweenrounds="true" duration="300.0" showiconthreshold="100"
+                showinhealthscannerthreshold="100" iconcolors="255,255,255;255,255,255;255,255,255;255,255,255">
+        <Effect minstrength="0" maxstrength="1" />
         <Icon texture="%ModDir%/Images/Afflictions/Hiro_Pseudo_Buff.png" sourcerect="0,0,128,128" color="255,255,255,255"/>
     </Affliction>
 

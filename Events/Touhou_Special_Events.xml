@@ -1386,7 +1386,7 @@
                     <StatusEffectAction targettag="Touhou_ODM05_Enemy_Human">
                         <StatusEffect target="This" enabledespawn="true"/>
                     </StatusEffectAction>
-                    <WaitAction time="90"/>
+                    <WaitAction time="45"/>
                     <SpawnAction npcsetidentifier="Touhou_ODM5_Enemy_NPC" npcidentifier="Touhou_ODM05_Enemy_Human_Lunatic_Reinforcements_Special"
                                  lootingisstealing="false" spawnlocation="outpost" TeamID="None" allowinplayerview="false"/>
                     <WaitAction time="1"/>

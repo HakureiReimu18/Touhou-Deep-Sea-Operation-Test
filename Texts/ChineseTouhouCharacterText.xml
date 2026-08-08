@@ -384,10 +384,10 @@
     <!--Piece-->
     <entityname.Piece_gear>‖color:255,90,40,255‖皮丝装束‖end‖</entityname.Piece_gear>
     <entitydescription.Piece_gear>皮丝是赫卡提亚·拉碧斯拉祖利的部下，对赫卡提亚很忠诚的同时也有自己的主见，称呼赫卡提亚为“主人”。
-        在绀珠传之后，被赫卡提亚派往幻想乡居住，结识了光之三妖精桑尼米尔克、露娜切露德、斯塔萨菲雅，与她们一起恶作剧。之后还先后结识了琪露诺、爱塔妮缇拉尔瓦等妖精。</entitydescription.Piece_gear>
+        在绀珠传之后，被赫卡提亚派往幻想乡居住，结识了光之三妖精桑尼米尔克、露娜切露德、斯塔萨菲雅，与她们一起恶作剧。之后还先后结识了琪露诺、爱塔妮缇拉尔瓦等妖精。\n（内置扫描仪槽位）</entitydescription.Piece_gear>
     <entityname.Piece_Plus>‖color:255,90,40,255‖皮丝装束+‖end‖</entityname.Piece_Plus>
     <entitydescription.Piece_Plus>皮丝是赫卡提亚·拉碧斯拉祖利的部下，对赫卡提亚很忠诚的同时也有自己的主见，称呼赫卡提亚为“主人”。
-        在绀珠传之后，被赫卡提亚派往幻想乡居住，结识了光之三妖精桑尼米尔克、露娜切露德、斯塔萨菲雅，与她们一起恶作剧。之后还先后结识了琪露诺、爱塔妮缇拉尔瓦等妖精。</entitydescription.Piece_Plus>
+        在绀珠传之后，被赫卡提亚派往幻想乡居住，结识了光之三妖精桑尼米尔克、露娜切露德、斯塔萨菲雅，与她们一起恶作剧。之后还先后结识了琪露诺、爱塔妮缇拉尔瓦等妖精。\n（内置扫描仪槽位）</entitydescription.Piece_Plus>
     <talentname.PieceTalent>地狱的妖精</talentname.PieceTalent>
     <talentdescription.PieceTalent>当你身着皮丝装束+时，
         对烧伤的抗性略高。
@@ -400,9 +400,9 @@
 
     <!--Cirno-->
     <entityname.Cirno_gear>‖color:60,90,255,255‖琪露诺装束‖end‖</entityname.Cirno_gear>
-    <entitydescription.Cirno_gear>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强，</entitydescription.Cirno_gear>
+    <entitydescription.Cirno_gear>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强。\n（内置扫描仪槽位）</entitydescription.Cirno_gear>
     <entityname.Cirno_Plus>‖color:60,90,255,255‖琪露诺装束+‖end‖</entityname.Cirno_Plus>
-    <entitydescription.Cirno_Plus>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强。</entitydescription.Cirno_Plus>
+    <entitydescription.Cirno_Plus>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强。\n（内置扫描仪槽位）</entitydescription.Cirno_Plus>
     <entityname.Cirno_Eclipse_Valentines>‖color:60,90,210,255‖琪露诺装束（情人节）‖end‖</entityname.Cirno_Eclipse_Valentines>
     <entitydescription.Cirno_Eclipse_Valentines>有时候即使是夏天，湖畔附近也会出现极端低温的现象。这时候遇到的妖精多半就是冰之妖精。她是雾之湖附近妖精老大，力量也比其他妖精更强，</entitydescription.Cirno_Eclipse_Valentines>
     <entityname.Cirno_Eclipse_Valentines_Plus>‖color:60,90,210,255‖琪露诺装束+（情人节）‖end‖</entityname.Cirno_Eclipse_Valentines_Plus>
@@ -424,9 +424,9 @@
 
     <!--Nitori-->
     <entityname.Nitori_Gear>‖color:52,94,60,255‖荷取装束‖color:end‖</entityname.Nitori_Gear>
-    <entitydescription.Nitori_Gear>‖color:52,94,60,255‖作为河童，对商业机遇很敏感，每当幻想乡内举办稍具规模的节庆活动或是集会，时常能在现场看见包括她在内的河童们出摊叫卖。\n————《人妖名鉴》‖color:end‖</entitydescription.Nitori_Gear>
+    <entitydescription.Nitori_Gear>‖color:52,94,60,255‖作为河童，对商业机遇很敏感，每当幻想乡内举办稍具规模的节庆活动或是集会，时常能在现场看见包括她在内的河童们出摊叫卖。\n————《人妖名鉴》‖color:end‖\n（内置扫描仪槽位）</entitydescription.Nitori_Gear>
     <entityname.Nitori_Plus>‖color:52,94,60,255‖荷取装束+‖color:end‖</entityname.Nitori_Plus>
-    <entitydescription.Nitori_Plus>‖color:52,94,60,255‖作为河童，对商业机遇很敏感，每当幻想乡内举办稍具规模的节庆活动或是集会，时常能在现场看见包括她在内的河童们出摊叫卖。\n————《人妖名鉴》‖color:end‖</entitydescription.Nitori_Plus>
+    <entitydescription.Nitori_Plus>‖color:52,94,60,255‖作为河童，对商业机遇很敏感，每当幻想乡内举办稍具规模的节庆活动或是集会，时常能在现场看见包括她在内的河童们出摊叫卖。\n————《人妖名鉴》‖color:end‖\n（内置扫描仪槽位）</entitydescription.Nitori_Plus>
     <entityname.Nitori_Hat>‖color:52,94,60,255‖荷取的鸭舌帽‖color:end‖</entityname.Nitori_Hat>
     <entitydescription.Nitori_Hat>常见的河童装饰</entitydescription.Nitori_Hat>
     <talentname.Kappa_Pororoca>芥川龙之介的河童</talentname.Kappa_Pororoca>
@@ -450,21 +450,23 @@
 
     <!--Koishi-->
     <entityname.Koishi_gear>‖color:60,255,155,255‖恋恋装束‖end‖</entityname.Koishi_gear>
-    <entitydescription.Koishi_gear>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_gear>
+    <entitydescription.Koishi_gear>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。\n（内置扫描仪槽位）</entitydescription.Koishi_gear>
     <entityname.Koishi_Plus>‖color:60,255,155,255‖恋恋装束+‖end‖</entityname.Koishi_Plus>
-    <entitydescription.Koishi_Plus>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_Plus>
+    <entitydescription.Koishi_Plus>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。\n（内置扫描仪槽位）</entitydescription.Koishi_Plus>
     <entityname.Koishi_Hat>‖color:60,255,155,255‖小石子帽子‖end‖</entityname.Koishi_Hat>
     <entitydescription.Koishi_Hat>难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Koishi_Hat>
     <entityname.Koishi_Eclipse_Valentines>‖color:255,128,238,255‖恋恋装束（情人节）‖end‖</entityname.Koishi_Eclipse_Valentines>
-    <entitydescription.Koishi_Eclipse_Valentines>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_Eclipse_Valentines>
+    <entitydescription.Koishi_Eclipse_Valentines>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。\n（内置扫描仪槽位）</entitydescription.Koishi_Eclipse_Valentines>
     <entityname.Koishi_Eclipse_Valentines_Plus>‖color:255,128,238,255‖恋恋装束+（情人节）‖end‖</entityname.Koishi_Eclipse_Valentines_Plus>
-    <entitydescription.Koishi_Eclipse_Valentines_Plus>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_Eclipse_Valentines_Plus>
+    <entitydescription.Koishi_Eclipse_Valentines_Plus>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。\n（内置扫描仪槽位）</entitydescription.Koishi_Eclipse_Valentines_Plus>
     <entityname.Koishi_Eclipse_Valentines_Hat>‖color:255,128,238,255‖小石子帽子（情人节）‖end‖</entityname.Koishi_Eclipse_Valentines_Hat>
     <entitydescription.Koishi_Eclipse_Valentines_Hat>难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Koishi_Eclipse_Valentines_Hat>
-    <entityname.Koishi_Sponsor>‖color:60,255,155,255‖恋恋装束（赞助者）‖end‖</entityname.Koishi_Sponsor>
-    <entitydescription.Koishi_Sponsor>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_Sponsor>
-    <entityname.Koishi_Sponsor_Plus>‖color:60,255,155,255‖恋恋装束+（赞助者）‖end‖</entityname.Koishi_Sponsor_Plus>
-    <entitydescription.Koishi_Sponsor_Plus>恋是矛盾的角色，是作为没有角色性的存在而诞生的，是对角色性的否定。她虽然试图通过回避他人的恶意来避免成为被厌恶者，但她依然含有很多理应遭到厌恶的东西，心怀某种黑暗。</entitydescription.Koishi_Sponsor_Plus>
+    <entityname.Koishi_Sponsor>‖color:60,255,155,255‖恋恋装束（黑白之恋）‖end‖</entityname.Koishi_Sponsor>
+    <entitydescription.Koishi_Sponsor>拥有【掌握无意识的能力】的古明地恋，不再愿封闭自己而睁开的觉之瞳仅能看见自己以及他人的无意识，是更加成熟稳重，更加纯粹疯狂，还是仍然可爱俏皮之余多一份通透？也许都有。意外地很懂心理学，到了能成为心理科医生的水平。\n（内置扫描仪槽位）</entitydescription.Koishi_Sponsor>
+    <entityname.Koishi_Sponsor_Plus>‖color:60,255,155,255‖恋恋装束+（黑白之恋）‖end‖</entityname.Koishi_Sponsor_Plus>
+    <entitydescription.Koishi_Sponsor_Plus>拥有【掌握无意识的能力】的古明地恋，不再愿封闭自己而睁开的觉之瞳仅能看见自己以及他人的无意识，是更加成熟稳重，更加纯粹疯狂，还是仍然可爱俏皮之余多一份通透？也许都有。意外地很懂心理学，到了能成为心理科医生的水平。\n（内置扫描仪槽位）</entitydescription.Koishi_Sponsor_Plus>
+    <entityname.Koishi_Sponsor_Hat>‖color:60,255,155,255‖小石子帽子‖end‖</entityname.Koishi_Sponsor_Hat>
+    <entitydescription.Koishi_Sponsor_Hat>难道说没人注意到我？这样啊，这下就方便了。</entitydescription.Koishi_Sponsor_Hat>
 
     <talentname.KoishiTalent>地底蔷薇</talentname.KoishiTalent>
     <talentdescription.KoishiTalent>当你身着恋恋装束+时，
@@ -1098,8 +1100,8 @@
         如果魔女化效果自然解除，则获得严重负面：
         ‖color:gui.orange‖攻击伤害‖end‖减少‖color:gui.red‖60%‖end‖，‖color:gui.orange‖移动速度‖end‖减少‖color:gui.red‖40%‖end‖。巡回获得的经验值减少‖color:gui.red‖90%‖end‖
 
-        5分钟一次，使用快捷键Alt+X后，获得“伪证”效果，效果存在期间，不会被敌人主动探查到
-        （部分效果需要安装lua补丁）
+        5分钟一次，可以获得“伪证”效果，效果存在期间，不会被敌人主动探查到
+        （安装lua补丁可以使用快捷键）
     </talentdescription.HiroTalent>
     <afflictionname.Hiro_Executor_Of_Justice>正义的执行者</afflictionname.Hiro_Executor_Of_Justice>
     <afflictiondescription.Hiro_Executor_Of_Justice>对她而言，木卫二的深渊并不是最可怕的。真正可怕的，是在这里死亡之后——还能重新开始</afflictiondescription.Hiro_Executor_Of_Justice>
@@ -1251,10 +1253,10 @@
     <entitydescription.Koakuma_Plus>她是较弱的恶魔，是与帕秋莉·诺蕾姬性质类似的魔法生物</entitydescription.Koakuma_Plus>
     <talentname.KoakumaTalent>就职于蒙尘图书馆的魔物</talentname.KoakumaTalent>
     <talentdescription.KoakumaTalent>当你身着小恶魔 装束+时，
-        减少‖color:gui.green‖15%‖end‖‖color:gui.orange‖攻击伤害‖end‖
-        减少‖color:gui.green‖15%‖end‖‖color:gui.orange‖烧伤抗性‖end‖
-        在水中时，减少‖color:gui.green‖15%‖end‖‖color:gui.orange‖移动速度‖end‖
-        在潜艇外时，增加‖color:gui.green‖15%‖end‖受到的伤害
+        减少‖color:gui.red‖15%‖end‖‖color:gui.orange‖攻击伤害‖end‖
+        减少‖color:gui.red‖15%‖end‖‖color:gui.orange‖烧伤抗性‖end‖
+        在水中时，减少‖color:gui.red‖15%‖end‖‖color:gui.orange‖移动速度‖end‖
+        在潜艇外时，增加‖color:gui.red‖15%‖end‖受到的伤害
 
         增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖技能水平‖end‖、‖color:gui.green‖10‖end‖点‖color:gui.orange‖原版技能水平‖end‖和‖color:gui.green‖10‖end‖点‖color:gui.orange‖魔法能力‖end‖
 
@@ -1273,6 +1275,8 @@
     <afflictiondescription.Koakuma_Weapons>虽然小恶魔是受红魔馆雇佣的魔物，也因此平时住在红魔馆中，但是她没有任何使命，可以说是完全自由的角色</afflictiondescription.Koakuma_Weapons>
     <afflictionname.Touhou_Patchouli_Koakuma_Effect>职责所在</afflictionname.Touhou_Patchouli_Koakuma_Effect>
     <afflictiondescription.Touhou_Patchouli_Koakuma_Effect>增加10%最大生命值</afflictiondescription.Touhou_Patchouli_Koakuma_Effect>
+    <afflictionname.Touhou_Koakuma_Character_State_Focused>专注</afflictionname.Touhou_Koakuma_Character_State_Focused>
+    <afflictionname.Touhou_Koakuma_Character_State_Relaxed>放松</afflictionname.Touhou_Koakuma_Character_State_Relaxed>
 
     <entityname.Touhou_Refined_Grimoire>‖color:255,15,99,255‖《精编魔法书》‖end‖</entityname.Touhou_Refined_Grimoire>
     <entitydescription.Touhou_Refined_Grimoire>精加工的魔法书，内容更加易于吸收</entitydescription.Touhou_Refined_Grimoire>
@@ -1346,7 +1350,7 @@
     <Character.MRE_Material_Kaguya>辉夜的回忆</Character.MRE_Material_Kaguya>
     <Character.MRE_Material_Yuyuko>幽幽子的回忆</Character.MRE_Material_Yuyuko>
     <Character.MRE_Material_Shinki>神绮的回忆</Character.MRE_Material_Shinki>
-    <Character.MRE_Material_Koakuma>神绮的回忆</Character.MRE_Material_Koakuma>
+    <Character.MRE_Material_Koakuma>小恶魔的回忆</Character.MRE_Material_Koakuma>
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有15%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>

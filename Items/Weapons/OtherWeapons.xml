@@ -87,7 +87,7 @@
             <Crosshair texture="Content/Items/Weapons/Crosshairs.png" sourcerect="0,256,256,256"/>
             <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="256,256,256,256"/>
             <StatusEffect type="OnUse" target="This">
-                <Explosion range="400.0" force="1.5" shockwave="true" smoke="true" flames="false" sparks="false" underwaterbubble="false"
+                <Explosion range="400.0" force="1.0" shockwave="true" smoke="true" flames="false" sparks="false" underwaterbubble="false"
                            camerashake="30.0"/>
             </StatusEffect>
             <Sound file="Content/Items/JobGear/Captain/WEAPONS_handCannon.ogg" type="OnUse" volume="4.5" range="600" selectionmode="Random"/>
@@ -1859,6 +1859,11 @@
                 <Conditional Satori_3rd_Eye="gt 0"/>
                 <Affliction identifier="Satori_Weapons" strength="50"/>
             </StatusEffect>
+            <StatusEffect type="OnActive" target="Character" comparison="And" Interval="0.5">
+                <Conditional jobidentifier="eq Yokai"/>
+                <Conditional Touhou_Koakuma_Character_Effect="gt 0"/>
+                <Affliction identifier="Koakuma_Weapons" strength="50"/>
+            </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>
         </Holdable>
@@ -2318,7 +2323,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.5" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
@@ -4798,7 +4803,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.0" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.55" setvalue="true"/>
@@ -5314,7 +5319,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.5" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="Contained,Character" condition="100" setvalue="true" Interval="0.5" disabledeltatime="true"
                           comparison="And">
@@ -5522,7 +5527,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.0" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.8" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
@@ -6351,7 +6356,7 @@
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <Sound file="%ModDir%/Sounds/Weapons/Touhou_Knightmare_Shotgun_Attack.ogg" type="OnUse" range="3000" volume="2.0"
                        selectionmode="Random"/>
-                <Explosion range="200.0" force="1.5" shockwave="true" smoke="false" flash="true" sparks="false" flames="false"
+                <Explosion range="200.0" force="0.9" shockwave="true" smoke="false" flash="true" sparks="false" flames="false"
                            underwaterbubble="false" camerashake="15.0"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
@@ -6691,7 +6696,7 @@
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <Sound file="%ModDir%/Sounds/Weapons/Touhou_Knightmare_Shotgun_Attack.ogg" type="OnUse" range="3000" volume="1.0"
                        selectionmode="Random"/>
-                <Explosion range="200.0" force="1.5" shockwave="true" smoke="false" flash="true" sparks="false" flames="false"
+                <Explosion range="200.0" force="0.5" shockwave="true" smoke="false" flash="true" sparks="false" flames="false"
                            underwaterbubble="false" camerashake="15.0"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
@@ -6952,7 +6957,7 @@
                              velocitymax="0" colormultiplier="100,100,255,255"/>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
                 <Sound file="%ModDir%/Sounds/Weapons/Touhou_Knightmare_Shotgun_Attack.ogg" type="OnUse" range="3000" volume="2.0"/>
-                <Explosion range="200.0" force="1.5" shockwave="true" smoke="false" flash="true" sparks="false" flames="false"
+                <Explosion range="200.0" force="0.5" shockwave="true" smoke="false" flash="true" sparks="false" flames="false"
                            underwaterbubble="false" camerashake="25.0"/>
             </StatusEffect>
             <StatusEffect type="OnUse" target="This" forceplaysounds="true">
@@ -7717,7 +7722,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="0.5" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character">
                 <Affliction identifier="Touhou_Starkiller_Screen_Effect" amount="10"/>
@@ -8066,7 +8071,7 @@
                 <Explosion range="200.0" force="0.5" shockwave="true" smoke="false" flash="true" sparks="false" flames="false"
                            underwaterbubble="false" camerashake="25.0"/>
             </StatusEffect>
-            <StatusEffect type="OnUse" target="This" Condition="-0.5" disabledeltatime="true"/>
+            <StatusEffect type="OnUse" target="This" Condition="-0.4" disabledeltatime="true"/>
             <StatusEffect type="OnUse" target="Contained">
                 <RequiredItems items="Touhou_Dissolution_Ammo" type="Contained" msg="ItemMsgAmmoRequired"/>
                 <Use/>
@@ -8123,7 +8128,7 @@
             <ParticleEmitter particle="UFO_Danmu_Laser" particleamount="1" velocitymin="0" velocitymax="0" scalemultiplier="1,0.12"
                              colormultiplier="255,255,255,255"/>
             <Attack itemdamage="15" levelwalldamage="20" targetimpulse="2" penetration="0.35" severlimbsprobability="0.6">
-                <Affliction identifier="lacerations" strength="11"/>
+                <Affliction identifier="lacerations" strength="12"/>
                 <Affliction identifier="burn" strength="1"/>
                 <Affliction identifier="lacerations" strength="4" probability="0.6"/>
                 <Affliction identifier="explosiondamage" strength="1"/>
@@ -8133,7 +8138,7 @@
                 <Affliction identifier="stun" strength="0.15" probability="0.15"/>
             </Attack>
             <StatusEffect type="OnImpact" target="Limb">
-                <Affliction identifier="lacerations" strength="4" penetration="0.1"/>
+                <Affliction identifier="lacerations" strength="3" penetration="0.1"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
                 <Affliction identifier="Touhou_Lost_Dream" strength="1.0"/>
@@ -9080,7 +9085,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.5" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.65" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.45" setvalue="true"/>
@@ -9478,7 +9483,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.0" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.2" setvalue="true"/>
@@ -9963,7 +9968,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.0" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.75" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>
@@ -10737,7 +10742,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.5" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnSecondaryUse" target="Character" SpeedMultiplier="0.6" setvalue="true"/>
             <StatusEffect type="OnUse" target="Character" SpeedMultiplier="0.5" setvalue="true"/>
@@ -10929,7 +10934,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.5" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" Reload="0.32" Interval="0.5" setvalue="true" disabledeltatime="true" comparison="And">
                 <Conditional Condition="lte 25"/>
@@ -11236,7 +11241,7 @@
             <StatusEffect type="OnUse" target="This">
                 <ParticleEmitter particle="Touhou_Electric_Shock" AngleMax="360" VelocityMin="100" VelocityMax="200" ScaleMin="0.4" ScaleMax="0.8"
                                  ScaleMultiplier="0.2,0.2" ParticleAmount="10" ColorMultiplier="100,100,255,255" DrawOnTop="True"/>
-                <Explosion range="400.0" force="1.5" shockwave="true" smoke="true" flames="false" sparks="false" underwaterbubble="false"
+                <Explosion range="400.0" force="1.0" shockwave="true" smoke="true" flames="false" sparks="false" underwaterbubble="false"
                            camerashake="45.0"/>
             </StatusEffect>
             <Sound file="%ModDir%/Sounds/Weapons/Touhou_Anguish/Touhou_Anguish_Attack01.ogg" type="OnUse" volume="2.0" range="3000" selectionmode="Random"/>
@@ -11367,7 +11372,7 @@
                 <Conditional condition="gte 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This,Character" Condition="1.25" Interval="1.0" disabledeltatime="true">
-                <Conditional Touhou_Pride_Amulet_Effect="gte 0"/>
+                <Conditional Touhou_Pride_Amulet_Effect="gt 0"/>
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" spread="4" unskilledspread="15" weapondamagemodifier="1.0" Interval="0.2" setvalue="true" disabledeltatime="true" >
                 <Conditional Condition="lt 100"/>

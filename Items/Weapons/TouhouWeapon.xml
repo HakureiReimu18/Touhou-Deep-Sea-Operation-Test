@@ -954,7 +954,7 @@
           cargocontaineridentifier="metalcrate"
           tags="mediumitem,weapon,ProvocativeToHumanAI,Touhou_Weapon_Level05,Touhou_Cam_Offset_High" Scale="0.5" impactsoundtag="impact_metal_light"
           HideConditionBar="true">
-        <Price baseprice="66666" minleveldifficulty="36">
+        <Price baseprice="66666" minleveldifficulty="36" maxavailable="1">
             <Price storeidentifier="merchantoutpost" sold="false"/>
             <Price storeidentifier="merchantcity" multiplier="0.9"/>
             <Price storeidentifier="merchantresearch" multiplier="1.1"/>
@@ -6392,9 +6392,8 @@
             <StatusEffect type="OnImpact" target="This" stackable="false" disabledeltatime="true">
                 <Explosion range="80" force="1.0" itemdamage="20" levelwalldamage="30" shockwave="false" smoke="false" flames="false" flash="false"
                            DistanceFalloff="false" sparks="false" camerashake="10" penetration="0.2">
-                    <Affliction identifier="lacerations" strength="10"/>
+                    <Affliction identifier="lacerations" strength="12"/>
                     <Affliction identifier="Touhou_Freeze" strength="25"/>
-                    <Affliction identifier="Touhou_Lunar_Orbit_Effect" strength="15"/>
                 </Explosion>
                 <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" volume="0.15" selectionmode="Random" range="3000"/>
                 <sound file="Content/Items/Weapons/ExplosionSmall2.ogg" volume="0.15" selectionmode="Random" range="3000"/>
@@ -8503,7 +8502,7 @@
             </StatusEffect>
             <StatusEffect type="OnActive" target="This" condition="200" AllowWhenBroken="true"/>
         </Holdable>
-        <RangedWeapon reload="1.25" barrelpos="45,-4" holdtrigger="true" combatPriority="80" unskilledspread="20" spread="3"
+        <RangedWeapon reload="1.25" barrelpos="80,-4" holdtrigger="true" combatPriority="80" unskilledspread="20" spread="3"
                       weapondamagemodifier="1.1"
                       ProjectileCount="3" maxchargetime="0.75" drawhudwhenequipped="true" crosshairscale="0.35">
             <Crosshair texture="%ModDir%/Images/OtherWeapons/Touhou_Eternal_Night_Bow_Crosshair.png" sourcerect="0,0,256,256"/>
@@ -8562,8 +8561,8 @@
                 origin="0.5,0.5"/>
         <Body width="200" height="20" density="10"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Projectile characterusable="false" launchimpulse="40" sticktocharacters="true" sticktoitems="true" sticktostructures="true"
-                    sticktodoors="false">
+        <Projectile characterusable="false" launchimpulse="40" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,100,225" scalemultiplier="1,2" />
             <Attack structuredamage="15" itemdamage="50" targetforce="20" targetimpulse="20" severlimbsprobability="0.6" penetration="0.35">
                 <Affliction identifier="lacerations" strength="55"/>
                 <Affliction identifier="burn" strength="20"/>
@@ -8583,7 +8582,6 @@
                     <Affliction identifier="explosiondamage" strength="15"/>
                     <Affliction identifier="burn" strength="15"/>
                 </Explosion>
-                <RemoveItem/>
             </StatusEffect>
         </Projectile>
     </Item>
@@ -8616,8 +8614,8 @@
                 origin="0.5,0.5"/>
         <Body width="200" height="20" density="10"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Projectile characterusable="false" launchimpulse="40" sticktocharacters="true" sticktoitems="true" sticktostructures="true"
-                    sticktodoors="false">
+        <Projectile characterusable="false" launchimpulse="40" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="255,100,255,225" scalemultiplier="1,2" />
             <Attack itemdamage="20" targetforce="10" targetimpulse="10" severlimbsprobability="0.3" penetration="0.35">
                 <Affliction identifier="lacerations" strength="65"/>
                 <Affliction identifier="Touhou_Freeze" strength="25"/>
@@ -8629,7 +8627,7 @@
             <StatusEffect type="OnActive" target="This" lifetime="0.4">
                 <ParticleEmitter particle="StarDanmuBoom" copyentityangle="true" anglemin="105" anglemax="255" particleamount="3" velocitymin="200"
                                  velocitymax="600"
-                                 colormultiplier="255,36,36,200" scalemin="0.1" scalemax="0.2"/>
+                                 colormultiplier="200,36,200,200" scalemin="0.1" scalemax="0.2"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="This">
                 <sound file="Content/Items/Weapons/ExplosionSmall1.ogg" volume="0.15" range="500"/>
@@ -8674,8 +8672,8 @@
                 origin="0.5,0.5"/>
         <Body width="200" height="20" density="10"/>
         <Pickable slots="Any" msg="ItemMsgPickUpSelect"/>
-        <Projectile characterusable="false" launchimpulse="40" sticktocharacters="true" sticktoitems="true" sticktostructures="true"
-                    sticktodoors="false">
+        <Projectile characterusable="false" launchimpulse="40" hitscan="true" removeonhit="true">
+            <ParticleEmitter particle="tracerfirearm" particleamount="1" velocitymin="0" velocitymax="0" colormultiplier="100,100,255,225" scalemultiplier="1,2" />
             <Attack itemdamage="20" targetforce="5" targetimpulse="5" severlimbsprobability="0.3" penetration="0.4">
                 <Affliction identifier="lacerations" strength="40"/>
                 <Affliction identifier="Touhou_Freeze" strength="25"/>
@@ -17562,7 +17560,7 @@
           tags="mediumitem,bulkyweapon,weapon,ProvocativeToHumanAI,Touhou_TidalInk_Rail_Caster,Touhou_Weapon_Level05,Touhou_Cam_Offset_High"
           Scale="0.3" impactsoundtag="impact_metal_light">
         <PreferredContainer secondary="armcab"/>
-        <Price baseprice="15000" maxavailable="1" sold="true" minleveldifficulty="40">
+        <Price baseprice="22000" maxavailable="1" sold="true" minleveldifficulty="40">
             <Price storeidentifier="merchantoutpost" maxavailable="3"/>
             <Price storeidentifier="merchantcity" maxavailable="2"/>
             <Price storeidentifier="merchantresearch" multiplier="1.25" maxavailable="1"/>
@@ -19225,8 +19223,8 @@
                 <Affliction identifier="stun" strength="0.1" probability="0.1"/>
             </Attack>
             <StatusEffect type="OnImpact" target="UseTarget" multiplyafflictionsbymaxvitality="true">
-                <Affliction identifier="Touhou_Lost_Dream" strength="1.0" probability="0.25"/>
-                <Affliction identifier="Sleepless_Nightmare" strength="1.0" probability="0.25"/>
+                <Affliction identifier="Touhou_Lost_Dream" strength="1.0" probability="0.1"/>
+                <Affliction identifier="Sleepless_Nightmare" strength="1.0" probability="0.1"/>
             </StatusEffect>
             <StatusEffect type="OnImpact" target="UseTarget">
                 <ParticleEmitter particle="GlowDot" particleamount="1" anglemin="0" anglemax="360" velocitymin="300" velocitymax="350"
@@ -22701,7 +22699,7 @@
           tags="mediumitem,bulkyweapon,weapon,ProvocativeToHumanAI,Touhou_Weapon_Level04,Touhou_Cam_Offset_High,Touhou_Forbidden_Book_Indexer"
           Scale="0.3" impactsoundtag="impact_metal_light">
         <PreferredContainer secondary="armcab"/>
-        <Price baseprice="5000" maxavailable="1" sold="true">
+        <Price baseprice="5000" maxavailable="1" sold="false">
             <Price storeidentifier="merchantoutpost" maxavailable="3"/>
             <Price storeidentifier="merchantcity" maxavailable="2"/>
             <Price storeidentifier="merchantresearch" multiplier="1.25" maxavailable="1"/>

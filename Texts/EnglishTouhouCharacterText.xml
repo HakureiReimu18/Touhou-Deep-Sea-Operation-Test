@@ -489,10 +489,14 @@
     <entitydescription.Koishi_Eclipse_Valentines_Plus>Koishi is a paradoxical figure, born as a being without a defined character, a denial of character itself. Although she tries to avoid others’ malice to prevent being disliked, she still harbors much that is naturally off-putting and carries a certain darkness within.</entitydescription.Koishi_Eclipse_Valentines_Plus>
     <entityname.Koishi_Eclipse_Valentines_Hat>‖color:255,128,238,255‖Koishi's Hat (Valentine's)‖end‖</entityname.Koishi_Eclipse_Valentines_Hat>
     <entitydescription.Koishi_Eclipse_Valentines_Hat>Has no one noticed me? Well then, this makes things easier.</entitydescription.Koishi_Eclipse_Valentines_Hat>
-    <entityname.Koishi_Sponsor>‖color:60,255,155,255‖Koishi's Outfit(Sponsor)‖end‖</entityname.Koishi_Sponsor>
-    <entitydescription.Koishi_Sponsor>Koishi is a paradoxical figure, born as a being without a defined character, a denial of character itself. Although she tries to avoid others’ malice to prevent being disliked, she still harbors much that is naturally off-putting and carries a certain darkness within.</entitydescription.Koishi_Sponsor>
-    <entityname.Koishi_Sponsor_Plus>‖color:60,255,155,255‖Koishi's Outfit+(Sponsor)‖end‖</entityname.Koishi_Sponsor_Plus>
-    <entitydescription.Koishi_Sponsor_Plus>Koishi is a paradoxical figure, born as a being without a defined character, a denial of character itself. Although she tries to avoid others’ malice to prevent being disliked, she still harbors much that is naturally off-putting and carries a certain darkness within.</entitydescription.Koishi_Sponsor_Plus>
+    <entityname.Koishi_Sponsor>‖color:60,255,155,255‖Koishi Outfit (Black-and-White Love)‖end‖</entityname.Koishi_Sponsor>
+    <entitydescription.Koishi_Sponsor>Komeiji Koishi, who possesses the ability to manipulate the unconscious. Having chosen to open the Eye of Satori she once kept closed, she can now perceive only her own unconscious and that of others. Has she become more mature and composed, more purely insane, or simply retained her playful charm while gaining newfound insight? Perhaps all of the above. Unexpectedly proficient in psychology—to the point of being qualified as a psychiatrist.
+        \n(Built-in Scanner Slot)</entitydescription.Koishi_Sponsor>
+    <entityname.Koishi_Sponsor_Plus>‖color:60,255,155,255‖Koishi Outfit+ (Black-and-White Love)‖end‖</entityname.Koishi_Sponsor_Plus>
+    <entitydescription.Koishi_Sponsor_Plus>Komeiji Koishi, who possesses the ability to manipulate the unconscious. Having chosen to open the Eye of Satori she once kept closed, she can now perceive only her own unconscious and that of others. Has she become more mature and composed, more purely insane, or simply retained her playful charm while gaining newfound insight? Perhaps all of the above. Unexpectedly proficient in psychology—to the point of being qualified as a psychiatrist.
+        \n(Built-in Scanner Slot)</entitydescription.Koishi_Sponsor_Plus>
+    <entityname.Koishi_Sponsor_Hat>‖color:60,255,155,255‖Koishi's Hat‖end‖</entityname.Koishi_Sponsor_Hat>
+    <entitydescription.Koishi_Sponsor_Hat>Has no one noticed me? Well then, this makes things easier.</entitydescription.Koishi_Sponsor_Hat>
 
     <talentname.KoishiTalent>Rose of the Underground</talentname.KoishiTalent>
     <talentdescription.KoishiTalent>While wearing Koishi's Outfit+:
@@ -1152,8 +1156,8 @@
         ‖color:gui.orange‖Movement Speed‖end‖ reduced by ‖color:gui.red‖40%‖end‖,
         experience gained this round reduced by ‖color:gui.red‖90%‖end‖
 
-        Once every five minutes, pressing Alt+X grants the “False Testimony” effect; while active, enemies will not actively detect you.
-        (Some effects require the installation of a Lua patch)
+        Once every 5 minutes, you can gain the "Pseudo" effect. While the effect is active, you will not be actively detected by enemies.
+        (Shortcut keys can be used if the Lua patch is installed)
     </talentdescription.HiroTalent>
     <afflictionname.Hiro_Executor_Of_Justice>Executor of Justice</afflictionname.Hiro_Executor_Of_Justice>
     <afflictiondescription.Hiro_Executor_Of_Justice>To her, the abyss of Europa is not the most terrifying thing. What truly terrifies her is that even after dying here—she can start all over again.</afflictiondescription.Hiro_Executor_Of_Justice>
@@ -1317,10 +1321,10 @@
 
     <talentname.KoakumaTalent>The Demon of the Dusty Library</talentname.KoakumaTalent>
     <talentdescription.KoakumaTalent>When wearing Koakuma Outfit+:
-        Reduce ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Attack Damage‖end‖.
-        Reduce ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Burn Resistance‖end‖.
-        While underwater, reduce ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖Movement Speed‖end‖.
-        While outside the submarine, increase damage taken by ‖color:gui.green‖15%‖end‖.
+        Reduce ‖color:gui.red‖15%‖end‖ ‖color:gui.orange‖Attack Damage‖end‖.
+        Reduce ‖color:gui.red‖15%‖end‖ ‖color:gui.orange‖Burn Resistance‖end‖.
+        While underwater, reduce ‖color:gui.red‖15%‖end‖ ‖color:gui.orange‖Movement Speed‖end‖.
+        While outside the submarine, increase damage taken by ‖color:gui.red‖15%‖end‖.
 
 
         Increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖Skill Levels‖end‖, gain ‖color:gui.green‖10‖end‖ points of ‖color:gui.orange‖Vanilla Skill Levels‖end‖, and gain ‖color:gui.green‖10‖end‖ points of ‖color:gui.orange‖Magic Ability‖end‖.
@@ -1345,6 +1349,9 @@
 
     <afflictionname.Touhou_Patchouli_Koakuma_Effect>Call of Duty</afflictionname.Touhou_Patchouli_Koakuma_Effect>
     <afflictiondescription.Touhou_Patchouli_Koakuma_Effect>Increases Maximum Health by 10%</afflictiondescription.Touhou_Patchouli_Koakuma_Effect>
+
+    <afflictionname.Touhou_Koakuma_Character_State_Focused>Focused</afflictionname.Touhou_Koakuma_Character_State_Focused>
+    <afflictionname.Touhou_Koakuma_Character_State_Relaxed>Relaxed</afflictionname.Touhou_Koakuma_Character_State_Relaxed>
 
     <entityname.Touhou_Refined_Grimoire>‖color:228,0,120,255‖Refined Grimoire‖end‖</entityname.Touhou_Refined_Grimoire>
     <entitydescription.Touhou_Refined_Grimoire>A finely crafted grimoire whose contents are much easier to comprehend and absorb.</entitydescription.Touhou_Refined_Grimoire>
@@ -1421,6 +1428,7 @@
     <Character.MRE_Material_Kaguya>Kaguya's Memory</Character.MRE_Material_Kaguya>
     <Character.MRE_Material_Yuyuko>Yuyuko's Memory</Character.MRE_Material_Yuyuko>
     <Character.MRE_Material_Shinki>Shinki's Memory</Character.MRE_Material_Shinki>
+    <Character.MRE_Material_Koakuma>Koakuma's Memory</Character.MRE_Material_Koakuma>
     <talentname.MRE_Reimu>Bleeding Effect – Hakurei Reimu</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Effective only with Reimu Outfit+. Grants exclusive weapon effect. Each time hit, 15% chance to avoid that damage.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Bleeding Effect – Remilia Scarlet</talentname.MRE_Remilia>
