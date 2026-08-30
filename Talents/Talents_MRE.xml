@@ -1988,5 +1988,55 @@
         </AbilityGroupEffect>
     </Talent>
 
+    <!--出血效应-键山雏-->
+    <Talent identifier="MRE_Kagiyama_Hina">
+        <Icon texture="%ModDir%/Images/Talents/MRE_Talent.png" sheetindex="0,0" sheetelementsize="128,128"/>
+        <Description tag="talentdescription.MRE_Kagiyama_Hina"/>
+        <AbilityGroupInterval interval="9.9">
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <Affliction identifier="MRE_Effect_Flag" amount="10.0"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval Interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="debuff" multiplier="0.8"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects SetUser="false">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
+                            <ReduceAffliction type="debuff" amount="0.2"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
+
+        <AbilityGroupInterval Interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Misfortune_Curse" minimumPercentage="0.5" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="damage" multiplier="0.9"/>
+            </Abilities>
+        </AbilityGroupInterval>
+    </Talent>
+
 
 </Talents>

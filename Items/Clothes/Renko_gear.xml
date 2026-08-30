@@ -242,7 +242,7 @@
         <ItemContainer autofill="False" capacity="0" maxstacksize="1" ExtraStackSize="8" slotsperrow="2" attachable="true" aimable="false">
             <SlotIcon slotindex="4" texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6"/>
             <SlotIcon slotindex="5" texture="Content/Items/InventoryIconAtlas.png" sourcerect="640,256,64,64" origin="0.5,0.6"/>
-            <SubContainer capacity="4" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
+            <SubContainer capacity="6" depth="0.5" maxstacksize="64" displaycontainedstatus="true">
                 <Containable items="smallitem" excludeditems="backpack,crate,toolbelt,toolbox,Touhou_Magic_Charging_Box"/>
             </SubContainer>
             <SubContainer capacity="2" depth="0.5" maxstacksize="64" displaycontainedstatus="true">

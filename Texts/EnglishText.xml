@@ -2517,6 +2517,32 @@
     <entitydescription.Touhou_Forbidden_Book_Indexer_Ammo>Pages may yellow with age, but knowledge endures forever. Ammunition for the ‖color:gui.yellow‖Forbidden Book Indexer‖end‖.</entitydescription.Touhou_Forbidden_Book_Indexer_Ammo>
 
 
+    <entityname.Touhou_Calamity_Torrent>‖color:68,194,0,255‖Calamity Torrent‖end‖</entityname.Touhou_Calamity_Torrent>
+    <entitydescription.Touhou_Calamity_Torrent>A weapon that unleashes accumulated calamity as a torrent. It does not create misfortune — it merely guides the misfortune that was already destined to arrive, helping it find its destination ahead of time. When attacking enemies below half health, reduces the target's buffs and inflicts Nightmare of Eternal Slumber. Uses ‖color:gui.yellow‖Misfortune Turbine‖end‖.</entitydescription.Touhou_Calamity_Torrent>
+    <entityname.Touhou_Calamity_Torrent_Ammo>‖color:68,194,0,255‖Misfortune Turbine‖end‖</entityname.Touhou_Calamity_Torrent_Ammo>
+    <entitydescription.Touhou_Calamity_Torrent_Ammo>Special ammunition that compresses misfortune and maintains it in a state of high-speed rotation. The longer it spins, the more the accumulated calamity within becomes uncontrollable. Serves as ammunition for ‖color:gui.yellow‖Calamity Torrent‖end‖.</entitydescription.Touhou_Calamity_Torrent_Ammo>
+
+    <entityname.Touhou_Misfortune_Recovery_Gun>‖color:68,194,0,255‖Misfortune Recovery Gun‖end‖</entityname.Touhou_Misfortune_Recovery_Gun>
+    <entitydescription.Touhou_Misfortune_Recovery_Gun>A special weapon used to collect and transfer misfortune. It cannot eliminate misfortune — it can only temporarily keep it safe on behalf of the world. Uses ‖color:gui.yellow‖Misfortune Vessel‖end‖.</entitydescription.Touhou_Misfortune_Recovery_Gun>
+    <entityname.Touhou_Misfortune_Recovery_Gun_Ammo>‖color:68,194,0,255‖Misfortune Vessel‖end‖</entityname.Touhou_Misfortune_Recovery_Gun_Ammo>
+    <entitydescription.Touhou_Misfortune_Recovery_Gun_Ammo>A special vessel used to seal and transfer calamity. Its capacity is limited, yet misfortune never seems to decrease simply because space is finite. Serves as ammunition for ‖color:gui.yellow‖Misfortune Recovery Gun‖end‖.</entitydescription.Touhou_Misfortune_Recovery_Gun_Ammo>
+
+    <entityname.Touhou_Calamity_Vortex>‖color:68,194,0,255‖Calamity Vortex‖end‖</entityname.Touhou_Calamity_Vortex>
+    <entitydescription.Touhou_Calamity_Vortex>A melee weapon that condenses misfortune into a vortex. It does not chase enemies — it need only let them draw near, and leaves the rest to fate.</entitydescription.Touhou_Calamity_Vortex>
+
+    <entityname.Touhou_Eternal_House_Hemostatic_Kit>Eternal House Hemostatic Kit</entityname.Touhou_Eternal_House_Hemostatic_Kit>
+    <entitydescription.Touhou_Eternal_House_Hemostatic_Kit>Pre-packaged integrated medication container for storing hemostatic items for easy access. Must be held in hand to activate the "Recharge" option to restore durability. Can hold: Bandages, Malleable Artificial Skin, Antibiotic Gel, and Eternal House External Medicine Kit.</entitydescription.Touhou_Eternal_House_Hemostatic_Kit>
+
+    <entityname.Touhou_Eternal_House_Painkiller_Kit>Eternal House Painkiller Kit</entityname.Touhou_Eternal_House_Painkiller_Kit>
+    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>Pre-packaged integrated medication container for storing hemostatic items for easy access. Must be held in hand to activate the "Recharge" option to restore durability. Can hold: Explosive Pomegranate Extract, Medicinal Opium, Morphine, Fentanyl, and Eternal House Oral Pills.</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
+
+
+
+
+
+
+
+
 
 
 
@@ -2797,11 +2823,11 @@
     <Character.Touhou_Empathy_Lunatic_Moon_Lv2>Lunatic Moon Lv2</Character.Touhou_Empathy_Lunatic_Moon_Lv2>
     <entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>Skill level increased by 5%\nThe moon really is super cool!</entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>
 
-    <Character.Touhou_Empathy_Torch_Of_Burning_Life>Torch of Burning Life</Character.Touhou_Empathy_Torch_Of_Burning_Life>
-    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>Continuously gains burn and psychosis, attack speed increased by 10%\nLooking at her torch would never make you feel calm or at ease.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
+    <Character.Touhou_Empathy_Torch_Of_Burning_Life>Burning Life Torch</Character.Touhou_Empathy_Torch_Of_Burning_Life>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>Continuously gains Burn, Dream Lost, and Psychosis, and increases attack speed by 10%\nLooking at her torch is certainly not a calming or soothing experience.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
 
-    <Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Torch of Burning Life Lv2</Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
-    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Continuously gains psychosis, attack speed increased by 10%\nLooking at her torch would never make you feel calm or at ease.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
+    <Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Burning Life Torch Lv2</Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Continuously gains Dream Lost and Psychosis, and increases attack speed by 10%\nLooking at her torch is certainly not a calming or soothing experience.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
 
     <Character.Touhou_Empathy_Ice_Fairy>Ice Fairy</Character.Touhou_Empathy_Ice_Fairy>
     <entitydescription.Touhou_Empathy_Ice_Fairy>Ranged attack spread increased by 30%, ranged attack damage increased by 9%\nFor an ice fairy, this is proof of ultimate strength</entitydescription.Touhou_Empathy_Ice_Fairy>
@@ -2999,4 +3025,7 @@
 
     <talentname.Hyouibana_Koakuma>Possessed Koakuma</talentname.Hyouibana_Koakuma>
     <talentdescription.Hyouibana_Koakuma>Slowly recovers physical damage and bleeding while Health is above 50%.</talentdescription.Hyouibana_Koakuma>
+
+    <talentname.Hyouibana_Kagiyama_Hina>Possessed by Kagiyama Hina</talentname.Hyouibana_Kagiyama_Hina>
+    <talentdescription.Hyouibana_Kagiyama_Hina>Increases debuff resistance by 10 and danmaku damage by 5%.</talentdescription.Hyouibana_Kagiyama_Hina>
 </infotexts>

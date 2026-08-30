@@ -2481,7 +2481,24 @@
     <entitydescription.Touhou_Forbidden_Book_Indexer_Ammo>Страницы могут пожелтеть от времени, но знания сохраняются навсегда. Боеприпасы для ‖color:gui.yellow‖Индексатора запрещенных книг‖end‖.</entitydescription.Touhou_Forbidden_Book_Indexer_Ammo>
 
 
+    <entityname.Touhou_Calamity_Torrent>‖color:68,194,0,255‖Поток Бедствий‖end‖</entityname.Touhou_Calamity_Torrent>
+    <entitydescription.Touhou_Calamity_Torrent>Оружие, извергающее накопленное бедствие в виде потока. Оно не создаёт несчастье — лишь направляет ту беду, что была предназначена случиться, помогая ей найти пристанище раньше времени. При атаке врагов с менее чем половиной здоровья снижает положительные эффекты цели и накладывает Кошмар Вечного Сна. Использует ‖color:gui.yellow‖Турбину Несчастья‖end‖.</entitydescription.Touhou_Calamity_Torrent>
+    <entityname.Touhou_Calamity_Torrent_Ammo>‖color:68,194,0,255‖Турбина Несчастья‖end‖</entityname.Touhou_Calamity_Torrent_Ammo>
+    <entitydescription.Touhou_Calamity_Torrent_Ammo>Особый боеприпас, сжимающий несчастье и удерживающий его в состоянии высокоскоростного вращения. Чем дольше оно вращается, тем сильнее накопленное в нём бедствие выходит из-под контроля. Является боеприпасом для ‖color:gui.yellow‖Потока Бедствий‖end‖.</entitydescription.Touhou_Calamity_Torrent_Ammo>
 
+    <entityname.Touhou_Misfortune_Recovery_Gun>‖color:68,194,0,255‖Пушка Сбора Несчастий‖end‖</entityname.Touhou_Misfortune_Recovery_Gun>
+    <entitydescription.Touhou_Misfortune_Recovery_Gun>Особое оружие для сбора и переноса несчастий. Оно не способно уничтожить беду — лишь временно присмотреть за ней от имени мира. Использует ‖color:gui.yellow‖Сосуд Несчастья‖end‖.</entitydescription.Touhou_Misfortune_Recovery_Gun>
+    <entityname.Touhou_Misfortune_Recovery_Gun_Ammo>‖color:68,194,0,255‖Сосуд Несчастья‖end‖</entityname.Touhou_Misfortune_Recovery_Gun_Ammo>
+    <entitydescription.Touhou_Misfortune_Recovery_Gun_Ammo>Особый сосуд для запечатывания и переноса бедствий. Ёмкость ограничена, но несчастье, кажется, никогда не убывает от того, что места мало. Является боеприпасом для ‖color:gui.yellow‖Пушки Сбора Несчастий‖end‖.</entitydescription.Touhou_Misfortune_Recovery_Gun_Ammo>
+
+    <entityname.Touhou_Calamity_Vortex>‖color:68,194,0,255‖Вихрь Бедствий‖end‖</entityname.Touhou_Calamity_Vortex>
+    <entitydescription.Touhou_Calamity_Vortex>Ближнебойное оружие, спрессовывающее несчастье в вихрь. Оно не гонится за врагами — нужно лишь подпустить их поближе, а остальное предоставить судьбе.</entitydescription.Touhou_Calamity_Vortex>
+
+    <entityname.Touhou_Eternal_House_Hemostatic_Kit>Гемостатический набор Вечного Павильона</entityname.Touhou_Eternal_House_Hemostatic_Kit>
+    <entitydescription.Touhou_Eternal_House_Hemostatic_Kit>Упакованный интегрированный контейнер для лекарств, позволяющий хранить гемостатические препараты для удобного доступа. Требуется держать в руках и активировать опцию «Зарядка» для восстановления прочности. Может содержать: бинты, пластичный искусственный кожный покров, антибиотический гель и наружный медицинский набор Вечного Павильона.</entitydescription.Touhou_Eternal_House_Hemostatic_Kit>
+
+    <entityname.Touhou_Eternal_House_Painkiller_Kit>Обезболивающий набор Вечного Павильона</entityname.Touhou_Eternal_House_Painkiller_Kit>
+    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>Упакованный интегрированный контейнер для лекарств, позволяющий хранить гемостатические препараты для удобного доступа. Требуется держать в руках и активировать опцию «Зарядка» для восстановления прочности. Может содержать: экстракт взрывного граната, лечебный опий, морфин, фентанил и таблетки для приёма внутрь Вечного Павильона.</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
 
 
 
@@ -2761,12 +2778,11 @@
     <Character.Touhou_Empathy_Lunatic_Moon_Lv2>Безумная Луна Lv2</Character.Touhou_Empathy_Lunatic_Moon_Lv2>
     <entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>Уровень навыка повышен на 5%\nЛуна действительно очень крутая!</entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>
 
-    <Character.Touhou_Empathy_Torch_Of_Burning_Life>Факел пылающей жизни</Character.Touhou_Empathy_Torch_Of_Burning_Life>
-    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>Постоянно получает ожог и психоз, скорость атаки увеличивается на 10%\nГлядя на ее факел, вы никогда не почувствуете себя спокойно или непринужденно.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
+    <Character.Touhou_Empathy_Torch_Of_Burning_Life>Факел Горящей Жизни</Character.Touhou_Empathy_Torch_Of_Burning_Life>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>Постоянно получает ожоги, исчезновение снов и психоз, скорость атаки увеличивается на 10%\nГлядя на её факел, определённо не почувствуешь покоя и комфорта.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
 
-    <Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Факел пылающей жизни 2 ур.</Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
-    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Постоянно испытывает психоз, скорость атаки увеличивается на 10%\nГлядя на ее факел, вы никогда не почувствуете себя спокойно или непринужденно.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
-
+    <Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Факел Горящей Жизни Ур.2</Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>Постоянно получает исчезновение снов и психоз, скорость атаки увеличивается на 10%\nГлядя на её факел, определённо не почувствуешь покоя и комфорта.</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
     <Character.Touhou_Empathy_Ice_Fairy>Ледяная Фея</Character.Touhou_Empathy_Ice_Fairy>
     <entitydescription.Touhou_Empathy_Ice_Fairy>Разброс дальних атак увеличен на 30%, урон от дальних атак увеличен на 9%\nДля ледяной феи это доказательство абсолютной силы</entitydescription.Touhou_Empathy_Ice_Fairy>
 
@@ -2963,4 +2979,7 @@
 
     <talentname.Hyouibana_Koakuma>Одержимый Коакума</talentname.Hyouibana_Koakuma>
     <talentdescription.Hyouibana_Koakuma>Медленно восстанавливает физический урон и кровотечение, пока здоровье выше 50%.</talentdescription.Hyouibana_Koakuma>
+
+    <talentname.Hyouibana_Kagiyama_Hina>Одержимость Кагиямой Хиной</talentname.Hyouibana_Kagiyama_Hina>
+    <talentdescription.Hyouibana_Kagiyama_Hina>Увеличивает сопротивление отрицательным эффектам на 10 и урон от данмаку на 5%.</talentdescription.Hyouibana_Kagiyama_Hina>
 </infotexts>

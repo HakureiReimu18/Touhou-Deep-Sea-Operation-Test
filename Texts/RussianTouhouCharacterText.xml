@@ -369,19 +369,24 @@
 
     <!--Nue-->
     <entityname.Nue_gear>‖color:90,80,100,255‖Наряд Нуэ‖end‖</entityname.Nue_gear>
-    <entitydescription.Nue_gear>‖color:90,80,100,255‖Всякий раз, когда она видит, что кто-то работает с энтузиазмом, она не может не мешать ему тайно — это просто ее натура.
-        Когда-то она жила под землей и вернулась наверх после инцидента с гейзером. Теперь она ученица храма Мёрена, следующая за Бьякурен Хидзири, и остаётся немного неуместной среди других ёкаев.‖end‖\n(Встроенный слот для сканера)</entitydescription.Nue_gear>
+    <entitydescription.Nue_gear>‖color:90,80,100,255‖Когда бы она ни видела, что кто-то увлечённо чем-то занимается, ей невольно хочется тайно помешать им — такова её натура.
+        Она когда-то беззаботно жила под землёй, но после инцидента с гейзером вернулась на поверхность. Теперь она вступила в храм Мёурэн и обучается у Бякурэн Хидзири, хотя и не вполне уживается с другими ёкаями.‖end‖\n(Встроенный слот сканера)</entitydescription.Nue_gear>
     <entityname.Nue_Plus>‖color:90,80,100,255‖Наряд Нуэ+‖end‖</entityname.Nue_Plus>
-    <entitydescription.Nue_Plus>‖color:90,80,100,255‖Всякий раз, когда она видит, что кто-то работает с энтузиазмом, она не может не мешать ему тайно — это просто ее натура.
-        Когда-то она жила под землей и вернулась наверх после инцидента с гейзером. Теперь она ученица храма Мёрена, следующая за Бьякурен Хидзири, и остаётся немного неуместной среди других ёкаев.‖end‖\n(Встроенный слот для сканера)</entitydescription.Nue_Plus>
-    <talentname.NueTalent>Тайна неведомой тьмы</talentname.NueTalent>
+    <entitydescription.Nue_Plus>‖color:90,80,100,255‖Когда бы она ни видела, что кто-то увлечённо чем-то занимается, ей невольно хочется тайно помешать им — такова её натура.
+        Она когда-то беззаботно жила под землёй, но после инцидента с гейзером вернулась на поверхность. Теперь она вступила в храм Мёурэн и обучается у Бякурэн Хидзири, хотя и не вполне уживается с другими ёкаями.‖end‖\n(Встроенный слот сканера)</entitydescription.Nue_Plus>
+    <entityname.Nue_Eclipse_gear>‖color:90,80,100,255‖Наряд Нуэ (стиль Eclipse)‖end‖</entityname.Nue_Eclipse_gear>
+    <entitydescription.Nue_Eclipse_gear>‖color:90,80,100,255‖Когда бы она ни видела, что кто-то увлечённо чем-то занимается, ей невольно хочется тайно помешать им — такова её натура.
+        Она когда-то беззаботно жила под землёй, но после инцидента с гейзером вернулась на поверхность. Теперь она вступила в храм Мёурэн и обучается у Бякурэн Хидзири, хотя и не вполне уживается с другими ёкаями.‖end‖\n(Встроенный слот сканера)</entitydescription.Nue_Eclipse_gear>
+    <entityname.Nue_Eclipse_Plus>‖color:90,80,100,255‖Наряд Нуэ+ (стиль Eclipse)‖end‖</entityname.Nue_Eclipse_Plus>
+    <entitydescription.Nue_Eclipse_Plus>‖color:90,80,100,255‖Когда бы она ни видела, что кто-то увлечённо чем-то занимается, ей невольно хочется тайно помешать им — такова её натура.
+        Она когда-то беззаботно жила под землёй, но после инцидента с гейзером вернулась на поверхность. Теперь она вступила в храм Мёурэн и обучается у Бякурэн Хидзири, хотя и не вполне уживается с другими ёкаями.‖end‖\n(Встроенный слот сканера)</entitydescription.Nue_Eclipse_Plus>    <talentname.NueTalent>Тайна неведомой тьмы</talentname.NueTalent>
     <talentdescription.NueTalent>Нося Наряд Нуэ+, вы получаете высокую устойчивость к ‖color:gui.yellow‖Debuffs‖end‖.
         \n‖color:gui.orange‖Продолжительность усиления‖end‖ ‖color:gui.red‖−50%‖end‖ и ‖color:gui.orange‖уровни навыков‖end‖ ‖color:gui.red‖−20%‖end‖.
         \nКогда здоровье падает ниже половины, увеличьте на ‖color:gui.green‖10%‖end‖ сопротивление физическим эффектам, эффектам горения и дебаффам, а также скорость передвижения.
         \nКаждый раз, когда член экипажа убивает существо ‖color:gui.orange‖1‖end‖, вы получаете ‖color:gui.green‖1‖end‖ счетчик; когда вы убиваете существо ‖color:gui.orange‖1‖end‖, вы получаете ‖color:gui.green‖2‖end‖ единиц; выполнение миссии дает ‖color:gui.green‖6‖end‖ зачет. Графы дают баффы:
-        154 значения: +‖color:gui.green‖50%‖end‖ скорость набора навыков, +‖color:gui.green‖10%‖end‖ скорость передвижения.
+        154 значения: +‖color:gui.green‖20%‖end‖ скорость набора навыков, +‖color:gui.green‖10%‖end‖ скорость передвижения.
         312 засчитывается: +‖color:gui.green‖15%‖end‖ опыта, +‖color:gui.green‖10%‖end‖ максимального здоровья.
-        468 единиц: +‖color:gui.green‖20%‖end‖ продолжительность баффа, +‖color:gui.green‖10%‖end‖ скорость атаки.
+        468 единиц: +‖color:gui.green‖10%‖end‖ продолжительность баффа, +‖color:gui.green‖10%‖end‖ скорость атаки.
         624 засчитывается: +‖color:gui.green‖20%‖end‖скорости плавания и увеличивает урон, наносимый существам, пораженным Бесконечным Кошмаром, на ‖color:gui.green‖10%‖end‖.</talentdescription.NueTalent>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl>Неопознанная фантастическая летающая девушка</afflictionname.Unconfirmed_Fantasy_Flying_Girl>
     <afflictiondescription.Unconfirmed_Fantasy_Flying_Girl>Ёкай была побеждена много раз, и каждая легенда изображает ее по-разному. Но это всего лишь легенды:
@@ -1321,8 +1326,27 @@
 
 
 
+    <!--Kagiyama Hina-->
+    <entityname.Kagiyama_Hina_gear>‖color:255,15,99,255‖Наряд Кагиямы Хины‖end‖</entityname.Kagiyama_Hina_gear>
+    <entitydescription.Kagiyama_Hina_gear>Она богиня несчастья, разновидность бога болезней; на самом деле она не обычное божество, а ёкай.</entitydescription.Kagiyama_Hina_gear>
+    <entityname.Kagiyama_Hina_Plus>‖color:255,15,99,255‖Наряд Кагиямы Хины+‖end‖</entityname.Kagiyama_Hina_Plus>
+    <entitydescription.Kagiyama_Hina_Plus>Она богиня несчастья, разновидность бога болезней; на самом деле она не обычное божество, а ёкай.</entitydescription.Kagiyama_Hina_Plus>
+    <talentname.Kagiyama_HinaTalent>Тайная богиня Нагаси-бина</talentname.Kagiyama_HinaTalent>
+    <talentdescription.Kagiyama_HinaTalent>Пока надет Наряд Кагиямы Хины+, вы непрерывно получаете эффект ‖color:gui.yellow‖«Хватка Несчастья»‖end‖, снижающий ‖color:gui.orange‖скорость передвижения, скорость атаки и сопротивление оглушению‖end‖ вплоть до ‖color:gui.red‖20%‖end‖
+        Длительность получаемых ‖color:gui.orange‖отрицательных эффектов‖end‖ увеличивается на ‖color:gui.red‖30%‖end‖
 
-
+        Урон от данмаку увеличен на ‖color:gui.green‖10%‖end‖
+        Когда ‖color:gui.yellow‖Хватка Несчастья‖end‖ превышает ‖color:gui.green‖50%‖end‖, снижает ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖получаемого урона‖end‖ и увеличивает ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖максимального здоровья‖end‖
+        Когда ‖color:gui.yellow‖Хватка Несчастья‖end‖ полностью накоплена, её можно активно высвободить; после этого ваш эффект ‖color:gui.yellow‖Хватка Несчастья‖end‖ снимается, а все ближайшие враги получают ‖color:gui.orange‖отрицательные эффекты‖end‖, равные максимальному значению ‖color:gui.yellow‖Хватки Несчастья‖end‖, и ‖color:gui.yellow‖Кошмар Вечного Сна‖end‖
+        Когда здоровье неполное, атаки эксклюзивного оружия также накладывают на врагов ‖color:gui.yellow‖Хватку Несчастья‖end‖
+        При получении ударов от врагов атакующий также получает ‖color:gui.yellow‖Хватку Несчастья‖end‖; этот эффект имеет перезарядку ‖color:gui.green‖2‖end‖ секунды
+    </talentdescription.Kagiyama_HinaTalent>
+    <afflictionname.Touhou_Kagiyama_Hina_Character_Effect>Ключ к Циркуляции Мириад Несчастий</afflictionname.Touhou_Kagiyama_Hina_Character_Effect>
+    <afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>У Хины длинные зелёные волосы до груди, на голове перевязаны красной лентой; две пряди волос на груди также собраны в одну красной лентой, на которой белые оборки.</afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>
+    <afflictionname.Kagiyama_Hina_Weapons>Нагаси-бина, Обречённая на Забвение</afflictionname.Kagiyama_Hina_Weapons>
+    <afflictiondescription.Kagiyama_Hina_Weapons>Чтобы несчастье не возвращалось к людям, Хина собирает и охраняет его, подбирая плывущих вниз по течению кукол нагаси-бина, и в конечном счёте передаёт их богам.</afflictiondescription.Kagiyama_Hina_Weapons>
+    <afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>Хватка Несчастья</afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>
+    <afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>Несчастье сгущается; движение и атаки замедляются.</afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>
 
 
 
@@ -1392,6 +1416,7 @@
     <Character.MRE_Material_Yuyuko>Память Ююко</Character.MRE_Material_Yuyuko>
     <Character.MRE_Material_Shinki>Память Шинки</Character.MRE_Material_Shinki>
     <Character.MRE_Material_Koakuma>Память Коакумы</Character.MRE_Material_Koakuma>
+    <Character.MRE_Material_Kagiyama_Hina>Воспоминание Кагиямы Хины</Character.MRE_Material_Kagiyama_Hina>
     <talentname.MRE_Reimu>Эффект кровотечения – Хакурей Рейму</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Действует только с Нарядом Рейму+. Предоставляет эксклюзивный эффект оружия. При каждом попадании 15% шанс избежать этого урона.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Эффект кровотечения – Ремилия Скарлет</talentname.MRE_Remilia>
@@ -1474,4 +1499,6 @@
     <talentdescription.MRE_Shinki>Эффективен только при ношении Shinki Outfit+. Атаки даммаку из эксклюзивного оружия Шинки накладывают угнетение Макай на врагов с полным здоровьем. Угнетение Макая: снижает сопротивление физическому урону на 25%, уровень навыков на 25% и скорость передвижения на 20% на 10 секунд.</talentdescription.MRE_Shinki>
     <talentname.MRE_Koakuma>Эффект кровотечения - Коакума</talentname.MRE_Koakuma>
     <talentdescription.MRE_Koakuma>Эффективен только при ношении Koakuma Outfit+. Заградительные атаки наносят врагам дополнительные ранения. Урон, наносимый союзникам заградительными атаками, уменьшен на 80%.</talentdescription.MRE_Koakuma>
+    <talentname.MRE_Kagiyama_Hina>Эффект кровотечения — Кагияма Хина</talentname.MRE_Kagiyama_Hina>
+    <talentdescription.MRE_Kagiyama_Hina>Действует только в Наряде Кагиямы Хины+. Увеличивает сопротивление отрицательным эффектам на 20% и непрерывно восстанавливает эффекты типа дебаффа. Когда Хватка Несчастья ниже 50%, увеличивает сопротивление физическому урону на 10%.</talentdescription.MRE_Kagiyama_Hina>
 </infotexts>

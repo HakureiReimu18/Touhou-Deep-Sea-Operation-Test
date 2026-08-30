@@ -1745,7 +1745,7 @@
                 <ParticleEmitter particle="nasonovfx" particleamount="1" emitinterval="1" anglemin="0" anglemax="360" velocitymin="10"
                                  velocitymax="50" scalemin="0.06" scalemax="0.1" drawontop="true" colormultiplier="55,255,90,180"/>
             </StatusEffect>
-            <StatusEffect target="Character" disabledeltatime="true">
+            <StatusEffect target="Character" disabledeltatime="true" Interval="0.1">
                 <Conditional TeamID="Team1"/>
                 <Conditional TeamID="FriendlyNPC"/>
                 <ReduceAffliction identifier="Touhou_Strange_Phone_Effect" amount="10"/>

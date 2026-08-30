@@ -5673,6 +5673,7 @@
         <RangedWeapon barrelpos="135,60" spread="0" unskilledspread="10" combatPriority="80" Reload="0.7" holdtrigger="true"
                       penetration="0.0" weapondamagemodifier="1.0" maxchargetime="0" launchImpulse="6" drawhudwhenequipped="true"
                       crosshairscale="0.2">
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="1,1,1,1"/>
             <RequiredItems items="Touhou_Corrupted_Aphelion_Ammo" type="Contained" msg="ItemMsgAmmoRequired"/>
             <StatusEffect type="OnUse" target="Contained">
                 <Use/>
@@ -5683,6 +5684,7 @@
         <RangedWeapon barrelpos="135,-60" spread="0" unskilledspread="10" combatPriority="80" Reload="0.7" holdtrigger="true"
                       penetration="0.0" weapondamagemodifier="1.0" maxchargetime="0" launchImpulse="6" drawhudwhenequipped="true"
                       crosshairscale="0.2">
+            <CrosshairPointer texture="Content/Items/Weapons/Crosshairs.png" sourcerect="1,1,1,1"/>
             <RequiredItems items="Touhou_Corrupted_Aphelion_Ammo" type="Contained" msg="ItemMsgAmmoRequired"/>
             <StatusEffect type="OnUse" target="Contained">
                 <Use/>
@@ -7382,8 +7384,8 @@
                            camerashake="200" camerashakerange="1000" flashrange="800" flashduration="1.0"
                            screencolor="255,200,180,50" screencolorrange="800" screencolorduration="1.0">
                     <Affliction identifier="burn" strength="25"/>
-                    <Affliction identifier="lacerations" strength="50"/>
-                    <Affliction identifier="explosiondamage" strength="50"/>
+                    <Affliction identifier="lacerations" strength="40"/>
+                    <Affliction identifier="explosiondamage" strength="40"/>
                     <Affliction identifier="bleeding" strength="20"/>
                     <Affliction identifier="Sleepless_Nightmare" strength="10"/>
                 </Explosion>
@@ -7397,7 +7399,7 @@
                 <Explosion range="200.0" ballastfloradamage="80" structuredamage="10" levelwalldamage="120" itemdamage="20" force="5.0"
                            severlimbsprobability="0.4" penetration="0.25">
                     <Affliction identifier="burn" strength="25"/>
-                    <Affliction identifier="explosiondamage" strength="50"/>
+                    <Affliction identifier="explosiondamage" strength="40"/>
                     <Affliction identifier="bleeding" strength="20"/>
                     <Affliction identifier="Sleepless_Nightmare" strength="10"/>
                 </Explosion>
@@ -7435,7 +7437,7 @@
             <StatusEffect type="OnImpact" target="This">
                 <Explosion range="60.0" structuredamage="20" force="5.0" itemdamage="50" severlimbsprobability="0.5" decal="explosion"
                            decalsize="0.5">
-                    <Affliction identifier="explosiondamage" strength="30"/>
+                    <Affliction identifier="explosiondamage" strength="25"/>
                     <Affliction identifier="bleeding" strength="30"/>
                     <Affliction identifier="bleeding" strength="15" probability="0.1" dividebylimbcount="false"/>
                 </Explosion>
@@ -7695,7 +7697,7 @@
 
     <!--弑星者-->
     <Item name="弑星者" identifier="Touhou_Starkiller" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Touhou"
-          tags="mediumitem,weapon,gun,bulkyweapon,ProvocativeToHumanAI,Touhou_Weapon_Level05,Touhou_Cam_Offset_Sniper,Touhou_Starkiller" Scale="0.32"
+          tags="mediumitem,weapon,gun,bulkyweapon,ProvocativeToHumanAI,Touhou_Weapon_Level05,Touhou_Cam_Offset_Sniper,Touhou_Starkiller,No_Crosshair" Scale="0.32"
           impactsoundtag="impact_metal_light">
         <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
         <Price baseprice="5000" sold="false">
@@ -10431,7 +10433,7 @@
 
     <!--法师杀手-->
     <Item name="法师杀手" identifier="Touhou_Mage_Slayer" category="Weapon" cargocontaineridentifier="metalcrate" subcategory="Touhou"
-          tags="mediumitem,weapon,gun,bulkyweapon,ProvocativeToHumanAI,Touhou_Weapon_Level04,Touhou_Cam_Offset_High,Touhou_Starkiller" Scale="0.32"
+          tags="mediumitem,weapon,gun,bulkyweapon,ProvocativeToHumanAI,Touhou_Weapon_Level04,Touhou_Cam_Offset_High,Touhou_Starkiller,No_Crosshair" Scale="0.32"
           impactsoundtag="impact_metal_light">
         <PreferredContainer primary="secarmcab" secondary="armcab,weaponholder"/>
         <Price baseprice="5000" sold="false">

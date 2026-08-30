@@ -248,7 +248,7 @@
     <talentname.Yokai_Select_Tianren_Xianren>Celestial/Immortal</talentname.Yokai_Select_Tianren_Xianren>
     <talentdescription.Yokai_Select_Tianren_Xianren>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Tenshi Hinanawi‖end‖.</talentdescription.Yokai_Select_Tianren_Xianren>
     <talentname.Yokai_Select_ShenMing>God/Artifact Spirit</talentname.Yokai_Select_ShenMing>
-    <talentdescription.Yokai_Select_ShenMing>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Hata no Kokoro, Shinki‖end‖.</talentdescription.Yokai_Select_ShenMing>
+    <talentdescription.Yokai_Select_ShenMing>After selecting this branch, no others can be unlocked. Character: ‖color:gui.orange‖Hata no Kokoro, Shinki, Kagiyama Hina‖end‖.</talentdescription.Yokai_Select_ShenMing>
     <talentname.Touhou_Yokai_Talents_Locked>Talent Lockdown</talentname.Touhou_Yokai_Talents_Locked>
     <talentdescription.Touhou_Yokai_Talents_Locked>Increase ‖color:gui.orange‖max HP‖end‖ by ‖color:gui.green‖5%‖end‖. Final talent of the branch: after unlocking this talent, ‖color:gui.red‖other branches cannot be unlocked‖end‖. If Source of Mutation count is not full, immediately gain ‖color:gui.green‖100‖end‖ count.
     </talentdescription.Touhou_Yokai_Talents_Locked>
@@ -446,7 +446,9 @@
         ‖color:gui.green‖11‖end‖: Increase ‖color:gui.yellow‖laceration‖end‖ damage dealt by ‖color:gui.green‖10%‖end‖, increase ‖color:gui.green‖10%‖end‖ ‖color:gui.yellow‖laceration resistance‖end‖
         ‖color:gui.green‖33‖end‖: Increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖skill level‖end‖
         ‖color:gui.green‖55‖end‖: Reduce ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖ranged attack spread‖end‖
-        While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: Gain ‖color:gui.green‖10‖end‖ points of ‖color:gui.orange‖additional health‖end‖. After completing any mission during a campaign, there is a chance to additionally obtain one ‖color:gui.orange‖Makai Essence‖end‖</talentdescription.Touhou_ShenMing04>
+        While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: Gain ‖color:gui.green‖10‖end‖ points of ‖color:gui.orange‖additional health‖end‖. After completing any mission during a campaign, there is a chance to additionally obtain one ‖color:gui.orange‖Makai Essence‖end‖
+        While wearing the ‖color:gui.red‖Kagiyama Hina Outfit+‖end‖: increases ‖color:gui.green‖30%‖end‖ ‖color:gui.orange‖buff duration and swimming speed‖end‖, and grants ‖color:gui.green‖10‖end‖ bonus health.
+        While wearing the ‖color:gui.red‖Kagiyama Hina Outfit+‖end‖: damage dealt with ‖color:gui.orange‖exclusive weapons‖end‖ is increased by ‖color:gui.green‖10%‖end‖, and healing received is increased by ‖color:gui.green‖10%‖end‖.</talentdescription.Touhou_ShenMing04>
     <talentname.Touhou_ShenMing05>Formless Faith</talentname.Touhou_ShenMing05>
     <talentdescription.Touhou_ShenMing05>After completing a campaign mission without anyone dying, money obtained is increased by ‖color:gui.green‖10%‖end‖
         While wearing ‖color:gui.red‖Hata no Kokoro Outfit+‖end‖: At the start of a campaign, gain a ‖color:gui.green‖10‖end‖ minute enhancement: increase ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖maximum health and burn resistance‖end‖
@@ -458,9 +460,11 @@
         ‖color:gui.orange‖Anger‖end‖: Attacks inflict continuous ‖color:gui.yellow‖laceration‖end‖ on targets, magic weapon attacks additionally inflict ‖color:gui.yellow‖slow‖end‖
         ‖color:gui.orange‖Sorrow‖end‖: Magic melee weapon attacks against creatures temporarily reduce their attack damage by ‖color:gui.green‖25%‖end‖, ranged danmaku effects are halved
         ‖color:gui.orange‖Fun‖end‖: Based on the average of all skill levels, increase corresponding ‖color:gui.green‖5%‖end‖ ‖color:gui.orange‖attack damage and movement speed‖end‖, up to ‖color:gui.green‖15%‖end‖
-        While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: When own ‖color:gui.orange‖health‖end‖ is above ‖color:gui.green‖100%‖end‖, become immune to ‖color:gui.yellow‖poison, paralysis, mental illness‖end‖ and similar debuffs</talentdescription.Touhou_ShenMing06>
+        While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: When own ‖color:gui.orange‖health‖end‖ is above ‖color:gui.green‖100%‖end‖, become immune to ‖color:gui.yellow‖poison, paralysis, mental illness‖end‖ and similar debuffs
+        While wearing the ‖color:gui.red‖Kagiyama Hina Outfit+‖end‖: damage taken is reduced by ‖color:gui.green‖10%‖end‖. While under the effect of ‖color:gui.yellow‖Misfortune's Grasp‖end‖, increases ‖color:gui.green‖25%‖end‖ ‖color:gui.yellow‖stun resistance and burn resistance‖end‖.</talentdescription.Touhou_ShenMing06>
     <talentname.Touhou_ShenMing07>Primordial Power</talentname.Touhou_ShenMing07>
     <talentdescription.Touhou_ShenMing07>
         While wearing ‖color:gui.red‖Hata no Kokoro Outfit+‖end‖: When standing still, being attacked has a ‖color:gui.green‖30%‖end‖ chance to reduce damage taken by ‖color:gui.green‖30%‖end‖. While walking, reduce ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖ranged attack spread‖end‖. While running, increase ‖color:gui.green‖50%‖end‖ ‖color:gui.orange‖melee attack damage‖end‖
-        While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: Deal an additional ‖color:gui.green‖20%‖end‖ damage to creatures that are not at full health. As long as own health is not full, reduce damage taken by ‖color:gui.green‖20%‖end‖</talentdescription.Touhou_ShenMing07>
+        While wearing ‖color:gui.red‖Shinki Outfit+‖end‖: Deal an additional ‖color:gui.green‖20%‖end‖ damage to creatures that are not at full health. As long as own health is not full, reduce damage taken by ‖color:gui.green‖20%‖end‖
+        While wearing the ‖color:gui.red‖Kagiyama Hina Outfit+‖end‖: immune to ‖color:gui.yellow‖oxygen deprivation‖end‖ while moving. For every ‖color:gui.green‖1‖end‖ point of ‖color:gui.orange‖magical ability‖end‖, increases ‖color:gui.green‖0.1%‖end‖ ‖color:gui.orange‖attack speed‖end‖, up to a maximum of ‖color:gui.green‖15%‖end‖.</talentdescription.Touhou_ShenMing07>
 </infotexts>

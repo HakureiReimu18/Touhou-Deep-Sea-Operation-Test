@@ -91,7 +91,7 @@
         </AbilityGroupEffect>
     </Talent>
 
-    <!--神明/付丧神天赋分支 选择此分支后，不可再解锁其它分支。对应角色：秦心，神绮-->
+    <!--神明/付丧神天赋分支 选择此分支后，不可再解锁其它分支。对应角色：秦心，神绮，键山雏-->
     <Talent identifier="Yokai_Select_ShenMing">
         <Icon texture="%ModDir%/Images/Talents/Talents_Magician_Primary.png" sheetindex="0,0" sheetelementsize="128,128"/>
         <Description tag="talentdescription.Yokai_Select_ShenMing"/>
@@ -2818,15 +2818,15 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
             </Abilities>
         </AbilityGroupEffect>
-        <AbilityGroupEffect abilityeffecttype="None">
+        <AbilityGroupInterval interval="19.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu"/>
                 <AbilityConditionHasLevel minlevel="15"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveFlag flagtype="MoveNormallyWhileDragging"/>
+                <CharacterAbilityModifyFlag flagtype="MoveNormallyWhileDragging"/>
             </Abilities>
-        </AbilityGroupEffect>
+        </AbilityGroupInterval>
         <AbilityGroupInterval interval="9.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Naivete_Koma_Inu"/>
@@ -3628,7 +3628,8 @@
     11：造成的撕裂伤增加10%，增加10%撕裂伤抗性
     33；增加10%技能水平
     55：减少15%远程攻击散布
-    穿着神绮装束+时：获得10点额外生命值。巡回完成任意任务后，有概率额外获得一个魔素-->
+    穿着神绮装束+时：获得10点额外生命值。巡回完成任意任务后，有概率额外获得一个魔素
+    穿着键山雏装束+时：增加30%增益效果持续时间和游泳速度，获得10点额外生命值-->
     <Talent identifier="Touhou_ShenMing04">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_ShenMing04"/>
@@ -3715,11 +3716,36 @@
             </Abilities>
         </AbilityGroupEffect>
 
+        <!--键山雏-->
+        <AbilityGroupInterval interval="4.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="BuffDurationMultiplier" value="0.3"/>
+                <CharacterAbilityModifyStat stattype="SwimmingSpeed" value="0.3"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval interval="9.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityApplyStatusEffects>
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
+                            <Affliction identifier="Touhou_ShenMing04_Effect_Kagiyama_Hina" amount="1"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--无形信仰 完成巡回后若无人死亡，则获得的金钱增加10%
         穿着秦心装束+时：巡回开始时，获得10分钟强化：增加10%最大生命值、烧伤抗性和所有攻击伤害
-        穿着神绮装束+时：每有1点魔法能力，增加0.1%攻击伤害，最多20%。每有1级，增加0.5%最大生命值，最多10%-->
+        穿着神绮装束+时：每有1点魔法能力，增加0.1%攻击伤害，最多20%。每有1级，增加0.5%最大生命值，最多10%
+        穿着键山雏装束+时：用专属武器造成的伤害提高10%，受到治疗的效果提高10%-->
     <Talent identifier="Touhou_ShenMing05">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_ShenMing05"/>
@@ -3784,6 +3810,25 @@
                 <CharacterAbilityModifyStatToLevel stattype="MaximumHealthMultiplier" statperlevel="0.005" maxlevel="20"/>
             </Abilities>
         </AbilityGroupInterval>
+        <!--键山雏-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Kagiyama_Hina_Weapons"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged,Melee"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="MedicalItemEffectivenessMultiplier" value="0.1"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--神话传说 一个巡回4次，受到攻击后的一分钟内，增加15%烧伤抗性和最大生命值
@@ -3792,7 +3837,8 @@
         怒：攻击目标将附加持续撕裂伤害，魔法武器攻击附加缓慢
         哀：魔法近战武器攻击生物将使其攻击伤害暂时降低25%，远程弹幕的效果则减半
         乐：根据所有技能水平平均值，增加对应5%的攻击伤害和移动速度。最多15%
-        穿着神绮装束+时：自身生命值在100%以上时，免疫毒药、麻痹和精神病等类似减益效果-->
+        穿着神绮装束+时：自身生命值在100%以上时，免疫毒药、麻痹和精神病等类似减益效果
+        穿着键山雏装束+时：受到的伤害减少10%。拥有厄运缠身效果时，增加25%眩晕抗性和烧伤抗性-->
     <Talent identifier="Touhou_ShenMing06" trackedstat="Touhou_ShenMing06_Counter" trackedmax="5">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Buff.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_ShenMing06"/>
@@ -3983,11 +4029,31 @@
                 <CharacterAbilityModifyResistance resistanceid="Sleepless_Nightmare" multiplier="0.0"/>
             </Abilities>
         </AbilityGroupInterval>
+        <!--键山雏-->
+        <AbilityGroupEffect abilityeffecttype="OnAttacked">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1"/>
+            </Abilities>
+        </AbilityGroupEffect>
+        <AbilityGroupInterval Interval="5.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Misfortune_Curse"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="stun" multiplier="0.75"/>
+                <CharacterAbilityModifyResistance resistanceid="burn" multiplier="0.75"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 
     <!--本源力量
         穿着秦心装束+时：站立不动时，受到攻击有30%概率减少30%受到的伤害。行走时，远程攻击散布减少10%。奔跑时，近战攻击伤害增加50%
-        穿着神绮装束+时：对血量不满的生物造成额外20%的伤害。只要自己血量不满，受到的伤害减少20%-->
+        穿着神绮装束+时：对血量不满的生物造成额外20%的伤害。只要自己血量不满，受到的伤害减少20%
+        穿着键山雏装束+时：移动时，免疫缺氧。每有1点魔法能力，增加0.1%攻击速度，最多15%-->
     <Talent identifier="Touhou_ShenMing07">
         <Icon texture="%ModDir%/Images/Talents/Touhou_Talents_Indirect_Damage.png" sheetindex="0,0" sheetelementsize="400,400"/>
         <Description tag="talentdescription.Touhou_ShenMing07"/>
@@ -4058,5 +4124,35 @@
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.2"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--键山雏-->
+        <AbilityGroupInterval interval="0.9">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+                <AbilityConditionHasVelocity velocity="0.1" />
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyResistance resistanceid="oxygenlow" multiplier="0.0"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300" invert="true"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStatToSkill stattype="RangedAttackSpeed" maxvalue="0.1" skillidentifier="Touhou_Magic"/>
+                <CharacterAbilityModifyStatToSkill stattype="MeleeAttackSpeed" maxvalue="0.1" skillidentifier="Touhou_Magic"/>
+            </Abilities>
+        </AbilityGroupInterval>
+        <AbilityGroupInterval Interval="10.0">
+            <Conditions>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
+                <AbilityConditionHasSkill skillidentifier="Touhou_Magic" minvalue="300"/>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityModifyStat stattype="RangedAttackSpeed" value="0.15"/>
+                <CharacterAbilityModifyStat stattype="MeleeAttackSpeed" value="0.15"/>
+            </Abilities>
+        </AbilityGroupInterval>
     </Talent>
 </Talents>

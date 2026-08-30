@@ -63,7 +63,7 @@
                 <CharacterAbilityApplyStatusEffectsToAllies maxdistance="2500" allowself="false">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true">
-                            <Affliction identifier="Aunn_Koma_Inu_Others" amount="10"/>
+                            <Affliction identifier="Aunn_Koma_Inu_Others" amount="100"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAllies>

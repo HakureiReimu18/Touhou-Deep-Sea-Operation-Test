@@ -985,6 +985,30 @@
                 <CharacterAbilityGiveAffliction affliction="Touhou_Elements_Marked" strength="7"/>
             </Abilities>
         </AbilityGroupEffect>
+        <!--灾厄洪流天赋-->
+        <AbilityGroupEffect abilityeffecttype="OnAttack">
+            <Conditions>
+                <AbilityConditionHasItem tags="Touhou_Calamity_Torrent"/>
+                <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged"/>
+                <AbilityConditionCharacter targettype="Enemy" targetabilitytarget="true">
+                    <Conditional HealthPercentage="lte 50"/>
+                </AbilityConditionCharacter>
+            </Conditions>
+            <Abilities>
+                <CharacterAbilityGiveAffliction affliction="Sleepless_Nightmare" strength="30"/>
+                <CharacterAbilityApplyStatusEffects applytoself="false">
+                    <StatusEffects>
+                        <StatusEffect type="OnAbility" target="UseTarget" duration="1.0" CanGiveMedicalSkill="false">
+                            <ReduceAffliction type="resistance" strength="8"/>
+                            <ReduceAffliction type="strengthbuff" strength="8"/>
+                            <ReduceAffliction type="talentbuff" amount="8"/>
+                            <ReduceAffliction type="durationincrease" amount="8"/>
+                            <ReduceAffliction type="haste" amount="8"/>
+                        </StatusEffect>
+                    </StatusEffects>
+                </CharacterAbilityApplyStatusEffects>
+            </Abilities>
+        </AbilityGroupEffect>
     </Talent>
 
     <Talent identifier="Touhou_Other_Weapon_Talent" IsHiddenExtraTalent="true">

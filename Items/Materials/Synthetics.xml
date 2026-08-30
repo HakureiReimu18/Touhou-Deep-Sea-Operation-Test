@@ -1120,7 +1120,7 @@
             <StatusEffect type="OnSecondaryUse" target="This,Character" disabledeltatime="true">
                 <Conditional Condition="lte 0"/>
                 <GiveSkill skillidentifier="Touhou_Magic" amount="6" triggertalents="false"/>
-                <GiveExperience amount="300"/>
+                <GiveExperience amount="600"/>
                 <RemoveItem/>
             </StatusEffect>
             <StatusEffect type="OnContained" target="This" condition="2.0">

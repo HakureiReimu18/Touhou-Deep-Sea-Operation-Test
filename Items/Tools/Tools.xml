@@ -4080,7 +4080,7 @@
     <!--幽灵燃料棒-->
     <Item name="幽灵燃料棒" identifier="Touhou_Spectral_Core_Fuelrod" Category="Fuel" subcategory="Touhou"
           Tags="smallitem,reactorfuel,divingsuitfuel,thoriumfuelrod" maxstacksize="32"
-          maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" health="800" scale="0.25">
+          maxstacksizecharacterinventory="8" cargocontaineridentifier="metalcrate" health="1000" scale="0.25">
         <PreferredContainer primary="reactorcab"/>
         <Price baseprice="300" sold="false">
             <Price storeidentifier="merchantoutpost"/>

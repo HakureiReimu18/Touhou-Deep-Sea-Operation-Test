@@ -235,7 +235,7 @@
     <talentname.Yokai_Select_Tianren_Xianren>天人/仙人</talentname.Yokai_Select_Tianren_Xianren>
     <talentdescription.Yokai_Select_Tianren_Xianren>選擇此分支後，不可再解鎖其它分支。對應角色：‖color:gui.orange‖比那名居天子‖end‖</talentdescription.Yokai_Select_Tianren_Xianren>
     <talentname.Yokai_Select_ShenMing>神明/付喪神</talentname.Yokai_Select_ShenMing>
-    <talentdescription.Yokai_Select_ShenMing>選擇此分支後，不可再解鎖其它分支。對應角色：‖color:gui.orange‖秦心，神綺‖end‖</talentdescription.Yokai_Select_ShenMing>
+    <talentdescription.Yokai_Select_ShenMing>選擇此分支後，不可再解鎖其它分支。對應角色：‖color:gui.orange‖秦心，神綺，鍵山雛‖end‖</talentdescription.Yokai_Select_ShenMing>
     <talentname.Touhou_Yokai_Talents_Locked>天賦停擺</talentname.Touhou_Yokai_Talents_Locked>
     <talentdescription.Touhou_Yokai_Talents_Locked>增加‖color:gui.green‖5%‖end‖‖color:gui.orange‖最大生命值‖end‖。分支最後的天賦，解鎖此天賦後，‖color:gui.red‖其他分支將無法解鎖‖end‖。如果異變源頭的計數未滿，則立刻獲得‖color:gui.green‖100‖end‖點計數。</talentdescription.Touhou_Yokai_Talents_Locked>
 
@@ -427,11 +427,13 @@
         ‖color:gui.green‖11‖end‖：造成的‖color:gui.yellow‖撕裂傷‖end‖增加‖color:gui.green‖10%‖end‖，增加‖color:gui.green‖10%‖end‖‖color:gui.yellow‖撕裂傷抗性‖end‖
         ‖color:gui.green‖33‖end‖；增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖技能水平‖end‖
         ‖color:gui.green‖55‖end‖：減少‖color:gui.green‖15%‖end‖‖color:gui.orange‖遠程攻擊散佈‖end‖
-        穿著‖color:gui.red‖神綺裝束+‖end‖時：獲得‖color:gui.green‖10‖end‖點‖color:gui.orange‖額外生命值‖end‖。巡迴完成任意任務後，有概率額外獲得一個‖color:gui.orange‖魔素‖end‖</talentdescription.Touhou_ShenMing04>
+        穿著‖color:gui.red‖神綺裝束+‖end‖時：獲得‖color:gui.green‖10‖end‖點‖color:gui.orange‖額外生命值‖end‖。巡迴完成任意任務後，有概率額外獲得一個‖color:gui.orange‖魔素‖end‖
+        穿著‖color:gui.red‖鍵山雛裝束+‖end‖時：增加‖color:gui.green‖30%‖end‖‖color:gui.orange‖增益效果持續時間和游泳速度‖end‖，獲得‖color:gui.green‖10‖end‖點額外生命值</talentdescription.Touhou_ShenMing04>
     <talentname.Touhou_ShenMing05>無形信仰</talentname.Touhou_ShenMing05>
     <talentdescription.Touhou_ShenMing05>完成巡迴後若無人死亡，則獲得的金錢增加‖color:gui.green‖10%‖end‖
         穿著‖color:gui.red‖秦心裝束+‖end‖時：巡迴開始時，獲得‖color:gui.green‖10‖end‖分鐘強化：增加‖color:gui.green‖10%‖end‖‖color:gui.orange‖最大生命值、燒傷抗性‖end‖
-        穿著‖color:gui.red‖神綺裝束+‖end‖時：每有‖color:gui.green‖1‖end‖點‖color:gui.orange‖魔法能力‖end‖，增加‖color:gui.green‖0.1%‖end‖‖color:gui.orange‖攻擊傷害‖end‖，最多‖color:gui.green‖20%‖end‖。每有‖color:gui.green‖1‖end‖級，增加‖color:gui.green‖0.5%‖end‖‖color:gui.orange‖最大生命值‖end‖，最多‖color:gui.green‖10%‖end‖</talentdescription.Touhou_ShenMing05>
+        穿著‖color:gui.red‖神綺裝束+‖end‖時：每有‖color:gui.green‖1‖end‖點‖color:gui.orange‖魔法能力‖end‖，增加‖color:gui.green‖0.1%‖end‖‖color:gui.orange‖攻擊傷害‖end‖，最多‖color:gui.green‖20%‖end‖。每有‖color:gui.green‖1‖end‖級，增加‖color:gui.green‖0.5%‖end‖‖color:gui.orange‖最大生命值‖end‖，最多‖color:gui.green‖10%‖end‖
+        穿著‖color:gui.red‖鍵山雛裝束+‖end‖時：用‖color:gui.orange‖專屬武器‖end‖造成的傷害提高‖color:gui.green‖10%‖end‖，受到治療的效果提高‖color:gui.green‖10%‖end‖</talentdescription.Touhou_ShenMing05>
     <talentname.Touhou_ShenMing06>神話傳說</talentname.Touhou_ShenMing06>
     <talentdescription.Touhou_ShenMing06>一個巡迴‖color:gui.green‖4‖end‖次，受到攻擊後的一分鐘內，增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖燒傷抗性和最大生命值‖end‖
         穿著‖color:gui.red‖秦心裝束+‖end‖時：抓取符合條件的生物時，有概率額外學習一次感情。感情總數超過‖color:gui.green‖33‖end‖個後，強化主要感情：
@@ -439,10 +441,12 @@
         ‖color:gui.orange‖怒‖end‖：攻擊目標將附加持續‖color:gui.yellow‖撕裂傷‖end‖，魔法武器攻擊附加‖color:gui.yellow‖緩慢‖end‖
         ‖color:gui.orange‖哀‖end‖：魔法近戰武器攻擊生物將使其攻擊傷害暫時降低‖color:gui.green‖25%‖end‖，遠程彈幕的效果則減半
         ‖color:gui.orange‖樂‖end‖：根據所有技能水平平均值，增加對應‖color:gui.green‖5%‖end‖的‖color:gui.orange‖攻擊傷害和移動速度‖end‖。最多‖color:gui.green‖15%‖end‖
-        穿著‖color:gui.red‖神綺裝束+‖end‖時：自身‖color:gui.orange‖生命值‖end‖在‖color:gui.green‖100%‖end‖以上時，免疫‖color:gui.yellow‖毒藥、麻痺和精神病‖end‖等類似減益效果</talentdescription.Touhou_ShenMing06>
+        穿著‖color:gui.red‖神綺裝束+‖end‖時：自身‖color:gui.orange‖生命值‖end‖在‖color:gui.green‖100%‖end‖以上時，免疫‖color:gui.yellow‖毒藥、麻痺和精神病‖end‖等類似減益效果
+        穿著‖color:gui.red‖鍵山雛裝束+‖end‖時：受到的傷害減少‖color:gui.green‖10%‖end‖。擁有‖color:gui.yellow‖厄運纏身‖end‖效果時，增加‖color:gui.green‖25%‖end‖‖color:gui.yellow‖眩暈抗性和燒傷抗性‖end‖</talentdescription.Touhou_ShenMing06>
     <talentname.Touhou_ShenMing07>本源力量</talentname.Touhou_ShenMing07>
     <talentdescription.Touhou_ShenMing07>
         穿著‖color:gui.red‖秦心裝束+‖end‖時：站立不動時，受到攻擊有‖color:gui.green‖30%‖end‖概率減少‖color:gui.green‖30%‖end‖受到的傷害。行走時，‖color:gui.orange‖遠程攻擊散佈‖end‖減少‖color:gui.green‖10%‖end‖。奔跑時，‖color:gui.orange‖近戰攻擊傷害‖end‖增加‖color:gui.green‖50%‖end‖
-        穿著‖color:gui.red‖神綺裝束+‖end‖時：對血量不滿的生物造成額外‖color:gui.green‖20%‖end‖的傷害。只要自己血量不滿，受到的傷害減少‖color:gui.green‖20%‖end‖</talentdescription.Touhou_ShenMing07>
+        穿著‖color:gui.red‖神綺裝束+‖end‖時：對血量不滿的生物造成額外‖color:gui.green‖20%‖end‖的傷害。只要自己血量不滿，受到的傷害減少‖color:gui.green‖20%‖end‖
+        穿著‖color:gui.red‖鍵山雛裝束+‖end‖時：移動時，免疫‖color:gui.yellow‖缺氧‖end‖。每有‖color:gui.green‖1‖end‖點‖color:gui.orange‖魔法能力‖end‖，增加‖color:gui.green‖0.1%‖end‖‖color:gui.orange‖攻擊速度‖end‖，最多‖color:gui.green‖15%‖end‖</talentdescription.Touhou_ShenMing07>
 
 </infotexts>

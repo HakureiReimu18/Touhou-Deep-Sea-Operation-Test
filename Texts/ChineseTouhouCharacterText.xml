@@ -360,12 +360,18 @@
     <entityname.Nue_Plus>‖color:90,80,100,255‖鵺 装束+‖end‖</entityname.Nue_Plus>
     <entitydescription.Nue_Plus>‖color:90,80,100,255‖一看到别人在兴致勃勃做事，她就不由得想在暗地里阻挠别人，这就是她的性格。
         曾在地底优哉游哉地过活，在间歇泉骚动后回到地上。现在已入门命莲寺，跟随圣白莲修行，然而却与其他的妖怪稍有些不合群。‖end‖\n（内置扫描仪槽位）</entitydescription.Nue_Plus>
+    <entityname.Nue_Eclipse_gear>‖color:90,80,100,255‖鵺 装束（Eclipse风格）‖end‖</entityname.Nue_Eclipse_gear>
+    <entitydescription.Nue_Eclipse_gear>‖color:90,80,100,255‖一看到别人在兴致勃勃做事，她就不由得想在暗地里阻挠别人，这就是她的性格。
+        曾在地底优哉游哉地过活，在间歇泉骚动后回到地上。现在已入门命莲寺，跟随圣白莲修行，然而却与其他的妖怪稍有些不合群。‖end‖\n（内置扫描仪槽位）</entitydescription.Nue_Eclipse_gear>
+    <entityname.Nue_Eclipse_Plus>‖color:90,80,100,255‖鵺 装束+（Eclipse风格）‖end‖</entityname.Nue_Eclipse_Plus>
+    <entitydescription.Nue_Eclipse_Plus>‖color:90,80,100,255‖一看到别人在兴致勃勃做事，她就不由得想在暗地里阻挠别人，这就是她的性格。
+        曾在地底优哉游哉地过活，在间歇泉骚动后回到地上。现在已入门命莲寺，跟随圣白莲修行，然而却与其他的妖怪稍有些不合群。‖end‖\n（内置扫描仪槽位）</entitydescription.Nue_Eclipse_Plus>
     <talentname.NueTalent>真相不明的黑暗</talentname.NueTalent>
     <talentdescription.NueTalent>当你身着 鵺 装束+ 时，对‖color:gui.yellow‖Debuff‖end‖的抗性很高。
         \n‖color:gui.orange‖增益效果持续时间‖end‖减少‖color:gui.red‖50%‖end‖，‖color:gui.orange‖技能水平‖end‖减少‖color:gui.red‖20%‖end‖
         \n血量低于一半时，提高‖color:gui.green‖10%‖end‖的物理、烧伤、Debuff抗性和移动速度
         \n当船员击杀‖color:gui.orange‖1‖end‖个生物后，增加‖color:gui.green‖1‖end‖个计数，当你击杀‖color:gui.orange‖1‖end‖个生物后，增加‖color:gui.green‖2‖end‖个计数，或巡回完成任意任务，增加‖color:gui.green‖6‖end‖个计数，根据计数提供不同的增益：
-        154个：提高‖color:gui.green‖50%‖end‖技能获取速度，移动速度提高‖color:gui.green‖10%‖end‖。
+        154个：提高‖color:gui.green‖20%‖end‖技能获取速度，移动速度提高‖color:gui.green‖10%‖end‖。
         312个：提高‖color:gui.green‖15%‖end‖经验获取速度，最大生命值增加‖color:gui.green‖10%‖end‖。
         468个：增益效果持续时间增加‖color:gui.green‖20%‖end‖，攻击速度增加‖color:gui.green‖10%‖end‖。
         624个：提高‖color:gui.green‖20%‖end‖游泳速度，对附有长眠不醒的噩梦的生物造成的伤害增加‖color:gui.green‖10%‖end‖。</talentdescription.NueTalent>
@@ -1282,6 +1288,31 @@
     <entitydescription.Touhou_Refined_Grimoire>精加工的魔法书，内容更加易于吸收</entitydescription.Touhou_Refined_Grimoire>
 
 
+    <!--Kagiyama Hina-->
+    <entityname.Kagiyama_Hina_gear>‖color:68,194,0,255‖键山雏 装束‖end‖</entityname.Kagiyama_Hina_gear>
+    <entitydescription.Kagiyama_Hina_gear>她是厄神，疫病神的一种，实际上不是普通的神明而是一种妖怪</entitydescription.Kagiyama_Hina_gear>
+    <entityname.Kagiyama_Hina_Plus>‖color:68,194,0,255‖键山雏 装束+‖end‖</entityname.Kagiyama_Hina_Plus>
+    <entitydescription.Kagiyama_Hina_Plus>她是厄神，疫病神的一种，实际上不是普通的神明而是一种妖怪</entitydescription.Kagiyama_Hina_Plus>
+    <talentname.Kagiyama_HinaTalent>秘神流雏</talentname.Kagiyama_HinaTalent>
+    <talentdescription.Kagiyama_HinaTalent>当你身着键山雏 装束+时，
+        自身持续获得‖color:gui.yellow‖“厄运缠身”‖end‖效果，减少‖color:gui.orange‖移动速度、攻击速度和眩晕抗性‖end‖，最高减少‖color:gui.red‖20%‖end‖
+        受到的‖color:gui.orange‖减益效果‖end‖持续时间增加‖color:gui.red‖30%‖end‖
+
+        弹幕伤害增加‖color:gui.green‖10%‖end‖
+        ‖color:gui.yellow‖厄运缠身‖end‖高于‖color:gui.green‖50%‖end‖时，减少‖color:gui.green‖10%‖end‖‖color:gui.orange‖受到的伤害‖end‖，增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖最大生命值‖end‖
+        ‖color:gui.yellow‖厄运缠身‖end‖积累满后，可以主动释放，那之后清除自身的‖color:gui.yellow‖厄运缠身‖end‖效果，并给予附近所有敌人等同于‖color:gui.yellow‖厄运缠身‖end‖最大值的‖color:gui.orange‖减益效果‖end‖和‖color:gui.yellow‖长眠不醒的噩梦‖end‖
+        血量不满时，专属武器的攻击也会给予敌人‖color:gui.yellow‖厄运缠身‖end‖
+        被敌人攻击时，也会给予攻击者‖color:gui.yellow‖厄运缠身‖end‖，这个效果有‖color:gui.green‖2‖end‖秒冷却
+    </talentdescription.Kagiyama_HinaTalent>
+    <afflictionname.Touhou_Kagiyama_Hina_Character_Effect>流转万厄的关键</afflictionname.Touhou_Kagiyama_Hina_Character_Effect>
+    <afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>雏有着一头绿色及胸长发，头上扎着红色丝带，胸前两股头发也用红色丝带收为一股，丝带打着白色褶子</afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>
+    <afflictionname.Kagiyama_Hina_Weapons>注定被抛弃的流雏</afflictionname.Kagiyama_Hina_Weapons>
+    <afflictiondescription.Kagiyama_Hina_Weapons>雏为了厄运不再回到人类，通过回收顺流而下的雏人偶，收集并看守着厄运，最终将其交诸众神</afflictiondescription.Kagiyama_Hina_Weapons>
+    <afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>厄运缠身</afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>
+    <afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>厄运正在聚集，移动和攻击变得迟缓</afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>
+
+
+
 
 
 
@@ -1351,6 +1382,7 @@
     <Character.MRE_Material_Yuyuko>幽幽子的回忆</Character.MRE_Material_Yuyuko>
     <Character.MRE_Material_Shinki>神绮的回忆</Character.MRE_Material_Shinki>
     <Character.MRE_Material_Koakuma>小恶魔的回忆</Character.MRE_Material_Koakuma>
+    <Character.MRE_Material_Kagiyama_Hina>键山雏的回忆</Character.MRE_Material_Kagiyama_Hina>
     <talentname.MRE_Reimu>出血效应-博丽灵梦</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>仅对灵梦装束+生效。拥有专属武器效果。每次受击都有15%概率避免那次伤害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效应-蕾米莉亚·斯卡雷特</talentname.MRE_Remilia>
@@ -1432,4 +1464,6 @@
     <talentdescription.MRE_Shinki>仅对神绮 装束+生效。专属武器弹幕攻击对满血敌人施加“魔界压迫”。魔界压迫：降低25%物理伤害抗性，降低25%技能水平，降低20%移动速度。持续10秒</talentdescription.MRE_Shinki>
     <talentname.MRE_Koakuma>出血效应-小恶魔</talentname.MRE_Koakuma>
     <talentdescription.MRE_Koakuma>仅对小恶魔 装束+生效。弹幕攻击对敌人造成额外撕裂伤。弹幕攻击对队友造成的伤害降低80%。</talentdescription.MRE_Koakuma>
+    <talentname.MRE_Kagiyama_Hina>出血效应-键山雏</talentname.MRE_Kagiyama_Hina>
+    <talentdescription.MRE_Kagiyama_Hina>仅对键山雏 装束+生效。增加20%debuff抗性并持续恢复debuff类型的效果。厄运缠身低于50%时，增加10%物理伤害抗性</talentdescription.MRE_Kagiyama_Hina>
 </infotexts>

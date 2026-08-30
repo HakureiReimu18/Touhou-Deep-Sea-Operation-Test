@@ -356,10 +356,16 @@
     <!--Nue-->
     <entityname.Nue_gear>‖color:90,80,100,255‖鵺 裝束‖end‖</entityname.Nue_gear>
     <entitydescription.Nue_gear>‖color:90,80,100,255‖一看到別人在興致勃勃做事，她就不由得想在暗地裡阻撓別人，這就是她的性格。
-        曾在地底優哉遊哉地過活，在間歇泉騷動後回到地上。現在已入門命蓮寺，跟隨聖白蓮修行，然而卻與其他的妖怪稍有些不合群。‖end‖\n（內置掃描儀槽位）</entitydescription.Nue_gear>
+        曾在地底優哉游哉地過活，在間歇泉騷動後回到地上。現在已入門命蓮寺，跟隨聖白蓮修行，然而卻與其他的妖怪稍有些不合群。‖end‖\n（內置掃描儀槽位）</entitydescription.Nue_gear>
     <entityname.Nue_Plus>‖color:90,80,100,255‖鵺 裝束+‖end‖</entityname.Nue_Plus>
     <entitydescription.Nue_Plus>‖color:90,80,100,255‖一看到別人在興致勃勃做事，她就不由得想在暗地裡阻撓別人，這就是她的性格。
-        曾在地底優哉遊哉地過活，在間歇泉騷動後回到地上。現在已入門命蓮寺，跟隨聖白蓮修行，然而卻與其他的妖怪稍有些不合群。‖end‖\n（內置掃描儀槽位）</entitydescription.Nue_Plus>
+        曾在地底優哉游哉地過活，在間歇泉騷動後回到地上。現在已入門命蓮寺，跟隨聖白蓮修行，然而卻與其他的妖怪稍有些不合群。‖end‖\n（內置掃描儀槽位）</entitydescription.Nue_Plus>
+    <entityname.Nue_Eclipse_gear>‖color:90,80,100,255‖鵺 裝束（Eclipse風格）‖end‖</entityname.Nue_Eclipse_gear>
+    <entitydescription.Nue_Eclipse_gear>‖color:90,80,100,255‖一看到別人在興致勃勃做事，她就不由得想在暗地裡阻撓別人，這就是她的性格。
+        曾在地底優哉游哉地過活，在間歇泉騷動後回到地上。現在已入門命蓮寺，跟隨聖白蓮修行，然而卻與其他的妖怪稍有些不合群。‖end‖\n（內置掃描儀槽位）</entitydescription.Nue_Eclipse_gear>
+    <entityname.Nue_Eclipse_Plus>‖color:90,80,100,255‖鵺 裝束+（Eclipse風格）‖end‖</entityname.Nue_Eclipse_Plus>
+    <entitydescription.Nue_Eclipse_Plus>‖color:90,80,100,255‖一看到別人在興致勃勃做事，她就不由得想在暗地裡阻撓別人，這就是她的性格。
+        曾在地底優哉游哉地過活，在間歇泉騷動後回到地上。現在已入門命蓮寺，跟隨聖白蓮修行，然而卻與其他的妖怪稍有些不合群。‖end‖\n（內置掃描儀槽位）</entitydescription.Nue_Eclipse_Plus>
     <talentname.NueTalent>真相不明的黑暗</talentname.NueTalent>
     <talentdescription.NueTalent>當你身著 鵺 裝束+ 時，對‖color:gui.yellow‖Debuff‖end‖的抗性很高。
         \n‖color:gui.orange‖增益效果持續時間‖end‖減少‖color:gui.red‖50%‖end‖，‖color:gui.orange‖技能水平‖end‖減少‖color:gui.red‖20%‖end‖
@@ -367,7 +373,7 @@
         \n當船員擊殺‖color:gui.orange‖1‖end‖個生物後，增加‖color:gui.green‖1‖end‖個計數，當你擊殺‖color:gui.orange‖1‖end‖個生物後，增加‖color:gui.green‖2‖end‖個計數，或巡迴完成任意任務，增加‖color:gui.green‖6‖end‖個計數，根據計數提供不同的增益：
         154個：提高‖color:gui.green‖50%‖end‖技能獲取速度，移動速度提高‖color:gui.green‖10%‖end‖。
         312個：提高‖color:gui.green‖15%‖end‖經驗獲取速度，最大生命值增加‖color:gui.green‖10%‖end‖。
-        468個：增益效果持續時間增加‖color:gui.green‖20%‖end‖，攻擊速度增加‖color:gui.green‖10%‖end‖。
+        468個：增益效果持續時間增加‖color:gui.green‖10%‖end‖，攻擊速度增加‖color:gui.green‖10%‖end‖。
         624個：提高‖color:gui.green‖20%‖end‖游泳速度，對附有長眠不醒的噩夢的生物造成的傷害增加‖color:gui.green‖10%‖end‖。</talentdescription.NueTalent>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl>未確認幻想飛行少女</afflictionname.Unconfirmed_Fantasy_Flying_Girl>
     <afflictiondescription.Unconfirmed_Fantasy_Flying_Girl>被人們降伏了許多次的妖怪，每次都被人傳說為不同的姿態。可是傳說終究是傳說。
@@ -1281,8 +1287,27 @@
 
 
 
+    <!--Kagiyama Hina-->
+    <entityname.Kagiyama_Hina_gear>‖color:255,15,99,255‖鍵山雛 裝束‖end‖</entityname.Kagiyama_Hina_gear>
+    <entitydescription.Kagiyama_Hina_gear>她是厄神，疫病神的一種，實際上不是普通的神明而是一種妖怪</entitydescription.Kagiyama_Hina_gear>
+    <entityname.Kagiyama_Hina_Plus>‖color:255,15,99,255‖鍵山雛 裝束+‖end‖</entityname.Kagiyama_Hina_Plus>
+    <entitydescription.Kagiyama_Hina_Plus>她是厄神，疫病神的一種，實際上不是普通的神明而是一種妖怪</entitydescription.Kagiyama_Hina_Plus>
+    <talentname.Kagiyama_HinaTalent>秘神流雛</talentname.Kagiyama_HinaTalent>
+    <talentdescription.Kagiyama_HinaTalent>當你身著鍵山雛 裝束+時，自身持續獲得‖color:gui.yellow‖「厄運纏身」‖end‖效果，減少‖color:gui.orange‖移動速度、攻擊速度和眩暈抗性‖end‖，最高減少‖color:gui.red‖20%‖end‖
+        受到的‖color:gui.orange‖減益效果‖end‖持續時間增加‖color:gui.red‖30%‖end‖
 
-
+        彈幕傷害增加‖color:gui.green‖10%‖end‖
+        ‖color:gui.yellow‖厄運纏身‖end‖高於‖color:gui.green‖50%‖end‖時，減少‖color:gui.green‖10%‖end‖‖color:gui.orange‖受到的傷害‖end‖，增加‖color:gui.green‖15%‖end‖‖color:gui.orange‖最大生命值‖end‖
+        ‖color:gui.yellow‖厄運纏身‖end‖積累滿後，可以主動釋放，那之後清除自身的‖color:gui.yellow‖厄運纏身‖end‖效果，並給予附近所有敵人等同於‖color:gui.yellow‖厄運纏身‖end‖最大值的‖color:gui.orange‖減益效果‖end‖和‖color:gui.yellow‖長眠不醒的噩夢‖end‖
+        血量不滿時，專屬武器的攻擊也會給予敵人‖color:gui.yellow‖厄運纏身‖end‖
+        被敵人攻擊時，也會給予攻擊者‖color:gui.yellow‖厄運纏身‖end‖，這個效果有‖color:gui.green‖2‖end‖秒冷卻
+    </talentdescription.Kagiyama_HinaTalent>
+    <afflictionname.Touhou_Kagiyama_Hina_Character_Effect>流轉萬厄的關鍵</afflictionname.Touhou_Kagiyama_Hina_Character_Effect>
+    <afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>雛有著一頭綠色及胸長髮，頭上紮著紅色絲帶，胸前兩股頭髮也用紅色絲帶收為一股，絲帶打著白色褶子</afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>
+    <afflictionname.Kagiyama_Hina_Weapons>注定被拋棄的流雛</afflictionname.Kagiyama_Hina_Weapons>
+    <afflictiondescription.Kagiyama_Hina_Weapons>雛為了厄運不再回到人類，通過回收順流而下的雛人偶，收集並看守著厄運，最終將其交諸眾神</afflictiondescription.Kagiyama_Hina_Weapons>
+    <afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>厄運纏身</afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>
+    <afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>厄運正在聚集，移動和攻擊變得遲緩</afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>
 
 
 
@@ -1349,6 +1374,7 @@
     <Character.MRE_Material_Yuyuko>幽幽子的回憶</Character.MRE_Material_Yuyuko>
     <Character.MRE_Material_Shinki>神綺的回憶</Character.MRE_Material_Shinki>
     <Character.MRE_Material_Koakuma>小惡魔的回憶</Character.MRE_Material_Koakuma>
+    <Character.MRE_Material_Kagiyama_Hina>鍵山雛的回憶</Character.MRE_Material_Kagiyama_Hina>
     <talentname.MRE_Reimu>出血效應-博麗靈夢</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>僅對靈夢裝束+生效。擁有專屬武器效果。每次受擊都有15%概率避免那次傷害</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>出血效應-蕾米莉亞·斯卡雷特</talentname.MRE_Remilia>
@@ -1430,4 +1456,6 @@
     <talentdescription.MRE_Shinki>僅對神綺 裝束+生效。專屬武器彈幕攻擊對滿血敵人施加“魔界壓迫”。魔界壓迫：降低25%物理傷害抗性，降低25%技能水平，降低20%移動速度。持續10秒</talentdescription.MRE_Shinki>
     <talentname.MRE_Koakuma>出血效應-小惡魔</talentname.MRE_Koakuma>
     <talentdescription.MRE_Koakuma>僅對小惡魔 裝束+生效。彈幕攻擊對敵人造成額外撕裂傷。彈幕攻擊對隊友造成的傷害降低80%。</talentdescription.MRE_Koakuma>
+    <talentname.MRE_Kagiyama_Hina>出血效應-鍵山雛</talentname.MRE_Kagiyama_Hina>
+    <talentdescription.MRE_Kagiyama_Hina>僅對鍵山雛 裝束+生效。增加20%減益抗性並持續恢復減益類型的效果。厄運纏身低於50%時，增加10%物理傷害抗性</talentdescription.MRE_Kagiyama_Hina>
 </infotexts>

@@ -2059,7 +2059,7 @@
                 <RequiredItem items="divingsuitfuel" targetslot="1" type="Contained"/>
             </StatusEffect>
 
-            <StatusEffect type="OnWearing" target="This,Character" voltage="1.0" interval="1.0" duration="1.0" setvalue="true" comparison="and">
+            <StatusEffect type="OnWearing" target="This,Character" interval="1.0" duration="1.0" setvalue="true" comparison="and">
                 <Conditional IsLocalPlayer="true" />
                 <RequiredItem items="Touhou_Peace_Hooked_Jade" type="Contained"/>
             </StatusEffect>

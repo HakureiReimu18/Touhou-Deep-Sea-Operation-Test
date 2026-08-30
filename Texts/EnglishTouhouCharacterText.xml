@@ -376,20 +376,25 @@
     <afflictionname.FlandreTalent4_Effect_CD>Caged Bird – Shield Remaining Duration</afflictionname.FlandreTalent4_Effect_CD>
 
     <!--Nue-->
-    <entityname.Nue_gear>‖color:90,80,100,255‖Nue's Outfit‖end‖</entityname.Nue_gear>
-    <entitydescription.Nue_gear>‖color:90,80,100,255‖Whenever she sees someone working enthusiastically, she can’t help but secretly obstruct them—that’s just her nature.
-        She once lived leisurely underground and returned above after the geyser incident. Now a disciple at Myouren Temple following Byakuren Hijiri, she remains slightly out of place among other youkai.‖end‖\n(Built-in scanner slot)</entitydescription.Nue_gear>
-    <entityname.Nue_Plus>‖color:90,80,100,255‖Nue's Outfit+‖end‖</entityname.Nue_Plus>
-    <entitydescription.Nue_Plus>‖color:90,80,100,255‖Whenever she sees someone working enthusiastically, she can’t help but secretly obstruct them—that’s just her nature.
-        She once lived leisurely underground and returned above after the geyser incident. Now a disciple at Myouren Temple following Byakuren Hijiri, she remains slightly out of place among other youkai.‖end‖\n(Built-in scanner slot)</entitydescription.Nue_Plus>
-    <talentname.NueTalent>Mystery of the Unknown Darkness</talentname.NueTalent>
+    <entityname.Nue_gear>‖color:90,80,100,255‖Nue Outfit‖end‖</entityname.Nue_gear>
+    <entitydescription.Nue_gear>‖color:90,80,100,255‖Whenever she sees others doing something with enthusiasm, she can't help but want to secretly obstruct them — that's just her nature.
+        She once lived leisurely underground, returning to the surface after the Geyser Incident. She has now entered Myouren Temple to train under Byakuren Hijiri, though she remains somewhat out of step with other youkai.‖end‖\n(Built-in scanner slot)</entitydescription.Nue_gear>
+    <entityname.Nue_Plus>‖color:90,80,100,255‖Nue Outfit+‖end‖</entityname.Nue_Plus>
+    <entitydescription.Nue_Plus>‖color:90,80,100,255‖Whenever she sees others doing something with enthusiasm, she can't help but want to secretly obstruct them — that's just her nature.
+        She once lived leisurely underground, returning to the surface after the Geyser Incident. She has now entered Myouren Temple to train under Byakuren Hijiri, though she remains somewhat out of step with other youkai.‖end‖\n(Built-in scanner slot)</entitydescription.Nue_Plus>
+    <entityname.Nue_Eclipse_gear>‖color:90,80,100,255‖Nue Outfit (Eclipse Style)‖end‖</entityname.Nue_Eclipse_gear>
+    <entitydescription.Nue_Eclipse_gear>‖color:90,80,100,255‖Whenever she sees others doing something with enthusiasm, she can't help but want to secretly obstruct them — that's just her nature.
+        She once lived leisurely underground, returning to the surface after the Geyser Incident. She has now entered Myouren Temple to train under Byakuren Hijiri, though she remains somewhat out of step with other youkai.‖end‖\n(Built-in scanner slot)</entitydescription.Nue_Eclipse_gear>
+    <entityname.Nue_Eclipse_Plus>‖color:90,80,100,255‖Nue Outfit+ (Eclipse Style)‖end‖</entityname.Nue_Eclipse_Plus>
+    <entitydescription.Nue_Eclipse_Plus>‖color:90,80,100,255‖Whenever she sees others doing something with enthusiasm, she can't help but want to secretly obstruct them — that's just her nature.
+        She once lived leisurely underground, returning to the surface after the Geyser Incident. She has now entered Myouren Temple to train under Byakuren Hijiri, though she remains somewhat out of step with other youkai.‖end‖\n(Built-in scanner slot)</entitydescription.Nue_Eclipse_Plus>    <talentname.NueTalent>Mystery of the Unknown Darkness</talentname.NueTalent>
     <talentdescription.NueTalent>While wearing Nue's Outfit+, you gain high resistance to ‖color:gui.yellow‖Debuffs‖end‖.
         \n‖color:gui.orange‖Buff duration‖end‖ ‖color:gui.red‖−50%‖end‖, and ‖color:gui.orange‖skill levels‖end‖ ‖color:gui.red‖−20%‖end‖.
         \nWhen health falls below half, increase ‖color:gui.green‖10%‖end‖ resistance to physical, burn, and debuff effects and movement speed.
         \nEach time a crew member kills ‖color:gui.orange‖1‖end‖ creature, gain ‖color:gui.green‖1‖end‖ count; when you kill ‖color:gui.orange‖1‖end‖ creature, gain ‖color:gui.green‖2‖end‖ counts; completing a mission grants ‖color:gui.green‖6‖end‖ counts. Counts grant buffs:
-        154 counts: +‖color:gui.green‖50%‖end‖ skill gain speed, +‖color:gui.green‖10%‖end‖ movement speed.
+        154 counts: +‖color:gui.green‖20%‖end‖ skill gain speed, +‖color:gui.green‖10%‖end‖ movement speed.
         312 counts: +‖color:gui.green‖15%‖end‖ experience gain, +‖color:gui.green‖10%‖end‖ max health.
-        468 counts: +‖color:gui.green‖20%‖end‖ buff duration, +‖color:gui.green‖10%‖end‖ attack speed.
+        468 counts: +‖color:gui.green‖10%‖end‖ buff duration, +‖color:gui.green‖10%‖end‖ attack speed.
         624 counts: +‖color:gui.green‖20%‖end‖swimming speed, and increases damage dealt to creatures afflicted with Endless Nightmare by ‖color:gui.green‖10%‖end‖.
     </talentdescription.NueTalent>
     <afflictionname.Unconfirmed_Fantasy_Flying_Girl>Unidentified Fantastic Flying Girl</afflictionname.Unconfirmed_Fantasy_Flying_Girl>
@@ -1358,7 +1363,27 @@
 
 
 
+    <!--Kagiyama Hina-->
+    <entityname.Kagiyama_Hina_gear>‖color:255,15,99,255‖Kagiyama Hina Outfit‖end‖</entityname.Kagiyama_Hina_gear>
+    <entitydescription.Kagiyama_Hina_gear>She is a god of misfortune, a type of pestilence god; in truth, she is not an ordinary deity but a youkai.</entitydescription.Kagiyama_Hina_gear>
+    <entityname.Kagiyama_Hina_Plus>‖color:255,15,99,255‖Kagiyama Hina Outfit+‖end‖</entityname.Kagiyama_Hina_Plus>
+    <entitydescription.Kagiyama_Hina_Plus>She is a god of misfortune, a type of pestilence god; in truth, she is not an ordinary deity but a youkai.</entitydescription.Kagiyama_Hina_Plus>
+    <talentname.Kagiyama_HinaTalent>Secret God Nagashi-bina</talentname.Kagiyama_HinaTalent>
+    <talentdescription.Kagiyama_HinaTalent>While wearing the Kagiyama Hina Outfit+, you continuously gain the ‖color:gui.yellow‖"Misfortune's Grasp"‖end‖ effect, reducing ‖color:gui.orange‖movement speed, attack speed, and stun resistance‖end‖ by up to ‖color:gui.red‖20%‖end‖
+        Duration of ‖color:gui.orange‖debuffs‖end‖ received is increased by ‖color:gui.red‖30%‖end‖
 
+        Danmaku damage increased by ‖color:gui.green‖10%‖end‖
+        When ‖color:gui.yellow‖Misfortune's Grasp‖end‖ exceeds ‖color:gui.green‖50%‖end‖, reduce ‖color:gui.green‖10%‖end‖ ‖color:gui.orange‖damage taken‖end‖ and increase ‖color:gui.green‖15%‖end‖ ‖color:gui.orange‖max health‖end‖
+        When ‖color:gui.yellow‖Misfortune's Grasp‖end‖ is fully accumulated, it can be actively released; afterwards, your own ‖color:gui.yellow‖Misfortune's Grasp‖end‖ is cleared, and all nearby enemies are afflicted with ‖color:gui.orange‖debuffs‖end‖ equal to the maximum value of ‖color:gui.yellow‖Misfortune's Grasp‖end‖ and ‖color:gui.yellow‖Nightmare of Eternal Slumber‖end‖
+        When health is not full, exclusive weapon attacks will also inflict ‖color:gui.yellow‖Misfortune's Grasp‖end‖ on enemies
+        When attacked by enemies, the attacker is also inflicted with ‖color:gui.yellow‖Misfortune's Grasp‖end‖; this effect has a ‖color:gui.green‖2‖end‖-second cooldown
+    </talentdescription.Kagiyama_HinaTalent>
+    <afflictionname.Touhou_Kagiyama_Hina_Character_Effect>Key to the Circulation of Myriad Misfortunes</afflictionname.Touhou_Kagiyama_Hina_Character_Effect>
+    <afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>Hina has long green hair reaching her chest, tied with a red ribbon on her head; the two strands of hair in front of her chest are also gathered into one with a red ribbon, the ribbon adorned with white frills.</afflictiondescription.Touhou_Kagiyama_Hina_Character_Effect>
+    <afflictionname.Kagiyama_Hina_Weapons>The Nagashi-bina Doomed to be Abandoned</afflictionname.Kagiyama_Hina_Weapons>
+    <afflictiondescription.Kagiyama_Hina_Weapons>To prevent misfortune from returning to humans, Hina collects and watches over misfortune by recovering nagashi-bina dolls floated downstream, ultimately offering them to the gods.</afflictiondescription.Kagiyama_Hina_Weapons>
+    <afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>Misfortune's Grasp</afflictionname.Touhou_Kagiyama_Hina_Misfortune_Curse>
+    <afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>Misfortune is gathering; movement and attacks become sluggish.</afflictiondescription.Touhou_Kagiyama_Hina_Misfortune_Curse>
 
 
 
@@ -1429,6 +1454,7 @@
     <Character.MRE_Material_Yuyuko>Yuyuko's Memory</Character.MRE_Material_Yuyuko>
     <Character.MRE_Material_Shinki>Shinki's Memory</Character.MRE_Material_Shinki>
     <Character.MRE_Material_Koakuma>Koakuma's Memory</Character.MRE_Material_Koakuma>
+    <Character.MRE_Material_Kagiyama_Hina>Memory of Kagiyama Hina</Character.MRE_Material_Kagiyama_Hina>
     <talentname.MRE_Reimu>Bleeding Effect – Hakurei Reimu</talentname.MRE_Reimu>
     <talentdescription.MRE_Reimu>Effective only with Reimu Outfit+. Grants exclusive weapon effect. Each time hit, 15% chance to avoid that damage.</talentdescription.MRE_Reimu>
     <talentname.MRE_Remilia>Bleeding Effect – Remilia Scarlet</talentname.MRE_Remilia>
@@ -1515,4 +1541,6 @@
     <talentdescription.MRE_Shinki>Only effective while wearing Shinki Outfit+. Danmaku attacks from Shinki's exclusive weapon inflict Makai Oppression on enemies at full Health. Makai Oppression: Reduces Physical Damage Resistance by 25%, Skill Levels by 25%, and Movement Speed by 20% for 10 seconds.</talentdescription.MRE_Shinki>
     <talentname.MRE_Koakuma>Bleeding Effect - Koakuma</talentname.MRE_Koakuma>
     <talentdescription.MRE_Koakuma>Only effective while wearing Koakuma Outfit+. Barrage attacks inflict additional lacerations on enemies. Damage dealt to allies by barrage attacks is reduced by 80%.</talentdescription.MRE_Koakuma>
+    <talentname.MRE_Kagiyama_Hina>Bleed Effect - Kagiyama Hina</talentname.MRE_Kagiyama_Hina>
+    <talentdescription.MRE_Kagiyama_Hina>Only effective while wearing the Kagiyama Hina Outfit+. Increases debuff resistance by 20% and continuously recovers debuff-type effects. When Misfortune's Grasp is below 50%, increases physical damage resistance by 10%.</talentdescription.MRE_Kagiyama_Hina>
 </infotexts>

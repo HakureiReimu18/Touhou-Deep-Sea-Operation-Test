@@ -2055,6 +2055,28 @@
     <entitydescription.Touhou_Forbidden_Book_Indexer_Ammo>书页终会泛黄，唯有知识不会。作为‖color:gui.yellow‖禁书索引器‖end‖的弹药</entitydescription.Touhou_Forbidden_Book_Indexer_Ammo>
 
 
+    <entityname.Touhou_Calamity_Torrent>‖color:68,194,0,255‖灾厄洪流‖end‖</entityname.Touhou_Calamity_Torrent>
+    <entitydescription.Touhou_Calamity_Torrent>将积聚的灾厄化作洪流倾泻而出的武器。它不会创造不幸，只是让那些本该降临的厄运，提前找到归宿。武器攻击半血以下的敌人时，会减少目标的增益效果并给予长眠不醒的噩梦。使用‖color:gui.yellow‖厄运涡轮‖end‖。</entitydescription.Touhou_Calamity_Torrent>
+    <entityname.Touhou_Calamity_Torrent_Ammo>‖color:68,194,0,255‖厄运涡轮‖end‖</entityname.Touhou_Calamity_Torrent_Ammo>
+    <entitydescription.Touhou_Calamity_Torrent_Ammo>将厄运压缩并维持于高速旋转状态的特殊弹药。旋转得越久，其中积蓄的灾厄便越难以控制。作为‖color:gui.yellow‖灾厄洪流‖end‖的弹药</entitydescription.Touhou_Calamity_Torrent_Ammo>
+
+    <entityname.Touhou_Misfortune_Recovery_Gun>‖color:68,194,0,255‖厄运回收枪‖end‖</entityname.Touhou_Misfortune_Recovery_Gun>
+    <entitydescription.Touhou_Misfortune_Recovery_Gun>用于收集与转移厄运的特殊武器。它无法消除不幸，只能暂时替世界保管。使用‖color:gui.yellow‖厄运容器‖end‖。</entitydescription.Touhou_Misfortune_Recovery_Gun>
+    <entityname.Touhou_Misfortune_Recovery_Gun_Ammo>‖color:68,194,0,255‖厄运容器‖end‖</entityname.Touhou_Misfortune_Recovery_Gun_Ammo>
+    <entitydescription.Touhou_Misfortune_Recovery_Gun_Ammo>用于封存与转移灾厄的特殊容器。容量有限，但厄运似乎从来不会因为有限而减少。作为‖color:gui.yellow‖厄运回收枪‖end‖的弹药</entitydescription.Touhou_Misfortune_Recovery_Gun_Ammo>
+
+    <entityname.Touhou_Calamity_Vortex>‖color:68,194,0,255‖灾厄旋涡‖end‖</entityname.Touhou_Calamity_Vortex>
+    <entitydescription.Touhou_Calamity_Vortex>将厄运凝聚为旋涡的近战武器。它不追逐敌人，只需让敌人靠近——剩下的，交给命运。</entitydescription.Touhou_Calamity_Vortex>
+
+
+    <entityname.Touhou_Eternal_House_Hemostatic_Kit>永远亭止血药盒</entityname.Touhou_Eternal_House_Hemostatic_Kit>
+    <entitydescription.Touhou_Eternal_House_Hemostatic_Kit>集成包装好的药物，可以放入止血类药物便于取用。需要手持开启“充能”选项恢复耐久。可放入：绷带、可塑人造皮肤、抗生素凝胶和永远亭外敷药箱</entitydescription.Touhou_Eternal_House_Hemostatic_Kit>
+
+
+    <entityname.Touhou_Eternal_House_Painkiller_Kit>永远亭止痛药盒</entityname.Touhou_Eternal_House_Painkiller_Kit>
+    <entitydescription.Touhou_Eternal_House_Painkiller_Kit>集成包装好的药物，可以放入止血类药物便于取用。需要手持开启“充能”选项恢复耐久。可放入：爆弹石榴精华、药用鸦片、吗啡、芬太尼和永远亭内服药丸</entitydescription.Touhou_Eternal_House_Painkiller_Kit>
+
+
 
 
 
@@ -2244,9 +2266,9 @@
     <Character.Touhou_Empathy_Lunatic_Moon_Lv2>疯狂之月Lv2</Character.Touhou_Empathy_Lunatic_Moon_Lv2>
     <entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>增加5%技能水平\n果然月亮（确实）超酷啊！</entitydescription.Touhou_Empathy_Lunatic_Moon_Lv2>
     <Character.Touhou_Empathy_Torch_Of_Burning_Life>燃烧生命的火把</Character.Touhou_Empathy_Torch_Of_Burning_Life>
-    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>持续获得烧伤和精神病，增加10%攻击速度\n看她的火把时肯定不会觉得平静舒畅。</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>持续获得烧伤、梦消失和精神病，增加10%攻击速度\n看她的火把时肯定不会觉得平静舒畅。</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life>
     <Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>燃烧生命的火把Lv2</Character.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
-    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>持续获得精神病，增加10%攻击速度\n看她的火把时肯定不会觉得平静舒畅。</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
+    <entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>持续获得梦消失精神病，增加10%攻击速度\n看她的火把时肯定不会觉得平静舒畅。</entitydescription.Touhou_Empathy_Torch_Of_Burning_Life_Lv2>
     <Character.Touhou_Empathy_Ice_Fairy>冰之妖精</Character.Touhou_Empathy_Ice_Fairy>
     <entitydescription.Touhou_Empathy_Ice_Fairy>增加30%远程攻击散布，远程攻击伤害增加9%\n对于冰之妖精来说这就是最强的证明</entitydescription.Touhou_Empathy_Ice_Fairy>
     <Character.Touhou_Empathy_Ice_Fairy_Lv2>冰之妖精Lv2</Character.Touhou_Empathy_Ice_Fairy_Lv2>
@@ -2376,5 +2398,7 @@
     <talentdescription.Hyouibana_Shinki>生命值高于80%时，缓慢恢复部分伤势</talentdescription.Hyouibana_Shinki>
     <talentname.Hyouibana_Koakuma>凭依小恶魔</talentname.Hyouibana_Koakuma>
     <talentdescription.Hyouibana_Koakuma>生命值高于50%时，缓慢恢复物理伤害和出血</talentdescription.Hyouibana_Koakuma>
+    <talentname.Hyouibana_Kagiyama_Hina>凭依键山雏</talentname.Hyouibana_Kagiyama_Hina>
+    <talentdescription.Hyouibana_Kagiyama_Hina>增加10%debuff抗性，增加5%弹幕伤害</talentdescription.Hyouibana_Kagiyama_Hina>
 
 </infotexts>
