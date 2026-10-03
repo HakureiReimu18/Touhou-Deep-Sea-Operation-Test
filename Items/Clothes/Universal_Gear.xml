@@ -34,7 +34,7 @@
     <Item identifier="Rumia_Headband" subcategory="Touhou" category="Equipment" tags="smallitem,clothing" cargocontaineridentifier="metalcrate"
           scale="0.15" hideinmenus="false">
         <PreferredContainer primary="crewcab"/>
-        <Price baseprice="200" sold="false">
+        <Price baseprice="200" >
             <Price storeidentifier="merchantoutpost" minavailable="1"/>
             <Price storeidentifier="merchantcity" multiplier="0.9" minavailable="1"/>
             <Price storeidentifier="merchantresearch" minavailable="1"/>
@@ -43,9 +43,14 @@
             <Price storeidentifier="Costume_Merchant_Kawasiro_Nitori" minavailable="1"/>
         </Price>
         <Deconstruct time="5">
-            <Item identifier="organicfiber" amount="2"/>
-            <Item identifier="Touhou_Plant_Extract" amount="3"/>
+            <Item identifier="organicfiber" />
+            <Item identifier="Touhou_Plant_Extract" />
         </Deconstruct>
+        <Fabricate suitablefabricators="fabricator" requiredtime="10">
+            <RequiredSkill identifier="weapons" level="10"/>
+            <RequiredItem identifier="organicfiber" amount="2"/>
+            <RequiredItem identifier="Touhou_Plant_Extract" amount="2"/>
+        </Fabricate>
         <Sprite name="" texture="%ModDir%/Images/Universal_Gear/Rumia_Headband.png" sourcerect="0,0,176,208" origin="0.5,0.5" depth="0.5"/>
         <Body width="160" height="90" density="10"/>
         <Wearable limbtype="Head" slots="Any,Head" msg="ItemMsgPickUpSelect">
