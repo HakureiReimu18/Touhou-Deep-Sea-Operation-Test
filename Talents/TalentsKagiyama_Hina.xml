@@ -12,7 +12,7 @@
                 <CharacterAbilityApplyStatusEffects applytoself="true">
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" disabledeltatime="true" multiplyafflictionsbymaxvitality="true">
-                            <Affliction identifier="Touhou_Kagiyama_Hina_Misfortune_Curse" strength="1.0"/>
+                            <Affliction identifier="Touhou_Misfortune_Curse" strength="1.0"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
@@ -32,7 +32,7 @@
         <AbilityGroupEffect abilityeffecttype="OnAttacked">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Misfortune_Curse" minimumPercentage="0.5"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Misfortune_Curse" minimumPercentage="0.5"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyAttackData addeddamagemultiplier="-0.1"/>
@@ -42,7 +42,7 @@
         <AbilityGroupInterval interval="2.0">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Misfortune_Curse" minimumPercentage="0.5"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Misfortune_Curse" minimumPercentage="0.5"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityModifyStat stattype="MaximumHealthMultiplier" value="0.15"/>
@@ -52,13 +52,13 @@
         <AbilityGroupInterval interval="0.9">
             <Conditions>
                 <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Character_Effect"/>
-                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Kagiyama_Hina_Misfortune_Curse_Release"/>
+                <AbilityConditionHasAffliction afflictionidentifier="Touhou_Misfortune_Curse_Release"/>
             </Conditions>
             <Abilities>
                 <CharacterAbilityApplyStatusEffects>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="NearbyCharacters" range="2500" disabledeltatime="true" >
-                            <Affliction identifier="Touhou_Kagiyama_Hina_Misfortune_Curse_Release_Debuff" amount="10"/>
+                            <Affliction identifier="Touhou_Misfortune_Curse_Release_Debuff" amount="10"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffects>
@@ -73,7 +73,7 @@
                 <AbilityConditionAttackData tags="Touhou_Magic_Danmu" ignorenonharmfulattacks="true" weapontype="HandheldRanged,Melee"/>
             </Conditions>
             <Abilities>
-                <CharacterAbilityGiveAffliction affliction="Touhou_Kagiyama_Hina_Misfortune_Curse" strength="1.0"/>
+                <CharacterAbilityGiveAffliction affliction="Touhou_Misfortune_Curse" strength="1.0"/>
             </Abilities>
         </AbilityGroupEffect>
 
@@ -87,7 +87,9 @@
                 <CharacterAbilityApplyStatusEffectsToAttacker>
                     <StatusEffects>
                         <StatusEffect type="OnAbility" target="Character" targetlimb="Torso" delay="0.1" disabledeltatime="true">
-                            <Affliction identifier="Touhou_Kagiyama_Hina_Misfortune_Curse" amount="1.0"/>
+                            <Conditional TeamID="None"/>
+                            <Conditional TeamID="Team2"/>
+                            <Affliction identifier="Touhou_Misfortune_Curse" amount="1.0"/>
                         </StatusEffect>
                     </StatusEffects>
                 </CharacterAbilityApplyStatusEffectsToAttacker>

@@ -174,7 +174,12 @@
 
     <Text.Hiro_Pseudo_Button>Pseudo</Text.Hiro_Pseudo_Button>
 
-    <Text.Touhou_Kagiyama_Hina_Misfortune_Curse_Release>Misfortune Release</Text.Touhou_Kagiyama_Hina_Misfortune_Curse_Release>
+    <Text.Hong_Meirin_Stance_Charge>Charge</Text.Hong_Meirin_Stance_Charge>
+    <Text.Hong_Meirin_Stance_Guard>Guard</Text.Hong_Meirin_Stance_Guard>
+    <Text.Hong_Meirin_Stance_Allout>All-out</Text.Hong_Meirin_Stance_Allout>
+    <Text.Hong_Meirin_Cooldown>Switch cooldown {0}s</Text.Hong_Meirin_Cooldown>
+
+    <Text.Touhou_Misfortune_Curse_Release>Misfortune Release</Text.Touhou_Misfortune_Curse_Release>
 
 
     <!--Display Name-->
