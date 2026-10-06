@@ -757,7 +757,7 @@
     <!--糖果精华-->
     <Item name="糖果精华" identifier="Touhou_Candy_Essence" subcategory="Touhou" category="Medical" maxstacksize="1" Tags="smallitem"
           allowasextracargo="true" description=""
-          useinhealthinterface="true" scale="0.5" impactsoundtag="impact_metal_light" spritecolor="0,0,255,255">
+          useinhealthinterface="true" scale="0.1" impactsoundtag="impact_metal_light" >
         <PreferredContainer primary="medcab"/>
         <Deconstruct time="15"/>
         <Fabricate suitablefabricators="Magic_Altar" requiredtime="5" requiresrecipe="true">
